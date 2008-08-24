@@ -1,1 +1,8 @@
 * text=auto !eol
+/Makefile.am -text
+/apertium-eo-en.en.dix -text
+/apertium-eo-en.eo-en.dix -text
+/apertium-eo-en.eo.dix -text
+/apertium-eo-en.post-en.dix -text
+/apertium-eo-en.post-eo.dix -text
+/configure.ac -text
