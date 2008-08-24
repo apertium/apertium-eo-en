@@ -353,6 +353,16 @@
     </e>
     </pardef>
 
+    <pardef n="kie__rel">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="rel"/><s n="adv"/></r> 
+      </p>
+    </e>
+    </pardef>
+
+
     <pardef n="kial__adv">
     <e>
       <p>
@@ -7335,6 +7345,13 @@
         <i>iufoje<b/>pli</i> 
         <par n="after__cnjadv"/> 
     </e>
+
+    <e lm="ĉiufoje pli">
+        <par n="ĉ"/>
+        <i>iufoje<b/>pli</i> 
+        <par n="komence__adv"/> 
+    </e>
+
 
     <e lm="ĉiu">
       <par n="ĉ"/>
@@ -15853,6 +15870,11 @@
     <e lm="kie">
         <i>kie</i> 
         <par n="kial__adv"/> 
+    </e>
+
+    <e lm="kie">
+        <i>kie</i> 
+        <par n="kie__rel"/> 
     </e>
 
     <e lm="kiel">

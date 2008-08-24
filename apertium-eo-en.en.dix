@@ -13293,7 +13293,7 @@
         <i>ag</i> 
         <par n="ag/e__vblex"/> 
     </e>
-
+<!--
     <e lm="again">
         <i>again</i> 
         <par n="maybe__adv"/> 
@@ -13303,6 +13303,7 @@
         <i>against</i> 
         <par n="maybe__adv"/> 
     </e>
+-->
 
     <e lm="against">
         <i>against</i> 
@@ -14362,12 +14363,12 @@
         <i>aroma</i> 
         <par n="house__n"/> 
     </e>
-
+<!--
     <e lm="around">
         <i>around</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="around">
         <i>around</i> 
         <par n="at__pr"/> 
@@ -22225,12 +22226,12 @@
         <i>earl</i> 
         <par n="happ/y__adj"/> 
     </e>
-
+<!--
     <e lm="early">
         <i>early</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="earn">
         <i>earn</i> 
         <par n="accept__vblex"/> 
@@ -24734,11 +24735,12 @@
         <par n="second__det"/> 
     </e>
 
+<!--   
     <e lm="first">
         <i>first</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="firstly">
         <i>firstly</i> 
         <par n="maybe__adv"/> 
@@ -26584,12 +26586,12 @@
         <i>half</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="half">
         <i>half</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="">
         <i>half<b/>a<b/>loaf<b/>is<b/>better<b/>than<b/>no<b/>bread</i> 
         <par n="hello__ij"/> 
@@ -26974,12 +26976,12 @@
         <i>herd</i> 
         <par n="house__n"/> 
     </e>
-
+<!--
     <e lm="here">
         <i>here</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="hereditary">
         <i>hereditary</i> 
         <par n="expensive__adj"/> 
@@ -27061,12 +27063,12 @@
         <i>high</i> 
         <par n="long/__adj"/> 
     </e>
-
+<!--
     <e lm="high">
         <i>high</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="high court">
         <i>high<b/>court</i> 
         <par n="east__n"/> 
@@ -27232,12 +27234,12 @@
         <i>home</i> 
         <par n="house__n"/> 
     </e>
-
+<!--
     <e lm="home">
         <i>home</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="homeland">
         <i>homeland</i> 
         <par n="house__n"/> 
@@ -30058,22 +30060,22 @@
         <i>late</i> 
         <par n="nice/__adj"/> 
     </e>
-
+<!--
     <e lm="late">
         <i>late</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="latent">
         <i>latent</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="later">
         <i>later</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="lateral">
         <i>lateral</i> 
         <par n="expensive__adj"/> 
@@ -30258,12 +30260,12 @@
         <i>left</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="left">
         <i>left</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="left-hand">
         <i>left-hand</i> 
         <par n="expensive__adj"/> 
@@ -30733,12 +30735,12 @@
         <i>little</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="little">
         <i>little</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="liturgy">
         <i>liturg</i> 
         <par n="bab/y__n"/> 
@@ -30858,12 +30860,12 @@
         <i>long</i> 
         <par n="long/__adj"/> 
     </e>
-
+<!--
     <e lm="long">
         <i>long</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="longhand">
         <i>longhand</i> 
         <par n="maybe__adv"/> 
@@ -33331,7 +33333,7 @@
         <i>north</i> 
         <par n="long/__adj"/> 
     </e>
-
+<!--
     <e lm="north">
         <i>north</i> 
         <par n="maybe__adv"/> 
@@ -33339,22 +33341,24 @@
 
     <e lm="northeast">
         <i>northeast</i> 
-        <par n="east__n"/> 
+        <par n="maybe__adv"/> 
     </e>
+
+    <e lm="northwest">
+        <i>northwest</i> 
+        <par n="maybe__adv"/> 
+    </e>
+-->
+
 
     <e lm="northeast">
         <i>northeast</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="northwest">
-        <i>northwest</i> 
         <par n="east__n"/> 
     </e>
 
     <e lm="northwest">
         <i>northwest</i> 
-        <par n="maybe__adv"/> 
+        <par n="east__n"/> 
     </e>
 
     <e lm="nose">
@@ -34021,12 +34025,12 @@
         <i>only</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="only">
         <i>only</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="onto">
         <i>onto</i> 
         <par n="at__pr"/> 
@@ -35843,16 +35847,12 @@
         <i>pleasant</i> 
         <par n="expensive__adj"/> 
     </e>
-
+<!--
     <e lm="please">
         <i>please</i> 
         <par n="maybe__adv"/> 
     </e>
-
-    <e lm="please">
-        <i>please</i> 
-        <par n="maybe__adv"/> 
-    </e>
+-->
 
     <e lm="pleasure">
         <i>pleasure</i> 
@@ -40120,12 +40120,12 @@
         <i>second</i> 
         <par n="accept__vblex"/> 
     </e>
-
+<!--
     <e lm="second">
         <i>second</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="secondary">
         <i>secondary</i> 
         <par n="expensive__adj"/> 
@@ -40998,12 +40998,12 @@
         <i>sin</i> 
         <par n="plan__vblex"/> 
     </e>
-
+<!--
     <e lm="since">
         <i>since</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="since">
         <i>since</i> 
         <par n="at__pr"/> 
@@ -41289,11 +41289,12 @@
         <par n="accept__vblex"/> 
     </e>
 
+<!--
     <e lm="slow">
         <i>slow</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="slowly">
         <i>slowly</i> 
         <par n="maybe__adv"/> 
@@ -41689,11 +41690,13 @@
         <par n="long/__adj"/> 
     </e>
 
+<!--
     <e lm="south">
         <i>south</i> 
         <par n="maybe__adv"/> 
     </e>
 
+-->
     <e lm="sovereign">
         <i>sovereign</i> 
         <par n="house__n"/> 
@@ -43027,12 +43030,12 @@
         <i>sure</i> 
         <par n="nice/__adj"/> 
     </e>
-
+<!--
     <e lm="sure">
         <i>sure</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="sure enough">
         <i>sure<b/>enough</i> 
         <par n="maybe__adv"/> 
@@ -43973,11 +43976,12 @@
         <i>the<b/>same</i> 
         <par n="other__det"/> 
     </e>
-
+<!--
     <e lm="the same">
         <i>the<b/>same</i> 
         <par n="maybe__adv"/> 
     </e>
+-->
 
     <e lm="theater">
         <i>theater</i> 
@@ -44050,11 +44054,12 @@
         <i>therap</i> 
         <par n="bab/y__n"/> 
     </e>
-
+<!--
     <e lm="there">
         <i>there</i> 
         <par n="maybe__adv"/> 
     </e>
+-->
 
     <e lm="">
         <i>there's<b/>no<b/>time<b/>like<b/>the<b/>present</i> 
@@ -44230,12 +44235,12 @@
         <i>through</i> 
         <par n="at__pr"/> 
     </e>
-
+<!--
     <e lm="throughout">
         <i>throughout</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="throughout">
         <i>throughout</i> 
         <par n="at__pr"/> 
@@ -46688,11 +46693,12 @@
         <par n="expensive__adj"/> 
     </e>
 
+<!--    
     <e lm="west">
         <i>west</i> 
         <par n="maybe__adv"/> 
     </e>
-
+-->
     <e lm="western">
         <i>western</i> 
         <par n="expensive__adj"/> 
