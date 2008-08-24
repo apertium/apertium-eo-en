@@ -7312,56 +7312,58 @@
     </e>
 
     <e lm="ĉiujara">
-        <i>ĉiujara</i> 
+        <par n="ĉ"/>
+        <i>iujara</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĉiu">
+      <par n="ĉ"/>
       <p>
-        <l>ĉiujn</l> 
-        <r>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r> 
+        <l>iujn</l> 
+        <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
 
     <e lm="ĉiu">
+      <par n="ĉ"/>
       <p>
-        <l>ĉiun</l> 
-        <r>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r> 
+        <l>iun</l> 
+        <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r> 
       </p>
     </e>
 
     <e lm="ĉiusemajne">
-        <i>ĉiusemajne</i> 
+        <par n="ĉ"/>
+        <i>iusemajne</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĉiutaga">
-        <i>ĉiutag</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="ĉiutaga">
-        <i>ĉiutag</i> 
+        <par n="ĉ"/>
+        <i>iutag</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ĉiutage">
-        <i>ĉiutage</i> 
+        <par n="ĉ"/>
+        <i>iutage</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĉokolado">
-        <i>ĉokolado</i> 
+        <par n="ĉ"/>
+        <i>okolado</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="damaĝi">
-        <i>damaĝ</i> 
+        <i>dama</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="damaĝo">
-        <i>damaĝo</i> 
+        <i>dama</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -7391,17 +7393,17 @@
     </e>
 
     <e lm="danĝera">
-        <i>danĝer</i> 
+        <i>dan</i><par n="ĝ"/><i>er</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="danĝere">
-        <i>danĝere</i> 
+        <i>dan</i><par n="ĝ"/><i>ere</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="danĝero">
-        <i>danĝero</i> 
+        <i>dan</i><par n="ĝ"/><i>ero</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -7431,7 +7433,7 @@
     </e>
 
     <e lm="datiĝi">
-        <i>datiĝ</i> 
+        <i>dati</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -7986,7 +7988,7 @@
     </e>
 
     <e lm="deturniĝi">
-        <i>deturniĝ</i> 
+        <i>deturni</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -8206,7 +8208,7 @@
     </e>
 
     <e lm="dikiĝi">
-        <i>dikiĝ</i> 
+        <i>diki</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -8491,7 +8493,7 @@
     </e>
 
     <e lm="disvolviĝo">
-        <i>disvolviĝo</i> 
+        <i>disvolvi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -8501,7 +8503,7 @@
     </e>
 
     <e lm="diverĝo">
-        <i>diverĝo</i> 
+        <i>diver</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -8611,7 +8613,7 @@
     </e>
 
     <e lm="domaĝo">
-        <i>domaĝo</i> 
+        <i>doma</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -8991,7 +8993,7 @@
     </e>
 
     <e lm="eĝo">
-        <i>eĝo</i> 
+        <i>e</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -9101,7 +9103,7 @@
     </e>
 
     <e lm="eksedziĝi">
-        <i>eksedziĝ</i> 
+        <i>eksedzi</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -9141,7 +9143,7 @@
     </e>
 
     <e lm="ekspansiiĝi">
-        <i>ekspansiiĝ</i> 
+        <i>ekspansii</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -9621,7 +9623,7 @@
     </e>
 
     <e lm="elnodiĝo">
-        <i>elnodiĝo</i> 
+        <i>elnodi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -9666,12 +9668,12 @@
     </e>
 
     <e lm="elreliĝi">
-        <i>elreliĝ</i> 
+        <i>elreli</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="elreviĝo">
-        <i>elreviĝo</i> 
+        <i>elrevi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -9730,18 +9732,23 @@
         <par n="verb__vb"/> 
     </e>
 
-    <e lm="eltiro,elpreno">
-        <i>eltiro,elpreno</i> 
+    <e lm="eltiro">
+        <i>eltiro</i> 
+        <par n="nom__n"/> 
+    </e>
+
+    <e lm="elpreno">
+        <i>elpreno</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="eltrakiĝi">
-        <i>eltrakiĝ</i> 
+        <i>eltraki</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="eluziĝo">
-        <i>eluziĝo</i> 
+        <i>eluzi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -9996,12 +10003,12 @@
     </e>
 
     <e lm="enprofundiĝi">
-        <i>enprofundiĝ</i> 
+        <i>enprofundi</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="enradikiĝi">
-        <i>enradikiĝ</i> 
+        <i>enradiki</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -11216,7 +11223,7 @@
     </e>
 
     <e lm="finaranĝi">
-        <i>finaranĝ</i> 
+        <i>finaran</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -11516,7 +11523,7 @@
     </e>
 
     <e lm="forĝisto">
-        <i>forĝist</i> 
+        <i>for</i><par n="ĝ"/><i>ist</i> 
         <par n="nommf__n"/> 
     </e>
 
@@ -11801,7 +11808,7 @@
     </e>
 
     <e lm="franĝo">
-        <i>franĝo</i> 
+        <i>fran</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -11891,7 +11898,7 @@
     </e>
 
     <e lm="fromaĝo">
-        <i>fromaĝo</i> 
+        <i>froma</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -11981,7 +11988,7 @@
     </e>
 
     <e lm="fuĝi">
-        <i>fuĝ</i> 
+        <i>fu</i><par n="ĝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -12181,7 +12188,7 @@
     </e>
 
     <e lm="garaĝo">
-        <i>garaĝo</i> 
+        <i>gara</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -12271,7 +12278,7 @@
     </e>
 
     <e lm="geedziĝo">
-        <i>geedziĝo</i> 
+        <i>geedzi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -12531,12 +12538,7 @@
     </e>
 
     <e lm="gorĝo">
-        <i>gorĝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="gorĝo">
-        <i>gorĝo</i> 
+        <i>gor</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -12547,11 +12549,6 @@
 
     <e lm="gotika">
         <i>gotik</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="gracia">
-        <i>graci</i> 
         <par n="adj__adj"/> 
     </e>
 
@@ -12776,157 +12773,164 @@
     </e>
 
     <e lm="ĝangalo">
-        <i>ĝangalo</i> 
+        <par n="ĝ"/>
+        <i>angalo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ĝardenisto">
-        <i>ĝardenist</i> 
+        <par n="ĝ"/>
+        <i>ardenist</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ĝardenistiko">
-        <i>ĝardenistiko</i> 
+        <par n="ĝ"/>
+        <i>ardenistiko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ĝardeno">
-        <i>ĝardeno</i> 
+        <par n="ĝ"/>
+        <i>ardeno</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ĝeni">
-        <i>ĝen</i> 
+        <par n="ĝ"/>
+        <i>en</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝenerala">
-        <i>ĝeneral</i> 
+        <par n="ĝ"/>
+        <i>eneral</i> 
         <par n="adj__adj"/> 
     </e>
 
-    <e lm="ĝenerala">
-        <i>ĝenerala</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
     <e lm="ĝenerale">
-        <i>ĝenerale</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="ĝenerale">
-        <i>ĝenerale</i> 
+        <par n="ĝ"/>
+        <i>enerale</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĝeneralvalida">
-        <i>ĝeneralvalid</i> 
+        <par n="ĝ"/>
+        <i>eneralvalid</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ĝentila">
-        <i>ĝentil</i> 
+        <par n="ĝ"/>
+        <i>entil</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ĝentile">
-        <i>ĝentile</i> 
+        <par n="ĝ"/>
+        <i>entile</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĝermi">
-        <i>ĝerm</i> 
+        <par n="ĝ"/>
+        <i>erm</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝermo">
-        <i>ĝermo</i> 
+        <par n="ĝ"/>
+        <i>ermo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ĝia">
-        <i>ĝia</i> 
+        <par n="ĝ"/>
+        <i>ia</i> 
         <par n="mia__det"/> 
     </e>
 
     <e lm="ĝiri">
-        <i>ĝir</i> 
+        <par n="ĝ"/>
+        <i>ir</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝis">
-        <i>ĝis</i> 
+        <par n="ĝ"/>
+        <i>is</i> 
         <par n="after__cnjadv"/> 
     </e>
 
     <e lm="ĝis">
-        <i>ĝis</i> 
-        <par n="after__cnjadv"/> 
-    </e>
-
-    <e lm="ĝis">
-        <i>ĝis</i> 
+        <par n="ĝ"/>
+        <i>is</i> 
         <par n="at__pr"/> 
     </e>
 
     <e lm="ĝis poste">
-        <i>ĝis<b/>poste</i> 
+        <par n="ĝ"/>
+        <i>is<b/>poste</i> 
         <par n="adiós__ij"/> 
     </e>
 
     <e lm="ĝisatendi">
-        <i>ĝisatend</i> 
+        <par n="ĝ"/>
+        <i>isatend</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝisdatigi">
-        <i>ĝisdatig</i> 
+        <par n="ĝ"/>
+        <i>isdatig</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝisfunda">
-        <i>ĝisfund</i> 
+        <par n="ĝ"/>
+        <i>isfund</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ĝisfunde">
-        <i>ĝisfunde</i> 
+        <par n="ĝ"/>
+        <i>isfunde</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĝoje">
-        <i>ĝoje</i> 
+        <par n="ĝ"/>
+        <i>oje</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĝojo">
-        <i>ĝojo</i> 
+        <par n="ĝ"/>
+        <i>ojo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ĝui">
-        <i>ĝu</i> 
+        <par n="ĝ"/>
+        <i>u</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ĝusta">
-        <i>ĝust</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="ĝusta">
-        <i>ĝust</i> 
+        <par n="ĝ"/>
+        <i>ust</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ĝuste">
-        <i>ĝuste</i> 
+        <par n="ĝ"/>
+        <i>uste</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ĝustigi">
-        <i>ĝustig</i> 
+        <par n="ĝ"/>
+        <i>ustig</i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -13026,7 +13030,7 @@
     </e>
 
     <e lm="heĝo">
-        <i>heĝo</i> 
+        <i>he</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -13351,7 +13355,7 @@
     </e>
 
     <e lm="horloĝo">
-        <i>horloĝo</i> 
+        <i>horlo</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -13706,7 +13710,7 @@
     </e>
 
     <e lm="impulsiĝema">
-        <i>impulsiĝem</i> 
+        <i>impulsi</i><par n="ĝ"/><i>em</i> 
         <par n="adj__adj"/> 
     </e>
 
@@ -13796,7 +13800,7 @@
     </e>
 
     <e lm="indiĝeno">
-        <i>indiĝen</i> 
+        <i>indi</i><par n="ĝ"/><i>en</i> 
         <par n="nommf__n"/> 
     </e>
 
@@ -13876,12 +13880,7 @@
     </e>
 
     <e lm="infanaĝo">
-        <i>infanaĝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="infanaĝo">
-        <i>infanaĝo</i> 
+        <i>infana</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
