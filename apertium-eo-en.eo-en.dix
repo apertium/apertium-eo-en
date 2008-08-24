@@ -652,14 +652,12 @@
     <e r="LR" c="frases afirmatives"><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/></r></p></e>
     <e r="RL"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/></r></p></e>
-    <e r="RL"><p><l>la<s n="det"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>la<s n="det"/></l><r>the<s n="det"/></r></p></e>
-    <e r="RL"><p><l>la<s n="det"/><s n="def"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>la<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>la<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></l><r>a<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>la<s n="det"/><s n="def"/></l><r>some<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+
+    <e><p><l>la<s n="det"/><s n="def"/><s n="sp"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+
     <e r="RL"><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
     <e r="LR"><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
+
     <!-- MG: traducció per defecte ca-en és per ara 'his' -->
     <e r="RL"><p><l>lia<s n="det"/></l><r>her<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>lia<s n="det"/></l><r>his<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
@@ -7743,6 +7741,7 @@
     <e r="LR" c="frases negatives"><p><l>ankoraŭ<s n="adv"/></l><r>yet<s n="adv"/></r></p></e>
     <e r="RL"><p><l>antaŭe<s n="adv"/></l><r>formerly<s n="adv"/></r></p></e>
     <e><p><l>antaŭe<s n="adv"/></l><r>previously<s n="adv"/></r></p></e>
+    <e><p><l>daŭre<s n="adv"/></l><r>still<s n="adv"/></r></p></e>
     <e><p><l>antaŭe<s n="adv"/></l><r>before<s n="adv"/></r></p></e>
     <e><p><l>antaŭe<s n="adv"/></l><r>in<b/>front<s n="adv"/></r></p></e>
     <e r="RL"><p><l>antaŭen<s n="adv"/></l><r>ahead<s n="adv"/></r></p></e>

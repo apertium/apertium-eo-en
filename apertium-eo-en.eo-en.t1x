@@ -22,13 +22,6 @@
      <cat-item tags="det"/>
      <cat-item tags="det.*"/>
   </def-cat>
-  <def-cat n="prefix-adj">
-     <cat-item tags="pref.adj"/>
-     <cat-item tags="pref.adj.*"/>
-  </def-cat>
-  <def-cat n="exp">
-     <cat-item tags="part.exp"/>
-  </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
@@ -55,12 +48,20 @@
      <attr-item tags="vblex"/>
   </def-attr>
 
+  <def-attr n="a_det">
+     <attr-item tags="det.def"/>
+     <attr-item tags="det.ind"/>
+     <attr-item tags="det.pos"/>
+     <attr-item tags="det.qnt"/>
+  </def-attr>
+
   <def-attr n="a_prn">
      <attr-item tags="prn"/>
      <attr-item tags="prn.itg"/>
   </def-attr>
 
   <def-attr n="tns">
+     <attr-item tags="pres"/>
      <attr-item tags="pri"/>
      <attr-item tags="imp"/>
      <attr-item tags="aor"/>
@@ -89,11 +90,6 @@
   <def-attr n="cas">
      <attr-item tags="nom"/>
      <attr-item tags="acc"/>
-     <attr-item tags="dat"/>
-     <attr-item tags="gen"/>
-     <attr-item tags="loc"/>
-     <attr-item tags="ins"/>
-     <attr-item tags="voc"/>
   </def-attr>
 
 </section-def-attrs>
@@ -128,6 +124,28 @@
        </out>
      </action>
   </rule>
+
+  <rule>
+     <pattern>
+       <pattern-item n="det"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="nbr" link-to="2"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
 
 <!-- Sintagmas adjetivos -->

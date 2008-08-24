@@ -552,7 +552,7 @@
 
     </pardef>
     <pardef n="la__det">
-    <e r="LR">
+    <e>
       <p>
         <l></l> 
         <r><s n="det"/><s n="def"/><s n="sp"/></r> 
@@ -3024,6 +3024,11 @@
 
     <e lm="absolute">
         <i>absolute</i> 
+        <par n="maybe__adv"/> 
+    </e>
+
+    <e lm="daŭre">
+        <i>daŭre</i> 
         <par n="maybe__adv"/> 
     </e>
 
