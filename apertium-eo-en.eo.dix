@@ -27,6 +27,7 @@
     <sdef n="acr" /> 
     <sdef n="top" /> 
     <sdef n="ant" /> 
+    <sdef n="cog" /> 
     <sdef n="al" /> 
     <sdef n="n" /> 
     <sdef n="np" /> 
@@ -334,7 +335,7 @@
       </p>
     </e>
 
-    <e>
+    <e i="yes">
       <p>
         <l>e</l> 
         <r>a<s n="adv"/></r> 
@@ -1066,6 +1067,15 @@
     </e>
 
     </pardef>
+    <pardef n="Stevenson__np">
+      <e>
+        <p>
+          <l></l> 
+          <r><s n="np"/><s n="cog"/></r> 
+        </p>
+      </e>
+    </pardef>
+
     <pardef n="CX__num">
     <e>
       <p>
@@ -1819,6 +1829,11 @@
 
     <e lm="Dublino">
         <i>Dublino</i> 
+        <par n="Barcelona__np"/> 
+    </e>
+
+    <e lm="Edinburgo">
+        <i>Edinburgo</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -34239,5 +34254,12 @@
         <par n="nom__n"/> 
     </e>
 
+    <!-- Antonyms -->
+    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
+    <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
+    <!-- Cognomen -->
+    <e lm="Stevenson"><i>Stevenson</i><par n="Stevenson__np"/></e>
+    <e lm="Jeckyll"><i>Jeckyll</i><par n="Stevenson__np"/></e>
+    <e lm="Hyde"><i>Hyde</i><par n="Stevenson__np"/></e>
   </section>
 </dictionary>

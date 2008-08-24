@@ -47380,5 +47380,13 @@
         <par n="house__n"/> 
     </e>
 
+    <!-- Antonyms -->
+    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
+    <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
+    <!-- Cognomen -->
+    <e lm="Stevenson"><i>Stevenson</i><par n="Smith__np"/></e>
+    <e lm="Jeckyll"><i>Jeckyll</i><par n="Smith__np"/></e>
+    <e lm="Hyde"><i>Hyde</i><par n="Smith__np"/></e>
+
   </section>
 </dictionary>
