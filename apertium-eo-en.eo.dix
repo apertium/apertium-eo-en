@@ -186,8 +186,95 @@
         <r><s n="rpar"/></r> 
       </p>
     </e>
-
     </pardef>
+
+    <!-- handle cx, etc. -->
+    <pardef n="ĉ">
+      <e r="LR">
+        <p>
+          <l>cx</l> 
+          <r>ĉ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ĉ</l> 
+          <r>ĉ</r> 
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ĝ">
+      <e r="LR">
+        <p>
+          <l>gx</l> 
+          <r>ĝ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ĝ</l> 
+          <r>ĝ</r> 
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ĥ">
+      <e r="LR">
+        <p>
+          <l>hx</l> 
+          <r>ĥ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ĥ</l> 
+          <r>ĥ</r> 
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ĵ">
+      <e r="LR">
+        <p>
+          <l>jx</l> 
+          <r>ĵ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ĵ</l> 
+          <r>ĵ</r> 
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ŝ">
+      <e r="LR">
+        <p>
+          <l>sx</l> 
+          <r>ŝ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ŝ</l> 
+          <r>ŝ</r> 
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ŭ">
+      <e r="LR">
+        <p>
+          <l>ux</l> 
+          <r>ŭ</r> 
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ŭ</l> 
+          <r>ŭ</r> 
+        </p>
+      </e>
+    </pardef>
+
+
     <pardef n="adj__adjINICIAL">
     <e>
       <p>
@@ -1209,6 +1296,12 @@
       </p>
     </e>
 
+    <e r="LR">
+      <p>
+        <l>sxi</l> 
+        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
+      </p>
+    </e>
     <e>
       <p>
         <l>ŝi</l> 
@@ -1216,6 +1309,12 @@
       </p>
     </e>
 
+    <e r="LR">
+      <p>
+        <l>gxi</l> 
+        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
+      </p>
+    </e>
     <e>
       <p>
         <l>ĝi</l> 
@@ -1269,6 +1368,12 @@
       </p>
     </e>
 
+    <e r="LR">
+      <p>
+        <l>sxin</l> 
+        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
+      </p>
+    </e>
     <e>
       <p>
         <l>ŝin</l> 
@@ -1276,6 +1381,12 @@
       </p>
     </e>
 
+    <e r="LR">
+      <p>
+        <l>gxin</l> 
+        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
+      </p>
+    </e>
     <e>
       <p>
         <l>ĝin</l> 
@@ -1392,7 +1503,7 @@
 
   <section id="main" type="standard">
     <e lm="laŭleĝa">
-        <i>laŭleĝ</i> 
+        <i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i> 
         <par n="adj__adj"/> 
     </e>
 
@@ -1522,27 +1633,12 @@
     </e>
 
     <e lm="Aŭstralio">
-        <i>Aŭstralio</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Aŭstralio">
-        <i>Aŭstralio</i> 
+        <i>A</i><par n="ŭ"/><i>stralio</i> 
         <par n="Barcelona__np"/> 
     </e>
 
     <e lm="Aŭstrio">
-        <i>Aŭstrio</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Aŭstrio">
-        <i>Aŭstrio</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Azio">
-        <i>Azio</i> 
+        <i>A</i><par n="ŭ"/><i>strio</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -1657,17 +1753,12 @@
     </e>
 
     <e lm="Budapeŝto">
-        <i>Budapeŝto</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Budapeŝto">
-        <i>Budapeŝto</i> 
+        <i>Budape</i><par n="ŝ"/><i>to</i> 
         <par n="Barcelona__np"/> 
     </e>
 
     <e lm="Bukareŝto">
-        <i>Bukareŝto</i> 
+        <i>Bukare</i><par n="ŝ"/><i>to</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -1792,12 +1883,12 @@
     </e>
 
     <e lm="Eŭgeno">
-        <i>Eŭgeno</i> 
+        <i>E</i><par n="ŭ"/><i>geno</i> 
         <par n="Mark__np"/> 
     </e>
 
     <e lm="Eŭrop">
-        <i>Eŭrop</i> 
+        <i>E</i><par n="ŭ"/><i>rop</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -2152,7 +2243,7 @@
     </e>
 
     <e lm="Klaŭdo">
-        <i>Klaŭdo</i> 
+        <i>Kla</i><par n="ŭ"/><i>do</i> 
         <par n="Mark__np"/> 
     </e>
 
@@ -2227,7 +2318,7 @@
     </e>
 
     <e lm="Laŭrenco">
-        <i>Laŭrenco</i> 
+        <i>La</i><par n="ŭ"/><i>renco</i> 
         <par n="Mark__np"/> 
     </e>
 
@@ -2377,7 +2468,7 @@
     </e>
 
     <e lm="Maŭritanio">
-        <i>Maŭritanio</i> 
+        <i>Ma</i><par n="ŭ"/><i>ritanio</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -2822,27 +2913,12 @@
     </e>
 
     <e lm="Vaŝingtono">
-        <i>Vaŝingtono</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Vaŝingtono">
-        <i>Vaŝingtono</i> 
+        <i>Va</i><par n="ŝ"/><i>ingtono</i> 
         <par n="Barcelona__np"/> 
     </e>
 
     <e lm="Venezuelo">
         <i>Venezuelo</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Venezuelo">
-        <i>Venezuelo</i> 
-        <par n="Barcelona__np"/> 
-    </e>
-
-    <e lm="Vieno">
-        <i>Vieno</i> 
         <par n="Barcelona__np"/> 
     </e>
 
@@ -3007,12 +3083,12 @@
     </e>
 
     <e lm="adiaŭ">
-        <i>adiaŭ</i> 
+        <i>adia</i><par n="ŭ"/><i></i> 
         <par n="adiós__ij"/> 
     </e>
 
     <e lm="adiaŭo">
-        <i>adiaŭo</i> 
+        <i>adia</i><par n="ŭ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -3162,7 +3238,7 @@
     </e>
 
     <e lm="afiŝo">
-        <i>afiŝo</i> 
+        <i>afi</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -3492,7 +3568,7 @@
     </e>
 
     <e lm="akuŝo">
-        <i>akuŝo</i> 
+        <i>aku</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -3567,7 +3643,7 @@
     </e>
 
     <e lm="alaŭdo">
-        <i>alaŭdo</i> 
+        <i>ala</i><par n="ŭ"/><i>do</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -3740,12 +3816,7 @@
     </e>
 
     <e lm="almenaŭ">
-        <i>almenaŭ</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="almenaŭ">
-        <i>almenaŭ</i> 
+        <i>almena</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
@@ -3924,6 +3995,12 @@
         <par n="nommf__n"/> 
     </e>
 
+    <e lm="ambaux" r="LR">
+      <p>
+        <l>ambaux</l> 
+        <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
     <e lm="ambaŭ">
       <p>
         <l>ambaŭ</l> 
@@ -3931,6 +4008,12 @@
       </p>
     </e>
 
+    <e lm="ambaux" r="LR">
+      <p>
+        <l>ambaux</l> 
+        <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
     <e lm="ambaŭ">
       <p>
         <l>ambaŭ</l> 
@@ -3939,7 +4022,7 @@
     </e>
 
     <e lm="ambaŭ">
-        <i>ambaŭ</i> 
+        <i>amba</i><par n="ŭ"/><i></i> 
         <par n="ind__det"/> 
     </e>
 
@@ -4214,22 +4297,17 @@
     </e>
 
     <e lm="ankaŭ">
-        <i>ankaŭ</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="ankaŭ">
-        <i>ankaŭ</i> 
+        <i>anka</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ankaŭ ne">
-        <i>ankaŭ<b/>ne</i> 
+        <i>anka</i><par n="ŭ"/><i><b/>ne</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ankoraŭ">
-        <i>ankoraŭ</i> 
+        <i>ankora</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
@@ -4279,177 +4357,152 @@
     </e>
 
     <e lm="anstataŭi">
-        <i>anstataŭ</i> 
+        <i>anstata</i><par n="ŭ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="anstataŭ">
-        <i>anstataŭ</i> 
+        <i>anstata</i><par n="ŭ"/><i></i> 
         <par n="at__pr"/> 
     </e>
 
     <e lm="anstataŭanto">
-        <i>anstataŭant</i> 
+        <i>anstata</i><par n="ŭ"/><i>ant</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="anstataŭigo">
-        <i>anstataŭigo</i> 
+        <i>anstata</i><par n="ŭ"/><i>igo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="anstataŭo">
-        <i>anstataŭo</i> 
+        <i>anstata</i><par n="ŭ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭi">
-        <i>antaŭ</i> 
+        <i>anta</i><par n="ŭ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭa">
-        <i>antaŭ</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="antaŭa">
-        <i>antaŭ</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="antaŭa">
-        <i>antaŭ</i> 
+        <i>anta</i><par n="ŭ"/><i></i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="antaŭ">
-        <i>antaŭ</i> 
+        <i>anta</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="antaŭ">
-        <i>antaŭ</i> 
+        <i>anta</i><par n="ŭ"/><i></i> 
         <par n="at__pr"/> 
     </e>
 
     <e lm="antaŭ ol">
-        <i>antaŭ<b/>ol</i> 
+        <i>anta</i><par n="ŭ"/><i><b/>ol</i> 
         <par n="after__cnjadv"/> 
     </e>
 
     <e lm="antaŭ ol">
-        <i>antaŭ<b/>ol</i> 
+        <i>anta</i><par n="ŭ"/><i><b/>ol</i> 
         <par n="at__pr"/> 
     </e>
 
     <e lm="antaŭbrako">
-        <i>antaŭbrako</i> 
+        <i>anta</i><par n="ŭ"/><i>brako</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭdetermini">
-        <i>antaŭdetermin</i> 
+        <i>anta</i><par n="ŭ"/><i>determin</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭdiro">
-        <i>antaŭdiro</i> 
+        <i>anta</i><par n="ŭ"/><i>diro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭe">
-        <i>antaŭe</i> 
+        <i>anta</i><par n="ŭ"/><i>e</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="antaŭen">
-        <i>antaŭen</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="antaŭen">
-        <i>antaŭen</i> 
+        <i>anta</i><par n="ŭ"/><i>en</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="antaŭeniri">
-        <i>antaŭenir</i> 
+        <i>anta</i><par n="ŭ"/><i>enir</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭgardi">
-        <i>antaŭgard</i> 
+        <i>anta</i><par n="ŭ"/><i>gard</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭjuĝo">
-        <i>antaŭjuĝo</i> 
+        <i>anta</i><par n="ŭ"/><i>ju</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭlasta">
-        <i>antaŭlast</i> 
+        <i>anta</i><par n="ŭ"/><i>last</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="antaŭlasta">
-        <i>antaŭlast</i> 
+        <i>anta</i><par n="ŭ"/><i>last</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="antaŭparolo">
-        <i>antaŭparolo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="antaŭparolo">
-        <i>antaŭparolo</i> 
+        <i>anta</i><par n="ŭ"/><i>parolo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭsupozi">
-        <i>antaŭsupoz</i> 
+        <i>anta</i><par n="ŭ"/><i>supoz</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭtempa">
-        <i>antaŭtemp</i> 
+        <i>anta</i><par n="ŭ"/><i>temp</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="antaŭulo">
-        <i>antaŭul</i> 
+        <i>anta</i><par n="ŭ"/><i>ul</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="antaŭurbo">
-        <i>antaŭurbo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="antaŭurbo">
-        <i>antaŭurbo</i> 
+        <i>anta</i><par n="ŭ"/><i>urbo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭvidi">
-        <i>antaŭvid</i> 
+        <i>anta</i><par n="ŭ"/><i>vid</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="antaŭvideble">
-        <i>antaŭvideble</i> 
+        <i>anta</i><par n="ŭ"/><i>videble</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="antaŭvido">
-        <i>antaŭvido</i> 
+        <i>anta</i><par n="ŭ"/><i>vido</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="antaŭzorgo">
-        <i>antaŭzorgo</i> 
+        <i>anta</i><par n="ŭ"/><i>zorgo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -4559,7 +4612,7 @@
     </e>
 
     <e lm="apenaŭ">
-        <i>apenaŭ</i> 
+        <i>apena</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
@@ -4579,17 +4632,17 @@
     </e>
 
     <e lm="aplaŭdi">
-        <i>aplaŭd</i> 
+        <i>apla</i><par n="ŭ"/><i>d</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="aplaŭdado">
-        <i>aplaŭdado</i> 
+        <i>apla</i><par n="ŭ"/><i>dado</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aplaŭdo">
-        <i>aplaŭdo</i> 
+        <i>apla</i><par n="ŭ"/><i>do</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -4949,7 +5002,7 @@
     </e>
 
     <e lm="artiŝoko">
-        <i>artiŝoko</i> 
+        <i>arti</i><par n="ŝ"/><i>oko</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -5064,7 +5117,7 @@
     </e>
 
     <e lm="astronaŭto">
-        <i>astronaŭt</i> 
+        <i>astrona</i><par n="ŭ"/><i>t</i> 
         <par n="nommf__n"/> 
     </e>
 
@@ -5249,177 +5302,167 @@
     </e>
 
     <e lm="aŭ">
-        <i>aŭ</i> 
+        <i>a</i><par n="ŭ"/><i></i> 
         <par n="and__cnjcoo"/> 
     </e>
 
     <e lm="aŭdi">
-        <i>aŭd</i> 
+        <i>a</i><par n="ŭ"/><i>d</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="aŭdaci">
-        <i>aŭdac</i> 
+        <i>a</i><par n="ŭ"/><i>dac</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="aŭdaca">
-        <i>aŭdac</i> 
+        <i>a</i><par n="ŭ"/><i>dac</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭdebla">
-        <i>aŭdebl</i> 
+        <i>a</i><par n="ŭ"/><i>debl</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭdienco">
-        <i>aŭdienco</i> 
+        <i>a</i><par n="ŭ"/><i>dienco</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭditoro">
-        <i>aŭditor</i> 
+        <i>a</i><par n="ŭ"/><i>ditor</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="aŭdo">
-        <i>aŭdo</i> 
+        <i>a</i><par n="ŭ"/><i>do</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭdovida">
-        <i>aŭdovid</i> 
+        <i>a</i><par n="ŭ"/><i>dovid</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭgusto">
-        <i>aŭgusto</i> 
+        <i>a</i><par n="ŭ"/><i>gusto</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭkcii">
-        <i>aŭkci</i> 
+        <i>a</i><par n="ŭ"/><i>kci</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="aŭkcio">
-        <i>aŭkcio</i> 
+        <i>a</i><par n="ŭ"/><i>kcio</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭreolo">
-        <i>aŭreolo</i> 
+        <i>a</i><par n="ŭ"/><i>reolo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭskulti">
-        <i>aŭskult</i> 
+        <i>a</i><par n="ŭ"/><i>skult</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="aŭskultantaro">
-        <i>aŭskultantaro</i> 
+        <i>a</i><par n="ŭ"/><i>skultantaro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭspicio">
-        <i>aŭspicio</i> 
+        <i>a</i><par n="ŭ"/><i>spicio</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭstra">
-        <i>aŭstr</i> 
+        <i>a</i><par n="ŭ"/><i>str</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭstraliano">
-        <i>aŭstralian</i> 
+        <i>a</i><par n="ŭ"/><i>stralian</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="aŭtenta">
-        <i>aŭtent</i> 
+        <i>a</i><par n="ŭ"/><i>tent</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭtentika">
-        <i>aŭtentik</i> 
+        <i>a</i><par n="ŭ"/><i>tentik</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭtismo">
-        <i>aŭtismo</i> 
+        <i>a</i><par n="ŭ"/><i>tismo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭto">
-        <i>aŭto</i> 
+        <i>a</i><par n="ŭ"/><i>to</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtoĉaro">
-        <i>aŭtoĉaro</i> 
+        <i>a</i><par n="ŭ"/><i>to</i><par n="ĉ"/><i>aro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtomata">
-        <i>aŭtomat</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="aŭtomata">
-        <i>aŭtomat</i> 
+        <i>a</i><par n="ŭ"/><i>tomat</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭtomate">
-        <i>aŭtomate</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="aŭtomate">
-        <i>aŭtomate</i> 
+        <i>a</i><par n="ŭ"/><i>tomate</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="aŭtomato">
-        <i>aŭtomato</i> 
+        <i>a</i><par n="ŭ"/><i>tomato</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtonoma">
-        <i>aŭtonom</i> 
+        <i>a</i><par n="ŭ"/><i>tonom</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="aŭtonomeco">
-        <i>aŭtonomeco</i> 
+        <i>a</i><par n="ŭ"/><i>tonomeco</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtoro">
-        <i>aŭtor</i> 
+        <i>a</i><par n="ŭ"/><i>tor</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="aŭtoritato">
-        <i>aŭtoritato</i> 
+        <i>a</i><par n="ŭ"/><i>toritato</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtoveturejo">
-        <i>aŭtoveturejo</i> 
+        <i>a</i><par n="ŭ"/><i>toveturejo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtovojo">
-        <i>aŭtovojo</i> 
+        <i>a</i><par n="ŭ"/><i>tovojo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="aŭtuno">
-        <i>aŭtuno</i> 
+        <i>a</i><par n="ŭ"/><i>tuno</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -5569,22 +5612,17 @@
     </e>
 
     <e lm="baldaŭ">
-        <i>baldaŭ</i> 
+        <i>balda</i><par n="ŭ"/><i></i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="baldaŭ">
-        <i>baldaŭ</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="baldaŭ">
-        <i>baldaŭo</i> 
+        <i>balda</i><par n="ŭ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="balenaĵo">
-        <i>balenaĵo</i> 
+        <i>balena</i><par n="ĵ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -5734,7 +5772,7 @@
     </e>
 
     <e lm="barbfiŝo">
-        <i>barbfiŝo</i> 
+        <i>barbfi</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -6579,22 +6617,17 @@
     </e>
 
     <e lm="buŝa">
-        <i>buŝ</i> 
-        <par n="adj__adj"/> 
-    </e>
-
-    <e lm="buŝa">
-        <i>buŝ</i> 
+        <i>bu</i><par n="ŝ"/><i></i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="buŝo">
-        <i>buŝo</i> 
+        <i>bu</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="buŝtuko">
-        <i>buŝtuko</i> 
+        <i>bu</i><par n="ŝ"/><i>tuko</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -7715,7 +7748,7 @@
     </e>
 
     <e lm="demarŝo">
-        <i>demarŝo</i> 
+        <i>demar</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -7835,7 +7868,7 @@
     </e>
 
     <e lm="depeŝo">
-        <i>depeŝo</i> 
+        <i>depe</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -8815,7 +8848,7 @@
     </e>
 
     <e lm="duŝo">
-        <i>duŝo</i> 
+        <i>du</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -9690,7 +9723,7 @@
     </e>
 
     <e lm="elŝalti">
-        <i>elŝalt</i> 
+        <i>el</i><par n="ŝ"/><i>alt</i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -10765,12 +10798,12 @@
     </e>
 
     <e lm="faŝismo">
-        <i>faŝismo</i> 
+        <i>fa</i><par n="ŝ"/><i>ismo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="faŝisto">
-        <i>faŝist</i> 
+        <i>fa</i><par n="ŝ"/><i>ist</i> 
         <par n="nommf__n"/> 
     </e>
 
@@ -11245,17 +11278,17 @@
     </e>
 
     <e lm="fiŝi">
-        <i>fiŝ</i> 
+        <i>fi</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="fiŝhoko">
-        <i>fiŝhoko</i> 
+        <i>fi</i><par n="ŝ"/><i>hoko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="fiŝo">
-        <i>fiŝo</i> 
+        <i>fi</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -11590,7 +11623,7 @@
     </e>
 
     <e lm="forpuŝi">
-        <i>forpuŝ</i> 
+        <i>forpu</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -11835,7 +11868,7 @@
     </e>
 
     <e lm="freŝa">
-        <i>freŝ</i> 
+        <i>fre</i><par n="ŝ"/><i></i> 
         <par n="adj__adj"/> 
     </e>
 
@@ -14465,12 +14498,12 @@
     </e>
 
     <e lm="interŝanĝi">
-        <i>interŝanĝ</i> 
+        <i>inter</i><par n="ŝ"/><i>anĝ</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="interŝanĝo">
-        <i>interŝanĝo</i> 
+        <i>inter</i><par n="ŝ"/><i>anĝo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -15506,37 +15539,37 @@
     </e>
 
     <e lm="kaŝi">
-        <i>kaŝ</i> 
+        <i>ka</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="kaŝejo">
-        <i>kaŝejo</i> 
+        <i>ka</i><par n="ŝ"/><i>ejo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="kaŝita">
-        <i>kaŝit</i> 
+        <i>ka</i><par n="ŝ"/><i>it</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="kaŝpasaĝero">
-        <i>kaŝpasaĝero</i> 
+        <i>ka</i><par n="ŝ"/><i>pasaĝero</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="kaŝtanarbo">
-        <i>kaŝtanarbo</i> 
+        <i>ka</i><par n="ŝ"/><i>tanarbo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="kaŝtanarbo">
-        <i>kaŝtanarbo</i> 
+        <i>ka</i><par n="ŝ"/><i>tanarbo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="kaŝtanujo">
-        <i>kaŝtanujo</i> 
+        <i>ka</i><par n="ŝ"/><i>tanujo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -17600,7 +17633,7 @@
     </e>
 
     <e lm="koŝmaro">
-        <i>koŝmaro</i> 
+        <i>ko</i><par n="ŝ"/><i>maro</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -18215,7 +18248,7 @@
     </e>
 
     <e lm="kuŝejo">
-        <i>kuŝejo</i> 
+        <i>ku</i><par n="ŝ"/><i>ejo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -19036,7 +19069,7 @@
     </e>
 
     <e lm="limŝtono">
-        <i>limŝtono</i> 
+        <i>lim</i><par n="ŝ"/><i>tono</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -19226,12 +19259,12 @@
     </e>
 
     <e lm="loŝantaro">
-        <i>loŝantaro</i> 
+        <i>lo</i><par n="ŝ"/><i>antaro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="loŝantaro">
-        <i>loŝantaro</i> 
+        <i>lo</i><par n="ŝ"/><i>antaro</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -19881,7 +19914,7 @@
     </e>
 
     <e lm="malkaŝi">
-        <i>malkaŝ</i> 
+        <i>malka</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -20301,7 +20334,7 @@
     </e>
 
     <e lm="malŝpari">
-        <i>malŝpar</i> 
+        <i>mal</i><par n="ŝ"/><i>par</i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -20611,7 +20644,7 @@
     </e>
 
     <e lm="marŝi">
-        <i>marŝ</i> 
+        <i>mar</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -20696,12 +20729,12 @@
     </e>
 
     <e lm="maŝinaro">
-        <i>maŝinaro</i> 
+        <i>ma</i><par n="ŝ"/><i>inaro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="maŝino">
-        <i>maŝino</i> 
+        <i>ma</i><par n="ŝ"/><i>ino</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -21926,7 +21959,7 @@
     </e>
 
     <e lm="muŝo">
-        <i>muŝo</i> 
+        <i>mu</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -24169,17 +24202,17 @@
     </e>
 
     <e lm="paŝo">
-        <i>paŝo</i> 
+        <i>pa</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="paŝti">
-        <i>paŝt</i> 
+        <i>pa</i><par n="ŝ"/><i>t</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="paŝtisto">
-        <i>paŝtist</i> 
+        <i>pa</i><par n="ŝ"/><i>tist</i> 
         <par n="nommf__n"/> 
     </e>
 
@@ -25462,7 +25495,7 @@
     </e>
 
     <e lm="portebla afiŝo">
-        <i>portebla afiŝo</i> 
+        <i>portebla afi</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -25602,22 +25635,22 @@
     </e>
 
     <e lm="poŝlampo">
-        <i>poŝlampo</i> 
+        <i>po</i><par n="ŝ"/><i>lampo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="poŝo">
-        <i>poŝo</i> 
+        <i>po</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="poŝto">
-        <i>poŝto</i> 
+        <i>po</i><par n="ŝ"/><i>to</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="poŝtranĉilo">
-        <i>poŝtranĉilo</i> 
+        <i>po</i><par n="ŝ"/><i>tran</i><par n="ĉ"/><i>ilo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -25637,12 +25670,7 @@
     </e>
 
     <e lm="poŭpo">
-        <i>poŭpo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="poŭpo">
-        <i>poŭpo</i> 
+        <i>po</i><par n="ŭ"/><i>po</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -26787,7 +26815,7 @@
     </e>
 
     <e lm="puŝo">
-        <i>puŝo</i> 
+        <i>pu</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -27677,7 +27705,7 @@
     </e>
 
     <e lm="retuŝo">
-        <i>retuŝo</i> 
+        <i>retu</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -29062,7 +29090,7 @@
     </e>
 
     <e lm="senkaŝe">
-        <i>senkaŝe</i> 
+        <i>senka</i><par n="ŝ"/><i>e</i> 
         <par n="maybe__adv"/> 
     </e>
 
@@ -29222,7 +29250,7 @@
     </e>
 
     <e lm="senŝeligi">
-        <i>senŝelig</i> 
+        <i>sen</i><par n="ŝ"/><i>elig</i> 
         <par n="verb__vb"/> 
     </e>
 
@@ -31150,377 +31178,422 @@
     </e>
 
     <e lm="ŝablono">
-        <i>ŝablono</i> 
+        <par n="ŝ"/>
+        <i>ablono</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝafido">
-        <i>ŝafido</i> 
+        <par n="ŝ"/>
+        <i>afido</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝafino">
-        <i>ŝafino</i> 
+        <par n="ŝ"/>
+        <i>afino</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝajni">
-        <i>ŝajn</i> 
+        <par n="ŝ"/>
+        <i>ajn</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝajne">
-        <i>ŝajne</i> 
+        <par n="ŝ"/>
+        <i>ajne</i> 
         <par n="after__cnjadv"/> 
     </e>
 
     <e lm="ŝajne">
-        <i>ŝajne</i> 
+        <par n="ŝ"/>
+        <i>ajne</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ŝalti">
-        <i>ŝalt</i> 
+        <par n="ŝ"/>
+        <i>alt</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝaltilo">
-        <i>ŝaltilo</i> 
+        <par n="ŝ"/>
+        <i>altilo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝanceliĝema">
-        <i>ŝanceliĝem</i> 
+        <par n="ŝ"/>
+        <i>anceliĝem</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ŝanco">
-        <i>ŝanco</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="ŝanco">
-        <i>ŝanco</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="ŝanco">
-        <i>ŝanco</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="ŝanco">
-        <i>ŝanco</i> 
+        <par n="ŝ"/>
+        <i>anco</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝanĝi">
-        <i>ŝanĝ</i> 
+        <par n="ŝ"/>
+        <i>anĝ</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝanĝo">
-        <i>ŝanĝo</i> 
+        <par n="ŝ"/>
+        <i>anĝo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝarko">
-        <i>ŝarko</i> 
+        <par n="ŝ"/>
+        <i>arko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝati">
-        <i>ŝat</i> 
+        <par n="ŝ"/>
+        <i>at</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝatanto">
-        <i>ŝatant</i> 
+        <par n="ŝ"/>
+        <i>atant</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝaŭmo">
-        <i>ŝaŭmo</i> 
+        <par n="ŝ"/>
+        <i>aŭmo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝejko">
-        <i>ŝejko</i> 
+        <par n="ŝ"/>
+        <i>ejko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝelo">
-        <i>ŝelo</i> 
+        <par n="ŝ"/>
+        <i>elo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝerci">
-        <i>ŝerc</i> 
+        <par n="ŝ"/>
+        <i>erc</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝerco">
-        <i>ŝerco</i> 
+        <par n="ŝ"/>
+        <i>erco</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝia">
-        <i>ŝia</i> 
+        <par n="ŝ"/>
+        <i>ia</i> 
         <par n="mia__det"/> 
     </e>
 
     <e lm="ŝildo">
-        <i>ŝildo</i> 
+        <par n="ŝ"/>
+        <i>ildo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝinko">
-        <i>ŝinko</i> 
+        <par n="ŝ"/>
+        <i>inko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝipa">
-        <i>ŝip</i> 
+        <par n="ŝ"/>
+        <i>ip</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ŝipano">
-        <i>ŝipan</i> 
+        <par n="ŝ"/>
+        <i>ipan</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝipanaro">
-        <i>ŝipanaro</i> 
+        <par n="ŝ"/>
+        <i>ipanaro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝipanaro">
-        <i>ŝipanaro</i> 
+        <par n="ŝ"/>
+        <i>ipanaro</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝipkonstruejo">
-        <i>ŝipkonstruejo</i> 
+        <par n="ŝ"/>
+        <i>ipkonstruejo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝipo">
-        <i>ŝipo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="ŝipo">
-        <i>ŝipo</i> 
+        <par n="ŝ"/>
+        <i>ipo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝiprompiĝo">
-        <i>ŝiprompiĝo</i> 
+        <par n="ŝ"/>
+        <i>iprompi</i><par n="ĝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝiri">
-        <i>ŝir</i> 
+        <par n="ŝ"/>
+        <i>ir</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝirmi">
-        <i>ŝirm</i> 
+        <par n="ŝ"/>
+        <i>irm</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝlosilo">
-        <i>ŝlosilo</i> 
+        <par n="ŝ"/>
+        <i>losilo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝminko">
-        <i>ŝminko</i> 
+        <par n="ŝ"/>
+        <i>minko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝmiri">
-        <i>ŝmir</i> 
+        <par n="ŝ"/>
+        <i>mir</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝoforo">
-        <i>ŝofor</i> 
+        <par n="ŝ"/>
+        <i>ofor</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝoforo">
-        <i>ŝofor</i> 
+        <par n="ŝ"/>
+        <i>ofor</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝoko">
-        <i>ŝoko</i> 
+        <par n="ŝ"/>
+        <i>oko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝoseo">
-        <i>ŝoseo</i> 
+        <par n="ŝ"/>
+        <i>oseo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝoto">
-        <i>ŝoto</i> 
+        <par n="ŝ"/>
+        <i>oto</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝovi">
-        <i>ŝov</i> 
+        <par n="ŝ"/>
+        <i>ov</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝpalo">
-        <i>ŝpalo</i> 
+        <par n="ŝ"/>
+        <i>palo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝpari">
-        <i>ŝpar</i> 
+        <par n="ŝ"/>
+        <i>par</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝparado">
-        <i>ŝparado</i> 
+        <par n="ŝ"/>
+        <i>parado</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝparema">
-        <i>ŝparem</i> 
+        <par n="ŝ"/>
+        <i>parem</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ŝpruci">
-        <i>ŝpruc</i> 
+        <par n="ŝ"/>
+        <i>pruc</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝranko">
-        <i>ŝranko</i> 
+        <par n="ŝ"/>
+        <i>ranko</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝraŭbingo">
-        <i>ŝraŭbingo</i> 
+        <par n="ŝ"/>
+        <i>ra</i><par n="ŭ"/><i>bingo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝraŭbkanelo">
-        <i>ŝraŭbkanelo</i> 
+        <par n="ŝ"/>
+        <i>ra</i><par n="ŭ"/><i>bkanelo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝraŭbo">
-        <i>ŝraŭbo</i> 
+        <par n="ŝ"/>
+        <i>ra</i><par n="ŭ"/><i>bo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtalo">
-        <i>ŝtalo</i> 
+        <par n="ŝ"/>
+        <i>talo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtata">
-        <i>ŝtat</i> 
+        <par n="ŝ"/>
+        <i>tat</i> 
         <par n="adj__adj"/> 
     </e>
 
     <e lm="ŝtatisto">
-        <i>ŝtatist</i> 
+        <par n="ŝ"/>
+        <i>tatist</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝteli">
-        <i>ŝtel</i> 
+        <par n="ŝ"/>
+        <i>tel</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝtele">
-        <i>ŝtele</i> 
+        <par n="ŝ"/>
+        <i>tele</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="ŝtelisto">
-        <i>ŝtelist</i> 
+        <par n="ŝ"/>
+        <i>telist</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝtelo">
-        <i>ŝtelo</i> 
+        <par n="ŝ"/>
+        <i>telo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtofo">
-        <i>ŝtofo</i> 
+        <par n="ŝ"/>
+        <i>tofo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtonmino">
-        <i>ŝtonmino</i> 
+        <par n="ŝ"/>
+        <i>tonmino</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtono">
-        <i>ŝtono</i> 
+        <par n="ŝ"/>
+        <i>tono</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtormo">
-        <i>ŝtormo</i> 
+        <par n="ŝ"/>
+        <i>tormo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtrumpeto">
-        <i>ŝtrumpeto</i> 
+        <par n="ŝ"/>
+        <i>trumpeto</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtuparo">
-        <i>ŝtuparo</i> 
+        <par n="ŝ"/>
+        <i>tuparo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝtupo">
-        <i>ŝtupo</i> 
+        <par n="ŝ"/>
+        <i>tupo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝuisto">
-        <i>ŝuist</i> 
+        <par n="ŝ"/>
+        <i>uist</i> 
         <par n="nommf__n"/> 
     </e>
 
     <e lm="ŝuldo">
-        <i>ŝuldo</i> 
+        <par n="ŝ"/>
+        <i>uldo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝuo">
-        <i>ŝuo</i> 
+        <par n="ŝ"/>
+        <i>uo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝvelaĵo">
-        <i>ŝvelaĵo</i> 
+        <par n="ŝ"/>
+        <i>velaĵo</i> 
         <par n="nom__n"/> 
     </e>
 
     <e lm="ŝviti">
-        <i>ŝvit</i> 
+        <par n="ŝ"/>
+        <i>vit</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="ŝvito">
-        <i>ŝvito</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="ŝvito">
-        <i>ŝvito</i> 
+        <par n="ŝ"/>
+        <i>vito</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -31675,12 +31748,7 @@
     </e>
 
     <e lm="tapiŝo">
-        <i>tapiŝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="tapiŝo">
-        <i>tapiŝo</i> 
+        <i>tapi</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -32341,7 +32409,7 @@
     </e>
 
     <e lm="tombo-ŝtono">
-        <i>tombo-ŝtono</i> 
+        <i>tombo-</i><par n="ŝ"/><i>tono</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -33066,37 +33134,17 @@
     </e>
 
     <e lm="tuŝi">
-        <i>tuŝ</i> 
+        <i>tu</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="tuŝeti">
-        <i>tuŝet</i> 
+        <i>tu</i><par n="ŝ"/><i>et</i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="tuŝo">
-        <i>tuŝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="tuŝo">
-        <i>tuŝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="tuŝo">
-        <i>tuŝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="tuŝo">
-        <i>tuŝo</i> 
-        <par n="nom__n"/> 
-    </e>
-
-    <e lm="tuŝo">
-        <i>tuŝo</i> 
+        <i>tu</i><par n="ŝ"/><i>o</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -33105,39 +33153,9 @@
         <par n="adj__adj"/> 
     </e>
 
-    <e lm="tuta">
-        <i>tut</i> 
-        <par n="adj__adj"/> 
-    </e>
-
     <e lm="tute">
         <i>tute</i> 
         <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="tute">
-        <i>tute</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="tute">
-        <i>tute</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="tute">
-        <i>tute</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="tute">
-        <i>tute</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="tute ne">
-        <i>tute<b/>ne</i> 
-        <par n="very__preadv"/> 
     </e>
 
     <e lm="tute ne">
@@ -33205,44 +33223,9 @@
         <par n="maybe__adv"/> 
     </e>
 
-    <e lm="unue">
-        <i>unue</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unue">
-        <i>unue</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unue">
-        <i>unue</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unue">
-        <i>unue</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unue">
-        <i>unue</i> 
-        <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unuflanka">
-        <i>unuflank</i> 
-        <par n="adj__adj"/> 
-    </e>
-
     <e lm="unuflanke">
         <i>unuflanke</i> 
         <par n="maybe__adv"/> 
-    </e>
-
-    <e lm="unuforma">
-        <i>unuform</i> 
-        <par n="adj__adj"/> 
     </e>
 
     <e lm="unuforma">
@@ -33258,11 +33241,6 @@
     <e lm="unuigi">
         <i>unuig</i> 
         <par n="verb__vb"/> 
-    </e>
-
-    <e lm="unuopa">
-        <i>unuop</i> 
-        <par n="adj__adj"/> 
     </e>
 
     <e lm="unuopa">
@@ -33601,7 +33579,7 @@
     </e>
 
     <e lm="velŝipo">
-        <i>velŝipo</i> 
+        <i>vel</i><par n="ŝ"/><i>ipo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -33691,7 +33669,7 @@
     </e>
 
     <e lm="ventŝirmilo">
-        <i>ventŝirmilo</i> 
+        <i>vent</i><par n="ŝ"/><i>irmilo</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -33786,22 +33764,22 @@
     </e>
 
     <e lm="verŝi">
-        <i>verŝ</i> 
+        <i>ver</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="verŝajne">
-        <i>verŝajne</i> 
+        <i>ver</i><par n="ŝ"/><i>ajne</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="verŝajne">
-        <i>verŝajne</i> 
+        <i>ver</i><par n="ŝ"/><i>ajne</i> 
         <par n="maybe__adv"/> 
     </e>
 
     <e lm="verŝajne">
-        <i>verŝajne</i> 
+        <i>ver</i><par n="ŝ"/><i>ajne</i> 
         <par n="maybe__adv"/> 
     </e>
 
@@ -33866,7 +33844,7 @@
     </e>
 
     <e lm="veŝto">
-        <i>veŝto</i> 
+        <i>ve</i><par n="ŝ"/><i>to</i> 
         <par n="nom__n"/> 
     </e>
 
@@ -34136,12 +34114,12 @@
     </e>
 
     <e lm="viŝi">
-        <i>viŝ</i> 
+        <i>vi</i><par n="ŝ"/><i></i> 
         <par n="verb__vb"/> 
     </e>
 
     <e lm="viŝtuko">
-        <i>viŝtuko</i> 
+        <i>vi</i><par n="ŝ"/><i>tuko</i> 
         <par n="nom__n"/> 
     </e>
 
