@@ -547,7 +547,10 @@
     <!-- Prepositions -->
 
     <e r="LR"><p><l>akorde<b/>kun<s n="pr"/></l><r>in<b/>accordance<b/>with<s n="pr"/></r></p></e>
+
     <e><p><l>al<s n="pr"/></l><r>at<s n="pr"/></r></p></e>
+    <e r="LR"><p><l>en<s n="pr"/></l><r>at<s n="pr"/></r></p></e>
+
     <e r="RL"><p><l>al<s n="pr"/></l><r>into<s n="pr"/></r></p></e>
     <e r="RL"><p><l>al<s n="pr"/></l><r>onto<s n="pr"/></r></p></e>
     <e><p><l>al<s n="pr"/></l><r>to<s n="pr"/></r></p></e>
@@ -564,10 +567,11 @@
     <e r="RL" c="MG: He fell off his chair"><p><l>de<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
     <e r="RL"><p><l>de<s n="pr"/></l><r>since<s n="pr"/></r></p></e>
     <e><p><l>dum<s n="pr"/></l><r>during<s n="pr"/></r></p></e>
-    <e r="RL"><p><l>dum<s n="pr"/></l><r>for<s n="pr"/></r></p></e>
-    <e r="RL"><p><l>dum<s n="pr"/></l><r>over<s n="pr"/></r></p></e>
+
+    <e r="RL"><p><l>por<s n="pr"/></l><r>by<s n="pr"/></r></p></e>
+    <e><p><l>por<s n="pr"/></l><r>for<s n="pr"/></r></p></e>
+
     <e r="RL"><p><l>dum<s n="pr"/></l><r>throughout<s n="pr"/></r></p></e>
-    <e r="RL"><p><l>en<s n="pr"/></l><r>at<s n="pr"/></r></p></e>
     <e><p><l>en<s n="pr"/></l><r>in<s n="pr"/></r></p></e>
     <e><p><l>en<s n="pr"/></l><r>on<s n="pr"/></r></p></e>
     <e><p><l>en<b/>konsento<b/>kun<s n="pr"/></l><r>in<b/>accordance<b/>with<s n="pr"/></r></p></e>
@@ -582,9 +586,11 @@
     <e r="RL" c="MG: 'Such thing as a computer' = 'com un' - arreglar si es pot"><p><l>kiel<s n="pr"/></l><r>as<b/>a<s n="pr"/></r></p></e>
     <e><p><l>kiel<s n="pr"/></l><r>like<s n="pr"/></r></p></e>
     <e r="RL"><p><l>kiel<s n="pr"/></l><r>such<b/>as<s n="pr"/></r></p></e>
+
     <e><p><l>koncerne<b/>al<s n="pr"/></l><r>regarding<s n="pr"/></r></p></e>
-    <e r="LR"><p><l>koncerne<b/>al<s n="pr"/></l><r>as<b/>regards<s n="pr"/></r></p></e>
+    <e r="RL"><p><l>koncerne<b/>al<s n="pr"/></l><r>as<b/>regards<s n="pr"/></r></p></e>
     <e r="RL"><p><l>koncerne<b/>al<s n="pr"/></l><r>as<b/>for<s n="pr"/></r></p></e>
+
     <e><p><l>koncerne<b/>al<s n="pr"/></l><r>concerning<s n="pr"/></r></p></e>
     <e><p><l>konfome<b/>al<s n="pr"/></l><r>in<b/>compliance<b/>with<s n="pr"/></r></p></e>
     <e><p><l>konsiderante<s n="pr"/></l><r>in<b/>view<b/>of<s n="pr"/></r></p></e>
@@ -599,16 +605,13 @@
     <e><p><l>kune<b/>kun<s n="pr"/></l><r>together<b/>with<s n="pr"/></r></p></e>
     <e r="RL"><p><l>laŭ<s n="pr"/></l><r>according<s n="pr"/></r></p></e>
     <e><p><l>laŭ<s n="pr"/></l><r>according<b/>to<s n="pr"/></r></p></e>
-    <e r="LR"><p><l>malgraŭ<s n="pr"/></l><r>in<b/>spite<b/>of<s n="pr"/></r></p></e>
+    <e><p><l>malgraŭ<s n="pr"/></l><r>in<b/>spite<b/>of<s n="pr"/></r></p></e>
     <e><p><l>per<s n="pr"/></l><r>by<b/>means<b/>of<s n="pr"/></r></p></e>
     <e r="RL"><p><l>per<b/>en<s n="pr"/></l><r>within<s n="pr"/></r></p></e>
     <e><p><l>per<b/>en<s n="pr"/></l><r>inside<s n="pr"/></r></p></e>
     <e><p><l>per<b/>multe<b/>da<s n="pr"/></l><r>by<b/>dint<b/>of<s n="pr"/></r></p></e>
     <e r="LR"><p><l>pere<b/>de<s n="pr"/></l><r>by<b/>means<b/>of<s n="pr"/></r></p></e>
-    <e><p><l>por<s n="pr"/></l><r>by<s n="pr"/></r></p></e>
-    <e><p><l>por<s n="pr"/></l><r>through<s n="pr"/></r></p></e>
     <e r="RL"><p><l>por<s n="pr"/></l><r>per<s n="pr"/></r></p></e>
-    <e><p><l>por<s n="pr"/></l><r>for<s n="pr"/></r></p></e>
     <e r="RL"><p><l>por<s n="pr"/></l><r>in<b/>order<b/>to<s n="pr"/></r></p></e>
     <e><p><l>por<s n="pr"/></l><r>so<b/>as<b/>to<s n="pr"/></r></p></e>
     <e r="LR"><p><l>post<s n="pr"/></l><r>behind<s n="pr"/></r></p></e>
@@ -7747,8 +7750,12 @@
     <e r="RL"><p><l>ankaŭ<s n="adv"/></l><r>too<s n="adv"/></r></p></e>
     <e r="RL" c="frases negatives"><p><l>ankaŭ<b/>ne<s n="adv"/></l><r>either<s n="adv"/></r></p></e>
     <e><p><l>ankaŭ<b/>ne<s n="adv"/></l><r>neither<s n="adv"/></r></p></e>
-    <e r="LR" c="frases afirmatives i interrogatives"><p><l>ankoraŭ<s n="adv"/></l><r>still<s n="adv"/></r></p></e>
-    <e r="LR" c="frases negatives"><p><l>ankoraŭ<s n="adv"/></l><r>yet<s n="adv"/></r></p></e>
+
+    <!-- frases negatives -->
+    <e><p><l>ankoraŭ<s n="adv"/></l><r>yet<s n="adv"/></r></p></e>
+    <!-- frases afirmatives i interrogatives -->
+    <e r="LR"><p><l>ankoraŭ<s n="adv"/></l><r>still<s n="adv"/></r></p></e>
+
     <e r="RL"><p><l>antaŭe<s n="adv"/></l><r>formerly<s n="adv"/></r></p></e>
     <e><p><l>antaŭe<s n="adv"/></l><r>previously<s n="adv"/></r></p></e>
     <e><p><l>daŭre<s n="adv"/></l><r>still<s n="adv"/></r></p></e>
@@ -7785,10 +7792,12 @@
     <e><p><l>ĉe<b/>la<b/>fronto<s n="adv"/></l><r>in<b/>command<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĉefe<s n="adv"/></l><r>chiefly<s n="adv"/></r></p></e>
     <e><p><l>ĉefe<s n="adv"/></l><r>mainly<s n="adv"/></r></p></e>
+
     <e r="RL"><p><l>ĉefe<s n="adv"/></l><r>primarily<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĉefe<s n="adv"/></l><r>principally<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĉefe<s n="adv"/></l><r>above<b/>all<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>ĉefe<s n="adv"/></l><r>especially<s n="adv"/></r></p></e>
+    <e><p><l>ĉefe<s n="adv"/></l><r>especially<s n="adv"/></r></p></e>
+
     <e r="LR"><p><l>ĉi<b/>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
     <e c="añadir también 'regardless of' como 'a pesar de'"><p><l>ĉiakoste<s n="adv"/></l><r>regardless<s n="adv"/></r></p></e>
     <e><p><l>ĉiam<s n="adv"/></l><r>always<s n="adv"/></r></p></e>
@@ -7796,7 +7805,7 @@
     <e><p><l>ĉiufoje<b/>pli<s n="adv"/></l><r>increasingly<s n="adv"/></r></p></e>
     <e><p><l>ĉiujara<s n="adv"/></l><r>annually<s n="adv"/></r></p></e>
     <e><p><l>ĉiusemajne<s n="adv"/></l><r>weekly<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>ĉiutage<s n="adv"/></l><r>daily<s n="adv"/></r></p></e>
+    <e><p><l>ĉiutage<s n="adv"/></l><r>daily<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĉiutage<s n="adv"/></l><r>on<b/>a<b/>day-to-day<b/>basis<s n="adv"/></r></p></e>
     <e><p><l>danĝere<s n="adv"/></l><r>dangerously<s n="adv"/></r></p></e>
     <e><p><l>de<b/>tempo<b/>al<b/>tempo<s n="adv"/></l><r>occasionally<s n="adv"/></r></p></e>
@@ -7810,8 +7819,10 @@
     <e r="RL"><p><l>dume<s n="adv"/></l><r>in<b/>the<b/>meanwhile<s n="adv"/></r></p></e>
     <e r="RL"><p><l>dume<s n="adv"/></l><r>meantime<s n="adv"/></r></p></e>
     <e><p><l>eble<s n="adv"/></l><r>possibly<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>eble<s n="adv"/></l><r>perhaps<s n="adv"/></r></p></e>
+
+    <e><p><l>eble<s n="adv"/></l><r>perhaps<s n="adv"/></r></p></e>
     <e r="RL"><p><l>eble<s n="adv"/></l><r>maybe<s n="adv"/></r></p></e>
+
     <e r="LR"><p><l>eĉ<s n="adv"/></l><r>even<s n="adv"/></r></p></e>
     <e c="he can't even walk"><p><l>eĉ<b/>ne<s n="adv"/></l><r>not<b/>even<s n="adv"/></r></p></e>
     <e><p><l>efektive<s n="adv"/></l><r>sure<b/>enough<s n="adv"/></r></p></e>
@@ -7881,14 +7892,19 @@
     <e><p><l>ĝisfunde<s n="adv"/></l><r>in<b/>depth<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĝoje<s n="adv"/></l><r>breezily<s n="adv"/></r></p></e>
     <e><p><l>ĝoje<s n="adv"/></l><r>cheerfully<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>ĝuste<s n="adv"/></l><r>totally<s n="adv"/></r></p></e>
+
+    <e><p><l>ĝuste<s n="adv"/></l><r>totally<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĝuste<s n="adv"/></l><r>correctly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĝuste<s n="adv"/></l><r>just<b/>right<s n="adv"/></r></p></e>
+
     <e><p><l>ĝuste<s n="adv"/></l><r>properly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĝuste<s n="adv"/></l><r>rightly<s n="adv"/></r></p></e>
     <e><p><l>ĝuste<s n="adv"/></l><r>exactly<s n="adv"/></r></p></e>
-    <e r="RL" c="MG: 'This is just what I need -> tb es pot traduir per 'just' la majoria de vegades'"><p><l>ĝuste<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>ĝuste<s n="adv"/></l><r>precisely<s n="adv"/></r></p></e>
+
+    <!-- MG: 'This is just what I need -> tb es pot traduir per 'just' la majoria de vegades' -->
+    <e r="RL"><p><l>ĝuste<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
+    <e><p><l>ĝuste<s n="adv"/></l><r>precisely<s n="adv"/></r></p></e>
+
     <e><p><l>hazarde<s n="adv"/></l><r>accidentally<s n="adv"/></r></p></e>
     <e><p><l>hieraŭ<s n="adv"/></l><r>yesterday<s n="adv"/></r></p></e>
     <e><p><l>hieraŭ<b/>nokte<s n="adv"/></l><r>last<b/>night<s n="adv"/></r></p></e>
@@ -7969,14 +7985,16 @@
     <e r="RL"><p><l>malfacile<s n="adv"/></l><r>scarcely<s n="adv"/></r></p></e>
     <e><p><l>malfermite<s n="adv"/></l><r>openly<s n="adv"/></r></p></e>
     <e><p><l>maljuste<s n="adv"/></l><r>unfairly<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>mallarĝe<s n="adv"/></l><r>tightly<s n="adv"/></r></p></e>
+
+    <e r="RL"><p><l>mallarĝe<s n="adv"/></l><r>tightly<s n="adv"/></r></p></e>
     <e><p><l>mallarĝe<s n="adv"/></l><r>closely<s n="adv"/></r></p></e>
     <e><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>place<s n="adv"/></r></p></e>
     <e r="RL"><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>position<s n="adv"/></r></p></e>
     <e r="RL"><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>turn<s n="adv"/></r></p></e>
     <e r="RL" c="per al superlatiu: the least interesting - el menys interessant, i tb adv normal - what I like least"><p><l>malpli<s n="adv"/></l><r>least<s n="adv"/></r></p></e>
     <e><p><l>malpli<s n="adv"/></l><r>less<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>malrapide<s n="adv"/></l><r>slowly<s n="adv"/></r></p></e>
+
+    <e><p><l>malrapide<s n="adv"/></l><r>slowly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>mane<s n="adv"/></l><r>at<b/>hand<s n="adv"/></r></p></e>
     <e r="RL"><p><l>mane<s n="adv"/></l><r>by<b/>hand<s n="adv"/></r></p></e>
     <e r="RL"><p><l>mane<s n="adv"/></l><r>close<b/>at<b/>hand<s n="adv"/></r></p></e>
@@ -8007,8 +8025,10 @@
     <e><p><l>neklarigeble<s n="adv"/></l><r>inexplicably<s n="adv"/></r></p></e>
     <e><p><l>nekredeble<s n="adv"/></l><r>incredibly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nekredeble<s n="adv"/></l><r>unbelievably<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>neniam<s n="adv"/></l><r>never<s n="adv"/></r></p></e>
-    <e r="RL" c="preguntes, condicional"><p><l>neniam<s n="adv"/></l><r>ever<s n="adv"/></r></p></e>
+
+    <e><p><l>neniam<s n="adv"/></l><r>never<s n="adv"/></r></p></e>
+    <!-- preguntes, condicional -->
+    <e r="RL"><p><l>neniam<s n="adv"/></l><r>ever<s n="adv"/></r></p></e>
     <e><p><l>nepre<s n="adv"/></l><r>necessarily<s n="adv"/></r></p></e>
     <e><p><l>nerekte<s n="adv"/></l><r>indirectly<s n="adv"/></r></p></e>
     <e><p><l>nesufiĉe<s n="adv"/></l><r>insufficiently<s n="adv"/></r></p></e>
@@ -8037,7 +8057,9 @@
     <e><p><l>perfekte<s n="adv"/></l><r>perfectly<s n="adv"/></r></p></e>
     <e c="check"><p><l>perforte<s n="adv"/></l><r>by<b/>force<s n="adv"/></r></p></e>
     <e><p><l>persone<s n="adv"/></l><r>personally<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>plene<s n="adv"/></l><r>fully<s n="adv"/></r></p></e>
+
+    <e><p><l>plene<s n="adv"/></l><r>fully<s n="adv"/></r></p></e>
+
     <e r="RL"><p><l>pli<s n="adv"/></l><r>any<b/>more<s n="adv"/></r></p></e>
     <e r="RL"><p><l>pli<s n="adv"/></l><r>best<s n="adv"/></r></p></e>
     <e r="RL"><p><l>pli<s n="adv"/></l><r>else<s n="adv"/></r></p></e>
@@ -8060,7 +8082,7 @@
     <e><p><l>probable<s n="adv"/></l><r>probably<s n="adv"/></r></p></e>
     <e><p><l>procento<s n="adv"/></l><r>percent<s n="adv"/></r></p></e>
     <e><p><l>profesie<s n="adv"/></l><r>professionally<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>profunde<s n="adv"/></l><r>deeply<s n="adv"/></r></p></e>
+    <e><p><l>profunde<s n="adv"/></l><r>deeply<s n="adv"/></r></p></e>
     <e r="RL"><p><l>profunde<s n="adv"/></l><r>acutely<s n="adv"/></r></p></e>
     <e r="RL"><p><l>profunde<s n="adv"/></l><r>profoundly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>proksimume<s n="adv"/></l><r>about<s n="adv"/></r></p></e>
@@ -8134,7 +8156,9 @@
     <e><p><l>socie<s n="adv"/></l><r>socially<s n="adv"/></r></p></e>
     <e r="LR"><p><l>speciale<s n="adv"/></l><r>especially<s n="adv"/></r></p></e>
     <e r="RL"><p><l>speciale<s n="adv"/></l><r>specially<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>specife<s n="adv"/></l><r>specifically<s n="adv"/></r></p></e>
+
+    <e><p><l>specife<s n="adv"/></l><r>specifically<s n="adv"/></r></p></e>
+
     <e><p><l>strikte<s n="adv"/></l><r>strictly<s n="adv"/></r></p></e>
     <e><p><l>sube<s n="adv"/></l><r>below<s n="adv"/></r></p></e>
     <e><p><l>sube<s n="adv"/></l><r>down<s n="adv"/></r></p></e>
@@ -8187,7 +8211,8 @@
     <e><p><l>tre<s n="adv"/></l><r>highly<s n="adv"/></r></p></e>
     <e c="MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en"><p><l>tro<b/>da<s n="adv"/></l><r>too<b/>much<s n="adv"/></r></p></e>
     <e><p><l>troe<s n="adv"/></l><r>excessively<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>tuj<s n="adv"/></l><r>immediately<s n="adv"/></r></p></e>
+
+    <e><p><l>tuj<s n="adv"/></l><r>immediately<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>forthwith<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>in<b/>a<b/>little<b/>while<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>in<b/>short<b/>order<s n="adv"/></r></p></e>
@@ -8197,19 +8222,22 @@
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>there<b/>and<b/>then<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>at<b/>once<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tuj<s n="adv"/></l><r>right<b/>off<s n="adv"/></r></p></e>
+
     <e r="RL"><p><l>tute<s n="adv"/></l><r>all<b/>the<b/>way<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>completely<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>tute<s n="adv"/></l><r>entirely<s n="adv"/></r></p></e>
+    <e><p><l>tute<s n="adv"/></l><r>entirely<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>right<b/>through<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>straight<b/>through<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>to<b/>capacity<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>to<b/>the<b/>ground<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tute<s n="adv"/></l><r>wholly<s n="adv"/></r></p></e>
+
     <e c="check"><p><l>tute<b/>ne<s n="adv"/></l><r>absolutely<b/>not<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>unue<s n="adv"/></l><r>firstly<s n="adv"/></r></p></e>
-    <e><p><l>unue<s n="adv"/></l><r>first<s n="adv"/></r></p></e>
+
+    <e><p><l>unue<s n="adv"/></l><r>firstly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>unuflanke<s n="adv"/></l><r>on<b/>the<b/>one<b/>hand<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>urĝe<s n="adv"/></l><r>urgently<s n="adv"/></r></p></e>
+
+    <e><p><l>urĝe<s n="adv"/></l><r>urgently<s n="adv"/></r></p></e>
     <e><p><l>vaste<s n="adv"/></l><r>widely<s n="adv"/></r></p></e>
     <e><p><l>vere<s n="adv"/></l><r>really<s n="adv"/></r></p></e>
     <e><p><l>verŝajne<s n="adv"/></l><r>surely<s n="adv"/></r></p></e>

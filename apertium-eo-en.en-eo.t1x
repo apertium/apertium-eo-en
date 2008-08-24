@@ -64,7 +64,12 @@
   <def-attr n="tns">
      <attr-item tags="pri"/>
      <attr-item tags="imp"/>
-     <attr-item tags="aor"/>
+     <attr-item tags="pp"/>
+     <attr-item tags="pres"/>
+     <attr-item tags="inf"/>
+     <attr-item tags="ger"/>
+     <attr-item tags="subs"/>
+     <attr-item tags="pprs"/>
      <attr-item tags="fti"/>
      <attr-item tags="past"/>
   </def-attr>
@@ -224,8 +229,6 @@
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="tns"/>
-              <clip pos="1" side="tl" part="prs"/>
-              <clip pos="1" side="tl" part="nbr"/>
             </lu>
           </chunk>
         </out>
