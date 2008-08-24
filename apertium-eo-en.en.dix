@@ -13007,6 +13007,33 @@
         <par n="accept__vblex"/> 
     </e>
 
+    <e lm="add to">
+        <i>add</i> 
+        <par n="accept__vblex"/> 
+        <p>
+          <l><b/>to</l>
+          <r><g><b/>to</g></r>
+        </p>
+    </e>
+
+    <e lm="add together">
+        <i>add</i> 
+        <par n="accept__vblex"/> 
+        <p>
+          <l><b/>together</l>
+          <r><g><b/>together</g></r>
+        </p>
+    </e>
+
+    <e lm="add up">
+        <i>add</i> 
+        <par n="accept__vblex"/> 
+        <p>
+          <l><b/>up</l>
+          <r><g><b/>up</g></r>
+        </p>
+    </e>
+
     <e lm="addict">
         <i>addict</i> 
         <par n="house__n"/> 
@@ -15585,6 +15612,24 @@
     <e lm="become">
         <i>bec</i> 
         <par n="bec/ome__vblex"/> 
+    </e>
+
+    <e lm="become acquainted">
+        <i>bec</i> 
+        <par n="bec/ome__vblex"/> 
+        <p>
+          <l><b/>acquainted</l>
+          <r><g><b/>acquainted</g></r>
+        </p> 
+    </e>
+
+    <e lm="become acquainted with">
+        <i>bec</i> 
+        <par n="bec/ome__vblex"/>
+        <p>
+          <l><b/>acquainted<b/>with</l>
+          <r><g><b/>acquainted<b/>with</g></r>
+        </p> 
     </e>
 
     <e lm="because">
