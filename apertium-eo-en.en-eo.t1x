@@ -79,6 +79,7 @@
      <attr-item tags="f"/>
      <attr-item tags="nt"/>
      <attr-item tags="mf"/>
+     <attr-item tags="GD"/>
   </def-attr>
 
   <def-attr n="prs">
@@ -100,10 +101,67 @@
 
 </section-def-attrs>
 
+
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="genere"/>
 </section-def-vars>
+
+<section-def-macros>
+    <def-macro n="set_gender1" npar="1">
+      <let>
+        <var n="genere"/>
+        <lit v=""/>
+      </let>
+        <choose>
+          <when>
+            <test>
+                <equal caseless="yes">
+                  <clip pos="1" side="tl" part="gen"/>
+                  <lit-tag v="m"/>
+                </equal>
+            </test>
+            <let>
+              <var n="genere"/>
+              <lit-tag v="m"/>
+            </let>
+          </when>
+
+          <when>
+            <test>
+                <equal caseless="yes">
+                  <clip pos="1" side="tl" part="gen"/>
+                  <lit-tag v="f"/>
+                </equal>
+            </test>
+            <let>
+              <var n="genere"/>
+              <lit-tag v="f"/>
+            </let>
+          </when>
+
+          <when> <!-- do something more clever here -->
+            <test>
+                <equal caseless="yes">
+                  <clip pos="1" side="tl" part="gen"/>
+                  <lit-tag v="GD"/>
+                </equal>
+            </test>
+            <let>
+              <var n="genere"/>
+              <lit-tag v="m"/>
+            </let>
+          </when>
+
+          <otherwise>
+            <let>
+              <var n="genere"/>
+              <lit v=""/>
+            </let>
+          </otherwise>
+        </choose>
+      </def-macro>
+</section-def-macros>
 
 <section-rules>
 <!-- Sintagmas nominales -->
@@ -113,16 +171,21 @@
        <pattern-item n="nom"/>
      </pattern>
      <action>
+       <call-macro n="set_gender1">
+         <with-param pos="1"/>
+       </call-macro>
        <out>
          <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
+	     <tag><var n="genere"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lem"/>
              <clip pos="1" side="tl" part="a_nom"/>
-             <clip pos="1" side="tl" part="nbr" link-to="2"/>
+             <lit-tag v="2"/>
+             <clip pos="1" side="tl" part="nbr" link-to="3"/>
 	     <lit-tag v="nom"/>
            </lu>
          </chunk>
@@ -158,23 +221,29 @@
        <pattern-item n="nom"/>
      </pattern>
      <action>
+       <call-macro n="set_gender1">
+         <with-param pos="1"/>
+       </call-macro>
        <out>
          <chunk name="adj_nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
+	     <tag><var n="genere"/></tag>
              <tag><clip pos="2" side="tl" part="nbr"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lem"/>
              <clip pos="1" side="tl" part="a_adj"/>
-             <clip pos="2" side="tl" part="nbr" link-to="2"/>
+             <lit-tag v="2"/>
+             <clip pos="2" side="tl" part="nbr" link-to="3"/>
 	     <lit-tag v="nom"/>
            </lu>
 	   <b/>
            <lu>
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_nom"/>
-             <clip pos="2" side="tl" part="nbr" link-to="2"/>
+             <lit-tag v="2"/>
+             <clip pos="2" side="tl" part="nbr" link-to="3"/>
 	     <lit-tag v="nom"/>
            </lu>
          </chunk>

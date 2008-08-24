@@ -12535,7 +12535,10 @@
     </e>
 
     <e lm="Yugoslavian">
-        <i>Yugoslavian</i> 
+	<p>
+          <l>Yugoslavian</l>
+	  <r>Yugoslav</r>
+	</p>
         <par n="house__n"/> 
     </e>
 
@@ -13134,15 +13137,12 @@
         <par n="liv/e__vblex"/> 
     </e>
 
-    <e lm="advance">
-        <i>advanc</i> 
-        <par n="liv/e__vblex"/> 
-    </e>
-
+<!--
     <e lm="advance">
         <i>advance</i> 
         <par n="house__n"/> 
     </e>
+-->
 
     <e lm="advantage">
         <i>advantage</i> 
@@ -17924,11 +17924,12 @@
         <par n="house__n"/> 
     </e>
 
+<!--
     <e lm="citizen">
         <i>citizen</i> 
         <par n="house__n"/> 
     </e>
-
+-->
     <e lm="city council">
         <i>city<b/>council</i> 
         <par n="house__n"/> 
@@ -29912,7 +29913,10 @@
     </e>
 
     <e lm="labor">
-        <i>labor</i> 
+	<p>
+	  <l>labor</l>
+	  <r>labour</r>
+	</p>
         <par n="house__n"/> 
     </e>
 
@@ -31058,12 +31062,12 @@
         <i>lust</i> 
         <par n="house__n"/> 
     </e>
-
+<!--
     <e lm="luxury">
         <i>luxur</i> 
         <par n="bab/y__n"/> 
     </e>
-
+-->
     <e lm="lyre">
         <i>lyre</i> 
         <par n="house__n"/> 
@@ -37479,10 +37483,12 @@
         <par n="liv/e__vblex"/> 
     </e>
 
+<!--
     <e lm="pursuit">
         <i>pursuit</i> 
         <par n="house__n"/> 
     </e>
+-->
 
     <e lm="push">
         <i>push</i> 
@@ -39791,11 +39797,12 @@
         <i>saving</i> 
         <par n="house__n"/> 
     </e>
-
+<!--
     <e lm="saw">
         <i>saw</i> 
         <par n="house__n"/> 
     </e>
+    -->
 
     <e lm="saw">
         <i>saw</i> 
