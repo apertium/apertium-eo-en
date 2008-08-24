@@ -9950,6 +9950,11 @@
         <par n="komence__adv"/> 
     </e>
 
+    <e lm="en ŝipo">
+        <i>en<b/></i><par n="ŝ"/><i>ipo</i> 
+        <par n="komence__adv"/> 
+    </e>
+
     <e lm="en konsento kun">
         <i>en<b/>konsento<b/>kun</i> 
         <par n="at__pr"/> 
@@ -34295,5 +34300,32 @@
     <e lm="Stevenson"><i>Stevenson</i><par n="Stevenson__np"/></e>
     <e lm="Jeckyll"><i>Jeckyll</i><par n="Stevenson__np"/></e>
     <e lm="Hyde"><i>Hyde</i><par n="Stevenson__np"/></e>
+
+    <!-- Multiwords -->
+    <!-- konto kuranta -->
+    <e>
+      <p>
+        <l>konto<b/>kuranta</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>kontoj<b/>kurantaj</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>konton<b/>kurantan</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>kontojn<b/>kurantajn</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
   </section>
 </dictionary>
