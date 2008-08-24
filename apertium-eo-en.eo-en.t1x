@@ -9,11 +9,11 @@
   <def-cat n="vblex">
      <cat-item tags="vblex.*"/>
   </def-cat>
-  <def-cat n="prn">
-     <cat-item tags="prn.*"/>
-  </def-cat>
   <def-cat n="adj">
      <cat-item tags="adj.*"/>
+  </def-cat>
+  <def-cat n="prn">
+     <cat-item tags="prn.*"/>
   </def-cat>
   <def-cat n="pr">
      <cat-item tags="pr"/>
