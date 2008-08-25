@@ -166,7 +166,7 @@
     <e r="RL" c="frases afirmatives"><p><l>iu<s n="prn"/></l><r>some<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="Per ara tot serà sg en català, però mirar després frases del tipus: 'what are your fauvorite dishes'-quins són... Però: 'What are fractals'- què son..."><p><l>kio<s n="prn"/></l><r>what<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiom<s n="prn"/></l><r>how<b/>many<s n="prn"/><s n="itg"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e c="He fet que sigui directament masculí en castellà, pq quasi que no es pot determinar"><p><l>kiom<s n="prn"/></l><r>how<b/>much<s n="prn"/><s n="itg"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>kiom<s n="prn"/></l><r>how<b/>much<s n="prn"/><s n="itg"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>who<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
@@ -377,10 +377,12 @@
 
     <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>whatever<s n="det"/><s n="ind"/></r></p></e>
+
     <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/></r></p></e>
     <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
+
     <e r="RL"><p><l>ambaŭ<s n="det"/><s n="ind"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
     <e r="LR"><p><l>ambaŭ<s n="det"/></l><r>both<s n="det"/></r></p></e>
     <e r="LR"><p><l>certa<s n="det"/><s n="ind"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
@@ -390,8 +392,6 @@
 
     <e><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>each<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>every<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>ĝia<s n="det"/></l><r>his<s n="det"/></r></p></e>
-    <e r="LR"><p><l>ilia<s n="det"/></l><r>his<s n="det"/></r></p></e>
     <e c="interrogatives, condicional"><p><l>iu<s n="det"/><s n="qnt"/></l><r>any<s n="det"/></r></p></e>
 
     <e><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
@@ -410,7 +410,11 @@
 
     <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
     <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+
+    <e r="LR"><p><l>ĝia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>ilia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>ŝia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
 
     <e r="RL"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
     <e r="LR"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
@@ -427,8 +431,8 @@
     <e r="RL"><p><l>malmulta<s n="det"/><s n="qnt"/></l><r>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>malmulta<s n="det"/><s n="qnt"/><s n="pl"/></l><r>few<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 
-    <e><p><l>malpli<b/>da<s n="det"/></l><r>less<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>malpli<b/>da<s n="det"/></l><r>fewer<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+    <e><p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>less<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="RL"><p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>fewer<s n="det"/><s n="qnt"/></r></p></e>
 
 
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>much<s n="det"/><s n="qnt"/></r></p></e>
@@ -437,20 +441,24 @@
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/><s n="sp"/></l><r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>multa<s n="det"/></l><r>a<b/>lot<b/>of<s n="det"/></r></p></e>
 
-    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/><s n="sp"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 
     <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL" c="frases negatives"><p><l>neniu<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="det"/><s n="ind"/></l><r>no<s n="det"/><s n="ind"/></r></p></e>
-    <e><p><l>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>more<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+
+    <e><p><l>pli<b/>da<s n="det"/><s n="qnt"/></l><r>more<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>sufiĉe<b/>da<s n="det"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/></r></p></e>
-    <e r="LR"><p><l>ŝia<s n="det"/></l><r>his<s n="det"/></r></p></e>
+
 
     <e><p><l>tia<s n="det"/><s n="ind"/></l><r>such<s n="det"/><s n="ind"/></r></p></e>
 
     <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>so<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>so<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 
@@ -9417,6 +9425,7 @@
     <e r="RL"><p><l>pli<s n="adv"/></l><r>best<s n="adv"/></r></p></e>
     <e r="RL"><p><l>pli<s n="adv"/></l><r>else<s n="adv"/></r></p></e>
     <e><p><l>pli<s n="adv"/></l><r>more<s n="adv"/></r></p></e>
+    
     <e r="RL" c="per al superlatiu: the most interesting - el més interessant, i tb adv normal - what I like most"><p><l>pli<s n="adv"/></l><r>most<s n="adv"/></r></p></e>
     <e><p><l>politike<s n="adv"/></l><r>politically<s n="adv"/></r></p></e>
     <e r="LR"><p><l>popole<s n="adv"/></l><r>commonly<s n="adv"/></r></p></e>

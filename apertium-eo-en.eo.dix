@@ -2901,6 +2901,7 @@
     <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iu</l>         <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
     <e lm="ĉiu">        <par n="ĉ"/>        <i>iu</i><par n="ind__det"/></e>
     <e lm="ĉiu">        <par n="ĉ"/>        <i>iu</i><par n="quant__det"/></e>
+    <e lm="tiom da da"><i>tiom<b/>da<b/>da</i><par n="quant__det"/></e>
     <e lm="ĉiufoje pli">        <par n="ĉ"/>        <i>iufoje<b/>pli</i><par n="after__cnjadv"/></e>
     <e lm="ĉiufoje pli">        <par n="ĉ"/>        <i>iufoje<b/>pli</i><par n="komence__adv"/></e>
     <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iuj</l>         <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
@@ -6428,10 +6429,14 @@
     <e lm="pli"><i>pli</i><par n="at__pr"/></e>
     <e lm="plia"><i>pli</i><par n="adj__adj"/></e>
     <e lm="pli bona"><i>pli bon</i><par n="adj__adj"/></e>
-    <e lm="pli da">      <p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="pli da">      <p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="pli da">      <p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="pli da">      <p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+
+    <e lm="pli da"><p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r>       </p>    </e>
+
     <e lm="plibonigi"><i>plibonig</i><par n="verb__vblex"/></e>
     <e lm="plibonigo"><i>plibonigo</i><par n="nom__n"/></e>
     <e lm="plifortigi"><i>plifortig</i><par n="verb__vblex"/></e>
@@ -7559,10 +7564,14 @@
     <e lm="sufiĉa"><i>sufi</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="very__preadv"/></e>
     <e lm="sufiĉe"><i>sufiĉe</i><par n="komence__adv"/></e>
-    <e lm="sufiĉe da">      <p>        <l>sufiĉe<b/>da</l>         <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da">      <p>        <l>sufiĉe<b/>da</l>         <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da">      <p>        <l>sufiĉe<b/>da</l>         <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da">      <p>        <l>sufiĉe<b/>da</l>         <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+
+    <e lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r>       </p>    </e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r>       </p>    </e>
+
     <e lm="sufikso"><i>sufikso</i><par n="nom__n"/></e>
     <e lm="sugesti"><i>sugest</i><par n="verb__vblex"/></e>
     <e lm="sugesto"><i>sugesto</i><par n="nom__n"/></e>
