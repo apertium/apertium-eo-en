@@ -689,6 +689,13 @@
     <e r="RL">
       <p>
         <l></l> 
+        <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l></l> 
         <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r> 
       </p>
     </e>
@@ -697,6 +704,13 @@
       <p>
         <l>j</l> 
         <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>n</l> 
+        <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r> 
       </p>
     </e>
 

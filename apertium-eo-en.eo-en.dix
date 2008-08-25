@@ -399,16 +399,28 @@
     <e r="RL"><p><l>kelka<s n="det"/><s n="qnt"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/></r></p></e>
 
-    <e><p><l>la<s n="det"/><s n="def"/><s n="sp"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+    <e><p><l>la<s n="det"/><s n="def"/></l><r>the<s n="det"/><s n="def"/></r></p></e>
 
     <e><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
 
-    <!-- MG: traducció per defecte ca-en és per ara 'his' -->
-    <e r="RL"><p><l>lia<s n="det"/></l><r>her<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>lia<s n="det"/></l><r>his<s n="det"/></r></p></e>
+    <!-- Possessives -->
 
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/><s n="sp"/></l><r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/><s n="sp"/></l><r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
+    <e r="RL"><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
+
+    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
+    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+
+    <e r="RL"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
+
+    <e r="RL"><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
+
+    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
+
+
 
     <e r="RL"><p><l>malmulta<s n="det"/><s n="qnt"/></l><r>little<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>malmulta<s n="det"/><s n="qnt"/><s n="sg"/></l><r>little<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
@@ -418,8 +430,6 @@
     <e><p><l>malpli<b/>da<s n="det"/></l><r>less<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>malpli<b/>da<s n="det"/></l><r>fewer<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 
-    <e r="LR"><p><l>mia<s n="det"/></l><r>my<s n="det"/></r></p></e>
-    <e r="RL"><p><l>mia<s n="det"/><s n="pos"/><s n="sp"/></l><r>my<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>much<s n="det"/><s n="qnt"/></r></p></e>
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>many<s n="det"/><s n="qnt"/></r></p></e>
@@ -432,8 +442,6 @@
     <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL" c="frases negatives"><p><l>neniu<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="det"/><s n="ind"/></l><r>no<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>nia<s n="det"/><s n="pos"/><s n="sp"/></l><r>our<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>nia<s n="det"/></l><r>our<s n="det"/></r></p></e>
     <e><p><l>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>more<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
@@ -455,8 +463,6 @@
     <!-- MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en --> 
     <e r="LR"><p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>too<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
     <e r="LR"><p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
-    <e r="LR" c="per ara de en-ca es genera només 'el vostre'"><p><l>via<s n="det"/></l><r>your<s n="det"/></r></p></e>
-    <e r="RL"><p><l>via<s n="det"/></l><r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 
 
     <!-- Nouns -->
