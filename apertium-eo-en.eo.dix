@@ -307,6 +307,7 @@
     </e>
 
     </pardef>
+
     <pardef n="adj__adj">
     <e>
       <p>
@@ -336,12 +337,93 @@
       </p>
     </e>
 
-    <e i="yes">
+    <!-- Hack -->
+
+    <e r="RL">
       <p>
-        <l>e</l> 
-        <r>a<s n="adv"/></r> 
+        <l>a</l>
+        <r>a<s n="adj"/><s n="f"/><s n="sg"/><s n="nom"/></r>
       </p>
     </e>
+
+    <e r="RL">
+      <p>
+        <l>aj</l>
+        <r>a<s n="adj"/><s n="f"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>an</l>
+        <r>a<s n="adj"/><s n="f"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>ajn</l>
+        <r>a<s n="adj"/><s n="f"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>a</l>
+        <r>a<s n="adj"/><s n="m"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>aj</l>
+        <r>a<s n="adj"/><s n="m"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>an</l>
+        <r>a<s n="adj"/><s n="m"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>ajn</l>
+        <r>a<s n="adj"/><s n="m"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e r="RL">
+      <p>
+        <l>a</l>
+        <r>a<s n="adj"/><s n="mf"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>aj</l>
+        <r>a<s n="adj"/><s n="mf"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>an</l>
+        <r>a<s n="adj"/><s n="mf"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>ajn</l>
+        <r>a<s n="adj"/><s n="mf"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+
+
+
 
     </pardef>
 
@@ -1321,7 +1403,7 @@
     </e>
 
     </pardef>
-    <pardef n="one__num">
+    <pardef n="unu__num">
     <e>
       <p>
         <l></l> 
@@ -1579,15 +1661,7 @@
     </e>
 
     </pardef>
-    <pardef n="si__prn">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
 
-    </pardef>
     <pardef n="probj__prn">
     <e>
       <p>
@@ -1658,6 +1732,17 @@
     </e>
 
     </pardef>
+
+    <pardef n="si__prn">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r> 
+      </p>
+    </e>
+
+    </pardef>
+
     <pardef n="probj_dem__prn">
     <e>
         <i></i> 
@@ -5109,6 +5194,7 @@
     <e lm="kvoto"><i>kvoto</i><par n="nom__n"/></e>
     <e lm="la"><i>la</i><par n="la__det"/></e>
     <e lm="unu"><i>unu</i><par n="unu__det"/></e>
+    <e lm="unu"><i>unu</i><par n="unu__num"/></e>
 
     <e lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
     <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>

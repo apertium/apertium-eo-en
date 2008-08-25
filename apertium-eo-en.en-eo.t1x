@@ -250,7 +250,7 @@
      </pattern>
      <action>
        <call-macro n="set_gender1">
-         <with-param pos="1"/>
+         <with-param pos="2"/>
        </call-macro>
        <out>
          <chunk name="adj_nom" case="caseFirstWord">

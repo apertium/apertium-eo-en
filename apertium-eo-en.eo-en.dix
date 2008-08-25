@@ -133,6 +133,7 @@
     <e r="RL"><p><l>mil<s n="num"/></l><r>ten<b/>hundred<s n="num"/></r></p></e>
     <e r="RL"><p><l>mil<s n="num"/></l><r>thousand<s n="num"/></r></p></e>
     <e><p><l>miliono<s n="num"/></l><r>million<s n="num"/></r></p></e>
+    <e><p><l>unu<s n="num"/></l><r>one<s n="num"/></r></p></e>
 
     <!-- Pronouns -->
 
@@ -180,9 +181,6 @@
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>either<s n="prn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>oni<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>oni<s n="prn"/></l><r>one<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>oni<s n="prn"/><s n="tn"/><s n="m"/></l><r>one<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>oni<s n="prn"/><s n="tn"/><s n="f"/></l><r>one<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
 
     <e><p><l>tio<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
@@ -201,27 +199,28 @@
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 
-    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+
 
     <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 
-    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
@@ -3826,7 +3825,7 @@
     <e><p><l>kloro<s n="n"/></l><r>chlorine<s n="n"/></r></p></e>
     <e><p><l>klubo<s n="n"/></l><r>club<s n="n"/></r></p></e>
     <e r="LR"><p><l>kluzpordo<s n="n"/></l><r>gate<s n="n"/></r></p></e>
-
+<!--
     <e><p><l>knabo<s n="n"/><s n="m"/></l><r>boy<s n="n"/></r></p></e>
     <e><p><l>knabo<s n="n"/><s n="f"/></l><r>girl<s n="n"/></r></p></e>
 
@@ -3834,7 +3833,7 @@
     <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>child<s n="n"/></r></p></e>
     <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>infant<s n="n"/></r></p></e>
     <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>kid<s n="n"/></r></p></e>
-
+-->
     <e><p><l>knelo<s n="n"/></l><r>meatball<s n="n"/></r></p></e>
     <e><p><l>koalicio<s n="n"/></l><r>coalition<s n="n"/></r></p></e>
     <e><p><l>koboldo<s n="n"/></l><r>goblin<s n="n"/></r></p></e>
@@ -7204,7 +7203,9 @@
     <e r="RL"><p><l>normala<s n="adj"/></l><r>ordinary<s n="adj"/></r></p></e>
     <e><p><l>norvega<s n="adj"/></l><r>Norwegian<s n="adj"/></r></p></e>
     <e><p><l>notaria<s n="adj"/></l><r>notarial<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>nova<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e>
+
+    <e><p><l>nova<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e>
+
     <e><p><l>nuda<s n="adj"/></l><r>nude<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>nuklea<s n="adj"/></l><r>nuclear<s n="adj"/></r></p></e>
     <e><p><l>nula<s n="adj"/></l><r>invalid<s n="adj"/></r></p></e>
@@ -7652,14 +7653,14 @@
     <e r="LR"><p><l>ami<s n="vblex"/></l><r>appreciate<s n="vblex"/></r></p></e>
     <e><p><l>ami<s n="vblex"/></l><r>estimate<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>ami<s n="vblex"/></l><r>consider<s n="vblex"/></r></p></e>
-    <e><p><l>amortizi<s n="vblex"/></l><r>amortize<s n="vblex"/></r></p></e>
+    <e><p><l>amortizi<s n="vblex"/></l><r>amortise<s n="vblex"/></r></p></e>
     <e><p><l>amplifi<s n="vblex"/></l><r>amplify<s n="vblex"/></r></p></e>
     <e><p><l>amuzi<s n="vblex"/></l><r>amuse<s n="vblex"/></r></p></e>
     <e><p><l>amuzi<s n="vblex"/></l><r>entertain<s n="vblex"/></r></p></e>
     <e><p><l>analizi<s n="vblex"/></l><r>analyse<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>analizi<s n="vblex"/></l><r>analyze<s n="vblex"/></r></p></e>
     <e><p><l>aneksi<s n="vblex"/></l><r>annex<s n="vblex"/></r></p></e>
-    <e><p><l>anestezi<s n="vblex"/></l><r>anaesthetize<s n="vblex"/></r></p></e>
+    <e><p><l>anestezi<s n="vblex"/></l><r>anaesthetise<s n="vblex"/></r></p></e>
     <e><p><l>anigi<s n="vblex"/></l><r>affiliate<s n="vblex"/></r></p></e>
     <e><p><l>aniĝi<s n="vblex"/></l><r>affiliate<s n="vblex"/></r></p></e>
     <e><p><l>animi<s n="vblex"/></l><r>encourage<s n="vblex"/></r></p></e>
@@ -7730,7 +7731,7 @@
     <e><p><l>balanci<s n="vblex"/></l><r>swing<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>balanciĝi<s n="vblex"/></l><r>swing<s n="vblex"/></r></p></e>
     <e><p><l>bani<s n="vblex"/></l><r>bathe<s n="vblex"/></r></p></e>
-    <e><p><l>bapti<s n="vblex"/></l><r>baptize<s n="vblex"/></r></p></e>
+    <e><p><l>bapti<s n="vblex"/></l><r>baptise<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>bapti<s n="vblex"/></l><r>dub<s n="vblex"/></r></p></e>
     <e><p><l>bari<s n="vblex"/></l><r>hover<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>bari<s n="vblex"/></l><r>obstruct<s n="vblex"/></r></p></e>
@@ -7756,7 +7757,7 @@
     <e r="LR"><p><l>bruli<s n="vblex"/></l><r>burn<s n="vblex"/></r></p></e>
     <e><p><l>bruligi<s n="vblex"/></l><r>burn<s n="vblex"/></r></p></e>
     <e><p><l>celebri<s n="vblex"/></l><r>celebrate<s n="vblex"/></r></p></e>
-    <e><p><l>centralizi<s n="vblex"/></l><r>centralize<s n="vblex"/></r></p></e>
+    <e><p><l>centralizi<s n="vblex"/></l><r>centralise<s n="vblex"/></r></p></e>
     <e><p><l>centri<s n="vblex"/></l><r>center<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>centri<s n="vblex"/></l><r>centre<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>centri<s n="vblex"/></l><r>focus<s n="vblex"/></r></p></e>
@@ -7768,7 +7769,7 @@
     <e><p><l>cirkuli<s n="vblex"/></l><r>circulate<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>citi<s n="vblex"/></l><r>cite<s n="vblex"/></r></p></e>
     <e><p><l>citi<s n="vblex"/></l><r>quote<s n="vblex"/></r></p></e>
-    <e><p><l>civilizi<s n="vblex"/></l><r>civilize<s n="vblex"/></r></p></e>
+    <e><p><l>civilizi<s n="vblex"/></l><r>civilise<s n="vblex"/></r></p></e>
     <e><p><l>ĉasi<s n="vblex"/></l><r>hunt<s n="vblex"/></r></p></e>
     <e><p><l>ĉeesti<s n="vblex"/></l><r>witness<s n="vblex"/></r></p></e>
     <e><p><l>ĉefi<s n="vblex"/></l><r>highlight<s n="vblex"/></r></p></e>
@@ -7921,7 +7922,7 @@
     <e><p><l>elmigri<s n="vblex"/></l><r>emigrate<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>elmigri<s n="vblex"/></l><r>migrate<s n="vblex"/></r></p></e>
     <e><p><l>elmortigi<s n="vblex"/></l><r>exterminate<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>elpagi<s n="vblex"/></l><r>amortize<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>elpagi<s n="vblex"/></l><r>amortise<s n="vblex"/></r></p></e>
     <e><p><l>elpensi<s n="vblex"/></l><r>invent<s n="vblex"/></r></p></e>
     <e><p><l>elpetigi<s n="vblex"/></l><r>beg<s n="vblex"/></r></p></e>
     <e><p><l>elpremi<s n="vblex"/></l><r>squeeze<s n="vblex"/></r></p></e>
@@ -8041,7 +8042,7 @@
     <e r="LR"><p><l>forĵeti<s n="vblex"/></l><r>dismiss<s n="vblex"/></r></p></e>
     <e><p><l>forĵeti<s n="vblex"/></l><r>shun<s n="vblex"/></r></p></e>
     <e><p><l>forlasi<s n="vblex"/></l><r>abandon<s n="vblex"/></r></p></e>
-    <e><p><l>formaligi<s n="vblex"/></l><r>formalize<s n="vblex"/></r></p></e>
+    <e><p><l>formaligi<s n="vblex"/></l><r>formalise<s n="vblex"/></r></p></e>
     <e><p><l>formi<s n="vblex"/></l><r>form<s n="vblex"/></r></p></e>
     <e><p><l>formi<s n="vblex"/></l><r>configure<s n="vblex"/></r></p></e>
     <e><p><l>formuli<s n="vblex"/></l><r>bill<s n="vblex"/></r></p></e>
@@ -8139,7 +8140,7 @@
     <e r="LR"><p><l>inciti<s n="vblex"/></l><r>abet<s n="vblex"/></r></p></e>
     <e><p><l>indiki<s n="vblex"/></l><r>indicate<s n="vblex"/></r></p></e>
     <e><p><l>indukti<s n="vblex"/></l><r>induce<s n="vblex"/></r></p></e>
-    <e><p><l>industriigi<s n="vblex"/></l><r>industrialize<s n="vblex"/></r></p></e>
+    <e><p><l>industriigi<s n="vblex"/></l><r>industrialise<s n="vblex"/></r></p></e>
     <e><p><l>infekti<s n="vblex"/></l><r>infect<s n="vblex"/></r></p></e>
     <e><p><l>influi<s n="vblex"/></l><r>influence<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>informi<s n="vblex"/></l><r>brief<s n="vblex"/></r></p></e>
@@ -8209,7 +8210,7 @@
     <e r="RL"><p><l>kapti<s n="vblex"/></l><r>reach<g><b/>for</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>kapti<s n="vblex"/></l><r>seize<s n="vblex"/></r></p></e>
     <e><p><l>kapti<s n="vblex"/></l><r>take<s n="vblex"/></r></p></e>
-    <e><p><l>karakterizi<s n="vblex"/></l><r>characterize<s n="vblex"/></r></p></e>
+    <e><p><l>karakterizi<s n="vblex"/></l><r>characterise<s n="vblex"/></r></p></e>
     <e><p><l>karesi<s n="vblex"/></l><r>stroke<s n="vblex"/></r></p></e>
     <e><p><l>kastri<s n="vblex"/></l><r>castrate<s n="vblex"/></r></p></e>
     <e><p><l>kaŝi<s n="vblex"/></l><r>hide<s n="vblex"/></r></p></e>
@@ -8247,7 +8248,7 @@
     <e><p><l>kompreni<s n="vblex"/></l><r>comprise<s n="vblex"/></r></p></e>
     <e><p><l>kompreni<s n="vblex"/></l><r>understand<s n="vblex"/></r></p></e>
     <e><p><l>kompromiti<s n="vblex"/></l><r>engage<s n="vblex"/></r></p></e>
-    <e><p><l>komunigi<s n="vblex"/></l><r>generalize<s n="vblex"/></r></p></e>
+    <e><p><l>komunigi<s n="vblex"/></l><r>generalise<s n="vblex"/></r></p></e>
     <e><p><l>komuniki<s n="vblex"/></l><r>communicate<s n="vblex"/></r></p></e>
     <e><p><l>komuti<s n="vblex"/></l><r>commutate<s n="vblex"/></r></p></e>
     <e><p><l>koncedi<s n="vblex"/></l><r>concede<s n="vblex"/></r></p></e>
@@ -8273,7 +8274,7 @@
     <e><p><l>koni<s n="vblex"/></l><r>know<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>koni<s n="vblex"/></l><r>meet<s n="vblex"/></r></p></e>
     <e><p><l>konkeri<s n="vblex"/></l><r>conquer<s n="vblex"/></r></p></e>
-    <e><p><l>konkretigi<s n="vblex"/></l><r>concretize<s n="vblex"/></r></p></e>
+    <e><p><l>konkretigi<s n="vblex"/></l><r>concretise<s n="vblex"/></r></p></e>
     <e><p><l>konkurenci<s n="vblex"/></l><r>compete<s n="vblex"/></r></p></e>
     <e><p><l>konsekri<s n="vblex"/></l><r>consecrate<s n="vblex"/></r></p></e>
     <e><p><l>konsideri<s n="vblex"/></l><r>consider<s n="vblex"/></r></p></e>
@@ -8324,7 +8325,7 @@
     <e r="RL"><p><l>krii<s n="vblex"/></l><r>cry<s n="vblex"/></r></p></e>
     <e><p><l>krii<s n="vblex"/></l><r>shout<s n="vblex"/></r></p></e>
     <e><p><l>krii<s n="vblex"/></l><r>scream<s n="vblex"/></r></p></e>
-    <e><p><l>kritiki<s n="vblex"/></l><r>criticize<s n="vblex"/></r></p></e>
+    <e><p><l>kritiki<s n="vblex"/></l><r>criticise<s n="vblex"/></r></p></e>
     <e><p><l>kroni<s n="vblex"/></l><r>top<s n="vblex"/></r></p></e>
     <e><p><l>kudri<s n="vblex"/></l><r>sew<s n="vblex"/></r></p></e>
     <e><p><l>kuiri<s n="vblex"/></l><r>cook<s n="vblex"/></r></p></e>
@@ -8360,7 +8361,7 @@
     <e><p><l>lasi<s n="vblex"/></l><r>let<s n="vblex"/></r></p></e>
     <e><p><l>laŭdi<s n="vblex"/></l><r>praise<s n="vblex"/></r></p></e>
     <e><p><l>lavi<s n="vblex"/></l><r>wash<s n="vblex"/></r></p></e>
-    <e><p><l>legalizi<s n="vblex"/></l><r>legalize<s n="vblex"/></r></p></e>
+    <e><p><l>legalizi<s n="vblex"/></l><r>legalise<s n="vblex"/></r></p></e>
     <e><p><l>legi<s n="vblex"/></l><r>read<s n="vblex"/></r></p></e>
     <e><p><l>legitimi<s n="vblex"/></l><r>legitimate<s n="vblex"/></r></p></e>
     <e><p><l>leki<s n="vblex"/></l><r>lick<s n="vblex"/></r></p></e>
@@ -8499,11 +8500,11 @@
     <e><p><l>neebligi<s n="vblex"/></l><r>disable<s n="vblex"/></r></p></e>
     <e><p><l>negoci<s n="vblex"/></l><r>negotiate<s n="vblex"/></r></p></e>
     <e><p><l>nei<s n="vblex"/></l><r>deny<s n="vblex"/></r></p></e>
-    <e><p><l>neŭtrigi<s n="vblex"/></l><r>neutralize<s n="vblex"/></r></p></e>
+    <e><p><l>neŭtrigi<s n="vblex"/></l><r>neutralise<s n="vblex"/></r></p></e>
     <e><p><l>nigrigi<s n="vblex"/></l><r>blacken<s n="vblex"/></r></p></e>
     <e><p><l>noci<s n="vblex"/></l><r>prejudice<s n="vblex"/></r></p></e>
     <e><p><l>nomumi<s n="vblex"/></l><r>nominate<s n="vblex"/></r></p></e>
-    <e><p><l>normaligi<s n="vblex"/></l><r>normalize<s n="vblex"/></r></p></e>
+    <e><p><l>normaligi<s n="vblex"/></l><r>normalise<s n="vblex"/></r></p></e>
     <e><p><l>noti<s n="vblex"/></l><r>note<s n="vblex"/></r></p></e>
     <e><p><l>noti<s n="vblex"/></l><r>aim<s n="vblex"/></r></p></e>
     <e><p><l>noti<s n="vblex"/></l><r>note<g><b/>down</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -8535,7 +8536,7 @@
     <e><p><l>ordigi<s n="vblex"/></l><r>order<s n="vblex"/></r></p></e>
     <e><p><l>ordoni<s n="vblex"/></l><r>command<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>organizi<s n="vblex"/></l><r>organise<s n="vblex"/></r></p></e>
-    <e><p><l>organizi<s n="vblex"/></l><r>organize<s n="vblex"/></r></p></e>
+    <e><p><l>organizi<s n="vblex"/></l><r>organise<s n="vblex"/></r></p></e>
     <e><p><l>ori<s n="vblex"/></l><r>gild<s n="vblex"/></r></p></e>
     <e><p><l>ornami<s n="vblex"/></l><r>decorate<s n="vblex"/></r></p></e>
     <e><p><l>pacigi<s n="vblex"/></l><r>appease<s n="vblex"/></r></p></e>
@@ -8543,7 +8544,7 @@
     <e><p><l>pafi<s n="vblex"/></l><r>shoot<s n="vblex"/></r></p></e>
     <e><p><l>pagi<s n="vblex"/></l><r>pay<s n="vblex"/></r></p></e>
     <e><p><l>paradi<s n="vblex"/></l><r>boast<s n="vblex"/></r></p></e>
-    <e><p><l>paralizi<s n="vblex"/></l><r>paralyze<s n="vblex"/></r></p></e>
+    <e><p><l>paralizi<s n="vblex"/></l><r>paralyse<s n="vblex"/></r></p></e>
     <e><p><l>pardoni<s n="vblex"/></l><r>forgive<s n="vblex"/></r></p></e>
     <e><p><l>parigi<s n="vblex"/></l><r>match<s n="vblex"/></r></p></e>
     <e><p><l>parki<s n="vblex"/></l><r>park<s n="vblex"/></r></p></e>
@@ -8616,7 +8617,7 @@
     <e r="RL"><p><l>poenti<s n="vblex"/></l><r>score<s n="vblex"/></r></p></e>
     <e><p><l>polui<s n="vblex"/></l><r>pollute<s n="vblex"/></r></p></e>
     <e><p><l>popoli<s n="vblex"/></l><r>populate<s n="vblex"/></r></p></e>
-    <e><p><l>popularigi<s n="vblex"/></l><r>popularize<s n="vblex"/></r></p></e>
+    <e><p><l>popularigi<s n="vblex"/></l><r>popularise<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>porti<s n="vblex"/></l><r>carry<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>posedi<s n="vblex"/></l><r>own<s n="vblex"/></r></p></e>
     <e><p><l>posedi<s n="vblex"/></l><r>possess<s n="vblex"/></r></p></e>
@@ -8654,7 +8655,7 @@
     <e><p><l>printi<s n="vblex"/></l><r>list<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>prirabi<s n="vblex"/></l><r>undress<s n="vblex"/></r></p></e>
     <e><p><l>prirabi<s n="vblex"/></l><r>deprive<s n="vblex"/></r></p></e>
-    <e><p><l>privatigi<s n="vblex"/></l><r>denationalize<s n="vblex"/></r></p></e>
+    <e><p><l>privatigi<s n="vblex"/></l><r>denationalise<s n="vblex"/></r></p></e>
     <e><p><l>procesi<s n="vblex"/></l><r>process<s n="vblex"/></r></p></e>
     <e><p><l>produkti<s n="vblex"/></l><r>produce<s n="vblex"/></r></p></e>
     <e><p><l>profili<s n="vblex"/></l><r>outline<s n="vblex"/></r></p></e>
@@ -8700,7 +8701,7 @@
     <e><p><l>puni<s n="vblex"/></l><r>punish<s n="vblex"/></r></p></e>
     <e><p><l>purigi<s n="vblex"/></l><r>clean<s n="vblex"/></r></p></e>
     <e><p><l>rabati<s n="vblex"/></l><r>recess<s n="vblex"/></r></p></e>
-    <e><p><l>rajtigi<s n="vblex"/></l><r>authorize<s n="vblex"/></r></p></e>
+    <e><p><l>rajtigi<s n="vblex"/></l><r>authorise<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rajtigi<s n="vblex"/></l><r>entitle<s n="vblex"/></r></p></e>
     <e><p><l>rakonti<s n="vblex"/></l><r>count<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>rakonti<s n="vblex"/></l><r>explain<s n="vblex"/></r></p></e>
@@ -8710,7 +8711,7 @@
     <e><p><l>razi<s n="vblex"/></l><r>shave<s n="vblex"/></r></p></e>
     <e><p><l>reagi<s n="vblex"/></l><r>react<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>realigi<s n="vblex"/></l><r>realise<s n="vblex"/></r></p></e>
-    <e><p><l>realigi<s n="vblex"/></l><r>realize<s n="vblex"/></r></p></e>
+    <e><p><l>realigi<s n="vblex"/></l><r>realise<s n="vblex"/></r></p></e>
     <e><p><l>reaperi<s n="vblex"/></l><r>reappear<s n="vblex"/></r></p></e>
     <e><p><l>recenzi<s n="vblex"/></l><r>review<s n="vblex"/></r></p></e>
     <e><p><l>reciti<s n="vblex"/></l><r>recite<s n="vblex"/></r></p></e>
@@ -8730,7 +8731,7 @@
     <e r="LR"><p><l>rekomenci<s n="vblex"/></l><r>restart<s n="vblex"/></r></p></e>
     <e><p><l>rekomendi<s n="vblex"/></l><r>recommend<s n="vblex"/></r></p></e>
     <e><p><l>rekoni<s n="vblex"/></l><r>acknowledge<s n="vblex"/></r></p></e>
-    <e><p><l>rekoni<s n="vblex"/></l><r>recognize<s n="vblex"/></r></p></e>
+    <e><p><l>rekoni<s n="vblex"/></l><r>recognise<s n="vblex"/></r></p></e>
     <e r="LR" c="Mil."><p><l>rekruti<s n="vblex"/></l><r>draft<s n="vblex"/></r></p></e>
     <e><p><l>rekuperi<s n="vblex"/></l><r>recover<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rekuperi<s n="vblex"/></l><r>recuperate<s n="vblex"/></r></p></e>
@@ -8764,7 +8765,7 @@
     <e><p><l>revivi<s n="vblex"/></l><r>revive<s n="vblex"/></r></p></e>
     <e><p><l>revivigi<s n="vblex"/></l><r>resurrect<s n="vblex"/></r></p></e>
     <e><p><l>revizii<s n="vblex"/></l><r>review<s n="vblex"/></r></p></e>
-    <e><p><l>revolucii<s n="vblex"/></l><r>revolutionize<s n="vblex"/></r></p></e>
+    <e><p><l>revolucii<s n="vblex"/></l><r>revolutionise<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rezervi<s n="vblex"/></l><r>book<s n="vblex"/></r></p></e>
     <e><p><l>rezervi<s n="vblex"/></l><r>reserve<s n="vblex"/></r></p></e>
     <e><p><l>rezisti<s n="vblex"/></l><r>resist<s n="vblex"/></r></p></e>
@@ -8819,7 +8820,7 @@
     <e><p><l>senkapabligi<s n="vblex"/></l><r>incapacitate<s n="vblex"/></r></p></e>
     <e><p><l>senŝeligi<s n="vblex"/></l><r>peel<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>senŝeligi<s n="vblex"/></l><r>shell<s n="vblex"/></r></p></e>
-    <e><p><l>sentivigi<s n="vblex"/></l><r>sensitize<s n="vblex"/></r></p></e>
+    <e><p><l>sentivigi<s n="vblex"/></l><r>sensitise<s n="vblex"/></r></p></e>
     <e><p><l>serĉi<s n="vblex"/></l><r>look<g><b/>for</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>serĉi<s n="vblex"/></l><r>search<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>serĉi<s n="vblex"/></l><r>search<g><b/>for</g><s n="vblex"/></r></p></e>
@@ -8827,13 +8828,13 @@
     <e><p><l>servi<s n="vblex"/></l><r>serve<s n="vblex"/></r></p></e>
     <e><p><l>sieĝi<s n="vblex"/></l><r>besiege<s n="vblex"/></r></p></e>
     <e><p><l>signifi<s n="vblex"/></l><r>mean<s n="vblex"/></r></p></e>
-    <e><p><l>simboli<s n="vblex"/></l><r>symbolize<s n="vblex"/></r></p></e>
+    <e><p><l>simboli<s n="vblex"/></l><r>symbolise<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>simili<s n="vblex"/></l><r>appear<s n="vblex"/></r></p></e>
     <e c="(he looks tired)"><p><l>simili<s n="vblex"/></l><r>look<s n="vblex"/></r></p></e>
     <e><p><l>simili<s n="vblex"/></l><r>look<g><b/>like</g><s n="vblex"/></r></p></e>
     <e><p><l>simili<s n="vblex"/></l><r>seem<s n="vblex"/></r></p></e>
     <e><p><l>simuli<s n="vblex"/></l><r>simulate<s n="vblex"/></r></p></e>
-    <e><p><l>sinkronigi<s n="vblex"/></l><r>synchronize<s n="vblex"/></r></p></e>
+    <e><p><l>sinkronigi<s n="vblex"/></l><r>synchronise<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>skribi<s n="vblex"/></l><r>type<s n="vblex"/></r></p></e>
     <e><p><l>skribi<s n="vblex"/></l><r>write<s n="vblex"/></r></p></e>
     <e><p><l>skui<s n="vblex"/></l><r>shake<s n="vblex"/></r></p></e>
@@ -8879,7 +8880,7 @@
     <e><p><l>substreki<s n="vblex"/></l><r>underline<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>subtaksi<s n="vblex"/></l><r>despise<s n="vblex"/></r></p></e>
     <e><p><l>subteni<s n="vblex"/></l><r>sustain<s n="vblex"/></r></p></e>
-    <e><p><l>subvencii<s n="vblex"/></l><r>subsidize<s n="vblex"/></r></p></e>
+    <e><p><l>subvencii<s n="vblex"/></l><r>subsidise<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>suĉi<s n="vblex"/></l><r>suck<s n="vblex"/></r></p></e>
     <e><p><l>suferi<s n="vblex"/></l><r>suffer<s n="vblex"/></r></p></e>
     <e><p><l>sufiĉi<s n="vblex"/></l><r>suffice<s n="vblex"/></r></p></e>
