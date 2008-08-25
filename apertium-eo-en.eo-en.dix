@@ -1476,9 +1476,6 @@
     <e r="LR"><p><l>juristo<s n="n"/><s n="m"/></l><r>jurist<s n="n"/></r></p></e>
     <e r="RL"><p><l>juristo<s n="n"/><s n="GD"/></l><r>jurist<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>knabo<s n="n"/><s n="f"/></l><r>kid<s n="n"/></r></p></e>
-    <e r="LR"><p><l>knabo<s n="n"/><s n="m"/></l><r>kid<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>kid<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>reĝo<s n="n"/><s n="f"/></l><r>king<s n="n"/></r></p></e>
     <e r="LR"><p><l>reĝo<s n="n"/><s n="m"/></l><r>king<s n="n"/></r></p></e>
@@ -9812,6 +9809,29 @@
     <e><p><l>vaste<s n="adv"/></l><r>widely<s n="adv"/></r></p></e>
     <e><p><l>vere<s n="adv"/></l><r>really<s n="adv"/></r></p></e>
     <e><p><l>verŝajne<s n="adv"/></l><r>surely<s n="adv"/></r></p></e>
+
+<!-- additions by Jacob -->
+<!--
+ -->
+    <e><p><l>listo<s n="n"/></l><r>list<s n="n"/></r></p></e>
+    <e><p><l>komo<s n="n"/></l><r>comma<s n="n"/></r></p></e>
+    <e><p><l>arblisto<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
+    <e><p><l>faldmenuo<s n="n"/></l><r>combobox<s n="n"/></r></p></e>
+    <e><p><l>agordo<s n="n"/></l><r>configuration<s n="n"/></r></p></e>
+    <e><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
+
+    <e><p><l>plura<s n="det"/></l><r>multiple<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e><p><l>malelekti<s n="vblex"/></l><r>untoggle<s n="vblex"/></r></p></e>
+
+    <e><p><l>elekti<s n="vblex"/></l><r>choose<s n="vblex"/></r></p></e>
+
+    <e><p><l>klaki<s n="vblex"/></l><r>click<s n="vblex"/></r></p></e>
+
+    <e><p><l>GCompris<s n="n"/></l><r>GCompris<s n="n"/></r></p></e>
+
+
+    <e><p><l>povi<s n="vblex"/></l><r>can<s n="vblex"/></r></p></e>
 
   </section>
 </dictionary>
