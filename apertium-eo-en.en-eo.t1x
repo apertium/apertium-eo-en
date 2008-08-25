@@ -6,6 +6,9 @@
      <cat-item tags="n.*"/>
      <cat-item tags="np.*"/>
   </def-cat>
+  <def-cat n="vblexinf">
+     <cat-item tags="vblex.inf"/>
+  </def-cat>
   <def-cat n="vblex">
      <cat-item tags="vblex.*"/>
      <cat-item tags="vbser.*"/>
@@ -17,6 +20,9 @@
   <def-cat n="adj">
      <cat-item tags="adj"/>
      <cat-item tags="adj.*"/>
+  </def-cat>
+  <def-cat n="to">
+     <cat-item lemma="to" tags="pr"/>
   </def-cat>
   <def-cat n="pr">
      <cat-item tags="pr"/>
@@ -307,6 +313,32 @@
   </rule>
 
 <!-- Sintagmas verbales -->
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="to"/>
+       <pattern-item n="vblexinf"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="tl" part="tns"/></tag>
+              <tag><clip pos="2" side="tl" part="prs"/></tag>
+              <tag><clip pos="2" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="tns"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
 
 
   <rule>
