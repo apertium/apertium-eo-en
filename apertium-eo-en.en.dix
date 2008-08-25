@@ -863,22 +863,30 @@
     </e>
 
     </pardef>
-    <pardef n="a__det">
-    <e>
-      <p>
-        <l/> 
-        <r><s n="det"/><s n="ind"/><s n="sg"/></r> 
-      </p>
-    </e>
 
-    <e r="LR">
-      <p>
-        <l>n</l> 
-        <r><s n="det"/><s n="ind"/><s n="sg"/></r> 
-      </p>
-    </e>
+    <pardef n="/a__det">
+      <e r="RL">
+        <p>
+          <l><a/>a</l> 
+          <r>a<s n="det"/><s n="ind"/><s n="sg"/></r> 
+        </p>
+      </e>
 
+      <e r="LR">
+        <p>
+          <l>a</l> 
+          <r>a<s n="det"/><s n="ind"/><s n="sg"/></r> 
+        </p>
+      </e>
+
+      <e r="LR">
+        <p>
+          <l>an</l> 
+          <r>a<s n="det"/><s n="ind"/><s n="sg"/></r> 
+        </p>
+      </e>
     </pardef>
+
     <pardef n="another__det">
     <e>
       <p>
@@ -44103,6 +44111,12 @@
         <i>the</i> 
         <par n="the__det"/> 
     </e>
+
+    <e lm="a">
+        <i/> 
+        <par n="/a__det"/> 
+    </e>
+
 
     <e lm="">
         <i>the<b/>early<b/>bird<b/>gets<b/>the<b/>worm</i> 
