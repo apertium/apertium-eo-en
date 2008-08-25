@@ -10667,6 +10667,11 @@
         <par n="nom__n"/> 
     </e>
 
+    <e lm="fajrincitilo">
+        <i>fajrincitilo</i> 
+        <par n="nom__n"/> 
+    </e>
+
     <e lm="fajrilo">
         <i>fajrilo</i> 
         <par n="nom__n"/> 
@@ -34304,12 +34309,15 @@
     <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
     <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
     <e lm="Henry"><i>Henry</i><par n="Mark__np"/></e>
+    <e lm="Harry"><i>Harry</i><par n="Mark__np"/></e>
+    <e lm="Edward"><i>Edward</i><par n="Mark__np"/></e>
     <!-- Cognomen -->
     <e lm="Stevenson"><i>Stevenson</i><par n="Stevenson__np"/></e>
     <e lm="Jekyll"><i>Jekyll</i><par n="Stevenson__np"/></e>
     <e lm="Hyde"><i>Hyde</i><par n="Stevenson__np"/></e>
     <e lm="Lanyon"><i>Lanyon</i><par n="Stevenson__np"/></e>
     <e lm="Utterson"><i>Utterson</i><par n="Stevenson__np"/></e>
+    <e lm="Poole"><i>Poole</i><par n="Stevenson__np"/></e>
 
     <e lm="humiligi"><i>humilig</i><par n="verb__vblex"/></e>
     <e lm="forrabi"><i>forrab</i><par n="verb__vblex"/></e>

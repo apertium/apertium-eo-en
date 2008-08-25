@@ -36083,6 +36083,11 @@
         <par n="expensive__adj"/> 
     </e>
 
+    <e lm="poker">
+        <i>poker</i> 
+        <par n="house__n"/> 
+    </e>
+
     <e lm="polar">
         <i>polar</i> 
         <par n="expensive__adj"/> 
@@ -47532,12 +47537,16 @@
     <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
     <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
     <e lm="Henry"><i>Henry</i><par n="Mark__np"/></e>
+    <e lm="Harry"><i>Harry</i><par n="Mark__np"/></e>
+    <e lm="Edward"><i>Edward</i><par n="Mark__np"/></e>
+
     <!-- Cognomen -->
     <e lm="Stevenson"><i>Stevenson</i><par n="Smith__np"/></e>
     <e lm="Jekyll"><i>Jekyll</i><par n="Smith__np"/></e>
     <e lm="Hyde"><i>Hyde</i><par n="Smith__np"/></e>
     <e lm="Lanyon"><i>Lanyon</i><par n="Smith__np"/></e>
     <e lm="Utterson"><i>Utterson</i><par n="Smith__np"/></e>
+    <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
 
   </section>
 </dictionary>
