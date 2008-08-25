@@ -41,7 +41,7 @@
 
   <def-attr n="a_adj">
      <attr-item tags="adj"/>
-     <attr-item tags="adj.pve"/>
+     <attr-item tags="adj.pst"/>
      <attr-item tags="adj.comp"/>
      <attr-item tags="adj.sup"/>
      <attr-item tags="adj.itg"/>
@@ -205,10 +205,16 @@
         <choose>
           <when>
             <test>
-              <equal>
-                <clip pos="1" side="sl" part="a_det"/>
-                <lit-tag v="det.ind"/>
-              </equal>
+	      <and>
+                <equal>
+                  <clip pos="1" side="sl" part="lem"/>
+                  <lit v="a"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="sl" part="a_det"/>
+                  <lit-tag v="det.ind"/>
+                </equal>
+              </and>
             </test>
             <out>
               <b/>
@@ -218,7 +224,7 @@
             <out>
               <chunk name="det" case="caseFirstWord">
                  <tags>
-                  <tag><lit-tag v="SN"/></tag>
+                  <tag><lit-tag v="SD"/></tag>
                   <tag><clip pos="1" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>

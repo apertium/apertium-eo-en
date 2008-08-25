@@ -6,9 +6,9 @@ for LINE in $LIST; do
 	dir=`echo $LINE | cut -f2 -d'(' | cut -f1 -d')'`;
 
 	if [ $dir = "en" ]; then
-		mode="en-cy";
-	elif [ $dir = "cy" ]; then
-		mode="cy-en";
+		mode="en-eo";
+	elif [ $dir = "eo" ]; then
+		mode="eo-en";
 	else 
 		continue;
 	fi
