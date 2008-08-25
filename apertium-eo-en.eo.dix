@@ -1892,7 +1892,6 @@
     <e lm="Libio"><i>Libio</i><par n="Barcelona__np"/></e>
     <e lm="Limo"><i>Limo</i><par n="Barcelona__np"/></e>
     <e lm="Lisbono"><i>Lisbono</i><par n="Barcelona__np"/></e>
-    <e lm="Lisbono"><i>Lisbono</i><par n="Barcelona__np"/></e>
     <e lm="Litovio"><i>Litovio</i><par n="Barcelona__np"/></e>
     <e lm="Litovio"><i>Litovio</i><par n="Barcelona__np"/></e>
     <e lm="Londono"><i>Londono</i><par n="Barcelona__np"/></e>
@@ -2020,7 +2019,9 @@
     <e lm="abolicii"><i>abolici</i><par n="verb__vblex"/></e>
     <e lm="abomeni"><i>abomen</i><par n="verb__vblex"/></e>
     <e lm="abono"><i>abono</i><par n="nom__n"/></e>
-    <e lm="aborti"><i>abort</i><par n="verb__vblex"/></e>
+    <e lm="koralo"><i>koralo</i><par n="nom__n"/></e>
+    <e lm="malbono"><i>malbono</i><par n="nom__n"/></e>
+    <e lm="aborti"><i>aborto</i><par n="verb__vblex"/></e>
     <e lm="abrikoto"><i>abrikoto</i><par n="nom__n"/></e>
     <e lm="abrupta"><i>abrupt</i><par n="adj__adj"/></e>
     <e lm="abrupta"><i>abrupt</i><par n="adj__adj"/></e>
@@ -2627,6 +2628,7 @@
     <e lm="biciklanto"><i>biciklant</i><par n="nommf__n"/></e>
     <e lm="biciklo"><i>biciklo</i><par n="nom__n"/></e>
     <e lm="biero"><i>biero</i><par n="nom__n"/></e>
+    <e lm="ĉarmo"><i>ĉarmo</i><par n="nom__n"/></e>
     <e lm="bifsteko"><i>bifsteko</i><par n="nom__n"/></e>
     <e lm="bilanco"><i>bilanco</i><par n="nom__n"/></e>
     <e lm="bilardo"><i>bilardo</i><par n="nom__n"/></e>
@@ -2758,6 +2760,7 @@
     <e lm="centra"><i>centr</i><par n="adj__adj"/></e>
     <e lm="centralizi"><i>centraliz</i><par n="verb__vblex"/></e>
     <e lm="centralizo"><i>centralizo</i><par n="nom__n"/></e>
+    <e lm="centralo"><i>centralo</i><par n="nom__n"/></e>
     <e lm="centro"><i>centro</i><par n="nom__n"/></e>
     <e lm="cenzuri"><i>cenzur</i><par n="verb__vblex"/></e>
     <e lm="cepo"><i>cepo</i><par n="nom__n"/></e>
@@ -3543,6 +3546,7 @@
     <e lm="fakulo"><i>fakul</i><par n="nommf__n"/></e>
     <e lm="fali"><i>fal</i><par n="verb__vblex"/></e>
     <e lm="faldi"><i>fald</i><par n="verb__vblex"/></e>
+    <e lm="faldo"><i>faldo</i><par n="nom__n"/></e>
     <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
     <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
     <e lm="faldebla"><i>faldeblao</i><par n="nom__n"/></e>
@@ -3567,6 +3571,7 @@
     <e lm="fantomo"><i>fantom</i><par n="nommf__n"/></e>
     <e lm="fari"><i>far</i><par n="verb__vblex"/></e>
     <e lm="faraono"><i>faraono</i><par n="nom__n"/></e>
+    <e lm="bierfarejo"><i>bierfarejo</i><par n="nom__n"/></e>
     <e lm="farebla"><i>farebl</i><par n="adj__adj"/></e>
     <e lm="farm-obieno"><i>farm-obieno</i><par n="nom__n"/></e>
     <e lm="farmisto"><i>farmist</i><par n="nommf__n"/></e>
@@ -4988,6 +4993,7 @@
     <e lm="kuglo"><i>kuglo</i><par n="nom__n"/></e>
     <e lm="kuiri"><i>kuir</i><par n="verb__vblex"/></e>
     <e lm="kuirilaro"><i>kuirilaro</i><par n="nom__n"/></e>
+    <e lm="kuiristo"><i>kuirist</i><par n="nommf__n"/></e>
     <e lm="kuirpoto"><i>kuirpoto</i><par n="nom__n"/></e>
     <e lm="kukaĵo"><i>kuka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="kukbakejo"><i>kukbakejo</i><par n="nom__n"/></e>
@@ -5475,7 +5481,7 @@
     <e lm="mane"><i>mane</i><par n="komence__adv"/></e>
     <e lm="manĝi"><i>man</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="manĝebla"><i>man</i><par n="ĝ"/><i>ebl</i><par n="adj__adj"/></e>
-    <e lm="manĝoĉambro"><i>man</i><par n="ĝ"/><i>o</i><par n="ĉ"/><i>ĉambro</i><par n="nom__n"/></e>
+    <e lm="manĝoĉambro"><i>man</i><par n="ĝ"/><i>o</i><par n="ĉ"/><i>ambro</i><par n="nom__n"/></e>
     <e lm="maniero"><i>maniero</i><par n="nom__n"/></e>
     <e lm="manifesti"><i>manifest</i><par n="verb__vblex"/></e>
     <e lm="manifestacii"><i>manifestaci</i><par n="verb__vblex"/></e>
@@ -6436,6 +6442,7 @@
     <e lm="polemiko"><i>polemiko</i><par n="nom__n"/></e>
     <e lm="poleno"><i>poleno</i><par n="nom__n"/></e>
     <e lm="polico"><i>polic</i><par n="nommf__n"/></e>
+    <e lm="policejo"><i>policejo</i><par n="nom__n"/></e>
     <e lm="poligamio"><i>poligamio</i><par n="nom__n"/></e>
     <e lm="politike"><i>politike</i><par n="komence__adv"/></e>
     <e lm="politikisto"><i>politikist</i><par n="nommf__n"/></e>
