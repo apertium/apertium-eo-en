@@ -9,6 +9,7 @@
   <def-cat n="vblex">
      <cat-item tags="vblex.*"/>
      <cat-item tags="vbser.*"/>
+     <cat-item tags="vaux.*"/>
   </def-cat>
   <def-cat n="prn">
      <cat-item tags="prn.*"/>
@@ -49,6 +50,7 @@
   <def-attr n="a_vrb">
      <attr-item tags="vblex"/>
      <attr-item tags="vbser"/>
+     <attr-item tags="vaux"/>
   </def-attr>
 
   <def-attr n="a_det">
