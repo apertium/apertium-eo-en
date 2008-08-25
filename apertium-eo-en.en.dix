@@ -44750,10 +44750,12 @@
         <par n="house__n"/> 
     </e>
 
+<!--
     <e lm="total">
         <i>total</i> 
         <par n="house__n"/> 
     </e>
+-->
 
     <e lm="total">
         <i>total</i> 
@@ -46152,11 +46154,12 @@
         <par n="appl/y__vblex"/> 
     </e>
 
+<!--
     <e lm="variable">
         <i>variable</i> 
         <par n="house__n"/> 
     </e>
-
+-->
     <e lm="variable">
         <i>variable</i> 
         <par n="expensive__adj"/> 
@@ -46323,7 +46326,10 @@
     </e>
 
     <e lm="vice president">
-        <i>vice<b/>president</i> 
+	<p>
+          <l>vice<b/>president</l>
+	  <r>vice-president</r>
+	</p>
         <par n="house__n"/> 
     </e>
 
@@ -46347,11 +46353,12 @@
         <par n="expensive__adj"/> 
     </e>
 
+<!--
     <e lm="view">
         <i>view</i> 
         <par n="house__n"/> 
     </e>
-
+-->
     <e lm="view">
         <i>view</i> 
         <par n="accept__vblex"/> 
@@ -46412,11 +46419,12 @@
         <par n="house__n"/> 
     </e>
 
+<!--    
     <e lm="virgin">
         <i>virgin</i> 
         <par n="house__n"/> 
     </e>
-
+-->
     <e lm="virgin">
         <i>virgin</i> 
         <par n="expensive__adj"/> 
@@ -46677,10 +46685,12 @@
         <par n="house__n"/> 
     </e>
 
+<!--    
     <e lm="wash">
         <i>wash</i> 
         <par n="access__n"/> 
     </e>
+-->
 
     <e lm="wash">
         <i>wash</i> 
