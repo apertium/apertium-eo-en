@@ -211,6 +211,22 @@
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+
+    <e><p><l>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+
+
+
     <!-- Conjunctions -->
 
     <e><p><l>antaŭ<b/>ol<s n="cnjadv"/></l><r>before<s n="cnjadv"/></r></p></e>
@@ -440,7 +456,7 @@
 
     <!-- Nouns -->
 
-    <e><p><l><g>registara<b/></g>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
+    <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>Albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
     <e r="LR"><p><l>Albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
@@ -2434,7 +2450,7 @@
     <e r="LR"><p><l>brakseĝo<s n="n"/></l><r>armchair<s n="n"/></r></p></e>
     <e r="LR"><p><l>brakseĝo<s n="n"/></l><r>seat<s n="n"/></r></p></e>
     <e><p><l>brakumo<s n="n"/></l><r>embrace<s n="n"/></r></p></e>
-    <e><p><l>brana:integraĵo<s n="n"/></l><r>integral<s n="n"/></r></p></e>
+    <e><p><l>integraĵo<s n="n"/></l><r>integral<s n="n"/></r></p></e>
     <e><p><l>branĉo<s n="n"/></l><r>branch<s n="n"/></r></p></e>
     <e><p><l>brankardo<s n="n"/></l><r>stretcher<s n="n"/></r></p></e>
     <e><p><l>brasiko<s n="n"/></l><r>cabbage<s n="n"/></r></p></e>
@@ -2502,8 +2518,10 @@
     <e><p><l>cianido<s n="n"/></l><r>cyanide<s n="n"/></r></p></e>
     <e><p><l>cifero<s n="n"/></l><r>figure<s n="n"/></r></p></e>
     <e><p><l>cifero<s n="n"/></l><r>digit<s n="n"/></r></p></e>
-    <e r="LR"><p><l>cigareda<s n="n"/></l><r>bite<s n="n"/></r></p></e>
-    <e><p><l>cigareda<s n="n"/></l><r>sting<s n="n"/></r></p></e>
+    <e r="LR"><p><l>cigaredo<s n="n"/></l><r>bite<s n="n"/></r></p></e>
+
+    <e><p><l>cigaredo<s n="n"/></l><r>sting<s n="n"/></r></p></e>
+
     <e r="LR"><p><l>cigaredingo<s n="n"/></l><r>filter<s n="n"/></r></p></e>
     <e><p><l>cigaredo<s n="n"/></l><r>cigarette<s n="n"/></r></p></e>
     <e r="LR"><p><l>cigaredpaketo<s n="n"/></l><r>package<s n="n"/></r></p></e>
@@ -2770,9 +2788,10 @@
     <e r="LR"><p><l>dubo<s n="n"/></l><r>objection<s n="n"/></r></p></e>
     <e><p><l>duelo<s n="n"/></l><r>duel<s n="n"/></r></p></e>
     <e r="RL"><p><l>duko<s n="n"/></l><r>duke<s n="n"/></r></p></e>
-    <e><p><l>dungitaro<s n="n"/></l><r>personnel<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>dungitaro<s n="n"/></l><r>staff<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>dungitaro<s n="n"/></l><r>staff<s n="n"/><s n="pl"/></r></p></e>
+    <e><p><l>dungitaro<s n="n"/></l><r>personnel<s n="n"/></r></p></e>
+
+    <e r="RL"><p><l>dungitaro<s n="n"/></l><r>staff<s n="n"/></r></p></e>
+
     <e><p><l>duno<s n="n"/></l><r>dune<s n="n"/></r></p></e>
     <e><p><l>duoninsulo<s n="n"/></l><r>peninsula<s n="n"/></r></p></e>
     <e r="LR"><p><l>duonlumo<s n="n"/></l><r>evening<s n="n"/></r></p></e>
@@ -2916,11 +2935,12 @@
     <e><p><l>enmigrinto<s n="n"/></l><r>immigrant<s n="n"/></r></p></e>
     <e><p><l>eno<s n="n"/></l><r>yen<s n="n"/></r></p></e>
     <e><p><l>enoficigo<s n="n"/></l><r>nomination<s n="n"/></r></p></e>
+
     <e r="RL"><p><l>enspezo<s n="n"/></l><r>earnings<s n="n"/><s n="pl"/></r></p></e>
     <e><p><l>enspezo<s n="n"/></l><r>income<s n="n"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>enspezo<s n="n"/></l><r>income<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>enspezo<s n="n"/></l><r>revenue<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>enspezo<s n="n"/></l><r>revenue<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>enspezo<s n="n"/></l><r>revenue<s n="n"/></r></p></e>
+
     <e><p><l>enspezo<s n="n"/></l><r>entry<s n="n"/><s n="sg"/></r></p></e>
     <e><p><l>ento<s n="n"/></l><r>entity<s n="n"/></r></p></e>
     <e><p><l>entreprenisto<s n="n"/></l><r>contractor<s n="n"/></r></p></e>
@@ -3437,11 +3457,12 @@
     <e r="LR"><p><l>impostkolektado<s n="n"/></l><r>collection<s n="n"/></r></p></e>
     <e r="RL"><p><l>imposto<s n="n"/></l><r>burden<s n="n"/></r></p></e>
     <e r="RL"><p><l>imposto<s n="n"/></l><r>charge<s n="n"/></r></p></e>
+
     <e><p><l>imposto<s n="n"/></l><r>load<s n="n"/></r></p></e>
     <e><p><l>imposto<s n="n"/></l><r>contribution<s n="n"/></r></p></e>
     <e><p><l>imposto<s n="n"/></l><r>tax<s n="n"/></r></p></e>
-    <e r="RL"><p><l>imposto<s n="n"/></l><r>taxation<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>imposto<s n="n"/></l><r>taxation<s n="n"/><s n="pl"/></r></p></e>
+    <e><p><l>imposto<s n="n"/></l><r>taxation<s n="n"/></r></p></e>
+
     <e><p><l>impostpaganto<s n="n"/></l><r>taxpayer<s n="n"/></r></p></e>
     <e r="RL"><p><l>impresario<s n="n"/></l><r>employer<s n="n"/></r></p></e>
     <e><p><l>impreso<s n="n"/></l><r>impression<s n="n"/></r></p></e>
@@ -3607,11 +3628,10 @@
     <e><p><l>justeco<s n="n"/></l><r>equity<s n="n"/></r></p></e>
     <e><p><l>justeco<s n="n"/></l><r>justice<s n="n"/></r></p></e>
     <e r="LR"><p><l>juvelarto<s n="n"/></l><r>jewellery<s n="n"/></r></p></e>
+
     <e><p><l>juvelo<s n="n"/></l><r>jewel<s n="n"/></r></p></e>
-    <e r="RL"><p><l>juvelo<s n="n"/></l><r>jewellery<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>juvelo<s n="n"/></l><r>jewellery<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>juvelo<s n="n"/></l><r>jewelry<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>juvelo<s n="n"/></l><r>jewelry<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>juvelo<s n="n"/></l><r>jewellery<s n="n"/></r></p></e>
+
     <e><p><l>ĵargono<s n="n"/></l><r>slang<s n="n"/></r></p></e>
     <e r="RL"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/></r></p></e>
     <e r="LR"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/><s n="ND"/></r></p></e>
@@ -3787,12 +3807,15 @@
     <e><p><l>kloro<s n="n"/></l><r>chlorine<s n="n"/></r></p></e>
     <e><p><l>klubo<s n="n"/></l><r>club<s n="n"/></r></p></e>
     <e r="LR"><p><l>kluzpordo<s n="n"/></l><r>gate<s n="n"/></r></p></e>
-    <e><p><l>knabo<s n="n"/></l><r>boy<s n="n"/></r></p></e>
-    <e><p><l>knabo<s n="n"/></l><r>girl<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/></l><r>lad<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/></l><r>child<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/></l><r>infant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/></l><r>kid<s n="n"/></r></p></e>
+
+    <e><p><l>knabo<s n="n"/><s n="m"/></l><r>boy<s n="n"/></r></p></e>
+    <e><p><l>knabo<s n="n"/><s n="f"/></l><r>girl<s n="n"/></r></p></e>
+
+    <e r="RL"><p><l>knabo<s n="n"/><s n="m"/></l><r>lad<s n="n"/></r></p></e>
+    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>child<s n="n"/></r></p></e>
+    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>infant<s n="n"/></r></p></e>
+    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>kid<s n="n"/></r></p></e>
+
     <e><p><l>knelo<s n="n"/></l><r>meatball<s n="n"/></r></p></e>
     <e><p><l>koalicio<s n="n"/></l><r>coalition<s n="n"/></r></p></e>
     <e><p><l>koboldo<s n="n"/></l><r>goblin<s n="n"/></r></p></e>
@@ -4176,7 +4199,9 @@
     <e r="RL"><p><l>lifto<s n="n"/></l><r>lift<s n="n"/></r></p></e>
     <e><p><l>ligamento<s n="n"/></l><r>ligament<s n="n"/></r></p></e>
     <e><p><l>lignaĵejo<s n="n"/></l><r>carpentry<s n="n"/></r></p></e>
-    <e><p><l>ligno<s n="n"/></l><r>wood<s n="n"/><s n="sg"/></r></p></e>
+
+    <e><p><l>ligno<s n="n"/><s n="sg"/></l><r>wood<s n="n"/><s n="sg"/></r></p></e>
+
     <e><p><l>ligo<s n="n"/></l><r>league<s n="n"/></r></p></e>
     <e><p><l>likvido<s n="n"/></l><r>balance<s n="n"/></r></p></e>
     <e><p><l>likvoro<s n="n"/></l><r>liquor<s n="n"/></r></p></e>
@@ -4197,7 +4222,7 @@
     <e><p><l>literaturo<s n="n"/></l><r>literature<s n="n"/></r></p></e>
     <e r="RL"><p><l>litero<s n="n"/></l><r>handwriting<s n="n"/></r></p></e>
     <e><p><l>litero<s n="n"/></l><r>letter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>litero<s n="n"/></l><r>lyric<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>litero<s n="n"/><s n="pl"/></l><r>lyric<s n="n"/><s n="pl"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>bed<s n="n"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>mulch<s n="n"/></r></p></e>
     <e r="RL"><p><l>litro<s n="n"/></l><r>liter<s n="n"/></r></p></e>
@@ -4394,8 +4419,10 @@
     <e r="LR"><p><l>medikamento<s n="n"/></l><r>medicine<s n="n"/></r></p></e>
     <e r="RL"><p><l>medio<s n="n"/></l><r>domain<s n="n"/></r></p></e>
     <e r="LR"><p><l>medio<s n="n"/></l><r>field<s n="n"/></r></p></e>
+
     <e><p><l>medio<s n="n"/></l><r>environment<s n="n"/></r></p></e>
-    <e><p><l>medio<s n="n"/></l><r>surroundings<s n="n"/><s n="pl"/></r></p></e>
+    <e><p><l>medio<s n="n"/><s n="sg"/></l><r>surroundings<s n="n"/><s n="pl"/></r></p></e>
+
     <e><p><l>megafono<s n="n"/></l><r>megaphone<s n="n"/></r></p></e>
     <e><p><l>mejlo<s n="n"/></l><r>mile<s n="n"/></r></p></e>
     <e><p><l>mekanismo<s n="n"/></l><r>device<s n="n"/></r></p></e>
@@ -4526,9 +4553,7 @@
     <e><p><l>monumento<s n="n"/></l><r>monument<s n="n"/></r></p></e>
     <e><p><l>mopedo<s n="n"/></l><r>moped<s n="n"/></r></p></e>
     <e><p><l>mopedo<s n="n"/></l><r>motorcycle<s n="n"/></r></p></e>
-    <e r="RL" c="check"><p><l>moralaĵo<s n="n"/></l><r>moral<s n="n"/><s n="sg"/></r></p></e>
-    <e r="LR" c="check"><p><l>moralaĵo<s n="n"/></l><r>moral<s n="n"/></r></p></e>
-    <e c="check"><p><l>moralo<s n="n"/></l><r>moral<s n="n"/><s n="pl"/></r></p></e>
+    <e><p><l>moralaĵo<s n="n"/></l><r>moral<s n="n"/></r></p></e>
     <e><p><l>morteco<s n="n"/></l><r>mortality<s n="n"/></r></p></e>
 
     <e><p><l>mortinto<s n="n"/></l><r>dead<b/>person<s n="n"/></r></p></e>
@@ -4895,7 +4920,8 @@
     <e r="RL"><p><l>peruano<s n="n"/></l><r>Peruvian<s n="n"/></r></p></e>
     <e><p><l>perverseco<s n="n"/></l><r>perversion<s n="n"/></r></p></e>
     <e><p><l>peseto<s n="n"/></l><r>peseta<s n="n"/></r></p></e>
-    <e><p><l>pesilo<s n="n"/></l><r>scale<s n="n"/><s n="pl"/></r></p></e>
+
+    <e><p><l>pesilo<s n="n"/></l><r>scale<s n="n"/></r></p></e>
     <e><p><l>petalo<s n="n"/></l><r>petal<s n="n"/></r></p></e>
     <e><p><l>petego<s n="n"/></l><r>prayer<s n="n"/></r></p></e>
     <e><p><l>peto<s n="n"/></l><r>demand<s n="n"/></r></p></e>
@@ -4982,10 +5008,10 @@
     <e r="LR"><p><l>polekso<s n="n"/></l><r>thumb<s n="n"/></r></p></e>
     <e r="LR"><p><l>polemiko<s n="n"/></l><r>controversy<s n="n"/></r></p></e>
     <e><p><l>poleno<s n="n"/></l><r>pollen<s n="n"/></r></p></e>
+
     <e><p><l>policejo<s n="n"/></l><r>commissariat<s n="n"/></r></p></e>
-    <e><p><l>polico<s n="n"/></l><r>police<s n="n"/><s n="pl"/></r></p></e>
-    <e><p><l>polico<s n="n"/></l><r>policeman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>polico<s n="n"/></l><r>policewoman<s n="n"/></r></p></e>
+
+    <e><p><l>polico<s n="n"/></l><r>police<s n="n"/></r></p></e>
     <e><p><l>poligamio<s n="n"/></l><r>polygamy<s n="n"/></r></p></e>
     <e r="RL"><p><l>politikisto<s n="n"/></l><r>politician<s n="n"/></r></p></e>
     <e><p><l>politiko<s n="n"/></l><r>policy<s n="n"/></r></p></e>
@@ -5071,7 +5097,9 @@
     <e r="RL"><p><l>prezidento<s n="n"/></l><r>president<s n="n"/></r></p></e>
     <e><p><l>prezo<s n="n"/></l><r>price<s n="n"/></r></p></e>
     <e r="RL"><p><l>pridemandado<s n="n"/></l><r>examination<s n="n"/></r></p></e>
+
     <e><p><l>pridemandado<s n="n"/></l><r>interrogation<s n="n"/></r></p></e>
+
     <e><p><l>primato<s n="n"/></l><r>primate<s n="n"/></r></p></e>
     <e r="RL"><p><l>princo<s n="n"/></l><r>prince<s n="n"/></r></p></e>
     <e r="RL"><p><l>princo<s n="n"/></l><r>princess<s n="n"/></r></p></e>
@@ -5287,10 +5315,8 @@
     <e r="RL"><p><l>respublikano<s n="n"/></l><r>republican<s n="n"/></r></p></e>
     <e><p><l>respubliko<s n="n"/></l><r>republic<s n="n"/></r></p></e>
     <e><p><l>restado<s n="n"/></l><r>permanence<s n="n"/></r></p></e>
-    <e r="RL"><p><l>restaĵo<s n="n"/></l><r>refuse<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>restaĵo<s n="n"/></l><r>refuse<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>restaĵo<s n="n"/></l><r>refuse<s n="n"/></r></p></e>
     <e r="RL"><p><l>restaĵo<s n="n"/></l><r>residue<s n="n"/></r></p></e>
-    <e r="LR"><p><l>restaĵo<s n="n"/></l><r>residue<s n="n"/><s n="sg"/></r></p></e>
 
     <e><p><l>restaĵo<s n="n"/></l><r>waste<s n="n"/></r></p></e>
 
@@ -5366,11 +5392,12 @@
     <e><p><l>roboto<s n="n"/></l><r>automaton<s n="n"/></r></p></e>
     <e><p><l>roboto<s n="n"/></l><r>robot<s n="n"/></r></p></e>
     <e r="LR"><p><l>rojo<s n="n"/></l><r>brook<s n="n"/></r></p></e>
+<!--
     <e><p><l>rokenrolo<s n="n"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
     <e><p><l>rokmuziko<s n="n"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
+-->
     <e><p><l>roko<s n="n"/></l><r>crag<s n="n"/></r></p></e>
-    <e><p><l>roko<s n="n"/></l><r>rock<s n="n"/><s n="pl"/></r></p></e>
-    <e><p><l>roko<s n="n"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>roko<s n="n"/></l><r>rock<s n="n"/></r></p></e>
     <e><p><l>romano<s n="n"/></l><r>novel<s n="n"/></r></p></e>
     <e><p><l>romantikismo<s n="n"/></l><r>romanticism<s n="n"/></r></p></e>
     <e><p><l>rombo<s n="n"/></l><r>rhombus<s n="n"/></r></p></e>
@@ -5390,7 +5417,7 @@
     <e><p><l>rublo<s n="n"/></l><r>rouble<s n="n"/></r></p></e>
     <e r="RL"><p><l>rubo<s n="n"/></l><r>garbage<s n="n"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>rubo<s n="n"/></l><r>garbage<s n="n"/><s n="pl"/></r></p></e>
-    <e><p><l>rubo<s n="n"/></l><r>rubbish<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>rubo<s n="n"/></l><r>rubbish<s n="n"/></r></p></e>
     <e r="RL"><p><l>rubujo<s n="n"/></l><r>bin<s n="n"/></r></p></e>
     <e><p><l>rubujo<s n="n"/></l><r>bucket<s n="n"/></r></p></e>
     <e><p><l>ruino<s n="n"/></l><r>ruin<s n="n"/></r></p></e>
@@ -5661,9 +5688,12 @@
     <e r="RL"><p><l>streĉiĝo<s n="n"/></l><r>stress<s n="n"/></r></p></e>
     <e><p><l>streĉiĝo<s n="n"/></l><r>tension<s n="n"/></r></p></e>
     <e><p><l>streko<s n="n"/></l><r>stroke<s n="n"/></r></p></e>
-    <e><p><l>streso<s n="n"/></l><r>stress<s n="n"/><s n="sg"/></r></p></e>
+
+    <e><p><l>streso<s n="n"/></l><r>stress<s n="n"/></r></p></e>
+
     <e><p><l>striko<s n="n"/></l><r>strike<s n="n"/></r></p></e>
     <e><p><l>striko<s n="n"/></l><r>unemployment<s n="n"/></r></p></e>
+
     <e r="RL"><p><l>strukturo<s n="n"/></l><r>frame<s n="n"/></r></p></e>
     <e><p><l>strukturo<s n="n"/></l><r>structure<s n="n"/></r></p></e>
     <e><p><l>struto<s n="n"/></l><r>ostrich<s n="n"/></r></p></e>
@@ -5793,11 +5823,11 @@
     <e><p><l>ŝtono<s n="n"/></l><r>stone<s n="n"/></r></p></e>
     <e><p><l>ŝtormo<s n="n"/></l><r>storm<s n="n"/></r></p></e>
     <e><p><l>ŝtrumpeto<s n="n"/></l><r>sock<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝtuparo<s n="n"/></l><r>stair<s n="n"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>ŝtuparo<s n="n"/></l><r>stair<s n="n"/></r></p></e>
-    <e><p><l>ŝtuparo<s n="n"/></l><r>staircase<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝtupo<s n="n"/></l><r>stair<s n="n"/><s n="sg"/></r></p></e>
+
+    <e><p><l>ŝtuparo<s n="n"/></l><r>stair<s n="n"/></r></p></e>
+    <e r="RL"><p><l>ŝtuparo<s n="n"/></l><r>staircase<s n="n"/></r></p></e>
     <e r="LR"><p><l>ŝtupo<s n="n"/></l><r>stair<s n="n"/></r></p></e>
+
     <e><p><l>ŝtupo<s n="n"/></l><r>terracing<s n="n"/></r></p></e>
     <e r="RL"><p><l>ŝtupo<s n="n"/></l><r>step<s n="n"/></r></p></e>
     <e r="RL"><p><l>ŝuisto<s n="n"/></l><r>shoemaker<s n="n"/></r></p></e>
