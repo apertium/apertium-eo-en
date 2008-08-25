@@ -763,6 +763,13 @@
     <e r="RL">
       <p>
         <l></l> 
+        <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l></l> 
         <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r> 
       </p>
     </e>
@@ -771,6 +778,13 @@
       <p>
         <l>j</l> 
         <r><s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e r="RL">
+      <p>
+        <l>n</l> 
+        <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r> 
       </p>
     </e>
 
@@ -2846,10 +2860,12 @@
     <e lm="ĉesigo">        <par n="ĉ"/>        <i>esigo</i><par n="nom__n"/></e>
     <e lm="ĉevalo">        <par n="ĉ"/>        <i>evalo</i><par n="nom__n"/></e>
     <e lm="ĉi tie">        <par n="ĉ"/>        <i>i<b/>tie</i><par n="komence__adv"/></e>
-    <e lm="ĉi tiu">      <par n="ĉ"/>      <p>        <l>i<b/>tiu</l>         <r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ĉi tiu">      <par n="ĉ"/>      <p>        <l>i<b/>tiuj</l>         <r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ĉi tiu">      <par n="ĉ"/>      <p>        <l>i<b/>tiujn</l>         <r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="ĉi tiu">      <par n="ĉ"/>      <p>        <l>i<b/>tiun</l>         <r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
+
     <e lm="ĉiakoste">        <par n="ĉ"/>        <i>iakoste</i><par n="komence__adv"/></e>
     <e lm="ĉiam">        <par n="ĉ"/>        <i>iam</i><par n="komence__adv"/></e>
     <e lm="ĉiam"><i>ĉiam</i><par n="komence__adv"/></e>

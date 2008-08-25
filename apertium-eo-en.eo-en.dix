@@ -371,85 +371,90 @@
 
     <!-- Determiners -->
 
-    <e r="RL" c="afirmatives"><p><l>ajna<s n="det"/></l><r>any<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/><s n="sp"/></l><r>any<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
 
     <e><p><l>unu<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
 
-    <e r="RL"><p><l>ajna<s n="det"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>ajna<s n="det"/></l><r>whatever<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>alia<s n="det"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>alia<s n="det"/></l><r>another<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>alia<s n="det"/></l><r>other<s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>alia<s n="det"/></l><r>other<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>ambaŭ<s n="det"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>whatever<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
+    <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>ambaŭ<s n="det"/><s n="ind"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
     <e r="LR"><p><l>ambaŭ<s n="det"/></l><r>both<s n="det"/></r></p></e>
     <e r="LR"><p><l>certa<s n="det"/><s n="ind"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="RL"><p><l>ĉi<b/>tiu<s n="det"/></l><r>this<s n="det"/><s n="dem"/></r></p></e>
-    <e r="LR"><p><l>ĉi<b/>tiu<s n="det"/></l><r>this<s n="det"/></r></p></e>
+    <e><p><l>ĉi<b/>tiu<s n="det"/><s n="dem"/></l><r>this<s n="det"/><s n="dem"/></r></p></e>
+
     <!-- té polisèmia amb 'every', però no he posat marca de polisèmia -->
 
     <e><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>each<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>ĉiu<s n="det"/></l><r>every<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>every<s n="det"/><s n="ind"/></r></p></e>
     <e r="LR"><p><l>ĝia<s n="det"/></l><r>his<s n="det"/></r></p></e>
     <e r="LR"><p><l>ilia<s n="det"/></l><r>his<s n="det"/></r></p></e>
     <e c="interrogatives, condicional"><p><l>iu<s n="det"/><s n="qnt"/></l><r>any<s n="det"/></r></p></e>
-    <e r="RL" c="frases afirmatives"><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-    <e r="LR" c="frases afirmatives"><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/></r></p></e>
-    <e r="RL"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e r="RL"><p><l>kelka<s n="det"/><s n="qnt"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/></r></p></e>
 
     <e><p><l>la<s n="det"/><s n="def"/><s n="sp"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
 
-    <e r="RL"><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
+    <e><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
 
     <!-- MG: traducció per defecte ca-en és per ara 'his' -->
     <e r="RL"><p><l>lia<s n="det"/></l><r>her<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>lia<s n="det"/></l><r>his<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
     <e r="LR"><p><l>lia<s n="det"/></l><r>his<s n="det"/></r></p></e>
 
     <e r="RL"><p><l>lia<s n="det"/><s n="pos"/><s n="sp"/></l><r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/><s n="sp"/></l><r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 
-    <e r="RL"><p><l>lia<s n="det"/></l><r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>malmulta<s n="det"/></l><r>little<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="LR" c="en sg: little bread, little hope"><p><l>malmulta<s n="det"/></l><r>little<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>malmulta<s n="det"/></l><r>few<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="LR" c="en plural"><p><l>malmulta<s n="det"/></l><r>few<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>malmulta<s n="det"/><s n="qnt"/></l><r>little<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="LR"><p><l>malmulta<s n="det"/><s n="qnt"/><s n="sg"/></l><r>little<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>malmulta<s n="det"/><s n="qnt"/></l><r>few<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="LR"><p><l>malmulta<s n="det"/><s n="qnt"/><s n="pl"/></l><r>few<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+
     <e><p><l>malpli<b/>da<s n="det"/></l><r>less<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>malpli<b/>da<s n="det"/></l><r>fewer<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+
     <e r="LR"><p><l>mia<s n="det"/></l><r>my<s n="det"/></r></p></e>
-    <e r="RL"><p><l>mia<s n="det"/></l><r>my<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>multa<s n="det"/></l><r>much<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="RL"><p><l>multa<s n="det"/></l><r>many<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="RL"><p><l>multa<s n="det"/></l><r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>mia<s n="det"/><s n="pos"/><s n="sp"/></l><r>my<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+
+    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>much<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>many<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/><s n="sp"/></l><r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>multa<s n="det"/></l><r>a<b/>lot<b/>of<s n="det"/></r></p></e>
-    <e r="RL"><p><l>multa<s n="det"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+
+    <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/><s n="sp"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+
     <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL" c="frases negatives"><p><l>neniu<s n="det"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>neniu<s n="det"/></l><r>no<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>nia<s n="det"/></l><r>our<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+    <e r="RL" c="frases negatives"><p><l>neniu<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>neniu<s n="det"/><s n="ind"/></l><r>no<s n="det"/><s n="ind"/></r></p></e>
+    <e r="RL"><p><l>nia<s n="det"/><s n="pos"/><s n="sp"/></l><r>our<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
     <e r="LR"><p><l>nia<s n="det"/></l><r>our<s n="det"/></r></p></e>
-    <e><p><l>pli<b/>da<s n="det"/></l><r>more<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/></l><r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+    <e><p><l>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>more<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
     <e r="LR"><p><l>sufiĉe<b/>da<s n="det"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/></r></p></e>
     <e r="LR"><p><l>ŝia<s n="det"/></l><r>his<s n="det"/></r></p></e>
-    <e r="RL"><p><l>tia<s n="det"/></l><r>such<b/>a<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>tia<s n="det"/></l><r>such<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>tia<s n="det"/></l><r>such<s n="det"/></r></p></e>
-    <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/></l><r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/></l><r>so<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/></l><r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/></l><r>so<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
-    <e r="RL" c="'as much time'."><p><l>tiom<b/>da<b/>da<s n="det"/></l><r>as<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="RL"><p><l>tiu<s n="det"/></l><r>that<s n="det"/><s n="dem"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="det"/></l><r>that<s n="det"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="det"/></l><r>this<s n="det"/></r></p></e>
-    <e r="RL" c="incomptable, per tant, amb complement singular)"><p><l>tro<b/>da<s n="det"/></l><r>too<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-    <e r="RL" c="comptable, per tant, amb complement plural"><p><l>tro<b/>da<s n="det"/></l><r>too<b/>many<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e><p><l>tia<s n="det"/><s n="ind"/></l><r>such<s n="det"/><s n="ind"/></r></p></e>
+
+    <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>so<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>so<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+
+    <e r="RL"><p><l>tiom<b/>da<b/>da<s n="det"/><s n="qnt"/></l><r>as<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+
+    <e><p><l>tiu<s n="det"/><s n="dem"/></l><r>that<s n="det"/><s n="dem"/></r></p></e>
+
+    <e r="RL"><p><l>tro<b/>da<s n="det"/><s n="qnt"/></l><r>too<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+    <e r="RL"><p><l>tro<b/>da<s n="det"/><s n="qnt"/></l><r>too<b/>many<s n="det"/><s n="qnt"/></r></p></e>
     <!-- MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en --> 
-    <e r="LR"><p><l>tro<b/>da<s n="det"/></l><r>too<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>tro<b/>da<s n="det"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>too<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+    <e r="LR"><p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
     <e r="LR" c="per ara de en-ca es genera només 'el vostre'"><p><l>via<s n="det"/></l><r>your<s n="det"/></r></p></e>
     <e r="RL"><p><l>via<s n="det"/></l><r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 
