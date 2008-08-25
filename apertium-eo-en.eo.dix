@@ -573,6 +573,7 @@
     </e>
 
     </pardef>
+
     <pardef n="la__det">
     <e>
       <p>
@@ -624,6 +625,59 @@
     </e>
 
     </pardef>
+
+    <pardef n="unu__det">
+      <e>
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sp"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l></l>
+          <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
     <pardef n="mia__det">
     <e r="LR">
       <p>
@@ -5012,6 +5066,8 @@
     <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
     <e lm="kvoto"><i>kvoto</i><par n="nom__n"/></e>
     <e lm="la"><i>la</i><par n="la__det"/></e>
+    <e lm="unu"><i>unu</i><par n="unu__det"/></e>
+
     <e lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
     <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
     <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>

@@ -184,6 +184,19 @@
     <e r="LR"><p><l>oni<s n="prn"/><s n="tn"/><s n="m"/></l><r>one<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
     <e r="LR"><p><l>oni<s n="prn"/><s n="tn"/><s n="f"/></l><r>one<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
 
+    <e><p><l>tio<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="f"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+    <e r="RL"><p><l>tiu<s n="prn"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="f"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+    <e r="RL"><p><l>tiu<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nomi"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+
+
+    <!-- Personal pronouns -->
+
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -197,16 +210,6 @@
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
-
-    <e><p><l>tio<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="f"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="RL"><p><l>tiu<s n="prn"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="f"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="RL"><p><l>tiu<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nomi"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 
     <!-- Conjunctions -->
 
@@ -353,6 +356,9 @@
     <!-- Determiners -->
 
     <e r="RL" c="afirmatives"><p><l>ajna<s n="det"/></l><r>any<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
+
+    <e><p><l>unu<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
+
     <e r="RL"><p><l>ajna<s n="det"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ajna<s n="det"/></l><r>whatever<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>alia<s n="det"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
@@ -9543,15 +9549,10 @@
     <e><p><l>plura<s n="det"/></l><r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
     <e><p><l>malelekti<s n="vblex"/></l><r>untoggle<s n="vblex"/></r></p></e>
-
     <e><p><l>elekti<s n="vblex"/></l><r>choose<s n="vblex"/></r></p></e>
-
     <e><p><l>klaki<s n="vblex"/></l><r>click<s n="vblex"/></r></p></e>
 
     <e><p><l>GCompris<s n="n"/></l><r>GCompris<s n="n"/></r></p></e>
-
-
-    <e><p><l>povi<s n="vblex"/></l><r>can<s n="vblex"/></r></p></e>
 
   </section>
 </dictionary>
