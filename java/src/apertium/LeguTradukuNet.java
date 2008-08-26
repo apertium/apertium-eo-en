@@ -153,6 +153,8 @@ public class LeguTradukuNet {
 
 	if (eo.length()<=2) a.problem = true; // not a word then / classification fails
 
+	if (eo.indexOf("..")!=-1); a.problem = true; // eks  mal..igo
+
 	return a;
     }
 
