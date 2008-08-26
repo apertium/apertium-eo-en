@@ -6528,6 +6528,9 @@
     <e><i>Utterson<s n="np"/><s n="cog"/></i></e>
     <e><i>Poole<s n="np"/><s n="cog"/></i></e>
 
+    <e><p><i>GCompris<s n="np"/><s n="al"/></i></p></e>
+    <e><p><l>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberiĝo<s n="np"/><s n="al"/></l><r>Zapatista<b/>National<b/>Liberation<b/>Army<s n="np"/><s n="al"/></r></p></e>
+
     <!-- Adjectives -->
 
     <e><p><l>laŭleĝa<s n="adj"/></l><r>lawful<s n="adj"/></r></p></e>
@@ -8990,6 +8993,7 @@
     <e><p><l>treni<s n="vblex"/></l><r>tow<s n="vblex"/></r></p></e>
     <e><p><l>trinki<s n="vblex"/></l><r>drink<s n="vblex"/></r></p></e>
     <e><p><l>troigi<s n="vblex"/></l><r>exaggerate<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>trograndigi<s n="vblex"/></l><r>exaggerate<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>trompi<s n="vblex"/></l><r>cheat<s n="vblex"/></r></p></e>
     <e><p><l>trompi<s n="vblex"/></l><r>deceive<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>trompi<s n="vblex"/></l><r>trap<s n="vblex"/></r></p></e>
@@ -9609,19 +9613,17 @@
 <!--
  -->
     <e><p><l>listo<s n="n"/></l><r>list<s n="n"/></r></p></e>
-    <e><p><l>komo<s n="n"/></l><r>comma<s n="n"/></r></p></e>
     <e><p><l>arblisto<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
     <e><p><l>faldmenuo<s n="n"/></l><r>combobox<s n="n"/></r></p></e>
     <e><p><l>agordo<s n="n"/></l><r>configuration<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
 
-    <e><p><l>plura<s n="det"/></l><r>multiple<s n="det"/><s n="qnt"/></r></p></e>
+    <e><p><l>plura<s n="det"/><s n="qnt"/></l><r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
     <e><p><l>malelekti<s n="vblex"/></l><r>untoggle<s n="vblex"/></r></p></e>
     <e><p><l>elekti<s n="vblex"/></l><r>choose<s n="vblex"/></r></p></e>
     <e><p><l>klaki<s n="vblex"/></l><r>click<s n="vblex"/></r></p></e>
 
-    <e><p><l>GCompris<s n="n"/></l><r>GCompris<s n="n"/></r></p></e>
 
   </section>
 </dictionary>

@@ -18307,6 +18307,11 @@
         <par n="long/__adj"/> 
     </e>
 
+    <e lm="click">
+        <i>click</i> 
+        <par n="accept__vblex"/> 
+    </e>
+
     <e lm="client">
         <i>client</i> 
         <par n="house__n"/> 
@@ -18625,6 +18630,11 @@
     <e lm="combination">
         <i>combination</i> 
         <par n="house__n"/> 
+    </e>
+
+    <e lm="combobox">
+        <i>combobox</i> 
+        <par n="bass__n"/> 
     </e>
 
     <e lm="combustion">
@@ -19135,6 +19145,11 @@
     <e lm="confident">
         <i>confident</i> 
         <par n="expensive__adj"/> 
+    </e>
+
+    <e lm="configuration">
+        <i>configuration</i> 
+        <par n="house__n"/> 
     </e>
 
     <e lm="configure">
@@ -45262,6 +45277,11 @@
         <par n="house__n"/> 
     </e>
 
+    <e lm="treeview">
+        <i>treeview</i> 
+        <par n="house__n"/> 
+    </e>
+
     <e lm="tremble">
         <i>trembl</i> 
         <par n="liv/e__vblex"/> 
@@ -45993,6 +46013,11 @@
     <e lm="until">
         <i>until</i> 
         <par n="at__pr"/> 
+    </e>
+
+    <e lm="untoggle">
+        <i>untoggl</i> 
+        <par n="liv/e__vblex"/> 
     </e>
 
     <e lm="unusual">
@@ -47676,5 +47701,7 @@
     <e lm="Utterson"><i>Utterson</i><par n="Smith__np"/></e>
     <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
 
+    <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
+    <e lm="Zapatista National Liberation Army"><i>Zapatista<b/>National<b/>Liberation<b/>Army</i><par n="Linux__np"/></e>
   </section>
 </dictionary>

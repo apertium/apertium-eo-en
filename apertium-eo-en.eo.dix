@@ -427,6 +427,36 @@
 
     </pardef>
 
+    <pardef n="plur/a__det">
+    <e>
+      <p>
+        <l>a</l> 
+        <r>a<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>aj</l> 
+        <r>a<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>an</l> 
+        <r>a<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>ajn</l> 
+        <r>a<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
+    </pardef>
+
     <pardef n="komence__adv">
     <e>
       <p>
@@ -1371,13 +1401,21 @@
     </e>
 
     </pardef>
-    <pardef n="Stevenson__np">
+    <pardef n="Smith__np">
       <e>
         <p>
           <l></l> 
           <r><s n="np"/><s n="cog"/></r> 
         </p>
       </e>
+    </pardef>
+    <pardef n="Linux__np">
+    <e>
+      <p>
+        <l/> 
+        <r><s n="np"/><s n="al"/><s n="sg"/></r> 
+      </p>
+    </e>
     </pardef>
 
     <pardef n="CX__num">
@@ -2199,6 +2237,7 @@
     <e lm="aglo"><i>aglo</i><par n="nom__n"/></e>
     <e lm="ago"><i>ago</i><par n="nom__n"/></e>
     <e lm="agonio"><i>agonio</i><par n="nom__n"/></e>
+    <e lm="agordo"><i>agordo</i><par n="nom__n"/></e>
     <e lm="agrabla"><i>agrabl</i><par n="adj__adj"/></e>
     <e lm="agrara"><i>agrar</i><par n="adj__adj"/></e>
     <e lm="agresema"><i>agresem</i><par n="adj__adj"/></e>
@@ -2486,6 +2525,7 @@
     <e lm="araneaĵo"><i>aranea</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="araneo"><i>araneo</i><par n="nom__n"/></e>
     <e lm="arbaro"><i>arbaro</i><par n="nom__n"/></e>
+    <e lm="arblisto"><i>arblisto</i><par n="nom__n"/></e>
     <e lm="arbitra"><i>arbitr</i><par n="adj__adj"/></e>
     <e lm="arbo"><i>arbo</i><par n="nom__n"/></e>
     <e lm="arda"><i>ard</i><par n="adj__adj"/></e>
@@ -3666,6 +3706,7 @@
     <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
     <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
     <e lm="faldebla"><i>faldeblao</i><par n="nom__n"/></e>
+    <e lm="faldmenuo"><i>faldmenuo</i><par n="nom__n"/></e>
     <e lm="falsi"><i>fals</i><par n="verb__vblex"/></e>
     <e lm="falsa"><i>fals</i><par n="adj__adj"/></e>
     <e lm="falseco"><i>falseco</i><par n="nom__n"/></e>
@@ -4311,6 +4352,7 @@
     <e lm="infana"><i>infan</i><par n="adj__adj"/></e>
     <e lm="infanaĝo"><i>infana</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="infanejo"><i>infanejo</i><par n="nom__n"/></e>
+    <e lm="infano"><i>infano</i><par n="nom__n"/></e>
     <e lm="infankuracisto"><i>infankuracist</i><par n="nommf__n"/></e>
     <e lm="infarkto"><i>infarkto</i><par n="nom__n"/></e>
     <e lm="infekta"><i>infekt</i><par n="adj__adj"/></e>
@@ -4726,6 +4768,7 @@
     <e lm="kiu">      <p>        <l>kiun</l>         <r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
     <e lm="kiu">      <p>        <l>kiun</l>         <r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
     <e lm="klaĉo"><i>kla</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="klaki"><i>klak</i><par n="verb__vblex"/></e>
     <e lm="klano"><i>klano</i><par n="nom__n"/></e>
     <e lm="klare"><i>klare</i><par n="komence__adv"/></e>
     <e lm="klare"><i>klare</i><par n="komence__adv"/></e>
@@ -5444,6 +5487,7 @@
     <e lm="maldolĉa"><i>maldol</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="maldungi"><i>maldung</i><par n="verb__vblex"/></e>
     <e lm="maldungo"><i>maldungo</i><par n="nom__n"/></e>
+    <e lm="malelekti"><i>malelekt</i><par n="verb__vblex"/></e>
     <e lm="maleolo"><i>maleolo</i><par n="nom__n"/></e>
     <e lm="malespero"><i>malespero</i><par n="nom__n"/></e>
     <e lm="malespero"><i>malespero</i><par n="nom__n"/></e>
@@ -6540,6 +6584,7 @@
     <e lm="plua"><i>plu</i><par n="adj__adj"/></e>
     <e lm="plugi"><i>plug</i><par n="verb__vblex"/></e>
     <e lm="plumo"><i>plumo</i><par n="nom__n"/></e>
+    <e lm="plura"><i>plur</i><par n="plur/a__det"/></e>
     <e lm="pluralo"><i>pluralo</i><par n="nom__n"/></e>
     <e lm="plurangulo"><i>plurangulo</i><par n="nom__n"/></e>
     <e lm="pluvi"><i>pluv</i><par n="verb__vblex"/></e>
@@ -8343,17 +8388,23 @@
     <e lm="zono"><i>zono</i><par n="nom__n"/></e>
     <e lm="zono"><i>zono</i><par n="nom__n"/></e>
     <e lm="zorgo"><i>zorgo</i><par n="nom__n"/></e>
-    <!-- Antonyms -->    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
+    <!-- Antonyms -->
+    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
     <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
     <e lm="Henry"><i>Henry</i><par n="Mark__np"/></e>
     <e lm="Harry"><i>Harry</i><par n="Mark__np"/></e>
     <e lm="Edward"><i>Edward</i><par n="Mark__np"/></e>
-    <!-- Cognomen -->    <e lm="Stevenson"><i>Stevenson</i><par n="Stevenson__np"/></e>
-    <e lm="Jekyll"><i>Jekyll</i><par n="Stevenson__np"/></e>
-    <e lm="Hyde"><i>Hyde</i><par n="Stevenson__np"/></e>
-    <e lm="Lanyon"><i>Lanyon</i><par n="Stevenson__np"/></e>
-    <e lm="Utterson"><i>Utterson</i><par n="Stevenson__np"/></e>
-    <e lm="Poole"><i>Poole</i><par n="Stevenson__np"/></e>
+    <!-- Cognomen -->
+    <e lm="Stevenson"><i>Stevenson</i><par n="Smith__np"/></e>
+    <e lm="Jekyll"><i>Jekyll</i><par n="Smith__np"/></e>
+    <e lm="Hyde"><i>Hyde</i><par n="Smith__np"/></e>
+    <e lm="Lanyon"><i>Lanyon</i><par n="Smith__np"/></e>
+    <e lm="Utterson"><i>Utterson</i><par n="Smith__np"/></e>
+    <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
+    <!-- np.al -->
+    <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
+    <e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
+    
     <e lm="humiligi"><i>humilig</i><par n="verb__vblex"/></e>
     <e lm="forrabi"><i>forrab</i><par n="verb__vblex"/></e>
     <e lm="kunhelpi"><i>kunhelp</i><par n="verb__vblex"/></e>
