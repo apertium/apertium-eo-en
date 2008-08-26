@@ -1965,8 +1965,8 @@
     <e lm="Grekio"><i>Grekio</i><par n="Barcelona__np"/></e>
     <e lm="Gvatemalo"><i>Gvatemalo</i><par n="Barcelona__np"/></e>
     <e lm="Gvineo"><i>Gvineo</i><par n="Barcelona__np"/></e>
-    <e lm="Ĝibraltaro">      <p>        <l>Gxibraltaro</l>         <r>Ĝibraltaro</r>       </p>      <par n="Barcelona__np"/></e>
-    <e lm="Ĝibraltaro">      <p>        <l>GXibraltaro</l>         <r>Ĝibraltaro</r>       </p>      <par n="Barcelona__np"/></e>
+    <e lm="Ĝibraltaro"><p><l>Gxibraltaro</l><r>Ĝibraltaro</r></p><par n="Barcelona__np"/></e>
+    <e lm="Ĝibraltaro"><p><l>GXibraltaro</l><r>Ĝibraltaro</r></p><par n="Barcelona__np"/></e>
     <e lm="Ĝibraltaro"><i>Ĝibraltaro</i><par n="Barcelona__np"/></e>
     <e lm="Haitio"><i>Haitio</i><par n="Barcelona__np"/></e>
     <e lm="Helena"><i>Helena</i><par n="Mary__np"/></e>
@@ -2318,11 +2318,11 @@
     <e lm="algo"><i>algo</i><par n="nom__n"/></e>
     <e lm="algoritmo"><i>algoritmo</i><par n="nom__n"/></e>
     <e lm="alia"><i>ali</i><par n="adj__adj"/></e>
-    <e lm="alia">      <p>        <l>alia</l>         <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="alia"><p><l>alia</l><r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="alia"><i>alia</i><par n="ind__det"/></e>
-    <e lm="alia">      <p>        <l>aliaj</l>         <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="alia">      <p>        <l>aliajn</l>         <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="alia">      <p>        <l>alian</l>         <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="alia"><p><l>aliaj</l><r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="alia"><p><l>aliajn</l><r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="alia"><p><l>alian</l><r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="alianco"><i>alianco</i><par n="nom__n"/></e>
     <e lm="aliflanke"><i>aliflanke</i><par n="komence__adv"/></e>
     <e lm="aliĝilo"><i>ali</i><par n="ĝ"/><i>ilo</i><par n="nom__n"/></e>
@@ -2372,10 +2372,10 @@
     <e lm="amaso"><i>amaso</i><par n="nom__n"/></e>
     <e lm="ambasado"><i>ambasado</i><par n="nom__n"/></e>
     <e lm="ambasadoro"><i>ambasador</i><par n="nommf__n"/></e>
-    <e lm="ambaux" r="LR">      <p>        <l>ambaux</l>         <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ambaŭ">      <p>        <l>ambaŭ</l>         <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ambaux" r="LR">      <p>        <l>ambaux</l>         <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="ambaŭ">      <p>        <l>ambaŭ</l>         <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e lm="ambaux" r="LR"><p><l>ambaux</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ambaux" r="LR"><p><l>ambaux</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="ambaŭ"><i>amba</i><par n="ŭ"/><i></i><par n="ind__det"/></e>
     <e lm="ambicia"><i>ambici</i><par n="adj__adj"/></e>
     <e lm="ambicio"><i>ambicio</i><par n="nom__n"/></e>
@@ -2962,83 +2962,83 @@
     <e lm="civilizacio"><i>civilizacio</i><par n="nom__n"/></e>
     <e lm="civilizacio"><i>civilizacio</i><par n="nom__n"/></e>
     <e lm="colo"><i>colo</i><par n="nom__n"/></e>
-    <e lm="ĉagreno">        <par n="ĉ"/>        <i>agreno</i><par n="nom__n"/></e>
-    <e lm="ĉambro">        <par n="ĉ"/>        <i>ambro</i><par n="nom__n"/></e>
-    <e lm="ĉampano">        <par n="ĉ"/>        <i>ampano</i><par n="nom__n"/></e>
-    <e lm="ĉampiono">        <par n="ĉ"/>        <i>ampion</i><par n="nommf__n"/></e>
-    <e lm="ĉano">        <par n="ĉ"/>        <i>ano</i><par n="nom__n"/></e>
-    <e lm="ĉantaĝo">        <par n="ĉ"/>        <i>anta</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ĉapelo">        <par n="ĉ"/>        <i>apelo</i><par n="nom__n"/></e>
-    <e lm="ĉapitro">        <par n="ĉ"/>        <i>apitro</i><par n="nom__n"/></e>
-    <e lm="ĉar">        <par n="ĉ"/>        <i>ar</i><par n="after__cnjadv"/></e>
-    <e lm="ĉar">        <par n="ĉ"/>        <i>ar</i><par n="at__pr"/></e>
-    <e lm="ĉasi">        <par n="ĉ"/>        <i>as</i><par n="verb__vblex"/></e>
-    <e lm="ĉasfusilo">        <par n="ĉ"/>        <i>asfusilo</i><par n="nom__n"/></e>
-    <e lm="ĉasio">        <par n="ĉ"/>        <i>asio</i><par n="nom__n"/></e>
-    <e lm="ĉe la fronto">        <par n="ĉ"/>        <i>e<b/>la<b/>fronto</i><par n="komence__adv"/></e>
-    <e lm="ĉeesti">        <par n="ĉ"/>        <i>eest</i><par n="verb__vblex"/></e>
-    <e lm="ĉeestanta">        <par n="ĉ"/>        <i>eestant</i><par n="adj__adj"/></e>
-    <e lm="ĉeesto">        <par n="ĉ"/>        <i>eesto</i><par n="nom__n"/></e>
-    <e lm="ĉefi">        <par n="ĉ"/>        <i>ef</i><par n="verb__vblex"/></e>
-    <e lm="ĉefo">        <par n="ĉ"/>        <i>ef</i><par n="nommf__n"/></e>
-    <e lm="ĉefa">        <par n="ĉ"/>        <i>ef</i><par n="adj__adj"/></e>
-    <e lm="ĉefartikolo">        <par n="ĉ"/>        <i>efartikolo</i><par n="nom__n"/></e>
-    <e lm="ĉefe">        <par n="ĉ"/>        <i>efe</i><par n="komence__adv"/></e>
+    <e lm="ĉagreno"><par n="ĉ"/><i>agreno</i><par n="nom__n"/></e>
+    <e lm="ĉambro"><par n="ĉ"/><i>ambro</i><par n="nom__n"/></e>
+    <e lm="ĉampano"><par n="ĉ"/><i>ampano</i><par n="nom__n"/></e>
+    <e lm="ĉampiono"><par n="ĉ"/><i>ampion</i><par n="nommf__n"/></e>
+    <e lm="ĉano"><par n="ĉ"/><i>ano</i><par n="nom__n"/></e>
+    <e lm="ĉantaĝo"><par n="ĉ"/><i>anta</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="ĉapelo"><par n="ĉ"/><i>apelo</i><par n="nom__n"/></e>
+    <e lm="ĉapitro"><par n="ĉ"/><i>apitro</i><par n="nom__n"/></e>
+    <e lm="ĉar"><par n="ĉ"/><i>ar</i><par n="after__cnjadv"/></e>
+    <e lm="ĉar"><par n="ĉ"/><i>ar</i><par n="at__pr"/></e>
+    <e lm="ĉasi"><par n="ĉ"/><i>as</i><par n="verb__vblex"/></e>
+    <e lm="ĉasfusilo"><par n="ĉ"/><i>asfusilo</i><par n="nom__n"/></e>
+    <e lm="ĉasio"><par n="ĉ"/><i>asio</i><par n="nom__n"/></e>
+    <e lm="ĉe la fronto"><par n="ĉ"/><i>e<b/>la<b/>fronto</i><par n="komence__adv"/></e>
+    <e lm="ĉeesti"><par n="ĉ"/><i>eest</i><par n="verb__vblex"/></e>
+    <e lm="ĉeestanta"><par n="ĉ"/><i>eestant</i><par n="adj__adj"/></e>
+    <e lm="ĉeesto"><par n="ĉ"/><i>eesto</i><par n="nom__n"/></e>
+    <e lm="ĉefi"><par n="ĉ"/><i>ef</i><par n="verb__vblex"/></e>
+    <e lm="ĉefo"><par n="ĉ"/><i>ef</i><par n="nommf__n"/></e>
+    <e lm="ĉefa"><par n="ĉ"/><i>ef</i><par n="adj__adj"/></e>
+    <e lm="ĉefartikolo"><par n="ĉ"/><i>efartikolo</i><par n="nom__n"/></e>
+    <e lm="ĉefe"><par n="ĉ"/><i>efe</i><par n="komence__adv"/></e>
     <e lm="ĉefe"><i>ĉefe</i><par n="komence__adv"/></e>
-    <e lm="ĉefepiskopo">        <par n="ĉ"/>        <i>efepiskopo</i><par n="nom__n"/></e>
-    <e lm="ĉefrolulo">        <par n="ĉ"/>        <i>efrolul</i><par n="nommf__n"/></e>
-    <e lm="ĉefurbo">        <par n="ĉ"/>        <i>efurbo</i><par n="nom__n"/></e>
-    <e lm="ĉeko">        <par n="ĉ"/>        <i>eko</i><par n="nom__n"/></e>
-    <e lm="ĉelo">        <par n="ĉ"/>        <i>elo</i><par n="nom__n"/></e>
-    <e lm="ĉemizo">        <par n="ĉ"/>        <i>emizo</i><par n="nom__n"/></e>
-    <e lm="ĉeni">        <par n="ĉ"/>        <i>en</i><par n="verb__vblex"/></e>
-    <e lm="ĉeno">        <par n="ĉ"/>        <i>eno</i><par n="nom__n"/></e>
-    <e lm="ĉerizo">        <par n="ĉ"/>        <i>erizo</i><par n="nom__n"/></e>
-    <e lm="ĉerko">        <par n="ĉ"/>        <i>erko</i><par n="nom__n"/></e>
-    <e lm="ĉerpi">        <par n="ĉ"/>        <i>erp</i><par n="verb__vblex"/></e>
-    <e lm="ĉesigo">        <par n="ĉ"/>        <i>esigo</i><par n="nom__n"/></e>
-    <e lm="ĉevalo">        <par n="ĉ"/>        <i>evalo</i><par n="nom__n"/></e>
-    <e lm="ĉi tie">        <par n="ĉ"/>        <i>i<b/>tie</i><par n="komence__adv"/></e>
+    <e lm="ĉefepiskopo"><par n="ĉ"/><i>efepiskopo</i><par n="nom__n"/></e>
+    <e lm="ĉefrolulo"><par n="ĉ"/><i>efrolul</i><par n="nommf__n"/></e>
+    <e lm="ĉefurbo"><par n="ĉ"/><i>efurbo</i><par n="nom__n"/></e>
+    <e lm="ĉeko"><par n="ĉ"/><i>eko</i><par n="nom__n"/></e>
+    <e lm="ĉelo"><par n="ĉ"/><i>elo</i><par n="nom__n"/></e>
+    <e lm="ĉemizo"><par n="ĉ"/><i>emizo</i><par n="nom__n"/></e>
+    <e lm="ĉeni"><par n="ĉ"/><i>en</i><par n="verb__vblex"/></e>
+    <e lm="ĉeno"><par n="ĉ"/><i>eno</i><par n="nom__n"/></e>
+    <e lm="ĉerizo"><par n="ĉ"/><i>erizo</i><par n="nom__n"/></e>
+    <e lm="ĉerko"><par n="ĉ"/><i>erko</i><par n="nom__n"/></e>
+    <e lm="ĉerpi"><par n="ĉ"/><i>erp</i><par n="verb__vblex"/></e>
+    <e lm="ĉesigo"><par n="ĉ"/><i>esigo</i><par n="nom__n"/></e>
+    <e lm="ĉevalo"><par n="ĉ"/><i>evalo</i><par n="nom__n"/></e>
+    <e lm="ĉi tie"><par n="ĉ"/><i>i<b/>tie</i><par n="komence__adv"/></e>
 
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
 
-    <e lm="ĉiakoste">        <par n="ĉ"/>        <i>iakoste</i><par n="komence__adv"/></e>
-    <e lm="ĉiam">        <par n="ĉ"/>        <i>iam</i><par n="komence__adv"/></e>
+    <e lm="ĉiakoste"><par n="ĉ"/><i>iakoste</i><par n="komence__adv"/></e>
+    <e lm="ĉiam"><par n="ĉ"/><i>iam</i><par n="komence__adv"/></e>
     <e lm="ĉiam"><i>ĉiam</i><par n="komence__adv"/></e>
-    <e lm="ĉiaokaze">        <par n="ĉ"/>        <i>iaokaze</i><par n="komence__adv"/></e>
-    <e lm="ĉielo">        <par n="ĉ"/>        <i>ielo</i><par n="nom__n"/></e>
-    <e lm="ĉielskrapanto">        <par n="ĉ"/>        <i>ielskrapanto</i><par n="nom__n"/></e>
-    <e lm="ĉifi">        <par n="ĉ"/>        <i>if</i><par n="verb__vblex"/></e>
-    <e lm="ĉifono">        <par n="ĉ"/>        <i>ifono</i><par n="nom__n"/></e>
-    <e lm="ĉifro">        <par n="ĉ"/>        <i>ifro</i><par n="nom__n"/></e>
-    <e lm="ĉilia">        <par n="ĉ"/>        <i>ili</i><par n="adj__adj"/></e>
-    <e lm="ĉiliano">        <par n="ĉ"/>        <i>ilian</i><par n="nommf__n"/></e>
-    <e lm="ĉina">        <par n="ĉ"/>        <i>in</i><par n="adj__adj"/></e>
-    <e lm="ĉirkaŭ">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
-    <e lm="ĉirkaŭi">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="ĉirkaŭlimigi">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i>limig</i><par n="verb__vblex"/></e>
-    <e lm="ĉirkaŭpreni">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i>pren</i><par n="verb__vblex"/></e>
-    <e lm="ĉirkaŭurbo">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i>urbo</i><par n="nom__n"/></e>
-    <e lm="ĉirkaŭvojo">        <par n="ĉ"/>        <i>irka</i><par n="ŭ"/><i>vojo</i><par n="nom__n"/></e>
-    <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iu</l>         <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ĉiu">        <par n="ĉ"/>        <i>iu</i><par n="ind__det"/></e>
-    <e lm="ĉiu">        <par n="ĉ"/>        <i>iu</i><par n="quant__det"/></e>
+    <e lm="ĉiaokaze"><par n="ĉ"/><i>iaokaze</i><par n="komence__adv"/></e>
+    <e lm="ĉielo"><par n="ĉ"/><i>ielo</i><par n="nom__n"/></e>
+    <e lm="ĉielskrapanto"><par n="ĉ"/><i>ielskrapanto</i><par n="nom__n"/></e>
+    <e lm="ĉifi"><par n="ĉ"/><i>if</i><par n="verb__vblex"/></e>
+    <e lm="ĉifono"><par n="ĉ"/><i>ifono</i><par n="nom__n"/></e>
+    <e lm="ĉifro"><par n="ĉ"/><i>ifro</i><par n="nom__n"/></e>
+    <e lm="ĉilia"><par n="ĉ"/><i>ili</i><par n="adj__adj"/></e>
+    <e lm="ĉiliano"><par n="ĉ"/><i>ilian</i><par n="nommf__n"/></e>
+    <e lm="ĉina"><par n="ĉ"/><i>in</i><par n="adj__adj"/></e>
+    <e lm="ĉirkaŭ"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
+    <e lm="ĉirkaŭi"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="verb__vblex"/></e>
+    <e lm="ĉirkaŭlimigi"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i>limig</i><par n="verb__vblex"/></e>
+    <e lm="ĉirkaŭpreni"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i>pren</i><par n="verb__vblex"/></e>
+    <e lm="ĉirkaŭurbo"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i>urbo</i><par n="nom__n"/></e>
+    <e lm="ĉirkaŭvojo"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i>vojo</i><par n="nom__n"/></e>
+    <e lm="ĉiu"><par n="ĉ"/><p><l>iu</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
+    <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
     <e lm="tiom da da"><i>tiom<b/>da<b/>da</i><par n="quant__det"/></e>
-    <e lm="ĉiufoje pli">        <par n="ĉ"/>        <i>iufoje<b/>pli</i><par n="after__cnjadv"/></e>
-    <e lm="ĉiufoje pli">        <par n="ĉ"/>        <i>iufoje<b/>pli</i><par n="komence__adv"/></e>
-    <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iuj</l>         <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="ĉiujara">        <par n="ĉ"/>        <i>iujar</i><par n="adj__adj"/></e>
-    <e lm="ĉiujara">        <par n="ĉ"/>        <i>iujara</i><par n="komence__adv"/></e>
-    <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iujn</l>         <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="ĉiu">      <par n="ĉ"/>      <p>        <l>iun</l>         <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="ĉiusemajne">        <par n="ĉ"/>        <i>iusemajne</i><par n="komence__adv"/></e>
-    <e lm="ĉiutaga">        <par n="ĉ"/>        <i>iutag</i><par n="adj__adj"/></e>
-    <e lm="ĉiutage">        <par n="ĉ"/>        <i>iutage</i><par n="komence__adv"/></e>
-    <e lm="ĉokolado">        <par n="ĉ"/>        <i>okolado</i><par n="nom__n"/></e>
-    <e lm="ĉu">        <par n="ĉ"/>        <i>u</i><par n="kial__adv"/></e>
+    <e lm="ĉiufoje pli"><par n="ĉ"/><i>iufoje<b/>pli</i><par n="after__cnjadv"/></e>
+    <e lm="ĉiufoje pli"><par n="ĉ"/><i>iufoje<b/>pli</i><par n="komence__adv"/></e>
+    <e lm="ĉiu"><par n="ĉ"/><p><l>iuj</l><r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ĉiujara"><par n="ĉ"/><i>iujar</i><par n="adj__adj"/></e>
+    <e lm="ĉiujara"><par n="ĉ"/><i>iujara</i><par n="komence__adv"/></e>
+    <e lm="ĉiu"><par n="ĉ"/><p><l>iujn</l><r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="ĉiu"><par n="ĉ"/><p><l>iun</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="ĉiusemajne"><par n="ĉ"/><i>iusemajne</i><par n="komence__adv"/></e>
+    <e lm="ĉiutaga"><par n="ĉ"/><i>iutag</i><par n="adj__adj"/></e>
+    <e lm="ĉiutage"><par n="ĉ"/><i>iutage</i><par n="komence__adv"/></e>
+    <e lm="ĉokolado"><par n="ĉ"/><i>okolado</i><par n="nom__n"/></e>
+    <e lm="ĉu"><par n="ĉ"/><i>u</i><par n="kial__adv"/></e>
     <e lm="damaĝi"><i>dama</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="damaĝo"><i>dama</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="damni"><i>damn</i><par n="verb__vblex"/></e>
@@ -3636,7 +3636,7 @@
     <e lm="estri"><i>estr</i><par n="verb__vblex"/></e>
     <e lm="estro"><i>estr</i><par n="nommf__n"/></e>
     <e lm="estro"><i>estr</i><par n="nommf__n"/></e>
-    <e lm="eŝafodo"><i>e</i>        <par n="ŝ"/>        <i>afodo</i><par n="nom__n"/></e>
+    <e lm="eŝafodo"><i>e</i><par n="ŝ"/><i>afodo</i><par n="nom__n"/></e>
     <e lm="etapo"><i>etapo</i><par n="nom__n"/></e>
     <e lm="etato"><i>etato</i><par n="nom__n"/></e>
     <e lm="etendi"><i>etend</i><par n="verb__vblex"/></e>
@@ -4129,35 +4129,35 @@
     <e lm="guto"><i>guto</i><par n="nom__n"/></e>
     <e lm="gvidi"><i>gvid</i><par n="verb__vblex"/></e>
     <e lm="gvidanto"><i>gvidant</i><par n="nommf__n"/></e>
-    <e lm="ĝangalo">        <par n="ĝ"/>        <i>angalo</i><par n="nom__n"/></e>
-    <e lm="ĝardenisto">        <par n="ĝ"/>        <i>ardenist</i><par n="nommf__n"/></e>
-    <e lm="ĝardenistiko">        <par n="ĝ"/>        <i>ardenistiko</i><par n="nom__n"/></e>
-    <e lm="ĝardeno">        <par n="ĝ"/>        <i>ardeno</i><par n="nom__n"/></e>
-    <e lm="ĝeni">        <par n="ĝ"/>        <i>en</i><par n="verb__vblex"/></e>
-    <e lm="ĝenerala">        <par n="ĝ"/>        <i>eneral</i><par n="adj__adj"/></e>
+    <e lm="ĝangalo"><par n="ĝ"/><i>angalo</i><par n="nom__n"/></e>
+    <e lm="ĝardenisto"><par n="ĝ"/><i>ardenist</i><par n="nommf__n"/></e>
+    <e lm="ĝardenistiko"><par n="ĝ"/><i>ardenistiko</i><par n="nom__n"/></e>
+    <e lm="ĝardeno"><par n="ĝ"/><i>ardeno</i><par n="nom__n"/></e>
+    <e lm="ĝeni"><par n="ĝ"/><i>en</i><par n="verb__vblex"/></e>
+    <e lm="ĝenerala"><par n="ĝ"/><i>eneral</i><par n="adj__adj"/></e>
     <e lm="ĝenerala"><i>ĝenerala</i><par n="komence__adv"/></e>
-    <e lm="ĝenerale">        <par n="ĝ"/>        <i>enerale</i><par n="komence__adv"/></e>
+    <e lm="ĝenerale"><par n="ĝ"/><i>enerale</i><par n="komence__adv"/></e>
     <e lm="ĝenerale"><i>ĝenerale</i><par n="komence__adv"/></e>
-    <e lm="ĝeneralvalida">        <par n="ĝ"/>        <i>eneralvalid</i><par n="adj__adj"/></e>
-    <e lm="ĝentila">        <par n="ĝ"/>        <i>entil</i><par n="adj__adj"/></e>
-    <e lm="ĝentile">        <par n="ĝ"/>        <i>entile</i><par n="komence__adv"/></e>
-    <e lm="ĝermi">        <par n="ĝ"/>        <i>erm</i><par n="verb__vblex"/></e>
-    <e lm="ĝermo">        <par n="ĝ"/>        <i>ermo</i><par n="nom__n"/></e>
-    <e lm="ĝia">        <par n="ĝ"/>        <i>ia</i><par n="mia__det"/></e>
-    <e lm="ĝiri">        <par n="ĝ"/>        <i>ir</i><par n="verb__vblex"/></e>
-    <e lm="ĝis">        <par n="ĝ"/>        <i>is</i><par n="after__cnjadv"/></e>
-    <e lm="ĝis">        <par n="ĝ"/>        <i>is</i><par n="at__pr"/></e>
-    <e lm="ĝis poste">        <par n="ĝ"/>        <i>is<b/>poste</i><par n="adiós__ij"/></e>
-    <e lm="ĝisatendi">        <par n="ĝ"/>        <i>isatend</i><par n="verb__vblex"/></e>
-    <e lm="ĝisdatigi">        <par n="ĝ"/>        <i>isdatig</i><par n="verb__vblex"/></e>
-    <e lm="ĝisfunda">        <par n="ĝ"/>        <i>isfund</i><par n="adj__adj"/></e>
-    <e lm="ĝisfunde">        <par n="ĝ"/>        <i>isfunde</i><par n="komence__adv"/></e>
-    <e lm="ĝoje">        <par n="ĝ"/>        <i>oje</i><par n="komence__adv"/></e>
-    <e lm="ĝojo">        <par n="ĝ"/>        <i>ojo</i><par n="nom__n"/></e>
-    <e lm="ĝui">        <par n="ĝ"/>        <i>u</i><par n="verb__vblex"/></e>
-    <e lm="ĝusta">        <par n="ĝ"/>        <i>ust</i><par n="adj__adj"/></e>
-    <e lm="ĝuste">        <par n="ĝ"/>        <i>uste</i><par n="komence__adv"/></e>
-    <e lm="ĝustigi">        <par n="ĝ"/>        <i>ustig</i><par n="verb__vblex"/></e>
+    <e lm="ĝeneralvalida"><par n="ĝ"/><i>eneralvalid</i><par n="adj__adj"/></e>
+    <e lm="ĝentila"><par n="ĝ"/><i>entil</i><par n="adj__adj"/></e>
+    <e lm="ĝentile"><par n="ĝ"/><i>entile</i><par n="komence__adv"/></e>
+    <e lm="ĝermi"><par n="ĝ"/><i>erm</i><par n="verb__vblex"/></e>
+    <e lm="ĝermo"><par n="ĝ"/><i>ermo</i><par n="nom__n"/></e>
+    <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="ĝiri"><par n="ĝ"/><i>ir</i><par n="verb__vblex"/></e>
+    <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="after__cnjadv"/></e>
+    <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="at__pr"/></e>
+    <e lm="ĝis poste"><par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
+    <e lm="ĝisatendi"><par n="ĝ"/><i>isatend</i><par n="verb__vblex"/></e>
+    <e lm="ĝisdatigi"><par n="ĝ"/><i>isdatig</i><par n="verb__vblex"/></e>
+    <e lm="ĝisfunda"><par n="ĝ"/><i>isfund</i><par n="adj__adj"/></e>
+    <e lm="ĝisfunde"><par n="ĝ"/><i>isfunde</i><par n="komence__adv"/></e>
+    <e lm="ĝoje"><par n="ĝ"/><i>oje</i><par n="komence__adv"/></e>
+    <e lm="ĝojo"><par n="ĝ"/><i>ojo</i><par n="nom__n"/></e>
+    <e lm="ĝui"><par n="ĝ"/><i>u</i><par n="verb__vblex"/></e>
+    <e lm="ĝusta"><par n="ĝ"/><i>ust</i><par n="adj__adj"/></e>
+    <e lm="ĝuste"><par n="ĝ"/><i>uste</i><par n="komence__adv"/></e>
+    <e lm="ĝustigi"><par n="ĝ"/><i>ustig</i><par n="verb__vblex"/></e>
     <e lm="hakilo"><i>hakilo</i><par n="nom__n"/></e>
     <e lm="halti"><i>halt</i><par n="verb__vblex"/></e>
     <e lm="handikapulo"><i>handikapul</i><par n="nommf__n"/></e>
@@ -4268,10 +4268,10 @@
     <e lm="humuro"><i>humuro</i><par n="nom__n"/></e>
     <e lm="hundo"><i>hund</i><par n="nommf__n"/></e>
     <e lm="hungara"><i>hungar</i><par n="adj__adj"/></e>
-    <e lm="ĥaosa">        <par n="ĥ"/>        <i>aos</i><par n="adj__adj"/></e>
-    <e lm="ĥemia">        <par n="ĥ"/>        <i>emi</i><par n="adj__adj"/></e>
-    <e lm="ĥimero">        <par n="ĥ"/>        <i>imero</i><par n="nom__n"/></e>
-    <e lm="ĥina">        <par n="ĥ"/>        <i>in</i><par n="adj__adj"/></e>
+    <e lm="ĥaosa"><par n="ĥ"/><i>aos</i><par n="adj__adj"/></e>
+    <e lm="ĥemia"><par n="ĥ"/><i>emi</i><par n="adj__adj"/></e>
+    <e lm="ĥimero"><par n="ĥ"/><i>imero</i><par n="nom__n"/></e>
+    <e lm="ĥina"><par n="ĥ"/><i>in</i><par n="adj__adj"/></e>
     <e lm="ibera"><i>iber</i><par n="adj__adj"/></e>
     <e lm="ideala"><i>ideal</i><par n="adj__adj"/></e>
     <e lm="idealismo"><i>idealismo</i><par n="nom__n"/></e>
@@ -4497,9 +4497,9 @@
     <e lm="inviti"><i>invit</i><par n="verb__vblex"/></e>
     <e lm="invito"><i>invito</i><par n="nom__n"/></e>
     <e lm="invito"><i>invito</i><par n="nom__n"/></e>
-    <e lm="io">      <p>        <l>io</l>         <r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="io">      <p>        <l>ioj</l>         <r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="io">      <p>        <l>iojn</l>         <r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e lm="io"><p><l>io</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="io"><p><l>ioj</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="io"><p><l>iojn</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="iom"><i>iom</i><par n="very__preadv"/></e>
     <e lm="iom"><i>iom</i><par n="komence__adv"/></e>
     <e lm="iom post iom"><i>iom<b/>post<b/>iom</i><par n="komence__adv"/></e>
@@ -4507,7 +4507,7 @@
     <e lm="ioma misfarto"><i>ioma misfarto</i><par n="nom__n"/></e>
     <e lm="iometa"><i>iomet</i><par n="adj__adj"/></e>
     <e lm="iomete"><i>iomete</i><par n="komence__adv"/></e>
-    <e lm="io">      <p>        <l>ion</l>         <r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="io"><p><l>ion</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="iri"><i>ir</i><par n="verb__vblex"/></e>
     <e lm="irido"><i>irido</i><par n="nom__n"/></e>
     <e lm="irlanda"><i>irland</i><par n="adj__adj"/></e>
@@ -4519,11 +4519,11 @@
     <e lm="israelano"><i>israelano</i><par n="nom__n"/></e>
     <e lm="itala"><i>ital</i><par n="adj__adj"/></e>
     <e lm="itinero"><i>itinero</i><par n="nom__n"/></e>
-    <e lm="iu">      <p>        <l>iu</l>         <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="iu"><p><l>iu</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="iu"><i>iu</i><par n="quant__det"/></e>
-    <e lm="iu">      <p>        <l>iuj</l>         <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="iu">      <p>        <l>iujn</l>         <r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="iu">      <p>        <l>iun</l>         <r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="iu"><p><l>iuj</l><r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="iu"><p><l>iujn</l><r>iu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="iu"><p><l>iun</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="izoli"><i>izol</i><par n="verb__vblex"/></e>
     <e lm="izolita"><i>izolit</i><par n="adj__adj"/></e>
     <e lm="izolita"><i>izolit</i><par n="adj__adj"/></e>
@@ -4563,22 +4563,22 @@
     <e lm="juvelarto"><i>juvelarto</i><par n="nom__n"/></e>
     <e lm="juvelo"><i>juvelo</i><par n="nom__n"/></e>
     <e lm="juvelo"><i>juvelo</i><par n="nom__n"/></e>
-    <e lm="ĵaluza">        <par n="ĵ"/>        <i>aluz</i><par n="adj__adj"/></e>
-    <e lm="ĵargono">        <par n="ĵ"/>        <i>argono</i><par n="nom__n"/></e>
-    <e lm="ĵaŭdo">        <par n="ĵ"/>        <i>a</i><par n="ŭ"/><i>do</i><par n="nom__n"/></e>
-    <e lm="ĵazo">        <par n="ĵ"/>        <i>azo</i><par n="nom__n"/></e>
-    <e lm="ĵerzo">        <par n="ĵ"/>        <i>erzo</i><par n="nom__n"/></e>
-    <e lm="ĵeti">        <par n="ĵ"/>        <i>et</i><par n="verb__vblex"/></e>
-    <e lm="ĵetaĵo">        <par n="ĵ"/>        <i>eta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ĵetkubo">        <par n="ĵ"/>        <i>etkubo</i><par n="nom__n"/></e>
-    <e lm="ĵeto">        <par n="ĵ"/>        <i>eto</i><par n="nom__n"/></e>
-    <e lm="ĵonglisto">        <par n="ĵ"/>        <i>onglist</i><par n="nommf__n"/></e>
-    <e lm="ĵuri">        <par n="ĵ"/>        <i>ur</i><par n="verb__vblex"/></e>
-    <e lm="ĵurio">        <par n="ĵ"/>        <i>urio</i><par n="nom__n"/></e>
-    <e lm="ĵurnalismo">        <par n="ĵ"/>        <i>urnalismo</i><par n="nom__n"/></e>
-    <e lm="ĵurnalisto">        <par n="ĵ"/>        <i>urnalist</i><par n="nommf__n"/></e>
-    <e lm="ĵurnalo">        <par n="ĵ"/>        <i>urnalo</i><par n="nom__n"/></e>
-    <e lm="ĵus">        <par n="ĵ"/>        <i>us</i><par n="komence__adv"/></e>
+    <e lm="ĵaluza"><par n="ĵ"/><i>aluz</i><par n="adj__adj"/></e>
+    <e lm="ĵargono"><par n="ĵ"/><i>argono</i><par n="nom__n"/></e>
+    <e lm="ĵaŭdo"><par n="ĵ"/><i>a</i><par n="ŭ"/><i>do</i><par n="nom__n"/></e>
+    <e lm="ĵazo"><par n="ĵ"/><i>azo</i><par n="nom__n"/></e>
+    <e lm="ĵerzo"><par n="ĵ"/><i>erzo</i><par n="nom__n"/></e>
+    <e lm="ĵeti"><par n="ĵ"/><i>et</i><par n="verb__vblex"/></e>
+    <e lm="ĵetaĵo"><par n="ĵ"/><i>eta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="ĵetkubo"><par n="ĵ"/><i>etkubo</i><par n="nom__n"/></e>
+    <e lm="ĵeto"><par n="ĵ"/><i>eto</i><par n="nom__n"/></e>
+    <e lm="ĵonglisto"><par n="ĵ"/><i>onglist</i><par n="nommf__n"/></e>
+    <e lm="ĵuri"><par n="ĵ"/><i>ur</i><par n="verb__vblex"/></e>
+    <e lm="ĵurio"><par n="ĵ"/><i>urio</i><par n="nom__n"/></e>
+    <e lm="ĵurnalismo"><par n="ĵ"/><i>urnalismo</i><par n="nom__n"/></e>
+    <e lm="ĵurnalisto"><par n="ĵ"/><i>urnalist</i><par n="nommf__n"/></e>
+    <e lm="ĵurnalo"><par n="ĵ"/><i>urnalo</i><par n="nom__n"/></e>
+    <e lm="ĵus"><par n="ĵ"/><i>us</i><par n="komence__adv"/></e>
     <e lm="kabano"><i>kabano</i><par n="nom__n"/></e>
     <e lm="kabineto"><i>kabineto</i><par n="nom__n"/></e>
     <e lm="kablo"><i>kablo</i><par n="nom__n"/></e>
@@ -4736,17 +4736,17 @@
     <e lm="kilogramo"><i>kilogramo</i><par n="nom__n"/></e>
     <e lm="kilometro"><i>kilometro</i><par n="nom__n"/></e>
     <e lm="kino"><i>kino</i><par n="nom__n"/></e>
-    <e lm="kio">      <p>        <l>kio</l>         <r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kio">      <p>        <l>kio</l>         <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="kiom">      <p>        <l>kio</l>         <r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="kiom">      <p>        <l>kio</l>         <r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kio">      <p>        <l>kioj</l>         <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kio">      <p>        <l>kiojn</l>         <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiom">      <p>        <l>kiom</l>         <r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="kiom">      <p>        <l>kiom</l>         <r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
+    <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kio"><p><l>kioj</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kio"><p><l>kiojn</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kiom"><i>kiom</i><par n="komence__adv"/></e>
-    <e lm="kio">      <p>        <l>kion</l>         <r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kio">      <p>        <l>kion</l>         <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="kiosko"><i>kiosko</i><par n="nom__n"/></e>
     <e lm="kirlo"><i>kirlo</i><par n="nom__n"/></e>
     <e lm="kirurgo"><i>kirurg</i><par n="nommf__n"/></e>
@@ -4755,18 +4755,18 @@
     <e lm="kisi"><i>kis</i><par n="verb__vblex"/></e>
     <e lm="kiso"><i>kiso</i><par n="nom__n"/></e>
     <e lm="kisto"><i>kist</i><par n="nommf__n"/></e>
-    <e lm="kiu">      <p>        <l>kiu</l>         <r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiu</l>         <r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiu</l>         <r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiuj</l>         <r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiuj</l>         <r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiuj</l>         <r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiujn</l>         <r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiujn</l>         <r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiujn</l>         <r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiun</l>         <r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiun</l>         <r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="kiu">      <p>        <l>kiun</l>         <r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiun</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiun</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiun</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="klaĉo"><i>kla</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
     <e lm="klaki"><i>klak</i><par n="verb__vblex"/></e>
     <e lm="klano"><i>klano</i><par n="nom__n"/></e>
@@ -5239,15 +5239,15 @@
     <e lm="unu"><i>unu</i><par n="unu__det"/></e>
     <e lm="unu"><i>unu</i><par n="unu__num"/></e>
 
-    <e lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="malpli da">      <p>        <l>la<b/>malpli<b/>da</l>         <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="la sama"><i>la<b/>sama</i><par n="ind__det"/></e>
-    <e lm="tro da">      <p>        <l>la<b/>tro<b/>da</l>         <r>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="tro da">      <p>        <l>la<b/>tro<b/>da</l>         <r>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="tro da">      <p>        <l>la<b/>tro<b/>da</l>         <r>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="tro da">      <p>        <l>la<b/>tro<b/>da</l>         <r>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e lm="tro da"><p><l>la<b/>tro<b/>da</l><r>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="tro da"><p><l>la<b/>tro<b/>da</l><r>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="tro da"><p><l>la<b/>tro<b/>da</l><r>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="tro da"><p><l>la<b/>tro<b/>da</l><r>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="labirinto"><i>labirinto</i><par n="nom__n"/></e>
     <e lm="labori"><i>labor</i><par n="verb__vblex"/></e>
     <e lm="laboratorio"><i>laboratorio</i><par n="nom__n"/></e>
@@ -6030,12 +6030,12 @@
     <e lm="nenecesa"><i>neneces</i><par n="adj__adj"/></e>
     <e lm="neniam"><i>neniam</i><par n="komence__adv"/></e>
     <e lm="neniam"><i>neniam</i><par n="komence__adv"/></e>
-    <e lm="nenio">      <p>        <l>nenio</l>         <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="nenio"><p><l>nenio</l><r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="nenio"><i>nenio</i><par n="nom__n"/></e>
-    <e lm="nenio">      <p>        <l>nenion</l>         <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="neniu">      <p>        <l>neniu</l>         <r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="nenio"><p><l>nenion</l><r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="neniu"><p><l>neniu</l><r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="neniu"><i>neniu</i><par n="ind__det"/></e>
-    <e lm="neniu">      <p>        <l>neniun</l>         <r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="neniu"><p><l>neniun</l><r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="neoksidebla"><i>neoksidebl</i><par n="adj__adj"/></e>
     <e lm="neono"><i>neono</i><par n="nom__n"/></e>
     <e lm="nepo"><i>nep</i><par n="nommf__n"/></e>
@@ -6218,11 +6218,11 @@
     <e lm="ombra"><i>ombr</i><par n="adj__adj"/></e>
     <e lm="ombro"><i>ombro</i><par n="nom__n"/></e>
     <e lm="ondo"><i>ondo</i><par n="nom__n"/></e>
-    <e lm="oni">      <p>        <l>oni</l>         <r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r>       </p>    </e>
-    <e lm="oni">      <p>        <l>oni</l>         <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e lm="oni">      <p>        <l>oni</l>         <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="oni">      <p>        <l>oni</l>         <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e lm="oni">      <p>        <l>oni</l>         <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
+    <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="onklino"><i>onklino</i><par n="nom__n"/></e>
     <e lm="onklo"><i>onklo</i><par n="nom__n"/></e>
     <e lm="opaka"><i>opak</i><par n="adj__adj"/></e>
@@ -6560,12 +6560,12 @@
     <e lm="plia"><i>pli</i><par n="adj__adj"/></e>
     <e lm="pli bona"><i>pli bon</i><par n="adj__adj"/></e>
 
-    <e lm="pli da"><p>        <l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l>         <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r>       </p>    </e>
+    <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
     <e lm="plibonigi"><i>plibonig</i><par n="verb__vblex"/></e>
     <e lm="plibonigo"><i>plibonigo</i><par n="nom__n"/></e>
@@ -7696,12 +7696,12 @@
     <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="very__preadv"/></e>
     <e lm="sufiĉe"><i>sufiĉe</i><par n="komence__adv"/></e>
 
-    <e lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r>       </p>    </e>
+    <e lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
     <e lm="sufikso"><i>sufikso</i><par n="nom__n"/></e>
     <e lm="sugesti"><i>sugest</i><par n="verb__vblex"/></e>
@@ -7772,76 +7772,76 @@
     <e lm="svetero"><i>svetero</i><par n="nom__n"/></e>
     <e lm="svingi"><i>sving</i><par n="verb__vblex"/></e>
     <e lm="svisa"><i>svis</i><par n="adj__adj"/></e>
-    <e lm="ŝablono">        <par n="ŝ"/>        <i>ablono</i><par n="nom__n"/></e>
-    <e lm="ŝafido">        <par n="ŝ"/>        <i>afido</i><par n="nom__n"/></e>
-    <e lm="ŝafino">        <par n="ŝ"/>        <i>afino</i><par n="nom__n"/></e>
-    <e lm="ŝajni">        <par n="ŝ"/>        <i>ajn</i><par n="verb__vblex"/></e>
-    <e lm="ŝajne">        <par n="ŝ"/>        <i>ajne</i><par n="after__cnjadv"/></e>
-    <e lm="ŝajne">        <par n="ŝ"/>        <i>ajne</i><par n="komence__adv"/></e>
-    <e lm="ŝalti">        <par n="ŝ"/>        <i>alt</i><par n="verb__vblex"/></e>
-    <e lm="ŝaltilo">        <par n="ŝ"/>        <i>altilo</i><par n="nom__n"/></e>
-    <e lm="ŝanceliĝema">        <par n="ŝ"/>        <i>anceli</i><par n="ĝ"/><i>em</i><par n="adj__adj"/></e>
-    <e lm="ŝanco">        <par n="ŝ"/>        <i>anco</i><par n="nom__n"/></e>
-    <e lm="ŝanĝi">        <par n="ŝ"/>        <i>an</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="ŝanĝo">        <par n="ŝ"/>        <i>an</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ŝarko">        <par n="ŝ"/>        <i>arko</i><par n="nom__n"/></e>
-    <e lm="ŝati">        <par n="ŝ"/>        <i>at</i><par n="verb__vblex"/></e>
-    <e lm="ŝatanto">        <par n="ŝ"/>        <i>atant</i><par n="nommf__n"/></e>
-    <e lm="ŝaŭmo">        <par n="ŝ"/>        <i>a</i><par n="ŭ"/><i>mo</i><par n="nom__n"/></e>
-    <e lm="ŝejko">        <par n="ŝ"/>        <i>ejko</i><par n="nom__n"/></e>
-    <e lm="ŝelo">        <par n="ŝ"/>        <i>elo</i><par n="nom__n"/></e>
-    <e lm="ŝerci">        <par n="ŝ"/>        <i>erc</i><par n="verb__vblex"/></e>
-    <e lm="ŝerco">        <par n="ŝ"/>        <i>erco</i><par n="nom__n"/></e>
-    <e lm="ŝia">        <par n="ŝ"/>        <i>ia</i><par n="mia__det"/></e>
-    <e lm="ŝildo">        <par n="ŝ"/>        <i>ildo</i><par n="nom__n"/></e>
-    <e lm="ŝinko">        <par n="ŝ"/>        <i>inko</i><par n="nom__n"/></e>
-    <e lm="ŝipa">        <par n="ŝ"/>        <i>ip</i><par n="adj__adj"/></e>
-    <e lm="ŝipano">        <par n="ŝ"/>        <i>ipan</i><par n="nommf__n"/></e>
-    <e lm="ŝipanaro">        <par n="ŝ"/>        <i>ipanaro</i><par n="nom__n"/></e>
-    <e lm="ŝipanaro">        <par n="ŝ"/>        <i>ipanaro</i><par n="nom__n"/></e>
-    <e lm="ŝipkonstruejo">        <par n="ŝ"/>        <i>ipkonstruejo</i><par n="nom__n"/></e>
-    <e lm="ŝipo">        <par n="ŝ"/>        <i>ipo</i><par n="nom__n"/></e>
-    <e lm="ŝiprompiĝo">        <par n="ŝ"/>        <i>iprompi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ŝiri">        <par n="ŝ"/>        <i>ir</i><par n="verb__vblex"/></e>
-    <e lm="ŝirmi">        <par n="ŝ"/>        <i>irm</i><par n="verb__vblex"/></e>
-    <e lm="ŝlosilo">        <par n="ŝ"/>        <i>losilo</i><par n="nom__n"/></e>
-    <e lm="ŝminko">        <par n="ŝ"/>        <i>minko</i><par n="nom__n"/></e>
-    <e lm="ŝmiri">        <par n="ŝ"/>        <i>mir</i><par n="verb__vblex"/></e>
-    <e lm="ŝoforo">        <par n="ŝ"/>        <i>ofor</i><par n="nommf__n"/></e>
-    <e lm="ŝoforo">        <par n="ŝ"/>        <i>ofor</i><par n="nommf__n"/></e>
-    <e lm="ŝoko">        <par n="ŝ"/>        <i>oko</i><par n="nom__n"/></e>
-    <e lm="ŝoseo">        <par n="ŝ"/>        <i>oseo</i><par n="nom__n"/></e>
-    <e lm="ŝoto">        <par n="ŝ"/>        <i>oto</i><par n="nom__n"/></e>
-    <e lm="ŝovi">        <par n="ŝ"/>        <i>ov</i><par n="verb__vblex"/></e>
-    <e lm="ŝpalo">        <par n="ŝ"/>        <i>palo</i><par n="nom__n"/></e>
-    <e lm="ŝpari">        <par n="ŝ"/>        <i>par</i><par n="verb__vblex"/></e>
-    <e lm="ŝparado">        <par n="ŝ"/>        <i>parado</i><par n="nom__n"/></e>
-    <e lm="ŝparema">        <par n="ŝ"/>        <i>parem</i><par n="adj__adj"/></e>
-    <e lm="ŝpruci">        <par n="ŝ"/>        <i>pruc</i><par n="verb__vblex"/></e>
-    <e lm="ŝranko">        <par n="ŝ"/>        <i>ranko</i><par n="nom__n"/></e>
-    <e lm="ŝraŭbingo">        <par n="ŝ"/>        <i>ra</i><par n="ŭ"/><i>bingo</i><par n="nom__n"/></e>
-    <e lm="ŝraŭbkanelo">        <par n="ŝ"/>        <i>ra</i><par n="ŭ"/><i>bkanelo</i><par n="nom__n"/></e>
-    <e lm="ŝraŭbo">        <par n="ŝ"/>        <i>ra</i><par n="ŭ"/><i>bo</i><par n="nom__n"/></e>
-    <e lm="ŝtalo">        <par n="ŝ"/>        <i>talo</i><par n="nom__n"/></e>
-    <e lm="ŝtata">        <par n="ŝ"/>        <i>tat</i><par n="adj__adj"/></e>
-    <e lm="ŝtatisto">        <par n="ŝ"/>        <i>tatist</i><par n="nommf__n"/></e>
-    <e lm="ŝteli">        <par n="ŝ"/>        <i>tel</i><par n="verb__vblex"/></e>
-    <e lm="ŝtele">        <par n="ŝ"/>        <i>tele</i><par n="komence__adv"/></e>
-    <e lm="ŝtelisto">        <par n="ŝ"/>        <i>telist</i><par n="nommf__n"/></e>
-    <e lm="ŝtelo">        <par n="ŝ"/>        <i>telo</i><par n="nom__n"/></e>
-    <e lm="ŝtofo">        <par n="ŝ"/>        <i>tofo</i><par n="nom__n"/></e>
-    <e lm="ŝtonmino">        <par n="ŝ"/>        <i>tonmino</i><par n="nom__n"/></e>
-    <e lm="ŝtono">        <par n="ŝ"/>        <i>tono</i><par n="nom__n"/></e>
-    <e lm="ŝtormo">        <par n="ŝ"/>        <i>tormo</i><par n="nom__n"/></e>
-    <e lm="ŝtrumpeto">        <par n="ŝ"/>        <i>trumpeto</i><par n="nom__n"/></e>
+    <e lm="ŝablono"><par n="ŝ"/><i>ablono</i><par n="nom__n"/></e>
+    <e lm="ŝafido"><par n="ŝ"/><i>afido</i><par n="nom__n"/></e>
+    <e lm="ŝafino"><par n="ŝ"/><i>afino</i><par n="nom__n"/></e>
+    <e lm="ŝajni"><par n="ŝ"/><i>ajn</i><par n="verb__vblex"/></e>
+    <e lm="ŝajne"><par n="ŝ"/><i>ajne</i><par n="after__cnjadv"/></e>
+    <e lm="ŝajne"><par n="ŝ"/><i>ajne</i><par n="komence__adv"/></e>
+    <e lm="ŝalti"><par n="ŝ"/><i>alt</i><par n="verb__vblex"/></e>
+    <e lm="ŝaltilo"><par n="ŝ"/><i>altilo</i><par n="nom__n"/></e>
+    <e lm="ŝanceliĝema"><par n="ŝ"/><i>anceli</i><par n="ĝ"/><i>em</i><par n="adj__adj"/></e>
+    <e lm="ŝanco"><par n="ŝ"/><i>anco</i><par n="nom__n"/></e>
+    <e lm="ŝanĝi"><par n="ŝ"/><i>an</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
+    <e lm="ŝanĝo"><par n="ŝ"/><i>an</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="ŝarko"><par n="ŝ"/><i>arko</i><par n="nom__n"/></e>
+    <e lm="ŝati"><par n="ŝ"/><i>at</i><par n="verb__vblex"/></e>
+    <e lm="ŝatanto"><par n="ŝ"/><i>atant</i><par n="nommf__n"/></e>
+    <e lm="ŝaŭmo"><par n="ŝ"/><i>a</i><par n="ŭ"/><i>mo</i><par n="nom__n"/></e>
+    <e lm="ŝejko"><par n="ŝ"/><i>ejko</i><par n="nom__n"/></e>
+    <e lm="ŝelo"><par n="ŝ"/><i>elo</i><par n="nom__n"/></e>
+    <e lm="ŝerci"><par n="ŝ"/><i>erc</i><par n="verb__vblex"/></e>
+    <e lm="ŝerco"><par n="ŝ"/><i>erco</i><par n="nom__n"/></e>
+    <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="ŝildo"><par n="ŝ"/><i>ildo</i><par n="nom__n"/></e>
+    <e lm="ŝinko"><par n="ŝ"/><i>inko</i><par n="nom__n"/></e>
+    <e lm="ŝipa"><par n="ŝ"/><i>ip</i><par n="adj__adj"/></e>
+    <e lm="ŝipano"><par n="ŝ"/><i>ipan</i><par n="nommf__n"/></e>
+    <e lm="ŝipanaro"><par n="ŝ"/><i>ipanaro</i><par n="nom__n"/></e>
+    <e lm="ŝipanaro"><par n="ŝ"/><i>ipanaro</i><par n="nom__n"/></e>
+    <e lm="ŝipkonstruejo"><par n="ŝ"/><i>ipkonstruejo</i><par n="nom__n"/></e>
+    <e lm="ŝipo"><par n="ŝ"/><i>ipo</i><par n="nom__n"/></e>
+    <e lm="ŝiprompiĝo"><par n="ŝ"/><i>iprompi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="ŝiri"><par n="ŝ"/><i>ir</i><par n="verb__vblex"/></e>
+    <e lm="ŝirmi"><par n="ŝ"/><i>irm</i><par n="verb__vblex"/></e>
+    <e lm="ŝlosilo"><par n="ŝ"/><i>losilo</i><par n="nom__n"/></e>
+    <e lm="ŝminko"><par n="ŝ"/><i>minko</i><par n="nom__n"/></e>
+    <e lm="ŝmiri"><par n="ŝ"/><i>mir</i><par n="verb__vblex"/></e>
+    <e lm="ŝoforo"><par n="ŝ"/><i>ofor</i><par n="nommf__n"/></e>
+    <e lm="ŝoforo"><par n="ŝ"/><i>ofor</i><par n="nommf__n"/></e>
+    <e lm="ŝoko"><par n="ŝ"/><i>oko</i><par n="nom__n"/></e>
+    <e lm="ŝoseo"><par n="ŝ"/><i>oseo</i><par n="nom__n"/></e>
+    <e lm="ŝoto"><par n="ŝ"/><i>oto</i><par n="nom__n"/></e>
+    <e lm="ŝovi"><par n="ŝ"/><i>ov</i><par n="verb__vblex"/></e>
+    <e lm="ŝpalo"><par n="ŝ"/><i>palo</i><par n="nom__n"/></e>
+    <e lm="ŝpari"><par n="ŝ"/><i>par</i><par n="verb__vblex"/></e>
+    <e lm="ŝparado"><par n="ŝ"/><i>parado</i><par n="nom__n"/></e>
+    <e lm="ŝparema"><par n="ŝ"/><i>parem</i><par n="adj__adj"/></e>
+    <e lm="ŝpruci"><par n="ŝ"/><i>pruc</i><par n="verb__vblex"/></e>
+    <e lm="ŝranko"><par n="ŝ"/><i>ranko</i><par n="nom__n"/></e>
+    <e lm="ŝraŭbingo"><par n="ŝ"/><i>ra</i><par n="ŭ"/><i>bingo</i><par n="nom__n"/></e>
+    <e lm="ŝraŭbkanelo"><par n="ŝ"/><i>ra</i><par n="ŭ"/><i>bkanelo</i><par n="nom__n"/></e>
+    <e lm="ŝraŭbo"><par n="ŝ"/><i>ra</i><par n="ŭ"/><i>bo</i><par n="nom__n"/></e>
+    <e lm="ŝtalo"><par n="ŝ"/><i>talo</i><par n="nom__n"/></e>
+    <e lm="ŝtata"><par n="ŝ"/><i>tat</i><par n="adj__adj"/></e>
+    <e lm="ŝtatisto"><par n="ŝ"/><i>tatist</i><par n="nommf__n"/></e>
+    <e lm="ŝteli"><par n="ŝ"/><i>tel</i><par n="verb__vblex"/></e>
+    <e lm="ŝtele"><par n="ŝ"/><i>tele</i><par n="komence__adv"/></e>
+    <e lm="ŝtelisto"><par n="ŝ"/><i>telist</i><par n="nommf__n"/></e>
+    <e lm="ŝtelo"><par n="ŝ"/><i>telo</i><par n="nom__n"/></e>
+    <e lm="ŝtofo"><par n="ŝ"/><i>tofo</i><par n="nom__n"/></e>
+    <e lm="ŝtonmino"><par n="ŝ"/><i>tonmino</i><par n="nom__n"/></e>
+    <e lm="ŝtono"><par n="ŝ"/><i>tono</i><par n="nom__n"/></e>
+    <e lm="ŝtormo"><par n="ŝ"/><i>tormo</i><par n="nom__n"/></e>
+    <e lm="ŝtrumpeto"><par n="ŝ"/><i>trumpeto</i><par n="nom__n"/></e>
     <e lm="ŝtuparo"><par n="ŝ"/><i>tuparo</i><par n="nom__n"/></e>
-    <e lm="ŝtupo">        <par n="ŝ"/>        <i>tupo</i><par n="nom__n"/></e>
-    <e lm="ŝuisto">        <par n="ŝ"/>        <i>uist</i><par n="nommf__n"/></e>
-    <e lm="ŝuldo">        <par n="ŝ"/>        <i>uldo</i><par n="nom__n"/></e>
-    <e lm="ŝuo">        <par n="ŝ"/>        <i>uo</i><par n="nom__n"/></e>
-    <e lm="ŝvelaĵo">        <par n="ŝ"/>        <i>vela</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ŝviti">        <par n="ŝ"/>        <i>vit</i><par n="verb__vblex"/></e>
-    <e lm="ŝvito">        <par n="ŝ"/>        <i>vito</i><par n="nom__n"/></e>
+    <e lm="ŝtupo"><par n="ŝ"/><i>tupo</i><par n="nom__n"/></e>
+    <e lm="ŝuisto"><par n="ŝ"/><i>uist</i><par n="nommf__n"/></e>
+    <e lm="ŝuldo"><par n="ŝ"/><i>uldo</i><par n="nom__n"/></e>
+    <e lm="ŝuo"><par n="ŝ"/><i>uo</i><par n="nom__n"/></e>
+    <e lm="ŝvelaĵo"><par n="ŝ"/><i>vela</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
+    <e lm="ŝviti"><par n="ŝ"/><i>vit</i><par n="verb__vblex"/></e>
+    <e lm="ŝvito"><par n="ŝ"/><i>vito</i><par n="nom__n"/></e>
     <e lm="tabako"><i>tabako</i><par n="nom__n"/></e>
     <e lm="tablo"><i>tablo</i><par n="nom__n"/></e>
     <e lm="tabulo"><i>tabulo</i><par n="nom__n"/></e>
@@ -7973,11 +7973,11 @@
     <e lm="timo"><i>timo</i><par n="nom__n"/></e>
     <e lm="tinkturi"><i>tinktur</i><par n="verb__vblex"/></e>
     <e lm="tinuso"><i>tinuso</i><par n="nom__n"/></e>
-    <e lm="tio">      <p>        <l>tio</l>         <r>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="tio"><p><l>tio</l><r>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="tio"><i>tio</i><par n="nom__n"/></e>
-    <e lm="tio">      <p>        <l>tioj</l>         <r>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="tio">      <p>        <l>tiojn</l>         <r>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="tio">      <p>        <l>tion</l>         <r>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="tio"><p><l>tioj</l><r>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="tio"><p><l>tiojn</l><r>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="tio"><p><l>tion</l><r>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="tipa"><i>tip</i><par n="adj__adj"/></e>
     <e lm="tipo"><i>tipo</i><par n="nom__n"/></e>
     <e lm="tiri"><i>tir</i><par n="verb__vblex"/></e>
@@ -7986,11 +7986,11 @@
     <e lm="tiraneco"><i>tiraneco</i><par n="nom__n"/></e>
     <e lm="titoli"><i>titol</i><par n="verb__vblex"/></e>
     <e lm="titolo"><i>titolo</i><par n="nom__n"/></e>
-    <e lm="tiu">      <p>        <l>tiu</l>         <r>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r>       </p>    </e>
+    <e lm="tiu"><p><l>tiu</l><r>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="tiu"><i>tiu</i><par n="dem__det"/></e>
-    <e lm="tiu">      <p>        <l>tiuj</l>         <r>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r>       </p>    </e>
-    <e lm="tiu">      <p>        <l>tiujn</l>         <r>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r>       </p>    </e>
-    <e lm="tiu">      <p>        <l>tiun</l>         <r>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r>       </p>    </e>
+    <e lm="tiu"><p><l>tiuj</l><r>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="tiu"><p><l>tiujn</l><r>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="tiu"><p><l>tiun</l><r>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="toasto"><i>toasto</i><par n="nom__n"/></e>
     <e lm="toksi"><i>toks</i><par n="verb__vblex"/></e>
     <e lm="toksiĝo"><i>toksi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
