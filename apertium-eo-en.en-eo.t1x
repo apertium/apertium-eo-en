@@ -8,6 +8,7 @@
   </def-cat>
   <def-cat n="vblexinf">
      <cat-item tags="vblex.inf"/>
+     <cat-item tags="vblex.sep.inf"/>
   </def-cat>
   <def-cat n="vaux">
      <cat-item tags="vaux.*"/>
@@ -57,6 +58,7 @@
 
   <def-attr n="a_vrb">
      <attr-item tags="vblex"/>
+     <attr-item tags="vblex.sep"/>
      <attr-item tags="vbser"/>
      <attr-item tags="vaux"/>
   </def-attr>
@@ -330,7 +332,6 @@
              <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="2" side="tl" part="tns"/></tag>
               <tag><clip pos="2" side="tl" part="prs"/></tag>
-              <tag><clip pos="2" side="tl" part="nbr"/></tag>
             </tags>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
