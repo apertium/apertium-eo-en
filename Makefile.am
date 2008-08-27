@@ -111,4 +111,4 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
-CLEANFILES = -rf $(TARGETS_COMMON) $(TARGETS) modes $(BASENAME).$(LANG1).dix *.mode
+CLEANFILES = -rf $(TARGETS_COMMON) $(TARGETS) modes *.mode
