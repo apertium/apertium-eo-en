@@ -8115,9 +8115,13 @@
     <e c="MG: per al transfer: 'stop' + -ing = deixar de fer"><p><l>halti<s n="vblex"/></l><r>stop<s n="vblex"/></r></p></e>
     <e><p><l>hardi<s n="vblex"/></l><r>toughen<s n="vblex"/></r></p></e>
     <e><p><l>hardi<s n="vblex"/></l><r>temper<s n="vblex"/></r></p></e>
+
     <e><p><l>havi<s n="vblex"/></l><r>have<s n="vblex"/></r></p></e>
-    <e r="RL" c="para solucionar problema técnico de 'i've got', en que no puede haver un grupo g dentro de una forma enlazada con j"><p><l>havi<s n="vblex"/></l><r>have<b/>got<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>havi<s n="vblex"/></l><r>have<s n="vbhaver"/></r></p></e>
+    <!-- para solucionar problema técnico de 'i've got', en que no puede haver un grupo g dentro de una forma enlazada con j -->
+    <e r="RL"><p><l>havi<s n="vblex"/></l><r>have<b/>got<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>havi<s n="vblex"/></l><r>have<g><b/>got</g><s n="vblex"/></r></p></e>
+
     <e><p><l>havi<s n="vblex"/></l><r>fit<s n="vblex"/></r></p></e>
     <e><p><l>havigi<s n="vblex"/></l><r>facilitate<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>havigi<s n="vblex"/></l><r>afford<s n="vblex"/></r></p></e>
