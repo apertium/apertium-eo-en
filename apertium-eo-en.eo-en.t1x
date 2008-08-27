@@ -84,6 +84,7 @@
 
   <def-attr n="nbr">
      <attr-item tags="sg"/>
+     <attr-item tags="sp"/>
      <attr-item tags="pl"/>
   </def-attr>
 
@@ -117,8 +118,7 @@
            <lu>
              <clip pos="1" side="tl" part="lem"/>
              <clip pos="1" side="tl" part="a_nom"/>
-             <clip pos="1" side="tl" part="gen" link-to="2"/>
-             <clip pos="1" side="tl" part="nbr" link-to="3"/>
+             <clip pos="1" side="tl" part="nbr" link-to="2"/>
            </lu>
          </chunk>
        </out>

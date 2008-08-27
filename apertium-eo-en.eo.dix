@@ -805,35 +805,35 @@
       </p>
     </e>
 
-    <e r="RL">
+    <e>
       <p>
         <l></l> 
         <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r> 
       </p>
     </e>
 
-    <e r="RL">
+    <e>
       <p>
         <l>j</l> 
         <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r> 
       </p>
     </e>
 
-    <e r="RL">
+    <e>
       <p>
         <l>n</l> 
         <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r> 
       </p>
     </e>
 
-    <e r="RL">
+    <e>
       <p>
         <l>n</l> 
         <r><s n="det"/><s n="pos"/><s n="sg"/><s n="acc"/></r> 
       </p>
     </e>
 
-    <e r="RL">
+    <e>
       <p>
         <l>jn</l> 
         <r><s n="det"/><s n="pos"/><s n="pl"/><s n="acc"/></r> 
@@ -1089,12 +1089,27 @@
 
     <e>
       <p>
-        <l>ante</l> 
+        <l>anta</l> 
         <r>i<s n="vbser"/><s n="ger"/></r> 
       </p>
     </e>
 
     <e>
+      <p>
+        <l>anta</l> 
+        <r>i<s n="vbser"/><s n="gerpast"/></r> 
+      </p>
+    </e>
+
+
+    <e r="LR">
+      <p>
+        <l>ante</l> 
+        <r>i<s n="vbser"/><s n="ger"/></r> 
+      </p>
+    </e>
+
+    <e r="LR">
       <p>
         <l>ante</l> 
         <r>i<s n="vbser"/><s n="gerpast"/></r> 
@@ -1201,18 +1216,33 @@
           <r>i<s n="vaux"/><s n="pp3"/><s n="pl"/></r>
         </p>
       </e>
+
       <e>
         <p>
-          <l>ante</l>
+          <l>anta</l>
           <r>i<s n="vaux"/><s n="ger"/></r>
         </p>
       </e>
       <e>
         <p>
+          <l>anta</l>
+          <r>i<s n="vaux"/><s n="gerpast"/></r>
+        </p>
+      </e>
+
+      <e r="LR">
+        <p>
+          <l>ante</l>
+          <r>i<s n="vaux"/><s n="ger"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
           <l>ante</l>
           <r>i<s n="vaux"/><s n="gerpast"/></r>
         </p>
       </e>
+
       <e>
         <p>
           <l>u</l>
@@ -1336,16 +1366,32 @@
       </p>
     </e>
 
-    <e>
+    <e r="LR">
       <p>
         <l>ante</l> 
         <r>i<s n="vblex"/><s n="ger"/></r> 
       </p>
     </e>
 
-    <e>
+    <e r="LR">
       <p>
         <l>ante</l> 
+        <r>i<s n="vblex"/><s n="gerpast"/></r> 
+      </p>
+    </e>
+
+
+
+    <e>
+      <p>
+        <l>anta</l> 
+        <r>i<s n="vblex"/><s n="ger"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>anta</l> 
         <r>i<s n="vblex"/><s n="gerpast"/></r> 
       </p>
     </e>
@@ -4144,7 +4190,6 @@
     <e lm="ĝentile"><par n="ĝ"/><i>entile</i><par n="komence__adv"/></e>
     <e lm="ĝermi"><par n="ĝ"/><i>erm</i><par n="verb__vblex"/></e>
     <e lm="ĝermo"><par n="ĝ"/><i>ermo</i><par n="nom__n"/></e>
-    <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
     <e lm="ĝiri"><par n="ĝ"/><i>ir</i><par n="verb__vblex"/></e>
     <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="after__cnjadv"/></e>
     <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="at__pr"/></e>
@@ -4288,7 +4333,6 @@
     <e lm="ignori"><i>ignor</i><par n="verb__vblex"/></e>
     <e lm="ikono"><i>ikono</i><par n="nom__n"/></e>
     <e lm="iktero"><i>iktero</i><par n="nom__n"/></e>
-    <e lm="ilia"><i>ilia</i><par n="mia__det"/></e>
     <e lm="ilo"><i>ilo</i><par n="nom__n"/></e>
     <e lm="ilustri"><i>ilustr</i><par n="verb__vblex"/></e>
     <e lm="ilustrado"><i>ilustrado</i><par n="nom__n"/></e>
@@ -5337,8 +5381,6 @@
     <e lm="leŭkemio"><i>le</i><par n="ŭ"/><i>kemio</i><par n="nom__n"/></e>
     <e lm="levi"><i>lev</i><par n="verb__vblex"/></e>
     <e lm="lezo"><i>lezo</i><par n="nom__n"/></e>
-    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
-    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
     <e lm="libera"><i>liber</i><par n="adj__adj"/></e>
     <e lm="liberala"><i>liberal</i><par n="adj__adj"/></e>
     <e lm="libere"><i>libere</i><par n="komence__adv"/></e>
@@ -5773,9 +5815,23 @@
     <e lm="mezuri"><i>mezur</i><par n="verb__vblex"/></e>
     <e lm="mezurado"><i>mezurado</i><par n="nom__n"/></e>
     <e lm="mezuro"><i>mezuro</i><par n="nom__n"/></e>
-    <e lm="mia"><i>mi</i><par n="adj__adj"/></e>
-    <e lm="mia"><i>mi</i><par n="adj__adj"/></e>
+
+<!--    
+    
+    <e lm="mia"><i>mi</i><par n="adj__adj"/></e> 
+    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
+    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
+    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
+-->    
+
     <e lm="mia"><i>mia</i><par n="mia__det"/></e>
+    <e lm="via"><i>via</i><par n="mia__det"/></e>
+    <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="nia"><i>nia</i><par n="mia__det"/></e>
+    <e lm="ilia"><i>ilia</i><par n="mia__det"/></e>
+    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
+
     <e lm="mielo"><i>mielo</i><par n="nom__n"/></e>
     <e lm="migdalo"><i>migdalo</i><par n="nom__n"/></e>
     <e lm="migri"><i>migr</i><par n="verb__vblex"/></e>
@@ -6081,8 +6137,6 @@
     <e lm="nevo"><i>nev</i><par n="nommf__n"/></e>
     <e lm="nevo"><i>nev</i><par n="nommf__n"/></e>
     <e lm="nevidebla"><i>nevidebl</i><par n="adj__adj"/></e>
-    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
-    <e lm="nia"><i>nia</i><par n="mia__det"/></e>
     <e lm="niĉo"><i>ni</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
     <e lm="nigra"><i>nigr</i><par n="adj__adj"/></e>
     <e lm="nigra"><i>nigrao</i><par n="nom__n"/></e>
@@ -7793,7 +7847,6 @@
     <e lm="ŝelo"><par n="ŝ"/><i>elo</i><par n="nom__n"/></e>
     <e lm="ŝerci"><par n="ŝ"/><i>erc</i><par n="verb__vblex"/></e>
     <e lm="ŝerco"><par n="ŝ"/><i>erco</i><par n="nom__n"/></e>
-    <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
     <e lm="ŝildo"><par n="ŝ"/><i>ildo</i><par n="nom__n"/></e>
     <e lm="ŝinko"><par n="ŝ"/><i>inko</i><par n="nom__n"/></e>
     <e lm="ŝipa"><par n="ŝ"/><i>ip</i><par n="adj__adj"/></e>
@@ -8293,8 +8346,7 @@
     <e lm="veziketo"><i>veziketo</i><par n="nom__n"/></e>
     <e lm="veziko"><i>veziko</i><par n="nom__n"/></e>
     <e lm="veziko"><i>veziko</i><par n="nom__n"/></e>
-    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
-    <e lm="via"><i>via</i><par n="mia__det"/></e>
+
     <e lm="viadukto"><i>viadukto</i><par n="nom__n"/></e>
     <e lm="viandejo"><i>viandejo</i><par n="nom__n"/></e>
     <e lm="viandejo"><i>viandejo</i><par n="nom__n"/></e>
