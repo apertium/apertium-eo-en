@@ -8,11 +8,16 @@ public class EoAnalysation {
     public boolean noun;
     public boolean adj;
     public boolean adv;
+    public boolean verb;
+    public boolean affix;
+
+    public String root;
+
     public boolean plur;
     public boolean acc;
 
-    public String root;
-    public boolean verb;
+    public boolean igx;
+    public boolean ig;
 
     public String toString() {
 	return root + wordType();
@@ -24,9 +29,12 @@ public class EoAnalysation {
 		+ (noun?"<noun> ":"")
 		+ (adj?"<adj> ":"")
 		+ (adv?"<adv> ":"")
+		+ (verb?"<verb> ":"")
+		+ (affix?"<affix> ":"")
 		+ (plur?"<plur> ":"")
 		+ (acc?"<acc> ":"")
-		+ (verb?"<verb> ":"")
+		+ (igx?"<igx_itr> ":"")
+		+ (ig?"<ig_tr> ":"")
 	      ).trim();
     }
 }

@@ -19,7 +19,7 @@ public class LeguTradukuNet {
     PrintWriter verb = ekskribuHtml("tradukunet-verb.txt");
     PrintWriter unknown = ekskribuHtml("tradukunet-unknown.txt");
 
-    boolean debug;
+    static boolean debug;
 
 
     public void leguTradukuNetDosiero() throws IOException {
@@ -32,7 +32,7 @@ public class LeguTradukuNet {
 
 
 	while ((linio = br.readLine()) != null) {
-	    debug = (linNro > 1000 && linNro < 300);
+	    debug = (linNro > 1000 && linNro < 30000);
 
 	    //if (revo.size()>100) break;
 	    if (linNro%2==0) en = linio;
@@ -43,7 +43,7 @@ public class LeguTradukuNet {
 		//if (debug) System.out.println(en + " -> "+ eo);
 		int rango = 0;
 
-		for (int i=0; i<eos.length; i++) {
+		for (int i=0; i<eos.length; i++) try {
 		    eo = eos[i].trim();
 		    if (eo.length()==0) continue;
 
@@ -56,11 +56,14 @@ public class LeguTradukuNet {
 			    // abiturientaj (ekzamenoj) (diplomoj)  -> abiturientaj ekzamenoj / abiturientaj diplomoj
 
 			    // vi (kredas (ke)) (pensas (ke))   -> drop
-			    if (eo.indexOf("((")!=-1 || eo.indexOf("))")!=-1) continue;
+			    if (eo.indexOf("((")!=-1 || eo.indexOf("))")!=-1) {
+				//System.out.println("DROP "+en+" -> "+eo);
+				continue;
+			    }
 
 			    //eos2 = eo.split("\\) \\(");
 			    eos2 = eo.split("[\\)\\(]");
-			    System.out.println(eo + " lgd=" + eos2.length);
+			    //System.out.println(eo + " lgd=" + eos2.length);
 			    int start=0, end=eos2.length;
 			    String starts="", ends="";
 			    if (!eo.startsWith("(")) { start=1; starts=eos2[0]; }
@@ -68,7 +71,7 @@ public class LeguTradukuNet {
 
 			    for (int j=start; j<end; j++) {
 				if (eos2[j].trim().length()==0) continue;
-				String eo2 = starts + " %" + eos2[j] + "% " + ends;
+				String eo2 = starts + " " + eos2[j] + " " + ends;
 				//System.out.println("   "+ eo2);
 				registru(en, eo2, rango++);
 			    }
@@ -77,16 +80,20 @@ public class LeguTradukuNet {
 			} else {
 			    // (ek)furor cxe   ->  ekfuror cxe  / furor cxe
 			    // via(j) plua(j) -> via plua / viaj pluaj
-			    String eoSen = eo.replaceAll("\\(.*?\\)","");
-			    registru(en, eoSen, rango++);
+			    String eoKunPar = eo.replaceAll("[\\(\\)]","");
+			    registru(en, eoKunPar, rango++);
 
-			    String eoKun = eo.replaceAll("[\\(\\)]","");
-			    registru(en, eoKun, rango++);
+			    String eoSenPar = eo.replaceAll("\\(.*?\\)","");
+			    registru(en, eoSenPar, rango++);
 
 			    //System.out.println(eo+" -> "+eoSen+" / "+eoKun);
 			}
 
 		    }
+		} catch (RuntimeException e) {
+		    System.err.println("ERROR for "+linNro + " " +linio);
+		    System.err.println(en + " -> " + eos[i]);
+		    throw e;
 		}
 	    }
 	    linNro++;
@@ -102,14 +109,15 @@ public class LeguTradukuNet {
     }
 
     private void registru(String en, String eo, int rango) {
-	eo = eo.replaceAll("  "," ");
+	eo = eo.replaceAll("  "," ").trim();
+	if (eo.length()==0) return;
+
 	EoAnalysation a = analyzeEo(eo);
 
-	String dat = en + " @ " + eo + " @ " + a.wordType() +
-		     (rango <= 1 ? "" : " (" + (rango - 1) + ")");
+	String dat = en + " @ " + a.root + " @ " + a.wordType() +
+		     (rango < 1 ? "" : " (" + (rango) + ")");
 
-	if (debug)
-	    System.out.println(dat);
+	//if (debug) System.out.println(dat);
 
 	if (a.problem) {
 	    unknown.println(dat);
@@ -135,25 +143,44 @@ public class LeguTradukuNet {
 	a.org = eo;
 	a.oneWord = eo.indexOf(" ")==-1;
 
+	char firstCh = eo.charAt(0);
+	char lastCh = eo.charAt(eo.length()-1);
 
-	       if (eo.endsWith("ajn")) { a.adj = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-3); }
-	else if (eo.endsWith("ojn")) { a.noun = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-3); }
-	else if (eo.endsWith("aj")) { a.adj = true; a.plur = true; eo = eo.substring(0,eo.length()-2); }
-	else if (eo.endsWith("oj")) { a.noun = true; a.plur = true; eo = eo.substring(0,eo.length()-2); }
-	else if (eo.endsWith("an")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-2); }
-	else if (eo.endsWith("on")) { a.noun = true; a.acc = true; eo = eo.substring(0,eo.length()-2); }
-	else if (eo.endsWith("en")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-2); a.problem=true; }
-	else if (eo.endsWith("e")) { a.adv = true; eo = eo.substring(0,eo.length()-1); }
-	else if (eo.endsWith("a")) { a.adj = true; eo = eo.substring(0,eo.length()-1); }
-	else if (eo.endsWith("o")) { a.noun = true; eo = eo.substring(0,eo.length()-1); }
+
+	if (eo.length()<=2) a.problem = true; // not a word then / classification fails
+	else if (eo.indexOf("..")!=-1) a.problem = true; // eks  mal..igo
+	else if (Character.isUpperCase(firstCh))  { a.noun = true; }
+	else if (Character.isDigit(lastCh))  { a.noun = true; }
+	else if (!Character.isLetter(firstCh))  { a.problem = true; }
+	else if (eo.endsWith("ajn")) { a.adj = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-1); }
+	else if (eo.endsWith("ojn")) { a.noun = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-1); }
+	else if (eo.endsWith("aj")) { a.adj = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
+	else if (eo.endsWith("oj")) { a.noun = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
+	else if (eo.endsWith("an")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-0); }
+	else if (eo.endsWith("on")) { a.noun = true; a.acc = true; eo = eo.substring(0,eo.length()-0); }
+	else if (eo.endsWith("en")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-0); a.problem=true; }
+	else if (eo.endsWith("e")) { a.adv = true; }
+	else if (eo.endsWith("a")) { a.adj = true; }
+	else if (eo.endsWith("o")) { a.noun = true; }
+	else if (eo.endsWith("-")) { a.affix = true; }
+	else if (eo.startsWith("-")) { a.affix = true; }
+	else if (!Character.isLetter(lastCh))  { a.problem = true; }
 	else {
 	    a.verb = true;
+
+	    if (eo.endsWith("-igx")) { a.igx = true; eo = eo.substring(0,eo.length()-4)+"igxi"; }
+	    else if (eo.endsWith("-ig")) { a.ig = true; eo = eo.substring(0,eo.length()-3)+"igi"; }
+	    else if (eo.endsWith("-i")) { eo = eo.substring(0,eo.length()-2)+"i"; }
+	    else if (eo.endsWith("-I")) { eo = eo.substring(0,eo.length()-2)+"i"; }
+	    else if (eo.endsWith("i")) { a.problem=true; }
+	    else eo = eo + "i";
+
+//            if (a.oneWord && eo.startsWith("mallong"))
+//                System.out.println(a.org + " -> " + eo );
+
 	}
 	a.root = eo;
 
-	if (eo.length()<=2) a.problem = true; // not a word then / classification fails
-
-	if (eo.indexOf("..")!=-1); a.problem = true; // eks  mal..igo
 
 	return a;
     }
