@@ -37,12 +37,11 @@
     <sdef n="vbmod" /> 
     <sdef n="pos" /> 
     <sdef n="vblex" />  
-    <sdef n="vaux" />  
     <sdef n="sent" />  
     <sdef n="apos" /> 
     <sdef n="ind" />     
     <sdef n="preadv" />   
-    <sdef n="vaŭ" />   
+    <sdef n="vaux" />   
     <sdef n="ant" />  
     <sdef n="gen"/> 
     <sdef n="sp" />    
@@ -1961,7 +1960,7 @@
 
 
 
-    <e r="LR"><p><l>auxstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
     <e r="LR"><p><l>cxino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
@@ -1978,7 +1977,7 @@
     <e r="LR"><p><l>samseksemulo<s n="n"/><s n="f"/></l><r>homosexual<s n="n"/></r></p></e>
     <e r="LR"><p><l>profesiulo<s n="n"/><s n="f"/></l><r>professional<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>auxstraliano<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="LR"><p><l>brito<s n="n"/><s n="m"/></l><r>British<s n="n"/></r></p></e>
     <e r="LR"><p><l>cxino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="LR"><p><l>anglo<s n="n"/><s n="m"/></l><r>English<s n="n"/></r></p></e>
@@ -1995,7 +1994,7 @@
     <e r="LR"><p><l>samseksemulo<s n="n"/><s n="m"/></l><r>homosexual<s n="n"/></r></p></e>
     <e r="LR"><p><l>profesiulo<s n="n"/><s n="m"/></l><r>professional<s n="n"/></r></p></e>
 
-    <e r="RL"><p><l>auxstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
     <e r="RL"><p><l>cxino<s n="n"/><s n="GD"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
@@ -4919,7 +4918,6 @@
     <e><p><l>parfumo<s n="n"/></l><r>perfume<s n="n"/></r></p></e>
     <e><p><l>parkadejo<s n="n"/></l><r>parking<s n="n"/></r></p></e>
     <e><p><l>parko<s n="n"/></l><r>park<s n="n"/></r></p></e>
-    <e r="RL"><p><l>parlamentano<s n="n"/></l><r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p></e>
     <e><p><l>parlamento<s n="n"/></l><r>parliament<s n="n"/></r></p></e>
     <e c="a married couple"><p><l>paro<s n="n"/></l><r>couple<s n="n"/></r></p></e>
     <e><p><l>paro<s n="n"/></l><r>pair<s n="n"/></r></p></e>
@@ -9706,8 +9704,8 @@
     <e><p><l>konstruo<s n="n"/></l><r>build<s n="n"/></r></p></e>
     <e><p><l>trankvilo<s n="n"/></l><r>calm<s n="n"/></r></p></e>
     <e><p><l>kapto<s n="n"/></l><r>capture<s n="n"/></r></p></e>
-    <e><p><l>auxto<s n="n"/></l><r>car<s n="n"/></r></p></e>
-    <e><p><l>kauxzomotivo<s n="n"/></l><r>cause<s n="n"/></r></p></e>
+    <e><p><l>aŭto<s n="n"/></l><r>car<s n="n"/></r></p></e>
+    <e><p><l>kaŭzomotivo<s n="n"/></l><r>cause<s n="n"/></r></p></e>
     <e><p><l>kemiajxo<s n="n"/></l><r>chemical<s n="n"/></r></p></e>
     <e><p><l>komplekso<s n="n"/></l><r>complex<s n="n"/></r></p></e>
     <e><p><l>servotablo<s n="n"/></l><r>counter<s n="n"/></r></p></e>
@@ -9782,10 +9780,10 @@
     <e><p><l>prizono<s n="n"/></l><r>prison<s n="n"/></r></p></e>
     <e><p><l>acxeto<s n="n"/></l><r>purchase<s n="n"/></r></p></e>
     <e><p><l>radikalo<s n="n"/></l><r>radical<s n="n"/></r></p></e>
-    <e><p><l>pauxzo<s n="n"/></l><r>recess<s n="n"/></r></p></e>
+    <e><p><l>paŭzo<s n="n"/></l><r>recess<s n="n"/></r></p></e>
     <e><p><l>rugxeco<s n="n"/></l><r>red<s n="n"/></r></p></e>
     <e><p><l>reformo<s n="n"/></l><r>reform<s n="n"/></r></p></e>
-    <e><p><l>bedauxro<s n="n"/></l><r>regret<s n="n"/></r></p></e>
+    <e><p><l>bedaŭro<s n="n"/></l><r>regret<s n="n"/></r></p></e>
     <e><p><l>raporto<s n="n"/></l><r>report<s n="n"/></r></p></e>
     <e><p><l>esploro<s n="n"/></l><r>research<s n="n"/></r></p></e>
     <e><p><l>inversigo<s n="n"/></l><r>reverse<s n="n"/></r></p></e>
