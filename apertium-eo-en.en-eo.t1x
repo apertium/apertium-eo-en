@@ -63,8 +63,8 @@
   <def-attr n="a_adj">
      <attr-item tags="adj"/>
      <attr-item tags="adj.pst"/>
-     <attr-item tags="adj.comp"/>
-     <attr-item tags="adj.sup"/>
+     <attr-item tags="adj.sint.comp"/>
+     <attr-item tags="adj.sint.sup"/>
      <attr-item tags="adj.itg"/>
   </def-attr>
 
@@ -135,6 +135,8 @@
 <section-def-vars>
   <def-var n="numero"/>
   <def-var n="temps"/>
+  <def-var n="adjectiu1"/>
+  <def-var n="adjectiu1_tail"/>
   <def-var n="genere"/>
 </section-def-vars>
 
@@ -192,6 +194,119 @@
           </otherwise>
         </choose>
       </def-macro>
+
+
+
+
+    <def-macro n="nom_adjectiu2" npar="2">
+      <let>
+        <var n="adjectiu1"/>
+        <lit v=""/>
+      </let>
+            <let>
+              <var n="adjectiu1_tail"/>
+	      <lit-tag v="2.3"/>
+	    </let>
+        <choose>
+	  <when>
+	    <test>
+	      <not>
+	      <equal>
+                <var n="genere"/>
+	        <lit v=""/>
+              </equal>
+	      </not>
+	    </test>
+      <let>
+        <var n="adjectiu1_tail"/>
+        <lit-tag v="3.4"/>
+      </let>
+	  </when>
+        </choose>
+	<choose>
+          <when>
+            <test>
+              <and>
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/> 
+                  <lit-tag v="adj.sint.comp"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/> 
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+            </test>
+            <let>
+              <var n="adjectiu1"/>
+                <concat>
+                  <lit v="pli"/>
+                  <lit-tag v="preadv"/>
+                  <lit v="$ ^"/>
+                  <clip pos="1" side="tl" part="lem"/> 
+                  <lit-tag v="adj"/>
+		  <var n="adjectiu1_tail"/>
+                </concat>
+            </let>
+          </when>
+
+          <when>
+            <test>
+              <and>
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/> 
+                  <lit-tag v="adj.sint.sup"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/> 
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+            </test>
+            <let>
+              <var n="adjectiu1"/>
+                <concat>
+                  <lit v="plej"/>
+                  <lit-tag v="preadv"/>
+                  <lit v="$ ^"/>
+                  <clip pos="1" side="tl" part="lem"/> 
+                  <lit-tag v="adj"/>
+		  <var n="adjectiu1_tail"/>
+                </concat>
+            </let>
+          </when>
+
+          <when>
+	    <test>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/> 
+                  <lit-tag v="adj"/>
+                </equal>
+	    </test>
+            <let>
+              <var n="adjectiu1"/>
+                <concat>
+                  <clip pos="1" side="tl" part="lem"/> 
+                  <lit-tag v="adj"/>
+		  <var n="adjectiu1_tail"/>
+                </concat>
+            </let>
+          </when>
+
+          <otherwise>
+            <let>
+              <var n="adjectiu1"/>
+                <concat>
+                  <clip pos="1" side="tl" part="lem"/> 
+                  <lit-tag v="adj"/>
+		  <var n="adjectiu1_tail"/>
+                </concat>
+            </let>
+          </otherwise>
+
+        </choose>
+      </def-macro> 
+
 </section-def-macros>
 
 <section-rules>
@@ -406,6 +521,10 @@
        <call-macro n="set_gender1">
          <with-param pos="3"/>
        </call-macro>
+       <call-macro n="nom_adjectiu2">
+         <with-param pos="2"/>
+         <with-param pos="3"/>
+       </call-macro>
        <let>
          <var n="numero"/>
 	 <clip pos="3" side="tl" part="nbr"/>
@@ -435,11 +554,12 @@
              <tag><clip pos="3" side="tl" part="nbr"/></tag>
              <tag><lit-tag v="nom"/></tag>
            </tags>
-           <lu>
+           <lu> <!-- 
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	     <lit-tag v="3"/>
+	     <lit-tag v="3"/> -->
+	     <var n="adjectiu1"/>
            </lu>
 	   <b/>
            <lu>
@@ -473,11 +593,12 @@
              <tag><clip pos="3" side="tl" part="nbr"/></tag>
              <tag><lit-tag v="nom"/></tag>
            </tags>
-           <lu>
+           <lu> <!--
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	     <lit-tag v="4"/>
+	     <lit-tag v="4"/> -->
+	     <var n="adjectiu1"/>
            </lu>
 	   <b/>
            <lu>
@@ -511,11 +632,12 @@
 		  <lit-tag v="3"/>
                 </lu>
 		<b/>
-           <lu>
+           <lu> <!--
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	     <lit-tag v="3"/>
+	     <lit-tag v="3"/> -->
+             <var n="adjectiu1"/>
            </lu>
 	   <b/>
            <lu>
@@ -543,12 +665,13 @@
 		  <lit-tag v="4"/>
                 </lu>
 		<b/>
-           <lu>
+           <lu> <!--
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <lit-tag v="2"/>
              <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	     <lit-tag v="4"/>
+	     <lit-tag v="4"/> -->
+             <var n="adjectiu1"/>
            </lu>
 	   <b/>
            <lu>
@@ -614,20 +737,83 @@
        <pattern-item n="adj"/>
      </pattern>
      <action>
-       <out>
-         <chunk name="adj" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-	     <tag><lit-tag v="sg"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lem"/>
-             <clip pos="1" side="tl" part="a_adj"/>
-	     <lit-tag v="sg"/>
-	     <lit-tag v="nom"/>
-           </lu>
-         </chunk>
-       </out>
+       <choose>
+
+         <when> 
+           <test>
+             <equal>
+               <clip pos="1" side="sl" part="a_adj"/>
+               <lit-tag v="adj.sint.comp"/>
+             </equal>
+           </test>
+           <out>
+             <chunk name="preadv_adj" case="caseFirstWord">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><lit-tag v="sg"/></tag>
+               </tags>
+	       <lu>
+                 <lit v="pli"/>
+		 <lit-tag v="preadv"/>
+	       </lu>
+	       <b/>
+               <lu>
+                 <clip pos="1" side="tl" part="lem"/>
+                 <clip pos="1" side="tl" part="a_adj"/>
+                 <lit-tag v="sg"/>
+	         <lit-tag v="nom"/>
+               </lu>
+             </chunk>
+           </out>
+         </when>
+	 
+         <when> 
+           <test>
+             <equal>
+               <clip pos="1" side="sl" part="a_adj"/>
+               <lit-tag v="adj.sint.sup"/>
+             </equal>
+           </test>
+           <out>
+             <chunk name="preadv_adj" case="caseFirstWord">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><lit-tag v="sg"/></tag>
+               </tags>
+	       <lu>
+                 <lit v="plej"/>
+		 <lit-tag v="preadv"/>
+	       </lu>
+	       <b/>
+               <lu>
+                 <clip pos="1" side="tl" part="lem"/>
+                 <clip pos="1" side="tl" part="a_adj"/>
+                 <lit-tag v="sg"/>
+	         <lit-tag v="nom"/>
+               </lu>
+             </chunk>
+           </out>
+         </when>
+
+
+         <otherwise>
+           <out>
+             <chunk name="adj" case="caseFirstWord">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><lit-tag v="sg"/></tag>
+               </tags>
+               <lu>
+                 <clip pos="1" side="tl" part="lem"/>
+                 <clip pos="1" side="tl" part="a_adj"/>
+                 <lit-tag v="sg"/>
+	         <lit-tag v="nom"/>
+               </lu>
+             </chunk>
+           </out>
+
+         </otherwise>
+       </choose>
      </action>
   </rule>
 
