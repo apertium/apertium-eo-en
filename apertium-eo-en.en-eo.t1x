@@ -10,8 +10,16 @@
      <cat-item tags="vblex.inf"/>
      <cat-item tags="vblex.sep.inf"/>
   </def-cat>
+  <def-cat n="vblexger">
+     <cat-item tags="vblex.ger"/>
+     <cat-item tags="vblex.sep.ger"/>
+  </def-cat>
+
   <def-cat n="vaux">
      <cat-item tags="vaux.*"/>
+  </def-cat>
+  <def-cat n="vbser">
+     <cat-item tags="vbser.*"/>
   </def-cat>
   <def-cat n="vblex">
      <cat-item tags="vblex.*"/>
@@ -599,6 +607,35 @@
               <tag><clip pos="2" side="tl" part="tns"/></tag>
               <tag><clip pos="2" side="tl" part="prs"/></tag>
             </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="tns"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+  <rule>
+     <pattern>
+       <pattern-item n="vbser"/>
+       <pattern-item n="vblexger"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="verb_vbger" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="tl" part="tns"/></tag>
+              <tag><clip pos="2" side="tl" part="prs"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="tns"/>
+            </lu>
+	    <b/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_vrb"/>
