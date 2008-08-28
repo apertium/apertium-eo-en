@@ -152,13 +152,9 @@ public class LeguTradukuNet {
 	else if (Character.isUpperCase(firstCh))  { a.noun = true; }
 	else if (Character.isDigit(lastCh))  { a.noun = true; }
 	else if (!Character.isLetter(firstCh))  { a.problem = true; }
-	else if (eo.endsWith("ajn")) { a.adj = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-1); }
-	else if (eo.endsWith("ojn")) { a.noun = true; a.plur = true; a.acc = true; eo = eo.substring(0,eo.length()-1); }
+	// NOTE: there are no words with accusative -n
 	else if (eo.endsWith("aj")) { a.adj = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
 	else if (eo.endsWith("oj")) { a.noun = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
-	else if (eo.endsWith("an")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-0); }
-	else if (eo.endsWith("on")) { a.noun = true; a.acc = true; eo = eo.substring(0,eo.length()-0); }
-	else if (eo.endsWith("en")) { a.adj = true; a.acc = true; eo = eo.substring(0,eo.length()-0); a.problem=true; }
 	else if (eo.endsWith("e")) { a.adv = true; }
 	else if (eo.endsWith("a")) { a.adj = true; }
 	else if (eo.endsWith("o")) { a.noun = true; }
@@ -175,8 +171,6 @@ public class LeguTradukuNet {
 	    else if (eo.endsWith("i")) { a.problem=true; }
 	    else eo = eo + "i";
 
-//            if (a.oneWord && eo.startsWith("mallong"))
-//                System.out.println(a.org + " -> " + eo );
 
 	}
 	a.root = eo;

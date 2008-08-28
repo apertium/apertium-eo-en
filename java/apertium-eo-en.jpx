@@ -15,7 +15,7 @@
   <property category="javaFormatting" name="implementsOnNewLine" value="0"/>
   <property category="javaFormatting" name="indentCase" value="0"/>
   <property category="javaFormatting" name="packagePrefixGroups" value="java;BLANK_LINE;javax;BLANK_LINE;(*)"/>
-  <property category="javaFormatting" name="packageThreshold" value="2"/>
+  <property category="javaFormatting" name="packageThreshold" value="0"/>
   <property category="javaFormatting" name="preservedBlankLinesInDecl" value="2"/>
   <property category="javaFormatting" name="spaceBeforeLparen" value="0"/>
   <property category="javaFormatting" name="whileOnNewLine" value="0"/>
@@ -55,4 +55,6 @@
   <property category="sys" name="Version" value="1.0"/>
   <property category="sys" name="VersionLabel" value="@version"/>
   <property category="sys" name="WorkingDirectory" value="../"/>
+  <property category="team" name="ignorePath.0" value="bak"/>
+  <property category="team" name="ignorePath.1" value="classes"/>
 </project>
