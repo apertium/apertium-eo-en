@@ -3,11 +3,12 @@ package apertium;
 
 import java.io.*;
 import java.util.LinkedHashMap;
+import java.util.*;
 
 public class LeguTradukuNet {
     public static void main(String[] args) throws IOException {
 	LeguTradukuNet legutradukunet = new LeguTradukuNet();
-	legutradukunet.leguTradukuNetDosiero();
+	legutradukunet.leguTradukuNetDosieron();
     }
 
     LinkedHashMap<String,String> krudaListo = new LinkedHashMap<String, String>(40000);
@@ -18,28 +19,34 @@ public class LeguTradukuNet {
     PrintWriter adv = ekskribuHtml("tradukunet-adv.txt");
     PrintWriter verb = ekskribuHtml("tradukunet-verb.txt");
     PrintWriter unknown = ekskribuHtml("tradukunet-unknown.txt");
+    PrintWriter debugf = ekskribuHtml("tradukunet-debug.txt");
 
     static boolean debug;
 
 
-    public void leguHitparadon(String dosiernome) throws IOException {
+    public HashMap<String,Double> leguHitparadon(String dosiernome) throws IOException {
 	BufferedReader br;
 	String linio;
-	int linNro = 0;
-	br = new BufferedReader(new FileReader("tradukunet.txt"));
+	br = new BufferedReader(new FileReader(dosiernome));
 
-	LinkedHashMap<String,Integer> krudaListo = new LinkedHashMap<String, Integer>(50002);
-
+	LinkedHashMap<String,Double> listo = new LinkedHashMap<String, Double>(50002);
+	double maxfreq = -1;
 	while ((linio = br.readLine()) != null) {
-	    debug = (linNro > 1000 && linNro < 30000);
 	    String[] s = linio.trim().split("\\s+");
+	    double freq = Integer.parseInt(s[1]);
+	    if (maxfreq ==-1) {
+		maxfreq = freq;
+	    }
+	    listo.put(s[0], freq/maxfreq);
 
 	}
+	br.close();
+	return listo;
     }
 
 
 
-    public void leguTradukuNetDosiero() throws IOException {
+    public void leguTradukuNetDosieron() throws IOException {
 	long haltuKiam = System.currentTimeMillis() + 1000*10;
 	BufferedReader br;
 	String linio;
@@ -50,6 +57,8 @@ public class LeguTradukuNet {
 
 	while ((linio = br.readLine()) != null) {
 	    debug = (linNro > 1000 && linNro < 30000);
+
+	    debugf.println(linio);
 
 	    //if (revo.size()>100) break;
 	    if (linNro%2==0) en = linio;
@@ -66,7 +75,7 @@ public class LeguTradukuNet {
 		    if (eo.length()==0) continue;
 
 		    if (eo.indexOf("(")==-1)
-			registru(en, eo, rango++);
+			registru(linNro, en, eo, rango++);
 		    else {
 			String[] eos2 = null;
 
@@ -91,7 +100,7 @@ public class LeguTradukuNet {
 				if (eos2[j].trim().length()==0) continue;
 				String eo2 = starts + " " + eos2[j] + " " + ends;
 				//System.out.println("   "+ eo2);
-				registru(en, eo2, rango++);
+				registru(linNro, en, eo2, rango++);
 			    }
 
 
@@ -99,10 +108,10 @@ public class LeguTradukuNet {
 			    // (ek)furor cxe   ->  ekfuror cxe  / furor cxe
 			    // via(j) plua(j) -> via plua / viaj pluaj
 			    String eoKunPar = eo.replaceAll("[\\(\\)]","");
-			    registru(en, eoKunPar, rango++);
+			    registru(linNro, en, eoKunPar, rango++);
 
 			    String eoSenPar = eo.replaceAll("\\(.*?\\)","");
-			    registru(en, eoSenPar, rango++);
+			    registru(linNro, en, eoSenPar, rango++);
 
 			    //System.out.println(eo+" -> "+eoSen+" / "+eoKun);
 			}
@@ -113,6 +122,7 @@ public class LeguTradukuNet {
 		    System.err.println(en + " -> " + eos[i]);
 		    throw e;
 		}
+		debugf.println();
 	    }
 	    linNro++;
 	    if (haltuKiam < System.currentTimeMillis()) break;
@@ -123,55 +133,59 @@ public class LeguTradukuNet {
 	adv.close();
 	verb.close();
 	unknown.close();
+	debugf.close();
 	System.out.println("===legita. Lasta estis: "+en + " -> "+ eo);
     }
 
-    private void registru(String en, String eo, int rango) {
+    private void registru(int linNro, String en, String eo, int rango) {
 	eo = eo.replaceAll("  "," ").trim();
 	if (eo.length()==0) return;
 
-	Paro a = analyzeEo(en, eo);
+	Paro p = analyzeEo(eo);
+	p.orgEn = en;
+	p.rango = rango;
 
-	String dat = en + " @ " + a.root + " @ " + a.wordType() +
-		     (rango < 1 ? "" : " (" + (rango) + ")");
+	String dat = en + " @ " + p.root + " @ " + p.wordType() + (rango < 1 ? "" : " (" + (rango) + ")")  + "    \t<=  "+eo + "\t"+linNro;
 
 	//if (debug) System.out.println(dat);
 
-	if (a.problem) {
+	if (p.problem) {
 	    unknown.println(dat);
-	} else if (!a.oneWord) {
+	} else if (!p.oneWord) {
 	    unknown.println(dat);
 	} else if (en.indexOf(" ") != -1) { // more than 1 English word
 	    unknown.println(dat);
-	} else if (a.noun) {
+	} else if (p.noun) {
 	    noun.println(dat);
-	} else if (a.adj) {
+	} else if (p.adj) {
 	    adj.println(dat);
-	} else if (a.adv) {
+	} else if (p.adv) {
 	    adv.println(dat);
-	} else if (a.verb) {
+	} else if (p.verb) {
 	    verb.println(dat);
 	} else {
 	    unknown.println(dat);
 	}
+
+	if (p.oneWord)
+	    debugf.println("\t" + p.wordType() + " \t" + p.root);
     }
 
-    private static Paro analyzeEo(String en, String eo) {
+    private static Paro analyzeEo(String eo) {
 	Paro a = new Paro();
 	a.orgEo = eo;
-	a.orgEn = en;
 	a.oneWord = eo.indexOf(" ")==-1;
 
 	char firstCh = eo.charAt(0);
 	char lastCh = eo.charAt(eo.length()-1);
 
 
-	if (eo.length()<=2) a.problem = true; // not a word then / classification fails
+	if (eo.length()<=1) a.problem = true; // not a word then / classification fails
 	else if (eo.indexOf("..")!=-1) a.problem = true; // eks  mal..igo
 	else if (Character.isUpperCase(firstCh))  { a.noun = true; }
 	else if (Character.isDigit(lastCh))  { a.noun = true; }
 	else if (!Character.isLetter(firstCh))  { a.problem = true; }
-	// NOTE: there are no words with accusative -n
+	// NOTE: there are no single words with accusative -n
 	else if (eo.endsWith("aj")) { a.adj = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
 	else if (eo.endsWith("oj")) { a.noun = true; a.plur = true; eo = eo.substring(0,eo.length()-0); }
 	else if (eo.endsWith("e")) { a.adv = true; }
@@ -183,13 +197,12 @@ public class LeguTradukuNet {
 	else {
 	    a.verb = true;
 
-	    if (eo.endsWith("-igx")) { a.igx = true; eo = eo.substring(0,eo.length()-4)+"igxi"; }
-	    else if (eo.endsWith("-ig")) { a.ig = true; eo = eo.substring(0,eo.length()-3)+"igi"; }
+		 if (eo.endsWith("-ig")) { a.ig = true; eo = eo.substring(0,eo.length()-3)+"igi"; }
+	    else if (eo.endsWith("-i"+gx)) { a.igx = true; eo = eo.substring(0,eo.length()-3)+"i"+gx+"i"; }
 	    else if (eo.endsWith("-i")) { eo = eo.substring(0,eo.length()-2)+"i"; }
-	    else if (eo.endsWith("-I")) { eo = eo.substring(0,eo.length()-2)+"i"; }
+	    else if (eo.endsWith("-I")) { eo = eo.substring(0,eo.length()-2)+"i"; a.tr = true; }
 	    else if (eo.endsWith("i")) { a.problem=true; }
 	    else eo = eo + "i";
-
 
 	}
 	a.root = eo;
@@ -200,6 +213,7 @@ public class LeguTradukuNet {
 
 
     private static String dosierujo = "tradukunet-generated";
+    private static final String gx = Iloj.alCxapeloj("gx");
     private static PrintWriter ekskribuHtml(String dosierNomo) {
 	new File(dosierujo).mkdir();
 	PrintWriter el = null;
