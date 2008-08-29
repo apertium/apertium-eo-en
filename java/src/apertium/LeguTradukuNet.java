@@ -4,15 +4,25 @@ package apertium;
 import java.io.*;
 import java.util.LinkedHashMap;
 import java.util.*;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class LeguTradukuNet {
     public static void main(String[] args) throws IOException {
+
+	//leguMonodix("apertium-eo-en.en.dix");
+
 	LeguTradukuNet legutradukunet = new LeguTradukuNet();
 	legutradukunet.leguTradukuNetDosieron();
     }
 
     LinkedHashMap<String,String> krudaListo = new LinkedHashMap<String, String>(40000);
     LinkedHashMap<String,String> viki = new LinkedHashMap<String, String>(40000);
+
+    HashMap<String,String> eoDix = leguMonodix("apertium-eo-en.eo.dix");
+    HashMap<String,String> enDix = leguMonodix("apertium-eo-en.en.dix");
+    HashMap<String,Double> eoFreq = leguHitparadon("hitparade-eo.txt");
+    HashMap<String,Double> enFreq = leguHitparadon("hitparade-en.txt");
 
     PrintWriter noun = ekskribuHtml("tradukunet-noun.txt");
     PrintWriter adj = ekskribuHtml("tradukunet-adj.txt");
@@ -23,24 +33,79 @@ public class LeguTradukuNet {
 
     static boolean debug;
 
+    public static void montruHashMap(HashMap m) {
+	int n=0;
+	for (Object e : m.entrySet()) {
+	    System.out.println(e);
+	    if (n++>1000) return;
+	}
 
-    public HashMap<String,Double> leguHitparadon(String dosiernome) throws IOException {
+    }
+
+    public static HashMap<String,Double> leguHitparadon(String dosiernomo) {
+	System.out.println("Legas "+dosiernomo);
 	BufferedReader br;
 	String linio;
-	br = new BufferedReader(new FileReader(dosiernome));
 
 	LinkedHashMap<String,Double> listo = new LinkedHashMap<String, Double>(50002);
-	double maxfreq = -1;
-	while ((linio = br.readLine()) != null) {
-	    String[] s = linio.trim().split("\\s+");
-	    double freq = Integer.parseInt(s[1]);
-	    if (maxfreq ==-1) {
-		maxfreq = freq;
-	    }
-	    listo.put(s[0], freq/maxfreq);
+	try {
+	    br = new BufferedReader(new FileReader(dosiernomo));
+	    double maxfreq = -1;
+	    while ((linio = br.readLine()) != null) {
+		String[] s = linio.trim().split("\\s+");
+		if (s.length < 2)
+		    continue;
+		double freq = Integer.parseInt(s[0]);
+		if (maxfreq == -1) {
+		    maxfreq = freq;
+		}
+		listo.put(s[1], freq / maxfreq);
 
+	    }
+	    br.close();
+	} catch (IOException ex) {
+	    ex.printStackTrace();
+	}
+	//montruHashMap(listo);
+	return listo;
+    }
+
+
+
+    public static HashMap<String,String> leguMonodix(String dosiernomp) {
+	HashMap<String,String> listo = new HashMap<String,String>(50002);
+	System.out.println("Legas "+dosiernomp);
+	BufferedReader br;
+	String linio;
+	try {
+	    br = new BufferedReader(new FileReader(dosiernomp));
+/*
+	    <e lm="karakterizi"><i>karakteriz</i><par n="verb__vblex"/></e>
+	    <e lm="karaktero"><i>karaktero</i><par n="nom__n"/></e>
+
+	    <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+	    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+   */
+	Pattern pat = Pattern.compile("lm=\"([\\w\\s]+)\".*par n=\"(\\w+)__(\\w+)\"");
+
+	while ((linio = br.readLine()) != null) {
+
+	    Matcher m = pat.matcher(linio);
+
+	    while (m.find()) {
+		String vorto = m.group(1);
+		String fleksisimala = m.group(2);
+		String klaso = m.group(3);
+
+		//System.out.println(vorto + " "+ klaso+"   "+fleksisimala   + "    "+linio);
+		listo.put(vorto+"__"+klaso, linio);
+	    }
 	}
 	br.close();
+	} catch (IOException ex) {
+	    ex.printStackTrace();
+	}
+	montruHashMap(listo);
 	return listo;
     }
 
@@ -53,6 +118,7 @@ public class LeguTradukuNet {
 	String en=null, eo=null;
 	int linNro = 0;
 	br = new BufferedReader(new FileReader("tradukunet.txt"));
+	System.out.println("Legas "+"tradukunet.txt");
 
 
 	while ((linio = br.readLine()) != null) {
@@ -169,6 +235,20 @@ public class LeguTradukuNet {
 
 	if (p.oneWord)
 	    debugf.println("\t" + p.wordType() + " \t" + p.root);
+
+
+	if (debug && p.oneWord && en.indexOf(" ") == -1) {
+	    System.out.println();
+	    System.out.println(dat);
+
+	    String eoDixe = p.root + "__" + p.apertiumWordType();
+	    System.out.println(eoDixe + " = " + eoDix.get(eoDixe));
+	    System.out.println(p.root + " freq = " + eoFreq.get(p.root));
+
+	    String enDixe = p.orgEn + "__" + p.apertiumWordType();
+	    System.out.println(enDixe + " = " + enDix.get(eoDixe));
+	    System.out.println(p.orgEn + " freq = " + enFreq.get(p.orgEn));
+	}
     }
 
     private static Paro analyzeEo(String eo) {
