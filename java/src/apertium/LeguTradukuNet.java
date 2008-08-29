@@ -22,6 +22,23 @@ public class LeguTradukuNet {
     static boolean debug;
 
 
+    public void leguHitparadon(String dosiernome) throws IOException {
+	BufferedReader br;
+	String linio;
+	int linNro = 0;
+	br = new BufferedReader(new FileReader("tradukunet.txt"));
+
+	LinkedHashMap<String,Integer> krudaListo = new LinkedHashMap<String, Integer>(50002);
+
+	while ((linio = br.readLine()) != null) {
+	    debug = (linNro > 1000 && linNro < 30000);
+	    String[] s = linio.trim().split("\\s+");
+
+	}
+    }
+
+
+
     public void leguTradukuNetDosiero() throws IOException {
 	long haltuKiam = System.currentTimeMillis() + 1000*10;
 	BufferedReader br;
@@ -37,6 +54,7 @@ public class LeguTradukuNet {
 	    //if (revo.size()>100) break;
 	    if (linNro%2==0) en = linio;
 	    else {
+		linio = Iloj.alCxapeloj(linio);
 		krudaListo.put(en, linio);
 
 		String[] eos = linio.split("/");
@@ -112,7 +130,7 @@ public class LeguTradukuNet {
 	eo = eo.replaceAll("  "," ").trim();
 	if (eo.length()==0) return;
 
-	EoAnalysation a = analyzeEo(eo);
+	Paro a = analyzeEo(en, eo);
 
 	String dat = en + " @ " + a.root + " @ " + a.wordType() +
 		     (rango < 1 ? "" : " (" + (rango) + ")");
@@ -138,9 +156,10 @@ public class LeguTradukuNet {
 	}
     }
 
-    private static EoAnalysation analyzeEo(String eo) {
-	EoAnalysation a = new EoAnalysation();
-	a.org = eo;
+    private static Paro analyzeEo(String en, String eo) {
+	Paro a = new Paro();
+	a.orgEo = eo;
+	a.orgEn = en;
 	a.oneWord = eo.indexOf(" ")==-1;
 
 	char firstCh = eo.charAt(0);
@@ -195,3 +214,11 @@ public class LeguTradukuNet {
 }
 
 
+
+
+/*
+
+
+
+
+*/
