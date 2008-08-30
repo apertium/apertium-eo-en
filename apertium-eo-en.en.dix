@@ -17955,6 +17955,7 @@
     <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
     <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
     <e lm="Zapatista National Liberation Army"><i>Zapatista<b/>National<b/>Liberation<b/>Army</i><par n="Linux__np"/></e>
+    <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
 
     <!-- Phrases -->
     <e lm="I'm"><p><l>I'm</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -18014,5 +18015,11 @@
     <e lm="could've"><p><l>could've</l><r>can<s n="vaux"/><s n="past"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
     <e lm="that's"><p><l>that's</l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 
+    <!-- Proverbs -->
+    <e lm=""><i>all<b/>work<b/>and<b/>no<b/>play<b/>makes<b/>Jack<b/>a<b/>dull<b/>boy</i><par n="hello__ij"/></e>
+    <e lm=""><i>absence<b/>makes<b/>the<b/>heart<b/>grow<b/>fonder</i><par n="hello__ij"/></e>
+    <e lm=""><i>a<b/>bird<b/>in<b/>the<b/>hand<b/>is<b/>worth<b/>two<b/>in<b/>the<b/>bush</i><par n="hello__ij"/></e>
+    <e lm=""><i>all<b/>that<b/>glitters<b/>is<b/>not<b/>gold</i><par n="hello__ij"/></e>
+    <e lm=""><i>many<b/>hands<b/>make<b/>light<b/>work</i><par n="hello__ij"/></e>
   </section>
 </dictionary>
