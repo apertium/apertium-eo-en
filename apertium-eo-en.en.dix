@@ -2436,9 +2436,23 @@
       </p>
     </e>
 
+    <e r="LR">
+      <p>
+        <l><b/>hundred<b/>and</l> 
+        <r><b/>hundred<s n="num"/><s n="sp"/></r> 
+      </p>
+    </e>
+
     <e>
       <p>
         <l><b/>thousand</l> 
+        <r><b/>thousand<s n="num"/><s n="sp"/></r> 
+      </p>
+    </e>
+
+    <e r="LR">
+      <p>
+        <l><b/>thousand<b/>and</l> 
         <r><b/>thousand<s n="num"/><s n="sp"/></r> 
       </p>
     </e>
