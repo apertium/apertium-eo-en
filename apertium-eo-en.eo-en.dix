@@ -128,11 +128,42 @@
 
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
     <e><re>[0-9]+([.,][0-9]+)?%</re><p><l><s n="num"/><s n="percent"/></l><r><s n="num"/><s n="percent"/></r></p></e>
-    <e><p><l>dek<s n="num"/></l><r>ten<s n="num"/></r></p></e>
-    <e r="RL"><p><l>mil<s n="num"/></l><r>ten<b/>hundred<s n="num"/></r></p></e>
-    <e r="RL"><p><l>mil<s n="num"/></l><r>thousand<s n="num"/></r></p></e>
-    <e><p><l>miliono<s n="num"/></l><r>million<s n="num"/></r></p></e>
+
     <e><p><l>unu<s n="num"/></l><r>one<s n="num"/></r></p></e>
+    <e><p><l>du<s n="num"/></l><r>two<s n="num"/></r></p></e>
+    <e><p><l>tri<s n="num"/></l><r>three<s n="num"/></r></p></e>
+    <e><p><l>kvar<s n="num"/></l><r>four<s n="num"/></r></p></e>
+    <e><p><l>kvin<s n="num"/></l><r>five<s n="num"/></r></p></e>
+    <e><p><l>ses<s n="num"/></l><r>six<s n="num"/></r></p></e>
+    <e><p><l>sep<s n="num"/></l><r>seven<s n="num"/></r></p></e>
+    <e><p><l>ok<s n="num"/></l><r>eight<s n="num"/></r></p></e>
+    <e><p><l>naŭ<s n="num"/></l><r>nine<s n="num"/></r></p></e>
+
+    <e><p><l>dek<s n="num"/></l><r>ten<s n="num"/></r></p></e>
+
+
+<e><p><l>eleven<s n="num"/></l><r>dek unu<s n="num"/></r></p></e>
+<e><p><l>twelve<s n="num"/></l><r>dek du<s n="num"/></r></p></e>
+<e><p><l>thirteen<s n="num"/></l><r>dek tri<s n="num"/><s n="mf"/></r></p></e>
+<e><p><l>fourteen<s n="num"/></l><r>dek kvar<s n="num"/><s n="mf"/></r></p></e>
+<e><p><l>fifteen<s n="num"/></l><r>dek kvin<s n="num"/></r></p></e>
+<e><p><l>sixteen<s n="num"/></l><r>dek ses<s n="num"/><s n="mf"/></r></p></e>
+<e><p><l>seventeen<s n="num"/></l><r>dek sep<s n="num"/><s n="mf"/></r></p></e>
+<e><p><l>eighteen<s n="num"/></l><r>dek ok<s n="num"/><s n="mf"/></r></p></e>
+<e><p><l>nineteen<s n="num"/></l><r>dek naŭ<s n="num"/><s n="mf"/></r></p></e>
+
+
+
+
+    <e><p><l>cent<s n="num"/></l><r>hundred<s n="num"/></r></p></e>
+
+    <e><p><l>mil<s n="num"/></l><r>thousand<s n="num"/></r></p></e>
+
+    <e><p><l>miliono<s n="num"/></l><r>million<s n="num"/></r></p></e>
+
+
+
+
 
     <!-- Pronouns -->
 
