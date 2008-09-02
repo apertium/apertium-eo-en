@@ -209,16 +209,28 @@
       <choose>
         <when>
           <test>
-            <and>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.comp"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="tl" part="a_adj"/>
-                <lit-tag v="adj"/>
-              </equal>
-            </and>
+            <or>
+              <and>
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/>
+                  <lit-tag v="adj.sint.comp"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+              <and> <!-- non-standard/old synthetic form -->
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/>
+                  <lit-tag v="adj.comp"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+            </or>
           </test>
           <let>
             <var n="adjectiu1"/>
@@ -234,16 +246,28 @@
         </when>
         <when>
           <test>
-            <and>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.sup"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="tl" part="a_adj"/>
-                <lit-tag v="adj"/>
-              </equal>
-            </and>
+            <or>
+              <and>
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/>
+                  <lit-tag v="adj.sint.sup"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+              <and> <!-- non-standard/old synthetic form -->
+                <equal>
+                  <clip pos="1" side="sl" part="a_adj"/>
+                  <lit-tag v="adj.sup"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <lit-tag v="adj"/>
+                </equal>
+              </and>
+            </or>
           </test>
           <let>
             <var n="adjectiu1"/>
