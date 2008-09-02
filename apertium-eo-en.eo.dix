@@ -1401,8 +1401,8 @@
         <r>i<s n="vblex"/><s n="imp"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="Barcelona__np">
     <e>
       <p>
@@ -1426,26 +1426,40 @@
         <r><s n="np"/><s n="top"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="Mark__np">
     <e>
       <p>
         <l></l> 
-        <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r> 
+        <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="nom"/></r> 
       </p>
     </e>
-
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
     </pardef>
+
+
     <pardef n="Mary__np">
     <e>
       <p>
         <l></l> 
-        <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r> 
+        <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r> 
       </p>
     </e>
-
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
     </pardef>
+
+
     <pardef n="Smith__np">
       <e>
         <p>
@@ -1454,6 +1468,7 @@
         </p>
       </e>
     </pardef>
+
     <pardef n="Linux__np">
     <e>
       <p>
@@ -1484,8 +1499,8 @@
         <r><s n="num"/><s n="sp"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="unu__num">
     <e>
       <p>
