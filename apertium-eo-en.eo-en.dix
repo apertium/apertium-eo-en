@@ -6739,12 +6739,12 @@
     <e><p><l>baza<s n="adj"/></l><r>basic<s n="adj"/></r></p></e>
 
     <e><p><l>bela<s n="adj"/></l><r>nice<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>bela<s n="adj"/></l><r>handsome<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>bela<s n="adj"/></l><r>pretty<s n="adj"/></r></p></e>    <!-- pretty   -> bela  -->
+    <e r="RL"><p><l>bela<s n="adj"/></l><r>pretty<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>bela<s n="adj"/></l><r>handsome<s n="adj"/></r></p></e>
     <e r="RL"><p><l>bela<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
 
-
-    <e><p><l>belega<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+    <e><p><l>belega<s n="adj"/></l><r>gorgeous<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>belega<s n="adj"/></l><r>lovely<s n="adj"/></r></p></e>
 
     <e><p><l>belga<s n="adj"/></l><r>Belgian<s n="adj"/></r></p></e>
     <e><p><l>blinda<s n="adj"/></l><r>blind<s n="adj"/><s n="sint"/></r></p></e>
@@ -6764,7 +6764,7 @@
 
     <e><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
     <e r="RL"><p><l>bona<s n="adj"/></l><r>fine<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bonega<s n="adj"/></l><r>excellent<s n="adj"/></r></p></e>
     <e><p><l>brazila<s n="adj"/></l><r>Brazilian<s n="adj"/></r></p></e>
     <e><p><l>brila<s n="adj"/><s n="mf"/></l><r>shiny<s n="adj"/><s n="sint"/></r></p></e>
@@ -6786,7 +6786,7 @@
     <e r="RL"><p><l>ĉefa<s n="adj"/></l><r>principal<s n="adj"/></r></p></e>
     <e><p><l>ĉilia<s n="adj"/></l><r>Chilean<s n="adj"/></r></p></e>
     <e><p><l>ĉina<s n="adj"/></l><r>Chinese<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>ĉiutaga<s n="adj"/></l><r>daily<s n="adj"/></r></p></e>
+    <e><p><l>ĉiutaga<s n="adj"/></l><r>daily<s n="adj"/></r></p></e>
     <e r="RL"><p><l>ĉiutaga<s n="adj"/></l><r>everyday<s n="adj"/></r></p></e>
     <e><p><l>dana<s n="adj"/></l><r>Danish<s n="adj"/></r></p></e>
     <e><p><l>danĝera<s n="adj"/></l><r>dangerous<s n="adj"/></r></p></e>
@@ -6803,23 +6803,24 @@
     <e><p><l>delikata<s n="adj"/></l><r>exquisite<s n="adj"/></r></p></e>
     <e><p><l>delikata<s n="adj"/></l><r>fragile<s n="adj"/></r></p></e>
     <e><p><l>densa<s n="adj"/></l><r>dense<s n="adj"/><s n="sint"/></r></p></e>
-    <e c="check"><p><l>detrua<s n="adj"/></l><r>destroyer<s n="adj"/></r></p></e>
+<!-- Jacob: This isnt an adj (or give an example)  <e c="check"><p><l>detrua<s n="adj"/></l><r>destroyer<s n="adj"/></r></p></e> -->
+
     <e><p><l>devena<s n="adj"/></l><r>natural<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>deviga<s n="adj"/></l><r>binding<s n="adj"/></r></p></e>
     <e><p><l>deviga<s n="adj"/></l><r>compulsory<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>deviga<s n="adj"/></l><r>binding<s n="adj"/></r></p></e>
     <e><p><l>diferenca<s n="adj"/></l><r>different<s n="adj"/></r></p></e>
     <e r="RL"><p><l>diferenca<s n="adj"/></l><r>unlike<s n="adj"/></r></p></e>
     <e><p><l>digna<s n="adj"/></l><r>worthy<s n="adj"/></r></p></e>
-    <e c="check"><p><l>dika<s n="adj"/></l><r>fat<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>dika<s n="adj"/></l><r>thick<s n="adj"/><s n="sint"/></r></p></e>
+    <e c="check"><p><l>dika<s n="adj"/></l><r>fat<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>dinamika<s n="adj"/></l><r>dynamic<s n="adj"/></r></p></e>
     <e><p><l>diskreta<s n="adj"/></l><r>discreet<s n="adj"/></r></p></e>
     <e><p><l>disponebla<s n="adj"/></l><r>available<s n="adj"/></r></p></e>
     <e><p><l>distrita<s n="adj"/></l><r>careless<s n="adj"/></r></p></e>
     <e><p><l>diversa<s n="adj"/></l><r>diverse<s n="adj"/></r></p></e>
     <e><p><l>diversa<s n="adj"/></l><r>varied<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>dolĉa<s n="adj"/></l><r>mellow<s n="adj"/></r></p></e>
     <e><p><l>dolĉa<s n="adj"/><s n="mf"/></l><r>sweet<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>dolĉa<s n="adj"/></l><r>mellow<s n="adj"/></r></p></e>
     <e><p><l>dolora<s n="adj"/></l><r>painful<s n="adj"/></r></p></e>
     <e><p><l>drama<s n="adj"/></l><r>dramatic<s n="adj"/></r></p></e>
     <e><p><l>drasta<s n="adj"/></l><r>drastic<s n="adj"/></r></p></e>
