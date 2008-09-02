@@ -344,6 +344,7 @@
     <e><p><l>adiaŭ<s n="ij"/></l><r>goodbye<s n="ij"/></r></p></e>
     <e><p><l>bonan<b/>matenon<s n="ij"/></l><r>good<b/>morning<s n="ij"/></r></p></e>
     <e><p><l>ĝis<b/>poste<s n="ij"/></l><r>see<b/>you<b/>later<s n="ij"/></r></p></e>
+    <e><p><l>ĝis<b/>revido<s n="ij"/></l><r>see<b/>you<s n="ij"/></r></p></e>
     <e><p><l>saluton<s n="ij"/></l><r>hello<s n="ij"/></r></p></e>
 
     <!-- Prepositions -->
@@ -471,24 +472,15 @@
 
     <!-- Possessives -->
 
-    <e r="LR"><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
-    <e r="RL"><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
 
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
 
-    <e r="LR"><p><l>ĝia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>ilia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>ŝia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
 
-    <e r="RL"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
-
-    <e r="RL"><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
-
-    <e r="RL"><p><l>lia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
 
 
 
@@ -6679,13 +6671,13 @@
     <e><p><l>afabla<s n="adj"/><s n="mf"/></l><r>kind<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>afrika<s n="adj"/></l><r>African<s n="adj"/></r></p></e>
     <e><p><l>agrabla<s n="adj"/></l><r>pleasant<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>agrara<s n="adj"/></l><r>agricultural<s n="adj"/></r></p></e>
+    <e><p><l>agrara<s n="adj"/></l><r>agricultural<s n="adj"/></r></p></e>
     <e><p><l>agresema<s n="adj"/></l><r>aggressive<s n="adj"/></r></p></e>
     <e><p><l>agrokultura<s n="adj"/></l><r>agricultural<s n="adj"/></r></p></e>
-    <e><p><l>akra<s n="adj"/></l><r>acute<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>akra<s n="adj"/></l><r>acute<s n="adj"/></r></p></e>
     <e><p><l>akra<s n="adj"/></l><r>sharp<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>akra<s n="adj"/></l><r>unpleasant<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>akra<s n="adj"/></l><r>spiky<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>akra<s n="adj"/></l><r>unpleasant<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>akra<s n="adj"/></l><r>spiky<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>aktiva<s n="adj"/></l><r>active<s n="adj"/></r></p></e>
     <e><p><l>aktuala<s n="adj"/></l><r>current<s n="adj"/></r></p></e>
     <e r="RL"><p><l>aktuala<s n="adj"/></l><r>ongoing<s n="adj"/></r></p></e>
@@ -6696,7 +6688,7 @@
     <e><p><l>alergia<s n="adj"/></l><r>allergic<s n="adj"/></r></p></e>
     <e><p><l>alloga<s n="adj"/></l><r>attractive<s n="adj"/></r></p></e>
     <e><p><l>alta<s n="adj"/></l><r>high<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>alta<s n="adj"/></l><r>tall<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>alta<s n="adj"/></l><r>tall<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>ambicia<s n="adj"/></l><r>ambitious<s n="adj"/></r></p></e>
     <e r="LR"><p><l>aminda<s n="adj"/></l><r>genial<s n="adj"/></r></p></e>
     <e r="LR"><p><l>ampleksa<s n="adj"/></l><r>wide<s n="adj"/><s n="sint"/></r></p></e>
@@ -6745,15 +6737,32 @@
     <e r="RL"><p><l>bagatela<s n="adj"/></l><r>marginal<s n="adj"/></r></p></e>
     <e><p><l>banala<s n="adj"/></l><r>trivial<s n="adj"/></r></p></e>
     <e><p><l>baza<s n="adj"/></l><r>basic<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>bela<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>bela<s n="adj"/></l><r>pretty<s n="adj"/></r></p></e>
-    <e><p><l>bela<s n="adj"/></l><r>handsome<s n="adj"/></r></p></e>
+
     <e><p><l>bela<s n="adj"/></l><r>nice<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>belega<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+    <e><p><l>bela<s n="adj"/></l><r>handsome<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>bela<s n="adj"/></l><r>pretty<s n="adj"/></r></p></e>    <!-- pretty   -> bela  -->
+    <e r="RL"><p><l>bela<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+
+
+    <e><p><l>belega<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+
     <e><p><l>belga<s n="adj"/></l><r>Belgian<s n="adj"/></r></p></e>
     <e><p><l>blinda<s n="adj"/></l><r>blind<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>blonda<s n="adj"/></l><r>blond<s n="adj"/><s n="sint"/></r></p></e>
+
+<!--
+    r="RL": NUR DE ANGLA AL ESPERANTO
+    t.e. r="RL" se multaj anglaj vortoj -> unu esperanta vorto
+
     <e r="RL"><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
+
+    r="LR": NUR DE ESPERANTO AL ANGLA
+    t.e. r="LR" se multaj esperanto-vortoj -> unu angla vorto
+
+    <e r="LR"><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
+-->
+
+    <e><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
     <e r="RL"><p><l>bona<s n="adj"/></l><r>fine<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bonega<s n="adj"/></l><r>excellent<s n="adj"/></r></p></e>
@@ -9790,7 +9799,7 @@
 <!-- additions by Jacob -->
 
     <e><p><l>listo<s n="n"/></l><r>list<s n="n"/></r></p></e>
-    <e><p><l>arblisto<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
+    <e><p><l>arba<b/>listo<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
     <e><p><l>faldmenuo<s n="n"/></l><r>combobox<s n="n"/></r></p></e>
     <e><p><l>agordo<s n="n"/></l><r>configuration<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
