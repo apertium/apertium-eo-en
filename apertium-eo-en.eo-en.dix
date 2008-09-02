@@ -589,9 +589,10 @@
     <e r="LR"><p><l>eŭropano<s n="n"/><s n="m"/></l><r>European<s n="n"/></r></p></e>
     <e r="RL"><p><l>eŭropano<s n="n"/><s n="GD"/></l><r>European<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>indio<s n="n"/><s n="f"/></l><r>Indian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>indio<s n="n"/><s n="m"/></l><r>Indian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>indio<s n="n"/><s n="GD"/></l><r>Indian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>indiano<s n="n"/><s n="f"/></l><r>Indian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>indiano<s n="n"/><s n="m"/></l><r>Indian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>indiano<s n="n"/><s n="GD"/></l><r>Indian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>indio<s n="n"/></l><r>Indian<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>irlandano<s n="n"/><s n="f"/></l><r>Irish<s n="n"/></r></p></e>
     <e r="LR"><p><l>irlandano<s n="n"/><s n="m"/></l><r>Irish<s n="n"/></r></p></e>
@@ -3619,7 +3620,6 @@
     <e><p><l>indigno<s n="n"/></l><r>indignation<s n="n"/></r></p></e>
     <e c="check"><p><l>indiĝeno<s n="n"/></l><r>native<s n="n"/></r></p></e>
     <e><p><l>indiko<s n="n"/></l><r>indication<s n="n"/></r></p></e>
-    <e r="RL"><p><l>indio<s n="n"/></l><r>Indian<s n="n"/></r></p></e>
     <e r="RL"><p><l>individuo<s n="n"/></l><r>individual<s n="n"/></r></p></e>
     <e><p><l>indulgo<s n="n"/></l><r>clemency<s n="n"/></r></p></e>
     <e><p><l>industrio<s n="n"/></l><r>company<s n="n"/></r></p></e>
@@ -4519,7 +4519,7 @@
     <e><p><l>marmito<s n="n"/></l><r>pot<s n="n"/></r></p></e>
     <e><p><l>marmoro<s n="n"/></l><r>marble<s n="n"/></r></p></e>
     <e><p><l>maro<s n="n"/></l><r>sea<s n="n"/></r></p></e>
-    <e c="check"><p><l>marokano<s n="n"/></l><r>Moroccan<s n="n"/></r></p></e>
+    <e><p><l>marokano<s n="n"/></l><r>Moroccan<s n="n"/></r></p></e>
     <e><p><l>martelo<s n="n"/></l><r>hammer<s n="n"/></r></p></e>
     <e><p><l>martiro<s n="n"/></l><r>martyr<s n="n"/></r></p></e>
     <e><p><l>marto<s n="n"/></l><r>March<s n="n"/></r></p></e>
@@ -9929,18 +9929,18 @@
     <e><p><l>supro<s n="n"/></l><r>top<s n="n"/></r></p></e>
     <e><p><l>torturo<s n="n"/></l><r>torture<s n="n"/></r></p></e>
 
-
- <e><p><l><s n="adj"/></l><r>Albanian<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>American<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Australian<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Catalan<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Colombian<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Indian<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Israeli<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Jamaican<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Korean<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Mexican<s n="adj"/></r></p></e>
- <e><p><l><s n="adj"/></l><r>Moroccan<s n="adj"/></r></p></e>
+ <e><p><l>albana<s n="adj"/></l><r>Albanian<s n="adj"/></r></p></e>
+ <e><p><l>amerika<s n="adj"/></l><r>American<s n="adj"/></r></p></e>
+ <e><p><l>aŭstrala<s n="adj"/></l><r>Australian<s n="adj"/></r></p></e>
+ <e><p><l>kataluna<s n="adj"/></l><r>Catalan<s n="adj"/></r></p></e>
+ <e><p><l>kolombiana<s n="adj"/></l><r>Colombian<s n="adj"/></r></p></e>
+ <e><p><l>indiana<s n="adj"/></l><r>Indian<s n="adj"/></r></p></e>
+ <e><p><l>israela<s n="adj"/></l><r>Israeli<s n="adj"/></r></p></e>
+ <e><p><l>jamajka<s n="adj"/></l><r>Jamaican<s n="adj"/></r></p></e>
+ <e><p><l>korea<s n="adj"/></l><r>Korean<s n="adj"/></r></p></e>
+ <e><p><l>meksika<s n="adj"/></l><r>Mexican<s n="adj"/></r></p></e>
+ <e><p><l>maroka<s n="adj"/></l><r>Moroccan<s n="adj"/></r></p></e>
+<!--
  <e><p><l><s n="adj"/></l><r>Muslim<s n="adj"/></r></p></e>
  <e><p><l><s n="adj"/></l><r>Nigerian<s n="adj"/></r></p></e>
  <e><p><l><s n="adj"/></l><r>Scandinavian<s n="adj"/></r></p></e>
@@ -10052,5 +10052,6 @@
  <e><p><l><s n="adj"/></l><r>veteran<s n="adj"/></r></p></e>
  <e><p><l><s n="adj"/></l><r>west<s n="adj"/></r></p></e>
  <e><p><l><s n="adj"/></l><r>white<s n="adj"/></r></p></e>
+-->
   </section>
 </dictionary>
