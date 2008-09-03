@@ -71,13 +71,13 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
           </chunk>
-	  <b/>
+	  <b pos="1"/>
           <chunk>
             <clip pos="2" part="lem"/>
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
           </chunk>
-	  <b/>
+	  <b pos="2"/>
           <chunk>
             <clip pos="3" part="lem"/>
              <clip pos="3" part="a_chunk"/>
