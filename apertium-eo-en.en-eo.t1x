@@ -475,7 +475,7 @@
                   <lit-tag v="2"/>
                   <lit-tag v="3"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -500,7 +500,7 @@
                   <clip pos="2" side="tl" part="nbr" link-to="3"/>
                   <lit-tag v="4"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -566,7 +566,7 @@
 	     <lit-tag v="3"/> -->
                   <var n="adjectiu1"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -605,7 +605,7 @@
 	     <lit-tag v="4"/> -->
                   <var n="adjectiu1"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -635,7 +635,7 @@
                   <lit-tag v="2"/>
                   <lit-tag v="3"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <!--
              <clip pos="2" side="tl" part="lem"/>
@@ -644,7 +644,7 @@
 	     <lit-tag v="3"/> -->
                   <var n="adjectiu1"/>
                 </lu>
-                <b/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -669,7 +669,7 @@
                   <var n="numero"/>
                   <lit-tag v="4"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <!--
              <clip pos="2" side="tl" part="lem"/>
@@ -679,7 +679,7 @@
 	     <lit-tag v="4"/> -->
                   <var n="adjectiu1"/>
                 </lu>
-                <b/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -717,7 +717,7 @@
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
               <lit-tag v="nom"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
@@ -853,7 +853,7 @@
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="tns"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -941,7 +941,7 @@
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
@@ -990,7 +990,7 @@
                   <clip pos="2" side="tl" part="a_vrb"/>
                   <var n="temps"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
@@ -1021,7 +1021,7 @@
                   <clip pos="2" side="tl" part="a_vrb"/>
                   <var n="temps"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
@@ -1040,13 +1040,13 @@
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
                 </lu>
-                <b/>
+                <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
                   <var n="temps"/>
                 </lu>
-                <b/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
