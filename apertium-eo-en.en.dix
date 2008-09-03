@@ -101,6 +101,7 @@
     <sdef n="GD"/> 
   </sdefs>
   <pardefs>
+  
     <pardef n="guionet">
     <e>
       <p>
@@ -108,8 +109,8 @@
         <r>-<s n="guio"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="coma">
     <e>
       <p>
@@ -117,14 +118,14 @@
         <r>,<s n="cm"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="aposchar">
     <e>
         <i>'</i> 
     </e>
-
     </pardef>
+
     <pardef n="cometa">
     <e>
         <par n="aposchar"/> 
@@ -133,8 +134,9 @@
         <r><s n="apos"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="numeros">
     <e>
       <re>[0-9]+([.,][0-9]+)?</re>
@@ -143,7 +145,6 @@
         <r><s n="num"/></r> 
       </p>
     </e>
-
     <e>
       <re>[0-9]+([.,][0-9]+)?%</re>
       <p>
@@ -151,8 +152,9 @@
         <r><s n="num"/><s n="percent"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="separa">
     <e>
       <re>[.\?;:!]</re>
@@ -161,8 +163,8 @@
         <r><s n="sent"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="separ">
     <e>
       <re>[¿¡]</re>
@@ -171,8 +173,8 @@
         <r><s n="lquest"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="paresq">
     <e>
       <re>[\(\[]</re>
@@ -181,8 +183,8 @@
         <r><s n="lpar"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="pardret">
     <e>
       <re>[\)\]]</re>
@@ -191,8 +193,8 @@
         <r><s n="rpar"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="emails">
     <e>
       <re>[a-z.]+@[a-z.]+</re>
@@ -201,8 +203,8 @@
         <r><s n="num"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="urls">
     <e>
       <re>((www.)[a-z\-]+[.][a-z]+)</re>
@@ -211,8 +213,8 @@
         <r><s n="num"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="expensive__adj">
     <e>
       <p>
@@ -220,8 +222,8 @@
         <r><s n="adj"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="long/__adj">
     <e>
       <p>
@@ -243,8 +245,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="happ/y__adj">
     <e>
       <p>
@@ -266,8 +269,9 @@
         <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="sly/__adj">
     <e>
       <p>
@@ -289,8 +293,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="sh/y__adj">
     <e>
       <p>
@@ -326,8 +331,9 @@
         <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="nice/__adj">
     <e>
       <p>
@@ -349,8 +355,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="big/__adj">
     <e>
       <p>
@@ -372,8 +379,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="hot/__adj">
     <e>
       <p>
@@ -395,8 +403,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="thin/__adj">
     <e>
       <p>
@@ -418,8 +427,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="dim/__adj">
     <e>
       <p>
@@ -441,8 +451,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="common/__adj">
     <e>
       <p>
@@ -464,8 +475,9 @@
         <r><s n="adj"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="lovel/y__adj">
     <e>
       <p>
@@ -487,8 +499,9 @@
         <r>y<s n="adj"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="handsome/__adj">
     <e>
       <p>
@@ -510,8 +523,9 @@
         <r><s n="adj"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="/good__adj">
     <e>
       <p>
@@ -533,8 +547,9 @@
         <r>good<s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="/bad__adj">
     <e>
       <p>
@@ -556,8 +571,9 @@
         <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="f/ar__adj">
     <e>
       <p>
@@ -593,8 +609,9 @@
         <r>ar<s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="glad/__adj">
     <e>
       <p>
@@ -616,8 +633,9 @@
         <r><s n="adj"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="broad/__adj">
     <e>
       <p>
@@ -646,8 +664,9 @@
         <r><s n="adj"/><s n="sint"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="drab/__adj">
     <e>
       <p>
@@ -669,8 +688,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="flat/__adj">
     <e>
       <p>
@@ -692,8 +712,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="fun/__adj">
     <e>
       <p>
@@ -729,8 +750,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="glum/__adj">
     <e>
       <p>
@@ -752,8 +774,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="up/__adj">
     <e>
       <p>
@@ -775,8 +798,9 @@
         <r><s n="adj"/><s n="sint"/><s n="sup"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="mine__adj">
     <e>
       <p>
@@ -784,8 +808,8 @@
         <r><s n="adj"/><s n="pos"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="maybe__adv">
     <e>
       <p>
@@ -793,8 +817,8 @@
         <r><s n="adv"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="very__preadv">
     <e>
       <p>
@@ -802,8 +826,8 @@
         <r><s n="preadv"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="where__adv">
     <e>
       <p>
@@ -811,8 +835,8 @@
         <r><s n="adv"/><s n="itg"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="and__cnjcoo">
     <e>
       <p>
@@ -820,8 +844,8 @@
         <r><s n="cnjcoo"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="after__cnjadv">
     <e>
       <p>
@@ -829,8 +853,8 @@
         <r><s n="cnjadv"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="that__cnjsub">
     <e>
       <p>
@@ -838,8 +862,9 @@
         <r><s n="cnjsub"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="the__det">
     <e r="LR">
       <p>
@@ -861,8 +886,8 @@
         <r><s n="det"/><s n="def"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+
 
     <pardef n="/a__det">
       <e r="RL">
@@ -887,6 +912,7 @@
       </e>
     </pardef>
 
+
     <pardef n="another__det">
     <e>
       <p>
@@ -894,8 +920,9 @@
         <r><s n="det"/><s n="ind"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="other__det">
     <e>
       <p>
@@ -917,8 +944,9 @@
         <r><s n="det"/><s n="ind"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="several__det">
     <e>
       <p>
@@ -926,8 +954,9 @@
         <r><s n="det"/><s n="ind"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="her__det">
     <e r="LR">
       <p>
@@ -949,8 +978,9 @@
         <r><s n="det"/><s n="pos"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="th/is__det">
     <e>
       <p>
@@ -965,8 +995,9 @@
         <r>is<s n="det"/><s n="dem"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="th/at__det">
     <e>
       <p>
@@ -981,8 +1012,9 @@
         <r>at<s n="det"/><s n="dem"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="second__det">
     <e r="LR">
       <p>
@@ -1011,8 +1043,9 @@
         <r><s n="adj"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="many__det">
     <e>
       <p>
@@ -1020,8 +1053,8 @@
         <r><s n="det"/><s n="qnt"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="much__det">
     <e>
       <p>
@@ -1029,8 +1062,9 @@
         <r><s n="det"/><s n="qnt"/><s n="sg"/></r> 
       </p>
     </e>
-
-    </pardef>
+	</pardef>
+    
+    
     <pardef n="enough__det">
     <e>
       <p>
@@ -1052,8 +1086,9 @@
         <r><s n="det"/><s n="qnt"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="what__det">
     <e>
       <p>
@@ -1075,8 +1110,9 @@
         <r><s n="det"/><s n="itg"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="how_many__det">
     <e>
       <p>
@@ -1084,8 +1120,8 @@
         <r><s n="det"/><s n="itg"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="how_much__det">
     <e>
       <p>
@@ -1093,8 +1129,9 @@
         <r><s n="det"/><s n="itg"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="all__predet">
     <e>
       <p>
@@ -1116,8 +1153,9 @@
         <r><s n="predet"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="at__pr">
     <e>
       <p>
@@ -1125,8 +1163,9 @@
         <r><s n="pr"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="mine__prn">
     <e>
       <p>
@@ -1162,8 +1201,9 @@
         <r><s n="prn"/><s n="pos"/><s n="f"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="everyone__prn">
     <e>
       <p>
@@ -1171,8 +1211,9 @@
         <r><s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="something__prn">
     <e>
       <p>
@@ -1180,8 +1221,9 @@
         <r><s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="th/is__prn">
     <e>
       <p>
@@ -1196,8 +1238,9 @@
         <r>is<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="th/at__prn">
     <e>
       <p>
@@ -1212,8 +1255,9 @@
         <r>at<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="both__prn">
     <e>
       <p>
@@ -1221,8 +1265,8 @@
         <r><s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="all__prn">
     <e>
       <p>
@@ -1230,8 +1274,9 @@
         <r><s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="the_other__prn">
     <e>
       <p>
@@ -2412,6 +2457,11 @@
     </e>
 
     </pardef>
+
+
+
+	<!--        Numbers    pardefs -->
+
     <pardef n="one__num">
     <e>
       <p>
@@ -2419,8 +2469,9 @@
         <r><s n="num"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
     <pardef n="two__num">
     <e>
       <p>
@@ -2456,8 +2507,9 @@
         <r><b/>thousand<s n="num"/><s n="sp"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="million__num">
     <e>
       <p>
@@ -2465,8 +2517,9 @@
         <r><s n="num"/><s n="sp"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="twenty__num">
     <e>
       <p>
@@ -2547,8 +2600,9 @@
       </p>
         <par n="two__num"/> 
     </e>
-
     </pardef>
+
+
     <pardef n="ha/ve__vbmod">
     <e>
       <p>
