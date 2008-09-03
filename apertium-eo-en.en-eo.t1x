@@ -62,8 +62,6 @@
       <attr-item tags="adj.pst"/>
       <attr-item tags="adj.sint.comp"/>
       <attr-item tags="adj.sint.sup"/>
-      <attr-item tags="adj.comp"/>
-      <attr-item tags="adj.sup"/>
       <attr-item tags="adj.itg"/>
     </def-attr>
     <def-attr n="a_vrb">
@@ -211,28 +209,16 @@
       <choose>
         <when>
           <test>
-            <or>
-              <and>
-                <equal>
-                  <clip pos="1" side="sl" part="a_adj"/>
-                  <lit-tag v="adj.sint.comp"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="adj"/>
-                </equal>
-              </and>
-              <and> <!-- non-standard/old synthetic form -->
-                <equal>
-                  <clip pos="1" side="sl" part="a_adj"/>
-                  <lit-tag v="adj.comp"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="adj"/>
-                </equal>
-              </and>
-            </or>
+            <and>
+              <equal>
+                <clip pos="1" side="sl" part="a_adj"/>
+                <lit-tag v="adj.sint.comp"/>
+              </equal>
+              <equal>
+                <clip pos="1" side="tl" part="a_adj"/>
+                <lit-tag v="adj"/>
+              </equal>
+            </and>
           </test>
           <let>
             <var n="adjectiu1"/>
@@ -248,28 +234,16 @@
         </when>
         <when>
           <test>
-            <or>
-              <and>
-                <equal>
-                  <clip pos="1" side="sl" part="a_adj"/>
-                  <lit-tag v="adj.sint.sup"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="adj"/>
-                </equal>
-              </and>
-              <and> <!-- non-standard/old synthetic form -->
-                <equal>
-                  <clip pos="1" side="sl" part="a_adj"/>
-                  <lit-tag v="adj.sup"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="adj"/>
-                </equal>
-              </and>
-            </or>
+            <and>
+              <equal>
+                <clip pos="1" side="sl" part="a_adj"/>
+                <lit-tag v="adj.sint.sup"/>
+              </equal>
+              <equal>
+                <clip pos="1" side="tl" part="a_adj"/>
+                <lit-tag v="adj"/>
+              </equal>
+            </and>
           </test>
           <let>
             <var n="adjectiu1"/>
