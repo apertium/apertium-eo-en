@@ -503,6 +503,9 @@
 
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 
+	<e><p><l>multobla<s n="adj"/></l><r>multiple<s n="adj"/></r></p></e>
+
+
     <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL" c="frases negatives"><p><l>neniu<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="det"/><s n="ind"/></l><r>no<s n="det"/><s n="ind"/></r></p></e>
@@ -7313,7 +7316,7 @@
     <e><p><l>nekompleta<s n="adj"/></l><r>incomplete<s n="adj"/></r></p></e>
     <e><p><l>nekomprenebla<s n="adj"/></l><r>incomprehensible<s n="adj"/></r></p></e>
     <e><p><l>nekredebla<s n="adj"/></l><r>incredible<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>nekutima<s n="adj"/></l><r>unusual<s n="adj"/></r></p></e>
+    <e><p><l>nekutima<s n="adj"/></l><r>unusual<s n="adj"/></r></p></e>
     <e><p><l>nelica<s n="adj"/></l><r>illicit<s n="adj"/></r></p></e>
     <e><p><l>nemalhavebla<s n="adj"/></l><r>indispensable<s n="adj"/></r></p></e>
     <e><p><l>nenecesa<s n="adj"/></l><r>unnecessary<s n="adj"/></r></p></e>
@@ -9243,7 +9246,8 @@
     <e><p><l>tiel<s n="preadv"/></l><r>so<s n="preadv"/></r></p></e>
     <e r="RL"><p><l>tre<s n="preadv"/></l><r>any<s n="preadv"/></r></p></e>
     <e><p><l>tre<s n="preadv"/></l><r>very<s n="preadv"/></r></p></e>
-    
+     
+    <e><p><l>nekutime<s n="adv"/></l><r>unusual<s n="adv"/></r></p></e>
 
     <e><p><l>absolute<s n="adv"/></l><r>absolutely<s n="adv"/></r></p></e>
     <e r="RL"><p><l>absolute<s n="adv"/></l><r>utterly<s n="adv"/></r></p></e>
@@ -10055,7 +10059,6 @@
 <e><p><l>veterana<s n="adj"/></l><r>veteran<s n="adj"/></r></p></e>
 <e><p><l>okcidenta<s n="adj"/></l><r>west<s n="adj"/></r></p></e>
 <e><p><l>blanka<s n="adj"/></l><r>white<s n="adj"/></r></p></e>
-
  
  
  
