@@ -2479,7 +2479,7 @@
         <r><s n="num"/><s n="sp"/></r> 
       </p>
     </e>
-
+<!--
     <e>
       <p>
         <l><b/>hundred</l> 
@@ -2507,17 +2507,9 @@
         <r><b/>thousand<s n="num"/><s n="sp"/></r> 
       </p>
     </e>
+-->
     </pardef>
     
-    
-    <pardef n="million__num">
-    <e>
-      <p>
-        <l/> 
-        <r><s n="num"/><s n="sp"/></r> 
-      </p>
-    </e>
-    </pardef>
     
     
     <pardef n="twenty__num">
@@ -2601,6 +2593,19 @@
         <par n="two__num"/> 
     </e>
     </pardef>
+
+
+    
+    <pardef n="million__num">
+    <e>
+      <p>
+        <l/> 
+        <r><s n="num"/><s n="sp"/></r> 
+      </p>
+    </e>
+    </pardef>
+
+
 
 
     <pardef n="ha/ve__vbmod">
