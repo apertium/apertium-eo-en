@@ -3186,6 +3186,7 @@
     <e lm="defilado"><i>defilado</i><par n="nom__n"/></e>
     <e lm="definitiva"><i>definitiv</i><par n="adj__adj"/></e>
     <e lm="definitive"><i>definitive</i><par n="komence__adv"/></e>
+	<e lm="defaŭlta"><i>defaŭlt</i><par n="adj__adj"/></e>
     <e lm="degradi"><i>degrad</i><par n="verb__vblex"/></e>
     <e lm="deĵoro"><i>de</i><par n="ĵ"/><i>oro</i><par n="nom__n"/></e>
     <e lm="dekadenco"><i>dekadenco</i><par n="nom__n"/></e>
@@ -4236,7 +4237,7 @@
     <e lm="ĝardeno"><par n="ĝ"/><i>ardeno</i><par n="nom__n"/></e>
     <e lm="ĝeni"><par n="ĝ"/><i>en</i><par n="verb__vblex"/></e>
     <e lm="ĝenerala"><par n="ĝ"/><i>eneral</i><par n="adj__adj"/></e>
-    <e lm="ĝenerala"><i>ĝenerala</i><par n="komence__adv"/></e>
+    <e lm="ĝenerale"><i>ĝenerale</i><par n="komence__adv"/></e>
     <e lm="ĝenerale"><par n="ĝ"/><i>enerale</i><par n="komence__adv"/></e>
     <e lm="ĝenerale"><i>ĝenerale</i><par n="komence__adv"/></e>
     <e lm="ĝeneralvalida"><par n="ĝ"/><i>eneralvalid</i><par n="adj__adj"/></e>
@@ -7325,6 +7326,7 @@
     <e lm="saluti"><i>salut</i><par n="verb__vblex"/></e>
     <e lm="saluto"><i>saluto</i><par n="nom__n"/></e>
     <e lm="saluton"><i>saluton</i><par n="adiós__ij"/></e>
+	<e lm="salutnomo"><i>salutnomo</i><par n="nom__n"/></e>
     <e lm="sama"><i>sam</i><par n="adj__adj"/></e>
     <e lm="sama"><i>sam</i><par n="adj__adj"/></e>
     <e lm="same"><i>same</i><par n="komence__adv"/></e>
@@ -8729,5 +8731,11 @@
     <e lm="mil"><i>mil</i><par n="two__num"/></e>
     <e lm="dektri" r="LR"><p><l>dektri</l><r>dek<b/>tri</r></p><par n="two__num"/></e>
 
+
+<e lm="ensaluto"><i>ensaluto</i><par n="nom__n"/></e>
+<e lm="ensaluta"><i>ensalut</i><par n="adj__adj"/></e>
+<e lm="kune"><i>kune</i><par n="komence__adv"/></e>
+<e lm="ĝeni"><i>ĝen</i><par n="verb__vblex"/></e>
+<e lm="retejo"><i>retejo</i><par n="nom__n"/></e>
   </section>
 </dictionary>
