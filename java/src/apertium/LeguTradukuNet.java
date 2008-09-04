@@ -2,27 +2,125 @@ package apertium;
 
 
 import java.io.*;
-import java.util.LinkedHashMap;
+import java.net.*;
 import java.util.*;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 public class LeguTradukuNet {
-    public static void main(String[] args) throws IOException {
 
-	//leguMonodix("apertium-eo-en.en.dix");
 
-	LeguTradukuNet legutradukunet = new LeguTradukuNet();
-	legutradukunet.leguTradukuNetDosieron();
+    public static void main(String[] args) throws Exception {
+
+	final LeguTradukuNet legutradukunet = new LeguTradukuNet();
+
+	Thread leguT = new Iloj.Ek() { void ek() throws Exception { legutradukunet.leguTradukuNetDosieron(); }};
+
+/*
+	LinkedHashMap<String,ArrayList<String>> aperEoDix = Iloj.leguDix("apertium-eo-en.eo.dix");
+	LinkedHashMap<String,ArrayList<String>> aperEnDix = Iloj.leguDix("apertium-eo-en.en.dix");
+	LinkedHashMap<String,ArrayList<String>> aperEoEnDix = Iloj.leguDix("apertium-eo-en.eo-en.dix");
+*/
+
+	HashMap<String, Paro> enw = new HashMap<String, Paro>();
+
+	//ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/aaq01Lf02");
+	//ArrayList<String> vortoj = Iloj.leguTekstDosieron("mankantaj_adjektivoj.txt");
+
+	List<String> vortoj = Arrays.asList(new String[] {"woeful", "pre", "alpha", "SVN", "Apertium" });
+
+	LinkedHashSet<String> eoDixAldono = new LinkedHashSet<String>();
+	LinkedHashSet<String> enDixAldono = new LinkedHashSet<String>();
+	LinkedHashSet<String> eoEnDixAldono = new LinkedHashSet<String>();
+
+	leguT.join();
+
+	for (String linio: vortoj) {
+	    {
+//		System.out.println(linio);
+		String[] wc = linio.split("@");
+
+//		System.out.println(Iloj.deCxapeloj("\n========= "+wc[0]+" ======"+legutradukunet.tradukuEnParoj.get(wc[0])+" ======"+linio));
+		if (legutradukunet.tradukuEnParoj.get(wc[0])!=null) for (Paro p : legutradukunet.tradukuEnParoj.get(wc[0])) {
+		    //if (!p.problem && p.oneWord && p.orgEn.indexOf(" ") == -1)
+		    {
+
+/*
+			System.out.println(Iloj.deCxapeloj(p.apertiumEo()));
+			System.out.println(Iloj.deCxapeloj(p.apertiumEn()));
+			System.out.println(Iloj.deCxapeloj(p.apertiumEoEn()));
+ */
+			System.out.println(p.apertiumEo());
+			System.out.println(p.apertiumEn());
+			System.out.println(p.apertiumEoEn());
+			System.out.println();
+
+			eoDixAldono.add(p.apertiumEo());
+			enDixAldono.add(p.apertiumEn());
+			eoEnDixAldono.add(p.apertiumEoEn());
+		    }
+		} else {
+		    System.out.println("Ne trovis: "+wc[0]);
+		    // Ne trovis. Kreu kiel propra nomo
+		    Paro p = analyzeEo(wc[0]);
+		    p.orgEn = wc[0];
+		    p.rango = 10;
+
+		    System.out.println("<!-- ne trovis   <e><p><l><s n=\"adj\"/></l><r>"+wc[0]+"<s n=\"adj\"/></r></p></e> -->");
+		    System.out.println(p.apertiumEo());
+		    System.out.println(p.apertiumEn());
+		    System.out.println(p.apertiumEoEn());
+		    System.out.println();
+
+		    eoDixAldono.add(p.apertiumEo());
+		    enDixAldono.add(p.apertiumEn());
+		    eoEnDixAldono.add(p.apertiumEoEn());
+
+		}
+
+	    }
+	}
+
+/*
+	for (ArrayList<Paro> alp : legutradukunet.enParo.values()) for (Paro p : alp) {
+	    if (!p.problem && !p.verb  && p.apertiumWordType().indexOf('?')==-1 && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.orgEn.indexOf("&")==-1) {
+		String enKey = p.orgEn+"__"+p.apertiumWordType();
+		Paro op = enw.get(enKey);
+		if (op == null || p.rango > op.rango) enw.put(enKey, p);
+
+		//String eoKey = p.orgEo+"__"+p.apertiumWordType();
+		//op = eow.get(eoKey);
+		//if (op == null || p.rango > op.rango) eow.put(eoKey, p);
+
+	    }
+	}
+*/
+
+/*
+	for (Paro p : enw.values()) {
+	    eoDixAldono.add(p.apertiumEo());
+	    enDixAldono.add(p.apertiumEn());
+	    eoEnDixAldono.add(p.apertiumEoEn());
+	}
+*/
+	/*
+	for (ArrayList<Paro> alp : legutradukunet.enParo.values()) for (Paro p : alp) {
+	    if (!p.problem && !p.verb  && p.apertiumWordType().indexOf('?')==-1 && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.orgEn.indexOf("&")==-1) {
+		eoDixAldono.add(p.apertiumEo());
+		enDixAldono.add(p.apertiumEn());
+		eoEnDixAldono.add(p.apertiumEoEn());
+	    }
+	}
+       */
+
+
+	skribu(eoDixAldono, "tradukunet.eo.dix");
+	skribu(enDixAldono, "tradukunet.en.dix");
+	skribu(eoEnDixAldono, "tradukunet.eo-en.dix");
+
     }
 
-    LinkedHashMap<String,String> krudaListo = new LinkedHashMap<String, String>(40000);
-    LinkedHashMap<String,String> viki = new LinkedHashMap<String, String>(40000);
 
-    HashMap<String,String> eoDix = leguMonodix("apertium-eo-en.eo.dix");
-    HashMap<String,String> enDix = leguMonodix("apertium-eo-en.en.dix");
-    HashMap<String,Double> eoFreq = leguHitparadon("hitparade-eo.txt");
-    HashMap<String,Double> enFreq = leguHitparadon("hitparade-en.txt");
+    LinkedHashMap<String,ArrayList<Paro>> tradukuEnParoj = new LinkedHashMap<String,ArrayList<Paro>>();
+    LinkedHashMap<String,ArrayList<Paro>> tradukuEoParoj = new LinkedHashMap<String,ArrayList<Paro>>();
 
     PrintWriter noun = ekskribuHtml("tradukunet-noun.txt");
     PrintWriter adj = ekskribuHtml("tradukunet-adj.txt");
@@ -30,6 +128,8 @@ public class LeguTradukuNet {
     PrintWriter verb = ekskribuHtml("tradukunet-verb.txt");
     PrintWriter unknown = ekskribuHtml("tradukunet-unknown.txt");
     PrintWriter debugf = ekskribuHtml("tradukunet-debug.txt");
+
+
 
     static boolean debug;
 
@@ -41,74 +141,6 @@ public class LeguTradukuNet {
 	}
 
     }
-
-    public static HashMap<String,Double> leguHitparadon(String dosiernomo) {
-	System.out.println("Legas "+dosiernomo);
-	BufferedReader br;
-	String linio;
-
-	LinkedHashMap<String,Double> listo = new LinkedHashMap<String, Double>(50002);
-	try {
-	    br = new BufferedReader(new FileReader(dosiernomo));
-	    double maxfreq = -1;
-	    while ((linio = br.readLine()) != null) {
-		String[] s = linio.trim().split("\\s+");
-		if (s.length < 2)
-		    continue;
-		double freq = Integer.parseInt(s[0]);
-		if (maxfreq == -1) {
-		    maxfreq = freq;
-		}
-		listo.put(s[1], freq / maxfreq);
-
-	    }
-	    br.close();
-	} catch (IOException ex) {
-	    ex.printStackTrace();
-	}
-	//montruHashMap(listo);
-	return listo;
-    }
-
-
-
-    public static HashMap<String,String> leguMonodix(String dosiernomp) {
-	HashMap<String,String> listo = new HashMap<String,String>(50002);
-	System.out.println("Legas "+dosiernomp);
-	BufferedReader br;
-	String linio;
-	try {
-	    br = new BufferedReader(new FileReader(dosiernomp));
-/*
-	    <e lm="karakterizi"><i>karakteriz</i><par n="verb__vblex"/></e>
-	    <e lm="karaktero"><i>karaktero</i><par n="nom__n"/></e>
-
-	    <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-	    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-   */
-	Pattern pat = Pattern.compile("lm=\"([\\w\\s]+)\".*par n=\"(\\w+)__(\\w+)\"");
-
-	while ((linio = br.readLine()) != null) {
-
-	    Matcher m = pat.matcher(linio);
-
-	    while (m.find()) {
-		String vorto = m.group(1);
-		String fleksisimala = m.group(2);
-		String klaso = m.group(3);
-
-		//System.out.println(vorto + " "+ klaso+"   "+fleksisimala   + "    "+linio);
-		listo.put(vorto+"__"+klaso, linio);
-	    }
-	}
-	br.close();
-	} catch (IOException ex) {
-	    ex.printStackTrace();
-	}
-	montruHashMap(listo);
-	return listo;
-    }
-
 
 
     public void leguTradukuNetDosieron() throws IOException {
@@ -130,7 +162,7 @@ public class LeguTradukuNet {
 	    if (linNro%2==0) en = linio;
 	    else {
 		linio = Iloj.alCxapeloj(linio);
-		krudaListo.put(en, linio);
+		//krudaListo.put(en, linio);
 
 		String[] eos = linio.split("/");
 		//if (debug) System.out.println(en + " -> "+ eo);
@@ -191,7 +223,10 @@ public class LeguTradukuNet {
 		debugf.println();
 	    }
 	    linNro++;
-	    if (haltuKiam < System.currentTimeMillis()) break;
+	    if (haltuKiam < System.currentTimeMillis()) {
+		System.out.println("Haltigxas cxe "+linio);
+		break;
+	    }
 	}
 	br.close();
 	noun.close();
@@ -200,7 +235,26 @@ public class LeguTradukuNet {
 	verb.close();
 	unknown.close();
 	debugf.close();
-	System.out.println("===legita. Lasta estis: "+en + " -> "+ eo);
+	System.out.println("Finlegis TradukuNetDosieron() ===legita. Lasta estis: "+en + " -> "+ eo);
+
+
+/*
+	PrintWriter eoDixAldono = ekskribuHtml("aldono-eo-en.eo.dix");
+	PrintWriter enDixAldono = ekskribuHtml("aldono-eo-en.en.dix");
+	PrintWriter eoEnDixAldono = ekskribuHtml("aldono-eo-en.eo-en.dix");
+
+	eoDixAldono.close();
+	enDixAldono.close();
+	eoEnDixAldono.close();
+*/
+    }
+
+
+
+    private static final void aldonuParon(LinkedHashMap<String,ArrayList<Paro>> xxParo, String key, Paro val) {
+	ArrayList<Paro> alp = xxParo.get(key);
+	if (alp==null) xxParo.put(key, alp = new ArrayList<Paro>());
+	alp.add(val);
     }
 
     private void registru(int linNro, String en, String eo, int rango) {
@@ -236,7 +290,7 @@ public class LeguTradukuNet {
 	if (p.oneWord)
 	    debugf.println("\t" + p.wordType() + " \t" + p.root);
 
-
+	/*
 	if (debug && p.oneWord && en.indexOf(" ") == -1) {
 	    System.out.println();
 	    System.out.println(dat);
@@ -249,7 +303,25 @@ public class LeguTradukuNet {
 	    System.out.println(enDixe + " = " + enDix.get(eoDixe));
 	    System.out.println(p.orgEn + " freq = " + enFreq.get(p.orgEn));
 	}
+	*/
+
+	aldonuParon(tradukuEnParoj, p.orgEn, p);
+	aldonuParon(tradukuEoParoj, p.root, p);
     }
+
+
+    private static void skribu(LinkedHashSet set, String fn) {
+	PrintWriter out = ekskribuHtml(fn);
+	//out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+	//out.println("<section id=\""+fn.replaceAll("[\\W]","_")+"\" type=\"standard\">");
+	for (Object e : set) {
+	    out.println(e);
+	}
+	//out.println("</section>");
+	out.close();
+    }
+
+
 
     private static Paro analyzeEo(String eo) {
 	Paro a = new Paro();
