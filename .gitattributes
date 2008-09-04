@@ -22,8 +22,6 @@
 /configure.ac -text
 /en-eo.prob -text svneol=unset#unset
 /eo-en.prob -text svneol=unset#unset
-java/apertium-eo-en.jpx -text
-java/apertium-eo-en.jpx.local -text
 java/src/apertium/GenerateNumbersForBidix.java -text
 java/src/apertium/Iloj.java -text
 java/src/apertium/LeguTradukuNet.java -text
