@@ -25,9 +25,11 @@
       <program name="lt-proc $1">
         <file name="eo-en.autogen.bin"/>
       </program>
+<!-- commented out to allow web interface show an end result even if there is a dictionary error
       <program name="lt-proc -p">
         <file name="eo-en.autopgen.bin"/>
       </program>
+-->
     </pipeline>
   </mode>
 
