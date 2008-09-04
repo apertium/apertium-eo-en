@@ -1478,6 +1478,7 @@
     </e>
     </pardef>
 
+
     <pardef n="CX__num">
     <e>
       <p>
@@ -1501,6 +1502,9 @@
     </e>
     </pardef>
 
+
+
+
     <pardef n="unu__num">
     <e>
       <p>
@@ -1508,8 +1512,10 @@
         <r><s n="num"/><s n="sg"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
+    
     <pardef n="two__num">
     <e>
       <p>
@@ -1573,17 +1579,9 @@
         <r><b/>mil<s n="num"/><s n="sp"/><s n="nom"/></r> 
       </p>
     </e>
-
     </pardef>
-    <pardef n="million__num">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="num"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    </pardef>
+    
+        
     <pardef n="twenty__num">
     <e>
       <p>
@@ -1664,8 +1662,21 @@
       </p>
         <par n="two__num"/> 
     </e>
-
     </pardef>
+    
+
+    <pardef n="million__num">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="num"/><s n="sp"/></r> 
+      </p>
+    </e>
+    </pardef>
+    
+    
+        
+    
     <pardef n="d/o__vaux">
     <e>
       <p>
