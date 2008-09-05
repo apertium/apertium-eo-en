@@ -59,9 +59,11 @@
       <program name="lt-proc $1">
         <file name="en-eo.autogen.bin"/>
       </program>
+      <!--
       <program name="lt-proc -p">
         <file name="en-eo.autopgen.bin"/>
       </program> 
+      -->
     </pipeline>
   </mode>
 
