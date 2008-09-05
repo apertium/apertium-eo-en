@@ -275,7 +275,6 @@
       </e>
     </pardef>
 
-
     <pardef n="adj__adjINICIAL">
     <e>
       <p>
@@ -421,9 +420,6 @@
       </p>
     </e>
 
-
-
-
     </pardef>
 
     <pardef n="plur/a__det">
@@ -473,7 +469,6 @@
       </p>
     </e>
     </pardef>
-
 
     <pardef n="kial__adv">
     <e>
@@ -788,7 +783,6 @@
       </e>
     </pardef>
 
-
     <pardef n="mia__det">
     <e r="LR">
       <p>
@@ -1100,7 +1094,6 @@
       </p>
     </e>
 
-
     <e r="LR">
       <p>
         <l>ante</l> 
@@ -1251,7 +1244,6 @@
     </pardef>
  
 
-
     <pardef n="verb__vblex">
     <e>
       <p>
@@ -1379,8 +1371,6 @@
       </p>
     </e>
 
-
-
     <e>
       <p>
         <l>anta</l> 
@@ -1443,7 +1433,6 @@
     </e>
     </pardef>
 
-
     <pardef n="Mary__np">
     <e>
       <p>
@@ -1458,7 +1447,6 @@
       </p>
     </e>
     </pardef>
-
 
     <pardef n="Smith__np">
       <e>
@@ -1477,7 +1465,6 @@
       </p>
     </e>
     </pardef>
-
 
     <pardef n="CX__num">
     <e>
@@ -1502,9 +1489,6 @@
     </e>
     </pardef>
 
-
-
-
     <pardef n="unu__num">
     <e>
       <p>
@@ -1513,8 +1497,6 @@
       </p>
     </e>
     </pardef>
-    
-    
     
     <pardef n="two__num">
     <e>
@@ -1673,7 +1655,6 @@
       </p>
     </e>
     </pardef>
-    
     
         
     
@@ -1942,7 +1923,6 @@
     <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
     <e lm="probj"><i/><par n="probj__prn"/></e>
 
-
     <e lm="miliono"><i>miliono</i><par n="two__num"/></e>
     <e lm="unu"><i>unu</i><par n="unu__num"/></e>
     <e lm="nulo"><i>nulo</i><par n="two__num"/></e>
@@ -1978,10 +1958,8 @@
     <e lm="okdek"><i>okdek</i><par n="twenty__num"/></e>
     <e lm="naŭdek"><i>naŭdek</i><par n="twenty__num"/></e>
 
-
     <e lm="laŭleĝa"><i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
     <e lm="renovigi"><i>renovig</i><par n="verb__vblex"/></e>
-    <e lm="Afganio"><i>Afganio</i><par n="Barcelona__np"/></e>
     <e lm="Afganio"><i>Afganio</i><par n="Barcelona__np"/></e>
     <e lm="Agnesa"><i>Agnesa</i><par n="Mary__np"/></e>
     <e lm="Albano"><i>Albano</i><par n="nom__n"/></e>
@@ -1989,19 +1967,13 @@
     <e lm="Ameriko"><i>Ameriko</i><par n="Barcelona__np"/></e>
     <e lm="Amsterdamo"><i>Amsterdamo</i><par n="Barcelona__np"/></e>
     <e lm="Andaluzio"><i>Andaluzio</i><par n="Barcelona__np"/></e>
-    <e lm="Andaluzio"><i>Andaluzio</i><par n="Barcelona__np"/></e>
     <e lm="Andoj"><i>Andoj</i><par n="Barcelona__np"/></e>
     <e lm="Andoro"><i>Andoro</i><par n="Barcelona__np"/></e>
-    <e lm="Andoro"><i>Andoro</i><par n="Barcelona__np"/></e>
-    <e lm="Anglio"><i>Anglio</i><par n="Barcelona__np"/></e>
     <e lm="Anglio"><i>Anglio</i><par n="Barcelona__np"/></e>
     <e lm="Arabio"><i>Arabio</i><par n="Barcelona__np"/></e>
     <e lm="Aragono"><i>Aragono</i><par n="Barcelona__np"/></e>
-    <e lm="Aragono"><i>Aragono</i><par n="Barcelona__np"/></e>
-    <e lm="Argentino"><i>Argentino</i><par n="Barcelona__np"/></e>
     <e lm="Argentino"><i>Argentino</i><par n="Barcelona__np"/></e>
     <e lm="Asturio"><i>Asturio</i><par n="Barcelona__np"/></e>
-    <e lm="Ateno"><i>Ateno</i><par n="Barcelona__np"/></e>
     <e lm="Ateno"><i>Ateno</i><par n="Barcelona__np"/></e>
     <e lm="Aŭstralio"><i>A</i><par n="ŭ"/><i>stralio</i><par n="Barcelona__np"/></e>
     <e lm="Aŭstrio"><i>A</i><par n="ŭ"/><i>strio</i><par n="Barcelona__np"/></e>
@@ -2011,30 +1983,20 @@
     <e lm="Barcelono"><i>Barcelono</i><par n="Barcelona__np"/></e>
     <e lm="Bazilo"><i>Bazilo</i><par n="Mark__np"/></e>
     <e lm="Belgio"><i>Belgio</i><par n="Barcelona__np"/></e>
-    <e lm="Belgio"><i>Belgio</i><par n="Barcelona__np"/></e>
     <e lm="Beogrado"><i>Beogrado</i><par n="Barcelona__np"/></e>
-    <e lm="Berlino"><i>Berlino</i><par n="Barcelona__np"/></e>
     <e lm="Berlino"><i>Berlino</i><par n="Barcelona__np"/></e>
     <e lm="Berno"><i>Berno</i><par n="Barcelona__np"/></e>
     <e lm="Bogoto"><i>Bogoto</i><par n="Barcelona__np"/></e>
     <e lm="Bolivio"><i>Bolivio</i><par n="Barcelona__np"/></e>
-    <e lm="Bolivio"><i>Bolivio</i><par n="Barcelona__np"/></e>
-    <e lm="Bosnio"><i>Bosnio</i><par n="Barcelona__np"/></e>
     <e lm="Bosnio"><i>Bosnio</i><par n="Barcelona__np"/></e>
     <e lm="Brazilo"><i>Brazilo</i><par n="Barcelona__np"/></e>
-    <e lm="Brazilo"><i>Brazilo</i><par n="Barcelona__np"/></e>
     <e lm="Britio"><i>Britio</i><par n="Barcelona__np"/></e>
-    <e lm="Britio"><i>Britio</i><par n="Barcelona__np"/></e>
-    <e lm="Bruselo"><i>Bruselo</i><par n="Barcelona__np"/></e>
     <e lm="Bruselo"><i>Bruselo</i><par n="Barcelona__np"/></e>
     <e lm="Budapeŝto"><i>Budape</i><par n="ŝ"/><i>to</i><par n="Barcelona__np"/></e>
     <e lm="Bukareŝto"><i>Bukare</i><par n="ŝ"/><i>to</i><par n="Barcelona__np"/></e>
     <e lm="Bulgario"><i>Bulgario</i><par n="Barcelona__np"/></e>
-    <e lm="Bulgario"><i>Bulgario</i><par n="Barcelona__np"/></e>
     <e lm="Ĉadio"><i>Ĉadio</i><par n="Barcelona__np"/></e>
     <e lm="Ĉilio"><i>Ĉilio</i><par n="Barcelona__np"/></e>
-    <e lm="Ĉilio"><i>Ĉilio</i><par n="Barcelona__np"/></e>
-    <e lm="Ĉinio"><i>Ĉinio</i><par n="Barcelona__np"/></e>
     <e lm="Ĉinio"><i>Ĉinio</i><par n="Barcelona__np"/></e>
     <e lm="Danlando"><i>Danlando</i><par n="Barcelona__np"/></e>
     <e lm="Dario"><i>Dario</i><par n="Mark__np"/></e>
@@ -2043,34 +2005,25 @@
     <e lm="Dublino"><i>Dublino</i><par n="Barcelona__np"/></e>
     <e lm="Edinburgo"><i>Edinburgo</i><par n="Barcelona__np"/></e>
     <e lm="Egiptio"><i>Egiptio</i><par n="Barcelona__np"/></e>
-    <e lm="Egiptio"><i>Egiptio</i><par n="Barcelona__np"/></e>
     <e lm="Ekstremaduro"><i>Ekstremaduro</i><par n="Barcelona__np"/></e>
-    <e lm="Ekvadoro"><i>Ekvadoro</i><par n="Barcelona__np"/></e>
     <e lm="Ekvadoro"><i>Ekvadoro</i><par n="Barcelona__np"/></e>
     <e lm="Eleonora"><i>Eleonora</i><par n="Mary__np"/></e>
     <e lm="Eliza"><i>Eliza</i><par n="Mary__np"/></e>
     <e lm="Emilio"><i>Emilio</i><par n="Mark__np"/></e>
     <e lm="Estonio"><i>Estonio</i><par n="Barcelona__np"/></e>
-    <e lm="Estonio"><i>Estonio</i><par n="Barcelona__np"/></e>
-    <e lm="Etiopio"><i>Etiopio</i><par n="Barcelona__np"/></e>
     <e lm="Etiopio"><i>Etiopio</i><par n="Barcelona__np"/></e>
     <e lm="Eŭgeno"><i>E</i><par n="ŭ"/><i>geno</i><par n="Mark__np"/></e>
     <e lm="Eŭrop"><i>E</i><par n="ŭ"/><i>rop</i><par n="Barcelona__np"/></e>
     <e lm="Filipinoj"><i>Filipinoj</i><par n="Barcelona__np"/></e>
     <e lm="Finnio"><i>Finnio</i><par n="Barcelona__np"/></e>
     <e lm="Francio"><i>Francio</i><par n="Barcelona__np"/></e>
-    <e lm="Francio"><i>Francio</i><par n="Barcelona__np"/></e>
     <e lm="Galegio"><i>Galegio</i><par n="Barcelona__np"/></e>
-    <e lm="Galegio"><i>Galegio</i><par n="Barcelona__np"/></e>
-    <e lm="Ganao"><i>Ganao</i><par n="Barcelona__np"/></e>
     <e lm="Ganao"><i>Ganao</i><par n="Barcelona__np"/></e>
     <e lm="Georgo"><i>Georgo</i><par n="Mark__np"/></e>
     <e lm="Gerardo"><i>Gerardo</i><par n="Mark__np"/></e>
     <e lm="Gerardo"><i>Gerardo</i><par n="Barcelona__np"/></e>
     <e lm="Germanio"><i>Germanio</i><par n="Barcelona__np"/></e>
-    <e lm="Germanio"><i>Germanio</i><par n="Barcelona__np"/></e>
     <e lm="Granado"><i>Granado</i><par n="Barcelona__np"/></e>
-    <e lm="Grekio"><i>Grekio</i><par n="Barcelona__np"/></e>
     <e lm="Grekio"><i>Grekio</i><par n="Barcelona__np"/></e>
     <e lm="Gvatemalo"><i>Gvatemalo</i><par n="Barcelona__np"/></e>
     <e lm="Gvineo"><i>Gvineo</i><par n="Barcelona__np"/></e>
@@ -2082,32 +2035,23 @@
     <e lm="Henriko"><i>Henriko</i><par n="Mark__np"/></e>
     <e lm="Hispanio"><i>Hispanio</i><par n="Barcelona__np"/></e>
     <e lm="Hungario"><i>Hungario</i><par n="Barcelona__np"/></e>
-    <e lm="Hungario"><i>Hungario</i><par n="Barcelona__np"/></e>
     <e lm="Ignaco"><i>Ignaco</i><par n="Mark__np"/></e>
     <e lm="Ilza"><i>Ilza</i><par n="Mary__np"/></e>
     <e lm="Indonezio"><i>Indonezio</i><par n="Barcelona__np"/></e>
-    <e lm="Indonezio"><i>Indonezio</i><par n="Barcelona__np"/></e>
-    <e lm="Irlando"><i>Irlando</i><par n="Barcelona__np"/></e>
     <e lm="Irlando"><i>Irlando</i><par n="Barcelona__np"/></e>
     <e lm="Islando"><i>Islando</i><par n="Barcelona__np"/></e>
-    <e lm="Islando"><i>Islando</i><par n="Barcelona__np"/></e>
     <e lm="Israelo"><i>Israelo</i><par n="Barcelona__np"/></e>
-    <e lm="Israelo"><i>Israelo</i><par n="Barcelona__np"/></e>
-    <e lm="Italio"><i>Italio</i><par n="Barcelona__np"/></e>
     <e lm="Italio"><i>Italio</i><par n="Barcelona__np"/></e>
     <e lm="Izabela"><i>Izabel</i><par n="adj__adj"/></e>
     <e lm="Izabela"><i>Izabela</i><par n="Mary__np"/></e>
     <e lm="Jakobo"><i>Jakobo</i><par n="Mark__np"/></e>
-    <e lm="Jakobo"><i>Jakobo</i><par n="Mark__np"/></e>
     <e lm="Jamajko"><i>Jamajko</i><par n="Barcelona__np"/></e>
-    <e lm="Japanio"><i>Japanio</i><par n="Barcelona__np"/></e>
     <e lm="Japanio"><i>Japanio</i><par n="Barcelona__np"/></e>
     <e lm="Jesuo"><i>Jesuo</i><par n="Mark__np"/></e>
     <e lm="Johano"><i>Johano</i><par n="Mark__np"/></e>
     <e lm="Jordanio"><i>Jordanio</i><par n="Barcelona__np"/></e>
     <e lm="Jozefo"><i>Jozefo</i><par n="Mark__np"/></e>
     <e lm="Jugoslavo"><i>Jugoslav</i><par n="nommf__n"/></e>
-    <e lm="Jugoslavio"><i>Jugoslavio</i><par n="Barcelona__np"/></e>
     <e lm="Jugoslavio"><i>Jugoslavio</i><par n="Barcelona__np"/></e>
     <e lm="Julia"><i>Julia</i><par n="Mary__np"/></e>
     <e lm="Juliano"><i>Juliano</i><par n="Mark__np"/></e>
@@ -2120,52 +2064,36 @@
     <e lm="Karakaso"><i>Karakaso</i><par n="Barcelona__np"/></e>
     <e lm="Karibio"><i>Karibio</i><par n="Barcelona__np"/></e>
     <e lm="Kartvelio"><i>Kartvelio</i><par n="Barcelona__np"/></e>
-    <e lm="Kartvelio"><i>Kartvelio</i><par n="Barcelona__np"/></e>
     <e lm="Kastilio-Leono"><i>Kastilio-Leono</i><par n="Barcelona__np"/></e>
     <e lm="Katalunio"><i>Katalunio</i><par n="Barcelona__np"/></e>
-    <e lm="Katalunio"><i>Katalunio</i><par n="Barcelona__np"/></e>
     <e lm="Kataro"><i>Kataro</i><par n="Barcelona__np"/></e>
-    <e lm="Kenjo"><i>Kenjo</i><par n="Barcelona__np"/></e>
     <e lm="Kenjo"><i>Kenjo</i><par n="Barcelona__np"/></e>
     <e lm="Kipro"><i>Kipro</i><par n="Barcelona__np"/></e>
     <e lm="Klaŭdo"><i>Kla</i><par n="ŭ"/><i>do</i><par n="Mark__np"/></e>
     <e lm="Kolombio"><i>Kolombio</i><par n="Barcelona__np"/></e>
-    <e lm="Kolombio"><i>Kolombio</i><par n="Barcelona__np"/></e>
     <e lm="Kongo"><i>Kongo</i><par n="Barcelona__np"/></e>
-    <e lm="Koreio"><i>Koreio</i><par n="Barcelona__np"/></e>
     <e lm="Koreio"><i>Koreio</i><par n="Barcelona__np"/></e>
     <e lm="Kristoforo"><i>Kristoforo</i><par n="Mark__np"/></e>
     <e lm="Kroatio"><i>Kroatio</i><par n="Barcelona__np"/></e>
-    <e lm="Kroatio"><i>Kroatio</i><par n="Barcelona__np"/></e>
     <e lm="Ksavero"><i>Ksavero</i><par n="Mark__np"/></e>
     <e lm="Kubo"><i>Kubo</i><par n="Barcelona__np"/></e>
-    <e lm="Kubo"><i>Kubo</i><par n="Barcelona__np"/></e>
     <e lm="Latin-Ameriko"><i>Latin-Ameriko</i><par n="Barcelona__np"/></e>
-    <e lm="Latvio"><i>Latvio</i><par n="Barcelona__np"/></e>
     <e lm="Latvio"><i>Latvio</i><par n="Barcelona__np"/></e>
     <e lm="Laŭrenco"><i>La</i><par n="ŭ"/><i>renco</i><par n="Mark__np"/></e>
     <e lm="Leono"><i>Leono</i><par n="Barcelona__np"/></e>
     <e lm="Libano"><i>Libano</i><par n="Barcelona__np"/></e>
-    <e lm="Libano"><i>Libano</i><par n="Barcelona__np"/></e>
     <e lm="Liberio"><i>Liberio</i><par n="Barcelona__np"/></e>
-    <e lm="Libio"><i>Libio</i><par n="Barcelona__np"/></e>
     <e lm="Libio"><i>Libio</i><par n="Barcelona__np"/></e>
     <e lm="Limo"><i>Limo</i><par n="Barcelona__np"/></e>
     <e lm="Lisbono"><i>Lisbono</i><par n="Barcelona__np"/></e>
     <e lm="Litovio"><i>Litovio</i><par n="Barcelona__np"/></e>
-    <e lm="Litovio"><i>Litovio</i><par n="Barcelona__np"/></e>
-    <e lm="Londono"><i>Londono</i><par n="Barcelona__np"/></e>
     <e lm="Londono"><i>Londono</i><par n="Barcelona__np"/></e>
     <e lm="Ludoviko"><i>Ludoviko</i><par n="Mark__np"/></e>
     <e lm="Luksemburgio"><i>Luksemburgio</i><par n="Barcelona__np"/></e>
     <e lm="Madagaskaro"><i>Madagaskaro</i><par n="Barcelona__np"/></e>
-    <e lm="Madagaskaro"><i>Madagaskaro</i><par n="Barcelona__np"/></e>
-    <e lm="Madrido"><i>Madrido</i><par n="Barcelona__np"/></e>
     <e lm="Madrido"><i>Madrido</i><par n="Barcelona__np"/></e>
     <e lm="Mahometo"><i>Mahometo</i><par n="Mark__np"/></e>
     <e lm="Makedonio"><i>Makedonio</i><par n="Barcelona__np"/></e>
-    <e lm="Makedonio"><i>Makedonio</i><par n="Barcelona__np"/></e>
-    <e lm="Malto"><i>Malto</i><par n="Barcelona__np"/></e>
     <e lm="Malto"><i>Malto</i><par n="Barcelona__np"/></e>
     <e lm="Manuelo"><i>Manuelo</i><par n="Mark__np"/></e>
     <e lm="Maria"><i>Maria</i><par n="Mary__np"/></e>
@@ -2175,90 +2103,60 @@
     <e lm="Maŭritanio"><i>Ma</i><par n="ŭ"/><i>ritanio</i><par n="Barcelona__np"/></e>
     <e lm="Mediteraneo"><i>Mediteraneo</i><par n="Barcelona__np"/></e>
     <e lm="Meksiko"><i>Meksiko</i><par n="Barcelona__np"/></e>
-    <e lm="Meksiko"><i>Meksiko</i><par n="Barcelona__np"/></e>
     <e lm="Merkuro"><i>Merkuro</i><par n="Mark__np"/></e>
     <e lm="Mikaelo"><i>Mikaelo</i><par n="Mark__np"/></e>
-    <e lm="Monako"><i>Monako</i><par n="Barcelona__np"/></e>
     <e lm="Monako"><i>Monako</i><par n="Barcelona__np"/></e>
     <e lm="Montevideo"><i>Montevideo</i><par n="Barcelona__np"/></e>
     <e lm="Montserato"><i>Montserato</i><par n="Barcelona__np"/></e>
     <e lm="Moskvo"><i>Moskvo</i><par n="Barcelona__np"/></e>
-    <e lm="Moskvo"><i>Moskvo</i><par n="Barcelona__np"/></e>
     <e lm="Navaro"><i>Navaro</i><par n="Barcelona__np"/></e>
-    <e lm="Nederlando"><i>Nederlando</i><par n="Barcelona__np"/></e>
     <e lm="Nederlando"><i>Nederlando</i><par n="Barcelona__np"/></e>
     <e lm="Nepalo"><i>Nepalo</i><par n="Barcelona__np"/></e>
     <e lm="Niĝerio"><i>Ni</i><par n="ĝ"/><i>erio</i><par n="Barcelona__np"/></e>
     <e lm="Nikaragvo"><i>Nikaragvo</i><par n="Barcelona__np"/></e>
     <e lm="Nikolao"><i>Nikolao</i><par n="Mark__np"/></e>
     <e lm="Norvegio"><i>Norvegio</i><par n="Barcelona__np"/></e>
-    <e lm="Norvegio"><i>Norvegio</i><par n="Barcelona__np"/></e>
     <e lm="Nov-Jorko"><i>Nov-Jorko</i><par n="Barcelona__np"/></e>
     <e lm="Nov-Zelando"><i>Nov-Zelando</i><par n="Barcelona__np"/></e>
     <e lm="Pacifiko"><i>Pacifiko</i><par n="Barcelona__np"/></e>
     <e lm="Pakistano"><i>Pakistano</i><par n="Barcelona__np"/></e>
-    <e lm="Pakistano"><i>Pakistano</i><par n="Barcelona__np"/></e>
     <e lm="Panamo"><i>Panamo</i><par n="Barcelona__np"/></e>
     <e lm="Paragvajo"><i>Paragvajo</i><par n="Barcelona__np"/></e>
     <e lm="Parizo"><i>Parizo</i><par n="Barcelona__np"/></e>
-    <e lm="Parizo"><i>Parizo</i><par n="Barcelona__np"/></e>
-    <e lm="Pekino"><i>Pekino</i><par n="Barcelona__np"/></e>
     <e lm="Pekino"><i>Pekino</i><par n="Barcelona__np"/></e>
     <e lm="Peruo"><i>Peruo</i><par n="Barcelona__np"/></e>
     <e lm="Petro"><i>Petro</i><par n="Mark__np"/></e>
     <e lm="Pollando"><i>Pollando</i><par n="Barcelona__np"/></e>
-    <e lm="Pollando"><i>Pollando</i><par n="Barcelona__np"/></e>
-    <e lm="Portugalio"><i>Portugalio</i><par n="Barcelona__np"/></e>
     <e lm="Portugalio"><i>Portugalio</i><par n="Barcelona__np"/></e>
     <e lm="Prago"><i>Prago</i><par n="Barcelona__np"/></e>
-    <e lm="Prago"><i>Prago</i><par n="Barcelona__np"/></e>
-    <e lm="Romo"><i>Romo</i><par n="Barcelona__np"/></e>
     <e lm="Romo"><i>Romo</i><par n="Barcelona__np"/></e>
     <e lm="Ruando"><i>Ruando</i><par n="Barcelona__np"/></e>
     <e lm="Rumanio"><i>Rumanio</i><par n="Barcelona__np"/></e>
-    <e lm="Rumanio"><i>Rumanio</i><par n="Barcelona__np"/></e>
-    <e lm="Rusio"><i>Rusio</i><par n="Barcelona__np"/></e>
     <e lm="Rusio"><i>Rusio</i><par n="Barcelona__np"/></e>
     <e lm="Saharo"><i>Saharo</i><par n="Barcelona__np"/></e>
-    <e lm="Saharo"><i>Saharo</i><par n="Barcelona__np"/></e>
-    <e lm="Saud-Arabio"><i>Saud-Arabio</i><par n="Barcelona__np"/></e>
     <e lm="Saud-Arabio"><i>Saud-Arabio</i><par n="Barcelona__np"/></e>
     <e lm="Senegalo"><i>Senegalo</i><par n="Barcelona__np"/></e>
     <e lm="Singapuro"><i>Singapuro</i><par n="Barcelona__np"/></e>
     <e lm="Sirio"><i>Sirio</i><par n="Barcelona__np"/></e>
-    <e lm="Sirio"><i>Sirio</i><par n="Barcelona__np"/></e>
-    <e lm="Skotlando"><i>Skotlando</i><par n="Barcelona__np"/></e>
     <e lm="Skotlando"><i>Skotlando</i><par n="Barcelona__np"/></e>
     <e lm="Slovakio"><i>Slovakio</i><par n="Barcelona__np"/></e>
-    <e lm="Slovakio"><i>Slovakio</i><par n="Barcelona__np"/></e>
-    <e lm="Slovenio"><i>Slovenio</i><par n="Barcelona__np"/></e>
     <e lm="Slovenio"><i>Slovenio</i><par n="Barcelona__np"/></e>
     <e lm="Stokholmo"><i>Stokholmo</i><par n="Barcelona__np"/></e>
     <e lm="Sud-Afriko"><i>Sud-Afriko</i><par n="Barcelona__np"/></e>
     <e lm="Sudano"><i>Sudano</i><par n="Barcelona__np"/></e>
-    <e lm="Sudano"><i>Sudano</i><par n="Barcelona__np"/></e>
     <e lm="Suzana"><i>Suzana</i><par n="Mary__np"/></e>
-    <e lm="Svedio"><i>Svedio</i><par n="Barcelona__np"/></e>
     <e lm="Svedio"><i>Svedio</i><par n="Barcelona__np"/></e>
     <e lm="Svisio"><i>Svisio</i><par n="Barcelona__np"/></e>
     <e lm="Tajlando"><i>Tajlando</i><par n="Barcelona__np"/></e>
-    <e lm="Tajlando"><i>Tajlando</i><par n="Barcelona__np"/></e>
     <e lm="Tajvano"><i>Tajvano</i><par n="Barcelona__np"/></e>
-    <e lm="Tajvano"><i>Tajvano</i><par n="Barcelona__np"/></e>
-    <e lm="Tanzanio"><i>Tanzanio</i><par n="Barcelona__np"/></e>
     <e lm="Tanzanio"><i>Tanzanio</i><par n="Barcelona__np"/></e>
     <e lm="Tokio"><i>Tokio</i><par n="Barcelona__np"/></e>
     <e lm="Tunizio"><i>Tunizio</i><par n="Barcelona__np"/></e>
-    <e lm="Tunizio"><i>Tunizio</i><par n="Barcelona__np"/></e>
     <e lm="Turkio"><i>Turkio</i><par n="Barcelona__np"/></e>
-    <e lm="Turkio"><i>Turkio</i><par n="Barcelona__np"/></e>
-    <e lm="Ukrainio"><i>Ukrainio</i><par n="Barcelona__np"/></e>
     <e lm="Ukrainio"><i>Ukrainio</i><par n="Barcelona__np"/></e>
     <e lm="Urugvajo"><i>Urugvajo</i><par n="Barcelona__np"/></e>
     <e lm="Usono"><i>Usono</i><par n="Barcelona__np"/></e>
     <e lm="Valencio"><i>Valencio</i><par n="Barcelona__np"/></e>
-    <e lm="Valencio"><i>Valencio</i><par n="Barcelona__np"/></e>
-    <e lm="Varsovio"><i>Varsovio</i><par n="Barcelona__np"/></e>
     <e lm="Varsovio"><i>Varsovio</i><par n="Barcelona__np"/></e>
     <e lm="Vaŝingtono"><i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Barcelona__np"/></e>
     <e lm="Venezuelo"><i>Venezuelo</i><par n="Barcelona__np"/></e>
@@ -2270,7 +2168,6 @@
     <e lm="abdomeno"><i>abdomeno</i><par n="nom__n"/></e>
     <e lm="listo"><i>listo</i><par n="nom__n"/></e>
     <e lm="abelo"><i>abelo</i><par n="nom__n"/></e>
-    <e lm="aberacio"><i>aberacio</i><par n="nom__n"/></e>
     <e lm="aberacio"><i>aberacio</i><par n="nom__n"/></e>
     <e lm="abismo"><i>abismo</i><par n="nom__n"/></e>
     <e lm="ablacio"><i>ablacio</i><par n="nom__n"/></e>
@@ -2284,7 +2181,6 @@
     <e lm="aborti"><i>aborto</i><par n="verb__vblex"/></e>
     <e lm="abrikoto"><i>abrikoto</i><par n="nom__n"/></e>
     <e lm="abrupta"><i>abrupt</i><par n="adj__adj"/></e>
-    <e lm="abrupta"><i>abrupt</i><par n="adj__adj"/></e>
     <e lm="absoluta"><i>absolut</i><par n="adj__adj"/></e>
     <e lm="absolute"><i>absolute</i><par n="komence__adv"/></e>
     <e lm="daŭre"><i>da</i><par n="ŭ"/><i>re</i><par n="komence__adv"/></e>
@@ -2294,7 +2190,6 @@
     <e lm="absurda"><i>absurd</i><par n="adj__adj"/></e>
     <e lm="abunda"><i>abund</i><par n="adj__adj"/></e>
     <e lm="batala"><i>batala</i><par n="adj__adjINICIAL"/></e>
-    <e lm="acida"><i>acid</i><par n="adj__adj"/></e>
     <e lm="acida"><i>acid</i><par n="adj__adj"/></e>
     <e lm="aĉeti"><i>a</i><par n="ĉ"/><i>et</i><par n="verb__vblex"/></e>
     <e lm="adapti"><i>adapt</i><par n="verb__vblex"/></e>
@@ -2315,8 +2210,6 @@
     <e lm="adopti"><i>adopt</i><par n="verb__vblex"/></e>
     <e lm="adoptita"><i>adoptit</i><par n="adj__adj"/></e>
     <e lm="adorado"><i>adorado</i><par n="nom__n"/></e>
-    <e lm="adorado"><i>adorado</i><par n="nom__n"/></e>
-    <e lm="adorado"><i>adorado</i><par n="nom__n"/></e>
     <e lm="adoro"><i>adoro</i><par n="nom__n"/></e>
     <e lm="adrenalino"><i>adrenalino</i><par n="nom__n"/></e>
     <e lm="adresaro"><i>adresaro</i><par n="nom__n"/></e>
@@ -2326,8 +2219,6 @@
     <e lm="advokato"><i>advokat</i><par n="nommf__n"/></e>
     <e lm="aero"><i>aero</i><par n="nom__n"/></e>
     <e lm="afabla"><i>afabl</i><par n="adj__adj"/></e>
-    <e lm="afabla"><i>afabl</i><par n="adj__adj"/></e>
-    <e lm="afabla"><i>afabl</i><par n="adj__adj"/></e>
     <e lm="afekcii"><i>afekci</i><par n="verb__vblex"/></e>
     <e lm="afero"><i>afero</i><par n="nom__n"/></e>
     <e lm="afineco"><i>afineco</i><par n="nom__n"/></e>
@@ -2335,7 +2226,6 @@
     <e lm="aflikti"><i>aflikt</i><par n="verb__vblex"/></e>
     <e lm="afrika"><i>afrik</i><par n="adj__adj"/></e>
     <e lm="agi"><i>ag</i><par n="verb__vblex"/></e>
-    <e lm="agado"><i>agado</i><par n="nom__n"/></e>
     <e lm="agado"><i>agado</i><par n="nom__n"/></e>
     <e lm="agendo"><i>agendo</i><par n="nom__n"/></e>
     <e lm="agento"><i>agent</i><par n="nommf__n"/></e>
@@ -2367,7 +2257,6 @@
     <e lm="akciulo"><i>akciul</i><par n="nommf__n"/></e>
     <e lm="akiri"><i>akir</i><par n="verb__vblex"/></e>
     <e lm="akiraĵo"><i>akira</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="akiraĵo"><i>akira</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="aklami"><i>aklam</i><par n="verb__vblex"/></e>
     <e lm="akno"><i>akno</i><par n="nom__n"/></e>
     <e lm="komo"><i>komo</i><par n="nom__n"/></e>
@@ -2377,15 +2266,11 @@
     <e lm="akorde kun"><i>akorde<b/>kun</i><par n="at__pr"/></e>
     <e lm="akordigi"><i>akordig</i><par n="verb__vblex"/></e>
     <e lm="akra"><i>akr</i><par n="adj__adj"/></e>
-    <e lm="akra"><i>akr</i><par n="adj__adj"/></e>
-    <e lm="akra"><i>akr</i><par n="adj__adj"/></e>
-    <e lm="akra"><i>akr</i><par n="adj__adj"/></e>
     <e lm="akrediti"><i>akredit</i><par n="verb__vblex"/></e>
     <e lm="akrobato"><i>akrobat</i><par n="nommf__n"/></e>
     <e lm="akselo"><i>akselo</i><par n="nom__n"/></e>
     <e lm="akso"><i>akso</i><par n="nom__n"/></e>
     <e lm="aktiva"><i>aktiv</i><par n="adj__adj"/></e>
-    <e lm="aktive"><i>aktive</i><par n="komence__adv"/></e>
     <e lm="aktive"><i>aktive</i><par n="komence__adv"/></e>
     <e lm="aktiveco"><i>aktiveco</i><par n="nom__n"/></e>
     <e lm="aktivigi"><i>aktivig</i><par n="verb__vblex"/></e>
@@ -2400,7 +2285,6 @@
     <e lm="akuŝo"><i>aku</i><par n="ŝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="akuzi"><i>akuz</i><par n="verb__vblex"/></e>
     <e lm="akuzo"><i>akuzo</i><par n="nom__n"/></e>
-    <e lm="akuzo"><i>akuzo</i><par n="nom__n"/></e>
     <e lm="akva"><i>akv</i><par n="adj__adj"/></e>
     <e lm="akvaforto"><i>akvaforto</i><par n="nom__n"/></e>
     <e lm="akvarelo"><i>akvarelo</i><par n="nom__n"/></e>
@@ -2411,7 +2295,6 @@
     <e lm="al"><i>al</i><par n="at__pr"/></e>
     <e lm="alarmi"><i>alarm</i><par n="verb__vblex"/></e>
     <e lm="alarmo"><i>alarmo</i><par n="nom__n"/></e>
-    <e lm="alarmo"><i>alarmo</i><par n="nom__n"/></e>
     <e lm="alaŭdo"><i>ala</i><par n="ŭ"/><i>do</i><par n="nom__n"/></e>
     <e lm="albumo"><i>albumo</i><par n="nom__n"/></e>
     <e lm="aldifino"><i>aldifino</i><par n="nom__n"/></e>
@@ -2420,7 +2303,6 @@
     <e lm="aldone"><i>aldone</i><par n="komence__adv"/></e>
     <e lm="alergia"><i>alergi</i><par n="adj__adj"/></e>
     <e lm="alergio"><i>alergio</i><par n="nom__n"/></e>
-    <e lm="alfabeto"><i>alfabeto</i><par n="nom__n"/></e>
     <e lm="alfabeto"><i>alfabeto</i><par n="nom__n"/></e>
     <e lm="alfluanto"><i>alfluanto</i><par n="nom__n"/></e>
     <e lm="alfronti"><i>alfront</i><par n="verb__vblex"/></e>
@@ -2441,7 +2323,6 @@
     <e lm="alkoholismo"><i>alkoholismo</i><par n="nom__n"/></e>
     <e lm="alkoholo"><i>alkoholo</i><par n="nom__n"/></e>
     <e lm="alkonduko"><i>alkonduko</i><par n="nom__n"/></e>
-    <e lm="alkonduko"><i>alkonduko</i><par n="nom__n"/></e>
     <e lm="allogi"><i>allog</i><par n="verb__vblex"/></e>
     <e lm="alloga"><i>allog</i><par n="adj__adj"/></e>
     <e lm="almenaŭ"><i>almena</i><par n="ŭ"/><i></i><par n="komence__adv"/></e>
@@ -2455,22 +2336,18 @@
     <e lm="altaĵo"><i>alta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="altaro"><i>altaro</i><par n="nom__n"/></e>
     <e lm="alteco"><i>alteco</i><par n="nom__n"/></e>
-    <e lm="alteco"><i>alteco</i><par n="nom__n"/></e>
     <e lm="alterni"><i>altern</i><par n="verb__vblex"/></e>
     <e lm="alternado"><i>alternado</i><par n="nom__n"/></e>
     <e lm="altiri"><i>altir</i><par n="verb__vblex"/></e>
     <e lm="altiro"><i>altiro</i><par n="nom__n"/></e>
     <e lm="alto"><i>alto</i><par n="nom__n"/></e>
     <e lm="aludo"><i>aludo</i><par n="nom__n"/></e>
-    <e lm="aludo"><i>aludo</i><par n="nom__n"/></e>
-    <e lm="alumeto"><i>alumeto</i><par n="nom__n"/></e>
     <e lm="alumeto"><i>alumeto</i><par n="nom__n"/></e>
     <e lm="aluminio"><i>aluminio</i><par n="nom__n"/></e>
     <e lm="alveni"><i>alven</i><par n="verb__vblex"/></e>
     <e lm="alveno"><i>alveno</i><par n="nom__n"/></e>
     <e lm="interveno"><i>interveno</i><par n="nom__n"/></e>
     <e lm="alvokiĝo"><i>alvoki</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="alvoko"><i>alvoko</i><par n="nom__n"/></e>
     <e lm="alvoko"><i>alvoko</i><par n="nom__n"/></e>
     <e lm="ami"><i>am</i><par n="verb__vblex"/></e>
     <e lm="amanto"><i>amant</i><par n="nommf__n"/></e>
@@ -2509,7 +2386,6 @@
     <e lm="amplifi"><i>amplif</i><par n="verb__vblex"/></e>
     <e lm="amplifilo"><i>amplifilo</i><par n="nom__n"/></e>
     <e lm="ampolo"><i>ampolo</i><par n="nom__n"/></e>
-    <e lm="ampolo"><i>ampolo</i><par n="nom__n"/></e>
     <e lm="amuzi"><i>amuz</i><par n="verb__vblex"/></e>
     <e lm="amuza"><i>amuz</i><par n="adj__adj"/></e>
     <e lm="amuzaĵo"><i>amuza</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -2518,10 +2394,6 @@
     <e lm="analizi"><i>analiz</i><par n="verb__vblex"/></e>
     <e lm="analizo"><i>analizo</i><par n="nom__n"/></e>
     <e lm="analoga"><i>analog</i><par n="adj__adj"/></e>
-    <e lm="analoga"><i>analog</i><par n="adj__adj"/></e>
-    <e lm="analoga"><i>analog</i><par n="adj__adj"/></e>
-    <e lm="analoga"><i>analog</i><par n="adj__adj"/></e>
-    <e lm="ananaso"><i>ananaso</i><par n="nom__n"/></e>
     <e lm="ananaso"><i>ananaso</i><par n="nom__n"/></e>
     <e lm="anarkiisto"><i>anarkiist</i><par n="nommf__n"/></e>
     <e lm="anarkio"><i>anarkio</i><par n="nom__n"/></e>
@@ -2540,7 +2412,6 @@
     <e lm="anigi"><i>anig</i><par n="verb__vblex"/></e>
     <e lm="aniĝi"><i>ani</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="animi"><i>anim</i><par n="verb__vblex"/></e>
-    <e lm="animo"><i>animo</i><par n="nom__n"/></e>
     <e lm="animo"><i>animo</i><par n="nom__n"/></e>
     <e lm="ankaŭ"><i>anka</i><par n="ŭ"/><i></i><par n="komence__adv"/></e>
     <e lm="ankaŭ ne"><i>anka</i><par n="ŭ"/><i><b/>ne</i><par n="komence__adv"/></e>
@@ -2574,7 +2445,6 @@
     <e lm="antaŭgardi"><i>anta</i><par n="ŭ"/><i>gard</i><par n="verb__vblex"/></e>
     <e lm="antaŭjuĝo"><i>anta</i><par n="ŭ"/><i>ju</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="antaŭlasta"><i>anta</i><par n="ŭ"/><i>last</i><par n="adj__adj"/></e>
-    <e lm="antaŭlasta"><i>anta</i><par n="ŭ"/><i>last</i><par n="adj__adj"/></e>
     <e lm="antaŭparolo"><i>anta</i><par n="ŭ"/><i>parolo</i><par n="nom__n"/></e>
     <e lm="antaŭsupozi"><i>anta</i><par n="ŭ"/><i>supoz</i><par n="verb__vblex"/></e>
     <e lm="antaŭtempa"><i>anta</i><par n="ŭ"/><i>temp</i><par n="adj__adj"/></e>
@@ -2586,7 +2456,6 @@
     <e lm="antaŭzorgo"><i>anta</i><par n="ŭ"/><i>zorgo</i><par n="nom__n"/></e>
     <e lm="antikorpo"><i>antikorpo</i><par n="nom__n"/></e>
     <e lm="antikva"><i>antikv</i><par n="adj__adj"/></e>
-    <e lm="antikva"><i>antikv</i><par n="adj__adj"/></e>
     <e lm="antikva tempo"><i>antikva<b/>tempo</i><par n="nom__n"/></e>
     <e lm="antioksidanto"><i>antioksidanto</i><par n="nom__n"/></e>
     <e lm="antitezo"><i>antitezo</i><par n="nom__n"/></e>
@@ -2594,8 +2463,6 @@
     <e lm="apanaĝo"><i>apana</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="aparataro"><i>aparataro</i><par n="nom__n"/></e>
     <e lm="aparato"><i>aparato</i><par n="nom__n"/></e>
-    <e lm="aparta"><i>apart</i><par n="adj__adj"/></e>
-    <e lm="aparta"><i>apart</i><par n="adj__adj"/></e>
     <e lm="aparta"><i>apart</i><par n="adj__adj"/></e>
     <e lm="apartamenteto"><i>apartamenteto</i><par n="nom__n"/></e>
     <e lm="apartamento"><i>apartamento</i><par n="nom__n"/></e>
@@ -2624,8 +2491,6 @@
     <e lm="aprilo"><i>aprilo</i><par n="nom__n"/></e>
     <e lm="aprobi"><i>aprob</i><par n="verb__vblex"/></e>
     <e lm="apuda"><i>apud</i><par n="adj__adj"/></e>
-    <e lm="apuda"><i>apud</i><par n="adj__adj"/></e>
-    <e lm="apuda"><i>apud</i><par n="adj__adj"/></e>
     <e lm="apud"><i>apud</i><par n="at__pr"/></e>
     <e lm="apude"><i>apude</i><par n="komence__adv"/></e>
     <e lm="araba"><i>arab</i><par n="adj__adj"/></e>
@@ -2638,15 +2503,11 @@
     <e lm="arbitra"><i>arbitr</i><par n="adj__adj"/></e>
     <e lm="arbo"><i>arbo</i><par n="nom__n"/></e>
     <e lm="arda"><i>ard</i><par n="adj__adj"/></e>
-    <e lm="arda"><i>ard</i><par n="adj__adj"/></e>
-    <e lm="arda"><i>ard</i><par n="adj__adj"/></e>
-    <e lm="ardezo"><i>ardezo</i><par n="nom__n"/></e>
     <e lm="ardezo"><i>ardezo</i><par n="nom__n"/></e>
     <e lm="ardo"><i>ardo</i><par n="nom__n"/></e>
     <e lm="areo"><i>areo</i><par n="nom__n"/></e>
     <e lm="aresti"><i>arest</i><par n="verb__vblex"/></e>
     <e lm="arestito"><i>arestit</i><par n="nommf__n"/></e>
-    <e lm="aresto"><i>aresto</i><par n="nom__n"/></e>
     <e lm="aresto"><i>aresto</i><par n="nom__n"/></e>
     <e lm="argentina"><i>argentin</i><par n="adj__adj"/></e>
     <e lm="argentinano"><i>argentinan</i><par n="nommf__n"/></e>
@@ -2656,9 +2517,7 @@
     <e lm="arĝento"><i>ar</i><par n="ĝ"/><i>ento</i><par n="nom__n"/></e>
     <e lm="arĥipelago"><i>ar</i><par n="ĥ"/><i>ipelago</i><par n="nom__n"/></e>
     <e lm="arida"><i>arid</i><par n="adj__adj"/></e>
-    <e lm="arida"><i>arid</i><par n="adj__adj"/></e>
     <e lm="arkigi"><i>arkig</i><par n="verb__vblex"/></e>
-    <e lm="arkipelago"><i>arkipelago</i><par n="nom__n"/></e>
     <e lm="arkipelago"><i>arkipelago</i><par n="nom__n"/></e>
     <e lm="arkipielago"><i>arkipielago</i><par n="nom__n"/></e>
     <e lm="arkitekto"><i>arkitekt</i><par n="nommf__n"/></e>
@@ -2670,7 +2529,6 @@
     <e lm="armilaro"><i>armilaro</i><par n="nom__n"/></e>
     <e lm="armilo"><i>armilo</i><par n="nom__n"/></e>
     <e lm="aro"><i>aro</i><par n="nom__n"/></e>
-    <e lm="aromo"><i>aromo</i><par n="nom__n"/></e>
     <e lm="aromo"><i>aromo</i><par n="nom__n"/></e>
     <e lm="arsenalo"><i>arsenalo</i><par n="nom__n"/></e>
     <e lm="artefakto"><i>artefakto</i><par n="nom__n"/></e>
@@ -2690,7 +2548,6 @@
     <e lm="asembleo"><i>asembleo</i><par n="nom__n"/></e>
     <e lm="aserti"><i>asert</i><par n="verb__vblex"/></e>
     <e lm="aserto"><i>aserto</i><par n="nom__n"/></e>
-    <e lm="aserto"><i>aserto</i><par n="nom__n"/></e>
     <e lm="asesoro"><i>asesor</i><par n="nommf__n"/></e>
     <e lm="asfalti"><i>asfalt</i><par n="verb__vblex"/></e>
     <e lm="asfalto"><i>asfalto</i><par n="nom__n"/></e>
@@ -2701,7 +2558,6 @@
     <e lm="asistanto"><i>asistant</i><par n="nommf__n"/></e>
     <e lm="asocio"><i>asocio</i><par n="nom__n"/></e>
     <e lm="aspekto"><i>aspekto</i><par n="nom__n"/></e>
-    <e lm="aspra"><i>aspr</i><par n="adj__adj"/></e>
     <e lm="aspra"><i>aspr</i><par n="adj__adj"/></e>
     <e lm="asterisko"><i>asterisko</i><par n="nom__n"/></e>
     <e lm="asteroido"><i>asteroido</i><par n="nom__n"/></e>
@@ -2723,15 +2579,10 @@
     <e lm="atesti"><i>atest</i><par n="verb__vblex"/></e>
     <e lm="atestanto"><i>atestant</i><par n="nommf__n"/></e>
     <e lm="atesto"><i>atesto</i><par n="nom__n"/></e>
-    <e lm="atesto"><i>atesto</i><par n="nom__n"/></e>
-    <e lm="atesto"><i>atesto</i><par n="nom__n"/></e>
     <e lm="atingi"><i>ating</i><par n="verb__vblex"/></e>
     <e lm="atingebla"><i>atingebl</i><par n="adj__adj"/></e>
-    <e lm="atingebla"><i>atingebl</i><par n="adj__adj"/></e>
-    <e lm="atingo"><i>atingo</i><par n="nom__n"/></e>
     <e lm="atingo"><i>atingo</i><par n="nom__n"/></e>
     <e lm="atlantika"><i>atlantik</i><par n="adj__adj"/></e>
-    <e lm="atlaso"><i>atlaso</i><par n="nom__n"/></e>
     <e lm="atlaso"><i>atlaso</i><par n="nom__n"/></e>
     <e lm="atleto"><i>atlet</i><par n="nommf__n"/></e>
     <e lm="atleta"><i>atlet</i><par n="adj__adj"/></e>
@@ -2810,7 +2661,6 @@
     <e lm="balenaĵo"><i>balena</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="balenlameno"><i>balenlameno</i><par n="nom__n"/></e>
     <e lm="baleno"><i>baleno</i><par n="nom__n"/></e>
-    <e lm="baleno"><i>baleno</i><par n="nom__n"/></e>
     <e lm="balenosto"><i>balenosto</i><par n="nom__n"/></e>
     <e lm="balotado"><i>balotado</i><par n="nom__n"/></e>
     <e lm="balotejo"><i>balotejo</i><par n="nom__n"/></e>
@@ -2824,7 +2674,6 @@
     <e lm="bankedo"><i>bankedo</i><par n="nom__n"/></e>
     <e lm="bankiero"><i>bankier</i><par n="nommf__n"/></e>
     <e lm="banko"><i>banko</i><par n="nom__n"/></e>
-    <e lm="bankroto"><i>bankroto</i><par n="nom__n"/></e>
     <e lm="bankroto"><i>bankroto</i><par n="nom__n"/></e>
     <e lm="bano"><i>bano</i><par n="nom__n"/></e>
     <e lm="banto"><i>banto</i><par n="nom__n"/></e>
@@ -2842,16 +2691,11 @@
     <e lm="baremo"><i>baremo</i><par n="nom__n"/></e>
     <e lm="barikado"><i>barikado</i><par n="nom__n"/></e>
     <e lm="barilo"><i>barilo</i><par n="nom__n"/></e>
-    <e lm="barilo"><i>barilo</i><par n="nom__n"/></e>
     <e lm="barko"><i>barko</i><par n="nom__n"/></e>
-    <e lm="baro"><i>baro</i><par n="nom__n"/></e>
     <e lm="baro"><i>baro</i><par n="nom__n"/></e>
     <e lm="barometro"><i>barometro</i><par n="nom__n"/></e>
     <e lm="barono"><i>baron</i><par n="nommf__n"/></e>
     <e lm="barto"><i>barto</i><par n="nom__n"/></e>
-    <e lm="baseno"><i>baseno</i><par n="nom__n"/></e>
-    <e lm="baseno"><i>baseno</i><par n="nom__n"/></e>
-    <e lm="baseno"><i>baseno</i><par n="nom__n"/></e>
     <e lm="baseno"><i>baseno</i><par n="nom__n"/></e>
     <e lm="basketbalo"><i>basketbalo</i><par n="nom__n"/></e>
     <e lm="bastono"><i>bastono</i><par n="nom__n"/></e>
@@ -2869,9 +2713,6 @@
     <e lm="bebo"><i>beb</i><par n="nommf__n"/></e>
     <e lm="bedaŭrinde"><i>beda</i><par n="ŭ"/><i>rinde</i><par n="komence__adv"/></e>
     <e lm="beko"><i>beko</i><par n="nom__n"/></e>
-    <e lm="bela"><i>bel</i><par n="adj__adj"/></e>
-    <e lm="bela"><i>bel</i><par n="adj__adj"/></e>
-    <e lm="bela"><i>bel</i><par n="adj__adj"/></e>
     <e lm="bela"><i>bel</i><par n="adj__adj"/></e>
     <e lm="beleco"><i>beleco</i><par n="nom__n"/></e>
     <e lm="belega"><i>beleg</i><par n="adj__adj"/></e>
@@ -2896,8 +2737,6 @@
     <e lm="bilardo"><i>bilardo</i><par n="nom__n"/></e>
     <e lm="bildkarto"><i>bildkarto</i><par n="nom__n"/></e>
     <e lm="bildo"><i>bildo</i><par n="nom__n"/></e>
-    <e lm="bildo"><i>bildo</i><par n="nom__n"/></e>
-    <e lm="bildo"><i>bildo</i><par n="nom__n"/></e>
     <e lm="bileto"><i>bileto</i><par n="nom__n"/></e>
     <e lm="biliono"><i>biliono</i><par n="nom__n"/></e>
     <e lm="biografo"><i>biograf</i><par n="nommf__n"/></e>
@@ -2907,10 +2746,8 @@
     <e lm="biopsio"><i>biopsio</i><par n="nom__n"/></e>
     <e lm="birdo"><i>birdo</i><par n="nom__n"/></e>
     <e lm="biskvito"><i>biskvito</i><par n="nom__n"/></e>
-    <e lm="biskvito"><i>biskvito</i><par n="nom__n"/></e>
     <e lm="bito"><i>bito</i><par n="nom__n"/></e>
     <e lm="blankigi"><i>blankig</i><par n="verb__vblex"/></e>
-    <e lm="blato"><i>blato</i><par n="nom__n"/></e>
     <e lm="blato"><i>blato</i><par n="nom__n"/></e>
     <e lm="blendi"><i>blend</i><par n="verb__vblex"/></e>
     <e lm="blinda"><i>blind</i><par n="adj__adj"/></e>
@@ -2936,7 +2773,6 @@
     <e lm="boneco"><i>boneco</i><par n="nom__n"/></e>
     <e lm="bonega"><i>boneg</i><par n="adj__adj"/></e>
     <e lm="bonstato"><i>bonstato</i><par n="nom__n"/></e>
-    <e lm="bontrovo"><i>bontrovo</i><par n="nom__n"/></e>
     <e lm="bontrovo"><i>bontrovo</i><par n="nom__n"/></e>
     <e lm="bordelo"><i>bordelo</i><par n="nom__n"/></e>
     <e lm="bordero"><i>bordero</i><par n="nom__n"/></e>
@@ -2964,9 +2800,6 @@
     <e lm="brili"><i>bril</i><par n="verb__vblex"/></e>
     <e lm="brila"><i>bril</i><par n="adj__adj"/></e>
     <e lm="brilo"><i>brilo</i><par n="nom__n"/></e>
-    <e lm="brilo"><i>brilo</i><par n="nom__n"/></e>
-    <e lm="brilo"><i>brilo</i><par n="nom__n"/></e>
-    <e lm="brilo"><i>brilo</i><par n="nom__n"/></e>
     <e lm="brita"><i>brit</i><par n="adj__adj"/></e>
     <e lm="brizo"><i>brizo</i><par n="nom__n"/></e>
     <e lm="broĉo"><i>bro</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
@@ -2980,9 +2813,6 @@
     <e lm="bruligi"><i>brulig</i><par n="verb__vblex"/></e>
     <e lm="brulligno"><i>brulligno</i><par n="nom__n"/></e>
     <e lm="brulvundo"><i>brulvundo</i><par n="nom__n"/></e>
-    <e lm="bruna"><i>brun</i><par n="adj__adj"/></e>
-    <e lm="bruna"><i>brun</i><par n="adj__adj"/></e>
-    <e lm="bruna"><i>brun</i><par n="adj__adj"/></e>
     <e lm="bruna"><i>brun</i><par n="adj__adj"/></e>
     <e lm="bruo"><i>bruo</i><par n="nom__n"/></e>
     <e lm="bruske"><i>bruske</i><par n="komence__adv"/></e>
@@ -3031,10 +2861,8 @@
     <e lm="ceremoniaro"><i>ceremoniaro</i><par n="nom__n"/></e>
     <e lm="ceremonio"><i>ceremonio</i><par n="nom__n"/></e>
     <e lm="certa"><i>cert</i><par n="adj__adj"/></e>
-    <e lm="certa"><i>cert</i><par n="adj__adj"/></e>
     <e lm="certa"><i>certa</i><par n="ind__det"/></e>
     <e lm="certe"><i>certe</i><par n="after__cnjadv"/></e>
-    <e lm="certe"><i>certe</i><par n="komence__adv"/></e>
     <e lm="certe"><i>certe</i><par n="komence__adv"/></e>
     <e lm="certigi"><i>certig</i><par n="verb__vblex"/></e>
     <e lm="cheesti"><i>cheest</i><par n="verb__vblex"/></e>
@@ -3068,7 +2896,6 @@
     <e lm="por"><i>ciufoje<b/>kiam</i><par n="after__cnjadv"/></e>
     <e lm="civila"><i>civil</i><par n="adj__adj"/></e>
     <e lm="civilizi"><i>civiliz</i><par n="verb__vblex"/></e>
-    <e lm="civilizacio"><i>civilizacio</i><par n="nom__n"/></e>
     <e lm="civilizacio"><i>civilizacio</i><par n="nom__n"/></e>
     <e lm="colo"><i>colo</i><par n="nom__n"/></e>
     <e lm="ĉagreno"><par n="ĉ"/><i>agreno</i><par n="nom__n"/></e>
@@ -3159,7 +2986,6 @@
     <e lm="danĝere"><i>dan</i><par n="ĝ"/><i>ere</i><par n="komence__adv"/></e>
     <e lm="danĝero"><i>dan</i><par n="ĝ"/><i>ero</i><par n="nom__n"/></e>
     <e lm="danke al"><i>danke<b/>al</i><par n="at__pr"/></e>
-    <e lm="danke al"><i>danke<b/>al</i><par n="at__pr"/></e>
     <e lm="dankmono"><i>dankmono</i><par n="nom__n"/></e>
     <e lm="dati"><i>dat</i><par n="verb__vblex"/></e>
     <e lm="datenbanko"><i>datenbanko</i><par n="nom__n"/></e>
@@ -3173,8 +2999,6 @@
     <e lm="daŭro"><i>da</i><par n="ŭ"/><i>ro</i><par n="nom__n"/></e>
     <e lm="de"><i>de</i><par n="komence__adv"/></e>
     <e lm="de"><i>de</i><par n="at__pr"/></e>
-    <e lm="de tempo al tempo"><i>de<b/>tempo<b/>al<b/>tempo</i><par n="komence__adv"/></e>
-    <e lm="de tempo al tempo"><i>de<b/>tempo<b/>al<b/>tempo</i><par n="komence__adv"/></e>
     <e lm="de tempo al tempo"><i>de<b/>tempo<b/>al<b/>tempo</i><par n="komence__adv"/></e>
     <e lm="deadmoni"><i>deadmon</i><par n="verb__vblex"/></e>
     <e lm="debato"><i>debato</i><par n="nom__n"/></e>
@@ -3206,13 +3030,11 @@
     <e lm="dekkvino"><i>dekkvino</i><par n="nom__n"/></e>
     <e lm="deklari"><i>deklar</i><par n="verb__vblex"/></e>
     <e lm="deklaro"><i>deklaro</i><par n="nom__n"/></e>
-    <e lm="deklaro"><i>deklaro</i><par n="nom__n"/></e>
     <e lm="deklivo"><i>deklivo</i><par n="nom__n"/></e>
     <e lm="deko"><i>deko</i><par n="nom__n"/></e>
     <e lm="dekoracio"><i>dekoracio</i><par n="nom__n"/></e>
     <e lm="dekreti"><i>dekret</i><par n="verb__vblex"/></e>
     <e lm="dekreto"><i>dekreto</i><par n="nom__n"/></e>
-    <e lm="dekstra"><i>dekstr</i><par n="adj__adj"/></e>
     <e lm="dekstra"><i>dekstr</i><par n="adj__adj"/></e>
     <e lm="dekstre"><i>dekstre</i><par n="komence__adv"/></e>
     <e lm="delegi"><i>deleg</i><par n="verb__vblex"/></e>
@@ -3223,7 +3045,6 @@
 
     <e lm="delfeno"><i>delfeno</i><par n="nom__n"/></e>
     <e lm="delico"><i>delico</i><par n="nom__n"/></e>
-    <e lm="delikata"><i>delikat</i><par n="adj__adj"/></e>
     <e lm="delikata"><i>delikat</i><par n="adj__adj"/></e>
     <e lm="delikto"><i>delikto</i><par n="nom__n"/></e>
     <e lm="delogo"><i>delogo</i><par n="nom__n"/></e>
@@ -3241,10 +3062,6 @@
     <e lm="demonstracio"><i>demonstracio</i><par n="nom__n"/></e>
     <e lm="denominatoro"><i>denominator</i><par n="nommf__n"/></e>
     <e lm="denove"><i>denove</i><par n="komence__adv"/></e>
-    <e lm="densa"><i>dens</i><par n="adj__adj"/></e>
-    <e lm="densa"><i>dens</i><par n="adj__adj"/></e>
-    <e lm="densa"><i>dens</i><par n="adj__adj"/></e>
-    <e lm="densa"><i>dens</i><par n="adj__adj"/></e>
     <e lm="densa"><i>dens</i><par n="adj__adj"/></e>
     <e lm="denseco"><i>denseco</i><par n="nom__n"/></e>
     <e lm="dentaĵo"><i>denta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -3283,8 +3100,6 @@
     <e lm="deturniĝi"><i>deturni</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="devi"><i>dev</i><par n="verb__vblex"/></e>
     <e lm="devena"><i>deven</i><par n="adj__adj"/></e>
-    <e lm="devena"><i>deven</i><par n="adj__adj"/></e>
-    <e lm="devena"><i>deven</i><par n="adj__adj"/></e>
     <e lm="deviga"><i>devig</i><par n="adj__adj"/></e>
     <e lm="devigi"><i>devig</i><par n="verb__vblex"/></e>
     <e lm="devio"><i>devio</i><par n="nom__n"/></e>
@@ -3304,25 +3119,18 @@
     <e lm="diareo"><i>diareo</i><par n="nom__n"/></e>
     <e lm="dieto"><i>dieto</i><par n="nom__n"/></e>
     <e lm="difekto"><i>difekto</i><par n="nom__n"/></e>
-    <e lm="difekto"><i>difekto</i><par n="nom__n"/></e>
     <e lm="diferenci"><i>diferenc</i><par n="verb__vblex"/></e>
     <e lm="diferenca"><i>diferenc</i><par n="adj__adj"/></e>
     <e lm="diferenco"><i>diferenco</i><par n="nom__n"/></e>
     <e lm="difini"><i>difin</i><par n="verb__vblex"/></e>
     <e lm="difino"><i>difino</i><par n="nom__n"/></e>
-    <e lm="difino"><i>difino</i><par n="nom__n"/></e>
     <e lm="difterio"><i>difterio</i><par n="nom__n"/></e>
     <e lm="digestado"><i>digestado</i><par n="nom__n"/></e>
     <e lm="digesto"><i>digesto</i><par n="nom__n"/></e>
     <e lm="digna"><i>dign</i><par n="adj__adj"/></e>
-    <e lm="digna"><i>dign</i><par n="adj__adj"/></e>
     <e lm="digno"><i>digno</i><par n="nom__n"/></e>
     <e lm="dika"><i>dik</i><par n="adj__adj"/></e>
-    <e lm="dika"><i>dik</i><par n="adj__adj"/></e>
-    <e lm="dika"><i>dik</i><par n="adj__adj"/></e>
-    <e lm="dika"><i>dik</i><par n="adj__adj"/></e>
     <e lm="dikeco"><i>dikeco</i><par n="nom__n"/></e>
-    <e lm="dikfingro"><i>dikfingro</i><par n="nom__n"/></e>
     <e lm="dikfingro"><i>dikfingro</i><par n="nom__n"/></e>
     <e lm="dikiĝi"><i>diki</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="dikti"><i>dikt</i><par n="verb__vblex"/></e>
@@ -3341,8 +3149,6 @@
     <e lm="diri"><i>dir</i><par n="verb__vblex"/></e>
     <e lm="direkti"><i>direkt</i><par n="verb__vblex"/></e>
     <e lm="direktado"><i>direktado</i><par n="nom__n"/></e>
-    <e lm="direktado"><i>direktado</i><par n="nom__n"/></e>
-    <e lm="direkto"><i>direkto</i><par n="nom__n"/></e>
     <e lm="direkto"><i>direkto</i><par n="nom__n"/></e>
     <e lm="direktoro"><i>direktor</i><par n="nommf__n"/></e>
     <e lm="direktrico"><i>direktrico</i><par n="nom__n"/></e>
@@ -3366,9 +3172,7 @@
     <e lm="dispersi"><i>dispers</i><par n="verb__vblex"/></e>
     <e lm="disponebla"><i>disponebl</i><par n="adj__adj"/></e>
     <e lm="dispozicio"><i>dispozicio</i><par n="nom__n"/></e>
-    <e lm="dispozicio"><i>dispozicio</i><par n="nom__n"/></e>
     <e lm="dissemi"><i>dissem</i><par n="verb__vblex"/></e>
-    <e lm="dissendo"><i>dissendo</i><par n="nom__n"/></e>
     <e lm="dissendo"><i>dissendo</i><par n="nom__n"/></e>
     <e lm="distanco"><i>distanco</i><par n="nom__n"/></e>
     <e lm="distili"><i>distil</i><par n="verb__vblex"/></e>
@@ -3378,7 +3182,6 @@
     <e lm="distribui"><i>distribu</i><par n="verb__vblex"/></e>
     <e lm="distrikto"><i>distrikto</i><par n="nom__n"/></e>
     <e lm="distrita"><i>distrit</i><par n="adj__adj"/></e>
-    <e lm="distro"><i>distro</i><par n="nom__n"/></e>
     <e lm="distro"><i>distro</i><par n="nom__n"/></e>
     <e lm="disvenki"><i>disvenk</i><par n="verb__vblex"/></e>
     <e lm="disvolviĝo"><i>disvolvi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -3423,8 +3226,6 @@
     <e lm="drama"><i>dram</i><par n="adj__adj"/></e>
     <e lm="dramo"><i>dramo</i><par n="nom__n"/></e>
     <e lm="drasta"><i>drast</i><par n="adj__adj"/></e>
-    <e lm="drasta"><i>drast</i><par n="adj__adj"/></e>
-    <e lm="drato"><i>drato</i><par n="nom__n"/></e>
     <e lm="drato"><i>drato</i><par n="nom__n"/></e>
     <e lm="drogo"><i>drogo</i><par n="nom__n"/></e>
     <e lm="dromedaro"><i>dromedaro</i><par n="nom__n"/></e>
@@ -3432,14 +3233,11 @@
     <e lm="dubasenca"><i>dubasenc</i><par n="adj__adj"/></e>
     <e lm="dubli"><i>dubl</i><par n="verb__vblex"/></e>
     <e lm="dubo"><i>dubo</i><par n="nom__n"/></e>
-    <e lm="dubo"><i>dubo</i><par n="nom__n"/></e>
     <e lm="duelo"><i>duelo</i><par n="nom__n"/></e>
     <e lm="duko"><i>duk</i><par n="nommf__n"/></e>
     <e lm="dulingva"><i>dulingv</i><par n="adj__adj"/></e>
     <e lm="dum"><i>dum</i><par n="after__cnjadv"/></e>
-    <e lm="dum"><i>dum</i><par n="after__cnjadv"/></e>
     <e lm="dum"><i>dum</i><par n="at__pr"/></e>
-    <e lm="dume"><i>dume</i><par n="komence__adv"/></e>
     <e lm="dume"><i>dume</i><par n="komence__adv"/></e>
     <e lm="dungitaro"><i>dungitaro</i><par n="nom__n"/></e>
     <e lm="duno"><i>duno</i><par n="nom__n"/></e>
@@ -3447,7 +3245,6 @@
     <e lm="duona"><i>duon</i><par n="adj__adj"/></e>
     <e lm="duoninsulo"><i>duoninsulo</i><par n="nom__n"/></e>
     <e lm="duonlumo"><i>duonlumo</i><par n="nom__n"/></e>
-    <e lm="duonmonata"><i>duonmonat</i><par n="adj__adj"/></e>
     <e lm="duonmonata"><i>duonmonat</i><par n="adj__adj"/></e>
     <e lm="duono"><i>duono</i><par n="nom__n"/></e>
     <e lm="duonvidi"><i>duonvid</i><par n="verb__vblex"/></e>
@@ -3463,7 +3260,6 @@
     <e lm="edemo"><i>edemo</i><par n="nom__n"/></e>
     <e lm="edikto"><i>edikto</i><par n="nom__n"/></e>
     <e lm="eduki"><i>eduk</i><par n="verb__vblex"/></e>
-    <e lm="eduko"><i>eduko</i><par n="nom__n"/></e>
     <e lm="eduko"><i>eduko</i><par n="nom__n"/></e>
     <e lm="edzo"><i>edz</i><par n="nommf__n"/></e>
     <e lm="efektive"><i>efektive</i><par n="komence__adv"/></e>
@@ -3515,12 +3311,10 @@
     <e lm="ekspansio"><i>ekspansio</i><par n="nom__n"/></e>
     <e lm="ekspedi"><i>eksped</i><par n="verb__vblex"/></e>
     <e lm="ekspedicio"><i>ekspedicio</i><par n="nom__n"/></e>
-    <e lm="ekspedicio"><i>ekspedicio</i><par n="nom__n"/></e>
     <e lm="eksperimenta"><i>eksperiment</i><par n="adj__adj"/></e>
     <e lm="eksperimento"><i>eksperimento</i><par n="nom__n"/></e>
     <e lm="eksplicita"><i>eksplicit</i><par n="adj__adj"/></e>
     <e lm="ekspliki"><i>eksplik</i><par n="verb__vblex"/></e>
-    <e lm="ekspliko"><i>ekspliko</i><par n="nom__n"/></e>
     <e lm="ekspliko"><i>ekspliko</i><par n="nom__n"/></e>
     <e lm="eksplodi"><i>eksplod</i><par n="verb__vblex"/></e>
     <e lm="eksplodo"><i>eksplodo</i><par n="nom__n"/></e>
@@ -3533,17 +3327,13 @@
     <e lm="ekstazo"><i>ekstazo</i><par n="nom__n"/></e>
     <e lm="ekstera"><i>ekster</i><par n="adj__adj"/></e>
     <e lm="ekstercentra"><i>ekstercentr</i><par n="adj__adj"/></e>
-    <e lm="ekstercentra"><i>ekstercentr</i><par n="adj__adj"/></e>
     <e lm="ekstere"><i>ekstere</i><par n="komence__adv"/></e>
-    <e lm="eksteren"><i>eksteren</i><par n="komence__adv"/></e>
     <e lm="eksteren"><i>eksteren</i><par n="komence__adv"/></e>
     <e lm="eksternorma"><i>eksternorm</i><par n="adj__adj"/></e>
     <e lm="eksterordinara"><i>eksterordinar</i><par n="adj__adj"/></e>
     <e lm="eksterterano"><i>eksterteran</i><par n="nommf__n"/></e>
     <e lm="ekstra"><i>ekstr</i><par n="adj__adj"/></e>
     <e lm="ekstradicio"><i>ekstradicio</i><par n="nom__n"/></e>
-    <e lm="ekstradicio"><i>ekstradicio</i><par n="nom__n"/></e>
-    <e lm="ekstrakto"><i>ekstrakto</i><par n="nom__n"/></e>
     <e lm="ekstrakto"><i>ekstrakto</i><par n="nom__n"/></e>
     <e lm="ekstravaganca"><i>ekstravaganc</i><par n="adj__adj"/></e>
     <e lm="ekstrema"><i>ekstrem</i><par n="adj__adj"/></e>
@@ -3567,13 +3357,11 @@
     <e lm="ekzerco"><i>ekzerco</i><par n="nom__n"/></e>
     <e lm="ekzili"><i>ekzil</i><par n="verb__vblex"/></e>
     <e lm="ekzilo"><i>ekzilo</i><par n="nom__n"/></e>
-    <e lm="ekzilo"><i>ekzilo</i><par n="nom__n"/></e>
     <e lm="ekzistanta"><i>ekzistant</i><par n="adj__adj"/></e>
     <e lm="ekzisto"><i>ekzisto</i><par n="nom__n"/></e>
     <e lm="ekzota"><i>ekzot</i><par n="adj__adj"/></e>
     <e lm="elasta"><i>elast</i><par n="adj__adj"/></e>
     <e lm="elĉerpi"><i>el</i><par n="ĉ"/><i>erp</i><par n="verb__vblex"/></e>
-    <e lm="eldevigo"><i>eldevigo</i><par n="nom__n"/></e>
     <e lm="eldevigo"><i>eldevigo</i><par n="nom__n"/></e>
     <e lm="eldoni"><i>eldon</i><par n="verb__vblex"/></e>
     <e lm="eldonisto"><i>eldonist</i><par n="nommf__n"/></e>
@@ -3583,7 +3371,6 @@
     <e lm="eleganteco"><i>eleganteco</i><par n="nom__n"/></e>
     <e lm="elekti"><i>elekt</i><par n="verb__vblex"/></e>
     <e lm="elektantaro"><i>elektantaro</i><par n="nom__n"/></e>
-    <e lm="elekto"><i>elekto</i><par n="nom__n"/></e>
     <e lm="elekto"><i>elekto</i><par n="nom__n"/></e>
     <e lm="elektra"><i>elektr</i><par n="adj__adj"/></e>
     <e lm="elektra hejmilo"><i>elektra<b/>hejmilo</i><par n="nom__n"/></e>
@@ -3621,9 +3408,6 @@
     <e lm="elsendi"><i>elsend</i><par n="verb__vblex"/></e>
     <e lm="elspezi"><i>elspez</i><par n="verb__vblex"/></e>
     <e lm="elstara"><i>elstar</i><par n="adj__adj"/></e>
-    <e lm="elstara"><i>elstar</i><par n="adj__adj"/></e>
-    <e lm="elstara"><i>elstar</i><par n="adj__adj"/></e>
-    <e lm="elstara"><i>elstar</i><par n="adj__adj"/></e>
     <e lm="elstari"><i>elstar</i><par n="verb__vblex"/></e>
     <e lm="elstreki"><i>elstrek</i><par n="verb__vblex"/></e>
     <e lm="elŝalti"><i>el</i><par n="ŝ"/><i>alt</i><par n="verb__vblex"/></e>
@@ -3643,17 +3427,10 @@
     <e lm="emigri"><i>emigr</i><par n="verb__vblex"/></e>
     <e lm="emigrintaro"><i>emigrintaro</i><par n="nom__n"/></e>
     <e lm="eminenco"><i>eminenco</i><par n="nom__n"/></e>
-    <e lm="eminenco"><i>eminenco</i><par n="nom__n"/></e>
     <e lm="eminenta"><i>eminent</i><par n="adj__adj"/></e>
-    <e lm="eminenta"><i>eminent</i><par n="adj__adj"/></e>
-    <e lm="eminenta"><i>eminent</i><par n="adj__adj"/></e>
-    <e lm="eminenta"><i>eminent</i><par n="adj__adj"/></e>
-    <e lm="eminentulo"><i>eminentulo</i><par n="nom__n"/></e>
     <e lm="eminentulo"><i>eminentulo</i><par n="nom__n"/></e>
     <e lm="emocii"><i>emoci</i><par n="verb__vblex"/></e>
     <e lm="emocie"><i>emocie</i><par n="komence__adv"/></e>
-    <e lm="emocio"><i>emocio</i><par n="nom__n"/></e>
-    <e lm="emocio"><i>emocio</i><par n="nom__n"/></e>
     <e lm="emocio"><i>emocio</i><par n="nom__n"/></e>
     <e lm="en"><i>en</i><par n="at__pr"/></e>
     <e lm="en ansera vico"><i>en<b/>ansera<b/>vico</i><par n="komence__adv"/></e>
@@ -3674,8 +3451,6 @@
     <e lm="enirbileto"><i>enirbileto</i><par n="nom__n"/></e>
     <e lm="enketi"><i>enket</i><par n="verb__vblex"/></e>
     <e lm="enketo"><i>enketo</i><par n="nom__n"/></e>
-    <e lm="enketo"><i>enketo</i><par n="nom__n"/></e>
-    <e lm="enkonduko"><i>enkonduko</i><par n="nom__n"/></e>
     <e lm="enkonduko"><i>enkonduko</i><par n="nom__n"/></e>
     <e lm="enmigrinto"><i>enmigrint</i><par n="nommf__n"/></e>
     <e lm="eno"><i>eno</i><par n="nom__n"/></e>
@@ -3707,14 +3482,11 @@
     <e lm="epizodo"><i>epizodo</i><par n="nom__n"/></e>
     <e lm="epoko"><i>epoko</i><par n="nom__n"/></e>
     <e lm="epoleto"><i>epoleto</i><par n="nom__n"/></e>
-    <e lm="epoleto"><i>epoleto</i><par n="nom__n"/></e>
     <e lm="erao"><i>erao</i><par n="nom__n"/></e>
     <e lm="erara"><i>erar</i><par n="adj__adj"/></e>
     <e lm="eraro"><i>eraro</i><par n="nom__n"/></e>
-    <e lm="eraro"><i>eraro</i><par n="nom__n"/></e>
     <e lm="eriko"><i>eriko</i><par n="nom__n"/></e>
     <e lm="ero"><i>ero</i><par n="nom__n"/></e>
-    <e lm="erotika"><i>erotik</i><par n="adj__adj"/></e>
     <e lm="erotika"><i>erotik</i><par n="adj__adj"/></e>
     <e lm="erotiko"><i>erotiko</i><par n="nom__n"/></e>
     <e lm="erozio"><i>erozio</i><par n="nom__n"/></e>
@@ -3722,9 +3494,7 @@
     <e lm="erupcio"><i>erupcio</i><par n="nom__n"/></e>
     <e lm="escepti"><i>escept</i><par n="verb__vblex"/></e>
     <e lm="escepto"><i>escepto</i><par n="nom__n"/></e>
-    <e lm="escepto"><i>escepto</i><par n="nom__n"/></e>
     <e lm="esenca"><i>esenc</i><par n="adj__adj"/></e>
-    <e lm="esence"><i>esence</i><par n="komence__adv"/></e>
     <e lm="esence"><i>esence</i><par n="komence__adv"/></e>
     <e lm="esenco"><i>esenco</i><par n="nom__n"/></e>
     <e lm="eskapi"><i>eskap</i><par n="verb__vblex"/></e>
@@ -3748,14 +3518,12 @@
     <e lm="estonteco"><i>estonteco</i><par n="nom__n"/></e>
     <e lm="estri"><i>estr</i><par n="verb__vblex"/></e>
     <e lm="estro"><i>estr</i><par n="nommf__n"/></e>
-    <e lm="estro"><i>estr</i><par n="nommf__n"/></e>
     <e lm="eŝafodo"><i>e</i><par n="ŝ"/><i>afodo</i><par n="nom__n"/></e>
     <e lm="etapo"><i>etapo</i><par n="nom__n"/></e>
     <e lm="etato"><i>etato</i><par n="nom__n"/></e>
     <e lm="etendi"><i>etend</i><par n="verb__vblex"/></e>
     <e lm="etendo"><i>etendo</i><par n="nom__n"/></e>
     <e lm="eterna"><i>etern</i><par n="adj__adj"/></e>
-    <e lm="eterne"><i>eterne</i><par n="komence__adv"/></e>
     <e lm="eterne"><i>eterne</i><par n="komence__adv"/></e>
     <e lm="eterneco"><i>eterneco</i><par n="nom__n"/></e>
     <e lm="etika"><i>etik</i><par n="adj__adj"/></e>
@@ -3772,20 +3540,13 @@
     <e lm="evento"><i>evento</i><par n="nom__n"/></e>
     <e lm="eventuala"><i>eventual</i><par n="adj__adj"/></e>
     <e lm="evidenta"><i>evident</i><par n="adj__adj"/></e>
-    <e lm="evidenta"><i>evident</i><par n="adj__adj"/></e>
-    <e lm="evidente"><i>evidente</i><par n="komence__adv"/></e>
-    <e lm="evidente"><i>evidente</i><par n="komence__adv"/></e>
-    <e lm="evidente"><i>evidente</i><par n="komence__adv"/></e>
     <e lm="evidente"><i>evidente</i><par n="komence__adv"/></e>
     <e lm="eviti"><i>evit</i><par n="verb__vblex"/></e>
     <e lm="evolui"><i>evolu</i><par n="verb__vblex"/></e>
     <e lm="evoluado"><i>evoluado</i><par n="nom__n"/></e>
     <e lm="evoluo"><i>evoluo</i><par n="nom__n"/></e>
-    <e lm="evoluo"><i>evoluo</i><par n="nom__n"/></e>
     <e lm="ezofago"><i>ezofago</i><par n="nom__n"/></e>
     <e lm="fa"><i>f</i><par n="adj__adj"/></e>
-    <e lm="fabela"><i>fabel</i><par n="adj__adj"/></e>
-    <e lm="fabela"><i>fabel</i><par n="adj__adj"/></e>
     <e lm="fabela"><i>fabel</i><par n="adj__adj"/></e>
     <e lm="fabriki"><i>fabrik</i><par n="verb__vblex"/></e>
     <e lm="fabrikado"><i>fabrikado</i><par n="nom__n"/></e>
@@ -3794,9 +3555,7 @@
     <e lm="faceto"><i>faceto</i><par n="nom__n"/></e>
     <e lm="facila"><i>facil</i><par n="adj__adj"/></e>
     <e lm="facile"><i>facile</i><par n="komence__adv"/></e>
-    <e lm="facile"><i>facile</i><par n="komence__adv"/></e>
     <e lm="facileco"><i>facileco</i><par n="nom__n"/></e>
-    <e lm="fadeno"><i>fadeno</i><par n="nom__n"/></e>
     <e lm="fadeno"><i>fadeno</i><par n="nom__n"/></e>
     <e lm="fajlilo"><i>fajlilo</i><par n="nom__n"/></e>
     <e lm="fajna"><i>fajn</i><par n="adj__adj"/></e>
@@ -3807,7 +3566,6 @@
     <e lm="fajrujo"><i>fajrujo</i><par n="nom__n"/></e>
     <e lm="fako"><i>fako</i><par n="nom__n"/></e>
     <e lm="fakte"><i>fakte</i><par n="komence__adv"/></e>
-    <e lm="fakte"><i>fakte</i><par n="komence__adv"/></e>
     <e lm="fakto"><i>fakto</i><par n="nom__n"/></e>
     <e lm="faktoro"><i>faktoro</i><par n="nom__n"/></e>
     <e lm="fakturi"><i>faktur</i><par n="verb__vblex"/></e>
@@ -3817,7 +3575,6 @@
     <e lm="faldi"><i>fald</i><par n="verb__vblex"/></e>
     <e lm="faldo"><i>faldo</i><par n="nom__n"/></e>
     <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
-    <e lm="faldebla"><i>faldebl</i><par n="adj__adj"/></e>
     <e lm="faldebla"><i>faldeblao</i><par n="nom__n"/></e>
     <e lm="faldmenuo"><i>faldmenuo</i><par n="nom__n"/></e>
     <e lm="falsi"><i>fals</i><par n="verb__vblex"/></e>
@@ -3826,8 +3583,6 @@
     <e lm="falto"><i>falto</i><par n="nom__n"/></e>
     <e lm="fama"><i>fam</i><par n="adj__adj"/></e>
     <e lm="familiara"><i>familiar</i><par n="adj__adj"/></e>
-    <e lm="familiara"><i>familiar</i><par n="adj__adj"/></e>
-    <e lm="familinomo"><i>familinomo</i><par n="nom__n"/></e>
     <e lm="familinomo"><i>familinomo</i><par n="nom__n"/></e>
     <e lm="familio"><i>familio</i><par n="nom__n"/></e>
     <e lm="famo"><i>famo</i><par n="nom__n"/></e>
@@ -3848,18 +3603,14 @@
     <e lm="farso"><i>farso</i><par n="nom__n"/></e>
     <e lm="faruno"><i>faruno</i><par n="nom__n"/></e>
     <e lm="fasado"><i>fasado</i><par n="nom__n"/></e>
-    <e lm="fasado"><i>fasado</i><par n="nom__n"/></e>
     <e lm="faŝismo"><i>fa</i><par n="ŝ"/><i>ismo</i><par n="nom__n"/></e>
     <e lm="faŝisto"><i>fa</i><par n="ŝ"/><i>ist</i><par n="nommf__n"/></e>
     <e lm="fatala"><i>fatal</i><par n="adj__adj"/></e>
-    <e lm="fatala"><i>fatal</i><par n="adj__adj"/></e>
     <e lm="faŭno"><i>fa</i><par n="ŭ"/><i>no</i><par n="nom__n"/></e>
-    <e lm="favora"><i>favor</i><par n="adj__adj"/></e>
     <e lm="favora"><i>favor</i><par n="adj__adj"/></e>
     <e lm="favori"><i>favor</i><par n="verb__vblex"/></e>
     <e lm="favorasaldo"><i>favorasaldo</i><par n="nom__n"/></e>
     <e lm="favoro"><i>favoro</i><par n="nom__n"/></e>
-    <e lm="fazeolo"><i>fazeolo</i><par n="nom__n"/></e>
     <e lm="fazeolo"><i>fazeolo</i><par n="nom__n"/></e>
     <e lm="fazo"><i>fazo</i><par n="nom__n"/></e>
     <e lm="febra"><i>febr</i><par n="adj__adj"/></e>
@@ -3872,7 +3623,6 @@
     <e lm="federo"><i>federo</i><par n="nom__n"/></e>
     <e lm="feino"><i>feino</i><par n="nom__n"/></e>
     <e lm="fekunda"><i>fekund</i><par n="adj__adj"/></e>
-    <e lm="fekunda"><i>fekund</i><par n="adj__adj"/></e>
     <e lm="fekundeco"><i>fekundeco</i><par n="nom__n"/></e>
     <e lm="fekundigo"><i>fekundigo</i><par n="nom__n"/></e>
     <e lm="feliĉa"><i>feli</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
@@ -3883,8 +3633,6 @@
     <e lm="femurosto"><i>femurosto</i><par n="nom__n"/></e>
     <e lm="fendi"><i>fend</i><par n="verb__vblex"/></e>
     <e lm="fendo"><i>fendo</i><par n="nom__n"/></e>
-    <e lm="fendo"><i>fendo</i><par n="nom__n"/></e>
-    <e lm="fendo"><i>fendo</i><par n="nom__n"/></e>
     <e lm="fenestro"><i>fenestro</i><par n="nom__n"/></e>
     <e lm="fenomena"><i>fenomen</i><par n="adj__adj"/></e>
     <e lm="fenomeno"><i>fenomeno</i><par n="nom__n"/></e>
@@ -3894,10 +3642,8 @@
     <e lm="fermi"><i>ferm</i><par n="verb__vblex"/></e>
     <e lm="fermenti"><i>ferment</i><par n="verb__vblex"/></e>
     <e lm="fermentado"><i>fermentado</i><par n="nom__n"/></e>
-    <e lm="fermentado"><i>fermentado</i><par n="nom__n"/></e>
     <e lm="fermo"><i>fermo</i><par n="nom__n"/></e>
     <e lm="fero"><i>fero</i><par n="nom__n"/></e>
-    <e lm="feroca"><i>feroc</i><par n="adj__adj"/></e>
     <e lm="feroca"><i>feroc</i><par n="adj__adj"/></e>
     <e lm="fervojo"><i>fervojo</i><par n="nom__n"/></e>
     <e lm="fervoro"><i>fervoro</i><par n="nom__n"/></e>
@@ -3911,7 +3657,6 @@
     <e lm="fibro"><i>fibro</i><par n="nom__n"/></e>
     <e lm="fidela"><i>fidel</i><par n="adj__adj"/></e>
     <e lm="fido"><i>fido</i><par n="nom__n"/></e>
-    <e lm="fiera"><i>fier</i><par n="adj__adj"/></e>
     <e lm="fiera"><i>fier</i><par n="adj__adj"/></e>
     <e lm="figo"><i>figo</i><par n="nom__n"/></e>
     <e lm="fiki"><i>fik</i><par n="verb__vblex"/></e>
@@ -3935,13 +3680,11 @@
     <e lm="financo"><i>financo</i><par n="nom__n"/></e>
     <e lm="finaranĝi"><i>finaran</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="fine"><i>fine</i><par n="komence__adv"/></e>
-    <e lm="fine"><i>fine</i><par n="komence__adv"/></e>
     <e lm="finfine"><i>finfine</i><par n="komence__adv"/></e>
     <e lm="fingro"><i>fingro</i><par n="nom__n"/></e>
     <e lm="finna"><i>finn</i><par n="nommf__n"/></e>
     <e lm="finna"><i>finn</i><par n="adj__adj"/></e>
     <e lm="fino"><i>fino</i><par n="nom__n"/></e>
-    <e lm="firma"><i>firm</i><par n="adj__adj"/></e>
     <e lm="firma"><i>firm</i><par n="adj__adj"/></e>
     <e lm="firmeco"><i>firmeco</i><par n="nom__n"/></e>
     <e lm="fiŝi"><i>fi</i><par n="ŝ"/><i></i><par n="verb__vblex"/></e>
@@ -3999,7 +3742,6 @@
     <e lm="forlasi"><i>forlas</i><par n="verb__vblex"/></e>
     <e lm="formi"><i>form</i><par n="verb__vblex"/></e>
     <e lm="formado"><i>formado</i><par n="nom__n"/></e>
-    <e lm="formado"><i>formado</i><par n="nom__n"/></e>
     <e lm="formala"><i>formal</i><par n="adj__adj"/></e>
     <e lm="formale"><i>formale</i><par n="komence__adv"/></e>
     <e lm="formaligi"><i>formalig</i><par n="verb__vblex"/></e>
@@ -4017,19 +3759,15 @@
     <e lm="forta"><i>fort</i><par n="adj__adj"/></e>
     <e lm="fortigi"><i>fortig</i><par n="verb__vblex"/></e>
     <e lm="fortika"><i>fortik</i><par n="adj__adj"/></e>
-    <e lm="fortika"><i>fortik</i><par n="adj__adj"/></e>
-    <e lm="fortika"><i>fortik</i><par n="adj__adj"/></e>
     <e lm="fortimigi"><i>fortimig</i><par n="verb__vblex"/></e>
     <e lm="forto"><i>forto</i><par n="nom__n"/></e>
     <e lm="fortuno"><i>fortuno</i><par n="nom__n"/></e>
     <e lm="forumo"><i>forumo</i><par n="nom__n"/></e>
     <e lm="fosi"><i>fos</i><par n="verb__vblex"/></e>
     <e lm="fosforo"><i>fosforo</i><par n="nom__n"/></e>
-    <e lm="fosforo"><i>fosforo</i><par n="nom__n"/></e>
     <e lm="fosilio"><i>fosilio</i><par n="nom__n"/></e>
     <e lm="fosto"><i>fosto</i><par n="nom__n"/></e>
     <e lm="foti"><i>fot</i><par n="verb__vblex"/></e>
-    <e lm="fotelo"><i>fotelo</i><par n="nom__n"/></e>
     <e lm="fotelo"><i>fotelo</i><par n="nom__n"/></e>
     <e lm="fotisto"><i>fotist</i><par n="nommf__n"/></e>
     <e lm="foto"><i>foto</i><par n="nom__n"/></e>
@@ -4038,14 +3776,9 @@
     <e lm="fotokopio"><i>fotokopio</i><par n="nom__n"/></e>
     <e lm="fotono"><i>fotono</i><par n="nom__n"/></e>
     <e lm="fragila"><i>fragil</i><par n="adj__adj"/></e>
-    <e lm="fragila"><i>fragil</i><par n="adj__adj"/></e>
     <e lm="fragmento"><i>fragmento</i><par n="nom__n"/></e>
     <e lm="frakasi"><i>frakas</i><par n="verb__vblex"/></e>
     <e lm="frakcii"><i>frakci</i><par n="verb__vblex"/></e>
-    <e lm="frakcio"><i>frakcio</i><par n="nom__n"/></e>
-    <e lm="frakcio"><i>frakcio</i><par n="nom__n"/></e>
-    <e lm="frakcio"><i>frakcio</i><par n="nom__n"/></e>
-    <e lm="frakcio"><i>frakcio</i><par n="nom__n"/></e>
     <e lm="frakcio"><i>frakcio</i><par n="nom__n"/></e>
     <e lm="frakturo"><i>frakturo</i><par n="nom__n"/></e>
     <e lm="franca"><i>franc</i><par n="adj__adj"/></e>
@@ -4057,9 +3790,6 @@
     <e lm="frazo"><i>frazo</i><par n="nom__n"/></e>
     <e lm="fregato"><i>fregato</i><par n="nom__n"/></e>
     <e lm="fremda"><i>fremd</i><par n="adj__adj"/></e>
-    <e lm="fremda"><i>fremd</i><par n="adj__adj"/></e>
-    <e lm="fremda"><i>fremd</i><par n="adj__adj"/></e>
-    <e lm="freneza"><i>frenez</i><par n="adj__adj"/></e>
     <e lm="freneza"><i>frenez</i><par n="adj__adj"/></e>
     <e lm="freŝa"><i>fre</i><par n="ŝ"/><i></i><par n="adj__adj"/></e>
     <e lm="fridujo"><i>fridujo</i><par n="nom__n"/></e>
@@ -4070,8 +3800,6 @@
     <e lm="fromaĝo"><i>froma</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="fronte"><i>fronte</i><par n="komence__adv"/></e>
     <e lm="fronte al"><i>fronte<b/>al</i><par n="at__pr"/></e>
-    <e lm="fronte al"><i>fronte<b/>al</i><par n="at__pr"/></e>
-    <e lm="fronte al"><i>fronte<b/>al</i><par n="at__pr"/></e>
     <e lm="frostigi"><i>frostig</i><par n="verb__vblex"/></e>
     <e lm="frostigujo"><i>frostigujo</i><par n="nom__n"/></e>
     <e lm="frostujo"><i>frostujo</i><par n="nom__n"/></e>
@@ -4079,8 +3807,6 @@
     <e lm="frua"><i>fru</i><par n="adj__adj"/></e>
     <e lm="frue"><i>frue</i><par n="komence__adv"/></e>
     <e lm="frukto"><i>frukto</i><par n="nom__n"/></e>
-    <e lm="frumatura"><i>frumatur</i><par n="adj__adj"/></e>
-    <e lm="frumatura"><i>frumatur</i><par n="adj__adj"/></e>
     <e lm="frumatura"><i>frumatur</i><par n="adj__adj"/></e>
     <e lm="frustri"><i>frustr</i><par n="verb__vblex"/></e>
     <e lm="ftizo"><i>ftizo</i><par n="nom__n"/></e>
@@ -4099,18 +3825,14 @@
     <e lm="funkcii"><i>funkci</i><par n="verb__vblex"/></e>
     <e lm="funkciado"><i>funkciado</i><par n="nom__n"/></e>
     <e lm="funkcio"><i>funkcio</i><par n="nom__n"/></e>
-    <e lm="funkcio"><i>funkcio</i><par n="nom__n"/></e>
     <e lm="furioza"><i>furioz</i><par n="adj__adj"/></e>
     <e lm="furioze"><i>furioze</i><par n="komence__adv"/></e>
     <e lm="furiozo"><i>furiozo</i><par n="nom__n"/></e>
-    <e lm="fusilo"><i>fusilo</i><par n="nom__n"/></e>
     <e lm="fusilo"><i>fusilo</i><par n="nom__n"/></e>
     <e lm="futbalisto"><i>futbalist</i><par n="nommf__n"/></e>
     <e lm="futbalo"><i>futbalo</i><par n="nom__n"/></e>
     <e lm="futura"><i>futur</i><par n="adj__adj"/></e>
     <e lm="futuro"><i>futuro</i><par n="nom__n"/></e>
-    <e lm="gaja"><i>gaj</i><par n="adj__adj"/></e>
-    <e lm="gaja"><i>gaj</i><par n="adj__adj"/></e>
     <e lm="gaja"><i>gaj</i><par n="adj__adj"/></e>
     <e lm="gajeco"><i>gajeco</i><par n="nom__n"/></e>
     <e lm="gajigi"><i>gajig</i><par n="verb__vblex"/></e>
@@ -4119,7 +3841,6 @@
     <e lm="gajno"><i>gajno</i><par n="nom__n"/></e>
     <e lm="galaksio"><i>galaksio</i><par n="nom__n"/></e>
     <e lm="galerio"><i>galerio</i><par n="nom__n"/></e>
-    <e lm="galono"><i>galono</i><par n="nom__n"/></e>
     <e lm="galono"><i>galono</i><par n="nom__n"/></e>
     <e lm="galopo"><i>galopo</i><par n="nom__n"/></e>
     <e lm="gamo"><i>gamo</i><par n="nom__n"/></e>
@@ -4131,7 +3852,6 @@
     <e lm="gardi"><i>gard</i><par n="verb__vblex"/></e>
     <e lm="gardado"><i>gardad</i><par n="nommf__n"/></e>
     <e lm="gardisto"><i>gardist</i><par n="nommf__n"/></e>
-    <e lm="gardisto"><i>gardist</i><par n="nommf__n"/></e>
     <e lm="gasbotelo"><i>gasbotelo</i><par n="nom__n"/></e>
     <e lm="gaso"><i>gaso</i><par n="nom__n"/></e>
     <e lm="gaso-dukto"><i>gaso-dukto</i><par n="nom__n"/></e>
@@ -4140,7 +3860,6 @@
     <e lm="gastejo"><i>gastejo</i><par n="nom__n"/></e>
     <e lm="gastiganto"><i>gastigant</i><par n="nommf__n"/></e>
     <e lm="gazono"><i>gazono</i><par n="nom__n"/></e>
-    <e lm="geedza"><i>geedz</i><par n="adj__adj"/></e>
     <e lm="geedza"><i>geedz</i><par n="adj__adj"/></e>
     <e lm="geedzeco"><i>geedzeco</i><par n="nom__n"/></e>
     <e lm="geedziĝo"><i>geedzi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -4157,7 +3876,6 @@
     <e lm="geometro"><i>geometr</i><par n="nommf__n"/></e>
     <e lm="geometria"><i>geometri</i><par n="adj__adj"/></e>
     <e lm="geometrio"><i>geometrio</i><par n="nom__n"/></e>
-    <e lm="geometrio"><i>geometrio</i><par n="nom__n"/></e>
     <e lm="geometro"><i>geometro</i><par n="nom__n"/></e>
     <e lm="gepatro"><i>gepatro</i><par n="nom__n"/></e>
     <e lm="geriatro"><i>geriatr</i><par n="nommf__n"/></e>
@@ -4170,14 +3888,12 @@
     <e lm="gimnazio"><i>gimnazio</i><par n="nom__n"/></e>
     <e lm="ginekologo"><i>ginekolog</i><par n="nommf__n"/></e>
     <e lm="gipso"><i>gipso</i><par n="nom__n"/></e>
-    <e lm="gipso"><i>gipso</i><par n="nom__n"/></e>
     <e lm="gitaro"><i>gitaro</i><par n="nom__n"/></e>
     <e lm="glaciinsulo"><i>glaciinsulo</i><par n="nom__n"/></e>
     <e lm="glacio"><i>glacio</i><par n="nom__n"/></e>
     <e lm="gladi"><i>glad</i><par n="verb__vblex"/></e>
     <e lm="gladilo"><i>gladilo</i><par n="nom__n"/></e>
     <e lm="glaso"><i>glaso</i><par n="nom__n"/></e>
-    <e lm="glata"><i>glat</i><par n="adj__adj"/></e>
     <e lm="glata"><i>glat</i><par n="adj__adj"/></e>
     <e lm="glavo"><i>glavo</i><par n="nom__n"/></e>
     <e lm="gliti"><i>glit</i><par n="verb__vblex"/></e>
@@ -4208,8 +3924,6 @@
     <e lm="gramo"><i>gramo</i><par n="nom__n"/></e>
     <e lm="granato"><i>granato</i><par n="nom__n"/></e>
     <e lm="granda"><i>grand</i><par n="adj__adj"/></e>
-    <e lm="granda"><i>grand</i><par n="adj__adj"/></e>
-    <e lm="grandeco"><i>grandeco</i><par n="nom__n"/></e>
     <e lm="grandeco"><i>grandeco</i><par n="nom__n"/></e>
     <e lm="grandioza"><i>grandioz</i><par n="adj__adj"/></e>
     <e lm="grando"><i>grando</i><par n="nom__n"/></e>
@@ -4217,11 +3931,8 @@
     <e lm="granito"><i>granito</i><par n="nom__n"/></e>
     <e lm="graso"><i>graso</i><par n="nom__n"/></e>
     <e lm="grava"><i>grav</i><par n="adj__adj"/></e>
-    <e lm="grava"><i>grav</i><par n="adj__adj"/></e>
-    <e lm="grava"><i>grav</i><par n="adj__adj"/></e>
     <e lm="grava"><i>grava</i><par n="komence__adv"/></e>
     <e lm="grave"><i>grave</i><par n="komence__adv"/></e>
-    <e lm="graveco"><i>graveco</i><par n="nom__n"/></e>
     <e lm="graveco"><i>graveco</i><par n="nom__n"/></e>
     <e lm="gravulo"><i>gravulo</i><par n="nom__n"/></e>
     <e lm="gravuri"><i>gravur</i><par n="verb__vblex"/></e>
@@ -4229,11 +3940,8 @@
     <e lm="greka"><i>grek</i><par n="adj__adj"/></e>
     <e lm="greno"><i>greno</i><par n="nom__n"/></e>
     <e lm="grifelo"><i>grifelo</i><par n="nom__n"/></e>
-    <e lm="grifelo"><i>grifelo</i><par n="nom__n"/></e>
     <e lm="grimaco"><i>grimaco</i><par n="nom__n"/></e>
     <e lm="gripo"><i>gripo</i><par n="nom__n"/></e>
-    <e lm="griza"><i>griz</i><par n="adj__adj"/></e>
-    <e lm="griza"><i>griz</i><par n="adj__adj"/></e>
     <e lm="griza"><i>griz</i><par n="adj__adj"/></e>
     <e lm="gruo"><i>gruo</i><par n="nom__n"/></e>
     <e lm="grupo"><i>grupo</i><par n="nom__n"/></e>
@@ -4280,13 +3988,11 @@
     <e lm="haro"><i>haro</i><par n="nom__n"/></e>
     <e lm="harpo"><i>harpo</i><par n="nom__n"/></e>
     <e lm="hasto"><i>hasto</i><par n="nom__n"/></e>
-    <e lm="hasto"><i>hasto</i><par n="nom__n"/></e>
     <e lm="haŭto"><i>ha</i><par n="ŭ"/><i>to</i><par n="nom__n"/></e>
     <e lm="havi"><i>hav</i><par n="verb__vblex"/></e>
     <e lm="haveno"><i>haveno</i><par n="nom__n"/></e>
     <e lm="havigi"><i>havig</i><par n="verb__vblex"/></e>
     <e lm="hazarda"><i>hazard</i><par n="adj__adj"/></e>
-    <e lm="hazarde"><i>hazarde</i><par n="komence__adv"/></e>
     <e lm="hazarde"><i>hazarde</i><par n="komence__adv"/></e>
     <e lm="hazardo"><i>hazardo</i><par n="nom__n"/></e>
     <e lm="hegemonio"><i>hegemonio</i><par n="nom__n"/></e>
@@ -4295,19 +4001,16 @@
     <e lm="hejtado"><i>hejtado</i><par n="nom__n"/></e>
     <e lm="hektaro"><i>hektaro</i><par n="nom__n"/></e>
     <e lm="hela"><i>hel</i><par n="adj__adj"/></e>
-    <e lm="hela"><i>hel</i><par n="adj__adj"/></e>
     <e lm="heliko"><i>heliko</i><par n="nom__n"/></e>
     <e lm="helikoptero"><i>helikoptero</i><par n="nom__n"/></e>
     <e lm="helpi"><i>help</i><par n="verb__vblex"/></e>
     <e lm="helpanto"><i>helpant</i><par n="nommf__n"/></e>
-    <e lm="helpema"><i>helpem</i><par n="adj__adj"/></e>
     <e lm="helpema"><i>helpem</i><par n="adj__adj"/></e>
     <e lm="helpo"><i>helpo</i><par n="nom__n"/></e>
     <e lm="hematomo"><i>hematomo</i><par n="nom__n"/></e>
     <e lm="hemikranio"><i>hemikranio</i><par n="nom__n"/></e>
     <e lm="hemisfero"><i>hemisfero</i><par n="nom__n"/></e>
     <e lm="hemoglobino"><i>hemoglobino</i><par n="nom__n"/></e>
-    <e lm="hepata"><i>hepat</i><par n="adj__adj"/></e>
     <e lm="hepata"><i>hepat</i><par n="adj__adj"/></e>
     <e lm="hepato"><i>hepato</i><par n="nom__n"/></e>
     <e lm="herarkio"><i>herarkio</i><par n="nom__n"/></e>
@@ -4316,13 +4019,11 @@
     <e lm="hereda"><i>hered</i><par n="adj__adj"/></e>
     <e lm="heredi"><i>hered</i><par n="verb__vblex"/></e>
     <e lm="hermetika"><i>hermetik</i><par n="adj__adj"/></e>
-    <e lm="hermetika"><i>hermetik</i><par n="adj__adj"/></e>
     <e lm="heroo"><i>hero</i><par n="nommf__n"/></e>
     <e lm="herpeto"><i>herpeto</i><par n="nom__n"/></e>
     <e lm="heterogena"><i>heterogen</i><par n="adj__adj"/></e>
     <e lm="heziti"><i>hezit</i><par n="verb__vblex"/></e>
     <e lm="hezitema"><i>hezitem</i><par n="adj__adj"/></e>
-    <e lm="hida"><i>hid</i><par n="adj__adj"/></e>
     <e lm="hida"><i>hid</i><par n="adj__adj"/></e>
     <e lm="hidrargo"><i>hidrargo</i><par n="nom__n"/></e>
     <e lm="hidraŭlika"><i>hidra</i><par n="ŭ"/><i>lik</i><par n="adj__adj"/></e>
@@ -4366,10 +4067,7 @@
     <e lm="hospitalo"><i>hospitalo</i><par n="nom__n"/></e>
     <e lm="hotelo"><i>hotelo</i><par n="nom__n"/></e>
     <e lm="humana"><i>human</i><par n="adj__adj"/></e>
-    <e lm="humana"><i>human</i><par n="adj__adj"/></e>
-    <e lm="humana"><i>human</i><par n="adj__adj"/></e>
     <e lm="humanismo"><i>humanismo</i><par n="nom__n"/></e>
-    <e lm="humida"><i>humid</i><par n="adj__adj"/></e>
     <e lm="humida"><i>humid</i><par n="adj__adj"/></e>
     <e lm="humido"><i>humido</i><par n="nom__n"/></e>
     <e lm="humila"><i>humil</i><par n="adj__adj"/></e>
@@ -4416,7 +4114,6 @@
     <e lm="implicita"><i>implicit</i><par n="adj__adj"/></e>
     <e lm="importi"><i>import</i><par n="verb__vblex"/></e>
     <e lm="importado"><i>importado</i><par n="nom__n"/></e>
-    <e lm="importado"><i>importado</i><par n="nom__n"/></e>
     <e lm="impostkolektado"><i>impostkolektado</i><par n="nom__n"/></e>
     <e lm="imposto"><i>imposto</i><par n="nom__n"/></e>
     <e lm="impostpaganto"><i>impostpagant</i><par n="nommf__n"/></e>
@@ -4427,11 +4124,9 @@
     <e lm="impreso"><i>impreso</i><par n="nom__n"/></e>
     <e lm="improvizi"><i>improviz</i><par n="verb__vblex"/></e>
     <e lm="improvizaĵo"><i>improviza</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="improvizaĵo"><i>improviza</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="impulsiĝema"><i>impulsi</i><par n="ĝ"/><i>em</i><par n="adj__adj"/></e>
     <e lm="impulso"><i>impulso</i><par n="nom__n"/></e>
     <e lm="imputi"><i>imput</i><par n="verb__vblex"/></e>
-    <e lm="imuna"><i>imun</i><par n="adj__adj"/></e>
     <e lm="imuna"><i>imun</i><par n="adj__adj"/></e>
     <e lm="imuneco"><i>imuneco</i><par n="nom__n"/></e>
     <e lm="ina"><i>in</i><par n="adj__adj"/></e>
@@ -4442,16 +4137,13 @@
     <e lm="incluzive"><i>incluzive</i><par n="komence__adv"/></e>
     <e lm="indio"><i>indi</i><par n="nommf__n"/></e>
     <e lm="indico"><i>indico</i><par n="nom__n"/></e>
-    <e lm="indico"><i>indico</i><par n="nom__n"/></e>
     <e lm="indiferenta"><i>indiferent</i><par n="adj__adj"/></e>
-    <e lm="indigno"><i>indigno</i><par n="nom__n"/></e>
     <e lm="indigno"><i>indigno</i><par n="nom__n"/></e>
     <e lm="indiĝeno"><i>indi</i><par n="ĝ"/><i>en</i><par n="nommf__n"/></e>
     <e lm="indiki"><i>indik</i><par n="verb__vblex"/></e>
     <e lm="indiko"><i>indiko</i><par n="nom__n"/></e>
     <e lm="individua"><i>individu</i><par n="adj__adj"/></e>
     <e lm="individuo"><i>individu</i><par n="nommf__n"/></e>
-    <e lm="individue"><i>individue</i><par n="komence__adv"/></e>
     <e lm="individue"><i>individue</i><par n="komence__adv"/></e>
     <e lm="indonezia"><i>indonezi</i><par n="adj__adj"/></e>
     <e lm="indukti"><i>indukt</i><par n="verb__vblex"/></e>
@@ -4492,16 +4184,12 @@
     <e lm="iniciatinto"><i>iniciatint</i><par n="nommf__n"/></e>
     <e lm="iniciativo"><i>iniciativo</i><par n="nom__n"/></e>
     <e lm="iniciato"><i>iniciato</i><par n="nom__n"/></e>
-    <e lm="iniciato"><i>iniciato</i><par n="nom__n"/></e>
     <e lm="injekti"><i>injekt</i><par n="verb__vblex"/></e>
     <e lm="injektilo"><i>injektilo</i><par n="nom__n"/></e>
-    <e lm="inklina"><i>inklin</i><par n="adj__adj"/></e>
-    <e lm="inklina"><i>inklin</i><par n="adj__adj"/></e>
     <e lm="inklina"><i>inklin</i><par n="adj__adj"/></e>
     <e lm="inkludi"><i>inklud</i><par n="verb__vblex"/></e>
     <e lm="inkluzive"><i>inkluzive</i><par n="komence__adv"/></e>
     <e lm="inko"><i>inko</i><par n="nom__n"/></e>
-    <e lm="inkubacio"><i>inkubacio</i><par n="nom__n"/></e>
     <e lm="inkubacio"><i>inkubacio</i><par n="nom__n"/></e>
     <e lm="inkvizicio"><i>inkvizicio</i><par n="nom__n"/></e>
     <e lm="ino"><i>ino</i><par n="nom__n"/></e>
@@ -4515,15 +4203,10 @@
     <e lm="instigi"><i>instig</i><par n="verb__vblex"/></e>
     <e lm="instinkto"><i>instinkto</i><par n="nom__n"/></e>
     <e lm="institucio"><i>institucio</i><par n="nom__n"/></e>
-    <e lm="institucio"><i>institucio</i><par n="nom__n"/></e>
     <e lm="instrui"><i>instru</i><par n="verb__vblex"/></e>
     <e lm="instruado"><i>instruado</i><par n="nom__n"/></e>
-    <e lm="instruado"><i>instruado</i><par n="nom__n"/></e>
-    <e lm="instrukcio"><i>instrukcio</i><par n="nom__n"/></e>
-    <e lm="instrukcio"><i>instrukcio</i><par n="nom__n"/></e>
     <e lm="instrukcio"><i>instrukcio</i><par n="nom__n"/></e>
     <e lm="instrumento"><i>instrumento</i><par n="nom__n"/></e>
-    <e lm="insularo"><i>insularo</i><par n="nom__n"/></e>
     <e lm="insularo"><i>insularo</i><par n="nom__n"/></e>
     <e lm="insulino"><i>insulino</i><par n="nom__n"/></e>
     <e lm="insulo"><i>insulo</i><par n="nom__n"/></e>
@@ -4538,10 +4221,7 @@
     <e lm="inteligenteco"><i>inteligenteco</i><par n="nom__n"/></e>
     <e lm="intenca"><i>intenc</i><par n="adj__adj"/></e>
     <e lm="intence"><i>intence</i><par n="komence__adv"/></e>
-    <e lm="intence"><i>intence</i><par n="komence__adv"/></e>
-    <e lm="intence"><i>intence</i><par n="komence__adv"/></e>
     <e lm="intenco"><i>intenco</i><par n="nom__n"/></e>
-    <e lm="intensa"><i>intens</i><par n="adj__adj"/></e>
     <e lm="intensa"><i>intens</i><par n="adj__adj"/></e>
     <e lm="intense"><i>intense</i><par n="komence__adv"/></e>
     <e lm="intenseco"><i>intenseco</i><par n="nom__n"/></e>
@@ -4550,7 +4230,6 @@
     <e lm="intera"><i>inter</i><par n="adj__adj"/></e>
     <e lm="inter"><i>inter</i><par n="at__pr"/></e>
     <e lm="interaga"><i>interag</i><par n="adj__adj"/></e>
-    <e lm="interago"><i>interago</i><par n="nom__n"/></e>
     <e lm="interago"><i>interago</i><par n="nom__n"/></e>
     <e lm="interesi"><i>interes</i><par n="verb__vblex"/></e>
     <e lm="interesa"><i>interes</i><par n="adj__adj"/></e>
@@ -4567,8 +4246,6 @@
     <e lm="interno"><i>intern</i><par n="nommf__n"/></e>
     <e lm="internacia"><i>internaci</i><par n="adj__adj"/></e>
     <e lm="interne"><i>interne</i><par n="komence__adv"/></e>
-    <e lm="interne"><i>interne</i><par n="komence__adv"/></e>
-    <e lm="interne"><i>interne</i><par n="komence__adv"/></e>
     <e lm="internigi"><i>internig</i><par n="verb__vblex"/></e>
     <e lm="interno"><i>interno</i><par n="nom__n"/></e>
     <e lm="interparolanto"><i>interparolant</i><par n="nommf__n"/></e>
@@ -4577,7 +4254,6 @@
     <e lm="interpreti"><i>interpret</i><par n="verb__vblex"/></e>
     <e lm="interpretisto"><i>interpretist</i><par n="nommf__n"/></e>
     <e lm="interpunkcio"><i>interpunkcio</i><par n="nom__n"/></e>
-    <e lm="interrilato"><i>interrilato</i><par n="nom__n"/></e>
     <e lm="interrilato"><i>interrilato</i><par n="nom__n"/></e>
     <e lm="interrompi"><i>interromp</i><par n="verb__vblex"/></e>
     <e lm="intersekco"><i>intersekco</i><par n="nom__n"/></e>
@@ -4594,7 +4270,6 @@
     <e lm="intimeco"><i>intimeco</i><par n="nom__n"/></e>
     <e lm="intrigo"><i>intrigo</i><par n="nom__n"/></e>
     <e lm="introspekto"><i>introspekto</i><par n="nom__n"/></e>
-    <e lm="introspekto"><i>introspekto</i><par n="nom__n"/></e>
     <e lm="intuo"><i>intuo</i><par n="nom__n"/></e>
     <e lm="inundi"><i>inund</i><par n="verb__vblex"/></e>
     <e lm="inundo"><i>inundo</i><par n="nom__n"/></e>
@@ -4602,19 +4277,16 @@
     <e lm="inventaro"><i>inventaro</i><par n="nom__n"/></e>
     <e lm="inventisto"><i>inventist</i><par n="nommf__n"/></e>
     <e lm="invento"><i>invento</i><par n="nom__n"/></e>
-    <e lm="invento"><i>invento</i><par n="nom__n"/></e>
     <e lm="inversa"><i>invers</i><par n="adj__adj"/></e>
     <e lm="inversio"><i>inversio</i><par n="nom__n"/></e>
     <e lm="investo"><i>investo</i><par n="nom__n"/></e>
     <e lm="inviti"><i>invit</i><par n="verb__vblex"/></e>
-    <e lm="invito"><i>invito</i><par n="nom__n"/></e>
     <e lm="invito"><i>invito</i><par n="nom__n"/></e>
     <e lm="io"><p><l>io</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="io"><p><l>ioj</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="io"><p><l>iojn</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="iom"><i>iom</i><par n="very__preadv"/></e>
     <e lm="iom"><i>iom</i><par n="komence__adv"/></e>
-    <e lm="iom post iom"><i>iom<b/>post<b/>iom</i><par n="komence__adv"/></e>
     <e lm="iom post iom"><i>iom<b/>post<b/>iom</i><par n="komence__adv"/></e>
     <e lm="ioma misfarto"><i>ioma misfarto</i><par n="nom__n"/></e>
     <e lm="iometa"><i>iomet</i><par n="adj__adj"/></e>
@@ -4638,12 +4310,10 @@
     <e lm="iu"><p><l>iun</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="izoli"><i>izol</i><par n="verb__vblex"/></e>
     <e lm="izolita"><i>izolit</i><par n="adj__adj"/></e>
-    <e lm="izolita"><i>izolit</i><par n="adj__adj"/></e>
     <e lm="izotopo"><i>izotopo</i><par n="nom__n"/></e>
     <e lm="izraeliano"><i>izraeliano</i><par n="nom__n"/></e>
     <e lm="jako"><i>jako</i><par n="nom__n"/></e>
     <e lm="jakto"><i>jakto</i><par n="nom__n"/></e>
-    <e lm="jam"><i>jam</i><par n="komence__adv"/></e>
     <e lm="jam"><i>jam</i><par n="komence__adv"/></e>
     <e lm="jamajkano"><i>jamajkan</i><par n="nommf__n"/></e>
     <e lm="januaro"><i>januaro</i><par n="nom__n"/></e>
@@ -4662,7 +4332,6 @@
     <e lm="juĝisto"><i>ju</i><par n="ĝ"/><i>ist</i><par n="nommf__n"/></e>
     <e lm="juĝo"><i>ju</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="julio"><i>julio</i><par n="nom__n"/></e>
-    <e lm="julio"><i>julio</i><par n="nom__n"/></e>
     <e lm="juneco"><i>juneco</i><par n="nom__n"/></e>
     <e lm="junio"><i>junio</i><par n="nom__n"/></e>
     <e lm="junulo"><i>junul</i><par n="nommf__n"/></e>
@@ -4673,7 +4342,6 @@
     <e lm="juristo"><i>jurist</i><par n="nommf__n"/></e>
     <e lm="justeco"><i>justeco</i><par n="nom__n"/></e>
     <e lm="juvelarto"><i>juvelarto</i><par n="nom__n"/></e>
-    <e lm="juvelo"><i>juvelo</i><par n="nom__n"/></e>
     <e lm="juvelo"><i>juvelo</i><par n="nom__n"/></e>
     <e lm="ĵaluza"><par n="ĵ"/><i>aluz</i><par n="adj__adj"/></e>
     <e lm="ĵargono"><par n="ĵ"/><i>argono</i><par n="nom__n"/></e>
@@ -4734,7 +4402,6 @@
     <e lm="kancero"><i>kancero</i><par n="nom__n"/></e>
     <e lm="kandidato"><i>kandidat</i><par n="nommf__n"/></e>
     <e lm="kano"><i>kano</i><par n="nom__n"/></e>
-    <e lm="kano"><i>kano</i><par n="nom__n"/></e>
     <e lm="kanono"><i>kanono</i><par n="nom__n"/></e>
     <e lm="kanti"><i>kant</i><par n="verb__vblex"/></e>
     <e lm="kantisto"><i>kantist</i><par n="nommf__n"/></e>
@@ -4777,8 +4444,6 @@
     <e lm="karto"><i>karto</i><par n="nom__n"/></e>
     <e lm="kartoĉo"><i>karto</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
     <e lm="kartono"><i>kartono</i><par n="nom__n"/></e>
-    <e lm="kartono"><i>kartono</i><par n="nom__n"/></e>
-    <e lm="kasacio"><i>kasacio</i><par n="nom__n"/></e>
     <e lm="kasacio"><i>kasacio</i><par n="nom__n"/></e>
     <e lm="kaskadego"><i>kaskadego</i><par n="nom__n"/></e>
     <e lm="kaskedo"><i>kaskedo</i><par n="nom__n"/></e>
@@ -4792,13 +4457,11 @@
     <e lm="kaŝita"><i>ka</i><par n="ŝ"/><i>it</i><par n="adj__adj"/></e>
     <e lm="kaŝpasaĝero"><i>ka</i><par n="ŝ"/><i>pasa</i><par n="ĝ"/><i>ero</i><par n="nom__n"/></e>
     <e lm="kaŝtanarbo"><i>ka</i><par n="ŝ"/><i>tanarbo</i><par n="nom__n"/></e>
-    <e lm="kaŝtanarbo"><i>ka</i><par n="ŝ"/><i>tanarbo</i><par n="nom__n"/></e>
     <e lm="kaŝtanujo"><i>ka</i><par n="ŝ"/><i>tanujo</i><par n="nom__n"/></e>
     <e lm="kato"><i>kat</i><par n="nommf__n"/></e>
     <e lm="katalizilo"><i>katalizilo</i><par n="nom__n"/></e>
     <e lm="katalogo"><i>katalogo</i><par n="nom__n"/></e>
     <e lm="kataluno"><i>katalun</i><par n="nommf__n"/></e>
-    <e lm="katapulto"><i>katapulto</i><par n="nom__n"/></e>
     <e lm="katapulto"><i>katapulto</i><par n="nom__n"/></e>
     <e lm="katarakto"><i>katarakto</i><par n="nom__n"/></e>
     <e lm="kataro"><i>kataro</i><par n="nom__n"/></e>
@@ -4808,7 +4471,6 @@
     <e lm="kategorie"><i>kategorie</i><par n="komence__adv"/></e>
     <e lm="kategorio"><i>kategorio</i><par n="nom__n"/></e>
     <e lm="kateĥismo"><i>kate</i><par n="ĥ"/><i>ismo</i><par n="nom__n"/></e>
-    <e lm="katekismo"><i>katekismo</i><par n="nom__n"/></e>
     <e lm="katekismo"><i>katekismo</i><par n="nom__n"/></e>
     <e lm="katoliko"><i>katolik</i><par n="nommf__n"/></e>
     <e lm="katolika"><i>katolik</i><par n="adj__adj"/></e>
@@ -4878,7 +4540,6 @@
     <e lm="klaki"><i>klak</i><par n="verb__vblex"/></e>
     <e lm="klano"><i>klano</i><par n="nom__n"/></e>
     <e lm="klare"><i>klare</i><par n="komence__adv"/></e>
-    <e lm="klare"><i>klare</i><par n="komence__adv"/></e>
     <e lm="klareco"><i>klareco</i><par n="nom__n"/></e>
     <e lm="klarigi"><i>klarig</i><par n="verb__vblex"/></e>
     <e lm="klarneto"><i>klarneto</i><par n="nom__n"/></e>
@@ -4889,7 +4550,6 @@
     <e lm="klaŭzo"><i>kla</i><par n="ŭ"/><i>zo</i><par n="nom__n"/></e>
     <e lm="klavaro"><i>klavaro</i><par n="nom__n"/></e>
     <e lm="klavo"><i>klavo</i><par n="nom__n"/></e>
-    <e lm="klera"><i>kler</i><par n="adj__adj"/></e>
     <e lm="klera"><i>kler</i><par n="adj__adj"/></e>
     <e lm="kleriko"><i>klerik</i><par n="nommf__n"/></e>
     <e lm="kliento"><i>klient</i><par n="nommf__n"/></e>
@@ -4902,7 +4562,6 @@
     <e lm="kloro"><i>kloro</i><par n="nom__n"/></e>
     <e lm="klubo"><i>klubo</i><par n="nom__n"/></e>
     <e lm="kluzpordo"><i>kluzpordo</i><par n="nom__n"/></e>
-    <e lm="knabo"><i>knab</i><par n="nommf__n"/></e>
     <e lm="knabo"><i>knab</i><par n="nommf__n"/></e>
     <e lm="knelo"><i>knelo</i><par n="nom__n"/></e>
     <e lm="koalicio"><i>koalicio</i><par n="nom__n"/></e>
@@ -4919,13 +4578,10 @@
     <e lm="kokido"><i>kokido</i><par n="nom__n"/></e>
     <e lm="kokso"><i>kokso</i><par n="nom__n"/></e>
     <e lm="kolbaso"><i>kolbaso</i><par n="nom__n"/></e>
-    <e lm="kolbaso"><i>kolbaso</i><par n="nom__n"/></e>
     <e lm="kolego"><i>koleg</i><par n="nommf__n"/></e>
     <e lm="kolekti"><i>kolekt</i><par n="verb__vblex"/></e>
     <e lm="kolektiva"><i>kolektiv</i><par n="adj__adj"/></e>
     <e lm="kolekto"><i>kolekto</i><par n="nom__n"/></e>
-    <e lm="kolero"><i>kolero</i><par n="nom__n"/></e>
-    <e lm="kolero"><i>kolero</i><par n="nom__n"/></e>
     <e lm="kolero"><i>kolero</i><par n="nom__n"/></e>
     <e lm="kolesterolo"><i>kolesterolo</i><par n="nom__n"/></e>
     <e lm="kolizii"><i>kolizi</i><par n="verb__vblex"/></e>
@@ -4943,17 +4599,13 @@
     <e lm="kombini"><i>kombin</i><par n="verb__vblex"/></e>
     <e lm="komedio"><i>komedio</i><par n="nom__n"/></e>
     <e lm="komenca"><i>komenc</i><par n="adj__adj"/></e>
-    <e lm="komenca"><i>komenc</i><par n="adj__adj"/></e>
     <e lm="komenci"><i>komenc</i><par n="verb__vblex"/></e>
     <e lm="komence"><i>komence</i><par n="komence__adv"/></e>
     <e lm="komenco"><i>komenco</i><par n="nom__n"/></e>
-    <e lm="komenco"><i>komenco</i><par n="nom__n"/></e>
     <e lm="komento"><i>komento</i><par n="nom__n"/></e>
-    <e lm="komerca"><i>komerc</i><par n="adj__adj"/></e>
     <e lm="komerca"><i>komerc</i><par n="adj__adj"/></e>
     <e lm="komerci"><i>komerc</i><par n="verb__vblex"/></e>
     <e lm="komerco"><i>komerco</i><par n="nom__n"/></e>
-    <e lm="komforta"><i>komfort</i><par n="adj__adj"/></e>
     <e lm="komforta"><i>komfort</i><par n="adj__adj"/></e>
     <e lm="komforto"><i>komforto</i><par n="nom__n"/></e>
     <e lm="komikso"><i>komiks</i><par n="nommf__n"/></e>
@@ -4961,18 +4613,15 @@
     <e lm="komisiono"><i>komisiono</i><par n="nom__n"/></e>
     <e lm="komitato"><i>komitato</i><par n="nom__n"/></e>
     <e lm="kompakta"><i>kompakt</i><par n="adj__adj"/></e>
-    <e lm="kompakta"><i>kompakt</i><par n="adj__adj"/></e>
     <e lm="kompano"><i>kompan</i><par n="nommf__n"/></e>
     <e lm="kompaniano"><i>kompanian</i><par n="nommf__n"/></e>
     <e lm="kompanio"><i>kompanio</i><par n="nom__n"/></e>
     <e lm="kompari"><i>kompar</i><par n="verb__vblex"/></e>
     <e lm="komparacio"><i>komparacio</i><par n="nom__n"/></e>
-    <e lm="komparacio"><i>komparacio</i><par n="nom__n"/></e>
     <e lm="kompati"><i>kompat</i><par n="verb__vblex"/></e>
     <e lm="kompato"><i>kompato</i><par n="nom__n"/></e>
     <e lm="kompensi"><i>kompens</i><par n="verb__vblex"/></e>
     <e lm="kompetenta"><i>kompetent</i><par n="adj__adj"/></e>
-    <e lm="kompleksa"><i>kompleks</i><par n="adj__adj"/></e>
     <e lm="kompleksa"><i>kompleks</i><par n="adj__adj"/></e>
     <e lm="kompletigi"><i>kompletig</i><par n="verb__vblex"/></e>
     <e lm="komplezi"><i>komplez</i><par n="verb__vblex"/></e>
@@ -4994,23 +4643,12 @@
     <e lm="komuti"><i>komut</i><par n="verb__vblex"/></e>
     <e lm="koni"><i>kon</i><par n="verb__vblex"/></e>
     <e lm="konata"><i>konat</i><par n="adj__adj"/></e>
-    <e lm="konata"><i>konat</i><par n="adj__adj"/></e>
     <e lm="konateco"><i>konateco</i><par n="nom__n"/></e>
     <e lm="koncedi"><i>konced</i><par n="verb__vblex"/></e>
     <e lm="koncentri"><i>koncentr</i><par n="verb__vblex"/></e>
     <e lm="koncepti"><i>koncept</i><par n="verb__vblex"/></e>
     <e lm="koncepto"><i>koncepto</i><par n="nom__n"/></e>
-    <e lm="koncepto"><i>koncepto</i><par n="nom__n"/></e>
     <e lm="koncerni"><i>koncern</i><par n="verb__vblex"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
-    <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
     <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
     <e lm="koncerto"><i>koncerto</i><par n="nom__n"/></e>
     <e lm="koncesii"><i>koncesi</i><par n="verb__vblex"/></e>
@@ -5028,8 +4666,6 @@
     <e lm="konduti"><i>kondut</i><par n="verb__vblex"/></e>
     <e lm="konduto"><i>konduto</i><par n="nom__n"/></e>
     <e lm="konekto"><i>konekto</i><par n="nom__n"/></e>
-    <e lm="konekto"><i>konekto</i><par n="nom__n"/></e>
-    <e lm="konfederacio"><i>konfederacio</i><par n="nom__n"/></e>
     <e lm="konfederacio"><i>konfederacio</i><par n="nom__n"/></e>
     <e lm="konfesi"><i>konfes</i><par n="verb__vblex"/></e>
     <e lm="konfidi"><i>konfid</i><par n="verb__vblex"/></e>
@@ -5056,7 +4692,6 @@
     <e lm="konkurenci"><i>konkurenc</i><par n="verb__vblex"/></e>
     <e lm="konkurenco"><i>konkurenco</i><par n="nom__n"/></e>
     <e lm="konkuro"><i>konkuro</i><par n="nom__n"/></e>
-    <e lm="konkuro"><i>konkuro</i><par n="nom__n"/></e>
     <e lm="konkurso"><i>konkurso</i><par n="nom__n"/></e>
     <e lm="kono"><i>kono</i><par n="nom__n"/></e>
     <e lm="konsekri"><i>konsekr</i><par n="verb__vblex"/></e>
@@ -5071,7 +4706,6 @@
     <e lm="konsiderante"><i>konsiderante</i><par n="after__cnjadv"/></e>
     <e lm="konsiderante"><i>konsiderante</i><par n="at__pr"/></e>
     <e lm="konsiderinda"><i>konsiderind</i><par n="adj__adj"/></e>
-    <e lm="konsiderinda"><i>konsiderind</i><par n="adj__adj"/></e>
     <e lm="konsiderinde"><i>konsiderinde</i><par n="komence__adv"/></e>
     <e lm="konsidero"><i>konsidero</i><par n="nom__n"/></e>
     <e lm="konsigni"><i>konsign</i><par n="verb__vblex"/></e>
@@ -5084,19 +4718,15 @@
     <e lm="konsorcio"><i>konsorcio</i><par n="nom__n"/></e>
     <e lm="konspiri"><i>konspir</i><par n="verb__vblex"/></e>
     <e lm="konstanta"><i>konstant</i><par n="adj__adj"/></e>
-    <e lm="konstanta"><i>konstant</i><par n="adj__adj"/></e>
-    <e lm="konstanta"><i>konstant</i><par n="adj__adj"/></e>
     <e lm="konstante"><i>konstante</i><par n="komence__adv"/></e>
     <e lm="konstati"><i>konstat</i><par n="verb__vblex"/></e>
     <e lm="konstelacio"><i>konstelacio</i><par n="nom__n"/></e>
     <e lm="konsterno"><i>konsterno</i><par n="nom__n"/></e>
     <e lm="konstitui"><i>konstitu</i><par n="verb__vblex"/></e>
     <e lm="konstitucio"><i>konstitucio</i><par n="nom__n"/></e>
-    <e lm="konstitucio"><i>konstitucio</i><par n="nom__n"/></e>
     <e lm="konstrui"><i>konstru</i><par n="verb__vblex"/></e>
     <e lm="konstruaĵo"><i>konstrua</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="konstruisto"><i>konstruist</i><par n="nommf__n"/></e>
-    <e lm="konstruo"><i>konstruo</i><par n="nom__n"/></e>
     <e lm="konstruo"><i>konstruo</i><par n="nom__n"/></e>
     <e lm="konsulo"><i>konsul</i><par n="nommf__n"/></e>
     <e lm="konsulti"><i>konsult</i><par n="verb__vblex"/></e>
@@ -5108,7 +4738,6 @@
     <e lm="kontakto"><i>kontakto</i><par n="nom__n"/></e>
     <e lm="kontempli"><i>kontempl</i><par n="verb__vblex"/></e>
     <e lm="kontenero"><i>kontener</i><par n="nommf__n"/></e>
-    <e lm="kontenta"><i>kontent</i><par n="adj__adj"/></e>
     <e lm="kontenta"><i>kontent</i><par n="adj__adj"/></e>
     <e lm="kontentigi"><i>kontentig</i><par n="verb__vblex"/></e>
     <e lm="kontentigo"><i>kontentigo</i><par n="nom__n"/></e>
@@ -5139,13 +4768,10 @@
     <e lm="kontrolo"><i>kontrolo</i><par n="nom__n"/></e>
     <e lm="konturo"><i>konturo</i><par n="nom__n"/></e>
     <e lm="konuso"><i>konuso</i><par n="nom__n"/></e>
-    <e lm="konuso"><i>konuso</i><par n="nom__n"/></e>
     <e lm="konvalesko"><i>konvalesko</i><par n="nom__n"/></e>
     <e lm="konveni"><i>konven</i><par n="verb__vblex"/></e>
     <e lm="konvencio"><i>konvencio</i><par n="nom__n"/></e>
-    <e lm="konvencio"><i>konvencio</i><par n="nom__n"/></e>
     <e lm="konverĝi"><i>konver</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="konversacio"><i>konversacio</i><par n="nom__n"/></e>
     <e lm="konversacio"><i>konversacio</i><par n="nom__n"/></e>
     <e lm="konverso"><i>konverso</i><par n="nom__n"/></e>
     <e lm="konverti"><i>konvert</i><par n="verb__vblex"/></e>
@@ -5163,10 +4789,8 @@
     <e lm="koregrafio"><i>koregrafio</i><par n="nom__n"/></e>
     <e lm="korekti"><i>korekt</i><par n="verb__vblex"/></e>
     <e lm="korekto"><i>korekto</i><par n="nom__n"/></e>
-    <e lm="korekto"><i>korekto</i><par n="nom__n"/></e>
     <e lm="korespondanto"><i>korespondant</i><par n="nommf__n"/></e>
     <e lm="koridoro"><i>koridoro</i><par n="nom__n"/></e>
-    <e lm="korinklino"><i>korinklino</i><par n="nom__n"/></e>
     <e lm="korinklino"><i>korinklino</i><par n="nom__n"/></e>
     <e lm="kornico"><i>kornico</i><par n="nom__n"/></e>
     <e lm="korno"><i>korno</i><par n="nom__n"/></e>
@@ -5206,8 +4830,6 @@
     <e lm="kreditoro"><i>kreditor</i><par n="nommf__n"/></e>
     <e lm="kredo"><i>kredo</i><par n="nom__n"/></e>
     <e lm="kremo"><i>kremo</i><par n="nom__n"/></e>
-    <e lm="kremo"><i>kremo</i><par n="nom__n"/></e>
-    <e lm="krepusko"><i>krepusko</i><par n="nom__n"/></e>
     <e lm="krepusko"><i>krepusko</i><par n="nom__n"/></e>
     <e lm="kreski"><i>kresk</i><par n="verb__vblex"/></e>
     <e lm="kreskanta"><i>kreskant</i><par n="adj__adj"/></e>
@@ -5228,13 +4850,11 @@
     <e lm="krizo"><i>krizo</i><par n="nom__n"/></e>
     <e lm="krom"><i>krom</i><par n="at__pr"/></e>
     <e lm="krom se"><i>krom<b/>se</i><par n="after__cnjadv"/></e>
-    <e lm="krom se"><i>krom<b/>se</i><par n="after__cnjadv"/></e>
     <e lm="krome"><i>krome</i><par n="komence__adv"/></e>
     <e lm="kromosomo"><i>kromosomo</i><par n="nom__n"/></e>
     <e lm="kroni"><i>kron</i><par n="verb__vblex"/></e>
     <e lm="kronika"><i>kronik</i><par n="adj__adj"/></e>
     <e lm="kroniko"><i>kroniko</i><par n="nom__n"/></e>
-    <e lm="krono"><i>krono</i><par n="nom__n"/></e>
     <e lm="krono"><i>krono</i><par n="nom__n"/></e>
     <e lm="kronologio"><i>kronologio</i><par n="nom__n"/></e>
     <e lm="krucifikso"><i>krucifikso</i><par n="nom__n"/></e>
@@ -5242,16 +4862,11 @@
     <e lm="kruco"><i>kruco</i><par n="nom__n"/></e>
     <e lm="kruĉo"><i>kru</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
     <e lm="kruda"><i>krud</i><par n="adj__adj"/></e>
-    <e lm="kruda"><i>krud</i><par n="adj__adj"/></e>
-    <e lm="kruda"><i>krud</i><par n="adj__adj"/></e>
-    <e lm="kruda"><i>krud</i><par n="adj__adj"/></e>
     <e lm="kruela"><i>kruel</i><par n="adj__adj"/></e>
     <e lm="krueleco"><i>krueleco</i><par n="nom__n"/></e>
     <e lm="kruro"><i>kruro</i><par n="nom__n"/></e>
     <e lm="kuba"><i>kub</i><par n="adj__adj"/></e>
     <e lm="kubo"><i>kubo</i><par n="nom__n"/></e>
-    <e lm="kubo"><i>kubo</i><par n="nom__n"/></e>
-    <e lm="kubuto"><i>kubuto</i><par n="nom__n"/></e>
     <e lm="kubuto"><i>kubuto</i><par n="nom__n"/></e>
     <e lm="kudri"><i>kudr</i><par n="verb__vblex"/></e>
     <e lm="kudro"><i>kudro</i><par n="nom__n"/></e>
@@ -5263,11 +4878,9 @@
     <e lm="kukaĵo"><i>kuka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="kukbakejo"><i>kukbakejo</i><par n="nom__n"/></e>
     <e lm="kukumo"><i>kukumo</i><par n="nom__n"/></e>
-    <e lm="kukumo"><i>kukumo</i><par n="nom__n"/></e>
     <e lm="kukvendejo"><i>kukvendejo</i><par n="nom__n"/></e>
     <e lm="kulero"><i>kulero</i><par n="nom__n"/></e>
     <e lm="kuliso"><i>kuliso</i><par n="nom__n"/></e>
-    <e lm="kulmino"><i>kulmino</i><par n="nom__n"/></e>
     <e lm="kulmino"><i>kulmino</i><par n="nom__n"/></e>
     <e lm="kulpa"><i>kulp</i><par n="adj__adj"/></e>
     <e lm="kulpo"><i>kulpo</i><par n="nom__n"/></e>
@@ -5275,7 +4888,6 @@
     <e lm="kultura"><i>kultur</i><par n="adj__adj"/></e>
     <e lm="kulturo"><i>kulturo</i><par n="nom__n"/></e>
     <e lm="kun"><i>kun</i><par n="at__pr"/></e>
-    <e lm="kune"><i>kune</i><par n="komence__adv"/></e>
     <e lm="kune"><i>kune</i><par n="komence__adv"/></e>
     <e lm="kune"><i>kune</i><par n="at__pr"/></e>
     <e lm="kune kun"><i>kune<b/>kun</i><par n="at__pr"/></e>
@@ -5307,13 +4919,9 @@
     <e lm="kurso"><i>kurso</i><par n="nom__n"/></e>
     <e lm="kurteno"><i>kurteno</i><par n="nom__n"/></e>
     <e lm="kuseneto"><i>kuseneto</i><par n="nom__n"/></e>
-    <e lm="kuseneto"><i>kuseneto</i><par n="nom__n"/></e>
     <e lm="kuŝejo"><i>ku</i><par n="ŝ"/><i>ejo</i><par n="nom__n"/></e>
     <e lm="kutimi"><i>kutim</i><par n="verb__vblex"/></e>
     <e lm="kutima"><i>kutim</i><par n="adj__adj"/></e>
-    <e lm="kutime"><i>kutime</i><par n="komence__adv"/></e>
-    <e lm="kutime"><i>kutime</i><par n="komence__adv"/></e>
-    <e lm="kutime"><i>kutime</i><par n="komence__adv"/></e>
     <e lm="kutime"><i>kutime</i><par n="komence__adv"/></e>
     <e lm="kutimo"><i>kutimo</i><par n="nom__n"/></e>
     <e lm="kvadrato"><i>kvadrato</i><par n="nom__n"/></e>
@@ -5321,9 +4929,7 @@
     <e lm="kvalifikita"><i>kvalifikit</i><par n="adj__adj"/></e>
     <e lm="kvalifiko"><i>kvalifiko</i><par n="nom__n"/></e>
     <e lm="kvalito"><i>kvalito</i><par n="nom__n"/></e>
-    <e lm="kvalito"><i>kvalito</i><par n="nom__n"/></e>
     <e lm="eco"><i>eco</i><par n="nom__n"/></e>
-    <e lm="kvankam"><i>kvankam</i><par n="after__cnjadv"/></e>
     <e lm="kvankam"><i>kvankam</i><par n="after__cnjadv"/></e>
     <e lm="kvanto"><i>kvanto</i><par n="nom__n"/></e>
     <e lm="kvaranteno"><i>kvaranteno</i><par n="nom__n"/></e>
@@ -5331,14 +4937,8 @@
     <e lm="kvarteto"><i>kvarteto</i><par n="nom__n"/></e>
     <e lm="kvereli"><i>kverel</i><par n="verb__vblex"/></e>
     <e lm="kverelo"><i>kverelo</i><par n="nom__n"/></e>
-    <e lm="kverelo"><i>kverelo</i><par n="nom__n"/></e>
     <e lm="kverko"><i>kverko</i><par n="nom__n"/></e>
     <e lm="kverstango"><i>kverstango</i><par n="nom__n"/></e>
-    <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
-    <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
-    <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
-    <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
-    <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
     <e lm="kvieta"><i>kviet</i><par n="adj__adj"/></e>
     <e lm="kvoto"><i>kvoto</i><par n="nom__n"/></e>
     <e lm="la"><i>la</i><par n="la__det"/></e>
@@ -5378,7 +4978,6 @@
     <e lm="lasi"><i>las</i><par n="verb__vblex"/></e>
     <e lm="lasero"><i>lasero</i><par n="nom__n"/></e>
     <e lm="lasta"><i>last</i><par n="adj__adj"/></e>
-    <e lm="lasta"><i>last</i><par n="adj__adj"/></e>
     <e lm="laste"><i>laste</i><par n="komence__adv"/></e>
     <e lm="latenta"><i>latent</i><par n="adj__adj"/></e>
     <e lm="latina"><i>latin</i><par n="adj__adj"/></e>
@@ -5397,7 +4996,6 @@
     <e lm="laŭteksta"><i>la</i><par n="ŭ"/><i>tekst</i><par n="adj__adj"/></e>
     <e lm="laŭtparolilo"><i>la</i><par n="ŭ"/><i>tparolilo</i><par n="nom__n"/></e>
     <e lm="laŭvola"><i>la</i><par n="ŭ"/><i>vol</i><par n="adj__adj"/></e>
-    <e lm="laŭvola"><i>la</i><par n="ŭ"/><i>vol</i><par n="adj__adj"/></e>
     <e lm="laŭvorta"><i>la</i><par n="ŭ"/><i>vort</i><par n="adj__adj"/></e>
     <e lm="laŭvorte"><i>la</i><par n="ŭ"/><i>vorte</i><par n="komence__adv"/></e>
     <e lm="laŭvorte"><i>laŭvorte</i><par n="komence__adv"/></e>
@@ -5414,7 +5012,6 @@
     <e lm="legitimi"><i>legitim</i><par n="verb__vblex"/></e>
     <e lm="legitimado"><i>legitimado</i><par n="nom__n"/></e>
     <e lm="lego"><i>lego</i><par n="nom__n"/></e>
-    <e lm="lego"><i>lego</i><par n="nom__n"/></e>
     <e lm="legomo"><i>legomo</i><par n="nom__n"/></e>
     <e lm="leĝa"><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
     <e lm="leĝaro"><i>le</i><par n="ĝ"/><i>aro</i><par n="nom__n"/></e>
@@ -5430,9 +5027,7 @@
     <e lm="lernejano"><i>lernejan</i><par n="nommf__n"/></e>
     <e lm="lernejo"><i>lernejo</i><par n="nom__n"/></e>
     <e lm="lerta"><i>lert</i><par n="adj__adj"/></e>
-    <e lm="lerta"><i>lert</i><par n="adj__adj"/></e>
     <e lm="lertaĵo"><i>lerta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="lerteco"><i>lerteco</i><par n="nom__n"/></e>
     <e lm="lerteco"><i>lerteco</i><par n="nom__n"/></e>
     <e lm="lesbanino"><i>lesbanino</i><par n="nom__n"/></e>
     <e lm="letargio"><i>letargio</i><par n="nom__n"/></e>
@@ -5444,13 +5039,11 @@
     <e lm="libera"><i>liber</i><par n="adj__adj"/></e>
     <e lm="liberala"><i>liberal</i><par n="adj__adj"/></e>
     <e lm="libere"><i>libere</i><par n="komence__adv"/></e>
-    <e lm="libere"><i>libere</i><par n="komence__adv"/></e>
     <e lm="libereco"><i>libereco</i><par n="nom__n"/></e>
     <e lm="liberigi"><i>liberig</i><par n="verb__vblex"/></e>
     <e lm="liberigo"><i>liberigo</i><par n="nom__n"/></e>
     <e lm="librejo"><i>librejo</i><par n="nom__n"/></e>
     <e lm="libro"><i>libro</i><par n="nom__n"/></e>
-    <e lm="librotenado"><i>librotenado</i><par n="nom__n"/></e>
     <e lm="librotenado"><i>librotenado</i><par n="nom__n"/></e>
     <e lm="librotenisto"><i>librotenist</i><par n="nommf__n"/></e>
     <e lm="licenco"><i>licenco</i><par n="nom__n"/></e>
@@ -5460,13 +5053,11 @@
     <e lm="lignaĵejo"><i>ligna</i><par n="ĵ"/><i>ejo</i><par n="nom__n"/></e>
     <e lm="ligno"><i>ligno</i><par n="nom__n"/></e>
     <e lm="ligo"><i>ligo</i><par n="nom__n"/></e>
-    <e lm="ligo"><i>ligo</i><par n="nom__n"/></e>
     <e lm="likva"><i>likv</i><par n="adj__adj"/></e>
     <e lm="likvidi"><i>likvid</i><par n="verb__vblex"/></e>
     <e lm="likvido"><i>likvido</i><par n="nom__n"/></e>
     <e lm="likvoro"><i>likvoro</i><par n="nom__n"/></e>
     <e lm="limigi"><i>limig</i><par n="verb__vblex"/></e>
-    <e lm="limigo"><i>limigo</i><par n="nom__n"/></e>
     <e lm="limigo"><i>limigo</i><par n="nom__n"/></e>
     <e lm="limo"><i>limo</i><par n="nom__n"/></e>
     <e lm="limŝtono"><i>lim</i><par n="ŝ"/><i>tono</i><par n="nom__n"/></e>
@@ -5508,10 +5099,8 @@
     <e lm="longitudo"><i>longitudo</i><par n="nom__n"/></e>
     <e lm="longtempe"><i>longtempe</i><par n="komence__adv"/></e>
     <e lm="loŝantaro"><i>lo</i><par n="ŝ"/><i>antaro</i><par n="nom__n"/></e>
-    <e lm="loŝantaro"><i>lo</i><par n="ŝ"/><i>antaro</i><par n="nom__n"/></e>
     <e lm="lotado"><i>lotado</i><par n="nom__n"/></e>
     <e lm="loterio"><i>loterio</i><par n="nom__n"/></e>
-    <e lm="loto"><i>loto</i><par n="nom__n"/></e>
     <e lm="loto"><i>loto</i><par n="nom__n"/></e>
     <e lm="lui"><i>lu</i><par n="verb__vblex"/></e>
     <e lm="ludi"><i>lud</i><par n="verb__vblex"/></e>
@@ -5550,7 +5139,6 @@
     <e lm="makuli"><i>makul</i><par n="verb__vblex"/></e>
     <e lm="makulo"><i>makulo</i><par n="nom__n"/></e>
     <e lm="malabunda"><i>malabund</i><par n="adj__adj"/></e>
-    <e lm="malabunda"><i>malabund</i><par n="adj__adj"/></e>
     <e lm="malakcepti"><i>malakcept</i><par n="verb__vblex"/></e>
     <e lm="malakordo"><i>malakordo</i><par n="nom__n"/></e>
     <e lm="malaktuala"><i>malaktual</i><par n="adj__adj"/></e>
@@ -5562,7 +5150,6 @@
     <e lm="malantaŭe"><i>malanta</i><par n="ŭ"/><i>e</i><par n="komence__adv"/></e>
     <e lm="malantaŭen"><i>malanta</i><par n="ŭ"/><i>en</i><par n="komence__adv"/></e>
     <e lm="malantaŭen"><i>malantaŭen</i><par n="komence__adv"/></e>
-    <e lm="malantaŭen"><i>malantaŭen</i><par n="komence__adv"/></e>
     <e lm="malaprobi"><i>malaprob</i><par n="verb__vblex"/></e>
     <e lm="malaprobo"><i>malaprobo</i><par n="nom__n"/></e>
     <e lm="malario"><i>malario</i><par n="nom__n"/></e>
@@ -5572,18 +5159,13 @@
     <e lm="malbeno"><i>malbeno</i><par n="nom__n"/></e>
     <e lm="malbona"><i>malbon</i><par n="adj__adj"/></e>
     <e lm="malbone"><i>malbone</i><par n="komence__adv"/></e>
-    <e lm="malbone"><i>malbone</i><par n="komence__adv"/></e>
     <e lm="malboneco"><i>malboneco</i><par n="nom__n"/></e>
     <e lm="malbonkonduta"><i>malbonkondut</i><par n="adj__adj"/></e>
     <e lm="malbrua"><i>malbru</i><par n="adj__adj"/></e>
     <e lm="malcerta"><i>malcert</i><par n="adj__adj"/></e>
-    <e lm="malcerta"><i>malcert</i><par n="adj__adj"/></e>
-    <e lm="malcerta"><i>malcert</i><par n="adj__adj"/></e>
-    <e lm="malĉasta"><i>mal</i><par n="ĉ"/><i>ast</i><par n="adj__adj"/></e>
     <e lm="malĉasta"><i>mal</i><par n="ĉ"/><i>ast</i><par n="adj__adj"/></e>
     <e lm="malĉefa"><i>mal</i><par n="ĉ"/><i>ef</i><par n="adj__adj"/></e>
     <e lm="maldekstra"><i>maldekstr</i><par n="adj__adj"/></e>
-    <e lm="maldelikata"><i>maldelikat</i><par n="adj__adj"/></e>
     <e lm="maldelikata"><i>maldelikat</i><par n="adj__adj"/></e>
     <e lm="maldesktramana"><i>maldesktraman</i><par n="adj__adj"/></e>
     <e lm="maldika"><i>maldik</i><par n="adj__adj"/></e>
@@ -5593,7 +5175,6 @@
     <e lm="malelekti"><i>malelekt</i><par n="verb__vblex"/></e>
     <e lm="maleolo"><i>maleolo</i><par n="nom__n"/></e>
     <e lm="malespero"><i>malespero</i><par n="nom__n"/></e>
-    <e lm="malespero"><i>malespero</i><par n="nom__n"/></e>
     <e lm="malestimi"><i>malestim</i><par n="verb__vblex"/></e>
     <e lm="malestima"><i>malestim</i><par n="adj__adj"/></e>
     <e lm="malestimo"><i>malestimo</i><par n="nom__n"/></e>
@@ -5601,8 +5182,6 @@
     <e lm="malfacila horo"><i>malfacila<b/>horo</i><par n="nom__n"/></e>
     <e lm="malfacile"><i>malfacile</i><par n="komence__adv"/></e>
     <e lm="malfaciligi"><i>malfacilig</i><par n="verb__vblex"/></e>
-    <e lm="malfavora"><i>malfavor</i><par n="adj__adj"/></e>
-    <e lm="malfavora"><i>malfavor</i><par n="adj__adj"/></e>
     <e lm="malfavora"><i>malfavor</i><par n="adj__adj"/></e>
     <e lm="malfeliĉa"><i>malfeli</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="malfeliĉo"><i>malfeli</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
@@ -5614,21 +5193,16 @@
     <e lm="malfido"><i>malfido</i><par n="nom__n"/></e>
     <e lm="malfiksi"><i>malfiks</i><par n="verb__vblex"/></e>
     <e lm="malforta"><i>malfort</i><par n="adj__adj"/></e>
-    <e lm="malforta"><i>malfort</i><par n="adj__adj"/></e>
     <e lm="malfortika"><i>malfortik</i><par n="adj__adj"/></e>
     <e lm="malfrua"><i>malfru</i><par n="adj__adj"/></e>
     <e lm="malgranda"><i>malgrand</i><par n="adj__adj"/></e>
-    <e lm="malgranda"><i>malgrand</i><par n="adj__adj"/></e>
     <e lm="malgraŭ"><i>malgra</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="malgrava"><i>malgrav</i><par n="adj__adj"/></e>
-    <e lm="malgrava"><i>malgrav</i><par n="adj__adj"/></e>
-    <e lm="malĝentila"><i>mal</i><par n="ĝ"/><i>entil</i><par n="adj__adj"/></e>
     <e lm="malĝentila"><i>mal</i><par n="ĝ"/><i>entil</i><par n="adj__adj"/></e>
     <e lm="malĝoja"><i>mal</i><par n="ĝ"/><i>oj</i><par n="adj__adj"/></e>
     <e lm="malĝojigi"><i>mal</i><par n="ĝ"/><i>ojig</i><par n="verb__vblex"/></e>
     <e lm="malhelpi"><i>malhelp</i><par n="verb__vblex"/></e>
     <e lm="malhumana"><i>malhuman</i><par n="adj__adj"/></e>
-    <e lm="malica"><i>malic</i><par n="adj__adj"/></e>
     <e lm="malica"><i>malic</i><par n="adj__adj"/></e>
     <e lm="maligna"><i>malign</i><par n="adj__adj"/></e>
     <e lm="malinfekti"><i>malinfekt</i><par n="verb__vblex"/></e>
@@ -5638,14 +5212,11 @@
     <e lm="malkara"><i>malkar</i><par n="adj__adj"/></e>
     <e lm="malkaŝi"><i>malka</i><par n="ŝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="malklara"><i>malklar</i><par n="adj__adj"/></e>
-    <e lm="malklara"><i>malklar</i><par n="adj__adj"/></e>
-    <e lm="malklara"><i>malklar</i><par n="adj__adj"/></e>
     <e lm="malklereco"><i>malklereco</i><par n="nom__n"/></e>
     <e lm="malkomforta"><i>malkomfort</i><par n="adj__adj"/></e>
     <e lm="malkomforto"><i>malkomforto</i><par n="nom__n"/></e>
     <e lm="malkonfirmi"><i>malkonfirm</i><par n="verb__vblex"/></e>
     <e lm="malkonkordo"><i>malkonkordo</i><par n="nom__n"/></e>
-    <e lm="malkontenta"><i>malkontent</i><par n="adj__adj"/></e>
     <e lm="malkontenta"><i>malkontent</i><par n="adj__adj"/></e>
     <e lm="malkontinua"><i>malkontinu</i><par n="adj__adj"/></e>
     <e lm="malkovro"><i>malkovro</i><par n="nom__n"/></e>
@@ -5664,12 +5235,8 @@
     <e lm="mallumo"><i>mallumo</i><par n="nom__n"/></e>
     <e lm="malmorala"><i>malmoral</i><par n="adj__adj"/></e>
     <e lm="malmulta"><i>malmult</i><par n="adj__adj"/></e>
-    <e lm="malmulta"><i>malmult</i><par n="adj__adj"/></e>
     <e lm="malmulta"><i>malmulta</i><par n="quant__det"/></e>
     <e lm="malneto"><i>malneto</i><par n="nom__n"/></e>
-    <e lm="malnobla"><i>malnobl</i><par n="adj__adj"/></e>
-    <e lm="malnobla"><i>malnobl</i><par n="adj__adj"/></e>
-    <e lm="malnobla"><i>malnobl</i><par n="adj__adj"/></e>
     <e lm="malnobla"><i>malnobl</i><par n="adj__adj"/></e>
     <e lm="malnova"><i>malnov</i><par n="adj__adj"/></e>
     <e lm="malofta"><i>maloft</i><par n="adj__adj"/></e>
@@ -5688,18 +5255,11 @@
     <e lm="malpreciza"><i>malpreciz</i><par n="adj__adj"/></e>
     <e lm="malprofunda"><i>malprofund</i><par n="adj__adj"/></e>
     <e lm="malproksima"><i>malproksim</i><par n="adj__adj"/></e>
-    <e lm="malproksima"><i>malproksim</i><par n="adj__adj"/></e>
-    <e lm="malproksima"><i>malproksim</i><par n="adj__adj"/></e>
     <e lm="malprospera"><i>malprosper</i><par n="adj__adj"/></e>
-    <e lm="malprospera"><i>malprosper</i><par n="adj__adj"/></e>
-    <e lm="malpura"><i>malpur</i><par n="adj__adj"/></e>
-    <e lm="malpura"><i>malpur</i><par n="adj__adj"/></e>
     <e lm="malpura"><i>malpur</i><par n="adj__adj"/></e>
     <e lm="malpureco"><i>malpureco</i><par n="nom__n"/></e>
     <e lm="malpurigi"><i>malpurig</i><par n="verb__vblex"/></e>
     <e lm="malrapida"><i>malrapid</i><par n="adj__adj"/></e>
-    <e lm="malrapida"><i>malrapid</i><par n="adj__adj"/></e>
-    <e lm="malrapide"><i>malrapide</i><par n="komence__adv"/></e>
     <e lm="malrapide"><i>malrapide</i><par n="komence__adv"/></e>
     <e lm="malrapideco"><i>malrapideco</i><par n="nom__n"/></e>
     <e lm="malregula"><i>malregul</i><par n="adj__adj"/></e>
@@ -5711,25 +5271,17 @@
     <e lm="malsano"><i>malsano</i><par n="nom__n"/></e>
     <e lm="malsati"><i>malsat</i><par n="verb__vblex"/></e>
     <e lm="malserioza"><i>malserioz</i><par n="adj__adj"/></e>
-    <e lm="malserioza"><i>malserioz</i><par n="adj__adj"/></e>
-    <e lm="malserioza"><i>malserioz</i><par n="adj__adj"/></e>
     <e lm="malstabila"><i>malstabil</i><par n="adj__adj"/></e>
     <e lm="malstreĉiĝo"><i>malstre</i><par n="ĉ"/><i>i</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="malsukceso"><i>malsukceso</i><par n="nom__n"/></e>
     <e lm="malsukceso"><i>malsukceso</i><par n="nom__n"/></e>
     <e lm="malsupera"><i>malsuper</i><par n="adj__adj"/></e>
     <e lm="malsupreniro"><i>malsupreniro</i><par n="nom__n"/></e>
     <e lm="malŝpari"><i>mal</i><par n="ŝ"/><i>par</i><par n="verb__vblex"/></e>
     <e lm="maltimida"><i>maltimid</i><par n="adj__adj"/></e>
-    <e lm="maltimida"><i>maltimid</i><par n="adj__adj"/></e>
     <e lm="maltrafi"><i>maltraf</i><par n="verb__vblex"/></e>
-    <e lm="maltrankvila"><i>maltrankvil</i><par n="adj__adj"/></e>
     <e lm="maltrankvila"><i>maltrankvil</i><par n="adj__adj"/></e>
     <e lm="maltrankviliga"><i>maltrankvilig</i><par n="adj__adj"/></e>
     <e lm="maltrankvilo"><i>maltrankvilo</i><par n="nom__n"/></e>
-    <e lm="malutila"><i>malutil</i><par n="adj__adj"/></e>
-    <e lm="malutila"><i>malutil</i><par n="adj__adj"/></e>
-    <e lm="malutila"><i>malutil</i><par n="adj__adj"/></e>
     <e lm="malutila"><i>malutil</i><par n="adj__adj"/></e>
     <e lm="malvarmeco"><i>malvarmeco</i><par n="nom__n"/></e>
     <e lm="malvarmeto"><i>malvarmeto</i><par n="nom__n"/></e>
@@ -5741,7 +5293,6 @@
     <e lm="malvirto"><i>malvirto</i><par n="nom__n"/></e>
     <e lm="mamnutri"><i>mamnutr</i><par n="verb__vblex"/></e>
     <e lm="mamo"><i>mamo</i><par n="nom__n"/></e>
-    <e lm="mamo"><i>mamo</i><par n="nom__n"/></e>
     <e lm="mane"><i>mane</i><par n="komence__adv"/></e>
     <e lm="manĝi"><i>man</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="manĝebla"><i>man</i><par n="ĝ"/><i>ebl</i><par n="adj__adj"/></e>
@@ -5749,7 +5300,6 @@
     <e lm="maniero"><i>maniero</i><par n="nom__n"/></e>
     <e lm="manifesti"><i>manifest</i><par n="verb__vblex"/></e>
     <e lm="manifestacii"><i>manifestaci</i><par n="verb__vblex"/></e>
-    <e lm="maniko"><i>maniko</i><par n="nom__n"/></e>
     <e lm="maniko"><i>maniko</i><par n="nom__n"/></e>
     <e lm="manio"><i>manio</i><par n="nom__n"/></e>
     <e lm="manipuli"><i>manipul</i><par n="verb__vblex"/></e>
@@ -5775,10 +5325,8 @@
     <e lm="marki"><i>mark</i><par n="verb__vblex"/></e>
     <e lm="marmelado"><i>marmelado</i><par n="nom__n"/></e>
     <e lm="marmito"><i>marmito</i><par n="nom__n"/></e>
-    <e lm="marmito"><i>marmito</i><par n="nom__n"/></e>
     <e lm="marmoro"><i>marmoro</i><par n="nom__n"/></e>
     <e lm="maro"><i>maro</i><par n="nom__n"/></e>
-    <e lm="marokano"><i>marokan</i><par n="nommf__n"/></e>
     <e lm="marokano"><i>marokan</i><par n="nommf__n"/></e>
     <e lm="maroka"><i>marokao</i><par n="nom__n"/></e>
     <e lm="marŝi"><i>mar</i><par n="ŝ"/><i></i><par n="verb__vblex"/></e>
@@ -5809,7 +5357,6 @@
     <e lm="matraco"><i>matraco</i><par n="nom__n"/></e>
     <e lm="matrico"><i>matrico</i><par n="nom__n"/></e>
     <e lm="matrikuli"><i>matrikul</i><par n="verb__vblex"/></e>
-    <e lm="matura"><i>matur</i><par n="adj__adj"/></e>
     <e lm="matura"><i>matur</i><par n="adj__adj"/></e>
     <e lm="matureco"><i>matureco</i><par n="nom__n"/></e>
     <e lm="maturigi"><i>maturig</i><par n="verb__vblex"/></e>
@@ -5896,10 +5443,7 @@
     <e lm="migdalo"><i>migdalo</i><par n="nom__n"/></e>
     <e lm="migri"><i>migr</i><par n="verb__vblex"/></e>
     <e lm="migra"><i>migr</i><par n="adj__adj"/></e>
-    <e lm="migra"><i>migr</i><par n="adj__adj"/></e>
     <e lm="migrado"><i>migrado</i><par n="nom__n"/></e>
-    <e lm="migreno"><i>migreno</i><par n="nom__n"/></e>
-    <e lm="migreno"><i>migreno</i><par n="nom__n"/></e>
     <e lm="migreno"><i>migreno</i><par n="nom__n"/></e>
     <e lm="mikrobo"><i>mikrobo</i><par n="nom__n"/></e>
     <e lm="mikrofono"><i>mikrofono</i><par n="nom__n"/></e>
@@ -5924,7 +5468,6 @@
     <e lm="miniaturo"><i>miniaturo</i><par n="nom__n"/></e>
     <e lm="minimuma"><i>minimum</i><par n="adj__adj"/></e>
     <e lm="minimumo"><i>minimumo</i><par n="nom__n"/></e>
-    <e lm="minimumo"><i>minimumo</i><par n="nom__n"/></e>
     <e lm="ministo"><i>minist</i><par n="nommf__n"/></e>
     <e lm="ministro"><i>ministr</i><par n="nommf__n"/></e>
     <e lm="ministrejo"><i>ministrejo</i><par n="nom__n"/></e>
@@ -5937,12 +5480,8 @@
     <e lm="miraklo"><i>miraklo</i><par n="nom__n"/></e>
     <e lm="mirigi"><i>mirig</i><par n="verb__vblex"/></e>
     <e lm="mirinda"><i>mirind</i><par n="adj__adj"/></e>
-    <e lm="mirinda"><i>mirind</i><par n="adj__adj"/></e>
     <e lm="mirindaĵo"><i>mirinda</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="mirinde"><i>mirinde</i><par n="komence__adv"/></e>
-    <e lm="misa"><i>mis</i><par n="adj__adj"/></e>
-    <e lm="misa"><i>mis</i><par n="adj__adj"/></e>
-    <e lm="misa"><i>mis</i><par n="adj__adj"/></e>
     <e lm="misa"><i>mis</i><par n="adj__adj"/></e>
     <e lm="misfortuna"><i>misfortun</i><par n="adj__adj"/></e>
     <e lm="misfunkciado"><i>misfunkciado</i><par n="nom__n"/></e>
@@ -5957,7 +5496,6 @@
     <e lm="mitologio"><i>mitologio</i><par n="nom__n"/></e>
     <e lm="mitulo"><i>mitulo</i><par n="nom__n"/></e>
     <e lm="mizero"><i>mizero</i><par n="nom__n"/></e>
-    <e lm="mizero"><i>mizero</i><par n="nom__n"/></e>
     <e lm="mocio"><i>mocio</i><par n="nom__n"/></e>
     <e lm="modelo"><i>modelo</i><par n="nom__n"/></e>
     <e lm="modemo"><i>modemo</i><par n="nom__n"/></e>
@@ -5968,7 +5506,6 @@
     <e lm="modifi"><i>modif</i><par n="verb__vblex"/></e>
     <e lm="modo"><i>modo</i><par n="nom__n"/></e>
     <e lm="modulo"><i>modulo</i><par n="nom__n"/></e>
-    <e lm="mola"><i>mol</i><par n="adj__adj"/></e>
     <e lm="mola"><i>mol</i><par n="adj__adj"/></e>
     <e lm="molekulo"><i>molekulo</i><par n="nom__n"/></e>
     <e lm="molusko"><i>molusko</i><par n="nom__n"/></e>
@@ -5994,7 +5531,6 @@
     <e lm="monpuni"><i>monpun</i><par n="verb__vblex"/></e>
     <e lm="monstro"><i>monstro</i><par n="nom__n"/></e>
     <e lm="monteto"><i>monteto</i><par n="nom__n"/></e>
-    <e lm="monteto"><i>monteto</i><par n="nom__n"/></e>
     <e lm="montgrimpado"><i>montgrimpado</i><par n="nom__n"/></e>
     <e lm="montgrimpisto"><i>montgrimpist</i><par n="nommf__n"/></e>
     <e lm="monto"><i>monto</i><par n="nom__n"/></e>
@@ -6013,7 +5549,6 @@
     <e lm="morteco"><i>morteco</i><par n="nom__n"/></e>
     <e lm="mortigi"><i>mortig</i><par n="verb__vblex"/></e>
     <e lm="mortiga"><i>mortig</i><par n="adj__adj"/></e>
-    <e lm="mortiga"><i>mortig</i><par n="adj__adj"/></e>
     <e lm="mortinto"><i>mortint</i><par n="nommf__n"/></e>
     <e lm="morto"><i>morto</i><par n="nom__n"/></e>
     <e lm="moruo"><i>moruo</i><par n="nom__n"/></e>
@@ -6021,7 +5556,6 @@
     <e lm="motivi"><i>motiv</i><par n="verb__vblex"/></e>
     <e lm="motivo"><i>motivo</i><par n="nom__n"/></e>
     <e lm="moto"><i>moto</i><par n="nom__n"/></e>
-    <e lm="motorciklo"><i>motorciklo</i><par n="nom__n"/></e>
     <e lm="motorciklo"><i>motorciklo</i><par n="nom__n"/></e>
     <e lm="motoro"><i>motoro</i><par n="nom__n"/></e>
     <e lm="movi"><i>mov</i><par n="verb__vblex"/></e>
@@ -6041,7 +5575,6 @@
     <e lm="multe pli bone"><i>multe<b/>pli<b/>bone</i><par n="komence__adv"/></e>
     <e lm="multego"><i>multego</i><par n="nom__n"/></e>
     <e lm="multekosta"><i>multekost</i><par n="adj__adj"/></e>
-    <e lm="multekosta"><i>multekost</i><par n="adj__adj"/></e>
     <e lm="multipliki"><i>multiplik</i><par n="verb__vblex"/></e>
     <e lm="mumio"><i>mumio</i><par n="nom__n"/></e>
     <e lm="munti"><i>munt</i><par n="verb__vblex"/></e>
@@ -6060,7 +5593,6 @@
     <e lm="muŝo"><i>mu</i><par n="ŝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="muta"><i>mut</i><par n="adj__adj"/></e>
     <e lm="mutacio"><i>mutacio</i><par n="nom__n"/></e>
-    <e lm="mutacio"><i>mutacio</i><par n="nom__n"/></e>
     <e lm="muzelo"><i>muzelo</i><par n="nom__n"/></e>
     <e lm="muzeo"><i>muzeo</i><par n="nom__n"/></e>
     <e lm="muzika"><i>muzik</i><par n="adj__adj"/></e>
@@ -6071,13 +5603,11 @@
     <e lm="naciismo"><i>naciismo</i><par n="nom__n"/></e>
     <e lm="naciisto"><i>naciist</i><par n="nommf__n"/></e>
     <e lm="nacio"><i>nacio</i><par n="nom__n"/></e>
-    <e lm="nacio"><i>nacio</i><par n="nom__n"/></e>
     <e lm="nadlo"><i>nadlo</i><par n="nom__n"/></e>
     <e lm="nafto-dukto"><i>nafto-dukto</i><par n="nom__n"/></e>
     <e lm="naĝi"><i>na</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="naĝado"><i>na</i><par n="ĝ"/><i>ado</i><par n="nom__n"/></e>
     <e lm="naĝejo"><i>na</i><par n="ĝ"/><i>ejo</i><par n="nom__n"/></e>
-    <e lm="naiva"><i>naiv</i><par n="adj__adj"/></e>
     <e lm="naiva"><i>naiv</i><par n="adj__adj"/></e>
     <e lm="najli"><i>najl</i><par n="verb__vblex"/></e>
     <e lm="najlo"><i>najlo</i><par n="nom__n"/></e>
@@ -6097,11 +5627,9 @@
     <e lm="naŭzo"><i>na</i><par n="ŭ"/><i>zo</i><par n="nom__n"/></e>
     <e lm="navigi"><i>navig</i><par n="verb__vblex"/></e>
     <e lm="navigacio"><i>navigacio</i><par n="nom__n"/></e>
-    <e lm="navigacio"><i>navigacio</i><par n="nom__n"/></e>
     <e lm="nazo"><i>nazo</i><par n="nom__n"/></e>
     <e lm="ne"><i>ne</i><par n="komence__adv"/></e>
     <e lm="nei"><i>ne</i><par n="verb__vblex"/></e>
-    <e lm="neakceptebla"><i>neakceptebl</i><par n="adj__adj"/></e>
     <e lm="neakceptebla"><i>neakceptebl</i><par n="adj__adj"/></e>
     <e lm="nealirebla"><i>nealirebl</i><par n="adj__adj"/></e>
     <e lm="necerta"><i>necert</i><par n="adj__adj"/></e>
@@ -6118,7 +5646,6 @@
     <e lm="neegala"><i>neegal</i><par n="adj__adj"/></e>
     <e lm="neegaleco"><i>neegaleco</i><par n="nom__n"/></e>
     <e lm="nefropto"><i>nefropto</i><par n="nom__n"/></e>
-    <e lm="negado"><i>negado</i><par n="nom__n"/></e>
     <e lm="negado"><i>negado</i><par n="nom__n"/></e>
     <e lm="negativa"><i>negativ</i><par n="adj__adj"/></e>
     <e lm="negative"><i>negative</i><par n="komence__adv"/></e>
@@ -6139,12 +5666,9 @@
     <e lm="nekredeble"><i>nekredeble</i><par n="komence__adv"/></e>
     <e lm="nekropsio"><i>nekropsio</i><par n="nom__n"/></e>
     <e lm="nekutima"><i>nekutim</i><par n="adj__adj"/></e>
-    <e lm="nekutima"><i>nekutim</i><par n="adj__adj"/></e>
-    <e lm="nekutima"><i>nekutim</i><par n="adj__adj"/></e>
     <e lm="nelica"><i>nelic</i><par n="adj__adj"/></e>
     <e lm="nemalhavebla"><i>nemalhavebl</i><par n="adj__adj"/></e>
     <e lm="nenecesa"><i>neneces</i><par n="adj__adj"/></e>
-    <e lm="neniam"><i>neniam</i><par n="komence__adv"/></e>
     <e lm="neniam"><i>neniam</i><par n="komence__adv"/></e>
     <e lm="nenio"><p><l>nenio</l><r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="nenio"><i>nenio</i><par n="nom__n"/></e>
@@ -6156,16 +5680,10 @@
     <e lm="neono"><i>neono</i><par n="nom__n"/></e>
     <e lm="nepo"><i>nep</i><par n="nommf__n"/></e>
     <e lm="nepara"><i>nepar</i><par n="adj__adj"/></e>
-    <e lm="nepara"><i>nepar</i><par n="adj__adj"/></e>
     <e lm="nepardonebla"><i>nepardonebl</i><par n="adj__adj"/></e>
     <e lm="nepopulara"><i>nepopular</i><par n="adj__adj"/></e>
     <e lm="nepotismo"><i>nepotismo</i><par n="nom__n"/></e>
     <e lm="nepra"><i>nepr</i><par n="adj__adj"/></e>
-    <e lm="nepra"><i>nepr</i><par n="adj__adj"/></e>
-    <e lm="nepre"><i>nepre</i><par n="komence__adv"/></e>
-    <e lm="nepre"><i>nepre</i><par n="komence__adv"/></e>
-    <e lm="nepre"><i>nepre</i><par n="komence__adv"/></e>
-    <e lm="nepre"><i>nepre</i><par n="komence__adv"/></e>
     <e lm="nepre"><i>nepre</i><par n="komence__adv"/></e>
     <e lm="neprobabla"><i>neprobabl</i><par n="adj__adj"/></e>
     <e lm="neprofitema"><i>neprofitem</i><par n="adj__adj"/></e>
@@ -6178,7 +5696,6 @@
     <e lm="nerevokebla"><i>nerevokebl</i><par n="adj__adj"/></e>
     <e lm="nerompita"><i>nerompit</i><par n="adj__adj"/></e>
     <e lm="nervo"><i>nervo</i><par n="nom__n"/></e>
-    <e lm="nervoza"><i>nervoz</i><par n="adj__adj"/></e>
     <e lm="nervoza"><i>nervoz</i><par n="adj__adj"/></e>
     <e lm="nesimetria"><i>nesimetri</i><par n="adj__adj"/></e>
     <e lm="nesolventa"><i>nesolvent</i><par n="adj__adj"/></e>
@@ -6193,7 +5710,6 @@
     <e lm="neŭtrala"><i>ne</i><par n="ŭ"/><i>tral</i><par n="adj__adj"/></e>
     <e lm="neŭtrigi"><i>ne</i><par n="ŭ"/><i>trig</i><par n="verb__vblex"/></e>
     <e lm="neŭtrono"><i>ne</i><par n="ŭ"/><i>trono</i><par n="nom__n"/></e>
-    <e lm="nevo"><i>nev</i><par n="nommf__n"/></e>
     <e lm="nevo"><i>nev</i><par n="nommf__n"/></e>
     <e lm="nevidebla"><i>nevidebl</i><par n="adj__adj"/></e>
     <e lm="niĉo"><i>ni</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
@@ -6231,7 +5747,6 @@
     <e lm="notario"><i>notari</i><par n="nommf__n"/></e>
     <e lm="notinde"><i>notinde</i><par n="komence__adv"/></e>
     <e lm="noto"><i>noto</i><par n="nom__n"/></e>
-    <e lm="noto"><i>noto</i><par n="nom__n"/></e>
     <e lm="nova"><i>nov</i><par n="adj__adj"/></e>
     <e lm="novaĵo"><i>nova</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="nove"><i>nove</i><par n="komence__adv"/></e>
@@ -6249,33 +5764,23 @@
     <e lm="nuligi"><i>nulig</i><par n="verb__vblex"/></e>
     <e lm="nuligo"><i>nuligo</i><par n="nom__n"/></e>
     <e lm="nulo"><i>nulo</i><par n="nom__n"/></e>
-    <e lm="nulo"><i>nulo</i><par n="nom__n"/></e>
     <e lm="numeri"><i>numer</i><par n="verb__vblex"/></e>
     <e lm="numero"><i>numero</i><par n="nom__n"/></e>
     <e lm="nun"><i>nun</i><par n="komence__adv"/></e>
-    <e lm="nun"><i>nun</i><par n="komence__adv"/></e>
-    <e lm="nun"><i>nun</i><par n="komence__adv"/></e>
-    <e lm="nun"><i>nun</i><par n="komence__adv"/></e>
-    <e lm="nuntempe"><i>nuntempe</i><par n="komence__adv"/></e>
     <e lm="nuntempe"><i>nuntempe</i><par n="komence__adv"/></e>
     <e lm="nur"><i>nur</i><par n="komence__adv"/></e>
-    <e lm="nur"><i>nur</i><par n="komence__adv"/></e>
-    <e lm="nura"><i>nur</i><par n="adj__adj"/></e>
     <e lm="nura"><i>nur</i><par n="adj__adj"/></e>
     <e lm="nutra"><i>nutr</i><par n="adj__adj"/></e>
     <e lm="nutri"><i>nutr</i><par n="verb__vblex"/></e>
-    <e lm="nutrado"><i>nutrado</i><par n="nom__n"/></e>
     <e lm="nutrado"><i>nutrado</i><par n="nom__n"/></e>
     <e lm="oazo"><i>oazo</i><par n="nom__n"/></e>
     <e lm="obei"><i>obe</i><par n="verb__vblex"/></e>
     <e lm="obeado"><i>obeado</i><par n="nom__n"/></e>
     <e lm="obeema"><i>obeem</i><par n="adj__adj"/></e>
-    <e lm="obeema"><i>obeem</i><par n="adj__adj"/></e>
     <e lm="obelisko"><i>obelisko</i><par n="nom__n"/></e>
     <e lm="objektiva"><i>objektiv</i><par n="adj__adj"/></e>
     <e lm="objektiveco"><i>objektiveco</i><par n="nom__n"/></e>
     <e lm="objektivo"><i>objektivo</i><par n="nom__n"/></e>
-    <e lm="obligacio"><i>obligacio</i><par n="nom__n"/></e>
     <e lm="obligacio"><i>obligacio</i><par n="nom__n"/></e>
     <e lm="obscena"><i>obscen</i><par n="adj__adj"/></e>
     <e lm="obsedo"><i>obsedo</i><par n="nom__n"/></e>
@@ -6284,11 +5789,7 @@
     <e lm="observanto"><i>observant</i><par n="nommf__n"/></e>
     <e lm="obstaklo"><i>obstaklo</i><par n="nom__n"/></e>
     <e lm="obstina"><i>obstin</i><par n="adj__adj"/></e>
-    <e lm="obstina"><i>obstin</i><par n="adj__adj"/></e>
-    <e lm="obstina"><i>obstin</i><par n="adj__adj"/></e>
-    <e lm="obstina"><i>obstin</i><par n="adj__adj"/></e>
     <e lm="obstrukci"><i>obstrukc</i><par n="verb__vblex"/></e>
-    <e lm="obstrukco"><i>obstrukco</i><par n="nom__n"/></e>
     <e lm="obstrukco"><i>obstrukco</i><par n="nom__n"/></e>
     <e lm="oceano"><i>oceano</i><par n="nom__n"/></e>
     <e lm="odo"><i>odo</i><par n="nom__n"/></e>
@@ -6303,10 +5804,8 @@
     <e lm="oficiala"><i>oficial</i><par n="adj__adj"/></e>
     <e lm="oficiale"><i>oficiale</i><par n="komence__adv"/></e>
     <e lm="oficisto"><i>oficist</i><par n="nommf__n"/></e>
-    <e lm="oficisto"><i>oficist</i><par n="nommf__n"/></e>
     <e lm="ofico"><i>ofico</i><par n="nom__n"/></e>
     <e lm="ofta"><i>oft</i><par n="adj__adj"/></e>
-    <e lm="ofte"><i>ofte</i><par n="komence__adv"/></e>
     <e lm="ofte"><i>ofte</i><par n="komence__adv"/></e>
     <e lm="ofteco"><i>ofteco</i><par n="nom__n"/></e>
     <e lm="okazi"><i>okaz</i><par n="verb__vblex"/></e>
@@ -6316,18 +5815,14 @@
     <e lm="oksigeno"><i>oksigeno</i><par n="nom__n"/></e>
     <e lm="oktobro"><i>oktobro</i><par n="nom__n"/></e>
     <e lm="okulfrapa"><i>okulfrap</i><par n="adj__adj"/></e>
-    <e lm="okulfrapa"><i>okulfrap</i><par n="adj__adj"/></e>
     <e lm="okulo"><i>okulo</i><par n="nom__n"/></e>
     <e lm="okupi"><i>okup</i><par n="verb__vblex"/></e>
     <e lm="okupacio"><i>okupacio</i><par n="nom__n"/></e>
-    <e lm="okupacio"><i>okupacio</i><par n="nom__n"/></e>
-    <e lm="ol"><i>ol</i><par n="and__cnjcoo"/></e>
     <e lm="ol"><i>ol</i><par n="and__cnjcoo"/></e>
     <e lm="oleo"><i>oleo</i><par n="nom__n"/></e>
     <e lm="olivo"><i>olivo</i><par n="nom__n"/></e>
     <e lm="olivoleo"><i>olivoleo</i><par n="nom__n"/></e>
     <e lm="omaĝo"><i>oma</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="ombra"><i>ombr</i><par n="adj__adj"/></e>
     <e lm="ombra"><i>ombr</i><par n="adj__adj"/></e>
     <e lm="ombro"><i>ombro</i><par n="nom__n"/></e>
     <e lm="ondo"><i>ondo</i><par n="nom__n"/></e>
@@ -6347,9 +5842,7 @@
     <e lm="opinio"><i>opinio</i><par n="nom__n"/></e>
     <e lm="opio"><i>opio</i><par n="nom__n"/></e>
     <e lm="oportuna"><i>oportun</i><par n="adj__adj"/></e>
-    <e lm="oportuna"><i>oportun</i><par n="adj__adj"/></e>
     <e lm="oportunisto"><i>oportunist</i><par n="nommf__n"/></e>
-    <e lm="opozicio"><i>opozicio</i><par n="nom__n"/></e>
     <e lm="opozicio"><i>opozicio</i><par n="nom__n"/></e>
     <e lm="optika"><i>optik</i><par n="adj__adj"/></e>
     <e lm="optimisma"><i>optimism</i><par n="adj__adj"/></e>
@@ -6360,8 +5853,6 @@
     <e lm="oranĝtrinkaĵo"><i>oran</i><par n="ĝ"/><i>trinka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="orbito"><i>orbito</i><par n="nom__n"/></e>
     <e lm="ordigi"><i>ordig</i><par n="verb__vblex"/></e>
-    <e lm="ordinara"><i>ordinar</i><par n="adj__adj"/></e>
-    <e lm="ordinara"><i>ordinar</i><par n="adj__adj"/></e>
     <e lm="ordinara"><i>ordinar</i><par n="adj__adj"/></e>
     <e lm="ordinara"><i>ordinara</i><par n="komence__adv"/></e>
     <e lm="ordinare"><i>ordinare</i><par n="komence__adv"/></e>
@@ -6382,7 +5873,6 @@
     <e lm="oriento"><i>oriento</i><par n="nom__n"/></e>
     <e lm="originala"><i>original</i><par n="adj__adj"/></e>
     <e lm="originaleco"><i>originaleco</i><par n="nom__n"/></e>
-    <e lm="originalo"><i>originalo</i><par n="nom__n"/></e>
     <e lm="originalo"><i>originalo</i><par n="nom__n"/></e>
     <e lm="origino"><i>origino</i><par n="nom__n"/></e>
     <e lm="orkestro"><i>orkestro</i><par n="nom__n"/></e>
@@ -6422,7 +5912,6 @@
     <e lm="pajaco"><i>pajac</i><par n="nommf__n"/></e>
     <e lm="pakaĵo"><i>paka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="pako"><i>pako</i><par n="nom__n"/></e>
-    <e lm="pako"><i>pako</i><par n="nom__n"/></e>
     <e lm="pakvagono"><i>pakvagono</i><par n="nom__n"/></e>
     <e lm="pala"><i>pal</i><par n="adj__adj"/></e>
     <e lm="palaco"><i>palaco</i><par n="nom__n"/></e>
@@ -6434,8 +5923,6 @@
     <e lm="pamfleto"><i>pamfleto</i><par n="nom__n"/></e>
     <e lm="panaceo"><i>panaceo</i><par n="nom__n"/></e>
     <e lm="pandalo"><i>pandalo</i><par n="nom__n"/></e>
-    <e lm="panelo"><i>panelo</i><par n="nom__n"/></e>
-    <e lm="panelo"><i>panelo</i><par n="nom__n"/></e>
     <e lm="panelo"><i>panelo</i><par n="nom__n"/></e>
     <e lm="paneo"><i>paneo</i><par n="nom__n"/></e>
     <e lm="panero"><i>panero</i><par n="nom__n"/></e>
@@ -6469,10 +5956,8 @@
     <e lm="parlamentano"><i>parlamentan</i><par n="nommf__n"/></e>
     <e lm="parlamento"><i>parlamento</i><par n="nom__n"/></e>
     <e lm="paro"><i>paro</i><par n="nom__n"/></e>
-    <e lm="paro"><i>paro</i><par n="nom__n"/></e>
     <e lm="parokestro"><i>parokestro</i><par n="nom__n"/></e>
     <e lm="paroli"><i>parol</i><par n="verb__vblex"/></e>
-    <e lm="parola"><i>parol</i><par n="adj__adj"/></e>
     <e lm="parola"><i>parol</i><par n="adj__adj"/></e>
     <e lm="parolado"><i>parolado</i><par n="nom__n"/></e>
     <e lm="parte"><i>parte</i><par n="komence__adv"/></e>
@@ -6484,7 +5969,6 @@
     <e lm="partoprenanto"><i>partoprenant</i><par n="nommf__n"/></e>
     <e lm="pasi"><i>pas</i><par n="verb__vblex"/></e>
     <e lm="pasaĝero"><i>pasa</i><par n="ĝ"/><i>er</i><par n="nommf__n"/></e>
-    <e lm="pasejo"><i>pasejo</i><par n="nom__n"/></e>
     <e lm="pasejo"><i>pasejo</i><par n="nom__n"/></e>
     <e lm="pasinta"><i>pasint</i><par n="adj__adj"/></e>
     <e lm="pasio"><i>pasio</i><par n="nom__n"/></e>
@@ -6502,7 +5986,6 @@
     <e lm="patro"><i>patr</i><par n="nommf__n"/></e>
     <e lm="patriarko"><i>patriark</i><par n="nommf__n"/></e>
     <e lm="patrina"><i>patrin</i><par n="adj__adj"/></e>
-    <e lm="patrina"><i>patrin</i><par n="adj__adj"/></e>
     <e lm="patrineco"><i>patrineco</i><par n="nom__n"/></e>
     <e lm="patrino"><i>patrino</i><par n="nom__n"/></e>
     <e lm="patriotismo"><i>patriotismo</i><par n="nom__n"/></e>
@@ -6511,9 +5994,6 @@
     <e lm="patroni"><i>patron</i><par n="verb__vblex"/></e>
     <e lm="patrujo"><i>patrujo</i><par n="nom__n"/></e>
     <e lm="paŭzo"><i>pa</i><par n="ŭ"/><i>zo</i><par n="nom__n"/></e>
-    <e lm="peco"><i>peco</i><par n="nom__n"/></e>
-    <e lm="peco"><i>peco</i><par n="nom__n"/></e>
-    <e lm="peco"><i>peco</i><par n="nom__n"/></e>
     <e lm="peco"><i>peco</i><par n="nom__n"/></e>
     <e lm="pedagogia"><i>pedagogi</i><par n="adj__adj"/></e>
     <e lm="pedagogio"><i>pedagogio</i><par n="nom__n"/></e>
@@ -6531,10 +6011,6 @@
     <e lm="peneo"><i>peneo</i><par n="nom__n"/></e>
     <e lm="penetri"><i>penetr</i><par n="verb__vblex"/></e>
     <e lm="penetrado"><i>penetrado</i><par n="nom__n"/></e>
-    <e lm="peniga"><i>penig</i><par n="adj__adj"/></e>
-    <e lm="peniga"><i>penig</i><par n="adj__adj"/></e>
-    <e lm="peniga"><i>penig</i><par n="adj__adj"/></e>
-    <e lm="peniga"><i>penig</i><par n="adj__adj"/></e>
     <e lm="peniga"><i>penig</i><par n="adj__adj"/></e>
     <e lm="peniko"><i>peniko</i><par n="nom__n"/></e>
     <e lm="peniso"><i>peniso</i><par n="nom__n"/></e>
@@ -6557,9 +6033,7 @@
     <e lm="perdo"><i>perdo</i><par n="nom__n"/></e>
     <e lm="perdriko"><i>perdriko</i><par n="nom__n"/></e>
     <e lm="pere de"><i>pere<b/>de</i><par n="at__pr"/></e>
-    <e lm="pere de"><i>pere<b/>de</i><par n="at__pr"/></e>
     <e lm="perfekta"><i>perfekt</i><par n="adj__adj"/></e>
-    <e lm="perfekte"><i>perfekte</i><par n="komence__adv"/></e>
     <e lm="perfekte"><i>perfekte</i><par n="komence__adv"/></e>
     <e lm="perfekteco"><i>perfekteco</i><par n="nom__n"/></e>
     <e lm="perfidi"><i>perfid</i><par n="verb__vblex"/></e>
@@ -6570,7 +6044,6 @@
     <e lm="periodo"><i>periodo</i><par n="nom__n"/></e>
     <e lm="perkutado"><i>perkutado</i><par n="nom__n"/></e>
     <e lm="permanenta"><i>permanent</i><par n="adj__adj"/></e>
-    <e lm="permanenta"><i>permanent</i><par n="adj__adj"/></e>
     <e lm="permesi"><i>permes</i><par n="verb__vblex"/></e>
     <e lm="permeso"><i>permeso</i><par n="nom__n"/></e>
     <e lm="perso"><i>pers</i><par n="nommf__n"/></e>
@@ -6580,7 +6053,6 @@
     <e lm="persekutado"><i>persekutado</i><par n="nom__n"/></e>
     <e lm="persisti"><i>persist</i><par n="verb__vblex"/></e>
     <e lm="persona"><i>person</i><par n="adj__adj"/></e>
-    <e lm="persone"><i>persone</i><par n="komence__adv"/></e>
     <e lm="persone"><i>persone</i><par n="komence__adv"/></e>
     <e lm="personeco"><i>personeco</i><par n="nom__n"/></e>
     <e lm="persono"><i>persono</i><par n="nom__n"/></e>
@@ -6601,8 +6073,6 @@
     <e lm="petskribo"><i>petskribo</i><par n="nom__n"/></e>
     <e lm="pezo"><i>pezo</i><par n="nom__n"/></e>
     <e lm="pia"><i>pi</i><par n="adj__adj"/></e>
-    <e lm="pia"><i>pi</i><par n="adj__adj"/></e>
-    <e lm="pia"><i>pi</i><par n="adj__adj"/></e>
     <e lm="piano"><i>piano</i><par n="nom__n"/></e>
     <e lm="pieco"><i>pieco</i><par n="nom__n"/></e>
     <e lm="piediranto"><i>piedirant</i><par n="nommf__n"/></e>
@@ -6619,8 +6089,6 @@
     <e lm="pinglo"><i>pinglo</i><par n="nom__n"/></e>
     <e lm="pingveno"><i>pingveno</i><par n="nom__n"/></e>
     <e lm="pinta"><i>pint</i><par n="adj__adj"/></e>
-    <e lm="pinto"><i>pinto</i><par n="nom__n"/></e>
-    <e lm="pinto"><i>pinto</i><par n="nom__n"/></e>
     <e lm="pinto"><i>pinto</i><par n="nom__n"/></e>
     <e lm="supro"><i>supro</i><par n="nom__n"/></e>
     <e lm="pioĉo"><i>pio</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
@@ -6640,7 +6108,6 @@
     <e lm="placento"><i>placento</i><par n="nom__n"/></e>
     <e lm="placo"><i>placo</i><par n="nom__n"/></e>
     <e lm="plaĉi"><i>pla</i><par n="ĉ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="plafono"><i>plafono</i><par n="nom__n"/></e>
     <e lm="plafono"><i>plafono</i><par n="nom__n"/></e>
     <e lm="plakaĵo"><i>plaka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="plandumo"><i>plandumo</i><par n="nom__n"/></e>
@@ -6687,7 +6154,6 @@
     <e lm="plibonigo"><i>plibonigo</i><par n="nom__n"/></e>
     <e lm="plifortigi"><i>plifortig</i><par n="verb__vblex"/></e>
     <e lm="pligrandigo"><i>pligrandigo</i><par n="nom__n"/></e>
-    <e lm="pligrandigo"><i>pligrandigo</i><par n="nom__n"/></e>
     <e lm="pligravigi"><i>pligravig</i><par n="verb__vblex"/></e>
     <e lm="pliigi"><i>pliig</i><par n="verb__vblex"/></e>
     <e lm="plilarĝigi"><i>plilar</i><par n="ĝ"/><i>ig</i><par n="verb__vblex"/></e>
@@ -6696,7 +6162,6 @@
     <e lm="plimulto"><i>plimulto</i><par n="nom__n"/></e>
     <e lm="plori"><i>plor</i><par n="verb__vblex"/></e>
     <e lm="plotono"><i>plotono</i><par n="nom__n"/></e>
-    <e lm="plua"><i>plu</i><par n="adj__adj"/></e>
     <e lm="plua"><i>plu</i><par n="adj__adj"/></e>
     <e lm="plugi"><i>plug</i><par n="verb__vblex"/></e>
     <e lm="plumo"><i>plumo</i><par n="nom__n"/></e>
@@ -6716,10 +6181,8 @@
     <e lm="pograndisto"><i>pograndist</i><par n="nommf__n"/></e>
     <e lm="pojno"><i>pojno</i><par n="nom__n"/></e>
     <e lm="pokalo"><i>pokalo</i><par n="nom__n"/></e>
-    <e lm="pokalo"><i>pokalo</i><par n="nom__n"/></e>
     <e lm="pola"><i>pol</i><par n="nommf__n"/></e>
     <e lm="pola"><i>pol</i><par n="adj__adj"/></e>
-    <e lm="polekso"><i>polekso</i><par n="nom__n"/></e>
     <e lm="polekso"><i>polekso</i><par n="nom__n"/></e>
     <e lm="polemiko"><i>polemiko</i><par n="nom__n"/></e>
     <e lm="poleno"><i>poleno</i><par n="nom__n"/></e>
@@ -6732,8 +6195,6 @@
     <e lm="polonio"><i>polonio</i><par n="nom__n"/></e>
     <e lm="polpo"><i>polpo</i><par n="nom__n"/></e>
     <e lm="polui"><i>polu</i><par n="verb__vblex"/></e>
-    <e lm="poluado"><i>poluado</i><par n="nom__n"/></e>
-    <e lm="poluado"><i>poluado</i><par n="nom__n"/></e>
     <e lm="poluado"><i>poluado</i><par n="nom__n"/></e>
     <e lm="polusa"><i>polus</i><par n="adj__adj"/></e>
     <e lm="poluso"><i>poluso</i><par n="nom__n"/></e>
@@ -6749,11 +6210,8 @@
     <e lm="por"><i>por</i><par n="after__cnjadv"/></e>
     <e lm="por"><i>por</i><par n="at__pr"/></e>
     <e lm="por ke"><i>por<b/>ke</i><par n="after__cnjadv"/></e>
-    <e lm="por ke"><i>por<b/>ke</i><par n="after__cnjadv"/></e>
-    <e lm="por ke"><i>por<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="porcelano"><i>porcelano</i><par n="nom__n"/></e>
     <e lm="porcio"><i>porcio</i><par n="nom__n"/></e>
-    <e lm="porĉiama"><i>por</i><par n="ĉ"/><i>iam</i><par n="adj__adj"/></e>
     <e lm="porĉiama"><i>por</i><par n="ĉ"/><i>iam</i><par n="adj__adj"/></e>
     <e lm="pordistejo"><i>pordistejo</i><par n="nom__n"/></e>
     <e lm="pordo"><i>pordo</i><par n="nom__n"/></e>
@@ -6771,9 +6229,6 @@
     <e lm="posedo"><i>posedo</i><par n="nom__n"/></e>
     <e lm="posta"><i>post</i><par n="adj__adj"/></e>
     <e lm="post"><i>post</i><par n="at__pr"/></e>
-    <e lm="post kiam"><i>post<b/>kiam</i><par n="after__cnjadv"/></e>
-    <e lm="post kiam"><i>post<b/>kiam</i><par n="after__cnjadv"/></e>
-    <e lm="post kiam"><i>post<b/>kiam</i><par n="after__cnjadv"/></e>
     <e lm="post kiam"><i>post<b/>kiam</i><par n="after__cnjadv"/></e>
     <e lm="post nelonge"><i>post<b/>nelonge</i><par n="komence__adv"/></e>
     <e lm="posta steveno"><i>posta steveno</i><par n="nom__n"/></e>
@@ -6799,7 +6254,6 @@
     <e lm="poŭpo"><i>po</i><par n="ŭ"/><i>po</i><par n="nom__n"/></e>
     <e lm="povo"><i>povo</i><par n="nom__n"/></e>
     <e lm="pozicio"><i>pozicio</i><par n="nom__n"/></e>
-    <e lm="pozicio"><i>pozicio</i><par n="nom__n"/></e>
     <e lm="pozitiva"><i>pozitiv</i><par n="adj__adj"/></e>
     <e lm="pozitive"><i>pozitive</i><par n="komence__adv"/></e>
     <e lm="prao"><i>pra</i><par n="nommf__n"/></e>
@@ -6809,10 +6263,8 @@
     <e lm="praktiko"><i>praktiko</i><par n="nom__n"/></e>
     <e lm="prapatro"><i>prapatr</i><par n="nommf__n"/></e>
     <e lm="prava"><i>prav</i><par n="adj__adj"/></e>
-    <e lm="prava"><i>prav</i><par n="adj__adj"/></e>
     <e lm="pravigi"><i>pravig</i><par n="verb__vblex"/></e>
     <e lm="pravigo"><i>pravigo</i><par n="nom__n"/></e>
-    <e lm="precedenco"><i>precedenco</i><par n="nom__n"/></e>
     <e lm="precedenco"><i>precedenco</i><par n="nom__n"/></e>
     <e lm="preciza"><i>preciz</i><par n="adj__adj"/></e>
     <e lm="precizeco"><i>precizeco</i><par n="nom__n"/></e>
@@ -6826,18 +6278,15 @@
     <e lm="premii"><i>premi</i><par n="verb__vblex"/></e>
     <e lm="premiero"><i>premiero</i><par n="nom__n"/></e>
     <e lm="premio"><i>premio</i><par n="nom__n"/></e>
-    <e lm="premio"><i>premio</i><par n="nom__n"/></e>
     <e lm="premiso"><i>premiso</i><par n="nom__n"/></e>
     <e lm="premo"><i>premo</i><par n="nom__n"/></e>
     <e lm="premplatigi"><i>premplatig</i><par n="verb__vblex"/></e>
     <e lm="preni"><i>pren</i><par n="verb__vblex"/></e>
     <e lm="prepari"><i>prepar</i><par n="verb__vblex"/></e>
     <e lm="preparado"><i>preparado</i><par n="nom__n"/></e>
-    <e lm="preparado"><i>preparado</i><par n="nom__n"/></e>
     <e lm="prepozicio"><i>prepozicio</i><par n="nom__n"/></e>
     <e lm="presi"><i>pres</i><par n="verb__vblex"/></e>
     <e lm="pres-arto"><i>pres-arto</i><par n="nom__n"/></e>
-    <e lm="preskaŭ"><i>preska</i><par n="ŭ"/><i></i><par n="komence__adv"/></e>
     <e lm="preskaŭ"><i>preska</i><par n="ŭ"/><i></i><par n="komence__adv"/></e>
     <e lm="preskaŭa"><i>preska</i><par n="ŭ"/><i></i><par n="adj__adj"/></e>
     <e lm="preskribi"><i>preskrib</i><par n="verb__vblex"/></e>
@@ -6873,9 +6322,7 @@
     <e lm="privatigi"><i>privatig</i><par n="verb__vblex"/></e>
     <e lm="privilegio"><i>privilegio</i><par n="nom__n"/></e>
     <e lm="pro"><i>pro</i><par n="at__pr"/></e>
-    <e lm="pro"><i>pro</i><par n="at__pr"/></e>
     <e lm="pro tio ke"><i>pro<b/>tio<b/>ke</i><par n="after__cnjadv"/></e>
-    <e lm="pro tio ke"><i>pro<b/>tio<b/>ke</i><par n="and__cnjcoo"/></e>
     <e lm="pro tio ke"><i>pro<b/>tio<b/>ke</i><par n="and__cnjcoo"/></e>
     <e lm="probabla"><i>probabl</i><par n="adj__adj"/></e>
     <e lm="probable"><i>probable</i><par n="komence__adv"/></e>
@@ -6903,12 +6350,9 @@
     <e lm="profitigi"><i>profitig</i><par n="verb__vblex"/></e>
     <e lm="profito"><i>profito</i><par n="nom__n"/></e>
     <e lm="profunda"><i>profund</i><par n="adj__adj"/></e>
-    <e lm="profunda"><i>profund</i><par n="adj__adj"/></e>
-    <e lm="profunde"><i>profunde</i><par n="komence__adv"/></e>
     <e lm="profunde"><i>profunde</i><par n="komence__adv"/></e>
     <e lm="profundo"><i>profundo</i><par n="nom__n"/></e>
     <e lm="prognozo"><i>prognozo</i><par n="nom__n"/></e>
-    <e lm="programado"><i>programado</i><par n="nom__n"/></e>
     <e lm="programado"><i>programado</i><par n="nom__n"/></e>
     <e lm="programaro"><i>programaro</i><par n="nom__n"/></e>
     <e lm="programo"><i>programo</i><par n="nom__n"/></e>
@@ -6921,13 +6365,9 @@
     <e lm="proklami"><i>proklam</i><par n="verb__vblex"/></e>
     <e lm="prokrasti"><i>prokrast</i><par n="verb__vblex"/></e>
     <e lm="proksima"><i>proksim</i><par n="adj__adj"/></e>
-    <e lm="proksima"><i>proksim</i><par n="adj__adj"/></e>
     <e lm="proksimeco"><i>proksimeco</i><par n="nom__n"/></e>
     <e lm="proksimigi"><i>proksimig</i><par n="verb__vblex"/></e>
     <e lm="proksimuma"><i>proksimum</i><par n="adj__adj"/></e>
-    <e lm="proksimuma"><i>proksimum</i><par n="adj__adj"/></e>
-    <e lm="proksimume"><i>proksimume</i><par n="komence__adv"/></e>
-    <e lm="proksimume"><i>proksimume</i><par n="komence__adv"/></e>
     <e lm="proksimume"><i>proksimume</i><par n="komence__adv"/></e>
     <e lm="prokuroro"><i>prokuror</i><par n="nommf__n"/></e>
     <e lm="proliferi"><i>prolifer</i><par n="verb__vblex"/></e>
@@ -6936,7 +6376,6 @@
     <e lm="promesi"><i>promes</i><par n="verb__vblex"/></e>
     <e lm="promeso"><i>promeso</i><par n="nom__n"/></e>
     <e lm="promocii"><i>promoci</i><par n="verb__vblex"/></e>
-    <e lm="promocio"><i>promocio</i><par n="nom__n"/></e>
     <e lm="promocio"><i>promocio</i><par n="nom__n"/></e>
     <e lm="pronomo"><i>pronomo</i><par n="nom__n"/></e>
     <e lm="prononci"><i>prononc</i><par n="verb__vblex"/></e>
@@ -6948,13 +6387,11 @@
     <e lm="propono"><i>propono</i><par n="nom__n"/></e>
     <e lm="proporcio"><i>proporcio</i><par n="nom__n"/></e>
     <e lm="propra"><i>propr</i><par n="adj__adj"/></e>
-    <e lm="propra"><i>propr</i><par n="adj__adj"/></e>
     <e lm="proprieto"><i>proprieto</i><par n="nom__n"/></e>
     <e lm="proprietulo"><i>proprietul</i><par n="nommf__n"/></e>
     <e lm="propulsado"><i>propulsado</i><par n="nom__n"/></e>
     <e lm="propulso"><i>propulso</i><par n="nom__n"/></e>
     <e lm="prosperita"><i>prosperit</i><par n="adj__adj"/></e>
-    <e lm="prospero"><i>prospero</i><par n="nom__n"/></e>
     <e lm="prospero"><i>prospero</i><par n="nom__n"/></e>
     <e lm="prostituado"><i>prostituado</i><par n="nom__n"/></e>
     <e lm="prostituitino"><i>prostituitino</i><par n="nom__n"/></e>
@@ -6973,18 +6410,13 @@
     <e lm="provianto"><i>provianto</i><par n="nom__n"/></e>
     <e lm="provinco"><i>provinco</i><par n="nom__n"/></e>
     <e lm="provizado"><i>provizado</i><par n="nom__n"/></e>
-    <e lm="provizado"><i>provizado</i><par n="nom__n"/></e>
-    <e lm="provizo"><i>provizo</i><par n="nom__n"/></e>
     <e lm="provizo"><i>provizo</i><par n="nom__n"/></e>
     <e lm="provizora"><i>provizor</i><par n="adj__adj"/></e>
-    <e lm="provizore"><i>provizore</i><par n="komence__adv"/></e>
-    <e lm="provizore"><i>provizore</i><par n="komence__adv"/></e>
     <e lm="provizore"><i>provizore</i><par n="komence__adv"/></e>
     <e lm="provo"><i>provo</i><par n="nom__n"/></e>
     <e lm="provoki"><i>provok</i><par n="verb__vblex"/></e>
     <e lm="provoko"><i>provoko</i><par n="nom__n"/></e>
     <e lm="prozo"><i>prozo</i><par n="nom__n"/></e>
-    <e lm="prudente"><i>prudente</i><par n="komence__adv"/></e>
     <e lm="prudente"><i>prudente</i><par n="komence__adv"/></e>
     <e lm="prudento"><i>prudento</i><par n="nom__n"/></e>
     <e lm="pruno"><i>pruno</i><par n="nom__n"/></e>
@@ -7002,7 +6434,6 @@
     <e lm="publike"><i>publike</i><par n="komence__adv"/></e>
     <e lm="publikeco"><i>publikeco</i><par n="nom__n"/></e>
     <e lm="publikigado"><i>publikigado</i><par n="nom__n"/></e>
-    <e lm="publikigado"><i>publikigado</i><par n="nom__n"/></e>
     <e lm="publiko"><i>publiko</i><par n="nom__n"/></e>
     <e lm="pudoro"><i>pudoro</i><par n="nom__n"/></e>
     <e lm="pulbazaro"><i>pulbazaro</i><par n="nom__n"/></e>
@@ -7016,10 +6447,6 @@
     <e lm="puno"><i>puno</i><par n="nom__n"/></e>
     <e lm="punto"><i>punto</i><par n="nom__n"/></e>
     <e lm="pupo"><i>pupo</i><par n="nom__n"/></e>
-    <e lm="pupo"><i>pupo</i><par n="nom__n"/></e>
-    <e lm="pupo"><i>pupo</i><par n="nom__n"/></e>
-    <e lm="pupo"><i>pupo</i><par n="nom__n"/></e>
-    <e lm="pura"><i>pur</i><par n="adj__adj"/></e>
     <e lm="pura"><i>pur</i><par n="adj__adj"/></e>
     <e lm="pureco"><i>pureco</i><par n="nom__n"/></e>
     <e lm="purgatorio"><i>purgatorio</i><par n="nom__n"/></e>
@@ -7027,18 +6454,14 @@
     <e lm="puŝo"><i>pu</i><par n="ŝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="rabati"><i>rabat</i><par n="verb__vblex"/></e>
     <e lm="rabato"><i>rabato</i><par n="nom__n"/></e>
-    <e lm="rabato"><i>rabato</i><par n="nom__n"/></e>
     <e lm="rabio"><i>rabio</i><par n="nom__n"/></e>
-    <e lm="racia"><i>raci</i><par n="adj__adj"/></e>
     <e lm="racia"><i>raci</i><par n="adj__adj"/></e>
     <e lm="raciismo"><i>raciismo</i><par n="nom__n"/></e>
     <e lm="radaro"><i>radaro</i><par n="nom__n"/></e>
     <e lm="radiado"><i>radiado</i><par n="nom__n"/></e>
-    <e lm="radiado"><i>radiado</i><par n="nom__n"/></e>
     <e lm="radikale"><i>radikale</i><par n="komence__adv"/></e>
     <e lm="radikalismo"><i>radikalismo</i><par n="nom__n"/></e>
     <e lm="radiko"><i>radiko</i><par n="nom__n"/></e>
-    <e lm="radio"><i>radio</i><par n="nom__n"/></e>
     <e lm="radio"><i>radio</i><par n="nom__n"/></e>
     <e lm="radioaparato"><i>radioaparato</i><par n="nom__n"/></e>
     <e lm="rado"><i>rado</i><par n="nom__n"/></e>
@@ -7049,17 +6472,11 @@
     <e lm="rakonti"><i>rakont</i><par n="verb__vblex"/></e>
     <e lm="rakontanto"><i>rakontant</i><par n="nommf__n"/></e>
     <e lm="rando"><i>rando</i><par n="nom__n"/></e>
-    <e lm="rando"><i>rando</i><par n="nom__n"/></e>
     <e lm="rango"><i>rango</i><par n="nom__n"/></e>
     <e lm="rankoro"><i>rankoro</i><par n="nom__n"/></e>
     <e lm="rano"><i>rano</i><par n="nom__n"/></e>
     <e lm="rapidi"><i>rapid</i><par n="verb__vblex"/></e>
     <e lm="rapida"><i>rapid</i><par n="adj__adj"/></e>
-    <e lm="rapida"><i>rapid</i><par n="adj__adj"/></e>
-    <e lm="rapida"><i>rapid</i><par n="adj__adj"/></e>
-    <e lm="rapida"><i>rapid</i><par n="adj__adj"/></e>
-    <e lm="rapide"><i>rapide</i><par n="komence__adv"/></e>
-    <e lm="rapide"><i>rapide</i><par n="komence__adv"/></e>
     <e lm="rapide"><i>rapide</i><par n="komence__adv"/></e>
     <e lm="rapideco"><i>rapideco</i><par n="nom__n"/></e>
     <e lm="rapido"><i>rapido</i><par n="nom__n"/></e>
@@ -7085,10 +6502,8 @@
     <e lm="recenzi"><i>recenz</i><par n="verb__vblex"/></e>
     <e lm="recesio"><i>recesio</i><par n="nom__n"/></e>
     <e lm="reciproka"><i>reciprok</i><par n="adj__adj"/></e>
-    <e lm="reciproka"><i>reciprok</i><par n="adj__adj"/></e>
     <e lm="reciprokeco"><i>reciprokeco</i><par n="nom__n"/></e>
     <e lm="reciti"><i>recit</i><par n="verb__vblex"/></e>
-    <e lm="redakcio"><i>redakcio</i><par n="nom__n"/></e>
     <e lm="redakcio"><i>redakcio</i><par n="nom__n"/></e>
     <e lm="redakti"><i>redakt</i><par n="verb__vblex"/></e>
     <e lm="redoni"><i>redon</i><par n="verb__vblex"/></e>
@@ -7101,7 +6516,6 @@
     <e lm="reflekti"><i>reflekt</i><par n="verb__vblex"/></e>
     <e lm="reformi"><i>reform</i><par n="verb__vblex"/></e>
     <e lm="regi"><i>reg</i><par n="verb__vblex"/></e>
-    <e lm="reganto"><i>regant</i><par n="nommf__n"/></e>
     <e lm="reganto"><i>regant</i><par n="nommf__n"/></e>
     <e lm="regeneri"><i>regener</i><par n="verb__vblex"/></e>
     <e lm="regenerado"><i>regenerado</i><par n="nom__n"/></e>
@@ -7162,7 +6576,6 @@
     <e lm="reprodukti"><i>reprodukt</i><par n="verb__vblex"/></e>
     <e lm="reptilio"><i>reptilio</i><par n="nom__n"/></e>
     <e lm="reputacio"><i>reputacio</i><par n="nom__n"/></e>
-    <e lm="reputacio"><i>reputacio</i><par n="nom__n"/></e>
     <e lm="resalto"><i>resalto</i><par n="nom__n"/></e>
     <e lm="resanigo"><i>resanigo</i><par n="nom__n"/></e>
     <e lm="resoni"><i>reson</i><par n="verb__vblex"/></e>
@@ -7173,7 +6586,6 @@
     <e lm="respektive"><i>respektive</i><par n="komence__adv"/></e>
     <e lm="respekto"><i>respekto</i><par n="nom__n"/></e>
     <e lm="respondi"><i>respond</i><par n="verb__vblex"/></e>
-    <e lm="responda"><i>respond</i><par n="adj__adj"/></e>
     <e lm="responda"><i>respond</i><par n="adj__adj"/></e>
     <e lm="respondeca"><i>respondec</i><par n="adj__adj"/></e>
     <e lm="respondeco"><i>respondeco</i><par n="nom__n"/></e>
@@ -7212,7 +6624,6 @@
     <e lm="revizio"><i>revizio</i><par n="nom__n"/></e>
     <e lm="revolucii"><i>revoluci</i><par n="verb__vblex"/></e>
     <e lm="revolucio"><i>revolucio</i><par n="nom__n"/></e>
-    <e lm="revolucio"><i>revolucio</i><par n="nom__n"/></e>
     <e lm="revolvero"><i>revolvero</i><par n="nom__n"/></e>
     <e lm="rezervi"><i>rezerv</i><par n="verb__vblex"/></e>
     <e lm="rezervo"><i>rezervo</i><par n="nom__n"/></e>
@@ -7224,11 +6635,9 @@
     <e lm="rezulti"><i>rezult</i><par n="verb__vblex"/></e>
     <e lm="rezulto"><i>rezulto</i><par n="nom__n"/></e>
     <e lm="ribelo"><i>ribelo</i><par n="nom__n"/></e>
-    <e lm="ribelo"><i>ribelo</i><par n="nom__n"/></e>
     <e lm="riceli"><i>ricel</i><par n="verb__vblex"/></e>
     <e lm="ricevi"><i>ricev</i><par n="verb__vblex"/></e>
     <e lm="ricevilo"><i>ricevil</i><par n="nommf__n"/></e>
-    <e lm="ricevo"><i>ricevo</i><par n="nom__n"/></e>
     <e lm="ricevo"><i>ricevo</i><par n="nom__n"/></e>
     <e lm="riĉa"><i>ri</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="riĉeco"><i>ri</i><par n="ĉ"/><i>eco</i><par n="nom__n"/></e>
@@ -7242,21 +6651,15 @@
     <e lm="rifuzo"><i>rifuzo</i><par n="nom__n"/></e>
     <e lm="rigardo"><i>rigardo</i><par n="nom__n"/></e>
     <e lm="rigida"><i>rigid</i><par n="adj__adj"/></e>
-    <e lm="rigida"><i>rigid</i><par n="adj__adj"/></e>
     <e lm="rigideco"><i>rigideco</i><par n="nom__n"/></e>
     <e lm="rigoreco"><i>rigoreco</i><par n="nom__n"/></e>
     <e lm="rikolti"><i>rikolt</i><par n="verb__vblex"/></e>
     <e lm="rikolto"><i>rikolto</i><par n="nom__n"/></e>
     <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
-    <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
-    <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
-    <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
-    <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
     <e lm="rilatigi"><i>rilatig</i><par n="verb__vblex"/></e>
     <e lm="rilato"><i>rilato</i><par n="nom__n"/></e>
     <e lm="rimarki"><i>rimark</i><par n="verb__vblex"/></e>
     <e lm="rimarkeble"><i>rimarkeble</i><par n="komence__adv"/></e>
-    <e lm="rimedo"><i>rimedo</i><par n="nom__n"/></e>
     <e lm="rimedo"><i>rimedo</i><par n="nom__n"/></e>
     <e lm="rimeno"><i>rimeno</i><par n="nom__n"/></e>
     <e lm="rimo"><i>rimo</i><par n="nom__n"/></e>
@@ -7278,7 +6681,6 @@
     <e lm="rivero"><i>rivero</i><par n="nom__n"/></e>
     <e lm="rizo"><i>rizo</i><par n="nom__n"/></e>
     <e lm="robo"><i>robo</i><par n="nom__n"/></e>
-    <e lm="robo"><i>robo</i><par n="nom__n"/></e>
     <e lm="roboto"><i>roboto</i><par n="nom__n"/></e>
     <e lm="rojo"><i>rojo</i><par n="nom__n"/></e>
     <e lm="rokenrolo"><i>rokenrolo</i><par n="nom__n"/></e>
@@ -7294,7 +6696,6 @@
     <e lm="rompiĝo"><i>rompi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="rompo"><i>rompo</i><par n="nom__n"/></e>
     <e lm="ronda"><i>rond</i><par n="adj__adj"/></e>
-    <e lm="ronda"><i>rond</i><par n="adj__adj"/></e>
     <e lm="rondigi"><i>rondig</i><par n="verb__vblex"/></e>
     <e lm="rondo"><i>rondo</i><par n="nom__n"/></e>
     <e lm="rondveturo"><i>rondveturo</i><par n="nom__n"/></e>
@@ -7305,8 +6706,6 @@
     <e lm="rozo"><i>rozo</i><par n="nom__n"/></e>
     <e lm="rublo"><i>rublo</i><par n="nom__n"/></e>
     <e lm="rubo"><i>rubo</i><par n="nom__n"/></e>
-    <e lm="rubo"><i>rubo</i><par n="nom__n"/></e>
-    <e lm="rubujo"><i>rubujo</i><par n="nom__n"/></e>
     <e lm="rubujo"><i>rubujo</i><par n="nom__n"/></e>
     <e lm="rudimenta"><i>rudiment</i><par n="adj__adj"/></e>
     <e lm="ruĝa"><i>ru</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
@@ -7317,7 +6716,6 @@
     <e lm="rusa"><i>rus</i><par n="adj__adj"/></e>
     <e lm="rusto"><i>rusto</i><par n="nom__n"/></e>
     <e lm="rutino"><i>rutino</i><par n="nom__n"/></e>
-    <e lm="ruza"><i>ruz</i><par n="adj__adj"/></e>
     <e lm="ruza"><i>ruz</i><par n="adj__adj"/></e>
     <e lm="sabato"><i>sabato</i><par n="nom__n"/></e>
     <e lm="sablo"><i>sablo</i><par n="nom__n"/></e>
@@ -7339,16 +6737,11 @@
     <e lm="saluton"><i>saluton</i><par n="adiós__ij"/></e>
 	<e lm="salutnomo"><i>salutnomo</i><par n="nom__n"/></e>
     <e lm="sama"><i>sam</i><par n="adj__adj"/></e>
-    <e lm="sama"><i>sam</i><par n="adj__adj"/></e>
-    <e lm="same"><i>same</i><par n="komence__adv"/></e>
-    <e lm="same"><i>same</i><par n="komence__adv"/></e>
     <e lm="same"><i>same</i><par n="komence__adv"/></e>
     <e lm="samlandano"><i>samlandan</i><par n="nommf__n"/></e>
     <e lm="samopinii"><i>samopini</i><par n="verb__vblex"/></e>
     <e lm="samseksema"><i>samseksem</i><par n="adj__adj"/></e>
     <e lm="samtempa"><i>samtemp</i><par n="adj__adj"/></e>
-    <e lm="samtempa"><i>samtemp</i><par n="adj__adj"/></e>
-    <e lm="samtempe"><i>samtempe</i><par n="komence__adv"/></e>
     <e lm="samtempe"><i>samtempe</i><par n="komence__adv"/></e>
     <e lm="sana"><i>san</i><par n="adj__adj"/></e>
     <e lm="sanatorio"><i>sanatorio</i><par n="nom__n"/></e>
@@ -7356,8 +6749,6 @@
     <e lm="sango"><i>sango</i><par n="nom__n"/></e>
     <e lm="sanitara"><i>sanitar</i><par n="adj__adj"/></e>
     <e lm="sankcio"><i>sankcio</i><par n="nom__n"/></e>
-    <e lm="sankcio"><i>sankcio</i><par n="nom__n"/></e>
-    <e lm="sankta"><i>sankt</i><par n="adj__adj"/></e>
     <e lm="sankta"><i>sankt</i><par n="adj__adj"/></e>
     <e lm="sanktejo"><i>sanktejo</i><par n="nom__n"/></e>
     <e lm="sanktulo"><i>sanktul</i><par n="nommf__n"/></e>
@@ -7383,10 +6774,8 @@
     <e lm="scio"><i>scio</i><par n="nom__n"/></e>
     <e lm="scivola"><i>scivol</i><par n="adj__adj"/></e>
     <e lm="se"><i>se</i><par n="after__cnjadv"/></e>
-    <e lm="se"><i>se</i><par n="after__cnjadv"/></e>
     <e lm="se"><i>se</i><par n="komence__adv"/></e>
     <e lm="se satiĝi"><i>se<b/>sati</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="se eble"><i>se<b/>eble</i><par n="komence__adv"/></e>
     <e lm="se eble"><i>se<b/>eble</i><par n="komence__adv"/></e>
     <e lm="secesio"><i>secesio</i><par n="nom__n"/></e>
     <e lm="sed"><i>sed</i><par n="and__cnjcoo"/></e>
@@ -7400,8 +6789,6 @@
     <e lm="seka"><i>sek</i><par n="adj__adj"/></e>
     <e lm="sekalo"><i>sekalo</i><par n="nom__n"/></e>
     <e lm="sekcio"><i>sekcio</i><par n="nom__n"/></e>
-    <e lm="sekcio"><i>sekcio</i><par n="nom__n"/></e>
-    <e lm="sekeco"><i>sekeco</i><par n="nom__n"/></e>
     <e lm="sekeco"><i>sekeco</i><par n="nom__n"/></e>
     <e lm="sekigi"><i>sekig</i><par n="verb__vblex"/></e>
     <e lm="sekretario"><i>sekretari</i><par n="nommf__n"/></e>
@@ -7414,7 +6801,6 @@
     <e lm="seksperfortado"><i>seksperfortado</i><par n="nom__n"/></e>
     <e lm="sekto"><i>sekto</i><par n="nom__n"/></e>
     <e lm="sektoro"><i>sektoro</i><par n="nom__n"/></e>
-    <e lm="sekulara"><i>sekular</i><par n="adj__adj"/></e>
     <e lm="sekulara"><i>sekular</i><par n="adj__adj"/></e>
     <e lm="sekura"><i>sekur</i><par n="adj__adj"/></e>
     <e lm="sekvi"><i>sekv</i><par n="verb__vblex"/></e>
@@ -7438,7 +6824,6 @@
     <e lm="sen ĉirkaŭparoloj"><i>sen<b/></i><par n="ĉ"/><i>irka</i><par n="ŭ"/><i>paroloj</i><par n="komence__adv"/></e>
     <e lm="senatano"><i>senatan</i><par n="nommf__n"/></e>
     <e lm="senatenda"><i>senatend</i><par n="adj__adj"/></e>
-    <e lm="senatenda"><i>senatend</i><par n="adj__adj"/></e>
     <e lm="senato"><i>senato</i><par n="nom__n"/></e>
     <e lm="senbaza"><i>senbaz</i><par n="adj__adj"/></e>
     <e lm="senĉesa"><i>sen</i><par n="ĉ"/><i>es</i><par n="adj__adj"/></e>
@@ -7451,18 +6836,13 @@
     <e lm="sendependeco"><i>sendependeco</i><par n="nom__n"/></e>
     <e lm="sendevigo"><i>sendevigo</i><par n="nom__n"/></e>
     <e lm="sendiference"><i>sendiference</i><par n="komence__adv"/></e>
-    <e lm="sendiference"><i>sendiference</i><par n="komence__adv"/></e>
     <e lm="sendo"><i>sendo</i><par n="nom__n"/></e>
     <e lm="sendormeco"><i>sendormeco</i><par n="nom__n"/></e>
     <e lm="senduba"><i>sendub</i><par n="adj__adj"/></e>
     <e lm="sendube"><i>sendube</i><par n="komence__adv"/></e>
-    <e lm="sendube"><i>sendube</i><par n="komence__adv"/></e>
     <e lm="senefika"><i>senefik</i><par n="adj__adj"/></e>
     <e lm="senfine"><i>senfine</i><par n="komence__adv"/></e>
-    <e lm="senfine"><i>senfine</i><par n="komence__adv"/></e>
     <e lm="senfrukta"><i>senfrukt</i><par n="adj__adj"/></e>
-    <e lm="senhava"><i>senhav</i><par n="adj__adj"/></e>
-    <e lm="senhava"><i>senhav</i><par n="adj__adj"/></e>
     <e lm="senhava"><i>senhav</i><par n="adj__adj"/></e>
     <e lm="senhoma"><i>senhom</i><par n="adj__adj"/></e>
     <e lm="senhonte"><i>senhonte</i><par n="komence__adv"/></e>
@@ -7474,22 +6854,16 @@
     <e lm="senkapabligi"><i>senkapablig</i><par n="verb__vblex"/></e>
     <e lm="senkaŝe"><i>senka</i><par n="ŝ"/><i>e</i><par n="komence__adv"/></e>
     <e lm="senkonsidera"><i>senkonsider</i><par n="adj__adj"/></e>
-    <e lm="senkonsidera"><i>senkonsider</i><par n="adj__adj"/></e>
-    <e lm="senkonsidera"><i>senkonsider</i><par n="adj__adj"/></e>
-    <e lm="senkonsidera"><i>senkonsider</i><par n="adj__adj"/></e>
     <e lm="senkulpa"><i>senkulp</i><par n="adj__adj"/></e>
     <e lm="senkultura"><i>senkultur</i><par n="adj__adj"/></e>
-    <e lm="senlaboreco"><i>senlaboreco</i><par n="nom__n"/></e>
     <e lm="senlaboreco"><i>senlaboreco</i><par n="nom__n"/></e>
     <e lm="senlaca"><i>senlac</i><par n="adj__adj"/></e>
     <e lm="senlima"><i>senlim</i><par n="adj__adj"/></e>
     <e lm="senmalico"><i>senmalico</i><par n="nom__n"/></e>
     <e lm="senmanka"><i>senmank</i><par n="adj__adj"/></e>
     <e lm="senmezura"><i>senmezur</i><par n="adj__adj"/></e>
-    <e lm="senmezura"><i>senmezur</i><par n="adj__adj"/></e>
     <e lm="senmorta"><i>senmort</i><par n="adj__adj"/></e>
     <e lm="senmova"><i>senmov</i><par n="adj__adj"/></e>
-    <e lm="sennombra"><i>sennombr</i><par n="adj__adj"/></e>
     <e lm="sennombra"><i>sennombr</i><par n="adj__adj"/></e>
     <e lm="senorda"><i>senord</i><par n="adj__adj"/></e>
     <e lm="senpacienco"><i>senpacienco</i><par n="nom__n"/></e>
@@ -7501,7 +6875,6 @@
     <e lm="senrezerva"><i>senrezerv</i><par n="adj__adj"/></e>
     <e lm="sensacio"><i>sensacio</i><par n="nom__n"/></e>
     <e lm="sensaco"><i>sensaco</i><par n="nom__n"/></e>
-    <e lm="sensaco"><i>sensaco</i><par n="nom__n"/></e>
     <e lm="sensenta"><i>sensent</i><par n="adj__adj"/></e>
     <e lm="sensprita"><i>sensprit</i><par n="adj__adj"/></e>
     <e lm="senŝeligi"><i>sen</i><par n="ŝ"/><i>elig</i><par n="verb__vblex"/></e>
@@ -7511,15 +6884,10 @@
     <e lm="sentivigi"><i>sentivig</i><par n="verb__vblex"/></e>
     <e lm="sento"><i>sento</i><par n="nom__n"/></e>
     <e lm="senutila"><i>senutil</i><par n="adj__adj"/></e>
-    <e lm="senutila"><i>senutil</i><par n="adj__adj"/></e>
-    <e lm="senutila"><i>senutil</i><par n="adj__adj"/></e>
-    <e lm="senutila"><i>senutil</i><par n="adj__adj"/></e>
     <e lm="senvole"><i>senvole</i><par n="komence__adv"/></e>
     <e lm="sepio"><i>sepio</i><par n="nom__n"/></e>
     <e lm="sepsa"><i>seps</i><par n="adj__adj"/></e>
     <e lm="septembro"><i>septembro</i><par n="nom__n"/></e>
-    <e lm="septo"><i>septo</i><par n="nom__n"/></e>
-    <e lm="septo"><i>septo</i><par n="nom__n"/></e>
     <e lm="septo"><i>septo</i><par n="nom__n"/></e>
     <e lm="serĉi"><i>ser</i><par n="ĉ"/><i></i><par n="verb__vblex"/></e>
     <e lm="serena"><i>seren</i><par n="adj__adj"/></e>
@@ -7554,13 +6922,10 @@
     <e lm="simfonio"><i>simfonio</i><par n="nom__n"/></e>
     <e lm="simio"><i>simi</i><par n="nommf__n"/></e>
     <e lm="simila"><i>simil</i><par n="adj__adj"/></e>
-    <e lm="simila"><i>simil</i><par n="adj__adj"/></e>
     <e lm="simili"><i>simil</i><par n="verb__vblex"/></e>
     <e lm="simpatio"><i>simpatio</i><par n="nom__n"/></e>
     <e lm="simpla"><i>simpl</i><par n="adj__adj"/></e>
     <e lm="simple"><i>simple</i><par n="komence__adv"/></e>
-    <e lm="simple"><i>simple</i><par n="komence__adv"/></e>
-    <e lm="simple nur"><i>simple<b/>nur</i><par n="komence__adv"/></e>
     <e lm="simple nur"><i>simple<b/>nur</i><par n="komence__adv"/></e>
     <e lm="simpleco"><i>simpleco</i><par n="nom__n"/></e>
     <e lm="simpozio"><i>simpozio</i><par n="nom__n"/></e>
@@ -7570,26 +6935,20 @@
     <e lm="sinagogo"><i>sinagogo</i><par n="nom__n"/></e>
     <e lm="sincera"><i>sincer</i><par n="adj__adj"/></e>
     <e lm="sincere"><i>sincere</i><par n="komence__adv"/></e>
-    <e lm="sincere"><i>sincere</i><par n="komence__adv"/></e>
-    <e lm="sincere"><i>sincere</i><par n="komence__adv"/></e>
     <e lm="sincere dirite"><i>sincere<b/>dirite</i><par n="komence__adv"/></e>
     <e lm="sincereco"><i>sincereco</i><par n="nom__n"/></e>
     <e lm="sindeteno"><i>sindeteno</i><par n="nom__n"/></e>
     <e lm="sindikata"><i>sindikat</i><par n="adj__adj"/></e>
     <e lm="sindikato"><i>sindikato</i><par n="nom__n"/></e>
     <e lm="sindona"><i>sindon</i><par n="adj__adj"/></e>
-    <e lm="sindona"><i>sindon</i><par n="adj__adj"/></e>
     <e lm="sindonema"><i>sindonem</i><par n="adj__adj"/></e>
     <e lm="sindromo"><i>sindromo</i><par n="nom__n"/></e>
-    <e lm="singarda"><i>singard</i><par n="adj__adj"/></e>
-    <e lm="singarda"><i>singard</i><par n="adj__adj"/></e>
     <e lm="singarda"><i>singard</i><par n="adj__adj"/></e>
     <e lm="singardeco"><i>singardeco</i><par n="nom__n"/></e>
     <e lm="sinistra"><i>sinistr</i><par n="adj__adj"/></e>
     <e lm="sinjoro"><i>sinjor</i><par n="nommf__n"/></e>
     <e lm="sinkigo"><i>sinkigo</i><par n="nom__n"/></e>
     <e lm="sinkronigi"><i>sinkronig</i><par n="verb__vblex"/></e>
-    <e lm="sino"><i>sino</i><par n="nom__n"/></e>
     <e lm="sino"><i>sino</i><par n="nom__n"/></e>
     <e lm="sinsekva"><i>sinsekv</i><par n="adj__adj"/></e>
     <e lm="sinteno"><i>sinteno</i><par n="nom__n"/></e>
@@ -7603,7 +6962,6 @@
     <e lm="sistemo"><i>sistemo</i><par n="nom__n"/></e>
     <e lm="situacio"><i>situacio</i><par n="nom__n"/></e>
     <e lm="skabio"><i>skabio</i><par n="nom__n"/></e>
-    <e lm="skandalo"><i>skandalo</i><par n="nom__n"/></e>
     <e lm="skandalo"><i>skandalo</i><par n="nom__n"/></e>
     <e lm="skanilo"><i>skanilo</i><par n="nom__n"/></e>
     <e lm="skatolo"><i>skatolo</i><par n="nom__n"/></e>
@@ -7644,10 +7002,8 @@
     <e lm="soldato"><i>soldat</i><par n="nommf__n"/></e>
     <e lm="soleco"><i>soleco</i><par n="nom__n"/></e>
     <e lm="solena"><i>solen</i><par n="adj__adj"/></e>
-    <e lm="solena"><i>solen</i><par n="adj__adj"/></e>
     <e lm="soleo"><i>soleo</i><par n="nom__n"/></e>
     <e lm="solfeĝo"><i>solfe</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="solida"><i>solid</i><par n="adj__adj"/></e>
     <e lm="solida"><i>solid</i><par n="adj__adj"/></e>
     <e lm="solidareco"><i>solidareco</i><par n="nom__n"/></e>
     <e lm="solidigi"><i>solidig</i><par n="verb__vblex"/></e>
@@ -7655,14 +7011,11 @@
     <e lm="solvi"><i>solv</i><par n="verb__vblex"/></e>
     <e lm="solvo"><i>solvo</i><par n="nom__n"/></e>
     <e lm="sombra"><i>sombr</i><par n="adj__adj"/></e>
-    <e lm="sombra"><i>sombr</i><par n="adj__adj"/></e>
-    <e lm="sombra"><i>sombr</i><par n="adj__adj"/></e>
     <e lm="somero"><i>somero</i><par n="nom__n"/></e>
     <e lm="soni"><i>son</i><par n="verb__vblex"/></e>
     <e lm="sonĝi"><i>son</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="sonĝo"><i>son</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="sono"><i>sono</i><par n="nom__n"/></e>
-    <e lm="sonorilo"><i>sonorilo</i><par n="nom__n"/></e>
     <e lm="sonorilo"><i>sonorilo</i><par n="nom__n"/></e>
     <e lm="sonoro"><i>sonoro</i><par n="nom__n"/></e>
     <e lm="sorbi"><i>sorb</i><par n="verb__vblex"/></e>
@@ -7686,11 +7039,7 @@
     <e lm="spektanto"><i>spektant</i><par n="nommf__n"/></e>
     <e lm="spektemo"><i>spektemo</i><par n="nom__n"/></e>
     <e lm="spekulado"><i>spekulado</i><par n="nom__n"/></e>
-    <e lm="spekulado"><i>spekulado</i><par n="nom__n"/></e>
     <e lm="spermo"><i>spermo</i><par n="nom__n"/></e>
-    <e lm="sperta"><i>spert</i><par n="adj__adj"/></e>
-    <e lm="sperta"><i>spert</i><par n="adj__adj"/></e>
-    <e lm="sperta"><i>spert</i><par n="adj__adj"/></e>
     <e lm="sperta"><i>spert</i><par n="adj__adj"/></e>
     <e lm="sperti"><i>spert</i><par n="verb__vblex"/></e>
     <e lm="sperto"><i>sperto</i><par n="nom__n"/></e>
@@ -7702,10 +7051,7 @@
     <e lm="spirita"><i>spirit</i><par n="adj__adj"/></e>
     <e lm="spirito"><i>spirito</i><par n="nom__n"/></e>
     <e lm="splenda"><i>splend</i><par n="adj__adj"/></e>
-    <e lm="splenda"><i>splend</i><par n="adj__adj"/></e>
-    <e lm="splenda"><i>splend</i><par n="adj__adj"/></e>
     <e lm="splendo"><i>splendo</i><par n="nom__n"/></e>
-    <e lm="spongo"><i>spongo</i><par n="nom__n"/></e>
     <e lm="spongo"><i>spongo</i><par n="nom__n"/></e>
     <e lm="sponsorado"><i>sponsorado</i><par n="nom__n"/></e>
     <e lm="spontanea"><i>spontane</i><par n="adj__adj"/></e>
@@ -7714,18 +7060,15 @@
     <e lm="sportisto"><i>sportist</i><par n="nommf__n"/></e>
     <e lm="sporto"><i>sporto</i><par n="nom__n"/></e>
     <e lm="sprita"><i>sprit</i><par n="adj__adj"/></e>
-    <e lm="sprita"><i>sprit</i><par n="adj__adj"/></e>
     <e lm="spritaĵo"><i>sprita</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="sproni"><i>spron</i><par n="verb__vblex"/></e>
     <e lm="spuro"><i>spuro</i><par n="nom__n"/></e>
-    <e lm="stacidomo"><i>stacidomo</i><par n="nom__n"/></e>
     <e lm="stacidomo"><i>stacidomo</i><par n="nom__n"/></e>
     <e lm="stadio"><i>stadio</i><par n="nom__n"/></e>
     <e lm="stakigi"><i>stakig</i><par n="verb__vblex"/></e>
     <e lm="stalo"><i>stalo</i><par n="nom__n"/></e>
     <e lm="stampi"><i>stamp</i><par n="verb__vblex"/></e>
     <e lm="stampo"><i>stampo</i><par n="nom__n"/></e>
-    <e lm="stango"><i>stango</i><par n="nom__n"/></e>
     <e lm="stango"><i>stango</i><par n="nom__n"/></e>
     <e lm="stano"><i>stano</i><par n="nom__n"/></e>
     <e lm="starigo"><i>starigo</i><par n="nom__n"/></e>
@@ -7734,7 +7077,6 @@
     <e lm="statuo"><i>statuo</i><par n="nom__n"/></e>
     <e lm="staturo"><i>staturo</i><par n="nom__n"/></e>
     <e lm="statuto"><i>statuto</i><par n="nom__n"/></e>
-    <e lm="stelo"><i>stelo</i><par n="nom__n"/></e>
     <e lm="stelo"><i>stelo</i><par n="nom__n"/></e>
     <e lm="stereotipo"><i>stereotipo</i><par n="nom__n"/></e>
     <e lm="sterki"><i>sterk</i><par n="verb__vblex"/></e>
@@ -7750,7 +7092,6 @@
     <e lm="plaĝo"><i>pla</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="strando"><i>strando</i><par n="nom__n"/></e>
     <e lm="stranga"><i>strang</i><par n="adj__adj"/></e>
-    <e lm="stranga"><i>strang</i><par n="adj__adj"/></e>
     <e lm="strategio"><i>strategio</i><par n="nom__n"/></e>
     <e lm="strateto"><i>strateto</i><par n="nom__n"/></e>
     <e lm="strato"><i>strato</i><par n="nom__n"/></e>
@@ -7763,8 +7104,6 @@
     <e lm="striko"><i>striko</i><par n="nom__n"/></e>
     <e lm="strikti"><i>strikt</i><par n="verb__vblex"/></e>
     <e lm="strikta"><i>strikt</i><par n="adj__adj"/></e>
-    <e lm="strikta"><i>strikt</i><par n="adj__adj"/></e>
-    <e lm="strikta"><i>strikt</i><par n="adj__adj"/></e>
     <e lm="strikte"><i>strikte</i><par n="komence__adv"/></e>
     <e lm="strukturi"><i>struktur</i><par n="verb__vblex"/></e>
     <e lm="strukturo"><i>strukturo</i><par n="nom__n"/></e>
@@ -7773,8 +7112,6 @@
     <e lm="studanto"><i>studant</i><par n="nommf__n"/></e>
     <e lm="studo"><i>studo</i><par n="nom__n"/></e>
     <e lm="stulta"><i>stult</i><par n="adj__adj"/></e>
-    <e lm="stulta"><i>stult</i><par n="adj__adj"/></e>
-    <e lm="stulteco"><i>stulteco</i><par n="nom__n"/></e>
     <e lm="stulteco"><i>stulteco</i><par n="nom__n"/></e>
     <e lm="sturmo"><i>sturmo</i><par n="nom__n"/></e>
     <e lm="sub"><i>sub</i><par n="at__pr"/></e>
@@ -7798,7 +7135,6 @@
     <e lm="substreki"><i>substrek</i><par n="verb__vblex"/></e>
     <e lm="subtaksi"><i>subtaks</i><par n="verb__vblex"/></e>
     <e lm="subteni"><i>subten</i><par n="verb__vblex"/></e>
-    <e lm="subtila"><i>subtil</i><par n="adj__adj"/></e>
     <e lm="subtila"><i>subtil</i><par n="adj__adj"/></e>
     <e lm="subtitolo"><i>subtitolo</i><par n="nom__n"/></e>
     <e lm="subvencii"><i>subvenci</i><par n="verb__vblex"/></e>
@@ -7835,7 +7171,6 @@
     <e lm="superi"><i>super</i><par n="verb__vblex"/></e>
     <e lm="supera"><i>super</i><par n="adj__adj"/></e>
     <e lm="superba"><i>superb</i><par n="adj__adj"/></e>
-    <e lm="superba"><i>superb</i><par n="adj__adj"/></e>
     <e lm="superbazaro"><i>superbazaro</i><par n="nom__n"/></e>
     <e lm="superdozo"><i>superdozo</i><par n="nom__n"/></e>
     <e lm="supereco"><i>supereco</i><par n="nom__n"/></e>
@@ -7844,15 +7179,11 @@
     <e lm="superregi"><i>superreg</i><par n="verb__vblex"/></e>
     <e lm="supersona"><i>superson</i><par n="adj__adj"/></e>
     <e lm="superstiĉo"><i>supersti</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="superstiĉo"><i>supersti</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="suplementa"><i>suplement</i><par n="adj__adj"/></e>
     <e lm="suplementa"><i>suplement</i><par n="adj__adj"/></e>
     <e lm="suplemento"><i>suplemento</i><par n="nom__n"/></e>
     <e lm="supo"><i>supo</i><par n="nom__n"/></e>
     <e lm="supozi"><i>supoz</i><par n="verb__vblex"/></e>
     <e lm="supozata"><i>supozat</i><par n="adj__adj"/></e>
-    <e lm="supozeble"><i>supozeble</i><par n="komence__adv"/></e>
-    <e lm="supozeble"><i>supozeble</i><par n="komence__adv"/></e>
     <e lm="supozeble"><i>supozeble</i><par n="komence__adv"/></e>
     <e lm="supozitorio"><i>supozitorio</i><par n="nom__n"/></e>
     <e lm="supozo"><i>supozo</i><par n="nom__n"/></e>
@@ -7873,8 +7204,6 @@
     <e lm="surteriĝo"><i>surteri</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="suspekti"><i>suspekt</i><par n="verb__vblex"/></e>
     <e lm="suspektema"><i>suspektem</i><par n="adj__adj"/></e>
-    <e lm="suspektema"><i>suspektem</i><par n="adj__adj"/></e>
-    <e lm="suspektema"><i>suspektem</i><par n="adj__adj"/></e>
     <e lm="suspekto"><i>suspekto</i><par n="nom__n"/></e>
     <e lm="suspiri"><i>suspir</i><par n="verb__vblex"/></e>
     <e lm="suspiro"><i>suspiro</i><par n="nom__n"/></e>
@@ -7883,8 +7212,6 @@
     <e lm="svarmo"><i>svarmo</i><par n="nom__n"/></e>
     <e lm="sveda"><i>sved</i><par n="adj__adj"/></e>
     <e lm="svelta"><i>svelt</i><par n="adj__adj"/></e>
-    <e lm="svelta"><i>svelt</i><par n="adj__adj"/></e>
-    <e lm="sveno"><i>sveno</i><par n="nom__n"/></e>
     <e lm="sveno"><i>sveno</i><par n="nom__n"/></e>
     <e lm="svetero"><i>svetero</i><par n="nom__n"/></e>
     <e lm="svingi"><i>sving</i><par n="verb__vblex"/></e>
@@ -7914,7 +7241,6 @@
     <e lm="ŝipa"><par n="ŝ"/><i>ip</i><par n="adj__adj"/></e>
     <e lm="ŝipano"><par n="ŝ"/><i>ipan</i><par n="nommf__n"/></e>
     <e lm="ŝipanaro"><par n="ŝ"/><i>ipanaro</i><par n="nom__n"/></e>
-    <e lm="ŝipanaro"><par n="ŝ"/><i>ipanaro</i><par n="nom__n"/></e>
     <e lm="ŝipkonstruejo"><par n="ŝ"/><i>ipkonstruejo</i><par n="nom__n"/></e>
     <e lm="ŝipo"><par n="ŝ"/><i>ipo</i><par n="nom__n"/></e>
     <e lm="ŝiprompiĝo"><par n="ŝ"/><i>iprompi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -7923,7 +7249,6 @@
     <e lm="ŝlosilo"><par n="ŝ"/><i>losilo</i><par n="nom__n"/></e>
     <e lm="ŝminko"><par n="ŝ"/><i>minko</i><par n="nom__n"/></e>
     <e lm="ŝmiri"><par n="ŝ"/><i>mir</i><par n="verb__vblex"/></e>
-    <e lm="ŝoforo"><par n="ŝ"/><i>ofor</i><par n="nommf__n"/></e>
     <e lm="ŝoforo"><par n="ŝ"/><i>ofor</i><par n="nommf__n"/></e>
     <e lm="ŝoko"><par n="ŝ"/><i>oko</i><par n="nom__n"/></e>
     <e lm="ŝoseo"><par n="ŝ"/><i>oseo</i><par n="nom__n"/></e>
@@ -7981,12 +7306,9 @@
     <e lm="talpo"><i>talpo</i><par n="nom__n"/></e>
     <e lm="tamburo"><i>tamburo</i><par n="nom__n"/></e>
     <e lm="tamen"><i>tamen</i><par n="after__cnjadv"/></e>
-    <e lm="tamen"><i>tamen</i><par n="after__cnjadv"/></e>
     <e lm="tamen"><i>tamen</i><par n="komence__adv"/></e>
     <e lm="tampono"><i>tampono</i><par n="nom__n"/></e>
-    <e lm="tampono"><i>tampono</i><par n="nom__n"/></e>
     <e lm="tamtame"><i>tamtame</i><par n="komence__adv"/></e>
-    <e lm="tantiemo"><i>tantiemo</i><par n="nom__n"/></e>
     <e lm="tantiemo"><i>tantiemo</i><par n="nom__n"/></e>
     <e lm="tapiŝo"><i>tapi</i><par n="ŝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="tarifo"><i>tarifo</i><par n="nom__n"/></e>
@@ -7998,8 +7320,6 @@
     <e lm="tedi"><i>ted</i><par n="verb__vblex"/></e>
     <e lm="tedaĵo"><i>teda</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="tegi"><i>teg</i><par n="verb__vblex"/></e>
-    <e lm="tegmento"><i>tegmento</i><par n="nom__n"/></e>
-    <e lm="tegmento"><i>tegmento</i><par n="nom__n"/></e>
     <e lm="tegmento"><i>tegmento</i><par n="nom__n"/></e>
     <e lm="teknikisto"><i>teknikist</i><par n="nommf__n"/></e>
     <e lm="teknologia"><i>teknologi</i><par n="adj__adj"/></e>
@@ -8018,8 +7338,6 @@
     <e lm="televido"><i>televido</i><par n="nom__n"/></e>
     <e lm="temerara"><i>temerar</i><par n="adj__adj"/></e>
     <e lm="temo"><i>temo</i><par n="nom__n"/></e>
-    <e lm="temo"><i>temo</i><par n="nom__n"/></e>
-    <e lm="temo"><i>temo</i><par n="nom__n"/></e>
     <e lm="temperamento"><i>temperamento</i><par n="nom__n"/></e>
     <e lm="temperaturo"><i>temperaturo</i><par n="nom__n"/></e>
     <e lm="templo"><i>templo</i><par n="nom__n"/></e>
@@ -8029,7 +7347,6 @@
     <e lm="tendenci"><i>tendenc</i><par n="verb__vblex"/></e>
     <e lm="tendenco"><i>tendenco</i><par n="nom__n"/></e>
     <e lm="tendeno"><i>tendeno</i><par n="nom__n"/></e>
-    <e lm="tenera"><i>tener</i><par n="adj__adj"/></e>
     <e lm="tenera"><i>tener</i><par n="adj__adj"/></e>
     <e lm="tenereco"><i>tenereco</i><par n="nom__n"/></e>
     <e lm="tenilo"><i>tenilo</i><par n="nom__n"/></e>
@@ -8043,7 +7360,6 @@
     <e lm="teorio"><i>teorio</i><par n="nom__n"/></e>
     <e lm="terapio"><i>terapio</i><par n="nom__n"/></e>
     <e lm="teraso"><i>teraso</i><par n="nom__n"/></e>
-    <e lm="teraso"><i>teraso</i><par n="nom__n"/></e>
     <e lm="tereno"><i>tereno</i><par n="nom__n"/></e>
     <e lm="tergloba"><i>terglob</i><par n="adj__adj"/></e>
     <e lm="teritorio"><i>teritorio</i><par n="nom__n"/></e>
@@ -8055,9 +7371,6 @@
     <e lm="teroristo"><i>terorist</i><par n="nommf__n"/></e>
     <e lm="terpomo"><i>terpomo</i><par n="nom__n"/></e>
     <e lm="tertremo"><i>tertremo</i><par n="nom__n"/></e>
-    <e lm="terura"><i>terur</i><par n="adj__adj"/></e>
-    <e lm="terura"><i>terur</i><par n="adj__adj"/></e>
-    <e lm="terura"><i>terur</i><par n="adj__adj"/></e>
     <e lm="terura"><i>terur</i><par n="adj__adj"/></e>
     <e lm="teruro"><i>teruro</i><par n="nom__n"/></e>
     <e lm="testamento"><i>testamento</i><par n="nom__n"/></e>
@@ -8072,15 +7385,12 @@
     <e lm="tie"><i>tie</i><par n="komence__adv"/></e>
     <e lm="tiel"><i>tiel</i><par n="very__preadv"/></e>
     <e lm="tiel"><i>tiel</i><par n="komence__adv"/></e>
-    <e lm="tiel"><i>tiel</i><par n="komence__adv"/></e>
-    <e lm="tiel ke"><i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="at__pr"/></e>
     <e lm="tiel kiel"><i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>
     <e lm="tigro"><i>tigr</i><par n="nommf__n"/></e>
     <e lm="timi"><i>tim</i><par n="verb__vblex"/></e>
     <e lm="timbalo"><i>timbalo</i><par n="nom__n"/></e>
-    <e lm="timema"><i>timem</i><par n="adj__adj"/></e>
     <e lm="timema"><i>timem</i><par n="adj__adj"/></e>
     <e lm="timideco"><i>timideco</i><par n="nom__n"/></e>
     <e lm="timigi"><i>timig</i><par n="verb__vblex"/></e>
@@ -8131,7 +7441,6 @@
     <e lm="torto"><i>torto</i><par n="nom__n"/></e>
     <e lm="totalo"><i>totalo</i><par n="nom__n"/></e>
     <e lm="tra"><i>tra</i><par n="at__pr"/></e>
-    <e lm="tra"><i>tra</i><par n="at__pr"/></e>
     <e lm="trabo"><i>trabo</i><par n="nom__n"/></e>
     <e lm="tradicia"><i>tradici</i><par n="adj__adj"/></e>
     <e lm="tradicio"><i>tradicio</i><par n="nom__n"/></e>
@@ -8141,8 +7450,6 @@
     <e lm="trafi"><i>traf</i><par n="verb__vblex"/></e>
     <e lm="trafikcirklo"><i>trafikcirklo</i><par n="nom__n"/></e>
     <e lm="trafiko"><i>trafiko</i><par n="nom__n"/></e>
-    <e lm="trafiko"><i>trafiko</i><par n="nom__n"/></e>
-    <e lm="trafo"><i>trafo</i><par n="nom__n"/></e>
     <e lm="trafo"><i>trafo</i><par n="nom__n"/></e>
     <e lm="tragedio"><i>tragedio</i><par n="nom__n"/></e>
     <e lm="tragika"><i>tragik</i><par n="adj__adj"/></e>
@@ -8150,9 +7457,7 @@
     <e lm="trajektorio"><i>trajektorio</i><par n="nom__n"/></e>
     <e lm="trajno"><i>trajno</i><par n="nom__n"/></e>
     <e lm="trajto"><i>trajto</i><par n="nom__n"/></e>
-    <e lm="trajto"><i>trajto</i><par n="nom__n"/></e>
     <e lm="trakti"><i>trakt</i><par n="verb__vblex"/></e>
-    <e lm="traktado"><i>traktado</i><par n="nom__n"/></e>
     <e lm="traktado"><i>traktado</i><par n="nom__n"/></e>
     <e lm="traktoro"><i>traktoro</i><par n="nom__n"/></e>
     <e lm="tramo"><i>tramo</i><par n="nom__n"/></e>
@@ -8164,13 +7469,10 @@
     <e lm="tranĉeo"><i>tran</i><par n="ĉ"/><i>eo</i><par n="nom__n"/></e>
     <e lm="tranĉilo"><i>tran</i><par n="ĉ"/><i>ilo</i><par n="nom__n"/></e>
     <e lm="trankvila"><i>trankvil</i><par n="adj__adj"/></e>
-    <e lm="trankvila"><i>trankvil</i><par n="adj__adj"/></e>
     <e lm="trankviligi"><i>trankvilig</i><par n="verb__vblex"/></e>
     <e lm="tranoktejo"><i>tranoktejo</i><par n="nom__n"/></e>
     <e lm="transakcio"><i>transakcio</i><par n="nom__n"/></e>
     <e lm="transdoni"><i>transdon</i><par n="verb__vblex"/></e>
-    <e lm="transdono"><i>transdono</i><par n="nom__n"/></e>
-    <e lm="transdono"><i>transdono</i><par n="nom__n"/></e>
     <e lm="transdono"><i>transdono</i><par n="nom__n"/></e>
     <e lm="transformi"><i>transform</i><par n="verb__vblex"/></e>
     <e lm="transfuzo"><i>transfuzo</i><par n="nom__n"/></e>
@@ -8179,7 +7481,6 @@
     <e lm="transplanti"><i>transplant</i><par n="verb__vblex"/></e>
     <e lm="transporti"><i>transport</i><par n="verb__vblex"/></e>
     <e lm="transporto"><i>transporto</i><par n="nom__n"/></e>
-    <e lm="transversa"><i>transvers</i><par n="adj__adj"/></e>
     <e lm="transversa"><i>transvers</i><par n="adj__adj"/></e>
     <e lm="traŭmata"><i>tra</i><par n="ŭ"/><i>mat</i><par n="adj__adj"/></e>
     <e lm="traŭmatismo"><i>tra</i><par n="ŭ"/><i>matismo</i><par n="nom__n"/></e>
@@ -8215,10 +7516,8 @@
     <e lm="tritiko"><i>tritiko</i><par n="nom__n"/></e>
     <e lm="triumfo"><i>triumfo</i><par n="nom__n"/></e>
     <e lm="troa"><i>tro</i><par n="adj__adj"/></e>
-    <e lm="troa"><i>tro</i><par n="adj__adj"/></e>
     <e lm="tro da"><i>tro<b/>da</i><par n="komence__adv"/></e>
     <e lm="trobla"><i>trobl</i><par n="adj__adj"/></e>
-    <e lm="troe"><i>troe</i><par n="komence__adv"/></e>
     <e lm="troe"><i>troe</i><par n="komence__adv"/></e>
     <e lm="trofeo"><i>trofeo</i><par n="nom__n"/></e>
     <e lm="troigi"><i>troig</i><par n="verb__vblex"/></e>
@@ -8234,7 +7533,6 @@
     <e lm="trunko"><i>trunko</i><par n="nom__n"/></e>
     <e lm="truo"><i>truo</i><par n="nom__n"/></e>
     <e lm="trup-unuo"><i>trup-unuo</i><par n="nom__n"/></e>
-    <e lm="trupo"><i>trupo</i><par n="nom__n"/></e>
     <e lm="trupo"><i>trupo</i><par n="nom__n"/></e>
     <e lm="tualetakvo"><i>tualetakvo</i><par n="nom__n"/></e>
     <e lm="tubaro"><i>tubaro</i><par n="nom__n"/></e>
@@ -8312,7 +7610,6 @@
     <e lm="vakcino"><i>vakcino</i><par n="nom__n"/></e>
     <e lm="valenciano"><i>valencian</i><par n="nommf__n"/></e>
     <e lm="valida"><i>valid</i><par n="adj__adj"/></e>
-    <e lm="valida"><i>valid</i><par n="adj__adj"/></e>
     <e lm="validigi"><i>validig</i><par n="verb__vblex"/></e>
     <e lm="valizo"><i>valizo</i><par n="nom__n"/></e>
     <e lm="valo"><i>valo</i><par n="nom__n"/></e>
@@ -8329,8 +7626,6 @@
     <e lm="varbi"><i>varb</i><par n="verb__vblex"/></e>
     <e lm="varii"><i>vari</i><par n="verb__vblex"/></e>
     <e lm="varia"><i>vari</i><par n="adj__adj"/></e>
-    <e lm="varia"><i>vari</i><par n="adj__adj"/></e>
-    <e lm="variado"><i>variado</i><par n="nom__n"/></e>
     <e lm="variado"><i>variado</i><par n="nom__n"/></e>
     <e lm="vario"><i>vario</i><par n="nom__n"/></e>
     <e lm="varmego"><i>varmego</i><par n="nom__n"/></e>
@@ -8338,9 +7633,6 @@
     <e lm="varo"><i>varo</i><par n="nom__n"/></e>
     <e lm="varvagono"><i>varvagono</i><par n="nom__n"/></e>
     <e lm="vasta"><i>vast</i><par n="adj__adj"/></e>
-    <e lm="vasta"><i>vast</i><par n="adj__adj"/></e>
-    <e lm="vasta"><i>vast</i><par n="adj__adj"/></e>
-    <e lm="vaste"><i>vaste</i><par n="komence__adv"/></e>
     <e lm="vaste"><i>vaste</i><par n="komence__adv"/></e>
     <e lm="vatbulo"><i>vatbulo</i><par n="nom__n"/></e>
     <e lm="vato"><i>vato</i><par n="nom__n"/></e>
@@ -8370,13 +7662,8 @@
     <e lm="ventumilo"><i>ventumilo</i><par n="nom__n"/></e>
     <e lm="veprejo"><i>veprejo</i><par n="nom__n"/></e>
     <e lm="vera"><i>ver</i><par n="adj__adj"/></e>
-    <e lm="vera"><i>ver</i><par n="adj__adj"/></e>
-    <e lm="vera"><i>ver</i><par n="adj__adj"/></e>
     <e lm="verbo"><i>verbo</i><par n="nom__n"/></e>
     <e lm="verdo"><i>verdo</i><par n="nom__n"/></e>
-    <e lm="vere"><i>vere</i><par n="komence__adv"/></e>
-    <e lm="vere"><i>vere</i><par n="komence__adv"/></e>
-    <e lm="vere"><i>vere</i><par n="komence__adv"/></e>
     <e lm="vere"><i>vere</i><par n="komence__adv"/></e>
     <e lm="vereco"><i>vereco</i><par n="nom__n"/></e>
     <e lm="vergeto"><i>vergeto</i><par n="nom__n"/></e>
@@ -8387,13 +7674,9 @@
     <e lm="verso"><i>verso</i><par n="nom__n"/></e>
     <e lm="verŝi"><i>ver</i><par n="ŝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="verŝajne"><i>ver</i><par n="ŝ"/><i>ajne</i><par n="komence__adv"/></e>
-    <e lm="verŝajne"><i>ver</i><par n="ŝ"/><i>ajne</i><par n="komence__adv"/></e>
-    <e lm="verŝajne"><i>ver</i><par n="ŝ"/><i>ajne</i><par n="komence__adv"/></e>
     <e lm="vertikala"><i>vertikal</i><par n="adj__adj"/></e>
     <e lm="verto"><i>verto</i><par n="nom__n"/></e>
-    <e lm="verto"><i>verto</i><par n="nom__n"/></e>
     <e lm="veruko"><i>veruko</i><par n="nom__n"/></e>
-    <e lm="vervo"><i>vervo</i><par n="nom__n"/></e>
     <e lm="vervo"><i>vervo</i><par n="nom__n"/></e>
     <e lm="vespermanĝo"><i>vesperman</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="vesti"><i>vest</i><par n="verb__vblex"/></e>
@@ -8407,29 +7690,19 @@
     <e lm="veturilo"><i>veturilo</i><par n="nom__n"/></e>
     <e lm="veziketo"><i>veziketo</i><par n="nom__n"/></e>
     <e lm="veziko"><i>veziko</i><par n="nom__n"/></e>
-    <e lm="veziko"><i>veziko</i><par n="nom__n"/></e>
 
     <e lm="viadukto"><i>viadukto</i><par n="nom__n"/></e>
     <e lm="viandejo"><i>viandejo</i><par n="nom__n"/></e>
-    <e lm="viandejo"><i>viandejo</i><par n="nom__n"/></e>
-    <e lm="vibro"><i>vibro</i><par n="nom__n"/></e>
     <e lm="vibro"><i>vibro</i><par n="nom__n"/></e>
     <e lm="vicigi"><i>vicig</i><par n="verb__vblex"/></e>
     <e lm="vico"><i>vico</i><par n="nom__n"/></e>
     <e lm="vicprezidanto"><i>vicprezidant</i><par n="nommf__n"/></e>
     <e lm="vidi"><i>vid</i><par n="verb__vblex"/></e>
     <e lm="vidado"><i>vidado</i><par n="nom__n"/></e>
-    <e lm="vidado"><i>vidado</i><par n="nom__n"/></e>
     <e lm="videbla"><i>videbl</i><par n="adj__adj"/></e>
     <e lm="videbleco"><i>videbleco</i><par n="nom__n"/></e>
     <e lm="vidindaĵo"><i>vidinda</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="vidvo"><i>vidv</i><par n="nommf__n"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
-    <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
     <e lm="vigla"><i>vigl</i><par n="adj__adj"/></e>
     <e lm="viglado"><i>viglado</i><par n="nom__n"/></e>
     <e lm="vigleco"><i>vigleco</i><par n="nom__n"/></e>
@@ -8446,19 +7719,16 @@
     <e lm="vintro"><i>vintro</i><par n="nom__n"/></e>
     <e lm="violono"><i>violono</i><par n="nom__n"/></e>
     <e lm="virga"><i>virg</i><par n="adj__adj"/></e>
-    <e lm="virga"><i>virg</i><par n="adj__adj"/></e>
     <e lm="virino"><i>virino</i><par n="nom__n"/></e>
     <e lm="viro"><i>viro</i><par n="nom__n"/></e>
     <e lm="virseksa"><i>virseks</i><par n="adj__adj"/></e>
     <e lm="virto"><i>virto</i><par n="nom__n"/></e>
     <e lm="viskio"><i>viskio</i><par n="nom__n"/></e>
     <e lm="viskoza"><i>viskoz</i><par n="adj__adj"/></e>
-    <e lm="viskoza"><i>viskoz</i><par n="adj__adj"/></e>
     <e lm="viŝi"><i>vi</i><par n="ŝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="viŝtuko"><i>vi</i><par n="ŝ"/><i>tuko</i><par n="nom__n"/></e>
     <e lm="vitamino"><i>vitamino</i><par n="nom__n"/></e>
     <e lm="vitejo"><i>vitejo</i><par n="nom__n"/></e>
-    <e lm="vito"><i>vito</i><par n="nom__n"/></e>
     <e lm="vito"><i>vito</i><par n="nom__n"/></e>
     <e lm="vitro"><i>vitro</i><par n="nom__n"/></e>
     <e lm="vivi"><i>viv</i><par n="verb__vblex"/></e>
@@ -8477,7 +7747,6 @@
     <e lm="vojaĝanto"><i>voja</i><par n="ĝ"/><i>ant</i><par n="nommf__n"/></e>
     <e lm="vojaĝo"><i>voja</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="vojkruciĝo"><i>vojkruci</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="vojo"><i>vojo</i><par n="nom__n"/></e>
     <e lm="vojo"><i>vojo</i><par n="nom__n"/></e>
     <e lm="voki"><i>vok</i><par n="verb__vblex"/></e>
     <e lm="vokalo"><i>vokalo</i><par n="nom__n"/></e>
@@ -8500,7 +7769,6 @@
     <e lm="zekino"><i>zekino</i><par n="nom__n"/></e>
     <e lm="zigomo"><i>zigomo</i><par n="nom__n"/></e>
     <e lm="zinko"><i>zinko</i><par n="nom__n"/></e>
-    <e lm="zono"><i>zono</i><par n="nom__n"/></e>
     <e lm="zono"><i>zono</i><par n="nom__n"/></e>
     <e lm="zorgo"><i>zorgo</i><par n="nom__n"/></e>
     <!-- Antonyms -->
@@ -8558,7 +7826,6 @@
     <e lm="adori"><i>ador</i><par n="verb__vblex"/></e>
     <e lm="antaŭeniri"><i>antaŭenir</i><par n="verb__vblex"/></e>
 
-
     <!-- Multiwords -->
     <!-- konto kuranta -->
     <e>
@@ -8586,8 +7853,6 @@
       </p>
     </e>
 
-
-
     <!-- Proverbs -->
     <e lm=""><i>birdo<b/>en<b/>mano<b/>valoras<b/>du<b/>en<b/>arbusto</i><par n="adiós__ij"/></e>
     <e lm=""><i>la<b/>foresto<b/>pli<b/>amigas<b/>la<b/>koron</i><par n="adiós__ij"/></e>
@@ -8596,7 +7861,6 @@
     <e lm=""><i>multaj<b/>manoj<b/>faciligas<b/>laboron</i><par n="adiós__ij"/></e>
 
     <!-- It's all Jacob's fault -->
-
 
     <e lm="aŭstraliano"><i>aŭstraliano</i><par n="nommf__n"/></e>
     <e lm="brito"><i>brito</i><par n="nommf__n"/></e>
@@ -8737,10 +8001,8 @@
     <e lm="supro"><i>supro</i><par n="nom__n"/></e>
     <e lm="torturo"><i>torturo</i><par n="nom__n"/></e>
 
-
     <e lm="mil"><i>mil</i><par n="two__num"/></e>
     <e lm="dektri" r="LR"><p><l>dektri</l><r>dek<b/>tri</r></p><par n="two__num"/></e>
-
 
 <e lm="ensaluto"><i>ensaluto</i><par n="nom__n"/></e>
 <e lm="ensaluta"><i>ensalut</i><par n="adj__adj"/></e>
