@@ -11,6 +11,13 @@ TARGETS_COMMON = $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autog
      $(PREFIX2).autogen.bin $(PREFIX2).autopgen.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
      $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
+
+$(BASENAME).$(LANG1).dix:
+	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt > $(BASENAME).$(LANG1)-multiwords.xml
+	cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1
+	cat $(BASENAME).$(LANG1)-multiwords.xml >> tmp1
+	echo '</dictionary>' >> tmp1
+	mv tmp1 $@
      
 $(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dix

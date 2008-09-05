@@ -14,7 +14,8 @@
 /apertium-eo-en.eo-en.t1x -text
 /apertium-eo-en.eo-en.t2x -text
 /apertium-eo-en.eo-en.t3x -text
-/apertium-eo-en.eo.dix -text
+/apertium-eo-en.eo-multiwords.txt -text
+/apertium-eo-en.eo.dix.xml -text
 /apertium-eo-en.post-en.dix -text
 /apertium-eo-en.post-eo.dix -text
 /autogen.sh -text
@@ -28,5 +29,6 @@ java/src/apertium/LeguTradukuNet.java -text
 java/src/apertium/Paro.java -text
 java/src/apertium/leguAliajn.java -text
 /modes.xml -text
+/multi-gen.sh -text
 /regression-tests.sh -text
 /tradukunet.txt -text
