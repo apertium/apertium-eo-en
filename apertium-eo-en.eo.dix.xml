@@ -1929,13 +1929,9 @@
     <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
     <e lm="probj"><i/><par n="probj__prn"/></e>
 
-    <e lm="miliono"><i>miliono</i><par n="two__num"/></e>
-    <e lm="unu"><i>unu</i><par n="unu__num"/></e>
+<!-- Numeroj -->
     <e lm="nulo"><i>nulo</i><par n="two__num"/></e>
-
-    <e lm="mil"><i>mil</i><par n="two__num"/></e>
-
-    <e lm="dek"><i>dek</i><par n="two__num"/></e>
+    <e lm="unu"><i>unu</i><par n="unu__num"/></e>
     <e lm="du"><i>du</i><par n="two__num"/></e>
     <e lm="tri"><i>tri</i><par n="two__num"/></e>
     <e lm="kvar"><i>kvar</i><par n="two__num"/></e>
@@ -1954,7 +1950,6 @@
     <e lm="dek sep"><i>dek<b/>sep</i><par n="two__num"/></e>
     <e lm="dek ok"><i>dek<b/>ok</i><par n="two__num"/></e>
     <e lm="dek naŭ"><i>dek<b/>naŭ</i><par n="two__num"/></e>
-    <e lm="cent"><i>cent</i><par n="two__num"/></e>
 
     <e lm="dudek"><i>dudek</i><par n="twenty__num"/></e>
     <e lm="tridek"><i>tridek</i><par n="twenty__num"/></e>
@@ -1964,9 +1959,22 @@
     <e lm="okdek"><i>okdek</i><par n="twenty__num"/></e>
     <e lm="naŭdek"><i>naŭdek</i><par n="twenty__num"/></e>
 
-    <e lm="laŭleĝa"><i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
-    <e lm="renovigi"><i>renovig</i><par n="verb__vblex"/></e>
+    <e lm="cent"><i>cent</i><par n="two__num"/></e>
+
+    <e lm="mil"><i>mil</i><par n="two__num"/></e>
+
+    <e lm="miliono"><i>miliono</i><par n="two__num"/></e>
+
+    <e lm="dek"><i>dek</i><par n="two__num"/></e>
+    <e lm="deko"><i>deko</i><par n="nom__n"/></e>
+
+    <e lm="dekduo"><i>dekduo</i><par n="nom__n"/></e>
+    <e lm="dekkvino"><i>dekkvino</i><par n="nom__n"/></e>
+
+
+<!-- landoj kan nacioj -->
     <e lm="Afganio"><i>Afganio</i><par n="Barcelona__np"/></e>
+
     <e lm="Agnesa"><i>Agnesa</i><par n="Mary__np"/></e>
     <e lm="Albano"><i>Albano</i><par n="nom__n"/></e>
     <e lm="Alĝerio"><i>Al</i><par n="ĝ"/><i>erio</i><par n="Barcelona__np"/></e>
@@ -2169,6 +2177,13 @@
     <e lm="Vieno"><i>Vieno</i><par n="Barcelona__np"/></e>
     <e lm="Vilhelmo"><i>Vilhelmo</i><par n="Mark__np"/></e>
     <e lm="Vjetnamio"><i>Vjetnamio</i><par n="Barcelona__np"/></e>
+
+
+<!-- aliaj -->
+
+    <e lm="laŭleĝa"><i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
+    <e lm="renovigi"><i>renovig</i><par n="verb__vblex"/></e>
+
     <e lm="abato"><i>abato</i><par n="nom__n"/></e>
     <e lm="degelo"><i>degelo</i><par n="nom__n"/></e>
     <e lm="abdomeno"><i>abdomeno</i><par n="nom__n"/></e>
@@ -3032,12 +3047,9 @@
     <e lm="deĵoro"><i>de</i><par n="ĵ"/><i>oro</i><par n="nom__n"/></e>
     <e lm="dekadenco"><i>dekadenco</i><par n="nom__n"/></e>
     <e lm="dekano"><i>dekan</i><par n="nommf__n"/></e>
-    <e lm="dekduo"><i>dekduo</i><par n="nom__n"/></e>
-    <e lm="dekkvino"><i>dekkvino</i><par n="nom__n"/></e>
     <e lm="deklari"><i>deklar</i><par n="verb__vblex"/></e>
     <e lm="deklaro"><i>deklaro</i><par n="nom__n"/></e>
     <e lm="deklivo"><i>deklivo</i><par n="nom__n"/></e>
-    <e lm="deko"><i>deko</i><par n="nom__n"/></e>
     <e lm="dekoracio"><i>dekoracio</i><par n="nom__n"/></e>
     <e lm="dekreti"><i>dekret</i><par n="verb__vblex"/></e>
     <e lm="dekreto"><i>dekreto</i><par n="nom__n"/></e>
@@ -8010,9 +8022,6 @@
     <e lm="testo"><i>testo</i><par n="nom__n"/></e>
     <e lm="supro"><i>supro</i><par n="nom__n"/></e>
     <e lm="torturo"><i>torturo</i><par n="nom__n"/></e>
-
-    <e lm="mil"><i>mil</i><par n="two__num"/></e>
-    <e lm="dektri" r="LR"><p><l>dektri</l><r>dek<b/>tri</r></p><par n="two__num"/></e>
 
 <e lm="ensaluto"><i>ensaluto</i><par n="nom__n"/></e>
 <e lm="ensaluta"><i>ensalut</i><par n="adj__adj"/></e>
