@@ -4972,6 +4972,8 @@
     <e lm="lakto"><i>lakto</i><par n="nom__n"/></e>
     <e lm="laktuko"><i>laktuko</i><par n="nom__n"/></e>
     <e lm="lamenti"><i>lament</i><par n="verb__vblex"/></e>
+	<e lm="lamentinda"><i>lamentind</i><par n="adj__adj"/></e>
+	<e lm="lamentinde"><i>lamentinde</i><par n="komence__adv"/></e>
     <e lm="lamento"><i>lamento</i><par n="nom__n"/></e>
     <e lm="lampo"><i>lampo</i><par n="nom__n"/></e>
     <e lm="landlimo"><i>landlimo</i><par n="nom__n"/></e>
@@ -7796,6 +7798,8 @@
 
     <!-- np.al -->
     <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
+    <e lm="SVN"><i>SVN</i><par n="Linux__np"/></e>
+    <e lm="Apertium"><i>Apertium</i><par n="Linux__np"/></e>
     <e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
     <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
     

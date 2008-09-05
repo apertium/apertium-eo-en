@@ -51,6 +51,7 @@
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
+      <attr-item tags="np.al"/>
       <attr-item tags="np.ant"/>
       <attr-item tags="np.top"/>
     </def-attr>
