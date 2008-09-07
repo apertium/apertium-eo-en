@@ -1976,7 +1976,6 @@
     <e lm="Afganio"><i>Afganio</i><par n="Barcelona__np"/></e>
 
     <e lm="Agnesa"><i>Agnesa</i><par n="Mary__np"/></e>
-    <e lm="Albano"><i>Albano</i><par n="nom__n"/></e>
     <e lm="Alĝerio"><i>Al</i><par n="ĝ"/><i>erio</i><par n="Barcelona__np"/></e>
     <e lm="Ameriko"><i>Ameriko</i><par n="Barcelona__np"/></e>
     <e lm="Amsterdamo"><i>Amsterdamo</i><par n="Barcelona__np"/></e>
@@ -2013,6 +2012,7 @@
     <e lm="Ĉilio"><i>Ĉilio</i><par n="Barcelona__np"/></e>
     <e lm="Ĉinio"><i>Ĉinio</i><par n="Barcelona__np"/></e>
     <e lm="Danlando"><i>Danlando</i><par n="Barcelona__np"/></e>
+
     <e lm="Dario"><i>Dario</i><par n="Mark__np"/></e>
     <e lm="Davido"><i>Davido</i><par n="Mark__np"/></e>
     <e lm="Diego"><i>Diego</i><par n="Mark__np"/></e>
@@ -2065,7 +2065,7 @@
     <e lm="Johano"><i>Johano</i><par n="Mark__np"/></e>
     <e lm="Jordanio"><i>Jordanio</i><par n="Barcelona__np"/></e>
     <e lm="Jozefo"><i>Jozefo</i><par n="Mark__np"/></e>
-    <e lm="Jugoslavo"><i>Jugoslav</i><par n="nommf__n"/></e>
+    <e lm="jugoslavo"><i>jugoslav</i><par n="nommf__n"/></e>
     <e lm="Jugoslavio"><i>Jugoslavio</i><par n="Barcelona__np"/></e>
     <e lm="Julia"><i>Julia</i><par n="Mary__np"/></e>
     <e lm="Juliano"><i>Juliano</i><par n="Mark__np"/></e>
@@ -2180,6 +2180,9 @@
 
 
 <!-- aliaj -->
+
+
+<!-- substantivoj, adjektivoj, adverboj kaj verboj -->
 
     <e lm="laŭleĝa"><i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
     <e lm="renovigi"><i>renovig</i><par n="verb__vblex"/></e>
@@ -2391,8 +2394,9 @@
     <e lm="ambulatorio"><i>ambulatorio</i><par n="nom__n"/></e>
     <e lm="amelo"><i>amelo</i><par n="nom__n"/></e>
     <e lm="amendi"><i>amend</i><par n="verb__vblex"/></e>
-    <e lm="skandinavo"><i>skandinav</i><par n="nommf__n"/></e>
+    <e lm="skandinavo"><i>skandinavo</i><par n="nommf__n"/></e>
     <e lm="albano"><i>alban</i><par n="nommf__n"/></e>
+    <e lm="albano"><i>albano</i><par n="nom__n"/></e>
     <e lm="amerikano"><i>amerikan</i><par n="nommf__n"/></e>
     <e lm="amfibio"><i>amfibio</i><par n="nom__n"/></e>
     <e lm="amfiteatro"><i>amfiteatro</i><par n="nom__n"/></e>
@@ -6161,6 +6165,7 @@
     <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
     <e lm="pli"><i>pli</i><par n="at__pr"/></e>
     <e lm="plia"><i>pli</i><par n="adj__adj"/></e>
+    <e lm="pliaĝa"><i>pliaĝ</i><par n="adj__adj"/></e>
     <e lm="pli bona"><i>pli bon</i><par n="adj__adj"/></e>
 
     <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -7791,30 +7796,8 @@
     <e lm="zinko"><i>zinko</i><par n="nom__n"/></e>
     <e lm="zono"><i>zono</i><par n="nom__n"/></e>
     <e lm="zorgo"><i>zorgo</i><par n="nom__n"/></e>
-    <!-- Antonyms -->
-    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
-    <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
-    <e lm="Henry"><i>Henry</i><par n="Mark__np"/></e>
-    <e lm="Harry"><i>Harry</i><par n="Mark__np"/></e>
-    <e lm="Edward"><i>Edward</i><par n="Mark__np"/></e>
-    <e lm="Jacob"><i>Jacob</i><par n="Mark__np"/></e>
-    <e lm="Jimmy"><i>Jimmy</i><par n="Mark__np"/></e>
 
-    <!-- Cognomen -->
-    <e lm="Stevenson"><i>Stevenson</i><par n="Smith__np"/></e>
-    <e lm="Jekyll"><i>Jekyll</i><par n="Smith__np"/></e>
-    <e lm="Hyde"><i>Hyde</i><par n="Smith__np"/></e>
-    <e lm="Lanyon"><i>Lanyon</i><par n="Smith__np"/></e>
-    <e lm="Utterson"><i>Utterson</i><par n="Smith__np"/></e>
-    <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
 
-    <!-- np.al -->
-    <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
-    <e lm="SVN"><i>SVN</i><par n="Linux__np"/></e>
-    <e lm="Apertium"><i>Apertium</i><par n="Linux__np"/></e>
-    <e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
-    <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
-    
     <e lm="humiligi"><i>humilig</i><par n="verb__vblex"/></e>
     <e lm="forrabi"><i>forrab</i><par n="verb__vblex"/></e>
     <e lm="kunhelpi"><i>kunhelp</i><par n="verb__vblex"/></e>
@@ -7848,41 +7831,7 @@
     <e lm="adori"><i>ador</i><par n="verb__vblex"/></e>
     <e lm="antaŭeniri"><i>antaŭenir</i><par n="verb__vblex"/></e>
 
-    <!-- Multiwords -->
-    <!-- konto kuranta -->
-    <e>
-      <p>
-        <l>konto<b/>kuranta</l> 
-        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="nom"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>kontoj<b/>kurantaj</l> 
-        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="nom"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>konton<b/>kurantan</l> 
-        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="acc"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>kontojn<b/>kurantajn</l> 
-        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="acc"/></r> 
-      </p>
-    </e>
 
-    <!-- Proverbs -->
-    <e lm=""><i>birdo<b/>en<b/>mano<b/>valoras<b/>du<b/>en<b/>arbusto</i><par n="adiós__ij"/></e>
-    <e lm=""><i>la<b/>foresto<b/>pli<b/>amigas<b/>la<b/>koron</i><par n="adiós__ij"/></e>
-    <e lm=""><i>labori<b/>ĉiam<b/>kaj<b/>ludi<b/>neniam<b/>faras<b/>el<b/>Joĉjo<b/>teda<b/>knabo</i><par n="adiós__ij"/></e>
-    <e lm=""><i>ne<b/>ĉio<b/>kiu<b/>brilas<b/>estas<b/>oro</i><par n="adiós__ij"/></e>
-    <e lm=""><i>multaj<b/>manoj<b/>faciligas<b/>laboron</i><par n="adiós__ij"/></e>
-
-    <!-- It's all Jacob's fault -->
 
     <e lm="aŭstraliano"><i>aŭstraliano</i><par n="nommf__n"/></e>
     <e lm="brito"><i>brito</i><par n="nommf__n"/></e>
@@ -7897,6 +7846,8 @@
     <e lm="protestanto"><i>protestanto</i><par n="nommf__n"/></e>
     <e lm="ruso"><i>ruso</i><par n="nommf__n"/></e>
     <e lm="sviso"><i>sviso</i><par n="nommf__n"/></e>
+
+
 
     <e lm="aneksaĵo"><i>aneksaĵo</i><par n="nom__n"/></e>
     <e lm="aresto"><i>aresto</i><par n="nom__n"/></e>
@@ -8023,10 +7974,75 @@
     <e lm="supro"><i>supro</i><par n="nom__n"/></e>
     <e lm="torturo"><i>torturo</i><par n="nom__n"/></e>
 
-<e lm="ensaluto"><i>ensaluto</i><par n="nom__n"/></e>
-<e lm="ensaluta"><i>ensalut</i><par n="adj__adj"/></e>
-<e lm="kune"><i>kune</i><par n="komence__adv"/></e>
-<e lm="ĝeni"><i>ĝen</i><par n="verb__vblex"/></e>
-<e lm="retejo"><i>retejo</i><par n="nom__n"/></e>
+    <e lm="ensaluto"><i>ensaluto</i><par n="nom__n"/></e>
+    <e lm="ensaluta"><i>ensalut</i><par n="adj__adj"/></e>
+    <e lm="kune"><i>kune</i><par n="komence__adv"/></e>
+    <e lm="ĝeni"><i>ĝen</i><par n="verb__vblex"/></e>
+    <e lm="retejo"><i>retejo</i><par n="nom__n"/></e>
+
+
+
+
+    <!-- Antonyms -->
+    <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
+    <e lm="Louis"><i>Louis</i><par n="Mark__np"/></e>
+    <e lm="Henry"><i>Henry</i><par n="Mark__np"/></e>
+    <e lm="Harry"><i>Harry</i><par n="Mark__np"/></e>
+    <e lm="Edward"><i>Edward</i><par n="Mark__np"/></e>
+    <e lm="Jacob"><i>Jacob</i><par n="Mark__np"/></e>
+    <e lm="Jimmy"><i>Jimmy</i><par n="Mark__np"/></e>
+
+    <!-- Cognomen -->
+    <e lm="Stevenson"><i>Stevenson</i><par n="Smith__np"/></e>
+    <e lm="Jekyll"><i>Jekyll</i><par n="Smith__np"/></e>
+    <e lm="Hyde"><i>Hyde</i><par n="Smith__np"/></e>
+    <e lm="Lanyon"><i>Lanyon</i><par n="Smith__np"/></e>
+    <e lm="Utterson"><i>Utterson</i><par n="Smith__np"/></e>
+    <e lm="Poole"><i>Poole</i><par n="Smith__np"/></e>
+
+
+
+    <!-- np.al -->
+    <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
+    <e lm="SVN"><i>SVN</i><par n="Linux__np"/></e>
+    <e lm="Apertium"><i>Apertium</i><par n="Linux__np"/></e>
+    <e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
+    <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
+    
+
+    <!-- Multiwords -->
+    <!-- konto kuranta -->
+    <e>
+      <p>
+        <l>konto<b/>kuranta</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>kontoj<b/>kurantaj</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>konton<b/>kurantan</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>kontojn<b/>kurantajn</l> 
+        <r>konto<b/>kuranta<s n="n"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
+
+    <!-- Proverbs -->
+    <e lm=""><i>birdo<b/>en<b/>mano<b/>valoras<b/>du<b/>en<b/>arbusto</i><par n="adiós__ij"/></e>
+    <e lm=""><i>la<b/>foresto<b/>pli<b/>amigas<b/>la<b/>koron</i><par n="adiós__ij"/></e>
+    <e lm=""><i>labori<b/>ĉiam<b/>kaj<b/>ludi<b/>neniam<b/>faras<b/>el<b/>Joĉjo<b/>teda<b/>knabo</i><par n="adiós__ij"/></e>
+    <e lm=""><i>ne<b/>ĉio<b/>kiu<b/>brilas<b/>estas<b/>oro</i><par n="adiós__ij"/></e>
+    <e lm=""><i>multaj<b/>manoj<b/>faciligas<b/>laboron</i><par n="adiós__ij"/></e>
+
   </section>
 </dictionary>

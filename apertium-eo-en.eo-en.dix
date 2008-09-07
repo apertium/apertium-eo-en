@@ -618,9 +618,9 @@
 
     <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>Albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>Albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>Albano<s n="n"/><s n="GD"/></l><r>Albanian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>albano<s n="n"/><s n="GD"/></l><r>Albanian<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>arabo<s n="n"/><s n="f"/></l><r>Arab<s n="n"/></r></p></e>
     <e r="LR"><p><l>arabo<s n="n"/><s n="m"/></l><r>Arab<s n="n"/></r></p></e>
@@ -7045,11 +7045,12 @@
     <e r="LR"><p><l>glora<s n="adj"/></l><r>glorious<s n="adj"/></r></p></e>
     <e><p><l>gotika<s n="adj"/></l><r>Gothic<s n="adj"/></r></p></e>
     <e><p><l>gracia<s n="adj"/></l><r>funny<s n="adj"/><s n="sint"/></r></p></e>
+
     <e><p><l>granda<s n="adj"/><s n="mf"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>granda<s n="adj"/></l><r>elder<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>granda<s n="adj"/></l><r>bulky<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>granda<s n="adj"/></l><r>great<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>granda<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>granda<s n="adj"/></l><r>bulky<s n="adj"/><s n="sint"/></r></p></e>
+
     <e r="LR"><p><l>grandioza<s n="adj"/></l><r>magnificent<s n="adj"/></r></p></e>
     <e><p><l>grava<s n="adj"/><s n="mf"/></l><r>grave<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>grava<s n="adj"/></l><r>severe<s n="adj"/></r></p></e>
@@ -7073,8 +7074,12 @@
     <e><p><l>hereda<s n="adj"/></l><r>hereditary<s n="adj"/></r></p></e>
     <e><p><l>hermetika<s n="adj"/></l><r>hermetical<s n="adj"/></r></p></e>
     <e><p><l>heterogena<s n="adj"/></l><r>heterogeneous<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>hezitema<s n="adj"/></l><r>undecided<s n="adj"/></r></p></e>
+
     <e><p><l>hezitema<s n="adj"/></l><r>hesitant<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>sendecida<s n="adj"/></l><r>hesitant<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ŝanceliĝema<s n="adj"/></l><r>hesitant<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>hezitema<s n="adj"/></l><r>undecided<s n="adj"/></r></p></e>
+
     <e><p><l>hida<s n="adj"/></l><r>horrible<s n="adj"/></r></p></e>
     <e><p><l>hidraŭlika<s n="adj"/></l><r>hydraulic<s n="adj"/></r></p></e>
     <e><p><l>hispana<s n="adj"/></l><r>Spanish<s n="adj"/></r></p></e>
@@ -7082,7 +7087,7 @@
     <e><p><l>humana<s n="adj"/></l><r>humanitarian<s n="adj"/></r></p></e>
     <e><p><l>humana<s n="adj"/></l><r>human<s n="adj"/></r></p></e>
     <e><p><l>humida<s n="adj"/></l><r>humid<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>humida<s n="adj"/></l><r>wet<s n="adj"/></r></p></e>
+    <e><p><l>malseka<s n="adj"/></l><r>wet<s n="adj"/></r></p></e>
     <e><p><l>humila<s n="adj"/><s n="mf"/></l><r>humble<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>hungara<s n="adj"/></l><r>Hungarian<s n="adj"/></r></p></e>
     <e><p><l>ĥaosa<s n="adj"/></l><r>chaotic<s n="adj"/></r></p></e>
@@ -7092,8 +7097,8 @@
     <e><p><l>ideala<s n="adj"/></l><r>ideal<s n="adj"/></r></p></e>
     <e><p><l>identa<s n="adj"/></l><r>identical<s n="adj"/></r></p></e>
     <e><p><l>implicita<s n="adj"/></l><r>implicit<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>impotenta<s n="adj"/></l><r>impotent<s n="adj"/></r></p></e>
     <e><p><l>impotenta<s n="adj"/></l><r>powerless<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>impotenta<s n="adj"/></l><r>impotent<s n="adj"/></r></p></e>
     <e><p><l>impresa<s n="adj"/></l><r>impressive<s n="adj"/></r></p></e>
     <e r="RL"><p><l>impresa<s n="adj"/></l><r>shocking<s n="adj"/></r></p></e>
     <e><p><l>impulsiĝema<s n="adj"/></l><r>impulsive<s n="adj"/></r></p></e>
@@ -7508,6 +7513,7 @@
     <e><p><l>pli bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
     <e r="RL" c="MG: cal fer regla ca-en per al superlatiu"><p><l>pli bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
     <e><p><l>plia<s n="adj"/></l><r>additional<s n="adj"/></r></p></e>
+    <e><p><l>pliaĝa<s n="adj"/></l><r>elder<s n="adj"/></r></p></e>
     <e><p><l>plua<s n="adj"/></l><r>successive<s n="adj"/></r></p></e>
     <e><p><l>pola<s n="adj"/></l><r>Polish<s n="adj"/></r></p></e>
     <e><p><l>polusa<s n="adj"/></l><r>polar<s n="adj"/></r></p></e>
@@ -7596,8 +7602,8 @@
     <e><p><l>ruĝeta<s n="adj"/></l><r>reddish<s n="adj"/></r></p></e>
     <e><p><l>rusa<s n="adj"/></l><r>Russian<s n="adj"/></r></p></e>
     <e><p><l>ruza<s n="adj"/></l><r>cunning<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>saĝa<s n="adj"/></l><r>wise<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>sama<s n="adj"/></l><r>same<s n="adj"/></r></p></e>
+    <e><p><l>saĝa<s n="adj"/></l><r>wise<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>sama<s n="adj"/></l><r>same<s n="adj"/></r></p></e>
     <e><p><l>samseksema<s n="adj"/></l><r>homosexual<s n="adj"/></r></p></e>
     <e><p><l>samtempa<s n="adj"/></l><r>contemporary<s n="adj"/></r></p></e>
     <e><p><l>samtempa<s n="adj"/></l><r>simultaneous<s n="adj"/></r></p></e>
@@ -7623,7 +7629,6 @@
     <e><p><l>senatenda<s n="adj"/></l><r>unexpected<s n="adj"/></r></p></e>
     <e><p><l>senbaza<s n="adj"/></l><r>groundless<s n="adj"/></r></p></e>
     <e><p><l>senĉesa<s n="adj"/></l><r>incessant<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>sendecida<s n="adj"/></l><r>hesitant<s n="adj"/></r></p></e>
     <e><p><l>sendefenda<s n="adj"/></l><r>defenceless<s n="adj"/></r></p></e>
     <e><p><l>sendependa<s n="adj"/></l><r>independent<s n="adj"/></r></p></e>
     <e><p><l>senduba<s n="adj"/></l><r>unambiguous<s n="adj"/></r></p></e>
@@ -7736,7 +7741,6 @@
     <e><p><l>sveda<s n="adj"/></l><r>Swedish<s n="adj"/></r></p></e>
     <e><p><l>svelta<s n="adj"/></l><r>slim<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>svisa<s n="adj"/></l><r>Swiss<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>ŝanceliĝema<s n="adj"/></l><r>hesitant<s n="adj"/></r></p></e>
     <e><p><l>ŝipa<s n="adj"/></l><r>naval<s n="adj"/></r></p></e>
     <e><p><l>ŝparema<s n="adj"/></l><r>economic<s n="adj"/></r></p></e>
     <e><p><l>ŝparema<s n="adj"/></l><r>economical<s n="adj"/></r></p></e>
@@ -7787,13 +7791,13 @@
     <e><p><l>unuforma<s n="adj"/></l><r>regular<s n="adj"/></r></p></e>
     <e><p><l>unuopa<s n="adj"/></l><r>singular<s n="adj"/></r></p></e>
 
-    <e r="LR"><p><l>urba<s n="adj"/></l><r>citizen<s n="adj"/></r></p></e>
     <e><p><l>urba<s n="adj"/></l><r>municipal<s n="adj"/></r></p></e>
-    <e><p><l>urba<s n="adj"/></l><r>urban<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>urba<s n="adj"/></l><r>citizen<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>urba<s n="adj"/></l><r>urban<s n="adj"/></r></p></e>
     <e><p><l>urĝa<s n="adj"/></l><r>urgent<s n="adj"/></r></p></e>
-    <e><p><l>utila<s n="adj"/></l><r>profitable<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>utila<s n="adj"/></l><r>helpful<s n="adj"/></r></p></e>
     <e><p><l>utila<s n="adj"/></l><r>useful<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>utila<s n="adj"/></l><r>profitable<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>utila<s n="adj"/></l><r>helpful<s n="adj"/></r></p></e>
     <e><p><l>valida<s n="adj"/></l><r>valid<s n="adj"/></r></p></e>
     <e r="LR"><p><l>vanta<s n="adj"/></l><r>fleeting<s n="adj"/></r></p></e>
     <e><p><l>vapora<s n="adj"/></l><r>vaporous<s n="adj"/></r></p></e>
@@ -7804,7 +7808,7 @@
     <e><p><l>venena<s n="adj"/></l><r>toxic<s n="adj"/></r></p></e>
     <e><p><l>venena<s n="adj"/></l><r>poisonous<s n="adj"/></r></p></e>
     <e><p><l>venkinta<s n="adj"/></l><r>victorious<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>vera<s n="adj"/></l><r>true<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>vera<s n="adj"/></l><r>true<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>vertikala<s n="adj"/></l><r>vertical<s n="adj"/></r></p></e>
     <e><p><l>videbla<s n="adj"/></l><r>visible<s n="adj"/></r></p></e>
     <e><p><l>vigla<s n="adj"/></l><r>awake<s n="adj"/></r></p></e>
