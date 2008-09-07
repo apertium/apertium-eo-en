@@ -3130,8 +3130,8 @@
         <r>ve<s n="vblex"/><s n="subs"/></r> 
       </p>
     </e>
-
     </pardef>
+
     <pardef n="d/o__vblex">
     <e>
       <p>
@@ -3190,64 +3190,65 @@
     </e>
 
     </pardef>
+
+
     <pardef n="accept__vblex">
+    <e>
+      <p>
+        <l/> 
+        <r><s n="vblex"/><s n="imp"/></r> 
+      </p>
+    </e>
     <e>
       <p>
         <l/> 
         <r><s n="vblex"/><s n="inf"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l/> 
         <r><s n="vblex"/><s n="pres"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>s</l> 
         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>ed</l> 
         <r><s n="vblex"/><s n="past"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>ed</l> 
         <r><s n="vblex"/><s n="pp"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>ing</l> 
         <r><s n="vblex"/><s n="ger"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>ing</l> 
         <r><s n="vblex"/><s n="pprs"/></r> 
       </p>
     </e>
-
     <e>
       <p>
         <l>ing</l> 
         <r><s n="vblex"/><s n="subs"/></r> 
       </p>
     </e>
-
     </pardef>
+
 
     <pardef n="authori/se__vblex">
     <e>
@@ -3333,9 +3334,6 @@
         <r>se<s n="vblex"/><s n="ger"/></r> 
       </p>
     </e>
-
-
-
     </pardef>
 
 
@@ -3395,8 +3393,9 @@
         <r>e<s n="vblex"/><s n="subs"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="appl/y__vblex">
     <e>
       <p>
@@ -3453,8 +3452,9 @@
         <r>y<s n="vblex"/><s n="subs"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="enjoy__vblex">
     <e>
       <p>
@@ -3511,8 +3511,9 @@
         <r><s n="vblex"/><s n="subs"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="pa/y__vblex">
     <e>
       <p>
@@ -12344,6 +12345,7 @@
     <e lm="comma"><i>comma</i><par n="house__n"/></e>
     <e lm="command"><i>command</i><par n="house__n"/></e>
     <e lm="command"><i>command</i><par n="accept__vblex"/></e>
+    <e lm="command"><i>command</i><par n="expensive__adj"/></e>
     <e lm="commander"><i>commander</i><par n="house__n"/></e>
     <e lm="commence"><i>commenc</i><par n="liv/e__vblex"/></e>
     <e lm="comment"><i>comment</i><par n="house__n"/></e>
@@ -12436,6 +12438,7 @@
     <e lm="confident"><i>confident</i><par n="expensive__adj"/></e>
     <e lm="configuration"><i>configuration</i><par n="house__n"/></e>
     <e lm="configure"><i>configur</i><par n="liv/e__vblex"/></e>
+    <e lm="configurable"><i>configurable</i><par n="expensive__adj"/></e>
     <e lm="confine"><i>confin</i><par n="liv/e__vblex"/></e>
     <e lm="confirm"><i>confirm</i><par n="accept__vblex"/></e>
     <e lm="confiscate"><i>confiscat</i><par n="liv/e__vblex"/></e>
@@ -13600,6 +13603,7 @@
 <!--    <e lm="first"><i>first</i><par n="second__det"/></e> -->
 <!--    <e lm="first"><i>first</i><par n="maybe__adv"/></e> -->
     <e lm="firstly"><i>firstly</i><par n="maybe__adv"/></e>
+    <e lm="first of all"><i>first<b/>of<b/>all</i><par n="maybe__adv"/></e>
     <e lm="fish"><i>fish</i><par n="bass__n"/></e>
     <e lm="fish"><i>fish</i><par n="approach__vblex"/></e>
     <e lm="fit"><i>fit</i><par n="hot/__adj"/></e>
@@ -15314,6 +15318,7 @@
     <e lm="notice"><i>notice</i><par n="house__n"/></e>
     <e lm="noticeably"><i>noticeably</i><par n="maybe__adv"/></e>
     <e lm="notify"><i>notif</i><par n="appl/y__vblex"/></e>
+    <e lm="notice"><i>notic</i><par n="liv/e__vblex"/></e>
     <e lm="notification"><i>notification</i><par n="house__n"/></e>
     <e lm="notion"><i>notion</i><par n="house__n"/></e>
     <e lm="notoriety"><i>notoriet</i><par n="bab/y__n"/></e>
@@ -16254,6 +16259,7 @@
     <e lm="red"><i>red</i><par n="house__n"/></e>
     <e lm="red"><i>red</i><par n="glad/__adj"/></e>
     <e lm="reddish"><i>reddish</i><par n="expensive__adj"/></e>
+    <e lm="recurrent"><i>recurrent</i><par n="expensive__adj"/></e>
     <e lm="reduce"><i>reduc</i><par n="liv/e__vblex"/></e>
     <e lm="reduction"><i>reduction</i><par n="house__n"/></e>
     <e lm="redundancy"><i>redundanc</i><par n="bab/y__n"/></e>
@@ -17660,6 +17666,7 @@
     <e lm="twofold"><i>twofold</i><par n="expensive__adj"/></e>
     <e lm="tycoon"><i>tycoon</i><par n="house__n"/></e>
     <e lm="type"><i>typ</i><par n="liv/e__vblex"/></e>
+    <e lm="type in"><i>typ</i><par n="liv/e__vblex"/><p><l><b/>in</l><r><g><b/>in</g></r></p></e>
     <e lm="type"><i>type</i><par n="house__n"/></e>
     <e lm="typhoon"><i>typhoon</i><par n="house__n"/></e>
     <e lm="typical"><i>typical</i><par n="expensive__adj"/></e>
@@ -18166,8 +18173,8 @@
     <e lm=""><i>many<b/>hands<b/>make<b/>light<b/>work</i><par n="hello__ij"/></e>
 
 
-<e lm="login"><i>login</i><par n="house__n"/></e>
 <e lm="login"><i>login</i><par n="expensive__adj"/></e>
+<e lm="login"><i>login</i><par n="house__n"/></e>
 <e lm="together"><i>together</i><par n="maybe__adv"/></e>
 <e lm="disturb"><i>disturb</i><par n="accept__vblex"/></e>
 <e lm="website"><i>website</i><par n="house__n"/></e>

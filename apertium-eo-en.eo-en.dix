@@ -937,10 +937,6 @@
     <e r="LR"><p><l>estro<s n="n"/><s n="m"/></l><r>chief<s n="n"/></r></p></e>
     <e r="RL"><p><l>estro<s n="n"/><s n="GD"/></l><r>chief<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>knabo<s n="n"/><s n="f"/></l><r>child<s n="n"/></r></p></e>
-    <e r="LR"><p><l>knabo<s n="n"/><s n="m"/></l><r>child<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>child<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>kleriko<s n="n"/><s n="f"/></l><r>clergyman<s n="n"/></r></p></e>
     <e r="LR"><p><l>kleriko<s n="n"/><s n="m"/></l><r>clergyman<s n="n"/></r></p></e>
     <e r="RL"><p><l>kleriko<s n="n"/><s n="GD"/></l><r>clergyman<s n="n"/></r></p></e>
@@ -4966,7 +4962,6 @@
     <e><p><l>oranĝo<s n="n"/></l><r>orange<s n="n"/></r></p></e>
     <e><p><l>oranĝtrinkaĵo<s n="n"/></l><r>orangeade<s n="n"/></r></p></e>
     <e><p><l>orbito<s n="n"/></l><r>orbit<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ordo<s n="n"/></l><r>command<s n="n"/></r></p></e>
     <e r="LR"><p><l>ordo<s n="n"/></l><r>order<s n="n"/></r></p></e>
     <e><p><l>orelo<s n="n"/></l><r>ear<s n="n"/></r></p></e>
     <e><p><l>orfejo<s n="n"/></l><r>orphanage<s n="n"/></r></p></e>
@@ -5967,6 +5962,7 @@
     <e><p><l>supozo<s n="n"/></l><r>supposition<s n="n"/></r></p></e>
     <e r="LR"><p><l>supreniro<s n="n"/></l><r>rise<s n="n"/></r></p></e>
     <e><p><l>surfaco<s n="n"/></l><r>surface<s n="n"/></r></p></e>
+    <e><p><l>komanda<s n="adj"/></l><r>command<s n="adj"/></r></p></e>
     <e><p><l>surfaca<s n="adj"/></l><r>surface<s n="adj"/></r></p></e>
     <e><p><l>surprizo<s n="n"/></l><r>surprise<s n="n"/></r></p></e>
     <e><p><l>surteriĝo<s n="n"/></l><r>landing<s n="n"/></r></p></e>
@@ -7619,8 +7615,8 @@
     <e><p><l>seksa<s n="adj"/></l><r>sexual<s n="adj"/></r></p></e>
     <e><p><l>sekulara<s n="adj"/></l><r>mundane<s n="adj"/></r></p></e>
     <e><p><l>sekura<s n="adj"/></l><r>certain<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>sekura<s n="adj"/></l><r>confident<s n="adj"/></r></p></e>
     <e><p><l>sekura<s n="adj"/></l><r>safe<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>sekura<s n="adj"/></l><r>confident<s n="adj"/></r></p></e>
     <e r="RL"><p><l>sekura<s n="adj"/></l><r>secure<s n="adj"/></r></p></e>
     <e><p><l>sekura<s n="adj"/></l><r>sure<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sekvanta<s n="adj"/></l><r>following<s n="adj"/></r></p></e>
@@ -8193,6 +8189,7 @@
     <e><p><l>enfokusigi<s n="vblex"/></l><r>focus<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>eniri<s n="vblex"/></l><r>come<g><b/>in</g><s n="vblex"/></r></p></e>
     <e><p><l>eniri<s n="vblex"/></l><r>go<g><b/>in</g><s n="vblex"/></r></p></e>
+    <e><p><l>entajpi<s n="vblex"/></l><r>type<g><b/>in</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>eniri<s n="vblex"/></l><r>step<g><b/>into</g><s n="vblex"/></r></p></e>
     <e><p><l>enketi<s n="vblex"/></l><r>poll<s n="vblex"/></r></p></e>
     <e><p><l>enketi<s n="vblex"/></l><r>investigate<s n="vblex"/></r></p></e>
@@ -9028,8 +9025,9 @@
     <e><p><l>rifuzi<s n="vblex"/></l><r>reject<s n="vblex"/></r></p></e>
     <e><p><l>rikolti<s n="vblex"/></l><r>harvest<s n="vblex"/></r></p></e>
     <e><p><l>rilatigi<s n="vblex"/></l><r>relate<s n="vblex"/></r></p></e>
-    <e><p><l>rimarki<s n="vblex"/></l><r>sense<s n="vblex"/></r></p></e>
     <e><p><l>rimarki<s n="vblex"/></l><r>remark<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>rimarki<s n="vblex"/></l><r>sense<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>rimarki<s n="vblex"/></l><r>notice<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>ripari<s n="vblex"/></l><r>arrange<s n="vblex"/></r></p></e>
     <e><p><l>ripari<s n="vblex"/></l><r>fix<s n="vblex"/></r></p></e>
     <e><p><l>ripari<s n="vblex"/></l><r>repair<s n="vblex"/></r></p></e>
@@ -9652,7 +9650,7 @@
 
     <e r="LR"><p><l>nur<s n="adv"/></l><r>only<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nur<s n="adv"/></l><r>alone<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>nur<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>simple<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nur<s n="adv"/></l><r>solely<s n="adv"/></r></p></e>
 
     <e><p><l>oficiale<s n="adv"/></l><r>officially<s n="adv"/></r></p></e>
@@ -9847,7 +9845,8 @@
 
     <e c="check"><p><l>tute<b/>ne<s n="adv"/></l><r>absolutely<b/>not<s n="adv"/></r></p></e>
 
-    <e><p><l>unue<s n="adv"/></l><r>firstly<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>unue<s n="adv"/></l><r>firstly<s n="adv"/></r></p></e>
+    <e><p><l>unue<s n="adv"/></l><r>first<b/>of<b/>all<s n="adv"/></r></p></e>
     <e r="RL"><p><l>unuflanke<s n="adv"/></l><r>on<b/>the<b/>one<b/>hand<s n="adv"/></r></p></e>
 
     <e><p><l>urĝe<s n="adv"/></l><r>urgently<s n="adv"/></r></p></e>
@@ -9900,7 +9899,10 @@
     <e><p><l>arba<b/>vido<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
     <e><p><l>faldmenuo<s n="n"/></l><r>combobox<s n="n"/></r></p></e>
     <e><p><l>agordo<s n="n"/></l><r>configuration<s n="n"/></r></p></e>
-    <e><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
+	<e><p><l>agordebla<s n="adj"/></l><r>configurable<s n="adj"/></r></p></e>
+
+    <e r="RL"><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
+    <e><p><l>infano<s n="n"/></l><r>child<s n="n"/></r></p></e>
 
     <e><p><l>protestanto<s n="n"/></l><r>Protestant<s n="n"/></r></p></e>
     <e><p><l>aneksaĵo<s n="n"/></l><r>annex<s n="n"/></r></p></e>
@@ -10135,7 +10137,9 @@
 <e><p><l>veterana<s n="adj"/></l><r>veteran<s n="adj"/></r></p></e>
 <e><p><l>okcidenta<s n="adj"/></l><r>west<s n="adj"/></r></p></e>
 <e><p><l>blanka<s n="adj"/></l><r>white<s n="adj"/><s n="sint"/></r></p></e>
- 
+<e><p><l>ripetiĝanta<s n="adj"/></l><r>recurrent<s n="adj"/></r></p></e>
+
+
  
 
 <e><p><l>ensaluto<s n="n"/></l><r>login<s n="n"/></r></p></e>
