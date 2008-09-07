@@ -1685,8 +1685,11 @@
         <r>o<s n="vbdo"/><s n="past"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
+
+
     <pardef n="prsubj__prn">
     <e>
       <p>
@@ -1701,6 +1704,14 @@
         <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
       </p>
     </e>
+
+    <e>
+      <p>
+        <l>vin</l> 
+        <r>prpers<s n="prn"/><s n="obj"/><s n="mf"/><s n="sp"/><s n="acc"/></r> 
+      </p>
+    </e>
+
 
     <e c="para las reglas de agradar del t2x, por el momento">
       <p>
@@ -1755,7 +1766,6 @@
         <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r> 
       </p>
     </e>
-
     </pardef>
 
     <pardef n="probj__prn">
