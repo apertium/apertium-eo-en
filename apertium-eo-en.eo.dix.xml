@@ -1929,6 +1929,50 @@
     <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
     <e lm="probj"><i/><par n="probj__prn"/></e>
 
+
+
+<!--    
+    
+    <e lm="mia"><i>mi</i><par n="adj__adj"/></e> 
+    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
+    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
+    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
+-->    
+
+    <e lm="mia"><i>mia</i><par n="mia__det"/></e>
+    <e lm="via"><i>via</i><par n="mia__det"/></e>
+    <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="nia"><i>nia</i><par n="mia__det"/></e>
+    <e lm="ilia"><i>ilia</i><par n="mia__det"/></e>
+    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
+
+
+    <e lm="pli"><i>pli</i><par n="very__preadv"/></e>
+    <e lm="plej"><i>plej</i><par n="very__preadv"/></e>
+
+    <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
+    <e lm="pli"><i>pli</i><par n="at__pr"/></e>
+    <e lm="plia"><i>pli</i><par n="adj__adj"/></e>
+    <e lm="pliaĝa"><i>pliaĝ</i><par n="adj__adj"/></e>
+    <e lm="pli bona"><i>pli bon</i><par n="adj__adj"/></e>
+
+    <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
+
+    <e lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
+
+
+
 <!-- Numeroj -->
     <e lm="nulo"><i>nulo</i><par n="two__num"/></e>
     <e lm="unu"><i>unu</i><par n="unu__num"/></e>
@@ -1970,6 +2014,11 @@
 
     <e lm="dekduo"><i>dekduo</i><par n="nom__n"/></e>
     <e lm="dekkvino"><i>dekkvino</i><par n="nom__n"/></e>
+
+
+
+
+
 
 
 <!-- landoj kan nacioj -->
@@ -2182,7 +2231,7 @@
 <!-- aliaj -->
 
 
-<!-- substantivoj, adjektivoj, adverboj kaj verboj -->
+<!-- "Normalaj vortoj", kiuj povas esti substantivo, adjektivo, adverbo kaj verbo -->
 
     <e lm="laŭleĝa"><i>la</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="adj__adj"/></e>
     <e lm="renovigi"><i>renovig</i><par n="verb__vblex"/></e>
@@ -5447,22 +5496,6 @@
     <e lm="mezurado"><i>mezurado</i><par n="nom__n"/></e>
     <e lm="mezuro"><i>mezuro</i><par n="nom__n"/></e>
 
-<!--    
-    
-    <e lm="mia"><i>mi</i><par n="adj__adj"/></e> 
-    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
-    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
-    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
--->    
-
-    <e lm="mia"><i>mia</i><par n="mia__det"/></e>
-    <e lm="via"><i>via</i><par n="mia__det"/></e>
-    <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
-    <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
-    <e lm="nia"><i>nia</i><par n="mia__det"/></e>
-    <e lm="ilia"><i>ilia</i><par n="mia__det"/></e>
-    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
-
     <e lm="mielo"><i>mielo</i><par n="nom__n"/></e>
     <e lm="migdalo"><i>migdalo</i><par n="nom__n"/></e>
     <e lm="migri"><i>migr</i><par n="verb__vblex"/></e>
@@ -6159,21 +6192,6 @@
     <e lm="plenumi"><i>plenum</i><par n="verb__vblex"/></e>
     <e lm="plezuro"><i>plezuro</i><par n="nom__n"/></e>
 
-    <e lm="pli"><i>pli</i><par n="very__preadv"/></e>
-    <e lm="plej"><i>plej</i><par n="very__preadv"/></e>
-
-    <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
-    <e lm="pli"><i>pli</i><par n="at__pr"/></e>
-    <e lm="plia"><i>pli</i><par n="adj__adj"/></e>
-    <e lm="pliaĝa"><i>pliaĝ</i><par n="adj__adj"/></e>
-    <e lm="pli bona"><i>pli bon</i><par n="adj__adj"/></e>
-
-    <e lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="pli da"><p><l>pli<b/>da</l><r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
     <e lm="plibonigi"><i>plibonig</i><par n="verb__vblex"/></e>
     <e lm="plibonigo"><i>plibonigo</i><par n="nom__n"/></e>
@@ -7172,13 +7190,6 @@
     <e lm="sufiĉa"><i>sufi</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="very__preadv"/></e>
     <e lm="sufiĉe"><i>sufiĉe</i><par n="komence__adv"/></e>
-
-    <e lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
     <e lm="sufikso"><i>sufikso</i><par n="nom__n"/></e>
     <e lm="sugesti"><i>sugest</i><par n="verb__vblex"/></e>
