@@ -22,10 +22,11 @@ public class LeguTradukuNet {
 
 	HashMap<String, Paro> enw = new HashMap<String, Paro>();
 
-	ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/aVRTdHLIob");
+	//ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/aVRTdHLIob");
 	//ArrayList<String> vortoj = Iloj.leguTekstDosieron("mankantaj_adjektivoj.txt");
 
-	//List<String> vortoj = Arrays.asList(new String[] {"woeful", "pre", "alpha", "SVN", "Apertium" });
+	List<String> vortoj = Arrays.asList(new String[] {"Nigerian", "antioxidant", "athlete", "choral", "college", "correct", "democrat", "elect", "fellow", "immigrant", "millionaire", "pacifist", "police", "publishing", "resident", "right", "school", "soloist", "subject", "turquoise", "university", "urban" });
+
 
 	LinkedHashSet<String> eoDixAldono = new LinkedHashSet<String>();
 	LinkedHashSet<String> enDixAldono = new LinkedHashSet<String>();
@@ -69,11 +70,11 @@ public class LeguTradukuNet {
 		    System.out.println(p.apertiumEn());
 		    System.out.println(p.apertiumEoEn());
 		    System.out.println();
-
+/*
 		    eoDixAldono.add(p.apertiumEo());
 		    enDixAldono.add(p.apertiumEn());
 		    eoEnDixAldono.add(p.apertiumEoEn());
-
+*/
 		}
 
 	    }
