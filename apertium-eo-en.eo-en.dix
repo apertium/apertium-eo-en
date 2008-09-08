@@ -553,13 +553,17 @@
     <!-- Possessives -->
 
     <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
-
     <e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
-
+    <e r="RL"><p><l>via<s n="det"/><s n="pos"/></l><r>yours<s n="adj"/><s n="pos"/></r></p></e>
     <e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
     <e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
     <e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
     <e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
+
+<!--
+    <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
+-->
 
 
 
@@ -7354,10 +7358,6 @@
     <e><p><l>mezepoka<s n="adj"/></l><r>mediaeval<s n="adj"/></r></p></e>
     <e r="RL"><p><l>mezepoka<s n="adj"/></l><r>medieval<s n="adj"/></r></p></e>
 
-<!--
-    <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
--->
 
     <e><p><l>migra<s n="adj"/></l><r>itinerant<s n="adj"/></r></p></e>
     <e><p><l>mikroskopa<s n="adj"/></l><r>microscopic<s n="adj"/></r></p></e>
