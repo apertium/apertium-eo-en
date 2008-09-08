@@ -2639,6 +2639,7 @@
     <e lm="naciisto"><i>naciist</i><par n="nommf__n"/></e>
     <e lm="nepo"><i>nep</i><par n="nommf__n"/></e>
     <e lm="nevo"><i>nev</i><par n="nommf__n"/></e>
+    <e lm="norvego"><i>norveg</i><par n="nommf__n"/></e>
     <e lm="niĝeriano"><i>ni</i><par n="ĝ"/><i>erian</i><par n="nommf__n"/></e>
     <e lm="notario"><i>notari</i><par n="nommf__n"/></e>
     <e lm="observanto"><i>observant</i><par n="nommf__n"/></e>
@@ -2761,6 +2762,7 @@
     <e lm="greko"><i>greko</i><par n="nommf__n"/></e>
     <e lm="italo"><i>italo</i><par n="nommf__n"/></e>
     <e lm="japano"><i>japano</i><par n="nommf__n"/></e>
+    <e lm="niĝeriano"><i>niĝeriano</i><par n="nommf__n"/></e>
     <e lm="norvego"><i>norvego</i><par n="nommf__n"/></e>
     <e lm="protestanto"><i>protestanto</i><par n="nommf__n"/></e>
     <e lm="ruso"><i>ruso</i><par n="nommf__n"/></e>
@@ -3063,6 +3065,7 @@
     <e lm="antikva"><i>antikv</i><par n="adj__adj"/></e>
     <e lm="antikva tempo"><i>antikva<b/>tempo</i><par n="nom__n"/></e>
     <e lm="antioksidanto"><i>antioksidanto</i><par n="nom__n"/></e>
+    <e lm="antioksidanto"><i>antioksidant</i><par n="adj__adj"/></e>
     <e lm="antitezo"><i>antitezo</i><par n="nom__n"/></e>
     <e lm="anuso"><i>anuso</i><par n="nom__n"/></e>
     <e lm="apanaĝo"><i>apana</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -3613,6 +3616,7 @@
     <e lm="demisii"><i>demisi</i><par n="verb__vblex"/></e>
     <e lm="demokratie"><i>demokratie</i><par n="komence__adv"/></e>
     <e lm="demokratio"><i>demokratio</i><par n="nom__n"/></e>
+    <e lm="demokrata"><i>demokrat</i><par n="adj__adj"/></e>
     <e lm="demono"><i>demono</i><par n="nom__n"/></e>
     <e lm="demonstracio"><i>demonstracio</i><par n="nom__n"/></e>
     <e lm="denove"><i>denove</i><par n="komence__adv"/></e>
@@ -5206,6 +5210,7 @@
     <e lm="kopio"><i>kopio</i><par n="nom__n"/></e>
     <e lm="kora"><i>kor</i><par n="adj__adj"/></e>
     <e lm="koralo"><i>koralo</i><par n="nom__n"/></e>
+    <e lm="korala"><i>koral</i><par n="adj__adj"/></e>
     <e lm="korbato"><i>korbato</i><par n="nom__n"/></e>
     <e lm="korbopilkado"><i>korbopilkado</i><par n="nom__n"/></e>
     <e lm="koregrafio"><i>koregrafio</i><par n="nom__n"/></e>
@@ -5416,8 +5421,11 @@
     <e lm="legomo"><i>legomo</i><par n="nom__n"/></e>
     <e lm="leki"><i>lek</i><par n="verb__vblex"/></e>
     <e lm="lenso"><i>lenso</i><par n="nom__n"/></e>
-    <e lm="leporo"><i>leporo</i><par n="nom__n"/></e>
+    <e lm="leporo"><i>leporo</i><par n="adj__adj"/></e>
+    <e lm="lerneja"><i>lernej</i><par n="nom__n"/></e>
     <e lm="lernejo"><i>lernejo</i><par n="nom__n"/></e>
+    <e lm="altlerneja"><i>altlernej</i><par n="nom__n"/></e>
+    <e lm="altlernejo"><i>altlernejo</i><par n="nom__n"/></e>
     <e lm="lerni"><i>lern</i><par n="verb__vblex"/></e>
     <e lm="lerta"><i>lert</i><par n="adj__adj"/></e>
     <e lm="lertaĵo"><i>lerta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -5474,6 +5482,7 @@
     <e lm="loĝejo"><i>lo</i><par n="ĝ"/><i>ejo</i><par n="nom__n"/></e>
     <e lm="loĝigi"><i>lo</i><par n="ĝ"/><i>ig</i><par n="verb__vblex"/></e>
     <e lm="loĝi"><i>lo</i><par n="ĝ"/><i/><par n="verb__vblex"/></e>
+    <e lm="loĝanta"><i>lo</i><par n="ĝ"/><i>ant</i><par n="adj__adj"/></e>
     <e lm="logika"><i>logik</i><par n="adj__adj"/></e>
     <e lm="logike"><i>logike</i><par n="komence__adv"/></e>
     <e lm="logiko"><i>logiko</i><par n="nom__n"/></e>
@@ -6097,6 +6106,7 @@
     <e lm="normaligi"><i>normalig</i><par n="verb__vblex"/></e>
     <e lm="normo"><i>normo</i><par n="nom__n"/></e>
     <e lm="norvega"><i>norveg</i><par n="adj__adj"/></e>
+    <e lm="niĝeria"><i>ni</i><par n="ĝ"/><i>eri</i><par n="adj__adj"/></e>
     <e lm="nostalgio"><i>nostalgio</i><par n="nom__n"/></e>
     <e lm="notaria"><i>notari</i><par n="adj__adj"/></e>
     <e lm="noti"><i>not</i><par n="verb__vblex"/></e>
@@ -7308,6 +7318,7 @@
     <e lm="sojlo"><i>sojlo</i><par n="nom__n"/></e>
     <e lm="ŝoko"><par n="ŝ"/><i>oko</i><par n="nom__n"/></e>
     <e lm="sola"><i>sol</i><par n="adj__adj"/></e>
+    <e lm="solista"><i>solist</i><par n="adj__adj"/></e>
     <e lm="soleco"><i>soleco</i><par n="nom__n"/></e>
     <e lm="solena"><i>solen</i><par n="adj__adj"/></e>
     <e lm="soleo"><i>soleo</i><par n="nom__n"/></e>

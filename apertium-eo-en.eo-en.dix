@@ -2112,6 +2112,7 @@
     <e r="LR"><p><l>greko<s n="n"/><s n="f"/></l><r>Greek<s n="n"/></r></p></e>
     <e r="LR"><p><l>italo<s n="n"/><s n="f"/></l><r>Italian<s n="n"/></r></p></e>
     <e r="LR"><p><l>japano<s n="n"/><s n="f"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="f"/></l><r>Nigerian<s n="n"/></r></p></e>
     <e r="LR"><p><l>norvego<s n="n"/><s n="f"/></l><r>Norwegian<s n="n"/></r></p></e>
     <e r="LR"><p><l>ruso<s n="n"/><s n="f"/></l><r>Russian<s n="n"/></r></p></e>
     <e r="LR"><p><l>sviso<s n="n"/><s n="f"/></l><r>Swiss<s n="n"/></r></p></e>
@@ -2129,6 +2130,7 @@
     <e r="LR"><p><l>greko<s n="n"/><s n="m"/></l><r>Greek<s n="n"/></r></p></e>
     <e r="LR"><p><l>italo<s n="n"/><s n="m"/></l><r>Italian<s n="n"/></r></p></e>
     <e r="LR"><p><l>japano<s n="n"/><s n="m"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="m"/></l><r>Nigerian<s n="n"/></r></p></e>
     <e r="LR"><p><l>norvego<s n="n"/><s n="m"/></l><r>Norwegian<s n="n"/></r></p></e>
     <e r="LR"><p><l>ruso<s n="n"/><s n="m"/></l><r>Russian<s n="n"/></r></p></e>
     <e r="LR"><p><l>sviso<s n="n"/><s n="m"/></l><r>Swiss<s n="n"/></r></p></e>
@@ -2146,6 +2148,7 @@
     <e r="RL"><p><l>greko<s n="n"/><s n="GD"/></l><r>Greek<s n="n"/></r></p></e>
     <e r="RL"><p><l>italo<s n="n"/><s n="GD"/></l><r>Italian<s n="n"/></r></p></e>
     <e r="RL"><p><l>japano<s n="n"/><s n="GD"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="RL"><p><l>niĝeriano<s n="n"/><s n="GD"/></l><r>Nigerian<s n="n"/></r></p></e>
     <e r="RL"><p><l>norvego<s n="n"/><s n="GD"/></l><r>Norwegian<s n="n"/></r></p></e>
     <e r="RL"><p><l>ruso<s n="n"/><s n="GD"/></l><r>Russian<s n="n"/></r></p></e>
     <e r="RL"><p><l>sviso<s n="n"/><s n="GD"/></l><r>Swiss<s n="n"/></r></p></e>
@@ -2355,6 +2358,7 @@
     <e><p><l>antikorpo<s n="n"/></l><r>antibody<s n="n"/></r></p></e>
     <e><p><l>antikva tempo<s n="n"/></l><r>antiquity<s n="n"/></r></p></e>
     <e><p><l>antioksidanto<s n="n"/></l><r>antioxidant<s n="n"/></r></p></e>
+    <e><p><l>antioksidanta<s n="adj"/></l><r>antioxidant<s n="adj"/></r></p></e>
     <e r="LR"><p><l>antitezo<s n="n"/></l><r>antithesis<s n="n"/><s n="ND"/></r></p></e>
     <e r="RL"><p><l>antitezo<s n="n"/></l><r>antithesis<s n="n"/></r></p></e>
     <e r="RL"><p><l>anuso<s n="n"/></l><r>anus<s n="n"/></r></p></e>
@@ -6327,6 +6331,7 @@
     <e><p><l>ungo<s n="n"/></l><r>nail<s n="n"/></r></p></e>
     <e><p><l>uniformo<s n="n"/></l><r>uniform<s n="n"/></r></p></e>
 	<e><p><l>altlernejo<s n="n"/></l><r>college<s n="n"/></r></p></e>
+	<e><p><l>altlerneja<s n="adj"/></l><r>college<s n="adj"/></r></p></e>
     <e><p><l>universitato<s n="n"/></l><r>university<s n="n"/></r></p></e>
     <e><p><l>universitata<s n="n"/></l><r>university<s n="adj"/></r></p></e>
     <e><p><l>universo<s n="n"/></l><r>universe<s n="n"/></r></p></e>
@@ -7456,6 +7461,7 @@
     <e><p><l>normala<s n="adj"/></l><r>normal<s n="adj"/></r></p></e>
     <e r="RL"><p><l>normala<s n="adj"/></l><r>ordinary<s n="adj"/></r></p></e>
     <e><p><l>norvega<s n="adj"/></l><r>Norwegian<s n="adj"/></r></p></e>
+    <e><p><l>niĝeria<s n="adj"/></l><r>Nigerian<s n="adj"/></r></p></e>
     <e><p><l>notaria<s n="adj"/></l><r>notarial<s n="adj"/></r></p></e>
 
     <e><p><l>nova<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e>
@@ -7902,7 +7908,7 @@
     <e r="RL"><p><l>alveni<s n="vblex"/></l><r>get<s n="vblex"/></r></p></e>
     <e><p><l>amasigi<s n="vblex"/></l><r>accumulate<s n="vblex"/></r></p></e>
     <e><p><l>amendi<s n="vblex"/></l><r>amend<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>ami<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
+    <e><p><l>ami<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>ami<s n="vblex"/></l><r>appreciate<s n="vblex"/></r></p></e>
     <e><p><l>ami<s n="vblex"/></l><r>estimate<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>ami<s n="vblex"/></l><r>consider<s n="vblex"/></r></p></e>
@@ -8970,7 +8976,7 @@
     <e r="LR"><p><l>rakonti<s n="vblex"/></l><r>explain<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>rapidi<s n="vblex"/></l><r>capture<s n="vblex"/></r></p></e>
     <e><p><l>raporti<s n="vblex"/></l><r>refer<s n="vblex"/></r></p></e>
-    <e><p><l>ravi<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>ravi<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
     <e><p><l>razi<s n="vblex"/></l><r>shave<s n="vblex"/></r></p></e>
     <e><p><l>reagi<s n="vblex"/></l><r>react<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>realigi<s n="vblex"/></l><r>realise<s n="vblex"/></r></p></e>
@@ -9307,7 +9313,7 @@
     <e><p><l>voĉdoni<s n="vblex"/></l><r>vote<s n="vblex"/></r></p></e>
     <e><p><l>vojaĝi<s n="vblex"/></l><r>travel<s n="vblex"/></r></p></e>
     <e><p><l>voki<s n="vblex"/></l><r>appeal<s n="vblex"/></r></p></e>
-    <e><p><l>voli<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>voli<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
     <e><p><l>voli<s n="vblex"/></l><r>want<s n="vblex"/></r></p></e>
     <e><p><l>vundi<s n="vblex"/></l><r>injure<s n="vblex"/></r></p></e>
     <e><p><l>humiligi<s n="vblex"/></l><r>abase<s n="vblex"/></r></p></e>
@@ -10063,16 +10069,14 @@
  <e><p><l>anarkia<s n="adj"/></l><r>anarchist<s n="adj"/></r></p></e>
  <e><p><l>animala<s n="adj"/></l><r>animal<s n="adj"/></r></p></e>
 
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>Nigerian<s n="adj"/></r></p></e> -->
 
 <e><p><l>sola<s n="adj"/></l><r>alone<s n="adj"/></r></p></e>
 <e><p><l>alternativa<s n="adj"/></l><r>alternative<s n="adj"/></r></p></e>
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>antioxidant<s n="adj"/></r></p></e> -->
 <e><p><l>komerca<s n="adj"/></l><r>business<s n="adj"/></r></p></e>
 <e><p><l>brava<s n="adj"/></l><r>capital<s n="adj"/></r></p></e>
 <e><p><l>ĉefa<s n="adj"/></l><r>cardinal<s n="adj"/></r></p></e>
 <e><p><l>aparta<s n="adj"/></l><r>characteristic<s n="adj"/></r></p></e>
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>choral<s n="adj"/></r></p></e> -->
+<e><p><l>korala<s n="adj"/></l><r>choral<s n="adj"/></r></p></e>
 <e><p><l>klara<s n="adj"/></l><r>clear<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>malvarma<s n="adj"/></l><r>cold<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>komunista<s n="adj"/></l><r>communist<s n="adj"/></r></p></e>
