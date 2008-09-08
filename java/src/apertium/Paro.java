@@ -77,6 +77,8 @@ public class Paro {
 	return "";
     }
 
+
+
 /*
      lt-expand the en.dix, grep out the '<adj><sint>'
      put those entries in a temp file

@@ -130,6 +130,7 @@ public class Iloj {
 
 	String linio;
 	while ((linio = br.readLine()) != null) {
+	    //System.out.println("# æst: "+linio);
 		linioj.add(linio);
 	}
 
