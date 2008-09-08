@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Regression_testsx | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
 
 cp *.mode modes/
 
@@ -33,7 +33,8 @@ done
 echo "Checking tests that are known to fail..."
 
 #LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
-LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '(<li>|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+#LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '(<li>|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
 
 cp *.mode modes/
 
@@ -45,7 +46,7 @@ for LINE in $LIST; do
 	elif [ $dir = "eo" ]; then
 		mode="eo-en";
 	else 
-		echo ==`echo $LINE | sed 's/^.*_<span_class="mw-headline">//g' | sed 's/<\/span>.*//g'`==
+		echo ==`echo $LINE | sed 's/^.*_<span_class="mw-headline">//g' | sed 's/<\/span>.*//g' | sed 's/_/ /g'`==
 		continue;
 	fi
 
