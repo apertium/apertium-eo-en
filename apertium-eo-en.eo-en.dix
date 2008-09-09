@@ -550,6 +550,7 @@
 
     <e><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
 
+
     <!-- Possessives -->
 
     <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
@@ -565,6 +566,12 @@
     <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
     <e r="LR"><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
 -->
+
+	<e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
+	<e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
+	<e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
+
+
 
 
 
@@ -3556,6 +3563,7 @@
     <e><p><l>grego<s n="n"/></l><r>herd<s n="n"/></r></p></e>
     <e><p><l>greno<s n="n"/></l><r>cereal<s n="n"/></r></p></e>
     <e r="LR"><p><l>grifelo<s n="n"/></l><r>plaster<s n="n"/></r></p></e>
+    <e r="LR"><p><l>plastro<s n="n"/></l><r>plaster<s n="n"/></r></p></e>
     <e><p><l>grimaco<s n="n"/></l><r>grimace<s n="n"/></r></p></e>
     <e><p><l>gripo<s n="n"/></l><r>flu<s n="n"/></r></p></e>
     <e><p><l>gruo<s n="n"/></l><r>crane<s n="n"/></r></p></e>
@@ -8623,7 +8631,6 @@
     <e r="RL"><p><l>kuri<s n="vblex"/></l><r>race<s n="vblex"/></r></p></e>
     <e><p><l>kuri<s n="vblex"/></l><r>run<s n="vblex"/></r></p></e>
     <e><p><l>kutimi<s n="vblex"/></l><r>accustom<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>kvalifiki<s n="vblex"/></l><r>zone<s n="vblex"/></r></p></e>
     <e><p><l>kvereli<s n="vblex"/></l><r>contest<s n="vblex"/></r></p></e>
     <e><p><l>labori<s n="vblex"/></l><r>work<s n="vblex"/></r></p></e>
     <e><p><l>lamenti<s n="vblex"/></l><r>regret<s n="vblex"/></r></p></e>
@@ -9068,9 +9075,7 @@
     <e r="LR"><p><l>rompi<s n="vblex"/></l><r>break<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rompi<s n="vblex"/></l><r>smash<s n="vblex"/></r></p></e>
     <e><p><l>rondigi<s n="vblex"/></l><r>round<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>ruliĝi<s n="vblex"/></l><r>film<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>ruliĝi<s n="vblex"/></l><r>go<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>ruliĝi<s n="vblex"/></l><r>roll<s n="vblex"/></r></p></e>
+    <e><p><l>ruliĝi<s n="vblex"/></l><r>roll<s n="vblex"/></r></p></e>
     <e><p><l>salti<s n="vblex"/></l><r>jump<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>salti<s n="vblex"/></l><r>leap<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>salti<s n="vblex"/></l><r>spring<s n="vblex"/></r></p></e>
@@ -10102,8 +10107,6 @@
 <e><p><l>plata<s n="adj"/></l><r>flat<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>panika<s n="adj"/></l><r>frantic<s n="adj"/></r></p></e>
 <e><p><l>verda<s n="adj"/></l><r>green<s n="adj"/><s n="sint"/></r></p></e>
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>hers<s n="adj"/></r></p></e> -->
-<e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
 <e><p><l>horizontala<s n="adj"/></l><r>horizontal<s n="adj"/></r></p></e>
 <e><p><l>gastiganta<s n="adj"/></l><r>host<s n="adj"/></r></p></e>
 <e><p><l>stulta<s n="adj"/></l><r>idiot<s n="adj"/></r></p></e>
@@ -10129,7 +10132,6 @@
 <e><p><l>publika<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
 <e><p><l>oranĝa<s n="adj"/></l><r>orange<s n="adj"/></r></p></e>
 <e><p><l>orfa<s n="adj"/></l><r>orphan<s n="adj"/></r></p></e>
-<e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
 <e><p><l>ovala<s n="adj"/></l><r>oval<s n="adj"/></r></p></e>
 <e><p><l>prova<s n="adj"/></l><r>pilot<s n="adj"/></r></p></e>
 <e><p><l>rozkolora<s n="adj"/></l><r>pink<s n="adj"/><s n="sint"/></r></p></e>
@@ -10143,7 +10145,6 @@
 <e><p><l>rutina<s n="adj"/></l><r>routine<s n="adj"/></r></p></e>
 <e><p><l>sekreta<s n="adj"/></l><r>secret<s n="adj"/></r></p></e>
 <e><p><l>socialisma<s n="adj"/></l><r>socialist<s n="adj"/></r></p></e>
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>soloist<s n="adj"/></r></p></e> -->
 <e><p><l>suda<s n="adj"/></l><r>south<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suverena<s n="adj"/></l><r>sovereign<s n="adj"/></r></p></e>
 <e><p><l>spaciala<s n="adj"/></l><r>space<s n="adj"/></r></p></e>
@@ -10154,9 +10155,7 @@
 <e><p><l>substantiva<s n="adj"/></l><r>substantive<s n="adj"/></r></p></e>
 <e><p><l>morta<s n="adj"/></l><r>terminal<s n="adj"/></r></p></e>
 <e><p><l>terorista<s n="adj"/></l><r>terrorist<s n="adj"/></r></p></e>
-<e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
 <e><p><l>travidebla<s n="adj"/></l><r>transparent<s n="adj"/></r></p></e>
-<!-- ne trovis   <e><p><l><s n="adj"/></l><r>turquoise<s n="adj"/></r></p></e> -->
 <e><p><l>unuforma<s n="adj"/></l><r>uniform<s n="adj"/></r></p></e>
 <e><p><l>unupartia<s n="adj"/></l><r>unilateral<s n="adj"/></r></p></e>
 <e><p><l>suprenira<s n="adj"/></l><r>upward<s n="adj"/></r></p></e>
@@ -10165,7 +10164,6 @@
 <e><p><l>blanka<s n="adj"/></l><r>white<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ripetiĝanta<s n="adj"/></l><r>recurrent<s n="adj"/></r></p></e>
 
-
  
 
 <e><p><l>ensaluto<s n="n"/></l><r>login<s n="n"/></r></p></e>
@@ -10173,5 +10171,94 @@
 <e><p><l>kune<s n="adv"/></l><r>together<s n="adv"/></r></p></e>
 <e><p><l>ĝeni<s n="vblex"/></l><r>disturb<s n="vblex"/></r></p></e>
 <e><p><l>retejo<s n="n"/></l><r>website<s n="n"/></r></p></e> 
+
+
+
+    <e><p><l>premii<s n="vblex"/></l><r>award<s n="vblex"/></r></p></e>
+    <e><p><l>komenci<s n="vblex"/></l><r>begin<s n="vblex"/></r></p></e>
+    <e><p><l>kulpi<s n="vblex"/></l><r>blame<s n="vblex"/></r></p></e>
+    <e><p><l>blindi<s n="vblex"/></l><r>blind<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>rompi<s n="vblex"/></l><r>breach<s n="vblex"/></r></p></e>
+    <e><p><l>rompi<s n="vblex"/></l><r>break<s n="vblex"/></r></p></e>
+    <e><p><l>tuŝeti<s n="vblex"/></l><r>brush<s n="vblex"/></r></p></e>
+    <e><p><l>pezigi<s n="vblex"/></l><r>burden<s n="vblex"/></r></p></e>
+    <e><p><l>eksplodi<s n="vblex"/></l><r>burst<s n="vblex"/></r></p></e>
+    <e><p><l>voki<s n="vblex"/></l><r>call<s n="vblex"/></r></p></e>
+    <e><p><l>kampanji<s n="vblex"/></l><r>campaign<s n="vblex"/></r></p></e>
+    <e><p><l>flegi<s n="vblex"/></l><r>care<s n="vblex"/></r></p></e>
+    <e><p><l>karikaturi<s n="vblex"/></l><r>caricature<s n="vblex"/></r></p></e>
+    <e><p><l>katapulti<s n="vblex"/></l><r>catapult<s n="vblex"/></r></p></e>
+    <e><p><l>kompakti<s n="vblex"/></l><r>compact<s n="vblex"/></r></p></e>
+    <e><p><l>kontakti<s n="vblex"/></l><r>contact<s n="vblex"/></r></p></e>
+    <e><p><l>kontrakti<s n="vblex"/></l><r>contract<s n="vblex"/></r></p></e>
+    <e><p><l>konvri<s n="vblex"/></l><r>cover<s n="vblex"/></r></p></e>
+    <e><p><l>krucmi<s n="vblex"/></l><r>cross<s n="vblex"/></r></p></e>
+    <e><p><l>tranĉi<s n="vblex"/></l><r>cut<s n="vblex"/></r></p></e>
+    <e><p><l>difeki<s n="vblex"/></l><r>damage<s n="vblex"/></r></p></e>
+    <e><p><l>debati<s n="vblex"/></l><r>debate<s n="vblex"/></r></p></e>
+    <e><p><l>malpliiĝi<s n="vblex"/></l><r>decline<s n="vblex"/></r></p></e>
+    <e><p><l>detali<s n="vblex"/></l><r>detail<s n="vblex"/></r></p></e>
+    <e><p><l>disciplini<s n="vblex"/></l><r>discipline<s n="vblex"/></r></p></e>
+    <e><p><l>rabati<s n="vblex"/></l><r>discount<s n="vblex"/></r></p></e>
+    <e><p><l>malestimi<s n="vblex"/></l><r>disdain<s n="vblex"/></r></p></e>
+    <e><p><l>dubi<s n="vblex"/></l><r>doubt<s n="vblex"/></r></p></e>
+    <e><p><l>drogi<s n="vblex"/></l><r>drug<s n="vblex"/></r></p></e>
+    <e><p><l>ekskuzi<s n="vblex"/></l><r>excuse<s n="vblex"/></r></p></e>
+    <e><p><l>ekzerci<s n="vblex"/></l><r>exercise<s n="vblex"/></r></p></e>
+    <e><p><l>ventumili<s n="vblex"/></l><r>fan<s n="vblex"/></r></p></e>
+    <e><p><l>filmi<s n="vblex"/></l><r>film<s n="vblex"/></r></p></e>
+    <e><p><l>ŝaŭmi<s n="vblex"/></l><r>foam<s n="vblex"/></r></p></e>
+    <e><p><l>strukturi<s n="vblex"/></l><r>frame<s n="vblex"/></r></p></e>
+    <e><p><l>galopi<s n="vblex"/></l><r>gallop<s n="vblex"/></r></p></e>
+    <e><p><l>glosi<s n="vblex"/></l><r>gloss<s n="vblex"/></r></p></e>
+    <e><p><l>pendigi<s n="vblex"/></l><r>hang<s n="vblex"/></r></p></e>
+    <e><p><l>helpi<s n="vblex"/></l><r>help<s n="vblex"/></r></p></e>
+    <e><p><l>hasti<s n="vblex"/></l><r>hurry<s n="vblex"/></r></p></e>
+    <e c="I'll inventory the stock = go through the stock and make a note of what we have"><p><l>trarigardi<s n="vblex"/></l><r>inventory<s n="vblex"/></r></p></e>
+    <e><p><l>kisi<s n="vblex"/></l><r>kiss<s n="vblex"/></r></p></e>
+    <e><p><l>etiketi<s n="vblex"/></l><r>label<s n="vblex"/></r></p></e>
+    <e><p><l>manki<s n="vblex"/></l><r>lack<s n="vblex"/></r></p></e>
+    <e><p><l>ŝati<s n="vblex"/></l><r>like<s n="vblex"/></r></p></e>
+    <e><p><l>ŝarĝi<s n="vblex"/></l><r>load<s n="vblex"/></r></p></e>
+    <e><p><l>serpentumi<s n="vblex"/></l><r>meander<s n="vblex"/></r></p></e>
+    <e><p><l>rondiri<s n="vblex"/></l><r>orbit<s n="vblex"/></r></p></e>
+    <e><p><l>paki<s n="vblex"/></l><r>pack<s n="vblex"/></r></p></e>
+    <e><p><l>telefoni<s n="vblex"/></l><r>phone<s n="vblex"/></r></p></e>
+    <e><p><l>plani<s n="vblex"/></l><r>plan<s n="vblex"/></r></p></e>
+    <e><p><l>ŝmiri<s n="vblex"/></l><r>plaster<s n="vblex"/></r></p></e>
+    <e><p><l>polvumi<s n="vblex"/></l><r>powder<s n="vblex"/></r></p></e>
+    <e><p><l>prostituiti<s n="vblex"/></l><r>prostitute<s n="vblex"/></r></p></e>
+    <e><p><l>pridemandi<s n="vblex"/></l><r>question<s n="vblex"/></r></p></e>
+    <e><p><l>resalti<s n="vblex"/></l><r>rebound<s n="vblex"/></r></p></e>
+    <e><p><l>resti<s n="vblex"/></l><r>remain<s n="vblex"/></r></p></e>
+    <e><p><l>lui<s n="vblex"/></l><r>rent<s n="vblex"/></r></p></e>
+    <e><p><l>savi<s n="vblex"/></l><r>rescue<s n="vblex"/></r></p></e>
+    <e><p><l>utiligi<s n="vblex"/></l><r>resort<s n="vblex"/></r></p></e>
+    <e><p><l>rimi<s n="vblex"/></l><r>rhyme<s n="vblex"/></r></p></e>
+    <e><p><l>hasti<s n="vblex"/></l><r>rush<s n="vblex"/></r></p></e>
+    <e><p><l>maldungi<s n="vblex"/></l><r>sack<s n="vblex"/></r></p></e>
+    <e><p><l>skani<s n="vblex"/></l><r>scan<s n="vblex"/></r></p></e>
+    <e><p><l>sideji<s n="vblex"/></l><r>seat<s n="vblex"/></r></p></e>
+    <e><p><l>juĝi<s n="vblex"/></l><r>sentence<s n="vblex"/></r></p></e>
+    <e><p><l>ekspedi<s n="vblex"/></l><r>ship<s n="vblex"/></r></p></e>
+    <e><p><l>ŝui<s n="vblex"/></l><r>shoe<s n="vblex"/></r></p></e>
+    <e><p><l>restadi<s n="vblex"/></l><r>stay<s n="vblex"/></r></p></e>
+    <e><p><l>paŝi<s n="vblex"/></l><r>step<s n="vblex"/></r></p></e>
+    <e><p><l>fiksiĝi<s n="vblex"/></l><r>stick<s n="vblex"/></r></p></e>
+    <e><p><l>malkovri<s n="vblex"/></l><r>strip<s n="vblex"/></r></p></e>
+    <e><p><l>ŝtopi<s n="vblex"/></l><r>stuff<s n="vblex"/></r></p></e>
+    <e><p><l>suĉi<s n="vblex"/></l><r>suck<s n="vblex"/></r></p></e>
+    <e><p><l>surfaci<s n="vblex"/></l><r>surface<s n="vblex"/></r></p></e>
+    <e><p><l>telefoni<s n="vblex"/></l><r>telephone<s n="vblex"/></r></p></e>
+    <e><p><l>tempomezuri<s n="vblex"/></l><r>time<s n="vblex"/></r></p></e>
+    <e><p><l>translokigi<s n="vblex"/></l><r>transfer<s n="vblex"/></r></p></e>
+    <e><p><l>zorge<b/>konservi<s n="vblex"/></l><r>treasure<s n="vblex"/></r></p></e>
+    <e><p><l>fidi<s n="vblex"/></l><r>trust<s n="vblex"/></r></p></e>
+    <e><p><l>uzi<s n="vblex"/></l><r>use<s n="vblex"/></r></p></e>
+    <e><p><l>scivoli<s n="vblex"/></l><r>wonder<s n="vblex"/></r></p></e>
+    <e><p><l>maltrankvili<s n="vblex"/></l><r>worry<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>kvalifiki<s n="vblex"/></l><r>zone<s n="vblex"/></r></p></e>
+
+
   </section>
 </dictionary>

@@ -159,4 +159,18 @@ public class Iloj {
 	return xxParo;
     }
 
+
+    private static String dosierujo = "tradukunet-generated";
+    public static PrintWriter ekskribuHtml(String dosierNomo) {
+	new File(dosierujo).mkdir();
+	PrintWriter el = null;
+	try {
+	    el = new PrintWriter(dosierujo + File.separator + dosierNomo);
+	} catch (FileNotFoundException ex) {
+	    ex.printStackTrace();
+	}
+	return el;
+    }
+
+
 }
