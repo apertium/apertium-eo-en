@@ -834,6 +834,7 @@
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
@@ -857,12 +858,14 @@
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="tns"/>
+			  <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
@@ -1301,6 +1304,7 @@
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
@@ -1324,6 +1328,7 @@
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
