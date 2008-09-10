@@ -7118,6 +7118,7 @@
     <e lm="sekvestri"><i>sekvestr</i><par n="verb__vblex"/></e>
     <e lm="sekvi"><i>sekv</i><par n="verb__vblex"/></e>
     <e lm="sekvo"><i>sekvo</i><par n="nom__n"/></e>
+    <e lm="segilo"><i>segilo</i><par n="nom__n"/></e>
     <e lm="selektado"><i>selektado</i><par n="nom__n"/></e>
     <e lm="selekti"><i>selekt</i><par n="verb__vblex"/></e>
     <e lm="ŝelo"><par n="ŝ"/><i>elo</i><par n="nom__n"/></e>
@@ -8104,10 +8105,69 @@
 
     <e lm="pacista"><i>pacist</i><par n="adj__adj"/></e>
     <e lm="polica"><i>polic</i><par n="adj__adj"/></e>
-    <e lm=""><i></i><par n="adj__adj"/></e>
-    <e lm=""><i></i><par n="adj__adj"/></e>
-    <e lm=""><i></i><par n="adj__adj"/></e>
 
+
+	<e lm="konatiĝi"><i>konatiĝ</i><par n="verb__vblex"/></e>
+
+	<e lm="konatiĝi kun"><i>konatiĝ</i><par n="verb__vblex"/><p><l><b/>kun</l><r><g><b/>kun</g></r></p></e>	
+<!--
+	<e lm="konatiĝi kun"><p><l>konatiĝi<b/>kun</l><r>konatiĝ<par n="verb__vblex"/><b/>kun</r></p></e>	
+-->
+	
+	<e lm="kulpi"><i>kulp</i><par n="verb__vblex"/></e>
+	<e lm="blindi"><i>blind</i><par n="verb__vblex"/></e>
+	<e lm="pezigi"><i>pezig</i><par n="verb__vblex"/></e>
+	<e lm="kampanji"><i>kampanj</i><par n="verb__vblex"/></e>
+	<e lm="karikaturi"><i>karikatur</i><par n="verb__vblex"/></e>
+	<e lm="katapulti"><i>katapult</i><par n="verb__vblex"/></e>
+	<e lm="kompakti"><i>kompakt</i><par n="verb__vblex"/></e>
+	<e lm="kontakti"><i>kontakt</i><par n="verb__vblex"/></e>
+	<e lm="konvri"><i>konvr</i><par n="verb__vblex"/></e>
+	<e lm="krucmi"><i>krucm</i><par n="verb__vblex"/></e>
+	<e lm="difeki"><i>difek</i><par n="verb__vblex"/></e>
+	<e lm="debati"><i>debat</i><par n="verb__vblex"/></e>
+	<e lm="malpliiĝi"><i>malpliiĝ</i><par n="verb__vblex"/></e>
+	<e lm="detali"><i>detal</i><par n="verb__vblex"/></e>
+	<e lm="disciplini"><i>disciplin</i><par n="verb__vblex"/></e>
+	<e lm="dubi"><i>dub</i><par n="verb__vblex"/></e>
+	<e lm="drogi"><i>drog</i><par n="verb__vblex"/></e>
+	<e lm="ekskuzi"><i>ekskuz</i><par n="verb__vblex"/></e>
+	<e lm="ventumili"><i>ventumil</i><par n="verb__vblex"/></e>
+	<e lm="filmi"><i>film</i><par n="verb__vblex"/></e>
+	<e lm="ŝaŭmi"><i>ŝaŭm</i><par n="verb__vblex"/></e>
+	<e lm="galopi"><i>galop</i><par n="verb__vblex"/></e>
+	<e lm="glosi"><i>glos</i><par n="verb__vblex"/></e>
+	<e lm="hasti"><i>hast</i><par n="verb__vblex"/></e>
+	<e lm="trarigardi"><i>trarigard</i><par n="verb__vblex"/></e>
+	<e lm="etiketi"><i>etiket</i><par n="verb__vblex"/></e>
+	<e lm="ŝarĝi"><i>ŝarĝ</i><par n="verb__vblex"/></e>
+	<e lm="serpentumi"><i>serpentum</i><par n="verb__vblex"/></e>
+	<e lm="rondiri"><i>rondir</i><par n="verb__vblex"/></e>
+	<e lm="paki"><i>pak</i><par n="verb__vblex"/></e>
+	<e lm="telefoni"><i>telefon</i><par n="verb__vblex"/></e>
+	<e lm="plani"><i>plan</i><par n="verb__vblex"/></e>
+	<e lm="polvumi"><i>polvum</i><par n="verb__vblex"/></e>
+	<e lm="prostituiti"><i>prostituit</i><par n="verb__vblex"/></e>
+	<e lm="resalti"><i>resalt</i><par n="verb__vblex"/></e>
+	<e lm="utiligi"><i>utilig</i><par n="verb__vblex"/></e>
+	<e lm="rimi"><i>rim</i><par n="verb__vblex"/></e>
+	<e lm="hasti"><i>hast</i><par n="verb__vblex"/></e>
+	<e lm="skani"><i>skan</i><par n="verb__vblex"/></e>
+	<e lm="sideji"><i>sidej</i><par n="verb__vblex"/></e>
+	<e lm="ŝui"><i>ŝu</i><par n="verb__vblex"/></e>
+	<e lm="restadi"><i>restad</i><par n="verb__vblex"/></e>
+	<e lm="paŝi"><i>paŝ</i><par n="verb__vblex"/></e>
+	<e lm="fiksiĝi"><i>fiksiĝ</i><par n="verb__vblex"/></e>
+	<e lm="malkovri"><i>malkovr</i><par n="verb__vblex"/></e>
+	<e lm="ŝtopi"><i>ŝtop</i><par n="verb__vblex"/></e>
+	<e lm="surfaci"><i>surfac</i><par n="verb__vblex"/></e>
+	<e lm="telefoni"><i>telefon</i><par n="verb__vblex"/></e>
+	<e lm="tempomezuri"><i>tempomezur</i><par n="verb__vblex"/></e>
+	<e lm="translokigi"><i>translokig</i><par n="verb__vblex"/></e>
+	<e lm="zorge"><i>zorge</i><par n="verb__vblex"/></e>
+	<e lm="fidi"><i>fid</i><par n="verb__vblex"/></e>
+	<e lm="scivoli"><i>scivol</i><par n="verb__vblex"/></e>
+	<e lm="maltrankvili"><i>maltrankvil</i><par n="verb__vblex"/></e>
 
 
 

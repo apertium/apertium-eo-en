@@ -8,6 +8,7 @@ import java.util.*;
 public class LeguTradukuNet {
 
     public static void main(String[] args) throws Exception {
+	//AldonuVortojn.main(args);
 	leguVortliston();
     }
 
@@ -17,10 +18,10 @@ public class LeguTradukuNet {
 	final LeguTradukuNet legutradukunet = new LeguTradukuNet();
 	Thread leguT = new Iloj.Ek() { void ek() throws Exception { legutradukunet.leguTradukuNetDosieron(); }};
 
-	//ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/aVRTdHLIob");
+	ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/aytXh6Cqy");
 	//ArrayList<String> vortoj = Iloj.leguTekstDosieron("mankantaj_adjektivoj.txt");
 
-	List<String> vortoj = Arrays.asList(new String[] {"Nigerian", "antioxidant", "athlete", "choral", "college", "correct", "democrat", "elect", "fellow", "immigrant", "millionaire", "pacifist", "police", "publishing", "resident", "right", "school", "soloist", "subject", "turquoise", "university", "urban" });
+	//List<String> vortoj = Arrays.asList(new String[] {"Nigerian", "antioxidant", "athlete", "choral", "college", "correct", "democrat", "elect", "fellow", "immigrant", "millionaire", "pacifist", "police", "publishing", "resident", "right", "school", "soloist", "subject", "turquoise", "university", "urban" });
 
 
 	leguT.join();
@@ -41,8 +42,8 @@ public class LeguTradukuNet {
 			System.out.println(Iloj.deCxapeloj(p.apertiumEoEn()));
  */
 			System.out.println(p.apertiumEo());
-			System.out.println(p.apertiumEn());
-			System.out.println(p.apertiumEoEn());
+//			System.out.println(p.apertiumEn());
+//			System.out.println(p.apertiumEoEn());
 			System.out.println();
 
 		    }
@@ -86,7 +87,7 @@ public class LeguTradukuNet {
 
 
     public void leguTradukuNetDosieron() throws IOException {
-	long haltuKiam = System.currentTimeMillis() + 1000*10;
+	long haltuKiam = System.currentTimeMillis() + 1000*30;
 	BufferedReader br;
 	String linio;
 	String en=null, eo=null;

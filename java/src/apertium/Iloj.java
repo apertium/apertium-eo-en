@@ -21,6 +21,10 @@ public class Iloj {
 	}
     }
 
+    public static String deCxapeloj(Object o) {
+	return deCxapeloj(""+o);
+    }
+
     public static String deCxapeloj(String teksto) {
 	teksto = teksto.replaceAll("ĉ", "cx");
 	teksto = teksto.replaceAll("ĝ", "gx");
@@ -83,23 +87,20 @@ public class Iloj {
     }
 
 
-    public static ArrayList<String> leguNopaste(String nopasteUrl) throws
-	    IOException {
-
+    public static ArrayList<String> leguNopaste(String nopasteUrl) throws IOException {
 	ArrayList<String> linioj = new ArrayList<String>();
-	{
-	    BufferedReader br = new BufferedReader(new InputStreamReader(new
-		    URL(nopasteUrl).openStream()));
-	    System.out.println("Legas " + "URL");
-	    ArrayList<String> words = new ArrayList<String>();
-	    String linio;
-	    while ((linio = br.readLine()) != null) {
-		linio = linio.replaceAll("&lt;", "<").replaceAll("&gt;", ">");
-		//System.out.println(linio);
-		if (linio.startsWith("^")) {
-		    linio = linio.replaceAll("(.([^<]+)(.+?)\\$.*)", "$2@$3@$0");
-		    linioj.add(linio);
-		}
+	BufferedReader br = new BufferedReader(new InputStreamReader(new
+		URL(nopasteUrl).openStream()));
+	System.out.println("Legas " + "URL");
+	ArrayList<String> words = new ArrayList<String>();
+	String linio;
+	while ((linio = br.readLine()) != null) {
+	    linio = linio.replaceAll("&lt;", "<").replaceAll("&gt;", ">");
+	    if (linio.indexOf('@')!=-1) { System.out.println("Forjxetas "+ linio); continue; }
+	    //System.out.println(linio);
+	    if (linio.startsWith("^")) {
+		linio = linio.replaceAll("(.([^<]+)(.+?)\\$.*)", "$2@$3@$0");
+		linioj.add(linio);
 	    }
 	}
 	return linioj;
@@ -134,7 +135,6 @@ public class Iloj {
 		linioj.add(linio);
 	}
 
-
 	proces.getInputStream().close();
 	proces.getErrorStream().close();
 	proces.getOutputStream().close();
@@ -144,19 +144,31 @@ public class Iloj {
 
 
 
-    public static LinkedHashMap<String,ArrayList<String>> leguDix(String dixnomo) throws IOException {
+    public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixnomo) throws IOException {
 	ArrayList<String> al = exec("lt-expand "+dixnomo);
 
-	LinkedHashMap<String,ArrayList<String>> xxParo = new LinkedHashMap<String,ArrayList<String>>();
+	LinkedHashMap<String,ArrayList<String>>[] xxParoj = new LinkedHashMap[2];
+	xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>();
+	xxParoj[1] = new LinkedHashMap<String,ArrayList<String>>();
 
+
+	int n = 0;
 	for (String l : al) {
-	    String key = l.split(":")[0];
-	    ArrayList<String> alp = xxParo.get(key);
-	    if (alp==null) xxParo.put(key, alp = new ArrayList<String>());
-	    alp.add(l.substring(key.length()+1));
+	    String[] kv = l.split(":");
+	    int i = kv.length-1;
+	    add(kv[0], kv[i], xxParoj[0]);
+	    add(kv[i], kv[0], xxParoj[1]);
+
+	    //if (n++>1000) break;
 	}
 	System.out.println("Finlegis "+dixnomo);
-	return xxParo;
+	return xxParoj;
+    }
+
+    private static void add(String key, String val, LinkedHashMap<String, ArrayList<String>> xxParo) {
+	ArrayList<String> alp = xxParo.get(key);
+	if (alp == null) xxParo.put(key, alp = new ArrayList<String>());
+	alp.add(val);
     }
 
 
