@@ -335,16 +335,18 @@
     <e r="LR"><p><l>io<s n="prn"/><s n="tn"/><s n="f"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
     <e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>iu<s n="prn"/><s n="tn"/><s n="m"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
-    <e c="preguntes, condicional"><p><l>iu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e c="frases afirmatives"><p><l>iu<s n="prn"/></l><r>somebody<s n="prn"/></r></p></e>
+    <e><p><l>iu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>iu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>iu<s n="prn"/></l><r>somebody<s n="prn"/></r></p></e>
     <e r="RL"><p><l>iu<s n="prn"/></l><r>someone<s n="prn"/></r></p></e>
     <e r="LR" c="frases interrogatives"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e r="RL" c="frases afirmatives"><p><l>iu<s n="prn"/></l><r>some<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e c="Per ara tot serà sg en català, però mirar després frases del tipus: 'what are your fauvorite dishes'-quins són... Però: 'What are fractals'- què son..."><p><l>kio<s n="prn"/></l><r>what<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
+    <e><p><l>iu<s n="prn"/></l><r>some<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
     <e r="RL"><p><l>kiom<s n="prn"/></l><r>how<b/>many<s n="prn"/><s n="itg"/><s n="mf"/><s n="pl"/></r></p></e>
     <e><p><l>kiom<s n="prn"/></l><r>how<b/>much<s n="prn"/><s n="itg"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>kiu<s n="prn"/></l><r>who<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
+
+
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL" c="frases negatives"><p><l>nenio<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
@@ -368,6 +370,13 @@
     <e r="LR"><p><l>tiu<s n="prn"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nomi"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 
+      <!-- Checked!! -->
+
+    <e r="LR"><p><l>kiu<s n="prn"/><s n="itg"/></l><r>who<s n="prn"/><s n="itg"/></r></p></e>
+    <e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+
+    <e r="LR"><p><l>kio<s n="prn"/><s n="itg"/></l><r>what<s n="prn"/><s n="itg"/></r></p></e>
+    <e r="RL"><p><l>kio<s n="prn"/><s n="itg"/><s n="ND"/></l><r>what<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
 
     <!-- Personal pronouns -->
 

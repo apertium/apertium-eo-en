@@ -29,7 +29,9 @@
       <cat-item lemma="prpers" tags="prn.*"/>
     </def-cat>
     <def-cat n="prn">
-      <cat-item tags="prn.*"/>
+      <cat-item tags="prn.rel.*"/>
+      <cat-item tags="prn.itg.*"/>
+      <cat-item tags="prn.tn.*"/>
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
@@ -116,6 +118,7 @@
       <attr-item tags="sp"/>
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
+      <attr-item tags="ND"/>
     </def-attr>
     <def-attr n="cas">
       <attr-item tags="nom"/>
@@ -132,6 +135,59 @@
   </section-def-vars>
 
   <section-def-macros>
+    <def-macro n="set_number1" npar="1">
+      <let>
+        <var n="numero"/>
+        <lit v=""/>
+      </let>
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes">
+              <clip pos="1" side="tl" part="nbr"/>
+              <lit-tag v="sg"/>
+            </equal>
+          </test>
+          <let>
+            <var n="numero"/>
+            <lit-tag v="sg"/>
+          </let>
+        </when>
+        <when>
+          <test>
+            <equal caseless="yes">
+              <clip pos="1" side="tl" part="nbr"/>
+              <lit-tag v="pl"/>
+            </equal>
+          </test>
+          <let>
+            <var n="numero"/>
+            <lit-tag v="pl"/>
+          </let>
+        </when>
+        <when>
+          <!-- do something more clever here -->
+          <test>
+            <equal caseless="yes">
+              <clip pos="1" side="tl" part="nbr"/>
+              <lit-tag v="ND"/>
+            </equal>
+          </test>
+          <let>
+            <var n="numero"/>
+            <lit-tag v="sg"/>
+          </let>
+        </when>
+        <otherwise>
+          <let>
+            <var n="numero"/>
+            <lit v=""/>
+          </let>
+        </otherwise>
+      </choose>
+    </def-macro>
+
+
     <def-macro n="set_gender1" npar="1">
       <let>
         <var n="genere"/>
@@ -350,6 +406,34 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: Prn">
+      <pattern>
+        <pattern-item n="prn"/>
+      </pattern>
+      <action>
+        <call-macro n="set_number1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="prn" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><var n="numero"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_prn"/>
+              <clip pos="1" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: PrnPers">
       <pattern>
         <pattern-item n="prnpers"/>
@@ -366,9 +450,9 @@
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_prn"/>
-              <clip pos="1" side="tl" part="prs" link-to="2"/>
-              <clip pos="1" side="tl" part="gen" link-to="3"/>
-              <clip pos="1" side="tl" part="nbr" link-to="4"/>
+              <clip pos="1" side="tl" part="prs"/>
+              <clip pos="1" side="tl" part="gen"/>
+              <clip pos="1" side="tl" part="nbr"/>
             </lu>
           </chunk>
         </out>

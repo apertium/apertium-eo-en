@@ -2070,22 +2070,27 @@
     <e lm="kiel"><i>kiel</i><par n="after__cnjadv"/></e>
     <e lm="kiel"><i>kiel</i><par n="and__cnjcoo"/></e>
     <e lm="kiel"><i>kiel</i><par n="at__pr"/></e>
+
     <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="kio"><p><l>kioj</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kiojn</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+
+    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
     <e r="RL" lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
+
+    <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+
     <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
