@@ -8,7 +8,9 @@
     </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
-      <cat-item tags="SV.*"/>
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
     </def-cat>
     <def-cat n="Adv">
       <cat-item tags="Adv"/>

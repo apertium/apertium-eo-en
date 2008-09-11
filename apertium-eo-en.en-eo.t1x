@@ -18,11 +18,11 @@
       <cat-item tags="vaux.*"/>
     </def-cat>
     <def-cat n="vbser">
-      <cat-item tags="vbser.*"/>
+      <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
-      <cat-item tags="vbser.*"/>
+<!--      <cat-item tags="vbser.*"/>  -->
       <cat-item tags="vbhaver.*"/>
     </def-cat>
     <def-cat n="prnpers">
@@ -965,6 +965,100 @@
       </action>
     </rule>
 
+    <rule>
+      <pattern>
+        <pattern-item n="vaux"/>
+        <pattern-item n="vbser"/>
+      </pattern>
+      <action>
+        <let>
+          <var n="temps"/>
+          <clip pos="2" side="sl" part="tns"/>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="will"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="fti"/>
+            </let>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="would"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="cni"/>
+            </let>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <chunk name="vaux_verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: VAUX ADV VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
@@ -1299,6 +1393,116 @@
       </action>
     </rule>
 
+
+    <rule>
+      <pattern>
+        <pattern-item n="vaux"/>
+        <pattern-item n="vbser"/>
+        <pattern-item n="vblexger"/>
+      </pattern>
+      <action>
+        <let>
+          <var n="temps"/>
+          <clip pos="2" side="sl" part="tns"/>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="will"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="fti"/>
+            </let>
+            <out>
+              <chunk name="verb_vbger" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="would"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="cni"/>
+            </let>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <chunk name="vaux_verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
+
+
+
+
     <rule>
       <pattern>
         <pattern-item n="vblex"/>
@@ -1329,7 +1533,7 @@
       </pattern>
       <action>
         <out>
-          <chunk name="verb" case="caseFirstWord">
+          <chunk name="ser" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="tns"/></tag>
