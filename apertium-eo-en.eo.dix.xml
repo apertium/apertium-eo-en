@@ -1941,21 +1941,22 @@
 
 
 
-<!--        
-    <e lm="mia"><i>mi</i><par n="adj__adj"/></e> 
-    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
-    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
-    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
-	<e lm="ilia"><i>ili</i><par n="adj__adj"/></e>
--->    
-
+    <!-- Possessives -->
     <e lm="mia"><i>mia</i><par n="mia__det"/></e>
     <e lm="via"><i>via</i><par n="mia__det"/></e>
     <e lm="ŝia"><par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
     <e lm="ĝia"><par n="ĝ"/><i>ia</i><par n="mia__det"/></e>
+    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
     <e lm="nia"><i>nia</i><par n="mia__det"/></e>
     <e lm="ilia"><i>ilia</i><par n="mia__det"/></e>
-    <e lm="lia"><i>lia</i><par n="mia__det"/></e>
+
+    <e lm="mia"><i>mi</i><par n="adj__adj"/></e> 
+    <e lm="via"><i>vi</i><par n="adj__adj"/></e>
+    <e lm="ŝia"><par n="ŝ"/><i>i</i><par n="adj__adj"/></e>
+    <e lm="ĝia"><par n="ĝ"/><i>i</i><par n="adj__adj"/></e>
+    <e lm="lia"><i>li</i><par n="adj__adj"/></e>
+    <e lm="nia"><i>ni</i><par n="adj__adj"/></e>
+	<e lm="ilia"><i>ili</i><par n="adj__adj"/></e>
 
 
     <e lm="pli"><i>pli</i><par n="very__preadv"/></e>
