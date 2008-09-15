@@ -1472,6 +1472,34 @@
     </e>
 
     </pardef>
+    <pardef n="organi/sation__n">
+    <e>
+      <p>
+        <l>sation</l> 
+        <r>sation<s n="n"/><s n="sg"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>sations</l> 
+        <r>sation<s n="n"/><s n="pl"/></r> 
+      </p>
+    </e>
+    <e r="LR">
+      <p>
+        <l>zation</l> 
+        <r>sation<s n="n"/><s n="sg"/></r> 
+      </p>
+    </e>
+    <e r="LR">
+      <p>
+        <l>zations</l> 
+        <r>sation<s n="n"/><s n="pl"/></r> 
+      </p>
+    </e>
+    </pardef>
+
     <pardef n="house__n">
     <e>
       <p>
@@ -11677,7 +11705,7 @@
     <e lm="atmospheric"><i>atmospheric</i><par n="expensive__adj"/></e>
     <e lm="atom"><i>atom</i><par n="house__n"/></e>
     <e lm="atomic"><i>atomic</i><par n="expensive__adj"/></e>
-<!--    <e lm="atomisation"><i>atomisation</i><par n="house__n"/></e> -->
+<!--    <e lm="atomisation"><i>atomisation</i><par n="organi/sation__n"/></e> -->
     <e lm="atrocity"><i>atrocit</i><par n="bab/y__n"/></e>
     <e lm="attach"><i>attach</i><par n="approach__vblex"/></e>
     <e lm="attack"><i>attack</i><par n="house__n"/></e>
@@ -12291,8 +12319,7 @@
     <e lm="city council"><i>city<b/>council</i><par n="house__n"/></e>
     <e lm="civil"><i>civil</i><par n="common/__adj"/></e>
     <e lm="civilise"><i>civili</i><par n="authori/se__vblex"/></e>
-    <e lm="civilisation"><i>civilisation</i><par n="house__n"/></e>
-    <e lm="civilization"><i>civilization</i><par n="house__n"/></e>
+    <e lm="civilisation"><i>civilisation</i><par n="organi/sation__n"/></e>
     <e lm="claim"><i>claim</i><par n="house__n"/></e>
     <e lm="claim"><i>claim</i><par n="accept__vblex"/></e>
     <e lm="clan"><i>clan</i><par n="house__n"/></e>
@@ -14286,7 +14313,7 @@
     <e lm="improve"><i>improv</i><par n="liv/e__vblex"/></e>
     <e lm="improvement"><i>improvement</i><par n="house__n"/></e>
     <e lm="improvise"><i>improvis</i><par n="liv/e__vblex"/></e>
-    <e lm="improvisation"><i>improvisation</i><par n="house__n"/></e>
+    <e lm="improvisation"><i>improvisation</i><par n="organi/sation__n"/></e>
     <e lm="impugn"><i>impugn</i><par n="accept__vblex"/></e>
     <e lm="impulse"><i>impulse</i><par n="house__n"/></e>
     <e lm="impulsive"><i>impulsive</i><par n="expensive__adj"/></e>
@@ -15516,11 +15543,10 @@
     <e lm="orgy"><i>org</i><par n="bab/y__n"/></e>
     <e lm="organ"><i>organ</i><par n="house__n"/></e>
     <e lm="organise"><i>organis</i><par n="liv/e__vblex"/></e>
-    <e lm="organisation"><i>organisation</i><par n="house__n"/></e>
     <e lm="organism"><i>organism</i><par n="house__n"/></e>
     <e lm="organist"><i>organist</i><par n="house__n"/></e>
     <e lm="organise"><i>organi</i><par n="authori/se__vblex"/></e>
-    <e lm="organisation"><i>organisation</i><par n="house__n"/></e>
+    <e lm="organisation"><i>organisation</i><par n="organi/sation__n"/></e>
     <e lm="orgasm"><i>orgasm</i><par n="house__n"/></e>
     <e lm="oriel"><i>oriel</i><par n="house__n"/></e>
     <e lm="oriental"><i>oriental</i><par n="expensive__adj"/></e>
@@ -16247,7 +16273,7 @@
     <e lm="realism"><i>realism</i><par n="house__n"/></e>
     <e lm="reality"><i>realit</i><par n="bab/y__n"/></e>
     <e lm="realise"><i>reali</i><par n="authori/se__vblex"/></e>
-    <e lm="realisation"><i>realisation</i><par n="house__n"/></e>
+    <e lm="realisation"><i>realisation</i><par n="organi/sation__n"/></e>
     <e lm="really"><i>really</i><par n="very__preadv"/></e>
     <e lm="really"><i>really</i><par n="maybe__adv"/></e>
     <e lm="reappear"><i>reappear</i><par n="accept__vblex"/></e>
@@ -17803,7 +17829,7 @@
     <e lm="upward"><i>upward</i><par n="maybe__adv"/></e>
     <e lm="uranium"><i>uranium</i><par n="house__n"/></e>
     <e lm="urban"><i>urban</i><par n="expensive__adj"/></e>
-    <e lm="urbanisation"><i>urbanisation</i><par n="house__n"/></e>
+    <e lm="urbanisation"><i>urbanisation</i><par n="organi/sation__n"/></e>
     <e lm="urge"><i>urg</i><par n="liv/e__vblex"/></e>
     <e lm="urge"><i>urge</i><par n="house__n"/></e>
     <e lm="urgency"><i>urgenc</i><par n="bab/y__n"/></e>
@@ -18242,7 +18268,7 @@
 
 
 <!--    <e lm="centralise"><i>centrali</i><par n="authori/se__vblex"/></e> -->
-<!--    <e lm="centralisation"><i>centralisation</i><par n="house__n"/></e> -->
+<!--    <e lm="centralisation"><i>centralisation</i><par n="organi/sation__n"/></e> -->
 
   </section>
 </dictionary>
