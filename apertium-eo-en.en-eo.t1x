@@ -22,6 +22,7 @@
     </def-cat>
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
+      <cat-item tags="vbdo.*"/>
 <!--      <cat-item tags="vbser.*"/>  -->
       <cat-item tags="vbhaver.*"/>
     </def-cat>
