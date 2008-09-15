@@ -184,5 +184,19 @@ public class Iloj {
 	return el;
     }
 
+    public static void skribu(LinkedHashSet set, String fn) {
+        PrintWriter out = Iloj.ekskribuHtml(fn);
+        //out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+        //out.println("<section id=\""+fn.replaceAll("[\\W]","_")+"\" type=\"standard\">");
+
+        int n=0;
+        for (Object e : set) {
+            out.println(e);
+            if (n++<100) System.out.println(fn+": "+Iloj.deCxapeloj(e));
+        }
+        //out.println("</section>");
+        out.close();
+    }
+
 
 }

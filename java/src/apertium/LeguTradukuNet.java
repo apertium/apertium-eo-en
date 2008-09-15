@@ -8,8 +8,9 @@ import java.util.*;
 public class LeguTradukuNet {
 
     public static void main(String[] args) throws Exception {
+        FixInconsistency.fixEoMonodix();
 	//AldonuVortojn.main(args);
-	leguVortliston();
+	//leguVortliston();
     }
 
 

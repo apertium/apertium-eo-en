@@ -5,5 +5,5 @@ grep '<par n="komence__adv"/>' apertium-eo-en.eo.dix.xml | grep -v 'e</i><par ' 
 grep '<par n="nom__n"/>' apertium-eo-en.eo.dix.xml | grep -v 'o</i><par ' && echo Metu o post radiko && echo
 grep '<b/>' apertium-eo-en.eo.dix.xml | grep nom__n && echo Movu al apertium-eo-en.eo-multiwords.txt
 
-
+grep '<s n="ant"/>' apertium-eo-en.eo-en.dix | grep '<s n="top"/>' && echo '<s n="top"/> ne sxangxu al <s n="ant"/> aux inverse'
 
