@@ -2165,6 +2165,7 @@
     <e lm="saluton"><i>saluton</i><par n="adiós__ij"/></e>
     <e lm="se"><i>se</i><par n="after__cnjadv"/></e>
     <e lm="sed"><i>sed</i><par n="and__cnjcoo"/></e>
+    <e lm="sed prefere"><i>sed<b/>prefere</i><par n="and__cnjcoo"/></e>
     <e lm="sed"><i>sed</i><par n="at__pr"/></e>
     <e lm="sekve"><i>sekve</i><par n="after__cnjadv"/></e>
     <e lm="sen"><i>sen</i><par n="at__pr"/></e>
@@ -2880,6 +2881,7 @@
     <e lm="agordo"><i>agordo</i><par n="nom__n"/></e>
     <e lm="agordebla"><i>agordebl</i><par n="adj__adj"/></e>
     <e lm="agrabla"><i>agrabl</i><par n="adj__adj"/></e>
+    <e lm="malagrabla"><i>malagrabl</i><par n="adj__adj"/></e>
     <e lm="agrara"><i>agrar</i><par n="adj__adj"/></e>
     <e lm="agresema"><i>agresem</i><par n="adj__adj"/></e>
     <e lm="agrokultura"><i>agrokultur</i><par n="adj__adj"/></e>
@@ -3059,7 +3061,8 @@
     <e lm="antaŭe"><i>anta</i><par n="ŭ"/><i>e</i><par n="komence__adv"/></e>
     <e lm="antaŭen"><i>anta</i><par n="ŭ"/><i>en</i><par n="komence__adv"/></e>
     <e lm="antaŭeniri"><i>anta</i><par n="ŭ"/><i>enir</i><par n="verb__vblex"/></e>
-    <e lm="antaŭeniri"><i>antaŭenir</i><par n="verb__vblex"/></e>
+    <e lm="antaŭeniri"><i>anta</i><par n="ŭ"/><i>enir</i><par n="verb__vblex"/></e>
+    <e lm="antaŭenigo"><i>anta</i><par n="ŭ"/><i>enigo</i><par n="nom__n"/></e>
     <e lm="antaŭgardi"><i>anta</i><par n="ŭ"/><i>gard</i><par n="verb__vblex"/></e>
     <e lm="antaŭ"><i>anta</i><par n="ŭ"/><i></i><par n="komence__adv"/></e>
     <e lm="antaŭi"><i>anta</i><par n="ŭ"/><i></i><par n="verb__vblex"/></e>
@@ -3598,6 +3601,7 @@
     <e lm="definitiva"><i>definitiv</i><par n="adj__adj"/></e>
     <e lm="definitive"><i>definitive</i><par n="komence__adv"/></e>
     <e lm="degelo"><i>degelo</i><par n="nom__n"/></e>
+    <e lm="degelo"><i>degel</i><par n="verb__vblex"/></e>
     <e lm="degradi"><i>degrad</i><par n="verb__vblex"/></e>
     <e lm="de"><i>de</i><par n="komence__adv"/></e>
     <e lm="deĵoro"><i>de</i><par n="ĵ"/><i>oro</i><par n="nom__n"/></e>
@@ -5654,7 +5658,7 @@
     <e lm="malnobla"><i>malnobl</i><par n="adj__adj"/></e>
     <e lm="malnova"><i>malnov</i><par n="adj__adj"/></e>
     <e lm="malofta"><i>maloft</i><par n="adj__adj"/></e>
-    <e lm="maloportuna"><i>maloportuna</i><par n="komence__adv"/></e>
+    <e lm="maloportune"><i>maloportune</i><par n="komence__adv"/></e>
     <e lm="malordo"><i>malordo</i><par n="nom__n"/></e>
     <e lm="malpermesi"><i>malpermes</i><par n="verb__vblex"/></e>
     <e lm="malpermeso"><i>malpermeso</i><par n="nom__n"/></e>
@@ -6101,7 +6105,7 @@
     <e lm="nodo"><i>nodo</i><par n="nom__n"/></e>
     <e lm="nokta trinkejo"><i>nokta trinkejo</i><par n="nom__n"/></e>
     <e lm="nokto"><i>nokto</i><par n="nom__n"/></e>
-    <e lm="noktomeze"><i>noktomezo</i><par n="komence__adv"/></e>
+    <e lm="noktomeze"><i>noktomeze</i><par n="komence__adv"/></e>
     <e lm="noktomezo"><i>noktomezo</i><par n="nom__n"/></e>
     <e lm="nombra"><i>nombr</i><par n="adj__adj"/></e>
     <e lm="nombro"><i>nombro</i><par n="nom__n"/></e>
@@ -6177,6 +6181,7 @@
     <e lm="oferto"><i>oferto</i><par n="nom__n"/></e>
     <e lm="oficejo"><i>oficejo</i><par n="nom__n"/></e>
     <e lm="oficiala"><i>oficial</i><par n="adj__adj"/></e>
+    <e lm="neoficiala"><i>neoficial</i><par n="adj__adj"/></e>
     <e lm="oficiale"><i>oficiale</i><par n="komence__adv"/></e>
     <e lm="oficialulo"><i>oficialulo</i><par n="nom__n"/></e>
     <e lm="ofico"><i>ofico</i><par n="nom__n"/></e>
@@ -6220,10 +6225,8 @@
     <e lm="oranĝtrinkaĵo"><i>oran</i><par n="ĝ"/><i>trinka</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="orbito"><i>orbito</i><par n="nom__n"/></e>
     <e lm="ordigi"><i>ordig</i><par n="verb__vblex"/></e>
-    <e lm="ordinara"><i>ordinara</i><par n="komence__adv"/></e>
     <e lm="ordinara"><i>ordinar</i><par n="adj__adj"/></e>
     <e lm="ordinare"><i>ordinare</i><par n="komence__adv"/></e>
-    <e lm="ordo"><i>ordo</i><par n="nom__n"/></e>
     <e lm="ordo"><i>ordo</i><par n="nom__n"/></e>
     <e lm="ordoni"><i>ordon</i><par n="verb__vblex"/></e>
     <e lm="orelo"><i>orelo</i><par n="nom__n"/></e>
@@ -7937,6 +7940,7 @@
     <e lm="vestaro"><i>vestaro</i><par n="nom__n"/></e>
     <e lm="vestiblo"><i>vestiblo</i><par n="nom__n"/></e>
     <e lm="vesti"><i>vest</i><par n="verb__vblex"/></e>
+    <e lm="malvesti"><i>malvest</i><par n="verb__vblex"/></e>
     <e lm="veŝto"><i>ve</i><par n="ŝ"/><i>to</i><par n="nom__n"/></e>
     <e lm="vesto"><i>vesto</i><par n="nom__n"/></e>
     <e lm="vesto"><i>vesto</i><par n="nom__n"/></e>
@@ -8112,18 +8116,13 @@
     <e lm="milionula"><i>milionul</i><par n="adj__adj"/></e>
 
 
-
-
     <e lm="pacista"><i>pacist</i><par n="adj__adj"/></e>
     <e lm="polica"><i>polic</i><par n="adj__adj"/></e>
 
 
 	<e lm="konatiĝi"><i>konatiĝ</i><par n="verb__vblex"/></e>
-
 	<e lm="konatiĝi kun"><i>konatiĝ</i><par n="verb__vblex"/><p><l><b/>kun</l><r><g><b/>kun</g></r></p></e>	
-<!--
-	<e lm="konatiĝi kun"><p><l>konatiĝi<b/>kun</l><r>konatiĝ<par n="verb__vblex"/><b/>kun</r></p></e>	
--->
+	
 	
 	<e lm="kulpi"><i>kulp</i><par n="verb__vblex"/></e>
 	<e lm="blindi"><i>blind</i><par n="verb__vblex"/></e>
@@ -8198,6 +8197,8 @@
 <e lm="malŝatema"><i>malŝatem</i><par n="adj__adj"/></e>
 <e lm="simila"><i>simil</i><par n="adj__adj"/></e>
 <e lm="lerta"><i>lert</i><par n="adj__adj"/></e>
+
+	<e lm="mankateni"><i>mankaten</i><par n="verb__vblex"/></e>
 
 
 

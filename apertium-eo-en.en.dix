@@ -11346,7 +11346,6 @@
     <e lm="adult"><i>adult</i><par n="house__n"/></e>
     <e lm="adultery"><i>adulter</i><par n="bab/y__n"/></e>
     <e lm="advance"><i>advanc</i><par n="liv/e__vblex"/></e>
-<!--    <e lm="advance"><i>advance</i><par n="house__n"/></e> -->
     <e lm="advantage"><i>advantage</i><par n="house__n"/></e>
     <e lm="adventure"><i>adventure</i><par n="house__n"/></e>
     <e lm="adverb"><i>adverb</i><par n="house__n"/></e>
@@ -11676,7 +11675,7 @@
     <e lm="atmospheric"><i>atmospheric</i><par n="expensive__adj"/></e>
     <e lm="atom"><i>atom</i><par n="house__n"/></e>
     <e lm="atomic"><i>atomic</i><par n="expensive__adj"/></e>
-    <e lm="atomisation"><i>atomisation</i><par n="house__n"/></e>
+<!--    <e lm="atomisation"><i>atomisation</i><par n="house__n"/></e> -->
     <e lm="atrocity"><i>atrocit</i><par n="bab/y__n"/></e>
     <e lm="attach"><i>attach</i><par n="approach__vblex"/></e>
     <e lm="attack"><i>attack</i><par n="house__n"/></e>
@@ -12181,8 +12180,6 @@
     <e lm="centimetre"><i>centimetre</i><par n="house__n"/></e>
     <e lm="centre"><i>centr</i><par n="liv/e__vblex"/></e>
     <e lm="central"><i>central</i><par n="expensive__adj"/></e>
-    <e lm="centralise"><i>centrali</i><par n="authori/se__vblex"/></e>
-    <e lm="centralisation"><i>centralisation</i><par n="house__n"/></e>
     <e lm="centre"><i>centre</i><par n="house__n"/></e>
     <e lm="century"><i>centur</i><par n="bab/y__n"/></e>
     <e lm="cereal"><i>cereal</i><par n="house__n"/></e>
@@ -14102,9 +14099,6 @@
     <e lm="hero"><i>hero</i><par n="access__n"/></e>
     <e lm="heroine"><i>heroine</i><par n="house__n"/></e>
     <e lm="herpes"><i>herpes</i><par n="politics__n"/></e>
-    <e lm="hers"><i>hers</i><par n="mine__adj"/></e>
-    <e lm="hers"><i>hers</i><par n="mine__prn"/></e>
-    <e lm="herself"><p><l>herself</l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
     <e lm="hesitant"><i>hesitant</i><par n="expensive__adj"/></e>
     <e lm="hesitate"><i>hesitat</i><par n="liv/e__vblex"/></e>
     <e lm="heterogeneous"><i>heterogeneous</i><par n="expensive__adj"/></e>
@@ -14121,7 +14115,6 @@
     <e lm="highway"><i>highway</i><par n="house__n"/></e>
     <e lm="hiking"><i>hiking</i><par n="house__n"/></e>
     <e lm="hill"><i>hill</i><par n="house__n"/></e>
-    <e lm="himself"><p><l>himself</l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="hinder"><i>hinder</i><par n="accept__vblex"/></e>
     <e lm="hinduism"><i>hinduism</i><par n="house__n"/></e>
     <e lm="hint"><i>hint</i><par n="house__n"/></e>
@@ -14583,8 +14576,6 @@
     <e lm="itch"><i>itch</i><par n="access__n"/></e>
     <e lm="item"><i>item</i><par n="house__n"/></e>
     <e lm="itinerant"><i>itinerant</i><par n="expensive__adj"/></e>
-    <e lm="its"><i>its</i><par n="her__det"/></e>
-    <e lm="itself"><p><l>itself</l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
     <e lm="jacket"><i>jacket</i><par n="house__n"/></e>
     <e lm="jail"><i>jail</i><par n="house__n"/></e>
     <e lm="jam"><i>jam</i><par n="house__n"/></e>
@@ -15234,9 +15225,7 @@
     <e lm="mutter"><i>mutter</i><par n="accept__vblex"/></e>
     <e lm="mutual"><i>mutual</i><par n="expensive__adj"/></e>
     <e lm="muzzle"><i>muzzle</i><par n="house__n"/></e>
-    <e lm="my"><i>my</i><par n="her__det"/></e>
     <e lm="myocardium"><i>myocardium</i><par n="house__n"/></e>
-    <e lm="myself"><p><l>myself</l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="mystery"><i>myster</i><par n="bab/y__n"/></e>
     <e lm="mysterious"><i>mysterious</i><par n="expensive__adj"/></e>
     <e lm="myth"><i>myth</i><par n="house__n"/></e>
@@ -15545,12 +15534,6 @@
     <e lm="osier"><i>osier</i><par n="house__n"/></e>
     <e lm="osseous"><i>osseous</i><par n="expensive__adj"/></e>
     <e lm="ostrich"><i>ostrich</i><par n="access__n"/></e>
-    <e lm="other"><i>other</i><par n="other__det"/></e>
-    <e lm="others"><i>others</i><par n="both__prn"/></e>
-    <e lm="our"><i>our</i><par n="her__det"/></e>
-    <e lm="ours"><i>ours</i><par n="mine__adj"/></e>
-    <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
-    <e lm="ourselves"><p><l>ourselves</l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="out"><i>out</i><par n="maybe__adv"/></e>
 <!--    <e lm="out"><i>out</i><par n="at__pr"/></e> -->
     <e lm="out of place"><i>out<b/>of<b/>place</i><par n="maybe__adv"/></e>
@@ -18122,13 +18105,7 @@
     <e lm="yoghourt"><i>yoghourt</i><par n="house__n"/></e>
     <e lm="yoke"><i>yoke</i><par n="house__n"/></e>
     <e lm="youngster"><i>youngster</i><par n="house__n"/></e>
-    <e lm="your"><i>your</i><par n="her__det"/></e>
-<!--
-    <e lm="yours"><i>yours</i><par n="mine__adj"/></e>
--->
-    <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
-    <e lm="yourself"><p><l>yourself</l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e lm="yourselves"><p><l>yourselves</l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+
     <e lm="youth"><i>youth</i><par n="house__n"/></e>
     <e lm="zebra"><i>zebra</i><par n="zebra__n"/></e>
     <e lm="zinc"><i>zinc</i><par n="house__n"/></e>
@@ -18159,6 +18136,33 @@
 
     <e lm="Zapatista National Liberation Army"><i>Zapatista<b/>National<b/>Liberation<b/>Army</i><par n="Linux__np"/></e>
     <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
+
+
+    <!-- Personal pronouns -->
+
+    <e lm="your"><i>your</i><par n="her__det"/></e>
+<!--
+    <e lm="yours"><i>yours</i><par n="mine__adj"/></e>
+-->
+    <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
+    <e lm="yourself"><p><l>yourself</l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="yourselves"><p><l>yourselves</l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="my"><i>my</i><par n="her__det"/></e>
+    <e lm="myself"><p><l>myself</l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="hers"><i>hers</i><par n="mine__adj"/></e>
+    <e lm="hers"><i>hers</i><par n="mine__prn"/></e>
+    <e lm="herself"><p><l>herself</l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="himself"><p><l>himself</l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="its"><i>its</i><par n="her__det"/></e>
+    <e lm="itself"><p><l>itself</l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+
+    <e lm="other"><i>other</i><par n="other__det"/></e>
+    <e lm="others"><i>others</i><par n="both__prn"/></e>
+    <e lm="our"><i>our</i><par n="her__det"/></e>
+    <e lm="ours"><i>ours</i><par n="mine__adj"/></e>
+    <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
+    <e lm="ourselves"><p><l>ourselves</l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+
 
     <!-- Phrases -->
     <e lm="I'm"><p><l>I'm</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -18218,6 +18222,7 @@
     <e lm="could've"><p><l>could've</l><r>can<s n="vaux"/><s n="past"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
     <e lm="that's"><p><l>that's</l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 
+
     <!-- Proverbs -->
     <e lm=""><i>all<b/>work<b/>and<b/>no<b/>play<b/>makes<b/>Jack<b/>a<b/>dull<b/>boy</i><par n="hello__ij"/></e>
     <e lm=""><i>absence<b/>makes<b/>the<b/>heart<b/>grow<b/>fonder</i><par n="hello__ij"/></e>
@@ -18231,6 +18236,10 @@
 <e lm="together"><i>together</i><par n="maybe__adv"/></e>
 <e lm="disturb"><i>disturb</i><par n="accept__vblex"/></e>
 <e lm="website"><i>website</i><par n="house__n"/></e>
+
+
+<!--    <e lm="centralise"><i>centrali</i><par n="authori/se__vblex"/></e> -->
+<!--    <e lm="centralisation"><i>centralisation</i><par n="house__n"/></e> -->
 
   </section>
 </dictionary>

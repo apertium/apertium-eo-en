@@ -352,7 +352,8 @@
     <e r="LR" c="preguntes, negatives. EN-CA: per trànsfer (fr negatives)"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>either<s n="prn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>oni<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+
+
 
     <e><p><l>tio<s n="prn"/></l><r>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="m"/></l><r>this<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
@@ -442,9 +443,7 @@
     <e r="RL" c="MG: Generalment després de verb o pronom personal (I doubt whether.../ Tell me whether...)"><p><l>se<s n="cnjadv"/></l><r>whether<s n="cnjadv"/></r></p></e>
 
     <e><p><l>sed<s n="cnjcoo"/></l><r>but<s n="cnjcoo"/></r></p></e>
-    <!--
-    <e r="RL"><p><l>sed<s n="cnjcoo"/></l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
-    -->
+    
     <e r="LR"><p><l>sekve<s n="cnjadv"/></l><r>therefore<s n="cnjadv"/></r></p></e>
     <e><p><l>tamen<s n="cnjadv"/></l><r>even<b/>so<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>tamen<s n="cnjadv"/></l><r>however<s n="cnjadv"/></r></p></e>
@@ -2189,6 +2188,7 @@
     <e><p><l>abstemio<s n="n"/></l><r>abstinence<s n="n"/></r></p></e>
     <e><p><l>adiaŭo<s n="n"/></l><r>goodbye<s n="n"/></r></p></e>
     <e><p><l>adjektivo<s n="n"/></l><r>adjective<s n="n"/></r></p></e>
+    <e><p><l>antaŭenigo<s n="n"/></l><r>advance<s n="n"/></r></p></e>
     <e><p><l>administracio<s n="n"/></l><r>administration<s n="n"/></r></p></e>
     <e r="RL"><p><l>administracio<s n="n"/></l><r>dispensation<s n="n"/></r></p></e>
     <e r="RL"><p><l>administracio<s n="n"/></l><r>management<s n="n"/></r></p></e>
@@ -2777,6 +2777,7 @@
     <e><p><l>citadelo<s n="n"/></l><r>citadel<s n="n"/></r></p></e>
     <e><p><l>citrono<s n="n"/></l><r>lemon<s n="n"/></r></p></e>
     <e><p><l>civilizacio<s n="n"/></l><r>civilization<s n="n"/></r></p></e>
+    <e r="LR"><p><l>civilizacio<s n="n"/></l><r>civilisation<s n="n"/></r></p></e>
     <e><p><l>colo<s n="n"/></l><r>inch<s n="n"/></r></p></e>
     <e><p><l>ĉagreno<s n="n"/></l><r>discontent<s n="n"/></r></p></e>
     <e><p><l>ĉambro<s n="n"/></l><r>room<s n="n"/></r></p></e>
@@ -3615,9 +3616,8 @@
     <e><p><l>hektaro<s n="n"/></l><r>hectare<s n="n"/></r></p></e>
     <e><p><l>heliko<s n="n"/></l><r>snail<s n="n"/></r></p></e>
     <e><p><l>helikoptero<s n="n"/></l><r>helicopter<s n="n"/></r></p></e>
-    <e><p><l>helpanto<s n="n"/></l><r>assistant<s n="n"/></r></p></e>
     <e r="RL"><p><l>helpanto<s n="n"/></l><r>deputy<s n="n"/></r></p></e>
-    <e r="LR"><p><l>helpo<s n="n"/></l><r>help<s n="n"/></r></p></e>
+    <e><p><l>helpo<s n="n"/></l><r>help<s n="n"/></r></p></e>
     <e r="RL"><p><l>helpo<s n="n"/></l><r>aid<s n="n"/></r></p></e>
     <e><p><l>hematomo<s n="n"/></l><r>hematoma<s n="n"/></r></p></e>
     <e r="LR"><p><l>hemikranio<s n="n"/></l><r>migraine<s n="n"/></r></p></e>
@@ -6356,6 +6356,7 @@
     <e><p><l>unuformeco<s n="n"/></l><r>uniformity<s n="n"/></r></p></e>
     <e><p><l>uragano<s n="n"/></l><r>hurricane<s n="n"/></r></p></e>
     <e><p><l>uranio<s n="n"/></l><r>uranium<s n="n"/></r></p></e>
+    <e r="RL"><p><l>urbanizado<s n="n"/></l><r>urbanisation<s n="n"/></r></p></e>
     <e><p><l>urbanizado<s n="n"/></l><r>urbanization<s n="n"/></r></p></e>
     <e r="RL"><p><l>urbestro<s n="n"/></l><r>mayor<s n="n"/></r></p></e>
     <e><p><l>urbo<s n="n"/></l><r>city<s n="n"/></r></p></e>
@@ -6689,7 +6690,7 @@
     <e><p><l>Marteno<s n="np"/></l><r>Martín<s n="np"/></r></p></e>
     <e><p><l>Maŭritanio<s n="np"/><s n="top"/></l><r>Mauritania<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Mediteraneo<s n="np"/><s n="top"/></l><r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
-    <e r="LR"><p><l>Meksiko<s n="np"/><s n="top"/></l><r>Mexico<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Meksiko<s n="np"/><s n="top"/></l><r>Mexico<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Merkuro<s n="np"/><s n="ant"/></l><r>Mercurio<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Mikaelo<s n="np"/><s n="ant"/></l><r>Miguel<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Mikaelo<s n="np"/></l><r>Miguel<s n="np"/></r></p></e>
@@ -6740,7 +6741,7 @@
     <e><p><l>Tajlando<s n="np"/><s n="top"/></l><r>Thailand<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Tajvano<s n="np"/><s n="top"/></l><r>Taiwan<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Tanzanio<s n="np"/><s n="top"/></l><r>Tanzania<s n="np"/><s n="top"/></r></p></e>
-    <e r="LR"><p><l>Tokio<s n="np"/><s n="top"/></l><r>Tokyo<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Tokio<s n="np"/><s n="top"/></l><r>Tokyo<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Tunizio<s n="np"/><s n="top"/></l><r>Tunis<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Turkio<s n="np"/><s n="top"/></l><r>Turkey<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ukrainio<s n="np"/><s n="top"/></l><r>Ukraine<s n="np"/><s n="top"/></r></p></e>
@@ -6793,7 +6794,7 @@
     <e><p><l>adoptita<s n="adj"/></l><r>adoptive<s n="adj"/></r></p></e>
     <e r="RL"><p><l>adoptita<s n="adj"/></l><r>foster<s n="adj"/></r></p></e>
     <e><p><l>adversa<s n="adj"/></l><r>adverse<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>afabla<s n="adj"/></l><r>genial<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>afabla<s n="adj"/></l><r>genial<s n="adj"/></r></p></e>
     <e><p><l>afabla<s n="adj"/><s n="mf"/></l><r>kind<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>afrika<s n="adj"/></l><r>African<s n="adj"/></r></p></e>
     <e><p><l>agrabla<s n="adj"/></l><r>pleasant<s n="adj"/></r></p></e>
@@ -6802,7 +6803,8 @@
     <e><p><l>agrokultura<s n="adj"/></l><r>agricultural<s n="adj"/></r></p></e>
     <e r="RL"><p><l>akra<s n="adj"/></l><r>acute<s n="adj"/></r></p></e>
     <e><p><l>akra<s n="adj"/></l><r>sharp<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>akra<s n="adj"/></l><r>unpleasant<s n="adj"/></r></p></e>
+    <e><p><l>malagrabla<s n="adj"/></l><r>unpleasant<s n="adj"/></r></p></e>
+    <e><p><l>neoficiala<s n="adj"/></l><r>unofficial<s n="adj"/></r></p></e>
     <e r="RL"><p><l>akra<s n="adj"/></l><r>spiky<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>aktiva<s n="adj"/></l><r>active<s n="adj"/></r></p></e>
     <e><p><l>aktuala<s n="adj"/></l><r>current<s n="adj"/></r></p></e>
@@ -6816,7 +6818,6 @@
     <e><p><l>alta<s n="adj"/></l><r>high<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>alta<s n="adj"/></l><r>tall<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>ambicia<s n="adj"/></l><r>ambitious<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>aminda<s n="adj"/></l><r>genial<s n="adj"/></r></p></e>
     <e r="LR"><p><l>ampleksa<s n="adj"/></l><r>wide<s n="adj"/><s n="sint"/></r></p></e>
     <e c="check"><p><l>amuza<s n="adj"/></l><r>fun<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>analoga<s n="adj"/></l><r>analogous<s n="adj"/></r></p></e>
@@ -7106,8 +7107,7 @@
     <e><p><l>hazarda<s n="adj"/></l><r>casual<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hela<s n="adj"/></l><r>ligthful<s n="adj"/></r></p></e>
     <e><p><l>hela<s n="adj"/></l><r>luminous<s n="adj"/></r></p></e>
-    <e><p><l>helpema<s n="adj"/></l><r>officious<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>helpema<s n="adj"/></l><r>unofficial<s n="adj"/></r></p></e>
+    <e><p><l>oficialema<s n="adj"/></l><r>officious<s n="adj"/></r></p></e>
     <e><p><l>hepata<s n="adj"/></l><r>hepatic<s n="adj"/></r></p></e>
     <e><p><l>hereda<s n="adj"/></l><r>hereditary<s n="adj"/></r></p></e>
     <e><p><l>hermetika<s n="adj"/></l><r>hermetical<s n="adj"/></r></p></e>
@@ -7322,7 +7322,7 @@
     <e><p><l>malkontenta<s n="adj"/></l><r>dissatisfied<s n="adj"/></r></p></e>
     <e><p><l>malkontenta<s n="adj"/></l><r>unsatisfied<s n="adj"/></r></p></e>
     <e><p><l>malkontinua<s n="adj"/></l><r>discontinuous<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>mallarĝa<s n="adj"/></l><r>narrow<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>mallarĝa<s n="adj"/></l><r>narrow<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>mallojala<s n="adj"/></l><r>disloyal<s n="adj"/></r></p></e>
     <e><p><l>mallonga<s n="adj"/></l><r>brief<s n="adj"/></r></p></e>
     <e><p><l>mallonga<s n="adj"/></l><r>short<s n="adj"/><s n="sint"/></r></p></e>
@@ -7671,7 +7671,7 @@
     <e><p><l>senefika<s n="adj"/></l><r>inoperable<s n="adj"/></r></p></e>
     <e><p><l>senfrukta<s n="adj"/><s n="mf"/></l><r>barren<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>senfrukta<s n="adj"/></l><r>arid<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>senhava<s n="adj"/></l><r>miserable<s n="adj"/></r></p></e>
+    <e><p><l>mizera<s n="adj"/></l><r>miserable<s n="adj"/></r></p></e>
     <e r="LR" c="check"><p><l>senhoma<s n="adj"/></l><r>empty<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>senintenca<s n="adj"/></l><r>involuntary<s n="adj"/></r></p></e>
     <e r="RL"><p><l>senintenca<s n="adj"/></l><r>unintentional<s n="adj"/></r></p></e>
@@ -7949,7 +7949,6 @@
     <e><p><l>anstataŭi<s n="vblex"/></l><r>replace<s n="vblex"/></r></p></e>
     <e><p><l>anstataŭi<s n="vblex"/></l><r>substitute<s n="vblex"/></r></p></e>
     <e><p><l>antaŭdetermini<s n="vblex"/></l><r>predetermine<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>antaŭeniri<s n="vblex"/></l><r>advance<s n="vblex"/></r></p></e>
     <e><p><l>antaŭgardi<s n="vblex"/></l><r>preserve<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>antaŭi<s n="vblex"/></l><r>advance<s n="vblex"/></r></p></e>
     <e><p><l>antaŭi<s n="vblex"/></l><r>precede<s n="vblex"/></r></p></e>
@@ -8280,7 +8279,7 @@
     <e r="RL"><p><l>fali<s n="vblex"/></l><r>fall<g><b/>down</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>falsi<s n="vblex"/></l><r>fake<s n="vblex"/></r></p></e>
     <e><p><l>falsi<s n="vblex"/></l><r>falsify<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>fandi<s n="vblex"/></l><r>melt<s n="vblex"/></r></p></e>
+    <e><p><l>degeli<s n="vblex"/></l><r>melt<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fandi<s n="vblex"/></l><r>thaw<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fandi<s n="vblex"/></l><r>cast<s n="vblex"/></r></p></e>
 
@@ -8404,9 +8403,8 @@
     <e><p><l>havigi<s n="vblex"/></l><r>supply<s n="vblex"/></r></p></e>
     <e><p><l>hejti<s n="vblex"/></l><r>heat<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>hejti<s n="vblex"/></l><r>warm<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>helpi<s n="vblex"/></l><r>help<s n="vblex"/></r></p></e>
     <e><p><l>heredi<s n="vblex"/></l><r>inherit<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>heziti<s n="vblex"/></l><r>hesitate<s n="vblex"/></r></p></e>
+    <e><p><l>heziti<s n="vblex"/></l><r>hesitate<s n="vblex"/></r></p></e>
     <e><p><l>hipoteki<s n="vblex"/></l><r>mortgage<s n="vblex"/></r></p></e>
     <e><p><l>honori<s n="vblex"/></l><r>honour<s n="vblex"/></r></p></e>
     <e><p><l>hontigi<s n="vblex"/></l><r>embarrass<s n="vblex"/></r></p></e>
@@ -8670,7 +8668,7 @@
     <e><p><l>loĝigi<s n="vblex"/></l><r>lodge<s n="vblex"/></r></p></e>
     <e><p><l>lokalizi<s n="vblex"/></l><r>locate<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>lokalizi<s n="vblex"/></l><r>trace<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>loki<s n="vblex"/></l><r>situate<s n="vblex"/></r></p></e>
+    <e><p><l>loki<s n="vblex"/></l><r>situate<s n="vblex"/></r></p></e>
     <e><p><l>ludi<s n="vblex"/></l><r>play<s n="vblex"/></r></p></e>
     <e><p><l>lui<s n="vblex"/></l><r>lease<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>lukti<s n="vblex"/></l><r>fight<s n="vblex"/></r></p></e>
@@ -8815,7 +8813,7 @@
     <e><p><l>okazi<s n="vblex"/></l><r>occur<s n="vblex"/></r></p></e>
     <e><p><l>okazi<s n="vblex"/></l><r>take<g><b/>place</g><s n="vblex"/></r></p></e>
     <e><p><l>okazi<s n="vblex"/></l><r>become<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>okupi<s n="vblex"/></l><r>exert<s n="vblex"/></r></p></e>
+    <e><p><l>streĉi<s n="vblex"/></l><r>exert<s n="vblex"/></r></p></e>
     <e><p><l>okupi<s n="vblex"/></l><r>occupy<s n="vblex"/></r></p></e>
     <e><p><l>operacii<s n="vblex"/></l><r>operate<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>opinii<s n="vblex"/></l><r>think<s n="vblex"/></r></p></e>
@@ -8898,7 +8896,7 @@
     <e><p><l>plimalbonigi<s n="vblex"/></l><r>worsen<s n="vblex"/></r></p></e>
     <e><p><l>plori<s n="vblex"/></l><r>cry<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>plori<s n="vblex"/></l><r>weep<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>plugi<s n="vblex"/></l><r>plough<s n="vblex"/></r></p></e>
+    <e><p><l>plugi<s n="vblex"/></l><r>plough<s n="vblex"/></r></p></e>
     <e><p><l>pluvi<s n="vblex"/></l><r>shower<s n="vblex"/></r></p></e>
     <e><p><l>poenti<s n="vblex"/></l><r>mark<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>poenti<s n="vblex"/></l><r>score<s n="vblex"/></r></p></e>
@@ -8940,6 +8938,7 @@
     <e><p><l>pridisputi<s n="vblex"/></l><r>contest<s n="vblex"/></r></p></e>
     <e><p><l>prigardi<s n="vblex"/></l><r>watch<s n="vblex"/></r></p></e>
     <e><p><l>printi<s n="vblex"/></l><r>list<s n="vblex"/></r></p></e>
+    <e><p><l>malvesti<s n="vblex"/></l><r>undress<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>prirabi<s n="vblex"/></l><r>undress<s n="vblex"/></r></p></e>
     <e><p><l>prirabi<s n="vblex"/></l><r>deprive<s n="vblex"/></r></p></e>
     <e><p><l>privatigi<s n="vblex"/></l><r>denationalise<s n="vblex"/></r></p></e>
@@ -8972,8 +8971,7 @@
     <e><p><l>protesti<s n="vblex"/></l><r>protest<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>protokoli<s n="vblex"/></l><r>fine<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>provi<s n="vblex"/></l><r>attempt<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>provi<s n="vblex"/></l><r>try<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>provi<s n="vblex"/></l><r>prove<s n="vblex"/></r></p></e>
+    <e><p><l>provi<s n="vblex"/></l><r>try<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>provi<s n="vblex"/></l><r>taste<s n="vblex"/></r></p></e>
     <e><p><l>provi<s n="vblex"/></l><r>test<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>provoki<s n="vblex"/></l><r>provoke<s n="vblex"/></r></p></e>
@@ -8981,9 +8979,9 @@
     <e r="LR"><p><l>provoki<s n="vblex"/></l><r>cause<s n="vblex"/></r></p></e>
     <e><p><l>prunti<s n="vblex"/></l><r>loan<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>pruvi<s n="vblex"/></l><r>demonstrate<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>pruvi<s n="vblex"/></l><r>prove<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>pruvi<s n="vblex"/></l><r>show<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>pruvi<s n="vblex"/></l><r>test<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>pruvi<s n="vblex"/></l><r>try<s n="vblex"/></r></p></e>
     <e><p><l>pumpi<s n="vblex"/></l><r>pump<s n="vblex"/></r></p></e>
     <e><p><l>puni<s n="vblex"/></l><r>punish<s n="vblex"/></r></p></e>
     <e><p><l>purigi<s n="vblex"/></l><r>clean<s n="vblex"/></r></p></e>
@@ -9015,7 +9013,7 @@
     <e r="LR"><p><l>regladi<s n="vblex"/></l><r>iron<s n="vblex"/></r></p></e>
     <e><p><l>regresi<s n="vblex"/></l><r>back<s n="vblex"/></r></p></e>
     <e><p><l>reguligi<s n="vblex"/></l><r>regulate<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>rekomenci<s n="vblex"/></l><r>restart<s n="vblex"/></r></p></e>
+    <e><p><l>rekomenci<s n="vblex"/></l><r>restart<s n="vblex"/></r></p></e>
     <e><p><l>rekomendi<s n="vblex"/></l><r>recommend<s n="vblex"/></r></p></e>
     <e><p><l>rekoni<s n="vblex"/></l><r>acknowledge<s n="vblex"/></r></p></e>
     <e><p><l>rekoni<s n="vblex"/></l><r>recognise<s n="vblex"/></r></p></e>
@@ -9366,6 +9364,7 @@
     <e><p><l>alpreni<s n="vblex"/></l><r>adopt<s n="vblex"/></r></p></e>
     <e><p><l>adori<s n="vblex"/></l><r>adore<s n="vblex"/></r></p></e>
     <e><p><l>antaŭeniri<s n="vblex"/></l><r>advance<s n="vblex"/></r></p></e>
+    <e><p><l>antaŭeniri<s n="vblex"/></l><r>advance<s n="vblex"/></r></p></e>
 
     <!-- Adverbs -->
 
@@ -9637,9 +9636,9 @@
 
     <e r="RL"><p><l>mallarĝe<s n="adv"/></l><r>tightly<s n="adv"/></r></p></e>
     <e><p><l>mallarĝe<s n="adv"/></l><r>closely<s n="adv"/></r></p></e>
-    <e><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>place<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>position<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>maloportuna<s n="adv"/></l><r>out<b/>of<b/>turn<s n="adv"/></r></p></e>
+    <e><p><l>maloportune<s n="adv"/></l><r>out<b/>of<b/>place<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>maloportune<s n="adv"/></l><r>out<b/>of<b/>position<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>maloportune<s n="adv"/></l><r>out<b/>of<b/>turn<s n="adv"/></r></p></e>
     <e r="RL" c="per al superlatiu: the least interesting - el menys interessant, i tb adv normal - what I like least"><p><l>malpli<s n="adv"/></l><r>least<s n="adv"/></r></p></e>
     <e><p><l>malpli<s n="adv"/></l><r>less<s n="adv"/></r></p></e>
 
@@ -10272,26 +10271,35 @@
 <e><p><l>fama<s n="adj"/></l><r>famous<s n="adj"/></r></p></e>
 <e><p><l>furioza<s n="adj"/></l><r>fierce<s n="adj"/></r></p></e>
 <e><p><l>momenta<s n="adj"/></l><r>fleeting<s n="adj"/></r></p></e>
-<e><p><l>elkora<s n="adj"/></l><r>fond<s n="adj"/></r></p></e>
+<e><p><l>elkora<s n="adj"/></l><r>fond<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>danĝera<s n="adj"/></l><r>harmful<s n="adj"/></r></p></e>
 <e><p><l>malmodera<s n="adj"/></l><r>immoderate<s n="adj"/></r></p></e>
 <e><p><l>senefika<s n="adj"/></l><r>ineffective<s n="adj"/></r></p></e>
 <e><p><l>maldekstrula<s n="adj"/></l><r>left-handed<s n="adj"/></r></p></e>
-<e><p><l>kota<s n="adj"/></l><r>muddy<s n="adj"/></r></p></e>
-<e><p><l>mallarĝa<s n="adj"/></l><r>narrow<s n="adj"/></r></p></e>
+<e><p><l>kota<s n="adj"/></l><r>muddy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sekvanta<s n="adj"/></l><r>next<s n="adj"/></r></p></e>
 <e><p><l>pasia<s n="adj"/></l><r>passionate<s n="adj"/></r></p></e>
 <e><p><l>malŝatema<s n="adj"/></l><r>pejorative<s n="adj"/></r></p></e>
 <e><p><l>simila<s n="adj"/></l><r>similar<s n="adj"/></r></p></e>
 <e><p><l>lerta<s n="adj"/></l><r>skillful<s n="adj"/></r></p></e>
 
+    <e><p><l>mankateni<s n="vblex"/></l><r>manacle<s n="vblex"/></r></p></e>
+
 
 <!-- multi-words -->
     <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
 
 <!-- Jacob us unsure -->
-    <e r="RL" c="Jacob. is this rignt???"><p><l>ne<s n="adv"/></l><r>do<b/>not<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>ne<s n="adv"/></l><r>do<b/>not<s n="adv"/></r></p></e>
     
+    <e r="RL"><p><l>oni<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>oni<s n="prn"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>ni<s n="prn"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
+    <e r="RL"><p><l>sed<s n="cnjcoo"/><b/>prefere</l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
 
   </section>
 </dictionary>
