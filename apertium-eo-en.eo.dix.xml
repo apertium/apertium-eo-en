@@ -1786,9 +1786,16 @@
       </p>
     </e>
 
-    <e>
+    <e r="LR">
       <p>
         <l>cin</l> 
+        <r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>vin</l> 
         <r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
       </p>
     </e>
@@ -2993,6 +3000,7 @@
     <e lm="altaro"><i>altaro</i><par n="nom__n"/></e>
     <e lm="alteco"><i>alteco</i><par n="nom__n"/></e>
     <e lm="alternado"><i>alternado</i><par n="nom__n"/></e>
+	<e lm="alternativo"><i>alternativo</i><par n="nom__n"/></e>
     <e lm="alterni"><i>altern</i><par n="verb__vblex"/></e>
     <e lm="altiri"><i>altir</i><par n="verb__vblex"/></e>
     <e lm="altiro"><i>altiro</i><par n="nom__n"/></e>
@@ -5331,6 +5339,7 @@
     <e lm="kulpigi"><i>kulpig</i><par n="verb__vblex"/></e>
     <e lm="kulpo"><i>kulpo</i><par n="nom__n"/></e>
     <e lm="kultivi"><i>kultiv</i><par n="verb__vblex"/></e>
+    <e lm="kultivisto"><i>kultivisto</i><par n="nom__n"/></e>
     <e lm="kultura"><i>kultur</i><par n="adj__adj"/></e>
     <e lm="kulturo"><i>kulturo</i><par n="nom__n"/></e>
     <e lm="kune"><i>kune</i><par n="komence__adv"/></e>
@@ -6192,6 +6201,7 @@
     <e lm="oferto"><i>oferto</i><par n="nom__n"/></e>
     <e lm="oficejo"><i>oficejo</i><par n="nom__n"/></e>
     <e lm="oficiala"><i>oficial</i><par n="adj__adj"/></e>
+    <e lm="oficialema"><i>oficialem</i><par n="adj__adj"/></e>
     <e lm="neoficiala"><i>neoficial</i><par n="adj__adj"/></e>
     <e lm="oficiale"><i>oficiale</i><par n="komence__adv"/></e>
     <e lm="oficialulo"><i>oficialulo</i><par n="nom__n"/></e>
@@ -8053,7 +8063,6 @@
 	<e lm="valencia"><i>valenci</i><par n="adj__adj"/></e>
 	<e lm="jugoslava"><i>jugoslav</i><par n="adj__adj"/></e>
 	<e lm="alternativa"><i>alternativ</i><par n="adj__adj"/></e>
-	<e lm="alternativo"><i>alternativo</i><par n="adj__adj"/></e>
 	<e lm="anarkia"><i>anarki</i><par n="adj__adj"/></e>
 	<e lm="animala"><i>animal</i><par n="adj__adj"/></e>
 	<e lm="brava"><i>brav</i><par n="adj__adj"/></e>
@@ -8227,6 +8236,7 @@
     <e lm="París"><i>París</i><par n="Mark__np"/></e>
     <e lm="París"><i>París</i><par n="Mark__np"/></e>
     <e lm="Siria"><i>Siria</i><par n="Mary__np"/></e>
+    <e lm="Washington"><i>Washington</i><par n="Mark__np"/></e>
 
 
     <e lm="Agnesa"><i>Agnesa</i><par n="Mary__np"/></e>
@@ -8244,6 +8254,7 @@
     <e lm="Ignaco"><i>Ignaco</i><par n="Mark__np"/></e>
     <e lm="Ilza"><i>Ilza</i><par n="Mary__np"/></e>
     <e lm="Izabela"><i>Izabela</i><par n="Mary__np"/></e>
+    <e lm="Israel"><i>Israel</i><par n="Mark__np"/></e>
     <e lm="Jakobo"><i>Jakobo</i><par n="Mark__np"/></e>
     <e lm="Jesuo"><i>Jesuo</i><par n="Mark__np"/></e>
     <e lm="Johano"><i>Johano</i><par n="Mark__np"/></e>
@@ -8267,6 +8278,7 @@
     <e lm="Petro"><i>Petro</i><par n="Mark__np"/></e>
     <e lm="Suzana"><i>Suzana</i><par n="Mary__np"/></e>
     <e lm="Vilhelmo"><i>Vilhelmo</i><par n="Mark__np"/></e>
+    <e lm="Valencia"><i>Valencia</i><par n="Mary__np"/></e>
 
 
 
