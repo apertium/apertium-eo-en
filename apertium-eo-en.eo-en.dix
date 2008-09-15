@@ -320,7 +320,6 @@
     <e r="RL" c="frases afirmatives"><p><l>ĉiu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/></l><r>any<b/>one<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL" c="afirmatives"><p><l>ĉiu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e c="afirmatives"><p><l>ĉiu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/></l><r>either<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/></l><r>all<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>ĉiu<s n="prn"/></l><r>everything<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
@@ -330,7 +329,6 @@
     <e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>iu<s n="prn"/><s n="tn"/><s n="m"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
     <e><p><l>iu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>iu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e><p><l>iu<s n="prn"/></l><r>somebody<s n="prn"/></r></p></e>
     <e r="RL"><p><l>iu<s n="prn"/></l><r>someone<s n="prn"/></r></p></e>
     <e r="LR" c="frases interrogatives"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -344,10 +342,13 @@
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
 
+    <e><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>iu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL" c="frases negatives"><p><l>neniu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+
     <e r="RL" c="frases negatives"><p><l>nenio<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>nenio<s n="prn"/></l><r>nothing<s n="prn"/></r></p></e>
     <e r="LR" c="preguntes i negatives"><p><l>neniu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL" c="frases negatives"><p><l>neniu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>no<b/>one<s n="prn"/></r></p></e>
     <e><p><l>neniu<s n="prn"/></l><r>nobody<s n="prn"/></r></p></e>
     <e r="LR" c="preguntes, negatives. EN-CA: per trànsfer (fr negatives)"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -10088,7 +10089,6 @@
 
 
 <e><p><l>sola<s n="adj"/></l><r>alone<s n="adj"/></r></p></e>
-<e><p><l>alternativa<s n="adj"/></l><r>alternative<s n="adj"/></r></p></e>
 <e><p><l>komerca<s n="adj"/></l><r>business<s n="adj"/></r></p></e>
 <e><p><l>brava<s n="adj"/></l><r>capital<s n="adj"/></r></p></e>
 <e><p><l>ĉefa<s n="adj"/></l><r>cardinal<s n="adj"/></r></p></e>
