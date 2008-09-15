@@ -145,7 +145,7 @@ public class Iloj {
 
 
     public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixnomo) throws IOException {
-	ArrayList<String> al = exec("lt-expand "+dixnomo);
+	ArrayList<String> al = exec(dixnomo);
 
 	LinkedHashMap<String,ArrayList<String>>[] xxParoj = new LinkedHashMap[2];
 	xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>();

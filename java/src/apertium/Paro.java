@@ -71,9 +71,9 @@ public class Paro {
 
     public String apertiumEo() {
 	if (noun) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"nom__n\"/></e>";
-	if (adj) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"adj__adj\"/></e>";
+	if (adj) return "<e lm=\""+ root +"\"><i>"+ root.substring(0,root.length()-1) +"</i><par n=\"adj__adj\"/></e>";
 	if (adv) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"komence__adv\"/></e>";
-	if (verb) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"verb__vblex\"/></e>";
+	if (verb) return "<e lm=\""+ root +"\"><i>"+ root.substring(0,root.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
 	return "";
     }
 
