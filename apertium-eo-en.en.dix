@@ -14895,7 +14895,7 @@
     <e lm="mouse"><i>m</i><par n="m/ouse__n"/></e>
     <e lm="man"><i>m</i><par n="m/an__n"/></e>
     <e lm="make"><i>ma</i><par n="ma/ke__vblex"/></e>
-    <e lm="make"><i>ma</i><par n="ma/ke__vblex"/><p><l><b/>a<b/>mistake</l><r><g><b/>a<b/>mistake</g></r></p></e>
+<!-- commented out by Jacob as "make a mistake"->"fari eraron" works fine without this line   <e lm="make a mistake"><i>ma</i><par n="ma/ke__vblex"/><p><l><b/>a<b/>mistake</l><r><g><b/>a<b/>mistake</g></r></p></e>  -->
     <e lm="machine"><i>machine</i><par n="house__n"/></e>
     <e lm="machinery"><i>machiner</i><par n="bab/y__n"/></e>
     <e lm="mad"><i>mad</i><par n="glad/__adj"/></e>

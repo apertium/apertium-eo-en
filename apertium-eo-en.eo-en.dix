@@ -3124,7 +3124,7 @@
     <e><p><l>elekto<s n="n"/></l><r>election<s n="n"/></r></p></e>
 	<e><p><l>eldona<s n="adj"/></l><r>publishing<s n="adj"/></r></p></e>
 	<e><p><l>elekta<s n="adj"/></l><r>elect<s n="adj"/></r></p></e>
-    <e r="RL"><p><l>elektra<b/>hejmilo<s n="n"/></l><r>appliance<s n="n"/></r></p></e>
+    <e r="RL"><p><l>aparato<s n="n"/></l><r>appliance<s n="n"/></r></p></e>
     <e><p><l>elektro<s n="n"/></l><r>electricity<s n="n"/></r></p></e>
     <e><p><l>elektrodo<s n="n"/></l><r>electrode<s n="n"/></r></p></e>
     <e><p><l>elektrono<s n="n"/></l><r>electron<s n="n"/></r></p></e>
@@ -9291,8 +9291,8 @@
     <e r="LR"><p><l>urĝi<s n="vblex"/></l><r>capture<s n="vblex"/></r></p></e>
     <e><p><l>urĝi<s n="vblex"/></l><r>constrain<s n="vblex"/></r></p></e>
     <e><p><l>utili<s n="vblex"/></l><r>take<g><b/>advantage<b/>of</g><s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>uzi<s n="vblex"/></l><r>use<s n="vblex"/></r></p></e>
-    <e><p><l>uzi<s n="vblex"/></l><r>employ<s n="vblex"/></r></p></e>
+    <e><p><l>uzi<s n="vblex"/></l><r>use<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>uzi<s n="vblex"/></l><r>employ<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>vagi<s n="vblex"/></l><r>stroll<s n="vblex"/></r></p></e>
     <e><p><l>vagi<s n="vblex"/></l><r>wander<s n="vblex"/></r></p></e>
     <e><p><l>validigi<s n="vblex"/></l><r>validate<s n="vblex"/></r></p></e>
@@ -10292,12 +10292,16 @@
 <!-- Jacob us unsure -->
     <e r="RL"><p><l>ne<s n="adv"/></l><r>do<b/>not<s n="adv"/></r></p></e>
     
-    <e r="RL"><p><l>oni<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>oni<s n="prn"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>mi<s n="prn"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>ni<s n="prn"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>one self<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
+    <e r="RL"><p><l>ni<s n="prn"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e r="RL"><p><l>sed<s n="cnjcoo"/><b/>prefere</l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
 
