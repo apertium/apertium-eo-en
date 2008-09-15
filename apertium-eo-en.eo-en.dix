@@ -320,6 +320,7 @@
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>anybody<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
+
     <e><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>anyone<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>either<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>all<s n="prn"/><s n="tn"/></r></p></e>
@@ -332,7 +333,7 @@
     <e><p><l>iu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e><p><l>iu<s n="prn"/></l><r>somebody<s n="prn"/></r></p></e>
     <e r="RL"><p><l>iu<s n="prn"/></l><r>someone<s n="prn"/></r></p></e>
-    <e r="LR" c="frases interrogatives"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e r="LR" c="frases interrogatives"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>iu<s n="prn"/></l><r>some<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
@@ -351,7 +352,7 @@
     <e r="LR" c="preguntes i negatives"><p><l>neniu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>no<b/>one<s n="prn"/></r></p></e>
     <e><p><l>neniu<s n="prn"/></l><r>nobody<s n="prn"/></r></p></e>
-    <e r="LR" c="preguntes, negatives. EN-CA: per trànsfer (fr negatives)"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e r="LR" c="preguntes, negatives. EN-CA: per trànsfer (fr negatives)"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>either<s n="prn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 
@@ -2162,7 +2163,6 @@
 
     <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
-    <e r="RL"><p><l>cxino<s n="n"/><s n="GD"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
     <e r="RL"><p><l>franco<s n="n"/><s n="GD"/></l><r>French<s n="n"/></r></p></e>
     <e r="RL"><p><l>germano<s n="n"/><s n="GD"/></l><r>German<s n="n"/></r></p></e>
@@ -10296,14 +10296,14 @@
     <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>si<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>si<s n="prn"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>si<s n="prn"/></l><r>one self<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
     <e r="RL"><p><l>ni<s n="prn"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e r="RL"><p><l>vi<s n="prn"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
     <e r="RL"><p><l>si<s n="prn"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
-    <e r="RL"><p><l>sed<s n="cnjcoo"/><b/>prefere</l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
+    <e r="RL"><p><l>sed<b/>prefere<s n="cnjcoo"/></l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
 
   </section>
 </dictionary>
