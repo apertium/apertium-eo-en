@@ -2130,7 +2130,7 @@
 
     <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
-    <e r="LR"><p><l>cxino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
     <e r="LR"><p><l>franco<s n="n"/><s n="f"/></l><r>French<s n="n"/></r></p></e>
     <e r="LR"><p><l>germano<s n="n"/><s n="f"/></l><r>German<s n="n"/></r></p></e>
@@ -3139,9 +3139,9 @@
     <e><p><l>elektrono<s n="n"/></l><r>electron<s n="n"/></r></p></e>
     <e><p><l>elemento<s n="n"/></l><r>element<s n="n"/></r></p></e>
     <e r="RL"><p><l>elemento<s n="n"/></l><r>item<s n="n"/></r></p></e>
-    <e r="RL"><p><l>elimini<s n="n"/></l><r>disposal<s n="n"/></r></p></e>
-    <e><p><l>elimini<s n="n"/></l><r>elimination<s n="n"/></r></p></e>
-    <e r="RL"><p><l>elimini<s n="n"/></l><r>removal<s n="n"/></r></p></e>
+    <e r="RL"><p><l>elimino<s n="n"/></l><r>disposal<s n="n"/></r></p></e>
+    <e><p><l>elimino<s n="n"/></l><r>elimination<s n="n"/></r></p></e>
+    <e r="RL"><p><l>elimino<s n="n"/></l><r>removal<s n="n"/></r></p></e>
     <e><p><l>eliro<s n="n"/></l><r>departure<s n="n"/></r></p></e>
     <e><p><l>eliro<s n="n"/></l><r>exit<s n="n"/></r></p></e>
     <e c="Inform."><p><l>eliro<s n="n"/></l><r>output<s n="n"/></r></p></e>
@@ -6617,6 +6617,7 @@
     <e><p><l>Irlando<s n="np"/><s n="top"/></l><r>Ireland<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Islando<s n="np"/><s n="top"/></l><r>Iceland<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Israelo<s n="np"/><s n="top"/></l><r>Israel<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Israel<s n="np"/><s n="ant"/></l><r>Israel<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Italio<s n="np"/><s n="top"/></l><r>Italy<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
@@ -6744,9 +6745,9 @@
     <e><p><l>Ukrainio<s n="np"/><s n="top"/></l><r>Ukraine<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Urugvajo<s n="np"/><s n="top"/></l><r>Uruguay<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Usono<s n="np"/><s n="top"/></l><r>United<b/>States<s n="np"/><s n="top"/><s n="sg"/></r></p></e>
-    <e c="MG: revisar"><p><l>Valencio<s n="np"/><s n="top"/></l><r>Valencia<s n="np"/><s n="ant"/></r></p></e>
+    <e c="MG: revisar"><p><l>Valencia<s n="np"/><s n="ant"/></l><r>Valencia<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Varsovio<s n="np"/><s n="top"/></l><r>Warsaw<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Vaŝingtono<s n="np"/><s n="top"/></l><r>Washington<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Vaŝingtono<s n="np"/><s n="ant"/></l><r>Washington<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Vaŝingtono<s n="np"/><s n="top"/></l><r>Washington<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Venezuelo<s n="np"/><s n="top"/></l><r>Venezuela<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Vieno<s n="np"/><s n="top"/></l><r>Vienna<s n="np"/><s n="top"/></r></p></e>
@@ -9175,7 +9176,7 @@
     <e><p><l>superregi<s n="vblex"/></l><r>predominate<s n="vblex"/></r></p></e>
     <e><p><l>supozi<s n="vblex"/></l><r>assume<s n="vblex"/></r></p></e>
     <e><p><l>supozi<s n="vblex"/></l><r>suppose<s n="vblex"/></r></p></e>
-    <e><p><l>supreniri<s n="vblex"/></l><r>bid<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>oferti<s n="vblex"/></l><r>bid<s n="vblex"/></r></p></e>
     <e><p><l>surgrimpi<s n="vblex"/></l><r>climb<s n="vblex"/></r></p></e>
     <e><p><l>surprizi<s n="vblex"/></l><r>surprise<s n="vblex"/></r></p></e>
     <e><p><l>surteriĝi<s n="vblex"/></l><r>land<s n="vblex"/></r></p></e>
@@ -9729,7 +9730,7 @@
     <e r="LR"><p><l>principe<s n="adv"/></l><r>systematically<s n="adv"/></r></p></e>
     <e r="RL"><p><l>probable<s n="adv"/></l><r>likely<s n="adv"/></r></p></e>
     <e><p><l>probable<s n="adv"/></l><r>probably<s n="adv"/></r></p></e>
-    <e><p><l>procento<s n="adv"/></l><r>percent<s n="adv"/></r></p></e>
+    <e><p><l>procente<s n="adv"/></l><r>percent<s n="adv"/></r></p></e>
     <e><p><l>profesie<s n="adv"/></l><r>professionally<s n="adv"/></r></p></e>
     <e><p><l>profunde<s n="adv"/></l><r>deeply<s n="adv"/></r></p></e>
     <e r="RL"><p><l>profunde<s n="adv"/></l><r>acutely<s n="adv"/></r></p></e>
@@ -9820,6 +9821,7 @@
     <e r="RL"><p><l>sufiĉe<s n="adv"/></l><r>enough<s n="adv"/></r></p></e>
     <e c="no preadverbi"><p><l>sufiĉe<s n="adv"/></l><r>quite<b/>a<b/>lot<s n="adv"/></r></p></e>
     <e r="RL"><p><l>sufiĉe<s n="adv"/></l><r>rather<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>sufiĉe<s n="adv"/></l><r>pretty<s n="adv"/></r></p></e>
     <e><p><l>sufiĉe<s n="adv"/></l><r>sufficiently<s n="adv"/></r></p></e>
     <e><p><l>supozeble<s n="adv"/></l><r>presumably<s n="adv"/></r></p></e>
     <e r="RL"><p><l>supozeble<s n="adv"/></l><r>allegedly<s n="adv"/></r></p></e>
