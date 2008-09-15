@@ -19,7 +19,7 @@ public class LeguTradukuNet {
 	Thread leguT = new Iloj.Ek() { void ek() throws Exception { legutradukunet.leguTradukuNetDosieron(); }};
 
 	//ArrayList<String> vortoj = Iloj.leguNopaste("http://www.nopaste.com/p/axY84IAj7");
-	ArrayList<String> vortoj = Iloj.leguTekstDosieron("mankantaj_adjektivoj.txt");
+	ArrayList<String> vortoj = Iloj.leguTekstDosieron("mankantaj_vortoj.txt");
 
 	//List<String> vortoj = Arrays.asList(new String[] {"Nigerian", "antioxidant", "athlete", "choral", "college", "correct", "democrat", "elect", "fellow", "immigrant", "millionaire", "pacifist", "police", "publishing", "resident", "right", "school", "soloist", "subject", "turquoise", "university", "urban" });
 
@@ -30,10 +30,12 @@ public class LeguTradukuNet {
 	    {
 //		System.out.println(linio);
 		String[] wc = linio.split("@");
-		wc[0] = wc[0].substring(1,wc[0].indexOf('<'));
+		String vorto = wc[0].substring(1,wc[0].indexOf('<'));
+		System.out.println("vorto = " + vorto);
+
 //		System.out.println(Iloj.deCxapeloj("\n========= "+wc[0]+" ======"+legutradukunet.tradukuEnParoj.get(wc[0])+" ======"+linio));
 		if (legutradukunet.tradukuEnParoj.get(wc[0])!=null) for (Paro p : legutradukunet.tradukuEnParoj.get(wc[0])) {
-		    if (!p.problem && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.adj)
+		    //if (!p.problem && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.adj)
 		    {
 
 /*
@@ -43,7 +45,7 @@ public class LeguTradukuNet {
  */
 			System.out.println(p.apertiumEo());
 //			System.out.println(p.apertiumEn());
-			System.out.println(p.apertiumEoEn());
+			//System.out.println(p.apertiumEoEn());
 			System.out.println();
 
 		    }

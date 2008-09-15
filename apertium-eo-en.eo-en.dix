@@ -1190,9 +1190,13 @@
     <e r="LR"><p><l>ekstremisto<s n="n"/><s n="m"/></l><r>extremist<s n="n"/></r></p></e>
     <e r="RL"><p><l>ekstremisto<s n="n"/><s n="GD"/></l><r>extremist<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>konstruisto<s n="n"/><s n="f"/></l><r>farmer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konstruisto<s n="n"/><s n="m"/></l><r>farmer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konstruisto<s n="n"/><s n="GD"/></l><r>farmer<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kultivisto<s n="n"/><s n="f"/></l><r>farmer<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kultivisto<s n="n"/><s n="m"/></l><r>farmer<s n="n"/></r></p></e>
+    <e r="RL"><p><l>kultivisto<s n="n"/><s n="GD"/></l><r>farmer<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>konstruisto<s n="n"/><s n="f"/></l><r>builder<s n="n"/></r></p></e>
+    <e r="LR"><p><l>konstruisto<s n="n"/><s n="m"/></l><r>builder<s n="n"/></r></p></e>
+    <e r="RL"><p><l>konstruisto<s n="n"/><s n="GD"/></l><r>builder<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>faŝisto<s n="n"/><s n="f"/></l><r>fascist<s n="n"/></r></p></e>
     <e r="LR"><p><l>faŝisto<s n="n"/><s n="m"/></l><r>fascist<s n="n"/></r></p></e>
@@ -4187,7 +4191,6 @@
     <e><p><l>konsterno<s n="n"/></l><r>consternation<s n="n"/></r></p></e>
     <e><p><l>konstitucio<s n="n"/></l><r>constitution<s n="n"/></r></p></e>
     <e><p><l>konstruaĵo<s n="n"/></l><r>building<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konstruisto<s n="n"/></l><r>farmer<s n="n"/></r></p></e>
     <e r="LR"><p><l>konstruo<s n="n"/></l><r>building<s n="n"/></r></p></e>
     <e r="RL"><p><l>konstruo<s n="n"/></l><r>construction<s n="n"/></r></p></e>
     <e><p><l>konsulo<s n="n"/></l><r>consul<s n="n"/></r></p></e>
@@ -6097,8 +6100,8 @@
     <e r="RL"><p><l>ŝtuparo<s n="n"/></l><r>staircase<s n="n"/></r></p></e>
     <e r="LR"><p><l>ŝtupo<s n="n"/></l><r>stair<s n="n"/></r></p></e>
 
-    <e><p><l>ŝtupo<s n="n"/></l><r>terracing<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝtupo<s n="n"/></l><r>step<s n="n"/></r></p></e>
+    <e r="RL"><p><l>ŝtupo<s n="n"/></l><r>terracing<s n="n"/></r></p></e>
+    <e><p><l>ŝtupo<s n="n"/></l><r>step<s n="n"/></r></p></e>
     <e r="RL"><p><l>ŝuisto<s n="n"/></l><r>shoemaker<s n="n"/></r></p></e>
     <e><p><l>ŝuldo<s n="n"/></l><r>debt<s n="n"/></r></p></e>
     <e><p><l>ŝuo<s n="n"/></l><r>shoe<s n="n"/></r></p></e>
@@ -8234,6 +8237,7 @@
     <e><p><l>eniri<s n="vblex"/></l><r>go<g><b/>in</g><s n="vblex"/></r></p></e>
     <e><p><l>entajpi<s n="vblex"/></l><r>type<g><b/>in</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>eniri<s n="vblex"/></l><r>step<g><b/>into</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>interveni<s n="vblex"/></l><r>step<g><b/>in</g><s n="vblex"/></r></p></e>
     <e><p><l>enketi<s n="vblex"/></l><r>poll<s n="vblex"/></r></p></e>
     <e><p><l>enketi<s n="vblex"/></l><r>investigate<s n="vblex"/></r></p></e>
     <e><p><l>enketi<s n="vblex"/></l><r>research<s n="vblex"/></r></p></e>
@@ -8466,8 +8470,7 @@
     <e><p><l>interspacigi<s n="vblex"/></l><r>space<s n="vblex"/></r></p></e>
     <e><p><l>interŝanĝi<s n="vblex"/></l><r>exchange<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>interŝanĝi<s n="vblex"/></l><r>change<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>interveni<s n="vblex"/></l><r>intervene<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>interveni<s n="vblex"/></l><r>take<g><b/>part</g><s n="vblex"/></r></p></e>
+    <e><p><l>interveni<s n="vblex"/></l><r>intervene<s n="vblex"/></r></p></e>
     <e><p><l>intervjui<s n="vblex"/></l><r>interview<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>inundi<s n="vblex"/></l><r>drown<s n="vblex"/></r></p></e>
     <e><p><l>inundi<s n="vblex"/></l><r>flood<s n="vblex"/></r></p></e>
@@ -10291,6 +10294,10 @@
 
 <!-- multi-words -->
     <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
+
+    <e><p><l>armilaro<s n="n"/></l><r>arm<b/>stockpile<s n="n"/></r></p></e>
+    <e><p><l>armilaro<s n="n"/></l><r>weapon<b/>stockpile<s n="n"/></r></p></e>
+    <e><p><l>provizaro<s n="n"/></l><r>stockpile<s n="n"/></r></p></e>
 
 <!-- Jacob us unsure -->
     <e r="RL"><p><l>ne<s n="adv"/></l><r>do<b/>not<s n="adv"/></r></p></e>
