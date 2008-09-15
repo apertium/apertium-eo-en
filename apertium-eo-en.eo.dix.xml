@@ -470,6 +470,16 @@
     </e>
     </pardef>
 
+    <pardef n="post_kiam__rel">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r> 
+      </p>
+    </e>
+    </pardef>
+
+
     <pardef n="kial__adv">
     <e>
       <p>
@@ -1987,6 +1997,12 @@
 
 
     <e lm="adiaŭ"><i>adia</i><par n="ŭ"/><i></i><par n="adiós__ij"/></e>
+    <e lm="saluton"><i>saluton</i><par n="adiós__ij"/></e>
+    <e lm="ĝis poste"><par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
+    <e lm="ĝis revido"><par n="ĝ"/><i>is<b/>revido</i><par n="adiós__ij"/></e>
+    <e lm="bonan matenon"><i>bonan<b/>matenon</i><par n="adiós__ij"/></e>
+
+
     <e lm="ajna"><i>ajna</i><par n="ind__det"/></e>
     <e lm="akorde kun"><i>akorde<b/>kun</i><par n="at__pr"/></e>
     <e lm="al"><i>al</i><par n="at__pr"/></e>
@@ -2003,10 +2019,11 @@
     <e lm="anstataŭ"><i>anstata</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="antaŭ"><i>anta</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="antaŭ ol"><i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="after__cnjadv"/></e>
+    <e lm="tiel ke"><i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
+    <e lm="krom se"><i>krom<b/>se</i><par n="after__cnjadv"/></e>
     <e lm="antaŭ ol"><i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="at__pr"/></e>
     <e lm="apud"><i>apud</i><par n="at__pr"/></e>
     <e lm="aŭ"><i>a</i><par n="ŭ"/><i></i><par n="and__cnjcoo"/></e>
-    <e lm="bonan matenon"><i>bonan<b/>matenon</i><par n="adiós__ij"/></e>
     <e lm="certa"><i>certa</i><par n="ind__det"/></e>
     <e lm="certe"><i>certe</i><par n="after__cnjadv"/></e>
     <e lm="por"><i>ciufoje<b/>kiam</i><par n="after__cnjadv"/></e>
@@ -2045,8 +2062,6 @@
     <e lm="fronte al"><i>fronte<b/>al</i><par n="at__pr"/></e>
     <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="after__cnjadv"/></e>
     <e lm="ĝis"><par n="ĝ"/><i>is</i><par n="at__pr"/></e>
-    <e lm="ĝis poste"><par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
-    <e lm="ĝis revido"><par n="ĝ"/><i>is<b/>revido</i><par n="adiós__ij"/></e>
     <e lm="inter"><i>inter</i><par n="at__pr"/></e>
     <e lm="io"><p><l>io</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="io"><p><l>ioj</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -2071,6 +2086,8 @@
     <e lm="kiel"><i>kiel</i><par n="after__cnjadv"/></e>
     <e lm="kiel"><i>kiel</i><par n="and__cnjcoo"/></e>
     <e lm="kiel"><i>kiel</i><par n="at__pr"/></e>
+
+    <e lm="post kiam"><i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
 
     <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -2162,7 +2179,6 @@
     <e lm="pro tio ke"><i>pro<b/>tio<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="pro tio ke"><i>pro<b/>tio<b/>ke</i><par n="and__cnjcoo"/></e>
     <e lm="rilate al"><i>rilate<b/>al</i><par n="at__pr"/></e>
-    <e lm="saluton"><i>saluton</i><par n="adiós__ij"/></e>
     <e lm="se"><i>se</i><par n="after__cnjadv"/></e>
     <e lm="sed"><i>sed</i><par n="and__cnjcoo"/></e>
     <e lm="sed prefere"><i>sed<b/>prefere</i><par n="and__cnjcoo"/></e>

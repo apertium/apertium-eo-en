@@ -343,6 +343,7 @@
 
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
+
     <e r="RL" c="frases negatives"><p><l>nenio<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>nenio<s n="prn"/></l><r>nothing<s n="prn"/></r></p></e>
     <e r="LR" c="preguntes i negatives"><p><l>neniu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
@@ -409,39 +410,44 @@
     <!-- Conjunctions -->
 
     <e><p><l>antaŭ<b/>ol<s n="cnjadv"/></l><r>before<s n="cnjadv"/></r></p></e>
-    <e r="RL" c="either... or... : o... o..."><p><l>aŭ<s n="cnjcoo"/></l><r>either<s n="cnjcoo"/></r></p></e>
-    <e><p><l>aŭ<s n="cnjcoo"/></l><r>or<s n="cnjcoo"/></r></p></e>
-    <e r="LR" c="per ara RL perquè s'equivoca molt amb la 'pr'"><p><l>ĉar<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
+    <e><p><l>tiel<b/>ke<s n="cnjadv"/></l><r>so<b/>that<s n="cnjadv"/></r></p></e>
+    <e><p><l>krom<b/>se<s n="cnjadv"/></l><r>unless<s n="cnjadv"/></r></p></e>
+    <e><p><l>dum<s n="cnjadv"/></l><r>whereas<s n="cnjadv"/></r></p></e>
     <e><p><l>ĉar<s n="cnjadv"/></l><r>because<s n="cnjadv"/></r></p></e>
-    <e><p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l><r>increasingly<s n="cnjadv"/></r></p></e>
-    <e r="LR"><p><l>dum<s n="cnjadv"/></l><r>whereas<s n="cnjadv"/></r></p></e>
     <e><p><l>dum<s n="cnjadv"/></l><r>while<s n="cnjadv"/></r></p></e>
-    <e r="LR" c="per ara RL perquè s'equivoca molt amb la 'pr'"><p><l>ekde<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
     <e><p><l>ĝis<s n="cnjadv"/></l><r>until<s n="cnjadv"/></r></p></e>
-    <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
     <e><p><l>kiam<s n="cnjadv"/></l><r>when<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>kiam<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
     <e><p><l>kiel<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
     <e><p><l>kondiĉe<b/>ke<s n="cnjadv"/></l><r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
     <e><p><l>kontraŭe<s n="cnjadv"/></l><r>on<b/>the<b/>contrary<s n="cnjadv"/></r></p></e>
-    <e r="LR"><p><l>krom<b/>se<s n="cnjadv"/></l><r>unless<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>kvankam<s n="cnjadv"/></l><r>although<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>kvankam<s n="cnjadv"/></l><r>though<s n="cnjadv"/></r></p></e>
     <e r="LR"><p><l>laŭ<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
-    <e c="MG: neither... nor; not... or :en el trànsfer"><p><l>nek<s n="cnjcoo"/></l><r>neither<s n="cnjcoo"/></r></p></e>
-    <e r="RL"><p><l>nek<s n="cnjcoo"/></l><r>nor<s n="cnjcoo"/></r></p></e>
-    <e c="comparatius/comparatives"><p><l>ol<s n="cnjcoo"/></l><r>than<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>ekde<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
+
     <e r="LR"><p><l>por<b/>ke<s n="cnjadv"/></l><r>so<b/>that<s n="cnjadv"/></r></p></e>
     <e><p><l>post<b/>kiam<s n="cnjadv"/></l><r>after<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l><r>for<s n="cnjadv"/></r></p></e>
-    <e r="LR" c="per ara RL perquè s'equivoca molt amb la 'pr'"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
+    <e r="LR"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
     <e><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l><r>due<b/>to<b/>the<b/>fact<b/>that<s n="cnjadv"/></r></p></e>
     <e r="LR"><p><l>se<s n="cnjadv"/></l><r>while<s n="cnjadv"/></r></p></e>
     <e><p><l>se<s n="cnjadv"/></l><r>if<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>se<s n="cnjadv"/></l><r>provided<s n="cnjadv"/></r></p></e>
-    <e r="RL" c="MG: Generalment després de verb o pronom personal (I doubt whether.../ Tell me whether...)"><p><l>se<s n="cnjadv"/></l><r>whether<s n="cnjadv"/></r></p></e>
+    <e r="RL"><p><l>se<s n="cnjadv"/></l><r>whether<s n="cnjadv"/></r></p></e>
 
+
+
+    <e r="RL"><p><l>aŭ<s n="cnjcoo"/></l><r>either<s n="cnjcoo"/></r></p></e>
+    <e><p><l>aŭ<s n="cnjcoo"/></l><r>or<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>ĉar<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
+    <e><p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l><r>increasingly<s n="cnjadv"/></r></p></e>
+    <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
+
+    <e><p><l>nek<s n="cnjcoo"/></l><r>neither<s n="cnjcoo"/></r></p></e>
+    <e r="RL"><p><l>nek<s n="cnjcoo"/></l><r>nor<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ol<s n="cnjcoo"/></l><r>than<s n="cnjcoo"/></r></p></e>
     <e><p><l>sed<s n="cnjcoo"/></l><r>but<s n="cnjcoo"/></r></p></e>
     
     <e r="LR"><p><l>sekve<s n="cnjadv"/></l><r>therefore<s n="cnjadv"/></r></p></e>
@@ -9585,6 +9591,7 @@
 
     <e><p><l>kie<s n="adv"/></l><r>where<s n="adv"/></r></p></e>
     <e><p><l>kie<s n="rel"/><s n="adv"/></l><r>where<s n="rel"/><s n="adv"/></r></p></e>
+    <e><p><l>post<b/>kiam<s n="rel"/><s n="an"/></l><r>after<b/>which<s n="rel"/><s n="an"/></r></p></e>
 
     <e><p><l>kiel<s n="adv"/></l><r>how<s n="adv"/></r></p></e>
     <e r="LR"><p><l>kiel<b/>decas<s n="adv"/></l><r>properly<s n="adv"/></r></p></e>
