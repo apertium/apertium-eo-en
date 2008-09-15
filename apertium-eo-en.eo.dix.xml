@@ -1886,7 +1886,6 @@
         <r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r> 
       </p>
     </e>
-
     </pardef>
 
     <pardef n="probj_dem__prn">
@@ -2041,11 +2040,12 @@
     <e lm="alia"><p><l>aliaj</l><r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="alia"><p><l>aliajn</l><r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="alia"><p><l>alian</l><r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e lm="ambaux" r="LR"><p><l>ambaux</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="ambaux" r="LR"><p><l>ambaux</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
     <e lm="ambaŭ"><i>amba</i><par n="ŭ"/><i></i><par n="ind__det"/></e>
+
     <e lm="anstataŭ"><i>anstata</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="antaŭ"><i>anta</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="antaŭ ol"><i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="after__cnjadv"/></e>
@@ -2068,6 +2068,15 @@
     <e lm="ĉirkaŭ"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
 
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ĉiu__prn"/></e>
+
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="mi"><p><l>mi</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+    <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
@@ -2126,12 +2135,12 @@
     <e lm="kio"><p><l>kioj</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kiojn</l><r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
 
+    <e lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
     <e r="RL" lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
 
     <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>

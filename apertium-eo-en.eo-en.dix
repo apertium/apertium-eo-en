@@ -284,46 +284,54 @@
 
     <!-- Pronouns -->
 
-    <e r="RL"><p><l>alia<s n="prn"/></l><r>another<b/>one<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>alia<s n="prn"/></l><r>another<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e><p><l>alia<s n="prn"/></l><r>others<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e><p><l>alia<s n="prn"/><s n="tn"/></l><r>others<s n="prn"/><s n="tn"/></r></p></e>
+    <e><p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/></l><r>another<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 
 
 
     <!-- Possessives -->
-	<e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
-	<e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
 
-	<e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
-	<e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
-	<e><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
-	<e><p><l>ŝia<s n="adj"/></l><r>hers<s n="adj"/></r></p></e>
-	<e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
-	<e><p><l>ĝia<s n="adj"/></l><r>its<s n="adj"/></r></p></e>
-	<e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
-
-
+    <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
+    <e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
+    <e><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
+    <e><p><l>ŝia<s n="adj"/></l><r>hers<s n="adj"/></r></p></e>
+    <e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
+    <e><p><l>ĝia<s n="adj"/></l><r>its<s n="adj"/></r></p></e>
+    <e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
 
 
 
-    <e r="RL"><p><l>ambaŭ<s n="prn"/></l><r>both<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>ambaŭ<s n="prn"/><s n="tn"/><s n="m"/></l><r>both<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>ambaŭ<s n="prn"/><s n="tn"/><s n="f"/></l><r>both<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+
+
+    <e r="RL"><p><l>ambaŭ<s n="prn"/><s n="tn"/></l><r>both<s n="prn"/><s n="tn"/></r></p></e>
 
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>everybody<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>everyone<s n="prn"/><s n="tn"/></r></p></e>
-    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
+
+    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>anybody<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
 
     <e><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>anyone<s n="prn"/><s n="tn"/></r></p></e>
-    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>either<s n="prn"/><s n="tn"/></r></p></e>
-    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>all<s n="prn"/><s n="tn"/></r></p></e>
+
+    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+
+    <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+
     <e><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>everything<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>each<s n="prn"/><s n="tn"/></r></p></e>
 
@@ -337,8 +345,8 @@
     <e><p><l>iu<s n="prn"/></l><r>some<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
-    <e r="RL"><p><l>kiom<s n="prn"/></l><r>how<b/>many<s n="prn"/><s n="itg"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e><p><l>kiom<s n="prn"/></l><r>how<b/>much<s n="prn"/><s n="itg"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>kiom<s n="prn"/><s n="itg"/></l><r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
+    <e><p><l>kiom<s n="prn"/><s n="itg"/></l><r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
 
 
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
@@ -352,7 +360,7 @@
     <e r="LR" c="preguntes i negatives"><p><l>neniu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>no<b/>one<s n="prn"/></r></p></e>
     <e><p><l>neniu<s n="prn"/></l><r>nobody<s n="prn"/></r></p></e>
-    <e r="LR" c="preguntes, negatives. EN-CA: per trànsfer (fr negatives)"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
+    <e r="LR"><p><l>neniu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>either<s n="prn"/></r></p></e>
     <e r="RL"><p><l>neniu<s n="prn"/></l><r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 
@@ -606,7 +614,7 @@
 
     <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l><r>lots<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 
-	<e><p><l>multobla<s n="adj"/></l><r>multiple<s n="adj"/></r></p></e>
+    <e><p><l>multobla<s n="adj"/></l><r>multiple<s n="adj"/></r></p></e>
 
 
     <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
@@ -3127,8 +3135,8 @@
     <e><p><l>elektantaro<s n="n"/></l><r>electorate<s n="n"/></r></p></e>
     <e r="RL"><p><l>elekto<s n="n"/></l><r>choice<s n="n"/></r></p></e>
     <e><p><l>elekto<s n="n"/></l><r>election<s n="n"/></r></p></e>
-	<e><p><l>eldona<s n="adj"/></l><r>publishing<s n="adj"/></r></p></e>
-	<e><p><l>elekta<s n="adj"/></l><r>elect<s n="adj"/></r></p></e>
+    <e><p><l>eldona<s n="adj"/></l><r>publishing<s n="adj"/></r></p></e>
+    <e><p><l>elekta<s n="adj"/></l><r>elect<s n="adj"/></r></p></e>
     <e r="RL"><p><l>aparato<s n="n"/></l><r>appliance<s n="n"/></r></p></e>
     <e><p><l>elektro<s n="n"/></l><r>electricity<s n="n"/></r></p></e>
     <e><p><l>elektrodo<s n="n"/></l><r>electrode<s n="n"/></r></p></e>
@@ -4115,7 +4123,7 @@
     <e r="RL"><p><l>kompano<s n="n"/></l><r>companion<s n="n"/></r></p></e>
     <e r="RL"><p><l>kompano<s n="n"/></l><r>mate<s n="n"/></r></p></e>
     <e r="RL"><p><l>kompano<s n="n"/></l><r>partner<s n="n"/></r></p></e>
-	<e><p><l>samranga<s n="adj"/></l><r>fellow<s n="adj"/></r></p></e>
+    <e><p><l>samranga<s n="adj"/></l><r>fellow<s n="adj"/></r></p></e>
     <e><p><l>komparacio<s n="n"/></l><r>comparison<s n="n"/></r></p></e>
     <e><p><l>kompato<s n="n"/></l><r>compassion<s n="n"/></r></p></e>
     <e r="RL"><p><l>kompato<s n="n"/></l><r>sympathy<s n="n"/></r></p></e>
@@ -4387,8 +4395,8 @@
     <e><p><l>lakto<s n="n"/></l><r>milk<s n="n"/></r></p></e>
     <e><p><l>laktuko<s n="n"/></l><r>lettuce<s n="n"/></r></p></e>
     <e><p><l>lamento<s n="n"/></l><r>wail<s n="n"/></r></p></e>
-	<e><p><l>lamentinda<s n="adj"/></l><r>woeful<s n="adj"/></r></p></e>
-	<e><p><l>lamentinde<s n="adv"/></l><r>woefully<s n="adv"/></r></p></e>
+    <e><p><l>lamentinda<s n="adj"/></l><r>woeful<s n="adj"/></r></p></e>
+    <e><p><l>lamentinde<s n="adv"/></l><r>woefully<s n="adv"/></r></p></e>
     <e r="LR"><p><l>lampo<s n="n"/></l><r>lamp<s n="n"/></r></p></e>
     <e r="LR" c="MG: no hi ha 'llum' en masculí, afegir-lo (?)"><p><l>lampo<s n="n"/></l><r>light<s n="n"/></r></p></e>
     <e><p><l>landlimo<s n="n"/></l><r>border<s n="n"/></r></p></e>
@@ -5703,7 +5711,7 @@
     <e r="RL"><p><l>salto<s n="n"/></l><r>leap<s n="n"/></r></p></e>
     <e><p><l>saltotabulo<s n="n"/></l><r>springboard<s n="n"/></r></p></e>
     <e><p><l>saluto<s n="n"/></l><r>greeting<s n="n"/></r></p></e>
-	<e><p><l>salutnomo<s n="n"/></l><r>username<s n="n"/></r></p></e>
+    <e><p><l>salutnomo<s n="n"/></l><r>username<s n="n"/></r></p></e>
     <e><p><l>samlandano<s n="n"/></l><r>compatriot<s n="n"/></r></p></e>
     <e><p><l>sanatorio<s n="n"/></l><r>sanatorium<s n="n"/></r></p></e>
     <e><p><l>sangeltiro<s n="n"/></l><r>bloodletting<s n="n"/></r></p></e>
@@ -6349,8 +6357,8 @@
     <e><p><l>ulcero<s n="n"/></l><r>ulcer<s n="n"/></r></p></e>
     <e><p><l>ungo<s n="n"/></l><r>nail<s n="n"/></r></p></e>
     <e><p><l>uniformo<s n="n"/></l><r>uniform<s n="n"/></r></p></e>
-	<e><p><l>altlernejo<s n="n"/></l><r>college<s n="n"/></r></p></e>
-	<e><p><l>altlerneja<s n="adj"/></l><r>college<s n="adj"/></r></p></e>
+    <e><p><l>altlernejo<s n="n"/></l><r>college<s n="n"/></r></p></e>
+    <e><p><l>altlerneja<s n="adj"/></l><r>college<s n="adj"/></r></p></e>
     <e><p><l>universitato<s n="n"/></l><r>university<s n="n"/></r></p></e>
     <e><p><l>universitata<s n="adj"/></l><r>university<s n="adj"/></r></p></e>
     <e><p><l>universo<s n="n"/></l><r>universe<s n="n"/></r></p></e>
@@ -6915,7 +6923,7 @@
     <e r="RL"><p><l>danĝera<s n="adj"/></l><r>hazardous<s n="adj"/></r></p></e>
     <e><p><l>decida<s n="adj"/></l><r>decisive<s n="adj"/></r></p></e>
     <e><p><l>decimala<s n="adj"/></l><r>decimal<s n="adj"/></r></p></e>
-	<e><p><l>defaŭlta<s n="adj"/></l><r>default<s n="adj"/></r></p></e>
+    <e><p><l>defaŭlta<s n="adj"/></l><r>default<s n="adj"/></r></p></e>
 
     <e><p><l>defensiva<s n="adj"/></l><r>defensive<s n="adj"/></r></p></e>
     <e><p><l>definitiva<s n="adj"/></l><r>definite<s n="adj"/></r></p></e>
@@ -8595,7 +8603,7 @@
     <e><p><l>kopii<s n="vblex"/></l><r>copy<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>kopii<s n="vblex"/></l><r>move<s n="vblex"/></r></p></e>
     <e><p><l>korekti<s n="vblex"/></l><r>correct<s n="vblex"/></r></p></e>
-	<e><p><l>ĝusta<s n="adj"/></l><r>correct<s n="adj"/></r></p></e>
+    <e><p><l>ĝusta<s n="adj"/></l><r>correct<s n="adj"/></r></p></e>
     <e><p><l>korpigi<s n="vblex"/></l><r>embody<s n="vblex"/></r></p></e>
     <e><p><l>korpigi<s n="vblex"/></l><r>incorporate<s n="vblex"/></r></p></e>
     <e><p><l>kosti<s n="vblex"/></l><r>cost<s n="vblex"/></r></p></e>
@@ -9449,7 +9457,7 @@
     <e><p><l>definitive<s n="adv"/></l><r>definitively<s n="adv"/></r></p></e>
     <e><p><l>dekstre<s n="adv"/></l><r>to<b/>the<b/>right<s n="adv"/></r></p></e>
     <e><p><l>demokratie<s n="adv"/></l><r>democratically<s n="adv"/></r></p></e>
-	<e><p><l>demokrata<s n="adj"/></l><r>democrat<s n="adj"/></r></p></e>
+    <e><p><l>demokrata<s n="adj"/></l><r>democrat<s n="adj"/></r></p></e>
     <e r="LR"><p><l>denove<s n="adv"/></l><r>again<s n="adv"/></r></p></e>
     <e r="RL"><p><l>denove<s n="adv"/></l><r>newly<s n="adv"/></r></p></e>
     <e r="RL"><p><l>dume<s n="adv"/></l><r>in<b/>the<b/>interim<s n="adv"/></r></p></e>
@@ -9936,7 +9944,7 @@
     <e><p><l>arba<b/>vido<s n="n"/></l><r>treeview<s n="n"/></r></p></e>
     <e><p><l>faldmenuo<s n="n"/></l><r>combobox<s n="n"/></r></p></e>
     <e><p><l>agordo<s n="n"/></l><r>configuration<s n="n"/></r></p></e>
-	<e><p><l>agordebla<s n="adj"/></l><r>configurable<s n="adj"/></r></p></e>
+    <e><p><l>agordebla<s n="adj"/></l><r>configurable<s n="adj"/></r></p></e>
 
     <e r="RL"><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>child<s n="n"/></r></p></e>
@@ -10290,18 +10298,17 @@
     <e><p><l>provizaro<s n="n"/></l><r>stockpile<s n="n"/></r></p></e>
 
 <!-- Jacob us unsure -->
-    <e r="RL"><p><l>ne<s n="adv"/></l><r>do<b/>not<s n="adv"/></r></p></e>
     
-    <e r="RL"><p><l>mi<s n="prn"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>one self<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>one self<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
-    <e r="RL"><p><l>ni<s n="prn"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>vi<s n="prn"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>si<s n="prn"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e r="RL"><p><l>sed<b/>prefere<s n="cnjcoo"/></l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
 
