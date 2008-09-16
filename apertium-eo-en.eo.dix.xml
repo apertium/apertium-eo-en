@@ -489,7 +489,7 @@
     </e>
     </pardef>
 
-    <pardef n="very__preadv">
+    <pardef n="vere__preadv">
     <e>
       <p>
         <l></l> 
@@ -1998,8 +1998,9 @@
 	<e lm="ilia"><i>ili</i><par n="adj__adj"/></e>
 
 
-    <e lm="pli"><i>pli</i><par n="very__preadv"/></e>
-    <e lm="plej"><i>plej</i><par n="very__preadv"/></e>
+    <e lm="pli"><i>pli</i><par n="vere__preadv"/></e>
+    <e lm="plej"><i>plej</i><par n="vere__preadv"/></e>
+    <e lm="vere"><i>vere</i><par n="vere__preadv"/></e>
 
     <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
     <e lm="pli"><i>pli</i><par n="at__pr"/></e>

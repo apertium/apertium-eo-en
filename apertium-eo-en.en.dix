@@ -14194,7 +14194,9 @@
     <e lm="hire"><i>hire</i><par n="house__n"/></e>
     <e lm="his"><i>his</i><par n="her__det"/></e>
     <e lm="his"><i>his</i><par n="mine__adj"/></e>
+<!--    
     <e lm="his"><i>his</i><par n="mine__prn"/></e>
+-->
     <e lm="history"><i>histor</i><par n="bab/y__n"/></e>
     <e lm="historical"><i>historical</i><par n="expensive__adj"/></e>
     <e lm="historically"><i>historically</i><par n="maybe__adv"/></e>
@@ -15150,10 +15152,10 @@
     <e lm="mind"><i>mind</i><par n="house__n"/></e>
     <e lm="mind"><i>mind</i><par n="accept__vblex"/></e>
     <e lm="mine"><i>mine</i><par n="house__n"/></e>
-    <!--
     <e lm="mine"><i>mine</i><par n="mine__adj"/></e>
-    -->
+<!--    
     <e lm="mine"><i>mine</i><par n="mine__prn"/></e>
+-->
     <e lm="miner"><i>miner</i><par n="house__n"/></e>
     <e lm="mineral"><i>mineral</i><par n="house__n"/></e>
     <e lm="mineral"><i>mineral</i><par n="expensive__adj"/></e>
@@ -17520,7 +17522,9 @@
     <e lm="theft"><i>theft</i><par n="house__n"/></e>
     <e lm="their"><i>their</i><par n="her__det"/></e>
     <e lm="theirs"><i>theirs</i><par n="mine__adj"/></e>
+<!--    
     <e lm="theirs"><i>theirs</i><par n="mine__prn"/></e>
+-->
     <e lm="theme"><i>theme</i><par n="house__n"/></e>
     <e lm="themselves"><p><l>themselves</l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="then"><i>then</i><par n="after__cnjadv"/></e>
@@ -18213,16 +18217,18 @@
     <!-- Personal pronouns -->
 
     <e lm="your"><i>your</i><par n="her__det"/></e>
-<!--
     <e lm="yours"><i>yours</i><par n="mine__adj"/></e>
--->
+<!--    
     <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
+-->
     <e lm="yourself"><p><l>yourself</l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="yourselves"><p><l>yourselves</l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="my"><i>my</i><par n="her__det"/></e>
     <e lm="myself"><p><l>myself</l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="hers"><i>hers</i><par n="mine__adj"/></e>
+<!--
     <e lm="hers"><i>hers</i><par n="mine__prn"/></e>
+-->
     <e lm="herself"><p><l>herself</l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
     <e lm="himself"><p><l>himself</l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="its"><i>its</i><par n="her__det"/></e>
@@ -18232,7 +18238,9 @@
     <e lm="others"><i>others</i><par n="both__prn"/></e>
     <e lm="our"><i>our</i><par n="her__det"/></e>
     <e lm="ours"><i>ours</i><par n="mine__adj"/></e>
+<!--    
     <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
+-->
     <e lm="ourselves"><p><l>ourselves</l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
