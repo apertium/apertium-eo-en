@@ -406,8 +406,14 @@
     <e><p><l>aŭ<s n="cnjcoo"/></l><r>or<s n="cnjcoo"/></r></p></e>
     <e r="LR"><p><l>ĉar<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
     <e><p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l><r>increasingly<s n="cnjadv"/></r></p></e>
+
     <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
+
+<!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
     <e><p><l>kaj<b/>ankaŭ<s n="cnjcoo"/></l><r>and<b/>also<s n="cnjcoo"/></r></p></e>
+    <e><p><l>sed<b/>ankaŭ<s n="cnjcoo"/></l><r>but<b/>also<s n="cnjcoo"/></r></p></e>
+
+
     <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
 
     <e><p><l>nek<s n="cnjcoo"/></l><r>neither<s n="cnjcoo"/></r></p></e>
@@ -6524,6 +6530,7 @@
     <e><p><l>Amsterdamo<s n="np"/><s n="top"/></l><r>Amsterdam<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Andaluzio<s n="np"/><s n="top"/></l><r>Andalucia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Andoj<s n="np"/><s n="top"/></l><r>Andes<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>April<s n="np"/><s n="ant"/></l><r>April<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Andoro<s n="np"/><s n="top"/></l><r>Andorra<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Anglio<s n="np"/><s n="top"/></l><r>England<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Arabio<s n="np"/><s n="top"/></l><r>Arabia<s n="np"/><s n="top"/></r></p></e>
@@ -6557,7 +6564,7 @@
     <e><p><l>Ĉadio<s n="np"/><s n="top"/></l><r>Chad<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ĉilio<s n="np"/><s n="top"/></l><r>Chile<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ĉinio<s n="np"/><s n="top"/></l><r>China<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Danlando<s n="np"/><s n="top"/></l><r>Denmark<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Danio<s n="np"/><s n="top"/></l><r>Denmark<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Dario<s n="np"/><s n="ant"/></l><r>Darío<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Davido<s n="np"/><s n="ant"/></l><r>David<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Diego<s n="np"/><s n="ant"/></l><r>Diego<s n="np"/><s n="ant"/></r></p></e>
@@ -6623,7 +6630,7 @@
     <e><p><l>Ĵeromo<s n="np"/><s n="ant"/></l><r>Jerónimo<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Kamerunio<s n="np"/><s n="top"/></l><r>Cameroon<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Kanado<s n="np"/><s n="top"/></l><r>Canada<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Kanarioj<s n="np"/><s n="top"/></l><r>Canary<b/>Islands<s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    <e><p><l>Kanarioj<s n="np"/><s n="top"/></l><r>Canary<b/>Islands<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Kantabrio<s n="np"/><s n="top"/></l><r>Cantabria<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Karakaso<s n="np"/><s n="top"/></l><r>Caracas<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Karibio<s n="np"/><s n="top"/></l><r>Carribean<s n="np"/><s n="top"/></r></p></e>
@@ -6745,6 +6752,8 @@
     <e><i>Edward<s n="np"/><s n="ant"/></i></e>
     <e><i>Jacob<s n="np"/><s n="ant"/></i></e>
     <e><i>Jimmy<s n="np"/><s n="ant"/></i></e>
+    <e><i>May<s n="np"/><s n="ant"/></i></e>
+    <e><i>August<s n="np"/><s n="ant"/></i></e>
 
 
     <e><i>Hyde<s n="np"/><s n="cog"/></i></e>
@@ -9671,8 +9680,7 @@
     <e><p><l>nuntempe<s n="adv"/></l><r>nowadays<s n="adv"/></r></p></e>
     <e><p><l>nuntempe<s n="adv"/></l><r>for<b/>now<s n="adv"/></r></p></e>
 
-    <e r="LR"><p><l>nur<s n="adv"/></l><r>only<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>nur<s n="adv"/></l><r>alone<s n="adv"/></r></p></e>
+    <e><p><l>nur<s n="adv"/></l><r>only<s n="adv"/></r></p></e>
     <e r="RL"><p><l>simple<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nur<s n="adv"/></l><r>solely<s n="adv"/></r></p></e>
 
