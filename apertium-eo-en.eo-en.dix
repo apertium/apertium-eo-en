@@ -268,28 +268,6 @@
     <e><p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/></l><r>another<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 
 
-
-    <!-- Possessives -->
-    <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
-    <e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
-
-    <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
-    <e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
-    <e><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
-    <e><p><l>ŝia<s n="adj"/></l><r>hers<s n="adj"/></r></p></e>
-    <e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
-    <e><p><l>ĝia<s n="adj"/></l><r>its<s n="adj"/></r></p></e>
-    <e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
-
-
-
-
-
     <e r="RL"><p><l>ambaŭ<s n="prn"/><s n="tn"/></l><r>both<s n="prn"/><s n="tn"/></r></p></e>
 
     <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l><r>everybody<s n="prn"/><s n="tn"/></r></p></e>
@@ -535,13 +513,32 @@
     <e><p><l>sen<s n="pr"/></l><r>without<s n="pr"/></r></p></e>
     <e><p><l>sub<s n="pr"/></l><r>under<s n="pr"/></r></p></e>
     <e><p><l>super<s n="pr"/></l><r>above<s n="pr"/></r></p></e>
-    <e r="RL" c="possible polisèmia sobre - on/about"><p><l>sur<s n="pr"/></l><r>about<s n="pr"/></r></p></e>
+    <e r="RL"><p><l>sur<s n="pr"/></l><r>about<s n="pr"/></r></p></e>
     <e r="LR"><p><l>sur<s n="pr"/></l><r>on<s n="pr"/></r></p></e>
     <e r="RL"><p><l>sur<s n="pr"/></l><r>over<s n="pr"/></r></p></e>
     <e r="RL"><p><l>sur<s n="pr"/></l><r>at<b/>about<s n="pr"/></r></p></e>
     <e><p><l>tra<s n="pr"/></l><r>through<s n="pr"/></r></p></e>
 
     <!-- Determiners -->
+
+
+    <!-- Possessives -->
+    <e><p><l>mia<s n="det"/><s n="pos"/></l><r>my<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>nia<s n="det"/><s n="pos"/></l><r>our<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>via<s n="det"/><s n="pos"/></l><r>your<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ŝia<s n="det"/><s n="pos"/></l><r>her<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>lia<s n="det"/><s n="pos"/></l><r>his<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ĝia<s n="det"/><s n="pos"/></l><r>its<s n="det"/><s n="pos"/></r></p></e>
+    <e><p><l>ilia<s n="det"/><s n="pos"/></l><r>their<s n="det"/><s n="pos"/></r></p></e>
+
+    <e><p><l>mia<s n="adj"/></l><r>mine<s n="adj"/></r></p></e>
+    <e><p><l>nia<s n="adj"/></l><r>ours<s n="adj"/></r></p></e>
+    <e><p><l>via<s n="adj"/></l><r>yours<s n="adj"/></r></p></e>
+    <e><p><l>ŝia<s n="adj"/></l><r>hers<s n="adj"/></r></p></e>
+    <e><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
+    <e><p><l>ĝia<s n="adj"/></l><r>its<s n="adj"/></r></p></e>
+    <e><p><l>ilia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
+
 
     <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/><s n="sp"/></l><r>any<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
 
@@ -7240,8 +7237,7 @@
     <e r="LR" c="check"><p><l>lerta<s n="adj"/></l><r>expert<s n="adj"/></r></p></e>
 
 
-    <e c="traducció per defecte ca-en és per ara 'his'"><p><l>lia<s n="adj"/></l><r>his<s n="adj"/></r></p></e>
-    <e r="RL" c="traducció per defecte ca-en és per ara 'his'"><p><l>lia<s n="adj"/></l><r>theirs<s n="adj"/></r></p></e>
+
     <e><p><l>libera<s n="adj"/><s n="mf"/></l><r>free<s n="adj"/><s n="sint"/></r></p></e>
     <e c="check"><p><l>libera<s n="adj"/></l><r>vacant<s n="adj"/></r></p></e>
     <e><p><l>liberala<s n="adj"/></l><r>liberal<s n="adj"/></r></p></e>
