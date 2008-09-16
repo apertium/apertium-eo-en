@@ -2001,6 +2001,13 @@
     <e lm="pli"><i>pli</i><par n="vere__preadv"/></e>
     <e lm="plej"><i>plej</i><par n="vere__preadv"/></e>
     <e lm="vere"><i>vere</i><par n="vere__preadv"/></e>
+    <e lm="malpli"><i>malpli</i><par n="vere__preadv"/></e>
+    <e lm="iom"><i>iom</i><par n="vere__preadv"/></e>
+    <e lm="tre"><i>multe</i><par n="vere__preadv"/></e>
+    <e lm="multe pli"><i>multe<b/>pli</i><par n="vere__preadv"/></e>
+    <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="vere__preadv"/></e>
+    <e lm="tiel"><i>tiel</i><par n="vere__preadv"/></e>
+    <e lm="tre"><i>tre</i><par n="vere__preadv"/></e>
 
     <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
     <e lm="pli"><i>pli</i><par n="at__pr"/></e>
@@ -2107,7 +2114,6 @@
     <e lm="io"><p><l>io</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="io"><p><l>ioj</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="io"><p><l>iojn</l><r>io<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e lm="iom"><i>iom</i><par n="very__preadv"/></e>
     <e lm="io"><p><l>ion</l><r>io<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="iu"><p><l>iu</l><r>iu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="iu"><i>iu</i><par n="quant__det"/></e>
@@ -2187,12 +2193,9 @@
     <e lm="laŭ"><i>la</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="malgraŭ"><i>malgra</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
     <e lm="malmulta"><i>malmulta</i><par n="quant__det"/></e>
-    <e lm="malpli"><i>malpli</i><par n="very__preadv"/></e>
     <e lm="malpli"><i>malpli</i><par n="at__pr"/></e>
 
     <e lm="multa"><i>multa</i><par n="quant__det"/></e>
-    <e lm="tre"><i>multe</i><par n="very__preadv"/></e>
-    <e lm="multe pli"><i>multe<b/>pli</i><par n="very__preadv"/></e>
     <e lm="nek"><i>nek</i><par n="and__cnjcoo"/></e>
     <e lm="nenio"><p><l>nenio</l><r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="nenio"><p><l>nenion</l><r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -2228,7 +2231,6 @@
     <e lm="sekve"><i>sekve</i><par n="after__cnjadv"/></e>
     <e lm="sen"><i>sen</i><par n="at__pr"/></e>
     <e lm="sub"><i>sub</i><par n="at__pr"/></e>
-    <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="very__preadv"/></e>
 
     <e lm="super"><i>super</i><par n="at__pr"/></e>
     <e lm="sur"><i>sur</i><par n="at__pr"/></e>
@@ -2238,7 +2240,6 @@
 
     <e lm="tia"><i>tia</i><par n="ind__det"/></e>
     <e lm="tiam"><i>tiam</i><par n="after__cnjadv"/></e>
-    <e lm="tiel"><i>tiel</i><par n="very__preadv"/></e>
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="at__pr"/></e>
     <e lm="tiel kiel"><i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>
@@ -2249,7 +2250,6 @@
     <e lm="tiu"><i>tiu</i><par n="dem__det"/></e>
 
     <e lm="tra"><i>tra</i><par n="at__pr"/></e>
-    <e lm="tre"><i>tre</i><par n="very__preadv"/></e>
     <e lm="tuj kiam"><i>tuj<b/>kiam</i><par n="after__cnjadv"/></e>
 
 
