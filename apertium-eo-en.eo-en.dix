@@ -381,7 +381,7 @@
     <e><p><l>dum<s n="cnjadv"/></l><r>while<s n="cnjadv"/></r></p></e>
     <e><p><l>ĝis<s n="cnjadv"/></l><r>until<s n="cnjadv"/></r></p></e>
     <e><p><l>kiam<s n="cnjadv"/></l><r>when<s n="cnjadv"/></r></p></e>
-    <e r="RL"><p><l>kiam<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
+    <e r="LR"><p><l>kiam<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
     <e><p><l>kiel<s n="cnjadv"/></l><r>as<s n="cnjadv"/></r></p></e>
     <e><p><l>kondiĉe<b/>ke<s n="cnjadv"/></l><r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
     <e><p><l>kontraŭe<s n="cnjadv"/></l><r>on<b/>the<b/>contrary<s n="cnjadv"/></r></p></e>
@@ -680,6 +680,10 @@
     <e r="LR"><p><l>kristano<s n="n"/><s n="f"/></l><r>Christian<s n="n"/></r></p></e>
     <e r="LR"><p><l>kristano<s n="n"/><s n="m"/></l><r>Christian<s n="n"/></r></p></e>
     <e r="RL"><p><l>kristano<s n="n"/><s n="GD"/></l><r>Christian<s n="n"/></r></p></e>
+
+    <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
+    <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
+
 
     <e r="LR"><p><l>kolombiano<s n="n"/><s n="f"/></l><r>Colombian<s n="n"/></r></p></e>
     <e r="LR"><p><l>kolombiano<s n="n"/><s n="m"/></l><r>Colombian<s n="n"/></r></p></e>
@@ -2115,6 +2119,10 @@
     <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="f"/></l><r>vice-president<s n="n"/></r></p></e>
     <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="m"/></l><r>vice-president<s n="n"/></r></p></e>
     <e r="RL"><p><l>vicprezidanto<s n="n"/><s n="GD"/></l><r>vice-president<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>protestanto<s n="n"/><s n="f"/></l><r>Protestant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>protestanto<s n="n"/><s n="m"/></l><r>Protestant<s n="n"/></r></p></e>
+    <e r="RL"><p><l>protestanto<s n="n"/><s n="GD"/></l><r>Protestant<s n="n"/></r></p></e>
 
 
 
@@ -4287,7 +4295,6 @@
     <e><p><l>kristalo<s n="n"/></l><r>glass<s n="n"/></r></p></e>
     <e><p><l>kristaneco<s n="n"/></l><r>Christianity<s n="n"/></r></p></e>
     <e><p><l>kristanismo<s n="n"/></l><r>Christianity<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
     <e><p><l>kriterio<s n="n"/></l><r>criterion<s n="n"/></r></p></e>
     <e r="RL"><p><l>kritikisto<s n="n"/></l><r>critic<s n="n"/></r></p></e>
     <e><p><l>kriz-okazo<s n="n"/></l><r>emergency<s n="n"/></r></p></e>
@@ -6530,7 +6537,6 @@
     <e><p><l>Amsterdamo<s n="np"/><s n="top"/></l><r>Amsterdam<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Andaluzio<s n="np"/><s n="top"/></l><r>Andalucia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Andoj<s n="np"/><s n="top"/></l><r>Andes<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>April<s n="np"/><s n="ant"/></l><r>April<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Andoro<s n="np"/><s n="top"/></l><r>Andorra<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Anglio<s n="np"/><s n="top"/></l><r>England<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Arabio<s n="np"/><s n="top"/></l><r>Arabia<s n="np"/><s n="top"/></r></p></e>
@@ -6542,7 +6548,6 @@
     <e><p><l>Aŭstrio<s n="np"/><s n="top"/></l><r>Austria<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Azio<s n="np"/><s n="top"/></l><r>Asia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Barato<s n="np"/><s n="top"/></l><r>India<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Barcelona<s n="np"/><s n="top"/></l><r>Barcelona<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Barcelono<s n="np"/><s n="top"/></l><r>Barcelona<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Bazilo<s n="np"/><s n="ant"/></l><r>Basilio<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Belgio<s n="np"/><s n="top"/></l><r>Belgium<s n="np"/><s n="top"/></r></p></e>
@@ -6567,7 +6572,6 @@
     <e><p><l>Danio<s n="np"/><s n="top"/></l><r>Denmark<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Dario<s n="np"/><s n="ant"/></l><r>Darío<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Davido<s n="np"/><s n="ant"/></l><r>David<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>Diego<s n="np"/><s n="ant"/></l><r>Diego<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Dublino<s n="np"/><s n="top"/></l><r>Dublin<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Edinburgo<s n="np"/><s n="top"/></l><r>Edinburgh<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Egiptio<s n="np"/><s n="top"/></l><r>Egypt<s n="np"/><s n="top"/></r></p></e>
@@ -6580,13 +6584,11 @@
     <e><p><l>Etiopio<s n="np"/><s n="top"/></l><r>Ethiopia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Eŭgeno<s n="np"/><s n="ant"/></l><r>Eugenio<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Eŭropo<s n="np"/><s n="top"/></l><r>Europe<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Filipinoj<s n="np"/><s n="top"/></l><r>Philippines<s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    <e><p><l>Filipinoj<s n="np"/><s n="top"/></l><r>Philippines<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Finnio<s n="np"/><s n="top"/></l><r>Finland<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Francio<s n="np"/><s n="top"/></l><r>France<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Galegio<s n="np"/><s n="top"/></l><r>Galicia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ganao<s n="np"/><s n="top"/></l><r>Ghana<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Georgo<s n="np"/><s n="ant"/></l><r>Jorge<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>Georgo<s n="np"/><s n="ant"/></l><r>Jorge<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Georgo<s n="np"/><s n="ant"/></l><r>Jorge<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Grecia<s n="np"/><s n="ant"/></l><r>Grecia<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Germanio<s n="np"/><s n="top"/></l><r>Germany<s n="np"/><s n="top"/></r></p></e>
@@ -6608,15 +6610,11 @@
     <e><p><l>Irlando<s n="np"/><s n="top"/></l><r>Ireland<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Islando<s n="np"/><s n="top"/></l><r>Iceland<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Israelo<s n="np"/><s n="top"/></l><r>Israel<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Israel<s n="np"/><s n="ant"/></l><r>Israel<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Italio<s n="np"/><s n="top"/></l><r>Italy<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>Jakobo<s n="np"/><s n="ant"/></l><r>Jaime<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>Jakobo<s n="np"/><s n="ant"/></l><r>Jaime<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Jamajko<s n="np"/><s n="top"/></l><r>Jamaica<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Japanio<s n="np"/><s n="top"/></l><r>Japan<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Jesuo<s n="np"/><s n="ant"/></l><r>Jesus<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Jesuo<s n="np"/><s n="ant"/></l><r>Jesús<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Johano<s n="np"/><s n="ant"/></l><r>Juan<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Johano<s n="np"/><s n="ant"/></l><r>Juan<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Jordanio<s n="np"/><s n="top"/></l><r>Jordan<s n="np"/><s n="top"/></r></p></e>
@@ -6635,10 +6633,10 @@
     <e><p><l>Karakaso<s n="np"/><s n="top"/></l><r>Caracas<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Karibio<s n="np"/><s n="top"/></l><r>Carribean<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Kartvelio<s n="np"/><s n="top"/></l><r>Georgia<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Georgia<s n="np"/><s n="ant"/></l><r>Georgia<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Kastilio-Leono<s n="np"/><s n="top"/></l><r>Castile<b/>and<b/>Leon<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Katalunio<s n="np"/><s n="top"/></l><r>Catalonia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Kataro<s n="np"/><s n="top"/></l><r>Qatar<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Kenjo<s n="np"/><s n="ant"/></l><r>Kenia<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Kipro<s n="np"/><s n="top"/></l><r>Cyprus<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Klaŭdo<s n="np"/><s n="ant"/></l><r>Claudio<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Kolombio<s n="np"/><s n="top"/></l><r>Colombia<s n="np"/><s n="top"/></r></p></e>
@@ -6735,7 +6733,7 @@
     <e><p><l>Turkio<s n="np"/><s n="top"/></l><r>Turkey<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ukrainio<s n="np"/><s n="top"/></l><r>Ukraine<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Urugvajo<s n="np"/><s n="top"/></l><r>Uruguay<s n="np"/><s n="top"/></r></p></e>
-    <e><p><l>Usono<s n="np"/><s n="top"/></l><r>United<b/>States<s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    <e><p><l>Usono<s n="np"/><s n="top"/></l><r>United<b/>States<s n="np"/><s n="top"/></r></p></e>
     <e c="MG: revisar"><p><l>Valencia<s n="np"/><s n="ant"/></l><r>Valencia<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Varsovio<s n="np"/><s n="top"/></l><r>Warsaw<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Vaŝingtono<s n="np"/><s n="ant"/></l><r>Washington<s n="np"/><s n="ant"/></r></p></e>
@@ -6745,15 +6743,29 @@
     <e><p><l>Vilhelmo<s n="np"/><s n="ant"/></l><r>Guillermo<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Vjetnamio<s n="np"/><s n="top"/></l><r>Vietnam<s n="np"/><s n="top"/></r></p></e>
 
+
+
+    <e><i>Jaime<s n="np"/><s n="ant"/></i></e>
+    <e><i>Gerardo<s n="np"/><s n="ant"/></i></e>
+    <e><i>Paris<s n="np"/><s n="ant"/></i></e>
     <e><i>Robert<s n="np"/><s n="ant"/></i></e>
     <e><i>Louis<s n="np"/><s n="ant"/></i></e>
     <e><i>Henry<s n="np"/><s n="ant"/></i></e>
     <e><i>Harry<s n="np"/><s n="ant"/></i></e>
     <e><i>Edward<s n="np"/><s n="ant"/></i></e>
     <e><i>Jacob<s n="np"/><s n="ant"/></i></e>
+    <e><i>Christian<s n="np"/><s n="ant"/></i></e>
     <e><i>Jimmy<s n="np"/><s n="ant"/></i></e>
     <e><i>May<s n="np"/><s n="ant"/></i></e>
     <e><i>August<s n="np"/><s n="ant"/></i></e>
+    <e><i>German<s n="np"/><s n="ant"/></i></e>
+    <e><i>Jordan<s n="np"/><s n="ant"/></i></e>
+    <e><i>Kenia<s n="np"/><s n="ant"/></i></e>
+    <e><p><l>April<s n="np"/><s n="ant"/></l><r>April<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Diego<s n="np"/><s n="ant"/></l><r>Diego<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Israel<s n="np"/><s n="ant"/></l><r>Israel<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Izabela<s n="np"/><s n="ant"/></l><r>Isabel<s n="np"/><s n="ant"/></r></p></e>
 
 
     <e><i>Hyde<s n="np"/><s n="cog"/></i></e>
@@ -7214,7 +7226,6 @@
     <e><p><l>kosma<s n="adj"/></l><r>cosmic<s n="adj"/></r></p></e>
     <e><p><l>malkuraĝa<s n="adj"/></l><r>cowardly<s n="adj"/></r></p></e>
     <e><p><l>kreskanta<s n="adj"/></l><r>increasing<s n="adj"/></r></p></e>
-    <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
     <e><p><l>kronika<s n="adj"/></l><r>chronic<s n="adj"/></r></p></e>
     <e r="RL"><p><l>kruda<s n="adj"/></l><r>crude<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>kruda<s n="adj"/></l><r>raw<s n="adj"/><s n="sint"/></r></p></e>
@@ -9936,7 +9947,6 @@
     <e r="RL"><p><l>infano<s n="n"/></l><r>kid<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>child<s n="n"/></r></p></e>
 
-    <e><p><l>protestanto<s n="n"/></l><r>Protestant<s n="n"/></r></p></e>
     <e><p><l>aneksaĵo<s n="n"/></l><r>annex<s n="n"/></r></p></e>
     <e><p><l>aresto<s n="n"/></l><r>arrest<s n="n"/></r></p></e>
     <e><p><l>averaĝo<s n="n"/></l><r>average<s n="n"/></r></p></e>
@@ -10298,6 +10308,8 @@
     <e r="RL"><p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e r="RL"><p><l>sed<b/>prefere<s n="cnjcoo"/></l><r>but<b/>rather<s n="cnjcoo"/></r></p></e>
+
+
 
 
     <e><p><l>de<s n="pr"/></l><r>'s<s n="gen"/></r></p></e>
