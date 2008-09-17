@@ -10,6 +10,7 @@
 /apertium-eo-en.en-eo.t2x -text
 /apertium-eo-en.en-eo.t3x -text
 /apertium-eo-en.en.dix -text
+/apertium-eo-en.en.tsx -text
 /apertium-eo-en.eo-en.dix -text
 /apertium-eo-en.eo-en.t1x -text
 /apertium-eo-en.eo-en.t2x -text
@@ -22,6 +23,7 @@
 /check_others.sh -text
 /check_sint_tag.sh -text
 /configure.ac -text
+/en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
 /eo-en.prob -text svneol=unset#unset
 java/src/apertium/GenerateNumbersForBidix.java -text
