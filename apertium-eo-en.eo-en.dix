@@ -414,6 +414,8 @@
 
 
     <!-- Co-ordinating conjunction -->
+	<!-- According to http://en.wikipedia.org/wiki/Co-ordinating_conjunction : 
+	     after, although, if, unless, so that, and because  -->
 
     <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
     <!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
@@ -432,8 +434,6 @@
     <!-- Sub-ordinating conjunction -->
 	
     <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
-	<!-- According to http://en.wikipedia.org/wiki/Co-ordinating_conjunction : 
-	     after, although, if, unless, so that, and because  -->
 
 
     <!-- Interjections -->
