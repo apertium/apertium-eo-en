@@ -338,6 +338,7 @@
     <e r="LR"><p><l>kio<s n="prn"/><s n="itg"/></l><r>what<s n="prn"/><s n="itg"/></r></p></e>
     <e r="RL"><p><l>kio<s n="prn"/><s n="itg"/><s n="ND"/></l><r>what<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
 
+
     <!-- Personal pronouns -->
 
     <e><p><l>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -371,7 +372,7 @@
 
 
 
-    <!-- Conjunctions -->
+    <!-- Conjunctions - Conjunctive adverb  -->
 
     <e><p><l>antaŭ<b/>ol<s n="cnjadv"/></l><r>before<s n="cnjadv"/></r></p></e>
     <e><p><l>tiel<b/>ke<s n="cnjadv"/></l><r>so<b/>that<s n="cnjadv"/></r></p></e>
@@ -399,28 +400,9 @@
     <e><p><l>se<s n="cnjadv"/></l><r>if<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>se<s n="cnjadv"/></l><r>provided<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>se<s n="cnjadv"/></l><r>whether<s n="cnjadv"/></r></p></e>
-
-
-
-    <e r="RL"><p><l>aŭ<s n="cnjcoo"/></l><r>either<s n="cnjcoo"/></r></p></e>
-    <e><p><l>aŭ<s n="cnjcoo"/></l><r>or<s n="cnjcoo"/></r></p></e>
     <e r="LR"><p><l>ĉar<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
     <e><p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l><r>increasingly<s n="cnjadv"/></r></p></e>
 
-    <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
-
-<!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
-    <e><p><l>kaj<b/>ankaŭ<s n="cnjcoo"/></l><r>and<b/>also<s n="cnjcoo"/></r></p></e>
-    <e><p><l>sed<b/>ankaŭ<s n="cnjcoo"/></l><r>but<b/>also<s n="cnjcoo"/></r></p></e>
-
-
-    <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
-
-    <e><p><l>nek<s n="cnjcoo"/></l><r>neither<s n="cnjcoo"/></r></p></e>
-    <e r="RL"><p><l>nek<s n="cnjcoo"/></l><r>nor<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ol<s n="cnjcoo"/></l><r>than<s n="cnjcoo"/></r></p></e>
-    <e><p><l>sed<s n="cnjcoo"/></l><r>but<s n="cnjcoo"/></r></p></e>
-    
     <e r="LR"><p><l>sekve<s n="cnjadv"/></l><r>therefore<s n="cnjadv"/></r></p></e>
     <e><p><l>tamen<s n="cnjadv"/></l><r>even<b/>so<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>tamen<s n="cnjadv"/></l><r>however<s n="cnjadv"/></r></p></e>
@@ -430,6 +412,30 @@
     <e><p><l>tiel<b/>kiel<s n="cnjadv"/></l><r>as<b/>well<b/>as<s n="cnjadv"/></r></p></e>
     <e><p><l>tuj<b/>kiam<s n="cnjadv"/></l><r>so<s n="cnjadv"/></r></p></e>
 
+
+    <!-- Co-ordinating conjunction -->
+
+    <e><p><l>kaj<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
+    <!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
+    <e><p><l>kaj<b/>ankaŭ<s n="cnjcoo"/></l><r>and<b/>also<s n="cnjcoo"/></r></p></e>
+    <e><p><l>sed<b/>ankaŭ<s n="cnjcoo"/></l><r>but<b/>also<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ol<s n="cnjcoo"/></l><r>than<s n="cnjcoo"/></r></p></e>
+    <e><p><l>sed<s n="cnjcoo"/></l><r>but<s n="cnjcoo"/></r></p></e>
+
+    <e r="RL"><p><l>aŭ<s n="cnjcoo"/></l><r>either<s n="cnjcoo"/></r></p></e>
+    <e><p><l>aŭ<s n="cnjcoo"/></l><r>or<s n="cnjcoo"/></r></p></e>
+
+    <e><p><l>nek<s n="cnjcoo"/></l><r>neither<s n="cnjcoo"/></r></p></e>
+    <e r="RL"><p><l>nek<s n="cnjcoo"/></l><r>nor<s n="cnjcoo"/></r></p></e>
+
+
+    <!-- Sub-ordinating conjunction -->
+	
+    <e><p><l>ke<s n="cnjsub"/></l><r>that<s n="cnjsub"/></r></p></e>
+	<!-- According to http://en.wikipedia.org/wiki/Co-ordinating_conjunction : 
+	     after, although, if, unless, so that, and because  -->
+
+
     <!-- Interjections -->
 
     <e><p><l>adiaŭ<s n="ij"/></l><r>goodbye<s n="ij"/></r></p></e>
@@ -437,6 +443,8 @@
     <e><p><l>ĝis<b/>poste<s n="ij"/></l><r>see<b/>you<b/>later<s n="ij"/></r></p></e>
     <e><p><l>ĝis<b/>revido<s n="ij"/></l><r>see<b/>you<s n="ij"/></r></p></e>
     <e><p><l>saluton<s n="ij"/></l><r>hello<s n="ij"/></r></p></e>
+
+
 
     <!-- Prepositions -->
 
@@ -636,7 +644,9 @@
     <e r="LR"><p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 
 
+
     <!-- Nouns -->
+
     <e r="LR"><p><l>albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
     <e r="LR"><p><l>albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
     <e r="RL"><p><l>albano<s n="n"/><s n="GD"/></l><r>Albanian<s n="n"/></r></p></e>
