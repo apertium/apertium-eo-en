@@ -4395,7 +4395,6 @@
     <e r="RL"><p><l>landlimo<s n="n"/></l><r>boundary<s n="n"/></r></p></e>
     <e r="RL"><p><l>landlimo<s n="n"/></l><r>frontier<s n="n"/></r></p></e>
     <e><p><l>lando<s n="n"/></l><r>country<s n="n"/></r></p></e>
-    <e r="RL"><p><l>lango<s n="n"/></l><r>language<s n="n"/></r></p></e>
     <e><p><l>lango<s n="n"/></l><r>tongue<s n="n"/></r></p></e>
     <e><p><l>lano<s n="n"/></l><r>wool<s n="n"/></r></p></e>
     <e><p><l>larmo<s n="n"/></l><r>tear<s n="n"/></r></p></e>
@@ -4471,15 +4470,16 @@
     <e><p><l>limo<s n="n"/></l><r>limit<s n="n"/></r></p></e>
     <e><p><l>limŝtono<s n="n"/></l><r>milestone<s n="n"/></r></p></e>
     <e><p><l>limtempo<s n="n"/></l><r>term<s n="n"/></r></p></e>
-    <e r="LR"><p><l>lingvo<s n="n"/></l><r>language<s n="n"/></r></p></e>
+    <e><p><l>lingvo<s n="n"/></l><r>language<s n="n"/></r></p></e>
     <e><p><l>linio<s n="n"/></l><r>line<s n="n"/></r></p></e>
     <e><p><l>lino<s n="n"/></l><r>linen<s n="n"/></r></p></e>
     <e><p><l>lipo<s n="n"/></l><r>lip<s n="n"/></r></p></e>
     <e><p><l>liro<s n="n"/></l><r>lyre<s n="n"/></r></p></e>
     <e><p><l>literaturo<s n="n"/></l><r>literature<s n="n"/></r></p></e>
-    <e r="RL"><p><l>litero<s n="n"/></l><r>handwriting<s n="n"/></r></p></e>
+    <e><p><l>manskribo<s n="n"/></l><r>handwriting<s n="n"/></r></p></e>
     <e><p><l>litero<s n="n"/></l><r>letter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>litero<s n="n"/></l><r>lyric<s n="n"/></r></p></e>
+    <e><p><l>liriko<s n="n"/><s n="sg"/></l><r>lyric<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>kantoteksto<s n="n"/></l><r>lyric<s n="n"/><s n="pl"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>bed<s n="n"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>mulch<s n="n"/></r></p></e>
     <e r="RL"><p><l>litro<s n="n"/></l><r>liter<s n="n"/></r></p></e>
@@ -7988,10 +7988,10 @@
     <e r="LR"><p><l>atenci<s n="vblex"/></l><r>attack<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>atendi<s n="vblex"/></l><r>await<s n="vblex"/></r></p></e>
     <e><p><l>atendi<s n="vblex"/></l><r>expect<s n="vblex"/></r></p></e>
-    <e><p><l>atendi<s n="vblex"/></l><r>hope<s n="vblex"/></r></p></e>
+    <e><p><l>esperi<s n="vblex"/></l><r>hope<s n="vblex"/></r></p></e>
     <e><p><l>atendi<s n="vblex"/></l><r>wait<s n="vblex"/></r></p></e>
     <e><p><l>atenti<s n="vblex"/></l><r>attend<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>atesti<s n="vblex"/></l><r>attest<s n="vblex"/></r></p></e>
+    <e><p><l>atesti<s n="vblex"/></l><r>attest<s n="vblex"/></r></p></e>
     <e><p><l>atesti<s n="vblex"/></l><r>testify<s n="vblex"/></r></p></e>
     <e><p><l>atingi<s n="vblex"/></l><r>achieve<s n="vblex"/></r></p></e>
     <e><p><l>atingi<s n="vblex"/></l><r>get<s n="vblex"/></r></p></e>
@@ -8720,7 +8720,7 @@
     <e><p><l>manipuli<s n="vblex"/></l><r>manipulate<s n="vblex"/></r></p></e>
     <e><p><l>manipuli<s n="vblex"/></l><r>handle<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>manipuli<s n="vblex"/></l><r>operate<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>mankateni<s n="vblex"/></l><r>manacle<s n="vblex"/></r></p></e>
+    <e><p><l>mankateni<s n="vblex"/></l><r>manacle<s n="vblex"/></r></p></e>
     <e><p><l>manki<s n="vblex"/></l><r>be<g><b/>missing</g><s n="vblex"/></r></p></e>
     <e><p><l>manovri<s n="vblex"/></l><r>manoeuvre<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>manovri<s n="vblex"/></l><r>conspire<s n="vblex"/></r></p></e>
@@ -10284,7 +10284,6 @@
 <e><p><l>simila<s n="adj"/></l><r>similar<s n="adj"/></r></p></e>
 <e><p><l>lerta<s n="adj"/></l><r>skillful<s n="adj"/></r></p></e>
 
-    <e><p><l>mankateni<s n="vblex"/></l><r>manacle<s n="vblex"/></r></p></e>
 
 
 <!-- multi-words -->
