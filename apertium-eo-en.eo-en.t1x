@@ -2,23 +2,26 @@
 <transfer default="chunk">
 
 <section-def-cats>
-  <def-cat n="nom">
+  <def-cat n="c_nom">
      <cat-item tags="n.*"/>
      <cat-item tags="np.*"/>
   </def-cat>
-  <def-cat n="vblex">
+  <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
   </def-cat>
-  <def-cat n="adj">
+  <def-cat n="c_vbser">
+     <cat-item tags="vbser.*"/>
+  </def-cat>
+  <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
-  <def-cat n="prn">
+  <def-cat n="c_prn">
      <cat-item tags="prn.*"/>
   </def-cat>
-  <def-cat n="pr">
+  <def-cat n="c_pr">
      <cat-item tags="pr"/>
   </def-cat>
-  <def-cat n="det">
+  <def-cat n="c_det">
      <cat-item tags="det"/>
      <cat-item tags="det.*"/>
   </def-cat>
@@ -60,35 +63,35 @@
      <attr-item tags="prn.itg"/>
   </def-attr>
 
-  <def-attr n="tns">
+  <def-attr n="a_tns">
+     <attr-item tags="inf"/>
      <attr-item tags="pres"/>
-     <attr-item tags="pri"/>
-     <attr-item tags="imp"/>
-     <attr-item tags="aor"/>
-     <attr-item tags="fti"/>
      <attr-item tags="past"/>
+     <attr-item tags="fti"/>
+     <attr-item tags="cni"/>
+     <attr-item tags="fts"/>
   </def-attr>
 
-  <def-attr n="gen">
+  <def-attr n="a_gen">
      <attr-item tags="m"/>
      <attr-item tags="f"/>
      <attr-item tags="nt"/>
      <attr-item tags="mf"/>
   </def-attr>
 
-  <def-attr n="prs">
+  <def-attr n="a_prs">
      <attr-item tags="p1"/>
      <attr-item tags="p2"/>
      <attr-item tags="p3"/>
   </def-attr>
 
-  <def-attr n="nbr">
+  <def-attr n="a_nbr">
      <attr-item tags="sg"/>
      <attr-item tags="sp"/>
      <attr-item tags="pl"/>
   </def-attr>
 
-  <def-attr n="cas">
+  <def-attr n="a_cas">
      <attr-item tags="nom"/>
      <attr-item tags="acc"/>
   </def-attr>
@@ -102,11 +105,34 @@
 </section-def-vars>
 
 <section-rules>
-<!-- Sintagmas nominales -->
 
   <rule>
      <pattern>
-       <pattern-item n="nom"/>
+       <pattern-item n="c_det"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_nom"/>
      </pattern>
      <action>
        <out>
@@ -120,29 +146,32 @@
            <lu>
              <clip pos="1" side="tl" part="lem"/>
              <clip pos="1" side="tl" part="a_nom"/>
-             <clip pos="1" side="tl" part="nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
            </lu>
          </chunk>
        </out>
      </action>
   </rule>
 
+
+
   <rule>
      <pattern>
-       <pattern-item n="det"/>
+       <pattern-item n="c_adj"/>
      </pattern>
      <action>
        <out>
-         <chunk name="det" case="caseFirstWord">
+         <chunk name="adj" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="gen"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
              <tag><clip pos="1" side="tl" part="cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lem"/>
-             <clip pos="1" side="tl" part="a_det"/>
-             <clip pos="1" side="sl" part="nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
            </lu>
          </chunk>
        </out>
@@ -151,12 +180,10 @@
 
 
 
-<!-- Sintagmas adjetivos -->
-
 
   <rule>
      <pattern>
-       <pattern-item n="vblex"/>
+       <pattern-item n="c_vblex"/>
      </pattern>
      <action>
        <out>
@@ -170,9 +197,36 @@
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="tns"/>
-              <clip pos="1" side="tl" part="prs"/>
-              <clip pos="1" side="tl" part="nbr"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_vbser"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="tns"/></tag>
+              <tag><clip pos="1" side="tl" part="prs"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
             </lu>
           </chunk>
         </out>
