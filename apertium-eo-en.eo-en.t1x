@@ -114,6 +114,7 @@
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="gen"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lem"/>
@@ -135,6 +136,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lem"/>
