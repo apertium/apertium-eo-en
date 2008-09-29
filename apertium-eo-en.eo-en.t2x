@@ -2,6 +2,19 @@
 <interchunk>
 
   <section-def-cats>
+    <def-cat n="SN">
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.*"/>
+    </def-cat>
+
+ <def-cat n="ĉu">
+ 	<cat-item lemma="ĉu" tags="adv.itg"/>
+ </def-cat>
+
     <def-cat n="PR">
       <cat-item tags="PR"/>
     </def-cat>
@@ -48,6 +61,40 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
           </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+    <rule comment="REGLA: ĉu SN SV SN">
+      <pattern>
+        <pattern-item n="ĉu"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/> 
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+
         </out>
       </action>
     </rule>

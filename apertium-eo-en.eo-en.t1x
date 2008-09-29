@@ -25,6 +25,10 @@
      <cat-item tags="det"/>
      <cat-item tags="det.*"/>
   </def-cat>
+
+ <def-cat n="c_ĉu">
+ 	<cat-item lemma="ĉu" tags="adv.itg"/>
+ </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
@@ -107,6 +111,25 @@
 </section-def-vars>
 
 <section-rules>
+  <rule>
+     <pattern>
+       <pattern-item n="c_ĉu"/>
+     </pattern> 
+     <action>
+       <out>
+         <chunk name="ĉu" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="adv"/></tag>
+             <tag><lit-tag v="itg"/></tag>
+           </tags>
+           <lu>
+              <b />
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
   <rule>
      <pattern>
@@ -246,6 +269,9 @@
        </out>
      </action>
   </rule>
+
+
+
 
 
 
