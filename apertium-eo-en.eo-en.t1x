@@ -45,10 +45,14 @@
      <attr-item tags="adj.comp"/>
      <attr-item tags="adj.sup"/>
      <attr-item tags="adj.itg"/>
+     <attr-item tags="adj.sint"/>
+     <attr-item tags="adj.sint.comp"/>
+     <attr-item tags="adj.sint.sup"/>
   </def-attr>
 
   <def-attr n="a_vrb">
      <attr-item tags="vblex"/>
+     <attr-item tags="vbser"/>
   </def-attr>
 
   <def-attr n="a_det">
@@ -128,6 +132,28 @@
   </rule>
 
 
+  <rule>
+     <pattern>
+       <pattern-item n="c_adj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adj" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_gen"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="a_adj"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
 
   <rule>
@@ -152,32 +178,6 @@
        </out>
      </action>
   </rule>
-
-
-
-  <rule>
-     <pattern>
-       <pattern-item n="c_adj"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk name="adj" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="ADJ"/></tag>
-             <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lem"/>
-             <clip pos="1" side="tl" part="a_nom"/>
-             <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
-           </lu>
-         </chunk>
-       </out>
-     </action>
-  </rule>
-
 
 
 
@@ -216,17 +216,17 @@
        <out>
          <chunk name="verb" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="p3"/></tag>
+              <tag><lit-tag v="sp"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_prs" link-to="2"/>
+              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
             </lu>
           </chunk>
         </out>
