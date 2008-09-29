@@ -41,10 +41,8 @@
 
   <def-attr n="a_adj">
      <attr-item tags="adj"/>
-     <attr-item tags="adj.pve"/>
      <attr-item tags="adj.comp"/>
      <attr-item tags="adj.sup"/>
-     <attr-item tags="adj.itg"/>
      <attr-item tags="adj.sint"/>
      <attr-item tags="adj.sint.comp"/>
      <attr-item tags="adj.sint.sup"/>
@@ -122,9 +120,10 @@
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>             
            </lu>
          </chunk>
        </out>
@@ -146,8 +145,9 @@
              <!-- <tag><clip pos="1" side="tl" part="a_cas"/></tag> -->
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -170,9 +170,10 @@
              <!-- <tag><clip pos="1" side="tl" part="a_cas"/></tag> -->
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -192,15 +193,17 @@
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/>
            <lu>
-             <clip pos="2" side="tl" part="lem"/>
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -221,20 +224,23 @@
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>             
            </lu>
            <b pos="1"/>
            <lu>
-             <clip pos="2" side="tl" part="lem"/>
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/>
            <lu>
-             <clip pos="3" side="tl" part="lem"/>
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
