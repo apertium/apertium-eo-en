@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ unset LC_ALL
 LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
 
 cp *.mode modes/

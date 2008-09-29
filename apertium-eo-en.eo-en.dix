@@ -2450,11 +2450,10 @@
     <e><p><l>arko<s n="n"/></l><r>arch<s n="n"/></r></p></e>
     <e><p><l>armeo<s n="n"/></l><r>army<s n="n"/></r></p></e>
     <e r="RL"><p><l>armeo<s n="n"/></l><r>military<s n="n"/></r></p></e>
-    <e><p><l>armilaro<s n="n"/></l><r>armament<s n="n"/></r></p></e>
+    <e r="RL"><p><l>armilaro<s n="n"/></l><r>armament<s n="n"/></r></p></e>
     <e><p><l>armilo<s n="n"/></l><r>arm<s n="n"/></r></p></e>
 
     <e r="RL"><p><l>armilo<s n="n"/></l><r>weapon<s n="n"/></r></p></e>
-    <e r="RL"><p><l>armilo<s n="n"/><s n="pl"/></l><r>weapon<s n="n"/><s n="pl"/></r></p></e>
 
     <e r="LR"><p><l>aro<s n="n"/></l><r>group<s n="n"/></r></p></e>
     <e r="RL"><p><l>aro<s n="n"/></l><r>set<s n="n"/></r></p></e>
@@ -10300,7 +10299,7 @@
     <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
 
     <e><p><l>armilaro<s n="n"/></l><r>arm<b/>stockpile<s n="n"/></r></p></e>
-    <e><p><l>armilaro<s n="n"/></l><r>weapon<b/>stockpile<s n="n"/></r></p></e>
+    <e r="RL"><p><l>armilaro<s n="n"/></l><r>weapon<b/>stockpile<s n="n"/></r></p></e> 
     <e><p><l>provizaro<s n="n"/></l><r>stockpile<s n="n"/></r></p></e>
 
 <!-- Jacob us unsure -->
