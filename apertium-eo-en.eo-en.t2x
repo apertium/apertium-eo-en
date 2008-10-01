@@ -50,16 +50,17 @@
 
   <section-rules>
 
-    <rule comment="REGLA: NP">
+    <rule>
       <pattern>
-        <pattern-item n="NP"/>
+        <pattern-item n="SN"/>
       </pattern>
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lem"/>
+            <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
           </chunk>
         </out>
       </action>
