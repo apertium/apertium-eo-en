@@ -1992,6 +1992,18 @@
   <section id="main" type="standard">
 
     <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
+
+<!--
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="mi"><p><l>mi</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+    <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+-->
+
     <e lm="probj"><i/><par n="probj__prn"/></e>
 
 
@@ -2019,6 +2031,7 @@
     <e lm="pli"><i>pli</i><par n="vere__preadv"/></e>
     <e lm="plej"><i>plej</i><par n="vere__preadv"/></e>
     <e lm="vere"><i>vere</i><par n="vere__preadv"/></e>
+    <e lm="jen"><i>jen</i><par n="komence__adv"/></e>
     <e lm="malpli"><i>malpli</i><par n="vere__preadv"/></e>
     <e lm="iom"><i>iom</i><par n="vere__preadv"/></e>
     <e lm="tre"><i>multe</i><par n="vere__preadv"/></e>
@@ -2094,16 +2107,6 @@
     <e lm="ĉirkaŭ"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
 
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ĉiu__prn"/></e>
-
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e lm="mi"><p><l>mi</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-    <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-
 
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
@@ -2254,6 +2257,7 @@
 
     <e lm="super"><i>super</i><par n="at__pr"/></e>
     <e lm="sur"><i>sur</i><par n="at__pr"/></e>
+    <e lm="pri"><i>pri</i><par n="at__pr"/></e>
     <e lm="ŝajne"><par n="ŝ"/><i>ajne</i><par n="after__cnjadv"/></e>
     <e lm="tamen"><i>tamen</i><par n="after__cnjadv"/></e>
 
@@ -5410,6 +5414,8 @@
     <e lm="kunteksto"><i>kunteksto</i><par n="nom__n"/></e>
     <e lm="kunveni"><i>kunven</i><par n="verb__vblex"/></e>
     <e lm="kunveno"><i>kunveno</i><par n="nom__n"/></e>
+    <e lm="renkonti"><i>renkont</i><par n="verb__vblex"/></e>
+    <e lm="renkonto"><i>renkonto</i><par n="nom__n"/></e>
     <e lm="kunvoki"><i>kunvok</i><par n="verb__vblex"/></e>
     <e lm="kupono"><i>kupono</i><par n="nom__n"/></e>
     <e lm="kupro"><i>kupro</i><par n="nom__n"/></e>

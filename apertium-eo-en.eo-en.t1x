@@ -15,6 +15,10 @@
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
+  <def-cat n="c_adv">
+     <cat-item tags="adv"/>
+     <cat-item tags="preadv"/>
+  </def-cat>
   <def-cat n="c_prn">
      <cat-item tags="prn.*"/>
   </def-cat>
@@ -176,6 +180,7 @@
        </out>
      </action>
   </rule>
+
 
 
 
