@@ -1330,7 +1330,7 @@
                     <clip pos="1" side="sl" part="tns"/>
                     <lit-tag v="past"/>
                   </equal>
-		</and>
+					</and>
                 <equal caseless="yes">
                   <clip pos="1" side="sl" part="lem"/>
                   <lit v="might"/>
@@ -1349,7 +1349,7 @@
                   <tag><clip pos="3" side="tl" part="prs"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                 </tags>
-		<lu>
+				<lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
@@ -1368,7 +1368,6 @@
             </out>
           </when>
 
-
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -1379,11 +1378,11 @@
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="whole"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1398,6 +1397,8 @@
         </choose>
       </action>
     </rule>
+
+
 
     <rule comment="REGLA: VAUX ADV VBSER">
       <pattern>
