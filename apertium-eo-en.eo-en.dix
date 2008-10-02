@@ -3334,7 +3334,6 @@
     <e r="RL"><p><l>ferio<s n="n"/></l><r>vacation<s n="n"/></r></p></e>
 
     <e><p><l>fermentado<s n="n"/></l><r>fermentation<s n="n"/></r></p></e>
-    <e><p><l>fermo<s n="n"/></l><r>closing<s n="n"/></r></p></e>
     <e><p><l>fero<s n="n"/></l><r>iron<s n="n"/></r></p></e>
     <e r="RL"><p><l>fervojo<s n="n"/></l><r>railroad<s n="n"/></r></p></e>
     <e><p><l>fervojo<s n="n"/></l><r>railway<s n="n"/></r></p></e>
@@ -4570,7 +4569,6 @@
     <e><p><l>malestimo<s n="n"/></l><r>contempt<s n="n"/></r></p></e>
     <e><p><l>malfacila<b/>horo<s n="n"/></l><r>hardship<s n="n"/></r></p></e>
     <e><p><l>malfeliĉo<s n="n"/></l><r>misfortune<s n="n"/></r></p></e>
-    <e><p><l>malfermo<s n="n"/></l><r>opening<s n="n"/></r></p></e>
     <e><p><l>malfideliĝo<s n="n"/></l><r>desertion<s n="n"/></r></p></e>
     <e><p><l>malfido<s n="n"/></l><r>distrust<s n="n"/></r></p></e>
     <e><p><l>maljusteco<s n="n"/></l><r>injustice<s n="n"/></r></p></e>
@@ -8303,10 +8301,7 @@
     <e><p><l>favori<s n="vblex"/></l><r>favour<s n="vblex"/></r></p></e>
     <e><p><l>fendi<s n="vblex"/></l><r>crack<s n="vblex"/></r></p></e>
     <e><p><l>fermenti<s n="vblex"/></l><r>ferment<s n="vblex"/></r></p></e>
-    <e><p><l>fermi<s n="vblex"/></l><r>close<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>fermi<s n="vblex"/></l><r>lock<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<g><b/>down</g><s n="vblex"/><s n="sep"/></r></p></e>
+
     <e><p><l>fiki<s n="vblex"/></l><r>fuck<s n="vblex"/></r></p></e>
     <e r="RL" c="fijar la hora"><p><l>fiksi<s n="vblex"/></l><r>appoint<s n="vblex"/></r></p></e>
     <e><p><l>fiksi<s n="vblex"/></l><r>fix<s n="vblex"/></r></p></e>
@@ -8695,7 +8690,6 @@
     <e><p><l>maldungi<s n="vblex"/></l><r>dismiss<s n="vblex"/></r></p></e>
     <e><p><l>malestimi<s n="vblex"/></l><r>despise<s n="vblex"/></r></p></e>
     <e><p><l>malfaciligi<s n="vblex"/></l><r>hamper<s n="vblex"/></r></p></e>
-    <e><p><l>malfermi<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>malfideliĝi<s n="vblex"/></l><r>desert<s n="vblex"/></r></p></e>
     <e><p><l>malfiksi<s n="vblex"/></l><r>slacken<s n="vblex"/></r></p></e>
     <e><p><l>malfiksi<s n="vblex"/></l><r>drop<s n="vblex"/></r></p></e>
@@ -10150,7 +10144,6 @@
 <e><p><l>indiĝena<s n="adj"/></l><r>native<s n="adj"/></r></p></e>
 <e><p><l>norda<s n="adj"/></l><r>north<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tutnova<s n="adj"/></l><r>novel<s n="adj"/></r></p></e>
-<e><p><l>malfermita<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
 <e><p><l>oranĝa<s n="adj"/></l><r>orange<s n="adj"/></r></p></e>
 <e><p><l>orfa<s n="adj"/></l><r>orphan<s n="adj"/></r></p></e>
 <e><p><l>ovala<s n="adj"/></l><r>oval<s n="adj"/></r></p></e>
@@ -10296,6 +10289,18 @@
 <e><p><l>simila<s n="adj"/></l><r>similar<s n="adj"/></r></p></e>
 <e><p><l>lerta<s n="adj"/></l><r>skillful<s n="adj"/></r></p></e>
 
+
+
+<e><p><l>fermo<s n="n"/></l><r>closing<s n="n"/></r></p></e>
+<e><p><l>malfermo<s n="n"/></l><r>opening<s n="n"/></r></p></e>
+
+<e><p><l>fermi<s n="vblex"/></l><r>close<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>fermi<s n="vblex"/></l><r>lock<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<g><b/>down</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e><p><l>malfermi<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e>
+<e><p><l>malferma<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
+<e><p><l>ferma<s n="adj"/></l><r>closed<s n="adj"/></r></p></e>
 
 
 <!-- multi-words -->

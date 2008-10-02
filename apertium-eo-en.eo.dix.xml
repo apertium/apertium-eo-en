@@ -4271,8 +4271,15 @@
     <e lm="ferio"><i>ferio</i><par n="nom__n"/></e>
     <e lm="fermentado"><i>fermentado</i><par n="nom__n"/></e>
     <e lm="fermenti"><i>ferment</i><par n="verb__vblex"/></e>
+
     <e lm="fermi"><i>ferm</i><par n="verb__vblex"/></e>
     <e lm="fermo"><i>fermo</i><par n="nom__n"/></e>
+    <e lm="ferma"><i>ferm</i><par n="adj__adj"/></e>
+    <e lm="malfermi"><i>malferm</i><par n="verb__vblex"/></e>
+    <e lm="malfermo"><i>malfermo</i><par n="nom__n"/></e>
+    <e lm="malferma"><i>malferm</i><par n="adj__adj"/></e>
+<!--    <e lm="malfermite"><i>malfermite</i><par n="komence__adv"/></e> -->
+
     <e lm="feroca"><i>feroc</i><par n="adj__adj"/></e>
     <e lm="fero"><i>fero</i><par n="nom__n"/></e>
     <e lm="fervojo"><i>fervojo</i><par n="nom__n"/></e>
@@ -5682,9 +5689,6 @@
     <e lm="malfavora"><i>malfavor</i><par n="adj__adj"/></e>
     <e lm="malfeliĉa"><i>malfeli</i><par n="ĉ"/><i></i><par n="adj__adj"/></e>
     <e lm="malfeliĉo"><i>malfeli</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
-    <e lm="malfermi"><i>malferm</i><par n="verb__vblex"/></e>
-    <e lm="malfermite"><i>malfermite</i><par n="komence__adv"/></e>
-    <e lm="malfermo"><i>malfermo</i><par n="nom__n"/></e>
     <e lm="malfideliĝi"><i>malfideli</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="malfideliĝo"><i>malfideli</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
     <e lm="malfido"><i>malfido</i><par n="nom__n"/></e>

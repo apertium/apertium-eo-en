@@ -1,17 +1,29 @@
 #!/bin/bash
 
 TESTNAME=Regression_tests
-TEMPDIR=`mktemp -d`;
+
+NODOWNLOAD=$1
+TEMPDIR=/tmp/testcache # `mktemp -d`;
 DATADIR=`pwd`;
 
 cp *.mode modes/
 
-echo "Downloading test set $TESTNAME"
+#[ $NODOWNLOAD =="" ] || echo "Downloading test set $TESTNAME"
+#[ $NODOWNLOAD =="" ] && echo "NOT Downloading test set $TESTNAME"
 
 unset LC_ALL
+mkdir -p $TEMPDIR
 cd $TEMPDIR;
 rm -f test_*
-wget  -N http://wiki.apertium.org/wiki/English_and_Esperanto/$TESTNAME 2>&1 | grep "Remote file is newer" > /dev/null || echo $TESTNAME not changed on webserver
+
+
+if [ "$NODOWNLOAD" == "" ]; then
+	wget  -N http://wiki.apertium.org/wiki/English_and_Esperanto/$TESTNAME 2>&1 | grep "Remote file is newer" > /dev/null || echo $TESTNAME not changed on webserver
+else
+	echo "NOT Downloading test set $TESTNAME"
+fi
+
+
 
 #echo "Preparing (shouldn't be necessary if $TESTNAME not changed on webserver)"
 
@@ -57,4 +69,4 @@ for mode in $MODES; do
 	cat test_TL_$mode | nl -s : | diff -Naurwi - test_TR_$mode
 done
 
-rm -rf $TEMPDIR
+
