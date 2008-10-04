@@ -827,7 +827,7 @@
     </rule>
 
     <!-- Sintagmas adjetivos -->
-    <rule>
+    <rule comment="REGLA: ADJ">
       <pattern>
         <pattern-item n="adj"/>
       </pattern>

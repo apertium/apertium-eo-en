@@ -6,6 +6,9 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SVall">
+      <cat-item tags="SV.*"/>
+    </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item lemma="verb" tags="SV.*"/>
@@ -65,6 +68,46 @@
         </out>
       </action>
     </rule>
+
+    <!-- For questions "is the cat big?" -->
+    <rule comment="REGLA: SV SN SN">
+      <pattern>
+        <pattern-item n="SVall"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+	  <chunk>
+            <lit v="ĉu"/>
+	    <lit-tag v="adv.itg"/>
+	    <lit v="{^ĉu"/>
+	    <lit-tag v="adv.itg"/>
+	    <lit v="$}"/>
+	  </chunk>
+	  <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
     <rule comment="REGLA: SN SV SN">
       <pattern>
