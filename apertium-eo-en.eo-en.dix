@@ -326,8 +326,10 @@
 
 
     <e><p><l>tio<s n="prn"/><s n="tn"/></l><r>that<s n="prn"/><s n="tn"/></r></p></e>
-    <e><p><l>tiu<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>tiu<s n="prn"/><s n="tn"/></l><r>that<s n="prn"/><s n="tn"/></r></p></e>
+    <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
+    <e><p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
+    <e><p><l>ĉi<b/>tiu<s n="det"/><s n="dem"/></l><r>this<s n="det"/><s n="dem"/></r></p></e>
 
       <!-- Checked!! -->
 
@@ -571,7 +573,6 @@
     <e r="RL"><p><l>ambaŭ<s n="det"/><s n="ind"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
     <e r="LR"><p><l>ambaŭ<s n="det"/></l><r>both<s n="det"/></r></p></e>
     <e r="LR"><p><l>certa<s n="det"/><s n="ind"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
-    <e><p><l>ĉi<b/>tiu<s n="det"/><s n="dem"/></l><r>this<s n="det"/><s n="dem"/></r></p></e>
 
     <!-- té polisèmia amb 'every', però no he posat marca de polisèmia -->
 

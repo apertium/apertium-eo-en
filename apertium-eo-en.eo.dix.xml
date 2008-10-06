@@ -2098,11 +2098,7 @@
     <e lm="por"><i>ciufoje<b/>kiam</i><par n="after__cnjadv"/></e>
     <e lm="ĉar"><par n="ĉ"/><i>ar</i><par n="after__cnjadv"/></e>
     <e lm="ĉar"><par n="ĉ"/><i>ar</i><par n="at__pr"/></e>
-
-    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
-    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
+	
 
     <e lm="ĉirkaŭ"><par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
 
@@ -2110,6 +2106,34 @@
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ĉiu__prn"/></e>
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
     <e lm="ĉiu"><par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
+
+
+    <e lm="tiu"><i>tiu</i><par n="tio__prn"/></e>
+    <e lm="tiu"><i>tiu</i><par n="dem__det"/></e>
+<!-- Hm. doesent work:
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="tio__prn"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="dem__det"/></r></p></e>
+-->
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tioj</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tiojn</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <e lm="tio ĉi"><p><l>tio<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="tio ĉi"><p><l>tion<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="tio ĉi"><p><l>tioj<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="tio ĉi"><p><l>tiojn<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
+
+    <e lm="tio"><i>tio</i><par n="tio__prn"/></e>
+    <e lm="tio"><i>tio</i><par n="nom__n"/></e>
+
+
 
     <e lm="tiom da da"><i>tiom<b/>da<b/>da</i><par n="quant__det"/></e>
     <e lm="ĉiufoje pli"><par n="ĉ"/><i>iufoje<b/>pli</i><par n="after__cnjadv"/></e>
@@ -2268,10 +2292,6 @@
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="at__pr"/></e>
     <e lm="tiel kiel"><i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>
 
-    <e lm="tio"><i>tio</i><par n="tio__prn"/></e>
-    <e lm="tiu"><i>tiu</i><par n="tio__prn"/></e>
-
-    <e lm="tiu"><i>tiu</i><par n="dem__det"/></e>
 
     <e lm="tra"><i>tra</i><par n="at__pr"/></e>
     <e lm="tuj kiam"><i>tuj<b/>kiam</i><par n="after__cnjadv"/></e>
@@ -7757,7 +7777,6 @@
     <e lm="tinkturi"><i>tinktur</i><par n="verb__vblex"/></e>
     <e lm="tinkturo"><i>tinkturo</i><par n="nom__n"/></e>
     <e lm="tinuso"><i>tinuso</i><par n="nom__n"/></e>
-    <e lm="tio"><i>tio</i><par n="nom__n"/></e>
     <e lm="tipa"><i>tip</i><par n="adj__adj"/></e>
     <e lm="tipo"><i>tipo</i><par n="nom__n"/></e>
     <e lm="tirado"><i>tirado</i><par n="nom__n"/></e>
