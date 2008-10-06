@@ -81,7 +81,10 @@
 	  <chunk>
             <lit v="ĉu"/>
 	    <lit-tag v="adv.itg"/>
-	    <lit v="{^ĉu"/>
+	    <lit v="{^"/>
+	    <get-case-from pos="1">
+              <lit v="ĉu"/>
+	    </get-case-from>
 	    <lit-tag v="adv.itg"/>
 	    <lit v="$}"/>
 	  </chunk>
@@ -95,7 +98,9 @@
           <chunk>
             <clip pos="1" part="lem"/>
             <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
+	    <get-case-from pos="2">
+              <clip pos="1" part="chcontent"/>
+	    </get-case-from>
           </chunk>
 	  <b pos="2"/>
           <chunk>
