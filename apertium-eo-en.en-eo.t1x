@@ -5,6 +5,7 @@
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/>
+      <cat-item tags="np.top.*"/>
     </def-cat>
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
