@@ -63,6 +63,9 @@
     <def-cat n="cnjcoo">
       <cat-item tags="cnjcoo"/>
     </def-cat>
+    <def-cat n="cnjadv">
+      <cat-item tags="cnjadv"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -2970,6 +2973,24 @@
           <chunk name="cnjcoo" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="CC"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="cnjadv"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="cnjadv" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="CA"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
