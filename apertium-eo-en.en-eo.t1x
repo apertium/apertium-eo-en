@@ -4,7 +4,7 @@
   <section-def-cats>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
-      <cat-item tags="np.*"/>
+      <cat-item tags="np.al.*"/>
     </def-cat>
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
@@ -525,12 +525,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -550,12 +552,14 @@
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen"/>
               <clip pos="1" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -577,19 +581,22 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="gen"/>
+<!--              <clip pos="2" side="tl" part="gen"/> -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -611,12 +618,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -624,6 +633,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -644,12 +654,14 @@
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen"/>
               <clip pos="1" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="3"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -657,6 +669,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -680,12 +693,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -693,6 +708,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -700,6 +716,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -707,6 +724,7 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -729,12 +747,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -742,6 +762,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -749,6 +770,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -771,12 +793,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -784,6 +808,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -791,6 +816,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -814,12 +840,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -831,6 +859,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -838,6 +867,7 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -861,12 +891,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -874,6 +906,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -885,6 +918,7 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -910,12 +944,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	      <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -927,6 +963,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="3" side="tl" part="nbr" link-to="3"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -934,6 +971,7 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
             <b pos="4"/>
             <lu>
@@ -945,6 +983,7 @@
               <clip pos="6" side="tl" part="a_nom"/>
               <clip pos="6" side="tl" part="gen"/>
               <clip pos="6" side="tl" part="nbr" link-to="2"/>
+	      <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
