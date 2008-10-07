@@ -44,6 +44,15 @@
     <def-cat n="to">
       <cat-item lemma="to" tags="pr"/>
     </def-cat>
+    <def-cat n="ant">
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
+    <def-cat n="cog">
+      <cat-item tags="np.cog.*"/>
+    </def-cat>
+    <def-cat n="guio">
+      <cat-item tags="guio"/>
+    </def-cat>
     <def-cat n="pr">
       <cat-item tags="pr"/>
     </def-cat>
@@ -133,6 +142,7 @@
   </section-def-attrs>
 
   <section-def-vars>
+    <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
     <def-var n="adjectiu1"/>
@@ -411,6 +421,448 @@
         </choose>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: ANT">
+      <pattern>
+        <pattern-item n="ant"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: COG">
+      <pattern>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen"/>
+              <clip pos="1" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/>
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT ANT">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="ant"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_ant" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: COG COG">
+      <pattern>
+        <pattern-item n="cog"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_ant" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen"/>
+              <clip pos="1" side="tl" part="nbr" link-to="2"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/>
+              <clip pos="2" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT ANT COG COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_ant_cog_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="gen"/>
+              <clip pos="3" side="tl" part="nbr" link-to="2"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="a_nom"/>
+              <clip pos="4" side="tl" part="gen"/>
+              <clip pos="4" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT COG COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_cog_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/>
+              <clip pos="2" side="tl" part="nbr" link-to="2"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="gen"/>
+              <clip pos="3" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT ANT COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_ant_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="gen"/>
+              <clip pos="3" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT GUIO ANT COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="guio"/>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant-ant_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="gen"/>
+              <clip pos="3" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="a_nom"/>
+              <clip pos="4" side="tl" part="gen"/>
+              <clip pos="4" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT COG GUIO COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+        <pattern-item n="guio"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_cog-cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="gen"/>
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="a_nom"/>
+              <clip pos="4" side="tl" part="gen"/>
+              <clip pos="4" side="tl" part="nbr" link-to="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ANT GUIO ANT COG GUIO COG">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="guio"/>
+        <pattern-item n="ant"/>
+        <pattern-item n="cog"/>
+        <pattern-item n="guio"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant-ant_cog-cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="gen" link-to="2"/>
+              <clip pos="1" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="3" side="tl" part="nbr" link-to="3"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="a_nom"/>
+              <clip pos="4" side="tl" part="gen"/>
+              <clip pos="4" side="tl" part="nbr" link-to="2"/>
+            </lu>
+            <b pos="4"/>
+            <lu>
+              <clip pos="5" side="tl" part="whole"/>
+            </lu>
+            <b pos="5"/>
+            <lu>
+              <clip pos="6" side="tl" part="lem"/>
+              <clip pos="6" side="tl" part="a_nom"/>
+              <clip pos="6" side="tl" part="gen"/>
+              <clip pos="6" side="tl" part="nbr" link-to="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: Prn">
       <pattern>
