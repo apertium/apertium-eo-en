@@ -586,6 +586,8 @@
     <e r="RL"><p><l>kelka<s n="det"/><s n="qnt"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/></r></p></e>
 
+    <e r="RL"><p><l>kelka<s n="prn"/><s n="tn"/></l><r>few<s n="prn"/><s n="tn"/></r></p></e>
+
     <e><p><l>la<s n="det"/><s n="def"/></l><r>the<s n="det"/><s n="def"/></r></p></e>
 
     <e><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
@@ -619,6 +621,8 @@
     <e><p><l>pli<b/>da<s n="det"/><s n="qnt"/></l><r>more<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>pli<s n="adv"/></l><r>more<s n="adv"/></r></p></e>
     <e><p><l>pli<s n="preadv"/></l><r>more<s n="preadv"/></r></p></e>
+    
+    <e c="how late? how great, how funny"><p><l>kiom<s n="preadv"/></l><r>how<s n="preadv"/></r></p></e>
 
 
 
@@ -4489,7 +4493,7 @@
     <e><p><l>manskribo<s n="n"/></l><r>handwriting<s n="n"/></r></p></e>
     <e><p><l>litero<s n="n"/></l><r>letter<s n="n"/></r></p></e>
     <e><p><l>liriko<s n="n"/><s n="sg"/></l><r>lyric<s n="n"/><s n="sg"/></r></p></e>
-    <e><p><l>kantoteksto<s n="n"/></l><r>lyric<s n="n"/><s n="pl"/></r></p></e>
+    <e><p><l>kantoteksto<s n="n"/><s n="sg"/></l><r>lyric<s n="n"/><s n="pl"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>bed<s n="n"/></r></p></e>
     <e><p><l>lito<s n="n"/></l><r>mulch<s n="n"/></r></p></e>
     <e r="RL"><p><l>litro<s n="n"/></l><r>liter<s n="n"/></r></p></e>
@@ -7095,7 +7099,7 @@
     <e><p><l>glitiga<s n="adj"/></l><r>slippery<s n="adj"/></r></p></e>
     <e r="LR"><p><l>glora<s n="adj"/></l><r>glorious<s n="adj"/></r></p></e>
     <e><p><l>gotika<s n="adj"/></l><r>Gothic<s n="adj"/></r></p></e>
-    <e><p><l>gracia<s n="adj"/></l><r>funny<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>amuza<s n="adj"/></l><r>funny<s n="adj"/><s n="sint"/></r></p></e>
 
     <e><p><l>granda<s n="adj"/><s n="mf"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>granda<s n="adj"/></l><r>bulky<s n="adj"/><s n="sint"/></r></p></e>
@@ -9448,13 +9452,13 @@
     <e r="RL"><p><l>ĉefe<s n="adv"/></l><r>above<b/>all<s n="adv"/></r></p></e>
     <e><p><l>ĉefe<s n="adv"/></l><r>especially<s n="adv"/></r></p></e>
 
-    <e r="LR"><p><l>ĉi<b/>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
+    <e><p><l>ĉi<b/>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
     <e r="LR"><p><l>jen<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
     <e c="añadir también 'regardless of' como 'a pesar de'"><p><l>ĉiakoste<s n="adv"/></l><r>regardless<s n="adv"/></r></p></e>
     <e><p><l>ĉiam<s n="adv"/></l><r>always<s n="adv"/></r></p></e>
     <e><p><l>ĉiaokaze<s n="adv"/></l><r>just<b/>in<b/>case<s n="adv"/></r></p></e>
     <e><p><l>ĉiufoje<b/>pli<s n="adv"/></l><r>increasingly<s n="adv"/></r></p></e>
-    <e><p><l>ĉiujara<s n="adv"/></l><r>annually<s n="adv"/></r></p></e>
+    <e><p><l>ĉiujare<s n="adv"/></l><r>annually<s n="adv"/></r></p></e>
     <e><p><l>ĉiusemajne<s n="adv"/></l><r>weekly<s n="adv"/></r></p></e>
     <e><p><l>ĉiutage<s n="adv"/></l><r>daily<s n="adv"/></r></p></e>
     <e r="RL"><p><l>ĉiutage<s n="adv"/></l><r>on<b/>a<b/>day-to-day<b/>basis<s n="adv"/></r></p></e>
@@ -10097,7 +10101,7 @@
  <e><p><l>animala<s n="adj"/></l><r>animal<s n="adj"/></r></p></e>
 
 
-<e><p><l>sola<s n="adj"/></l><r>alone<s n="adj"/></r></p></e>
+<e><p><l>sole<s n="adv"/></l><r>alone<s n="adv"/></r></p></e>
 <e><p><l>komerca<s n="adj"/></l><r>business<s n="adj"/></r></p></e>
 <e><p><l>brava<s n="adj"/></l><r>capital<s n="adj"/></r></p></e>
 <e><p><l>ĉefa<s n="adj"/></l><r>cardinal<s n="adj"/></r></p></e>

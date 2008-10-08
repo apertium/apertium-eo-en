@@ -1624,6 +1624,8 @@
 
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kelka"><p><l>kelka</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kelka"><p><l>kelka</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 
     <e lm="ambaŭ"><i>amba</i><par n="ŭ"/><i></i><par n="ind__det"/></e>
 
@@ -1723,6 +1725,8 @@
     <e lm="kiel"><i>kiel</i><par n="after__cnjadv"/></e>
     <e lm="kiel"><i>kiel</i><par n="and__cnjcoo"/></e>
     <e lm="kiel"><i>kiel</i><par n="at__pr"/></e>
+
+    <e lm="kiom"><i>kiom</i><par n="vere__preadv"/></e>
 
     <e lm="post kiam"><i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
 
@@ -3697,6 +3701,7 @@
     <e lm="eskapo"><i>eskapo</i><par n="nom__n"/></e>
     <e lm="esoterismo"><i>esoterismo</i><par n="nom__n"/></e>
     <e lm="espero"><i>espero</i><par n="nom__n"/></e>
+    <e lm="esperi"><i>esper</i><par n="verb__vblex"/></e>
     <e lm="esplori"><i>esplor</i><par n="verb__vblex"/></e>
     <e lm="esploro"><i>esploro</i><par n="nom__n"/></e>
     <e lm="esprimi"><i>esprim</i><par n="verb__vblex"/></e>
@@ -4540,6 +4545,7 @@
     <e lm="kanono"><i>kanono</i><par n="nom__n"/></e>
     <e lm="kanti"><i>kant</i><par n="verb__vblex"/></e>
     <e lm="kanto"><i>kanto</i><par n="nom__n"/></e>
+    <e lm="kantoteksto"><i>kantoteksto</i><par n="nom__n"/></e>    
     <e lm="kaoso"><i>kaoso</i><par n="nom__n"/></e>
     <e lm="kapabla"><i>kapabl</i><par n="adj__adj"/></e>
     <e lm="kapableco"><i>kapableco</i><par n="nom__n"/></e>
@@ -5130,6 +5136,7 @@
     <e lm="lino"><i>lino</i><par n="nom__n"/></e>
     <e lm="lipo"><i>lipo</i><par n="nom__n"/></e>
     <e lm="lirika"><i>lirik</i><par n="adj__adj"/></e>
+    <e lm="liriko"><i>liriko</i><par n="nom__n"/></e>
     <e lm="liro"><i>liro</i><par n="nom__n"/></e>
     <e lm="listo"><i>listo</i><par n="nom__n"/></e>
     <e lm="literaturo"><i>literaturo</i><par n="nom__n"/></e>
@@ -5368,6 +5375,7 @@
     <e lm="manko"><i>manko</i><par n="nom__n"/></e>
     <e lm="manlibro"><i>manlibro</i><par n="nom__n"/></e>
     <e lm="mano"><i>mano</i><par n="nom__n"/></e>
+    <e lm="manskribo"><i>manskribo</i><par n="nom__n"/></e>
     <e lm="manovri"><i>manovr</i><par n="verb__vblex"/></e>
     <e lm="manovro"><i>manovro</i><par n="nom__n"/></e>
     <e lm="manpilkado"><i>manpilkado</i><par n="nom__n"/></e>
