@@ -435,6 +435,8 @@
         <e><p><l>n</l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>j</l><r><s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
         <e><p><l>jn</l><r><s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+        <e r="RL"><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+        <e r="RL"><p><l>j</l><r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
     </pardef>
 
     <pardef n="tio__prn">
@@ -689,8 +691,9 @@
         <r><s n="det"/><s n="pos"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="dem__det">
     <e r="LR">
       <p>
@@ -726,8 +729,9 @@
         <r><s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+    
+    
     <pardef n="ind__det">
     <e r="LR">
       <p>
@@ -1584,6 +1588,7 @@
     </e>
     </pardef>
 
+
     <pardef n="probj__prn">
     <e>
       <p>
@@ -1668,6 +1673,7 @@
   <section id="main" type="standard">
 
     <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
+    <e lm="probj"><i/><par n="probj__prn"/></e>
 
 <!--
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -1680,7 +1686,6 @@
     <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 -->
 
-    <e lm="probj"><i/><par n="probj__prn"/></e>
 
 
 
@@ -3321,7 +3326,7 @@
     <e lm="citi"><i>cit</i><par n="verb__vblex"/></e>
     <e lm="citrono"><i>citrono</i><par n="nom__n"/></e>
     <e lm="ĉiufoje pli"><par n="ĉ"/><i>iufoje<b/>pli</i><par n="komence__adv"/></e>
-    <e lm="ĉiujara"><par n="ĉ"/><i>iujara</i><par n="komence__adv"/></e>
+    <e lm="ĉiujare"><par n="ĉ"/><i>iujare</i><par n="komence__adv"/></e>
     <e lm="ĉiujara"><par n="ĉ"/><i>iujar</i><par n="adj__adj"/></e>
     <e lm="ĉiusemajne"><par n="ĉ"/><i>iusemajne</i><par n="komence__adv"/></e>
     <e lm="ĉiutaga"><par n="ĉ"/><i>iutag</i><par n="adj__adj"/></e>
@@ -4042,9 +4047,7 @@
     <e lm="flughaveno"><i>flughaveno</i><par n="nom__n"/></e>
     <e lm="flugi"><i>flug</i><par n="verb__vblex"/></e>
     <e lm="flugo"><i>flugo</i><par n="nom__n"/></e>
-    <e lm="flugo"><i>flugo</i><par n="nom__n"/></e>
     <e lm="flui"><i>flu</i><par n="verb__vblex"/></e>
-    <e lm="fluo"><i>fluo</i><par n="nom__n"/></e>
     <e lm="fluo"><i>fluo</i><par n="nom__n"/></e>
     <e lm="fluoreska"><i>fluoresk</i><par n="adj__adj"/></e>
     <e lm="flustri"><i>flustr</i><par n="verb__vblex"/></e>
@@ -8111,73 +8114,48 @@
 
   </section>
 
+
   <section id="final" type="inconditional">
 
-<e i="">
-      <re>[.\?;:!]</re>
-      <p>
-        <l></l> 
-        <r><s n="sent"/></r> 
-      </p>
-</e>
+	<e><re>[.\?;:!]</re><p>
+		<l></l>
+		<r><s n="sent"/></r>
+	</p></e>
 
-<e i="">
-      <re>[0-9]+([.,][0-9]+)?</re>
-      <p>
-        <l></l> 
-        <r><s n="num"/></r> 
-      </p>
+	<e><re>[0-9]+([.,][0-9]+)?</re><p>
+		<l></l>
+		<r><s n="num"/></r>
+	</p></e>
 
-</e>
+	<e><p>
+		<l>,</l>
+		<r>,<s n="cm"/></r>
+	</p></e>
 
-<e i="">
-  <p>
-	<l>,</l> 
-	<r>,<s n="cm"/></r> 
-  </p>
-</e>
+    <e><p>
+    	<l>'</l>
+    	<r>'<s n="apos"/></r>
+    </p></e>
 
-    <e>
-      <p>
-        <l>'</l> 
-        <r>'<s n="apos"/></r> 
-      </p>
-    </e>
+    <e><re>[\(\[]</re><p>
+    	<l></l>
+    	<r><s n="lpar"/></r>
+    </p></e>
 
+    <e><re>[\)\]]</re><p>
+    	<l></l>
+    	<r><s n="rpar"/></r>
+    </p></e>
 
+    <e><re>[¿¡]</re><p>
+    	<l></l>
+    	<r><s n="lquest"/></r>
+    </p></e>
 
-    <e>
-      <re>[\(\[]</re>
-      <p>
-        <l></l> 
-        <r><s n="lpar"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <re>[\)\]]</re>
-      <p>
-        <l></l> 
-        <r><s n="rpar"/></r> 
-      </p>
-    </e>
-
-
-    <e>
-      <re>[¿¡]</re>
-      <p>
-        <l></l> 
-        <r><s n="lquest"/></r> 
-      </p>
-    </e>
-
-
-<e i="">
-      <p>
+	<e><p>
         <l>-</l> 
         <r>-<s n="guio"/></r> 
-      </p>
-</e>
+    </p></e>
 
 
 
