@@ -476,10 +476,9 @@
         <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
-
-
     </pardef>
+
+
     <pardef n="nommf__n">
     <e>
       <p>
@@ -1357,6 +1356,7 @@
       </p>
     </e>
     </pardef>
+
     
     <pardef n="two__num">
     <e>
@@ -1509,173 +1509,38 @@
     
 
 
-
-    <pardef n="prsubj__prn">
-    <e>
-      <p>
-        <l>mi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>vi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>vin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="mf"/><s n="sp"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-
-    <e c="para las reglas de agradar del t2x, por el momento">
-      <p>
-        <l>li</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>li</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="LR">
-      <p>
-        <l>sxi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>ŝi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="LR">
-      <p>
-        <l>gxi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>ĝi</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>ni</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>ili</l> 
-        <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-    </pardef>
-
-
-    <pardef n="probj__prn">
-    <e>
-      <p>
-        <l>min</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="LR">
-      <p>
-        <l>cin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>vin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>lin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="LR">
-      <p>
-        <l>sxin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>ŝin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="LR">
-      <p>
-        <l>gxin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
-      </p>
-    </e>
-    <e>
-      <p>
-        <l>ĝin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>onin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>nin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>ilin</l> 
-        <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-
-
   </pardefs>
 
   <section id="main" type="standard">
 
-    <e lm="prsubj"><i/><par n="prsubj__prn"/></e>
-    <e lm="probj"><i/><par n="probj__prn"/></e>
+	<e><p><l>mi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+	<e><p><l>vi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+	<e><p><l>li</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+	<e><p><l>li</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+	<e><p><l>ŝi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+	<e><p><l>ĝi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+	<e><p><l>ni</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+	<e><p><l>ili</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
-<!--
+	<e r="LR"><p><l>ci</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+	<e r="LR"><p><l>sxi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+	<e r="LR"><p><l>gxi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+
+	<e><p><l>min</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="obj"/><s n="mf"/><s n="sp"/><s n="acc"/></r></p></e>
+	<e><p><l>lin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+	<e><p><l>ŝin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+	<e><p><l>ĝin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+	<e><p><l>onin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="pl"/></r></p></e>
+	<e><p><l>nin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+	<e><p><l>ilin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+
+	<e r="LR"><p><l>cin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+
+
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -1684,8 +1549,6 @@
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
     <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
--->
-
 
 
 
@@ -1707,7 +1570,6 @@
 	<e lm="ilia"><i>ili</i><par n="adj__adj"/></e>
 
 	<e lm="plia"><i>plia</i><par n="tio__prn"/></e>
-
 
     <e lm="pli"><i>pli</i><par n="vere__preadv"/></e>
     <e lm="plej"><i>plej</i><par n="vere__preadv"/></e>
@@ -1740,7 +1602,6 @@
     <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
     <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
     <e r="RL" lm="sufiĉe da"><p><l>sufiĉe<b/>da</l><r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
-
 
 
 
