@@ -445,43 +445,7 @@
     </pardef>
 
 
-    <pardef n="mine__prn">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="pos"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
 
-    <e r="RL">
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="pos"/><s n="sg"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e r="RL">
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="pos"/><s n="pl"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e r="RL">
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="pos"/><s n="sg"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    <e r="RL">
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="pos"/><s n="pl"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    </pardef>
     <pardef n="nom__n">
     <e>
       <p>
@@ -511,35 +475,7 @@
       </p>
     </e>
 
-    </pardef>
-    <pardef n="nomf__n">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="n"/><s n="sg"/><s n="nom"/></r> 
-      </p>
-    </e>
 
-    <e>
-      <p>
-        <l>j</l> 
-        <r><s n="n"/><s n="pl"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>n</l> 
-        <r><s n="n"/><s n="sg"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>jn</l> 
-        <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
-      </p>
-    </e>
 
     </pardef>
     <pardef n="nommf__n">
@@ -1337,14 +1273,6 @@
     </e>
 
     </pardef>
-    <pardef n="United_States__np">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="np"/><s n="top"/><s n="sg"/></r> 
-      </p>
-    </e>
-    </pardef>
 
     <pardef n="Mark__np">
     <e>
@@ -1416,28 +1344,6 @@
     </e>
     </pardef>
 
-    <pardef n="CX__num">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="num"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="num"/><s n="sp"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="num"/><s n="sp"/><s n="acc"/></r> 
-      </p>
-    </e>
-    </pardef>
 
     <pardef n="unu__num">
     <e>
@@ -1596,41 +1502,7 @@
     </e>
     </pardef>
     
-
-    <pardef n="million__num">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="num"/><s n="sp"/></r> 
-      </p>
-    </e>
-    </pardef>
     
-        
-    
-    <pardef n="d/o__vaux">
-    <e>
-      <p>
-        <l>o</l> 
-        <r>o<s n="vbdo"/><s n="pres"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>oes</l> 
-        <r>o<s n="vbdo"/><s n="pri"/><s n="p3"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>id</l> 
-        <r>o<s n="vbdo"/><s n="past"/></r> 
-      </p>
-    </e>
-    </pardef>
-
 
 
 
@@ -1790,98 +1662,7 @@
 
     </pardef>
 
-    <pardef n="si__prn">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
-    </pardef>
 
-    <pardef n="probj_dem__prn">
-    <e>
-        <i></i> 
-    </e>
-
-    <e>
-      <p>
-        <l><b/>me</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>you</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>him</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>her</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>it</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>us</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>them</l> 
-        <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>this</l> 
-        <r><j/>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>these</l> 
-        <r><j/>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>that</l> 
-        <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l><b/>those</l> 
-        <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r> 
-      </p>
-    </e>
-
-    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
