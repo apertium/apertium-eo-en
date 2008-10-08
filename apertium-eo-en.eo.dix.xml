@@ -103,6 +103,7 @@
     <sdef n="apos" /> 
   </sdefs>
   <pardefs>
+
     <pardef n="adiós__ij">
     <e>
       <p>
@@ -111,82 +112,6 @@
       </p>
     </e>
 
-    </pardef>
-    <pardef n="guionet">
-    <e>
-      <p>
-        <l>-</l> 
-        <r>-<s n="guio"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="coma">
-    <e>
-      <p>
-        <l>,</l> 
-        <r>,<s n="cm"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="cometa">
-    <e>
-      <p>
-        <l>'</l> 
-        <r>'<s n="apos"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="numeros">
-    <e>
-      <re>[0-9]+([.,][0-9]+)?</re>
-      <p>
-        <l></l> 
-        <r><s n="num"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="separa">
-    <e>
-      <re>[.\?;:!]</re>
-      <p>
-        <l></l> 
-        <r><s n="sent"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="separ">
-    <e>
-      <re>[¿¡]</re>
-      <p>
-        <l></l> 
-        <r><s n="lquest"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="paresq">
-    <e>
-      <re>[\(\[]</re>
-      <p>
-        <l></l> 
-        <r><s n="lpar"/></r> 
-      </p>
-    </e>
-
-    </pardef>
-    <pardef n="pardret">
-    <e>
-      <re>[\)\]]</re>
-      <p>
-        <l></l> 
-        <r><s n="rpar"/></r> 
-      </p>
-    </e>
     </pardef>
 
     <!-- handle cx, etc. -->
@@ -275,36 +200,6 @@
       </e>
     </pardef>
 
-    <pardef n="adj__adjINICIAL">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="adj"/><s n="sg"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>j</l> 
-        <r><s n="adj"/><s n="pl"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>n</l> 
-        <r><s n="adj"/><s n="sg"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l>jn</l> 
-        <r><s n="adj"/><s n="pl"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    </pardef>
 
     <pardef n="adj__adj">
     <e>
@@ -3403,7 +3298,7 @@
     <e lm="basketbalo"><i>basketbalo</i><par n="nom__n"/></e>
     <e lm="bastono"><i>bastono</i><par n="nom__n"/></e>
     <e lm="batado"><i>batado</i><par n="nom__n"/></e>
-    <e lm="batala"><i>batala</i><par n="adj__adjINICIAL"/></e>
+    <e lm="batala"><i>batal</i><par n="adj__adj"/></e>
     <e lm="batali"><i>batal</i><par n="verb__vblex"/></e>
     <e lm="bataliono"><i>bataliono</i><par n="nom__n"/></e>
     <e lm="batalo"><i>batalo</i><par n="nom__n"/></e>
@@ -8434,31 +8329,74 @@
     <e lm=""><i>multaj<b/>manoj<b/>faciligas<b/>laboron</i><par n="adiós__ij"/></e>
 
   </section>
+
   <section id="final" type="inconditional">
-                              <e i="">
-        <par n="separa"/>
-      </e>
-                              <e i="">
-        <par n="numeros"/>
-      </e>
-                              <e i="">
-        <par n="coma"/>
-      </e>
-                              <e i="">
-        <par n="cometa"/>
-      </e>
-                              <e i="">
-        <par n="paresq"/>
-      </e>
-                              <e i="">
-        <par n="pardret"/>
-      </e>
-                              <e i="">
-        <par n="separ"/>
-      </e>
-                              <e i="">
-        <par n="guionet"/>
-      </e>
+
+<e i="">
+      <re>[.\?;:!]</re>
+      <p>
+        <l></l> 
+        <r><s n="sent"/></r> 
+      </p>
+</e>
+
+<e i="">
+      <re>[0-9]+([.,][0-9]+)?</re>
+      <p>
+        <l></l> 
+        <r><s n="num"/></r> 
+      </p>
+
+</e>
+
+<e i="">
+  <p>
+	<l>,</l> 
+	<r>,<s n="cm"/></r> 
+  </p>
+</e>
+
+    <e>
+      <p>
+        <l>'</l> 
+        <r>'<s n="apos"/></r> 
+      </p>
+    </e>
+
+
+
+    <e>
+      <re>[\(\[]</re>
+      <p>
+        <l></l> 
+        <r><s n="lpar"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <re>[\)\]]</re>
+      <p>
+        <l></l> 
+        <r><s n="rpar"/></r> 
+      </p>
+    </e>
+
+
+    <e>
+      <re>[¿¡]</re>
+      <p>
+        <l></l> 
+        <r><s n="lquest"/></r> 
+      </p>
+    </e>
+
+
+<e i="">
+      <p>
+        <l>-</l> 
+        <r>-<s n="guio"/></r> 
+      </p>
+</e>
 
 
 
