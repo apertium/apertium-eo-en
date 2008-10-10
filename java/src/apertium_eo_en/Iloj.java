@@ -1,4 +1,4 @@
-package apertium;
+package apertium_eo_en;
 
 
 import java.io.*;

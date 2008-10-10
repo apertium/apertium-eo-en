@@ -1,4 +1,4 @@
-package apertium;
+package apertium_eo_en;
 
 public class Paro {
     public String orgEo;

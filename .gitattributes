@@ -26,11 +26,15 @@
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
 /eo-en.prob -text svneol=unset#unset
-java/src/apertium/GenerateNumbersForBidix.java -text
-java/src/apertium/Iloj.java -text
-java/src/apertium/LeguTradukuNet.java -text
-java/src/apertium/Paro.java -text
-java/src/apertium/leguAliajn.java -text
+java/build.xml -text
+java/src/apertium_eo_en/AldonuCxiujnVortojn.java -text
+java/src/apertium_eo_en/AldonuNeJamAldonitajnVortojn.java -text
+java/src/apertium_eo_en/GenerateNumbersForBidix.java -text
+java/src/apertium_eo_en/Iloj.java -text
+java/src/apertium_eo_en/LeguTradukuNet.java -text
+java/src/apertium_eo_en/Paro.java -text
+java/src/apertium_eo_en/malnova/FixInconsistency.java -text
+java/src/apertium_eo_en/malnova/LeguAliajn.java -text
 /modes.xml -text
 /multi-gen.sh -text
 /other-tests.sh -text

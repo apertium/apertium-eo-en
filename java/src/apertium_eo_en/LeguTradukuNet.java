@@ -1,6 +1,7 @@
-package apertium;
+package apertium_eo_en;
 
 
+import apertium_eo_en.malnova.FixInconsistency;
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -8,7 +9,7 @@ import java.util.*;
 public class LeguTradukuNet {
 
     public static void main(String[] args) throws Exception {
-        FixInconsistency.fixEoMonodix();
+        //FixInconsistency.fixEoMonodix();
 	//AldonuVortojn.main(args);
 	//leguVortliston();
     }

@@ -1,4 +1,4 @@
-package apertium;
+package apertium_eo_en.malnova;
 
 import java.util.regex.Pattern;
 import java.io.IOException;
@@ -8,9 +8,9 @@ import java.util.HashMap;
 import java.io.BufferedReader;
 import java.util.regex.Matcher;
 
-public class leguAliajn {
+public class LeguAliajn {
     public static void main(String[] args) {
-	leguAliajn legualiajn = new leguAliajn();
+	LeguAliajn legualiajn = new LeguAliajn();
     }
 
 
