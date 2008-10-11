@@ -13,18 +13,7 @@ AC_PROG_AWK
 AC_CONFIG_HEADER([config])
 
 
-AC_DEFUN(PKG_CHECK_APERTIUM, [
-          PKG_CHECK_MODULES(APERTIUM, apertium-3.0 >= 3.0.0,
-          [
-              APERTIUM_VER=30
-          ],
-          [
-              PKG_CHECK_MODULES(APERTIUM, apertium-3.1 >= 3.1.0)
-              APERTIUM_VER=31
-          ])
-  AC_SUBST(APERTIUM_VER)
-])
+PKG_CHECK_MODULES(APERTIUM, apertium-3.1 >= required_apertium_version)
 
-PKG_CHECK_APERTIUM
   
 AC_OUTPUT([Makefile])
