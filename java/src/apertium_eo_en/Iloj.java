@@ -8,6 +8,7 @@ import java.nio.charset.*;
 import java.text.*;
 import java.util.*;
 import java.net.URL;
+import java.util.regex.Pattern;
 
 
 public class Iloj {
@@ -42,8 +43,37 @@ public class Iloj {
     }
 
 
-    public static String alCxapeloj(String teksto) {
-	teksto = teksto.replaceAll("cx", "ĉ");
+
+   private static final Pattern cx = Pattern.compile("cx");
+   private static final Pattern gx = Pattern.compile("gx");
+   private static final Pattern hx = Pattern.compile("hx");
+   private static final Pattern jx = Pattern.compile("jx");
+   private static final Pattern sx = Pattern.compile("sx");
+   private static final Pattern ux = Pattern.compile("ux");
+   private static final Pattern Cx = Pattern.compile("Cx");
+   private static final Pattern Gx = Pattern.compile("Gx");
+   private static final Pattern Hx = Pattern.compile("Hx");
+   private static final Pattern Jx = Pattern.compile("Jx");
+   private static final Pattern Sx = Pattern.compile("Sx");
+   private static final Pattern Ux = Pattern.compile("Ux");
+    
+    public static final String alCxapeloj(String teksto) {
+      /**/
+      teksto = cx.matcher(teksto).replaceAll("ĉ");
+      teksto = gx.matcher(teksto).replaceAll("ĝ");
+      teksto = hx.matcher(teksto).replaceAll("ĥ");
+      teksto = jx.matcher(teksto).replaceAll("ĵ");
+      teksto = sx.matcher(teksto).replaceAll("ŝ");
+      teksto = ux.matcher(teksto).replaceAll("ŭ");
+      teksto = Cx.matcher(teksto).replaceAll("Ĉ");
+      teksto = Gx.matcher(teksto).replaceAll("Ĝ");
+      teksto = Hx.matcher(teksto).replaceAll("Ĥ");
+      teksto = Jx.matcher(teksto).replaceAll("Ĵ");
+      teksto = Sx.matcher(teksto).replaceAll("Ŝ");
+      teksto = Ux.matcher(teksto).replaceAll("Ŭ");
+      /* */
+/*
+  teksto = teksto.replaceAll("cx", "ĉ");
 	teksto = teksto.replaceAll("gx", "ĝ");
 	teksto = teksto.replaceAll("hx", "ĥ");
 	teksto = teksto.replaceAll("jx", "ĵ");
@@ -55,7 +85,8 @@ public class Iloj {
 	teksto = teksto.replaceAll("Jx", "Ĵ");
 	teksto = teksto.replaceAll("Sx", "Ŝ");
 	teksto = teksto.replaceAll("Ux", "Ŭ");
-	return teksto;
+/**/  
+  return teksto;
     }
 
 
@@ -116,7 +147,7 @@ public class Iloj {
 	    ArrayList<String> words = new ArrayList<String>();
 	    String linio;
 	    while ((linio = br.readLine()) != null) {
-		    linioj.add(linio);
+		    if (linio.length()>0) linioj.add(linio);
 	    }
 	}
 	return linioj;
@@ -124,10 +155,9 @@ public class Iloj {
 
     public static ArrayList<String> exec(String _execstr) throws IOException {
 	Process proces = Runtime.getRuntime().exec(_execstr);
-	ArrayList<String> linioj = new ArrayList<String>();
+	ArrayList<String> linioj = new ArrayList<String>(1000);
 
-	BufferedReader br = new BufferedReader(new InputStreamReader(proces.
-		getInputStream()));
+	BufferedReader br = new BufferedReader(new InputStreamReader(proces. getInputStream()));
 
 	String linio;
 	while ((linio = br.readLine()) != null) {
@@ -144,24 +174,40 @@ public class Iloj {
 
 
 
-    public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixnomo) throws IOException {
-	ArrayList<String> al = exec(dixnomo);
+    public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixkomando) throws IOException {
+	ArrayList<String> al = exec(dixkomando);
 
 	LinkedHashMap<String,ArrayList<String>>[] xxParoj = new LinkedHashMap[2];
-	xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>();
-	xxParoj[1] = new LinkedHashMap<String,ArrayList<String>>();
+	xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>(al.size());
+	xxParoj[1] = new LinkedHashMap<String,ArrayList<String>>(al.size());
 
 
 	int n = 0;
+  
 	for (String l : al) {
+	    int i0 = l.indexOf(':');
+	    int i1 = l.lastIndexOf(':');
+      String kv0 = l.substring(0,i0);
+      String kvi = l.substring(i1+1);
+      if (i0<i1) {
+        char c = l.charAt(i0+1);
+        //System.out.println("c = "+c);
+        if (c=='>') add(kv0, kvi, xxParoj[0]);
+        else add(kvi, kv0, xxParoj[1]);        
+      } else {
+        add(kv0, kvi, xxParoj[0]);
+        add(kvi, kv0, xxParoj[1]);
+      }
+      
+/*
 	    String[] kv = l.split(":");
 	    int i = kv.length-1;
 	    add(kv[0], kv[i], xxParoj[0]);
 	    add(kv[i], kv[0], xxParoj[1]);
-
+ */ 
 	    //if (n++>1000) break;
 	}
-	System.out.println("Finlegis "+dixnomo);
+	System.out.println("Finlegis "+dixkomando);
 	return xxParoj;
     }
 
@@ -185,14 +231,14 @@ public class Iloj {
     }
 
     public static void skribu(LinkedHashSet set, String fn) {
+        int n=0;
         PrintWriter out = Iloj.ekskribuHtml(fn);
         //out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         //out.println("<section id=\""+fn.replaceAll("[\\W]","_")+"\" type=\"standard\">");
 
-        int n=0;
         for (Object e : set) {
             out.println(e);
-            if (n++<100) System.out.println(fn+": "+Iloj.deCxapeloj(e));
+            if (++n<100) System.out.println(fn+": "+n+Iloj.deCxapeloj(e));
         }
         //out.println("</section>");
         out.close();

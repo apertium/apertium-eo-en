@@ -69,7 +69,7 @@ public class AldonuNeJamAldonitajnVortojn {
 	    }
 
 	    jamMontritaj.clear();
-	    ArrayList<String> eol = aperEoDix[0].get(p.root);
+	    ArrayList<String> eol = aperEoDix[0].get(p.rootEo);
 	    if (eol !=null) for (String eo : eol) {
 		String orgEo = eo;
 		//println("Eo:"+ eo);
@@ -86,7 +86,7 @@ public class AldonuNeJamAldonitajnVortojn {
 
 	    String enKey = p.orgEn+"__"+p.apertiumWordType();
 	    Paro op = enw.get(enKey);
-	    if (op == null || p.rango > op.rango) enw.put(enKey, p);
+	    if (op == null || p.frango > op.frango) enw.put(enKey, p);
 
 	    //String eoKey = p.orgEo+"__"+p.apertiumWordType();
 	    //op = eow.get(eoKey);

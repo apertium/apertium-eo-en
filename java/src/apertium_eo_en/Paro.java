@@ -1,7 +1,12 @@
 package apertium_eo_en;
 
+import java.util.regex.Pattern;
+
 public class Paro {
     public String orgEo;
+    public String rootEo;
+    public String orgEn;
+
     public boolean oneWord;
     public boolean problem;
 
@@ -11,23 +16,30 @@ public class Paro {
     public boolean verb;
     public boolean affix;
 
-    public String root;
-
     public boolean plur;
     public boolean acc;
 
     public boolean igx;
     public boolean ig;
-    public String orgEn;
-    public int rango;
     public boolean tr;
 
+    public float frango;
+    public String comment="";
+    //boolean dir_enEo = true;
+    //boolean dir_eoEn = true;
+    Paro dir_enEo = null;  // null->uzu la direkton. Paro->tiu cxu paro estu uzata antrataux
+    Paro dir_eoEn = null;
+
+    
+    
     public String toString() {
-	return orgEn + " @ " + root + " @ " + wordType() + (rango < 1 ? "" : " (" + (rango) + ")");
+	return orgEn + " @ " + rootEo + " @ " + wordType() + (frango < 1 ? "" : " (" + ((int)frango) + ")");
     }
 
+    private static final Pattern krampoj = Pattern.compile("[<>]");
     public String wordType() {
-	return _wordType().replaceAll("[<>]","");
+      return krampoj.matcher(_wordType()).replaceAll("");
+    	//return _wordType().replaceAll("[<>]","");
     }
 
     public String _wordType() {
@@ -45,13 +57,22 @@ public class Paro {
 	      ).trim();
     }
 
+    public final boolean apertiumWordTypeEquals(Paro p) {
+      return 
+          noun==p.noun &&
+          verb==p.verb &&
+          adj==p.adj &&
+          adv==p.adv &&
+          problem==p.problem;
+    }
 
+    
     public String apertiumWordType() {
 	if (problem) return "???";
 	if (noun) return "n";
+	if (verb) return "vblex";
 	if (adj) return "adj";
 	if (adv) return "adv";
-	if (verb) return "vblex";
 	return "???UNKNOWN???";
     }
 
@@ -70,10 +91,10 @@ public class Paro {
     }
 
     public String apertiumEo() {
-	if (noun) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"nom__n\"/></e>";
-	if (adj) return "<e lm=\""+ root +"\"><i>"+ root.substring(0,root.length()-1) +"</i><par n=\"adj__adj\"/></e>";
-	if (adv) return "<e lm=\""+ root +"\"><i>"+ root +"</i><par n=\"komence__adv\"/></e>";
-	if (verb) return "<e lm=\""+ root +"\"><i>"+ root.substring(0,root.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
+	if (noun) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
+	if (adj) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
+	if (adv) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
+	if (verb) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
 	return "";
     }
 
@@ -110,8 +131,23 @@ if it is, then add <s n="sint"/> if not then don't
 */
     public String apertiumEoEn() {
 	String x =  apertiumWordType();
-	//return "<e c=\"r"+rango+"\"><p><l>"+root+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
-	return "<e><p><l>"+root+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
+  String c = "";
+  String a = "";
+  c += " c=\"r"+((int)frango)+";"+comment;
+
+  if (dir_enEo!=null || dir_eoEn!=null) { 
+    if (dir_enEo!=null && dir_eoEn!=null) {
+      a +=" r=\"--\""; c+="LRRL:"+dir_enEo+dir_eoEn;
+    }
+    else if (dir_enEo!=null) { a +=" r=\"LR\""; c+=" LR:"+dir_enEo;}
+    else { a +=" r=\"RL\""; c+=" RL:"+dir_eoEn;}
+  }
+
+  a = a + "        ".substring(a.length());
+  //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
+  return "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e> \t\t   <!-- "+c+"-->";
+  //return "<e"+a+c+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
+	//return "<e><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
     }
 
 
