@@ -8,14 +8,54 @@ public class Paro {
     public String orgEn;
 
     public boolean oneWord;
-    public boolean problem;
 
-    public boolean noun;
-    public boolean adj;
-    public boolean adv;
-    public boolean verb;
+    public final static String PROBLEM = "???";
+    public final static String N = "n";
+    public final static String NP = "np";
+    public final static String VBLEX = "vblex";
+    public final static String ADJ = "adj";
+    public final static String ADV = "adv";
+
+    public String apertiumWordType = PROBLEM;
+
+    public String apertiumWordType() {
+      return apertiumWordType;
+      /*
+      if (problem) return "???";
+      if (noun) return "n";
+      if (verb) return "vblex";
+      if (adj) return "adj";
+      if (adv) return "adv";
+      return "???UNKNOWN???";
+       */
+    }
+    
+    /*
+    private boolean problem;
+    private boolean noun;
+    private boolean adj;
+    private boolean adv;
+    private boolean verb;
+*/
+    public boolean problem() { return (apertiumWordType==PROBLEM); };
+    public boolean noun() { return (apertiumWordType==N); };
+    public boolean adj() { return (apertiumWordType==ADJ); };
+    public boolean adv() { return (apertiumWordType==ADV); };
+    public boolean verb() { return (apertiumWordType==VBLEX); };
+    
+    public void set(String _apertiumWordType) {
+      apertiumWordType = _apertiumWordType;
+      /*
+      problem = (apertiumWordType==PROBLEM);
+      noun = (apertiumWordType==N);
+      adj = (apertiumWordType==ADJ);
+      adv = (apertiumWordType==ADV);
+      verb = (apertiumWordType==VBLEX);
+       */
+    }
+    
+    
     public boolean affix;
-
     public boolean plur;
     public boolean acc;
 
@@ -44,11 +84,15 @@ public class Paro {
 
     public String _wordType() {
 	return (""
+    + apertiumWordType()
+    /*
 		+ (problem?"<???> ":"")
 		+ (noun?"<noun> ":"")
 		+ (adj?"<adj> ":"")
 		+ (adv?"<adv> ":"")
-		+ (verb?(tr?"<verbTR> ":"<verb> "):"")
+		+ (verb?"<verb> ":"")
+     */
+		+ (tr?"<TR> ":"")
 		+ (igx?"<igx> ":"")
 		+ (ig?"<ig> ":"")
 		+ (affix?"<affix> ":"")
@@ -56,7 +100,7 @@ public class Paro {
 		+ (acc?"<acc> ":"")
 	      ).trim();
     }
-
+/*
     public final boolean apertiumWordTypeEquals(Paro p) {
       return 
           noun==p.noun &&
@@ -65,16 +109,8 @@ public class Paro {
           adv==p.adv &&
           problem==p.problem;
     }
-
+*/
     
-    public String apertiumWordType() {
-	if (problem) return "???";
-	if (noun) return "n";
-	if (verb) return "vblex";
-	if (adj) return "adj";
-	if (adv) return "adv";
-	return "???UNKNOWN???";
-    }
 
 /*
     <e lm=\"characteristic\"><i>characteristic</i><par n=\"house__n\"/></e>
@@ -83,18 +119,18 @@ public class Paro {
 */
 
     public String apertiumEn() {
-	if (noun) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"house__n\"/></e>";
-	if (adj) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"expensive__adj\"/></e>";
-	if (adv) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"maybe__adv\"/></e>";
-	if (verb) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"liv/e__vblex\"/></e>";
+	if (noun()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"house__n\"/></e>";
+	if (adj()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"expensive__adj\"/></e>";
+	if (adv()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"maybe__adv\"/></e>";
+	if (verb()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"liv/e__vblex\"/></e>";
 	return "";
     }
 
     public String apertiumEo() {
-	if (noun) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
-	if (adj) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
-	if (adv) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
-	if (verb) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
+	if (noun()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
+	if (adj()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
+	if (adv()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
+	if (verb()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
 	return "";
     }
 

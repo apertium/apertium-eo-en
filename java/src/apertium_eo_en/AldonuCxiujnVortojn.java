@@ -30,12 +30,12 @@ public class AldonuCxiujnVortojn {
 
   public static void main(String[] args) throws Exception {
 
-    System.err.println(" aldonuParojnEo.get(p.rootEo+xxxxxxxxxp.apertiumWordType()) = ");
+    System.err.println(" apertiumWordType()) = ");
     
     final LeguTradukuNet legutradukunet=new LeguTradukuNet();
     Thread leguT=new Iloj.Ek() {
 
-      void ek() throws Exception {
+      public void ek() throws Exception {
         legutradukunet.leguTradukuNetDosieron();
       }
     };
@@ -68,7 +68,7 @@ public class AldonuCxiujnVortojn {
     masxo:
     for (ArrayList<Paro> alp : legutradukunet.tradukuEnParoj.values()) {
       for (Paro p : alp) {
-        if (!p.problem&&p.oneWord&&p.orgEn.indexOf(" ")==-1&&p.orgEn.indexOf("&")==-1&&!p.plur) {
+        if (!p.problem()&&p.oneWord&&p.orgEn.indexOf(" ")==-1&&p.orgEn.indexOf("&")==-1&&!p.plur) {
           if (haltuPost--<0) {
             System.out.println("HALTIS");
             break masxo;

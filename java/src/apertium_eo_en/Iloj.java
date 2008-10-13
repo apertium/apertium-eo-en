@@ -101,7 +101,7 @@ public class Iloj {
 
 
     public abstract static class Ek extends Thread {
-	abstract void ek() throws Exception;
+	public abstract void ek() throws Exception;
 
 	public void run() {
 	    try {
@@ -165,9 +165,11 @@ public class Iloj {
 		linioj.add(linio);
 	}
 
+  
 	proces.getInputStream().close();
 	proces.getErrorStream().close();
 	proces.getOutputStream().close();
+  //if (proces.exitValue()!=0) throw new IllegalStateException(_execstr + " donix "+proces.exitValue());
 
 	return linioj;
     }

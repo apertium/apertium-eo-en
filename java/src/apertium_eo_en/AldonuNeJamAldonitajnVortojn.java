@@ -17,7 +17,7 @@ public class AldonuNeJamAldonitajnVortojn {
 
 
     final LeguTradukuNet legutradukunet = new LeguTradukuNet();
-    Thread leguT = new Iloj.Ek() { void ek() throws Exception { legutradukunet.leguTradukuNetDosieron(); }};
+    Thread leguT = new Iloj.Ek() { public void ek() throws Exception { legutradukunet.leguTradukuNetDosieron(); }};
 
     LinkedHashMap<String,ArrayList<String>> aperEoDix[] = Iloj.leguDix("lt-expand apertium-eo-en.eo.dix");
     //LinkedHashMap<String,ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix");
@@ -36,7 +36,7 @@ public class AldonuNeJamAldonitajnVortojn {
     HashSet<List> jamMontritaj = new HashSet<List>();
 
     for (ArrayList<Paro> alp : legutradukunet.tradukuEnParoj.values()) for (Paro p : alp) {
-	if (!p.problem && p.apertiumWordType().indexOf('?')==-1 && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.orgEn.indexOf("&")==-1) {
+	if (!p.problem() && p.apertiumWordType().indexOf('?')==-1 && p.oneWord && p.orgEn.indexOf(" ") == -1 && p.orgEn.indexOf("&")==-1) {
 
 	    println(p);
 	    jamMontritaj.clear();
