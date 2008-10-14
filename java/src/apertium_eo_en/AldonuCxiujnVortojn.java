@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static boolean debug=false;
+  public static final boolean debug=false;
 
   static class ApertiumParo extends Paro {
 
@@ -39,6 +39,7 @@ public class AldonuCxiujnVortojn {
         legutradukunet.leguTradukuNetDosieron();
       }
     };
+    leguT.setPriority(Thread.MAX_PRIORITY);
     
     long tempo = System.currentTimeMillis();
 
@@ -58,6 +59,8 @@ public class AldonuCxiujnVortojn {
 
     System.err.println("dixoj legite post " + (System.currentTimeMillis()-tempo)*0.001);
     
+    LinkedHashSet<String> mankantajEnVortoj = new LinkedHashSet<String>();
+    
     leguT.join();
 
 
@@ -73,71 +76,74 @@ public class AldonuCxiujnVortojn {
             System.out.println("HALTIS");
             break masxo;
           }
-          dprintln("");
-          dprintln(p);
-          ArrayList<String> enl=aperEnDix[0].get(p.orgEn);
-          if (enl==null) {
-            enl=aperEnDix[0].get(unuaLiteroMajuskla(p.orgEn));
+          if (debug) dprintln("");
+          if (debug) dprintln(p);
+          ArrayList<String> enlemmas=aperEnDix[0].get(p.orgEn);
+          if (enlemmas==null) {
+            enlemmas=aperEnDix[0].get(unuaLiteroMajuskla(p.orgEn));
           }
           Set<String> enRadikoj=new TreeSet<String>();
           Set<String> enRadikoj2=new TreeSet<String>();
 
-          if (enl!=null) {
+          if (enlemmas!=null) {
             HashSet<List> jamMontritaj=new HashSet<List>();
-            for (String en : enl) {
-              String orgEn=en;
-              dprintln("En:"+en);
-              enRadikoj.add(en.substring(0, en.indexOf('<')));
-              enRadikoj2.add(en);
+            for (String enlemma : enlemmas) {
+              String orgEn=enlemma;
+              if (debug) dprintln("En:"+enlemma);
+              enRadikoj.add(enlemma.substring(0, enlemma.indexOf('<')));
+              enRadikoj2.add(enlemma);
               ArrayList<String> eoEn;
-              while ((eoEn=aperEoEnDix[1].get(en))==null&&en.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
-                en=en.substring(0, en.lastIndexOf('<'));
+              while ((eoEn=aperEoEnDix[1].get(enlemma))==null&&enlemma.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
+                enlemma=enlemma.substring(0, enlemma.lastIndexOf('<'));
               }
 
               if (eoEn!=null) {
-                dprintln("Ne faras eo->en cxar en Apertium jam estas: "+en+"   -> "+eoEn);
+                if (debug) dprintln("Ne faras eo->en cxar en Apertium jam estas: "+enlemma+"   -> "+eoEn);
                 p.dir_enEo=new ApertiumParo(eoEn.toString());
               }
 
 
               if (!jamMontritaj.contains(eoEn)) {
                 if (eoEn==null) {
-                  en=orgEn;
+                  enlemma=orgEn;
                 }
                 jamMontritaj.add(eoEn);
               }
             }
           }
           if (enRadikoj.size()==0) {
-            //System.out.dprintln("ARH, enRadikoj="+enRadikoj);
+            if (debug) dprintln("ARH, enRadikoj="+enRadikoj);
+            //System.out.println(p.orgEn);
+            mankantajEnVortoj.add(p.orgEn+"; "+p.wordType());
+            continue;
           } else {
             p.comment+="r="+enRadikoj2;
             
             p.orgEn=enRadikoj.iterator().next();
             if (enRadikoj.size()>1) {
-              System.out.println("ARGH, for "+(int)p.frango+p+"enRadikoj="+enRadikoj+"  enRadikoj2="+enRadikoj2);
+              //System.out.println("ARGH, for "+(int)p.frango+p+"enRadikoj="+enRadikoj+"  enRadikoj2="+enRadikoj2);
             //throw new IllegalStateException(enRadikoj.toString());
             }
           }
 
           HashSet<List> jamMontritaj=new HashSet<List>();
-          ArrayList<String> eol=aperEoDix[0].get(p.rootEo);
-          if (eol!=null) {
-            for (String eo : eol) {
-              String orgEo=eo;
-              //dprintln("Eo:"+ eo);
+          ArrayList<String> eolemmas=aperEoDix[0].get(p.rootEo);
+          if (eolemmas!=null) {
+            for (String eolemma : eolemmas) {
+              String orgEo=eolemma;
+              if (debug) dprintln("Eo:"+ eolemma);
               ArrayList<String> eoEn;
-              while ((eoEn=aperEoEnDix[0].get(eo))==null&&eo.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
-                eo=eo.substring(0, eo.lastIndexOf('<'));
+              while ((eoEn=aperEoEnDix[0].get(eolemma))==null&&eolemma.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
+                eolemma=eolemma.substring(0, eolemma.lastIndexOf('<'));
               }
               if (!jamMontritaj.contains(eoEn)) {
                 if (eoEn==null) {
-                  eo=orgEo;
+                  eolemma=orgEo;
                 }
                 jamMontritaj.add(eoEn);
               }
               if (eoEn!=null) {
-                dprintln("Ne faras en->eo cxar en Apertium jam estas: "+eo+"   -> "+eoEn);
+                if (debug) dprintln("Ne faras en->eo cxar en Apertium jam estas: "+eolemma+"   -> "+eoEn);
                 p.dir_eoEn=new ApertiumParo(eoEn.toString());
               }
             }
@@ -149,69 +155,46 @@ public class AldonuCxiujnVortojn {
             if (samaVorto != null) for (Paro p0 : samaVorto)
             if (p0 != null && p0.dir_enEo==null) {
               if (p0.frango<=p.frango) {
-                dprintln("Ne faras en->eo por "+p+" cxar jam ekzistas "+p0);
+                if (debug) dprintln("Ne faras en->eo por "+p+" cxar jam ekzistas "+p0);
                 p.dir_enEo=p0;
               } else {
-                dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
+                if (debug) dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
                 p0.dir_enEo=p;
               }
             }
-            
           }
 
+          
           if (p.dir_eoEn==null) {
             ArrayList<Paro> samaVorto = aldonuParojnEo.get(p.rootEo+"__"+p.apertiumWordType());
             if (samaVorto != null) for (Paro p0 : samaVorto)
             if (p0 != null && p0.dir_eoEn==null) {
               if (p0.frango<=p.frango) {
-                dprintln("Ne faras eo->en por "+p+" cxar jam ekzistas "+p0);
+                if (debug) dprintln("Ne faras eo->en por "+p+" cxar jam ekzistas "+p0);
                 p.dir_eoEn=p0;
               } else {
-                dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
+                if (debug) dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
                 p0.dir_eoEn=p;
               }
             }
           }
           
-/*
           if (p.dir_eoEn==null||p.dir_enEo==null) {
-            for (Paro p0 : aldonuParojn) {
-              if (p0.apertiumWordTypeEquals(p)) {
-                if (p.dir_enEo==null&&p0.dir_enEo==null&&p0.orgEn.equals(p.orgEn)) {
-                  if (p0.rango<=p.rango) {
-                    dprintln("Ne faras en->eo por "+p+" cxar jam ekzistas "+p0);
-                    p.dir_enEo=p0;
-                  } else {
-                    dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
-                    p0.dir_enEo=p;
-                  }
-                }
-                if (p.dir_eoEn==null&&p0.dir_eoEn==null&&p0.rootEo.equals(p.rootEo)) {
-                  if (p0.rango<=p.rango) {
-                    dprintln("Ne faras eo->en por "+p+" cxar jam ekzistas "+p0);
-                    p.dir_eoEn=p0;
-                  } else {
-                    dprintln("Ne faras en->eo por "+p0+" cxar nun venas "+p);
-                    p0.dir_eoEn=p;
-                  }
-                }
-              }
-            }
-          }
- */ 
-          if (p.dir_eoEn==null||p.dir_enEo==null) {
-            dprintln("Aldonas "+p.apertiumEoEn());
+            if (debug) dprintln("Aldonas "+p.apertiumEoEn());
             aldonuParojn.add(p);
             add(p.rootEo+"__"+p.apertiumWordType(), p, aldonuParojnEo);
             add(p.orgEn+"__"+p.apertiumWordType(), p, aldonuParojnEn);
           } else {
-            dprintln("NE aldonas "+p.apertiumEoEn());
+            if (debug) dprintln("NE aldonas "+p.apertiumEoEn());
           }
         }
       }
     }
     
     System.err.println("paroj farite post " + (System.currentTimeMillis()-tempo)*0.001);
+    Iloj.skribu(mankantajEnVortoj, "missing_english_words.txt");
+
+    System.err.println("mankantajEnVortoj skribite post " + (System.currentTimeMillis()-tempo)*0.001);
     
     LinkedHashSet<String> eoDixAldono=new LinkedHashSet<String>();
     LinkedHashSet<String> enDixAldono=new LinkedHashSet<String>();
@@ -219,12 +202,12 @@ public class AldonuCxiujnVortojn {
 
     for (Paro p : aldonuParojn) {
       if (p.dir_eoEn==null||p.dir_enEo==null) {
-        eoDixAldono.add(p.apertiumEo());
-        enDixAldono.add(p.apertiumEn());
+        //eoDixAldono.add(p.apertiumEo());
+        //enDixAldono.add(p.apertiumEn());
         eoEnDixAldono.add(p.apertiumEoEn());
 
       } else {
-        dprintln("NE aldonas2 "+p.apertiumEoEn());      //System.out.dprintln(Iloj.deCxapeloj(p.apertiumEoEn()));
+        if (debug) dprintln("NE aldonas2 "+p.apertiumEoEn());      //System.out.dprintln(Iloj.deCxapeloj(p.apertiumEoEn()));
       }
     }
 

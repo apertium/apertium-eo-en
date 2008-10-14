@@ -240,7 +240,7 @@ public class Iloj {
 
         for (Object e : set) {
             out.println(e);
-            if (++n<100) System.out.println(fn+": "+n+Iloj.deCxapeloj(e));
+            //if (++n<100) System.out.println(fn+": "+n+Iloj.deCxapeloj(e));
         }
         //out.println("</section>");
         out.close();

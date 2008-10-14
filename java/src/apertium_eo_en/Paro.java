@@ -78,8 +78,7 @@ public class Paro {
 
     private static final Pattern krampoj = Pattern.compile("[<>]");
     public String wordType() {
-      return krampoj.matcher(_wordType()).replaceAll("");
-    	//return _wordType().replaceAll("[<>]","");
+      return apertiumWordType();
     }
 
     public String _wordType() {

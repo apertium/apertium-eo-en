@@ -4,6 +4,7 @@ import apertium_eo_en.malnova.FixInconsistency;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class LeguTradukuNet {
 
@@ -36,6 +37,7 @@ public class LeguTradukuNet {
     br=new BufferedReader(new FileReader("tradukunet.txt"));
     System.out.println("Legas "+"tradukunet.txt");
 
+    Pattern slashRegex = Pattern.compile("/");
 
     while ((linio=br.readLine())!=null) {
       //debug = (linNro > 1000 && linNro < 30000);
@@ -47,7 +49,7 @@ public class LeguTradukuNet {
         linio=Iloj.alCxapeloj(linio);
         //krudaListo.put(en, linio);
 
-        String[] eos=linio.split("/");
+        String[] eos=slashRegex.split(linio);
         //if (debug) System.out.println(en + " -> "+ eo);
         int rango=0;
 
@@ -139,15 +141,19 @@ public class LeguTradukuNet {
     alp.add(val);
   }
 
+  
+  Pattern duSpacojRegex = Pattern.compile("  ");
   private void registru(int linNro, String en, String eo, float rango) {
-    eo=eo.replaceAll("  ", " ").trim();
-    if (eo.length()==0) {
-      return;
-    }
-    Paro p=analyzeEo(eo);
-    p.orgEn=en;
+    eo=duSpacojRegex.matcher(eo).replaceAll(" ").trim();
+    if (eo.length()==0) return;
+    
+    if (en.indexOf(' ')!=-1 || eo.indexOf(' ')!=-1) return;
+    //System.err.println("en = '" + en+"'");
+    //System.err.println("eo = '" + eo+"'");
+    
+    Paro p=analyze(eo, en);
     p.frango=rango;
-
+/*
     String dat=en+" @ "+p.rootEo+" @ "+p.wordType()+(rango<1?"":" ("+((int)rango)+")")+"    \t<=  "+eo+"\t"+linNro;
 
     //if (debug) System.out.println(dat);
@@ -169,33 +175,28 @@ public class LeguTradukuNet {
     } else {
       unknown.println(dat);
     }
-
+*/
     aldonuParon(tradukuEnParoj, p.orgEn, p);
     aldonuParon(tradukuEoParoj, p.rootEo, p);
   }
 
-  static ArrayList<String> finajxojKiujNeEstuAldonitaKielVerboj=null;
+  static Map<String, String> finajxojKunKonataVortklaso=new LinkedHashMap<String, String>(300);
+  static Map<String, String> vortojKunKonataVortklaso=new LinkedHashMap<String, String>(300);
   //static Map<String, String> revoVortojAlApertiumVortotipo = new HashMap<String, String>(22043);
   
   static {
     try {
-      finajxojKiujNeEstuAldonitaKielVerboj=Iloj.leguTekstDosieron("tradukunet_ne_verboj.txt");
-      /*
-      for (String lin : Iloj.exec("zcat /home/j/esperanto/nepala_vortaro/aliaj_vortaroj/revo-vortoj.txt.gz")) {
-        int n = lin.indexOf(',');
-        lin = lin.substring(0, n);
-        //System.out.println(lin);
-        if (lin.endsWith("i")) {
-          String radik = lin.substring(0, n-1);
-          if (radik.endsWith("o")) System.out.println("Misa radik "+lin);
-          if (radik.endsWith("oj")) System.out.println("Misa radik "+lin);
-          if (radik.endsWith("a")) System.out.println("Misa radik "+lin);
-          if (radik.endsWith("e")) System.out.println("Misa radik "+lin);
+      ArrayList<String> finajxojKunKonataVortklasoAL=Iloj.leguTekstDosieron("tradukunet_ne_verboj.txt");
+      for (String l : finajxojKunKonataVortklasoAL) {
+        int n = l.indexOf('<');
+        if (n==-1) finajxojKunKonataVortklaso.put(l, "");
+        else  finajxojKunKonataVortklaso.put(l.substring(0,n), l.substring(n));
+        if (l.startsWith(" ")) {
+          if (n==-1) vortojKunKonataVortklaso.put(l.substring(1), "");
+          else  vortojKunKonataVortklaso.put(l.substring(1,n), l.substring(n));          
         }
-          
-        ;
       }
-       */
+      System.out.println("vortojKunKonataVortklaso = "+vortojKunKonataVortklaso);
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -207,39 +208,51 @@ public class LeguTradukuNet {
       "cis tus kurĉas ĉas glis gras his kis las pas klas vernis talus plis plas pis pus kiras "+
       "").trim().split(" ")));
 
-  public static Paro analyzeEo(String eo) {
-    Paro a=new Paro();
-    a.orgEo=eo;
-    a.oneWord=eo.indexOf(" ")==-1;
+  public static Paro analyze(String eo, String en) {
+    Paro p=new Paro();
+    p.orgEo=eo;
+    p.orgEn=en;
+    p.oneWord=eo.indexOf(" ")==-1;
     
 
     char firstCh=eo.charAt(0);
-    char lastCh=eo.charAt(eo.length()-1);
+    int lgd = eo.length();
+    char lastCh=eo.charAt(lgd-1);
 
-
-	if (eo.length()<=1) a.set(a.PROBLEM); // not a word then / classification fails
-	else if (eo.indexOf("..")!=-1) a.set(a.PROBLEM); // eks  mal..igo
-	else if (Character.isUpperCase(firstCh)) a.set(a.N);
-	else if (Character.isDigit(lastCh))  a.set(a.N);
-	else if (!Character.isLetter(firstCh))  a.set(a.PROBLEM);
-	// NOTE: there are no single words with accusative -n
-	else if (eo.endsWith("aj")) { a.set(a.ADJ); a.plur = true; eo = eo.substring(0,eo.length()-0); }
-	else if (eo.endsWith("oj")) { a.set(a.N); a.plur = true; eo = eo.substring(0,eo.length()-0); }
-	else if (eo.endsWith("e")) { a.set(a.ADV); }
-	else if (eo.endsWith("a")) { a.set(a.ADJ); }
-	else if (eo.endsWith("o")) { a.set(a.N); }
-	else if (eo.endsWith("-")) { a.affix = true; }
-	else if (eo.startsWith("-")) { a.affix = true; }
-	else if (!Character.isLetter(lastCh))  { a.set(a.PROBLEM); }
-	else {
-      a.set(a.VBLEX);
+    String tipo = vortojKunKonataVortklaso.get(eo);
+    
+    if (tipo != null) {
+      if (tipo.length()==0) {
+        p.set(p.PROBLEM);
+      } else {
+        String klaso = tipo.split("[<>]")[1].intern();
+        p.set(klaso);
+        System.out.println("tipo = "+tipo+"kaj klaso: "+klaso+ " por "+p);              
+      }      
+    }
+    else if (eo.length()<=1) p.set(p.PROBLEM); // not a word then / classification fails
+    else if (eo.indexOf("..")!=-1) p.set(p.PROBLEM); // eks  mal..igo
+    else if (eo.endsWith("-")) { p.affix = true; p.set(p.PROBLEM);}
+    else if (eo.startsWith("-")) { p.affix = true; p.set(p.PROBLEM);}
+    else if (Character.isDigit(lastCh))  p.set(p.N);
+    else if (!Character.isLetter(lastCh))  { p.set(p.PROBLEM); }
+    else if (Character.isUpperCase(firstCh) /*&& !Character.isUpperCase(eo.charAt(1))*/) { p.set(p.NP); p.orgEn = Character.toUpperCase(p.orgEn.charAt(0))+ p.orgEn.substring(1);}
+    else if (!Character.isLetter(lastCh))  p.set(p.PROBLEM);
+    // NOTE: there are no single words with accusative -n
+    else if (eo.endsWith("aj")) { p.set(p.ADJ); p.plur = true; eo = eo.substring(0,eo.length()-0); }
+    else if (eo.endsWith("oj")) { p.set(p.N); p.plur = true; eo = eo.substring(0,eo.length()-0); }
+    else if (eo.endsWith("a")) { p.set(p.ADJ); }
+    else if (eo.endsWith("o")) { p.set(p.N); }
+    else if (eo.endsWith("e")) { p.set(p.ADV); }
+    else {
+      p.set(p.VBLEX);
 
       {
         String eos = " "+eo;
-        for (String finoNV : finajxojKiujNeEstuAldonitaKielVerboj) {
+        for (String finoNV : finajxojKunKonataVortklaso.keySet()) {
           if (eos.endsWith(finoNV)) {
             //System.out.println("eo.endsWith(finoNV) = " + eo+"     "+finoNV);
-            a.set(a.PROBLEM);
+            p.set(p.PROBLEM);
             break;
           }
         }
@@ -247,34 +260,34 @@ public class LeguTradukuNet {
 
         String lastaVorto=eo.substring(eo.lastIndexOf(' ')+1);
 
-        if (!a.verb()) {
+        if (!p.verb()) {
           for (String verbradiko : verbradikojKiujFinasPerAsIsOsUs) {
             if (lastaVorto.equals(verbradiko)) {
               //System.out.println("eo.enquals(verbradiko) = " + eo+"    "+verbradiko);
-              a.set(a.VBLEX);
+              p.set(p.VBLEX);
               break;
             }
           }
         }
       }
 
-      if (!a.verb()) {
+      if (!p.verb()) {
         //a.problem=true;
       } else {
 
         if (eo.endsWith("-ig")) {
-          a.ig=true;
+          p.ig=true;
           eo=eo.substring(0, eo.length()-3)+"igi";
         } else if (eo.endsWith("-i"+gx)) {
-          a.igx=true;
+          p.igx=true;
           eo=eo.substring(0, eo.length()-3)+"i"+gx+"i";
         } else if (eo.endsWith("-i")) {
           eo=eo.substring(0, eo.length()-2)+"i";
         } else if (eo.endsWith("-I")) {
           eo=eo.substring(0, eo.length()-2)+"i";
-          a.tr=true;
+          p.tr=true;
         } else if (eo.endsWith("i")) {
-          a.set(a.PROBLEM);
+          p.set(p.PROBLEM);
         } else {
           eo=eo+"i";
         }
@@ -282,12 +295,12 @@ public class LeguTradukuNet {
 
 
     }
-    a.rootEo=eo;
+    p.rootEo=eo;
 
 
-    return a;
+    return p;
   }
-  private static final String gx=Iloj.alCxapeloj("gx");
+  private static final String gx="ĝ"; //Iloj.alCxapeloj("gx");
 }
 /*
 
