@@ -44,8 +44,8 @@ public class AldonuCxiujnVortojn {
     long tempo = System.currentTimeMillis();
 
     LinkedHashMap<String, ArrayList<String>> aperEoDix[]=Iloj.leguDix("lt-expand apertium-eo-en.eo.dix");
-    //LinkedHashMap<String,ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix");
-    LinkedHashMap<String, ArrayList<String>> aperEnDix[]=Iloj.leguDix("zcat en.expanded.dix.gz");
+    LinkedHashMap<String,ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix");
+    //LinkedHashMap<String, ArrayList<String>> aperEnDix[]=Iloj.leguDix("zcat en.expanded.dix.gz");
 
     LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-lille.eo-en.dix");
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix");
@@ -192,7 +192,7 @@ public class AldonuCxiujnVortojn {
     }
     
     System.err.println("paroj farite post " + (System.currentTimeMillis()-tempo)*0.001);
-    Iloj.skribu(mankantajEnVortoj, "missing_english_words.txt");
+    Iloj.skribu(mankantajEnVortoj, "tradukunet_missing_en_words.txt");
 
     System.err.println("mankantajEnVortoj skribite post " + (System.currentTimeMillis()-tempo)*0.001);
     
@@ -233,7 +233,7 @@ public class AldonuCxiujnVortojn {
     }
   }
 
-  private static Object unuaLiteroMajuskla(String orgEn) {
+  public static String unuaLiteroMajuskla(String orgEn) {
     if (orgEn==null) {
       return orgEn;
     }
