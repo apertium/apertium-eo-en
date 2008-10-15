@@ -1540,7 +1540,7 @@
 	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
-
+ 
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -1624,8 +1624,12 @@
 
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="ambaŭ"><p><l>ambaŭ</l><r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e lm="kelka"><p><l>kelka</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="kelka"><p><l>kelka</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="kelka"><p><l>kelkaj</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kelka"><p><l>kelkajn</l><r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    
+    <!-- some cats  -> ^kelkaj<det><qnt><pl><nom>$ ^kato<n><m><pl><nom>$  -->
+    <e lm="kelka"><p><l>kelkaj</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kelka"><p><l>kelkajn</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
 
     <e lm="ambaŭ"><i>amba</i><par n="ŭ"/><i></i><par n="ind__det"/></e>
 
@@ -2063,10 +2067,10 @@
 	     ekzemple administranto -> administrantino  
 	-->  
 	 
+    <e lm="plenkreskulo"><i>plenkreskul</i><par n="nommf__n"/></e>
     <e lm="administranto"><i>administrant</i><par n="nommf__n"/></e>
     <e lm="adoleskanto"><i>adoleskant</i><par n="nommf__n"/></e>
     <e lm="adolto"><i>adolt</i><par n="nommf__n"/></e>
-    <e lm="adulto"><i>adult</i><par n="nommf__n"/></e>
     <e lm="advokato"><i>advokat</i><par n="nommf__n"/></e>
     <e lm="agento"><i>agent</i><par n="nommf__n"/></e>
     <e lm="akceptisto"><i>akceptist</i><par n="nommf__n"/></e>
@@ -2227,7 +2231,6 @@
     <e lm="katoliko"><i>katolik</i><par n="nommf__n"/></e>
     <e lm="kelnero"><i>kelner</i><par n="nommf__n"/></e>
     <e lm="kirurgo"><i>kirurg</i><par n="nommf__n"/></e>
-    <e lm="kisto"><i>kist</i><par n="nommf__n"/></e>
     <e lm="kleriko"><i>klerik</i><par n="nommf__n"/></e>
     <e lm="kliento"><i>klient</i><par n="nommf__n"/></e>
     <e lm="knabo"><i>knab</i><par n="nommf__n"/></e>
@@ -2332,8 +2335,8 @@
     <e lm="pirato"><i>pirat</i><par n="nommf__n"/></e>
     <e lm="poeto"><i>poet</i><par n="nommf__n"/></e>
     <e lm="pograndisto"><i>pograndist</i><par n="nommf__n"/></e>
-    <e lm="pola"><i>pol</i><par n="nommf__n"/></e>
-    <e lm="polico"><i>polic</i><par n="nommf__n"/></e>
+    <e lm="polo"><i>pol</i><par n="nommf__n"/></e>
+    <e lm="policano"><i>polican</i><par n="nommf__n"/></e>
     <e lm="politikisto"><i>politikist</i><par n="nommf__n"/></e>
     <e lm="posedanto"><i>posedant</i><par n="nommf__n"/></e>
     <e lm="posteulo"><i>posteul</i><par n="nommf__n"/></e>
@@ -2435,6 +2438,9 @@
 	      kiuj povas esti substantivo, adjektivo, adverbo kaj verbo.
 	      Gxenerale eblas libere fleksii inter ili
 	 -->
+	<e lm="kisto"><i>kist</i><par n="nom__n"/></e>
+	<e lm="adulto"><i>adulto</i><par n="nom__n"/></e>
+    <e lm="tigro"><i>tigro</i><par n="nom__n"/></e>
 
     <e lm="abato"><i>abato</i><par n="nom__n"/></e>
     <e lm="abdomeno"><i>abdomeno</i><par n="nom__n"/></e>

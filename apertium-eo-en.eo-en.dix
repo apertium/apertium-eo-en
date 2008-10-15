@@ -474,6 +474,9 @@
     <e c="as you - kiel vi"><p><l>kiel<s n="pr"/></l><r>as<s n="pr"/></r></p></e>
 
 
+    <e c="Jacob's house==Domo de Jacob"><p><l>de<s n="pr"/></l><r>'s<s n="gen"/></r></p></e>
+
+
     <e><p><l>en<s n="pr"/></l><r>in<s n="pr"/></r></p></e>
     <e r="RL"><p><l>en<b/></l><r>inside<s n="pr"/></r></p></e>
 	<e r="RL"><p><l>en<s n="pr"/></l><r>into<s n="pr"/></r></p></e>
@@ -1047,7 +1050,7 @@
 
 
 
-    <!-- Nouns with gender -->
+    <!-- Nouns with gender: Nationalities -->
 
     <e r="LR"><p><l>albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
     <e r="LR"><p><l>albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
@@ -1085,21 +1088,9 @@
     <e r="LR"><p><l>kataluno<s n="n"/><s n="m"/></l><r>Catalan<s n="n"/></r></p></e>
     <e r="RL"><p><l>kataluno<s n="n"/><s n="GD"/></l><r>Catalan<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>katoliko<s n="n"/><s n="f"/></l><r>Catholic<s n="n"/></r></p></e>
-    <e r="LR"><p><l>katoliko<s n="n"/><s n="m"/></l><r>Catholic<s n="n"/></r></p></e>
-    <e r="RL"><p><l>katoliko<s n="n"/><s n="GD"/></l><r>Catholic<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>ĉiliano<s n="n"/><s n="f"/></l><r>Chilean<s n="n"/></r></p></e>
     <e r="LR"><p><l>ĉiliano<s n="n"/><s n="m"/></l><r>Chilean<s n="n"/></r></p></e>
     <e r="RL"><p><l>ĉiliano<s n="n"/><s n="GD"/></l><r>Chilean<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kristano<s n="n"/><s n="f"/></l><r>Christian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kristano<s n="n"/><s n="m"/></l><r>Christian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kristano<s n="n"/><s n="GD"/></l><r>Christian<s n="n"/></r></p></e>
-
-    <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
-    <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
-
 
     <e r="LR"><p><l>kolombiano<s n="n"/><s n="f"/></l><r>Colombian<s n="n"/></r></p></e>
     <e r="LR"><p><l>kolombiano<s n="n"/><s n="m"/></l><r>Colombian<s n="n"/></r></p></e>
@@ -1167,10 +1158,71 @@
     <e r="LR"><p><l>valenciano<s n="n"/><s n="m"/></l><r>Valencian<s n="n"/></r></p></e>
     <e r="RL"><p><l>valenciano<s n="n"/><s n="GD"/></l><r>Valencian<s n="n"/></r></p></e>
 
-
     <e r="LR"><p><l>skandinavo<s n="n"/><s n="f"/></l><r>Scandinavian<s n="n"/></r></p></e>
     <e r="LR"><p><l>skandinavo<s n="n"/><s n="m"/></l><r>Scandinavian<s n="n"/></r></p></e>
     <e r="RL"><p><l>skandinavo<s n="n"/><s n="GD"/></l><r>Scandinavian<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
+    <e r="LR"><p><l>franco<s n="n"/><s n="f"/></l><r>French<s n="n"/></r></p></e>
+    <e r="LR"><p><l>germano<s n="n"/><s n="f"/></l><r>German<s n="n"/></r></p></e>
+    <e r="LR"><p><l>greko<s n="n"/><s n="f"/></l><r>Greek<s n="n"/></r></p></e>
+    <e r="LR"><p><l>italo<s n="n"/><s n="f"/></l><r>Italian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>japano<s n="n"/><s n="f"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="f"/></l><r>Nigerian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>norvego<s n="n"/><s n="f"/></l><r>Norwegian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ruso<s n="n"/><s n="f"/></l><r>Russian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sviso<s n="n"/><s n="f"/></l><r>Swiss<s n="n"/></r></p></e>
+    
+    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>brito<s n="n"/><s n="m"/></l><r>British<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ĉino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>anglo<s n="n"/><s n="m"/></l><r>English<s n="n"/></r></p></e>
+    <e r="LR"><p><l>franco<s n="n"/><s n="m"/></l><r>French<s n="n"/></r></p></e>
+    <e r="LR"><p><l>germano<s n="n"/><s n="m"/></l><r>German<s n="n"/></r></p></e>
+    <e r="LR"><p><l>greko<s n="n"/><s n="m"/></l><r>Greek<s n="n"/></r></p></e>
+    <e r="LR"><p><l>italo<s n="n"/><s n="m"/></l><r>Italian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>japano<s n="n"/><s n="m"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="m"/></l><r>Nigerian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>norvego<s n="n"/><s n="m"/></l><r>Norwegian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ruso<s n="n"/><s n="m"/></l><r>Russian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sviso<s n="n"/><s n="m"/></l><r>Swiss<s n="n"/></r></p></e>
+    
+    <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
+    <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
+    <e r="RL"><p><l>franco<s n="n"/><s n="GD"/></l><r>French<s n="n"/></r></p></e>
+    <e r="RL"><p><l>germano<s n="n"/><s n="GD"/></l><r>German<s n="n"/></r></p></e>
+    <e r="RL"><p><l>greko<s n="n"/><s n="GD"/></l><r>Greek<s n="n"/></r></p></e>
+    <e r="RL"><p><l>italo<s n="n"/><s n="GD"/></l><r>Italian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>japano<s n="n"/><s n="GD"/></l><r>Japanese<s n="n"/></r></p></e>
+    <e r="RL"><p><l>niĝeriano<s n="n"/><s n="GD"/></l><r>Nigerian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>norvego<s n="n"/><s n="GD"/></l><r>Norwegian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>ruso<s n="n"/><s n="GD"/></l><r>Russian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>sviso<s n="n"/><s n="GD"/></l><r>Swiss<s n="n"/></r></p></e>
+
+
+    <!-- Nouns with gender -->
+
+
+    <e r="LR"><p><l>katoliko<s n="n"/><s n="f"/></l><r>Catholic<s n="n"/></r></p></e>
+    <e r="LR"><p><l>katoliko<s n="n"/><s n="m"/></l><r>Catholic<s n="n"/></r></p></e>
+    <e r="RL"><p><l>katoliko<s n="n"/><s n="GD"/></l><r>Catholic<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>kristano<s n="n"/><s n="f"/></l><r>Christian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kristano<s n="n"/><s n="m"/></l><r>Christian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>kristano<s n="n"/><s n="GD"/></l><r>Christian<s n="n"/></r></p></e>
+
+    <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
+    <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
+
+    <e r="LR"><p><l>protestanto<s n="n"/><s n="f"/></l><r>Protestant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>protestanto<s n="n"/><s n="m"/></l><r>Protestant<s n="n"/></r></p></e>
+    <e r="RL"><p><l>protestanto<s n="n"/><s n="GD"/></l><r>Protestant<s n="n"/></r></p></e>
+
+
 
 
     <e r="LR"><p><l>librotenisto<s n="n"/><s n="f"/></l><r>accountant<s n="n"/></r></p></e>
@@ -1330,9 +1382,6 @@
     <e r="LR"><p><l>fianĉo<s n="n"/><s n="m"/></l><r>bridegroom<s n="n"/></r></p></e>
     <e r="RL"><p><l>fianĉo<s n="n"/><s n="GD"/></l><r>bridegroom<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>frato<s n="n"/><s n="f"/></l><r>brother<s n="n"/></r></p></e>
-    <e r="LR"><p><l>frato<s n="n"/><s n="m"/></l><r>brother<s n="n"/></r></p></e>
-    <e r="RL"><p><l>frato<s n="n"/><s n="GD"/></l><r>brother<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>kadeto<s n="n"/><s n="f"/></l><r>cadet<s n="n"/></r></p></e>
     <e r="LR"><p><l>kadeto<s n="n"/><s n="m"/></l><r>cadet<s n="n"/></r></p></e>
@@ -1349,14 +1398,6 @@
     <e r="LR"><p><l>kato<s n="n"/><s n="f"/></l><r>cat<s n="n"/></r></p></e>
     <e r="LR"><p><l>kato<s n="n"/><s n="m"/></l><r>cat<s n="n"/></r></p></e>
     <e r="RL"><p><l>kato<s n="n"/><s n="GD"/></l><r>cat<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>chairman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>chairman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>chairman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>chairperson<s n="n"/></r></p></e>
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>chairperson<s n="n"/></r></p></e>
-    <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>chairperson<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>ĉampiono<s n="n"/><s n="f"/></l><r>champion<s n="n"/></r></p></e>
     <e r="LR"><p><l>ĉampiono<s n="n"/><s n="m"/></l><r>champion<s n="n"/></r></p></e>
@@ -1470,10 +1511,6 @@
     <e r="LR"><p><l>biciklanto<s n="n"/><s n="m"/></l><r>cyclist<s n="n"/></r></p></e>
     <e r="RL"><p><l>biciklanto<s n="n"/><s n="GD"/></l><r>cyclist<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>filo<s n="n"/><s n="f"/></l><r>daughter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>filo<s n="n"/><s n="m"/></l><r>daughter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>filo<s n="n"/><s n="GD"/></l><r>daughter<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>mortinto<s n="n"/><s n="f"/></l><r>dead<b/>person<s n="n"/></r></p></e>
     <e r="LR"><p><l>mortinto<s n="n"/><s n="m"/></l><r>dead<b/>person<s n="n"/></r></p></e>
     <e r="RL"><p><l>mortinto<s n="n"/><s n="GD"/></l><r>dead<b/>person<s n="n"/></r></p></e>
@@ -1525,10 +1562,6 @@
     <e r="LR"><p><l>hundo<s n="n"/><s n="f"/></l><r>dog<s n="n"/></r></p></e>
     <e r="LR"><p><l>hundo<s n="n"/><s n="m"/></l><r>dog<s n="n"/></r></p></e>
     <e r="RL"><p><l>hundo<s n="n"/><s n="GD"/></l><r>dog<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>doto<s n="n"/><s n="f"/></l><r>dowry<s n="n"/></r></p></e>
-    <e r="LR"><p><l>doto<s n="n"/><s n="m"/></l><r>dowry<s n="n"/></r></p></e>
-    <e r="RL"><p><l>doto<s n="n"/><s n="GD"/></l><r>dowry<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>ŝoforo<s n="n"/><s n="f"/></l><r>driver<s n="n"/></r></p></e>
     <e r="LR"><p><l>ŝoforo<s n="n"/><s n="m"/></l><r>driver<s n="n"/></r></p></e>
@@ -1642,10 +1675,6 @@
     <e r="LR"><p><l>generalo<s n="n"/><s n="m"/></l><r>general<s n="n"/></r></p></e>
     <e r="RL"><p><l>generalo<s n="n"/><s n="GD"/></l><r>general<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>gentleman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>gentleman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>gentleman<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>geriatro<s n="n"/><s n="f"/></l><r>geriatrist<s n="n"/></r></p></e>
     <e r="LR"><p><l>geriatro<s n="n"/><s n="m"/></l><r>geriatrist<s n="n"/></r></p></e>
     <e r="RL"><p><l>geriatro<s n="n"/><s n="GD"/></l><r>geriatrist<s n="n"/></r></p></e>
@@ -1653,14 +1682,6 @@
     <e r="LR"><p><l>fantomo<s n="n"/><s n="f"/></l><r>ghost<s n="n"/></r></p></e>
     <e r="LR"><p><l>fantomo<s n="n"/><s n="m"/></l><r>ghost<s n="n"/></r></p></e>
     <e r="RL"><p><l>fantomo<s n="n"/><s n="GD"/></l><r>ghost<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>dio<s n="n"/><s n="f"/></l><r>goddess<s n="n"/></r></p></e>
-    <e r="LR"><p><l>dio<s n="n"/><s n="m"/></l><r>goddess<s n="n"/></r></p></e>
-    <e r="RL"><p><l>dio<s n="n"/><s n="GD"/></l><r>goddess<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>dio<s n="n"/><s n="f"/></l><r>god<s n="n"/></r></p></e>
-    <e r="LR"><p><l>dio<s n="n"/><s n="m"/></l><r>god<s n="n"/></r></p></e>
-    <e r="RL"><p><l>dio<s n="n"/><s n="GD"/></l><r>god<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>gorilo<s n="n"/><s n="f"/></l><r>gorilla<s n="n"/></r></p></e>
     <e r="LR"><p><l>gorilo<s n="n"/><s n="m"/></l><r>gorilla<s n="n"/></r></p></e>
@@ -1670,29 +1691,11 @@
     <e r="LR"><p><l>reganto<s n="n"/><s n="m"/></l><r>governor<s n="n"/></r></p></e>
     <e r="RL"><p><l>reganto<s n="n"/><s n="GD"/></l><r>governor<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>nepo<s n="n"/><s n="f"/></l><r>grandchild<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nepo<s n="n"/><s n="m"/></l><r>grandchild<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nepo<s n="n"/><s n="GD"/></l><r>grandchild<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>nepo<s n="n"/><s n="f"/></l><r>granddaughter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nepo<s n="n"/><s n="m"/></l><r>granddaughter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nepo<s n="n"/><s n="GD"/></l><r>granddaughter<s n="n"/></r></p></e>
-
-    <e><p><l>avo<s n="n"/><s n="m"/></l><r>grandfather<s n="n"/></r></p></e>
-    <e><p><l>avo<s n="n"/><s n="f"/></l><r>grandmother<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>avo<s n="n"/><s n="f"/></l><r>grandparent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>avo<s n="n"/><s n="m"/></l><r>grandparent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>avo<s n="n"/><s n="GD"/></l><r>grandparent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>nepo<s n="n"/><s n="f"/></l><r>grandson<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nepo<s n="n"/><s n="m"/></l><r>grandson<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nepo<s n="n"/><s n="GD"/></l><r>grandson<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gardado<s n="n"/><s n="f"/></l><r>guard<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gardado<s n="n"/><s n="m"/></l><r>guard<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gardado<s n="n"/><s n="GD"/></l><r>guard<s n="n"/></r></p></e>
-
+    <e r="LR"><p><l>gardist<s n="n"/><s n="f"/></l><r>guard<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gardist<s n="n"/><s n="m"/></l><r>guard<s n="n"/></r></p></e>
+    <e r="RL"><p><l>gardist<s n="n"/><s n="GD"/></l><r>guard<s n="n"/></r></p></e>
+    <e><p><l>gardist<s n="n"/></l><r>guard<s n="n"/></r></p></e>
+    
     <e r="LR"><p><l>gasto<s n="n"/><s n="f"/></l><r>guest<s n="n"/></r></p></e>
     <e r="LR"><p><l>gasto<s n="n"/><s n="m"/></l><r>guest<s n="n"/></r></p></e>
     <e r="RL"><p><l>gasto<s n="n"/><s n="GD"/></l><r>guest<s n="n"/></r></p></e>
@@ -1708,14 +1711,6 @@
     <e r="LR"><p><l>handikapulo<s n="n"/><s n="f"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
     <e r="LR"><p><l>handikapulo<s n="n"/><s n="m"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
     <e r="RL"><p><l>handikapulo<s n="n"/><s n="GD"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>heroo<s n="n"/><s n="f"/></l><r>hero<s n="n"/></r></p></e>
-    <e r="LR"><p><l>heroo<s n="n"/><s n="m"/></l><r>hero<s n="n"/></r></p></e>
-    <e r="RL"><p><l>heroo<s n="n"/><s n="GD"/></l><r>hero<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>heroo<s n="n"/><s n="f"/></l><r>heroine<s n="n"/></r></p></e>
-    <e r="LR"><p><l>heroo<s n="n"/><s n="m"/></l><r>heroine<s n="n"/></r></p></e>
-    <e r="RL"><p><l>heroo<s n="n"/><s n="GD"/></l><r>heroine<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>ostaĝo<s n="n"/><s n="f"/></l><r>hostage<s n="n"/></r></p></e>
     <e r="LR"><p><l>ostaĝo<s n="n"/><s n="m"/></l><r>hostage<s n="n"/></r></p></e>
@@ -1744,10 +1739,6 @@
     <e r="LR"><p><l>individuo<s n="n"/><s n="f"/></l><r>individual<s n="n"/></r></p></e>
     <e r="LR"><p><l>individuo<s n="n"/><s n="m"/></l><r>individual<s n="n"/></r></p></e>
     <e r="RL"><p><l>individuo<s n="n"/><s n="GD"/></l><r>individual<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>knabo<s n="n"/><s n="f"/></l><r>infant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>knabo<s n="n"/><s n="m"/></l><r>infant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>infant<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>loĝanto<s n="n"/><s n="f"/></l><r>inhabitant<s n="n"/></r></p></e>
     <e r="LR"><p><l>loĝanto<s n="n"/><s n="m"/></l><r>inhabitant<s n="n"/></r></p></e>
@@ -1797,19 +1788,6 @@
     <e r="LR"><p><l>juristo<s n="n"/><s n="m"/></l><r>jurist<s n="n"/></r></p></e>
     <e r="RL"><p><l>juristo<s n="n"/><s n="GD"/></l><r>jurist<s n="n"/></r></p></e>
 
-
-    <e r="LR"><p><l>reĝo<s n="n"/><s n="f"/></l><r>king<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reĝo<s n="n"/><s n="m"/></l><r>king<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reĝo<s n="n"/><s n="GD"/></l><r>king<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>knabo<s n="n"/><s n="f"/></l><r>lad<s n="n"/></r></p></e>
-    <e r="LR"><p><l>knabo<s n="n"/><s n="m"/></l><r>lad<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>lad<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lady<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>lady<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>lady<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>landlord<s n="n"/></r></p></e>
     <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>landlord<s n="n"/></r></p></e>
     <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>landlord<s n="n"/></r></p></e>
@@ -1818,9 +1796,9 @@
     <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>lawyer<s n="n"/></r></p></e>
     <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>lawyer<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>dirigento<s n="n"/><s n="f"/></l><r>leader<s n="n"/></r></p></e>
-    <e r="LR"><p><l>dirigento<s n="n"/><s n="m"/></l><r>leader<s n="n"/></r></p></e>
-    <e r="RL"><p><l>dirigento<s n="n"/><s n="GD"/></l><r>leader<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gridanto<s n="n"/><s n="f"/></l><r>leader<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gvidanto<s n="n"/><s n="m"/></l><r>leader<s n="n"/></r></p></e>
+    <e r="RL"><p><l>gvidanto<s n="n"/><s n="GD"/></l><r>leader<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>monpruntisto<s n="n"/><s n="f"/></l><r>lender<s n="n"/></r></p></e>
     <e r="LR"><p><l>monpruntisto<s n="n"/><s n="m"/></l><r>lender<s n="n"/></r></p></e>
@@ -1833,6 +1811,7 @@
     <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lord<s n="n"/></r></p></e>
     <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>lord<s n="n"/></r></p></e>
     <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>lord<s n="n"/></r></p></e>
+
 
     <e r="LR"><p><l>perdanto<s n="n"/><s n="f"/></l><r>loser<s n="n"/></r></p></e>
     <e r="LR"><p><l>perdanto<s n="n"/><s n="m"/></l><r>loser<s n="n"/></r></p></e>
@@ -1946,13 +1925,6 @@
     <e r="LR"><p><l>esploristo<s n="n"/><s n="m"/></l><r>navigator<s n="n"/></r></p></e>
     <e r="RL"><p><l>esploristo<s n="n"/><s n="GD"/></l><r>navigator<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>nevo<s n="n"/><s n="f"/></l><r>nephew<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nevo<s n="n"/><s n="m"/></l><r>nephew<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nevo<s n="n"/><s n="GD"/></l><r>nephew<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>nevo<s n="n"/><s n="f"/></l><r>niece<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nevo<s n="n"/><s n="m"/></l><r>niece<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nevo<s n="n"/><s n="GD"/></l><r>niece<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>notario<s n="n"/><s n="f"/></l><r>notary<s n="n"/></r></p></e>
     <e r="LR"><p><l>notario<s n="n"/><s n="m"/></l><r>notary<s n="n"/></r></p></e>
@@ -2074,17 +2046,6 @@
     <e r="LR"><p><l>poeto<s n="n"/><s n="m"/></l><r>poet<s n="n"/></r></p></e>
     <e r="RL"><p><l>poeto<s n="n"/><s n="GD"/></l><r>poet<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>polico<s n="n"/><s n="f"/></l><r>policeman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>polico<s n="n"/><s n="m"/></l><r>policeman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>polico<s n="n"/><s n="GD"/></l><r>policeman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>polico<s n="n"/><s n="f"/></l><r>police<s n="n"/></r></p></e>
-    <e r="LR"><p><l>polico<s n="n"/><s n="m"/></l><r>police<s n="n"/></r></p></e>
-    <e r="RL"><p><l>polico<s n="n"/><s n="GD"/></l><r>police<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>polico<s n="n"/><s n="f"/></l><r>policewoman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>polico<s n="n"/><s n="m"/></l><r>policewoman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>polico<s n="n"/><s n="GD"/></l><r>policewoman<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>politikisto<s n="n"/><s n="f"/></l><r>politician<s n="n"/></r></p></e>
     <e r="LR"><p><l>politikisto<s n="n"/><s n="m"/></l><r>politician<s n="n"/></r></p></e>
@@ -2113,14 +2074,6 @@
     <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>president<s n="n"/></r></p></e>
     <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>president<s n="n"/></r></p></e>
     <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>president<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>princo<s n="n"/><s n="f"/></l><r>prince<s n="n"/></r></p></e>
-    <e r="LR"><p><l>princo<s n="n"/><s n="m"/></l><r>prince<s n="n"/></r></p></e>
-    <e r="RL"><p><l>princo<s n="n"/><s n="GD"/></l><r>prince<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>princo<s n="n"/><s n="f"/></l><r>princess<s n="n"/></r></p></e>
-    <e r="LR"><p><l>princo<s n="n"/><s n="m"/></l><r>princess<s n="n"/></r></p></e>
-    <e r="RL"><p><l>princo<s n="n"/><s n="GD"/></l><r>princess<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>malliberulo<s n="n"/><s n="f"/></l><r>prisoner<s n="n"/></r></p></e>
     <e r="LR"><p><l>malliberulo<s n="n"/><s n="m"/></l><r>prisoner<s n="n"/></r></p></e>
@@ -2161,10 +2114,6 @@
     <e r="LR"><p><l>lernanto<s n="n"/><s n="f"/></l><r>pupil<s n="n"/></r></p></e>
     <e r="LR"><p><l>lernanto<s n="n"/><s n="m"/></l><r>pupil<s n="n"/></r></p></e>
     <e r="RL"><p><l>lernanto<s n="n"/><s n="GD"/></l><r>pupil<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>reĝo<s n="n"/><s n="f"/></l><r>queen<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reĝo<s n="n"/><s n="m"/></l><r>queen<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reĝo<s n="n"/><s n="GD"/></l><r>queen<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>kuniklo<s n="n"/><s n="f"/></l><r>rabbit<s n="n"/></r></p></e>
     <e r="LR"><p><l>kuniklo<s n="n"/><s n="m"/></l><r>rabbit<s n="n"/></r></p></e>
@@ -2286,14 +2235,6 @@
     <e r="LR"><p><l>kantisto<s n="n"/><s n="m"/></l><r>singer<s n="n"/></r></p></e>
     <e r="RL"><p><l>kantisto<s n="n"/><s n="GD"/></l><r>singer<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>sir<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>sir<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>sir<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>frato<s n="n"/><s n="f"/></l><r>sister<s n="n"/></r></p></e>
-    <e r="LR"><p><l>frato<s n="n"/><s n="m"/></l><r>sister<s n="n"/></r></p></e>
-    <e r="RL"><p><l>frato<s n="n"/><s n="GD"/></l><r>sister<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>skianto<s n="n"/><s n="f"/></l><r>skier<s n="n"/></r></p></e>
     <e r="LR"><p><l>skianto<s n="n"/><s n="m"/></l><r>skier<s n="n"/></r></p></e>
     <e r="RL"><p><l>skianto<s n="n"/><s n="GD"/></l><r>skier<s n="n"/></r></p></e>
@@ -2322,10 +2263,6 @@
     <e r="LR"><p><l>solisto<s n="n"/><s n="m"/></l><r>soloist<s n="n"/></r></p></e>
     <e r="RL"><p><l>solisto<s n="n"/><s n="GD"/></l><r>soloist<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>filo<s n="n"/><s n="f"/></l><r>son<s n="n"/></r></p></e>
-    <e r="LR"><p><l>filo<s n="n"/><s n="m"/></l><r>son<s n="n"/></r></p></e>
-    <e r="RL"><p><l>filo<s n="n"/><s n="GD"/></l><r>son<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>suvereno<s n="n"/><s n="f"/></l><r>sovereign<s n="n"/></r></p></e>
     <e r="LR"><p><l>suvereno<s n="n"/><s n="m"/></l><r>sovereign<s n="n"/></r></p></e>
     <e r="RL"><p><l>suvereno<s n="n"/><s n="GD"/></l><r>sovereign<s n="n"/></r></p></e>
@@ -2333,18 +2270,6 @@
     <e r="LR"><p><l>specialisto<s n="n"/><s n="f"/></l><r>specialist<s n="n"/></r></p></e>
     <e r="LR"><p><l>specialisto<s n="n"/><s n="m"/></l><r>specialist<s n="n"/></r></p></e>
     <e r="RL"><p><l>specialisto<s n="n"/><s n="GD"/></l><r>specialist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>proparolanto<s n="n"/><s n="f"/></l><r>spokesman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>proparolanto<s n="n"/><s n="m"/></l><r>spokesman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>proparolanto<s n="n"/><s n="GD"/></l><r>spokesman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>proparolanto<s n="n"/><s n="f"/></l><r>spokeswoman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>proparolanto<s n="n"/><s n="m"/></l><r>spokeswoman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>proparolanto<s n="n"/><s n="GD"/></l><r>spokeswoman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sportisto<s n="n"/><s n="f"/></l><r>sportsman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sportisto<s n="n"/><s n="m"/></l><r>sportsman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sportisto<s n="n"/><s n="GD"/></l><r>sportsman<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>spiono<s n="n"/><s n="f"/></l><r>spy<s n="n"/></r></p></e>
     <e r="LR"><p><l>spiono<s n="n"/><s n="m"/></l><r>spy<s n="n"/></r></p></e>
@@ -2414,10 +2339,6 @@
     <e r="LR"><p><l>ŝtelisto<s n="n"/><s n="m"/></l><r>thief<s n="n"/></r></p></e>
     <e r="RL"><p><l>ŝtelisto<s n="n"/><s n="GD"/></l><r>thief<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>tigro<s n="n"/><s n="f"/></l><r>tiger<s n="n"/></r></p></e>
-    <e r="LR"><p><l>tigro<s n="n"/><s n="m"/></l><r>tiger<s n="n"/></r></p></e>
-    <e r="RL"><p><l>tigro<s n="n"/><s n="GD"/></l><r>tiger<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>turisto<s n="n"/><s n="f"/></l><r>tourist<s n="n"/></r></p></e>
     <e r="LR"><p><l>turisto<s n="n"/><s n="m"/></l><r>tourist<s n="n"/></r></p></e>
     <e r="RL"><p><l>turisto<s n="n"/><s n="GD"/></l><r>tourist<s n="n"/></r></p></e>
@@ -2462,10 +2383,6 @@
     <e r="LR"><p><l>veterano<s n="n"/><s n="m"/></l><r>veteran<s n="n"/></r></p></e>
     <e r="RL"><p><l>veterano<s n="n"/><s n="GD"/></l><r>veteran<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="f"/></l><r>vice-president<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="m"/></l><r>vice-president<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vicprezidanto<s n="n"/><s n="GD"/></l><r>vice-president<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>spektanto<s n="n"/><s n="f"/></l><r>viewer<s n="n"/></r></p></e>
     <e r="LR"><p><l>spektanto<s n="n"/><s n="m"/></l><r>viewer<s n="n"/></r></p></e>
     <e r="RL"><p><l>spektanto<s n="n"/><s n="GD"/></l><r>viewer<s n="n"/></r></p></e>
@@ -2474,25 +2391,15 @@
     <e r="LR"><p><l>vizitanto<s n="n"/><s n="m"/></l><r>visitor<s n="n"/></r></p></e>
     <e r="RL"><p><l>vizitanto<s n="n"/><s n="GD"/></l><r>visitor<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>kelnero<s n="n"/><s n="f"/></l><r>waiter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kelnero<s n="n"/><s n="m"/></l><r>waiter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kelnero<s n="n"/><s n="GD"/></l><r>waiter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kelnero<s n="n"/><s n="f"/></l><r>waitress<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kelnero<s n="n"/><s n="m"/></l><r>waitress<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kelnero<s n="n"/><s n="GD"/></l><r>waitress<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gardisto<s n="n"/><s n="f"/></l><r>watchdog<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gardisto<s n="n"/><s n="m"/></l><r>watchdog<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gardisto<s n="n"/><s n="GD"/></l><r>watchdog<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>pograndisto<s n="n"/><s n="f"/></l><r>wholesaler<s n="n"/></r></p></e>
     <e r="LR"><p><l>pograndisto<s n="n"/><s n="m"/></l><r>wholesaler<s n="n"/></r></p></e>
     <e r="RL"><p><l>pograndisto<s n="n"/><s n="GD"/></l><r>wholesaler<s n="n"/></r></p></e>
+    <e><p><l>pograndisto<s n="n"/></l><r>wholesaler<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>vidvo<s n="n"/><s n="f"/></l><r>widower<s n="n"/></r></p></e>
     <e r="LR"><p><l>vidvo<s n="n"/><s n="m"/></l><r>widower<s n="n"/></r></p></e>
     <e r="RL"><p><l>vidvo<s n="n"/><s n="GD"/></l><r>widower<s n="n"/></r></p></e>
+    <e><p><l>vidvo<s n="n"/></l><r>widower<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>gajnanto<s n="n"/><s n="f"/></l><r>winner<s n="n"/></r></p></e>
     <e r="LR"><p><l>gajnanto<s n="n"/><s n="m"/></l><r>winner<s n="n"/></r></p></e>
@@ -2518,55 +2425,9 @@
     <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="m"/></l><r>vice-president<s n="n"/></r></p></e>
     <e r="RL"><p><l>vicprezidanto<s n="n"/><s n="GD"/></l><r>vice-president<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>protestanto<s n="n"/><s n="f"/></l><r>Protestant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>protestanto<s n="n"/><s n="m"/></l><r>Protestant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>protestanto<s n="n"/><s n="GD"/></l><r>Protestant<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>kuiristo<s n="n"/><s n="f"/></l><r>cook<s n="n"/></r></p></e>
     <e r="LR"><p><l>kuiristo<s n="n"/><s n="m"/></l><r>cook<s n="n"/></r></p></e>
     <e r="RL"><p><l>kuiristo<s n="n"/><s n="GD"/></l><r>cook<s n="n"/></r></p></e>
-
-
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
-    <e r="LR"><p><l>franco<s n="n"/><s n="f"/></l><r>French<s n="n"/></r></p></e>
-    <e r="LR"><p><l>germano<s n="n"/><s n="f"/></l><r>German<s n="n"/></r></p></e>
-    <e r="LR"><p><l>greko<s n="n"/><s n="f"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="LR"><p><l>italo<s n="n"/><s n="f"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>japano<s n="n"/><s n="f"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="f"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>norvego<s n="n"/><s n="f"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ruso<s n="n"/><s n="f"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sviso<s n="n"/><s n="f"/></l><r>Swiss<s n="n"/></r></p></e>
-    
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>brito<s n="n"/><s n="m"/></l><r>British<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anglo<s n="n"/><s n="m"/></l><r>English<s n="n"/></r></p></e>
-    <e r="LR"><p><l>franco<s n="n"/><s n="m"/></l><r>French<s n="n"/></r></p></e>
-    <e r="LR"><p><l>germano<s n="n"/><s n="m"/></l><r>German<s n="n"/></r></p></e>
-    <e r="LR"><p><l>greko<s n="n"/><s n="m"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="LR"><p><l>italo<s n="n"/><s n="m"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>japano<s n="n"/><s n="m"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="m"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>norvego<s n="n"/><s n="m"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ruso<s n="n"/><s n="m"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sviso<s n="n"/><s n="m"/></l><r>Swiss<s n="n"/></r></p></e>
-    
-    <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
-    <e r="RL"><p><l>franco<s n="n"/><s n="GD"/></l><r>French<s n="n"/></r></p></e>
-    <e r="RL"><p><l>germano<s n="n"/><s n="GD"/></l><r>German<s n="n"/></r></p></e>
-    <e r="RL"><p><l>greko<s n="n"/><s n="GD"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="RL"><p><l>italo<s n="n"/><s n="GD"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>japano<s n="n"/><s n="GD"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="RL"><p><l>niĝeriano<s n="n"/><s n="GD"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>norvego<s n="n"/><s n="GD"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ruso<s n="n"/><s n="GD"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sviso<s n="n"/><s n="GD"/></l><r>Swiss<s n="n"/></r></p></e>
 
 
     <e r="LR"><p><l>nigrulo<s n="n"/><s n="f"/></l><r>black<s n="n"/></r></p></e>
@@ -2585,11 +2446,164 @@
     <e r="RL"><p><l>profesiulo<s n="n"/><s n="GD"/></l><r>professional<s n="n"/></r></p></e>
 
 
+
+
+
+
+
+
+
+
+	<!--  gender-full nouns. NOT WORKING -->
+
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>gentleman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>gentleman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>gentleman<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>dio<s n="n"/><s n="f"/></l><r>goddess<s n="n"/></r></p></e>
+    <e r="LR"><p><l>dio<s n="n"/><s n="m"/></l><r>goddess<s n="n"/></r></p></e>
+    <e r="RL"><p><l>dio<s n="n"/><s n="GD"/></l><r>goddess<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>dio<s n="n"/><s n="f"/></l><r>god<s n="n"/></r></p></e>
+    <e r="LR"><p><l>dio<s n="n"/><s n="m"/></l><r>god<s n="n"/></r></p></e>
+    <e r="RL"><p><l>dio<s n="n"/><s n="GD"/></l><r>god<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>kelnero<s n="n"/><s n="f"/></l><r>waiter<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kelnero<s n="n"/><s n="m"/></l><r>waiter<s n="n"/></r></p></e>
+    <e r="RL"><p><l>kelnero<s n="n"/><s n="GD"/></l><r>waiter<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>kelnero<s n="n"/><s n="f"/></l><r>waitress<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kelnero<s n="n"/><s n="m"/></l><r>waitress<s n="n"/></r></p></e>
+    <e r="RL"><p><l>kelnero<s n="n"/><s n="GD"/></l><r>waitress<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>policano<s n="n"/><s n="f"/></l><r>policeman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>policano<s n="n"/><s n="m"/></l><r>policeman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>policano<s n="n"/><s n="GD"/></l><r>policeman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>policano<s n="n"/></l><r>policeman<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>policano<s n="n"/><s n="f"/></l><r>policewoman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>policano<s n="n"/><s n="m"/></l><r>policewoman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>policano<s n="n"/><s n="GD"/></l><r>policewoman<s n="n"/></r></p></e>
+
+
     <e><p><l>knabo<s n="n"/><s n="f"/></l><r>girl<s n="n"/></r></p></e>
     <e><p><l>knabo<s n="n"/><s n="m"/></l><r>boy<s n="n"/></r></p></e>
 
-    <e><p><l>kisto<s n="n"/></l><r>cyst<s n="n"/></r></p></e>
 
+
+    <e><p><l>nepo<s n="n"/><s n="m"/></l><r>grandson<s n="n"/></r></p></e>
+    <e><p><l>nepo<s n="n"/><s n="f"/></l><r>granddaughter<s n="n"/></r></p></e>
+
+    <e><p><l>avo<s n="n"/><s n="m"/></l><r>grandfather<s n="n"/></r></p></e>
+    <e><p><l>avo<s n="n"/><s n="f"/></l><r>grandmother<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>nepo<s n="n"/><s n="f"/></l><r>grandchild<s n="n"/></r></p></e>
+    <e r="LR"><p><l>nepo<s n="n"/><s n="m"/></l><r>grandchild<s n="n"/></r></p></e>
+    <e r="RL"><p><l>nepo<s n="n"/><s n="GD"/></l><r>grandchild<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>avo<s n="n"/><s n="f"/></l><r>grandparent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>avo<s n="n"/><s n="m"/></l><r>grandparent<s n="n"/></r></p></e>
+    <e r="RL"><p><l>avo<s n="n"/><s n="GD"/></l><r>grandparent<s n="n"/></r></p></e>
+
+    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
+
+
+    <e r="LR"><p><l>heroo<s n="n"/><s n="f"/></l><r>hero<s n="n"/></r></p></e>
+    <e r="LR"><p><l>heroo<s n="n"/><s n="m"/></l><r>hero<s n="n"/></r></p></e>
+    <e r="RL"><p><l>heroo<s n="n"/><s n="GD"/></l><r>hero<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>heroo<s n="n"/><s n="f"/></l><r>heroine<s n="n"/></r></p></e>
+    <e r="LR"><p><l>heroo<s n="n"/><s n="m"/></l><r>heroine<s n="n"/></r></p></e>
+    <e r="RL"><p><l>heroo<s n="n"/><s n="GD"/></l><r>heroine<s n="n"/></r></p></e>
+
+
+    <e r="LR"><p><l>frato<s n="n"/><s n="f"/></l><r>brother<s n="n"/></r></p></e>
+    <e r="LR"><p><l>frato<s n="n"/><s n="m"/></l><r>brother<s n="n"/></r></p></e>
+    <e r="RL"><p><l>frato<s n="n"/><s n="GD"/></l><r>brother<s n="n"/></r></p></e>
+
+
+    <e r="LR"><p><l>filo<s n="n"/><s n="f"/></l><r>daughter<s n="n"/></r></p></e>
+    <e r="LR"><p><l>filo<s n="n"/><s n="m"/></l><r>daughter<s n="n"/></r></p></e>
+    <e r="RL"><p><l>filo<s n="n"/><s n="GD"/></l><r>daughter<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>chairman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>chairman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>chairman<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>chairperson<s n="n"/></r></p></e>
+    <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>chairperson<s n="n"/></r></p></e>
+    <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>chairperson<s n="n"/></r></p></e>
+
+
+
+    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
+
+
+
+    <e r="LR"><p><l>reĝo<s n="n"/><s n="f"/></l><r>king<s n="n"/></r></p></e>
+    <e r="LR"><p><l>reĝo<s n="n"/><s n="m"/></l><r>king<s n="n"/></r></p></e>
+    <e r="RL"><p><l>reĝo<s n="n"/><s n="GD"/></l><r>king<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>knabo<s n="n"/><s n="f"/></l><r>lad<s n="n"/></r></p></e>
+    <e r="LR"><p><l>knabo<s n="n"/><s n="m"/></l><r>lad<s n="n"/></r></p></e>
+    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>lad<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lady<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>lady<s n="n"/></r></p></e>
+    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>lady<s n="n"/></r></p></e>
+
+
+
+    <e r="LR"><p><l>princo<s n="n"/><s n="f"/></l><r>prince<s n="n"/></r></p></e>
+    <e r="LR"><p><l>princo<s n="n"/><s n="m"/></l><r>prince<s n="n"/></r></p></e>
+    <e r="RL"><p><l>princo<s n="n"/><s n="GD"/></l><r>prince<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>princo<s n="n"/><s n="f"/></l><r>princess<s n="n"/></r></p></e>
+    <e r="LR"><p><l>princo<s n="n"/><s n="m"/></l><r>princess<s n="n"/></r></p></e>
+    <e r="RL"><p><l>princo<s n="n"/><s n="GD"/></l><r>princess<s n="n"/></r></p></e>
+
+
+
+
+    <e r="LR"><p><l>nevo<s n="n"/><s n="f"/></l><r>nephew<s n="n"/></r></p></e>
+    <e r="LR"><p><l>nevo<s n="n"/><s n="m"/></l><r>nephew<s n="n"/></r></p></e>
+    <e r="RL"><p><l>nevo<s n="n"/><s n="GD"/></l><r>nephew<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>nevo<s n="n"/><s n="f"/></l><r>niece<s n="n"/></r></p></e>
+    <e r="LR"><p><l>nevo<s n="n"/><s n="m"/></l><r>niece<s n="n"/></r></p></e>
+    <e r="RL"><p><l>nevo<s n="n"/><s n="GD"/></l><r>niece<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>reĝo<s n="n"/><s n="f"/></l><r>queen<s n="n"/></r></p></e>
+    <e r="LR"><p><l>reĝo<s n="n"/><s n="m"/></l><r>queen<s n="n"/></r></p></e>
+    <e r="RL"><p><l>reĝo<s n="n"/><s n="GD"/></l><r>queen<s n="n"/></r></p></e>
+
+
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>sir<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>sir<s n="n"/></r></p></e>
+    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>sir<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>frato<s n="n"/><s n="f"/></l><r>sister<s n="n"/></r></p></e>
+    <e r="LR"><p><l>frato<s n="n"/><s n="m"/></l><r>sister<s n="n"/></r></p></e>
+    <e r="RL"><p><l>frato<s n="n"/><s n="GD"/></l><r>sister<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>filo<s n="n"/><s n="f"/></l><r>son<s n="n"/></r></p></e>
+    <e r="LR"><p><l>filo<s n="n"/><s n="m"/></l><r>son<s n="n"/></r></p></e>
+    <e r="RL"><p><l>filo<s n="n"/><s n="GD"/></l><r>son<s n="n"/></r></p></e>
+
+
+    <e r="LR"><p><l>proparolanto<s n="n"/><s n="f"/></l><r>spokesman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>proparolanto<s n="n"/><s n="m"/></l><r>spokesman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>proparolanto<s n="n"/><s n="GD"/></l><r>spokesman<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>proparolanto<s n="n"/><s n="f"/></l><r>spokeswoman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>proparolanto<s n="n"/><s n="m"/></l><r>spokeswoman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>proparolanto<s n="n"/><s n="GD"/></l><r>spokeswoman<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>sportisto<s n="n"/><s n="f"/></l><r>sportsman<s n="n"/></r></p></e>
+    <e r="LR"><p><l>sportisto<s n="n"/><s n="m"/></l><r>sportsman<s n="n"/></r></p></e>
+    <e r="RL"><p><l>sportisto<s n="n"/><s n="GD"/></l><r>sportsman<s n="n"/></r></p></e>
 
 <!--
 
@@ -2600,6 +2614,16 @@
 -->
 
 
+<!--
+    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/></r></p></e>
+    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/></r></p></e>
+    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
+-->
 
 
 
@@ -2640,13 +2664,6 @@
 
 
 
-    <e c="Jacob's house==Domo de Jacob"><p><l>de<s n="pr"/></l><r>'s<s n="gen"/></r></p></e>
-
-
-
-
-
-
 
 
 
@@ -2668,16 +2685,6 @@
 -->
 
 
-<!--
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/></r></p></e>
-    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
--->
 
 
 
@@ -2685,6 +2692,10 @@
 	<!--      Below here is only one-word nouns, adj, adv and vblex             -->
 	<!--      which should NOT be generated from traduku.net data               -->
 	<!-- ====================================================================== -->
+
+    <e><p><l>polico<s n="n"/></l><r>police<s n="n"/></r></p></e>
+    <e><p><l>kisto<s n="n"/></l><r>cyst<s n="n"/></r></p></e>
+    <e><p><l>doto<s n="n"/></l><r>dowry<s n="n"/></r></p></e>
 
     <e><p><l>ĉi<b/>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
     <e><p><l>paro<s n="n"/></l><r>pair<s n="n"/></r></p></e>
@@ -4351,9 +4362,6 @@
     <e><p><l>garantio<s n="n"/></l><r>guarantee<s n="n"/></r></p></e>
     <e r="RL"><p><l>garantio<s n="n"/></l><r>undertaking<s n="n"/></r></p></e>
     <e r="RL"><p><l>garantio<s n="n"/></l><r>warranty<s n="n"/></r></p></e>
-    <e><p><l>gardado<s n="n"/></l><r>guard<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gardado<s n="n"/></l><r>policeman<s n="n"/></r></p></e>
-    <e><p><l>gardisto<s n="n"/></l><r>watchdog<s n="n"/></r></p></e>
     <e><p><l>gasbotelo<s n="n"/></l><r>carboy<s n="n"/></r></p></e>
     <e><p><l>gaso<s n="n"/></l><r>gas<s n="n"/></r></p></e>
     <e r="LR"><p><l>gaso-dukto<s n="n"/></l><r>pipeline<s n="n"/></r></p></e>
@@ -4375,10 +4383,6 @@
     <e><p><l>geografio<s n="n"/></l><r>geography<s n="n"/></r></p></e>
     <e><p><l>geometrio<s n="n"/></l><r>geometry<s n="n"/></r></p></e>
     <e r="LR"><p><l>geometro<s n="n"/></l><r>geometry<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
     <e><p><l>geriatro<s n="n"/></l><r>geriatrist<s n="n"/></r></p></e>
     <e><p><l>gesto<s n="n"/></l><r>gesture<s n="n"/></r></p></e>
     <e><p><l>gildo<s n="n"/></l><r>confrerie<s n="n"/></r></p></e>
@@ -4464,8 +4468,8 @@
     <e r="RL"><p><l>hasto<s n="n"/></l><r>hurry<s n="n"/></r></p></e>
     <e r="RL"><p><l>hasto<s n="n"/></l><r>rush<s n="n"/></r></p></e>
 
-    <e r="RL"><p><l>haŭto<s n="n"/></l><r>fur<s n="n"/></r></p></e>
-    <e r="RL"><p><l>haŭto<s n="n"/></l><r>leather<s n="n"/></r></p></e>
+    <e><p><l>felo<s n="n"/></l><r>fur<s n="n"/></r></p></e>
+    <e><p><l>ledo<s n="n"/></l><r>leather<s n="n"/></r></p></e>
     <e><p><l>haŭto<s n="n"/></l><r>skin<s n="n"/></r></p></e>
 
     <e r="RL"><p><l>haveno<s n="n"/></l><r>harbour<s n="n"/></r></p></e>
@@ -6059,7 +6063,6 @@
     <e><p><l>poemo<s n="n"/></l><r>poem<s n="n"/></r></p></e>
     <e><p><l>poeto<s n="n"/></l><r>poet<s n="n"/></r></p></e>
     <e><p><l>poezio<s n="n"/></l><r>poetry<s n="n"/></r></p></e>
-    <e><p><l>pograndisto<s n="n"/></l><r>wholesaler<s n="n"/></r></p></e>
     <e><p><l>pojno<s n="n"/></l><r>doll<s n="n"/></r></p></e>
     <e><p><l>pojno<s n="n"/></l><r>wrist<s n="n"/></r></p></e>
     <e c="Dep."><p><l>pokalo<s n="n"/></l><r>cup<s n="n"/></r></p></e>
@@ -6992,7 +6995,7 @@
     <e><p><l>testudo<s n="n"/></l><r>turtle<s n="n"/></r></p></e>
     <e r="LR"><p><l>tezo<s n="n"/></l><r>thesis<s n="n"/><s n="ND"/></r></p></e>
     <e r="RL"><p><l>tezo<s n="n"/></l><r>thesis<s n="n"/></r></p></e>
-    <e r="RL"><p><l>tigro<s n="n"/></l><r>tiger<s n="n"/></r></p></e>
+    <e><p><l>tigro<s n="n"/></l><r>tiger<s n="n"/></r></p></e>
     <e><p><l>timbalo<s n="n"/></l><r>eardrum<s n="n"/></r></p></e>
     <e><p><l>timideco<s n="n"/></l><r>timidity<s n="n"/></r></p></e>
     <e><p><l>timiĝo<s n="n"/></l><r>fright<s n="n"/></r></p></e>
@@ -7240,7 +7243,6 @@
     <e><p><l>vidado<s n="n"/></l><r>vision<s n="n"/></r></p></e>
     <e><p><l>videbleco<s n="n"/></l><r>visibility<s n="n"/></r></p></e>
     <e><p><l>vidindaĵo<s n="n"/></l><r>curiosity<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vidvo<s n="n"/></l><r>widower<s n="n"/></r></p></e>
     <e><p><l>viglado<s n="n"/></l><r>surveillance<s n="n"/></r></p></e>
     <e><p><l>vigleco<s n="n"/></l><r>vigour<s n="n"/></r></p></e>
     <e><p><l>vikario<s n="n"/></l><r>vicar<s n="n"/></r></p></e>
