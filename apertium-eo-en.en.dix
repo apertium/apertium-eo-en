@@ -10915,6 +10915,7 @@
     <e lm="go on"><i/><par n="/go__vblex"/><p><l><b/>on</l><r><j/>on<s n="pr"/></r></p></e>
     <e lm="go back"><i/><par n="/go__vblex"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
     <e lm="be hungry"><par n="/be__vblex"/><p><l><b/>hungry</l><r><g><b/>hungry</g></r></p></e>
+    <e lm="there is"><p><l>there<b/></l><r><g>there<b/></g></r></p><par n="/be__vblex"/></e>
     <e lm="Afghanistan"><i>Afghanistan</i><par n="Barcelona__np"/></e>
     <e lm="African"><i>African</i><par n="expensive__adj"/></e>
     <e lm="Albanian"><i>Albanian</i><par n="house__n"/></e>
@@ -15016,7 +15017,7 @@
     <e lm="manufacturing"><i>manufacturing</i><par n="house__n"/></e>
     <e lm="manuscript"><i>manuscript</i><par n="house__n"/></e>
     <e lm="many"><i>many</i><par n="many__det"/></e>
-    <e lm="many"><i>many</i><par n="both__prn"/></e>
+    <!-- JN: its 'multaj' anyway, so just use the det <e lm="many"><i>many</i><par n="both__prn"/></e>  -->
     <e lm="map"><i>map</i><par n="house__n"/></e>
     <e lm="marathon"><i>marathon</i><par n="house__n"/></e>
     <e lm="marble"><i>marble</i><par n="house__n"/></e>

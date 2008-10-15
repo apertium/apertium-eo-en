@@ -305,9 +305,9 @@
     <e><p><l>iu<s n="prn"/></l><r>some<s n="prn"/></r></p></e>
 
 
+	<e><p><l>kiom<s n="prn"/><s n="itg"/></l><r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
     <e r="RL"><p><l>kiom<s n="prn"/><s n="itg"/></l><r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
-    <e><p><l>kiom<s n="prn"/><s n="itg"/></l><r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
-
+    
 
     <e r="LR"><p><l>kiu<s n="prn"/></l><r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>kiu<s n="prn"/></l><r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
@@ -409,7 +409,7 @@
     <e r="LR"><p><l>ĉar<s n="cnjadv"/></l><r>since<s n="cnjadv"/></r></p></e>
     <e><p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l><r>increasingly<s n="cnjadv"/></r></p></e>
 
-    <e r="LR"><p><l>sekve<s n="cnjadv"/></l><r>therefore<s n="cnjadv"/></r></p></e>
+    <e><p><l>sekve<s n="cnjadv"/></l><r>therefore<s n="cnjadv"/></r></p></e>
     <e><p><l>tamen<s n="cnjadv"/></l><r>even<b/>so<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>tamen<s n="cnjadv"/></l><r>however<s n="cnjadv"/></r></p></e>
     <e r="RL"><p><l>tamen<s n="cnjadv"/></l><r>though<s n="cnjadv"/></r></p></e>
@@ -698,6 +698,7 @@
     <e><i>Diego<s n="np"/><s n="ant"/></i></e>
     <e><i>Israel<s n="np"/><s n="ant"/></i></e>
     <e><i>Izabela<s n="np"/><s n="ant"/></i></e>
+    <e><i>Isabel<s n="np"/><s n="ant"/></i></e>
 
 
     <e><i>Hyde<s n="np"/><s n="cog"/></i></e>
@@ -2503,10 +2504,6 @@
     <e r="LR"><p><l>sportisto<s n="n"/><s n="m"/></l><r>sportsman<s n="n"/></r></p></e>
     <e r="RL"><p><l>sportisto<s n="n"/><s n="GD"/></l><r>sportsman<s n="n"/></r></p></e>
 
-    <e><p><l>genepo<s n="n"/></l><r>grandchild<s n="n"/></r></p></e>
-    <e><p><l>geavo<s n="n"/></l><r>grandparent<s n="n"/></r></p></e>
-    <e><p><l>gepatro<s n="n"/></l><r>parent<s n="n"/></r></p></e>
-
 
 
     <e><p><l>prezidento<s n="n"/><s n="m"/></l><r>chairman<s n="n"/></r></p></e>
@@ -2516,25 +2513,11 @@
     <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>chairperson<s n="n"/></r></p></e>
 
 
-<!--
 
-    <e r="RL"><p><l>knabo<s n="n"/><s n="m"/></l><r>lad<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>child<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>infant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>knabo<s n="n"/><s n="GD"/></l><r>kid<s n="n"/></r></p></e>
--->
-
-
-<!--
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gepatro<s n="n"/><s n="pl"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/></r></p></e>
-    <e r="LR"><p><l>patro<s n="n"/><s n="m"/></l><r>father<s n="n"/><s n="sg"/></r></p></e>
--->
+    <e><p><l>genepo<s n="n"/></l><r>grandchild<s n="n"/></r></p></e>
+    <e><p><l>geavo<s n="n"/></l><r>grandparent<s n="n"/></r></p></e>
+    <e><p><l>gepatro<s n="n"/></l><r>parent<s n="n"/></r></p></e>
+    <e><p><l>infano<s n="n"/></l><r>infant<s n="n"/></r></p></e>
 
 
 
@@ -2667,7 +2650,7 @@
     <e r="RL"><p><l>tamen<s n="adv"/></l><r>however<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tamen<s n="adv"/></l><r>though<s n="adv"/></r></p></e>
     <e r="LR"><p><l>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>tie<s n="adv"/></l><r>there<s n="adv"/></r></p></e>
+    <e><p><l>tie<s n="adv"/></l><r>there<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tiel<s n="adv"/></l><r>thereby<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tiel<s n="adv"/></l><r>thus<s n="adv"/></r></p></e>
     <e r="RL"><p><l>tre<s n="adv"/></l><r>awfully<s n="adv"/></r></p></e>
@@ -2777,7 +2760,11 @@
     <e r="RL"><p><l>kunvoki<s n="vblex"/></l><r>set<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>lasi<s n="vblex"/></l><r>give<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>mallumigi<s n="vblex"/></l><r>get<g><b/>dark</g><s n="vblex"/></r></p></e>
+    
     <e><p><l>malsati<s n="vblex"/></l><r>be<g><b/>hungry</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>esti<s n="vbser"/></l><r><g>there<b/></g>be<s n="vbser"/></r></p></e>
+
+
     <e><p><l>manki<s n="vblex"/></l><r>be<g><b/>missing</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>munti<s n="vblex"/></l><r>set<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>naskiĝi<s n="vblex"/></l><r>be<g><b/>born</g><s n="vblex"/></r></p></e>
@@ -4328,8 +4315,8 @@
     <e><p><l>golo<s n="n"/></l><r>goal<s n="n"/></r></p></e>
     <e><p><l>gorĝo<s n="n"/></l><r>throat<s n="n"/></r></p></e>
     <e><p><l>gorilo<s n="n"/></l><r>gorilla<s n="n"/></r></p></e>
-    <e><p><l>grado<s n="n"/></l><r>degree<s n="n"/></r></p></e>
-    <e r="RL"><p><l>grado<s n="n"/></l><r>grade<s n="n"/></r></p></e>
+    <e r="RL"><p><l>grado<s n="n"/></l><r>degree<s n="n"/></r></p></e>
+    <e><p><l>grado<s n="n"/></l><r>grade<s n="n"/></r></p></e>
     <e><p><l>grafiko<s n="n"/></l><r>chart<s n="n"/></r></p></e>
     <e r="RL"><p><l>grafiko<s n="n"/></l><r>graphics<s n="n"/></r></p></e>
     <e r="RL"><p><l>grafo<s n="n"/></l><r>earl<s n="n"/></r></p></e>
@@ -5618,11 +5605,6 @@
     <e><p><l>nekompetenteco<s n="n"/></l><r>incompetence<s n="n"/></r></p></e>
     <e><p><l>nekropsio<s n="n"/></l><r>autopsy<s n="n"/></r></p></e>
     <e><p><l>neono<s n="n"/></l><r>neon<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nepo<s n="n"/></l><r>grandson<s n="n"/></r></p></e>
-    <e r="RL"><p><l>nepo<s n="n"/></l><r>grandchild<s n="n"/></r></p></e>
-    <e r="LR"><p><l>nepo<s n="n"/></l><r>grandson<s n="n"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>nepo<s n="n"/></l><r>grandchild<s n="n"/><s n="pl"/></r></p></e>
-    <e><p><l>nepo<s n="n"/></l><r>granddaughter<s n="n"/></r></p></e>
     <e><p><l>nepotismo<s n="n"/></l><r>nepotism<s n="n"/></r></p></e>
     <e><p><l>nervo<s n="n"/></l><r>nerve<s n="n"/></r></p></e>
     <e><p><l>nesto<s n="n"/></l><r>nest<s n="n"/></r></p></e>
@@ -8806,7 +8788,9 @@
     <e><p><l>blonda<s n="adj"/></l><r>blond<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>bona<s n="adj"/></l><r>fine<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>malbona<s n="adj"/></l><r>bad<s n="adj"/><s n="sint"/></r></p></e>
+
     <e><p><l>esti<s n="vbser"/></l><r>be<s n="vbser"/></r></p></e>
+
     <e r="RL"><p><l>rapida<s n="adj"/></l><r>rapid<s n="adj"/></r></p></e>
     <e r="RL"><p><l>fari<s n="vblex"/></l><r>do<s n="vbdo"/></r></p></e>
     <e r="RL"><p><l>fari<s n="vblex"/></l><r>make<s n="vblex"/></r></p></e>
@@ -10324,8 +10308,8 @@
 	<e><p><l>lerta<s n="adj"/></l><r>skillful<s n="adj"/></r></p></e>
 	<e><p><l>fermo<s n="n"/></l><r>closing<s n="n"/></r></p></e>
 	<e><p><l>malfermo<s n="n"/></l><r>opening<s n="n"/></r></p></e>
-
 	<e><p><l>fermi<s n="vblex"/></l><r>close<s n="vblex"/></r></p></e>
+
 	<e r="RL"><p><l>fermi<s n="vblex"/></l><r>lock<s n="vblex"/></r></p></e>
 	<e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<s n="vblex"/></r></p></e>
 	<e><p><l>malfermi<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e>
