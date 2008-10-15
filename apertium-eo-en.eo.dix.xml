@@ -1630,6 +1630,9 @@
     <!-- some cats  -> ^kelkaj<det><qnt><pl><nom>$ ^kato<n><m><pl><nom>$  -->
     <e lm="kelka"><p><l>kelkaj</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="kelka"><p><l>kelkajn</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+    <!-- some say -->
+    <e lm="kelka"><p><l>kelkaj</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
+    <e lm="kelka"><p><l>kelkajn</l><r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
     <e lm="ambaŭ"><i>amba</i><par n="ŭ"/><i></i><par n="ind__det"/></e>
 
