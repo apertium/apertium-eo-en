@@ -17,6 +17,7 @@ public class Paro {
     public final static String ADV = "adv";
 
     public String apertiumWordType = PROBLEM;
+    private String apertiumExtraTags = "";
 
     public String apertiumWordType() {
       return apertiumWordType;
@@ -28,17 +29,14 @@ public class Paro {
     public boolean adv() { return (apertiumWordType==ADV); };
     public boolean verb() { return (apertiumWordType==VBLEX); };
     
-    public void set(String _apertiumWordType) {
+    public void setKlasoTag(String _apertiumWordType) {
       apertiumWordType = _apertiumWordType;
-      /*
-      problem = (apertiumWordType==PROBLEM);
-      noun = (apertiumWordType==N);
-      adj = (apertiumWordType==ADJ);
-      adv = (apertiumWordType==ADV);
-      verb = (apertiumWordType==VBLEX);
-       */
-    }
+    }    
     
+    public void setAliajTag(String _apertiumTags) {
+      apertiumExtraTags = _apertiumTags;
+      System.err.println("apertiumExtraTags = " + apertiumExtraTags);
+    }    
     
     public boolean affix;
     public boolean plur;

@@ -427,7 +427,6 @@
         <r><s n="pr"/></r> 
       </p>
     </e>
-
     </pardef>
 
     <pardef n="ĉiu__prn">
@@ -535,8 +534,8 @@
         <r>o<s n="n"/><s n="f"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+
 
     <pardef n="la__det">
     <e>
@@ -587,8 +586,8 @@
         <r><s n="det"/><s n="def"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+
 
     <pardef n="unu__det">
       <e>
@@ -640,6 +639,7 @@
         </p>
       </e>
     </pardef>
+
 
     <pardef n="mia__det">
     <e r="LR">
@@ -4086,6 +4086,8 @@
     <e lm="geometrio"><i>geometrio</i><par n="nom__n"/></e>
     <e lm="geometro"><i>geometro</i><par n="nom__n"/></e>
     <e lm="gepatro"><i>gepatro</i><par n="nom__n"/></e>
+    <e lm="genepo"><i>genepo</i><par n="nom__n"/></e>
+    <e lm="geavo"><i>geavo</i><par n="nom__n"/></e>
     <e lm="germana"><i>german</i><par n="adj__adj"/></e>
     <e lm="ĝermi"><par n="ĝ"/><i>erm</i><par n="verb__vblex"/></e>
     <e lm="ĝermo"><par n="ĝ"/><i>ermo</i><par n="nom__n"/></e>

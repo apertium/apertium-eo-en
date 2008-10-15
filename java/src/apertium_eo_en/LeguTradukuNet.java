@@ -223,36 +223,38 @@ public class LeguTradukuNet {
     
     if (tipo != null) {
       if (tipo.length()==0) {
-        p.set(p.PROBLEM);
+        p.setKlasoTag(p.PROBLEM);
       } else {
         String klaso = tipo.split("[<>]")[1].intern();
-        p.set(klaso);
-        System.out.println("tipo = "+tipo+"kaj klaso: "+klaso+ " por "+p);              
+        p.setKlasoTag(klaso);
+        int i = tipo.indexOf('<', 1);
+        if (i>0) p.setAliajTag(tipo.substring(i));
+        //System.out.println("tipo = "+tipo+"kaj klaso: "+klaso+ " por "+p);              
       }      
     }
-    else if (eo.length()<=1) p.set(p.PROBLEM); // not a word then / classification fails
-    else if (eo.indexOf("..")!=-1) p.set(p.PROBLEM); // eks  mal..igo
-    else if (eo.endsWith("-")) { p.affix = true; p.set(p.PROBLEM);}
-    else if (eo.startsWith("-")) { p.affix = true; p.set(p.PROBLEM);}
-    else if (Character.isDigit(lastCh))  p.set(p.N);
-    else if (!Character.isLetter(lastCh))  { p.set(p.PROBLEM); }
-    else if (Character.isUpperCase(firstCh) /*&& !Character.isUpperCase(eo.charAt(1))*/) { p.set(p.NP); p.orgEn = Character.toUpperCase(p.orgEn.charAt(0))+ p.orgEn.substring(1);}
-    else if (!Character.isLetter(lastCh))  p.set(p.PROBLEM);
+    else if (eo.length()<=1) p.setKlasoTag(p.PROBLEM); // not a word then / classification fails
+    else if (eo.indexOf("..")!=-1) p.setKlasoTag(p.PROBLEM); // eks  mal..igo
+    else if (eo.endsWith("-")) { p.affix = true; p.setKlasoTag(p.PROBLEM);}
+    else if (eo.startsWith("-")) { p.affix = true; p.setKlasoTag(p.PROBLEM);}
+    else if (Character.isDigit(lastCh))  p.setKlasoTag(p.N);
+    else if (!Character.isLetter(lastCh))  { p.setKlasoTag(p.PROBLEM); }
+    else if (Character.isUpperCase(firstCh) /*&& !Character.isUpperCase(eo.charAt(1))*/) { p.setKlasoTag(p.NP); p.orgEn = Character.toUpperCase(p.orgEn.charAt(0))+ p.orgEn.substring(1);}
+    else if (!Character.isLetter(lastCh))  p.setKlasoTag(p.PROBLEM);
     // NOTE: there are no single words with accusative -n
-    else if (eo.endsWith("aj")) { p.set(p.ADJ); p.plur = true; eo = eo.substring(0,eo.length()-0); }
-    else if (eo.endsWith("oj")) { p.set(p.N); p.plur = true; eo = eo.substring(0,eo.length()-0); }
-    else if (eo.endsWith("a")) { p.set(p.ADJ); }
-    else if (eo.endsWith("o")) { p.set(p.N); }
-    else if (eo.endsWith("e")) { p.set(p.ADV); }
+    else if (eo.endsWith("aj")) { p.setKlasoTag(p.ADJ); p.plur = true; eo = eo.substring(0,eo.length()-0); }
+    else if (eo.endsWith("oj")) { p.setKlasoTag(p.N); p.plur = true; eo = eo.substring(0,eo.length()-0); }
+    else if (eo.endsWith("a")) { p.setKlasoTag(p.ADJ); }
+    else if (eo.endsWith("o")) { p.setKlasoTag(p.N); }
+    else if (eo.endsWith("e")) { p.setKlasoTag(p.ADV); }
     else {
-      p.set(p.VBLEX);
+      p.setKlasoTag(p.VBLEX);
 
       {
         String eos = " "+eo;
         for (String finoNV : finajxojKunKonataVortklaso.keySet()) {
           if (eos.endsWith(finoNV)) {
             //System.out.println("eo.endsWith(finoNV) = " + eo+"     "+finoNV);
-            p.set(p.PROBLEM);
+            p.setKlasoTag(p.PROBLEM);
             break;
           }
         }
@@ -264,7 +266,7 @@ public class LeguTradukuNet {
           for (String verbradiko : verbradikojKiujFinasPerAsIsOsUs) {
             if (lastaVorto.equals(verbradiko)) {
               //System.out.println("eo.enquals(verbradiko) = " + eo+"    "+verbradiko);
-              p.set(p.VBLEX);
+              p.setKlasoTag(p.VBLEX);
               break;
             }
           }
@@ -287,7 +289,7 @@ public class LeguTradukuNet {
           eo=eo.substring(0, eo.length()-2)+"i";
           p.tr=true;
         } else if (eo.endsWith("i")) {
-          p.set(p.PROBLEM);
+          p.setKlasoTag(p.PROBLEM);
         } else {
           eo=eo+"i";
         }

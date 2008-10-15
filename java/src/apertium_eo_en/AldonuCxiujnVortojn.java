@@ -120,7 +120,7 @@ public class AldonuCxiujnVortojn {
             p.orgEn=enRadikoj.iterator().next();
             if (enRadikoj.size()>1) {
               //System.out.println("ARGH, for "+(int)p.frango+p+"enRadikoj="+enRadikoj+"  enRadikoj2="+enRadikoj2);
-            //throw new IllegalStateException(enRadikoj.toString());
+              //throw new IllegalStateException(enRadikoj.toString());
             }
           }
 
