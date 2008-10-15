@@ -1202,13 +1202,10 @@
     <e r="LR"><p><l>administranto<s n="n"/><s n="m"/></l><r>administrator<s n="n"/></r></p></e>
     <e r="RL"><p><l>administranto<s n="n"/><s n="GD"/></l><r>administrator<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>adolto<s n="n"/><s n="f"/></l><r>adult<s n="n"/></r></p></e>
-    <e r="LR"><p><l>adolto<s n="n"/><s n="m"/></l><r>adult<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adolto<s n="n"/><s n="GD"/></l><r>adult<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>adulto<s n="n"/><s n="f"/></l><r>adultery<s n="n"/></r></p></e>
-    <e r="LR"><p><l>adulto<s n="n"/><s n="m"/></l><r>adultery<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adulto<s n="n"/><s n="GD"/></l><r>adultery<s n="n"/></r></p></e>
+    <e r="LR"><p><l>plenkreskulo<s n="n"/><s n="f"/></l><r>adult<s n="n"/></r></p></e>
+    <e r="LR"><p><l>plenkreskulo<s n="n"/><s n="m"/></l><r>adult<s n="n"/></r></p></e>
+    <e r="RL"><p><l>plenkreskulo<s n="n"/><s n="GD"/></l><r>adult<s n="n"/></r></p></e>
+    <e r="RL"><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>asesoro<s n="n"/><s n="f"/></l><r>adviser<s n="n"/></r></p></e>
     <e r="LR"><p><l>asesoro<s n="n"/><s n="m"/></l><r>adviser<s n="n"/></r></p></e>
@@ -2800,7 +2797,11 @@
 
 
 
-<!-- multi-words -->
+
+	<!-- ====================================================================== -->
+	<!--      Multi-words                                                       -->
+	<!-- ====================================================================== -->
+
     <e><p><l>registara<b/>sidejo<s n="n"/></l><r>residence<s n="n"/></r></p></e>
     <e><p><l>armilaro<s n="n"/></l><r>arm<b/>stockpile<s n="n"/></r></p></e>
     <e r="RL"><p><l>armilaro<s n="n"/></l><r>weapon<b/>stockpile<s n="n"/></r></p></e> 
@@ -3093,7 +3094,6 @@
     <e r="RL"><p><l>administracio<s n="n"/></l><r>management<s n="n"/></r></p></e>
     <e r="RL"><p><l>administranto<s n="n"/></l><r>administrator<s n="n"/></r></p></e>
     <e><p><l>adoleskanto<s n="n"/></l><r>teenager<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adolto<s n="n"/></l><r>adult<s n="n"/></r></p></e>
     <e><p><l>adorado<s n="n"/></l><r>adoration<s n="n"/></r></p></e>
     <e><p><l>adorado<s n="n"/></l><r>worship<s n="n"/></r></p></e>
     <e r="LR"><p><l>adoro<s n="n"/></l><r>adoration<s n="n"/></r></p></e>

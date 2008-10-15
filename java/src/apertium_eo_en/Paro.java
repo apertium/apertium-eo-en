@@ -20,23 +20,8 @@ public class Paro {
 
     public String apertiumWordType() {
       return apertiumWordType;
-      /*
-      if (problem) return "???";
-      if (noun) return "n";
-      if (verb) return "vblex";
-      if (adj) return "adj";
-      if (adv) return "adv";
-      return "???UNKNOWN???";
-       */
     }
     
-    /*
-    private boolean problem;
-    private boolean noun;
-    private boolean adj;
-    private boolean adv;
-    private boolean verb;
-*/
     public boolean problem() { return (apertiumWordType==PROBLEM); };
     public boolean noun() { return (apertiumWordType==N); };
     public boolean adj() { return (apertiumWordType==ADJ); };
@@ -168,19 +153,24 @@ if it is, then add <s n="sint"/> if not then don't
 	String x =  apertiumWordType();
   String c = "";
   String a = "";
-  c += " c=\"r"+((int)frango)+";"+comment;
+  c += "r"+((int)frango);
 
   if (dir_enEo!=null || dir_eoEn!=null) { 
     if (dir_enEo!=null && dir_eoEn!=null) {
-      a +=" r=\"--\""; c+="LRRL:"+dir_enEo+dir_eoEn;
+      a +=" r=\"--\""; c+=" LRRL:"+dir_enEo+dir_eoEn;
     }
     else if (dir_enEo!=null) { a +=" r=\"LR\""; c+=" LR:"+dir_enEo;}
     else { a +=" r=\"RL\""; c+=" RL:"+dir_eoEn;}
   }
+  c += " "+comment;
 
-  a = a + "        ".substring(a.length());
+  
+  a = a + "       ".substring(a.length());
   //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
-  return "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e> \t\t   <!-- "+c+"-->";
+  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
+  String spc = "                                                                                   ";
+  if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
+  return  tot+"<!-- "+c+"-->";
   //return "<e"+a+c+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
 	//return "<e><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
     }

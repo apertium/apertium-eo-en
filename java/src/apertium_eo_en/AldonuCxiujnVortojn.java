@@ -24,7 +24,7 @@ public class AldonuCxiujnVortojn {
     }
 
     public String toString() {
-      return eoEn;
+      return "A"+eoEn;
     }
   }
 
@@ -43,8 +43,9 @@ public class AldonuCxiujnVortojn {
     
     long tempo = System.currentTimeMillis();
 
-    LinkedHashMap<String, ArrayList<String>> aperEoDix[]=Iloj.leguDix("lt-expand apertium-eo-en.eo.dix");
-    LinkedHashMap<String,ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix");
+    LinkedHashMap<String, ArrayList<String>> aperEoDix[] =Iloj.leguDix("lt-expand apertium-eo-en.eo.dix");
+
+    LinkedHashMap<String, ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix");
     //LinkedHashMap<String, ArrayList<String>> aperEnDix[]=Iloj.leguDix("zcat en.expanded.dix.gz");
 
     LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-lille.eo-en.dix");
@@ -52,7 +53,6 @@ public class AldonuCxiujnVortojn {
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("echo");
 
 
-    //HashMap<String, Paro> enw = new LinkedHashMap<String, Paro>();
     ArrayList<Paro> aldonuParojn=new ArrayList<Paro>(50000);
     Map<String,ArrayList<Paro>> aldonuParojnEo=new HashMap<String,ArrayList<Paro>>(10000);
     Map<String,ArrayList<Paro>> aldonuParojnEn=new HashMap<String,ArrayList<Paro>>(10000);
@@ -86,14 +86,14 @@ public class AldonuCxiujnVortojn {
           Set<String> enRadikoj2=new TreeSet<String>();
 
           if (enlemmas!=null) {
-            HashSet<List> jamMontritaj=new HashSet<List>();
+            //HashSet<List> jamMontritaj=new HashSet<List>();
             for (String enlemma : enlemmas) {
               String orgEn=enlemma;
               if (debug) dprintln("En:"+enlemma);
               enRadikoj.add(enlemma.substring(0, enlemma.indexOf('<')));
               enRadikoj2.add(enlemma);
               ArrayList<String> eoEn;
-              while ((eoEn=aperEoEnDix[1].get(enlemma))==null&&enlemma.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
+              while ((eoEn=aperEoEnDix[1].get(enlemma))==null&&enlemma.lastIndexOf('>')>0) {
                 enlemma=enlemma.substring(0, enlemma.lastIndexOf('<'));
               }
 
@@ -102,12 +102,10 @@ public class AldonuCxiujnVortojn {
                 p.dir_enEo=new ApertiumParo(eoEn.toString());
               }
 
-
-              if (!jamMontritaj.contains(eoEn)) {
+              {
                 if (eoEn==null) {
                   enlemma=orgEn;
                 }
-                jamMontritaj.add(eoEn);
               }
             }
           }
@@ -117,7 +115,7 @@ public class AldonuCxiujnVortojn {
             mankantajEnVortoj.add(p.orgEn+"; "+p.wordType());
             continue;
           } else {
-            p.comment+="r="+enRadikoj2;
+            p.comment+="enR2="+enRadikoj2;
             
             p.orgEn=enRadikoj.iterator().next();
             if (enRadikoj.size()>1) {
@@ -126,21 +124,19 @@ public class AldonuCxiujnVortojn {
             }
           }
 
-          HashSet<List> jamMontritaj=new HashSet<List>();
           ArrayList<String> eolemmas=aperEoDix[0].get(p.rootEo);
           if (eolemmas!=null) {
             for (String eolemma : eolemmas) {
               String orgEo=eolemma;
               if (debug) dprintln("Eo:"+ eolemma);
               ArrayList<String> eoEn;
-              while ((eoEn=aperEoEnDix[0].get(eolemma))==null&&eolemma.lastIndexOf('>')>0&&!jamMontritaj.contains(eoEn)) {
+              while ((eoEn=aperEoEnDix[0].get(eolemma))==null&&eolemma.lastIndexOf('>')>0) {  // &&!jamMontritaj.contains(eoEn)
                 eolemma=eolemma.substring(0, eolemma.lastIndexOf('<'));
               }
-              if (!jamMontritaj.contains(eoEn)) {
+              {
                 if (eoEn==null) {
                   eolemma=orgEo;
                 }
-                jamMontritaj.add(eoEn);
               }
               if (eoEn!=null) {
                 if (debug) dprintln("Ne faras en->eo cxar en Apertium jam estas: "+eolemma+"   -> "+eoEn);
