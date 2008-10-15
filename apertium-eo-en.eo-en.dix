@@ -563,46 +563,38 @@
     
     <e><p><l>tre<s n="preadv"/></l><r>very<s n="preadv"/></r></p></e>
     <e><p><l>vere<s n="preadv"/></l><r>really<s n="preadv"/></r></p></e>    
-    <e r="RL"><p><l>tre<s n="preadv"/></l><r>any<s n="preadv"/></r></p></e>
-
     <e><p><l>sufiĉe<s n="preadv"/></l><r>pretty<s n="preadv"/></r></p></e>
-
     <e c="how late? how great, how funny"><p><l>kiom<s n="preadv"/></l><r>how<s n="preadv"/></r></p></e>    
 
 
     
     <!-- Determiners -->
 
+    <e><p><l>la<s n="det"/><s n="def"/></l><r>the<s n="det"/><s n="def"/></r></p></e>
+    <e><p><l>unu<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
     <e><p><l>plura<s n="det"/><s n="qnt"/></l><r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
-    <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/><s n="sp"/></l><r>any<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-
-    <e><p><l>unu<s n="det"/><s n="ind"/></l><r>a<s n="det"/><s n="ind"/></r></p></e>
-
+    <e><p><l>ajna<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>either<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l><r>whatever<s n="det"/><s n="ind"/></r></p></e>
 
-    <e><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
-
-    <e r="RL"><p><l>ambaŭ<s n="det"/><s n="ind"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
-    <e r="LR"><p><l>ambaŭ<s n="det"/></l><r>both<s n="det"/></r></p></e>
+    <e><p><l>kelkaj<s n="det"/><s n="qnt"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>certa<s n="det"/><s n="ind"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
 
-    <!-- té polisèmia amb 'every', però no he posat marca de polisèmia -->
+    <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l><r>another<s n="det"/><s n="ind"/></r></p></e>
+    <e><p><l>alia<s n="det"/><s n="ind"/></l><r>other<s n="det"/><s n="ind"/></r></p></e>
+
+    <e><p><l>ambaŭ<s n="det"/><s n="ind"/></l><r>both<s n="det"/><s n="ind"/></r></p></e>
+
 
     <e><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>each<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l><r>every<s n="det"/><s n="ind"/></r></p></e>
-    <e c="interrogatives, condicional"><p><l>iu<s n="det"/><s n="qnt"/></l><r>any<s n="det"/></r></p></e>
 
-    <e><p><l>iu<s n="det"/><s n="qnt"/></l><r>some<s n="det"/><s n="qnt"/></r></p></e>
 
     <e r="RL"><p><l>kelka<s n="det"/><s n="qnt"/></l><r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
     <e r="LR"><p><l>kelka<s n="det"/></l><r>a<b/>few<s n="det"/></r></p></e>
 
 
-    <e><p><l>la<s n="det"/><s n="def"/></l><r>the<s n="det"/><s n="def"/></r></p></e>
 
     <e><p><l>la<b/>sama<s n="det"/></l><r>the<b/>same<s n="det"/></r></p></e>
 
