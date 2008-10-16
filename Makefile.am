@@ -21,7 +21,7 @@ $(BASENAME).$(LANG1).dixtmp1:
      
 $(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dixtmp1
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
-	lt-comp lr $(BASENAME).$(LANG1).dix $@
+	lt-comp lr $(BASENAME).$(LANG1).dixtmp1 $@
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
@@ -43,9 +43,9 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
 	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
 
-$(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
+$(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dixtmp1
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
-	lt-comp rl $(BASENAME).$(LANG1).dix $@
+	lt-comp rl $(BASENAME).$(LANG1).dixtmp1 $@
 
 $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
