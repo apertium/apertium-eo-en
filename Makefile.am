@@ -12,7 +12,7 @@ TARGETS_COMMON = $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autog
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
      $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
-$(BASENAME).$(LANG1).dixtmp1:
+$(BASENAME).$(LANG1).dixtmp1: $(BASENAME).$(LANG1).dix.xml
 	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt > $(BASENAME).$(LANG1)-multiwords.xml
 	cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1
 	cat $(BASENAME).$(LANG1)-multiwords.xml >> tmp1
@@ -77,6 +77,9 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 
 test: $(TARGETS_COMMON)
 	bash regression-tests.sh
+
+test-nodl: $(TARGETS_COMMON)
+	bash regression-tests.sh NODOWNLOAD
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
