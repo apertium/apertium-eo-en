@@ -12,15 +12,15 @@ TARGETS_COMMON = $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autog
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
      $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
-$(BASENAME).$(LANG1).dix:
+$(BASENAME).$(LANG1).dixtmp1:
 	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt > $(BASENAME).$(LANG1)-multiwords.xml
 	cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1
 	cat $(BASENAME).$(LANG1)-multiwords.xml >> tmp1
 	echo '</dictionary>' >> tmp1
 	mv tmp1 $@
      
-$(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dix
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
+$(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dixtmp1
+	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
 	lt-comp lr $(BASENAME).$(LANG1).dix $@
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
@@ -44,7 +44,7 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
 
 $(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
+	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
 	lt-comp rl $(BASENAME).$(LANG1).dix $@
 
 $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
@@ -76,7 +76,7 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
 
 
-EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
+EXTRA_DIST=$(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
            $(BASENAME).$(LANG2).dix $(BASENAME).$(LANG1).tsx \
            $(BASENAME).$(LANG2).tsx  \
@@ -118,4 +118,4 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
-CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG1).dix  $(TARGETS) modes *.mode
+CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG1).dixtmp1  $(TARGETS) modes *.mode
