@@ -75,6 +75,8 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 	apertium-validate-postchunk $(BASENAME).$(PREFIX2).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
 
+test: $(TARGETS_COMMON)
+	bash regression-tests.sh
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
