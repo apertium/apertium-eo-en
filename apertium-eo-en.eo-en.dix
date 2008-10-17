@@ -98,28 +98,28 @@
     <sdef n="acr" />
     <sdef n="pr" />
   </sdefs>  
-  <pardefs>
 
-<pardef n="MF_GD">
- <e r="RL">
-   <p>
-     <l><s n="GD"/></l>
-     <r></r>
-   </p>
- </e>
- <e r="LR">
-   <p>
-     <l><s n="f"/></l>
-     <r></r>
-   </p>
- </e>
- <e r="LR">
-   <p>
-     <l><s n="m"/></l>
-     <r></r>
-   </p>
- </e>
-</pardef>
+  <pardefs>
+	<pardef n="MF_GD">
+	 <e r="RL">
+	   <p>
+		 <l><s n="GD"/></l>
+		 <r></r>
+	   </p>
+	 </e>
+	 <e r="LR">
+	   <p>
+		 <l><s n="f"/></l>
+		 <r></r>
+	   </p>
+	 </e>
+	 <e r="LR">
+	   <p>
+		 <l><s n="m"/></l>
+		 <r></r>
+	   </p>
+	 </e>
+	</pardef>
   </pardefs>
 
   <section id="main" type="standard">    
@@ -1079,1398 +1079,412 @@
 
     <!-- Nouns with gender: Nationalities -->
 
-    <e r="LR"><p><l>albano<s n="n"/><s n="f"/></l><r>Albanian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>albano<s n="n"/><s n="m"/></l><r>Albanian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>albano<s n="n"/><s n="GD"/></l><r>Albanian<s n="n"/></r></p></e>
+    <e><p><l>albano<s n="n"/></l><r>Albanian<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>arabo<s n="n"/><s n="f"/></l><r>Arab<s n="n"/></r></p></e>
-    <e r="LR"><p><l>arabo<s n="n"/><s n="m"/></l><r>Arab<s n="n"/></r></p></e>
-    <e r="RL"><p><l>arabo<s n="n"/><s n="GD"/></l><r>Arab<s n="n"/></r></p></e>
+	<e><p><l>arabo<s n="n"/></l><r>Arab<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>argentinano<s n="n"/><s n="f"/></l><r>Argentinian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>argentinano<s n="n"/><s n="m"/></l><r>Argentinian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>argentinano<s n="n"/><s n="GD"/></l><r>Argentinian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>aziano<s n="n"/><s n="f"/></l><r>Asian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>aziano<s n="n"/><s n="m"/></l><r>Asian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>aziano<s n="n"/><s n="GD"/></l><r>Asian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Australian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="m"/></l><r>Australian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Australian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>amerikano<s n="n"/><s n="f"/></l><r>American<s n="n"/></r></p></e>
-    <e r="LR"><p><l>amerikano<s n="n"/><s n="m"/></l><r>American<s n="n"/></r></p></e>
-    <e r="RL"><p><l>amerikano<s n="n"/><s n="GD"/></l><r>American<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>jugoslavo<s n="n"/><s n="f"/></l><r>Yugoslav<s n="n"/></r></p></e>
-    <e r="LR"><p><l>jugoslavo<s n="n"/><s n="m"/></l><r>Yugoslav<s n="n"/></r></p></e>
-    <e r="RL"><p><l>jugoslavo<s n="n"/><s n="GD"/></l><r>Yugoslav<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kanario<s n="n"/><s n="f"/></l><r>Canarian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kanario<s n="n"/><s n="m"/></l><r>Canarian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kanario<s n="n"/><s n="GD"/></l><r>Canarian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kataluno<s n="n"/><s n="f"/></l><r>Catalan<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kataluno<s n="n"/><s n="m"/></l><r>Catalan<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kataluno<s n="n"/><s n="GD"/></l><r>Catalan<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĉiliano<s n="n"/><s n="f"/></l><r>Chilean<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉiliano<s n="n"/><s n="m"/></l><r>Chilean<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĉiliano<s n="n"/><s n="GD"/></l><r>Chilean<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kolombiano<s n="n"/><s n="f"/></l><r>Colombian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kolombiano<s n="n"/><s n="m"/></l><r>Colombian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kolombiano<s n="n"/><s n="GD"/></l><r>Colombian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>eŭropano<s n="n"/><s n="f"/></l><r>European<s n="n"/></r></p></e>
-    <e r="LR"><p><l>eŭropano<s n="n"/><s n="m"/></l><r>European<s n="n"/></r></p></e>
-    <e r="RL"><p><l>eŭropano<s n="n"/><s n="GD"/></l><r>European<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>indiano<s n="n"/><s n="f"/></l><r>Indian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>indiano<s n="n"/><s n="m"/></l><r>Indian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>indiano<s n="n"/><s n="GD"/></l><r>Indian<s n="n"/></r></p></e>
+    <e><p><l>argentinano<s n="n"/></l><r>Argentinian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>aziano<s n="n"/></l><r>Asian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>aŭstraliano<s n="n"/></l><r>Australian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>amerikano<s n="n"/></l><r>American<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>jugoslavo<s n="n"/></l><r>Yugoslav<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kanario<s n="n"/></l><r>Canarian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kataluno<s n="n"/></l><r>Catalan<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĉiliano<s n="n"/></l><r>Chilean<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kolombiano<s n="n"/></l><r>Colombian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>eŭropano<s n="n"/></l><r>European<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>indiano<s n="n"/></l><r>Indian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e r="RL"><p><l>indio<s n="n"/></l><r>Indian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>irlandano<s n="n"/><s n="f"/></l><r>Irish<s n="n"/></r></p></e>
-    <e r="LR"><p><l>irlandano<s n="n"/><s n="m"/></l><r>Irish<s n="n"/></r></p></e>
-    <e r="RL"><p><l>irlandano<s n="n"/><s n="GD"/></l><r>Irish<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>jamajkano<s n="n"/><s n="f"/></l><r>Jamaican<s n="n"/></r></p></e>
-    <e r="LR"><p><l>jamajkano<s n="n"/><s n="m"/></l><r>Jamaican<s n="n"/></r></p></e>
-    <e r="RL"><p><l>jamajkano<s n="n"/><s n="GD"/></l><r>Jamaican<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>koreo<s n="n"/><s n="f"/></l><r>Korean<s n="n"/></r></p></e>
-    <e r="LR"><p><l>koreo<s n="n"/><s n="m"/></l><r>Korean<s n="n"/></r></p></e>
-    <e r="RL"><p><l>koreo<s n="n"/><s n="GD"/></l><r>Korean<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>meksikano<s n="n"/><s n="f"/></l><r>Mexican<s n="n"/></r></p></e>
-    <e r="LR"><p><l>meksikano<s n="n"/><s n="m"/></l><r>Mexican<s n="n"/></r></p></e>
-    <e r="RL"><p><l>meksikano<s n="n"/><s n="GD"/></l><r>Mexican<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>maŭro<s n="n"/><s n="f"/></l><r>Moor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>maŭro<s n="n"/><s n="m"/></l><r>Moor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>maŭro<s n="n"/><s n="GD"/></l><r>Moor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>marokano<s n="n"/><s n="f"/></l><r>Moroccan<s n="n"/></r></p></e>
-    <e r="LR"><p><l>marokano<s n="n"/><s n="m"/></l><r>Moroccan<s n="n"/></r></p></e>
-    <e r="RL"><p><l>marokano<s n="n"/><s n="GD"/></l><r>Moroccan<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>islamano<s n="n"/><s n="f"/></l><r>Muslim<s n="n"/></r></p></e>
-    <e r="LR"><p><l>islamano<s n="n"/><s n="m"/></l><r>Muslim<s n="n"/></r></p></e>
-    <e r="RL"><p><l>islamano<s n="n"/><s n="GD"/></l><r>Muslim<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="f"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="m"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>niĝeriano<s n="n"/><s n="GD"/></l><r>Nigerian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>perso<s n="n"/><s n="f"/></l><r>Persian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>perso<s n="n"/><s n="m"/></l><r>Persian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>perso<s n="n"/><s n="GD"/></l><r>Persian<s n="n"/></r></p></e>
+    <e><p><l>irlandano<s n="n"/></l><r>Irish<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>jamajkano<s n="n"/></l><r>Jamaican<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>koreo<s n="n"/></l><r>Korean<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>meksikano<s n="n"/></l><r>Mexican<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>maŭro<s n="n"/></l><r>Moor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>marokano<s n="n"/></l><r>Moroccan<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>islamano<s n="n"/></l><r>Muslim<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>niĝeriano<s n="n"/></l><r>Nigerian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>perso<s n="n"/></l><r>Persian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>perso<s n="n"/></l><r>Persian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>peruano<s n="n"/><s n="f"/></l><r>Peruvian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>peruano<s n="n"/><s n="m"/></l><r>Peruvian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>peruano<s n="n"/><s n="GD"/></l><r>Peruvian<s n="n"/></r></p></e>
+    <e><p><l>peruano<s n="n"/></l><r>Peruvian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>skoto<s n="n"/></l><r>Scottish<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>turko<s n="n"/></l><r>Turkish<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>valenciano<s n="n"/></l><r>Valencian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>skandinavo<s n="n"/></l><r>Scandinavian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>aŭstro<s n="n"/></l><r>Austrian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>brito<s n="n"/></l><r>British<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>skoto<s n="n"/><s n="f"/></l><r>Scottish<s n="n"/></r></p></e>
-    <e r="LR"><p><l>skoto<s n="n"/><s n="m"/></l><r>Scottish<s n="n"/></r></p></e>
-    <e r="RL"><p><l>skoto<s n="n"/><s n="GD"/></l><r>Scottish<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>turko<s n="n"/><s n="f"/></l><r>Turkish<s n="n"/></r></p></e>
-    <e r="LR"><p><l>turko<s n="n"/><s n="m"/></l><r>Turkish<s n="n"/></r></p></e>
-    <e r="RL"><p><l>turko<s n="n"/><s n="GD"/></l><r>Turkish<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>valenciano<s n="n"/><s n="f"/></l><r>Valencian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>valenciano<s n="n"/><s n="m"/></l><r>Valencian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>valenciano<s n="n"/><s n="GD"/></l><r>Valencian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>skandinavo<s n="n"/><s n="f"/></l><r>Scandinavian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>skandinavo<s n="n"/><s n="m"/></l><r>Scandinavian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>skandinavo<s n="n"/><s n="GD"/></l><r>Scandinavian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>aŭstro<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
-    <e r="LR"><p><l>franco<s n="n"/><s n="f"/></l><r>French<s n="n"/></r></p></e>
-    <e r="LR"><p><l>germano<s n="n"/><s n="f"/></l><r>German<s n="n"/></r></p></e>
-    <e r="LR"><p><l>greko<s n="n"/><s n="f"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="LR"><p><l>italo<s n="n"/><s n="f"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>japano<s n="n"/><s n="f"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="f"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>norvego<s n="n"/><s n="f"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ruso<s n="n"/><s n="f"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sviso<s n="n"/><s n="f"/></l><r>Swiss<s n="n"/></r></p></e>
-    
-    <e r="LR"><p><l>aŭstro<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>brito<s n="n"/><s n="m"/></l><r>British<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>    
     <e r="LR"><p><l>ĉino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anglo<s n="n"/><s n="m"/></l><r>English<s n="n"/></r></p></e>
-    <e r="LR"><p><l>franco<s n="n"/><s n="m"/></l><r>French<s n="n"/></r></p></e>
-    <e r="LR"><p><l>germano<s n="n"/><s n="m"/></l><r>German<s n="n"/></r></p></e>
-    <e r="LR"><p><l>greko<s n="n"/><s n="m"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="LR"><p><l>italo<s n="n"/><s n="m"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>japano<s n="n"/><s n="m"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="LR"><p><l>niĝeriano<s n="n"/><s n="m"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>norvego<s n="n"/><s n="m"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ruso<s n="n"/><s n="m"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sviso<s n="n"/><s n="m"/></l><r>Swiss<s n="n"/></r></p></e>
-    
-    <e r="RL"><p><l>aŭstro<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
-    <e r="RL"><p><l>franco<s n="n"/><s n="GD"/></l><r>French<s n="n"/></r></p></e>
-    <e r="RL"><p><l>germano<s n="n"/><s n="GD"/></l><r>German<s n="n"/></r></p></e>
-    <e r="RL"><p><l>greko<s n="n"/><s n="GD"/></l><r>Greek<s n="n"/></r></p></e>
-    <e r="RL"><p><l>italo<s n="n"/><s n="GD"/></l><r>Italian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>japano<s n="n"/><s n="GD"/></l><r>Japanese<s n="n"/></r></p></e>
-    <e r="RL"><p><l>niĝeriano<s n="n"/><s n="GD"/></l><r>Nigerian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>norvego<s n="n"/><s n="GD"/></l><r>Norwegian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ruso<s n="n"/><s n="GD"/></l><r>Russian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sviso<s n="n"/><s n="GD"/></l><r>Swiss<s n="n"/></r></p></e>
+
+    <e><p><l>anglo<s n="n"/></l><r>English<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>franco<s n="n"/></l><r>French<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>germano<s n="n"/></l><r>German<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>greko<s n="n"/></l><r>Greek<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>italo<s n="n"/></l><r>Italian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>japano<s n="n"/></l><r>Japanese<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>niĝeriano<s n="n"/></l><r>Nigerian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>norvego<s n="n"/></l><r>Norwegian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ruso<s n="n"/></l><r>Russian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>sviso<s n="n"/></l><r>Swiss<s n="n"/></r></p><par n="MF_GD"/></e>
 
 
     <!-- Nouns with gender -->
 
-
-    <e r="LR"><p><l>katoliko<s n="n"/><s n="f"/></l><r>Catholic<s n="n"/></r></p></e>
-    <e r="LR"><p><l>katoliko<s n="n"/><s n="m"/></l><r>Catholic<s n="n"/></r></p></e>
-    <e r="RL"><p><l>katoliko<s n="n"/><s n="GD"/></l><r>Catholic<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kristano<s n="n"/><s n="f"/></l><r>Christian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kristano<s n="n"/><s n="m"/></l><r>Christian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kristano<s n="n"/><s n="GD"/></l><r>Christian<s n="n"/></r></p></e>
+    <e><p><l>katoliko<s n="n"/></l><r>Catholic<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p><par n="MF_GD"/></e>
 
     <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
     <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
 
-    <e r="LR"><p><l>protestanto<s n="n"/><s n="f"/></l><r>Protestant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>protestanto<s n="n"/><s n="m"/></l><r>Protestant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>protestanto<s n="n"/><s n="GD"/></l><r>Protestant<s n="n"/></r></p></e>
+    <e><p><l>protestanto<s n="n"/></l><r>Protestant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>librotenisto<s n="n"/></l><r>accountant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>akrobato<s n="n"/></l><r>acrobat<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>drogulo<s n="n"/></l><r>addict<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>librotenisto<s n="n"/><s n="f"/></l><r>accountant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>librotenisto<s n="n"/><s n="m"/></l><r>accountant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>librotenisto<s n="n"/><s n="GD"/></l><r>accountant<s n="n"/></r></p></e>
+    <e><p><l>partiano<s n="n"/></l><r><g>party<b/></g>member<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>akrobato<s n="n"/><s n="f"/></l><r>acrobat<s n="n"/></r></p></e>
-    <e r="LR"><p><l>akrobato<s n="n"/><s n="m"/></l><r>acrobat<s n="n"/></r></p></e>
-    <e r="RL"><p><l>akrobato<s n="n"/><s n="GD"/></l><r>acrobat<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>drogulo<s n="n"/><s n="f"/></l><r>addict<s n="n"/></r></p></e>
-    <e r="LR"><p><l>drogulo<s n="n"/><s n="m"/></l><r>addict<s n="n"/></r></p></e>
-    <e r="RL"><p><l>drogulo<s n="n"/><s n="GD"/></l><r>addict<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>partiano<s n="n"/><s n="f"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
-    <e r="LR"><p><l>partiano<s n="n"/><s n="m"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
-    <e r="RL"><p><l>partiano<s n="n"/><s n="GD"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>adepto<s n="n"/><s n="f"/></l><r>adherent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>adepto<s n="n"/><s n="m"/></l><r>adherent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adepto<s n="n"/><s n="GD"/></l><r>adherent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>administranto<s n="n"/><s n="f"/></l><r>administrator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>administranto<s n="n"/><s n="m"/></l><r>administrator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>administranto<s n="n"/><s n="GD"/></l><r>administrator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>plenkreskulo<s n="n"/><s n="f"/></l><r>adult<s n="n"/></r></p></e>
-    <e r="LR"><p><l>plenkreskulo<s n="n"/><s n="m"/></l><r>adult<s n="n"/></r></p></e>
-    <e r="RL"><p><l>plenkreskulo<s n="n"/><s n="GD"/></l><r>adult<s n="n"/></r></p></e>
+    <e><p><l>adepto<s n="n"/></l><r>adherent<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>administranto<s n="n"/></l><r>administrator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p><par n="MF_GD"/></e>
     <e r="RL"><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>konsilisto<s n="n"/><s n="f"/></l><r>adviser<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konsilisto<s n="n"/><s n="m"/></l><r>adviser<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konsilisto<s n="n"/><s n="GD"/></l><r>adviser<s n="n"/></r></p></e>
+    <e><p><l>konsilisto<s n="n"/></l><r>adviser<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>agento<s n="n"/></l><r>agent<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>adjutanto<s n="n"/></l><r>aide<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>eksterterano<s n="n"/></l><r>alien<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>amatoro<s n="n"/></l><r>amateur<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ambasadoro<s n="n"/></l><r>ambassador<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>anarkisto<s n="n"/></l><r>anarchist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>prapatro<s n="n"/></l><r>ancestor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>simio<s n="n"/></l><r>ape<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>arkitekto<s n="n"/></l><r>architect<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>arestito<s n="n"/></l><r>arrested<b/>person<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>metiisto<s n="n"/></l><r>artisan<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>artisto<s n="n"/></l><r>artist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>azeno<s n="n"/></l><r>ass<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>helpanto<s n="n"/></l><r>assistant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>astronaŭto<s n="n"/></l><r>astronaut<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>astronomo<s n="n"/></l><r>astronomer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>atleto<s n="n"/></l><r>athlete<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>asistanto<s n="n"/></l><r>attendant<s n="n"/></r></p><par n="MF_GD"/></e>
 
-    <e r="LR"><p><l>agento<s n="n"/><s n="f"/></l><r>agent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>agento<s n="n"/><s n="m"/></l><r>agent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>agento<s n="n"/><s n="GD"/></l><r>agent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>adjutanto<s n="n"/><s n="f"/></l><r>aide<s n="n"/></r></p></e>
-    <e r="LR"><p><l>adjutanto<s n="n"/><s n="m"/></l><r>aide<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adjutanto<s n="n"/><s n="GD"/></l><r>aide<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>eksterterano<s n="n"/><s n="f"/></l><r>alien<s n="n"/></r></p></e>
-    <e r="LR"><p><l>eksterterano<s n="n"/><s n="m"/></l><r>alien<s n="n"/></r></p></e>
-    <e r="RL"><p><l>eksterterano<s n="n"/><s n="GD"/></l><r>alien<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>amatoro<s n="n"/><s n="f"/></l><r>amateur<s n="n"/></r></p></e>
-    <e r="LR"><p><l>amatoro<s n="n"/><s n="m"/></l><r>amateur<s n="n"/></r></p></e>
-    <e r="RL"><p><l>amatoro<s n="n"/><s n="GD"/></l><r>amateur<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ambasadoro<s n="n"/><s n="f"/></l><r>ambassador<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ambasadoro<s n="n"/><s n="m"/></l><r>ambassador<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ambasadoro<s n="n"/><s n="GD"/></l><r>ambassador<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>anarkisto<s n="n"/><s n="f"/></l><r>anarchist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anarkisto<s n="n"/><s n="m"/></l><r>anarchist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anarkisto<s n="n"/><s n="GD"/></l><r>anarchist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>prapatro<s n="n"/><s n="f"/></l><r>ancestor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>prapatro<s n="n"/><s n="m"/></l><r>ancestor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>prapatro<s n="n"/><s n="GD"/></l><r>ancestor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>simio<s n="n"/><s n="f"/></l><r>ape<s n="n"/></r></p></e>
-    <e r="LR"><p><l>simio<s n="n"/><s n="m"/></l><r>ape<s n="n"/></r></p></e>
-    <e r="RL"><p><l>simio<s n="n"/><s n="GD"/></l><r>ape<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>arkitekto<s n="n"/><s n="f"/></l><r>architect<s n="n"/></r></p></e>
-    <e r="LR"><p><l>arkitekto<s n="n"/><s n="m"/></l><r>architect<s n="n"/></r></p></e>
-    <e r="RL"><p><l>arkitekto<s n="n"/><s n="GD"/></l><r>architect<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>arestito<s n="n"/><s n="f"/></l><r>arrested<b/>person<s n="n"/></r></p></e>
-    <e r="LR"><p><l>arestito<s n="n"/><s n="m"/></l><r>arrested<b/>person<s n="n"/></r></p></e>
-    <e r="RL"><p><l>arestito<s n="n"/><s n="GD"/></l><r>arrested<b/>person<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>metiisto<s n="n"/><s n="f"/></l><r>artisan<s n="n"/></r></p></e>
-    <e r="LR"><p><l>metiisto<s n="n"/><s n="m"/></l><r>artisan<s n="n"/></r></p></e>
-    <e r="RL"><p><l>metiisto<s n="n"/><s n="GD"/></l><r>artisan<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>artisto<s n="n"/><s n="f"/></l><r>artist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>artisto<s n="n"/><s n="m"/></l><r>artist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>artisto<s n="n"/><s n="GD"/></l><r>artist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>azeno<s n="n"/><s n="f"/></l><r>ass<s n="n"/></r></p></e>
-    <e r="LR"><p><l>azeno<s n="n"/><s n="m"/></l><r>ass<s n="n"/></r></p></e>
-    <e r="RL"><p><l>azeno<s n="n"/><s n="GD"/></l><r>ass<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>helpanto<s n="n"/><s n="f"/></l><r>assistant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>helpanto<s n="n"/><s n="m"/></l><r>assistant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>helpanto<s n="n"/><s n="GD"/></l><r>assistant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>astronaŭto<s n="n"/><s n="f"/></l><r>astronaut<s n="n"/></r></p></e>
-    <e r="LR"><p><l>astronaŭto<s n="n"/><s n="m"/></l><r>astronaut<s n="n"/></r></p></e>
-    <e r="RL"><p><l>astronaŭto<s n="n"/><s n="GD"/></l><r>astronaut<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>astronomo<s n="n"/><s n="f"/></l><r>astronomer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>astronomo<s n="n"/><s n="m"/></l><r>astronomer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>astronomo<s n="n"/><s n="GD"/></l><r>astronomer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>atleto<s n="n"/><s n="f"/></l><r>athlete<s n="n"/></r></p></e>
-    <e r="LR"><p><l>atleto<s n="n"/><s n="m"/></l><r>athlete<s n="n"/></r></p></e>
-    <e r="RL"><p><l>atleto<s n="n"/><s n="GD"/></l><r>athlete<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>asistanto<s n="n"/><s n="f"/></l><r>attendant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asistanto<s n="n"/><s n="m"/></l><r>attendant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asistanto<s n="n"/><s n="GD"/></l><r>attendant<s n="n"/></r></p></e>
 
 	<!-- =============== korektis gxis txi tie ============= -->
-    <e r="LR"><p><l>advokato<s n="n"/><s n="f"/></l><r>attorney<s n="n"/></r></p></e>
-    <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>attorney<s n="n"/></r></p></e>
-    <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>attorney<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kontrevizoro<s n="n"/><s n="f"/></l><r>auditor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kontrevizoro<s n="n"/><s n="m"/></l><r>auditor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kontrevizoro<s n="n"/><s n="GD"/></l><r>auditor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>aŭtoro<s n="n"/><s n="f"/></l><r>author<s n="n"/></r></p></e>
-    <e r="LR"><p><l>aŭtoro<s n="n"/><s n="m"/></l><r>author<s n="n"/></r></p></e>
-    <e r="RL"><p><l>aŭtoro<s n="n"/><s n="GD"/></l><r>author<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>panisto<s n="n"/><s n="f"/></l><r>baker<s n="n"/></r></p></e>
-    <e r="LR"><p><l>panisto<s n="n"/><s n="m"/></l><r>baker<s n="n"/></r></p></e>
-    <e r="RL"><p><l>panisto<s n="n"/><s n="GD"/></l><r>baker<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>bandito<s n="n"/><s n="f"/></l><r>bandit<s n="n"/></r></p></e>
-    <e r="LR"><p><l>bandito<s n="n"/><s n="m"/></l><r>bandit<s n="n"/></r></p></e>
-    <e r="RL"><p><l>bandito<s n="n"/><s n="GD"/></l><r>bandit<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>bankiero<s n="n"/><s n="f"/></l><r>banker<s n="n"/></r></p></e>
-    <e r="LR"><p><l>bankiero<s n="n"/><s n="m"/></l><r>banker<s n="n"/></r></p></e>
-    <e r="RL"><p><l>bankiero<s n="n"/><s n="GD"/></l><r>banker<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>barono<s n="n"/><s n="f"/></l><r>baron<s n="n"/></r></p></e>
-    <e r="LR"><p><l>barono<s n="n"/><s n="m"/></l><r>baron<s n="n"/></r></p></e>
-    <e r="RL"><p><l>barono<s n="n"/><s n="GD"/></l><r>baron<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pretendanto<s n="n"/><s n="f"/></l><r>beau<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pretendanto<s n="n"/><s n="m"/></l><r>beau<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pretendanto<s n="n"/><s n="GD"/></l><r>beau<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>biografo<s n="n"/><s n="f"/></l><r>biographer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>biografo<s n="n"/><s n="m"/></l><r>biographer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>biografo<s n="n"/><s n="GD"/></l><r>biographer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>biologo<s n="n"/><s n="f"/></l><r>biologist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>biologo<s n="n"/><s n="m"/></l><r>biologist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>biologo<s n="n"/><s n="GD"/></l><r>biologist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>estro<s n="n"/><s n="f"/></l><r>boss<s n="n"/></r></p></e>
-    <e r="LR"><p><l>estro<s n="n"/><s n="m"/></l><r>boss<s n="n"/></r></p></e>
-    <e r="RL"><p><l>estro<s n="n"/><s n="GD"/></l><r>boss<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>masonisto<s n="n"/><s n="f"/></l><r>bricklayer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>masonisto<s n="n"/><s n="m"/></l><r>bricklayer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>masonisto<s n="n"/><s n="GD"/></l><r>bricklayer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fianĉo<s n="n"/><s n="f"/></l><r>bridegroom<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fianĉo<s n="n"/><s n="m"/></l><r>bridegroom<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fianĉo<s n="n"/><s n="GD"/></l><r>bridegroom<s n="n"/></r></p></e>
-
-
-    <e r="LR"><p><l>kadeto<s n="n"/><s n="f"/></l><r>cadet<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kadeto<s n="n"/><s n="m"/></l><r>cadet<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kadeto<s n="n"/><s n="GD"/></l><r>cadet<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kandidato<s n="n"/><s n="f"/></l><r>candidate<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kandidato<s n="n"/><s n="m"/></l><r>candidate<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kandidato<s n="n"/><s n="GD"/></l><r>candidate<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kapitano<s n="n"/><s n="f"/></l><r>captain<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kapitano<s n="n"/><s n="m"/></l><r>captain<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kapitano<s n="n"/><s n="GD"/></l><r>captain<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kato<s n="n"/><s n="f"/></l><r>cat<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kato<s n="n"/><s n="m"/></l><r>cat<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kato<s n="n"/><s n="GD"/></l><r>cat<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĉampiono<s n="n"/><s n="f"/></l><r>champion<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉampiono<s n="n"/><s n="m"/></l><r>champion<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĉampiono<s n="n"/><s n="GD"/></l><r>champion<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kanceliero<s n="n"/><s n="f"/></l><r>chancellor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kanceliero<s n="n"/><s n="m"/></l><r>chancellor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kanceliero<s n="n"/><s n="GD"/></l><r>chancellor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>apotekisto<s n="n"/><s n="f"/></l><r>chemist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>apotekisto<s n="n"/><s n="m"/></l><r>chemist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>apotekisto<s n="n"/><s n="GD"/></l><r>chemist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>estro<s n="n"/><s n="f"/></l><r>chief<s n="n"/></r></p></e>
-    <e r="LR"><p><l>estro<s n="n"/><s n="m"/></l><r>chief<s n="n"/></r></p></e>
-    <e r="RL"><p><l>estro<s n="n"/><s n="GD"/></l><r>chief<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kleriko<s n="n"/><s n="f"/></l><r>clergyman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kleriko<s n="n"/><s n="m"/></l><r>clergyman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kleriko<s n="n"/><s n="GD"/></l><r>clergyman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>oficisto<s n="n"/><s n="f"/></l><r>clerk<s n="n"/></r></p></e>
-    <e r="LR"><p><l>oficisto<s n="n"/><s n="m"/></l><r>clerk<s n="n"/></r></p></e>
-    <e r="RL"><p><l>oficisto<s n="n"/><s n="GD"/></l><r>clerk<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kliento<s n="n"/><s n="f"/></l><r>client<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kliento<s n="n"/><s n="m"/></l><r>client<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kliento<s n="n"/><s n="GD"/></l><r>client<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pajaco<s n="n"/><s n="f"/></l><r>clown<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pajaco<s n="n"/><s n="m"/></l><r>clown<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pajaco<s n="n"/><s n="GD"/></l><r>clown<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kolego<s n="n"/><s n="f"/></l><r>colleague<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kolego<s n="n"/><s n="m"/></l><r>colleague<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kolego<s n="n"/><s n="GD"/></l><r>colleague<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kolonelo<s n="n"/><s n="f"/></l><r>colonel<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kolonelo<s n="n"/><s n="m"/></l><r>colonel<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kolonelo<s n="n"/><s n="GD"/></l><r>colonel<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>komunisto<s n="n"/><s n="f"/></l><r>communist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>komunisto<s n="n"/><s n="m"/></l><r>communist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>komunisto<s n="n"/><s n="GD"/></l><r>communist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kompano<s n="n"/><s n="f"/></l><r>companion<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kompano<s n="n"/><s n="m"/></l><r>companion<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kompano<s n="n"/><s n="GD"/></l><r>companion<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>samlandano<s n="n"/><s n="f"/></l><r>compatriot<s n="n"/></r></p></e>
-    <e r="LR"><p><l>samlandano<s n="n"/><s n="m"/></l><r>compatriot<s n="n"/></r></p></e>
-    <e r="RL"><p><l>samlandano<s n="n"/><s n="GD"/></l><r>compatriot<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>komponisto<s n="n"/><s n="f"/></l><r>composer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>komponisto<s n="n"/><s n="m"/></l><r>composer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>komponisto<s n="n"/><s n="GD"/></l><r>composer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kamarado<s n="n"/><s n="f"/></l><r>comrade<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kamarado<s n="n"/><s n="m"/></l><r>comrade<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kamarado<s n="n"/><s n="GD"/></l><r>comrade<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="f"/></l><r>conductor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="m"/></l><r>conductor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>direktoro<s n="n"/><s n="GD"/></l><r>conductor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>konsulo<s n="n"/><s n="f"/></l><r>consul<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konsulo<s n="n"/><s n="m"/></l><r>consul<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konsulo<s n="n"/><s n="GD"/></l><r>consul<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>komerca<b/>konsilisto<s n="n"/><s n="f"/></l><r>consultant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>komerca<b/>konsilisto<s n="n"/><s n="m"/></l><r>consultant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>komerca<b/>konsilisto<s n="n"/><s n="GD"/></l><r>consultant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>konsumanto<s n="n"/><s n="f"/></l><r>consumer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konsumanto<s n="n"/><s n="m"/></l><r>consumer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konsumanto<s n="n"/><s n="GD"/></l><r>consumer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>entreprenisto<s n="n"/><s n="f"/></l><r>contractor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>entreprenisto<s n="n"/><s n="m"/></l><r>contractor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>entreprenisto<s n="n"/><s n="GD"/></l><r>contractor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>korespondanto<s n="n"/><s n="f"/></l><r>correspondent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>korespondanto<s n="n"/><s n="m"/></l><r>correspondent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>korespondanto<s n="n"/><s n="GD"/></l><r>correspondent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>magistratano<s n="n"/><s n="f"/></l><r>councillor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>magistratano<s n="n"/><s n="m"/></l><r>councillor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>magistratano<s n="n"/><s n="GD"/></l><r>councillor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>konsilisto<s n="n"/><s n="f"/></l><r>counsellor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konsilisto<s n="n"/><s n="m"/></l><r>counsellor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konsilisto<s n="n"/><s n="GD"/></l><r>counsellor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kreditoro<s n="n"/><s n="f"/></l><r>creditor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kreditoro<s n="n"/><s n="m"/></l><r>creditor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kreditoro<s n="n"/><s n="GD"/></l><r>creditor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ŝipano<s n="n"/><s n="f"/></l><r>crewman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝipano<s n="n"/><s n="m"/></l><r>crewman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝipano<s n="n"/><s n="GD"/></l><r>crewman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kritikisto<s n="n"/><s n="f"/></l><r>critic<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kritikisto<s n="n"/><s n="m"/></l><r>critic<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kritikisto<s n="n"/><s n="GD"/></l><r>critic<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kliento<s n="n"/><s n="f"/></l><r>customer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kliento<s n="n"/><s n="m"/></l><r>customer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kliento<s n="n"/><s n="GD"/></l><r>customer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>biciklanto<s n="n"/><s n="f"/></l><r>cyclist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>biciklanto<s n="n"/><s n="m"/></l><r>cyclist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>biciklanto<s n="n"/><s n="GD"/></l><r>cyclist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mortinto<s n="n"/><s n="f"/></l><r>dead<b/>person<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mortinto<s n="n"/><s n="m"/></l><r>dead<b/>person<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mortinto<s n="n"/><s n="GD"/></l><r>dead<b/>person<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>dekano<s n="n"/><s n="f"/></l><r>dean<s n="n"/></r></p></e>
-    <e r="LR"><p><l>dekano<s n="n"/><s n="m"/></l><r>dean<s n="n"/></r></p></e>
-    <e r="RL"><p><l>dekano<s n="n"/><s n="GD"/></l><r>dean<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>defendo<s n="n"/><s n="f"/></l><r>defence<s n="n"/></r></p></e>
-    <e r="LR"><p><l>defendo<s n="n"/><s n="m"/></l><r>defence<s n="n"/></r></p></e>
-    <e r="RL"><p><l>defendo<s n="n"/><s n="GD"/></l><r>defence<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>demokrato<s n="n"/><s n="f"/></l><r>democrat<s n="n"/></r></p></e>
-    <e r="LR"><p><l>demokrato<s n="n"/><s n="m"/></l><r>democrat<s n="n"/></r></p></e>
-    <e r="RL"><p><l>demokrato<s n="n"/><s n="GD"/></l><r>democrat<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>denominatoro<s n="n"/><s n="f"/></l><r>denominator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>denominatoro<s n="n"/><s n="m"/></l><r>denominator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>denominatoro<s n="n"/><s n="GD"/></l><r>denominator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>dentisto<s n="n"/><s n="f"/></l><r>dentist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>dentisto<s n="n"/><s n="m"/></l><r>dentist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>dentisto<s n="n"/><s n="GD"/></l><r>dentist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>deputito<s n="n"/><s n="f"/></l><r>deputy<s n="n"/></r></p></e>
-    <e r="LR"><p><l>deputito<s n="n"/><s n="m"/></l><r>deputy<s n="n"/></r></p></e>
-    <e r="RL"><p><l>deputito<s n="n"/><s n="GD"/></l><r>deputy<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>detektivo<s n="n"/><s n="f"/></l><r>detective<s n="n"/></r></p></e>
-    <e r="LR"><p><l>detektivo<s n="n"/><s n="m"/></l><r>detective<s n="n"/></r></p></e>
-    <e r="RL"><p><l>detektivo<s n="n"/><s n="GD"/></l><r>detective<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>detektilo<s n="n"/><s n="f"/></l><r>detector<s n="n"/></r></p></e>
-    <e r="LR"><p><l>detektilo<s n="n"/><s n="m"/></l><r>detector<s n="n"/></r></p></e>
-    <e r="RL"><p><l>detektilo<s n="n"/><s n="GD"/></l><r>detector<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>diktatoro<s n="n"/><s n="f"/></l><r>dictator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>diktatoro<s n="n"/><s n="m"/></l><r>dictator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>diktatoro<s n="n"/><s n="GD"/></l><r>dictator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="f"/></l><r>director<s n="n"/></r></p></e>
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="m"/></l><r>director<s n="n"/></r></p></e>
-    <e r="RL"><p><l>direktoro<s n="n"/><s n="GD"/></l><r>director<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>doktoro<s n="n"/><s n="f"/></l><r>doctor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>doktoro<s n="n"/><s n="m"/></l><r>doctor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>doktoro<s n="n"/><s n="GD"/></l><r>doctor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>hundo<s n="n"/><s n="f"/></l><r>dog<s n="n"/></r></p></e>
-    <e r="LR"><p><l>hundo<s n="n"/><s n="m"/></l><r>dog<s n="n"/></r></p></e>
-    <e r="RL"><p><l>hundo<s n="n"/><s n="GD"/></l><r>dog<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ŝoforo<s n="n"/><s n="f"/></l><r>driver<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝoforo<s n="n"/><s n="m"/></l><r>driver<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝoforo<s n="n"/><s n="GD"/></l><r>driver<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>duko<s n="n"/><s n="f"/></l><r>duke<s n="n"/></r></p></e>
-    <e r="LR"><p><l>duko<s n="n"/><s n="m"/></l><r>duke<s n="n"/></r></p></e>
-    <e r="RL"><p><l>duko<s n="n"/><s n="GD"/></l><r>duke<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>grafo<s n="n"/><s n="f"/></l><r>earl<s n="n"/></r></p></e>
-    <e r="LR"><p><l>grafo<s n="n"/><s n="m"/></l><r>earl<s n="n"/></r></p></e>
-    <e r="RL"><p><l>grafo<s n="n"/><s n="GD"/></l><r>earl<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ekonomikisto<s n="n"/><s n="f"/></l><r>economist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ekonomikisto<s n="n"/><s n="m"/></l><r>economist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ekonomikisto<s n="n"/><s n="GD"/></l><r>economist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>eldonisto<s n="n"/><s n="f"/></l><r>editor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>eldonisto<s n="n"/><s n="m"/></l><r>editor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>eldonisto<s n="n"/><s n="GD"/></l><r>editor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>elefanto<s n="n"/><s n="f"/></l><r>elephant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>elefanto<s n="n"/><s n="m"/></l><r>elephant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>elefanto<s n="n"/><s n="GD"/></l><r>elephant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>elmigranto<s n="n"/><s n="f"/></l><r>emigrant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>elmigranto<s n="n"/><s n="m"/></l><r>emigrant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>elmigranto<s n="n"/><s n="GD"/></l><r>emigrant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>oficisto<s n="n"/><s n="f"/></l><r>employee<s n="n"/></r></p></e>
-    <e r="LR"><p><l>oficisto<s n="n"/><s n="m"/></l><r>employee<s n="n"/></r></p></e>
-    <e r="RL"><p><l>oficisto<s n="n"/><s n="GD"/></l><r>employee<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>employer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>employer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>employer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>malamiko<s n="n"/><s n="f"/></l><r>enemy<s n="n"/></r></p></e>
-    <e r="LR"><p><l>malamiko<s n="n"/><s n="m"/></l><r>enemy<s n="n"/></r></p></e>
-    <e r="RL"><p><l>malamiko<s n="n"/><s n="GD"/></l><r>enemy<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>inĝeniero<s n="n"/><s n="f"/></l><r>engineer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>inĝeniero<s n="n"/><s n="m"/></l><r>engineer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>inĝeniero<s n="n"/><s n="GD"/></l><r>engineer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>artisto<s n="n"/><s n="f"/></l><r>entertainer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>artisto<s n="n"/><s n="m"/></l><r>entertainer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>artisto<s n="n"/><s n="GD"/></l><r>entertainer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>entuziasmulo<s n="n"/><s n="f"/></l><r>enthusiast<s n="n"/></r></p></e>
-    <e r="LR"><p><l>entuziasmulo<s n="n"/><s n="m"/></l><r>enthusiast<s n="n"/></r></p></e>
-    <e r="RL"><p><l>entuziasmulo<s n="n"/><s n="GD"/></l><r>enthusiast<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>laekzekutivo<s n="n"/><s n="f"/></l><r>executive<s n="n"/></r></p></e>
-    <e r="LR"><p><l>laekzekutivo<s n="n"/><s n="m"/></l><r>executive<s n="n"/></r></p></e>
-    <e r="RL"><p><l>laekzekutivo<s n="n"/><s n="GD"/></l><r>executive<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>eksponento<s n="n"/><s n="f"/></l><r>exponent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>eksponento<s n="n"/><s n="m"/></l><r>exponent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>eksponento<s n="n"/><s n="GD"/></l><r>exponent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ekstremisto<s n="n"/><s n="f"/></l><r>extremist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ekstremisto<s n="n"/><s n="m"/></l><r>extremist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ekstremisto<s n="n"/><s n="GD"/></l><r>extremist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kultivisto<s n="n"/><s n="f"/></l><r>farmer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kultivisto<s n="n"/><s n="m"/></l><r>farmer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kultivisto<s n="n"/><s n="GD"/></l><r>farmer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>konstruisto<s n="n"/><s n="f"/></l><r>builder<s n="n"/></r></p></e>
-    <e r="LR"><p><l>konstruisto<s n="n"/><s n="m"/></l><r>builder<s n="n"/></r></p></e>
-    <e r="RL"><p><l>konstruisto<s n="n"/><s n="GD"/></l><r>builder<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>faŝisto<s n="n"/><s n="f"/></l><r>fascist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>faŝisto<s n="n"/><s n="m"/></l><r>fascist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>faŝisto<s n="n"/><s n="GD"/></l><r>fascist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kompaniano<s n="n"/><s n="f"/></l><r>fellow<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kompaniano<s n="n"/><s n="m"/></l><r>fellow<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kompaniano<s n="n"/><s n="GD"/></l><r>fellow<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pafanto<s n="n"/><s n="f"/></l><r>fencer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pafanto<s n="n"/><s n="m"/></l><r>fencer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pafanto<s n="n"/><s n="GD"/></l><r>fencer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fianĉo<s n="n"/><s n="f"/></l><r>fiancé<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fianĉo<s n="n"/><s n="m"/></l><r>fiancé<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fianĉo<s n="n"/><s n="GD"/></l><r>fiancé<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>finalisto<s n="n"/><s n="f"/></l><r>finalist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>finalisto<s n="n"/><s n="m"/></l><r>finalist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>finalisto<s n="n"/><s n="GD"/></l><r>finalist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>futbalisto<s n="n"/><s n="f"/></l><r>footballer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>futbalisto<s n="n"/><s n="m"/></l><r>footballer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>futbalisto<s n="n"/><s n="GD"/></l><r>footballer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>amiko<s n="n"/><s n="f"/></l><r>friend<s n="n"/></r></p></e>
-    <e r="LR"><p><l>amiko<s n="n"/><s n="m"/></l><r>friend<s n="n"/></r></p></e>
-    <e r="RL"><p><l>amiko<s n="n"/><s n="GD"/></l><r>friend<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>funelo<s n="n"/><s n="f"/></l><r>funnel<s n="n"/></r></p></e>
-    <e r="LR"><p><l>funelo<s n="n"/><s n="m"/></l><r>funnel<s n="n"/></r></p></e>
-    <e r="RL"><p><l>funelo<s n="n"/><s n="GD"/></l><r>funnel<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĝardenisto<s n="n"/><s n="f"/></l><r>gardener<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĝardenisto<s n="n"/><s n="m"/></l><r>gardener<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĝardenisto<s n="n"/><s n="GD"/></l><r>gardener<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>generalo<s n="n"/><s n="f"/></l><r>general<s n="n"/></r></p></e>
-    <e r="LR"><p><l>generalo<s n="n"/><s n="m"/></l><r>general<s n="n"/></r></p></e>
-    <e r="RL"><p><l>generalo<s n="n"/><s n="GD"/></l><r>general<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>geriatro<s n="n"/><s n="f"/></l><r>geriatrist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>geriatro<s n="n"/><s n="m"/></l><r>geriatrist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>geriatro<s n="n"/><s n="GD"/></l><r>geriatrist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fantomo<s n="n"/><s n="f"/></l><r>ghost<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fantomo<s n="n"/><s n="m"/></l><r>ghost<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fantomo<s n="n"/><s n="GD"/></l><r>ghost<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gorilo<s n="n"/><s n="f"/></l><r>gorilla<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gorilo<s n="n"/><s n="m"/></l><r>gorilla<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gorilo<s n="n"/><s n="GD"/></l><r>gorilla<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>reganto<s n="n"/><s n="f"/></l><r>governor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reganto<s n="n"/><s n="m"/></l><r>governor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reganto<s n="n"/><s n="GD"/></l><r>governor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gardist<s n="n"/><s n="f"/></l><r>guard<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gardist<s n="n"/><s n="m"/></l><r>guard<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gardist<s n="n"/><s n="GD"/></l><r>guard<s n="n"/></r></p></e>
-    <e><p><l>gardist<s n="n"/></l><r>guard<s n="n"/></r></p></e>
+    <e><p><l>advokato<s n="n"/></l><r>attorney<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kontrevizoro<s n="n"/></l><r>auditor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>aŭtoro<s n="n"/></l><r>author<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>panisto<s n="n"/></l><r>baker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>bandito<s n="n"/></l><r>bandit<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>bankiero<s n="n"/></l><r>banker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pretendanto<s n="n"/></l><r>beau<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>biografo<s n="n"/></l><r>biographer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>biologo<s n="n"/></l><r>biologist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>estro<s n="n"/></l><r>boss<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>masonisto<s n="n"/></l><r>bricklayer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fianĉo<s n="n"/></l><r>bridegroom<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kadeto<s n="n"/></l><r>cadet<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kandidato<s n="n"/></l><r>candidate<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kapitano<s n="n"/></l><r>captain<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kato<s n="n"/></l><r>cat<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĉampiono<s n="n"/></l><r>champion<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kanceliero<s n="n"/></l><r>chancellor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>apotekisto<s n="n"/></l><r>chemist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>estro<s n="n"/></l><r>chief<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kleriko<s n="n"/></l><r>clergyman<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>oficisto<s n="n"/></l><r>clerk<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kliento<s n="n"/></l><r>client<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pajaco<s n="n"/></l><r>clown<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kolego<s n="n"/></l><r>colleague<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kolonelo<s n="n"/></l><r>colonel<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>komunisto<s n="n"/></l><r>communist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kompano<s n="n"/></l><r>companion<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>samlandano<s n="n"/></l><r>compatriot<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>komponisto<s n="n"/></l><r>composer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kamarado<s n="n"/></l><r>comrade<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>direktoro<s n="n"/></l><r>conductor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>konsulo<s n="n"/></l><r>consul<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>komerca<b/>konsilisto<s n="n"/></l><r>consultant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>konsumanto<s n="n"/></l><r>consumer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>entreprenisto<s n="n"/></l><r>contractor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>korespondanto<s n="n"/></l><r>correspondent<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>magistratano<s n="n"/></l><r>councillor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>konsilisto<s n="n"/></l><r>counsellor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kreditoro<s n="n"/></l><r>creditor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ŝipano<s n="n"/></l><r>crewman<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kritikisto<s n="n"/></l><r>critic<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kliento<s n="n"/></l><r>customer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>biciklanto<s n="n"/></l><r>cyclist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mortinto<s n="n"/></l><r>dead<b/>person<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>dekano<s n="n"/></l><r>dean<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>defendo<s n="n"/></l><r>defence<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>demokrato<s n="n"/></l><r>democrat<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>denominatoro<s n="n"/></l><r>denominator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>dentisto<s n="n"/></l><r>dentist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>deputito<s n="n"/></l><r>deputy<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>detektivo<s n="n"/></l><r>detective<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>detektilo<s n="n"/></l><r>detector<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>diktatoro<s n="n"/></l><r>dictator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>direktoro<s n="n"/></l><r>director<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>doktoro<s n="n"/></l><r>doctor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>hundo<s n="n"/></l><r>dog<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ŝoforo<s n="n"/></l><r>driver<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>duko<s n="n"/></l><r>duke<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>grafo<s n="n"/></l><r>earl<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ekonomikisto<s n="n"/></l><r>economist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>eldonisto<s n="n"/></l><r>editor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>elefanto<s n="n"/></l><r>elephant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>elmigranto<s n="n"/></l><r>emigrant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>oficisto<s n="n"/></l><r>employee<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>employer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>malamiko<s n="n"/></l><r>enemy<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>inĝeniero<s n="n"/></l><r>engineer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>artisto<s n="n"/></l><r>entertainer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>entuziasmulo<s n="n"/></l><r>enthusiast<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>laekzekutivo<s n="n"/></l><r>executive<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>eksponento<s n="n"/></l><r>exponent<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ekstremisto<s n="n"/></l><r>extremist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kultivisto<s n="n"/></l><r>farmer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>konstruisto<s n="n"/></l><r>builder<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>faŝisto<s n="n"/></l><r>fascist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kompaniano<s n="n"/></l><r>fellow<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pafanto<s n="n"/></l><r>fencer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fianĉo<s n="n"/></l><r>fiancé<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>finalisto<s n="n"/></l><r>finalist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>futbalisto<s n="n"/></l><r>footballer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>amiko<s n="n"/></l><r>friend<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>funelo<s n="n"/></l><r>funnel<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĝardenisto<s n="n"/></l><r>gardener<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>generalo<s n="n"/></l><r>general<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>geriatro<s n="n"/></l><r>geriatrist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fantomo<s n="n"/></l><r>ghost<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>gorilo<s n="n"/></l><r>gorilla<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>reganto<s n="n"/></l><r>governor<s n="n"/></r></p><par n="MF_GD"/></e>
     
-    <e r="LR"><p><l>gasto<s n="n"/><s n="f"/></l><r>guest<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gasto<s n="n"/><s n="m"/></l><r>guest<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gasto<s n="n"/><s n="GD"/></l><r>guest<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ginekologo<s n="n"/><s n="f"/></l><r>gynaecologist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ginekologo<s n="n"/><s n="m"/></l><r>gynaecologist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ginekologo<s n="n"/><s n="GD"/></l><r>gynaecologist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>frizisto<s n="n"/><s n="f"/></l><r>hairdresser<s n="n"/></r></p></e>
-    <e r="LR"><p><l>frizisto<s n="n"/><s n="m"/></l><r>hairdresser<s n="n"/></r></p></e>
-    <e r="RL"><p><l>frizisto<s n="n"/><s n="GD"/></l><r>hairdresser<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>handikapulo<s n="n"/><s n="f"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
-    <e r="LR"><p><l>handikapulo<s n="n"/><s n="m"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
-    <e r="RL"><p><l>handikapulo<s n="n"/><s n="GD"/></l><r>handicapped<b/>person<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ostaĝo<s n="n"/><s n="f"/></l><r>hostage<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ostaĝo<s n="n"/><s n="m"/></l><r>hostage<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ostaĝo<s n="n"/><s n="GD"/></l><r>hostage<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gasto<s n="n"/><s n="f"/></l><r>hostess<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gasto<s n="n"/><s n="m"/></l><r>hostess<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gasto<s n="n"/><s n="GD"/></l><r>hostess<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gastiganto<s n="n"/><s n="f"/></l><r>host<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gastiganto<s n="n"/><s n="m"/></l><r>host<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gastiganto<s n="n"/><s n="GD"/></l><r>host<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>humuristo<s n="n"/><s n="f"/></l><r>humorist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>humuristo<s n="n"/><s n="m"/></l><r>humorist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>humuristo<s n="n"/><s n="GD"/></l><r>humorist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>idioto<s n="n"/><s n="f"/></l><r>idiot<s n="n"/></r></p></e>
-    <e r="LR"><p><l>idioto<s n="n"/><s n="m"/></l><r>idiot<s n="n"/></r></p></e>
-    <e r="RL"><p><l>idioto<s n="n"/><s n="GD"/></l><r>idiot<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>enmigrinto<s n="n"/><s n="f"/></l><r>immigrant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>enmigrinto<s n="n"/><s n="m"/></l><r>immigrant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>enmigrinto<s n="n"/><s n="GD"/></l><r>immigrant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>individuo<s n="n"/><s n="f"/></l><r>individual<s n="n"/></r></p></e>
-    <e r="LR"><p><l>individuo<s n="n"/><s n="m"/></l><r>individual<s n="n"/></r></p></e>
-    <e r="RL"><p><l>individuo<s n="n"/><s n="GD"/></l><r>individual<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>loĝanto<s n="n"/><s n="f"/></l><r>inhabitant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>loĝanto<s n="n"/><s n="m"/></l><r>inhabitant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>loĝanto<s n="n"/><s n="GD"/></l><r>inhabitant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>incitanto<s n="n"/><s n="f"/></l><r>instigator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>incitanto<s n="n"/><s n="m"/></l><r>instigator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>incitanto<s n="n"/><s n="GD"/></l><r>instigator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>asekuristo<s n="n"/><s n="f"/></l><r>insurer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asekuristo<s n="n"/><s n="m"/></l><r>insurer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asekuristo<s n="n"/><s n="GD"/></l><r>insurer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>interpretisto<s n="n"/><s n="f"/></l><r>interpreter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>interpretisto<s n="n"/><s n="m"/></l><r>interpreter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>interpretisto<s n="n"/><s n="GD"/></l><r>interpreter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>entrudulo<s n="n"/><s n="f"/></l><r>intruder<s n="n"/></r></p></e>
-    <e r="LR"><p><l>entrudulo<s n="n"/><s n="m"/></l><r>intruder<s n="n"/></r></p></e>
-    <e r="RL"><p><l>entrudulo<s n="n"/><s n="GD"/></l><r>intruder<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>inventisto<s n="n"/><s n="f"/></l><r>inventor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>inventisto<s n="n"/><s n="m"/></l><r>inventor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>inventisto<s n="n"/><s n="GD"/></l><r>inventor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>detektivo<s n="n"/><s n="f"/></l><r>investigator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>detektivo<s n="n"/><s n="m"/></l><r>investigator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>detektivo<s n="n"/><s n="GD"/></l><r>investigator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĵurnalisto<s n="n"/><s n="f"/></l><r>journalist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĵurnalisto<s n="n"/><s n="m"/></l><r>journalist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĵurnalisto<s n="n"/><s n="GD"/></l><r>journalist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>juĝisto<s n="n"/><s n="f"/></l><r>judge<s n="n"/></r></p></e>
-    <e r="LR"><p><l>juĝisto<s n="n"/><s n="m"/></l><r>judge<s n="n"/></r></p></e>
-    <e r="RL"><p><l>juĝisto<s n="n"/><s n="GD"/></l><r>judge<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĵonglisto<s n="n"/><s n="f"/></l><r>juggler<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĵonglisto<s n="n"/><s n="m"/></l><r>juggler<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĵonglisto<s n="n"/><s n="GD"/></l><r>juggler<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>junulo<s n="n"/><s n="f"/></l><r>junior<s n="n"/></r></p></e>
-    <e r="LR"><p><l>junulo<s n="n"/><s n="m"/></l><r>junior<s n="n"/></r></p></e>
-    <e r="RL"><p><l>junulo<s n="n"/><s n="GD"/></l><r>junior<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>juristo<s n="n"/><s n="f"/></l><r>jurist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>juristo<s n="n"/><s n="m"/></l><r>jurist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>juristo<s n="n"/><s n="GD"/></l><r>jurist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>landlord<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>landlord<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>landlord<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>advokato<s n="n"/><s n="f"/></l><r>lawyer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>lawyer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>lawyer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gridanto<s n="n"/><s n="f"/></l><r>leader<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gvidanto<s n="n"/><s n="m"/></l><r>leader<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gvidanto<s n="n"/><s n="GD"/></l><r>leader<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>monpruntisto<s n="n"/><s n="f"/></l><r>lender<s n="n"/></r></p></e>
-    <e r="LR"><p><l>monpruntisto<s n="n"/><s n="m"/></l><r>lender<s n="n"/></r></p></e>
-    <e r="RL"><p><l>monpruntisto<s n="n"/><s n="GD"/></l><r>lender<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>leono<s n="n"/><s n="f"/></l><r>lion<s n="n"/></r></p></e>
-    <e r="LR"><p><l>leono<s n="n"/><s n="m"/></l><r>lion<s n="n"/></r></p></e>
-    <e r="RL"><p><l>leono<s n="n"/><s n="GD"/></l><r>lion<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lord<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>lord<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>lord<s n="n"/></r></p></e>
-
-
-    <e r="LR"><p><l>perdanto<s n="n"/><s n="f"/></l><r>loser<s n="n"/></r></p></e>
-    <e r="LR"><p><l>perdanto<s n="n"/><s n="m"/></l><r>loser<s n="n"/></r></p></e>
-    <e r="RL"><p><l>perdanto<s n="n"/><s n="GD"/></l><r>loser<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>amanto<s n="n"/><s n="f"/></l><r>lover<s n="n"/></r></p></e>
-    <e r="LR"><p><l>amanto<s n="n"/><s n="m"/></l><r>lover<s n="n"/></r></p></e>
-    <e r="RL"><p><l>amanto<s n="n"/><s n="GD"/></l><r>lover<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>magiisto<s n="n"/><s n="f"/></l><r>magician<s n="n"/></r></p></e>
-    <e r="LR"><p><l>magiisto<s n="n"/><s n="m"/></l><r>magician<s n="n"/></r></p></e>
-    <e r="RL"><p><l>magiisto<s n="n"/><s n="GD"/></l><r>magician<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>juĝisto<s n="n"/><s n="f"/></l><r>magistrate<s n="n"/></r></p></e>
-    <e r="LR"><p><l>juĝisto<s n="n"/><s n="m"/></l><r>magistrate<s n="n"/></r></p></e>
-    <e r="RL"><p><l>juĝisto<s n="n"/><s n="GD"/></l><r>magistrate<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fabrikanto<s n="n"/><s n="f"/></l><r>maker<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fabrikanto<s n="n"/><s n="m"/></l><r>maker<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fabrikanto<s n="n"/><s n="GD"/></l><r>maker<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="f"/></l><r>manager<s n="n"/></r></p></e>
-    <e r="LR"><p><l>direktoro<s n="n"/><s n="m"/></l><r>manager<s n="n"/></r></p></e>
-    <e r="RL"><p><l>direktoro<s n="n"/><s n="GD"/></l><r>manager<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>reganto<s n="n"/><s n="f"/></l><r>mandator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reganto<s n="n"/><s n="m"/></l><r>mandator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reganto<s n="n"/><s n="GD"/></l><r>mandator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fabrikanto<s n="n"/><s n="f"/></l><r>manufacturer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fabrikanto<s n="n"/><s n="m"/></l><r>manufacturer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fabrikanto<s n="n"/><s n="GD"/></l><r>manufacturer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>martiro<s n="n"/><s n="f"/></l><r>martyr<s n="n"/></r></p></e>
-    <e r="LR"><p><l>martiro<s n="n"/><s n="m"/></l><r>martyr<s n="n"/></r></p></e>
-    <e r="RL"><p><l>martiro<s n="n"/><s n="GD"/></l><r>martyr<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>master<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>master<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>master<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kompano<s n="n"/><s n="f"/></l><r>mate<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kompano<s n="n"/><s n="m"/></l><r>mate<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kompano<s n="n"/><s n="GD"/></l><r>mate<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>urbestro<s n="n"/><s n="f"/></l><r>mayor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>urbestro<s n="n"/><s n="m"/></l><r>mayor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>urbestro<s n="n"/><s n="GD"/></l><r>mayor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>membro<s n="n"/><s n="f"/></l><r>member<s n="n"/></r></p></e>
-    <e r="LR"><p><l>membro<s n="n"/><s n="m"/></l><r>member<s n="n"/></r></p></e>
-    <e r="RL"><p><l>membro<s n="n"/><s n="GD"/></l><r>member<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>parlamentano<s n="n"/><s n="f"/></l><r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p></e>
-    <e r="LR"><p><l>parlamentano<s n="n"/><s n="m"/></l><r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p></e>
-    <e r="RL"><p><l>parlamentano<s n="n"/><s n="GD"/></l><r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mesaĝisto<s n="n"/><s n="f"/></l><r>messenger<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mesaĝisto<s n="n"/><s n="m"/></l><r>messenger<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mesaĝisto<s n="n"/><s n="GD"/></l><r>messenger<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>aktivulo<s n="n"/><s n="f"/></l><r>militant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>aktivulo<s n="n"/><s n="m"/></l><r>militant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>aktivulo<s n="n"/><s n="GD"/></l><r>militant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>milionulo<s n="n"/><s n="f"/></l><r>millionaire<s n="n"/></r></p></e>
-    <e r="LR"><p><l>milionulo<s n="n"/><s n="m"/></l><r>millionaire<s n="n"/></r></p></e>
-    <e r="RL"><p><l>milionulo<s n="n"/><s n="GD"/></l><r>millionaire<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ministo<s n="n"/><s n="f"/></l><r>miner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ministo<s n="n"/><s n="m"/></l><r>miner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ministo<s n="n"/><s n="GD"/></l><r>miner<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ministro<s n="n"/><s n="f"/></l><r>minister<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ministro<s n="n"/><s n="m"/></l><r>minister<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ministro<s n="n"/><s n="GD"/></l><r>minister<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>monarko<s n="n"/><s n="f"/></l><r>monarch<s n="n"/></r></p></e>
-    <e r="LR"><p><l>monarko<s n="n"/><s n="m"/></l><r>monarch<s n="n"/></r></p></e>
-    <e r="RL"><p><l>monarko<s n="n"/><s n="GD"/></l><r>monarch<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>monaĥo<s n="n"/><s n="f"/></l><r>monk<s n="n"/></r></p></e>
-    <e r="LR"><p><l>monaĥo<s n="n"/><s n="m"/></l><r>monk<s n="n"/></r></p></e>
-    <e r="RL"><p><l>monaĥo<s n="n"/><s n="GD"/></l><r>monk<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>montgrimpisto<s n="n"/><s n="f"/></l><r>mountaineer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>montgrimpisto<s n="n"/><s n="m"/></l><r>mountaineer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>montgrimpisto<s n="n"/><s n="GD"/></l><r>mountaineer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>murdisto<s n="n"/><s n="f"/></l><r>murderer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>murdisto<s n="n"/><s n="m"/></l><r>murderer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>murdisto<s n="n"/><s n="GD"/></l><r>murderer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>muzikisto<s n="n"/><s n="f"/></l><r>musician<s n="n"/></r></p></e>
-    <e r="LR"><p><l>muzikisto<s n="n"/><s n="m"/></l><r>musician<s n="n"/></r></p></e>
-    <e r="RL"><p><l>muzikisto<s n="n"/><s n="GD"/></l><r>musician<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>rakontanto<s n="n"/><s n="f"/></l><r>narrator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>rakontanto<s n="n"/><s n="m"/></l><r>narrator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>rakontanto<s n="n"/><s n="GD"/></l><r>narrator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>naciisto<s n="n"/><s n="f"/></l><r>nationalist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>naciisto<s n="n"/><s n="m"/></l><r>nationalist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>naciisto<s n="n"/><s n="GD"/></l><r>nationalist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>indiĝeno<s n="n"/><s n="f"/></l><r>native<s n="n"/></r></p></e>
-    <e r="LR"><p><l>indiĝeno<s n="n"/><s n="m"/></l><r>native<s n="n"/></r></p></e>
-    <e r="RL"><p><l>indiĝeno<s n="n"/><s n="GD"/></l><r>native<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>esploristo<s n="n"/><s n="f"/></l><r>navigator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>esploristo<s n="n"/><s n="m"/></l><r>navigator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>esploristo<s n="n"/><s n="GD"/></l><r>navigator<s n="n"/></r></p></e>
-
-
-    <e r="LR"><p><l>notario<s n="n"/><s n="f"/></l><r>notary<s n="n"/></r></p></e>
-    <e r="LR"><p><l>notario<s n="n"/><s n="m"/></l><r>notary<s n="n"/></r></p></e>
-    <e r="RL"><p><l>notario<s n="n"/><s n="GD"/></l><r>notary<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>flegisto<s n="n"/><s n="f"/></l><r>nurse<s n="n"/></r></p></e>
-    <e r="LR"><p><l>flegisto<s n="n"/><s n="m"/></l><r>nurse<s n="n"/></r></p></e>
-    <e r="RL"><p><l>flegisto<s n="n"/><s n="GD"/></l><r>nurse<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>observanto<s n="n"/><s n="f"/></l><r>observer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>observanto<s n="n"/><s n="m"/></l><r>observer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>observanto<s n="n"/><s n="GD"/></l><r>observer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>agento<s n="n"/><s n="f"/></l><r>officer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>agento<s n="n"/><s n="m"/></l><r>officer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>agento<s n="n"/><s n="GD"/></l><r>officer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>telefonisto<s n="n"/><s n="f"/></l><r>operator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>telefonisto<s n="n"/><s n="m"/></l><r>operator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>telefonisto<s n="n"/><s n="GD"/></l><r>operator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kontraŭulo<s n="n"/><s n="f"/></l><r>opponent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kontraŭulo<s n="n"/><s n="m"/></l><r>opponent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kontraŭulo<s n="n"/><s n="GD"/></l><r>opponent<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>orgenisto<s n="n"/><s n="f"/></l><r>organist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>orgenisto<s n="n"/><s n="m"/></l><r>organist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>orgenisto<s n="n"/><s n="GD"/></l><r>organist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>orfo<s n="n"/><s n="f"/></l><r>orphan<s n="n"/></r></p></e>
-    <e r="LR"><p><l>orfo<s n="n"/><s n="m"/></l><r>orphan<s n="n"/></r></p></e>
-    <e r="RL"><p><l>orfo<s n="n"/><s n="GD"/></l><r>orphan<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>owner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>owner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>owner<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pacisto<s n="n"/><s n="f"/></l><r>pacifist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pacisto<s n="n"/><s n="m"/></l><r>pacifist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pacisto<s n="n"/><s n="GD"/></l><r>pacifist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pentristo<s n="n"/><s n="f"/></l><r>painter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pentristo<s n="n"/><s n="m"/></l><r>painter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pentristo<s n="n"/><s n="GD"/></l><r>painter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>partoprenanto<s n="n"/><s n="f"/></l><r>participant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>partoprenanto<s n="n"/><s n="m"/></l><r>participant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>partoprenanto<s n="n"/><s n="GD"/></l><r>participant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kompano<s n="n"/><s n="f"/></l><r>partner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kompano<s n="n"/><s n="m"/></l><r>partner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kompano<s n="n"/><s n="GD"/></l><r>partner<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pasaĝero<s n="n"/><s n="f"/></l><r>passenger<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pasaĝero<s n="n"/><s n="m"/></l><r>passenger<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pasaĝero<s n="n"/><s n="GD"/></l><r>passenger<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>patriarko<s n="n"/><s n="f"/></l><r>patriarch<s n="n"/></r></p></e>
-    <e r="LR"><p><l>patriarko<s n="n"/><s n="m"/></l><r>patriarch<s n="n"/></r></p></e>
-    <e r="RL"><p><l>patriarko<s n="n"/><s n="GD"/></l><r>patriarch<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>patron<b/>saint<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>patron<b/>saint<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>patron<b/>saint<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>pattern<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>pattern<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>pattern<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kampulo<s n="n"/><s n="f"/></l><r>peasant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kampulo<s n="n"/><s n="m"/></l><r>peasant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kampulo<s n="n"/><s n="GD"/></l><r>peasant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>piediranto<s n="n"/><s n="f"/></l><r>pedestrian<s n="n"/></r></p></e>
-    <e r="LR"><p><l>piediranto<s n="n"/><s n="m"/></l><r>pedestrian<s n="n"/></r></p></e>
-    <e r="RL"><p><l>piediranto<s n="n"/><s n="GD"/></l><r>pedestrian<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>infankuracisto<s n="n"/><s n="f"/></l><r>pediatrician<s n="n"/></r></p></e>
-    <e r="LR"><p><l>infankuracisto<s n="n"/><s n="m"/></l><r>pediatrician<s n="n"/></r></p></e>
-    <e r="RL"><p><l>infankuracisto<s n="n"/><s n="GD"/></l><r>pediatrician<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>interpretisto<s n="n"/><s n="f"/></l><r>performer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>interpretisto<s n="n"/><s n="m"/></l><r>performer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>interpretisto<s n="n"/><s n="GD"/></l><r>performer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>filologo<s n="n"/><s n="f"/></l><r>philologist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>filologo<s n="n"/><s n="m"/></l><r>philologist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>filologo<s n="n"/><s n="GD"/></l><r>philologist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>filozofo<s n="n"/><s n="f"/></l><r>philosopher<s n="n"/></r></p></e>
-    <e r="LR"><p><l>filozofo<s n="n"/><s n="m"/></l><r>philosopher<s n="n"/></r></p></e>
-    <e r="RL"><p><l>filozofo<s n="n"/><s n="GD"/></l><r>philosopher<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>fotisto<s n="n"/><s n="f"/></l><r>photographer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>fotisto<s n="n"/><s n="m"/></l><r>photographer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>fotisto<s n="n"/><s n="GD"/></l><r>photographer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pilgrimanto<s n="n"/><s n="f"/></l><r>pilgrim<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pilgrimanto<s n="n"/><s n="m"/></l><r>pilgrim<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pilgrimanto<s n="n"/><s n="GD"/></l><r>pilgrim<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>piloto<s n="n"/><s n="f"/></l><r>pilot<s n="n"/></r></p></e>
-    <e r="LR"><p><l>piloto<s n="n"/><s n="m"/></l><r>pilot<s n="n"/></r></p></e>
-    <e r="RL"><p><l>piloto<s n="n"/><s n="GD"/></l><r>pilot<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pioniro<s n="n"/><s n="f"/></l><r>pioneer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pioniro<s n="n"/><s n="m"/></l><r>pioneer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pioniro<s n="n"/><s n="GD"/></l><r>pioneer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pirato<s n="n"/><s n="f"/></l><r>pirate<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pirato<s n="n"/><s n="m"/></l><r>pirate<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pirato<s n="n"/><s n="GD"/></l><r>pirate<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ludanto<s n="n"/><s n="f"/></l><r>player<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ludanto<s n="n"/><s n="m"/></l><r>player<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ludanto<s n="n"/><s n="GD"/></l><r>player<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>poeto<s n="n"/><s n="f"/></l><r>poet<s n="n"/></r></p></e>
-    <e r="LR"><p><l>poeto<s n="n"/><s n="m"/></l><r>poet<s n="n"/></r></p></e>
-    <e r="RL"><p><l>poeto<s n="n"/><s n="GD"/></l><r>poet<s n="n"/></r></p></e>
-
-
-    <e r="LR"><p><l>politikisto<s n="n"/><s n="f"/></l><r>politician<s n="n"/></r></p></e>
-    <e r="LR"><p><l>politikisto<s n="n"/><s n="m"/></l><r>politician<s n="n"/></r></p></e>
-    <e r="RL"><p><l>politikisto<s n="n"/><s n="GD"/></l><r>politician<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>posedanto<s n="n"/><s n="f"/></l><r>possessor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>posedanto<s n="n"/><s n="m"/></l><r>possessor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>posedanto<s n="n"/><s n="GD"/></l><r>possessor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>leterportisto<s n="n"/><s n="f"/></l><r>postman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>leterportisto<s n="n"/><s n="m"/></l><r>postman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>leterportisto<s n="n"/><s n="GD"/></l><r>postman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>praktikisto<s n="n"/><s n="f"/></l><r>practitioner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>praktikisto<s n="n"/><s n="m"/></l><r>practitioner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>praktikisto<s n="n"/><s n="GD"/></l><r>practitioner<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>antaŭulo<s n="n"/><s n="f"/></l><r>predecessor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>antaŭulo<s n="n"/><s n="m"/></l><r>predecessor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>antaŭulo<s n="n"/><s n="GD"/></l><r>predecessor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>anoncisto<s n="n"/><s n="f"/></l><r>presenter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anoncisto<s n="n"/><s n="m"/></l><r>presenter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anoncisto<s n="n"/><s n="GD"/></l><r>presenter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="f"/></l><r>president<s n="n"/></r></p></e>
-    <e r="LR"><p><l>prezidento<s n="n"/><s n="m"/></l><r>president<s n="n"/></r></p></e>
-    <e r="RL"><p><l>prezidento<s n="n"/><s n="GD"/></l><r>president<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>malliberulo<s n="n"/><s n="f"/></l><r>prisoner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>malliberulo<s n="n"/><s n="m"/></l><r>prisoner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>prisoner<s n="n"/></r></p></e>
+    <e><p><l>gardisto<s n="n"/></l><r>guard<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>gardisto<s n="n"/></l><r>guard<s n="n"/></r></p></e>
+
+    <e><p><l>gasto<s n="n"/></l><r>guest<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ginekologo<s n="n"/></l><r>gynaecologist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>frizisto<s n="n"/></l><r>hairdresser<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>handikapulo<s n="n"/></l><r>handicapped<b/>person<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ostaĝo<s n="n"/></l><r>hostage<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>humuristo<s n="n"/></l><r>humorist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>idioto<s n="n"/></l><r>idiot<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>enmigrinto<s n="n"/></l><r>immigrant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>individuo<s n="n"/></l><r>individual<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>loĝanto<s n="n"/></l><r>inhabitant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>incitanto<s n="n"/></l><r>instigator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>asekuristo<s n="n"/></l><r>insurer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>interpretisto<s n="n"/></l><r>interpreter<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>entrudulo<s n="n"/></l><r>intruder<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>inventisto<s n="n"/></l><r>inventor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>detektivo<s n="n"/></l><r>investigator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĵurnalisto<s n="n"/></l><r>journalist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>juĝisto<s n="n"/></l><r>judge<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĵonglisto<s n="n"/></l><r>juggler<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>junulo<s n="n"/></l><r>junior<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>juristo<s n="n"/></l><r>jurist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>landlord<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>advokato<s n="n"/></l><r>lawyer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>gvidanto<s n="n"/></l><r>leader<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>monpruntisto<s n="n"/></l><r>lender<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>leono<s n="n"/></l><r>lion<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>perdanto<s n="n"/></l><r>loser<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>amanto<s n="n"/></l><r>lover<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>magiisto<s n="n"/></l><r>magician<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>juĝisto<s n="n"/></l><r>magistrate<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fabrikanto<s n="n"/></l><r>maker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>direktoro<s n="n"/></l><r>manager<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>reganto<s n="n"/></l><r>mandator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fabrikanto<s n="n"/></l><r>manufacturer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>martiro<s n="n"/></l><r>martyr<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>master<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kompano<s n="n"/></l><r>mate<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>urbestro<s n="n"/></l><r>mayor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>membro<s n="n"/></l><r>member<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>parlamentano<s n="n"/></l><r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p><par n="MF_GD"/></e>
+
+    <e><p><l>mesaĝisto<s n="n"/></l><r>messenger<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>aktivulo<s n="n"/></l><r>militant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>milionulo<s n="n"/></l><r>millionaire<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ministo<s n="n"/></l><r>miner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ministro<s n="n"/></l><r>minister<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>monarko<s n="n"/></l><r>monarch<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>monaĥo<s n="n"/></l><r>monk<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>montgrimpisto<s n="n"/></l><r>mountaineer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>murdisto<s n="n"/></l><r>murderer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>muzikisto<s n="n"/></l><r>musician<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>rakontanto<s n="n"/></l><r>narrator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>naciisto<s n="n"/></l><r>nationalist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>indiĝeno<s n="n"/></l><r>native<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>esploristo<s n="n"/></l><r>navigator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>notario<s n="n"/></l><r>notary<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>flegisto<s n="n"/></l><r>nurse<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>observanto<s n="n"/></l><r>observer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>agento<s n="n"/></l><r>officer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>telefonisto<s n="n"/></l><r>operator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kontraŭulo<s n="n"/></l><r>opponent<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>orgenisto<s n="n"/></l><r>organist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>orfo<s n="n"/></l><r>orphan<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>owner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pacisto<s n="n"/></l><r>pacifist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pentristo<s n="n"/></l><r>painter<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>partoprenanto<s n="n"/></l><r>participant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kompano<s n="n"/></l><r>partner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pasaĝero<s n="n"/></l><r>passenger<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>patriarko<s n="n"/></l><r>patriarch<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>patron<b/>saint<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>mastro<s n="n"/></l><r>pattern<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kampulo<s n="n"/></l><r>peasant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>piediranto<s n="n"/></l><r>pedestrian<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>infankuracisto<s n="n"/></l><r>pediatrician<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>interpretisto<s n="n"/></l><r>performer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>filologo<s n="n"/></l><r>philologist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>filozofo<s n="n"/></l><r>philosopher<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>fotisto<s n="n"/></l><r>photographer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pilgrimanto<s n="n"/></l><r>pilgrim<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>piloto<s n="n"/></l><r>pilot<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pioniro<s n="n"/></l><r>pioneer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pirato<s n="n"/></l><r>pirate<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ludanto<s n="n"/></l><r>player<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>poeto<s n="n"/></l><r>poet<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>politikisto<s n="n"/></l><r>politician<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>posedanto<s n="n"/></l><r>possessor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>leterportisto<s n="n"/></l><r>postman<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>praktikisto<s n="n"/></l><r>practitioner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>antaŭulo<s n="n"/></l><r>predecessor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>anoncisto<s n="n"/></l><r>presenter<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>prezidento<s n="n"/></l><r>president<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>malliberulo<s n="n"/></l><r>prisoner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>produktoro<s n="n"/></l><r>producer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>profesoro<s n="n"/></l><r>professor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>iniciatinto<s n="n"/></l><r>promoter<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>profeto<s n="n"/></l><r>prophet<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ĉefrolulo<s n="n"/></l><r>protagonist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>psikologo<s n="n"/></l><r>psychologist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>prokuroro<s n="n"/></l><r>public<b/>prosecutor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>eldonisto<s n="n"/></l><r>publisher<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>lernanto<s n="n"/></l><r>pupil<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kuniklo<s n="n"/></l><r>rabbit<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>farmisto<s n="n"/></l><r>rancher<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>leganto<s n="n"/></l><r>reader<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>akceptisto<s n="n"/></l><r>receptionist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ricevilo<s n="n"/></l><r>receptor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>rekruto<s n="n"/></l><r>recruit<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>gvidanto<s n="n"/></l><r>rector<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>parenco<s n="n"/></l><r>relative<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>raportisto<s n="n"/></l><r>reporter<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>reprezentanto<s n="n"/></l><r>representative<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>respublikano<s n="n"/></l><r>republican<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>loĝanto<s n="n"/></l><r>resident<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>rajdanto<s n="n"/></l><r>rider<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>rivalo<s n="n"/></l><r>rival<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>reganto<s n="n"/></l><r>ruler<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>sanktulo<s n="n"/></l><r>saint<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>erudiciulo<s n="n"/></l><r>scholar<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>impertinentulino<s n="n"/></l><r>scoundrel<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>skulptisto<s n="n"/></l><r>sculptor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>sekretario<s n="n"/></l><r>secretary<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vendisto<s n="n"/></l><r>seller<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>senatano<s n="n"/></l><r>senator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>serĝento<s n="n"/></l><r>sergeant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>servisto<s n="n"/></l><r>servant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>akciulo<s n="n"/></l><r>shareholder<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pastro<s n="n"/></l><r>shepherd<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ŝuisto<s n="n"/></l><r>shoemaker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>simulilo<s n="n"/></l><r>simulator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kantisto<s n="n"/></l><r>singer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>skianto<s n="n"/></l><r>skier<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>sklavo<s n="n"/></l><r>slave<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>forĝisto<s n="n"/></l><r>smith<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>socialisto<s n="n"/></l><r>socialist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>soldato<s n="n"/></l><r>soldier<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>advokato<s n="n"/></l><r>solicitor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>solisto<s n="n"/></l><r>soloist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>suvereno<s n="n"/></l><r>sovereign<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>specialisto<s n="n"/></l><r>specialist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>spiono<s n="n"/></l><r>spy<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ŝtatisto<s n="n"/></l><r>statesman<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>akciulo<s n="n"/></l><r>stockholder<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>studanto<s n="n"/></l><r>student<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>anstataŭanto<s n="n"/></l><r>substitute<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>posteulo<s n="n"/></l><r>successor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kontrolisto<s n="n"/></l><r>supervisor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kirurgo<s n="n"/></l><r>surgeon<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>tajloro<s n="n"/></l><r>tailor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>taksiisto<s n="n"/></l><r>taxi<b/>driver<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>impostpaganto<s n="n"/></l><r>taxpayer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>instruisto<s n="n"/></l><r>teacher<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>teknikisto<s n="n"/></l><r>technician<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>adoleskanto<s n="n"/></l><r>teenager<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>luprenanto<s n="n"/></l><r>tenant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>teroristo<s n="n"/></l><r>terrorist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>ŝtelisto<s n="n"/></l><r>thief<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>turisto<s n="n"/></l><r>tourist<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>trejnisto<s n="n"/></l><r>trainer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>tradukisto<s n="n"/></l><r>translator<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vojaĝanto<s n="n"/></l><r>traveller<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>oportunisto<s n="n"/></l><r>turncoat<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>manumbutono<s n="n"/></l><r>twin<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>magnato<s n="n"/></l><r>tycoon<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>tirano<s n="n"/></l><r>tyrant<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>uzanto<s n="n"/></l><r>user<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vendisto<s n="n"/></l><r>vendor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>veterano<s n="n"/></l><r>veteran<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>spektanto<s n="n"/></l><r>viewer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vizitanto<s n="n"/></l><r>visitor<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>pograndisto<s n="n"/></l><r>wholesaler<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vidvo<s n="n"/></l><r>widower<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>gajnanto<s n="n"/></l><r>winner<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>atestanto<s n="n"/></l><r>witness<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>laboristo<s n="n"/></l><r>worker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>verkisto<s n="n"/></l><r>writer<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>junulo<s n="n"/></l><r>youngster<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>vicprezidanto<s n="n"/></l><r>vice-president<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>kuiristo<s n="n"/></l><r>cook<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>nigrulo<s n="n"/></l><r>black<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>krimulo<s n="n"/></l><r>convict<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>samseksemulo<s n="n"/></l><r>homosexual<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>profesiulo<s n="n"/></l><r>professional<s n="n"/></r></p><par n="MF_GD"/></e>
+
+
+    <e><p><l>sinjoro<s n="n"/></l><r>lord<s n="n"/></r></p><par n="MF_GD"/></e>
+    
+    
     <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>setscrew<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>produktoro<s n="n"/><s n="f"/></l><r>producer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>produktoro<s n="n"/><s n="m"/></l><r>producer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>produktoro<s n="n"/><s n="GD"/></l><r>producer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>profesoro<s n="n"/><s n="f"/></l><r>professor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>profesoro<s n="n"/><s n="m"/></l><r>professor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>profesoro<s n="n"/><s n="GD"/></l><r>professor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>iniciatinto<s n="n"/><s n="f"/></l><r>promoter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>iniciatinto<s n="n"/><s n="m"/></l><r>promoter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>iniciatinto<s n="n"/><s n="GD"/></l><r>promoter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>profeto<s n="n"/><s n="f"/></l><r>prophet<s n="n"/></r></p></e>
-    <e r="LR"><p><l>profeto<s n="n"/><s n="m"/></l><r>prophet<s n="n"/></r></p></e>
-    <e r="RL"><p><l>profeto<s n="n"/><s n="GD"/></l><r>prophet<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ĉefrolulo<s n="n"/><s n="f"/></l><r>protagonist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ĉefrolulo<s n="n"/><s n="m"/></l><r>protagonist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ĉefrolulo<s n="n"/><s n="GD"/></l><r>protagonist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>psikologo<s n="n"/><s n="f"/></l><r>psychologist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>psikologo<s n="n"/><s n="m"/></l><r>psychologist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>psikologo<s n="n"/><s n="GD"/></l><r>psychologist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>prokuroro<s n="n"/><s n="f"/></l><r>public<b/>prosecutor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>prokuroro<s n="n"/><s n="m"/></l><r>public<b/>prosecutor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>prokuroro<s n="n"/><s n="GD"/></l><r>public<b/>prosecutor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>eldonisto<s n="n"/><s n="f"/></l><r>publisher<s n="n"/></r></p></e>
-    <e r="LR"><p><l>eldonisto<s n="n"/><s n="m"/></l><r>publisher<s n="n"/></r></p></e>
-    <e r="RL"><p><l>eldonisto<s n="n"/><s n="GD"/></l><r>publisher<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>lernanto<s n="n"/><s n="f"/></l><r>pupil<s n="n"/></r></p></e>
-    <e r="LR"><p><l>lernanto<s n="n"/><s n="m"/></l><r>pupil<s n="n"/></r></p></e>
-    <e r="RL"><p><l>lernanto<s n="n"/><s n="GD"/></l><r>pupil<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kuniklo<s n="n"/><s n="f"/></l><r>rabbit<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kuniklo<s n="n"/><s n="m"/></l><r>rabbit<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kuniklo<s n="n"/><s n="GD"/></l><r>rabbit<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>farmisto<s n="n"/><s n="f"/></l><r>rancher<s n="n"/></r></p></e>
-    <e r="LR"><p><l>farmisto<s n="n"/><s n="m"/></l><r>rancher<s n="n"/></r></p></e>
-    <e r="RL"><p><l>farmisto<s n="n"/><s n="GD"/></l><r>rancher<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>leganto<s n="n"/><s n="f"/></l><r>reader<s n="n"/></r></p></e>
-    <e r="LR"><p><l>leganto<s n="n"/><s n="m"/></l><r>reader<s n="n"/></r></p></e>
-    <e r="RL"><p><l>leganto<s n="n"/><s n="GD"/></l><r>reader<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>akceptisto<s n="n"/><s n="f"/></l><r>receptionist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>akceptisto<s n="n"/><s n="m"/></l><r>receptionist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>akceptisto<s n="n"/><s n="GD"/></l><r>receptionist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ricevilo<s n="n"/><s n="f"/></l><r>receptor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ricevilo<s n="n"/><s n="m"/></l><r>receptor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ricevilo<s n="n"/><s n="GD"/></l><r>receptor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>rekruto<s n="n"/><s n="f"/></l><r>recruit<s n="n"/></r></p></e>
-    <e r="LR"><p><l>rekruto<s n="n"/><s n="m"/></l><r>recruit<s n="n"/></r></p></e>
-    <e r="RL"><p><l>rekruto<s n="n"/><s n="GD"/></l><r>recruit<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>gvidanto<s n="n"/><s n="f"/></l><r>rector<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gvidanto<s n="n"/><s n="m"/></l><r>rector<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gvidanto<s n="n"/><s n="GD"/></l><r>rector<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>parenco<s n="n"/><s n="f"/></l><r>relative<s n="n"/></r></p></e>
-    <e r="LR"><p><l>parenco<s n="n"/><s n="m"/></l><r>relative<s n="n"/></r></p></e>
-    <e r="RL"><p><l>parenco<s n="n"/><s n="GD"/></l><r>relative<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>raportisto<s n="n"/><s n="f"/></l><r>reporter<s n="n"/></r></p></e>
-    <e r="LR"><p><l>raportisto<s n="n"/><s n="m"/></l><r>reporter<s n="n"/></r></p></e>
-    <e r="RL"><p><l>raportisto<s n="n"/><s n="GD"/></l><r>reporter<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>reprezentanto<s n="n"/><s n="f"/></l><r>representative<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reprezentanto<s n="n"/><s n="m"/></l><r>representative<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reprezentanto<s n="n"/><s n="GD"/></l><r>representative<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>respublikano<s n="n"/><s n="f"/></l><r>republican<s n="n"/></r></p></e>
-    <e r="LR"><p><l>respublikano<s n="n"/><s n="m"/></l><r>republican<s n="n"/></r></p></e>
-    <e r="RL"><p><l>respublikano<s n="n"/><s n="GD"/></l><r>republican<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>loĝanto<s n="n"/><s n="f"/></l><r>resident<s n="n"/></r></p></e>
-    <e r="LR"><p><l>loĝanto<s n="n"/><s n="m"/></l><r>resident<s n="n"/></r></p></e>
-    <e r="RL"><p><l>loĝanto<s n="n"/><s n="GD"/></l><r>resident<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>rajdanto<s n="n"/><s n="f"/></l><r>rider<s n="n"/></r></p></e>
-    <e r="LR"><p><l>rajdanto<s n="n"/><s n="m"/></l><r>rider<s n="n"/></r></p></e>
-    <e r="RL"><p><l>rajdanto<s n="n"/><s n="GD"/></l><r>rider<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>rivalo<s n="n"/><s n="f"/></l><r>rival<s n="n"/></r></p></e>
-    <e r="LR"><p><l>rivalo<s n="n"/><s n="m"/></l><r>rival<s n="n"/></r></p></e>
-    <e r="RL"><p><l>rivalo<s n="n"/><s n="GD"/></l><r>rival<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>reganto<s n="n"/><s n="f"/></l><r>ruler<s n="n"/></r></p></e>
-    <e r="LR"><p><l>reganto<s n="n"/><s n="m"/></l><r>ruler<s n="n"/></r></p></e>
-    <e r="RL"><p><l>reganto<s n="n"/><s n="GD"/></l><r>ruler<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sanktulo<s n="n"/><s n="f"/></l><r>saint<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sanktulo<s n="n"/><s n="m"/></l><r>saint<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sanktulo<s n="n"/><s n="GD"/></l><r>saint<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>erudiciulo<s n="n"/><s n="f"/></l><r>scholar<s n="n"/></r></p></e>
-    <e r="LR"><p><l>erudiciulo<s n="n"/><s n="m"/></l><r>scholar<s n="n"/></r></p></e>
-    <e r="RL"><p><l>erudiciulo<s n="n"/><s n="GD"/></l><r>scholar<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>impertinentulino<s n="n"/><s n="f"/></l><r>scoundrel<s n="n"/></r></p></e>
-    <e r="LR"><p><l>impertinentulino<s n="n"/><s n="m"/></l><r>scoundrel<s n="n"/></r></p></e>
-    <e r="RL"><p><l>impertinentulino<s n="n"/><s n="GD"/></l><r>scoundrel<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>skulptisto<s n="n"/><s n="f"/></l><r>sculptor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>skulptisto<s n="n"/><s n="m"/></l><r>sculptor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>skulptisto<s n="n"/><s n="GD"/></l><r>sculptor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sekretario<s n="n"/><s n="f"/></l><r>secretary<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sekretario<s n="n"/><s n="m"/></l><r>secretary<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sekretario<s n="n"/><s n="GD"/></l><r>secretary<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>vendisto<s n="n"/><s n="f"/></l><r>seller<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vendisto<s n="n"/><s n="m"/></l><r>seller<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vendisto<s n="n"/><s n="GD"/></l><r>seller<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>senatano<s n="n"/><s n="f"/></l><r>senator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>senatano<s n="n"/><s n="m"/></l><r>senator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>senatano<s n="n"/><s n="GD"/></l><r>senator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>serĝento<s n="n"/><s n="f"/></l><r>sergeant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>serĝento<s n="n"/><s n="m"/></l><r>sergeant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>serĝento<s n="n"/><s n="GD"/></l><r>sergeant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>servisto<s n="n"/><s n="f"/></l><r>servant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>servisto<s n="n"/><s n="m"/></l><r>servant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>servisto<s n="n"/><s n="GD"/></l><r>servant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>akciulo<s n="n"/><s n="f"/></l><r>shareholder<s n="n"/></r></p></e>
-    <e r="LR"><p><l>akciulo<s n="n"/><s n="m"/></l><r>shareholder<s n="n"/></r></p></e>
-    <e r="RL"><p><l>akciulo<s n="n"/><s n="GD"/></l><r>shareholder<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pastro<s n="n"/><s n="f"/></l><r>shepherd<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pastro<s n="n"/><s n="m"/></l><r>shepherd<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pastro<s n="n"/><s n="GD"/></l><r>shepherd<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ŝuisto<s n="n"/><s n="f"/></l><r>shoemaker<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝuisto<s n="n"/><s n="m"/></l><r>shoemaker<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝuisto<s n="n"/><s n="GD"/></l><r>shoemaker<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>simulilo<s n="n"/><s n="f"/></l><r>simulator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>simulilo<s n="n"/><s n="m"/></l><r>simulator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>simulilo<s n="n"/><s n="GD"/></l><r>simulator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kantisto<s n="n"/><s n="f"/></l><r>singer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kantisto<s n="n"/><s n="m"/></l><r>singer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kantisto<s n="n"/><s n="GD"/></l><r>singer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>skianto<s n="n"/><s n="f"/></l><r>skier<s n="n"/></r></p></e>
-    <e r="LR"><p><l>skianto<s n="n"/><s n="m"/></l><r>skier<s n="n"/></r></p></e>
-    <e r="RL"><p><l>skianto<s n="n"/><s n="GD"/></l><r>skier<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sklavo<s n="n"/><s n="f"/></l><r>slave<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sklavo<s n="n"/><s n="m"/></l><r>slave<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sklavo<s n="n"/><s n="GD"/></l><r>slave<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>forĝisto<s n="n"/><s n="f"/></l><r>smith<s n="n"/></r></p></e>
-    <e r="LR"><p><l>forĝisto<s n="n"/><s n="m"/></l><r>smith<s n="n"/></r></p></e>
-    <e r="RL"><p><l>forĝisto<s n="n"/><s n="GD"/></l><r>smith<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>socialisto<s n="n"/><s n="f"/></l><r>socialist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>socialisto<s n="n"/><s n="m"/></l><r>socialist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>socialisto<s n="n"/><s n="GD"/></l><r>socialist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>soldato<s n="n"/><s n="f"/></l><r>soldier<s n="n"/></r></p></e>
-    <e r="LR"><p><l>soldato<s n="n"/><s n="m"/></l><r>soldier<s n="n"/></r></p></e>
-    <e r="RL"><p><l>soldato<s n="n"/><s n="GD"/></l><r>soldier<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>advokato<s n="n"/><s n="f"/></l><r>solicitor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>solicitor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>solicitor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>solisto<s n="n"/><s n="f"/></l><r>soloist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>solisto<s n="n"/><s n="m"/></l><r>soloist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>solisto<s n="n"/><s n="GD"/></l><r>soloist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>suvereno<s n="n"/><s n="f"/></l><r>sovereign<s n="n"/></r></p></e>
-    <e r="LR"><p><l>suvereno<s n="n"/><s n="m"/></l><r>sovereign<s n="n"/></r></p></e>
-    <e r="RL"><p><l>suvereno<s n="n"/><s n="GD"/></l><r>sovereign<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>specialisto<s n="n"/><s n="f"/></l><r>specialist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>specialisto<s n="n"/><s n="m"/></l><r>specialist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>specialisto<s n="n"/><s n="GD"/></l><r>specialist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>spiono<s n="n"/><s n="f"/></l><r>spy<s n="n"/></r></p></e>
-    <e r="LR"><p><l>spiono<s n="n"/><s n="m"/></l><r>spy<s n="n"/></r></p></e>
-    <e r="RL"><p><l>spiono<s n="n"/><s n="GD"/></l><r>spy<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ŝtatisto<s n="n"/><s n="f"/></l><r>statesman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝtatisto<s n="n"/><s n="m"/></l><r>statesman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝtatisto<s n="n"/><s n="GD"/></l><r>statesman<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>akciulo<s n="n"/><s n="f"/></l><r>stockholder<s n="n"/></r></p></e>
-    <e r="LR"><p><l>akciulo<s n="n"/><s n="m"/></l><r>stockholder<s n="n"/></r></p></e>
-    <e r="RL"><p><l>akciulo<s n="n"/><s n="GD"/></l><r>stockholder<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>studanto<s n="n"/><s n="f"/></l><r>student<s n="n"/></r></p></e>
-    <e r="LR"><p><l>studanto<s n="n"/><s n="m"/></l><r>student<s n="n"/></r></p></e>
-    <e r="RL"><p><l>studanto<s n="n"/><s n="GD"/></l><r>student<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>anstataŭanto<s n="n"/><s n="f"/></l><r>substitute<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anstataŭanto<s n="n"/><s n="m"/></l><r>substitute<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anstataŭanto<s n="n"/><s n="GD"/></l><r>substitute<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>posteulo<s n="n"/><s n="f"/></l><r>successor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>posteulo<s n="n"/><s n="m"/></l><r>successor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>posteulo<s n="n"/><s n="GD"/></l><r>successor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kontrolisto<s n="n"/><s n="f"/></l><r>supervisor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kontrolisto<s n="n"/><s n="m"/></l><r>supervisor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kontrolisto<s n="n"/><s n="GD"/></l><r>supervisor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kirurgo<s n="n"/><s n="f"/></l><r>surgeon<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kirurgo<s n="n"/><s n="m"/></l><r>surgeon<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kirurgo<s n="n"/><s n="GD"/></l><r>surgeon<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>tajloro<s n="n"/><s n="f"/></l><r>tailor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>tajloro<s n="n"/><s n="m"/></l><r>tailor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>tajloro<s n="n"/><s n="GD"/></l><r>tailor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>taksiisto<s n="n"/><s n="f"/></l><r>taxi<b/>driver<s n="n"/></r></p></e>
-    <e r="LR"><p><l>taksiisto<s n="n"/><s n="m"/></l><r>taxi<b/>driver<s n="n"/></r></p></e>
-    <e r="RL"><p><l>taksiisto<s n="n"/><s n="GD"/></l><r>taxi<b/>driver<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>impostpaganto<s n="n"/><s n="f"/></l><r>taxpayer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>impostpaganto<s n="n"/><s n="m"/></l><r>taxpayer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>impostpaganto<s n="n"/><s n="GD"/></l><r>taxpayer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>instruisto<s n="n"/><s n="f"/></l><r>teacher<s n="n"/></r></p></e>
-    <e r="LR"><p><l>instruisto<s n="n"/><s n="m"/></l><r>teacher<s n="n"/></r></p></e>
-    <e r="RL"><p><l>instruisto<s n="n"/><s n="GD"/></l><r>teacher<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>teknikisto<s n="n"/><s n="f"/></l><r>technician<s n="n"/></r></p></e>
-    <e r="LR"><p><l>teknikisto<s n="n"/><s n="m"/></l><r>technician<s n="n"/></r></p></e>
-    <e r="RL"><p><l>teknikisto<s n="n"/><s n="GD"/></l><r>technician<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>adoleskanto<s n="n"/><s n="f"/></l><r>teenager<s n="n"/></r></p></e>
-    <e r="LR"><p><l>adoleskanto<s n="n"/><s n="m"/></l><r>teenager<s n="n"/></r></p></e>
-    <e r="RL"><p><l>adoleskanto<s n="n"/><s n="GD"/></l><r>teenager<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>luprenanto<s n="n"/><s n="f"/></l><r>tenant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>luprenanto<s n="n"/><s n="m"/></l><r>tenant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>luprenanto<s n="n"/><s n="GD"/></l><r>tenant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>teroristo<s n="n"/><s n="f"/></l><r>terrorist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>teroristo<s n="n"/><s n="m"/></l><r>terrorist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>teroristo<s n="n"/><s n="GD"/></l><r>terrorist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>ŝtelisto<s n="n"/><s n="f"/></l><r>thief<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝtelisto<s n="n"/><s n="m"/></l><r>thief<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝtelisto<s n="n"/><s n="GD"/></l><r>thief<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>turisto<s n="n"/><s n="f"/></l><r>tourist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>turisto<s n="n"/><s n="m"/></l><r>tourist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>turisto<s n="n"/><s n="GD"/></l><r>tourist<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>trejnisto<s n="n"/><s n="f"/></l><r>trainer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>trejnisto<s n="n"/><s n="m"/></l><r>trainer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>trejnisto<s n="n"/><s n="GD"/></l><r>trainer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>tradukisto<s n="n"/><s n="f"/></l><r>translator<s n="n"/></r></p></e>
-    <e r="LR"><p><l>tradukisto<s n="n"/><s n="m"/></l><r>translator<s n="n"/></r></p></e>
-    <e r="RL"><p><l>tradukisto<s n="n"/><s n="GD"/></l><r>translator<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>vojaĝanto<s n="n"/><s n="f"/></l><r>traveller<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vojaĝanto<s n="n"/><s n="m"/></l><r>traveller<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vojaĝanto<s n="n"/><s n="GD"/></l><r>traveller<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>oportunisto<s n="n"/><s n="f"/></l><r>turncoat<s n="n"/></r></p></e>
-    <e r="LR"><p><l>oportunisto<s n="n"/><s n="m"/></l><r>turncoat<s n="n"/></r></p></e>
-    <e r="RL"><p><l>oportunisto<s n="n"/><s n="GD"/></l><r>turncoat<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>manumbutono<s n="n"/><s n="f"/></l><r>twin<s n="n"/></r></p></e>
-    <e r="LR"><p><l>manumbutono<s n="n"/><s n="m"/></l><r>twin<s n="n"/></r></p></e>
-    <e r="RL"><p><l>manumbutono<s n="n"/><s n="GD"/></l><r>twin<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>magnato<s n="n"/><s n="f"/></l><r>tycoon<s n="n"/></r></p></e>
-    <e r="LR"><p><l>magnato<s n="n"/><s n="m"/></l><r>tycoon<s n="n"/></r></p></e>
-    <e r="RL"><p><l>magnato<s n="n"/><s n="GD"/></l><r>tycoon<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>tirano<s n="n"/><s n="f"/></l><r>tyrant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>tirano<s n="n"/><s n="m"/></l><r>tyrant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>tirano<s n="n"/><s n="GD"/></l><r>tyrant<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>uzanto<s n="n"/><s n="f"/></l><r>user<s n="n"/></r></p></e>
-    <e r="LR"><p><l>uzanto<s n="n"/><s n="m"/></l><r>user<s n="n"/></r></p></e>
-    <e r="RL"><p><l>uzanto<s n="n"/><s n="GD"/></l><r>user<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>vendisto<s n="n"/><s n="f"/></l><r>vendor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vendisto<s n="n"/><s n="m"/></l><r>vendor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vendisto<s n="n"/><s n="GD"/></l><r>vendor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>veterano<s n="n"/><s n="f"/></l><r>veteran<s n="n"/></r></p></e>
-    <e r="LR"><p><l>veterano<s n="n"/><s n="m"/></l><r>veteran<s n="n"/></r></p></e>
-    <e r="RL"><p><l>veterano<s n="n"/><s n="GD"/></l><r>veteran<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>spektanto<s n="n"/><s n="f"/></l><r>viewer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>spektanto<s n="n"/><s n="m"/></l><r>viewer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>spektanto<s n="n"/><s n="GD"/></l><r>viewer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>vizitanto<s n="n"/><s n="f"/></l><r>visitor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vizitanto<s n="n"/><s n="m"/></l><r>visitor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vizitanto<s n="n"/><s n="GD"/></l><r>visitor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>pograndisto<s n="n"/><s n="f"/></l><r>wholesaler<s n="n"/></r></p></e>
-    <e r="LR"><p><l>pograndisto<s n="n"/><s n="m"/></l><r>wholesaler<s n="n"/></r></p></e>
-    <e r="RL"><p><l>pograndisto<s n="n"/><s n="GD"/></l><r>wholesaler<s n="n"/></r></p></e>
     <e><p><l>pograndisto<s n="n"/></l><r>wholesaler<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>vidvo<s n="n"/><s n="f"/></l><r>widower<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vidvo<s n="n"/><s n="m"/></l><r>widower<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vidvo<s n="n"/><s n="GD"/></l><r>widower<s n="n"/></r></p></e>
     <e><p><l>vidvo<s n="n"/></l><r>widower<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>gajnanto<s n="n"/><s n="f"/></l><r>winner<s n="n"/></r></p></e>
-    <e r="LR"><p><l>gajnanto<s n="n"/><s n="m"/></l><r>winner<s n="n"/></r></p></e>
-    <e r="RL"><p><l>gajnanto<s n="n"/><s n="GD"/></l><r>winner<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>atestanto<s n="n"/><s n="f"/></l><r>witness<s n="n"/></r></p></e>
-    <e r="LR"><p><l>atestanto<s n="n"/><s n="m"/></l><r>witness<s n="n"/></r></p></e>
-    <e r="RL"><p><l>atestanto<s n="n"/><s n="GD"/></l><r>witness<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>laboristo<s n="n"/><s n="f"/></l><r>worker<s n="n"/></r></p></e>
-    <e r="LR"><p><l>laboristo<s n="n"/><s n="m"/></l><r>worker<s n="n"/></r></p></e>
-    <e r="RL"><p><l>laboristo<s n="n"/><s n="GD"/></l><r>worker<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>verkisto<s n="n"/><s n="f"/></l><r>writer<s n="n"/></r></p></e>
-    <e r="LR"><p><l>verkisto<s n="n"/><s n="m"/></l><r>writer<s n="n"/></r></p></e>
-    <e r="RL"><p><l>verkisto<s n="n"/><s n="GD"/></l><r>writer<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>junulo<s n="n"/><s n="f"/></l><r>youngster<s n="n"/></r></p></e>
-    <e r="LR"><p><l>junulo<s n="n"/><s n="m"/></l><r>youngster<s n="n"/></r></p></e>
-    <e r="RL"><p><l>junulo<s n="n"/><s n="GD"/></l><r>youngster<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="f"/></l><r>vice-president<s n="n"/></r></p></e>
-    <e r="LR"><p><l>vicprezidanto<s n="n"/><s n="m"/></l><r>vice-president<s n="n"/></r></p></e>
-    <e r="RL"><p><l>vicprezidanto<s n="n"/><s n="GD"/></l><r>vice-president<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>kuiristo<s n="n"/><s n="f"/></l><r>cook<s n="n"/></r></p></e>
-    <e r="LR"><p><l>kuiristo<s n="n"/><s n="m"/></l><r>cook<s n="n"/></r></p></e>
-    <e r="RL"><p><l>kuiristo<s n="n"/><s n="GD"/></l><r>cook<s n="n"/></r></p></e>
 
 
-    <e r="LR"><p><l>nigrulo<s n="n"/><s n="f"/></l><r>black<s n="n"/></r></p></e>
-    <e r="LR"><p><l>krimulo<s n="n"/><s n="f"/></l><r>convict<s n="n"/></r></p></e>
-    <e r="LR"><p><l>samseksemulo<s n="n"/><s n="f"/></l><r>homosexual<s n="n"/></r></p></e>
-    <e r="LR"><p><l>profesiulo<s n="n"/><s n="f"/></l><r>professional<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>nigrulo<s n="n"/><s n="m"/></l><r>black<s n="n"/></r></p></e>
-    <e r="LR"><p><l>krimulo<s n="n"/><s n="m"/></l><r>convict<s n="n"/></r></p></e>
-    <e r="LR"><p><l>samseksemulo<s n="n"/><s n="m"/></l><r>homosexual<s n="n"/></r></p></e>
-    <e r="LR"><p><l>profesiulo<s n="n"/><s n="m"/></l><r>professional<s n="n"/></r></p></e>
-
-    <e r="RL"><p><l>nigrulo<s n="n"/><s n="GD"/></l><r>black<s n="n"/></r></p></e>
-    <e r="RL"><p><l>krimulo<s n="n"/><s n="GD"/></l><r>convict<s n="n"/></r></p></e>
-    <e r="RL"><p><l>samseksemulo<s n="n"/><s n="GD"/></l><r>homosexual<s n="n"/></r></p></e>
-    <e r="RL"><p><l>profesiulo<s n="n"/><s n="GD"/></l><r>professional<s n="n"/></r></p></e>
+	<e><p><l>gastiganto<s n="n"/><s n="f"/></l><r>hostess<s n="n"/></r></p></e>
+	<e r="LR"><p><l>gastiganto<s n="n"/><s n="m"/></l><r>host<s n="n"/></r></p></e>
+	<e r="RL"><p><l>gastiganto<s n="n"/><s n="GD"/></l><r>host<s n="n"/></r></p></e>
 
 
+	<e><p><l>sinjoro<s n="n"/><s n="f"/></l><r>madam<s n="n"/></r></p></e>
+	<e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>sir<s n="n"/></r></p></e>
+	<e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>sir<s n="n"/></r></p></e>
 
 
+	<e><p><l>barono<s n="n"/><s n="f"/></l><r>baroness<s n="n"/></r></p></e>
+	<e r="LR"><p><l>barono<s n="n"/><s n="m"/></l><r>baron<s n="n"/></r></p></e>
+	<e r="RL"><p><l>barono<s n="n"/><s n="GD"/></l><r>baron<s n="n"/></r></p></e>
 
+	<e><p><l>prezidanto<s n="n"/><s n="f"/></l><r>chairwoman<s n="n"/></r></p></e>
+	<e r="LR"><p><l>prezidanto<s n="n"/><s n="m"/></l><r>chairman<s n="n"/></r></p></e>
+	<e r="RL"><p><l>prezidanto<s n="n"/><s n="GD"/></l><r>chairman<s n="n"/></r></p></e>
+
+	<e><p><l>sportisto<s n="n"/><s n="f"/></l><r>sportswoman<s n="n"/></r></p></e>
+	<e r="LR"><p><l>sportisto<s n="n"/><s n="m"/></l><r>sportsman<s n="n"/></r></p></e>
+	<e r="RL"><p><l>sportisto<s n="n"/><s n="GD"/></l><r>sportsman<s n="n"/></r></p></e>
 
 
 
