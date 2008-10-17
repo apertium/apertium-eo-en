@@ -1163,7 +1163,7 @@
     <e r="LR"><p><l>skandinavo<s n="n"/><s n="m"/></l><r>Scandinavian<s n="n"/></r></p></e>
     <e r="RL"><p><l>skandinavo<s n="n"/><s n="GD"/></l><r>Scandinavian<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>aŭstro<s n="n"/><s n="f"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="LR"><p><l>brito<s n="n"/><s n="f"/></l><r>British<s n="n"/></r></p></e>
     <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="LR"><p><l>anglo<s n="n"/><s n="f"/></l><r>English<s n="n"/></r></p></e>
@@ -1177,7 +1177,7 @@
     <e r="LR"><p><l>ruso<s n="n"/><s n="f"/></l><r>Russian<s n="n"/></r></p></e>
     <e r="LR"><p><l>sviso<s n="n"/><s n="f"/></l><r>Swiss<s n="n"/></r></p></e>
     
-    <e r="LR"><p><l>aŭstraliano<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="LR"><p><l>aŭstro<s n="n"/><s n="m"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="LR"><p><l>brito<s n="n"/><s n="m"/></l><r>British<s n="n"/></r></p></e>
     <e r="LR"><p><l>ĉino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
     <e r="LR"><p><l>anglo<s n="n"/><s n="m"/></l><r>English<s n="n"/></r></p></e>
@@ -1191,7 +1191,7 @@
     <e r="LR"><p><l>ruso<s n="n"/><s n="m"/></l><r>Russian<s n="n"/></r></p></e>
     <e r="LR"><p><l>sviso<s n="n"/><s n="m"/></l><r>Swiss<s n="n"/></r></p></e>
     
-    <e r="RL"><p><l>aŭstraliano<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
+    <e r="RL"><p><l>aŭstro<s n="n"/><s n="GD"/></l><r>Austrian<s n="n"/></r></p></e>
     <e r="RL"><p><l>brito<s n="n"/><s n="GD"/></l><r>British<s n="n"/></r></p></e>
     <e r="RL"><p><l>anglo<s n="n"/><s n="GD"/></l><r>English<s n="n"/></r></p></e>
     <e r="RL"><p><l>franco<s n="n"/><s n="GD"/></l><r>French<s n="n"/></r></p></e>
@@ -1223,9 +1223,6 @@
     <e r="LR"><p><l>protestanto<s n="n"/><s n="m"/></l><r>Protestant<s n="n"/></r></p></e>
     <e r="RL"><p><l>protestanto<s n="n"/><s n="GD"/></l><r>Protestant<s n="n"/></r></p></e>
 
-
-
-
     <e r="LR"><p><l>librotenisto<s n="n"/><s n="f"/></l><r>accountant<s n="n"/></r></p></e>
     <e r="LR"><p><l>librotenisto<s n="n"/><s n="m"/></l><r>accountant<s n="n"/></r></p></e>
     <e r="RL"><p><l>librotenisto<s n="n"/><s n="GD"/></l><r>accountant<s n="n"/></r></p></e>
@@ -1234,13 +1231,17 @@
     <e r="LR"><p><l>akrobato<s n="n"/><s n="m"/></l><r>acrobat<s n="n"/></r></p></e>
     <e r="RL"><p><l>akrobato<s n="n"/><s n="GD"/></l><r>acrobat<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>toksomaniulo<s n="n"/><s n="f"/></l><r>addict<s n="n"/></r></p></e>
-    <e r="LR"><p><l>toksomaniulo<s n="n"/><s n="m"/></l><r>addict<s n="n"/></r></p></e>
-    <e r="RL"><p><l>toksomaniulo<s n="n"/><s n="GD"/></l><r>addict<s n="n"/></r></p></e>
+    <e r="LR"><p><l>drogulo<s n="n"/><s n="f"/></l><r>addict<s n="n"/></r></p></e>
+    <e r="LR"><p><l>drogulo<s n="n"/><s n="m"/></l><r>addict<s n="n"/></r></p></e>
+    <e r="RL"><p><l>drogulo<s n="n"/><s n="GD"/></l><r>addict<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>partiano<s n="n"/><s n="f"/></l><r>adherent<s n="n"/></r></p></e>
-    <e r="LR"><p><l>partiano<s n="n"/><s n="m"/></l><r>adherent<s n="n"/></r></p></e>
-    <e r="RL"><p><l>partiano<s n="n"/><s n="GD"/></l><r>adherent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>partiano<s n="n"/><s n="f"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
+    <e r="LR"><p><l>partiano<s n="n"/><s n="m"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
+    <e r="RL"><p><l>partiano<s n="n"/><s n="GD"/></l><r><g>party<b/></g>member<s n="n"/></r></p></e>
+
+    <e r="LR"><p><l>adepto<s n="n"/><s n="f"/></l><r>adherent<s n="n"/></r></p></e>
+    <e r="LR"><p><l>adepto<s n="n"/><s n="m"/></l><r>adherent<s n="n"/></r></p></e>
+    <e r="RL"><p><l>adepto<s n="n"/><s n="GD"/></l><r>adherent<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>administranto<s n="n"/><s n="f"/></l><r>administrator<s n="n"/></r></p></e>
     <e r="LR"><p><l>administranto<s n="n"/><s n="m"/></l><r>administrator<s n="n"/></r></p></e>
@@ -1251,37 +1252,33 @@
     <e r="RL"><p><l>plenkreskulo<s n="n"/><s n="GD"/></l><r>adult<s n="n"/></r></p></e>
     <e r="RL"><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="f"/></l><r>adviser<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="m"/></l><r>adviser<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asesoro<s n="n"/><s n="GD"/></l><r>adviser<s n="n"/></r></p></e>
+    <e r="LR"><p><l>konsilisto<s n="n"/><s n="f"/></l><r>adviser<s n="n"/></r></p></e>
+    <e r="LR"><p><l>konsilisto<s n="n"/><s n="m"/></l><r>adviser<s n="n"/></r></p></e>
+    <e r="RL"><p><l>konsilisto<s n="n"/><s n="GD"/></l><r>adviser<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>agento<s n="n"/><s n="f"/></l><r>agent<s n="n"/></r></p></e>
     <e r="LR"><p><l>agento<s n="n"/><s n="m"/></l><r>agent<s n="n"/></r></p></e>
     <e r="RL"><p><l>agento<s n="n"/><s n="GD"/></l><r>agent<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>atakanto<s n="n"/><s n="f"/></l><r>aggressor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>atakanto<s n="n"/><s n="m"/></l><r>aggressor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>atakanto<s n="n"/><s n="GD"/></l><r>aggressor<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="f"/></l><r>aide<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="m"/></l><r>aide<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asesoro<s n="n"/><s n="GD"/></l><r>aide<s n="n"/></r></p></e>
+    <e r="LR"><p><l>adjutanto<s n="n"/><s n="f"/></l><r>aide<s n="n"/></r></p></e>
+    <e r="LR"><p><l>adjutanto<s n="n"/><s n="m"/></l><r>aide<s n="n"/></r></p></e>
+    <e r="RL"><p><l>adjutanto<s n="n"/><s n="GD"/></l><r>aide<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>eksterterano<s n="n"/><s n="f"/></l><r>alien<s n="n"/></r></p></e>
     <e r="LR"><p><l>eksterterano<s n="n"/><s n="m"/></l><r>alien<s n="n"/></r></p></e>
     <e r="RL"><p><l>eksterterano<s n="n"/><s n="GD"/></l><r>alien<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>ŝatanto<s n="n"/><s n="f"/></l><r>amateur<s n="n"/></r></p></e>
-    <e r="LR"><p><l>ŝatanto<s n="n"/><s n="m"/></l><r>amateur<s n="n"/></r></p></e>
-    <e r="RL"><p><l>ŝatanto<s n="n"/><s n="GD"/></l><r>amateur<s n="n"/></r></p></e>
+    <e r="LR"><p><l>amatoro<s n="n"/><s n="f"/></l><r>amateur<s n="n"/></r></p></e>
+    <e r="LR"><p><l>amatoro<s n="n"/><s n="m"/></l><r>amateur<s n="n"/></r></p></e>
+    <e r="RL"><p><l>amatoro<s n="n"/><s n="GD"/></l><r>amateur<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>ambasadoro<s n="n"/><s n="f"/></l><r>ambassador<s n="n"/></r></p></e>
     <e r="LR"><p><l>ambasadoro<s n="n"/><s n="m"/></l><r>ambassador<s n="n"/></r></p></e>
     <e r="RL"><p><l>ambasadoro<s n="n"/><s n="GD"/></l><r>ambassador<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>anarkiisto<s n="n"/><s n="f"/></l><r>anarchist<s n="n"/></r></p></e>
-    <e r="LR"><p><l>anarkiisto<s n="n"/><s n="m"/></l><r>anarchist<s n="n"/></r></p></e>
-    <e r="RL"><p><l>anarkiisto<s n="n"/><s n="GD"/></l><r>anarchist<s n="n"/></r></p></e>
+    <e r="LR"><p><l>anarkisto<s n="n"/><s n="f"/></l><r>anarchist<s n="n"/></r></p></e>
+    <e r="LR"><p><l>anarkisto<s n="n"/><s n="m"/></l><r>anarchist<s n="n"/></r></p></e>
+    <e r="RL"><p><l>anarkisto<s n="n"/><s n="GD"/></l><r>anarchist<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>prapatro<s n="n"/><s n="f"/></l><r>ancestor<s n="n"/></r></p></e>
     <e r="LR"><p><l>prapatro<s n="n"/><s n="m"/></l><r>ancestor<s n="n"/></r></p></e>
@@ -1327,17 +1324,18 @@
     <e r="LR"><p><l>atleto<s n="n"/><s n="m"/></l><r>athlete<s n="n"/></r></p></e>
     <e r="RL"><p><l>atleto<s n="n"/><s n="GD"/></l><r>athlete<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>mastro<s n="n"/><s n="f"/></l><r>attendant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>mastro<s n="n"/><s n="m"/></l><r>attendant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>mastro<s n="n"/><s n="GD"/></l><r>attendant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>asistanto<s n="n"/><s n="f"/></l><r>attendant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>asistanto<s n="n"/><s n="m"/></l><r>attendant<s n="n"/></r></p></e>
+    <e r="RL"><p><l>asistanto<s n="n"/><s n="GD"/></l><r>attendant<s n="n"/></r></p></e>
 
+	<!-- ------------------ korektis gxis txi tie ----------->
     <e r="LR"><p><l>advokato<s n="n"/><s n="f"/></l><r>attorney<s n="n"/></r></p></e>
     <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>attorney<s n="n"/></r></p></e>
     <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>attorney<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>aŭditoro<s n="n"/><s n="f"/></l><r>auditor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>aŭditoro<s n="n"/><s n="m"/></l><r>auditor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>aŭditoro<s n="n"/><s n="GD"/></l><r>auditor<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kontrevizoro<s n="n"/><s n="f"/></l><r>auditor<s n="n"/></r></p></e>
+    <e r="LR"><p><l>kontrevizoro<s n="n"/><s n="m"/></l><r>auditor<s n="n"/></r></p></e>
+    <e r="RL"><p><l>kontrevizoro<s n="n"/><s n="GD"/></l><r>auditor<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>aŭtoro<s n="n"/><s n="f"/></l><r>author<s n="n"/></r></p></e>
     <e r="LR"><p><l>aŭtoro<s n="n"/><s n="m"/></l><r>author<s n="n"/></r></p></e>
@@ -1468,9 +1466,9 @@
     <e r="LR"><p><l>konsulo<s n="n"/><s n="m"/></l><r>consul<s n="n"/></r></p></e>
     <e r="RL"><p><l>konsulo<s n="n"/><s n="GD"/></l><r>consul<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="f"/></l><r>consultant<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="m"/></l><r>consultant<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asesoro<s n="n"/><s n="GD"/></l><r>consultant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>komerca<b/>konsilisto<s n="n"/><s n="f"/></l><r>consultant<s n="n"/></r></p></e>
+    <e r="LR"><p><l>komerca<b/>konsilisto<s n="n"/><s n="m"/></l><r>consultant<s n="n"/></r></p></e>
+    <e r="RL"><p><l>komerca<b/>konsilisto<s n="n"/><s n="GD"/></l><r>consultant<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>konsumanto<s n="n"/><s n="f"/></l><r>consumer<s n="n"/></r></p></e>
     <e r="LR"><p><l>konsumanto<s n="n"/><s n="m"/></l><r>consumer<s n="n"/></r></p></e>
@@ -1488,9 +1486,9 @@
     <e r="LR"><p><l>magistratano<s n="n"/><s n="m"/></l><r>councillor<s n="n"/></r></p></e>
     <e r="RL"><p><l>magistratano<s n="n"/><s n="GD"/></l><r>councillor<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="f"/></l><r>counsellor<s n="n"/></r></p></e>
-    <e r="LR"><p><l>asesoro<s n="n"/><s n="m"/></l><r>counsellor<s n="n"/></r></p></e>
-    <e r="RL"><p><l>asesoro<s n="n"/><s n="GD"/></l><r>counsellor<s n="n"/></r></p></e>
+    <e r="LR"><p><l>konsilisto<s n="n"/><s n="f"/></l><r>counsellor<s n="n"/></r></p></e>
+    <e r="LR"><p><l>konsilisto<s n="n"/><s n="m"/></l><r>counsellor<s n="n"/></r></p></e>
+    <e r="RL"><p><l>konsilisto<s n="n"/><s n="GD"/></l><r>counsellor<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>kreditoro<s n="n"/><s n="f"/></l><r>creditor<s n="n"/></r></p></e>
     <e r="LR"><p><l>kreditoro<s n="n"/><s n="m"/></l><r>creditor<s n="n"/></r></p></e>
@@ -2079,6 +2077,7 @@
     <e r="LR"><p><l>malliberulo<s n="n"/><s n="f"/></l><r>prisoner<s n="n"/></r></p></e>
     <e r="LR"><p><l>malliberulo<s n="n"/><s n="m"/></l><r>prisoner<s n="n"/></r></p></e>
     <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>prisoner<s n="n"/></r></p></e>
+    <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>setscrew<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>produktoro<s n="n"/><s n="f"/></l><r>producer<s n="n"/></r></p></e>
     <e r="LR"><p><l>produktoro<s n="n"/><s n="m"/></l><r>producer<s n="n"/></r></p></e>
@@ -2212,10 +2211,6 @@
     <e r="LR"><p><l>servisto<s n="n"/><s n="m"/></l><r>servant<s n="n"/></r></p></e>
     <e r="RL"><p><l>servisto<s n="n"/><s n="GD"/></l><r>servant<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>malliberulo<s n="n"/><s n="f"/></l><r>setscrew<s n="n"/></r></p></e>
-    <e r="LR"><p><l>malliberulo<s n="n"/><s n="m"/></l><r>setscrew<s n="n"/></r></p></e>
-    <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>setscrew<s n="n"/></r></p></e>
-
     <e r="LR"><p><l>akciulo<s n="n"/><s n="f"/></l><r>shareholder<s n="n"/></r></p></e>
     <e r="LR"><p><l>akciulo<s n="n"/><s n="m"/></l><r>shareholder<s n="n"/></r></p></e>
     <e r="RL"><p><l>akciulo<s n="n"/><s n="GD"/></l><r>shareholder<s n="n"/></r></p></e>
@@ -2316,9 +2311,9 @@
     <e r="LR"><p><l>impostpaganto<s n="n"/><s n="m"/></l><r>taxpayer<s n="n"/></r></p></e>
     <e r="RL"><p><l>impostpaganto<s n="n"/><s n="GD"/></l><r>taxpayer<s n="n"/></r></p></e>
 
-    <e r="LR"><p><l>profesoro<s n="n"/><s n="f"/></l><r>teacher<s n="n"/></r></p></e>
-    <e r="LR"><p><l>profesoro<s n="n"/><s n="m"/></l><r>teacher<s n="n"/></r></p></e>
-    <e r="RL"><p><l>profesoro<s n="n"/><s n="GD"/></l><r>teacher<s n="n"/></r></p></e>
+    <e r="LR"><p><l>instruisto<s n="n"/><s n="f"/></l><r>teacher<s n="n"/></r></p></e>
+    <e r="LR"><p><l>instruisto<s n="n"/><s n="m"/></l><r>teacher<s n="n"/></r></p></e>
+    <e r="RL"><p><l>instruisto<s n="n"/><s n="GD"/></l><r>teacher<s n="n"/></r></p></e>
 
     <e r="LR"><p><l>teknikisto<s n="n"/><s n="f"/></l><r>technician<s n="n"/></r></p></e>
     <e r="LR"><p><l>teknikisto<s n="n"/><s n="m"/></l><r>technician<s n="n"/></r></p></e>
@@ -2680,6 +2675,9 @@
     <e><p><l>malpli<s n="adv"/></l><r>less<s n="adv"/></r></p></e>
 
 
+
+	<e><p><l>frosti<s n="vblex"/></l><r>freeze<s n="vblex"/></r></p></e>
+	<e><p><l>fridujo<s n="n"/></l><r>refrigerator<s n="n"/></r></p></e>
 
 
 

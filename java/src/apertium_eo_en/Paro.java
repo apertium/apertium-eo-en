@@ -6,6 +6,7 @@ public class Paro {
     public String orgEo;
     public String rootEo;
     public String orgEn;
+    public String rootEn;
 
     public boolean oneWord;
 
@@ -19,9 +20,15 @@ public class Paro {
     public String apertiumWordType = PROBLEM;
     private String apertiumExtraTags = "";
 
+       
     public String apertiumWordType() {
       return apertiumWordType;
     }
+
+    public String apertiumWordTypeKrampoj() {
+      return "<"+apertiumWordType()+">";
+    }
+    
     
     public boolean problem() { return (apertiumWordType==PROBLEM); };
     public boolean noun() { return (apertiumWordType==N); };
@@ -35,7 +42,7 @@ public class Paro {
     
     public void setAliajTag(String _apertiumTags) {
       apertiumExtraTags = _apertiumTags;
-      System.err.println("apertiumExtraTags = " + apertiumExtraTags);
+      //System.err.println("apertiumExtraTags = " + apertiumExtraTags);
     }    
     
     public boolean affix;
@@ -164,11 +171,13 @@ if it is, then add <s n="sint"/> if not then don't
 
   
   a = a + "       ".substring(a.length());
-  //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
-  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
+  //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
+  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
   String spc = "                                                                                   ";
   if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
-  return  tot+"<!-- "+c+"-->";
+  //
+  return  tot;
+  //return  tot+"<!-- "+c+"-->";
   //return "<e"+a+c+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
 	//return "<e><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+orgEn+"<s n=\""+x+"\"/></r></p></e>";
     }

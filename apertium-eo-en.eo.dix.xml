@@ -778,8 +778,8 @@
         <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
+    
     <pardef n="quant__det">
     <e r="LR">
       <p>
@@ -829,7 +829,6 @@
         <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r> 
       </p>
     </e>
-
     </pardef>
 
     <pardef n="ser__vblex">
@@ -1686,7 +1685,7 @@
 
 
 
-    <e lm="tiom da da"><i>tiom<b/>da<b/>da</i><par n="quant__det"/></e>
+    <e lm="tiom da"><i>tiom<b/>da</i><par n="quant__det"/></e>
     <e lm="ĉiufoje pli"><par n="ĉ"/><i>iufoje<b/>pli</i><par n="after__cnjadv"/></e>
     <e lm="ĉu"><par n="ĉ"/><i>u</i><par n="kial__adv"/></e>
     <e lm="danke al"><i>danke<b/>al</i><par n="at__pr"/></e>
@@ -2088,7 +2087,11 @@
     <e lm="albano"><i>alban</i><par n="nommf__n"/></e>
     <e lm="amerikano"><i>amerikan</i><par n="nommf__n"/></e>
     <e lm="amiko"><i>amik</i><par n="nommf__n"/></e>
-    <e lm="anarkiisto"><i>anarkiist</i><par n="nommf__n"/></e>
+    <e lm="anarkisto"><i>anarkist</i><par n="nommf__n"/></e>
+    <e lm="asistanto"><i>asistant</i><par n="nommf__n"/></e>
+    <e lm="kontrevizoro"><i>kontrevizor</i><par n="nommf__n"/></e>
+    
+    
     <e lm="anoncisto"><i>anoncist</i><par n="nommf__n"/></e>
     <e lm="anstataŭanto"><i>anstata</i><par n="ŭ"/><i>ant</i><par n="nommf__n"/></e>
     <e lm="antaŭulo"><i>anta</i><par n="ŭ"/><i>ul</i><par n="nommf__n"/></e>
@@ -2145,7 +2148,6 @@
     <e lm="egipta"><i>egipt</i><par n="nommf__n"/></e>
     <e lm="ekonomikisto"><i>ekonomikist</i><par n="nommf__n"/></e>
     <e lm="eksponento"><i>eksponent</i><par n="nommf__n"/></e>
-    <e lm="eksterterano"><i>eksterteran</i><par n="nommf__n"/></e>
     <e lm="ekstremisto"><i>ekstremist</i><par n="nommf__n"/></e>
     <e lm="ekzekutisto"><i>ekzekutist</i><par n="nommf__n"/></e>
     <e lm="eldonisto"><i>eldonist</i><par n="nommf__n"/></e>
@@ -2165,6 +2167,7 @@
     <e lm="farmisto"><i>farmist</i><par n="nommf__n"/></e>
     <e lm="faŝisto"><i>fa</i><par n="ŝ"/><i>ist</i><par n="nommf__n"/></e>
     <e lm="fianĉo"><i>fian</i><par n="ĉ"/><i></i><par n="nommf__n"/></e>
+    <e lm="fremdulo"><i>fremdul</i><par n="nommf__n"/></e>
     <e lm="filo"><i>fil</i><par n="nommf__n"/></e>
     <e lm="filologo"><i>filolog</i><par n="nommf__n"/></e>
     <e lm="filozofo"><i>filozof</i><par n="nommf__n"/></e>
@@ -2391,7 +2394,7 @@
     <e lm="sportisto"><i>sportist</i><par n="nommf__n"/></e>
     <e lm="studanto"><i>studant</i><par n="nommf__n"/></e>
     <e lm="suvereno"><i>suveren</i><par n="nommf__n"/></e>
-    <e lm="ŝatanto"><par n="ŝ"/><i>atant</i><par n="nommf__n"/></e>
+    <e lm="amatoro"><i>amator</i><par n="nommf__n"/></e>
     <e lm="ŝipano"><par n="ŝ"/><i>ipan</i><par n="nommf__n"/></e>
     <e lm="ŝoforo"><par n="ŝ"/><i>ofor</i><par n="nommf__n"/></e>
     <e lm="ŝtatisto"><par n="ŝ"/><i>tatist</i><par n="nommf__n"/></e>
@@ -2405,6 +2408,8 @@
     <e lm="tigro"><i>tigr</i><par n="nommf__n"/></e>
     <e lm="tirano"><i>tiran</i><par n="nommf__n"/></e>
     <e lm="toksomaniulo"><i>toksomaniul</i><par n="nommf__n"/></e>
+    <e lm="drogulo"><i>drogul</i><par n="nommf__n"/></e>
+    <e lm="adepto"><i>adept</i><par n="nommf__n"/></e>
     <e lm="tradukisto"><i>tradukist</i><par n="nommf__n"/></e>
     <e lm="trejnisto"><i>trejnist</i><par n="nommf__n"/></e>
     <e lm="turisto"><i>turist</i><par n="nommf__n"/></e>
@@ -2421,6 +2426,7 @@
     <e lm="vojaĝanto"><i>voja</i><par n="ĝ"/><i>ant</i><par n="nommf__n"/></e>
 
     <e lm="aŭstraliano"><i>aŭstralian</i><par n="nommf__n"/></e>
+    <e lm="aŭstro"><i>aŭstr</i><par n="nommf__n"/></e>
     <e lm="brito"><i>brit</i><par n="nommf__n"/></e>
     <e lm="ĉino"><i>ĉin</i><par n="nommf__n"/></e>
     <e lm="anglo"><i>angl</i><par n="nommf__n"/></e>
@@ -2436,11 +2442,16 @@
     <e lm="sviso"><i>svis</i><par n="nommf__n"/></e>
     <e lm="profesiulo"><i>profesiul</i><par n="nommf__n"/></e>
 
+	<!-- uh oh... problem! -->
+    <e lm="komerca konsilisto"><i>komerca<b/>konsilisto</i><par n="nommf__n"/></e>
+
+
 
 	<!-- "Normalaj vortoj", 
 	      kiuj povas esti substantivo, adjektivo, adverbo kaj verbo.
 	      Gxenerale eblas libere fleksii inter ili
 	 -->
+    <e lm="eksterterano"><i>eksterteran<par n="nom__n"/></e>
 	<e lm="kisto"><i>kist</i><par n="nom__n"/></e>
 	<e lm="adulto"><i>adulto</i><par n="nom__n"/></e>
     <e lm="tigro"><i>tigro</i><par n="nom__n"/></e>

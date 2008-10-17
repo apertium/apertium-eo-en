@@ -186,7 +186,7 @@ public class LeguTradukuNet {
   
   static {
     try {
-      ArrayList<String> finajxojKunKonataVortklasoAL=Iloj.leguTekstDosieron("tradukunet_ne_verboj.txt");
+      ArrayList<String> finajxojKunKonataVortklasoAL=Iloj.leguTekstDosieron("vortojKunKonataVortklaso.txt");
       for (String l : finajxojKunKonataVortklasoAL) {
         int n = l.indexOf('<');
         if (n==-1) finajxojKunKonataVortklaso.put(l, "");
@@ -249,7 +249,8 @@ public class LeguTradukuNet {
     else {
       p.setKlasoTag(p.VBLEX);
 
-      {
+      String lastaVorto=eo.substring(eo.lastIndexOf(' ')+1);
+      if (!verbradikojKiujFinasPerAsIsOsUs.contains(lastaVorto)) {
         String eos = " "+eo;
         for (String finoNV : finajxojKunKonataVortklaso.keySet()) {
           if (eos.endsWith(finoNV)) {
@@ -258,25 +259,10 @@ public class LeguTradukuNet {
             break;
           }
         }
-        
-
-        String lastaVorto=eo.substring(eo.lastIndexOf(' ')+1);
-
-        if (!p.verb()) {
-          for (String verbradiko : verbradikojKiujFinasPerAsIsOsUs) {
-            if (lastaVorto.equals(verbradiko)) {
-              //System.out.println("eo.enquals(verbradiko) = " + eo+"    "+verbradiko);
-              p.setKlasoTag(p.VBLEX);
-              break;
-            }
-          }
-        }
       }
 
-      if (!p.verb()) {
         //a.problem=true;
-      } else {
-
+      if (p.verb()) {
         if (eo.endsWith("-ig")) {
           p.ig=true;
           eo=eo.substring(0, eo.length()-3)+"igi";
