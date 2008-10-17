@@ -98,7 +98,33 @@
     <sdef n="acr" />
     <sdef n="pr" />
   </sdefs>  
+  <pardefs>
+
+<pardef n="MF_GD">
+ <e r="RL">
+   <p>
+     <l><s n="GD"/></l>
+     <r></r>
+   </p>
+ </e>
+ <e r="LR">
+   <p>
+     <l><s n="f"/></l>
+     <r></r>
+   </p>
+ </e>
+ <e r="LR">
+   <p>
+     <l><s n="m"/></l>
+     <r></r>
+   </p>
+ </e>
+</pardef>
+  </pardefs>
+
   <section id="main" type="standard">    
+
+
 	<!--Números i signes puntuació -->
 	<e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
 	<e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
@@ -1328,7 +1354,7 @@
     <e r="LR"><p><l>asistanto<s n="n"/><s n="m"/></l><r>attendant<s n="n"/></r></p></e>
     <e r="RL"><p><l>asistanto<s n="n"/><s n="GD"/></l><r>attendant<s n="n"/></r></p></e>
 
-	<!-- ------------------ korektis gxis txi tie ----------->
+	<!-- =============== korektis gxis txi tie ============= -->
     <e r="LR"><p><l>advokato<s n="n"/><s n="f"/></l><r>attorney<s n="n"/></r></p></e>
     <e r="LR"><p><l>advokato<s n="n"/><s n="m"/></l><r>attorney<s n="n"/></r></p></e>
     <e r="RL"><p><l>advokato<s n="n"/><s n="GD"/></l><r>attorney<s n="n"/></r></p></e>
