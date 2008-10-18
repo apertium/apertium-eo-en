@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static final boolean debug=false;
+  public static final boolean debug=true;
 
   /*
   private static Set<String> tenindiajEtikedoj = new HashSet<String>( Arrays.asList(
@@ -82,40 +82,48 @@ public class AldonuCxiujnVortojn {
     }
   }
 
-  static void analizuEn(LinkedHashMap<String, ArrayList<String>> surfacoAlLemoj, Paro p, LinkedHashMap<String, ArrayList<String>> aperLemoAtTraduko) {
-    ArrayList<String>   enlemmas=surfacoAlLemoj.get(p.orgEn);
-    if (enlemmas==null) enlemmas=surfacoAlLemoj.get(unuaLiteroMajuskla(p.orgEn));
-    if (enlemmas==null) enlemmas=surfacoAlLemoj.get(p.orgEn.toUpperCase());
-    if (enlemmas==null) return;
+  static void analizuEn(LinkedHashMap<String, ArrayList<String>> surfacoAlLemoj, Paro p, LinkedHashMap<String, ArrayList<String>> aperLemoAtTraduko) 
+  {
+    String surfacFormo = p.orgEn;
+    ArrayList<String> lemoj=surfacoAlLemoj.get(surfacFormo);
+    if (lemoj==null) lemoj=surfacoAlLemoj.get(unuaLiteroMajuskla(surfacFormo));
+    if (lemoj==null) lemoj=surfacoAlLemoj.get(surfacFormo);
+    if (lemoj==null) return;
 
-
-    if (debug) dprintln("En:"+enlemmas);
-    p.comment+="enR2="+enlemmas;
+    if (debug) dprintln("En:"+lemoj);
+    p.comment+="enR2="+lemoj;
+    String trovitaLemo = null;
     
-    for (String enlemma : enlemmas) {
-
+    for (String lemo : lemoj) 
+    {
       String apertiumWordTypeKrampoj=p.apertiumWordTypeKrampoj();
-      int i=enlemma.indexOf(apertiumWordTypeKrampoj);
+      int i=lemo.indexOf(apertiumWordTypeKrampoj);
       if (i>0) {
-        p.rootEn=enlemma.substring(0, i);
-        p.setAliajTag(enlemma.substring(i+apertiumWordTypeKrampoj.length()));
+        //if (trovitaLemo!=null && debug) dprintln(p+"Pluraj lemoj trovitaj: "+trovitaLemo+" != "+lemo);
+        trovitaLemo = lemo;
+        p.rootEn=lemo.substring(0, i);
+        p.setAliajTag(lemo.substring(i+apertiumWordTypeKrampoj.length()));
+        break;
       }
+    }
     
       
-      ArrayList<String> aperEoEn = aperLemoAtTraduko.get(enlemma);
+    if (trovitaLemo != null) {
+      ArrayList<String> aperTraduko = aperLemoAtTraduko.get(trovitaLemo);
 
-      if (aperEoEn!=null) {
-        if (debug) dprintln("Ne faras eo->en cxar en Apertium jam estas: "+enlemma+"   -> "+aperEoEn);
-        p.dir_enEo=new ApertiumParo(aperEoEn.toString());
-      }
+      if (aperTraduko!=null) {
+        if (debug) dprintln("Ne faras eo->en cxar en Apertium jam estas: "+trovitaLemo+"   -> "+aperTraduko);
+        p.dir_enEo=new ApertiumParo(aperTraduko.toString());
+      }      
     }
 
 
     if (p.rootEn==null) {
-      if (debug) System.out.println("ARGH, no root found for "+p.apertiumWordType()+" in  enRadikoj2="+enlemmas);
+      if (debug) System.out.println("ARGH, no root found for "+p.apertiumWordType()+" in  enRadikoj2="+lemoj);
       //p.rootEn=enRadikoj.iterator().next();
     }
   }
+
   
   /*
 <preadv> 
@@ -224,14 +232,14 @@ public class AldonuCxiujnVortojn {
 
           
           //
-          // Trovu la esperantan lemon
+          // Trovu la esperantan lemong
           //
           
           ArrayList<String> eolemmas=aperEoDix[0].get(p.rootEo);
+          if (debug) dprintln("Eo:"+ eolemmas);
           if (eolemmas!=null) {
             for (String eolemma : eolemmas) {
               String orgEo=eolemma;
-              if (debug) dprintln("Eo:"+ eolemma);
               ArrayList<String> eoEn;
               while ((eoEn=aperEoEnDix[0].get(eolemma))==null&&eolemma.lastIndexOf('>')>0) {  // &&!jamMontritaj.contains(eoEn)
                 eolemma=eolemma.substring(0, eolemma.lastIndexOf('<'));
