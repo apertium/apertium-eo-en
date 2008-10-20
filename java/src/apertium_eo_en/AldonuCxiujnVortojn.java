@@ -103,7 +103,7 @@ public class AldonuCxiujnVortojn {
         trovitaLemo = lemo;
         p.rootEn=lemo.substring(0, i);
         p.setAliajTag(lemo.substring(i+apertiumWordTypeKrampoj.length()));
-        break;
+        //break;
       }
     }
     

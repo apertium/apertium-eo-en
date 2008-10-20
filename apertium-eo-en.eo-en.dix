@@ -172,8 +172,6 @@
 
 
     <e><p><l>cent<s n="num"/></l><r>hundred<s n="num"/></r></p></e>
-
-    <e><p><l>cent<s n="num"/></l><r>one<b/>hundred<s n="num"/></r></p></e>
     <e><p><l>unu<b/>cent<s n="num"/></l><r>one<b/>hundred<s n="num"/></r></p></e>
     <e><p><l>du<b/>cent<s n="num"/></l><r>two<b/>hundred<s n="num"/></r></p></e>
     <e><p><l>tri<b/>cent<s n="num"/></l><r>three<b/>hundred<s n="num"/></r></p></e>
@@ -185,7 +183,6 @@
     <e><p><l>naŭ<b/>cent<s n="num"/></l><r>nine<b/>hundred<s n="num"/></r></p></e>
 
     <e><p><l>mil<s n="num"/></l><r>thousand<s n="num"/></r></p></e>
-    <e><p><l>mil<s n="num"/></l><r>one<b/>thousand<s n="num"/></r></p></e>
     <e><p><l>unu<b/>mil<s n="num"/></l><r>one<b/>thousand<s n="num"/></r></p></e>
     <e><p><l>du<b/>mil<s n="num"/></l><r>two<b/>thousand<s n="num"/></r></p></e>
     <e><p><l>tri<b/>mil<s n="num"/></l><r>three<b/>thousand<s n="num"/></r></p></e>
@@ -198,7 +195,6 @@
 
     <e><p><l>miliono<s n="num"/></l><r>million<s n="num"/></r></p></e>
     <e><p><l>miliono<s n="num"/></l><r>a<b/>million<s n="num"/></r></p></e>
-    <e><p><l>miliono<s n="num"/></l><r>one<b/>million<s n="num"/></r></p></e>
     <e><p><l>unu<b/>miliono<s n="num"/></l><r>one<b/>million<s n="num"/></r></p></e>
     <e><p><l>du<b/>milionoj<s n="num"/></l><r>two<b/>million<s n="num"/></r></p></e>
     <e><p><l>tri<b/>milionoj<s n="num"/></l><r>three<b/>million<s n="num"/></r></p></e>
@@ -208,6 +204,12 @@
     <e><p><l>sep<b/>milionoj<s n="num"/></l><r>seven<b/>million<s n="num"/></r></p></e>
     <e><p><l>ok<b/>milionoj<s n="num"/></l><r>eight<b/>million<s n="num"/></r></p></e>
     <e><p><l>naŭ<b/>milionoj<s n="num"/></l><r>nine<b/>million<s n="num"/></r></p></e>
+
+<!--
+    <e><p><l>cent<s n="num"/></l><r>one<b/>hundred<s n="num"/></r></p></e>
+    <e><p><l>mil<s n="num"/></l><r>one<b/>thousand<s n="num"/></r></p></e>
+    <e><p><l>miliono<s n="num"/></l><r>one<b/>million<s n="num"/></r></p></e>
+-->
 
 
     <e><p><l>dudek<b/>unu<s n="num"/></l><r>twenty-one<s n="num"/></r></p></e>
@@ -959,10 +961,30 @@
 
     <!-- Adjective nations and other uppercase things -->
 	<e><p><l>januaro<s n="n"/></l><r>January<s n="n"/></r></p></e>
-	<e><p><l>julio<s n="n"/></l><r>July<s n="n"/></r></p></e>
+	<e><p><l>februaro<s n="n"/></l><r>February<s n="n"/></r></p></e>
+	<e><p><l>marto<s n="n"/></l><r>March<s n="n"/></r></p></e>
+	<e><p><l>aprilo<s n="n"/></l><r>April<s n="n"/></r></p></e>	
+	<e><p><l>majo<s n="n"/></l><r>May<s n="n"/></r></p></e>
 	<e><p><l>junio<s n="n"/></l><r>June<s n="n"/></r></p></e>
+	<e><p><l>julio<s n="n"/></l><r>July<s n="n"/></r></p></e>
+	<e><p><l>aŭgusto<s n="n"/></l><r>August<s n="n"/></r></p></e>
+	<e><p><l>septembro<s n="n"/></l><r>September<s n="n"/></r></p></e>
+	<e><p><l>oktobro<s n="n"/></l><r>October<s n="n"/></r></p></e>
+	<e><p><l>novembro<s n="n"/></l><r>November<s n="n"/></r></p></e>
+	<e><p><l>decembro<s n="n"/></l><r>December<s n="n"/></r></p></e>
+
+	<e r="RL"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/></r></p></e>
+	<e r="LR"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/><s n="ND"/></r></p></e>
+	<e r="RL"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/></r></p></e>
+	<e r="LR"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/><s n="ND"/></r></p></e>
+	<e r="RL"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/></r></p></e>
+	<e r="LR"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/><s n="ND"/></r></p></e>
 	<e r="RL"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/></r></p></e>
 	<e r="LR"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/><s n="ND"/></r></p></e>
+	<e r="RL"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/></r></p></e>
+	<e r="LR"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/><s n="ND"/></r></p></e>
+	<e><p><l>sabato<s n="n"/></l><r>Saturday<s n="n"/></r></p></e>
+	<e><p><l>dimanĉo<s n="n"/></l><r>Sunday<s n="n"/></r></p></e>
 
 
 	<e><p><l>japana<s n="adj"/></l><r>Japanese<s n="adj"/></r></p></e>
@@ -973,14 +995,9 @@
 	<e><p><l>perua<s n="adj"/></l><r>Peruvian<s n="adj"/></r></p></e>
 	<e><p><l>pola<s n="adj"/></l><r>Polish<s n="adj"/></r></p></e>
 	<e><p><l>rusa<s n="adj"/></l><r>Russian<s n="adj"/></r></p></e>
-	<e><p><l>aprilo<s n="n"/></l><r>April<s n="n"/></r></p></e>
-	<e><p><l>aŭgusto<s n="n"/></l><r>August<s n="n"/></r></p></e>
 	<e><p><l>budhismo<s n="n"/></l><r>Buddhism<s n="n"/></r></p></e>
 	<e r="RL"><p><l>ĉiliano<s n="n"/></l><r>Chilean<s n="n"/></r></p></e>
-	<e><p><l>decembro<s n="n"/></l><r>December<s n="n"/></r></p></e>
-	<e><p><l>dimanĉo<s n="n"/></l><r>Sunday<s n="n"/></r></p></e>
 	<e r="RL"><p><l>eŭropano<s n="n"/></l><r>European<s n="n"/></r></p></e>
-	<e><p><l>februaro<s n="n"/></l><r>February<s n="n"/></r></p></e>
 	<e r="RL"><p><l>irlandano<s n="n"/></l><r>Irish<s n="n"/></r></p></e>
 	<e r="RL"><p><l>islamano<s n="n"/></l><r>Muslim<s n="n"/></r></p></e>
 	<e><p><l>israelano<s n="n"/></l><r>Israeli<s n="n"/></r></p></e>
@@ -994,29 +1011,15 @@
 	<e><p><l>kristaneco<s n="n"/></l><r>Christianity<s n="n"/></r></p></e>
 	<e><p><l>kristanismo<s n="n"/></l><r>Christianity<s n="n"/></r></p></e>
 	<e><p><l>latino<s n="n"/></l><r>Latin<s n="n"/></r></p></e>
-	<e r="RL"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/><s n="ND"/></r></p></e>
-	<e><p><l>majo<s n="n"/></l><r>May<s n="n"/></r></p></e>
-	<e r="RL"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/><s n="ND"/></r></p></e>
 	<e><p><l>marokano<s n="n"/></l><r>Moroccan<s n="n"/></r></p></e>
-	<e><p><l>marto<s n="n"/></l><r>March<s n="n"/></r></p></e>
 	<e r="RL"><p><l>maŭro<s n="n"/></l><r>Moor<s n="n"/></r></p></e>
 	<e r="RL"><p><l>meksikano<s n="n"/></l><r>Mexican<s n="n"/></r></p></e>
-	<e r="RL"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/><s n="ND"/></r></p></e>
 	<e r="RL"><p><l>niĝeriano<s n="n"/></l><r>Nigerian<s n="n"/></r></p></e>
-	<e><p><l>novembro<s n="n"/></l><r>November<s n="n"/></r></p></e>
-	<e><p><l>oktobro<s n="n"/></l><r>October<s n="n"/></r></p></e>
 	<e r="RL"><p><l>peruano<s n="n"/></l><r>Peruvian<s n="n"/></r></p></e>
-	<e><p><l>sabato<s n="n"/></l><r>Saturday<s n="n"/></r></p></e>
-	<e><p><l>septembro<s n="n"/></l><r>September<s n="n"/></r></p></e>
 	<e r="RL"><p><l>skoto<s n="n"/></l><r>Scottish<s n="n"/></r></p></e>
 	<e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/><s n="acr"/></r></p></e>
 	<e r="RL"><p><l>turko<s n="n"/></l><r>Turkish<s n="n"/></r></p></e>
 	<e r="RL"><p><l>valenciano<s n="n"/></l><r>Valencian<s n="n"/></r></p></e>
-	<e r="RL"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/><s n="ND"/></r></p></e>
 	<e><p><l>afrika<s n="adj"/></l><r>African<s n="adj"/></r></p></e>
 	<e><p><l>angla<s n="adj"/></l><r>English<s n="adj"/></r></p></e>
 	<e><p><l>araba<s n="adj"/></l><r>Arab<s n="adj"/></r></p></e>
@@ -1078,14 +1081,8 @@
 
 
     <!-- Nouns with gender: Nationalities -->
-
     <e><p><l>albano<s n="n"/></l><r>Albanian<s n="n"/></r></p><par n="MF_GD"/></e>
-
 	<e><p><l>arabo<s n="n"/></l><r>Arab<s n="n"/></r></p><par n="MF_GD"/></e>
-
-
-
-
     <e><p><l>argentinano<s n="n"/></l><r>Argentinian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>aziano<s n="n"/></l><r>Asian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>aŭstraliano<s n="n"/></l><r>Australian<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1097,8 +1094,6 @@
     <e><p><l>kolombiano<s n="n"/></l><r>Colombian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>eŭropano<s n="n"/></l><r>European<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>indiano<s n="n"/></l><r>Indian<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e r="RL"><p><l>indio<s n="n"/></l><r>Indian<s n="n"/></r></p></e>
-
     <e><p><l>irlandano<s n="n"/></l><r>Irish<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>jamajkano<s n="n"/></l><r>Jamaican<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>koreo<s n="n"/></l><r>Korean<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1629,6 +1624,10 @@
     <e><p><l>domo<s n="n"/></l><r>house<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>child<s n="n"/></r></p></e>
 
+	<e><p><l>malfermo<s n="n"/></l><r>opening<s n="n"/></r></p></e>
+	<e><p><l>malfermi<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e>
+	<e><p><l>malferma<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
+
 
     <e><p><l>ĉi<b/>tie<s n="adv"/></l><r>here<s n="adv"/></r></p></e>
     <e><p><l>paro<s n="n"/></l><r>pair<s n="n"/></r></p></e>
@@ -1644,6 +1643,7 @@
 
     <e><p><l>fari<s n="vblex"/></l><r>do<s n="vblex"/></r></p></e>
     <e><p><l>havi<s n="vblex"/></l><r>have<s n="vblex"/></r></p></e>
+    <e><p><l>esti<s n="vbser"/></l><r>be<s n="vbser"/></r></p></e>
 
 
     <e><p><l>ĉiam<s n="adv"/></l><r>always<s n="adv"/></r></p></e>
@@ -1989,13 +1989,9 @@
 
 
 
-
 	<!-- ====================================================================== -->
-	<!--      Tradukunet data                                                   -->
-	<!--                                                                        -->
+	<!--      Traduku.net data  will come here                                  -->
 	<!-- ====================================================================== -->
-
-
 
 
 
@@ -7826,7 +7822,6 @@
     <e r="RL"><p><l>bona<s n="adj"/></l><r>fine<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>malbona<s n="adj"/></l><r>bad<s n="adj"/><s n="sint"/></r></p></e>
 
-    <e><p><l>esti<s n="vbser"/></l><r>be<s n="vbser"/></r></p></e>
 
     <e r="RL"><p><l>rapida<s n="adj"/></l><r>rapid<s n="adj"/></r></p></e>
     <e r="RL"><p><l>fari<s n="vblex"/></l><r>do<s n="vbdo"/></r></p></e>
@@ -9344,19 +9339,18 @@
 	<e><p><l>simila<s n="adj"/></l><r>similar<s n="adj"/></r></p></e>
 	<e><p><l>lerta<s n="adj"/></l><r>skillful<s n="adj"/></r></p></e>
 	<e><p><l>fermo<s n="n"/></l><r>closing<s n="n"/></r></p></e>
-	<e><p><l>malfermo<s n="n"/></l><r>opening<s n="n"/></r></p></e>
 	<e><p><l>fermi<s n="vblex"/></l><r>close<s n="vblex"/></r></p></e>
 
 	<e r="RL"><p><l>fermi<s n="vblex"/></l><r>lock<s n="vblex"/></r></p></e>
 	<e r="RL"><p><l>fermi<s n="vblex"/></l><r>shut<s n="vblex"/></r></p></e>
-	<e><p><l>malfermi<s n="vblex"/></l><r>open<s n="vblex"/></r></p></e>
-	<e><p><l>malferma<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
 	<e><p><l>ferma<s n="adj"/></l><r>closed<s n="adj"/></r></p></e>
 
 
 
 
     <e r="RL"><p><l>kvalifiki<s n="vblex"/></l><r>zone<s n="vblex"/></r></p></e>
+
+
 
 
   </section>
