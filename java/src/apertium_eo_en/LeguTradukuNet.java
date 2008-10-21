@@ -34,7 +34,7 @@ public class LeguTradukuNet {
     String linio;
     String en=null, eo=null;
     int linNro=0;
-    br=new BufferedReader(new FileReader("tradukunet.txt"));
+    br=new BufferedReader(new FileReader("res/tradukunet.txt"));
     System.out.println("Legas "+"tradukunet.txt");
 
     Pattern slashRegex = Pattern.compile("/");
@@ -186,7 +186,7 @@ public class LeguTradukuNet {
   
   static {
     try {
-      ArrayList<String> finajxojKunKonataVortklasoAL=Iloj.leguTekstDosieron("vortojKunKonataVortklaso.txt");
+      ArrayList<String> finajxojKunKonataVortklasoAL=Iloj.leguTekstDosieron("res/vortoj_kun_konata_vortklaso.txt");
       for (String l : finajxojKunKonataVortklasoAL) {
         int n = l.indexOf('<');
         if (n==-1) finajxojKunKonataVortklaso.put(l, "");
