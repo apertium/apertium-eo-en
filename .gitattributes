@@ -41,4 +41,6 @@ java/src/apertium_eo_en/malnova/LeguAliajn.java -text
 /multi-gen.sh -text
 /other-tests.sh -text
 /regression-tests.sh -text
-/tradukunet.txt -text
+res/esperanto_nouns_with_gender.txt -text
+res/tradukunet.txt -text
+res/vortoj_kun_konata_vortklaso.txt -text
