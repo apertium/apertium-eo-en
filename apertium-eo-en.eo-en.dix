@@ -973,16 +973,11 @@
 	<e><p><l>novembro<s n="n"/></l><r>November<s n="n"/></r></p></e>
 	<e><p><l>decembro<s n="n"/></l><r>December<s n="n"/></r></p></e>
 
-	<e r="RL"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/><s n="ND"/></r></p></e>
-	<e r="RL"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/><s n="ND"/></r></p></e>
-	<e r="RL"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/><s n="ND"/></r></p></e>
-	<e r="RL"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/><s n="ND"/></r></p></e>
-	<e r="RL"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/></r></p></e>
-	<e r="LR"><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/><s n="ND"/></r></p></e>
+	<e><p><l>lundo<s n="n"/></l><r>Monday<s n="n"/></r></p></e>
+	<e><p><l>mardo<s n="n"/></l><r>Tuesday<s n="n"/></r></p></e>
+	<e><p><l>merkredo<s n="n"/></l><r>Wednesday<s n="n"/></r></p></e>
+	<e><p><l>ĵaŭdo<s n="n"/></l><r>Thursday<s n="n"/></r></p></e>
+	<e><p><l>vendredo<s n="n"/></l><r>Friday<s n="n"/></r></p></e>
 	<e><p><l>sabato<s n="n"/></l><r>Saturday<s n="n"/></r></p></e>
 	<e><p><l>dimanĉo<s n="n"/></l><r>Sunday<s n="n"/></r></p></e>
 
@@ -1056,7 +1051,7 @@
 	<e><p><l>norvega<s n="adj"/></l><r>Norwegian<s n="adj"/></r></p></e>
 	<e><p><l>niĝeria<s n="adj"/></l><r>Nigerian<s n="adj"/></r></p></e>
 	<e><p><l>portugala<s n="adj"/></l><r>Portuguese<s n="adj"/></r></p></e>
-	<e c="check"><p><l>protestanta<s n="adj"/></l><r>Protestant<s n="adj"/></r></p></e>
+	<e><p><l>protestanta<s n="adj"/></l><r>Protestant<s n="adj"/></r></p></e>
 	<e><p><l>skota<s n="adj"/></l><r>Scottish<s n="adj"/></r></p></e>
 	<e><p><l>sovetia<s n="adj"/></l><r>Soviet<s n="adj"/></r></p></e>
 	<e><p><l>sveda<s n="adj"/></l><r>Swedish<s n="adj"/></r></p></e>
@@ -1103,7 +1098,6 @@
     <e><p><l>islamano<s n="n"/></l><r>Muslim<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>niĝeriano<s n="n"/></l><r>Nigerian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>perso<s n="n"/></l><r>Persian<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>perso<s n="n"/></l><r>Persian<s n="n"/></r></p></e>
 
     <e><p><l>peruano<s n="n"/></l><r>Peruvian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>skoto<s n="n"/></l><r>Scottish<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1112,10 +1106,7 @@
     <e><p><l>skandinavo<s n="n"/></l><r>Scandinavian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>aŭstro<s n="n"/></l><r>Austrian<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>brito<s n="n"/></l><r>British<s n="n"/></r></p><par n="MF_GD"/></e>
-
-    <e r="LR"><p><l>ĉino<s n="n"/><s n="f"/></l><r>Chinese<s n="n"/></r></p></e>    
-    <e r="LR"><p><l>ĉino<s n="n"/><s n="m"/></l><r>Chinese<s n="n"/></r></p></e>
-
+    <e><p><l>ĉino<s n="n"/></l><r>Chinese<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>anglo<s n="n"/></l><r>English<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>franco<s n="n"/></l><r>French<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>germano<s n="n"/></l><r>German<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1132,8 +1123,6 @@
 
     <e><p><l>katoliko<s n="n"/></l><r>Catholic<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p><par n="MF_GD"/></e>
-
-    <e r="RL"><p><l>kristano<s n="n"/></l><r>Christian<s n="n"/></r></p></e>
     <e><p><l>kristana<s n="adj"/></l><r>Christian<s n="adj"/></r></p></e>
 
     <e><p><l>protestanto<s n="n"/></l><r>Protestant<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1146,8 +1135,6 @@
     <e><p><l>adepto<s n="n"/></l><r>adherent<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>administranto<s n="n"/></l><r>administrator<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e r="RL"><p><l>plenkreskulo<s n="n"/></l><r>adult<s n="n"/></r></p></e>
-
     <e><p><l>konsilisto<s n="n"/></l><r>adviser<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>agento<s n="n"/></l><r>agent<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>adjutanto<s n="n"/></l><r>aide<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1170,11 +1157,14 @@
 
 
 	<!-- =============== korektis gxis txi tie ============= -->
+    <e><p><l>aŭtoro<s n="n"/></l><r>author<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>bakisto<s n="n"/></l><r>baker<s n="n"/></r></p><par n="MF_GD"/></e>
+    <e><p><l>bandito<s n="n"/></l><r>bandit<s n="n"/></r></p><par n="MF_GD"/></e>
+
+
+
     <e><p><l>advokato<s n="n"/></l><r>attorney<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>kontrevizoro<s n="n"/></l><r>auditor<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>aŭtoro<s n="n"/></l><r>author<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>panisto<s n="n"/></l><r>baker<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>bandito<s n="n"/></l><r>bandit<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>bankiero<s n="n"/></l><r>banker<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>pretendanto<s n="n"/></l><r>beau<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>biografo<s n="n"/></l><r>biographer<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1258,11 +1248,8 @@
     <e><p><l>geriatro<s n="n"/></l><r>geriatrist<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>fantomo<s n="n"/></l><r>ghost<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>gorilo<s n="n"/></l><r>gorilla<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>reganto<s n="n"/></l><r>governor<s n="n"/></r></p><par n="MF_GD"/></e>
-    
+    <e><p><l>reganto<s n="n"/></l><r>governor<s n="n"/></r></p><par n="MF_GD"/></e>    
     <e><p><l>gardisto<s n="n"/></l><r>guard<s n="n"/></r></p><par n="MF_GD"/></e>
-    <e><p><l>gardisto<s n="n"/></l><r>guard<s n="n"/></r></p></e>
-
     <e><p><l>gasto<s n="n"/></l><r>guest<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>ginekologo<s n="n"/></l><r>gynaecologist<s n="n"/></r></p><par n="MF_GD"/></e>
     <e><p><l>frizisto<s n="n"/></l><r>hairdresser<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1448,7 +1435,6 @@
     <e><p><l>profesiulo<s n="n"/></l><r>professional<s n="n"/></r></p><par n="MF_GD"/></e>
 
 
-    <e><p><l>sinjoro<s n="n"/></l><r>lord<s n="n"/></r></p><par n="MF_GD"/></e>
     
     
     <e r="RL"><p><l>malliberulo<s n="n"/><s n="GD"/></l><r>setscrew<s n="n"/></r></p></e>
@@ -1458,13 +1444,15 @@
     <e><p><l>vidvo<s n="n"/></l><r>widower<s n="n"/></r></p></e>
 
 
-
 	<e><p><l>gastiganto<s n="n"/><s n="f"/></l><r>hostess<s n="n"/></r></p></e>
 	<e r="LR"><p><l>gastiganto<s n="n"/><s n="m"/></l><r>host<s n="n"/></r></p></e>
 	<e r="RL"><p><l>gastiganto<s n="n"/><s n="GD"/></l><r>host<s n="n"/></r></p></e>
 
+	<e><p><l>lordo<s n="n"/></l><r>lord<s n="n"/></r></p><par n="MF_GD"/></e>                 
 
+    <e><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lady<s n="n"/></r></p></e>
 	<e><p><l>sinjoro<s n="n"/><s n="f"/></l><r>madam<s n="n"/></r></p></e>
+    <e><p><l>sinjoro<s n="n"/><s n="m"/></l><r>gentleman<s n="n"/></r></p></e>
 	<e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>sir<s n="n"/></r></p></e>
 	<e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>sir<s n="n"/></r></p></e>
 
@@ -1515,24 +1503,10 @@
     <e><p><l>knabo<s n="n"/><s n="m"/></l><r>boy<s n="n"/></r></p></e>
     <e r="RL"><p><l>knabo<s n="n"/><s n="m"/></l><r>lad<s n="n"/></r></p></e>
 
-    <e><p><l>sinjoro<s n="n"/><s n="m"/></l><r>gentleman<s n="n"/></r></p></e>
-    <e><p><l>sinjoro<s n="n"/><s n="f"/></l><r>lady<s n="n"/></r></p></e>
-
     <e><p><l>reĝo<s n="n"/><s n="m"/></l><r>king<s n="n"/></r></p></e>
     <e><p><l>reĝo<s n="n"/><s n="f"/></l><r>queen<s n="n"/></r></p></e>
     <e><p><l>princo<s n="n"/><s n="m"/></l><r>prince<s n="n"/></r></p></e>
     <e><p><l>princo<s n="n"/><s n="f"/></l><r>princess<s n="n"/></r></p></e>
-
-
-
-
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="f"/></l><r>sir<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sinjoro<s n="n"/><s n="m"/></l><r>sir<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/><s n="GD"/></l><r>sir<s n="n"/></r></p></e>
-
-    <e r="LR"><p><l>sportisto<s n="n"/><s n="f"/></l><r>sportsman<s n="n"/></r></p></e>
-    <e r="LR"><p><l>sportisto<s n="n"/><s n="m"/></l><r>sportsman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sportisto<s n="n"/><s n="GD"/></l><r>sportsman<s n="n"/></r></p></e>
 
 
 
@@ -1548,7 +1522,6 @@
     <e><p><l>geavo<s n="n"/></l><r>grandparent<s n="n"/></r></p></e>
     <e><p><l>gepatro<s n="n"/></l><r>parent<s n="n"/></r></p></e>
     <e><p><l>infano<s n="n"/></l><r>infant<s n="n"/></r></p></e>
-
 
 
 
@@ -1589,24 +1562,6 @@
 
 
 
-
-
-
-
-
-
-<!-- Jacob: This isnt an adj (or give an example)  <e c="check"><p><l>detrua<s n="adj"/></l><r>destroyer<s n="adj"/></r></p></e> -->
-<!--
-    r="RL": NUR DE ANGLA AL ESPERANTO
-    t.e. r="RL" se multaj anglaj vortoj -> unu esperanta vorto
-
-    <e r="RL"><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
-
-    r="LR": NUR DE ESPERANTO AL ANGLA
-    t.e. r="LR" se multaj esperanto-vortoj -> unu angla vorto
-
-    <e r="LR"><p><l>blua<s n="adj"/></l><r>blue<s n="adj"/></r></p></e>
--->
 
 
 
@@ -5535,10 +5490,6 @@
     <e><p><l>sindromo<s n="n"/></l><r>syndrome<s n="n"/></r></p></e>
     <e><p><l>singardeco<s n="n"/></l><r>prudence<s n="n"/></r></p></e>
     <e><p><l>sinjoro<s n="n"/><s n="m"/></l><r>knight<s n="n"/></r></p></e>
-    <e r="RL" c="potser senyor i senyora hauria de traduir-se 'man' i 'woman'"><p><l>sinjoro<s n="n"/></l><r>gentleman<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/></l><r>lady<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/></l><r>lord<s n="n"/></r></p></e>
-    <e r="RL"><p><l>sinjoro<s n="n"/></l><r>sir<s n="n"/></r></p></e>
     <e><p><l>sinkigo<s n="n"/></l><r>sinking<s n="n"/></r></p></e>
     <e r="RL"><p><l>sino<s n="n"/></l><r>sinus<s n="n"/></r></p></e>
     <e r="LR"><p><l>sino<s n="n"/></l><r>breast<s n="n"/></r></p></e>
