@@ -9,3 +9,9 @@ grep '<s n="ant"/>' apertium-eo-en.eo-en.dix | grep '<s n="top"/>' && echo '<s n
 #grep '<par n="Barcelona__np"/>' apertium-eo-en.eo.dix.xml | grep -v 'o</i><par ' && echo Metu o post radiko && echo
 #grep '<par n="komence__adv"/>' apertium-eo-en.eo.dix.xml | grep -v 'e</i><par ' && echo Metu e post radiko?? && echo
 
+
+cat apertium-eo-en.eo.dix.xml | grep '<par n="nommf__n"/>' | cut -f2 -d'"'  | sort -u  > /tmp/esperanto_nouns_with_gender_eodix.txt
+diff /tmp/esperanto_nouns_with_gender_eodix.txt res/esperanto_nouns_with_gender.txt || echo Problemo de genro en eo.dix
+
+cat apertium-eo-en.eo-en.dix | grep 'n="MF_GD"' | cut -f4 -d'>' | cut -f1 -d'<'  | sort -u  > /tmp/esperanto_nouns_with_gender_bidix.txt
+#diff /tmp/esperanto_nouns_with_gender_bidix.txt res/esperanto_nouns_with_gender.txt || echo Problemo de genro en eo-en.dix
