@@ -594,15 +594,13 @@
 
     <!-- pre-adverbs -->
 
-<e>       <p><l>pli<s n="preadv"/></l>                 <r>more<s n="preadv"/></r></p></e>
-    
-<e>       <p><l>tiel<s n="preadv"/></l>                <r>so<s n="preadv"/></r></p></e>
-<e r="RL" c="comparacions"><p><l>tiel<s n="preadv"/></l><r>as<s n="preadv"/></r></p></e>
-<e r="RL"><p><l>tiel<s n="preadv"/></l>                <r>just<b/>as<s n="preadv"/></r></p></e>
-    
 <e>       <p><l>tre<s n="preadv"/></l>                 <r>very<s n="preadv"/></r></p></e>
 <e>       <p><l>vere<s n="preadv"/></l>                <r>really<s n="preadv"/></r></p></e>
 <e>       <p><l>sufiĉe<s n="preadv"/></l>              <r>pretty<s n="preadv"/></r></p></e>
+<e>       <p><l>pli<s n="preadv"/></l>                 <r>more<s n="preadv"/></r></p></e>    
+<e>       <p><l>tiel<s n="preadv"/></l>                <r>so<s n="preadv"/></r></p></e>
+<e c="comparacions"><p><l>tiel<s n="preadv"/></l><r>as<s n="preadv"/></r></p></e>
+<e r="RL"><p><l>tiel<s n="preadv"/></l>                <r>just<b/>as<s n="preadv"/></r></p></e>    
 <e c="how late? how great, how funny"><p><l>kiom<s n="preadv"/></l><r>how<s n="preadv"/></r></p></e>
 
 
@@ -624,10 +622,7 @@
 <e>       <p><l>ĝis<s n="pr"/></l>                     <r>until<s n="pr"/></r></p></e>
 <e>       <p><l>kun<s n="pr"/></l>                     <r>with<s n="pr"/></r></p></e>
 <e c="as you - kiel vi"><p><l>kiel<s n="pr"/></l>      <r>as<s n="pr"/></r></p></e>
-
-
 <e c="Jacob's house==Domo de Jacob"><p><l>de<s n="pr"/></l><r>'s<s n="gen"/></r></p></e>
-
 
 <e>       <p><l>en<s n="pr"/></l>                      <r>in<s n="pr"/></r></p></e>
 <e r="RL"><p><l>en<b/></l>                      <r>inside<s n="pr"/></r></p></e>
@@ -662,7 +657,6 @@
 <e r="RL"><p><l>inter<s n="pr"/></l>                   <r>amongst<s n="pr"/></r></p></e>
 
 <e>       <p><l>post<s n="pr"/></l>                    <r>after<s n="pr"/></r></p></e>
-<e r="LR"><p><l>post<s n="pr"/></l>                    <r>behind<s n="pr"/></r></p></e>
 
 <e>       <p><l>laŭ<s n="pr"/></l>                     <r>according<b/>to<s n="pr"/></r></p></e>
 <e r="RL"><p><l>laŭ<s n="pr"/></l>                     <r>according<s n="pr"/></r></p></e>
