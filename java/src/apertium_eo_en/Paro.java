@@ -19,6 +19,7 @@ public class Paro {
 
     public String apertiumWordType = PROBLEM;
     private String apertiumExtraTags = "";
+    boolean gender;
 
        
     public String apertiumWordType() {
@@ -172,7 +173,7 @@ if it is, then add <s n="sint"/> if not then don't
   
   a = a + "       ".substring(a.length());
   //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
-  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
+  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
   String spc = "                                                                                   ";
   if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
   //

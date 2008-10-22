@@ -191,6 +191,8 @@ public class AldonuCxiujnVortojn {
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix");
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("echo");
 
+    Set<String> esperanto_nouns_with_gender = new HashSet<String>(Iloj.leguTekstDosieron("res/esperanto_nouns_with_gender.txt"));
+    
 
     ArrayList<Paro> aldonuParojn=new ArrayList<Paro>(50000);
     Map<String,ArrayList<Paro>> aldonuParojnEo=new HashMap<String,ArrayList<Paro>>(10000);
@@ -218,6 +220,10 @@ public class AldonuCxiujnVortojn {
           if (debug) dprintln("");
           if (debug) dprintln(p);
 
+          if (p.noun() && esperanto_nouns_with_gender.contains(p.rootEo)) {
+            //System.err.println("p gender = " + p);
+            p.gender = true;
+          }
           
           //
           // Trovu la anglan lemon
