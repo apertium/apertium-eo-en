@@ -81,6 +81,13 @@ test: $(TARGETS_COMMON)
 test-nodl: $(TARGETS_COMMON)
 	bash regression-tests.sh NODOWNLOAD
 
+crptest: $(TARGETS_COMMON)
+#	zcat corpa/en.crp.txt.gz |  apertium -d . en-eo > efter.txt
+#	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt
+#	for i in `cut -f2 -d' ' /tmp/crpdiff.txt | cut -f1 | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^$i\W" ; grep -r "^. $i\W" /tmp/crpdiff.txt; done | less
+#	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt;for i in `cut -f2 -d' ' /tmp/crpdiff.txt | cut -f1 | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^$i\W" ; grep -r "^. $i\W" /tmp/crpdiff.txt; done | less
+
+
 EXTRA_DIST=$(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
            $(BASENAME).$(LANG2).dix $(BASENAME).$(LANG1).tsx \

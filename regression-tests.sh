@@ -67,6 +67,11 @@ for mode in $MODES; do
 	echo $mode
  	cat test_SL_$mode | nl -s : | apertium -d $DATADIR $mode > test_TR_$mode
 	cat test_TL_$mode | nl -s : | diff -Naurwi - test_TR_$mode
+
+
+	cat test_TL_$mode | nl -s : | diff - test_TR_$mode | grep -r '[<>]' > test_diff_$mode
+	for i in `cut -f2 -d' ' test_diff_$mode | cut -f1 | uniq`; do echo  --- $i ---; cat test_SL_$mode | nl -s : | grep -r "$i :" ; grep -r "^. $i\W" test_diff_$mode; done
+
 done
 
 
