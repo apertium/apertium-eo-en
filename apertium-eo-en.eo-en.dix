@@ -314,15 +314,17 @@
 
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everybody<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everyone<s n="prn"/><s n="tn"/></r></p></e>
-
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anybody<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
 
-<e>       <p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
-
+<!-- hmmm xxxxxxxx -->
+<e>      <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+<!--
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+-->
 
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
@@ -331,6 +333,7 @@
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+
 
 <e r="LR"><p><l>io<s n="prn"/><s n="tn"/><s n="f"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
 <e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
