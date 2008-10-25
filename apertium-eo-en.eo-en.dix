@@ -318,7 +318,7 @@
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
 
-<!-- hmmm xxxxxxxx -->
+<!-- hmmm xxxxxxxxxxxxxxx hertil -->
 <e>      <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <!--
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
@@ -426,13 +426,13 @@
 <e>       <p><l>dum<s n="cnjadv"/></l>                 <r>whereas<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĝis<s n="cnjadv"/></l>                 <r>until<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kiam<s n="cnjadv"/></l>                <r>when<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>kiam<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kiel<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
+<e r="LR"><p><l>kiam<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
+<e r="LR"><p><l>laŭ<s n="cnjadv"/></l>                 <r>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kondiĉe<b/>ke<s n="cnjadv"/></l>       <r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kontraŭe<s n="cnjadv"/></l>            <r>on<b/>the<b/>contrary<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvankam<s n="cnjadv"/></l>             <r>although<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>kvankam<s n="cnjadv"/></l>             <r>though<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>laŭ<s n="cnjadv"/></l>                 <r>as<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>ekde<s n="cnjadv"/></l>                <r>since<s n="cnjadv"/></r></p></e>
 
 <e>       <p><l>do<s n="cnjadv"/></l>                  <r>so<s n="cnjadv"/></r></p></e>
@@ -441,12 +441,11 @@
 <e>       <p><l>post<b/>kiam<s n="cnjadv"/></l>        <r>after<s n="cnjadv"/></r></p></e>
 <e>       <p><l>antaŭ<b/>ol<s n="cnjadv"/></l>         <r>before<s n="cnjadv"/></r></p></e>
 <e       ><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>since<s n="cnjadv"/></r></p></e>
-<e r="RL"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>for<s n="cnjadv"/></r></p></e>
 <e>       <p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>due<b/>to<b/>the<b/>fact<b/>that<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>se<s n="cnjadv"/></l>                  <r>while<s n="cnjadv"/></r></p></e>
+<e r="RL"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>for<s n="cnjadv"/></r></p></e>
+
 <e r="RL"><p><l>se<s n="cnjadv"/></l>                  <r>provided<s n="cnjadv"/></r></p></e>
-<e r="RL"><p><l>se<s n="cnjadv"/></l>                  <r>whether<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>ĉar<s n="cnjadv"/></l>                 <r>since<s n="cnjadv"/></r></p></e>
+<e>       <p><l>ĉu<s n="cnjadv"/></l>                  <r>whether<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l>      <r>increasingly<s n="cnjadv"/></r></p></e>
 
 <e>       <p><l>sekve<s n="cnjadv"/></l>               <r>therefore<s n="cnjadv"/></r></p></e>
@@ -497,7 +496,7 @@
     
     <!-- Determiners -->
 
-
+<!-- all houses -> ĉiuj domoj.  -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
 
@@ -505,6 +504,7 @@
 <e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>plura<s n="det"/><s n="qnt"/></l>      <r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
+<!--  any house  -> ajna domo -->
 <e>       <p><l>ajna<s n="det"/><s n="ind"/></l>       <r>any<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>either<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>whatever<s n="det"/><s n="ind"/></r></p></e>
@@ -1578,7 +1578,7 @@
 <e>       <p><l>nuntempe<s n="adv"/></l>               <r>at<b/>present<s n="adv"/></r></p></e>
 <e>       <p><l>nuntempe<s n="adv"/></l>               <r>for<b/>now<s n="adv"/></r></p></e>
 <e r="RL"><p><l>oficiale<s n="adv"/></l>               <r>on<b/>record<s n="adv"/></r></p></e>
-<e>       <p><l>perforte<s n="adv"/></l>            <r>by<b/>force<s n="adv"/></r></p></e>
+<e>       <p><l>perforte<s n="adv"/></l>               <r>by<b/>force<s n="adv"/></r></p></e>
 <e r="RL"><p><l>plu<s n="adv"/></l>                    <r>any<b/>more<s n="adv"/></r></p></e>
 <e>       <p><l>post<b/>nelonge<s n="adv"/></l>        <r>shortly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>prudente<s n="adv"/></l>               <r>within<b/>reason<s n="adv"/></r></p></e>
@@ -1615,7 +1615,7 @@
 <e r="RL"><p><l>tie<s n="adv"/></l>                    <r>over<b/>there<s n="adv"/></r></p></e>
 <e r="RL"><p><l>tie<s n="adv"/></l>                    <r>over<b/>here<s n="adv"/></r></p></e>
 <e>       <p><l>tiel<s n="adv"/></l>                   <r>like<b/>this<s n="adv"/></r></p></e>
-<e c="sols singular"><p><l>tiel<s n="adv"/></l>        <r>so<b/>much<s n="adv"/></r></p></e>
+<e>       <p><l>tiel<s n="adv"/></l>        <r>so<b/>much<s n="adv"/></r></p></e>
 <e>       <p><l>tre<s n="adv"/></l>                    <r>a<b/>lot<s n="adv"/></r></p></e>
 <e r="RL"><p><l>tre<s n="adv"/></l>                    <r>very<b/>much<s n="adv"/></r></p></e>
 <e c="MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en"><p><l>tro<b/>da<s n="adv"/></l><r>too<b/>much<s n="adv"/></r></p></e>
@@ -1736,7 +1736,7 @@
 <e>       <p><l>inĝeniero<s n="n"/></l>                <r>engineer<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>artisto<s n="n"/></l>                  <r>entertainer<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>entuziasmulo<s n="n"/></l>             <r>enthusiast<s n="n"/></r></p><par n="MF_GD"/></e>
-<e>       <p><l>laekzekutivo<s n="n"/></l>             <r>executive<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>ekzekutivo<s n="n"/></l>               <r>executive<s n="n"/></r></p></e>
 <e>       <p><l>eksponento<s n="n"/></l>               <r>exponent<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>ekstremisto<s n="n"/></l>              <r>extremist<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>kultivisto<s n="n"/></l>               <r>farmer<s n="n"/></r></p><par n="MF_GD"/></e>
