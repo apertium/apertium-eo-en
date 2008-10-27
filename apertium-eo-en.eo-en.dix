@@ -297,6 +297,8 @@
 
 
     <!-- Pronouns -->
+
+
 <!-- everything is big   -> ĉio estas granda  -->
 <e>       <p><l>ĉio<s n="prn"/><s n="tn"/></l>         <r>everything<s n="prn"/><s n="tn"/></r></p></e>
 <!-- each has its own house   -> ĉiu havas ĝian propran domon  -->
@@ -315,40 +317,50 @@
 
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everybody<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everyone<s n="prn"/><s n="tn"/></r></p></e>
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anybody<s n="prn"/><s n="tn"/></r></p></e>
-<!-- Already is <e><l>ĉiu<prn><tn></l><r>each<prn><tn></r></e>-->
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
 
-<!-- hmmm xxxxxxxxxxxxxxx hertil -->
+<!-- all are Christians -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<!--
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
--->
 
+<!-- all houses, all the houses  -->
+<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
+<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
+
+
+<!-- anybody can be sad  → iu ajn povas esti malĝoja -->   
+<e><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>         <r>anybody<s n="prn"/><s n="tn"/></r></p></e>
+
+<!-- does anyone understand  → cxu iu ajn komprenas? -->   
+<e><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>         <r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
+
+<!-- anyone can be sad  → iu ajn povas esti malĝoja -->   
+<e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>         <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
+
+
+<!-- var før:
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<!-- Already is <e><l>ĉiu<prn><tn><pl></l><r>all<prn><tn><sp></r></e>-->
-<e i="yes"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+-->
+<!-- it can be any of them → povas esti kiu ajn de ili -->
+<e r="RL"><p><l>kiu<b/>ajn<s n="prn"/><s n="tn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
+<e c="frases interrogatives" i="yes"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
 
+
+<!--
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<!-- Already is <e r="LR"><l>ĉiu<prn><tn><sg></l><r>any<prn><tn><sp></r></e>-->
 <e i="yes"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
-<!-- Already is <e><l>ĉiu<prn><tn><pl></l><r>all<prn><tn><sp></r></e>-->
 <e i="yes"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>either<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+-->
 
 
-<e r="LR"><p><l>io<s n="prn"/><s n="tn"/><s n="f"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
 <e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
-<e>       <p><l>iu<s n="prn"/><s n="tn"/><s n="m"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
 <e>       <p><l>iu<s n="prn"/></l>                     <r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
+
+<e r="LR"><p><l>io<s n="prn"/><s n="tn"/><s n="f"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
+<e>       <p><l>iu<s n="prn"/><s n="tn"/><s n="m"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
 <e r="RL"><p><l>iu<s n="prn"/></l>                     <r>somebody<s n="prn"/></r></p></e>
 <e r="RL"><p><l>iu<s n="prn"/></l>                     <r>someone<s n="prn"/></r></p></e>
 <!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
-<e c="frases interrogatives" i="yes"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
 
 <!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
 <e r="RL"><p><l>iu<s n="prn"/></l>                     <r>some<s n="prn"/></r></p></e>
@@ -436,30 +448,26 @@
 <e>       <p><l>se<s n="cnjadv"/></l>                  <r>if<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĉar<s n="cnjadv"/></l>                 <r>because<s n="cnjadv"/></r></p></e>
 <e>       <p><l>dum<s n="cnjadv"/></l>                 <r>while<s n="cnjadv"/></r></p></e>
-<!-- Already is <e><l>dum<cnjadv></l><r>while<cnjadv></r></e>-->
 <e r="RL"><p><l>dum<s n="cnjadv"/></l>                 <r>whereas<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĝis<s n="cnjadv"/></l>                 <r>until<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kiam<s n="cnjadv"/></l>                <r>when<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kiel<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
-<!-- Already is <e><l>kiam<cnjadv></l><r>when<cnjadv></r></e>-->
-<e i="yes"><p><l>kiam<s n="cnjadv"/></l>               <r>as<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>laŭ<s n="cnjadv"/></l>                 <r>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kondiĉe<b/>ke<s n="cnjadv"/></l>       <r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kontraŭe<s n="cnjadv"/></l>            <r>on<b/>the<b/>contrary<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvankam<s n="cnjadv"/></l>             <r>although<s n="cnjadv"/></r></p></e>
-<!-- Already is <e><l>kvankam<cnjadv></l><r>although<cnjadv></r></e>-->
-<e i="yes"><p><l>kvankam<s n="cnjadv"/></l>            <r>though<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>ekde<s n="cnjadv"/></l>                <r>since<s n="cnjadv"/></r></p></e>
+<e r="RL"><p><l>kvankam<s n="cnjadv"/></l>             <r>though<s n="cnjadv"/></r></p></e>
 
 <e>       <p><l>do<s n="cnjadv"/></l>                  <r>so<s n="cnjadv"/></r></p></e>
 <e>       <p><l>por<b/>ke<s n="cnjadv"/></l>           <r>so<b/>that<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>tiel<b/>ke<s n="cnjadv"/></l>          <r>so<b/>that<s n="cnjadv"/></r></p></e>
 <e>       <p><l>post<b/>kiam<s n="cnjadv"/></l>        <r>after<s n="cnjadv"/></r></p></e>
 <e>       <p><l>antaŭ<b/>ol<s n="cnjadv"/></l>         <r>before<s n="cnjadv"/></r></p></e>
+
 <e>       <p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>since<s n="cnjadv"/></r></p></e>
-<!-- Already is <e><l>pro<b/>tio<b/>ke<cnjadv></l><r>since<cnjadv></r></e>-->
 <e r="RL"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>due<b/>to<b/>the<b/>fact<b/>that<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>pro<b/>tio<b/>ke<s n="cnjadv"/></l>    <r>for<s n="cnjadv"/></r></p></e>
+<e r="LR"><p><l>ekde<s n="cnjadv"/></l>                <r>since<s n="cnjadv"/></r></p></e>
 
 <e r="RL"><p><l>se<s n="cnjadv"/></l>                  <r>provided<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĉu<s n="cnjadv"/></l>                  <r>whether<s n="cnjadv"/></r></p></e>
@@ -495,6 +503,7 @@
 	     after, although, if, unless, so that, and because  -->
 
 <e>       <p><l>kaj<s n="cnjcoo"/></l>                 <r>and<s n="cnjcoo"/></r></p></e>
+
     <!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
 <e>       <p><l>kaj<b/>ankaŭ<s n="cnjcoo"/></l>        <r>and<b/>also<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>sed<b/>ankaŭ<s n="cnjcoo"/></l>        <r>but<b/>also<s n="cnjcoo"/></r></p></e>
@@ -512,12 +521,6 @@
 
     
     <!-- Determiners -->
-
-<!-- all houses -> ĉiuj domoj.  -->
-<!-- Already is <e><l>ĉiu<prn><tn><pl></l><r>all<prn><tn><sp></r></e>-->
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
-<!-- Already is <e><l>ĉiu<prn><tn><pl></l><r>all<prn><tn><sp></r></e>-->
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>la<s n="det"/><s n="def"/></l>         <r>the<s n="det"/><s n="def"/></r></p></e>
 <e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e>
@@ -671,7 +674,7 @@
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>of<s n="pr"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>by<s n="pr"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>from<s n="pr"/></r></p></e>
-<e r="RL"><p><l>de<s n="pr"/></l>                      <r>since<s n="pr"/></r></p></e>
+<e c="since 1910"><p><l>ekde<s n="pr"/></l>            <r>since<s n="pr"/></r></p></e>
 <e r="RL" c="MG: He fell off his chair"><p><l>de<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
 
 <e>       <p><l>dum<s n="pr"/></l>                     <r>during<s n="pr"/></r></p></e>

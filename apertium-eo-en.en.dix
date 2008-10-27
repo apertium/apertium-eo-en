@@ -13157,7 +13157,9 @@
     <e lm="either"><i>either</i><par n="another__det"/></e>
     <e lm="either"><i>either</i><par n="maybe__adv"/></e>
     <e lm="either"><i>either</i><par n="and__cnjcoo"/></e>
+<!-- removed Jacob 27oct 08 as too many 'either' of class <det> got categorized as <prn>
     <e lm="either"><i>either</i><par n="all__prn"/></e>
+-->
     <e lm="elaborate"><i>elaborat</i><par n="liv/e__vblex"/></e>
     <e lm="elastic"><i>elastic</i><par n="expensive__adj"/></e>
     <e lm="elbow"><i>elbow</i><par n="house__n"/></e>
@@ -16769,8 +16771,9 @@
     <e lm="simultaneously"><i>simultaneously</i><par n="maybe__adv"/></e>
     <e lm="sin"><i>sin</i><par n="house__n"/></e>
     <e lm="sin"><i>sin</i><par n="plan__vblex"/></e>
-<!--    <e lm="since"><i>since</i><par n="maybe__adv"/></e> -->
-    <e lm="since"><i>since</i><par n="at__pr"/></e>
+    <e lm="since"><i>since</i><par n="maybe__adv"/></e>
+    <e lm="since"><i>since</i><par n="at__pr"/></e>    
+    <e lm="since"><i>since</i><par n="after__cnjadv"/></e>
     <e lm="sincere"><i>sincere</i><par n="nice/__adj"/></e>
     <e lm="sincerely"><i>sincerely</i><par n="maybe__adv"/></e>
     <e lm="sincerity"><i>sincerit</i><par n="bab/y__n"/></e>
