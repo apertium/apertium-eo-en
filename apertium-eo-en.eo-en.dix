@@ -341,8 +341,8 @@
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 -->
 <!-- it can be any of them → povas esti kiu ajn de ili -->
-<e r="RL"><p><l>kiu<b/>ajn<s n="prn"/><s n="tn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
-<e c="frases interrogatives" i="yes"><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>iu<s n="prn"/></l><r>any<s n="prn"/><s n="tn"/></r></p></e>
 
 
 <!--
@@ -352,53 +352,45 @@
 -->
 
 
-<e r="RL" c="preguntes, condicional"><p><l>iu<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
-<e>       <p><l>iu<s n="prn"/></l>                     <r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
+<!-- anything can happen -->
+<e><p><l>io<b/>ajn<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
 
-<e r="LR"><p><l>io<s n="prn"/><s n="tn"/><s n="f"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
-<e>       <p><l>iu<s n="prn"/><s n="tn"/><s n="m"/></l><r>something<s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
-<e r="RL"><p><l>iu<s n="prn"/></l>                     <r>somebody<s n="prn"/></r></p></e>
-<e r="RL"><p><l>iu<s n="prn"/></l>                     <r>someone<s n="prn"/></r></p></e>
-<!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
+<e><p><l>io<s n="prn"/><s n="tn"/></l><r>something<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>iu<s n="prn"/></l>                     <r>somebody<s n="prn"/></r></p></e>
+<e><p><l>iu<s n="prn"/></l>                     <r>someone<s n="prn"/></r></p></e>
 
-<!-- Already is <e><l>iu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
-<e r="RL"><p><l>iu<s n="prn"/></l>                     <r>some<s n="prn"/></r></p></e>
+<e><p><l>iu<s n="prn"/></l>                     <r>kelkaj<s n="prn"/></r></p></e>
+
+<e><p><l>ie<s n="prn"/></l>                     <r>somewhere<s n="prn"/></r></p></e>
+<e><p><l>ie<s n="adv"/></l>                     <r>somewhere<s n="adv"/></r></p></e>
 
 
-<e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>       <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
-<e r="RL"><p><l>kiom<s n="prn"/><s n="itg"/></l>       <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l>       <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
+<e><p><l>kiom<s n="prn"/><s n="itg"/></l>       <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
     
 
-<e r="LR"><p><l>kiu<s n="prn"/></l>                    <r>which<s n="prn"/><s n="itg"/><s n="m"/><s n="sp"/></r></p></e>
-<e r="RL"><p><l>kiu<s n="prn"/></l>                    <r>which<b/>one<s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>kiu<s n="prn"/></l>                    <r>which<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+<e><p><l>kiu<b/>el<b/>ili<s n="prn"/></l>                    <r>which<b/>one<s n="prn"/><s n="itg"/><s n="sg"/></r></p></e>
 
-<e r="RL"><p><l>iu<s n="prn"/></l>                     <r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<!-- Already is <e r="RL"><l>iu<prn></l><r>anyone<prn><tn><m><sg></r></e>-->
-<e c="frases negatives" i="yes"><p><l>neniu<s n="prn"/></l><r>anyone<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 
-<!-- Already is <e r="RL"><l>iu<prn><tn></l><r>anything<prn><tn></r></e>-->
-<e c="frases negatives" i="yes"><p><l>nenio<s n="prn"/><s n="tn"/></l><r>anything<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>nenio<s n="prn"/></l>                  <r>nothing<s n="prn"/></r></p></e>
-<e r="LR" c="preguntes i negatives"><p><l>neniu<s n="prn"/></l><r>anybody<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>no<b/>one<s n="prn"/></r></p></e>
-<!-- Already is <e r="LR"><l>neniu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
-<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
-<!-- Already is <e r="LR"><l>neniu<prn></l><r>anybody<prn><tn><m><sg></r></e>-->
-<e i="yes"><p><l>neniu<s n="prn"/></l>                 <r>any<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>neniu<s n="prn"/></l>                  <r>no<b/>one<s n="prn"/></r></p></e>
+
+
+<!-- removed Jacob 27oct 08 as too many 'either' of class <det> got categorized as <prn>
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>either<s n="prn"/></r></p></e>
-<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
+-->
+<e><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
+<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
 
 
 
 <e>       <p><l>tio<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
-<!-- Already is <e><l>tio<prn><tn></l><r>that<prn><tn></r></e>-->
-<e r="RL"><p><l>tiu<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>tiu<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
 
-<e r="LR"><p><l>kiu<s n="prn"/><s n="itg"/></l>        <r>who<s n="prn"/><s n="itg"/></r></p></e>
-<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+<e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>        <r>who<s n="prn"/><s n="itg"/></r></p></e>
 
 <e r="LR"><p><l>kio<s n="prn"/><s n="itg"/></l>        <r>what<s n="prn"/><s n="itg"/></r></p></e>
 <e r="RL"><p><l>kio<s n="prn"/><s n="itg"/><s n="ND"/></l><r>what<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
@@ -628,11 +620,13 @@
 <e>       <p><l>vere<s n="preadv"/></l>                <r>really<s n="preadv"/></r></p></e>
 <e>       <p><l>sufiĉe<s n="preadv"/></l>              <r>pretty<s n="preadv"/></r></p></e>
 <e>       <p><l>pli<s n="preadv"/></l>                 <r>more<s n="preadv"/></r></p></e>
+<e>       <p><l>plej<s n="preadv"/></l>                <r>most<s n="preadv"/></r></p></e>
 <e>       <p><l>tiel<s n="preadv"/></l>                <r>so<s n="preadv"/></r></p></e>
 <!-- Already is <e><l>tiel<preadv></l><r>so<preadv></r></e>-->
 <e r="RL" c="comparacions"><p><l>tiel<s n="preadv"/></l><r>as<s n="preadv"/></r></p></e>
 <e r="RL"><p><l>tiel<s n="preadv"/></l>                <r>just<b/>as<s n="preadv"/></r></p></e>
 <e c="how late? how great, how funny"><p><l>kiom<s n="preadv"/></l><r>how<s n="preadv"/></r></p></e>
+
 
 
 
@@ -1387,7 +1381,8 @@
 
 <e>       <p><l>kiel<s n="adv"/></l>                   <r>how<s n="adv"/></r></p></e>
 <e r="LR"><p><l>kien<s n="adv"/></l>                   <r>where<s n="adv"/></r></p></e>
-<e c="MG: crec que aquesta hauria de ser la traducció ca-en, i les altres dues opciones (non/not) s'haurien de generar al trànsfer segons si és abans d'un nom (non) o després abans d'un verb (not)"><p><l>ne<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
+<!-- c="MG: crec que aquesta hauria de ser la traducció ca-en, i les altres dues opciones (non/not) s'haurien de generar al trànsfer segons si és abans d'un nom (non) o després abans d'un verb (not)" -->
+<e><p><l>ne<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
 <e r="RL" c="MG: davant d'un nom (la no col·laboració : non-collaboration)"><p><l>ne<s n="adv"/></l><r>non<s n="adv"/></r></p></e>
 <e r="RL" c="MG: Després d'un verb (lèxic, modal, do, have)"><p><l>ne<s n="adv"/></l><r>not<s n="adv"/></r></p></e>
 <e>       <p><l>neniam<s n="adv"/></l>                 <r>never<s n="adv"/></r></p></e>
@@ -1396,8 +1391,10 @@
 <e>       <p><l>nur<s n="adv"/></l>                    <r>only<s n="adv"/></r></p></e>
 <e r="RL"><p><l>nur<s n="adv"/></l>                    <r>solely<s n="adv"/></r></p></e>
 
+<!-- c="per al superlatiu: the most interesting - el més interessant, i tb adv normal - what I like most" -->
+<e><p><l>pli<s n="adv"/></l><r>more<s n="adv"/></r></p></e>
+<e><p><l>plej<s n="adv"/></l><r>most<s n="adv"/></r></p></e>
 
-<e r="RL" c="per al superlatiu: the most interesting - el més interessant, i tb adv normal - what I like most"><p><l>pli<s n="adv"/></l><r>most<s n="adv"/></r></p></e>
 <e>       <p><l>preskaŭ<s n="adv"/></l>                <r>practically<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sur<s n="adv"/></l>                    <r>above<s n="adv"/></r></p></e>
 <e>       <p><l>sur<s n="adv"/></l>                    <r>on<s n="adv"/></r></p></e>
