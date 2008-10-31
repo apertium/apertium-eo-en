@@ -5,7 +5,7 @@
       <program name="lt-proc">
         <file name="eo-en.automorf.bin"/>
       </program>
-      <program name="apertium-tagger -g">
+      <program name="apertium-tagger -g $2">
         <file name="eo-en.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -39,7 +39,7 @@
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
       </program>
-      <program name="apertium-tagger -g">
+      <program name="apertium-tagger -g $2">
         <file name="en-eo.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
