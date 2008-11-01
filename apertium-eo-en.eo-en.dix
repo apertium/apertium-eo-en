@@ -104,6 +104,7 @@
     <sdef n="pp" /> 
     <sdef n="acr" /> 
     <sdef n="pr" /> 
+    <sdef n="nom" /> 
   </sdefs>
   <pardefs>
     <pardef n="MF_GD">
@@ -1264,19 +1265,40 @@
 
 
 
-<!-- comparatives. CHECK -->
-<e r="RL"><p><l>pli<s n="adv"/></l>                    <r>best<s n="adv"/></r></p></e>
-<e r="RL"><p><l>pli<s n="adv"/></l>                    <r>else<s n="adv"/></r></p></e>
+<!-- if it is not prevented by something else.   
+     Aristotle reasoned that man must have a function uncommon to anything else 
+     It is unclear whether or not the strikers or anyone else will return to save him.
+     dynamic dialogue above all else.
+     if all else fails
+     Sartre doubts that Abraham can know that the voice he hears is really the voice of his God and not of someone else
+     -->
+<e r="RL"><p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l>  <r>else<s n="adv"/></r></p></e>
 
-<e>       <p><l>plej<b/>bona><s n="adj"/></l>          <r>best<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-<e r="RL" c="MG: cal fer regla ca-en per al superlatiu"><p><l>plej<b/>bona><s n="adj"/></l><r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
-<e>       <p><l>plej<b/>granda<s n="adj"/></l>         <r>great<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-<e i="yes"><p><l>plej<b/>granda<s n="adj"/></l>        <r>main<s n="adj"/></r></p></e>
+
+<!-- comparatives. -->
+
+
+<!-- xxx JN: Hmm?? Bruges ikke lige nu
+<e>       <p><l>plej<b/>bona<s n="adj"/></l>           <r>best<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+-->
+
+
+<e>       <p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/><s n="sint"/></r></p></e>
+
+<!-- These RUINS the translations!
 <e>       <p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+<e>       <p><l>plej<b/>bone<s n="adv"/></l>           <r>best<s n="adv"/></r></p></e>
 <e r="RL"><p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 <e>       <p><l>plej<b/>malgranda<s n="adj"/></l>      <r>lesser<s n="adj"/></r></p></e>
 <e r="RL"><p><l>plej<b/>malgranda<s n="adj"/></l>      <r>minor<s n="adj"/></r></p></e>
 
+<e>       <p><l>pli bona<s n="adj"/></l>               <r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+<e c="MG: cal fer regla ca-en per al superlatiu" i="yes"><p><l>pli bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
+
+-->
 
 
 
@@ -14458,7 +14480,7 @@
 
 <e r="RL"><p><l>bone<s n="adv"/></l>                   <r>all<b/>right<s n="adv"/></r></p></e>
 <e>       <p><l>ĉe<b/>la<b/>fronto<s n="adv"/></l>     <r>in<b/>command<s n="adv"/></r></p></e>
-<e r="RL"><p><l>ĉefe<s n="adv"/></l>                   <r>above<b/>all<s n="adv"/></r></p></e>
+<e>       <p><l>antaŭ<b/>ĉio<s n="adv"/></l>           <r>above<b/>all<s n="adv"/></r></p></e>
 <!-- Already is <e><l>ĉiaokaze<adv></l><r>regardless<adv></r></e>-->
 <e r="RL"><p><l>ĉiaokaze<s n="adv"/></l>               <r>just<b/>in<b/>case<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiufoje<b/>pli<s n="adv"/></l>         <r>increasingly<s n="adv"/></r></p></e>
@@ -17887,12 +17909,6 @@
 <e r="RL"><p><l>glata<s n="adj"/></l>                  <r>smooth<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>amuza<s n="adj"/></l>                  <r>funny<s n="adj"/><s n="sint"/></r></p></e>
 
-<!-- Already is <e><l>granda<adj></l><r>great<adj></r></e>-->
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/><s n="sint"/></r></p></e>
-<!-- Already is <e><l>granda<adj></l><r>great<adj></r></e>-->
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/><s n="sint"/></r></p></e>
 
 <!-- Already is <e><l>grandioza<adj></l><r>splendid<adj></r></e>-->
 <e i="yes"><p><l>grandioza<s n="adj"/></l>             <r>magnificent<s n="adj"/></r></p></e>
@@ -18286,8 +18302,6 @@
 <e r="LR"><p><l>pla<s n="adj"/></l>                    <r>complementary<s n="adj"/></r></p></e>
 <!-- Already is <e><l>plena<adj></l><r>full<adj></r></e>-->
 <e r="RL"><p><l>plena<s n="adj"/></l>                  <r>full<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>pli bona<s n="adj"/></l>               <r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-<e c="MG: cal fer regla ca-en per al superlatiu" i="yes"><p><l>pli bona<s n="adj"/></l><r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 <!-- Already is <e><l>suplementa<adj></l><r>additional<adj></r></e>-->
 <e r="LR"><p><l>plia<s n="adj"/></l>                   <r>additional<s n="adj"/></r></p></e>
 <!-- Already is <e r="RL"><l>sinsekva<adj></l><r>successive<adj></r></e> <e r="LR"><l>plua<adj></l><r>additional<adj></r></e>-->
