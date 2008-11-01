@@ -1,4 +1,4 @@
-package apertium_eo_en;
+package apertium_eo_en.malnova;
 
 public class GenerateNumbersForBidix {
     public static void mainx(String[] args) {

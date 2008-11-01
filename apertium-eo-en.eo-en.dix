@@ -598,12 +598,8 @@
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>too<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 
-<e r="RL"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-<e r="RL"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 <e r="LR"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-<!-- Already is <e r="LR"><l>tiom<b/>da<det><qnt></l><r>so<b/>much<det><qnt></r></e>-->
-<e i="yes"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
-<e r="RL"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>as<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 
 
 <e>       <p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
@@ -23271,45 +23267,12 @@
 
 
 
-<!-- Already is <e><l>premii<vblex></l><r>award<vblex></r></e>-->
-<e i="yes"><p><l>premii<s n="vblex"/></l>              <r>award<s n="vblex"/></r></p></e>
-<!-- Already is <e r="RL"><l>komenci<vblex></l><r>begin<vblex></r></e>-->
-<e i="yes"><p><l>komenci<s n="vblex"/></l>             <r>begin<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>kulpigi<vblex></l><r>blame<vblex></r></e>-->
-<e r="LR"><p><l>kulpi<s n="vblex"/></l>                <r>blame<s n="vblex"/></r></p></e>
 <e>       <p><l>blindi<s n="vblex"/></l>               <r>blind<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>rompi<vblex></l><r>break<vblex></r></e>-->
-<e i="yes"><p><l>rompi<s n="vblex"/></l>               <r>break<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>breĉi<vblex></l><r>breach<vblex></r></e>-->
-<e i="yes"><p><l>rompi<s n="vblex"/></l>               <r>breach<s n="vblex"/></r></p></e>
-<!-- Already is <e r="RL"><l>ektuŝi<vblex></l><r>brush<vblex></r></e>-->
-<e i="yes"><p><l>tuŝeti<s n="vblex"/></l>              <r>brush<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>ŝarĝi<vblex></l><r>burden<vblex></r></e> <e r="LR"><l>pezigi<vblex></l><r>burden<vblex></r></e>-->
-<e i="yes"><p><l>pezigi<s n="vblex"/></l>              <r>burden<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>eksplodi<vblex></l><r>burst<vblex></r></e>-->
-<e i="yes"><p><l>eksplodi<s n="vblex"/></l>            <r>burst<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>voki<vblex></l><r>call<vblex></r></e>-->
-<e i="yes"><p><l>voki<s n="vblex"/></l>                <r>call<s n="vblex"/></r></p></e>
+
 <!-- Already is <e><l>prizorgadi<vblex></l><r>care<vblex></r></e>-->
 <e i="yes"><p><l>flegi<s n="vblex"/></l>               <r>care<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>kompaktigi<vblex></l><r>compact<vblex></r></e>-->
-<e r="LR"><p><l>kompakti<s n="vblex"/></l>             <r>compact<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>kontrakti<vblex></l><r>contract<vblex></r></e>-->
-<e i="yes"><p><l>kontrakti<s n="vblex"/></l>           <r>contract<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>kovri<vblex></l><r>cover<vblex></r></e>-->
-<e r="LR"><p><l>konvri<s n="vblex"/></l>               <r>cover<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>transiri<vblex></l><r>cross<vblex></r></e>-->
-<e r="LR"><p><l>krucmui<s n="vblex"/></l>              <r>cross<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>tranĉi<vblex></l><r>cut<vblex></r></e>-->
-<e i="yes"><p><l>tranĉi<s n="vblex"/></l>              <r>cut<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>difekti<vblex></l><r>damage<vblex></r></e>-->
-<e r="LR"><p><l>difeki<s n="vblex"/></l>               <r>damage<s n="vblex"/></r></p></e>
 <!-- Already is <e><l>puni<vblex></l><r>discipline<vblex></r></e>-->
 <e r="LR"><p><l>disciplini<s n="vblex"/></l>           <r>discipline<s n="vblex"/></r></p></e>
-<!-- Already is <e><l>rabati<vblex></l><r>discount<vblex></r></e>-->
-<e i="yes"><p><l>rabati<s n="vblex"/></l>              <r>discount<s n="vblex"/></r></p></e>
-<!-- Already is <e r="RL"><l>malestimi<vblex></l><r>disdain<vblex></r></e>-->
-<e i="yes"><p><l>malestimi<s n="vblex"/></l>           <r>disdain<s n="vblex"/></r></p></e>
 <!-- Already is <e><l>narkoti<vblex></l><r>drug<vblex></r></e> <e r="LR"><l>drogi<vblex></l><r>drug<vblex></r></e>-->
 <e i="yes"><p><l>drogi<s n="vblex"/></l>               <r>drug<s n="vblex"/></r></p></e>
 <!-- Already is <e><l>senkulpigi<vblex></l><r>excuse<vblex></r></e>-->
@@ -23399,8 +23362,6 @@
 <e>       <p><l>fermo<s n="n"/></l>                    <r>closing<s n="n"/></r></p></e>
 <e>       <p><l>ferma<s n="adj"/></l>                  <r>closed<s n="adj"/></r></p></e>
 
-
-<!-- Already is <e r="LR"><l>kvalifiki<vblex></l><r>classify<vblex></r></e>-->
 <e r="RL"><p><l>kvalifiki<s n="vblex"/></l>            <r>zone<s n="vblex"/></r></p></e>
  
 
