@@ -2,7 +2,7 @@
 <!--
 	Dictionary:
 	Sections: 1
-	Entries: 17208
+	Entries: 17202
 	Sdefs: 94
 	Paradigms: 1
 
@@ -136,7 +136,7 @@
 
 	<!--Números i signes puntuació -->
 <e>       <p><l>-<s n="guio"/></l>                     <r>-<s n="guio"/></r></p></e>
-<e>       <p><l>,<s n="cm"/></l>                       <r>,<s n="cm"/></r></p></e>
+<e>       <p><l>,<s n="cm"/></l>                      <r>,<s n="cm"/></r></p></e>
 <e>       <re>[.\?;:!]</re><p><l><s n="sent"/></l>     <r><s n="sent"/></r></p></e>
 <e>       <re>[¿¡]</re><p><l><s n="lquest"/></l>       <r><s n="lquest"/></r></p></e>
 <e>       <re>[\(\[]</re><p><l><s n="lpar"/></l>       <r><s n="lpar"/></r></p></e>
@@ -599,7 +599,8 @@
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 
 <e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-<e r="LR"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+<!-- Already is <e><l>tiom<b/>da<det><qnt></l><r>so<b/>much<det><qnt></r></e>-->
+<e i="yes"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 
 
 <e>       <p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
@@ -1317,7 +1318,7 @@
 <e>       <p><l>malsupren<s n="adv"/></l>              <r>down<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiam<s n="adv"/></l>                   <r>always<s n="adv"/></r></p></e>
 <e r="LR"><p><l>jen<s n="adv"/></l>                    <r>here<s n="adv"/></r></p></e>
-<e r="LR"><p><l>eĉ<s n="adv"/></l>                     <r>even<s n="adv"/></r></p></e>
+<e>       <p><l>eĉ<s n="adv"/></l>                     <r>even<s n="adv"/></r></p></e>
 <e r="LR"><p><l>enen<s n="adv"/></l>                   <r>inside<s n="adv"/></r></p></e>
 <e>       <p><l>for<s n="adv"/></l>                    <r>far<s n="adv"/></r></p></e>
 <e r="RL"><p><l>iom<s n="adv"/></l>                    <r>mildly<s n="adv"/></r></p></e>
@@ -1378,7 +1379,7 @@
     <!-- frases negatives -->
 <e>       <p><l>ankoraŭ<s n="adv"/></l>                <r>yet<s n="adv"/></r></p></e>
     <!-- frases afirmatives i interrogatives -->
-<e i="yes"><p><l>ankoraŭ<s n="adv"/></l>               <r>still<s n="adv"/></r></p></e>
+<e r="RL"><p><l>ankoraŭ<s n="adv"/></l>                <r>still<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>ahead<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>forth<s n="adv"/></r></p></e>
 <e>       <p><l>apenaŭ<s n="adv"/></l>                 <r>barely<s n="adv"/></r></p></e>
@@ -1536,7 +1537,8 @@
 <e r="LR"><p><l>klopodado<s n="n"/></l>                <r>action<s n="n"/></r></p></e>
 <e>       <p><l>aktiva<s n="adj"/></l>                 <r>active<s n="adj"/></r></p></e>
 <e>       <p><l>aktive<s n="adv"/></l>                 <r>actively<s n="adv"/></r></p></e>
-<e>       <p><l>agado<s n="n"/></l>                    <r>activity<s n="n"/></r></p></e>
+<!-- Already is <e><l>aktiveco<n></l><r>activity<n></r></e>-->
+<e r="LR"><p><l>agado<s n="n"/></l>                    <r>activity<s n="n"/></r></p></e>
 <e r="LR"><p><l>aktivado<s n="n"/></l>                 <r>activity<s n="n"/></r></p></e>
 <e r="LR"><p><l>pelado<s n="n"/></l>                   <r>activity<s n="n"/></r></p></e>
 <e r="LR"><p><l>programero<s n="n"/></l>               <r>activity<s n="n"/></r></p></e>
@@ -2584,7 +2586,8 @@
 <e r="LR"><p><l>fuŝi<s n="vblex"/></l>                 <r>blow<s n="vblex"/></r></p></e>
 <e>       <p><l>blua<s n="adj"/></l>                   <r>blue<s n="adj"/></r></p></e>
 <e r="LR"><p><l>lazura<s n="adj"/></l>                 <r>blue<s n="adj"/></r></p></e>
-<e r="RL"><p><l>estraro<s n="n"/></l>                  <r>board<s n="n"/></r></p></e>
+<!-- Already is <e><l>tabulo<n></l><r>board<n></r></e>-->
+<e i="yes"><p><l>estraro<s n="n"/></l>                 <r>board<s n="n"/></r></p></e>
 <e r="LR"><p><l>direktoraro<s n="n"/></l>              <r>board<s n="n"/></r></p></e>
 <e r="LR"><p><l>surŝipiĝi<s n="vblex"/></l>            <r>board<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>sturmi<s n="vblex"/></l>               <r>board<s n="vblex"/></r></p></e>
@@ -6557,7 +6560,7 @@
 <e r="LR"><p><l>ĝentlemano<s n="n"/></l>               <r>gentleman<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝentilulo<s n="n"/></l>                <r>gentleman<s n="n"/></r></p></e>
 <e r="RL"><p><l>vera<s n="adj"/></l>                   <r>genuine<s n="adj"/></r></p></e>
-<e r="RL"><p><l>vere<s n="adv"/></l>                   <r>genuinely<s n="adv"/></r></p></e>
+<e>       <p><l>vere<s n="adv"/></l>                   <r>genuinely<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aŭtentike<s n="adv"/></l>              <r>genuinely<s n="adv"/></r></p></e>
 <e>       <p><l>geografio<s n="n"/></l>                <r>geography<s n="n"/></r></p></e>
 <e>       <p><l>geometrio<s n="n"/></l>                <r>geometry<s n="n"/></r></p></e>
@@ -6713,7 +6716,8 @@
 <e r="LR"><p><l>startokrado<s n="n"/></l>              <r>grid<s n="n"/></r></p></e>
 <e r="RL"><p><l>krado<s n="n"/></l>                    <r>grille<s n="n"/></r></p></e>
 <e>       <p><l>malgaja<s n="adj"/></l>                <r>grim<s n="adj"/></r></p></e>
-<e r="LR"><p><l>malĝoja<s n="adj"/></l>                <r>grim<s n="adj"/></r></p></e>
+<!-- Already is <e><l>malĝoja<adj></l><r>sad<adj></r></e>-->
+<e i="yes"><p><l>malĝoja<s n="adj"/></l>               <r>grim<s n="adj"/></r></p></e>
 <e r="LR"><p><l>neesperiga<s n="adj"/></l>             <r>grim<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pesimisma<s n="adj"/></l>              <r>grim<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malserena<s n="adj"/></l>              <r>grim<s n="adj"/></r></p></e>
@@ -8693,7 +8697,7 @@
 <e>       <p><l>jarmilo<s n="n"/></l>                  <r>millennium<s n="n"/></r></p></e>
 <e>       <p><l>milimetro<s n="n"/></l>                <r>millimeter<s n="n"/></r></p></e>
 <e r="RL"><p><l>milimetro<s n="n"/></l>                <r>millimetre<s n="n"/></r></p></e>
-<e r="RL"><p><l>miliono<s n="n"/></l>                  <r>million<s n="n"/></r></p></e>
+<e>       <p><l>miliono<s n="n"/></l>                  <r>million<s n="n"/></r></p></e>
 <e>       <p><l>milionulo<s n="n"/></l>                <r>millionaire<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>minareto<s n="n"/></l>                 <r>minaret<s n="n"/></r></p></e>
 <e>       <p><l>menso<s n="n"/></l>                    <r>mind<s n="n"/></r></p></e>
@@ -11511,7 +11515,8 @@
 <e r="LR"><p><l>foroferi<s n="vblex"/></l>             <r>sacrifice<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>oferbuĉi<s n="vblex"/></l>             <r>sacrifice<s n="vblex"/></r></p></e>
 <e>       <p><l>oferi<s n="vblex"/></l>                <r>sacrifice<s n="vblex"/></r></p></e>
-<e>       <p><l>malfeliĉa<s n="adj"/></l>              <r>sad<s n="adj"/></r></p></e>
+<!-- Already is <e><l>malĝoja<adj></l><r>sad<adj></r></e>-->
+<e r="LR"><p><l>malfeliĉa<s n="adj"/></l>              <r>sad<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malĝojigi<s n="vblex"/></l>            <r>sadden<s n="vblex"/></r></p></e>
 <e>       <p><l>malfeliĉi<s n="vblex"/></l>            <r>sadden<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>malfeliĉigi<s n="vblex"/></l>          <r>sadden<s n="vblex"/></r></p></e>
@@ -12997,7 +13002,8 @@
 <e>       <p><l>tablo<s n="n"/></l>                    <r>table<s n="n"/></r></p></e>
 <e>       <p><l>tablojdo<s n="n"/></l>                 <r>tablet<s n="n"/></r></p></e>
 <e r="LR"><p><l>tabuleto<s n="n"/></l>                 <r>tablet<s n="n"/></r></p></e>
-<e r="LR"><p><l>tabulo<s n="n"/></l>                   <r>tablet<s n="n"/></r></p></e>
+<!-- Already is <e><l>tabulo<n></l><r>board<n></r></e>-->
+<e i="yes"><p><l>tabulo<s n="n"/></l>                  <r>tablet<s n="n"/></r></p></e>
 <e r="RL"><p><l>pritrakti<s n="vblex"/></l>            <r>tackle<s n="vblex"/></r></p></e>
 <e>       <p><l>vosto<s n="n"/></l>                    <r>tail<s n="n"/></r></p></e>
 <e r="LR"><p><l>empeno<s n="n"/></l>                   <r>tail<s n="n"/></r></p></e>
@@ -13191,7 +13197,7 @@
 <e>       <p><l>terapio<s n="n"/></l>                  <r>therapy<s n="n"/></r></p></e>
 <e r="LR"><p><l>kuracado<s n="n"/></l>                 <r>therapy<s n="n"/></r></p></e>
 <e r="RL"><p><l>poste<s n="adv"/></l>                  <r>thereafter<s n="adv"/></r></p></e>
-<e r="RL"><p><l>sekve<s n="adv"/></l>                  <r>therefore<s n="adv"/></r></p></e>
+<e>       <p><l>sekve<s n="adv"/></l>                  <r>therefore<s n="adv"/></r></p></e>
 <e>       <p><l>termika<s n="adj"/></l>                <r>thermal<s n="adj"/></r></p></e>
 <e>       <p><l>termometro<s n="n"/></l>               <r>thermometer<s n="n"/></r></p></e>
 <e>       <p><l>tezo<s n="n"/></l>                     <r>thesis<s n="n"/></r></p></e>
@@ -17683,7 +17689,8 @@
 <e r="LR"><p><l>adversa<s n="adj"/></l>                <r>adverse<s n="adj"/></r></p></e>
 <!-- Already is <e r="LR"><l>afabla<adj></l><r>civil<adj></r></e>-->
 <e r="RL"><p><l>afabla<s n="adj"/></l>                 <r>genial<s n="adj"/></r></p></e>
-<e>       <p><l>afabla<s n="adj"/><s n="mf"/></l>      <r>kind<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>afabla<adj></l><r>civil<adj></r></e>-->
+<e r="RL"><p><l>afabla<s n="adj"/></l>                 <r>kind<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>agrara<adj></l><r>agricultural<adj></r></e>-->
 <e r="LR"><p><l>agrokultura<s n="adj"/></l>            <r>agricultural<s n="adj"/></r></p></e>
 <!-- Already is <e><l>akuta<adj></l><r>acute<adj></r></e>-->
@@ -17735,7 +17742,8 @@
 <e i="yes"><p><l>bagatela<s n="adj"/></l>              <r>marginal<s n="adj"/></r></p></e>
 <!-- Already is <e><l>triviala<adj></l><r>trivial<adj></r></e> <e><l>banala<adj></l><r>platitudinous<adj></r></e>-->
 <e i="yes"><p><l>banala<s n="adj"/></l>                <r>trivial<s n="adj"/></r></p></e>
-<e>       <p><l>brila<s n="adj"/><s n="mf"/></l>       <r>shiny<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>brila<adj></l><r>bright<adj></r></e>-->
+<e r="RL"><p><l>brila<s n="adj"/></l>                  <r>shiny<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="LR"><l>buŝa<adj></l><r>oral<adj></r></e>-->
 <e r="RL"><p><l>buŝa<s n="adj"/></l>                   <r>buccal<s n="adj"/></r></p></e>
 <e r="RL"><p><l>centra<s n="adj"/></l>                 <r>centre<s n="adj"/></r></p></e>
@@ -17774,7 +17782,8 @@
 <e>       <p><l>diversa<s n="adj"/></l>                <r>diverse<s n="adj"/></r></p></e>
 <!-- Already is <e><l>nekonstanta<adj></l><r>varied<adj></r></e>-->
 <e i="yes"><p><l>diversa<s n="adj"/></l>               <r>varied<s n="adj"/></r></p></e>
-<e>       <p><l>dolĉa<s n="adj"/><s n="mf"/></l>       <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>dolĉa<adj></l><r>sweet<adj></r></e>-->
+<e r="RL"><p><l>dolĉa<s n="adj"/></l>                  <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="RL"><l>matura<adj></l><r>mellow<adj></r></e> <e><l>dolĉa<adj></l><r>sweet<adj></r></e>-->
 <e i="yes"><p><l>dolĉa<s n="adj"/></l>                 <r>mellow<s n="adj"/></r></p></e>
 <!-- Already is <e r="RL"><l>treega<adj></l><r>drastic<adj></r></e> <e r="LR"><l>drasta<adj></l><r>dramatic<adj></r></e>-->
@@ -17819,7 +17828,8 @@
 <e r="LR"><p><l>fa<s n="adj"/></l>                     <r>shameful<s n="adj"/></r></p></e>
 <!-- Already is <e><l>grandega<adj></l><r>terrific<adj></r></e>-->
 <e r="LR"><p><l>fabela<s n="adj"/></l>                 <r>terrific<s n="adj"/></r></p></e>
-<e>       <p><l>facila<s n="adj"/><s n="mf"/></l>      <r>easy<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>facila<adj></l><r>easy<adj></r></e>-->
+<e r="RL"><p><l>facila<s n="adj"/></l>                 <r>easy<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="LR"><l>fajna<adj></l><r>fine<adj></r></e>-->
 <e r="RL"><p><l>fajna<s n="adj"/></l>                  <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>faldebla<s n="adj"/></l>               <r>collapsible<s n="adj"/></r></p></e>
@@ -17833,18 +17843,19 @@
 <!-- Already is <e r="RL"><l>gaja<adj></l><r>glad<adj></r></e> <e><l>feliĉa<adj></l><r>happy<adj></r></e>-->
 <e i="yes"><p><l>feliĉa<s n="adj"/></l>                <r>glad<s n="adj"/></r></p></e>
 <e r="RL"><p><l>feliĉa<s n="adj"/></l>                 <r>happy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>feliĉa<s n="adj"/><s n="mf"/></l>      <r>happy<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>furioze<s n="adj"/></l>                <r>fierce<s n="adj"/></r></p></e>
 <!-- Already is <e><l>fiera<adj></l><r>proud<adj></r></e>-->
 <e r="RL"><p><l>fiera<s n="adj"/></l>                  <r>proud<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>fiksa<s n="adj"/></l>                  <r>fixed<s n="adj"/></r></p></e>
-<e>       <p><l>firma<s n="adj"/><s n="mf"/></l>       <r>firm<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>firma<adj></l><r>firm<adj></r></e>-->
+<e r="RL"><p><l>firma<s n="adj"/></l>                  <r>firm<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>latera<adj></l><r>lateral<adj></r></e> <e r="LR"><l>flanka<adj></l><r>marginal<adj></r></e>-->
 <e i="yes"><p><l>flanka<s n="adj"/></l>                <r>lateral<s n="adj"/></r></p></e>
 <!-- Already is <e><l>flava<adj></l><r>yellow<adj></r></e>-->
 <e r="RL"><p><l>flava<s n="adj"/></l>                  <r>yellow<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR" c="check"><p><l>fluanta<s n="adj"/></l>      <r>common<s n="adj"/></r></p></e>
-<e>       <p><l>forta<s n="adj"/><s n="mf"/></l>       <r>strong<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>forta<adj></l><r>strong<adj></r></e>-->
+<e r="RL"><p><l>forta<s n="adj"/></l>                  <r>strong<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>fotografia<adj></l><r>photographic<adj></r></e>-->
 <e r="LR"><p><l>fotografa<s n="adj"/></l>              <r>photographic<s n="adj"/></r></p></e>
 <!-- Already is <e r="LR"><l>fragila<adj></l><r>fragile<adj></r></e>-->
@@ -17864,7 +17875,8 @@
 <e r="LR"><p><l>futura<s n="adj"/></l>                 <r>future<s n="adj"/></r></p></e>
 <!-- Already is <e><l>bonhumora<adj></l><r>cheerful<adj></r></e>-->
 <e i="yes"><p><l>gaja<s n="adj"/></l>                  <r>cheerful<s n="adj"/></r></p></e>
-<e>       <p><l>gaja<s n="adj"/><s n="mf"/></l>        <r>merry<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>gaja<adj></l><r>merry<adj></r></e>-->
+<e r="RL"><p><l>gaja<s n="adj"/></l>                   <r>merry<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>festa<adj></l><r>festive<adj></r></e> <e><l>gaja<adj></l><r>merry<adj></r></e>-->
 <e i="yes"><p><l>gaja<s n="adj"/></l>                  <r>festive<s n="adj"/></r></p></e>
 <e>       <p><l>geedza<s n="adj"/></l>                 <r>conjugal<s n="adj"/></r></p></e>
@@ -17875,7 +17887,8 @@
 <e r="RL"><p><l>glata<s n="adj"/></l>                  <r>smooth<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>amuza<s n="adj"/></l>                  <r>funny<s n="adj"/><s n="sint"/></r></p></e>
 
-<e>       <p><l>granda<s n="adj"/><s n="mf"/></l>      <r>big<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>granda<adj></l><r>great<adj></r></e>-->
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>granda<adj></l><r>great<adj></r></e>-->
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/><s n="sint"/></r></p></e>
@@ -17883,11 +17896,13 @@
 
 <!-- Already is <e><l>grandioza<adj></l><r>splendid<adj></r></e>-->
 <e i="yes"><p><l>grandioza<s n="adj"/></l>             <r>magnificent<s n="adj"/></r></p></e>
-<e>       <p><l>grava<s n="adj"/><s n="mf"/></l>       <r>grave<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>grava<adj></l><r>major<adj></r></e>-->
+<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>grave<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>grava<adj></l><r>major<adj></r></e>-->
 <e i="yes"><p><l>grava<s n="adj"/></l>                 <r>severe<s n="adj"/></r></p></e>
-<e>       <p><l>griza<s n="adj"/><s n="mf"/></l>       <r>gray<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>griza<s n="adj"/><s n="mf"/></l>       <r>grey<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>griza<adj></l><r>gray<adj></r></e>-->
+<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>gray<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>grey<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>plurvalenta<adj></l><r>polyvalent<adj></r></e>-->
 <e r="LR"><p><l>ĝeneralvalida<s n="adj"/></l>          <r>polyvalent<s n="adj"/></r></p></e>
 <!-- Already is <e r="RL"><l>radikala<adj></l><r>radical<adj></r></e>-->
@@ -17909,7 +17924,8 @@
 <e r="LR"><p><l>hida<s n="adj"/></l>                   <r>horrible<s n="adj"/></r></p></e>
 <!-- Already is <e><l>homa<adj></l><r>human<adj></r></e>-->
 <e i="yes"><p><l>humana<s n="adj"/></l>                <r>human<s n="adj"/></r></p></e>
-<e>       <p><l>humila<s n="adj"/><s n="mf"/></l>      <r>humble<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>humila<adj></l><r>humble<adj></r></e>-->
+<e r="RL"><p><l>humila<s n="adj"/></l>                 <r>humble<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>kemia<adj></l><r>chemical<adj></r></e>-->
 <e r="LR"><p><l>ĥemia<s n="adj"/></l>                  <r>chemical<s n="adj"/></r></p></e>
 <!-- Already is <e><l>implica<adj></l><r>implicit<adj></r></e>-->
@@ -17943,7 +17959,8 @@
 <!-- Already is <e><l>kapabla<adj></l><r>capable<adj></r></e>-->
 <e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>apt<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>fit<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>kapabla<s n="adj"/><s n="mf"/></l>     <r>able<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>kapabla<adj></l><r>capable<adj></r></e>-->
+<e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>able<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>nevidata<adj></l><r>unseen<adj></r></e> <e r="LR"><l>kaŝita<adj></l><r>secret<adj></r></e>-->
 <e i="yes"><p><l>kaŝita<s n="adj"/></l>                <r>unseen<s n="adj"/></r></p></e>
 <!-- Already is <e><l>primitiva<adj></l><r>primitive<adj></r></e>-->
@@ -17977,10 +17994,10 @@
 <e r="RL"><p><l>kruda<s n="adj"/></l>                  <r>raw<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>senkompata<adj></l><r>ruthless<adj></r></e>-->
 <e i="yes"><p><l>kruela<s n="adj"/></l>                <r>ruthless<s n="adj"/></r></p></e>
-<e>       <p><l>kulpa<s n="adj"/><s n="mf"/></l>       <r>guilty<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>kulpa<adj></l><r>guilty<adj></r></e>-->
+<e r="RL"><p><l>kulpa<s n="adj"/></l>                  <r>guilty<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>kuraĝa<adj></l><r>brave<adj></r></e>-->
 <e r="RL"><p><l>kuraĝa<s n="adj"/></l>                 <r>brave<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>kuraĝa<s n="adj"/><s n="mf"/></l>      <r>brave<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>kvalifika<adj></l><r>qualified<adj></r></e>-->
 <e r="LR"><p><l>kvalifikita<s n="adj"/></l>            <r>qualified<s n="adj"/></r></p></e>
 <!-- Already is <e><l>obeema<adj></l><r>docile<adj></r></e> <e><l>kvieta<adj></l><r>quiet<adj></r></e>-->
@@ -18040,17 +18057,18 @@
 <e i="yes"><p><l>malĉefa<s n="adj"/></l>               <r>secondary<s n="adj"/></r></p></e>
 <!-- Already is <e><l>maldekstra<adj></l><r>left-hand<adj></r></e>-->
 <e r="RL" c="check"><p><l>maldekstra<s n="adj"/></l>   <r>left<s n="adj"/></r></p></e>
-<e r="LR"><p><l>maldelikata<s n="adj"/><s n="mf"/></l> <r>earthy<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>maldelikata<adj></l><r>vulgar<adj></r></e>-->
+<e i="yes"><p><l>maldelikata<s n="adj"/></l>           <r>earthy<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>maldesktramana<s n="adj"/></l>         <r>left-handed<s n="adj"/></r></p></e>
 <!-- Already is <e r="LR"><l>maldika<adj></l><r>slim<adj></r></e>-->
 <e r="RL"><p><l>maldika<s n="adj"/></l>                <r>thin<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>malestima<s n="adj"/></l>              <r>pejorative<s n="adj"/></r></p></e>
 <!-- Already is <e><l>malamika<adj></l><r>hostile<adj></r></e> <e><l>malfavora<adj></l><r>adverse<adj></r></e>-->
 <e i="yes"><p><l>malfavora<s n="adj"/></l>             <r>hostile<s n="adj"/></r></p></e>
-<e>       <p><l>malfeliĉa<s n="adj"/><s n="mf"/></l>   <r>unhappy<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>malforta<s n="adj"/><s n="mf"/></l>    <r>feeble<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>malfeliĉa<adj></l><r>sad<adj></r></e>-->
+<e r="RL"><p><l>malfeliĉa<s n="adj"/></l>              <r>unhappy<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>malforta<adj></l><r>weak<adj></r></e>-->
-<e i="yes"><p><l>malforta<s n="adj"/></l>              <r>feeble<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malforta<s n="adj"/></l>               <r>feeble<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>malforta<s n="adj"/></l>               <r>weak<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>malfirma<adj></l><r>precarious<adj></r></e> <e r="LR"><l>malfortika<adj></l><r>feeble<adj></r></e>-->
 <e i="yes"><p><l>malfortika<s n="adj"/></l>            <r>precarious<s n="adj"/></r></p></e>
@@ -18068,7 +18086,7 @@
 <e r="RL"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>mutilita<adj></l><r>garbled<adj></r></e> <e r="LR"><l>malklara<adj></l><r>obscure<adj></r></e>-->
 <e i="yes"><p><l>malklara<s n="adj"/></l>              <r>garbled<s n="adj"/></r></p></e>
-<e i="yes"><p><l>malklara<s n="adj"/></l>              <r>muddy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malklara<s n="adj"/></l>               <r>muddy<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>neoportuna<adj></l><r>awkward<adj></r></e>-->
 <e i="yes"><p><l>malkomforta<s n="adj"/></l>           <r>awkward<s n="adj"/></r></p></e>
 <!-- Already is <e><l>nekomforta<adj></l><r>uncomfortable<adj></r></e>-->
@@ -18116,11 +18134,8 @@
 <e r="RL"><p><l>malrapida<s n="adj"/></l>              <r>slow<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>neregula<adj></l><r>irregular<adj></r></e>-->
 <e r="LR"><p><l>malregula<s n="adj"/></l>              <r>irregular<s n="adj"/></r></p></e>
-<e>       <p><l>malriĉa<s n="adj"/><s n="mf"/></l>     <r>poor<s n="adj"/><s n="sint"/></r></p></e>
-
-<!-- Already is <e><l>malriĉa<adj><mf></l><r>poor<adj><sint></r></e>-->
 <!-- Already is <e><l>malriĉa<adj></l><r>poor<adj></r></e>-->
-<e i="yes"><p><l>malriĉa<s n="adj"/></l>               <r>poor<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malriĉa<s n="adj"/></l>                <r>poor<s n="adj"/><s n="sint"/></r></p></e>
 
 <!-- Already is <e><l>fleksebla<adj></l><r>flexible<adj></r></e> <e r="LR"><l>malrigida<adj></l><r>floppy<adj></r></e>-->
 <e i="yes"><p><l>malrigida<s n="adj"/></l>             <r>flexible<s n="adj"/></r></p></e>
@@ -18149,7 +18164,8 @@
 <!-- Already is <e><l>milda<adj></l><r>gentle<adj></r></e>-->
 <e r="RL"><p><l>milda<s n="adj"/></l>                  <r>gentle<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>milda<s n="adj"/></l>                  <r>mild<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>milda<s n="adj"/><s n="mf"/></l>       <r>soft<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>milda<adj></l><r>gentle<adj></r></e>-->
+<e i="yes"><p><l>milda<s n="adj"/></l>                 <r>soft<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="RL"><l>bela<adj></l><r>marvellous<adj></r></e>-->
 <e i="yes"><p><l>mirinda<s n="adj"/></l>               <r>marvellous<s n="adj"/></r></p></e>
 <!-- Already is <e><l>surpriza<adj></l><r>surprising<adj></r></e>-->
@@ -18194,7 +18210,8 @@
 <!-- Already is <e><l>kontraŭleĝa<adj></l><r>illicit<adj></r></e> <e r="LR"><l>nelica<adj></l><r>illegal<adj></r></e>-->
 <e i="yes"><p><l>nelica<s n="adj"/></l>                <r>illicit<s n="adj"/></r></p></e>
 <e>       <p><l>neoksidebla<s n="adj"/></l>            <r>stainless<s n="adj"/></r></p></e>
-<e r="LR"><p><l>nepara<s n="adj"/><s n="mf"/></l>      <r>odd<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>nepara<adj></l><r>uneven<adj></r></e>-->
+<e i="yes"><p><l>nepara<s n="adj"/></l>                <r>odd<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="LR"><l>nepra<adj></l><r>integral<adj></r></e>-->
 <e i="yes"><p><l>nepra<s n="adj"/></l>                 <r>indispensable<s n="adj"/></r></p></e>
 <!-- Already is <e><l>neevitebla<adj></l><r>inevitable<adj></r></e>-->
@@ -18217,7 +18234,8 @@
 <e r="RL"><p><l>neŭtra<s n="adj"/></l>                 <r>neuter<s n="adj"/></r></p></e>
 <!-- Already is <e><l>neŭtrala<adj></l><r>neutral<adj></r></e>-->
 <e r="LR"><p><l>neŭtra<s n="adj"/></l>                 <r>neutral<s n="adj"/></r></p></e>
-<e>       <p><l>nobla<s n="adj"/><s n="mf"/></l>       <r>noble<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>nobla<adj></l><r>noble<adj></r></e>-->
+<e r="RL"><p><l>nobla<s n="adj"/></l>                  <r>noble<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="RL"><l>ordinara<adj></l><r>ordinary<adj></r></e>-->
 <e i="yes"><p><l>normala<s n="adj"/></l>               <r>ordinary<s n="adj"/></r></p></e>
 <e>       <p><l>notaria<s n="adj"/></l>                <r>notarial<s n="adj"/></r></p></e>
@@ -18291,7 +18309,7 @@
 <!-- Already is <e><l>produktiva<adj></l><r>productive<adj></r></e>-->
 <e r="LR"><p><l>produktema<s n="adj"/></l>             <r>productive<s n="adj"/></r></p></e>
 <!-- Already is <e><l>profunda<adj></l><r>deep<adj></r></e>-->
-<e i="yes"><p><l>profunda<s n="adj"/></l>              <r>deep<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>profunda<s n="adj"/></l>               <r>deep<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>proksima<s n="adj"/></l>               <r>close<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>proksima<s n="adj"/></l>               <r>near<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="RL"><l>apuda<adj></l><r>nearby<adj></r></e>-->
@@ -18337,7 +18355,7 @@
 <!-- Already is <e><l>ronda<adj></l><r>round<adj></r></e>-->
 <e r="RL"><p><l>ronda<s n="adj"/></l>                  <r>round<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>rozkolora<adj></l><r>pink<adj></r></e>-->
-<e i="yes"><p><l>rozkolora<s n="adj"/></l>             <r>pink<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>rozkolora<s n="adj"/></l>              <r>pink<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>saĝa<adj></l><r>wise<adj></r></e>-->
 <e r="RL"><p><l>saĝa<s n="adj"/></l>                   <r>wise<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>nuntempa<adj></l><r>contemporary<adj></r></e> <e><l>samtempa<adj></l><r>simultaneous<adj></r></e>-->
@@ -18345,7 +18363,7 @@
 <!-- Already is <e><l>sana<adj></l><r>healthy<adj></r></e>-->
 <e r="RL"><p><l>sana<s n="adj"/></l>                   <r>healthy<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>sankta<adj></l><r>saint<adj></r></e>-->
-<e i="yes"><p><l>sankta<s n="adj"/></l>                <r>holy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>sankta<s n="adj"/></l>                 <r>holy<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>seka<adj></l><r>dry<adj></r></e>-->
 <e r="RL"><p><l>seka<s n="adj"/></l>                   <r>dry<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="RL"><l>ĉiutaga<adj></l><r>mundane<adj></r></e>-->
@@ -18365,7 +18383,8 @@
 <e i="yes"><p><l>senduba<s n="adj"/></l>               <r>unambiguous<s n="adj"/></r></p></e>
 <!-- Already is <e><l>senefika<adj></l><r>ineffective<adj></r></e>-->
 <e r="RL"><p><l>senefika<s n="adj"/></l>               <r>inoperable<s n="adj"/></r></p></e>
-<e>       <p><l>senfrukta<s n="adj"/><s n="mf"/></l>   <r>barren<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>senfrukta<adj></l><r>barren<adj></r></e>-->
+<e r="RL"><p><l>senfrukta<s n="adj"/></l>              <r>barren<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e r="LR"><l>senfrukta<adj></l><r>barren<adj></r></e>-->
 <e i="yes"><p><l>senfrukta<s n="adj"/></l>             <r>arid<s n="adj"/></r></p></e>
 <!-- Already is <e r="LR"><l>senhoma<adj></l><r>empty<adj></r></e>-->
@@ -18402,7 +18421,6 @@
 <e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>plain<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>simple<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>facile<s n="adj"/></r></p></e>
-<e r="LR"><p><l>simpla<s n="adj"/><s n="mf"/></l>      <r>simple<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>honesta<adj></l><r>honest<adj></r></e>-->
 <e i="yes"><p><l>sincera<s n="adj"/></l>               <r>honest<s n="adj"/></r></p></e>
 <!-- Already is <e><l>sincera<adj></l><r>sincere<adj></r></e>-->
@@ -18425,7 +18443,8 @@
 <e r="RL"><p><l>solida<s n="adj"/></l>                 <r>solid<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>melankolia<adj></l><r>melancholic<adj></r></e> <e r="LR"><l>sombra<adj></l><r>dark<adj></r></e>-->
 <e i="yes"><p><l>sombra<s n="adj"/></l>                <r>melancholic<s n="adj"/></r></p></e>
-<e>       <p><l>sovaĝa<s n="adj"/><s n="mf"/></l>      <r>wild<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>sovaĝa<adj></l><r>wild<adj></r></e>-->
+<e r="RL"><p><l>sovaĝa<s n="adj"/></l>                 <r>wild<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>grandioza<adj></l><r>splendid<adj></r></e>-->
 <e r="LR"><p><l>splenda<s n="adj"/></l>                <r>splendid<s n="adj"/></r></p></e>
 <e r="RL"><p><l>sprita<s n="adj"/></l>                 <r>bright<s n="adj"/><s n="sint"/></r></p></e>
@@ -18447,7 +18466,8 @@
 <e>       <p><l>submetata<s n="adj"/></l>              <r>subject<s n="adj"/></r></p></e>
 <!-- Already is <e r="RL"><l>granda<adj></l><r>substantial<adj></r></e> <e r="LR"><l>substanca<adj></l><r>fundamental<adj></r></e>-->
 <e i="yes"><p><l>substanca<s n="adj"/></l>             <r>substantial<s n="adj"/></r></p></e>
-<e>       <p><l>subtila<s n="adj"/><s n="mf"/></l>     <r>subtle<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e><l>subtila<adj></l><r>subtle<adj></r></e>-->
+<e r="RL"><p><l>subtila<s n="adj"/></l>                <r>subtle<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>tutmonda<adj></l><r>global<adj></r></e>-->
 <e r="LR"><p><l>suma<s n="adj"/></l>                   <r>global<s n="adj"/></r></p></e>
 <!-- Already is <e r="RL"><l>pinta<adj></l><r>top<adj></r></e>-->
@@ -18476,7 +18496,8 @@
 <!-- Already is <e><l>malzorgema<adj></l><r>reckless<adj></r></e>-->
 <e r="LR"><p><l>temerara<s n="adj"/></l>               <r>reckless<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tenera<s n="adj"/></l>                 <r>fond<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>tergloba<s n="adj"/><s n="mf"/></l>    <r>earthly<s n="adj"/><s n="sint"/></r></p></e>
+<!-- Already is <e r="LR"><l>tergloba<adj></l><r>global<adj></r></e>-->
+<e r="RL"><p><l>tergloba<s n="adj"/></l>               <r>earthly<s n="adj"/><s n="sint"/></r></p></e>
 <!-- Already is <e><l>timiga<adj></l><r>frightful<adj></r></e> <e><l>terura<adj></l><r>terrible<adj></r></e>-->
 <e i="yes"><p><l>terura<s n="adj"/></l>                <r>frightful<s n="adj"/></r></p></e>
 <!-- Already is <e><l>loka<adj></l><r>local<adj></r></e>-->
