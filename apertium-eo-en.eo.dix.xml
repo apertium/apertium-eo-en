@@ -8013,25 +8013,27 @@
 
   <section id="final" type="inconditional">
 
-	<e><re>[.\?;:!]</re><p>
-		<l></l>
-		<r><s n="sent"/></r>
-	</p></e>
-
-	<e><re>[0-9]+([.,][0-9]+)?</re><p>
-		<l></l>
-		<r><s n="num"/></r>
-	</p></e>
+	<e><p>
+        <l>-</l> 
+        <r>-<s n="guio"/></r> 
+    </p></e>
 
 	<e><p>
 		<l>,</l>
 		<r>,<s n="cm"/></r>
 	</p></e>
 
-    <e><p>
-    	<l>'</l>
-    	<r>'<s n="apos"/></r>
+	<e><re>[.\?;:!]</re><p>
+		<l></l>
+		<r><s n="sent"/></r>
+	</p></e>
+
+
+    <e><re>[¿¡]</re><p>
+    	<l></l>
+    	<r><s n="lquest"/></r>
     </p></e>
+
 
     <e><re>[\(\[]</re><p>
     	<l></l>
@@ -8043,16 +8045,16 @@
     	<r><s n="rpar"/></r>
     </p></e>
 
-    <e><re>[¿¡]</re><p>
-    	<l></l>
-    	<r><s n="lquest"/></r>
+    <e><p>
+    	<l>'</l>
+    	<r>'<s n="apos"/></r>
     </p></e>
 
-	<e><p>
-        <l>-</l> 
-        <r>-<s n="guio"/></r> 
-    </p></e>
 
+	<e><re>[0-9]+([.,][0-9]+)?</re><p>
+		<l></l>
+		<r><s n="num"/></r>
+	</p></e>
 
 
   </section>

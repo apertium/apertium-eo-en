@@ -136,7 +136,7 @@
 
 	<!--Números i signes puntuació -->
 <e>       <p><l>-<s n="guio"/></l>                     <r>-<s n="guio"/></r></p></e>
-<e>       <p><l>,<s n="cm"/></l>                      <r>,<s n="cm"/></r></p></e>
+<e>       <p><l>,<s n="cm"/></l>                       <r>,<s n="cm"/></r></p></e>
 <e>       <re>[.\?;:!]</re><p><l><s n="sent"/></l>     <r><s n="sent"/></r></p></e>
 <e>       <re>[¿¡]</re><p><l><s n="lquest"/></l>       <r><s n="lquest"/></r></p></e>
 <e>       <re>[\(\[]</re><p><l><s n="lpar"/></l>       <r><s n="lpar"/></r></p></e>
@@ -1348,8 +1348,8 @@
 <e>       <p><l>plej<s n="adv"/></l>                   <r>most<s n="adv"/></r></p></e>
 
 <e>       <p><l>preskaŭ<s n="adv"/></l>                <r>practically<s n="adv"/></r></p></e>
-<e r="RL"><p><l>sur<s n="adv"/></l>                    <r>above<s n="adv"/></r></p></e>
 <e>       <p><l>sur<s n="adv"/></l>                    <r>on<s n="adv"/></r></p></e>
+<e r="RL"><p><l>sur<s n="adv"/></l>                    <r>above<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sur<s n="adv"/></l>                    <r>over<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sur<s n="adv"/></l>                    <r>uppermost<s n="adv"/></r></p></e>
 
@@ -20101,12 +20101,13 @@
 <e r="RL"><p><l>aŭdienco<s n="n"/></l>                 <r>high<b/>court<s n="n"/></r></p></e>
 <!-- Already is <e r="LR"><l>centralo<n></l><r>plant<n></r></e>-->
 <e r="RL"><p><l>centralo<s n="n"/></l>                 <r>head<b/>office<s n="n"/></r></p></e>
-<!-- Already is <e><l>terminalo<n></l><r>terminal<n></r></e>-->
+
 <e r="LR"><p><l>fina<b/>stacio<s n="n"/></l>           <r>terminal<s n="n"/></r></p></e>
 <e r="LR"><p><l>juĝa<b/>decido<s n="n"/></l>           <r>judgement<s n="n"/></r></p></e>
-<e i="yes"><p><l>juĝa<b/>decido<s n="n"/></l>          <r>judgment<s n="n"/></r></p></e>
+
 <!-- Already is <e><l>frazo<n></l><r>sentence<n></r></e>-->
 <e c="Jur." i="yes"><p><l>juĝa<b/>decido<s n="n"/></l> <r>sentence<s n="n"/></r></p></e>
+
 <e r="LR"><p><l>reĝa<b/>restadejo<s n="n"/></l>        <r>court<s n="n"/></r></p></e>
 <e r="RL"><p><l>ŝanĝo<s n="n"/></l>                    <r>foreign<b/>exchange<s n="n"/></r></p></e>
 <e r="RL"><p><l>urbodomo<s n="n"/></l>                 <r>city<b/>council<s n="n"/></r></p></e>
