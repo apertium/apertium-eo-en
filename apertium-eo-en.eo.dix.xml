@@ -2972,6 +2972,7 @@
     <e lm="bataliono"><i>bataliono</i><par n="nom__n"/></e>
     <e lm="batalo"><i>batalo</i><par n="nom__n"/></e>
     <e lm="bati"><i>bat</i><par n="verb__vblex"/></e>
+    <e lm="frapi"><i>frap</i><par n="verb__vblex"/></e>
     <e lm="batipi"><i>batip</i><par n="verb__vblex"/></e>
     <e lm="bato"><i>bato</i><par n="nom__n"/></e>
     <e lm="baza"><i>baz</i><par n="adj__adj"/></e>
@@ -4650,6 +4651,7 @@
     <e lm="kesto"><i>kesto</i><par n="nom__n"/></e>
     <e lm="kialo"><i>kialo</i><par n="nom__n"/></e>
     <e lm="kiel decas"><i>kiel<b/>decas</i><par n="komence__adv"/></e>
+    <e lm="iel ajn"><i>iel<b/>ajn</i><par n="komence__adv"/></e>
     <e lm="kien"><i>kien</i><par n="komence__adv"/></e>
     <e lm="kilogramo"><i>kilogramo</i><par n="nom__n"/></e>
     <e lm="kilometro"><i>kilometro</i><par n="nom__n"/></e>
@@ -7528,7 +7530,7 @@
     <e lm="urĝaĵo"><i>ur</i><par n="ĝ"/><i>a</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
     <e lm="urĝe"><i>ur</i><par n="ĝ"/><i>e</i><par n="komence__adv"/></e>
     <e lm="urĝi"><i>ur</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
-    <e lm="urino"><i>urino</i><par n="nom__n"/></e>
+    <e lm="urino"><i>urino</i><par n="nom__n"/></e>    
     <e lm="urno"><i>urno</i><par n="nom__n"/></e>
     <e lm="utila"><i>util</i><par n="adj__adj"/></e>
     <e lm="utileco"><i>utileco</i><par n="nom__n"/></e>
@@ -7874,6 +7876,7 @@
 <e lm="lerta"><i>lert</i><par n="adj__adj"/></e>
 
 	<e lm="mankateni"><i>mankaten</i><par n="verb__vblex"/></e>
+    <e lm="streĉiteco"><i>stre</i><par n="ĉ"/><i>iteco</i><par n="nom__n"/></e>
 
 
 
@@ -7966,6 +7969,7 @@
     <e lm="GCompris"><i>GCompris</i><par n="Linux__np"/></e>
     <e lm="SVN"><i>SVN</i><par n="Linux__np"/></e>
     <e lm="Apertium"><i>Apertium</i><par n="Linux__np"/></e>
+    <e lm="Vikipedio"><i>Vikipedio</i><par n="Linux__np"/></e>
     <e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
     <e lm="ABC News"><i>ABC<b/>News</i><par n="Linux__np"/></e>
     
