@@ -2,8 +2,8 @@
 <!--
 	Dictionary:
 	Sections: 1
-	Entries: 17202
-	Sdefs: 94
+	Entries: 17190
+	Sdefs: 95
 	Paradigms: 1
 
 -->
@@ -600,8 +600,6 @@
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 
 <e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
-<!-- Already is <e><l>tiom<b/>da<det><qnt></l><r>so<b/>much<det><qnt></r></e>-->
-<e i="yes"><p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 
 
 <e>       <p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
@@ -1272,7 +1270,7 @@
      if all else fails
      Sartre doubts that Abraham can know that the voice he hears is really the voice of his God and not of someone else
      -->
-<e r="RL"><p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l>  <r>else<s n="adv"/></r></p></e>
+<e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l><r>else<s n="adv"/></r></p></e>
 
 
 <!-- comparatives. -->
@@ -1288,7 +1286,7 @@
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/><s n="sint"/></r></p></e>
 
-<!-- These RUINS the translations!
+<!-- These RUINS the translations!   
 <e>       <p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
 <e>       <p><l>plej<b/>bone<s n="adv"/></l>           <r>best<s n="adv"/></r></p></e>
 <e r="RL"><p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -6720,7 +6718,8 @@
 <e r="LR"><p><l>grateti<s n="vblex"/></l>              <r>graze<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>engrasigi<s n="vblex"/></l>            <r>graze<s n="vblex"/></r></p></e>
 <e>       <p><l>ektuŝi<s n="vblex"/></l>               <r>graze<s n="vblex"/></r></p></e>
-<e>       <p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/></r></p></e>
+<!-- Already is <e><l>granda<adj></l><r>big<adj><sint></r></e>-->
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/></r></p></e>
 <e r="LR"><p><l>majesta<s n="adj"/></l>                <r>great<s n="adj"/></r></p></e>
 <e r="LR"><p><l>genia<s n="adj"/></l>                  <r>great<s n="adj"/></r></p></e>
 <e r="LR"><p><l>triumfa<s n="adj"/></l>                <r>great<s n="adj"/></r></p></e>
@@ -8132,7 +8131,7 @@
 <e>       <p><l>lesbanino<s n="n"/></l>                <r>lesbian<s n="n"/></r></p></e>
 <e>       <p><l>lesba<s n="adj"/></l>                  <r>lesbian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>lesbanina<s n="adj"/></l>              <r>lesbian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>malplia<s n="adj"/></l>                <r>lesser<s n="adj"/></r></p></e>
+<e>       <p><l>malplia<s n="adj"/></l>                <r>lesser<s n="adj"/></r></p></e>
 <e>       <p><l>leciono<s n="n"/></l>                  <r>lesson<s n="n"/></r></p></e>
 <e r="LR"><p><l>lekcio<s n="n"/></l>                   <r>lesson<s n="n"/></r></p></e>
 <e r="RL"><p><l>lasi<s n="vblex"/></l>                 <r>let<s n="vblex"/></r></p></e>
@@ -8742,7 +8741,7 @@
 <e>       <p><l>ministerio<s n="n"/></l>               <r>ministry<s n="n"/></r></p></e>
 <e r="LR"><p><l>pastrado<s n="n"/></l>                 <r>ministry<s n="n"/></r></p></e>
 <e r="LR"><p><l>pastreco<s n="n"/></l>                 <r>ministry<s n="n"/></r></p></e>
-<e r="LR"><p><l>negrava<s n="adj"/></l>                <r>minor<s n="adj"/></r></p></e>
+<e>       <p><l>negrava<s n="adj"/></l>                <r>minor<s n="adj"/></r></p></e>
 <e r="LR"><p><l>graveta<s n="adj"/></l>                <r>minor<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malpligrava<s n="adj"/></l>            <r>minor<s n="adj"/></r></p></e>
 <e r="LR"><p><l>negranda<s n="adj"/></l>               <r>minor<s n="adj"/></r></p></e>

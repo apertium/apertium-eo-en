@@ -19,7 +19,9 @@ public class Paro {
 
     public String apertiumWordType = PROBLEM;
     private String apertiumExtraTags = "";
-    boolean gender;
+
+    public boolean gender;
+    public boolean sint;
 
        
     public String apertiumWordType() {
@@ -33,6 +35,7 @@ public class Paro {
     
     public boolean problem() { return (apertiumWordType==PROBLEM); };
     public boolean noun() { return (apertiumWordType==N); };
+    public boolean np() { return (apertiumWordType==NP); };
     public boolean adj() { return (apertiumWordType==ADJ); };
     public boolean adv() { return (apertiumWordType==ADV); };
     public boolean verb() { return (apertiumWordType==VBLEX); };
@@ -117,46 +120,35 @@ public class Paro {
     }
 
     public String apertiumEo() {
-	if (noun()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
-	if (adj()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
-	if (adv()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
-	if (verb()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
-	return "";
+	if (gender && noun()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"nommf__n\"/></e>";
+	if (noun())           return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
+	if (adj())            return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
+	if (adv())            return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
+	if (verb())           return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
+	if (np() && apertiumExtraTags.startsWith("<al>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Linux__np\"/></e>";
+	if (np() && apertiumExtraTags.startsWith("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Barcelono__np\"/></e>";
+	if (np() && apertiumExtraTags.startsWith("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Barcelono__np\"/></e>";
+	if (np() && apertiumExtraTags.startsWith("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Smith__np\"/></e>";
+	if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
+  return "";
     }
 
 
+    /**
+     * 
+     * @param simboloj kiel ekzemple <adj>
+     * @return simboloj en XML-formo kiel ekzemple <s n="adj"/> 
+     */
+    public static String simboloAlXml(String simboloj) {
+      if (simboloj==null) return "";
+      String s = simboloj.replace("<", "<s n=\"").replace(">", "\"/>");
+      return s;
+    }
 
-/*
-     lt-expand the en.dix, grep out the '<adj><sint>'
-     put those entries in a temp file
-     then when you come to add an adjective to the bidix, check up the lemma on the english side to see if it is in the temp file
-if it is, then add <s n="sint"/> if not then don't
-     <e><p><l>malriĉa<s n="adj"/></l><r>poor<s n="adj"/><s n="sint"/></r></p></e>
-*/
+    
+    
 
-/*
-
-    <e><p><l>nomo<s n="n"/></l><r>name<s n="n"/></r></p></e>
-    <e><p><l>nombro<s n="n"/></l><r>number<s n="n"/></r></p></e>
-    <e><p><l>propono<s n="n"/></l><r>offer<s n="n"/></r></p></e>
-
-    <e><p><l>malriĉa<s n="adj"/></l><r>poor<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>malpura<s n="adj"/></l><r>dirty<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>malpura<s n="adj"/></l><r>gross<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>malriĉa<s n="adj"/></l><r>poor<s n="adj"/><s n="sint"/></r></p></e>
-
-    <e><p><l>malrapide<s n="adv"/></l><r>slowly<s n="adv"/></r></p></e>
-    <e><p><l>ĉiam<s n="adv"/></l><r>always<s n="adv"/></r></p></e>
-    <e><p><l>ĉefe<s n="adv"/></l><r>especially<s n="adv"/></r></p></e>
-
-
-// <s n=\"sint\"/>
-
-    <e><p><l>"+x+"<s n=\""+x+"\"/></l><r>"+x+"<s n=\""+x+"\"/></r></p></e>
-
-*/
     public String apertiumEoEn() {
-	String x =  apertiumWordType();
   String c = "";
   String a = "";
   c += "r"+((int)frango);
@@ -173,7 +165,8 @@ if it is, then add <s n="sint"/> if not then don't
   
   a = a + "       ".substring(a.length());
   //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
-  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
+	String wtype =  apertiumWordType();
+  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+wtype+"\"/></l><r>"+rootEn+"<s n=\""+wtype+"\"/>"+(sint?"<s n=\"sint\"/>":"")+"</r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
   String spc = "                                                                                   ";
   if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
   //
