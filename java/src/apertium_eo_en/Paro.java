@@ -119,18 +119,27 @@ public class Paro {
 	return "";
     }
 
+    
     public String apertiumEo() {
-	if (gender && noun()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"nommf__n\"/></e>";
-	if (noun())           return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"nom__n\"/></e>";
-	if (adj())            return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"adj__adj\"/></e>";
-	if (adv())            return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"komence__adv\"/></e>";
-	if (verb())           return "<e lm=\""+ rootEo +"\"><i>"+ rootEo.substring(0,rootEo.length()-1) +"</i><par n=\"verb__vblex\"/></e>";
-	if (np() && apertiumExtraTags.startsWith("<al>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Linux__np\"/></e>";
-	if (np() && apertiumExtraTags.startsWith("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Barcelono__np\"/></e>";
-	if (np() && apertiumExtraTags.startsWith("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Barcelono__np\"/></e>";
-	if (np() && apertiumExtraTags.startsWith("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i><par n=\"Smith__np\"/></e>";
-	if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
-  return "";
+      String s = apertiumEox().replace("<i></i>", "").replace("</i><i>", "");
+      return s;
+    }
+    
+    private String apertiumEox() {
+      if (gender && noun()) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"nommf__n\"/></e>";
+      if (noun())           return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"nom__n\"/></e>";
+      if (adj())            return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"adj__adj\"/></e>";
+      if (adv())            return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"komence__adv\"/></e>";
+      if (verb())           return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"verb__vblex\"/></e>";
+      if (np() && apertiumExtraTags.equals("<al>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Linux__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Barcelono__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<ant><m>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mark__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<ant><f>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mary__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
+      
+      System.err.println("apertiumEo() problem for " + this + " "+apertiumExtraTags);
+      if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
+      return "";
     }
 
 
@@ -143,6 +152,25 @@ public class Paro {
       if (simboloj==null) return "";
       String s = simboloj.replace("<", "<s n=\"").replace(">", "\"/>");
       return s;
+    }
+
+    /**
+     * enmetuPardefPorCxepelitajLiteroj(
+     */
+    public static String par(String teksto) {
+      String teksto0 = teksto;
+      teksto = teksto.replace(" ", "<b/>");      
+      String eoLiteroj = "ĉĝĥĵŝŭĈĜĤĴŜŬ";
+      for (int i=0; i<eoLiteroj.length(); i++) {
+        String c = eoLiteroj.substring(i,i+1);
+        teksto = teksto.replace(c, "</i><par n=\""+c+"\"/><i>");      
+      }
+
+
+      
+      
+      // System.err.println("String teksto = " +teksto0+teksto);
+      return teksto;
     }
 
     
