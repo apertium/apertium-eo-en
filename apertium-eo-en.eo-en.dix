@@ -20148,5 +20148,7 @@
     <e><re>([0-9]*)?</re><p><l>4a<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
     <e><re>([0-9]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 
-  </section>
+    <e><re>[0-9]+([.,][0-9]+)?</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
+
+</section>
 </dictionary>
