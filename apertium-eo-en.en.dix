@@ -18228,6 +18228,9 @@
 <!--    <e lm="centralise"><i>centrali</i><par n="authori/se__vblex"/></e> -->
 <!--    <e lm="centralisation"><i>centrali</i><par n="organi/sation__n"/></e> -->
 
+    <e>
+      <par n="ordinals"/>
+    </e>
   </section>
   <section id="final" type="inconditional">
                               <e i="">
@@ -18263,9 +18266,6 @@
 
     <e>
       <par n="proper_names"/>
-    </e>
-    <e>
-      <par n="ordinals"/>
     </e>
     <e>
       <par n="time"/>
