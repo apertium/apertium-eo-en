@@ -119,6 +119,7 @@
       </e>
     </pardef>
     <pardef n="ordinals">
+    <!--  Ill just comment out now, we can delete later then
       <e>
         <re>[1-9]?</re>
         <p>
@@ -147,8 +148,9 @@
           <r>4a<s n="num"/><s n="ord"/></r>
         </p>
       </e>
+      -->
       <e>
-        <re>[0-9]?</re>
+        <re>([0-9]+)?</re>
         <p>
           <l>a</l>
           <r>a<s n="num"/><s n="ord"/></r>

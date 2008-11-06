@@ -172,7 +172,7 @@
 
     <pardef n="ordinals">
       <e>
-        <re>([1-9]*)?</re>
+        <re>([0-9]*)?([1-9])?</re>
         <p>
           <l>1st</l>
           <r>1st<s n="num"/><s n="ord"/></r>
