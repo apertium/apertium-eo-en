@@ -152,7 +152,73 @@
       </p>
     </e>
     </pardef>
-    
+
+    <pardef n="time">
+      <e>
+        <re>[0-9]+[.:][0-5][0-9](pm|PM|am|AM)</re>
+        <p>
+          <l/>
+          <r><s n="num"/></r>
+        </p>
+      </e>
+      <e>
+        <re>[0-9](pm|PM|am|AM)</re>
+        <p>
+          <l/>
+          <r><s n="num"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="ordinals">
+      <e>
+        <re>[1-9]?</re>
+        <p>
+          <l>1st</l>
+          <r>1st<s n="num"/><s n="ord"/></r>
+        </p>
+      </e>
+      <e>
+        <re>[0-9]?</re>
+        <p>
+          <l>2nd</l>
+          <r>2nd<s n="num"/><s n="ord"/></r>
+        </p>
+      </e>
+      <e>
+        <re>[0-9]?</re>
+        <p>
+          <l>3rd</l>
+          <r>3rd<s n="num"/><s n="ord"/></r>
+        </p>
+      </e>
+      <e>
+        <re>[0-9]?</re>
+        <p>
+          <l>4th</l>
+          <r>4th<s n="num"/><s n="ord"/></r>
+        </p>
+      </e>
+      <e>
+        <re>[0-9]?</re>
+        <p>
+          <l>th</l>
+          <r>th<s n="num"/><s n="ord"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="proper_names">
+      <e>
+	<re>(Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
+        <p>
+          <l/>
+         <r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
     <pardef n="separa">
     <e>
       <re>[.\?;:!]</re>
@@ -18193,6 +18259,16 @@
      </e>
                             <e i="">
       <par n="urls"/>
+    </e>
+
+    <e>
+      <par n="proper_names"/>
+    </e>
+    <e>
+      <par n="ordinals"/>
+    </e>
+    <e>
+      <par n="time"/>
     </e>
 
   </section>
