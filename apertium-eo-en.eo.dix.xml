@@ -8295,7 +8295,6 @@
 <e lm="zorgeme"><i>zorgeme</i><par n="komence__adv"/></e>
 <e lm="abomenaĵo"><i>abomena</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="absurdaĵo"><i>absurda</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-<e lm="adjutanto"><i>adjutanto</i><par n="nom__n"/></e>
 <e lm="administrado"><i>administrado</i><par n="nom__n"/></e>
 <e lm="administro"><i>administro</i><par n="nom__n"/></e>
 <e lm="aerolito"><i>aerolito</i><par n="nom__n"/></e>
@@ -8338,7 +8337,6 @@
 <e lm="asekuranto"><i>asekuranto</i><par n="nom__n"/></e>
 <e lm="atestado"><i>atestado</i><par n="nom__n"/></e>
 <e lm="aviadilo"><i>aviadilo</i><par n="nom__n"/></e>
-<e lm="avo"><i>avo</i><par n="nom__n"/></e>
 <e lm="aŭditorio"><i>a</i><par n="ŭ"/><i>ditorio</i><par n="nom__n"/></e>
 <e lm="aŭtado"><i>a</i><par n="ŭ"/><i>tado</i><par n="nom__n"/></e>
 <e lm="aŭtisto"><i>a</i><par n="ŭ"/><i>tisto</i><par n="nom__n"/></e>
@@ -8533,6 +8531,7 @@
 <e lm="fuzio"><i>fuzio</i><par n="nom__n"/></e>
 <e lm="gajninto"><i>gajninto</i><par n="nom__n"/></e>
 <e lm="galjono"><i>galjono</i><par n="nom__n"/></e>
+<e lm="geavo"><i>geavo</i><par n="nom__n"/></e>
 <e lm="gimnastikejo"><i>gimnastikejo</i><par n="nom__n"/></e>
 <e lm="glacimonto"><i>glacimonto</i><par n="nom__n"/></e>
 <e lm="glitkurado"><i>glitkurado</i><par n="nom__n"/></e>
@@ -8638,7 +8637,6 @@
 <e lm="kolokvo"><i>kolokvo</i><par n="nom__n"/></e>
 <e lm="komandanto"><i>komandanto</i><par n="nom__n"/></e>
 <e lm="kombinaĵo"><i>kombina</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
-<e lm="komerca konsilisto"><i>komerca<b/>konsilisto</i><par n="nom__n"/></e>
 <e lm="komercaĵo"><i>komerca</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="komidono"><i>komidono</i><par n="nom__n"/></e>
 <e lm="komikulo"><i>komikulo</i><par n="nom__n"/></e>
@@ -8712,7 +8710,6 @@
 <e lm="literumo"><i>literumo</i><par n="nom__n"/></e>
 <e lm="livero"><i>livero</i><par n="nom__n"/></e>
 <e lm="longeco"><i>longeco</i><par n="nom__n"/></e>
-<e lm="lordo"><i>lordo</i><par n="nom__n"/></e>
 <e lm="loĝantaro"><i>lo</i><par n="ĝ"/><i>antaro</i><par n="nom__n"/></e>
 <e lm="luanto"><i>luanto</i><par n="nom__n"/></e>
 <e lm="ludado"><i>ludado</i><par n="nom__n"/></e>
@@ -8847,7 +8844,6 @@
 <e lm="pasinteco"><i>pasinteco</i><par n="nom__n"/></e>
 <e lm="pasivo"><i>pasivo</i><par n="nom__n"/></e>
 <e lm="paskvilo"><i>paskvilo</i><par n="nom__n"/></e>
-<e lm="patro"><i>patro</i><par n="nom__n"/></e>
 <e lm="peceto"><i>peceto</i><par n="nom__n"/></e>
 <e lm="pediatriologo"><i>pediatriologo</i><par n="nom__n"/></e>
 <e lm="pelado"><i>pelado</i><par n="nom__n"/></e>
@@ -9182,6 +9178,10 @@
 <e lm="ŝtopaĵo"><par n="ŝ"/><i>topa</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="ŝtopilo"><par n="ŝ"/><i>topilo</i><par n="nom__n"/></e>
 <e lm="ŝtrumpo"><par n="ŝ"/><i>trumpo</i><par n="nom__n"/></e>
+<e lm="adjutanto"><i>adjutant</i><par n="nommf__n"/></e>
+<e lm="komerca konsilisto"><i>komerca<b/>konsilist</i><par n="nommf__n"/></e>
+<e lm="lordo"><i>lord</i><par n="nommf__n"/></e>
+<e lm="patro"><i>patr</i><par n="nommf__n"/></e>
 <e lm="agiti"><i>agit</i><par n="verb__vblex"/></e>
 <e lm="agnoski"><i>agnosk</i><par n="verb__vblex"/></e>
 <e lm="akumuliĝi"><i>akumuli</i><par n="ĝ"/><par n="verb__vblex"/></e>
@@ -9500,6 +9500,9 @@
 <e lm="ŝteladi"><par n="ŝ"/><i>telad</i><par n="verb__vblex"/></e>
 <e lm="ŝuldi"><par n="ŝ"/><i>uld</i><par n="verb__vblex"/></e>
 <e lm="ŝvebi"><par n="ŝ"/><i>veb</i><par n="verb__vblex"/></e>
+  
+  
+  
   </section>
 
 

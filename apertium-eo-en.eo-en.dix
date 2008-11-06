@@ -2,7 +2,7 @@
 <!--
 	Dictionary:
 	Sections: 1
-	Entries: 17190
+	Entries: 17170
 	Sdefs: 95
 	Paradigms: 1
 
@@ -745,7 +745,7 @@
 <e>       <i>GCompris<s n="np"/><s n="al"/></i></e>
 <e>       <i>SVN<s n="np"/><s n="al"/></i></e>
 <e>       <i>Apertium<s n="np"/><s n="al"/></i></e>
-<e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l>   <r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
+<e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l>    <r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
 
 
 <e>       <p><l>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberiĝo<s n="np"/><s n="al"/></l><r>Zapatista<b/>National<b/>Liberation<b/>Army<s n="np"/><s n="al"/></r></p></e>
@@ -791,7 +791,8 @@
 <e>       <p><l>Ignaco<s n="np"/><s n="ant"/></l>      <r>Ignacio<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Ilza<s n="np"/><s n="ant"/></l>        <r>Elsa<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
+<!-- Already is <e><l>Jesuo<np><ant></l><r>Jesus<np><ant></r></e>-->
+<e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Johano<s n="np"/><s n="ant"/></l>      <r>Juan<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Jozefo<s n="np"/><s n="ant"/></l>      <r>José<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Julia<s n="np"/><s n="ant"/></l>       <r>Julia<s n="np"/><s n="ant"/></r></p></e>
@@ -1212,6 +1213,8 @@
 <e>       <p><l>gepatro<s n="n"/></l>                  <r>parent<s n="n"/></r></p></e>
 <e>       <p><l>infano<s n="n"/></l>                   <r>infant<s n="n"/></r></p></e>
 
+<e>       <p><l>handikapulo<s n="n"/></l>              <r>handicapped<b/>person<s n="n"/></r></p></e>
+<e>       <p><l>eksterterano<s n="n"/></l>             <r>alien<s n="n"/></r></p></e>
 
 
 
@@ -1232,7 +1235,6 @@
 <e>       <p><l>konsilisto<s n="n"/></l>               <r>adviser<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>agento<s n="n"/></l>                   <r>agent<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>adjutanto<s n="n"/></l>                <r>aide<s n="n"/></r></p><par n="MF_GD"/></e>
-<e>       <p><l>eksterterano<s n="n"/></l>             <r>alien<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>amatoro<s n="n"/></l>                  <r>amateur<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>ambasadoro<s n="n"/></l>               <r>ambassador<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>anarkisto<s n="n"/></l>                <r>anarchist<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -9915,7 +9917,6 @@
 <e r="LR"><p><l>kriketejo<s n="n"/></l>                <r>pitch<s n="n"/></r></p></e>
 <e>       <p><l>kompati<s n="vblex"/></l>              <r>pity<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>korfavori<s n="vblex"/></l>            <r>pity<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>kompato<s n="n"/></l>                  <r>pity<s n="n"/></r></p></e>
 <e>       <p><l>loko<s n="n"/></l>                     <r>place<s n="n"/></r></p></e>
 <e r="LR"><p><l>starloko<s n="n"/></l>                 <r>place<s n="n"/></r></p></e>
 <e r="LR"><p><l>enviciĝo<s n="n"/></l>                 <r>place<s n="n"/></r></p></e>
@@ -14240,9 +14241,11 @@
 <e>       <p><l>miro<s n="n"/></l>                     <r>wonder<s n="n"/></r></p></e>
 <e r="LR"><p><l>miraĵo<s n="n"/></l>                   <r>wonder<s n="n"/></r></p></e>
 <e>       <p><l>mirinda<s n="adj"/></l>                <r>wonderful<s n="adj"/></r></p></e>
-<e>       <p><l>ligno<s n="n"/></l>                    <r>wood<s n="n"/></r></p></e>
-<e r="LR"><p><l>arbareto<s n="n"/></l>                 <r>wood<s n="n"/></r></p></e>
+<e>       <p><l>ligno<s n="n"/><s n="sg"/></l>         <r>wood<s n="n"/><s n="sg"/></r></p></e>
+<e>       <p><l>arbaro<s n="n"/><s n="sg"/></l>        <r>wood<s n="n"/><s n="pl"/></r></p></e>
+<e>       <p><l>arbareto<s n="n"/></l>                 <r>wood<s n="n"/></r></p></e>
 <e r="LR"><p><l>bosko<s n="n"/></l>                    <r>wood<s n="n"/></r></p></e>
+
 <e>       <p><l>lano<s n="n"/></l>                     <r>wool<s n="n"/></r></p></e>
 <e>       <p><l>vorto<s n="n"/></l>                    <r>word<s n="n"/></r></p></e>
 <e r="LR"><p><l>parolo<s n="n"/></l>                   <r>word<s n="n"/></r></p></e>
@@ -14352,7 +14355,6 @@
 <e r="RL"><p><l>ampolo<s n="n"/></l>                   <r>light<b/>bulb<s n="n"/></r></p></e>
 <!-- Already is <e><l>dokumentario<n></l><r>documentary<n></r></e>-->
 <e r="LR"><p><l>dokumenta<b/>filmo<s n="n"/></l>       <r>documentary<s n="n"/></r></p></e>
-<e>       <p><l>handikapulo<s n="n"/></l>              <r>handicapped<b/>person<s n="n"/></r></p></e>
 <!-- Already is <e r="LR"><l>homo<n></l><r>man<n></r></e>-->
 <e r="RL"><p><l>homo<s n="n"/></l>                     <r>human<b/>being<s n="n"/></r></p></e>
 <e>       <p><l>konto<b/>kuranta<s n="n"/></l>         <r>current<b/>account<s n="n"/></r></p></e>
@@ -14672,7 +14674,7 @@
 <!-- Already is <e><l>skermisto<n></l><r>fencer<n></r></e>-->
 <e r="LR"><p><l>pafanto<s n="n"/></l>                  <r>fencer<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="RL"><p><l>fianĉo<s n="n"/></l>                   <r>fiancé<s n="n"/></r></p><par n="MF_GD"/></e>
-<e>       <p><l>funelo<s n="n"/></l>                   <r>funnel<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>funelo<s n="n"/></l>                   <r>funnel<s n="n"/></r></p></e>
 <e>       <p><l>geriatro<s n="n"/></l>                 <r>geriatrist<s n="n"/></r></p><par n="MF_GD"/></e>
 <!-- Already is <e><l>guberniestro<n></l><r>governor<n></r></e> <e><l>reganto<n></l><r>ruler<n></r><par n="MF_GD"/> </e>-->
 <e i="yes"><p><l>reganto<s n="n"/></l>                 <r>governor<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -14944,8 +14946,6 @@
 <e r="RL"><p><l>apoteko<s n="n"/></l>                  <r>chemist's<s n="n"/></r></p></e>
 <!-- Already is <e><l>drogejo<n></l><r>drugstore<n></r></e>-->
 <e i="yes"><p><l>apoteko<s n="n"/></l>                 <r>drugstore<s n="n"/></r></p></e>
-<!-- Already is <e><l>ligno<n></l><r>wood<n></r></e>-->
-<e i="yes"><p><l>arbaro<s n="n"/></l>                  <r>wood<s n="n"/></r></p></e>
 <e r="LR"><p><l>ardezo<s n="n"/></l>                   <r>blackboard<s n="n"/></r></p></e>
 <!-- Already is <e><l>fervoro<n></l><r>ardor<n></r></e> <e r="LR"><l>ardo<n></l><r>glow<n></r></e>-->
 <e i="yes"><p><l>ardo<s n="n"/></l>                    <r>ardor<s n="n"/></r></p></e>
@@ -15043,11 +15043,7 @@
 <e i="yes"><p><l>avio<s n="n"/></l>                    <r>plane<s n="n"/></r></p></e>
 <!-- Already is <e><l>averto<n></l><r>warning<n></r></e>-->
 <e i="yes"><p><l>avizo<s n="n"/></l>                   <r>warning<s n="n"/></r></p></e>
-<e i="yes"><p><l>avo<s n="n"/></l>                     <r>grandfather<s n="n"/></r></p></e>
-<e>       <p><l>avo<s n="n"/></l>                      <r>grandfather<s n="n"/><s n="sg"/></r></p></e>
-<e i="yes"><p><l>avo<s n="n"/></l>                     <r>grandparent<s n="n"/></r></p></e>
-<e r="RL"><p><l>avo<s n="n"/></l>                      <r>grandparent<s n="n"/><s n="pl"/></r></p></e>
-<e i="yes"><p><l>avo<s n="n"/></l>                     <r>grandmother<s n="n"/></r></p></e>
+
 <!-- Already is <e r="RL"><l>konversacio<n></l><r>chat<n></r></e>-->
 <e r="LR"><p><l>babilejo<s n="n"/></l>                 <r>chat<s n="n"/></r></p></e>
 <e>       <p><l>bacilo<s n="n"/></l>                   <r>bacillus<s n="n"/></r></p></e>
@@ -15287,7 +15283,6 @@
 <!-- Already is <e><l>inklino<n></l><r>inclination<n></r></e> <e><l>deklivo<n></l><r>slope<n></r></e>-->
 <e i="yes"><p><l>deklivo<s n="n"/></l>                 <r>inclination<s n="n"/></r></p></e>
 
-<e>       <p><l>deko<s n="n"/></l>                     <r>ten<s n="n"/><s n="pl"/></r></p></e>
 <!-- Already is <e><l>ĝojo<n></l><r>delight<n></r></e>-->
 <e r="LR"><p><l>delico<s n="n"/></l>                   <r>delight<s n="n"/></r></p></e>
 <!-- Already is <e><l>krimo<n></l><r>crime<n></r></e> <e r="LR"><l>delikto<n></l><r>offence<n></r></e>-->
@@ -15295,8 +15290,10 @@
 <!-- Already is <e><l>enketilo<n></l><r>questionnaire<n></r></e> <e r="LR"><l>demandaro<n></l><r>application<n></r></e>-->
 <e i="yes"><p><l>demandaro<s n="n"/></l>               <r>questionnaire<s n="n"/></r></p></e>
 <!-- Already is <e r="LR"><l>demarŝo<n></l><r>representation<n></r></e>-->
-<e r="RL"><p><l>demarŝo<s n="n"/></l>                  <r>management<s n="n"/><s n="sg"/></r></p></e>
-<e r="RL"><p><l>demarŝo<s n="n"/></l>                  <r>negotiation<s n="n"/><s n="pl"/></r></p></e>
+<!-- Already is <e><l>administrado<n></l><r>management<n></r></e>-->
+<e i="yes"><p><l>demarŝo<s n="n"/></l>                 <r>management<s n="n"/></r></p></e>
+<!-- Already is <e><l>intertraktado<n></l><r>negotiation<n></r></e>-->
+<e i="yes"><p><l>demarŝo<s n="n"/></l>                 <r>negotiation<s n="n"/></r></p></e>
 <!-- Already is <e><l>manifestacio<n></l><r>demonstration<n></r></e>-->
 <e r="LR"><p><l>demonstracio<s n="n"/></l>             <r>demonstration<s n="n"/></r></p></e>
 <e r="LR"><p><l>dentaĵo<s n="n"/></l>                  <r>gear<s n="n"/></r></p></e>
@@ -15320,8 +15317,6 @@
 <!-- Already is <e><l>devo<n></l><r>duty<n></r></e>-->
 <e r="RL"><p><l>devo<s n="n"/></l>                     <r>homework<s n="n"/></r></p></e>
 
-<e r="RL"><p><l>devo<s n="n"/></l>                     <r>duty<s n="n"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>devo<s n="n"/></l>                     <r>duty<s n="n"/><s n="sg"/></r></p></e>
 <!-- Already is <e><l>sindevontigo<n></l><r>commitment<n></r></e> <e><l>devontigo<n></l><r>obligation<n></r></e>-->
 <e i="yes"><p><l>devontigo<s n="n"/></l>               <r>commitment<s n="n"/></r></p></e>
 <!-- Already is <e><l>engaĝiĝo<n></l><r>engagement<n></r></e>-->
@@ -15381,13 +15376,7 @@
 <e r="LR"><p><l>dokumentado<s n="n"/></l>              <r>documentation<s n="n"/></r></p></e>
 <!-- Already is <e r="RL"><l>sukeraĵo<n></l><r>sweet<n></r></e>-->
 <e r="LR"><p><l>dolĉaĵo<s n="n"/></l>                  <r>sweet<s n="n"/></r></p></e>
-<!-- Already is <e r="RL"><l>kompato<n></l><r>pity<n></r></e>-->
-<e r="LR"><p><l>domaĝo<s n="n"/></l>                   <r>pity<s n="n"/></r></p></e>
-<!-- Already is <e><l>puno<n></l><r>penalty<n></r></e>-->
-<e i="yes"><p><l>domaĝo<s n="n"/></l>                  <r>penalty<s n="n"/></r></p></e>
-<e r="RL"><p><l>domaĝo<s n="n"/></l>                   <r>penalty<s n="n"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>domaĝo<s n="n"/></l>                   <r>penalty<s n="n"/><s n="sg"/></r></p></e>
-<e r="RL"><p><l>domaĝo<s n="n"/></l>                   <r>pity<s n="n"/><s n="sg"/></r></p></e>
+<e>       <p><l>domaĝo<s n="n"/></l>                   <r>pity<s n="n"/></r></p></e>
 <!-- Already is <e><l>familio<n></l><r>household<n></r></e>-->
 <e i="yes"><p><l>domo<s n="n"/></l>                    <r>household<s n="n"/></r></p></e>
 <!-- Already is <e r="LR"><l>dono<n></l><r>administration<n></r></e>-->
@@ -16330,7 +16319,6 @@
 <e r="LR"><p><l>librotenado<s n="n"/></l>              <r>accounting<s n="n"/></r></p></e>
 <e>       <p><l>lignaĵejo<s n="n"/></l>                <r>carpentry<s n="n"/></r></p></e>
 
-<e>       <p><l>ligno<s n="n"/><s n="sg"/></l>         <r>wood<s n="n"/><s n="sg"/></r></p></e>
 <!-- Already is <e><l>ekvilibro<n></l><r>balance<n></r></e>-->
 <!-- Already is <e r="LR"><l>likvido<n></l><r>murder<n></r></e>-->
 <e i="yes"><p><l>likvido<s n="n"/></l>                 <r>balance<s n="n"/></r></p></e>
@@ -16713,11 +16701,6 @@
 <e i="yes"><p><l>paŝo<s n="n"/></l>                    <r>passing<s n="n"/></r></p></e>
 <!-- Already is <e><l>patro<n><f></l><r>mother<n></r></e>-->
 <e r="LR"><p><l>patrino<s n="n"/></l>                  <r>mother<s n="n"/></r></p></e>
-<!-- Already is <e><l>naskiginto<n></l><r>progenitor<n></r></e>-->
-<e r="LR"><p><l>patro<s n="n"/></l>                    <r>progenitor<s n="n"/></r></p></e>
-<e i="yes"><p><l>patro<s n="n"/><s n="m"/></l>         <r>parent<s n="n"/></r></p></e>
-<e r="RL"><p><l>patro<s n="n"/><s n="m"/></l>          <r>parent<s n="n"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>patro<s n="n"/><s n="m"/></l>          <r>father<s n="n"/><s n="sg"/></r></p></e>
 <!-- Already is <e r="LR"><l>patrono<n></l><r>sponsor<n></r><par n="MF_GD"/> </e>-->
 <e i="yes"><p><l>patrono<s n="n"/></l>                 <r>master<s n="n"/></r></p></e>
 <!-- Already is <e><l>hejmlando<n></l><r>homeland<n></r></e>-->
@@ -17079,8 +17062,8 @@
 <e i="yes"><p><l>roboto<s n="n"/></l>                  <r>automaton<s n="n"/></r></p></e>
 <e r="LR"><p><l>rojo<s n="n"/></l>                     <r>brook<s n="n"/></r></p></e>
 <!--
-    <e><p><l>rokenrolo<s n="n"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
-    <e><p><l>rokmuziko<s n="n"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>rokenrolo<s n="n"/><s n="sg"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>rokmuziko<s n="n"/><s n="sg"/></l><r>rock<s n="n"/><s n="sg"/></r></p></e>
 -->
 <!-- Already is <e><l>roko<n></l><r>rock<n></r></e>-->
 <e r="RL"><p><l>roko<s n="n"/></l>                     <r>crag<s n="n"/></r></p></e>
@@ -17177,10 +17160,6 @@
 <e r="RL"><p><l>servico<s n="n"/></l>                  <r>tableware<s n="n"/></r></p></e>
 <!-- Already is <e r="RL"><l>profito<n></l><r>benefit<n></r></e>-->
 <!-- Already is <e><l>servo<n></l><r>service<n></r></e>-->
-<e i="yes"><p><l>servo<s n="n"/></l>                   <r>benefit<s n="n"/></r></p></e>
-<e r="RL"><p><l>servo<s n="n"/></l>                    <r>feature<s n="n"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>servo<s n="n"/></l>                    <r>provision<s n="n"/><s n="sg"/></r></p></e>
-<!-- Already is <e r="RL"><l>banko<n></l><r>seat<n></r></e>-->
 <!-- Already is <e><l>sidejo<n></l><r>premise<n></r></e>-->
 <e i="yes"><p><l>sidejo<s n="n"/></l>                  <r>seat<s n="n"/></r></p></e>
 <!-- Already is <e r="RL"><l>loĝejo<n></l><r>domicile<n></r></e>-->
@@ -17400,7 +17379,7 @@
 <e r="LR"><p><l>ŝraŭbkanelo<s n="n"/></l>              <r>thread<s n="n"/></r></p></e>
 
 <!-- Already is <e><l>ŝtofo<n></l><r>fabric<n></r></e>-->
-<e r="RL"><p><l>ŝtofo<s n="n"/></l>                    <r>cloth<s n="n"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>ŝtofo<s n="n"/><s n="pl"/></l>         <r>cloth<s n="n"/><s n="pl"/></r></p></e>
 <e>       <p><l>ŝtofo<s n="n"/><s n="pl"/></l>         <r>clothes<s n="n"/><s n="pl"/></r></p></e>
 <!-- Already is <e><l>vestaĵo<n></l><r>clothing<n></r></e>-->
 <e i="yes"><p><l>ŝtofo<s n="n"/></l>                   <r>clothing<s n="n"/></r></p></e>
