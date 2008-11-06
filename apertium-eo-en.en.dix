@@ -172,35 +172,35 @@
 
     <pardef n="ordinals">
       <e>
-        <re>[1-9]?</re>
+        <re>([1-9]*)?</re>
         <p>
           <l>1st</l>
           <r>1st<s n="num"/><s n="ord"/></r>
         </p>
       </e>
       <e>
-        <re>[0-9]?</re>
+        <re>([0-9]*)?</re>
         <p>
           <l>2nd</l>
           <r>2nd<s n="num"/><s n="ord"/></r>
         </p>
       </e>
       <e>
-        <re>[0-9]?</re>
+        <re>([0-9]*)?</re>
         <p>
           <l>3rd</l>
           <r>3rd<s n="num"/><s n="ord"/></r>
         </p>
       </e>
       <e>
-        <re>[0-9]?</re>
+        <re>([0-9]*)?</re>
         <p>
           <l>4th</l>
           <r>4th<s n="num"/><s n="ord"/></r>
         </p>
       </e>
       <e>
-        <re>[0-9]?</re>
+        <re>([0-9]*)?</re>
         <p>
           <l>th</l>
           <r>th<s n="num"/><s n="ord"/></r>
