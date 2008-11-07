@@ -152,16 +152,9 @@
       </p>
     </e>
 
+  </pardef>
     <!-- Years -->
-    <!-- Francis' version:
-    <e>
-      <re>[0-9]+([.,][0-9]+)?</re>
-      <p>
-        <l>s</l>
-        <r>s<s n="num"/><s n="sp"/></r>
-      </p>
-    </e>  -->
-
+  <pardef n="years">
     <e>
       <re>[0-9][0-9]</re>
       <p>
@@ -176,7 +169,6 @@
         <r>s<s n="num"/><s n="sp"/></r>
       </p>
     </e>
-    
     </pardef>
 
     <pardef n="time">
@@ -18260,6 +18252,9 @@
   
     <e>
       <par n="proper_names"/>
+    </e>
+    <e>
+      <par n="years"/>
     </e>
     <e>
       <par n="time"/>
