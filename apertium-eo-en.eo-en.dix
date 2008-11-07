@@ -20132,6 +20132,14 @@
 
     <!-- old version:
     <e><re>(Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><i><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></i></e>
+
+TODO??
+<spectie> what we should do is
+<spectie>  <e><p><l>s-ino</l><r>Mrs</r></p><re>.? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><i><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></i></e>
+<spectie> good way
+<spectie>     <e><p><l>s-ro</l><r>Mr</r></p><re>.? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+<jacobEo> ah, yes, of course we can see the gender here!
+
     -->
     <e><p><l>s-ro</l><r>Mr</r></p><re>.? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><i><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></i></e>
     <e><p><l>s-ino</l><r>Mrs</r></p><re>.? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><i><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></i></e>
@@ -20148,7 +20156,12 @@
     <e><re>([0-9]*)?</re><p><l>4a<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
     <e><re>([0-9]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 
+<!-- was:
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
+    but: it hit also "both Champion R8s were able to take first and third while the ORECA team took fourth."
+-->
+    <e><re>[0-9][0-9]</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
+    <e><re>[0-9][0-9][0-9][0-9]</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
 
 </section>
 </dictionary>
