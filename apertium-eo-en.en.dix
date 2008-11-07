@@ -18257,6 +18257,14 @@
     <e>
       <par n="ordinals"/>
     </e>
+  
+    <e>
+      <par n="proper_names"/>
+    </e>
+    <e>
+      <par n="time"/>
+    </e>
+  
   </section>
   <section id="final" type="inconditional">
                               <e i="">
@@ -18290,17 +18298,12 @@
       <par n="urls"/>
     </e>
 
-    <e>
-      <par n="proper_names"/>
-    </e>
-    <e>
-      <par n="time"/>
-    </e>
 
   </section>
 
   <section id="apostrophe" type="preblank">
     <e><p><l>'s</l><r>'s<s n="gen"/></r></p></e>
+
   </section>
 
 </dictionary>
