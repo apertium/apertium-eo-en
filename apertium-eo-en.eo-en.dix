@@ -306,6 +306,12 @@
 
 <!-- ^each<det><ind><sg>  each dog has its own house   -> ĉiu hundo havas ĝian propran domon  -->
 
+<!-- most of Aristotle's life was devoted to study 
+     Aristotle conducted most of the scientific thinking
+     most of the time -->
+<e>       <p><l>plejparto<s n="prn"/><s n="tn"/><s n="sg"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+
+<e>       <p><l>kelka<s n="prn"/><s n="tn"/><s n="pl"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>alia<s n="prn"/><s n="tn"/></l>        <r>others<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/></l><r>another<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
@@ -368,8 +374,10 @@
 <e r="RL"><p><l>iu<s n="prn"/></l>                     <r>kelkaj<s n="prn"/></r></p></e>
 
 <e>       <p><l>ie<s n="prn"/></l>                     <r>somewhere<s n="prn"/></r></p></e>
-<e>       <p><l>iel<s n="adv"/></l>                    <r>somehow<s n="adv"/></r></p></e>
+<e>       <p><l>nenie<s n="prn"/></l>                  <r>nowhere<s n="prn"/></r></p></e>
+<e>       <p><l>ĉie<s n="prn"/></l>                    <r>everywhere<s n="prn"/></r></p></e>
 
+<e>       <p><l>iel<s n="adv"/></l>                    <r>somehow<s n="adv"/></r></p></e>
 
 <e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l> <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>       <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
@@ -457,6 +465,14 @@
 <e r="RL"><p><l>dum<s n="cnjadv"/></l>                 <r>whereas<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĝis<s n="cnjadv"/></l>                 <r>until<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kiam<s n="cnjadv"/></l>                <r>when<s n="cnjadv"/></r></p></e>
+
+<!-- hmmm... problem:  XXXXXXXX
+     as demonstrated by the   => kiel
+     those reported as Native American. => kiel
+     The school was chartered as LaGrange College =>
+BUT:
+     He spoke as he was driving  => dum
+     -->
 <e>       <p><l>kiel<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>laŭ<s n="cnjadv"/></l>                 <r>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kondiĉe<b/>ke<s n="cnjadv"/></l>       <r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
@@ -600,6 +616,8 @@
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 
 <e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>tiom<b/>multe<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>tiom<b/>multe<s n="det"/><s n="qnt"/></l> <r>as<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 
 
 <e>       <p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
@@ -633,7 +651,7 @@
 <e>       <p><l>pli<s n="preadv"/></l>                 <r>more<s n="preadv"/></r></p></e>
 <e>       <p><l>plej<s n="preadv"/></l>                <r>most<s n="preadv"/></r></p></e>
 <e>       <p><l>tiel<s n="preadv"/></l>                <r>so<s n="preadv"/></r></p></e>
-<e r="RL" c="comparacions"><p><l>tiel<s n="preadv"/></l><r>as<s n="preadv"/></r></p></e>
+<e r="RL" c="comparacions"><p><l>kiel<s n="preadv"/></l><r>as<s n="preadv"/></r></p></e>
 <e r="RL"><p><l>tiel<s n="preadv"/></l>                <r>just<b/>as<s n="preadv"/></r></p></e>
 <e c="how late? how great, how funny"><p><l>kiom<s n="preadv"/></l><r>how<s n="preadv"/></r></p></e>
 
@@ -1289,9 +1307,10 @@
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/><s n="sint"/></r></p></e>
 
+<e>       <p><l>plej<b/>bone<s n="adv"/></l>           <r>best<s n="adv"/></r></p></e>
+
 <!-- These RUINS the translations!   
 <e>       <p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-<e>       <p><l>plej<b/>bone<s n="adv"/></l>           <r>best<s n="adv"/></r></p></e>
 <e r="RL"><p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 <e>       <p><l>plej<b/>malgranda<s n="adj"/></l>      <r>lesser<s n="adj"/></r></p></e>
 <e r="RL"><p><l>plej<b/>malgranda<s n="adj"/></l>      <r>minor<s n="adj"/></r></p></e>
@@ -1324,6 +1343,7 @@
 <e>       <p><l>ĉi<b/>tie<s n="adv"/></l>              <r>here<s n="adv"/></r></p></e>
 <e>       <p><l>paro<s n="n"/></l>                     <r>pair<s n="n"/></r></p></e>
 <e>       <p><l>povi<s n="vaux"/></l>                  <r>can<s n="vaux"/></r></p></e>
+<e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
 <e>       <p><l>aro<s n="n"/></l>                      <r>set<s n="n"/></r></p></e>
 <e>       <p><l>bela<s n="adj"/></l>                   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>bona<s n="adj"/></l>                   <r>good<s n="adj"/><s n="sint"/></r></p></e>
@@ -3211,9 +3231,9 @@
 <e r="LR"><p><l>interparoleti<s n="vblex"/></l>        <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>konversacii<s n="vblex"/></l>          <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>babiladi<s n="vblex"/></l>             <r>chat<s n="vblex"/></r></p></e>
-<e>       <p><l>malaltekosta<s n="adj"/></l>           <r>cheap<s n="adj"/></r></p></e>
-<e r="LR"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/></r></p></e>
-<e r="LR"><p><l>tombakeca<s n="adj"/></l>              <r>cheap<s n="adj"/></r></p></e>
+<e>       <p><l>malaltekosta<s n="adj"/></l>           <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>tombakeca<s n="adj"/></l>              <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>trompi<s n="vblex"/></l>               <r>cheat<s n="vblex"/></r></p></e>
 <e>       <p><l>trompanto<s n="n"/></l>                <r>cheat<s n="n"/></r></p></e>
 <e r="LR"><p><l>trompulo<s n="n"/></l>                 <r>cheat<s n="n"/></r></p></e>
@@ -4529,8 +4549,8 @@
 <e>       <p><l>deveno<s n="n"/></l>                   <r>descent<s n="n"/></r></p></e>
 <e r="LR"><p><l>malsupreniro<s n="n"/></l>             <r>descent<s n="n"/></r></p></e>
 <e r="LR"><p><l>malsupreniĝo<s n="n"/></l>             <r>descent<s n="n"/></r></p></e>
-<e>       <p><l>priparoli<s n="vblex"/></l>            <r>describe<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>priskribi<s n="vblex"/></l>            <r>describe<s n="vblex"/></r></p></e>
+<e>       <p><l>priskribi<s n="vblex"/></l>            <r>describe<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>priparoli<s n="vblex"/></l>            <r>describe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>rakonti<s n="vblex"/></l>              <r>describe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>bildigi<s n="vblex"/></l>              <r>describe<s n="vblex"/></r></p></e>
 <e>       <p><l>priskribo<s n="n"/></l>                <r>description<s n="n"/></r></p></e>
