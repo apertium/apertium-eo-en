@@ -1910,19 +1910,25 @@
     <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 
-    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
-    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+	<!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
+	     comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
 
-    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
-    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+	<!-- XXX couldnt a pardef for just <s n="sg"/><s n="nom"/> etc be made which could be used here below and in all other pardefs? -->
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiun</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiun</l><r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <e lm="kiu"><p><l>kiu</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kiu"><p><l>kiun</l><r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="kiu"><p><l>kiuj</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="kiu"><p><l>kiujn</l><r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
     
     <e lm="koncerne al"><i>koncerne<b/>al</i><par n="at__pr"/></e>
     <e lm="kondiĉe ke"><i>kondi</i><par n="ĉ"/><i>e<b/>ke</i><par n="after__cnjadv"/></e>
@@ -2271,7 +2277,7 @@
     <e lm="brito"><i>brit</i><par n="nommf__n"/></e>
     <e lm="bankiero"><i>bankier</i><par n="nommf__n"/></e>
     <e lm="barono"><i>baron</i><par n="nommf__n"/></e>
-    <e lm="bebo"><i>beb</i><par n="nom__n"/></e>
+    <e lm="bebo"><i>bebo</i><par n="nom__n"/></e>
     <e lm="biciklanto"><i>biciklant</i><par n="nommf__n"/></e>
     <e lm="biografo"><i>biograf</i><par n="nommf__n"/></e>
     <e lm="biologo"><i>biolog</i><par n="nommf__n"/></e>
@@ -2281,7 +2287,7 @@
     <e lm="ĉiliano"><par n="ĉ"/><i>ilian</i><par n="nommf__n"/></e>
     <e lm="ĉino"><par n="ĉ"/><i>in</i><par n="nommf__n"/></e>
     <e lm="dano"><i>dan</i><par n="nommf__n"/></e>
-    <e lm="defendo"><i>defend</i><par n="nom__n"/></e>
+    <e lm="defendo"><i>defendo</i><par n="nom__n"/></e>
     <e lm="dekano"><i>dekan</i><par n="nommf__n"/></e>
     <e lm="demokrato"><i>demokrat</i><par n="nommf__n"/></e>
     <e lm="denominatoro"><i>denominator</i><par n="nommf__n"/></e>
@@ -2294,7 +2300,7 @@
     <e lm="direktoro"><i>direktor</i><par n="nommf__n"/></e>
     <e lm="dirigento"><i>dirigent</i><par n="nommf__n"/></e>
     <e lm="doktoro"><i>doktor</i><par n="nommf__n"/></e>
-    <e lm="doto"><i>dot</i><par n="nom__n"/></e>
+    <e lm="doto"><i>doto</i><par n="nom__n"/></e>
     <e lm="duko"><i>duk</i><par n="nommf__n"/></e>
     <e lm="edzo"><i>edz</i><par n="nommf__n"/></e>
     <e lm="egipto"><i>egipt</i><par n="nommf__n"/></e>
@@ -2345,18 +2351,18 @@
     <e lm="grafo"><i>graf</i><par n="nommf__n"/></e>
     <e lm="gvidanto"><i>gvidant</i><par n="nommf__n"/></e>
     <e lm="ĝardenisto"><par n="ĝ"/><i>ardenist</i><par n="nommf__n"/></e>
-    <e lm="handikapulo"><i>handikapul</i><par n="nom__n"/></e>
+    <e lm="handikapulo"><i>handikapulo</i><par n="nom__n"/></e>
     <e lm="helpanto"><i>helpant</i><par n="nommf__n"/></e>
     <e lm="heroo"><i>hero</i><par n="nommf__n"/></e>
     <e lm="humuristo"><i>humurist</i><par n="nommf__n"/></e>
     <e lm="hundo"><i>hund</i><par n="nommf__n"/></e>
-    <e lm="idioto"><i>idiot</i><par n="nom__n"/></e>
+    <e lm="idioto"><i>idioto</i><par n="nom__n"/></e>
     <e lm="impertinentulo"><i>impertinentul</i><par n="nommf__n"/></e>
     <e lm="impostpaganto"><i>impostpagant</i><par n="nommf__n"/></e>
     <e lm="impresario"><i>impresari</i><par n="nommf__n"/></e>
     <e lm="incitanto"><i>incitant</i><par n="nommf__n"/></e>
-    <e lm="indio"><i>indi</i><par n="nom__n"/></e>
-    <e lm="indiano"><i>indian</i><par n="nom__n"/></e>
+    <e lm="indio"><i>indio</i><par n="nom__n"/></e>
+    <e lm="indiano"><i>indiano</i><par n="nom__n"/></e>
     <e lm="indiĝeno"><i>indi</i><par n="ĝ"/><i>en</i><par n="nommf__n"/></e>
     <e lm="individuo"><i>individu</i><par n="nommf__n"/></e>
     <e lm="infankuracisto"><i>infankuracist</i><par n="nommf__n"/></e>
@@ -2398,7 +2404,7 @@
     <e lm="komponisto"><i>komponist</i><par n="nommf__n"/></e>
     <e lm="komunisto"><i>komunist</i><par n="nommf__n"/></e>
     <e lm="konsilanto"><i>konsilant</i><par n="nommf__n"/></e>
-    <e lm="konsilisto"><i>konsilist</i><par n="nom__n"/></e>
+    <e lm="konsilisto"><i>konsilist</i><par n="nommf__n"/></e>
     <e lm="konstruisto"><i>konstruist</i><par n="nommf__n"/></e>
     <e lm="konsulo"><i>konsul</i><par n="nommf__n"/></e>
     <e lm="konsumanto"><i>konsumant</i><par n="nommf__n"/></e>
@@ -2445,7 +2451,7 @@
     <e lm="monarko"><i>monark</i><par n="nommf__n"/></e>
     <e lm="monpruntisto"><i>monpruntist</i><par n="nommf__n"/></e>
     <e lm="montgrimpisto"><i>montgrimpist</i><par n="nommf__n"/></e>
-    <e lm="mortinto"><i>mortint</i><par n="nom__n"/></e>
+    <e lm="mortinto"><i>mortinto</i><par n="nom__n"/></e>
     <e lm="murdisto"><i>murdist</i><par n="nommf__n"/></e>
     <e lm="muzikisto"><i>muzikist</i><par n="nommf__n"/></e>
     <e lm="naciisto"><i>naciist</i><par n="nommf__n"/></e>
@@ -2539,7 +2545,7 @@
     <e lm="ŝtelisto"><par n="ŝ"/><i>telist</i><par n="nommf__n"/></e>
     <e lm="ŝuisto"><par n="ŝ"/><i>uist</i><par n="nommf__n"/></e>
     <e lm="tajloro"><i>tajlor</i><par n="nommf__n"/></e>
-    <e lm="taksiisto"><i>taksiist</i><par n="nom__n"/></e>
+    <e lm="taksiisto"><i>taksiisto</i><par n="nom__n"/></e>
     <e lm="teknikisto"><i>teknikist</i><par n="nommf__n"/></e>
     <e lm="telefonisto"><i>telefonist</i><par n="nommf__n"/></e>
     <e lm="teroristo"><i>terorist</i><par n="nommf__n"/></e>
@@ -2578,9 +2584,16 @@
     <e lm="sviso"><i>svis</i><par n="nommf__n"/></e>
     <e lm="profesiulo"><i>profesiul</i><par n="nommf__n"/></e>
 
-	<!-- uh oh... problem! -->
-    <e lm="komerca konsilisto"><i>komerca<b/>konsilisto</i><par n="nommf__n"/></e>
 
+    <!-- komerca konsilisto - multiword with gender! -->
+    <e><p><l>komerca<b/>konsilisto</l><r>komerca<b/>konsilisto<s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e><p><l>komerca<b/>konsilistino</l><r>komerca<b/>konsilisto<s n="n"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e><p><l>komercaj<b/>konsilistoj</l><r>komerca<b/>konsilisto<s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e><p><l>komercaj<b/>konsilistinoj</l><r>komerca<b/>konsilisto<s n="n"/><s n="f"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e><p><l>komercan<b/>konsiliston</l><r>komerca<b/>konsilisto<s n="n"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e><p><l>komercan<b/>konsilistinon</l><r>komerca<b/>konsilisto<s n="n"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e><p><l>komercajn<b/>konsilistojn</l><r>komerca<b/>konsilisto<s n="n"/><s n="m"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e><p><l>komercajn<b/>konsilistinojn</l><r>komerca<b/>konsilisto<s n="n"/><s n="f"/><s n="pl"/><s n="acc"/></r></p></e>
 
 
 	<!-- "Normalaj vortoj", 
@@ -9329,7 +9342,6 @@
 <e lm="ŝtopilo"><par n="ŝ"/><i>topilo</i><par n="nom__n"/></e>
 <e lm="ŝtrumpo"><par n="ŝ"/><i>trumpo</i><par n="nom__n"/></e>
 <e lm="adjutanto"><i>adjutant</i><par n="nommf__n"/></e>
-<e lm="komerca konsilisto"><i>komerca<b/>konsilist</i><par n="nommf__n"/></e>
 <e lm="lordo"><i>lord</i><par n="nommf__n"/></e>
 <e lm="patro"><i>patr</i><par n="nommf__n"/></e>
 <e lm="agiti"><i>agit</i><par n="verb__vblex"/></e>
