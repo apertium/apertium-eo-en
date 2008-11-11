@@ -1,11 +1,19 @@
 #!/bin/bash
 
-echo "Checking all other tests..."
+if [ "$1" == "" ]; then
+echo "Checking outstanding tests..."
+LIST=`
+wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Rejected_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'
+`;
+else
+echo "Checking ALL tests..."
 LIST=`
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Proposed_future_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Rejected_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'
 `;
+fi
+
 
 #LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
 
