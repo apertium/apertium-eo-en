@@ -12112,7 +12112,9 @@
     <e lm="business"><i>business</i><par n="access__n"/></e>
     <e lm="business"><i>business</i><par n="expensive__adj"/></e>
     <e lm="but"><i>but</i><par n="and__cnjcoo"/></e>
-    <e lm="but"><i>but</i><par n="at__pr"/></e>
+<!-- removed, as too much bacame <adv>, see  http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests.
+    <e lm="but"><i>but</i><par n="maybe__adv"/></e>
+    -->
     <e lm="but rather"><i>but<b/>rather</i><par n="and__cnjcoo"/></e>
     <e lm="butter"><i>butter</i><par n="house__n"/></e>
     <e lm="buttock"><i>buttock</i><par n="house__n"/></e>
