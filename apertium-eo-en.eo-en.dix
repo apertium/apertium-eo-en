@@ -327,6 +327,9 @@
 <!-- all are Christians -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 
+<!-- All but the children saw it -->
+<e>       <p><l>ĉiuj<b/>krom<s n="prn"/><s n="tn"/><s n="sp"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+
 <!-- all houses, all the houses  -->
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
@@ -2018,7 +2021,10 @@ BUT:
 <e>       <p><l>kesto<s n="n"/></l>                    <r>ark<s n="n"/></r></p></e>
 <e r="LR"><p><l>tabernaklo<s n="n"/></l>               <r>ark<s n="n"/></r></p></e>
 <e>       <p><l>brako<s n="n"/></l>                    <r>arm<s n="n"/></r></p></e>
-<e>       <p><l>armilaro<s n="n"/></l>                 <r>armament<s n="n"/></r></p></e>
+<e r="RL"><p><l>armilaro<s n="n"/></l>                 <r>arm<b/>stockpile<s n="n"/></r></p></e>
+<e>       <p><l>armilaro<s n="n"/></l>                 <r>arms<b/>stockpile<s n="n"/></r></p></e>
+<e r="RL"><p><l>armilaro<s n="n"/></l>                 <r>weapon<b/>stockpile<s n="n"/></r></p></e>
+<e r="RL"><p><l>armilaro<s n="n"/></l>                 <r>armament<s n="n"/></r></p></e>
 <e r="LR"><p><l>batalilaro<s n="n"/></l>               <r>armament<s n="n"/></r></p></e>
 <e>       <p><l>brakseĝo<s n="n"/></l>                 <r>armchair<s n="n"/></r></p></e>
 <e>       <p><l>armi<s n="vblex"/></l>                 <r>arm<s n="vblex"/></r></p></e>
@@ -3712,8 +3718,8 @@ BUT:
 <e r="RL"><p><l>certa<s n="adj"/></l>                  <r>confident<s n="adj"/></r></p></e>
 <e r="LR"><p><l>fidema<s n="adj"/></l>                 <r>confident<s n="adj"/></r></p></e>
 <e r="LR"><p><l>memfida<s n="adj"/></l>                <r>confident<s n="adj"/></r></p></e>
-<e>       <p><l>formacio<s n="n"/></l>                 <r>configuration<s n="n"/></r></p></e>
-<e r="LR"><p><l>konfiguracio<s n="n"/></l>             <r>configuration<s n="n"/></r></p></e>
+<e>       <p><l>konfiguracio<s n="n"/></l>             <r>configuration<s n="n"/></r></p></e>
+<e r="LR"><p><l>formacio<s n="n"/></l>                 <r>configuration<s n="n"/></r></p></e>
 <e r="LR"><p><l>akomodo<s n="n"/></l>                  <r>configuration<s n="n"/></r></p></e>
 <e r="RL"><p><l>formi<s n="vblex"/></l>                <r>configure<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>konfiguracii<s n="vblex"/></l>         <r>configure<s n="vblex"/></r></p></e>
@@ -12996,11 +13002,11 @@ BUT:
 <e r="LR"><p><l>oscilo<s n="n"/></l>                   <r>swing<s n="n"/></r></p></e>
 <e r="LR"><p><l>pendolo<s n="n"/></l>                  <r>swing<s n="n"/></r></p></e>
 <e r="LR"><p><l>pendolilo<s n="n"/></l>                <r>swing<s n="n"/></r></p></e>
-<e>       <p><l>transmeti<s n="vblex"/></l>            <r>switch<s n="vblex"/></r></p></e>
+<e>       <p><l>ŝalti<s n="vblex"/></l>                <r>switch<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>transmeti<s n="vblex"/></l>            <r>switch<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>transloki<s n="vblex"/></l>            <r>switch<s n="vblex"/></r></p></e>
+<e>       <p><l>ŝaltilo<s n="n"/></l>                  <r>switch<s n="n"/></r></p></e>
 <e r="RL"><p><l>interŝanĝo<s n="n"/></l>               <r>switch<s n="n"/></r></p></e>
-<e r="LR"><p><l>ŝalti<s n="vblex"/></l>                <r>switch<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>ŝaltilo<s n="n"/></l>                  <r>switch<s n="n"/></r></p></e>
 <e r="LR"><p><l>komutilo<s n="n"/></l>                 <r>switch<s n="n"/></r></p></e>
 <e r="LR"><p><l>relkomutilo<s n="n"/></l>              <r>switch<s n="n"/></r></p></e>
 <e>       <p><l>glavo<s n="n"/></l>                    <r>sword<s n="n"/></r></p></e>
@@ -14366,9 +14372,6 @@ BUT:
 
 <e>       <p><l>eltiriĝi<s n="vblex"/></l>             <r>back<g><b/>out</g><s n="vblex"/></r></p></e>
 
-<!-- Already is <e><l>armilaro<n></l><r>armament<n></r></e>-->
-<e r="RL"><p><l>armilaro<s n="n"/></l>                 <r>arm<b/>stockpile<s n="n"/></r></p></e>
-<e r="RL"><p><l>armilaro<s n="n"/></l>                 <r>weapon<b/>stockpile<s n="n"/></r></p></e>
 <e>       <p><l>provizaro<s n="n"/></l>                <r>stockpile<s n="n"/></r></p></e>
 <!-- Already is <e r="LR"><l>ampolo<n></l><r>tube<n></r></e>-->
 <e r="RL"><p><l>ampolo<s n="n"/></l>                   <r>light<b/>bulb<s n="n"/></r></p></e>
@@ -14502,6 +14505,9 @@ BUT:
 <e r="RL"><p><l>bone<s n="adv"/></l>                   <r>all<b/>right<s n="adv"/></r></p></e>
 <e>       <p><l>ĉe<b/>la<b/>fronto<s n="adv"/></l>     <r>in<b/>command<s n="adv"/></r></p></e>
 <e>       <p><l>antaŭ<b/>ĉio<s n="adv"/></l>           <r>above<b/>all<s n="adv"/></r></p></e>
+<!-- Francis says its bad :-( <e>       <p><l>ĉiuj<b/>krom<s n="adv"/></l>           <r>all<b/>but<s n="adv"/></r></p></e> -->
+
+
 <!-- Already is <e><l>ĉiaokaze<adv></l><r>regardless<adv></r></e>-->
 <e r="RL"><p><l>ĉiaokaze<s n="adv"/></l>               <r>just<b/>in<b/>case<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiufoje<b/>pli<s n="adv"/></l>         <r>increasingly<s n="adv"/></r></p></e>
