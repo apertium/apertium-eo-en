@@ -91,6 +91,9 @@
     <def-cat n="preadv">
       <cat-item tags="preadv"/>
     </def-cat>
+    <def-cat n="predet">
+      <cat-item tags="predet"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -3137,6 +3140,61 @@
         </out>
       </action>
     </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="preadv"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="preadv" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREADV"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="predet"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="predet" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREDET"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="apos"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="apos" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="APOS"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </transfer>

@@ -18279,13 +18279,14 @@
                               <e i="">
         <par n="cometa"/>
       </e>
+<!--  ( and ) should just be treated as white space and therefore not analyzed
                               <e i="">
         <par n="paresq"/>
       </e>
                               <e i="">
         <par n="pardret"/>
       </e>
-
+-->
                               <e i="">
         <par n="guionet"/>
       </e>
