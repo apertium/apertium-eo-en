@@ -3055,9 +3055,9 @@
       </pattern>
       <action>
         <out>
-          <chunk name="CC" case="caseFirstWord">
+          <chunk name="cm" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="CM"/></tag>
+              <tag><lit-tag v="CC"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3093,7 +3093,7 @@
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="NUM"/></tag>
+              <tag><lit-tag v="SN"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3112,7 +3112,7 @@
         <out>
           <chunk name="pr" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="PR"/></tag>
+              <tag><lit-tag v="PREP"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3176,25 +3176,6 @@
         </out>
       </action>
     </rule>
-
-    <rule>
-      <pattern>
-        <pattern-item n="apos"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="apos" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="APOS"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
 
   </section-rules>
 </transfer>
