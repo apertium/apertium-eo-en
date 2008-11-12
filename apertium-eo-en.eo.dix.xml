@@ -88,7 +88,6 @@
     <sdef n="cm" /> 
     <sdef n="lpar" /> 
     <sdef n="rpar" /> 
-    <sdef n="lquest" /> 
     <sdef n="web" /> 
     <sdef n="subs" /> 
     <sdef n="pres" /> 
@@ -9722,12 +9721,6 @@
 		<l></l>
 		<r><s n="sent"/></r>
 	</p></e>
-
-
-    <e><re>[¿¡]</re><p>
-    	<l></l>
-    	<r><s n="lquest"/></r>
-    </p></e>
 
 
     <e><re>[\(\[]</re><p>

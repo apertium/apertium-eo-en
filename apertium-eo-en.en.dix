@@ -77,7 +77,6 @@
     <sdef n="cm"/> 
     <sdef n="lpar"/> 
     <sdef n="rpar"/> 
-    <sdef n="lquest"/> 
     <sdef n="web"/> 
     <sdef n="apos"/> 
     <sdef n="percent"/> 
@@ -257,15 +256,6 @@
     </e>
     </pardef>
     
-    <pardef n="separ">
-    <e>
-      <re>[¿¡]</re>
-      <p>
-        <l/> 
-        <r><s n="lquest"/></r> 
-      </p>
-    </e>
-    </pardef>
     
     <pardef n="paresq">
     <e>
@@ -18295,9 +18285,7 @@
                               <e i="">
         <par n="pardret"/>
       </e>
-                              <e i="">
-        <par n="separ"/>
-      </e>
+
                               <e i="">
         <par n="guionet"/>
       </e>
