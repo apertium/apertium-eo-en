@@ -93,6 +93,7 @@
     </def-cat>
     <def-cat n="predet">
       <cat-item tags="predet"/>
+      <cat-item tags="predet.*"/>
     </def-cat>
   </section-def-cats>
 

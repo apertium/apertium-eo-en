@@ -1827,8 +1827,6 @@
     <e lm="tio ĉi"><p><l>tion<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="tio ĉi"><p><l>tioj<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="tio ĉi"><p><l>tiojn<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-
-
     <e lm="ĉiuj"><p><l>ĉiuj</l><r>ĉiuj<s n="predet"/><s n="sp"/></r></p></e>
 
     <e lm="tio"><i>tio</i><par n="tio__prn"/></e>
@@ -1844,6 +1842,8 @@
     <e lm="ĉu"><par n="ĉ"/><i>u</i><par n="kial__adv"/></e>
     <e lm="danke al"><i>danke<b/>al</i><par n="at__pr"/></e>
     <e lm="de"><i>de</i><par n="at__pr"/></e>
+
+<!--    <e lm="de"><i>de<s n="gen"/></i></e> -->
 
 
     <e lm="diversa"><i>diversa</i><par n="ind__det"/></e>
