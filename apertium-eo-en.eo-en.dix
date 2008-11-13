@@ -329,8 +329,11 @@
 <e>       <p><l>ĉiuj<b/>krom<s n="prn"/><s n="tn"/><s n="sp"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 
 <!-- all houses, all the houses  -->
+<!-- Fran: Don't change word class
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
+-->
+<e>       <p><l>ĉiuj<s n="predet"/><s n="sp"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
 
 
 <!-- anybody can be sad  → iu ajn povas esti malĝoja -->   
