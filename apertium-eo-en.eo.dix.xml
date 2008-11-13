@@ -1669,7 +1669,6 @@
 	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
- 
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -1678,7 +1677,16 @@
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
     <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-
+<!--
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="mi"><p><l>mi</l><r>mi<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="nt"/><s n="sg"/></r></p></e>
+    <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="mf"/><s n="pl"/></r></p></e>
+-->
     <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
     <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="oni"><p><l>oni</l><r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -1843,7 +1851,8 @@
     <e lm="danke al"><i>danke<b/>al</i><par n="at__pr"/></e>
     <e lm="de"><i>de</i><par n="at__pr"/></e>
 
-<!--    <e lm="de"><i>de<s n="gen"/></i></e> -->
+<!-- genitive -->
+	<e lm="de"><p><l>de</l><r>de<s n="gen"/></r></p></e>
 
 
     <e lm="diversa"><i>diversa</i><par n="ind__det"/></e>

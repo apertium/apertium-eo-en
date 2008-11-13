@@ -37,6 +37,7 @@
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/> <!-- added by Jacob: ^Kiam<adv><itg>$ -->
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj"/>
@@ -91,6 +92,7 @@
     <def-cat n="preadv">
       <cat-item tags="preadv"/>
     </def-cat>
+
     <def-cat n="predet">
       <cat-item tags="predet"/>
       <cat-item tags="predet.*"/>
@@ -132,6 +134,7 @@
     </def-attr>
     <def-attr n="a_prn">
       <attr-item tags="prn"/>
+      <attr-item tags="prn.ref"/> <!-- Jacob added -->
       <attr-item tags="prn.itg"/>
       <attr-item tags="prn.subj"/>
       <attr-item tags="prn.obj"/>
@@ -174,6 +177,15 @@
   </section-def-attrs>
 
   <section-def-vars>
+<!--
+<spectie> which parts ?
+<spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
+<spectie> numero = the current 'number' (e.g. sg/pl
+<spectie> temps = current tense (e.g. pres/past etc.)
+<spectie> adjectiu1 = the result of the adjective macro
+<spectie> adjectiu1_tail = i think it is the lemma queue of that
+<spectie> genere = gender
+-->
     <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
