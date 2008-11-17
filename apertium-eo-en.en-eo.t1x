@@ -2734,22 +2734,13 @@
         <pattern-item n="vblexger"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="2" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
@@ -2771,6 +2762,7 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
               <equal caseless="yes">
@@ -2859,7 +2851,6 @@
             </let>
             <out>
               <chunk name="verb_pp" case="caseFirstWord">
-<!--              <chunk name="vaux_verb" case="caseFirstWord"> -->
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2914,7 +2905,7 @@
 
           <when><!-- I might have washed. =>  mi eble lavus-->
             <test>
-			  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
@@ -2964,7 +2955,6 @@
                   <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
-<!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_WOULD_HAVE"/></lu> -->
               </chunk>
             </out>
           </when>
