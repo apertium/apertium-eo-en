@@ -2846,7 +2846,7 @@
           <clip pos="2" side="sl" part="tns"/>
         </let>
         <choose>
-          <when>
+          <when><!-- I will have washed. -->
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
@@ -2880,7 +2880,44 @@
               </chunk>
             </out>
           </when>
-          <when>
+
+
+          <when><!-- I might have washed. -->
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="might"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="past"/>
+            </let>
+            <out>
+              <chunk name="verb_MIGHT" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <lit v="eble"/>
+				  <lit-tag v="adv"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+
+          
+          <when><!-- I would have washed -->   
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
