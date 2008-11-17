@@ -2858,7 +2858,8 @@
               <lit-tag v="fti"/>
             </let>
             <out>
-              <chunk name="verb_pp" case="caseFirstWord">
+<!--              <chunk name="verb_pp" case="caseFirstWord"> -->
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2877,6 +2878,7 @@
 		  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
+<!-- 			  <b/><lu><lit v="DEBUG_verb_pp_WILL"/></lu> -->
               </chunk>
             </out>
           </when>
@@ -2884,17 +2886,23 @@
 
           <when><!-- I might have washed. -->
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="might"/>
-              </equal>
+              <or>
+				  <equal caseless="yes">
+					<clip pos="1" side="sl" part="lem"/>
+					<lit v="might"/>
+				  </equal>
+				  <equal caseless="yes">
+					<clip pos="1" side="sl" part="lem"/>
+					<lit v="may"/>
+				  </equal>
+              </or>
             </test>
             <let>
               <var n="temps"/>
-              <lit-tag v="past"/>
+              <lit-tag v="cni"/>
             </let>
             <out>
-              <chunk name="verb_MIGHT" case="caseFirstWord">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2912,6 +2920,7 @@
                   <var n="temps"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
+<!-- 			  			  <b/><lu><lit v="DEBUG_verb_MAY_MIGHT"/></lu> -->
               </chunk>
             </out>
           </when>
@@ -2929,7 +2938,7 @@
               <lit-tag v="cni"/>
             </let>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2948,9 +2957,48 @@
 		  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
+<!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_WOULD_HAVE"/></lu> -->
               </chunk>
             </out>
           </when>
+
+          
+          <when><!-- XXXXXXXX I could have washed -->   
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="could"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="cni"/>
+            </let>
+            <out>
+              <chunk name="vaux_verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <lit v="esti"/>
+		  <lit-tag v="vbser"/>
+                  <var n="temps"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+		  <lit-tag v="pp3"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+ 			  <b/><lu><lit v="DEBUG_vaux_verb_XXXXXCOULD_NOT_FINISHED"/></lu>
+              </chunk>
+            </out>
+          </when>
+          
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -2974,6 +3022,7 @@
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
+<!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu> -->
               </chunk>
             </out>
           </otherwise>
