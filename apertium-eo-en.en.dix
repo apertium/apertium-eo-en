@@ -3748,6 +3748,14 @@
 -->
     </pardef>
     <pardef n="approach__vblex">
+<!--
+    <e>
+      <p>
+        <l/> 
+        <r><s n="vblex"/><s n="imp"/></r> 
+      </p>
+    </e>
+-->
     <e>
       <p>
         <l/> 
@@ -17881,7 +17889,9 @@
     <e lm="vicar"><i>vicar</i><par n="house__n"/></e>
     <e lm="vice"><i>vice</i><par n="house__n"/></e>
     <e lm="vice-president"><i>vice-president</i><par n="house__n"/></e>
-    <e lm="vice president">	<p><l>vice<b/>president</l>	  <r>vice-president</r>	</p><par n="house__n"/></e>
+    <e lm="vice president"><p><l>vice<b/>president</l><r>vice-president</r></p><par n="house__n"/></e>
+    <e lm="vice minister"><p><l>vice<b/>minister</l><r>vice-minister</r></p><par n="house__n"/></e>
+    <e lm="vice versa"><i>vice<b/>versa</i><par n="maybe__adv"/></e>
     <e lm="vicinity"><i>vicinit</i><par n="bab/y__n"/></e>
     <e lm="victim"><i>victim</i><par n="house__n"/></e>
     <e lm="victory"><i>victor</i><par n="bab/y__n"/></e>
