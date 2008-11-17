@@ -21,6 +21,10 @@
     <def-cat n="vbser">
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
+    <def-cat n="vbhaver">
+      <cat-item lemma="have" tags="vblex.*"/>
+      <cat-item lemma="have" tags="vbhaver.*"/>
+    </def-cat>
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
       <cat-item tags="vbdo.*"/>
@@ -246,7 +250,10 @@
       </choose>
     </def-macro>
 
-
+<!--
+ will have washed → Mi estos lavinta
+# (en) I would have washed → Mi estus lavinta 
+-->
     <def-macro n="set_gender1" npar="1">
       <let>
         <var n="genere"/>
@@ -2825,6 +2832,118 @@
         </choose>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: VAUX VBHAVER VBLEX">
+      <pattern>
+        <pattern-item n="vaux"/>
+        <pattern-item n="vbhaver"/>
+        <pattern-item n="vblex"/>
+      </pattern>
+      <action>
+        <let>
+          <var n="temps"/>
+          <clip pos="2" side="sl" part="tns"/>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="will"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="fti"/>
+            </let>
+            <out>
+              <chunk name="verb_pp" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <lit v="esti"/>
+		  <lit-tag v="vbser"/>
+                  <var n="temps"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+		  <lit-tag v="pp3"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <when>
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="would"/>
+              </equal>
+            </test>
+            <let>
+              <var n="temps"/>
+              <lit-tag v="cni"/>
+            </let>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <lit v="esti"/>
+		  <lit-tag v="vbser"/>
+                  <var n="temps"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+		  <lit-tag v="pp3"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <chunk name="vaux_verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
+
 
 
     <rule>
