@@ -178,7 +178,6 @@
 
   <section-def-vars>
 <!--
-<spectie> which parts ?
 <spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
 <spectie> numero = the current 'number' (e.g. sg/pl
 <spectie> temps = current tense (e.g. pres/past etc.)
@@ -419,7 +418,7 @@
         <call-macro n="set_gender1">
           <with-param pos="1"/>
         </call-macro>
-	<choose>
+        <choose>
           <when>
             <test>
               <equal caseless="yes">
