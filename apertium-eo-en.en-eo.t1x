@@ -2858,13 +2858,14 @@
               <lit-tag v="fti"/>
             </let>
             <out>
-<!--              <chunk name="verb_pp" case="caseFirstWord"> -->
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="verb_pp" case="caseFirstWord">
+<!--              <chunk name="vaux_verb" case="caseFirstWord"> -->
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
                   <tag><clip pos="2" side="tl" part="prs"/></tag>
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                  <tag><lit-tag v="DEBUG_WILL"/></tag>
                 </tags>
                 <lu>
                   <lit v="esti"/>
@@ -2875,32 +2876,47 @@
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-		  <lit-tag v="pp3"/>
+                  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
-<!-- 			  <b/><lu><lit v="DEBUG_verb_pp_WILL"/></lu> -->
               </chunk>
             </out>
           </when>
 
 
-          <when><!-- I might have washed. -->
+          <when><!-- I may have washed. =>  mi eble lavis-->
             <test>
-              <or>
-				  <equal caseless="yes">
-					<clip pos="1" side="sl" part="lem"/>
-					<lit v="might"/>
-				  </equal>
-				  <equal caseless="yes">
-					<clip pos="1" side="sl" part="lem"/>
-					<lit v="may"/>
-				  </equal>
-              </or>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="past"/></let>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                  <tag><lit-tag v="DEBUG_MAY"/></tag>
+                </tags>
+                <lu>
+                  <lit v="eble"/><lit-tag v="adv"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+
+          <when><!-- I might have washed. =>  mi eble lavus-->
+            <test>
+			  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+            </test>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2910,8 +2926,7 @@
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>
-                  <lit v="eble"/>
-				  <lit-tag v="adv"/>
+                  <lit v="eble"/><lit-tag v="adv"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2928,15 +2943,9 @@
           
           <when><!-- I would have washed -->   
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2946,15 +2955,13 @@
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>
-                  <lit v="esti"/>
-		  <lit-tag v="vbser"/>
-                  <var n="temps"/>
+                  <lit v="esti"/><lit-tag v="vbser"/><var n="temps"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-		  <lit-tag v="pp3"/>
+                  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
 <!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_WOULD_HAVE"/></lu> -->

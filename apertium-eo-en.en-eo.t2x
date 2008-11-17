@@ -14,6 +14,11 @@
       <cat-item lemma="verb" tags="SV.*"/>
       <cat-item lemma="verb_vbger" tags="SV.*"/>
       <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>
+    </def-cat>
+    <def-cat n="SVYesNoQuestionStart">
+      <cat-item lemma="xxx_ser" tags="SV.*"/>
+      <cat-item lemma="xxx_vbdo" tags="SV.*"/>
     </def-cat>
     <def-cat n="Adv">
       <cat-item tags="Adv"/>
@@ -73,7 +78,7 @@
     <!-- For questions "is the cat big?" -->
     <rule comment="REGLA: SV SN SN">
       <pattern>
-        <pattern-item n="SVall"/>
+        <pattern-item n="SVYesNoQuestionStart"/>
         <pattern-item n="SN"/>
         <pattern-item n="SN"/>
       </pattern>
