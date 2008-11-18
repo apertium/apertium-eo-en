@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+formattet by Jacob by:
+cat bak/apertium-eo-en.en-eo.t1x | sed ':a;N;$!ba;s/\n//g' | sed 's/<let>/<let>@/g' | sed 's/<equal>/<equal>@/g' | sed 's/<equal caseless="yes">/<equal caseless="yes">@/g' | sed 's/<tag>/<tag>@/g'   |sed -r 's/>@ +/>@/g'  | sed -r 's/> +/>/g'  | xmllint --format --encode utf-8 - | sed 's/<let>@/<let>/g'   | sed 's/<equal caseless="yes">@/<equal caseless="yes">/g'  | sed 's/<equal>@/<equal>/g'  | sed 's/<tag>@/<tag>/g' | sed 's/<\/rule>/<\/rule>\n\n/g' | sed 's/<\/when>/<\/when>\n/g' |  sed 's/<\/def-macro>/<\/def-macro>\n\n/g'> apertium-eo-en.en-eo.t1x
+-->
 <transfer default="chunk">
-
   <section-def-cats>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
@@ -28,7 +31,7 @@
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
       <cat-item tags="vbdo.*"/>
-<!--      <cat-item tags="vbser.*"/>  -->
+      <!--      <cat-item tags="vbser.*"/>-->
       <cat-item tags="vbhaver.*"/>
     </def-cat>
     <def-cat n="prnpers">
@@ -41,7 +44,8 @@
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
-      <cat-item tags="adv.*"/> <!-- added by Jacob: ^Kiam<adv><itg>$ -->
+      <cat-item tags="adv.*"/>
+      <!-- added by Jacob: ^Kiam<adv><itg>$ -->
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj"/>
@@ -72,7 +76,6 @@
     <def-cat n="cnjsub">
       <cat-item tags="cnjsub"/>
     </def-cat>
-
     <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
@@ -92,17 +95,14 @@
     <def-cat n="rel">
       <cat-item tags="rel.*"/>
     </def-cat>
-
     <def-cat n="preadv">
       <cat-item tags="preadv"/>
     </def-cat>
-
     <def-cat n="predet">
       <cat-item tags="predet"/>
       <cat-item tags="predet.*"/>
     </def-cat>
   </section-def-cats>
-
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -138,7 +138,8 @@
     </def-attr>
     <def-attr n="a_prn">
       <attr-item tags="prn"/>
-      <attr-item tags="prn.ref"/> <!-- Jacob added -->
+      <attr-item tags="prn.ref"/>
+      <!-- Jacob added -->
       <attr-item tags="prn.itg"/>
       <attr-item tags="prn.subj"/>
       <attr-item tags="prn.obj"/>
@@ -179,16 +180,8 @@
       <attr-item tags="acc"/>
     </def-attr>
   </section-def-attrs>
-
   <section-def-vars>
-<!--
-<spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
-<spectie> numero = the current 'number' (e.g. sg/pl
-<spectie> temps = current tense (e.g. pres/past etc.)
-<spectie> adjectiu1 = the result of the adjective macro
-<spectie> adjectiu1_tail = i think it is the lemma queue of that
-<spectie> genere = gender
--->
+    <!--<spectie>n="firstWord"/ = contains a variable giving the first word in the chunk<spectie>numero = the current 'number' (e.g. sg/pl<spectie>temps = current tense (e.g. pres/past etc.)<spectie>adjectiu1 = the result of the adjective macro<spectie>adjectiu1_tail = i think it is the lemma queue of that<spectie>genere = gender-->
     <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
@@ -196,247 +189,146 @@
     <def-var n="adjectiu1_tail"/>
     <def-var n="genere"/>
   </section-def-vars>
-
   <section-def-macros>
     <def-macro n="set_temps1" npar="1">
       <let><var n="temps"/><lit-tag v="UNKNOWN"/></let>
       <choose>
-          <when>
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="fti"/></let>
-          </when>
-          <when>
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
-          </when>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+          </test>
+          <let><var n="temps"/><lit-tag v="fti"/></let>
+        </when>
+
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+          </test>
+          <let><var n="temps"/><lit-tag v="cni"/></let>
+        </when>
+
       </choose>
     </def-macro>
-
 
 
     <def-macro n="set_number1" npar="1">
-      <let>
-        <var n="numero"/>
-        <lit v=""/>
-      </let>
+      <let><var n="numero"/><lit v=""/></let>
       <choose>
         <when>
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="nbr"/>
-              <lit-tag v="sg"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal>
           </test>
-          <let>
-            <var n="numero"/>
-            <lit-tag v="sg"/>
-          </let>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
+
         <when>
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="nbr"/>
-              <lit-tag v="pl"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
           </test>
-          <let>
-            <var n="numero"/>
-            <lit-tag v="pl"/>
-          </let>
+          <let><var n="numero"/><lit-tag v="pl"/></let>
         </when>
+
         <when>
           <!-- do something more clever here -->
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="nbr"/>
-              <lit-tag v="ND"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="nbr"/><lit-tag v="ND"/></equal>
           </test>
-          <let>
-            <var n="numero"/>
-            <lit-tag v="sg"/>
-          </let>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
+
         <otherwise>
-          <let>
-            <var n="numero"/>
-            <lit v=""/>
-          </let>
+          <let><var n="numero"/><lit v=""/></let>
         </otherwise>
       </choose>
     </def-macro>
 
-<!--
- will have washed → Mi estos lavinta
-# (en) I would have washed → Mi estus lavinta 
--->
+
+    <!-- will have washed → Mi estos lavinta# (en) I would have washed → Mi estus lavinta -->
     <def-macro n="set_gender1" npar="1">
-      <let>
-        <var n="genere"/>
-        <lit v=""/>
-      </let>
+      <let><var n="genere"/><lit v=""/></let>
       <choose>
         <when>
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="gen"/>
-              <lit-tag v="m"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></equal>
           </test>
-          <let>
-            <var n="genere"/>
-            <lit-tag v="m"/>
-          </let>
+          <let><var n="genere"/><lit-tag v="m"/></let>
         </when>
+
         <when>
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="gen"/>
-              <lit-tag v="f"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></equal>
           </test>
-          <let>
-            <var n="genere"/>
-            <lit-tag v="f"/>
-          </let>
+          <let><var n="genere"/><lit-tag v="f"/></let>
         </when>
+
         <when>
           <!-- do something more clever here -->
           <test>
-            <equal caseless="yes">
-              <clip pos="1" side="tl" part="gen"/>
-              <lit-tag v="GD"/>
-            </equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="gen"/><lit-tag v="GD"/></equal>
           </test>
-          <let>
-            <var n="genere"/>
-            <lit-tag v="m"/>
-          </let>
+          <let><var n="genere"/><lit-tag v="m"/></let>
         </when>
+
         <otherwise>
-          <let>
-            <var n="genere"/>
-            <lit v=""/>
-          </let>
+          <let><var n="genere"/><lit v=""/></let>
         </otherwise>
       </choose>
     </def-macro>
+
 
     <!-- This macro concords a noun and an adjective -->
     <def-macro n="nom_adjectiu2" npar="2">
-      <let>
-        <var n="adjectiu1"/>
-        <lit v=""/>
-      </let>
-      <let>
-        <var n="adjectiu1_tail"/>
-        <lit-tag v="2.3"/>
-      </let>
+      <let><var n="adjectiu1"/><lit v=""/></let>
+      <let><var n="adjectiu1_tail"/><lit-tag v="2.3"/></let>
       <choose>
         <when>
           <test>
             <not>
-              <equal>
-                <var n="genere"/>
-                <lit v=""/>
-              </equal>
+              <equal><var n="genere"/><lit v=""/></equal>
             </not>
           </test>
-          <let>
-            <var n="adjectiu1_tail"/>
-            <lit-tag v="3.4"/>
-          </let>
+          <let><var n="adjectiu1_tail"/><lit-tag v="3.4"/></let>
         </when>
+
       </choose>
       <choose>
         <when>
           <test>
             <and>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.comp"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="tl" part="a_adj"/>
-                <lit-tag v="adj"/>
-              </equal>
+              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
+              <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let>
-            <var n="adjectiu1"/>
-            <concat>
-              <lit v="pli"/>
-              <lit-tag v="preadv"/>
-              <lit v="$ ^"/>
-              <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="adj"/>
-              <var n="adjectiu1_tail"/>
-            </concat>
-          </let>
+          <let><var n="adjectiu1"/><concat><lit v="pli"/><lit-tag v="preadv"/><lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
         </when>
+
         <when>
           <test>
             <and>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.sup"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="tl" part="a_adj"/>
-                <lit-tag v="adj"/>
-              </equal>
+              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
+              <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let>
-            <var n="adjectiu1"/>
-            <concat>
-              <lit v="plej"/>
-              <lit-tag v="preadv"/>
-              <lit v="$ ^"/>
-              <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="adj"/>
-              <var n="adjectiu1_tail"/>
-            </concat>
-          </let>
+          <let><var n="adjectiu1"/><concat><lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
         </when>
+
         <when>
           <test>
-            <equal>
-              <clip pos="1" side="tl" part="a_adj"/>
-              <lit-tag v="adj"/>
-            </equal>
+            <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
           </test>
-          <let>
-            <var n="adjectiu1"/>
-            <concat>
-              <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="adj"/>
-              <var n="adjectiu1_tail"/>
-            </concat>
-          </let>
+          <let><var n="adjectiu1"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
         </when>
+
         <otherwise>
-          <let>
-            <var n="adjectiu1"/>
-            <concat>
-              <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="adj"/>
-              <var n="adjectiu1_tail"/>
-            </concat>
-          </let>
+          <let><var n="adjectiu1"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
         </otherwise>
       </choose>
     </def-macro>
 
-  </section-def-macros>
 
+  </section-def-macros>
   <section-rules>
     <!-- Sintagmas nominales -->
-
     <rule comment="REGLA: NOM">
       <pattern>
         <pattern-item n="nom"/>
@@ -448,10 +340,7 @@
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <var n="genere"/>
-                <lit v=""/>
-              </equal>
+              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="nom" case="caseFirstWord">
@@ -469,25 +358,26 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="nom" case="caseFirstWord">
-              <tags>
-                <tag><lit-tag v="SN"/></tag>
-                <tag><var n="genere"/></tag>
-                <tag><clip pos="1" side="tl" part="nbr"/></tag>
-                <tag><lit-tag v="nom"/></tag>
-              </tags>
-              <lu>
-                <clip pos="1" side="tl" part="lem"/>
-                <clip pos="1" side="tl" part="a_nom"/>
-                <lit-tag v="2"/>
-                <clip pos="1" side="tl" part="nbr" link-to="3"/>
-                <lit-tag v="4"/>
-              </lu>
-            </chunk>
-          </out>
-        </otherwise>
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="1" side="tl" part="nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="1" side="tl" part="nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
         </choose>
       </action>
     </rule>
@@ -505,17 +395,11 @@
         <call-macro n="set_gender1">
           <with-param pos="2"/>
         </call-macro>
-        <let>
-          <var n="numero"/>
-          <clip pos="2" side="tl" part="nbr"/>
-        </let>
+        <let><var n="numero"/><clip pos="2" side="tl" part="nbr"/></let>
         <choose>
           <when>
             <test>
-                <equal caseless="yes">
-                  <var n="genere"/>
-                  <lit v=""/>
-                </equal>
+              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
@@ -527,15 +411,15 @@
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
-<!--                  <clip pos="1" side="tl" part="nbr" link-to="2"/> -->
+                  <!--                  <clip pos="1" side="tl" part="nbr" link-to="2"/>-->
                   <lit-tag v="sg"/>
-	          <lit-tag v="3"/> 
+                  <lit-tag v="3"/>
                 </lu>
-<!--                <b pos="1"/> -->
+                <!--                <b pos="1"/>-->
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
+                </lu>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -545,7 +429,8 @@
               </chunk>
             </out>
           </when>
-	  <otherwise>
+
+          <otherwise>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
@@ -559,14 +444,14 @@
                   <clip pos="1" side="tl" part="a_nom"/>
                   <clip pos="2" side="tl" part="gen" link-to="2"/>
                   <lit-tag v="sg"/>
-<!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/> -->
-                  <lit-tag v="4"/> 
+                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/>-->
+                  <lit-tag v="4"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
-<!--                <b pos="1"/> -->
+                </lu>
+                <!--                <b pos="1"/>-->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -580,8 +465,6 @@
         </choose>
       </action>
     </rule>
-
-
 
 
     <rule comment="REGLA: ANT">
@@ -598,19 +481,20 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: COG">
       <pattern>
@@ -625,19 +509,20 @@
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen"/>
               <clip pos="1" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="3"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT COG">
       <pattern>
@@ -654,27 +539,28 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
-<!--              <clip pos="2" side="tl" part="gen"/> -->
+              <!--              <clip pos="2" side="tl" part="gen"/>-->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT ANT">
       <pattern>
@@ -698,20 +584,22 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="gen"/>
+              <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: COG COG">
       <pattern>
@@ -727,14 +615,14 @@
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen"/>
               <clip pos="1" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="3"/>
+              <lit-tag v="3"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -742,12 +630,13 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="3"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT ANT COG COG">
       <pattern>
@@ -773,15 +662,16 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="gen"/>
+              <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -789,7 +679,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -797,12 +687,13 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT COG COG">
       <pattern>
@@ -827,7 +718,7 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -835,7 +726,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -843,12 +734,13 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT ANT COG">
       <pattern>
@@ -873,15 +765,16 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="2" side="tl" part="gen"/>
+              <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -889,12 +782,13 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT GUIO ANT COG">
       <pattern>
@@ -920,7 +814,7 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -932,7 +826,7 @@
               <clip pos="3" side="tl" part="a_nom"/>
               <clip pos="3" side="tl" part="gen"/>
               <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -940,12 +834,13 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT COG GUIO COG">
       <pattern>
@@ -971,7 +866,7 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -979,7 +874,7 @@
               <clip pos="2" side="tl" part="a_nom"/>
               <clip pos="2" side="tl" part="gen"/>
               <clip pos="2" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -991,12 +886,13 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT GUIO ANT COG GUIO COG">
       <pattern>
@@ -1017,14 +913,14 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><clip pos="1" side="tl" part="nbr"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="gen" link-to="2"/>
               <clip pos="1" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -1034,9 +930,10 @@
             <lu>
               <clip pos="3" side="tl" part="lem"/>
               <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="gen"/> <!-- John Paul, Anne Marie *but* Jean Marie -->
+              <clip pos="3" side="tl" part="gen"/>
+              <!-- John Paul, Anne Marie *but* Jean Marie -->
               <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="3"/>
             <lu>
@@ -1044,7 +941,7 @@
               <clip pos="4" side="tl" part="a_nom"/>
               <clip pos="4" side="tl" part="gen"/>
               <clip pos="4" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
             <b pos="4"/>
             <lu>
@@ -1056,7 +953,7 @@
               <clip pos="6" side="tl" part="a_nom"/>
               <clip pos="6" side="tl" part="gen"/>
               <clip pos="6" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="4"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
@@ -1078,13 +975,13 @@
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="gen"/></tag>
               <tag><var n="numero"/></tag>
-	      <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_prn"/>
               <clip pos="1" side="tl" part="nbr" link-to="2"/>
-	      <lit-tag v="3"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1117,6 +1014,7 @@
       </action>
     </rule>
 
+
     <rule comment="REGLA: DET">
       <pattern>
         <pattern-item n="det"/>
@@ -1126,20 +1024,15 @@
           <when>
             <test>
               <and>
-                <equal>
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
+                <equal><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
             </test>
             <out>
               <b/>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="det" case="caseFirstWord">
@@ -1160,6 +1053,7 @@
       </action>
     </rule>
 
+
     <rule comment="REGLA: DET NOM">
       <pattern>
         <pattern-item n="det"/>
@@ -1173,14 +1067,8 @@
           <when>
             <test>
               <and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
             </test>
             <out>
@@ -1201,12 +1089,10 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <var n="genere"/>
-                <lit v=""/>
-              </equal>
+              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
@@ -1231,6 +1117,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
@@ -1261,6 +1148,7 @@
       </action>
     </rule>
 
+
     <rule comment="REGLA: DET NOM NOM">
       <pattern>
         <pattern-item n="det"/>
@@ -1271,26 +1159,14 @@
         <call-macro n="set_gender1">
           <with-param pos="3"/>
         </call-macro>
-        <let>
-          <var n="numero"/>
-          <clip pos="3" side="tl" part="nbr"/>
-        </let>
+        <let><var n="numero"/><clip pos="3" side="tl" part="nbr"/></let>
         <choose>
           <when>
             <test>
               <and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
-                <equal caseless="yes">
-                  <var n="genere"/>
-                  <lit v=""/>
-                </equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
+                <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
               </and>
             </test>
             <out>
@@ -1303,15 +1179,15 @@
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-<!--                  <clip pos="3" side="tl" part="nbr" link-to="2"/> -->
+                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="2"/>-->
                   <lit-tag v="sg"/>
-	          <lit-tag v="3"/> 
+                  <lit-tag v="3"/>
                 </lu>
-<!--                <b pos="1"/> -->
+                <!--                <b pos="1"/>-->
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
+                </lu>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1321,17 +1197,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
               <and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
             </test>
             <out>
@@ -1347,14 +1218,14 @@
                   <clip pos="2" side="tl" part="a_nom"/>
                   <clip pos="3" side="tl" part="gen" link-to="2"/>
                   <lit-tag v="sg"/>
-<!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/> -->
-                  <lit-tag v="4"/> 
+                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/>-->
+                  <lit-tag v="4"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
-<!--                <b pos="1"/> -->
+                </lu>
+                <!--                <b pos="1"/>-->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1365,12 +1236,10 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <var n="genere"/>
-                <lit v=""/>
-              </equal>
+              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="det_nom_nom" case="caseFirstWord">
@@ -1389,15 +1258,15 @@
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-<!--                  <clip pos="3" side="tl" part="nbr" link-to="2"/> -->
-                  <lit-tag v="sg"/> 
-                  <lit-tag v="3"/> 
+                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="2"/>-->
+                  <lit-tag v="sg"/>
+                  <lit-tag v="3"/>
                 </lu>
-<!--                <b pos="2"/> -->
+                <!--                <b pos="2"/>-->
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
+                </lu>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1407,6 +1276,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="det_nom_nom" case="caseFirstWord">
@@ -1427,15 +1297,15 @@
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
                   <lit-tag v="2"/>
-<!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/> -->
-                  <lit-tag v="sg"/> 
-                  <lit-tag v="4"/> 
+                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/>-->
+                  <lit-tag v="sg"/>
+                  <lit-tag v="4"/>
                 </lu>
-<!--                <b pos="2"/> -->
+                <!--                <b pos="2"/>-->
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
-		</lu>
+                </lu>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1449,7 +1319,6 @@
         </choose>
       </action>
     </rule>
-
 
 
     <rule comment="REGLA: DET ADJ NOM">
@@ -1466,26 +1335,14 @@
           <with-param pos="2"/>
           <with-param pos="3"/>
         </call-macro>
-        <let>
-          <var n="numero"/>
-          <clip pos="3" side="tl" part="nbr"/>
-        </let>
+        <let><var n="numero"/><clip pos="3" side="tl" part="nbr"/></let>
         <choose>
           <when>
             <test>
               <and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
-                <equal caseless="yes">
-                  <var n="genere"/>
-                  <lit v=""/>
-                </equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
+                <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
               </and>
             </test>
             <out>
@@ -1496,11 +1353,7 @@
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
-                  <!-- 
-             <clip pos="2" side="tl" part="lem"/>
-             <clip pos="2" side="tl" part="a_adj"/>
-             <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	     <lit-tag v="3"/> -->
+                  <!--              <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="2"/>	     <lit-tag v="3"/>-->
                   <var n="adjectiu1"/>
                 </lu>
                 <b pos="1"/>
@@ -1513,17 +1366,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
               <and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="a"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="a_det"/>
-                  <lit-tag v="det.ind"/>
-                </equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
             </test>
             <out>
@@ -1535,11 +1383,7 @@
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
-                  <!--
-             <clip pos="2" side="tl" part="lem"/>
-             <clip pos="2" side="tl" part="a_adj"/>
-             <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	     <lit-tag v="4"/> -->
+                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="3"/>	     <lit-tag v="4"/>-->
                   <var n="adjectiu1"/>
                 </lu>
                 <b pos="1"/>
@@ -1553,12 +1397,10 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <var n="genere"/>
-                <lit v=""/>
-              </equal>
+              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="det_adj_nom" case="caseFirstWord">
@@ -1575,11 +1417,7 @@
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <!--
-             <clip pos="2" side="tl" part="lem"/>
-             <clip pos="2" side="tl" part="a_adj"/>
-             <clip pos="3" side="tl" part="nbr" link-to="2"/>
-	     <lit-tag v="3"/> -->
+                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="2"/>	     <lit-tag v="3"/>-->
                   <var n="adjectiu1"/>
                 </lu>
                 <b pos="2"/>
@@ -1592,6 +1430,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="det_adj_nom" case="caseFirstWord">
@@ -1609,12 +1448,7 @@
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <!--
-             <clip pos="2" side="tl" part="lem"/>
-             <clip pos="2" side="tl" part="a_adj"/>
-             <lit-tag v="2"/>
-             <clip pos="3" side="tl" part="nbr" link-to="3"/>
-	     <lit-tag v="4"/> -->
+                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="nbr" link-to="3"/>	     <lit-tag v="4"/>-->
                   <var n="adjectiu1"/>
                 </lu>
                 <b pos="2"/>
@@ -1631,6 +1465,7 @@
         </choose>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ADJ NOM">
       <pattern>
@@ -1669,6 +1504,7 @@
       </action>
     </rule>
 
+
     <!-- Sintagmas adjetivos -->
     <rule comment="REGLA: ADJ">
       <pattern>
@@ -1678,10 +1514,7 @@
         <choose>
           <when>
             <test>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.comp"/>
-              </equal>
+              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
             </test>
             <out>
               <chunk name="preadv_adj" case="caseFirstWord">
@@ -1703,12 +1536,10 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal>
-                <clip pos="1" side="sl" part="a_adj"/>
-                <lit-tag v="adj.sint.sup"/>
-              </equal>
+              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
             </test>
             <out>
               <chunk name="preadv_adj" case="caseFirstWord">
@@ -1730,6 +1561,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="adj" case="caseFirstWord">
@@ -1749,6 +1581,7 @@
         </choose>
       </action>
     </rule>
+
 
     <!-- Sintagmas verbales -->
     <rule>
@@ -1774,6 +1607,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule>
       <pattern>
@@ -1806,33 +1640,25 @@
       </action>
     </rule>
 
+
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="vblex"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="2" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
         <choose>
-         <when>
-           <test>
-       	      <or>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="will"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="would"/>
-                  </equal>
-              </or> 
-           </test>
-          <call-macro n="set_temps1">
-            <with-param pos="1"/>
-          </call-macro>
+          <when>
+            <test>
+              <or>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
+            </test>
+            <call-macro n="set_temps1">
+              <with-param pos="1"/>
+            </call-macro>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -1850,22 +1676,20 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <!-- could:can<vaux><past>   -->
+              <or>
+                <and>
+                  <!-- could:can<vaux><past>-->
                   <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
                   <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
-		</and>
-		<!-- might:might<vaux><inf> -->
+                </and>
+                <!-- might:might<vaux><inf>-->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
-              </or> 
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -1876,8 +1700,8 @@
                 </tags>
                 <lu>
                   <lit v="povi"/>
-                  <!-- Fran's proposal: <lit-tag v="vaux.pres"/> -->
-                   <lit-tag v="vaux.cni"/>
+                  <!-- Fran's proposal: <lit-tag v="vaux.pres"/>-->
+                  <lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -1916,33 +1740,25 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="vbser"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="2" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
         <choose>
-         <when>
-           <test>
-       	      <or>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="will"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="would"/>
-                  </equal>
-              </or> 
-           </test>
-          <call-macro n="set_temps1">
-            <with-param pos="1"/>
-          </call-macro>
+          <when>
+            <test>
+              <or>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
+            </test>
+            <call-macro n="set_temps1">
+              <with-param pos="1"/>
+            </call-macro>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -1960,29 +1776,18 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="can"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="tns"/>
-                    <lit-tag v="past"/>
-                  </equal>
-		</and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="might"/>
-                </equal>
-              </or> 
+              <or>
+                <and>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
+                </and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2040,22 +1845,13 @@
         <pattern-item n="vblex"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="3" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="3" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2077,17 +1873,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2109,29 +1900,18 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="can"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="tns"/>
-                    <lit-tag v="past"/>
-                  </equal>
-					</and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="might"/>
-                </equal>
-              </or> 
+              <or>
+                <and>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
+                </and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2140,7 +1920,7 @@
                   <tag><clip pos="3" side="tl" part="prs"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                 </tags>
-				<lu>
+                <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
@@ -2188,7 +1968,6 @@
         </choose>
       </action>
     </rule>
-
 
 
     <rule comment="REGLA: VAUX ADV VBSER">
@@ -2198,22 +1977,13 @@
         <pattern-item n="vbser"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="3" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="3" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2235,17 +2005,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2267,29 +2032,18 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="can"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="tns"/>
-                    <lit-tag v="past"/>
-                  </equal>
-		</and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="might"/>
-                </equal>
-              </or> 
+              <or>
+                <and>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
+                </and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2298,7 +2052,7 @@
                   <tag><clip pos="3" side="tl" part="prs"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                 </tags>
-		<lu>
+                <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
@@ -2316,7 +2070,6 @@
               </chunk>
             </out>
           </when>
-
 
           <otherwise>
             <out>
@@ -2348,7 +2101,7 @@
       </action>
     </rule>
 
- 
+
     <rule comment="REGLA: VAUX ADV ADV VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
@@ -2357,22 +2110,13 @@
         <pattern-item n="vblex"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="4" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="4" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2398,17 +2142,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2434,29 +2173,18 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="can"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="tns"/>
-                    <lit-tag v="past"/>
-                  </equal>
-		</and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="might"/>
-                </equal>
-              </or> 
+              <or>
+                <and>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
+                </and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2465,11 +2193,11 @@
                   <tag><clip pos="4" side="tl" part="prs"/></tag>
                   <tag><clip pos="4" side="tl" part="nbr"/></tag>
                 </tags>
-		<lu>
+                <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
-		<lu>
+                <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
                 <b pos="2"/>
@@ -2522,7 +2250,7 @@
       </action>
     </rule>
 
- 
+
     <rule comment="REGLA: VAUX ADV ADV VBSER">
       <pattern>
         <pattern-item n="vaux"/>
@@ -2531,22 +2259,13 @@
         <pattern-item n="vbser"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="4" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="4" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2572,17 +2291,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2608,29 +2322,18 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-	      <or>
-		<and>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="lem"/>
-                    <lit v="can"/>
-                  </equal>
-                  <equal caseless="yes">
-                    <clip pos="1" side="sl" part="tns"/>
-                    <lit-tag v="past"/>
-                  </equal>
-		</and>
-                <equal caseless="yes">
-                  <clip pos="1" side="sl" part="lem"/>
-                  <lit v="might"/>
-                </equal>
-              </or> 
+              <or>
+                <and>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+                  <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
+                </and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              </or>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2639,11 +2342,11 @@
                   <tag><clip pos="4" side="tl" part="prs"/></tag>
                   <tag><clip pos="4" side="tl" part="nbr"/></tag>
                 </tags>
-		<lu>
+                <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
-		<lu>
+                <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
                 <b pos="2"/>
@@ -2695,7 +2398,6 @@
         </choose>
       </action>
     </rule>
-
 
 
     <rule>
@@ -2736,15 +2438,9 @@
 
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2766,6 +2462,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -2804,26 +2501,15 @@
         <pattern-item n="vblex"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="2" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
         <choose>
-          <when><!-- I will have washed. -->
+          <when>
+            <!-- I will have washed. -->
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="can"/>
-              </equal>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="tns"/>
-                <lit v="past"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit v="past"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
@@ -2834,13 +2520,13 @@
                 </tags>
                 <lu>
                   <lit v="povi"/>
-		  <lit-tag v="vaux.past"/>
+                  <lit-tag v="vaux.past"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-		  <lit-tag v="pp3"/>
+                  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -2849,15 +2535,9 @@
 
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
@@ -2869,7 +2549,7 @@
                 </tags>
                 <lu>
                   <lit v="esti"/>
-		  <lit-tag v="vbser"/>
+                  <lit-tag v="vbser"/>
                   <var n="temps"/>
                 </lu>
                 <b pos="1"/>
@@ -2883,10 +2563,10 @@
             </out>
           </when>
 
-
-          <when><!-- I may have washed. =>  mi eble lavis-->
+          <when>
+            <!-- I may have washed. =>mi eble lavis-->
             <test>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="past"/></let>
             <out>
@@ -2899,7 +2579,8 @@
                   <tag><lit-tag v="DEBUG_MAY"/></tag>
                 </tags>
                 <lu>
-                  <lit v="eble"/><lit-tag v="adv"/>
+                  <lit v="eble"/>
+                  <lit-tag v="adv"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2912,9 +2593,10 @@
             </out>
           </when>
 
-          <when><!-- I might have washed. =>  mi eble lavus-->
+          <when>
+            <!-- I might have washed. =>mi eble lavus-->
             <test>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
@@ -2926,7 +2608,8 @@
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>
-                  <lit v="eble"/><lit-tag v="adv"/>
+                  <lit v="eble"/>
+                  <lit-tag v="adv"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2935,13 +2618,13 @@
                   <var n="temps"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
-<!-- 			  			  <b/><lu><lit v="DEBUG_verb_MAY_MIGHT"/></lu> -->
+                <!-- 			  			  <b/><lu><lit v="DEBUG_verb_MAY_MIGHT"/></lu>-->
               </chunk>
             </out>
           </when>
 
-          
-          <when><!-- I would have washed -->   
+          <when>
+            <!-- I would have washed -->
             <test>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
@@ -2955,7 +2638,9 @@
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
                 </tags>
                 <lu>
-                  <lit v="esti"/><lit-tag v="vbser"/><var n="temps"/>
+                  <lit v="esti"/>
+                  <lit-tag v="vbser"/>
+                  <var n="temps"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2968,18 +2653,12 @@
             </out>
           </when>
 
-          
-          <when><!-- XXXXXXXX I could have washed -->   
+          <when>
+            <!-- XXXXXXXX I could have washed -->
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="could"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="could"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2990,21 +2669,24 @@
                 </tags>
                 <lu>
                   <lit v="esti"/>
-		  <lit-tag v="vbser"/>
+                  <lit-tag v="vbser"/>
                   <var n="temps"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-		  <lit-tag v="pp3"/>
+                  <lit-tag v="pp3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
- 			  <b/><lu><lit v="DEBUG_vaux_verb_XXXXXCOULD_NOT_FINISHED"/></lu>
+                <b/>
+                <lu>
+                  <lit v="DEBUG_vaux_verb_XXXXXCOULD_NOT_FINISHED"/>
+                </lu>
               </chunk>
             </out>
           </when>
-          
+
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -3028,14 +2710,13 @@
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
-<!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu> -->
+                <!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu>-->
               </chunk>
             </out>
           </otherwise>
         </choose>
       </action>
     </rule>
-
 
 
     <rule>
@@ -3045,22 +2726,13 @@
         <pattern-item n="vblexger"/>
       </pattern>
       <action>
-        <let>
-          <var n="temps"/>
-          <clip pos="2" side="sl" part="tns"/>
-        </let>
+        <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="will"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="fti"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
@@ -3082,17 +2754,12 @@
               </chunk>
             </out>
           </when>
+
           <when>
             <test>
-              <equal caseless="yes">
-                <clip pos="1" side="sl" part="lem"/>
-                <lit v="would"/>
-              </equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
             </test>
-            <let>
-              <var n="temps"/>
-              <lit-tag v="cni"/>
-            </let>
+            <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -3114,6 +2781,7 @@
               </chunk>
             </out>
           </when>
+
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -3143,8 +2811,6 @@
         </choose>
       </action>
     </rule>
-
-
 
 
     <rule>
@@ -3171,6 +2837,7 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="vbser"/>
@@ -3195,6 +2862,7 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="adv"/>
@@ -3213,8 +2881,8 @@
       </action>
     </rule>
 
-<!-- Conjunctions -->
 
+    <!-- Conjunctions -->
     <rule>
       <pattern>
         <pattern-item n="cnjcoo"/>
@@ -3232,6 +2900,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule>
       <pattern>
@@ -3252,8 +2921,7 @@
     </rule>
 
 
-<!-- Jacob's addition to hit all word classes -->
-
+    <!-- Jacob's addition to hit all word classes -->
     <rule>
       <pattern>
         <pattern-item n="cnjsub"/>
@@ -3271,6 +2939,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule>
       <pattern>
@@ -3290,6 +2959,7 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="sent"/>
@@ -3307,6 +2977,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule>
       <pattern>
@@ -3364,6 +3035,7 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="preadv"/>
@@ -3382,6 +3054,7 @@
       </action>
     </rule>
 
+
     <rule>
       <pattern>
         <pattern-item n="predet"/>
@@ -3399,6 +3072,7 @@
         </out>
       </action>
     </rule>
+
 
   </section-rules>
 </transfer>
