@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-formattet by Jacob by:
-cat bak/apertium-eo-en.en-eo.t1x | sed ':a;N;$!ba;s/\n//g' | sed 's/<let>/<let>@/g' | sed 's/<equal>/<equal>@/g' | sed 's/<equal caseless="yes">/<equal caseless="yes">@/g' | sed 's/<tag>/<tag>@/g'   |sed -r 's/>@ +/>@/g'  | sed -r 's/> +/>/g'  | xmllint --format --encode utf-8 - | sed 's/<let>@/<let>/g'   | sed 's/<equal caseless="yes">@/<equal caseless="yes">/g'  | sed 's/<equal>@/<equal>/g'  | sed 's/<tag>@/<tag>/g' | sed 's/<\/rule>/<\/rule>\n\n/g' | sed 's/<\/when>/<\/when>\n/g' |  sed 's/<\/def-macro>/<\/def-macro>\n\n/g'> apertium-eo-en.en-eo.t1x
--->
 <transfer default="chunk">
   <section-def-cats>
     <def-cat n="nom">
