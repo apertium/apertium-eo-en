@@ -177,7 +177,14 @@
     </def-attr>
   </section-def-attrs>
   <section-def-vars>
-    <!--<spectie>n="firstWord"/ = contains a variable giving the first word in the chunk<spectie>numero = the current 'number' (e.g. sg/pl<spectie>temps = current tense (e.g. pres/past etc.)<spectie>adjectiu1 = the result of the adjective macro<spectie>adjectiu1_tail = i think it is the lemma queue of that<spectie>genere = gender-->
+<!--
+<spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
+<spectie> numero = the current 'number' (e.g. sg/pl
+<spectie> temps = current tense (e.g. pres/past etc.)
+<spectie> adjectiu1 = the result of the adjective macro
+<spectie> adjectiu1_tail = i think it is the lemma queue of that
+<spectie> genere = gender
+-->  
     <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
@@ -185,6 +192,7 @@
     <def-var n="adjectiu1_tail"/>
     <def-var n="genere"/>
   </section-def-vars>
+  
   <section-def-macros>
     <def-macro n="set_temps1" npar="1">
       <let><var n="temps"/><lit-tag v="UNKNOWN"/></let>
@@ -239,7 +247,6 @@
     </def-macro>
 
 
-    <!-- will have washed → Mi estos lavinta# (en) I would have washed → Mi estus lavinta -->
     <def-macro n="set_gender1" npar="1">
       <let><var n="genere"/><lit v=""/></let>
       <choose>
@@ -295,7 +302,11 @@
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let><var n="adjectiu1"/><concat><lit v="pli"/><lit-tag v="preadv"/><lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
+          <let><var n="adjectiu1"/><concat>
+                <lit v="pli"/><lit-tag v="preadv"/>
+                <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
+                <var n="adjectiu1_tail"/>
+                </concat></let>
         </when>
 
         <when>
@@ -305,25 +316,36 @@
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let><var n="adjectiu1"/><concat><lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
+          <let><var n="adjectiu1"/><concat>
+                <lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
+                <var n="adjectiu1_tail"/>
+                </concat></let>
         </when>
 
         <when>
           <test>
             <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
           </test>
-          <let><var n="adjectiu1"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
+          <let><var n="adjectiu1"/><concat>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
+                <var n="adjectiu1_tail"/>
+                </concat></let>
         </when>
 
         <otherwise>
-          <let><var n="adjectiu1"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="adjectiu1_tail"/></concat></let>
+          <let><var n="adjectiu1"/><concat>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
+                <var n="adjectiu1_tail"/>
+                </concat></let>
         </otherwise>
       </choose>
     </def-macro>
-
-
   </section-def-macros>
+
+
   <section-rules>
+
     <!-- Sintagmas nominales -->
     <rule comment="REGLA: NOM">
       <pattern>
