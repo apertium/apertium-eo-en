@@ -40,8 +40,8 @@
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
-      <cat-item tags="adv.*"/>
       <!-- added by Jacob: ^Kiam<adv><itg>$ -->
+      <cat-item tags="adv.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj"/>
@@ -210,7 +210,6 @@
           </test>
           <let><var n="temps"/><lit-tag v="cni"/></let>
         </when>
-
       </choose>
     </def-macro>
 
@@ -1659,6 +1658,20 @@
     </rule>
 
 
+<!--
+can:can<vaux><pres>
+could:can<vaux><past>
+can:<:can<vaux><inf>
+can:<:can<vaux><pres>
+could:<:can<vaux><past>
+will:will<vaux><inf>
+shall:shall<vaux><inf>
+would:would<vaux><inf>
+must:must<vaux><inf>
+should:should<vaux><inf>
+may:may<vaux><inf>
+might:might<vaux><inf>
+-->
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
@@ -1670,13 +1683,12 @@
           <when>
             <test>
               <or>
+                <!-- will wash  => lavos     -    would wash => lavus -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
               </or>
             </test>
-            <call-macro n="set_temps1">
-              <with-param pos="1"/>
-            </call-macro>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -1698,12 +1710,11 @@
           <when>
             <test>
               <or>
-                <and>
-                  <!-- could:can<vaux><past>-->
+                <and><!-- could:can<vaux><past>  wash => povus lavi -->
                   <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
                   <equal caseless="yes"><clip pos="1" side="sl" part="tns"/><lit-tag v="past"/></equal>
                 </and>
-                <!-- might:might<vaux><inf>-->
+                <!-- might:might<vaux><inf> wash  =>  ???-->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
               </or>
             </test>
