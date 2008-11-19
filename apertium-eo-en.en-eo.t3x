@@ -3,11 +3,64 @@
 <postchunk>
 
   <section-def-cats>
+<!-- chunks:
+adj
+adj_nom
+adv
+ant
+ant_ant
+ant_ant_cog
+ant-ant_cog
+ant_ant_cog_cog
+ant-ant_cog-cog
+ant_cog
+ant_cog_cog
+ant_cog-cog
+cm
+cnjadv
+cnjcoo
+cog
+CS
+det
+det_adj_nom
+det_nom
+det_nom_nom
+nom
+nom_nom
+num
+pr
+preadv
+preadv_adj
+predet
+prn
+prnpers
+rel
+sent
+ser
+vaux_pp
+vaux_verb
+verb
+verb_pp
+verb_vbger
+det_preadv_adj_nom
+preadv_adj_nom
+-->
+
     <def-cat n="nom">
       <cat-item name="nom"/>
     </def-cat>
     <def-cat n="adj_nom">
       <cat-item name="adj_nom"/>
+      <cat-item name="det_nom"/>
+    </def-cat>
+    <def-cat n="det_nom_nom">
+      <cat-item name="nom_nom"/>
+      <cat-item name="det_adj_nom"/>
+      <cat-item name="preadv_adj_nom"/>
+    </def-cat>
+    <def-cat n="det_preadv_adj_nom">
+      <cat-item name="det_nom_nom"/>
+      <cat-item name="det_preadv_adj_nom"/>
     </def-cat>
   </section-def-cats>
 
@@ -70,7 +123,7 @@
       </action>
     </rule>
 
-    <rule comment="CHUNK: adj_nom">
+    <rule comment="CHUNK: adj_nom   - and others">
       <pattern>
         <pattern-item n="adj_nom"/>
       </pattern>
@@ -92,5 +145,78 @@
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="CHUNK: det_nom_nom and others">
+      <pattern>
+        <pattern-item n="det_nom_nom"/>
+      </pattern>
+      <action>
+        <call-macro n="drop_gender1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="CHUNK: det_preadv_adj_nom and ...">
+      <pattern>
+        <pattern-item n="det_preadv_adj_nom"/>
+      </pattern>
+      <action>
+        <call-macro n="drop_gender1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="4"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
   </section-rules>
 </postchunk>

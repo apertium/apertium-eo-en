@@ -201,6 +201,8 @@
     <def-var n="temps"/>
     <def-var n="adjectiu1"/>
     <def-var n="adjectiu1_tail"/>
+    <!-- if a "more" or "most" was added before an adj -->
+    <def-var n="preadv_added"/>
     <def-var n="genere"/>
   </section-def-vars>
   
@@ -292,6 +294,7 @@
     <!-- This macro concords a noun and an adjective -->
     <def-macro n="nom_adjectiu2" npar="2">
       <let><var n="adjectiu1"/><lit v=""/></let>
+      <let><var n="preadv_added"/><lit v=""/></let>      
       <let><var n="adjectiu1_tail"/><lit-tag v="2.3"/></let>
       <choose>
         <when>
@@ -317,6 +320,7 @@
                 <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
                 <var n="adjectiu1_tail"/>
                 </concat></let>
+          <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
 
         <when>
@@ -327,10 +331,11 @@
             </and>
           </test>
           <let><var n="adjectiu1"/><concat>
-                <lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
+                <lit v="plej"/><lit-tag v="preadv"/>
+                <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
                 <var n="adjectiu1_tail"/>
                 </concat></let>
+          <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
 
         <when>
@@ -1342,39 +1347,10 @@
         <choose>
           <when>
             <test>
-              <and>
+              <and><!-- a<det><ind><sg> -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-                <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
-              </and>
-            </test>
-            <out>
-              <chunk name="adj_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><clip pos="3" side="tl" part="nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <!--              <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="2"/>	     <lit-tag v="3"/>-->
-                  <var n="adjectiu1"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="nbr" link-to="2"/>
-                  <lit-tag v="3"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <when>
-            <test>
-              <and>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
+                <equal><var n="preadv_added"/><lit v=""/></equal>
               </and>
             </test>
             <out>
@@ -1403,40 +1379,78 @@
 
           <when>
             <test>
-              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
+              <and><!-- a<det><ind><sg> -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
+              </and>
+            </test>
+            <out>
+              <chunk name="preadv_adj_nom" case="caseFirstWord">              
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="3" side="tl" part="nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="3"/>	     <lit-tag v="4"/>-->
+                  <var n="adjectiu1"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="a_nom"/>
+                  <clip pos="3" side="tl" part="gen" link-to="2"/>
+                  <clip pos="3" side="tl" part="nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+
+
+
+          <when>
+            <test>
+                <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
             <out>
               <chunk name="det_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <lit-tag v="2"/>
-                  <lit-tag v="3"/>
+                  <var n="numero"/>
+                  <lit-tag v="4"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="nbr" link-to="2"/>	     <lit-tag v="3"/>-->
+                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="nbr" link-to="3"/>	     <lit-tag v="4"/>-->
                   <var n="adjectiu1"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="nbr" link-to="2"/>
-                  <lit-tag v="3"/>
+                  <lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="nbr" link-to="3"/>
+                  <lit-tag v="4"/>
                 </lu>
               </chunk>
             </out>
           </when>
 
+
+
+
           <otherwise>
             <out>
-              <chunk name="det_adj_nom" case="caseFirstWord">
+              <chunk name="det_preadv_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
