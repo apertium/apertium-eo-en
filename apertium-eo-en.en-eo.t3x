@@ -13,6 +13,17 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+    </def-attr>
+    <def-attr n="a_gen">
+      <attr-item tags="f"/>
+      <attr-item tags="m"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="GN"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
@@ -26,11 +37,31 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <out>
-          <lu>
-            <clip pos="1" part="whole"/>
-          </lu>
-        </out>
+        <choose>
+          <when>
+            <test>
+              <equal>
+                <clip pos="1" part="a_gen"/>
+                <lit-tag v="GN"/>
+              </equal>
+            </test>
+            <out>
+              <lu>
+                <clip pos="1" part="lemh"/>
+                <clip pos="1" part="a_nom"/>
+                <clip pos="1" part="a_nbr"/>
+                <clip pos="1" part="lemq"/>
+              </lu>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <lu>
+                <clip pos="1" part="whole"/>
+              </lu>
+            </out>
+          </otherwise>
+        </choose>
       </action>
     </rule>
 

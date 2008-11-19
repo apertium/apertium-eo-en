@@ -258,7 +258,7 @@
 
 
     <def-macro n="set_gender1" npar="1">
-      <let><var n="genere"/><lit v=""/></let>
+      <let><var n="genere"/><lit-tag v="GN"/></let>
       <choose>
         <when>
           <test>
@@ -283,7 +283,7 @@
         </when>
 
         <otherwise>
-          <let><var n="genere"/><lit v=""/></let>
+          <let><var n="genere"/><lit-tag v="GN"/></let>
         </otherwise>
       </choose>
     </def-macro>
@@ -365,29 +365,6 @@
         <call-macro n="set_gender1">
           <with-param pos="1"/>
         </call-macro>
-        <choose>
-          <when>
-            <test>
-              <equal caseless="yes"><var n="genere"/><lit v=""/></equal>
-            </test>
-            <out>
-              <chunk name="nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><clip pos="1" side="tl" part="nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="nbr" link-to="2"/>
-                  <lit-tag v="3"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <otherwise>
             <out>
               <chunk name="nom" case="caseFirstWord">
                 <tags>
@@ -405,8 +382,6 @@
                 </lu>
               </chunk>
             </out>
-          </otherwise>
-        </choose>
       </action>
     </rule>
 
