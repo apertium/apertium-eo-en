@@ -30,6 +30,17 @@
       <!--      <cat-item tags="vbser.*"/>-->
       <cat-item tags="vbhaver.*"/>
     </def-cat>
+
+    <def-cat n="vblex_vbser">
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="vbdo.*"/>
+      <!--      <cat-item tags="vbser.*"/>-->
+      <cat-item tags="vbhaver.*"/>
+      <cat-item lemma="be" tags="vbser.*"/>
+    </def-cat>
+    
+    
+    
     <def-cat n="prnpers">
       <cat-item lemma="prpers" tags="prn.*"/>
     </def-cat>
@@ -1661,9 +1672,6 @@
 <!--
 can:can<vaux><pres>
 could:can<vaux><past>
-can:<:can<vaux><inf>
-can:<:can<vaux><pres>
-could:<:can<vaux><past>
 will:will<vaux><inf>
 shall:shall<vaux><inf>
 would:would<vaux><inf>
@@ -1673,9 +1681,11 @@ may:may<vaux><inf>
 might:might<vaux><inf>
 -->
     <rule comment="REGLA: VAUX VBLEX">
+<!--    <rule comment="REGLA: VAUX VBSER - same as VAUX VBLEX"> -->
       <pattern>
         <pattern-item n="vaux"/>
-        <pattern-item n="vblex"/>
+<!--        <pattern-item n="vblex"/> -->
+        <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
         <let><var n="temps"/><clip pos="2" side="sl" part="tns"/></let>
@@ -1769,8 +1779,8 @@ might:might<vaux><inf>
       </action>
     </rule>
 
-
-    <rule>
+<!--
+    <rule comment="REGLA: VAUX VBSER - same as VAUX VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="vbser"/>
@@ -1865,7 +1875,7 @@ might:might<vaux><inf>
         </choose>
       </action>
     </rule>
-
+-->
 
     <rule comment="REGLA: VAUX ADV VBLEX">
       <pattern>
@@ -2380,8 +2390,7 @@ might:might<vaux><inf>
                 </lu>
                 <b pos="2"/>
                 <lu>
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.cni"/>
+                  <lit v="povi"/><lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
@@ -2577,8 +2586,7 @@ might:might<vaux><inf>
                   <tag><lit-tag v="DEBUG_WILL"/></tag>
                 </tags>
                 <lu>
-                  <lit v="esti"/>
-                  <lit-tag v="vbser"/>
+                  <lit v="esti"/><lit-tag v="vbser"/>
                   <var n="temps"/>
                 </lu>
                 <b pos="1"/>
@@ -2608,8 +2616,7 @@ might:might<vaux><inf>
                   <tag><lit-tag v="DEBUG_MAY"/></tag>
                 </tags>
                 <lu>
-                  <lit v="eble"/>
-                  <lit-tag v="adv"/>
+                  <lit v="eble"/><lit-tag v="adv"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
