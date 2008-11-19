@@ -343,7 +343,7 @@
                 </concat></let>
         </when>
 
-        <otherwise>
+        <otherwise><!-- Never happens - not in Jacob's corpus -->
           <let><var n="adjectiu1"/><concat>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
                 <var n="adjectiu1_tail"/>
@@ -1094,7 +1094,7 @@
         <choose>
           <when>
             <test>
-              <and>
+              <and><!-- if DET is a<det><ind><sg>   -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
