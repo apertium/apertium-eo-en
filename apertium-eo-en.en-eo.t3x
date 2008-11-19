@@ -6,6 +6,9 @@
     <def-cat n="nom">
       <cat-item name="nom"/>
     </def-cat>
+    <def-cat n="adj_nom">
+      <cat-item name="adj_nom"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -30,13 +33,8 @@
     <def-var n="paraula"/>
   </section-def-vars>
 
-  <section-rules>
-
-    <rule comment="CHUNK:">
-      <pattern>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
+  <section-def-macros>
+    <def-macro n="drop_gender1" npar="1">   
         <choose>
           <when>
             <test>
@@ -45,25 +43,54 @@
                 <lit-tag v="GN"/>
               </equal>
             </test>
-            <out>
-              <lu>
-                <clip pos="1" part="lemh"/>
-                <clip pos="1" part="a_nom"/>
-                <clip pos="1" part="a_nbr"/>
-                <clip pos="1" part="lemq"/>
-              </lu>
-            </out>
-          </when>
-          <otherwise>
-            <out>
-              <lu>
-                <clip pos="1" part="whole"/>
-              </lu>
-            </out>
-          </otherwise>
-        </choose>
+            <let>
+                <clip pos="1" part="a_gen"/>
+                <lit v=""/>
+            </let>
+           </when>
+         </choose>
+    </def-macro>
+  </section-def-macros>
+
+  <section-rules>
+
+    <rule comment="CHUNK: nom">
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="drop_gender1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
       </action>
     </rule>
 
+    <rule comment="CHUNK: adj_nom">
+      <pattern>
+        <pattern-item n="adj_nom"/>
+      </pattern>
+      <action>
+        <call-macro n="drop_gender1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
   </section-rules>
 </postchunk>
