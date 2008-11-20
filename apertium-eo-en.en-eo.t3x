@@ -44,6 +44,7 @@ verb_pp
 verb_vbger
 det_preadv_adj_nom
 preadv_adj_nom
+nom_gen_nom
 -->
 
     <def-cat n="nom">
@@ -57,6 +58,7 @@ preadv_adj_nom
       <cat-item name="nom_nom"/>
       <cat-item name="det_adj_nom"/>
       <cat-item name="preadv_adj_nom"/>
+      <cat-item name="nom_gen_nom"/>
     </def-cat>
     <def-cat n="det_preadv_adj_nom">
       <cat-item name="det_nom_nom"/>

@@ -6,6 +6,15 @@
       <cat-item tags="np.al.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
+    <def-cat n="ant">
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
+    <def-cat n="nom_ant">
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.al.*"/>
+      <cat-item tags="np.top.*"/>
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
       <cat-item tags="vblex.sep.inf"/>
@@ -61,9 +70,6 @@
     <def-cat n="to">
       <cat-item lemma="to" tags="pr"/>
     </def-cat>
-    <def-cat n="ant">
-      <cat-item tags="np.ant.*"/>
-    </def-cat>
     <def-cat n="cog">
       <cat-item tags="np.cog.*"/>
     </def-cat>
@@ -108,6 +114,9 @@
     <def-cat n="predet">
       <cat-item tags="predet"/>
       <cat-item tags="predet.*"/>
+    </def-cat>
+    <def-cat n="gen">
+      <cat-item tags="gen"/>
     </def-cat>
   </section-def-cats>
   <section-def-attrs>
@@ -369,9 +378,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="nom" case="caseFirstWord">
                 <tags>
@@ -391,6 +398,50 @@
             </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
+      <pattern>
+        <pattern-item n="nom_ant"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_gender1"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="2" side="tl" part="whole"/>
+                  </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
 
 
     <rule comment="REGLA: NOM NOM">
