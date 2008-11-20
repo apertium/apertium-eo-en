@@ -295,6 +295,8 @@
     <def-macro n="nom_adjectiu2" npar="2">
       <let><var n="adjectiu1"/><lit v=""/></let>
       <let><var n="preadv_added"/><lit v=""/></let>      
+      <let><var n="adjectiu1_tail"/><lit-tag v="3.4"/></let>
+<!--      
       <let><var n="adjectiu1_tail"/><lit-tag v="2.3"/></let>
       <choose>
         <when>
@@ -303,10 +305,9 @@
               <equal><var n="genere"/><lit v=""/></equal>
             </not>
           </test>
-          <let><var n="adjectiu1_tail"/><lit-tag v="3.4"/></let>
         </when>
-
       </choose>
+-->      
       <choose>
         <when>
           <test>
