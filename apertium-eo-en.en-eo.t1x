@@ -1493,6 +1493,17 @@
         <call-macro n="set_gender1">
           <with-param pos="2"/>
         </call-macro>
+        <call-macro n="nom_adjectiu2">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+
+        <choose>
+          <when>
+            <test>
+                <equal><var n="preadv_added"/><lit v=""/></equal>
+            </test>
+
         <out>
           <chunk name="adj_nom" case="caseFirstWord">
             <tags>
@@ -1518,6 +1529,33 @@
             </lu>
           </chunk>
         </out>
+          </when>
+        <otherwise>
+        <out><!--  better dog. best dog. -->
+          <chunk name="preadv_adj_nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><var n="genere"/></tag>
+              <tag><clip pos="2" side="tl" part="nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+                  <var n="adjectiu1"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <lit-tag v="2"/>
+              <clip pos="2" side="tl" part="nbr" link-to="3"/>
+              <lit-tag v="4"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+        </choose>
+
+
       </action>
     </rule>
 
