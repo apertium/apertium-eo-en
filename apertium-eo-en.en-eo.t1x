@@ -399,14 +399,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-       <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <let><var n="numero"/><clip pos="2" side="tl" part="nbr"/></let>
+        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_gender1"><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
@@ -418,7 +413,6 @@
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
-                  <!-- <clip pos="1" side="tl" part="gen"/> -->
                   <var n="genere_first"/>
                   <lit-tag v="sg"/>
                   <lit-tag v="4"/>
@@ -427,7 +421,7 @@
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!--                <b pos="1"/>-->
+                <!-- <b pos="1"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -1064,6 +1058,42 @@
             </out>
           </when>
 
+          <when>
+            <test>
+              <and><!-- if DET is  ^more<det><qnt><sp>$   =>  pli da    then we should NOT permit marking with accusative -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="more"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.qnt"/></equal>
+              </and>
+            </test>
+            <out>
+              <chunk name="det_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="2" side="tl" part="nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="2" side="tl" part="nbr" link-to="3"/>
+                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="nbr" link-to="3"/>
+                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <lit-tag v="nom"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+
+
           <otherwise>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
@@ -1102,14 +1132,13 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
-          <with-param pos="3"/>
-        </call-macro>
-        <let><var n="numero"/><clip pos="3" side="tl" part="nbr"/></let>
+        <call-macro n="set_gender1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_gender1"><with-param pos="3"/></call-macro>
         <choose>
           <when>
             <test>
-              <and>
+              <and><!-- a<det><ind> house dog  -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
@@ -1118,27 +1147,27 @@
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
+                  <tag><lit-tag v="GD"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
+                <!-- <b pos="1"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="gen" link-to="2"/>
+                  <var n="genere_first"/>
                   <lit-tag v="sg"/>
-                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/>-->
                   <lit-tag v="4"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!--                <b pos="1"/>-->
+                <!-- <b pos="2"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="gen" link-to="2"/>
+                  <var n="genere"/>
                   <clip pos="3" side="tl" part="nbr" link-to="3"/>
                   <lit-tag v="4"/>
                 </lu>
@@ -1151,34 +1180,33 @@
               <chunk name="det_nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
+                  <tag><lit-tag v="GD"/></tag>
                   <tag><clip pos="3" side="tl" part="nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <var n="numero"/>
+                  <clip pos="3" side="tl" part="nbr" link-to="3"/>
                   <lit-tag v="4"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <!--                  <clip pos="3" side="tl" part="nbr" link-to="3"/>-->
+                  <var n="genere_first"/>
                   <lit-tag v="sg"/>
                   <lit-tag v="4"/>
                 </lu>
-                <!--                <b pos="2"/>-->
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
+                <!-- <b pos="2"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
+                  <var n="genere"/>
                   <clip pos="3" side="tl" part="nbr" link-to="3"/>
                   <lit-tag v="4"/>
                 </lu>
