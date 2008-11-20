@@ -204,6 +204,7 @@
     <!-- if a "more" or "most" was added before an adj -->
     <def-var n="preadv_added"/>
     <def-var n="genere"/>
+    <def-var n="genere_first"/>
   </section-def-vars>
   
   <section-def-macros>
@@ -401,17 +402,15 @@
         <call-macro n="set_gender1">
           <with-param pos="1"/>
         </call-macro>
-      <!--
+       <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_gender1">
           <with-param pos="2"/>
         </call-macro>
-        -->
         <let><var n="numero"/><clip pos="2" side="tl" part="nbr"/></let>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
-                  <!-- <tag><var n="genere"/></tag> -->
                   <tag><lit-tag v="GD"/></tag>
                   <tag><clip pos="2" side="tl" part="nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
@@ -420,7 +419,7 @@
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
                   <!-- <clip pos="1" side="tl" part="gen"/> -->
-                  <var n="genere"/>
+                  <var n="genere_first"/>
                   <lit-tag v="sg"/>
                   <lit-tag v="4"/>
                 </lu>
@@ -432,7 +431,7 @@
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-                  <clip pos="2" side="tl" part="gen"/>
+                  <var n="genere"/>
                   <clip pos="2" side="tl" part="nbr" link-to="3"/>
                   <lit-tag v="4"/>
                 </lu>
