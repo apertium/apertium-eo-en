@@ -434,6 +434,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="nom">
@@ -462,6 +463,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
@@ -506,6 +508,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
@@ -547,6 +550,7 @@
         <pattern-item n="ant"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant">
             <tags>
@@ -573,6 +577,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="cog">
             <tags>
@@ -599,6 +604,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_cog">
             <tags>
@@ -634,6 +640,7 @@
         <pattern-item n="ant"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_ant">
             <tags>
@@ -670,6 +677,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_ant">
             <tags>
@@ -706,6 +714,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_ant_cog_cog">
             <tags>
@@ -759,6 +768,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_cog_cog">
             <tags>
@@ -803,6 +813,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_ant_cog">
             <tags>
@@ -849,6 +860,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant-ant_cog">
             <tags>
@@ -898,6 +910,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant_cog-cog">
             <tags>
@@ -949,6 +962,7 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ant-ant_cog-cog">
             <tags>
@@ -1008,6 +1022,7 @@
         <pattern-item n="prn"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_numero1"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prn">
@@ -1034,6 +1049,7 @@
         <pattern-item n="prnpers"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prnpers">
             <tags>
@@ -1060,6 +1076,7 @@
         <pattern-item n="det"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <choose>
           <when>
             <test>
@@ -1100,9 +1117,8 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_genere1">
-          <with-param pos="2"/>
-        </call-macro>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <choose>
           <when>
             <test>
@@ -1204,6 +1220,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
@@ -1297,12 +1314,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_genere1">
-          <with-param pos="3"/>
-        </call-macro>
-        <call-macro n="set_adjectiu1">
-          <with-param pos="2"/>
-        </call-macro>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+        <call-macro n="set_adjectiu1"><with-param pos="2"/></call-macro>
         <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
         <choose>
           <when>
@@ -1445,6 +1459,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <choose>
@@ -1513,6 +1528,7 @@
         <pattern-item n="adj"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <choose>
           <when>
             <test>
@@ -1594,6 +1610,7 @@
         <pattern-item n="vblexinf"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="verb">
             <tags>
@@ -1620,6 +1637,7 @@
         <pattern-item n="vblexger"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="verb_vbger">
             <tags>
@@ -1664,6 +1682,7 @@ might:might<vaux><inf>
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -1762,6 +1781,7 @@ might:might<vaux><inf>
         <pattern-item n="vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -1861,6 +1881,7 @@ might:might<vaux><inf>
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="3" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -1971,6 +1992,7 @@ might:might<vaux><inf>
         <pattern-item n="vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="3" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -2105,6 +2127,7 @@ might:might<vaux><inf>
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="4" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -2227,6 +2250,7 @@ might:might<vaux><inf>
         <pattern-item n="vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="4" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -2374,6 +2398,7 @@ might:might<vaux><inf>
         <pattern-item n="vblexger"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -2469,6 +2494,7 @@ might:might<vaux><inf>
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
 
@@ -2636,6 +2662,7 @@ might:might<vaux><inf>
         <pattern-item n="vblexger"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
@@ -2708,6 +2735,7 @@ might:might<vaux><inf>
         <pattern-item n="vblex"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="verb">
             <tags>
@@ -2733,6 +2761,7 @@ might:might<vaux><inf>
         <pattern-item n="vbser"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="ser">
             <tags>
@@ -2758,6 +2787,7 @@ might:might<vaux><inf>
         <pattern-item n="adv"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="adv">
             <tags>
@@ -2784,6 +2814,7 @@ might:might<vaux><inf>
         <pattern-item n="cnjcoo"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="cnjcoo">
             <tags>
@@ -2803,6 +2834,7 @@ might:might<vaux><inf>
         <pattern-item n="cnjadv"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="cnjadv">
             <tags>
@@ -2822,6 +2854,7 @@ might:might<vaux><inf>
         <pattern-item n="cnjsub"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="CS">
             <tags>
@@ -2898,6 +2931,7 @@ might:might<vaux><inf>
         <pattern-item n="pr"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="pr">
             <tags>
@@ -2917,6 +2951,7 @@ might:might<vaux><inf>
         <pattern-item n="rel"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="rel">
             <tags>
@@ -2936,6 +2971,7 @@ might:might<vaux><inf>
         <pattern-item n="preadv"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="preadv">
             <tags>
@@ -2955,6 +2991,7 @@ might:might<vaux><inf>
         <pattern-item n="predet"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="predet">
             <tags>
