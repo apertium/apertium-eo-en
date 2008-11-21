@@ -252,7 +252,6 @@
     </def-attr>
   </section-def-attrs>
 
-  <section-def-vars>
 <!--
 <spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
 <spectie> numero = the current 'number' (e.g. sg/pl
@@ -261,6 +260,7 @@
 <spectie> adjectiu_tail = i think it is the lemma queue of that
 <spectie> genere = gender
 -->  
+  <section-def-vars>
     <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
@@ -555,9 +555,6 @@
         <pattern-item n="ant"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant" case="caseFirstWord">
             <tags>
@@ -584,9 +581,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="cog" case="caseFirstWord">
             <tags>
@@ -613,9 +607,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_cog" case="caseFirstWord">
             <tags>
@@ -651,9 +642,6 @@
         <pattern-item n="ant"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_ant" case="caseFirstWord">
             <tags>
@@ -690,9 +678,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_ant" case="caseFirstWord">
             <tags>
@@ -729,9 +714,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_ant_cog_cog" case="caseFirstWord">
             <tags>
@@ -785,9 +767,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_cog_cog" case="caseFirstWord">
             <tags>
@@ -832,9 +811,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant_ant_cog" case="caseFirstWord">
             <tags>
@@ -881,9 +857,6 @@
         <pattern-item n="cog"/>
       </pattern>
       <action>
-        <call-macro n="firstWord">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <chunk name="ant-ant_cog" case="caseFirstWord">
             <tags>
