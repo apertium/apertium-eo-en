@@ -2676,7 +2676,7 @@ might:might<vaux><inf>
             </out>
           </when>
 
-          <otherwise>
+          <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2699,7 +2699,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
-                <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu>
+                <!-- <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu>-->
               </chunk>
             </out>
           </otherwise>
