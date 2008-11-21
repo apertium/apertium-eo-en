@@ -1502,7 +1502,6 @@
             <test>
                 <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
-
         <out>
           <chunk name="adj_nom" case="caseFirstWord">
             <tags>
@@ -1529,6 +1528,7 @@
           </chunk>
         </out>
           </when>
+
         <otherwise>
         <out><!--  better dog. best dog. -->
           <chunk name="preadv_adj_nom" case="caseFirstWord">
@@ -1553,8 +1553,6 @@
         </out>
         </otherwise>
         </choose>
-
-
       </action>
     </rule>
 
@@ -1635,6 +1633,8 @@
         </choose>
       </action>
     </rule>
+
+
 
 
     <!-- Sintagmas verbales -->
@@ -2521,34 +2521,6 @@ might:might<vaux><inf>
       <action>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
-          <when>
-            <test><!-- I could have washed. -->
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
-              <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
-            <out>
-              <chunk name="vaux_pp" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.past"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="pp3"/>
-                  <clip pos="3" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
 
           <when>
             <test>
@@ -2612,6 +2584,7 @@ might:might<vaux><inf>
             </out>
           </when>
 
+
           <when>
             <!-- I might have washed. =>mi eble lavus-->
             <test>
@@ -2637,19 +2610,20 @@ might:might<vaux><inf>
                   <var n="temps"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
-                <!-- 			  			  <b/><lu><lit v="DEBUG_verb_MAY_MIGHT"/></lu>-->
               </chunk>
             </out>
           </when>
 
+
+
           <when>
-            <!-- XXXXXXXX I could have washed -->
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="could"/></equal>
+            <test><!-- I could have washed => Mi povis lavi. OK TODO  "Mi povintus lavi" would be better-->
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2657,24 +2631,20 @@ might:might<vaux><inf>
                   <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
-                  <lit v="esti"/>
-                  <lit-tag v="vbser"/>
-                  <var n="temps"/>
+                  <lit v="povi"/>
+                  <lit-tag v="vaux.past"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="pp3"/>
+                  <lit-tag v="inf"/>
                   <clip pos="3" side="tl" part="lemq"/>
-                </lu>
-                <b/>
-                <lu>
-                  <lit v="DEBUG_vaux_verb_XXXXXCOULD_NOT_FINISHED"/>
                 </lu>
               </chunk>
             </out>
           </when>
+
 
           <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
             <out>
@@ -2721,7 +2691,7 @@ might:might<vaux><inf>
           <when>
             <test>
               <or>
-                <!-- will wash  => lavos     -    would wash => lavus -->
+                <!-- I will/would be washing my hands  => Mi estos/estus lavanta miajn manojn  -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
               </or>
@@ -2750,7 +2720,8 @@ might:might<vaux><inf>
           </when>
 
 
-          <otherwise>
+          <otherwise><!-- can be describing=>povas esti priskribanta  OK
+                          may be confusing=>povi esti konfuzanta TODO: povAS esti konfuzanta -->
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
@@ -2773,6 +2744,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
+                <!-- <b/><lu><lit v="DEBUG_vaux_vbser_vblexger"/></lu> -->
               </chunk>
             </out>
           </otherwise>
@@ -2850,6 +2822,12 @@ might:might<vaux><inf>
     </rule>
 
 
+
+
+
+
+
+
     <!-- Conjunctions -->
     <rule>
       <pattern>
@@ -2889,7 +2867,6 @@ might:might<vaux><inf>
     </rule>
 
 
-    <!-- Jacob's addition to hit all word classes -->
     <rule>
       <pattern>
         <pattern-item n="cnjsub"/>
