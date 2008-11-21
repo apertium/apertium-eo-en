@@ -101,8 +101,7 @@
       <cat-item tags="vbhaver.*"/>
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
-    
-    
+        
     
     <def-cat n="prnpers">
       <cat-item lemma="prpers" tags="prn.*"/>
@@ -250,10 +249,16 @@
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
     </def-attr>
+
+
+    <def-attr n="a_np_acr"><!-- taken from en-es.t1x, for use in macro firstWord -->
+      <attr-item tags="np"/>
+      <attr-item tags="acr"/>
+    </def-attr>
+
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
     <def-var n="adjectiu"/>
@@ -262,9 +267,64 @@
     <def-var n="preadv_added"/>
     <def-var n="genere"/>
     <def-var n="genere_first"/>
+    <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
+    <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
   </section-def-vars>
   
   <section-def-macros>
+
+
+    <def-macro n="firstWord" npar="1">
+      <choose><!-- taken from en-es.t1x, for use in macro firstWord -->
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" side="sl" part="a_np_acr"/>
+	      <lit v=""/>
+	    </equal>
+	  </test>
+	  <choose>
+	    <when>
+	      <test>
+		<equal> 
+		  <var n="EOS"/>
+		  <lit v="true"/>
+		</equal> 
+	      </test>
+	      <modify-case>
+		<clip pos="1" side="tl" part="lem"/>
+		<lit v="aa"/>
+	      </modify-case>
+	      <let>
+		<var n="caseFirstWord"/>
+		<lit v="Aa"/>
+	      </let>
+	    </when>
+	    <otherwise> 
+	      <let>
+		<var n="caseFirstWord"/>
+		<lit v="aa"/>
+	      </let>
+	    </otherwise>
+	  </choose>
+	</when>
+	<otherwise>
+	  <let>
+	    <var n="caseFirstWord"/>
+	    <lit v="aa"/>
+	  </let>
+	</otherwise>
+      </choose>
+      <let>
+	<var n="EOS"/>
+	<lit v="false"/>
+      </let>
+    </def-macro>
+
+
+
+
+
     <def-macro n="set_temps1" npar="1">
       <let><var n="temps"/><lit-tag v="UNKNOWN"/></let>
       <choose>
@@ -437,7 +497,7 @@
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="nom">
+              <chunk name="nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -468,7 +528,7 @@
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
-              <chunk name="nom_gen_nom">
+              <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -513,7 +573,7 @@
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
             <out>
-              <chunk name="nom_nom">
+              <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="GD"/></tag>
@@ -552,7 +612,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant">
+          <chunk name="ant" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -579,7 +639,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="cog">
+          <chunk name="cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -606,7 +666,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_cog">
+          <chunk name="ant_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -642,7 +702,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant">
+          <chunk name="ant_ant" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -679,7 +739,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant">
+          <chunk name="ant_ant" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -716,7 +776,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant_cog_cog">
+          <chunk name="ant_ant_cog_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -770,7 +830,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_cog_cog">
+          <chunk name="ant_cog_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -815,7 +875,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant_cog">
+          <chunk name="ant_ant_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -862,7 +922,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant-ant_cog">
+          <chunk name="ant-ant_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -912,7 +972,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_cog-cog">
+          <chunk name="ant_cog-cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -964,7 +1024,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant-ant_cog-cog">
+          <chunk name="ant-ant_cog-cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -1025,7 +1085,7 @@
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_numero1"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="prn">
+          <chunk name="prn" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
@@ -1051,7 +1111,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="prnpers">
+          <chunk name="prnpers" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
@@ -1086,13 +1146,13 @@
               </and>
             </test>
             <out>
-              <b/>
+              <b/><!-- TODO dont output a blank -->
             </out>
           </when>
 
           <otherwise>
             <out>
-              <chunk name="det">
+              <chunk name="det" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SD"/></tag>
                   <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -1128,7 +1188,7 @@
               </and>
             </test>
             <out>
-              <chunk name="nom">
+              <chunk name="nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1154,7 +1214,7 @@
               </and>
             </test>
             <out>
-              <chunk name="det_nom">
+              <chunk name="det_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1184,7 +1244,7 @@
 
           <otherwise>
             <out>
-              <chunk name="det_nom">
+              <chunk name="det_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1233,7 +1293,7 @@
               </and>
             </test>
             <out>
-              <chunk name="nom_nom">
+              <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="GD"/></tag>
@@ -1266,7 +1326,7 @@
 
           <otherwise>
             <out>
-              <chunk name="det_nom_nom">
+              <chunk name="det_nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="GD"/></tag>
@@ -1328,7 +1388,7 @@
               </and>
             </test>
             <out>
-              <chunk name="adj_nom">
+              <chunk name="adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1359,7 +1419,7 @@
               </and>
             </test>
             <out>
-              <chunk name="preadv_adj_nom">              
+              <chunk name="preadv_adj_nom" case="caseFirstWord">              
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1387,7 +1447,7 @@
                 <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
             <out>
-              <chunk name="det_adj_nom">
+              <chunk name="det_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1419,7 +1479,7 @@
 
           <otherwise>
             <out>
-              <chunk name="det_preadv_adj_nom">
+              <chunk name="det_preadv_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -1468,7 +1528,7 @@
                 <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
         <out>
-          <chunk name="adj_nom">
+          <chunk name="adj_nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><var n="genere"/></tag>
@@ -1496,7 +1556,7 @@
 
         <otherwise>
         <out><!--  better dog. best dog. -->
-          <chunk name="preadv_adj_nom">
+          <chunk name="preadv_adj_nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><var n="genere"/></tag>
@@ -1535,7 +1595,7 @@
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
             </test>
             <out>
-              <chunk name="preadv_adj">
+              <chunk name="preadv_adj" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="sg"/></tag>
@@ -1560,7 +1620,7 @@
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
             </test>
             <out>
-              <chunk name="preadv_adj">
+              <chunk name="preadv_adj" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="sg"/></tag>
@@ -1582,7 +1642,7 @@
 
           <otherwise>
             <out>
-              <chunk name="adj">
+              <chunk name="adj" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><lit-tag v="sg"/></tag>
@@ -1612,7 +1672,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="verb">
+          <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
@@ -1639,7 +1699,7 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="verb_vbger">
+          <chunk name="verb_vbger" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
@@ -1695,7 +1755,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1725,7 +1785,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1750,7 +1810,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1795,7 +1855,7 @@ might:might<vaux><inf>
               <with-param pos="1"/>
             </call-macro>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1824,7 +1884,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1848,7 +1908,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1894,7 +1954,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1928,7 +1988,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -1956,7 +2016,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2001,7 +2061,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2028,7 +2088,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2061,7 +2121,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2089,7 +2149,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2140,7 +2200,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2177,7 +2237,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2209,7 +2269,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2259,7 +2319,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2290,7 +2350,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2327,7 +2387,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2358,7 +2418,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2407,7 +2467,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="fti"/></let>
             <out>
-              <chunk name="verb_vbger">
+              <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2434,7 +2494,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2457,7 +2517,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2508,7 +2568,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb_pp">
+              <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2538,7 +2598,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="past"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2568,7 +2628,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="verb">
+              <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2599,7 +2659,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_pp">
+              <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2624,7 +2684,7 @@ might:might<vaux><inf>
 
           <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2675,7 +2735,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb_vbger">
+              <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2700,7 +2760,7 @@ might:might<vaux><inf>
           <otherwise><!-- can be describing=>povas esti priskribanta  OK
                           may be confusing=>povi esti konfuzanta TODO: povAS esti konfuzanta -->
             <out>
-              <chunk name="vaux_verb">
+              <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="temps"/></tag>
@@ -2737,7 +2797,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="verb">
+          <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
@@ -2763,7 +2823,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ser">
+          <chunk name="ser" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
@@ -2789,7 +2849,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="adv">
+          <chunk name="adv" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="Adv"/></tag>
             </tags>
@@ -2816,7 +2876,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="cnjcoo">
+          <chunk name="cnjcoo" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="CC"/></tag>
             </tags>
@@ -2836,7 +2896,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="cnjadv">
+          <chunk name="cnjadv" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="CA"/></tag>
             </tags>
@@ -2856,7 +2916,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="CS">
+          <chunk name="CS" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NUM"/></tag>
             </tags>
@@ -2888,11 +2948,33 @@ might:might<vaux><inf>
     </rule>
 
 
-    <rule>
+    <rule comment="REGLA: reset variables">
       <pattern>
         <pattern-item n="sent"/>
       </pattern>
       <action>
+	<choose>
+	  <when>
+	    <test>
+	      <not>
+		<or>
+		  <equal>
+		    <clip pos="1" side="sl" part="lem"/>
+		    <lit v=";"/>
+		  </equal>
+		  <equal>
+		    <clip pos="1" side="sl" part="lem"/>
+		    <lit v=":"/>
+		  </equal>
+		</or>
+	      </not>
+	    </test>	      
+	    <let>
+	      <var n="EOS"/>
+	      <lit v="true"/>
+	    </let>
+	  </when>
+	</choose>
         <out>
           <chunk name="sent">
             <tags>
@@ -2933,7 +3015,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="pr">
+          <chunk name="pr" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PREP"/></tag>
             </tags>
@@ -2953,7 +3035,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="rel">
+          <chunk name="rel" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="REL"/></tag>
             </tags>
@@ -2973,7 +3055,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="preadv">
+          <chunk name="preadv" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PREADV"/></tag>
             </tags>
@@ -2993,7 +3075,7 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="predet">
+          <chunk name="predet" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PREDET"/></tag>
             </tags>
