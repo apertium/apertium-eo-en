@@ -257,15 +257,15 @@
 <spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
 <spectie> numero = the current 'number' (e.g. sg/pl
 <spectie> temps = current tense (e.g. pres/past etc.)
-<spectie> adjectiu1 = the result of the adjective macro
-<spectie> adjectiu1_tail = i think it is the lemma queue of that
+<spectie> adjectiu = the result of the adjective macro
+<spectie> adjectiu_tail = i think it is the lemma queue of that
 <spectie> genere = gender
 -->  
     <def-var n="firstWord"/>
     <def-var n="numero"/>
     <def-var n="temps"/>
-    <def-var n="adjectiu1"/>
-    <def-var n="adjectiu1_tail"/>
+    <def-var n="adjectiu"/>
+    <def-var n="adjectiu_tail"/>
     <!-- if a "more" or "most" was added before an adj -->
     <def-var n="preadv_added"/>
     <def-var n="genere"/>
@@ -301,7 +301,7 @@
     </def-macro>
 
 
-    <def-macro n="set_number1" npar="1">
+    <def-macro n="set_numero1" npar="1">
       <let><var n="numero"/><lit v=""/></let>
       <choose>
         <when>
@@ -333,7 +333,7 @@
     </def-macro>
 
 
-    <def-macro n="set_gender1" npar="1">
+    <def-macro n="set_genere1" npar="1">
       <let><var n="genere"/><lit-tag v="GN"/></let>
       <choose>
         <when>
@@ -366,12 +366,12 @@
 
 
     <!-- This macro concords a noun and an adjective -->
-    <def-macro n="nom_adjectiu2" npar="2">
-      <let><var n="adjectiu1"/><lit v=""/></let>
+    <def-macro n="set_adjectiu1" npar="1">
+      <let><var n="adjectiu"/><lit v=""/></let>
       <let><var n="preadv_added"/><lit v=""/></let>      
-      <let><var n="adjectiu1_tail"/><lit-tag v="3.4"/></let>
+      <let><var n="adjectiu_tail"/><lit-tag v="3.4"/></let>
 <!--      
-      <let><var n="adjectiu1_tail"/><lit-tag v="2.3"/></let>
+      <let><var n="adjectiu_tail"/><lit-tag v="2.3"/></let>
       <choose>
         <when>
           <test>
@@ -390,10 +390,10 @@
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let><var n="adjectiu1"/><concat>
+          <let><var n="adjectiu"/><concat>
                 <lit v="pli"/><lit-tag v="preadv"/>
                 <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu1_tail"/>
+                <var n="adjectiu_tail"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
@@ -405,10 +405,10 @@
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
           </test>
-          <let><var n="adjectiu1"/><concat>
+          <let><var n="adjectiu"/><concat>
                 <lit v="plej"/><lit-tag v="preadv"/>
                 <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu1_tail"/>
+                <var n="adjectiu_tail"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
@@ -417,16 +417,16 @@
           <test>
             <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
           </test>
-          <let><var n="adjectiu1"/><concat>
+          <let><var n="adjectiu"/><concat>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu1_tail"/>
+                <var n="adjectiu_tail"/>
                 </concat></let>
         </when>
 
         <otherwise><!-- Never happens - not in Jacob's corpus -->
-          <let><var n="adjectiu1"/><concat>
+          <let><var n="adjectiu"/><concat>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu1_tail"/>
+                <var n="adjectiu_tail"/>
                 </concat></let>
         </otherwise>
       </choose>
@@ -442,7 +442,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="nom" case="caseFirstWord">
                 <tags>
@@ -470,9 +470,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_gender1"><with-param pos="3"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
@@ -514,9 +514,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
@@ -1049,9 +1049,7 @@
         <pattern-item n="prn"/>
       </pattern>
       <action>
-        <call-macro n="set_number1">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="set_numero1"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prn" case="caseFirstWord">
             <tags>
@@ -1143,7 +1141,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
+        <call-macro n="set_genere1">
           <with-param pos="2"/>
         </call-macro>
         <choose>
@@ -1247,9 +1245,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_gender1"><with-param pos="3"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
         <choose>
           <when>
             <test>
@@ -1340,12 +1338,11 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
+        <call-macro n="set_genere1">
           <with-param pos="3"/>
         </call-macro>
-        <call-macro n="nom_adjectiu2">
+        <call-macro n="set_adjectiu1">
           <with-param pos="2"/>
-          <with-param pos="3"/>
         </call-macro>
         <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
         <choose>
@@ -1367,7 +1364,7 @@
                 </tags>
                 <lu>
                   <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu1"/>
+                  <var n="adjectiu"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -1398,7 +1395,7 @@
                 </tags>
                 <lu>
                   <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu1"/>
+                  <var n="adjectiu"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -1433,7 +1430,7 @@
                 <b pos="1"/>
                 <lu>
                   <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu1"/>
+                  <var n="adjectiu"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1465,7 +1462,7 @@
                 <b pos="1"/>
                 <lu>
                   <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu1"/>
+                  <var n="adjectiu"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1489,14 +1486,8 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="set_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="nom_adjectiu2">
-          <with-param pos="1"/>
-          <with-param pos="2"/>
-        </call-macro>
-
+        <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <choose>
           <when>
             <test>
@@ -1539,7 +1530,7 @@
               <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
-                  <var n="adjectiu1"/>
+                  <var n="adjectiu"/>
             </lu>
             <b pos="1"/>
             <lu>
