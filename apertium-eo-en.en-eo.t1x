@@ -20,6 +20,12 @@
       <cat-item tags="vblex.sep.inf"/>
     </def-cat>
     <def-cat n="vblexger">
+    <!--
+        appealing:appeal<vblex><ger>
+        appearing:appear<vblex><ger>
+        appeasing:appease<vblex><ger>
+        applying:apply<vblex><ger>
+    -->
       <cat-item tags="vblex.ger"/>
       <cat-item tags="vblex.sep.ger"/>
     </def-cat>
@@ -283,6 +289,14 @@
           </test>
           <let><var n="temps"/><lit-tag v="cni"/></let>
         </when>
+<!-- 
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="did"/></equal>
+          </test>
+          <let><var n="temps"/><lit-tag v="past"/></let>
+        </when>
+-->
       </choose>
     </def-macro>
 
@@ -1398,8 +1412,6 @@
             </out>
           </when>
 
-
-
           <when>
             <test>
                 <equal><var n="preadv_added"/><lit v=""/></equal>
@@ -1434,9 +1446,6 @@
               </chunk>
             </out>
           </when>
-
-
-
 
           <otherwise>
             <out>
@@ -1655,7 +1664,8 @@
 
 
     <rule>
-      <pattern>
+      <pattern><!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$ 
+                    ^applying/apply<vblex><ger>$  -->
         <pattern-item n="vbser"/>
         <pattern-item n="vblexger"/>
       </pattern>
@@ -1897,16 +1907,21 @@ might:might<vaux><inf>
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="adv"/>
-        <pattern-item n="vblex"/>
+<!--        <pattern-item n="vblex"/> -->
+        <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
         <let><var n="temps"/><clip pos="3" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+              <or>
+                <!-- will not wash  => ne lavos     -    would not wash => ne lavus -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
             </test>
-            <let><var n="temps"/><lit-tag v="fti"/></let>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -1929,32 +1944,6 @@ might:might<vaux><inf>
             </out>
           </when>
 
-          <when>
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
-            <out>
-              <chunk name="verb" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="whole"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
-                  <clip pos="3" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
 
           <when>
             <test>
@@ -2024,7 +2013,7 @@ might:might<vaux><inf>
       </action>
     </rule>
 
-
+<!--
     <rule comment="REGLA: VAUX ADV VBSER">
       <pattern>
         <pattern-item n="vaux"/>
@@ -2155,54 +2144,28 @@ might:might<vaux><inf>
         </choose>
       </action>
     </rule>
-
+-->
 
     <rule comment="REGLA: VAUX ADV ADV VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="adv"/>
         <pattern-item n="adv"/>
-        <pattern-item n="vblex"/>
+<!--        <pattern-item n="vblex"/> -->
+        <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
         <let><var n="temps"/><clip pos="4" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+              <or>
+                <!-- will wash  => lavos     -    would wash => lavus -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
             </test>
-            <let><var n="temps"/><lit-tag v="fti"/></let>
-            <out>
-              <chunk name="verb" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="whole"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="whole"/>
-                </lu>
-                <b pos="3"/>
-                <lu>
-                  <clip pos="4" side="tl" part="lemh"/>
-                  <clip pos="4" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
-                  <clip pos="4" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <when>
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
@@ -2305,7 +2268,7 @@ might:might<vaux><inf>
       </action>
     </rule>
 
-
+<!--
     <rule comment="REGLA: VAUX ADV ADV VBSER">
       <pattern>
         <pattern-item n="vaux"/>
@@ -2546,20 +2509,20 @@ might:might<vaux><inf>
         </choose>
       </action>
     </rule>
-
+-->
 
     <rule comment="REGLA: VAUX VBHAVER VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="vbhaver"/>
-        <pattern-item n="vblex"/>
+<!--        <pattern-item n="vblex"/> -->
+        <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
         <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
-            <!-- I will have washed. -->
-            <test>
+            <test><!-- I could have washed. -->
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
               <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
             </test>
@@ -2589,9 +2552,13 @@ might:might<vaux><inf>
 
           <when>
             <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+              <or>
+                <!-- will wash  => lavos     -    would wash => lavus -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
             </test>
-            <let><var n="temps"/><lit-tag v="fti"/></let>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
@@ -2599,7 +2566,6 @@ might:might<vaux><inf>
                   <tag><var n="temps"/></tag>
                   <tag><clip pos="2" side="tl" part="a_prs"/></tag>
                   <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="DEBUG_WILL"/></tag>
                 </tags>
                 <lu>
                   <lit v="esti"/><lit-tag v="vbser"/>
@@ -2615,6 +2581,7 @@ might:might<vaux><inf>
               </chunk>
             </out>
           </when>
+
 
           <when>
             <!-- I may have washed. =>mi eble lavis-->
@@ -2676,36 +2643,6 @@ might:might<vaux><inf>
           </when>
 
           <when>
-            <!-- I would have washed -->
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
-            <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <lit v="esti"/>
-                  <lit-tag v="vbser"/>
-                  <var n="temps"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="pp3"/>
-                  <clip pos="3" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <when>
             <!-- XXXXXXXX I could have washed -->
             <test>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="could"/></equal>
@@ -2762,13 +2699,14 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
-                <!-- 			  			  <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu>-->
+                <b/><lu><lit v="DEBUG_vaux_verb_IKKE_GENKENDT"/></lu>
               </chunk>
             </out>
           </otherwise>
         </choose>
       </action>
     </rule>
+
 
 
     <rule>
@@ -2782,9 +2720,13 @@ might:might<vaux><inf>
         <choose>
           <when>
             <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+              <or>
+                <!-- will wash  => lavos     -    would wash => lavus -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+              </or>
             </test>
-            <let><var n="temps"/><lit-tag v="fti"/></let>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
@@ -2807,32 +2749,6 @@ might:might<vaux><inf>
             </out>
           </when>
 
-          <when>
-            <test>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-            </test>
-            <let><var n="temps"/><lit-tag v="cni"/></let>
-            <out>
-              <chunk name="verb" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lemh"/>
-                  <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
-                  <clip pos="2" side="tl" part="lemq"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="whole"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
 
           <otherwise>
             <out>
