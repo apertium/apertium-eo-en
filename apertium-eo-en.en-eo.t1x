@@ -24,17 +24,65 @@
       <cat-item tags="vblex.sep.ger"/>
     </def-cat>
     <def-cat n="vaux">
-      <cat-item tags="vaux.*"/>
+    <!-- 
+  could:can<vaux><past>
+        can<vaux><pres>
+        may<vaux><inf>
+        might<vaux><inf>
+        must<vaux><inf>
+        shall<vaux><inf>
+        should<vaux><inf>
+        will<vaux><inf>
+        would<vaux><inf>
+    -->
+      <cat-item tags="vaux.*"/> 
     </def-cat>
     <def-cat n="vbser">
+    <!--
+        am:be<vbser><pres><p1><sg>
+        are:be<vbser><pres>
+        be:be<vbser><inf>
+        been:be<vbser><pp>
+        being:be<vbser><ger>
+        is:be<vbser><pres><p3><sg>
+        was:be<vbser><past><p1><sg>
+        was:be<vbser><past><p3><sg>
+        were:be<vbser><past>
+    -->
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
     <def-cat n="vbhaver">
+    <!--
+        had got:have<vblex><past># got
+        had got:have<vblex><pp># got
+        had:have<vblex><past>
+        had:have<vblex><pp>
+        has got:have<vblex><pres><p3><sg># got
+        has:have<vblex><pres><p3><sg>
+        have got:have<vblex><inf># got
+        have got:have<vblex><pres># got
+        have:have<vblex><inf>
+        have:have<vblex><pres>
+        having got:have<vblex><ger># got
+        having:have<vblex><ger>
+    -->
       <cat-item lemma="have" tags="vblex.*"/>
+    <!--
+        NOTHING in en.dix is vbhaver....?
+    -->
       <cat-item lemma="have" tags="vbhaver.*"/>
     </def-cat>
+    
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
+      <!--
+        do:do<vbdo><pres>
+        does:do<vbdo><pres><p3><sg>
+        did:do<vbdo><past>
+        don't:do<vbdo><pres>+not<adv>
+        doesn't:do<vbdo><pres><p3><sg>+not<adv>
+        didn't:do<vbdo><past>+not<adv>
+      -->
       <cat-item tags="vbdo.*"/>
       <!--      <cat-item tags="vbser.*"/>-->
       <cat-item tags="vbhaver.*"/>
@@ -119,6 +167,7 @@
       <cat-item tags="gen"/>
     </def-cat>
   </section-def-cats>
+
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -196,6 +245,7 @@
       <attr-item tags="acc"/>
     </def-attr>
   </section-def-attrs>
+
   <section-def-vars>
 <!--
 <spectie> n="firstWord"/ = contains a variable giving the first word in the chunk
@@ -1648,7 +1698,6 @@ may:may<vaux><inf>
 might:might<vaux><inf>
 -->
     <rule comment="REGLA: VAUX VBLEX">
-<!--    <rule comment="REGLA: VAUX VBSER - same as VAUX VBLEX"> -->
       <pattern>
         <pattern-item n="vaux"/>
 <!--        <pattern-item n="vblex"/> -->
