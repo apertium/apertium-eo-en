@@ -6,6 +6,9 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="unknown">
+       <cat-item lemma="unknown" tags=""/>
+    </def-cat>
     <def-cat n="SVall">
       <cat-item tags="SV.*"/>
     </def-cat>

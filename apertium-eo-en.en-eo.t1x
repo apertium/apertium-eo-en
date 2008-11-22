@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transfer default="chunk">
   <section-def-cats>
+    <def-cat n="unknown">
+      <cat-item tags=""/>
+    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/>
@@ -2521,6 +2524,7 @@ might:might<vaux><inf>
         <pattern-item n="num"/>
       </pattern>
       <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
@@ -2605,6 +2609,25 @@ might:might<vaux><inf>
           <chunk name="predet" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PREDET"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="unknown"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="unknown" case="caseFirstWord">
+            <tags>
+              <tag><lit v=""/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
