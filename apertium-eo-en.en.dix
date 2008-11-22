@@ -2972,8 +2972,10 @@
         <r>o<s n="vbdo"/><s n="past"/></r> 
       </p>
     </e>
-
     </pardef>
+
+
+
     <pardef n="/be__vbser">
     <e>
       <p>
@@ -3053,6 +3055,7 @@
     </e>
 -->
     </pardef>
+
     <pardef n="/be__vblex">
     <e>
       <p>
@@ -3132,6 +3135,8 @@
     </e>
 -->
     </pardef>
+
+
     <pardef n="ha/ve__vblex">
     <e>
       <p>
@@ -17545,6 +17550,7 @@
     <e lm="to tell the truth"><i>to<b/>tell<b/>the<b/>truth</i><par n="maybe__adv"/></e>
     <e lm="to the ground"><i>to<b/>the<b/>ground</i><par n="maybe__adv"/></e>
     <e lm="to the right"><i>to<b/>the<b/>right</i><par n="maybe__adv"/></e>
+    <e lm="to the left"><i>to<b/>the<b/>left</i><par n="maybe__adv"/></e>
     <e lm="toad"><i>toad</i><par n="house__n"/></e>
     <e lm="toast"><i>toast</i><par n="house__n"/></e>
     <e lm="tobacco"><i>tobacco</i><par n="archipelago__n"/></e>
@@ -18186,6 +18192,10 @@
     <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
 -->
     <e lm="ourselves"><p><l>ourselves</l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+
+    <!-- Bad Esperanto hack! "to be" -> "be" 
+    <e lm="to be"><p><l>to<b/>be</l><r>be<s n="vbser"/><s n="inf"/></r></p></e>
+ -->
 
     <!-- Phrases -->
     <e lm="I'm"><p><l>I'm</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
