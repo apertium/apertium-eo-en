@@ -1718,6 +1718,58 @@
 
     <!-- Sintagmas verbales -->
     <rule>
+      <pattern>
+        <pattern-item n="vblex"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: VBSER">
+      <pattern>
+        <pattern-item n="vbser"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="ser" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: to VBLEXinf">
       <pattern><!-- to run, to swim -->
         <pattern-item n="to"/>
         <pattern-item n="vblexinf"/>
@@ -1743,7 +1795,8 @@
     </rule>
 
 
-    <rule>
+
+    <rule comment="REGLA: be VBLEXger">
       <pattern><!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$ 
                     ^applying/apply<vblex><ger>$  -->
         <pattern-item n="vbser"/>
@@ -1770,6 +1823,39 @@
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: to be VBLEXger">
+      <pattern><!-- to ^be/be<vbser><inf>$ ^applying/apply<vblex><ger>$  -->
+        <pattern-item n="to"/>
+        <pattern-item n="vbser"/>
+        <pattern-item n="vblexger"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="verb_vbger" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="3" side="tl" part="a_prs"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
@@ -1998,6 +2084,7 @@ might:might<vaux><inf>
         </choose>
       </action>
     </rule>
+
 
 
     <rule comment="REGLA: VAUX ADV ADV VBLEX">
@@ -2370,56 +2457,6 @@ might:might<vaux><inf>
     </rule>
 
 
-    <rule>
-      <pattern>
-        <pattern-item n="vblex"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="verb" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule>
-      <pattern>
-        <pattern-item n="vbser"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="ser" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
 
     <rule>
