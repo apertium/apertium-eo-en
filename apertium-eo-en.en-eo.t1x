@@ -176,9 +176,9 @@
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/> <!-- Apertium<np><al><sg> -->
       <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->
-      <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
     </def-cat>
     <def-cat n="genitive_possessors2"> <!-- all that can fill the X in: X's dog  -->
+      <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
       <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
     </def-cat>
     <def-cat n="gen">
@@ -569,7 +569,7 @@
                   <clip pos="1" side="tl" part="a_nom"/>
                   <var n="genere_first"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
-                  <lit-tag v="4"/>
+                  <lit-tag v="nom"/>
                 </lu>
               </chunk>
             </out>
@@ -613,7 +613,7 @@
                   <clip pos="1" side="tl" part="a_nom"/>
                   <clip pos="1" side="tl" part="a_gen"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
-                  <lit-tag v="4"/>
+                  <lit-tag v="nom"/>
                 </lu>
               </chunk>
             </out>
