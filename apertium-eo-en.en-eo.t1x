@@ -174,10 +174,12 @@
     </def-cat>
     <def-cat n="genitive_possessors"> <!-- all that can fill the X in: X's dog  -->
       <cat-item tags="n.*"/>
-      <cat-item tags="np.al.*"/>
-      <cat-item tags="np.top.*"/>
-      <cat-item tags="np.ant.*"/>
-      <cat-item tags="np.cog.*"/><!-- not present in corpus -->
+      <cat-item tags="np.al.*"/> <!-- Apertium<np><al><sg> -->
+      <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->
+      <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
+    </def-cat>
+    <def-cat n="genitive_possessors2"> <!-- all that can fill the X in: X's dog  -->
+      <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
     </def-cat>
     <def-cat n="gen">
       <cat-item tags="gen"/>
@@ -530,6 +532,7 @@
     </rule>
 
 
+
     <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
       <pattern>
         <pattern-item n="genitive_possessors"/>
@@ -565,6 +568,50 @@
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
                   <var n="genere_first"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
+      <pattern>
+        <pattern-item n="genitive_possessors2"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="2" side="tl" part="whole"/>
+                  </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
                   <lit-tag v="4"/>
                 </lu>
@@ -1199,7 +1246,7 @@
               </and>
             </test>
             <out>
-              <b/><!-- TODO dont output a blank -->
+              <b/><!-- best would be not to output a blank... Francis doesent know how -->
             </out>
           </when>
 
@@ -1353,7 +1400,7 @@
                   <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
-                <!-- <b pos="1"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
+                <!-- <b pos="1"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -1365,7 +1412,7 @@
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!-- <b pos="2"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
+                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1404,7 +1451,7 @@
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!-- <b pos="2"/> inserts a space. TODO: could just ONE space be deleted and rest of the blank be inserted? -->
+                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
