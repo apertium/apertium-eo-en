@@ -385,7 +385,7 @@
 
 
     <def-macro n="set_numero1" npar="1">
-      <let><var n="numero"/><lit v=""/></let>
+      <let><var n="numero"/><lit-tag v="sg"/></let>
       <choose>
         <when>
           <test>
@@ -657,7 +657,7 @@
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
@@ -703,7 +703,8 @@
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
@@ -717,7 +718,7 @@
                 </tags>
                 <lu>
                   <lit v="la"/><lit-tag v="det"/><lit-tag v="def"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <clip pos="4" side="tl" part="a_nbr"/>
                   <lit-tag v="4"/>
                 </lu>
                 <b/>
@@ -736,7 +737,7 @@
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <var n="numero"/>
                   <lit-tag v="nom"/>
                 </lu>
                 <b pos="1"/>
