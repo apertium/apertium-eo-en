@@ -884,7 +884,7 @@
     </rule>
 -->
 
-    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  the garden man's dog   => hundo de Jacob Smith">
+    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  the garden man's dog ">
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="genitive_possessors"/>
