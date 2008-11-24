@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transfer default="chunk">
   <section-def-cats>
-    <def-cat n="unknown">
-      <cat-item tags=""/>
-    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/>
@@ -184,15 +181,19 @@
       <cat-item tags="predet"/>
       <cat-item tags="predet.*"/>
     </def-cat>
+    <def-cat n="gen">
+      <cat-item tags="gen"/>
+    </def-cat>
     <def-cat n="genitive_possessors"> <!-- all that can fill the X in: X's dog  -->
+      <cat-item tags=""/>        <!-- unknown words -->
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/> <!-- Apertium<np><al><sg> -->
       <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->
       <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
       <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
     </def-cat>
-    <def-cat n="gen">
-      <cat-item tags="gen"/>
+    <def-cat n="unknown">
+      <cat-item tags=""/>
     </def-cat>
   </section-def-cats>
 
@@ -206,6 +207,10 @@
       <attr-item tags="np.ant"/>
       <attr-item tags="np.cog"/>
       <attr-item tags="np.top"/>
+    </def-attr>
+    <def-attr n="a_any">
+      <attr-item tags="n"/>
+      <attr-item tags="np"/>
     </def-attr>
     <def-attr n="a_prp">
       <attr-item tags="pr"/>
@@ -290,6 +295,7 @@
     <def-var n="adjectiu_tail"/>
     <!-- if a "more" or "most" was added before an adj -->
     <def-var n="preadv_added"/>
+    <def-var n="nomvar"/>
     <def-var n="genere"/>
     <def-var n="genere_first"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
@@ -402,10 +408,25 @@
           </test>
           <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
+      </choose>
+    </def-macro>
 
-        <otherwise>
-          <let><var n="numero"/><lit v=""/></let>
-        </otherwise>
+
+
+    <def-macro n="set_nomvar_if_known1" npar="1">
+      <let><var n="nomvar"/><lit v=""/></let>
+      <choose>
+        <when>
+          <test>
+            <or>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
+            </or>
+          </test>
+         <let><var n="nomvar"/><lit-tag v="nom"/></let>
+        </when>
       </choose>
     </def-macro>
 
@@ -425,6 +446,13 @@
             <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="f"/></equal>
           </test>
           <let><var n="genere"/><lit-tag v="f"/></let>
+        </when>
+
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="mf"/></equal>
+          </test>
+          <let><var n="genere"/><lit-tag v="mf"/></let>
         </when>
 
         <when>
@@ -582,6 +610,7 @@
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
@@ -610,54 +639,12 @@
                   <clip pos="1" side="tl" part="a_nom"/>
                   <var n="genere_first"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
-                  <lit-tag v="nom"/>
+                  <var n="nomvar"/>
                 </lu>
               </chunk>
             </out>
       </action>
     </rule>
-
-
-
-    <rule comment="REGLA: UNKNOWN 's NOM:  Aphrodite's dog   => hundo de Aphrodite">
-      <pattern>
-        <pattern-item n="unknown"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="2" side="tl" part="whole"/>
-                  </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
 
 
 
@@ -670,6 +657,7 @@
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
@@ -698,7 +686,7 @@
                   <clip pos="2" side="tl" part="a_nom"/>
                   <var n="genere_first"/>
                   <clip pos="2" side="tl" part="a_nbr"/>
-                  <lit-tag v="nom"/>
+                  <var n="nomvar"/>
                 </lu>
               </chunk>
             </out>
@@ -715,6 +703,7 @@
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
@@ -756,7 +745,7 @@
                   <clip pos="2" side="tl" part="a_nom"/>
                   <var n="genere_first"/>
                   <clip pos="2" side="tl" part="a_nbr"/>
-                  <lit-tag v="nom"/>
+                  <var n="nomvar"/>
                 </lu>
               </chunk>
             </out>
