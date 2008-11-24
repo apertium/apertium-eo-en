@@ -10,6 +10,7 @@
 <dictionary>
   <alphabet></alphabet>
   <sdefs>
+    <sdef n="alpha"/> 
     <sdef n="tn" /> 
     <sdef n="nt" /> 
     <sdef n="percent" /> 
@@ -550,7 +551,8 @@ BUT:
     <!-- Determiners -->
 
 <e>       <p><l>la<s n="det"/><s n="def"/></l>         <r>the<s n="det"/><s n="def"/></r></p></e>
-<e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e>
+<!--
+<e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e> -->
 <e>       <p><l>plura<s n="det"/><s n="qnt"/></l>      <r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
 <!--  any house  -> ajna domo -->
@@ -761,7 +763,63 @@ BUT:
 <e r="RL"><p><l>rilate<b/>al<s n="pr"/></l>            <r>in<b/>regard<b/>to<s n="pr"/></r></p></e>
 <e r="RL"><p><l>rilate<b/>al<s n="pr"/></l>            <r>with<b/>a<b/>view<b/>to<s n="pr"/></r></p></e>
 
+<!--
 
+
+<e       ><p><l>a<s n="n"/></l><r>a<s n="n"/></r></p></e>
+<e       ><p><l>b<s n="n"/></l><r>b<s n="n"/></r></p></e>                          
+<e       ><p><l>c<s n="n"/></l><r>c<s n="n"/></r></p></e>                          
+<e       ><p><l>d<s n="n"/></l><r>d<s n="n"/></r></p></e>                          
+<e       ><p><l>e<s n="n"/></l><r>e<s n="n"/></r></p></e>                          
+<e       ><p><l>f<s n="n"/></l><r>f<s n="n"/></r></p></e>                          
+<e       ><p><l>g<s n="n"/></l><r>g<s n="n"/></r></p></e>                          
+<e       ><p><l>h<s n="n"/></l><r>h<s n="n"/></r></p></e>                          
+<e       ><p><l>i<s n="n"/></l><r>i<s n="n"/></r></p></e>                          
+<e       ><p><l>j<s n="n"/></l><r>j<s n="n"/></r></p></e>                          
+<e       ><p><l>k<s n="n"/></l><r>k<s n="n"/></r></p></e>                          
+<e       ><p><l>l<s n="n"/></l><r>l<s n="n"/></r></p></e>                          
+<e       ><p><l>m<s n="n"/></l><r>m<s n="n"/></r></p></e>                          
+<e       ><p><l>n<s n="n"/></l><r>n<s n="n"/></r></p></e>                          
+<e       ><p><l>o<s n="n"/></l><r>o<s n="n"/></r></p></e>                          
+<e       ><p><l>p<s n="n"/></l><r>p<s n="n"/></r></p></e>                          
+<e       ><p><l>q<s n="n"/></l><r>q<s n="n"/></r></p></e>                          
+<e       ><p><l>r<s n="n"/></l><r>r<s n="n"/></r></p></e>                          
+<e       ><p><l>s<s n="n"/></l><r>s<s n="n"/></r></p></e>                          
+<e       ><p><l>t<s n="n"/></l><r>t<s n="n"/></r></p></e>                          
+<e       ><p><l>u<s n="n"/></l><r>u<s n="n"/></r></p></e>                          
+<e       ><p><l>v<s n="n"/></l><r>v<s n="n"/></r></p></e>                          
+<e       ><p><l>w<s n="n"/></l><r>w<s n="n"/></r></p></e>                          
+<e       ><p><l>x<s n="n"/></l><r>x<s n="n"/></r></p></e>                          
+<e       ><p><l>y<s n="n"/></l><r>y<s n="n"/></r></p></e>                          
+<e       ><p><l>z<s n="n"/></l><r>z<s n="n"/></r></p></e>                          
+-->
+
+<e       ><p><l>a<s n="np"/></l><r>a<s n="np"/></r></p></e>                        
+<e       ><p><l>b<s n="np"/></l><r>b<s n="np"/></r></p></e>                        
+<e       ><p><l>c<s n="np"/></l><r>c<s n="np"/></r></p></e>                        
+<e       ><p><l>d<s n="np"/></l><r>d<s n="np"/></r></p></e>                        
+<e       ><p><l>e<s n="np"/></l><r>e<s n="np"/></r></p></e>                        
+<e       ><p><l>f<s n="np"/></l><r>f<s n="np"/></r></p></e>                        
+<e       ><p><l>g<s n="np"/></l><r>g<s n="np"/></r></p></e>                        
+<e       ><p><l>h<s n="np"/></l><r>h<s n="np"/></r></p></e>                        
+<e       ><p><l>i<s n="np"/></l><r>i<s n="np"/></r></p></e>                        
+<e       ><p><l>j<s n="np"/></l><r>j<s n="np"/></r></p></e>                        
+<e       ><p><l>k<s n="np"/></l><r>k<s n="np"/></r></p></e>                        
+<e       ><p><l>l<s n="np"/></l><r>l<s n="np"/></r></p></e>                        
+<e       ><p><l>m<s n="np"/></l><r>m<s n="np"/></r></p></e>                        
+<e       ><p><l>n<s n="np"/></l><r>n<s n="np"/></r></p></e>                        
+<e       ><p><l>o<s n="np"/></l><r>o<s n="np"/></r></p></e>                        
+<e       ><p><l>p<s n="np"/></l><r>p<s n="np"/></r></p></e>                        
+<e       ><p><l>q<s n="np"/></l><r>q<s n="np"/></r></p></e>                        
+<e       ><p><l>r<s n="np"/></l><r>r<s n="np"/></r></p></e>                        
+<e       ><p><l>s<s n="np"/></l><r>s<s n="np"/></r></p></e>                        
+<e       ><p><l>t<s n="np"/></l><r>t<s n="np"/></r></p></e>                        
+<e       ><p><l>u<s n="np"/></l><r>u<s n="np"/></r></p></e>                        
+<e       ><p><l>v<s n="np"/></l><r>v<s n="np"/></r></p></e>                        
+<e       ><p><l>w<s n="np"/></l><r>w<s n="np"/></r></p></e>                        
+<e       ><p><l>x<s n="np"/></l><r>x<s n="np"/></r></p></e>                        
+<e       ><p><l>y<s n="np"/></l><r>y<s n="np"/></r></p></e>                        
+<e       ><p><l>z<s n="np"/></l><r>z<s n="np"/></r></p></e>
 
 
     <!-- Proper nouns -->

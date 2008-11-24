@@ -121,12 +121,18 @@
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
     </def-cat>
+
     <def-cat n="to">
       <cat-item lemma="to" tags="pr"/>
     </def-cat>
     <def-cat n="of">
       <cat-item lemma="of" tags="pr"/>
     </def-cat>
+    <def-cat n="a">
+      <cat-item lemma="a" tags="det.ind.sg"/>
+    </def-cat>
+
+
     <def-cat n="cog">
       <cat-item tags="np.cog.*"/>
     </def-cat>
@@ -1231,26 +1237,22 @@
     </rule>
 
 
+    <rule comment="REGLA: DET a">
+      <pattern>
+        <pattern-item n="a"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: DET">
       <pattern>
         <pattern-item n="det"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <choose>
-          <when>
-            <test>
-              <and>
-                <equal><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-              </and>
-            </test>
-            <out>
-              <b/><!-- best would be not to output a blank... Francis doesent know how -->
-            </out>
-          </when>
-
-          <otherwise>
             <out>
               <chunk name="det" case="caseFirstWord">
                 <tags>
@@ -1265,28 +1267,19 @@
                 </lu>
               </chunk>
             </out>
-          </otherwise>
-        </choose>
       </action>
     </rule>
 
 
-    <rule comment="REGLA: DET NOM">
+
+    <rule comment="REGLA: a NOM, f.eks. 'a dog'">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="a"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <choose>
-          <when>
-            <test>
-              <and><!-- if DET is a<det><ind><sg>   -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-              </and>
-            </test>
             <out>
               <chunk name="nom" case="caseFirstWord">
                 <tags>
@@ -1304,7 +1297,45 @@
                 </lu>
               </chunk>
             </out>
-          </when>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <choose>
+        <!-- if DET is a<det><ind><sg>  
+          <when>
+            <test>
+              <and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
+              </and>
+            </test>
+            <out>
+              <chunk name="nomYYY" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+          </when> -->
 
           <when>
             <test>
@@ -1371,6 +1402,7 @@
         </choose>
       </action>
     </rule>
+
 
 
     <rule comment="REGLA: DET NOM NOM">

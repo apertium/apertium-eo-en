@@ -116,7 +116,10 @@ public class Paro {
 	if (adj()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"expensive__adj\"/></e>";
 	if (adv()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"maybe__adv\"/></e>";
 	if (verb()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"liv/e__vblex\"/></e>";
-	return "";
+	if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"a__np\"/></e>";
+
+      System.err.println("apertiumEn() problem for " + this + " "+apertiumExtraTags);
+  return "xxxproblem";
     }
 
     
@@ -136,6 +139,7 @@ public class Paro {
       if (np() && apertiumExtraTags.equals("<ant><m>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mark__np\"/></e>";
       if (np() && apertiumExtraTags.equals("<ant><f>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mary__np\"/></e>";
       if (np() && apertiumExtraTags.equals("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"a__np\"/></e>";
       
       System.err.println("apertiumEo() problem for " + this + " "+apertiumExtraTags);
       if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";

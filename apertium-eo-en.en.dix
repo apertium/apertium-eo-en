@@ -10,6 +10,7 @@
 <dictionary>
   <alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜàáâäçèéêëìíîïñòóôöùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</alphabet>
   <sdefs>
+    <sdef n="alpha"/> 
     <sdef n="acr"/> 
     <sdef n="predet"/> 
     <sdef n="detnt"/> 
@@ -2522,7 +2523,15 @@
         <r><s n="np"/><s n="al"/><s n="sg"/></r> 
       </p>
     </e>
+    </pardef>
 
+    <pardef n="a__np">
+    <e>
+      <p>
+        <l/> 
+        <r><s n="np"/><s n="alpha"/><s n="sg"/></r> 
+      </p>
+    </e>
     </pardef>
 
 	<!--        Numbers    pardefs -->
@@ -18137,6 +18146,67 @@
     <e lm="zinc"><i>zinc</i><par n="house__n"/></e>
     <e lm="zone"><i>zon</i><par n="liv/e__vblex"/></e>
     <e lm="zone"><i>zone</i><par n="house__n"/></e>
+
+
+<!-- TODO: tagger training with 
+<e lm="a"><i>a</i><par n="house__n"/></e>
+<e lm="i"><i>i</i><par n="house__n"/></e>
+<e lm="s"><i>s</i><par n="house__n"/></e>
+
+<e lm="b"><i>b</i><par n="house__n"/></e>
+<e lm="c"><i>c</i><par n="house__n"/></e>
+<e lm="d"><i>d</i><par n="house__n"/></e>
+<e lm="e"><i>e</i><par n="house__n"/></e>
+<e lm="f"><i>f</i><par n="house__n"/></e>
+<e lm="g"><i>g</i><par n="house__n"/></e>
+<e lm="h"><i>h</i><par n="house__n"/></e>
+<e lm="j"><i>j</i><par n="house__n"/></e>
+<e lm="k"><i>k</i><par n="house__n"/></e>
+<e lm="l"><i>l</i><par n="house__n"/></e>
+<e lm="m"><i>m</i><par n="house__n"/></e>
+<e lm="n"><i>n</i><par n="house__n"/></e>
+<e lm="o"><i>o</i><par n="house__n"/></e>
+<e lm="p"><i>p</i><par n="house__n"/></e>
+<e lm="q"><i>q</i><par n="house__n"/></e>
+<e lm="r"><i>r</i><par n="house__n"/></e>
+<e lm="t"><i>t</i><par n="house__n"/></e>
+<e lm="u"><i>u</i><par n="house__n"/></e>
+<e lm="v"><i>v</i><par n="house__n"/></e>
+<e lm="w"><i>w</i><par n="house__n"/></e>
+<e lm="x"><i>x</i><par n="house__n"/></e>
+<e lm="y"><i>y</i><par n="house__n"/></e>
+<e lm="z"><i>z</i><par n="house__n"/></e>
+ -->
+
+<!-- TODO: tagger training with 
+<e lm="a"><i>a</i><par n="a__np"/></e>
+<e lm="i"><i>i</i><par n="a__np"/></e>
+<e lm="s"><i>s</i><par n="a__np"/></e>
+ -->
+<e lm="b"><i>b</i><par n="a__np"/></e>
+<e lm="c"><i>c</i><par n="a__np"/></e>
+<e lm="d"><i>d</i><par n="a__np"/></e>
+<e lm="e"><i>e</i><par n="a__np"/></e>
+<e lm="f"><i>f</i><par n="a__np"/></e>
+<e lm="g"><i>g</i><par n="a__np"/></e>
+<e lm="h"><i>h</i><par n="a__np"/></e>
+<e lm="j"><i>j</i><par n="a__np"/></e>
+<e lm="k"><i>k</i><par n="a__np"/></e>
+<e lm="l"><i>l</i><par n="a__np"/></e>
+<e lm="m"><i>m</i><par n="a__np"/></e>
+<e lm="n"><i>n</i><par n="a__np"/></e>
+<e lm="o"><i>o</i><par n="a__np"/></e>
+<e lm="p"><i>p</i><par n="a__np"/></e>
+<e lm="q"><i>q</i><par n="a__np"/></e>
+<e lm="r"><i>r</i><par n="a__np"/></e>
+<e lm="t"><i>t</i><par n="a__np"/></e>
+<e lm="u"><i>u</i><par n="a__np"/></e>
+<e lm="v"><i>v</i><par n="a__np"/></e>
+<e lm="w"><i>w</i><par n="a__np"/></e>
+<e lm="x"><i>x</i><par n="a__np"/></e>
+<e lm="y"><i>y</i><par n="a__np"/></e>
+<e lm="z"><i>z</i><par n="a__np"/></e>
+
 
     <!-- Antonyms -->
     <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>
