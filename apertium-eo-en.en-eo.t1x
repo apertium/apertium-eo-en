@@ -296,8 +296,10 @@
     <!-- if a "more" or "most" was added before an adj -->
     <def-var n="preadv_added"/>
     <def-var n="nomvar"/>
+    <def-var n="nomvar_first"/>
     <def-var n="genere"/>
     <def-var n="genere_first"/>
+    <def-var n="genere_second"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
     <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
   </section-def-vars>
@@ -602,6 +604,7 @@
 
 
 
+
     <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
       <pattern>
         <pattern-item n="genitive_possessors"/>
@@ -752,6 +755,211 @@
             </out>
       </action>
     </rule>
+
+
+
+<!-- Its Not clear this rule makes more harm than good 
+
+    <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
+      <pattern>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
+        <let><var n="nomvar_first"/><var n="nomvar"/></let>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_second"/><var n="genere"/></let>
+
+        <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <clip pos="4" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="3" side="tl" part="whole"/>
+                  </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="nomvar_first"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <var n="genere_second"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+-->
+
+
+<!-- Rule only affect 1 sentence in corpus
+    <rule comment="REGLA: a NOM/ANT NOM/ANT 's NOM:  a Jacob Smith's dog   => hundo de Jacob Smith">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
+        <let><var n="nomvar_first"/><var n="nomvar"/></let>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+
+        <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+        <let><var n="genere_second"/><var n="genere"/></let>
+
+        <call-macro n="set_genere1"><with-param pos="5"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="5" side="tl" part="lem"/>
+                  <clip pos="5" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="4" side="tl" part="whole"/>
+                  </lu>
+                <b pos="4"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <var n="nomvar_first"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="a_nom"/>
+                  <var n="genere_second"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
+
+    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  the garden man's dog   => hundo de Jacob Smith">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
+        <let><var n="nomvar_first"/><var n="nomvar"/></let>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+
+        <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+        <let><var n="genere_second"/><var n="genere"/></let>
+
+        <call-macro n="set_genere1"><with-param pos="5"/></call-macro>
+            <out>
+              <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <lit v="la"/><lit-tag v="det"/><lit-tag v="def"/>
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="5" side="tl" part="lem"/>
+                  <clip pos="5" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="4" side="tl" part="whole"/>
+                  </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <var n="numero"/>
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="4"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <var n="nomvar_first"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="a_nom"/>
+                  <var n="genere_second"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+
 
 
 
