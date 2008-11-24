@@ -103,9 +103,13 @@
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
         
-    
+        
+
     <def-cat n="prnpers">
       <cat-item lemma="prpers" tags="prn.*"/>
+    </def-cat>
+    <def-cat n="prnref"><!-- ^si<prn><ref><p3><m><sg> -->
+      <cat-item tags="prn.ref.*"/>
     </def-cat>
     <def-cat n="prn">
       <cat-item tags="prn.rel.*"/>
@@ -129,9 +133,11 @@
       <cat-item lemma="of" tags="pr"/>
     </def-cat>
     <def-cat n="a">
-      <cat-item lemma="a" tags="det.ind.sg"/>
+      <cat-item lemma="a" tags="det.ind.*"/>
     </def-cat>
-
+    <def-cat n="more">
+      <cat-item lemma="more" tags="det.qnt.*"/>
+    </def-cat>
 
     <def-cat n="cog">
       <cat-item tags="np.cog.*"/>
@@ -539,6 +545,37 @@
 
 
 
+
+    <rule comment="REGLA: prnref   - himself, themselves">
+      <pattern>
+        <pattern-item n="prnref"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="prnref" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_prn"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+              <clip pos="1" side="tl" part="a_gen"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                  <lit-tag v="4"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
       <pattern>
         <pattern-item n="genitive_possessors"/>
@@ -581,6 +618,111 @@
             </out>
       </action>
     </rule>
+
+
+
+    <rule comment="REGLA: DET:a NOM/ANT 's NOM:  a Jacob's dog   => hundo de Jacob">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <clip pos="4" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="3" side="tl" part="whole"/>
+                  </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="nom"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
+            <out>
+              <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <lit v="la"/><lit-tag v="det"/><lit-tag v="def"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <clip pos="4" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="3" side="tl" part="whole"/>
+                  </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <var n="genere_first"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="nom"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
 
 
     <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
@@ -1182,7 +1324,6 @@
       </action>
     </rule>
 
-
     <rule comment="REGLA: Prn">
       <pattern>
         <pattern-item n="prn"/>
@@ -1208,7 +1349,6 @@
         </out>
       </action>
     </rule>
-
 
     <rule comment="REGLA: PrnPers">
       <pattern>
@@ -1237,7 +1377,7 @@
     </rule>
 
 
-    <rule comment="REGLA: DET a">
+    <rule comment="REGLA: DET:a">
       <pattern>
         <pattern-item n="a"/>
       </pattern>
@@ -1301,6 +1441,43 @@
     </rule>
 
 
+    <rule comment="REGLA: more NOM, f.eks. 'more tea'">
+      <pattern>
+        <pattern-item n="more"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+            <out>
+              <chunk name="det_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
+                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <lit-tag v="nom"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: DET NOM">
       <pattern>
         <pattern-item n="det"/>
@@ -1309,71 +1486,6 @@
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <choose>
-        <!-- if DET is a<det><ind><sg>  
-          <when>
-            <test>
-              <and>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-              </and>
-            </test>
-            <out>
-              <chunk name="nomYYY" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
-          </when> -->
-
-          <when>
-            <test>
-              <and><!-- if DET is  ^more<det><qnt><sp>$   =>  pli da    then we should NOT permit marking with accusative -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="more"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.qnt"/></equal>
-              </and>
-            </test>
-            <out>
-              <chunk name="det_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <!-- <lit-tag v="4"/> no, keep <nom> -->
-                  <lit-tag v="nom"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <!-- <lit-tag v="4"/> no, keep <nom> -->
-                  <lit-tag v="nom"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-
-          <otherwise>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
@@ -1398,8 +1510,6 @@
                 </lu>
               </chunk>
             </out>
-          </otherwise>
-        </choose>
       </action>
     </rule>
 

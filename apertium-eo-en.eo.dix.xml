@@ -1717,14 +1717,26 @@
 	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e lm="mi"><p><l>mi</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-    <e lm="ni"><p><l>ni</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<!-- Zeuz himself saw....   => Zeus mem vidis -->
+    <e lm="si"><p><l>si<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="vi"><p><l>vi<b/>mem</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="vi"><p><l>vi<b/>mem</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+    <e lm="mi"><p><l>mi<b/>mem</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="si"><p><l>ŝi<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="si"><p><l>li<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="si"><p><l>ĝi<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="ni"><p><l>ni<b/>mem</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+
+<!-- Zeuz saw himself  ....   => Zeus vidis sin  -->
+    <e lm="si"><p><l>sin<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="vi"><p><l>vin<b/>mem</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="vi"><p><l>vin<b/>mem</l><r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+    <e lm="mi"><p><l>min<b/>mem</l><r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="si"><p><l>ŝin<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="si"><p><l>lin<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="si"><p><l>ĝin<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></r></p></e>
+    <e lm="ni"><p><l>nin<b/>mem</l><r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+
 <!--
     <e lm="si"><p><l>si</l><r>si<s n="prn"/><s n="ref"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="vi"><p><l>vi</l><r>vi<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></r></p></e>

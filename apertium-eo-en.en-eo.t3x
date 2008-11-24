@@ -63,7 +63,13 @@ nom_gen_nom
     <def-cat n="det_preadv_adj_nom">
       <cat-item name="det_nom_nom"/>
       <cat-item name="det_preadv_adj_nom"/>
+      <cat-item name="det_nom_gen_nom"/>
+      <cat-item name="nom_gen_det_nom"/>
     </def-cat>
+    <def-cat n="det_nom_gen_det_nom">
+      <cat-item name="det_nom_gen_det_nom"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -219,6 +225,51 @@ nom_gen_nom
       </action>
     </rule>
 
+
+
+    <rule comment="CHUNK: det_nom_gen_det_nom and ...">
+      <pattern>
+        <pattern-item n="det_nom_gen_det_nom"/>
+      </pattern>
+      <action>
+        <call-macro n="drop_gender1">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="4"/>
+        </call-macro>
+        <call-macro n="drop_gender1">
+          <with-param pos="5"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" part="whole"/>
+          </lu>
+          <b pos="4"/>
+          <lu>
+            <clip pos="5" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
 
   </section-rules>
 </postchunk>
