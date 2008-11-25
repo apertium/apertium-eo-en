@@ -129,6 +129,8 @@
     <def-cat n="of">
       <cat-item lemma="of" tags="pr"/>
     </def-cat>
+<!--
+    -->
     <def-cat n="a">
       <cat-item lemma="a" tags="det.ind.*"/>
     </def-cat>
@@ -650,7 +652,7 @@
     </rule>
 
 
-
+<!--
     <rule comment="REGLA: DET:a NOM/ANT 's NOM:  a Jacob's dog   => hundo de Jacob">
       <pattern>
         <pattern-item n="a"/>
@@ -695,7 +697,7 @@
             </out>
       </action>
     </rule>
-
+-->
 
     <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
       <pattern>
@@ -1565,7 +1567,7 @@
     </rule>
 
 
-
+<!--
     <rule comment="REGLA: a NOM, f.eks. 'a dog'">
       <pattern>
         <pattern-item n="a"/>
@@ -1593,7 +1595,7 @@
             </out>
       </action>
     </rule>
-
+-->
 
     <rule comment="REGLA: more NOM, f.eks. 'more tea'">
       <pattern>

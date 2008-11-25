@@ -2027,7 +2027,8 @@
     <e lm="unu"><i>unu</i><par n="unu__det"/></e>
 
     <!-- the English determiner 'a' just disappears in Esperanto -->
-    <e lm="det__a"><p><l></l><r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="det__a"><p><l></l><r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e r="RL" lm="det__a"><p><l></l><r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
 
     <e lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
     <e r="RL" lm="malpli da"><p><l>la<b/>malpli<b/>da</l><r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
