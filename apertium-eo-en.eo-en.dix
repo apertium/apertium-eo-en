@@ -1425,8 +1425,21 @@ BUT:
 <e>       <p><l>fari<s n="vblex"/></l>                 <r>do<s n="vblex"/></r></p></e>
 <e>       <p><l>havi<s n="vblex"/></l>                 <r>have<s n="vblex"/></r></p></e>
 <e>       <p><l>esti<s n="vbser"/></l>                 <r>be<s n="vbser"/></r></p></e>
-
 <e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>to<b/>be<s n="vbser"/></r></p></e>
+
+
+<!-- Auxillary verbs - should really be handled in tranfer (all of them?) -->
+<e>       <p><l>devi<s n="vaux"/><s n="fti"/></l>     <r>shall<s n="vaux"/><s n="inf"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/><s n="cni"/></l>     <r>should<s n="vaux"/><s n="inf"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/><s n="pres"/></l>    <r>must<s n="vaux"/><s n="inf"/></r></p></e>
+
+<e>       <p><l>devi<s n="vaux"/></l>                 <r>shall<s n="vaux"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/></l>                 <r>should<s n="vaux"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/></l>                 <r>must<s n="vaux"/></r></p></e>
+<e>       <p><l>voli<s n="vaux"/></l>                 <r>will<s n="vaux"/></r></p></e>
+<e>       <p><l>voli<s n="vaux"/></l>                 <r>would<s n="vaux"/></r></p></e>
+<e>       <p><l>ebli<s n="vaux"/></l>                 <r>might<s n="vaux"/></r></p></e>
+
 
 
 <e>       <p><l>malsupren<s n="adv"/></l>              <r>down<s n="adv"/></r></p></e>
