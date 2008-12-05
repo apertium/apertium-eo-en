@@ -11323,6 +11323,13 @@
     <e lm="about"><i>about</i><par n="at__pr"/></e>
     <e lm="above"><i>above</i><par n="maybe__adv"/></e>
     <e lm="above"><i>above</i><par n="at__pr"/></e>
+
+<!-- Hm... mostly "so far" = "until now", but there are exceptions, like:
+       The success of Alboin had spread so far, that it reached Rome.
+        Identical in its general arrangements, so far as they can be traced
+    <e lm="so far"><i>so<b/>far</i><par n="maybe__adv"/></e>
+-->
+
     <e lm="above all"><i>above<b/>all</i><par n="maybe__adv"/></e>
 <!-- Francis says its bad :-(     <e lm="all but"><i>all<b/>but</i><par n="maybe__adv"/></e>  -->
     <e lm="absence"><i>absence</i><par n="house__n"/></e>
@@ -13611,7 +13618,7 @@
     <e lm="fancy"><i>fanc</i><par n="appl/y__vblex"/></e>
     <e lm="fanfare"><i>fanfare</i><par n="house__n"/></e>
     <e lm="fantasy"><i>fantas</i><par n="bab/y__n"/></e>
-    <e lm="far"><i>far</i><par n="maybe__adv"/></e>
+    <e lm="far"><i>far</i><par n="maybe__adv"/></e>    
     <e lm="farce"><i>farce</i><par n="house__n"/></e>
     <e lm="farm"><i>farm</i><par n="house__n"/></e>
     <e lm="farm"><i>farm</i><par n="accept__vblex"/></e>
@@ -15882,7 +15889,7 @@
     <e lm="playground"><i>playground</i><par n="house__n"/></e>
     <e lm="please"><i>pleas</i><par n="liv/e__vblex"/></e>
     <e lm="pleasant"><i>pleasant</i><par n="expensive__adj"/></e>
-<!--    <e lm="please"><i>please</i><par n="maybe__adv"/></e> -->
+    <e lm="please"><i>please</i><par n="maybe__adv"/></e>
     <e lm="pleasure"><i>pleasure</i><par n="house__n"/></e>
     <e lm="pledging"><i>pledging</i><par n="house__n"/></e>
     <e lm="plot"><i>plot</i><par n="house__n"/></e>

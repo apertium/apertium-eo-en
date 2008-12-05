@@ -350,6 +350,9 @@
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 
 
+<e>       <p><l>kio<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whatever<s n="prn"/><s n="tn"/></r></p></e>
+
+
 <!-- var før:
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
@@ -658,6 +661,7 @@ BUT:
     <!-- pre-adverbs -->
 
 <e>       <p><l>tre<s n="preadv"/></l>                 <r>very<s n="preadv"/></r></p></e>
+<e>       <p><l>tro<s n="preadv"/></l>                 <r>too<s n="preadv"/></r></p></e>
 <e>       <p><l>vere<s n="preadv"/></l>                <r>really<s n="preadv"/></r></p></e>
 <e>       <p><l>sufiĉe<s n="preadv"/></l>              <r>pretty<s n="preadv"/></r></p></e>
 <e>       <p><l>pli<s n="preadv"/></l>                 <r>more<s n="preadv"/></r></p></e>
@@ -1452,7 +1456,7 @@ BUT:
 <e r="LR"><p><l>jen<s n="adv"/></l>                    <r>here<s n="adv"/></r></p></e>
 <e>       <p><l>eĉ<s n="adv"/></l>                     <r>even<s n="adv"/></r></p></e>
 <e r="LR"><p><l>enen<s n="adv"/></l>                   <r>inside<s n="adv"/></r></p></e>
-<e>       <p><l>for<s n="adv"/></l>                    <r>far<s n="adv"/></r></p></e>
+<e>       <p><l>ege<s n="adv"/></l>                    <r>far<s n="adv"/></r></p></e>
 <e r="RL"><p><l>iom<s n="adv"/></l>                    <r>mildly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>iom<s n="adv"/></l>                    <r>some<s n="adv"/></r></p></e>
 <e r="RL"><p><l>iom<s n="adv"/></l>                    <r>somewhat<s n="adv"/></r></p></e>
@@ -10090,7 +10094,15 @@ BUT:
 <e>       <p><l>ludejo<s n="n"/></l>                   <r>playground<s n="n"/></r></p></e>
 <e>       <p><l>agrabla<s n="adj"/></l>                <r>pleasant<s n="adj"/></r></p></e>
 <e r="LR"><p><l>plaĉa<s n="adj"/></l>                  <r>pleasant<s n="adj"/></r></p></e>
+
 <e>       <p><l>plaĉi<s n="vblex"/></l>                <r>please<s n="vblex"/></r></p></e>
+
+
+<!-- Workaround for please -->
+<e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="pres"/></r></p></e>
+<e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="imp"/></r></p></e>
+
+
 <e>       <p><l>plezuro<s n="n"/></l>                  <r>pleasure<s n="n"/></r></p></e>
 <e r="LR"><p><l>amuzado<s n="n"/></l>                  <r>pleasure<s n="n"/></r></p></e>
 <e r="LR"><p><l>bontrovo<s n="n"/></l>                 <r>pleasure<s n="n"/></r></p></e>
@@ -14497,7 +14509,7 @@ BUT:
 <e>       <p><l>elŝalti<s n="vblex"/></l>              <r>turn<g><b/>off</g><s n="vblex"/><s n="sep"/></r></p></e>
 <!-- Already is <e><l>eltiri<vblex></l><r>extract<vblex></r></e>-->
 <e r="RL"><p><l>eltiri<s n="vblex"/></l>               <r>pull<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e r="RL"><p><l>eltiri<s n="vblex"/></l>               <r>take<g><b/>away</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>forpreni<s n="vblex"/></l>               <r>take<g><b/>away</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>eltiri<s n="vblex"/></l>               <r>take<g><b/>off</g><s n="vblex"/><s n="sep"/></r></p></e>
 <!-- Already is <e r="LR"><l>elpreni<vblex></l><r>withdraw<vblex></r></e>-->
 <e r="RL"><p><l>elpreni<s n="vblex"/></l>              <r>take<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -19930,7 +19942,7 @@ BUT:
 <e r="RL"><p><l>dume<s n="adv"/></l>                   <r>meantime<s n="adv"/></r></p></e>
 <!-- Already is <e><l>grandege<adv></l><r>enormously<adv></r></e> <e r="LR"><l>ege<adv></l><r>heavily<adv></r></e>-->
 <e i="yes"><p><l>ege<s n="adv"/></l>                   <r>enormously<s n="adv"/></r></p></e>
-<e r="RL"><p><l>ekstere<s n="adv"/></l>                <r>away<s n="adv"/></r></p></e>
+<e><p><l>for<s n="adv"/></l>                <r>away<s n="adv"/></r></p></e>
 <e r="RL"><p><l>ekstere<s n="adv"/></l>                <r>off<s n="adv"/></r></p></e>
 <e r="LR"><p><l>eksteren<s n="adv"/></l>               <r>out<s n="adv"/></r></p></e>
 <e i="yes"><p><l>eksteren<s n="adv"/></l>              <r>outside<s n="adv"/></r></p></e>

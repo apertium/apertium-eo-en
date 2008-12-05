@@ -1779,12 +1779,13 @@
     <e lm="jen"><i>jen</i><par n="komence__adv"/></e>
     <e lm="malpli"><i>malpli</i><par n="vere__preadv"/></e>
     <e lm="iom"><i>iom</i><par n="vere__preadv"/></e>
-    <e lm="tre"><i>multe</i><par n="vere__preadv"/></e>
+    <e lm="multe"><i>multe</i><par n="vere__preadv"/></e>
     <e lm="multe pli"><i>multe<b/>pli</i><par n="vere__preadv"/></e>
     <e lm="sufiĉe"><i>sufi</i><par n="ĉ"/><i>e</i><par n="vere__preadv"/></e>
     <e lm="tiel"><i>tiel</i><par n="vere__preadv"/></e>
     <e lm="kiel"><i>kiel</i><par n="vere__preadv"/></e>
     <e lm="tre"><i>tre</i><par n="vere__preadv"/></e>
+    <e lm="tro"><i>tro</i><par n="vere__preadv"/></e>
     <e><i>iu<b/>ajn</i><par n="vere__preadv"/></e>
 
     <e lm="pli"><i>pli</i><par n="komence__adv"/></e>
@@ -1969,6 +1970,10 @@
     <e lm="io ajn"><p><l>ioj<b/>ajn</l><r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="io ajn"><p><l>ion<b/>ajn</l><r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="io ajn"><p><l>iojn<b/>ajn</l><r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <e lm="kio ajn"><p><l>kio<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e lm="kio ajn"><p><l>kion<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+
     <e lm="kaj"><i>kaj</i><par n="and__cnjcoo"/></e>
     <e lm="kaj ankaŭ"><i>kaj<b/>ankaŭ</i><par n="and__cnjcoo"/></e>
     <e lm="antaŭ"><i>kaj<b/>anta</i><par n="ŭ"/><i></i><par n="after__cnjadv"/></e>
@@ -3312,6 +3317,7 @@
     <e lm="bono"><i>bono</i><par n="nom__n"/></e>
     <e lm="bonstato"><i>bonstato</i><par n="nom__n"/></e>
     <e lm="bontrovo"><i>bontrovo</i><par n="nom__n"/></e>
+    <e lm="bonvoli"><i>bonvol</i><par n="verb__vblex"/></e>
     <e lm="bordelo"><i>bordelo</i><par n="nom__n"/></e>
     <e lm="bordero"><i>bordero</i><par n="nom__n"/></e>
     <e lm="bordo"><i>bordo</i><par n="nom__n"/></e>
@@ -3527,7 +3533,7 @@
     <e lm="decimala"><i>decimal</i><par n="adj__adj"/></e>
     <e lm="dediĉi"><i>dedi</i><par n="ĉ"/><i></i><par n="verb__vblex"/></e>
     <e lm="dedukti"><i>dedukt</i><par n="verb__vblex"/></e>
-	<e lm="defaŭlta"><i>defaŭlt</i><par n="adj__adj"/></e>
+    <e lm="defaŭlta"><i>defaŭlt</i><par n="adj__adj"/></e>
     <e lm="defensiva"><i>defensiv</i><par n="adj__adj"/></e>
     <e lm="deficito"><i>deficito</i><par n="nom__n"/></e>
     <e lm="defii"><i>defi</i><par n="verb__vblex"/></e>
@@ -6556,6 +6562,7 @@
     <e lm="premo"><i>premo</i><par n="nom__n"/></e>
     <e lm="premplatigi"><i>premplatig</i><par n="verb__vblex"/></e>
     <e lm="preni"><i>pren</i><par n="verb__vblex"/></e>
+    <e lm="forpreni"><i>forpren</i><par n="verb__vblex"/></e>
     <e lm="preparado"><i>preparado</i><par n="nom__n"/></e>
     <e lm="prepari"><i>prepar</i><par n="verb__vblex"/></e>
     <e lm="prepozicio"><i>prepozicio</i><par n="nom__n"/></e>
