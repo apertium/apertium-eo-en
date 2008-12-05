@@ -131,9 +131,6 @@
     </def-cat>
 <!--
     -->
-    <def-cat n="a">
-      <cat-item lemma="a" tags="det.ind.*"/>
-    </def-cat>
     <def-cat n="more">
       <cat-item lemma="more" tags="det.qnt.*"/>
     </def-cat>
@@ -144,10 +141,74 @@
     <def-cat n="guio">
       <cat-item tags="guio"/>
     </def-cat>
+
+    <def-cat n="a">
+      <cat-item lemma="a" tags="det.ind.*"/>
+    </def-cat>
+
+
     <def-cat n="det">
+    <!--
       <cat-item tags="det"/>
       <cat-item tags="det.*"/>
+lt-expand apertium-eo-en.en.dix |  grep '<det>' | cut -f2 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' > x
+lt-expand apertium-eo-en.en.dix |  grep '<det>' | grep ":>:" | cut -f3 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' >> x
+sort -t '"' -k 3 x
+      -->
+    <cat-item lemma="the" tags="det.def.*"/>
+    <cat-item tags="det.def.*"/>
+
+    <cat-item lemma="that" tags="det.dem.*"/>
+    <cat-item lemma="this" tags="det.dem.*"/>
+    <cat-item tags="det.dem.*"/>
+    
+    <cat-item lemma="another" tags="det.ind.*"/>
+    <cat-item lemma="any" tags="det.ind.*"/>
+<!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
+    <cat-item lemma="both" tags="det.ind.*"/>
+    <cat-item lemma="each" tags="det.ind.*"/>
+    <cat-item lemma="either" tags="det.ind.*"/>
+    <cat-item lemma="every" tags="det.ind.*"/>
+    <cat-item lemma="no" tags="det.ind.*"/>
+    <cat-item lemma="other" tags="det.ind.*"/>
+    <cat-item lemma="such" tags="det.ind.*"/>
+    <cat-item lemma="the same" tags="det.ind.*"/>
+    <cat-item lemma="whatever" tags="det.ind.*"/>
+
+    <cat-item lemma="last" tags="det.ord.*"/>
+    <cat-item tags="det.ord.*"/>
+
+    <cat-item lemma="her" tags="det.pos.*"/>
+    <cat-item lemma="his" tags="det.pos.*"/>
+    <cat-item lemma="its" tags="det.pos.*"/>
+    <cat-item lemma="my" tags="det.pos.*"/>
+    <cat-item lemma="our" tags="det.pos.*"/>
+    <cat-item lemma="their" tags="det.pos.*"/>
+    <cat-item lemma="your" tags="det.pos.*"/>
+    <cat-item tags="det.pos.*"/>
+
+    <cat-item lemma="a few" tags="det.qnt.*"/>
+    <cat-item lemma="a lot of" tags="det.qnt.*"/>
+    <cat-item lemma="as much" tags="det.qnt.*"/>
+    <cat-item lemma="enough" tags="det.qnt.*"/>
+    <cat-item lemma="fewer" tags="det.qnt.*"/>
+    <cat-item lemma="few" tags="det.qnt.*"/>
+    <cat-item lemma="less" tags="det.qnt.*"/>
+    <cat-item lemma="little" tags="det.qnt.*"/>
+    <cat-item lemma="lots of" tags="det.qnt.*"/>
+    <cat-item lemma="many" tags="det.qnt.*"/>
+    <cat-item lemma="more" tags="det.qnt.*"/>
+    <cat-item lemma="much" tags="det.qnt.*"/>
+    <cat-item lemma="quite a lot of" tags="det.qnt.*"/>
+    <cat-item lemma="so many" tags="det.qnt.*"/>
+    <cat-item lemma="some" tags="det.qnt.*"/>
+    <cat-item lemma="so much" tags="det.qnt.*"/>
+    <cat-item lemma="too many" tags="det.qnt.*"/>
+    <cat-item lemma="too much" tags="det.qnt.*"/>
+    <cat-item tags="det.qnt.*"/>
     </def-cat>
+
+
     <def-cat n="cnjcoo">
       <cat-item tags="cnjcoo"/>
     </def-cat>
