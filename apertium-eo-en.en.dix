@@ -11394,7 +11394,16 @@
     <e lm="actuate"><i>actuat</i><par n="liv/e__vblex"/></e>
     <e lm="acute"><i>acute</i><par n="expensive__adj"/></e>
     <e lm="acutely"><i>acutely</i><par n="maybe__adv"/></e>
-    <e lm="ad"><i>ad</i><par n="house__n"/></e>
+<!-- 
+    <e lm="ad"><i>ad</i><par n="expensive__adj"/></e>
+  <e lm="ad"><i>ad</i><par n="house__n"/></e>
+  -->
+    <e><i>AD</i><par n="maybe__adv"/></e>
+    <e><i>BC</i><par n="maybe__adv"/></e>
+    <e><i>BCE</i><par n="maybe__adv"/></e>
+    <e><i>CE</i><par n="maybe__adv"/></e>
+
+
     <e lm="adapt"><i>adapt</i><par n="accept__vblex"/></e>
     <e lm="add"><i>add</i><par n="accept__vblex"/></e>
     <e lm="add to"><i>add</i><par n="accept__vblex"/><p><l><b/>to</l><r><g><b/>to</g></r></p></e>
