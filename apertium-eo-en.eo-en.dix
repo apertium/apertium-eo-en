@@ -320,6 +320,8 @@
 
 <e>       <p><l>ambaŭ<s n="prn"/><s n="tn"/></l>       <r>both<s n="prn"/><s n="tn"/></r></p></e>
 
+<e>       <p><l>neniu<s n="prn"/><s n="tn"/></l>         <r>none<s n="prn"/><s n="tn"/></r></p></e>
+
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everybody<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everyone<s n="prn"/><s n="tn"/></r></p></e>
 
@@ -554,7 +556,6 @@ BUT:
     <!-- Determiners -->
 
 <e>       <p><l>la<s n="det"/><s n="def"/></l>         <r>the<s n="det"/><s n="def"/></r></p></e>
-
 <e>       <p><l>det__a<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e>
 <!--
 <e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e> -->
@@ -3096,8 +3097,9 @@ BUT:
 <e r="LR"><p><l>flego<s n="n"/></l>                    <r>care<s n="n"/></r></p></e>
 <e r="LR"><p><l>atentado<s n="n"/></l>                 <r>care<s n="n"/></r></p></e>
 <e r="LR"><p><l>atentemo<s n="n"/></l>                 <r>care<s n="n"/></r></p></e>
+<e>       <p><l>zorgi<s n="vblex"/></l>                <r>care<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>prizorgi<s n="vblex"/></l>             <r>care<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>zorgi<s n="vblex"/></l>                <r>care<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>prizorgadi<s n="vblex"/></l>           <r>care<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>flegadi<s n="vblex"/></l>              <r>care<s n="vblex"/></r></p></e>
 <e>       <p><l>kariero<s n="n"/></l>                  <r>career<s n="n"/></r></p></e>
 <e>       <p><l>zorgema<s n="adj"/></l>                <r>careful<s n="adj"/></r></p></e>
@@ -3122,7 +3124,6 @@ BUT:
 <e r="LR"><p><l>malzorga<s n="adj"/></l>               <r>careless<s n="adj"/></r></p></e>
 <e>       <p><l>karikaturo<s n="n"/></l>               <r>caricature<s n="n"/></r></p></e>
 <e>       <p><l>karikaturi<s n="vblex"/></l>           <r>caricature<s n="vblex"/></r></p></e>
-<e>       <p><l>prizorgadi<s n="vblex"/></l>           <r>care<s n="vblex"/></r></p></e>
 <e>       <p><l>karpo<s n="n"/></l>                    <r>carp<s n="n"/></r></p></e>
 <e>       <p><l>tapiŝo<s n="n"/></l>                   <r>carpet<s n="n"/></r></p></e>
 <e>       <p><l>kaleŝo<s n="n"/></l>                   <r>carriage<s n="n"/></r></p></e>
@@ -14536,6 +14537,7 @@ BUT:
 <!-- Already is <e><l>okazi<vblex></l><r>happen<vblex></r></e>-->
 <e r="RL"><p><l>okazi<s n="vblex"/></l>                <r>take<g><b/>place</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>partopreni<s n="vblex"/></l>           <r>take<g><b/>part</g><s n="vblex"/></r></p></e>
+<e><p><l>prizorgi<s n="vblex"/></l>           <r>take<g><b/>care</g><s n="vblex"/></r></p></e>
 <!-- Already is <e><l>peti<vblex></l><r>solicit<vblex></r></e>-->
 <e r="RL"><p><l>peti<s n="vblex"/></l>                 <r>ask<g><b/>for</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>peti<s n="vblex"/></l>                 <r>call<g><b/>for</g><s n="vblex"/></r></p></e>
@@ -14679,6 +14681,7 @@ BUT:
 <e r="RL"><p><l>oficiale<s n="adv"/></l>               <r>on<b/>record<s n="adv"/></r></p></e>
 <e>       <p><l>perforte<s n="adv"/></l>               <r>by<b/>force<s n="adv"/></r></p></e>
 <e>       <p><l>plu<s n="adv"/></l>                    <r>any<b/>more<s n="adv"/></r></p></e>
+<e r="RL"><p><l>plu<s n="adv"/></l>                    <r>any<b/>longer<s n="adv"/></r></p></e>
 <!-- Already is <e><l>abrupte<adv></l><r>shortly<adv></r></e>-->
 <e r="LR"><p><l>post<b/>nelonge<s n="adv"/></l>        <r>shortly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>prudente<s n="adv"/></l>               <r>within<b/>reason<s n="adv"/></r></p></e>
