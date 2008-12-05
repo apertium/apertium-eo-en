@@ -1855,6 +1855,13 @@
     <e lm="antaŭ ol"><i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="after__cnjadv"/></e>
     <e lm="tiel ke"><i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
     <e lm="krom se"><i>krom<b/>se</i><par n="after__cnjadv"/></e>
+
+    <e lm="kaj tiel"><i>kaj<b/>tiel</i><par n="after__cnjadv"/></e>
+    <e lm="do"><i>do</i><par n="after__cnjadv"/></e>
+    <e lm="sed tamen"><i>sed<b/>tamen</i><par n="after__cnjadv"/></e>
+    
+    
+    
     <e lm="antaŭ ol"><i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="at__pr"/></e>
     <e lm="apud"><i>apud</i><par n="at__pr"/></e>
     <e lm="aŭ"><i>a</i><par n="ŭ"/><i></i><par n="and__cnjcoo"/></e>
@@ -1923,6 +1930,8 @@
     <e lm="ekde"><i>ekde</i><par n="at__pr"/></e>
     <e lm="ekzemple"><i>ekzemple</i><par n="after__cnjadv"/></e>
     <e lm="en"><i>en</i><par n="at__pr"/></e>
+    <e lm="ene"><i>ene</i><par n="at__pr"/></e>
+    <e lm="ene de"><i>ene<b/>de</i><par n="at__pr"/></e>
     <e lm="en konsento kun"><i>en<b/>konsento<b/>kun</i><par n="at__pr"/></e>
 
     <e lm="esti"><i>est</i><par n="ser__vblex"/></e>
@@ -1988,12 +1997,21 @@
     <e r="RL" lm="kiom"><p><l>kiom</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
     <e r="RL" lm="kiom"><p><l>kio</l><r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
 
+
+    <e lm="kiom da"><p><l>kiom<b/>da</l><r>kiom<b/>da<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+
+
     <e lm="kio"><p><l>kio</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="kio"><p><l>kion</l><r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 
 	<!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
 	     comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+
+
+    <e lm="kiu el ili"><p><l>kiu<b/>el<b/>ili</l><r>kiu<b/>el<b/>ili<s n="prn"/><s n="nom"/></r></p></e>
+    <e lm="kiu el ili"><p><l>kiun<b/>el<b/>ili</l><r>kiu<b/>el<b/>ili<s n="prn"/><s n="acc"/></r></p></e>
+
 
 	<!-- XXX couldnt a pardef for just <s n="sg"/><s n="nom"/> etc be made which could be used here below and in all other pardefs? -->
     <e lm="kiu"><p><l>kiu</l><r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>

@@ -485,7 +485,10 @@ BUT:
 <e>       <p><l>kvankam<s n="cnjadv"/></l>             <r>although<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>kvankam<s n="cnjadv"/></l>             <r>though<s n="cnjadv"/></r></p></e>
 
+<e>       <p><l>kaj<b/>tiel<s n="cnjadv"/></l>         <r>thus<s n="cnjadv"/></r></p></e>
 <e>       <p><l>do<s n="cnjadv"/></l>                  <r>so<s n="cnjadv"/></r></p></e>
+<e>       <p><l>sed<b/>tamen<s n="cnjadv"/></l>        <r>yet<s n="cnjadv"/></r></p></e>
+
 <e>       <p><l>por<b/>ke<s n="cnjadv"/></l>           <r>so<b/>that<s n="cnjadv"/></r></p></e>
 <e r="LR"><p><l>tiel<b/>ke<s n="cnjadv"/></l>          <r>so<b/>that<s n="cnjadv"/></r></p></e>
 <e>       <p><l>post<b/>kiam<s n="cnjadv"/></l>        <r>after<s n="cnjadv"/></r></p></e>
@@ -685,7 +688,7 @@ BUT:
 <e c="as you - kiel vi"><p><l>kiel<s n="pr"/></l>      <r>as<s n="pr"/></r></p></e>
 
 <e>       <p><l>en<s n="pr"/></l>                      <r>in<s n="pr"/></r></p></e>
-<e>       <p><l>en<b/></l>                      <r>inside<s n="pr"/></r></p></e>
+<e>       <p><l>en<s n="pr"/></l>                      <r>inside<s n="pr"/></r></p></e>
 <e r="RL"><p><l>en<s n="pr"/></l>                      <r>into<s n="pr"/></r></p></e>
 
 <e>       <p><l>sur<s n="pr"/></l>                     <r>on<s n="pr"/></r></p></e>
@@ -20279,10 +20282,10 @@ TODO??
     <e><re>[0-9][0-9][0-9]0</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
 
 
-    <e><re>[0-9][0-9][0-9]0</re><p><l><s n="num"/><b/>AxD</l><r><s n="num"/><b/>AD</r></p></e>
+    <e><re>[0-9][0-9][0-9]0</re><p><l><s n="num"/><b/>P.K.</l><r><s n="num"/><b/>AD</r></p></e>
     <e><re>[0-9][0-9][0-9]0</re><i><s n="num"/><b/></i><p><l>P.K.<s n="n"/><s n="sg"/></l><r>AD<s n="n"/><s n="sg"/></r></p></e>
-<!--  
+
 <e r="RL"><p><l>reklamo<s n="n"/></l>                  <r>ad<s n="n"/></r></p></e>
--->
+
 </section>
 </dictionary>
