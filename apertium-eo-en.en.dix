@@ -1068,6 +1068,13 @@
     </pardef>
     
     <pardef n="second__det">
+<!-- in Esåeranto they can be treated as adj. 
+ 
+<jacobEo> but I should keep the name "second__det", right? To be able to steal from other dicts ?
+<spectie> yes
+<spectie> i'd make three entries
+<spectie> and not put the different tags in the same paradigm 
+ 
     <e r="LR">
       <p>
         <l/> 
@@ -1088,11 +1095,18 @@
         <r><s n="det"/><s n="ord"/><s n="pl"/></r> 
       </p>
     </e>
-
-    <e r="RL">
+-->
+    <e>
       <p>
         <l/> 
         <r><s n="adj"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l/> 
+        <r><s n="adv"/></r> 
       </p>
     </e>
     </pardef>
@@ -13720,7 +13734,7 @@
     <e lm="firm"><i>firm</i><par n="house__n"/></e>
     <e lm="firm"><i>firm</i><par n="long/__adj"/></e>
     <e lm="firmness"><i>firmness</i><par n="access__n"/></e>
-<!--    <e lm="first"><i>first</i><par n="second__det"/></e> -->
+    <e lm="first"><i>first</i><par n="second__det"/></e>
 <!--    <e lm="first"><i>first</i><par n="maybe__adv"/></e> -->
     <e lm="firstly"><i>firstly</i><par n="maybe__adv"/></e>
     <e lm="first of all"><i>first<b/>of<b/>all</i><par n="maybe__adv"/></e>
@@ -14752,9 +14766,7 @@
     <e lm="lark"><i>lark</i><par n="house__n"/></e>
     <e lm="larva"><i>larva</i><par n="larva__n"/></e>
     <e lm="laser"><i>laser</i><par n="house__n"/></e>
-<!-- this was commented away. why? Jacob -->
     <e lm="last"><i>last</i><par n="second__det"/></e>
-	<e lm="last"><i>last</i><par n="second__det"/></e>
     <e lm="last"><i>last</i><par n="accept__vblex"/></e>
     <e lm="last night"><i>last<b/>night</i><par n="maybe__adv"/></e>
     <e lm="late"><i>late</i><par n="nice/__adj"/></e>
@@ -16727,9 +16739,9 @@
     <e lm="seat"><i>seat</i><par n="accept__vblex"/></e>
     <e lm="seaweed"><i>seaweed</i><par n="house__n"/></e>
     <e lm="secession"><i>secession</i><par n="house__n"/></e>
-<!--    <e lm="second"><i>second</i><par n="second__det"/></e>  -->
+    <e lm="second"><i>second</i><par n="second__det"/></e> 
     <e lm="second"><i>second</i><par n="house__n"/></e>
-    <e lm="second"><i>second</i><par n="accept__vblex"/></e>
+<!--    <e lm="second"><i>second</i><par n="accept__vblex"/></e> -->
 <!--    <e lm="second"><i>second</i><par n="maybe__adv"/></e> -->
     <e lm="secondary"><i>secondary</i><par n="expensive__adj"/></e>
     <e lm="secret"><i>secret</i><par n="house__n"/></e>
@@ -17526,8 +17538,17 @@
     <e lm="thin"><i>thin</i><par n="thin/__adj"/></e>
     <e lm="thing"><i>thing</i><par n="house__n"/></e>
     <e lm="thinking"><i>thinking</i><par n="house__n"/></e>
-<!--    <e lm="third"><i>third</i><par n="second__det"/></e> -->
+    <e lm="third"><i>third</i><par n="second__det"/></e>
     <e lm="third"><i>third</i><par n="house__n"/></e>
+    
+                        <e lm="fourth" i=""><i>fourth</i><par n="second__det"/></e>
+                        <e lm="fifth" i=""><i>fifth</i><par n="second__det"/></e>
+                        <e lm="sixth" i=""><i>sixth</i><par n="second__det"/></e>
+                        <e lm="seventh" i=""><i>seventh</i><par n="second__det"/></e>
+                        <e lm="eighth" i=""><i>eighth</i><par n="second__det"/></e>
+                        <e lm="ninth" i=""><i>ninth</i><par n="second__det"/></e>
+                        <e lm="tenth" i=""><i>tenth</i><par n="second__det"/></e>
+    
     <e lm="though"><i>though</i><par n="maybe__adv"/></e>
     <e lm="though"><i>though</i><par n="after__cnjadv"/></e>
     <e lm="thought"><i>thought</i><par n="house__n"/></e>

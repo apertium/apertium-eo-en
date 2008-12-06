@@ -169,6 +169,10 @@
         </p>
       </e>
     </pardef>
+
+
+
+
     <pardef n="time">
       <e>
         <re>[0-9]+[.:][0-5][0-9](pm|PM|am|AM)</re>
@@ -4919,11 +4923,12 @@
     <e lm="kazeiĝi"><i>kazei</i><par n="ĝ"/><i></i><par n="verb__vblex"/></e>
     <e lm="kazerno"><i>kazerno</i><par n="nom__n"/></e>
     <e lm="kazo"><i>kazo</i><par n="nom__n"/></e>
-    <e lm="ke"><i>ke</i><par n="komence__adv"/></e>
 
     <e><i>p.K.</i><par n="komence__adv"/></e>
     <e><i>a.K.</i><par n="komence__adv"/></e>
-    <e><i>AKE</i><par n="komence__adv"/></e>
+    <e><i>aKE</i><par n="komence__adv"/></e>
+<!-- ne - lm="ke" ĉi-sube bonŝance zorgas    <e><i>KE</i><par n="komence__adv"/></e> -->
+    <e lm="ke"><i>ke</i><par n="komence__adv"/></e>
 
 
     <e lm="kelka"><i>kelk</i><par n="adj__adj"/></e>
@@ -7795,10 +7800,31 @@
     <e lm="universitato"><i>universitato</i><par n="nom__n"/></e>
     <e lm="universitata"><i>universitat</i><par n="adj__adj"/></e>
     <e lm="universo"><i>universo</i><par n="nom__n"/></e>
-    <e lm="unua"><i>unu</i><par n="adj__adj"/></e>
     <e lm="unuanima"><i>unuanim</i><par n="adj__adj"/></e>
     <e lm="unuanimeco"><i>unuanimeco</i><par n="nom__n"/></e>
+    <e lm="unua"><i>unu</i><par n="adj__adj"/></e>
     <e lm="unue"><i>unue</i><par n="komence__adv"/></e>
+    <e lm="dua"><i>du</i><par n="adj__adj"/></e>
+    <e lm="due"><i>due</i><par n="komence__adv"/></e>
+
+    <e><i>tri</i><par n="adj__adj"/></e>
+    <e><i>trie</i><par n="komence__adv"/></e>
+
+    <e><i>kvar</i><par n="adj__adj"/></e>
+    <e><i>kvare</i><par n="komence__adv"/></e>
+    <e><i>kvin</i><par n="adj__adj"/></e>
+    <e><i>kvine</i><par n="komence__adv"/></e>
+    <e><i>ses</i><par n="adj__adj"/></e>
+    <e><i>sese</i><par n="komence__adv"/></e>
+    <e><i>sep</i><par n="adj__adj"/></e>
+    <e><i>sepe</i><par n="komence__adv"/></e>
+    <e><i>ok</i><par n="adj__adj"/></e>
+    <e><i>oke</i><par n="komence__adv"/></e>
+    <e><i>na</i><par n="ŭ"/><par n="adj__adj"/></e>
+    <e><i>na</i><par n="ŭ"/><i>e</i><par n="komence__adv"/></e>
+    <e><i>dek</i><par n="adj__adj"/></e>
+    <e><i>deke</i><par n="komence__adv"/></e>
+
     <e lm="unuflanke"><i>unuflanke</i><par n="komence__adv"/></e>
     <e lm="unuforma"><i>unuform</i><par n="adj__adj"/></e>
     <e lm="unuformeco"><i>unuformeco</i><par n="nom__n"/></e>

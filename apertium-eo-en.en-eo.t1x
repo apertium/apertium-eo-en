@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transfer default="chunk">
+<!-- TODO
+ make a transfer rule saying  DET + ADJ  can be a SN:
+  The first was an animated feature     and 
+  the second was a TV live action version.
+  
+-->
+
   <section-def-cats>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
