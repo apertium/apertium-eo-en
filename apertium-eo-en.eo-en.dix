@@ -380,8 +380,6 @@
 <!-- Already is <e r="LR"><l>iu<prn></l><r>any<prn><tn></r></e>-->
 <e r="RL"><p><l>iu<s n="prn"/></l>                     <r>someone<s n="prn"/></r></p></e>
 
-<!-- Already is <e r="LR"><l>iu<prn></l><r>any<prn><tn></r></e>-->
-<e r="RL"><p><l>iu<s n="prn"/></l>                     <r>kelkaj<s n="prn"/></r></p></e>
 
 <e>       <p><l>ie<s n="prn"/></l>                     <r>somewhere<s n="prn"/></r></p></e>
 <e>       <p><l>nenie<s n="prn"/></l>                  <r>nowhere<s n="prn"/></r></p></e>
@@ -569,8 +567,6 @@ BUT:
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>either<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>whatever<s n="det"/><s n="ind"/></r></p></e>
 
-<e>       <p><l>kelkaj<s n="det"/><s n="qnt"/></l>     <r>some<s n="det"/><s n="qnt"/></r></p></e>
-<e r="LR"><p><l>certa<s n="det"/><s n="ind"/></l>      <r>some<s n="det"/><s n="qnt"/></r></p></e>
 
 <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l>       <r>another<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>alia<s n="det"/><s n="ind"/></l>       <r>other<s n="det"/><s n="ind"/></r></p></e>
@@ -611,6 +607,11 @@ BUT:
 <e>       <p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>each<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>every<s n="det"/><s n="ind"/></r></p></e>
 
+
+<!-- <e>       <p><l>kelka<s n="det"/><s n="qnt"/></l>      <r>some<s n="det"/><s n="qnt"/></r></p></e> -->
+<e>       <p><l>kelka<s n="det"/><s n="qnt"/><s n="pl"/></l>      <r>some<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+<e>       <p><l>kelka<s n="det"/><s n="qnt"/><s n="sg"/></l>      <r>some<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+<e>       <p><l>kelka<s n="det"/><s n="qnt"/><s n="pl"/></l>      <r>some<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>kelka<s n="det"/><s n="qnt"/></l>      <r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>kelka<s n="det"/></l>                  <r>a<b/>few<s n="det"/></r></p></e>
@@ -10131,6 +10132,7 @@ BUT:
 <!-- Workaround for please -->
 <e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="pres"/></r></p></e>
 <e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="imp"/></r></p></e>
+<e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="adv"/></r></p></e>
 
 
 <e>       <p><l>plezuro<s n="n"/></l>                  <r>pleasure<s n="n"/></r></p></e>
