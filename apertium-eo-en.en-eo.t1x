@@ -2699,8 +2699,10 @@ might:might<vaux><inf>
 
           <when>
             <test><!-- I could have washed => Mi povis lavi. OK TODO  "Mi povintus lavi" would be better-->
+            <and>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
               <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
+            </and>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
