@@ -33,13 +33,12 @@
     </pipeline>
   </mode>
 
-  <!-- not installed for now -->
-  <mode name="en-eo">
+  <!-- also installed for now, although very incomplete -->
+  <mode name="en-eo" install="yes">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
       </program>
-<!--      <program name="apertium-tagger -g $2"> -->
       <program name="apertium-tagger -g $2">
         <file name="en-eo.prob"/>
       </program>
