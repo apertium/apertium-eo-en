@@ -27,6 +27,7 @@ dev/ald_tradukunet.eo-en.dix -text
 dev/apertium-eo-en.eo-en-after-clean.dix -text
 dev/freeling.en-open-chopped.dix -text
 dev/freeling.en-open.dix -text
+dev/paradigm-chopper.py -text
 dev/tradukunet_missing_en_words.txt -text
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
