@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static final boolean debug=true;
+  public static final boolean debug=false;
 
   /*
   private static Set<String> tenindiajEtikedoj = new HashSet<String>( Arrays.asList(
@@ -187,7 +187,7 @@ public class AldonuCxiujnVortojn {
     LinkedHashMap<String, ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix",forprenindiajEtikedoj);
     //LinkedHashMap<String, ArrayList<String>> aperEnDix[]=Iloj.leguDix("zcat en.expanded.dix.gz");
 
-    LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium.eo-en.dix",forprenindiajEtikedoj);
+    LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix",forprenindiajEtikedoj);
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-lille.eo-en.dix",forprenindiajEtikedoj);
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix");
     //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("echo");
