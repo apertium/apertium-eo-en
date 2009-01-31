@@ -255,7 +255,9 @@ public class Iloj {
     new File(dosierujo).mkdir();
     PrintWriter el = null;
     try {
-        el = new PrintWriter(dosierujo + File.separator + dosierNomo);
+        String fff = dosierujo + File.separator + dosierNomo;
+        System.err.println("Skribas dosieron: "+fff);
+        el = new PrintWriter(fff);
     } catch (FileNotFoundException ex) {
         ex.printStackTrace();
     }

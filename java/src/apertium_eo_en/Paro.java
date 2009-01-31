@@ -141,7 +141,7 @@ public class Paro {
       if (np() && apertiumExtraTags.equals("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
       if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"a__np\"/></e>";
       
-      System.err.println("apertiumEo() problem for " + this + " "+apertiumExtraTags);
+      System.err.println("apertiumEo() problem for " + this + "  apertiumExtraTags="+apertiumExtraTags);
       if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
       return "";
     }

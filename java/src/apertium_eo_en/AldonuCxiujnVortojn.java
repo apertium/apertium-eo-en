@@ -20,7 +20,8 @@ public class AldonuCxiujnVortojn {
       "<n> <np> <vblex> <adj> <adv> <ant> <acr> <loc> <top> <pr>".split(" ")));
   */
   private static Set<String> forprenindiajEtikedoj = new HashSet<String>( Arrays.asList(
-      "<GD> <sg> <f> <pp> <subj> <imp> <sp> <gen> <def> <itg> <past> <mf> <p1> <pres> <sg> <obj> <inf> <m>  <pl> <ger> <tn> <p3>".split(" ")));
+//      "<GD> <sg> <f> <pp> <subj> <imp> <sp> <gen> <def> <itg> <past> <mf> <p1> <pres> <sg> <obj> <inf> <m>  <pl> <ger> <tn> <p3>".split(" ")));
+      "<GD> <sg> <pp> <subj> <imp> <sp> <gen> <def> <itg> <past> <mf> <p1> <pres> <sg> <obj> <inf>  <pl> <ger> <tn> <p3>".split(" ")));
 
   static void aldonuParon(Paro p, Map<String, ArrayList<Paro>> aldonuParojnEn, Map<String, ArrayList<Paro>> aldonuParojnEo, ArrayList<Paro> aldonuParojn) {
 
@@ -240,6 +241,7 @@ public class AldonuCxiujnVortojn {
           analizuEn(surfacoAlLemoj, p, aperEoEnDix[1]);
         
           if (p.rootEn==null) {
+            mankantajEnVortoj.add(p.orgEn+"; "+p.apertiumWordType);
             continue;
           }
 
@@ -280,7 +282,7 @@ public class AldonuCxiujnVortojn {
 
     for (Paro p : aldonuParojn) {
       if (p.dir_eoEn==null||p.dir_enEo==null) {
-        //eoDixAldono.add(p.apertiumEo());
+        eoDixAldono.add(p.apertiumEo());
         //enDixAldono.add(p.apertiumEn());
         eoEnDixAldono.add(p.apertiumEoEn());
 
@@ -289,7 +291,7 @@ public class AldonuCxiujnVortojn {
       }
     }
 
-    //Iloj.skribu(eoDixAldono, "ald_tradukunet.eo.dix");
+    Iloj.skribu(eoDixAldono, "ald_tradukunet.eo.dix");
     //Iloj.skribu(enDixAldono, "ald_tradukunet.en.dix");
     Iloj.skribu(eoEnDixAldono, "ald_tradukunet.eo-en.dix");
 
