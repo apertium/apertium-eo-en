@@ -106,6 +106,7 @@
     <sdef n="pr" /> 
     <sdef n="nom" /> 
   </sdefs>
+
   <pardefs>
     <pardef n="MF_GD">
     <e r="RL">
@@ -2103,7 +2104,7 @@ BUT:
 <e>       <p><l>proksimume<s n="adv"/></l>             <r>approximately<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aproksime<s n="adv"/></l>              <r>approximately<s n="adv"/></r></p></e>
 <e>       <p><l>abrikoto<s n="n"/></l>                 <r>apricot<s n="n"/></r></p></e>
-<e>       <p><l>taŭga<s n="adj"/></l>                  <r>apt<s n="adj"/></r></p></e>
+<e>       <p><l>taŭga<s n="adj"/></l>                  <r>apt<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>kapableco<s n="n"/></l>                <r>aptitude<s n="n"/></r></p></e>
 <e>       <p><l>akva<s n="adj"/></l>                   <r>aquatic<s n="adj"/></r></p></e>
 <e>       <p><l>akvedukto<s n="n"/></l>                <r>aqueduct<s n="n"/></r></p></e>
@@ -2445,10 +2446,10 @@ BUT:
 <e r="LR"><p><l>priveti<s n="vblex"/></l>              <r>back<s n="vblex"/></r></p></e>
 <e>       <p><l>returnite<s n="adv"/></l>              <r>backwards<s n="adv"/></r></p></e>
 <e r="LR"><p><l>retroen<s n="adv"/></l>                <r>backwards<s n="adv"/></r></p></e>
-<e>       <p><l>malbona<s n="adj"/></l>                <r>bad<s n="adj"/></r></p></e>
-<e r="LR"><p><l>nebona<s n="adj"/></l>                 <r>bad<s n="adj"/></r></p></e>
-<e r="LR"><p><l>fuŝa<s n="adj"/></l>                   <r>bad<s n="adj"/></r></p></e>
-<e r="LR"><p><l>ranca<s n="adj"/></l>                  <r>bad<s n="adj"/></r></p></e>
+<e>       <p><l>malbona<s n="adj"/></l>                <r>bad<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>nebona<s n="adj"/></l>                 <r>bad<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>fuŝa<s n="adj"/></l>                   <r>bad<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>ranca<s n="adj"/></l>                  <r>bad<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>melo<s n="n"/></l>                     <r>badger<s n="n"/></r></p></e>
 <e>       <p><l>severe<s n="adv"/></l>                 <r>badly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>malbone<s n="adv"/></l>                <r>badly<s n="adv"/></r></p></e>
@@ -2657,7 +2658,6 @@ BUT:
 <e>       <p><l>provi<s n="vblex"/></l>                <r>bid<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>oferti<s n="vblex"/></l>               <r>bid<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>pliproponi<s n="vblex"/></l>           <r>bid<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/></r></p></e>
 <e>       <p><l>biciklo<s n="n"/></l>                  <r>bike<s n="n"/></r></p></e>
 <e>       <p><l>dulingva<s n="adj"/></l>               <r>bilingual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>kalkulo<s n="n"/></l>                  <r>bill<s n="n"/></r></p></e>
@@ -17064,7 +17064,6 @@ TODO??
 <e r="LR"><p><l>proksimumaĵo<s n="n"/></l><r>approximation<s n="n"/></r></p></e>   
 <e r="LR"><p><l>aproksimo<s n="n"/></l><r>approximation<s n="n"/></r></p></e>      
 <e       ><p><l>antaŭtuko<s n="n"/></l><r>apron<s n="n"/></r></p></e>              
-<e r="LR"><p><l>taŭga<s n="adj"/></l><r>apt<s n="adj"/></r></p></e>                
 <e       ><p><l>akvokultivado<s n="n"/></l><r>aquaculture<s n="n"/></r></p></e>    
 <e       ><p><l>akvamarino<s n="n"/></l><r>aquamarine<s n="n"/></r></p></e>        
 <e       ><p><l>akvamarina<s n="adj"/></l><r>aquamarine<s n="adj"/></r></p></e>    
@@ -17388,8 +17387,8 @@ TODO??
 <e       ><p><l>bakteriologia<s n="adj"/></l><r>bacteriological<s n="adj"/></r></p></e>
 <e       ><p><l>bakteriologo<s n="n"/></l><r>bacteriologist<s n="n"/></r></p></e>  
 <e       ><p><l>bakteriologio<s n="n"/></l><r>bacteriology<s n="n"/></r></p></e>   
-<e r="LR"><p><l>nebona<s n="adj"/></l><r>bad<s n="adj"/></r></p></e>               
-<e r="RL"><p><l>insigno<s n="n"/></l><r>badge<s n="n"/></r></p></e>                
+<e r="LR"><p><l>nebona<s n="adj"/></l><r>bad<s n="adj"/><s n="sint"/></r></p></e>               
+<e r="RL"><p><l>insigno<s n="n"/></l><r>badge<s n="n"/></r></p></e>
 <e r="LR"><p><l>aĉe<s n="adv"/></l><r>badly<s n="adv"/></r></p></e>                
 <e       ><p><l>volanludo<s n="n"/></l><r>badminton<s n="n"/></r></p></e>          
 <e r="RL"><p><l>vanigi<s n="vblex"/></l><r>baffle<s n="vblex"/></r></p></e>        
@@ -22822,7 +22821,7 @@ TODO??
 <e r="LR"><p><l>grande<s n="adv"/></l><r>heavily<s n="adv"/></r></p></e>           
 <e r="LR"><p><l>peze<s n="adv"/></l><r>heavily<s n="adv"/></r></p></e>             
 <e       ><p><l>peza<s n="adj"/></l><r>heavy<s n="adj"/><s n="sint"/></r></p></e>               
-<e r="LR"><p><l>ega<s n="adj"/></l><r>heavy<s n="adj"/></r></p></e>                
+<e r="LR"><p><l>ega<s n="adj"/></l><r>heavy<s n="adj"/><s n="sint"/></r></p></e>                
 <e       ><p><l>Hector<s n="np"/></l><r>Hector<s n="np"/></r></p></e>              
 <e r="LR"><p><l>Hektoro<s n="np"/></l><r>Hector<s n="np"/></r></p></e>             
 <e r="RL"><p><l>heĝo<s n="n"/></l><r>hedge<s n="n"/></r></p></e>                   
