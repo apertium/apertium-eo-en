@@ -130,6 +130,15 @@
       </e>
       -->
 </pardef>
+
+
+<pardef n="Ifans__np">
+<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+</pardef>
+
+
     <pardef n="ordinals">
     <!--  Ill just comment out now, we can delete later then
       <e>
@@ -528,6 +537,38 @@
         <e><p><l>n</l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>j</l><r><s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
         <e><p><l>jn</l><r><s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+    </pardef>
+
+
+
+    <pardef n="DNA__n">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
     </pardef>
 
 
@@ -2164,6 +2205,7 @@
     <e lm="mil"><i>mil</i><par n="two__num"/></e>
 
     <e lm="miliono"><i>miliono</i><par n="two__num"/></e>
+    <e lm="miliardo"><i>miliardo</i><par n="two__num"/></e>
 
     <e lm="dek"><i>dek</i><par n="two__num"/></e>
     <e lm="deko"><i>deko</i><par n="nom__n"/></e>
@@ -5054,6 +5096,9 @@
     <e lm="konateco"><i>konateco</i><par n="nom__n"/></e>
     <e lm="konatiĝi"><i>konati</i><par n="ĝ"/><i/><par n="verb__vblex"/></e>
     <e lm="konatiĝi kun"><i>konati</i><par n="ĝ"/><i/><par n="verb__vblex"/><p><l><b/>kun</l><r><g><b/>kun</g></r></p></e>
+
+    <e lm="daŭri dum"><i>da</i><par n="ŭ"/><i>r</i><par n="verb__vblex"/><p><l><b/>dum</l><r><g><b/>dum</g></r></p></e>
+
     <e lm="koncedi"><i>konced</i><par n="verb__vblex"/></e>
     <e lm="koncentri"><i>koncentr</i><par n="verb__vblex"/></e>
     <e lm="koncepti"><i>koncept</i><par n="verb__vblex"/></e>
@@ -18451,7 +18496,12 @@
 <e lm="moviĝi"><i>movi</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="formoviĝi"><i>formovi</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="kortuŝa"><i>kortu</i><par n="ŝ"/><par n="adj__adj"/></e>
+
+
 <e lm="mp3"><i>mp3</i><par n="nom__n"/></e>
+<e lm="cm">                   <i>cm</i><par n="DNA__n"/></e>
+<e lm="mm">                   <i>mm</i><par n="DNA__n"/></e>
+
 <e lm="muko"><i>muko</i><par n="nom__n"/></e>
 <e lm="koto"><i>koto</i><par n="nom__n"/></e>
 <e lm="kotkovrita"><i>kotkovrit</i><par n="adj__adj"/></e>
@@ -23960,8 +24010,8 @@
 <e lm="suferinto"><i>suferinto</i><par n="nom__n"/></e>
 <e lm="viktimigado"><i>viktimigado</i><par n="nom__n"/></e>
 <e lm="viktimigi"><i>viktimig</i><par n="verb__vblex"/></e>
-<e lm="Viktorio"><i>Viktorio</i><par n="Mark__np"/></e>
-<e lm="Viktoria"><i>Viktoria</i><par n="Barcelono__np"/></e>
+<e lm="Viktoria"><i>Viktoria</i><par n="Mark__np"/></e>
+<e lm="Viktorio"><i>Viktorio</i><par n="Barcelono__np"/></e>
 <e lm="video"><i>video</i><par n="nom__n"/></e>
 <e lm="videofilmo"><i>videofilmo</i><par n="nom__n"/></e>
 <e lm="videobendo"><i>videobendo</i><par n="nom__n"/></e>
@@ -23988,7 +24038,7 @@
 <e lm="Virginio"><i>Virginio</i><par n="Barcelono__np"/></e>
 <e lm="Virginia"><i>Virginia</i><par n="Barcelono__np"/></e>
 <e lm="virtuala"><i>virtual</i><par n="adj__adj"/></e>
-<e lm="surReta"><i>surRet</i><par n="adj__adj"/></e>
+<e lm="surreta"><i>surret</i><par n="adj__adj"/></e>
 <e lm="preskaŭ"><i>preska</i><par n="ŭ"/><par n="komence__adv"/></e>
 <e lm="virtuale"><i>virtuale</i><par n="komence__adv"/></e>
 <e lm="surrete"><i>surrete</i><par n="komence__adv"/></e>
@@ -24433,9 +24483,35 @@
 
 
 
+<e lm="Baker">                <i>Baker</i><par n="Ifans__np"/></e>
+<e lm="Bell">                 <i>Bell</i><par n="Ifans__np"/></e>
+<e lm="Cooper">               <i>Cooper</i><par n="Mark__np"/></e>
+<e lm="Cooper">               <i>Cooper</i><par n="Ifans__np"/></e>
 
+<e lm="Eroso">               <i>Eroso</i><par n="Mark__np"/></e>
+<e lm="Grant">                <i>Grant</i><par n="Mark__np"/></e>
+<e lm="Grant">                <i>Grant</i><par n="Ifans__np"/></e>
+<e lm="Gray">                 <i>Gray</i><par n="Ifans__np"/></e>
+<e lm="Hunter">               <i>Hunter</i><par n="Ifans__np"/></e>
+<e lm="James">                <i>James</i><par n="Mark__np"/></e>
+<e lm="James">                <i>James</i><par n="Mark__np"/></e>
+<e lm="James">                <i>James</i><par n="Ifans__np"/></e>
+<e lm="King">                 <i>King</i><par n="Ifans__np"/></e>
+<e lm="Mason">                <i>Mason</i><par n="Ifans__np"/></e>
+<e lm="Miller">               <i>Miller</i><par n="Ifans__np"/></e>
+<e lm="Mills">                <i>Mills</i><par n="Ifans__np"/></e>
+<e lm="Robin">                <i>Robin</i><par n="Mary__np"/></e>
+<e lm="Sandy">                <i>Sandy</i><par n="Mark__np"/></e>
+<e lm="Taylor">               <i>Taylor</i><par n="Mark__np"/></e>
+<e lm="Taylor">               <i>Taylor</i><par n="Mary__np"/></e>
+<e lm="Taylor">               <i>Taylor</i><par n="Ifans__np"/></e>
+<e lm="Thomas">               <i>Thomas</i><par n="Mark__np"/></e>
+<e lm="Thomas">               <i>Thomas</i><par n="Ifans__np"/></e>
+<e lm="Victor">               <i>Victor</i><par n="Mark__np"/></e>
+<e lm="Victoria">             <i>Victoria</i><par n="Mary__np"/></e>
+<e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
+<e lm="Wood">                 <i>Wood</i><par n="Ifans__np"/></e>
 
-  
   </section>
 
 

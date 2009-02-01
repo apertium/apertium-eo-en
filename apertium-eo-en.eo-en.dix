@@ -214,6 +214,14 @@
 <e>       <p><l>ok<b/>milionoj<s n="num"/></l>         <r>eight<b/>million<s n="num"/></r></p></e>
 <e>       <p><l>naŭ<b/>milionoj<s n="num"/></l>        <r>nine<b/>million<s n="num"/></r></p></e>
 
+
+<e>       <p><l>miliardo<s n="num"/></l>                <r>billion<s n="num"/></r></p></e>
+<e r="RL"><p><l>miliardo<s n="num"/></l>                <r>a<b/>billion<s n="num"/></r></p></e>
+
+<e>       <p><l>miliono<s n="n"/></l>                  <r>million<s n="n"/></r></p></e>
+<e       ><p><l>miliardo<s n="n"/></l><r>billion<s n="n"/></r></p></e>             
+
+
 <!--
     <e><p><l>cent<s n="num"/></l><r>one<b/>hundred<s n="num"/></r></p></e>
     <e><p><l>mil<s n="num"/></l><r>one<b/>thousand<s n="num"/></r></p></e>
@@ -1099,6 +1107,7 @@ BUT:
 <e>       <p><l>Venezuelo<s n="np"/><s n="top"/></l>   <r>Venezuela<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vieno<s n="np"/><s n="top"/></l>       <r>Vienna<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vjetnamio<s n="np"/><s n="top"/></l>   <r>Vietnam<s n="np"/><s n="top"/></r></p></e>
+<e       ><p><l>Viktorio<s n="np"/><s n="top"/></l><r>Victoria<s n="np"/><s n="top"/></r></p></e>          
 
 
     <!-- Adjective nations and other uppercase things -->
@@ -1547,6 +1556,13 @@ BUT:
 
 <e>       <p><l>iel<b/>ajn<s n="adv"/></l>             <r>in<b/>any<b/>way<s n="adv"/></r></p></e>
 <e>       <p><l>ensaluto<s n="n"/></l>                 <r>login<s n="n"/></r></p></e>
+
+
+<e>       <p><l>ensaluti<s n="vblex"/></l>             <r>log<g><b/>in</g><s n="vblex"/></r></p></e>
+<e>       <p><l>adiaŭi<s n="vblex"/></l>               <r>log<g><b/>out</g><s n="vblex"/></r></p></e>
+
+<e>       <p><l>daŭri<g><b/>dum</g><s n="vblex"/></l>  <r>span<s n="vblex"/></r></p></e>
+
 
 
 	<!-- ====================================================================== -->
@@ -8434,6 +8450,7 @@ BUT:
 <e r="LR"><p><l>delonge<s n="adv"/></l>                <r>long<s n="adv"/></r></p></e>
 <e>       <p><l>rigardo<s n="n"/></l>                  <r>look<s n="n"/></r></p></e>
 <e r="LR"><p><l>aspekti<s n="vblex"/></l>              <r>look<s n="vblex"/></r></p></e>
+<e       ><p><l>rigardi<s n="vblex"/></l><r>look<g><b/>at</g><s n="vblex"/></r></p></e>    
 <e r="RL"><p><l>rigardi<s n="vblex"/></l>              <r>look<s n="vblex"/></r></p></e>
 <e>       <p><l>maŝo<s n="n"/></l>                     <r>loop<s n="n"/></r></p></e>
 <e r="LR"><p><l>grandsinjoro<s n="n"/></l>             <r>lord<s n="n"/></r></p></e>
@@ -8841,7 +8858,6 @@ BUT:
 <e>       <p><l>jarmilo<s n="n"/></l>                  <r>millennium<s n="n"/></r></p></e>
 <e>       <p><l>milimetro<s n="n"/></l>                <r>millimeter<s n="n"/></r></p></e>
 <e r="RL"><p><l>milimetro<s n="n"/></l>                <r>millimetre<s n="n"/></r></p></e>
-<e>       <p><l>miliono<s n="n"/></l>                  <r>million<s n="n"/></r></p></e>
 <e>       <p><l>milionulo<s n="n"/></l>                <r>millionaire<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>minareto<s n="n"/></l>                 <r>minaret<s n="n"/></r></p></e>
 <e>       <p><l>menso<s n="n"/></l>                    <r>mind<s n="n"/></r></p></e>
@@ -14525,6 +14541,7 @@ BUT:
 <e r="RL"><p><l>mallumiĝi<s n="vblex"/></l>            <r>get<g><b/>dark</g><s n="vblex"/></r></p></e>
 <e>       <p><l>malsati<s n="vblex"/></l>              <r>be<g><b/>hungry</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>there<b/>be<s n="vblex"/></r></p></e>
+<e>       <p><l>fuŝi<s n="vblex"/></l>                 <r>mess<g><b/>up</g><s n="vblex"/></r></p></e>
 
 
 <e r="RL"><p><l>manki<s n="vblex"/></l>                <r>be<g><b/>missing</g><s n="vblex"/></r></p></e>
@@ -14716,7 +14733,6 @@ BUT:
 
 <e>       <p><l>kristanismo<s n="n"/></l>              <r>Christianity<s n="n"/></r></p></e>
 <e r="LR"><p><l>kristaneco<s n="n"/></l>               <r>Christianity<s n="n"/></r></p></e>
-<e r="RL"><p><l>televido<s n="n"/></l>                 <r>TV<s n="n"/><s n="acr"/></r></p></e>
 <e>       <p><l>latino<s n="n"/></l>                   <r>Latin<s n="n"/></r></p></e>
 <e>       <p><l>pretendanto<s n="n"/></l>              <r>beau<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="LR"><p><l>masonisto<s n="n"/></l>                <r>bricklayer<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -17616,7 +17632,7 @@ TODO??
 <e       ><p><l>Bill<s n="np"/></l><r>Bill<s n="np"/></r></p></e>                  
 <e r="LR"><p><l>leĝprojekto<s n="n"/></l><r>bill<s n="n"/></r></p></e>             
 <e r="LR"><p><l>trato<s n="n"/></l><r>bill<s n="n"/></r></p></e>                   
-<e       ><p><l>miliardo<s n="n"/></l><r>billion<s n="n"/></r></p></e>             
+
 <e       ><p><l>miliarda<s n="adj"/></l><r>billionth<s n="adj"/></r></p></e>       
 <e r="LR"><p><l>biliona<s n="adj"/></l><r>billionth<s n="adj"/></r></p></e>        
 <e       ><p><l>ondiĝi<s n="vblex"/></l><r>billow<s n="vblex"/></r></p></e>        
@@ -22805,7 +22821,7 @@ TODO??
 <e       ><p><l>ĉiela<s n="adj"/></l><r>heavenly<s n="adj"/></r></p></e>           
 <e r="LR"><p><l>grande<s n="adv"/></l><r>heavily<s n="adv"/></r></p></e>           
 <e r="LR"><p><l>peze<s n="adv"/></l><r>heavily<s n="adv"/></r></p></e>             
-<e       ><p><l>peza<s n="adj"/></l><r>heavy<s n="adj"/></r></p></e>               
+<e       ><p><l>peza<s n="adj"/></l><r>heavy<s n="adj"/><s n="sint"/></r></p></e>               
 <e r="LR"><p><l>ega<s n="adj"/></l><r>heavy<s n="adj"/></r></p></e>                
 <e       ><p><l>Hector<s n="np"/></l><r>Hector<s n="np"/></r></p></e>              
 <e r="LR"><p><l>Hektoro<s n="np"/></l><r>Hector<s n="np"/></r></p></e>             
@@ -24652,7 +24668,7 @@ TODO??
 <e r="LR"><p><l>pistomiksi<s n="vblex"/></l><r>mash<s n="vblex"/></r></p></e>      
 <e       ><p><l>masoĥismo<s n="n"/></l><r>masochism<s n="n"/></r></p></e>          
 <e       ><p><l>masoĥisma<s n="adj"/></l><r>masochistic<s n="adj"/></r></p></e>    
-<e       ><p><l>Framasono<s n="np"/></l><r>Mason<s n="np"/></r></p></e>            
+<e       ><p><l>Mason<s n="np"/></l><r>Mason<s n="np"/></r></p></e>            
 <e r="LR"><p><l>meso<s n="n"/></l><r>mass<s n="n"/></r></p></e>                    
 <e r="LR"><p><l>amasbuĉado<s n="n"/></l><r>massacre<s n="n"/></r></p></e>          
 <e       ><p><l>masiva<s n="adj"/></l><r>massive<s n="adj"/></r></p></e>           
@@ -25100,7 +25116,6 @@ TODO??
 <e r="LR"><p><l>formoviĝi<s n="vblex"/></l><r>move<s n="vblex"/></r></p></e>       
 <e r="RL"><p><l>emocia<s n="adj"/></l><r>moving<s n="adj"/></r></p></e>            
 <e r="LR"><p><l>kortuŝa<s n="adj"/></l><r>moving<s n="adj"/></r></p></e>           
-<e       ><p><l>mp3<s n="n"/></l><r>mp3<s n="n"/></r></p></e>                      
 <e       ><p><l>muko<s n="n"/></l><r>mucus<s n="n"/></r></p></e>                   
 <e r="RL"><p><l>koto<s n="n"/></l><r>mud<s n="n"/></r></p></e>                     
 <e r="RL"><p><l>konfuzi<s n="vblex"/></l><r>muddle<s n="vblex"/></r></p></e>       
@@ -28982,9 +28997,9 @@ TODO??
 <e r="LR"><p><l>banloko<s n="n"/></l><r>spa<s n="n"/></r></p></e>                  
 <e       ><p><l>kosmoŝipo<s n="n"/></l><r>spacecraft<s n="n"/></r></p></e>         
 <e       ><p><l>interaĵo<s n="n"/></l><r>spacer<s n="n"/></r></p></e>              
-<e       ><p><l>interspacigo<s n="n"/></l><r>spacing<s n="n"/></r></p></e>         
-<e       ><p><l>spamo<s n="n"/></l><r>spam<s n="n"/></r></p></e>                   
-<e r="LR"><p><l>spamaĵo<s n="n"/></l><r>spam<s n="n"/></r></p></e>                 
+<e       ><p><l>interspacigo<s n="n"/></l><r>spacing<s n="n"/></r></p></e>
+<e       ><p><l>spamo<s n="n"/></l><r>spam<s n="n"/></r></p></e>
+<e r="LR"><p><l>spamaĵo<s n="n"/></l><r>spam<s n="n"/></r></p></e>
 <e r="RL"><p><l>daŭro<s n="n"/></l><r>span<s n="n"/></r></p></e>                   
 <e r="LR"><p><l>spano<s n="n"/></l><r>span<s n="n"/></r></p></e>                   
 <e r="LR"><p><l>enverguro<s n="n"/></l><r>span<s n="n"/></r></p></e>               
@@ -29187,7 +29202,8 @@ TODO??
 <e       ><p><l>starpunkto<s n="n"/></l><r>standpoint<s n="n"/></r></p></e>        
 <e       ><p><l>krampilo<s n="n"/></l><r>stapler<s n="n"/></r></p></e>             
 <e r="LR"><p><l>stelulo<s n="n"/></l><r>star<s n="n"/></r></p></e>                 
-<e       ><p><l>fiksrigardi<s n="vblex"/></l><r>stare<s n="vblex"/></r></p></e>    
+<e       ><p><l>fiksrigardi<s n="vblex"/></l><r>stare<g><b/>at</g><s n="vblex"/></r></p></e>    
+<e r="RL"><p><l>fiksrigardi<s n="vblex"/></l><r>stare<s n="vblex"/></r></p></e>    
 <e       ><p><l>fiksrigardo<s n="n"/></l><r>stare<s n="n"/></r></p></e>            
 <e       ><p><l>stelplena<s n="adj"/></l><r>starry<s n="adj"/></r></p></e>         
 <e r="LR"><p><l>starto<s n="n"/></l><r>start<s n="n"/></r></p></e>                 
@@ -30873,8 +30889,9 @@ TODO??
 <e r="LR"><p><l>suferinto<s n="n"/></l><r>victim<s n="n"/></r></p></e>             
 <e       ><p><l>viktimigado<s n="n"/></l><r>victimisation<s n="n"/></r></p></e>    
 <e       ><p><l>viktimigi<s n="vblex"/></l><r>victimise<s n="vblex"/></r></p></e>  
-<e       ><p><l>Viktorio<s n="np"/></l><r>Victor<s n="np"/></r></p></e>            
-<e       ><p><l>Viktoria<s n="np"/></l><r>Victoria<s n="np"/></r></p></e>          
+<e       ><p><l>Victor<s n="np"/></l><r>Victor<s n="np"/></r></p></e>            
+<e       ><p><l>Victoria<s n="np"/><s n="ant"/></l><r>Victoria<s n="np"/><s n="ant"/></r></p></e>          
+<e r="RL"><p><l>Victoria<s n="np"/><s n="ant"/></l><r>Viktorio<s n="np"/><s n="ant"/></r></p></e>          
 <e       ><p><l>video<s n="n"/></l><r>video<s n="n"/></r></p></e>                  
 <e r="LR"><p><l>videofilmo<s n="n"/></l><r>video<s n="n"/></r></p></e>             
 <e r="LR"><p><l>videobendo<s n="n"/></l><r>video<s n="n"/></r></p></e>             
@@ -30900,10 +30917,10 @@ TODO??
 <e       ><p><l>viola<s n="adj"/></l><r>violet<s n="adj"/></r></p></e>             
 <e r="LR"><p><l>violkolora<s n="adj"/></l><r>violet<s n="adj"/></r></p></e>        
 <e       ><p><l>virgulino<s n="n"/></l><r>virgin<s n="n"/></r></p></e>             
-<e       ><p><l>Virginio<s n="np"/></l><r>Virginia<s n="np"/></r></p></e>          
-<e r="LR"><p><l>Virginia<s n="np"/></l><r>Virginia<s n="np"/></r></p></e>          
+<e       ><p><l>Virginio<s n="np"/><s n="top"/></l><r>Virginia<s n="np"/><s n="top"/></r></p></e>          
+<e       ><p><l>Virginia<s n="np"/><s n="ant"/></l><r>Virginia<s n="np"/><s n="ant"/></r></p></e>          
 <e       ><p><l>virtuala<s n="adj"/></l><r>virtual<s n="adj"/></r></p></e>         
-<e r="LR"><p><l>surReta<s n="adj"/></l><r>virtual<s n="adj"/></r></p></e>          
+<e r="LR"><p><l>surreta<s n="adj"/></l><r>virtual<s n="adj"/></r></p></e>          
 <e r="LR"><p><l>kvazaŭa<s n="adj"/></l><r>virtual<s n="adj"/></r></p></e>          
 <e r="RL"><p><l>preskaŭ<s n="adv"/></l><r>virtually<s n="adv"/></r></p></e>        
 <e r="LR"><p><l>virtuale<s n="adv"/></l><r>virtually<s n="adv"/></r></p></e>       
@@ -31379,6 +31396,12 @@ TODO??
 <e r="LR"><p><l>bestoĝardeno<s n="n"/></l><r>zoo<s n="n"/></r></p></e>             
 <e       ><p><l>zoologo<s n="n"/></l><r>zoologist<s n="n"/></r></p></e>            
 <e       ><p><l>zoologio<s n="n"/></l><r>zoology<s n="n"/></r></p></e>             
+
+
+<e       ><p><l>mp3<s n="n"/><s n="acr"/></l><r>mp3<s n="n"/><s n="acr"/></r></p></e>
+<e       ><p><l>cm<s n="n"/><s n="acr"/></l><r>cm<s n="n"/><s n="acr"/></r></p></e>             
+<e       ><p><l>mm<s n="n"/><s n="acr"/></l><r>mm<s n="n"/><s n="acr"/></r></p></e>             
+<e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/><s n="acr"/></r></p></e>
 
 </section>
 </dictionary>
