@@ -229,8 +229,7 @@ public class AldonuCxiujnVortojn {
           
           if (p.noun() &&p.rootEo.endsWith("ino")) {
             String s = p.rootEo.substring(0,p.rootEo.length()-3)+"o";
-            if (!esperanto_nouns_with_gender.contains(s))
-              System.err.println("p gender " + p+"     "+s);
+            //if (!esperanto_nouns_with_gender.contains(s)) System.err.println("p gender " + p+"     "+s);
           }
 
           //

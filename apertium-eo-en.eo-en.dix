@@ -1506,7 +1506,6 @@ BUT:
 <e r="RL"><p><l>nur<s n="adv"/></l>                    <r>solely<s n="adv"/></r></p></e>
 <e>       <p><l>plej<s n="adv"/></l>                   <r>most<s n="adv"/></r></p></e>
 
-<e>       <p><l>preskaŭ<s n="adv"/></l>                <r>practically<s n="adv"/></r></p></e>
 <e>       <p><l>sur<s n="adv"/></l>                    <r>on<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sur<s n="adv"/></l>                    <r>above<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sur<s n="adv"/></l>                    <r>over<s n="adv"/></r></p></e>
@@ -1832,7 +1831,7 @@ BUT:
 <e r="LR"><p><l>riĉula<s n="adj"/></l>                 <r>affluent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>bonstata<s n="adj"/></l>               <r>affluent<s n="adj"/></r></p></e>
 <e r="RL"><p><l>havigi<s n="vblex"/></l>               <r>afford<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>malaltekosta<s n="adj"/></l>           <r>affordable<s n="adj"/></r></p></e>
+<e       ><p><l>malaltekosta<s n="adj"/></l>           <r>affordable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prezoinda<s n="adj"/></l>              <r>affordable<s n="adj"/></r></p></e>
 <e>       <p><l>Afganistano<s n="np"/></l>             <r>Afghanistan<s n="np"/></r></p></e>
 <e r="RL"><p><l>poste<s n="adv"/></l>                  <r>after<s n="adv"/></r></p></e>
@@ -3352,7 +3351,7 @@ BUT:
 <e r="LR"><p><l>interparoleti<s n="vblex"/></l>        <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>konversacii<s n="vblex"/></l>          <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>babiladi<s n="vblex"/></l>             <r>chat<s n="vblex"/></r></p></e>
-<e>       <p><l>malaltekosta<s n="adj"/></l>           <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malmultekosta<s n="adj"/></l>          <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>tombakeca<s n="adj"/></l>              <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>trompi<s n="vblex"/></l>               <r>cheat<s n="vblex"/></r></p></e>
@@ -7155,7 +7154,6 @@ BUT:
 <e>       <p><l>dungi<s n="vblex"/></l>                <r>hire<s n="vblex"/></r></p></e>
 <e>       <p><l>dungo<s n="n"/></l>                    <r>hire<s n="n"/></r></p></e>
 <e r="LR"><p><l>luado<s n="n"/></l>                    <r>hire<s n="n"/></r></p></e>
-<e r="LR"><p><l>la<s n="adj"/></l>                     <r>his<s n="adj"/></r></p></e>
 <e>       <p><l>historia<s n="adj"/></l>               <r>historical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>longtempa<s n="adj"/></l>              <r>historical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>diakrona<s n="adj"/></l>               <r>historical<s n="adj"/></r></p></e>
@@ -9159,6 +9157,10 @@ BUT:
 <e r="LR"><p><l>navigacio<s n="n"/></l>                <r>navigation<s n="n"/></r></p></e>
 <e>       <p><l>navigado<s n="n"/></l>                 <r>navigation<s n="n"/></r></p></e>
 <e>       <p><l>navigisto<s n="n"/></l>                <r>navigator<s n="n"/></r></p></e>
+
+<e>       <p><l>preskaŭ<s n="adv"/></l>                <r>almost<s n="adv"/></r></p></e>
+<e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>nearly<s n="adv"/></r></p></e>
+<e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>practically<s n="adv"/></r></p></e>
 <e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>near<s n="adv"/></r></p></e>
 <e>       <p><l>preskaŭa<s n="adj"/></l>               <r>near<s n="adj"/></r></p></e>
 <e r="RL"><p><l>apuda<s n="adj"/></l>                  <r>nearby<s n="adj"/></r></p></e>
@@ -10090,7 +10092,7 @@ BUT:
 <e>       <p><l>ŝmiri<s n="vblex"/></l>                <r>plaster<s n="vblex"/></r></p></e>
 <e>       <p><l>plasta<s n="adj"/></l>                 <r>plastic<s n="adj"/></r></p></e>
 <e>       <p><l>plasto<s n="n"/></l>                   <r>plastic<s n="n"/></r></p></e>
-<e r="LR"><p><l>plastika<s n="adj"/></l>               <r>plastic<s n="adj"/></r></p></e>
+<e       ><p><l>plastika<s n="adj"/></l>               <r>plastic<s n="adj"/></r></p></e>
 <e r="LR"><p><l>plastikista<s n="adj"/></l>            <r>plastic<s n="adj"/></r></p></e>
 <e r="LR"><p><l>modelebla<s n="adj"/></l>              <r>plastic<s n="adj"/></r></p></e>
 <e>       <p><l>telero<s n="n"/></l>                   <r>plate<s n="n"/></r></p></e>
@@ -11054,7 +11056,8 @@ BUT:
 <e r="RL"><p><l>distro<s n="n"/></l>                   <r>recreation<s n="n"/></r></p></e>
 <e r="LR"><p><l>distrado<s n="n"/></l>                 <r>recreation<s n="n"/></r></p></e>
 <e r="LR"><p><l>flankokupo<s n="n"/></l>               <r>recreation<s n="n"/></r></p></e>
-<e r="LR"><p><l>libertempado.libertempaĵo<s n="n"/></l><r>recreation<s n="n"/></r></p></e>
+<e r="LR"><p><l>libertempado<s n="n"/></l><r>recreation<s n="n"/></r></p></e>
+<e r="LR"><p><l>libertempaĵo<s n="n"/></l><r>recreation<s n="n"/></r></p></e>
 <e r="LR"><p><l>mallaĉiĝo<s n="n"/></l>                <r>recreation<s n="n"/></r></p></e>
 <e r="LR"><p><l>rekreado<s n="n"/></l>                 <r>recreation<s n="n"/></r></p></e>
 <e>       <p><l>varbito<s n="n"/></l>                  <r>recruit<s n="n"/></r></p></e>
@@ -14303,8 +14306,8 @@ BUT:
 <e>       <p><l>rado<s n="n"/></l>                     <r>wheel<s n="n"/></r></p></e>
 <e>       <p><l>kaprico<s n="n"/></l>                  <r>whim<s n="n"/></r></p></e>
 <e>       <p><l>viskio<s n="n"/></l>                   <r>whisky<s n="n"/></r></p></e>
-<e>       <p><l>sibli<s n="vblex"/></l>                <r>whisper<s n="vblex"/></r></p></e>
-<e>       <p><l>siblaĵo<s n="n"/></l>                  <r>whisper<s n="n"/></r></p></e>
+<e r="LR">       <p><l>sibli<s n="vblex"/></l>                <r>whisper<s n="vblex"/></r></p></e>
+<e r="LR">       <p><l>siblaĵo<s n="n"/></l>                  <r>whisper<s n="n"/></r></p></e>
 <e r="LR"><p><l>murmureti<s n="vblex"/></l>            <r>whisper<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>mumureto<s n="n"/></l>                 <r>whisper<s n="n"/></r></p></e>
 <e>       <p><l>fajfilo<s n="n"/></l>                  <r>whistle<s n="n"/></r></p></e>
@@ -15041,7 +15044,7 @@ BUT:
 <e r="RL"><p><l>flamo<s n="n"/></l>                    <r>llama<s n="n"/></r></p></e>
 <e r="LR"><p><l>flaŭro<s n="n"/></l>                   <r>flora<s n="n"/></r></p></e>
 <e>       <p><l>florpoto<s n="n"/></l>                 <r>flowerpot<s n="n"/></r></p></e>
-<e r="LR"><p><l>flustro<s n="n"/></l>                  <r>whisper<s n="n"/></r></p></e>
+<e><p><l>flustro<s n="n"/></l>                  <r>whisper<s n="n"/></r></p></e>
 <e r="RL"><p><l>fokuso<s n="n"/></l>                   <r>focus<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>fondaĵo<s n="n"/></l>                  <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>fosforo<s n="n"/></l>                  <r>phosphorus<s n="n"/></r></p></e>
@@ -15997,7 +16000,7 @@ BUT:
 <e r="LR"><p><l>fiŝi<s n="vblex"/></l>                 <r>fish<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>flagri<s n="vblex"/></l>               <r>wave<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>flank(e)lasi<s n="vblex"/></l>         <r>omit<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>flustri<s n="vblex"/></l>              <r>whisper<s n="vblex"/></r></p></e>
+<e><p><l>flustri<s n="vblex"/></l>              <r>whisper<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>forstreki<s n="vblex"/></l>            <r>stripe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>fosi<s n="vblex"/></l>                 <r>dig<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>frakcii<s n="vblex"/></l>              <r>fractionate<s n="vblex"/></r></p></e>
@@ -22900,8 +22903,8 @@ TODO??
 <e r="LR"><p><l>montriĝeto<s n="n"/></l><r>hint<s n="n"/></r></p></e>              
 <e       ><p><l>hippotamo<s n="n"/></l><r>hippopotamus<s n="n"/></r></p></e>       
 <e       ><p><l>hipio<s n="n"/></l><r>hippy<s n="n"/></r></p></e>                  
-<e r="RL"><p><l>la<s n="adj"/></l><r>his<s n="adj"/></r></p></e>                   
-<e r="RL"><p><l>sibli<s n="vblex"/></l><r>hiss<s n="vblex"/></r></p></e>           
+<e><p><l>sibli<s n="vblex"/></l><r>hiss<s n="vblex"/></r></p></e>           
+<e><p><l>siblo<s n="n"/></l><r>hiss<s n="n"/></r></p></e>           
 <e r="LR"><p><l>prisibli<s n="vblex"/></l><r>hiss<s n="vblex"/></r></p></e>        
 <e       ><p><l>histogramo<s n="n"/></l><r>histogram<s n="n"/></r></p></e>         
 <e       ><p><l>historiisto<s n="n"/></l><r>historian<s n="n"/></r></p></e>        
@@ -30028,7 +30031,7 @@ TODO??
 <e r="RL"><p><l>minaca<s n="adj"/></l><r>threatening<s n="adj"/></r></p></e>       
 <e r="LR"><p><l>minacaspekta<s n="adj"/></l><r>threatening<s n="adj"/></r></p></e> 
 <e r="LR"><p><l>atenca<s n="adj"/></l><r>threatening<s n="adj"/></r></p></e>       
-<e       ><p><l>plastika<s n="adj"/></l><r>three-dimensional<s n="adj"/></r></p></e>
+<e       ><p><l>tri-dimensia<s n="adj"/></l><r>three-dimensional<s n="adj"/></r></p></e>
 <e r="LR"><p><l>eltenemo<s n="n"/></l><r>threshold<s n="n"/></r></p></e>           
 <e r="LR"><p><l>surĵeti<s n="vblex"/></l><r>throw<s n="vblex"/></r></p></e>        
 <e       ><p><l>trifoje<s n="adv"/></l><r>thrice<s n="adv"/></r></p></e>           
@@ -31401,6 +31404,20 @@ TODO??
 <e       ><p><l>cm<s n="n"/><s n="acr"/></l><r>cm<s n="n"/><s n="acr"/></r></p></e>             
 <e       ><p><l>mm<s n="n"/><s n="acr"/></l><r>mm<s n="n"/><s n="acr"/></r></p></e>             
 <e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/><s n="acr"/></r></p></e>
+
+
+
+<!--- 
+========================================================================================================
+========================================================================================================
+==============================NOVA ALDONO 2A DE FEBRUARO 2009===========================================
+========================================================================================================
+========================================================================================================
+-->
+
+
+<e       ><p><l>botanika<s n="adj"/></l><r>botanic<s n="adj"/></r></p></e>
+
 
 </section>
 </dictionary>
