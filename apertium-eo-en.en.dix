@@ -17674,7 +17674,6 @@
 <e lm="wallet">               <i>wallet</i><par n="house__n"/></e>
 <e lm="wallop">               <i>wallop</i><par n="accept__vblex"/></e>
 <e lm="walrus">               <i>walrus</i><par n="access__n"/></e>
-<e lm="want">                 <i>want</i><par n="house__n"/></e>
 <e lm="warble">               <i>warbl</i><par n="liv/e__vblex"/></e>
 <e lm="ward">                 <i>ward</i><par n="house__n"/></e>
 <e lm="warily">               <i>warily</i><par n="maybe__adv"/></e>
@@ -17910,7 +17909,9 @@
 <e>                    <i>lean</i><par n="deal__vblex"/></e>
 <e>                    <i>leap</i><par n="deal__vblex"/></e>
 <e>                    <i>spe</i><par n="ble/ed__vblex"/></e>
-<e r="LR">                    <p><l>wanna</l>               <r>want<s n="vbmod"/><s n="pres"/><g><b/>to</g></r></p></e>
+<e r="LR">                    <p><l>wanna</l>               <r>want<s n="vblex"/><s n="pres"/><j/>to<s n="pr"/></r></p></e>
+
+
 <e r="LR">                    <p><l>no-one</l>              <r>no<b/>one</r></p><par n="everyone__prn"/></e>
 <e>                    <i>amongst</i><par n="at__pr"/></e>
 <e r="LR">                    <p><l>online</l>              <r>on-line</r></p><par n="expensive__adj"/></e>
