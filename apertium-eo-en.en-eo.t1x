@@ -3118,6 +3118,27 @@ might:might<vaux><inf>
       </action>
     </rule>
 
+
+    <rule comment="REGLA: non-recognized genitive ('s) fallback :  XXX's YYY   => XXX'a YYY">
+      <pattern>
+        <pattern-item n="gen"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="gen" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="GEN"/></tag>
+            </tags>
+            <lu>
+              <lit v="a"/><lit-tag v="gen"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule>
       <pattern>
         <pattern-item n="unknown"/>

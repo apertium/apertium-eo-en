@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static final boolean debug=false;
+  public static final boolean debug=true;
 
   /*
   private static Set<String> tenindiajEtikedoj = new HashSet<String>( Arrays.asList(
@@ -25,6 +25,9 @@ public class AldonuCxiujnVortojn {
 
   static void aldonuParon(Paro p, Map<String, ArrayList<Paro>> aldonuParojnEn, Map<String, ArrayList<Paro>> aldonuParojnEo, ArrayList<Paro> aldonuParojn) {
 
+    if (p.orgEn.equals("Aaron")) {
+                dprintln(" "+p);
+    }
 
     if (p.dir_enEo==null) {
       ArrayList<Paro> samaVorto=aldonuParojnEn.get(p.rootEn+"__"+p.apertiumWordType());
@@ -246,7 +249,7 @@ public class AldonuCxiujnVortojn {
 
           
           //
-          // Trovu la esperantan lemong
+          // Trovu la esperantan lemon
           //
           
           ArrayList<String> eolemmas=aperEoDix[0].get(p.rootEo);
@@ -265,6 +268,12 @@ public class AldonuCxiujnVortojn {
               }
             }
           }
+
+
+          //
+          // Aldonu
+          //
+
           aldonuParon(p, aldonuParojnEn, aldonuParojnEo, aldonuParojn);
         }
       }

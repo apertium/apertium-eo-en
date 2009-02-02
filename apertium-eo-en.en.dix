@@ -8,7 +8,7 @@
 
 -->
 <dictionary>
-	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜàáâäçèéêëìíîïñòóôöùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</alphabet>
+	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚàáâäçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</alphabet>
 	<sdefs>
 		<sdef n="alpha" /> 
 		<sdef n="acr" /> 
@@ -10346,6 +10346,7 @@
 <e lm="sweet">                <i>sweet</i><par n="long/__adj"/></e>
 <e lm="swell">                <i>swell</i><par n="house__n"/></e>
 <e lm="swiftly">              <i>swiftly</i><par n="maybe__adv"/></e>
+<e lm="swift">                <i>swift</i><par n="expensive__adj"/></e>
 <e lm="swimming">             <i>swimming</i><par n="east__n"/></e>
 <e lm="swimming pool">        <i>swimming<b/>pool</i><par n="house__n"/></e>
 <e lm="swing">                <i>swing</i><par n="house__n"/></e>
@@ -18031,8 +18032,27 @@
 
 <e r="LR">                    <p><l>next<b/>fall</l>        <r>next<b/>autumn</r></p><par n="maybe__adv"/></e>
 
+<e lm="person">      <i>person</i><par n="house__n"/></e>
+<e lm="abroad">               <i>abroad</i><par n="maybe__adv"/></e>
+<e lm="absent">               <i>absent</i><par n="expensive__adj"/></e>
+<e lm="abortion">             <i>abortion</i><par n="house__n"/></e>
 
+<e lm="BBC">                  <i>BBC</i><par n="BBC__n"/></e>
+<e lm="DNA">                  <i>DNA</i><par n="BBC__n"/></e>
+<e lm="FBI">                  <i>FBI</i><par n="BBC__n"/></e>
+<e lm="IBM">                  <i>IBM</i><par n="BBC__n"/></e>
+<e lm="NASA">                 <i>NASA</i><par n="BBC__n"/></e>
+<e lm="NATO">                 <i>NATO</i><par n="BBC__n"/></e>
+<e lm="U.N.">                 <i>U.N.</i><par n="BBC__n"/></e>
+<e lm="UEFA">                 <i>UEFA</i><par n="BBC__n"/></e>
+<e lm="UN">                   <i>UN</i><par n="BBC__n"/></e>
 
+<e lm="Palestinian">          <p><l>Palestinian</l>         <r>palestinian</r></p><par n="expensive__adj"/></e>
+<e lm="multinational">        <i>multinational</i><par n="house__n"/></e>
+<e lm="abroad">               <i>abroad</i><par n="maybe__adv"/></e>
+<e lm="sooner">               <i>sooner</i><par n="maybe__adv"/></e>
+<e lm="countless">            <i>countless</i><par n="expensive__adj"/></e>
+<e lm="unaware">              <i>unaware</i><par n="expensive__adj"/></e>
 
 
 	</section>

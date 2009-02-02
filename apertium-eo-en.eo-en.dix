@@ -8,7 +8,7 @@
 
 -->
 <dictionary>
-  <alphabet></alphabet>
+  <alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚàáâäçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭ</alphabet>
   <sdefs>
     <sdef n="alpha"/> 
     <sdef n="tn" /> 
@@ -145,6 +145,8 @@
 <e>       <p><l>'<s n="apos"/></l>                     <r>'<s n="apos"/></r></p></e>
 <e>       <re>[0-9]+([.,][0-9]+)?</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
 <e>       <re>[0-9]+([.,][0-9]+)?%</re><p><l><s n="num"/><s n="percent"/></l><r><s n="num"/><s n="percent"/></r></p></e>
+
+
 
     <!-- Numerals -->
 
@@ -943,14 +945,6 @@ BUT:
 <e>       <p><l>Vilhelmo<s n="np"/><s n="ant"/></l>    <r>Guillermo<s n="np"/><s n="ant"/></r></p></e>
 
 
-<e>       <i>Smith<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Hyde<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Jekyll<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Stevenson<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Lanyon<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Utterson<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Poole<s n="np"/><s n="cog"/></i></e>
-
 
 
 <e>       <p><l>Afganio<s n="np"/><s n="top"/></l>     <r>Afghanistan<s n="np"/><s n="top"/></r></p></e>
@@ -1737,8 +1731,7 @@ BUT:
 <e r="RL"><p><l>cetere<s n="adv"/></l>                 <r>additionally<s n="adv"/></r></p></e>
 <e r="RL"><p><l>aldonaĵo<s n="n"/></l>                 <r>additive<s n="n"/></r></p></e>
 <e>       <p><l>trakti<s n="vblex"/></l>               <r>address<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>parolado<s n="n"/></l>                 <r>address<s n="n"/></r></p></e>
-<e r="LR"><p><l>adreso<s n="n"/></l>                   <r>address<s n="n"/></r></p></e>
+<e ><p><l>adreso<s n="n"/></l>                   <r>address<s n="n"/></r></p></e>
 <e r="LR"><p><l>alparoli<s n="vblex"/></l>             <r>address<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>adresi<s n="vblex"/></l>               <r>address<s n="vblex"/></r></p></e>
 <e>       <p><l>adekvate<s n="adv"/></l>               <r>adequately<s n="adv"/></r></p></e>
@@ -22919,7 +22912,6 @@ TODO??
 <e r="LR"><p><l>albatiĝi<s n="vblex"/></l><r>hit<s n="vblex"/></r></p></e>         
 <e r="LR"><p><l>paĝvido<s n="n"/></l><r>hit<s n="n"/></r></p></e>                  
 <e       ><p><l>petveturado<s n="n"/></l><r>hitchhiking<s n="n"/></r></p></e>      
-<e       ><p><l>Hitlero<s n="np"/></l><r>Hitler<s n="np"/></r></p></e>             
 <e       ><p><l>akaparo<s n="n"/></l><r>hoarding<s n="n"/></r></p></e>             
 <e       ><p><l>ŝatokupo<s n="n"/></l><r>hobby<s n="n"/></r></p></e>               
 <e r="LR"><p><l>hobio<s n="n"/></l><r>hobby<s n="n"/></r></p></e>                  
@@ -24654,7 +24646,7 @@ TODO??
 <e       ><p><l>geedziĝi<s n="vblex"/></l><r>marry<s n="vblex"/></r></p></e>       
 <e r="LR"><p><l>edziĝi<s n="vblex"/></l><r>marry<s n="vblex"/></r></p></e>         
 <e r="LR"><p><l>edziniĝi<s n="vblex"/></l><r>marry<s n="vblex"/></r></p></e>       
-<e r="RL"><p><l>ligita<s n="adj"/></l><r>married<s n="adj"/></r></p></e>           
+<e       ><p><l>edzita<s n="adj"/></l><r>married<s n="adj"/></r></p></e>           
 <e       ><p><l>direktanto<s n="n"/></l><r>marshal<s n="n"/></r></p></e>           
 <e r="LR"><p><l>viciganto<s n="n"/></l><r>marshal<s n="n"/></r></p></e>            
 <e       ><p><l>arigi<s n="vblex"/></l><r>marshal<s n="vblex"/></r></p></e>        
@@ -29048,7 +29040,6 @@ TODO??
 <e       ><p><l>spekulisto<s n="n"/></l><r>speculator<s n="n"/></r></p></e>        
 <e r="LR"><p><l>spekulanto<s n="n"/></l><r>speculator<s n="n"/></r></p></e>        
 <e r="LR"><p><l>spekulacianto<s n="n"/></l><r>speculator<s n="n"/></r></p></e>     
-<e r="LR"><p><l>prelego<s n="n"/></l><r>speech<s n="n"/></r></p></e>               
 <e r="LR"><p><l>senparola<s n="adj"/></l><r>speechless<s n="adj"/></r></p></e>     
 <e r="LR"><p><l>sorĉaĵo<s n="n"/></l><r>spell<s n="n"/></r></p></e>                
 <e r="LR"><p><l>sorĉordono<s n="n"/></l><r>spell<s n="n"/></r></p></e>             
@@ -31399,10 +31390,15 @@ TODO??
 <e       ><p><l>zoologo<s n="n"/></l><r>zoologist<s n="n"/></r></p></e>            
 <e       ><p><l>zoologio<s n="n"/></l><r>zoology<s n="n"/></r></p></e>             
 
-
+<!--
 <e       ><p><l>mp3<s n="n"/><s n="acr"/></l><r>mp3<s n="n"/><s n="acr"/></r></p></e>
 <e       ><p><l>cm<s n="n"/><s n="acr"/></l><r>cm<s n="n"/><s n="acr"/></r></p></e>             
 <e       ><p><l>mm<s n="n"/><s n="acr"/></l><r>mm<s n="n"/><s n="acr"/></r></p></e>             
+-->
+<e>       <i>mp3<s n="n"/><s n="acr"/></i></e>
+<e>       <i>cm<s n="n"/><s n="acr"/></i></e>
+<e>       <i>mm<s n="n"/><s n="acr"/></i></e>
+
 <e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/><s n="acr"/></r></p></e>
 
 
@@ -31418,6 +31414,39 @@ TODO??
 
 <e       ><p><l>botanika<s n="adj"/></l><r>botanic<s n="adj"/></r></p></e>
 
+<!-- 
+<e>       <i>Smith<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Hyde<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Jekyll<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Stevenson<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Lanyon<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Utterson<s n="np"/><s n="cog"/></i></e>
+<e>       <i>Poole<s n="np"/><s n="cog"/></i></e>
+-->
+<e>       <re>[A-Z][a-zóöäíáÚ]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
+<e>       <re>[A-Z][a-zóö]* [A-Z][a-zóö]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
+
+<!--
+<e>       <re>[A-Z][a-z]*</re><p><l><s n="np"/><s n="ant"/></l><r><s n="np"/><s n="ant"/></r></p></e>
+<e>       <i><s n="np"/><s n="ant"/></i></e>
+-->
+
+
+<!--
+Palestinian<adj>=Palestinian<adj><sg><nom>, Multinational<n>=Multinational<n><pl><nom>, Countless<adj>=Countless<adj><sg><nom>}
+-->
+
+
+
+<e>       <i>DNA<s n="n"/><s n="acr"/></i></e>
+<e>       <i>BBC<s n="n"/><s n="acr"/></i></e>
+<e>       <i>FBI<s n="n"/><s n="acr"/></i></e>
+<e>       <i>IBM<s n="n"/><s n="acr"/></i></e>
+<e>       <i>NASA<s n="n"/><s n="acr"/></i></e>
+<e>       <i>NATO<s n="n"/><s n="acr"/></i></e>
+<e>       <i>U.N.<s n="n"/><s n="acr"/></i></e>
+<e>       <i>UN<s n="n"/><s n="acr"/></i></e>
+<e>       <i>UEFA<s n="n"/><s n="acr"/></i></e>
 
 </section>
 </dictionary>
