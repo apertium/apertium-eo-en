@@ -1177,6 +1177,7 @@ BUT:
 <e>       <p><l>niĝeria<s n="adj"/></l>                <r>Nigerian<s n="adj"/></r></p></e>
 <e>       <p><l>portugala<s n="adj"/></l>              <r>Portuguese<s n="adj"/></r></p></e>
 <e>       <p><l>protestanta<s n="adj"/></l>            <r>Protestant<s n="adj"/></r></p></e>
+<e>       <p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>skota<s n="adj"/></l>                  <r>Scottish<s n="adj"/></r></p></e>
 <e>       <p><l>sovetia<s n="adj"/></l>                <r>Soviet<s n="adj"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
@@ -1445,6 +1446,7 @@ BUT:
 
 <e>       <p><l>rapida<s n="adj"/></l>                 <r>fast<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>quick<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>swift<s n="adj"/></r></p></e>
 
 
 <e>       <p><l>fari<s n="vblex"/></l>                 <r>do<s n="vblex"/></r></p></e>
@@ -16372,6 +16374,7 @@ TODO??
 <e r="RL"><p><l>abomeno<s n="n"/></l><r>abomination<s n="n"/></r></p></e>          
 <e r="LR"><p><l>abortigi<s n="vblex"/></l><r>abort<s n="vblex"/></r></p></e>       
 <e       ><p><l>abortigisto<s n="n"/></l><r>abortionist<s n="n"/></r></p></e>      
+<e       ><p><l>abortigo<s n="n"/></l><r>abortion<s n="n"/></r></p></e>      
 <e       ><p><l>Abraham<s n="np"/></l><r>Abraham<s n="np"/></r></p></e>            
 <e r="LR"><p><l>Abrahamo<s n="np"/></l><r>Abraham<s n="np"/></r></p></e>           
 <e r="RL"><p><l>nuligo<s n="n"/></l><r>abrogation<s n="n"/></r></p></e>            
@@ -16384,6 +16387,7 @@ TODO??
 <e r="LR"><p><l>neesto<s n="n"/></l><r>absence<s n="n"/></r></p></e>               
 <e r="LR"><p><l>malĉeesto<s n="n"/></l><r>absence<s n="n"/></r></p></e>            
 <e       ><p><l>malĉeestado<s n="n"/></l><r>absenteeism<s n="n"/></r></p></e>      
+<e ><p><l>neĉeesta<s n="adj"/></l><r>absent<s n="adj"/></r></p></e>            
 <e r="LR"><p><l>volege<s n="adv"/></l><r>absolutely<s n="adv"/></r></p></e>        
 <e r="RL"><p><l>absolutismo<s n="n"/></l><r>absolutism<s n="n"/></r></p></e>       
 <e r="LR"><p><l>absorbi<s n="vblex"/></l><r>absorb<s n="vblex"/></r></p></e>       
@@ -17348,6 +17352,7 @@ TODO??
 <e r="LR"><p><l>maldormigi<s n="vblex"/></l><r>awake<s n="vblex"/></r></p></e>     
 <e r="LR"><p><l>vekiĝi<s n="vblex"/></l><r>awake<s n="vblex"/></r></p></e>         
 <e r="RL"><p><l>konscia<s n="adj"/></l><r>aware<s n="adj"/></r></p></e>            
+<e ><p><l>nekonscia<s n="adj"/></l><r>unaware<s n="adj"/></r></p></e>            
 <e r="RL"><p><l>konscio<s n="n"/></l><r>awareness<s n="n"/></r></p></e>            
 <e r="LR"><p><l>konscieco<s n="n"/></l><r>awareness<s n="n"/></r></p></e>          
 <e r="LR"><p><l>konsciiĝo<s n="n"/></l><r>awareness<s n="n"/></r></p></e>          
@@ -25423,8 +25428,8 @@ TODO??
 <e r="RL"><p><l>nuligi<s n="vblex"/></l><r>nullify<s n="vblex"/></r></p></e>       
 <e r="LR"><p><l>kasacii<s n="vblex"/></l><r>nullify<s n="vblex"/></r></p></e>      
 <e r="LR"><p><l>telefonnumero<s n="n"/></l><r>number<s n="n"/></r></p></e>         
-<e       ><p><l>nenombrebla<s n="adj"/></l><r>numberless<s n="adj"/></r></p></e>   
-<e r="LR"><p><l>sennumera<s n="adj"/></l><r>numberless<s n="adj"/></r></p></e>     
+<e       ><p><l>nenombrebla<s n="adj"/></l><r>countless<s n="adj"/></r></p></e>   
+<e><p><l>sennumera<s n="adj"/></l><r>numberless<s n="adj"/></r></p></e>     
 <e       ><p><l>kalkuloscio<s n="n"/></l><r>numeracy<s n="n"/></r></p></e>         
 <e       ><p><l>numeralo<s n="n"/></l><r>numeral<s n="n"/></r></p></e>             
 <e       ><p><l>numeratoro<s n="n"/></l><r>numerator<s n="n"/></r></p></e>         
@@ -31413,6 +31418,15 @@ TODO??
 
 
 <e       ><p><l>botanika<s n="adj"/></l><r>botanic<s n="adj"/></r></p></e>
+<e       ><p><l>palestina<s n="adj"/></l><r>palestinian<s n="adj"/></r></p></e> 
+<e>       <p><l>palestinano<s n="n"/></l><r>palestinian<s n="n"/></r></p><par n="MF_GD"/></e>
+
+<e       ><p><l>transnacia<s n="adj"/></l><r>multinational<s n="adj"/></r></p></e> 
+<e       ><p><l>eksterlande<s n="adv"/></l><r>abroad<s n="adv"/></r></p></e> 
+<e       ><p><l>pli<b/>frue<s n="adv"/></l><r>sooner<s n="adv"/></r></p></e> 
+<e ><p><l>poltrona<s n="adj"/></l><r>cowardly<s n="adj"/></r></p></e>        
+
+
 
 <!-- 
 <e>       <i>Smith<s n="np"/><s n="cog"/></i></e>
@@ -31423,18 +31437,14 @@ TODO??
 <e>       <i>Utterson<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Poole<s n="np"/><s n="cog"/></i></e>
 -->
-<e>       <re>[A-Z][a-zóöäíáÚ]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
-<e>       <re>[A-Z][a-zóö]* [A-Z][a-zóö]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
+<e>       <re>[A-ZÚ][a-zéõóöäíá]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
+<e>       <re>[A-ZÚ][a-zéõóöäíá]* [A-ZÚ][a-zõéóöäíá]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
 
 <!--
 <e>       <re>[A-Z][a-z]*</re><p><l><s n="np"/><s n="ant"/></l><r><s n="np"/><s n="ant"/></r></p></e>
 <e>       <i><s n="np"/><s n="ant"/></i></e>
 -->
 
-
-<!--
-Palestinian<adj>=Palestinian<adj><sg><nom>, Multinational<n>=Multinational<n><pl><nom>, Countless<adj>=Countless<adj><sg><nom>}
--->
 
 
 

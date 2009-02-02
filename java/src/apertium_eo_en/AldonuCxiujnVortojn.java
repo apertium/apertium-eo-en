@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static final boolean debug=true;
+  public static final boolean debug=false;
 
   /*
   private static Set<String> tenindiajEtikedoj = new HashSet<String>( Arrays.asList(
