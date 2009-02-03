@@ -563,6 +563,7 @@ sort -t '"' -k 3 x
         <when>
           <test>
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
+<!-- We drop the  check <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>, to allow for missing <sint> tag in the bidix -->
 <!--
             <and>
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
@@ -606,7 +607,7 @@ sort -t '"' -k 3 x
                 </concat></let>
         </when>
 
-        <otherwise><!-- This case seems ONLY to happen when a <sint>  is missing! -->
+        <otherwise><!-- This is never happening in Jacob's corpus -->
           <let><var n="adjectiu"/><concat>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
                 <var n="adjectiu_tail"/>

@@ -1964,6 +1964,14 @@
     <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tioj</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
     <e lm="ĉi tio"><par n="ĉ"/><p><l>i<b/>tiojn</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 
+
+    <!-- Fix: Somehow ^tio ĉi<prn><tn><mf><sg>$ comes out of prases like "I line this up." -->
+    <e r="RL" lm="tio ĉi"><p><l>tion<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL" lm="tio"><p><l>tion</l><r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="RL" lm="tio ĉi"><p><l>tiujn<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e r="RL" lm="tio"><p><l>tiujn</l><r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
     <e lm="tio ĉi"><p><l>tio<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
     <e lm="tio ĉi"><p><l>tion<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
     <e lm="tio ĉi"><p><l>tioj<b/>ĉi</l><r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
