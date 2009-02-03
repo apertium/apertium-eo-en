@@ -3028,7 +3028,6 @@ BUT:
 <e>       <p><l>voki<s n="vblex"/></l>                 <r>call<s n="vblex"/></r></p></e>
 <e>       <p><l>trankvilo<s n="n"/></l>                <r>calm<s n="n"/></r></p></e>
 <e r="LR"><p><l>trankvileco<s n="n"/></l>              <r>calm<s n="n"/></r></p></e>
-<e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senemocia<s n="adj"/></l>              <r>calm<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aplomba<s n="adj"/></l>                <r>calm<s n="adj"/></r></p></e>
 <e r="LR"><p><l>egalanima<s n="adj"/></l>              <r>calm<s n="adj"/></r></p></e>
@@ -3655,7 +3654,6 @@ BUT:
 <e r="LR"><p><l>komikeco<s n="n"/></l>                 <r>comedy<s n="n"/></r></p></e>
 <e>       <p><l>komforto<s n="n"/></l>                 <r>comfort<s n="n"/></r></p></e>
 <e>       <p><l>komforta<s n="adj"/></l>               <r>comfortable<s n="adj"/></r></p></e>
-<e r="LR"><p><l>trankvila<s n="adj"/></l>              <r>comfortable<s n="adj"/></r></p></e>
 <e>       <p><l>komforte<s n="adv"/></l>               <r>comfortably<s n="adv"/></r></p></e>
 <e r="LR"><p><l>trankvile<s n="adv"/></l>              <r>comfortably<s n="adv"/></r></p></e>
 <e r="LR"><p><l>oportune<s n="adv"/></l>               <r>comfortably<s n="adv"/></r></p></e>
@@ -15920,7 +15918,7 @@ BUT:
 <e r="RL"><p><l>tergloba<s n="adj"/></l>               <r>earthly<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>tia<s n="adj"/></l>                    <r>local<s n="adj"/></r></p></e>
 <e r="RL"><p><l>timema<s n="adj"/></l>                 <r>shy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>quiet<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>transversa<s n="adj"/></l>             <r>transversal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>travid(ebl)a<s n="adj"/></l>           <r>transparent<s n="adj"/></r></p></e>
@@ -31437,15 +31435,15 @@ TODO??
 <e>       <i>Utterson<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Poole<s n="np"/><s n="cog"/></i></e>
 -->
+<!-- The trick below seems only to work when we don't translate ANY cognomens, to DONT uncomment the cognomens above. Jacob 3feb 09 -->
 <e>       <re>[A-ZÚ][a-zéõóöäíá]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
 <e>       <re>[A-ZÚ][a-zéõóöäíá]* [A-ZÚ][a-zõéóöäíá]*</re><p><l><s n="np"/><s n="cog"/></l><r><s n="np"/><s n="cog"/></r></p></e>
 
-<!--
+
+<!-- We have some <s n="ant"/>'s so we cant do the same here:
 <e>       <re>[A-Z][a-z]*</re><p><l><s n="np"/><s n="ant"/></l><r><s n="np"/><s n="ant"/></r></p></e>
 <e>       <i><s n="np"/><s n="ant"/></i></e>
 -->
-
-
 
 
 <e>       <i>DNA<s n="n"/><s n="acr"/></i></e>

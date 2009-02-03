@@ -2,7 +2,7 @@
 
 # Check for <sint> consistency
 
-lt-expand apertium-eo-en.en.dix | grep '<sint>' | cut -f2 -d':' | cut -f1 -d'<' | uniq > /tmp/sintadj2
+lt-expand apertium-eo-en.en.dix | grep '<sint>' | cut -f2 -d':' | cut -f1 -d'<' | uniq -u > /tmp/sintadj2
 n=0;
 
 for line in `cat apertium-eo-en.eo-en.dix |sed 's/ /_/g'`; 
