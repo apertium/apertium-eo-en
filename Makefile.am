@@ -89,18 +89,16 @@ crptest: $(TARGETS_COMMON)
 #	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt;for i in `cut -c3-9 /tmp/crpdiff.txt | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^ *$i\W" ; grep -r "$i" /tmp/crpdiff.txt; done | less
 
 
-EXTRA_DIST=$(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(PREFIX1).dix \
+EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
            $(BASENAME).$(LANG2).dix $(BASENAME).$(LANG1).tsx \
+	   $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).$(LANG2).tsx  \
            $(PREFIX1).prob $(PREFIX2).prob \
-           $(PREFIX1)-supervised.make $(PREFIX1)-unsupervised.make \
-           $(PREFIX2)-supervised.make $(PREFIX2)-unsupervised.make \
-           $(LANG1)-tagger-data/README $(LANG2)-tagger-data/README \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
            $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x \
            $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x \
-           modes.xml
+           modes.xml multi-gen.sh
 
 apertium_eo_endir=$(prefix)/share/apertium/apertium-$(PREFIX1)/
 apertium_eo_modesdir=$(prefix)/share/apertium/modes/
@@ -131,4 +129,4 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
-CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG1).dixtmp1  $(TARGETS) modes *.mode
+CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG2).dixtmp1  $(TARGETS) modes *.mode
