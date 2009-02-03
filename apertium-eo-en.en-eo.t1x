@@ -2055,7 +2055,11 @@ sort -t '"' -k 3 x
     </rule>
 
 
+
+
     <!-- Sintagmas adjetivos -->
+
+    <!-- OLD VERSION, NEW VERSION BELOW
     <rule comment="REGLA: ADJ">
       <pattern>
         <pattern-item n="adj"/>
@@ -2132,6 +2136,57 @@ sort -t '"' -k 3 x
         </choose>
       </action>
     </rule>
+-->
+
+
+
+    <rule comment="REGLA: ADJ">
+      <pattern>
+        <pattern-item n="adj"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
+        <choose>
+          <when>
+            <test>
+                <equal><var n="preadv_added"/><lit v=""/></equal>
+            </test>
+        <out>
+          <chunk name="adj" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><var n="genere"/></tag>
+              <tag><lit-tag v="sg"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+              <var n="adjectiu"/>
+            </lu>
+          </chunk>
+        </out>
+          </when>
+
+        <otherwise>
+        <out><!--  better. best. -->
+          <chunk name="preadv_adj" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><var n="genere"/></tag>
+              <tag><lit-tag v="sg"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+                  <var n="adjectiu"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+        </choose>
+      </action>
+    </rule>
+
 
 
 
