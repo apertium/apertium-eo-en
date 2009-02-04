@@ -1,3 +1,131 @@
-Tue Feb  3 15:31:24 GMT 2009
+2009-02-03 15:40  ftyers
 
-  * First stable release 0.9.0
+	* First stable release 0.9.0
+
+2009-02-03 06:35  nordfalk
+
+	* Removed need for <sint> tag in bidix
+	* The last testvoc problems resolved
+	* Added final lemma: Esperanto!
+
+2009-02-02 10:45  nordfalk
+
+	* regex por cognomens, testvoc fixes 
+	* -a for genitive in case words can't be swapped for the 'de'
+
+2009-01-31 03:14  nordfalk
+
+	* HURA! Tre granda - kaj sukcesa - aldono de traduku.net-vortoj!!!
+
+2008-12-06 20:03  nordfalk
+
+	* Ordinals and stuff added
+	* apertium-eo-en.eo-en.dix, apertium-eo-en.eo.dix.xml: Auxillary
+	  verbs added to bidix. Should really be handled in tranfer (all of
+	  them?)
+
+2008-11-25 04:04  nordfalk
+	* Transfer: Removed special handling of determiner 'a', 
+	* Transfer: genitive more or less finished. i.a. REGLA NUM of
+	  5 of => 5 el, REGLA: UNKNOWN 's NOM: Aphrodite's dog => hundo de Aphrodite
+
+2008-11-22 13:43  nordfalk
+
+	* Transfer: Unknown words recognized and able to chunk, rule cleanup
+
+2008-11-19 11:43  ftyers
+
+	* Transfer: t3x stuff, gender hack
+
+2008-11-17 14:15  nordfalk
+
+	* Transfer: disabled yes/no question detection for now, 
+	* differenciated betw "may" and "might", more compact rules
+	* Workaround for tagger prolems (disable some adverbs's)
+
+2008-11-06 15:59  ftyers
+
+	* years, regexps, ordinals, proper names and time
+
+2008-11-02 20:56  nordfalk
+
+	* Automatic additions to Esperanto dict based on bidix works
+	* Added traduku.net data to dix
+
+2008-10-31 14:55  ftyers
+
+	* cambiando apertium-tagger -g en los ficheros modes.xml
+	  a apertium-tagger -g
+
+2008-10-31 14:22  nordfalk
+
+	* apertium-eo-en.eo-en.dix: Fixed a lot of RL LR restrictions
+	* apertium-eo-en.eo-en.dix: Removed/restricted all entries so that
+	  no double entries exist in bidix. I had 6000 (!) lines
+	  of diff of reduntant mapping in the bidix file!
+	* more gender work. MF_GD paradigm used.
+
+2008-10-07 10:27  ftyers
+
+	* Transfer: fix for non-sentence initial SV SN SN, for ant/cog, 
+	  nom_nom, det_nom_nom, ant + cognom rules from jim
+
+2008-10-06 18:16  nordfalk
+
+	* added words
+	* regression-tests runs much faster now
+	* Transfer: ADV VAUX VBLEX, cxu SN1 SV SN2 -> SV SN1 SN2
+
+2008-09-16 14:51  ftyers
+
+	* genitive, verb rules, add do, add VAUX ADV ADV VERB
+
+2008-09-08 15:46  nordfalk
+
+	* Missing Esperanto ajectives added, added words
+
+2008-09-05 09:14  jimregan
+
+	* remove duplicates, transfer rules, adjectives with 'LR' synthetic
+	  forms (adj.comp/adj.sup) as well as legitimate synthetics
+
+2008-09-02 08:21  nordfalk
+
+	* Script to check for <sint> tag
+
+2008-08-28 19:08  ftyers
+
+	* adjective inflection macrom, transfer change for be + ger
+
+2008-08-26 22:17  jimregan
+
+	* add entries in the monodices for Jacob's
+	  additions; add a pardef for 'plura'; change cognomen pardef to
+	  match en, to make c 'n' p easier
+
+2008-08-26 04:51  nordfalk
+
+	* tradukunet.txt: Added wordlist of http://traduku.net . We are
+	  allowed to use any license we want to (no license requirement)
+
+2008-08-25 14:50  ftyers
+
+	* transfer, determiners, nouns, drop indefinite determiner
+
+2008-08-25 01:05  jimregan
+
+	* personal pronoun pardefs, simplify proper names in bidix, add some 
+	  verbs from http://www.gutenberg.org/ebooks/16967, multiword, add "cxu"
+
+2008-08-24 22:11  ftyers
+
+	* gendered nouns, adverbs testvoc
+
+2008-08-24 18:00  ftyers
+
+	* First translation working, 
+
+2008-08-24 17:46  ftyers
+
+	* Start new language pair
+
