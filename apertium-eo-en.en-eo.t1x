@@ -153,6 +153,9 @@
       <cat-item lemma="a" tags="det.ind.*"/>
     </def-cat>
 
+    <def-cat n="the">
+    <cat-item lemma="the" tags="det.def.*"/>
+    </def-cat>
 
     <def-cat n="det">
     <!--
@@ -228,6 +231,14 @@ sort -t '"' -k 3 x
     <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
+    </def-cat>
+    <def-cat n="num_sen_ord">
+      <cat-item tags="num"/>
+      <cat-item tags="num.percent"/>
+      <cat-item tags="num.sp"/>
+      <cat-item tags="num.sg"/>
+      <cat-item tags="num.pl"/>
+<!--      <cat-item tags="num.ord"/>   Jacob 6feb2009 forprenis, por igi  3rd<num><ord> of May-> 3a de majo, kaj ne  3a el majo -->
     </def-cat>
     <def-cat n="pr">
       <cat-item tags="pr"/>
@@ -726,53 +737,6 @@ sort -t '"' -k 3 x
       </action>
     </rule>
 
-
-<!--
-    <rule comment="REGLA: DET:a NOM/ANT 's NOM:  a Jacob's dog   => hundo de Jacob">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="3" side="tl" part="whole"/>
-                  </lu>
-                <b pos="3"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
-                  <var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
--->
 
     <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
       <pattern>
@@ -1608,7 +1572,7 @@ sort -t '"' -k 3 x
     </rule>
 
 
-    <rule comment="REGLA: DET:a">
+    <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>
         <pattern-item n="a"/>
       </pattern>
@@ -1642,37 +1606,7 @@ sort -t '"' -k 3 x
     </rule>
 
 
-<!--
-    <rule comment="REGLA: a NOM, f.eks. 'a dog'">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-            <out>
-              <chunk name="nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
--->
-
-    <rule comment="REGLA: more NOM, f.eks. 'more tea'">
+    <rule comment="REGLA: more NOM, f.eks. 'more tea'  to 'Pli da teo'">
       <pattern>
         <pattern-item n="more"/>
         <pattern-item n="nom"/>
@@ -2058,87 +1992,6 @@ sort -t '"' -k 3 x
 
 
     <!-- Sintagmas adjetivos -->
-
-    <!-- OLD VERSION, NEW VERSION BELOW
-    <rule comment="REGLA: ADJ">
-      <pattern>
-        <pattern-item n="adj"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <choose>
-          <when>
-            <test>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
-            </test>
-            <out>
-              <chunk name="preadv_adj" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="sg"/></tag>
-                </tags>
-                <lu>
-                  <lit v="pli"/>
-                  <lit-tag v="preadv"/>
-                </lu>
-                <b/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="nom"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <when>
-            <test>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
-            </test>
-            <out>
-              <chunk name="preadv_adj" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="sg"/></tag>
-                </tags>
-                <lu>
-                  <lit v="plej"/>
-                  <lit-tag v="preadv"/>
-                </lu>
-                <b/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="nom"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <otherwise>
-            <out>
-              <chunk name="adj" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="sg"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_adj"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="nom"/>
-                </lu>
-              </chunk>
-            </out>
-          </otherwise>
-        </choose>
-      </action>
-    </rule>
--->
-
-
 
     <rule comment="REGLA: ADJ">
       <pattern>
@@ -3089,9 +2942,11 @@ might:might<vaux><inf>
     </rule>
 
 
+
+
     <rule comment="REGLA NUM of      5 of => 5 el ">
       <pattern>
-        <pattern-item n="num"/>
+        <pattern-item n="num_sen_ord"/>
         <pattern-item n="of"/>
       </pattern>
       <action>
@@ -3118,6 +2973,49 @@ might:might<vaux><inf>
         </out>
       </action>
     </rule>
+
+<!--
+    <rule comment="REGLA NUM of the     5 of the => 5 el la ">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="of"/>
+        <pattern-item n="the"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="num" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+          <b pos="1"/>
+          <chunk name="pr">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+                <lu>
+                  <lit v="el"/>
+                  <lit-tag v="pr"/>
+                </lu>
+          </chunk>
+          <b pos="2"/>
+          <chunk name="det">
+            <tags>
+              <tag><lit-tag v="SD"/></tag>
+              <tag><lit-tag v="sp"/></tag>
+            </tags>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
 
 
 

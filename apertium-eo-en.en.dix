@@ -3967,7 +3967,11 @@
 <e lm="Andalucia">            <i>Andalucia</i><par n="Barcelona__np"/></e>
 <e lm="Andes">                <i>Andes</i><par n="Barcelona__np"/></e>
 <e lm="Andorra">              <i>Andorra</i><par n="Barcelona__np"/></e>
-<e lm="April">                <i>April</i><par n="Mary__np"/></e>
+
+<!-- Jacob 6feb2009 faris r="RL", por ne kolizi kun la monatoj -->
+<e r="RL" lm="April">                <i>April</i><par n="Mary__np"/></e>
+<e r="RL" lm="August">               <i>August</i><par n="Mark__np"/></e>
+
 <e lm="Arab">                 <i>Arab</i><par n="house__n"/></e>
 <e lm="Arab">                 <i>Arab</i><par n="expensive__adj"/></e>
 <e lm="Arabia">               <i>Arabia</i><par n="Barcelona__np"/></e>
@@ -3980,7 +3984,6 @@
 <e lm="Asian">                <i>Asian</i><par n="expensive__adj"/></e>
 <e lm="Asturias">             <i>Asturias</i><par n="Barcelona__np"/></e>
 <e lm="Athens">               <i>Athens</i><par n="Barcelona__np"/></e>
-<e lm="August">               <i>August</i><par n="Mark__np"/></e>
 <e lm="Australia">            <i>Australia</i><par n="Barcelona__np"/></e>
 <e lm="Australian">           <i>Australian</i><par n="house__n"/></e>
 <e lm="Australian">           <i>Australian</i><par n="expensive__adj"/></e>
