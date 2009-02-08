@@ -1754,32 +1754,32 @@
 
   <section id="main" type="standard">
 
-	<e><p><l>mi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-	<e><p><l>vi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
-	<e><p><l>li</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-	<e><p><l>li</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-	<e><p><l>ŝi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-	<e><p><l>ĝi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-	<e><p><l>ni</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-	<e><p><l>ili</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+	<e><p><l>mi</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e><p><l>vi</l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/><s n="nom"/></r></p></e>
+	<e><p><l>li</l><r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e><p><l>li</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e><p><l>ŝi</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e><p><l>ĝi</l><r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e><p><l>ni</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+	<e><p><l>ili</l><r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
 
-	<e r="LR"><p><l>ci</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
-	<e r="LR"><p><l>sxi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-	<e r="LR"><p><l>gxi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+	<e r="LR"><p><l>ci</l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/><s n="nom"/></r></p></e>
+	<e r="LR"><p><l>sxi</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+	<e r="LR"><p><l>gxi</l><r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="nom"/></r></p></e>
 
-	<e><p><l>min</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
-	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="obj"/><s n="mf"/><s n="sp"/><s n="acc"/></r></p></e>
-	<e><p><l>lin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-	<e><p><l>ŝin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-	<e><p><l>ĝin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-	<e><p><l>onin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="pl"/></r></p></e>
-	<e><p><l>nin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-	<e><p><l>ilin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+	<e><p><l>min</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/><s n="acc"/></r></p></e>
+	<e><p><l>vin</l><r>prpers<s n="prn"/><s n="mf"/><s n="sp"/><s n="acc"/></r></p></e>
+	<e><p><l>lin</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+	<e><p><l>ŝin</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+	<e><p><l>ĝin</l><r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></r></p></e>
+	<e><p><l>onin</l><r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="pl"/><s n="acc"/></r></p></e>
+	<e><p><l>nin</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+	<e><p><l>ilin</l><r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
 
-	<e r="LR"><p><l>cin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
-	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+	<e r="LR"><p><l>cin</l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/><s n="acc"/></r></p></e>
+	<e r="LR"><p><l>sxin</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+	<e r="LR"><p><l>gxin</l><r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <!-- Zeuz himself saw....   => Zeus mem vidis -->
     <e lm="si"><p><l>si<b/>mem</l><r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -3608,6 +3608,7 @@
     <e lm="dediĉi"><i>dedi</i><par n="ĉ"/><i></i><par n="verb__vblex"/></e>
     <e lm="dedukti"><i>dedukt</i><par n="verb__vblex"/></e>
     <e lm="defaŭlta"><i>defaŭlt</i><par n="adj__adj"/></e>
+    <e lm="defaŭlto"><i>defaŭlto</i><par n="nom__n"/></e>
     <e lm="defensiva"><i>defensiv</i><par n="adj__adj"/></e>
     <e lm="deficito"><i>deficito</i><par n="nom__n"/></e>
     <e lm="defii"><i>defi</i><par n="verb__vblex"/></e>

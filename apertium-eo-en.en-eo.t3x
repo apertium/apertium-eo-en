@@ -124,9 +124,7 @@ nom_gen_nom
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -140,12 +138,8 @@ nom_gen_nom
         <pattern-item n="adj_nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="2"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="2"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -165,15 +159,9 @@ nom_gen_nom
         <pattern-item n="det_nom_nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="3"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="3"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -197,18 +185,10 @@ nom_gen_nom
         <pattern-item n="det_preadv_adj_nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="3"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="4"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="3"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="4"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -236,21 +216,11 @@ nom_gen_nom
         <pattern-item n="det_nom_gen_det_nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="3"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="4"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="5"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="3"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="4"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="5"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -281,24 +251,12 @@ nom_gen_nom
         <pattern-item n="det_nom_gen_det_nom_nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="3"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="4"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="5"/>
-        </call-macro>
-        <call-macro n="drop_gender1">
-          <with-param pos="6"/>
-        </call-macro>
+        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="2"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="3"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="4"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="5"/></call-macro>
+        <call-macro n="drop_gender1"><with-param pos="6"/></call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>

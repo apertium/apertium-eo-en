@@ -3662,6 +3662,7 @@
     </e>
 -->
 </pardef>
+
 <pardef n="prsubj__prn">
 <e>                           <p><l>I</l>                   <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l>you</l>                 <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -3671,6 +3672,7 @@
 <e>                           <p><l>we</l>                  <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>                           <p><l>they</l>                <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
+
 <pardef n="probj__prn">
 <e>                           <p><l>me</l>                  <r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l>you</l>                 <r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -3680,6 +3682,7 @@
 <e>                           <p><l>us</l>                  <r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>                           <p><l>them</l>                <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
+
 <pardef n="probj_dem__prn">
 <e>                           <i></i></e>
 <e>                           <p><l><b/>me</l>              <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -3694,6 +3697,7 @@
 <e>                           <p><l><b/>that</l>            <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l><b/>those</l>           <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
+
 <pardef n="t/ake__vblex__sep">
 <e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
 <e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
