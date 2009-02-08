@@ -31,6 +31,12 @@
       <cat-item lemma="prpers" tags="prn.*"/>
     </def-cat>
 
+<!-- prpers<prn><obj><p1><mf><sg> -->
+    <def-cat n="prnpers__sen_singularo">
+      <cat-item lemma="prpers" tags="prn.*.*.*.sp"/>
+      <cat-item lemma="prpers" tags="prn.*.*.*.pl"/>
+    </def-cat>
+
     <def-cat n="prn">
       <cat-item tags="prn.rel.*"/>
       <cat-item tags="prn.itg.*"/>
@@ -1561,12 +1567,12 @@ sort -t '"' -k 3 x
     </rule>
 
 
-<!-- XXXXXX
-    <rule comment="REGLA all of X      all of us => ni ĉiuj ">
+
+    <rule comment="REGLA all of X      all of us => ni ĉiuj; It was fun for all of them => Ĝi estis amuza por ili ĉiu. ">
       <pattern>
         <pattern-item n="all"/>
         <pattern-item n="of"/>
-        <pattern-item n="prnpers"/>
+        <pattern-item n="prnpers__sen_singularo"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1575,33 +1581,27 @@ sort -t '"' -k 3 x
             <tags>
               <tag><lit-tag v="SN"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><var n="numero"/></tag>
               <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_prn"/>
-              <lit-tag v="2"/>
-              <lit-tag v="3"/>
-            </lu>
-              <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-              <b pos="2"/>
-            <lu>
               <clip pos="3" side="tl" part="lem"/>
               <clip pos="3" side="tl" part="a_prn__sen__subj_obj"/>
-              <lit-tag v="3"/>
               <clip pos="3" side="tl" part="a_prs"/>
               <clip pos="3" side="tl" part="a_gen"/>
               <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="2"/>
+            </lu>
+              <b pos="1"/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_prn"/>
+              <lit-tag v="pl"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
--->
 
 
 
