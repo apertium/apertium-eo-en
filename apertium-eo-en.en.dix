@@ -547,6 +547,9 @@
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
+<pardef n="all_of_us__prn">
+<e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+</pardef>
 <pardef n="what__prn">
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
 </pardef>
@@ -11075,9 +11078,9 @@
 <e lm="white">                <i>white</i><par n="house__n"/></e>
 <e lm="white">                <i>white</i><par n="nice/__adj"/></e>
 <e lm="who">                  <i>who</i><par n="what__prn"/></e>
-    <!--
-    <e lm="who"><i>who</i><par n="that__rel"/></e>
-    -->
+<!--
+<e lm="who"><i>who</i><par n="that__rel"/></e>
+-->
 <e lm="whole">                <i>whole</i><par n="house__n"/></e>
 <e lm="whole">                <i>whole</i><par n="expensive__adj"/></e>
 <e lm="wholesaler">           <i>wholesaler</i><par n="house__n"/></e>
@@ -18068,6 +18071,18 @@
 
 <e lm="Esperanto">            <i>Esperanto</i><par n="house__n"/></e>
 
+<!-- Aldonoj Hèctor 2009/02/10 -->
+<e lm="all of us">          <i>all<b/>of<b/>us</i><par n="all_of_us__prn"/></e>
+<e lm="all of you">         <i>all<b/>of<b/>you</i><par n="all_of_us__prn"/></e>
+<e lm="all of them">        <i>all<b/>of<b/>them</i><par n="all_of_us__prn"/></e>
+
+<e lm="on Monday">          <i>on<b/>Monday</i><par n="maybe__adv"/></e>
+<e lm="on Thuesday">        <i>on<b/>Thuesday</i><par n="maybe__adv"/></e>
+<e lm="on Wednesday">       <i>on<b/>Wednesday</i><par n="maybe__adv"/></e>
+<e lm="on Thursday">        <i>on<b/>Thursday</i><par n="maybe__adv"/></e>
+<e lm="on Friday">          <i>on<b/>Friday</i><par n="maybe__adv"/></e>
+<e lm="on Saturday">        <i>on<b/>Saturday</i><par n="maybe__adv"/></e>
+<e lm="on Sunday">          <i>on<b/>Sunday</i><par n="maybe__adv"/></e>
 
 	</section>
 	<section id="final" type="inconditional">

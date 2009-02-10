@@ -422,6 +422,7 @@
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
 
 <e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/></r></p></e>
+<e r="RL"><p><l>kiu<s n="prn"/><s n="rel"/><s n="ND"/></l><r>who<s n="prn"/><s n="rel"/></r></p></e>
 
 <e>       <p><l>kio<s n="prn"/><s n="itg"/></l>        <r>what<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kio<s n="prn"/><s n="itg"/><s n="ND"/></l><r>what<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
@@ -31461,5 +31462,17 @@ TODO??
 <e>       <i>UN<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UEFA<s n="n"/><s n="acr"/></i></e>
 
+<!-- Aldonoj Hèctor 2009/02/10 -->
+<e>       <p><l>ni<b/>ĉiuj<s n="prn"/><s n="tn"/></l>   <r>all<b/>of<b/>us<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>vi<b/>ĉiuj<s n="prn"/><s n="tn"/></l>   <r>all<b/>of<b/>you<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>ili<b/>ĉiuj<s n="prn"/><s n="tn"/></l>  <r>all<b/>of<b/>them<s n="prn"/><s n="tn"/></r></p></e>
+
+<e>       <p><l>lunde<s n="adv"/></l>                <r>on<b/>Monday<s n="adv"/></r></p></e>
+<e>       <p><l>marde<s n="adv"/></l>                <r>on<b/>Thuesday<s n="adv"/></r></p></e>
+<e>       <p><l>merkrede<s n="adv"/></l>             <r>on<b/>Wednesday<s n="adv"/></r></p></e>
+<e>       <p><l>ĵaŭde<s n="adv"/></l>                <r>on<b/>Thursday<s n="adv"/></r></p></e>
+<e>       <p><l>vendrede<s n="adv"/></l>             <r>on<b/>Friday<s n="adv"/></r></p></e>
+<e>       <p><l>sabate<s n="adv"/></l>               <r>on<b/>Saturday<s n="adv"/></r></p></e>
+<e>       <p><l>dimanĉe<s n="adv"/></l>              <r>on<b/>Sunday<s n="adv"/></r></p></e>
 </section>
 </dictionary>
