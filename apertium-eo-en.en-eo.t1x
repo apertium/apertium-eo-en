@@ -2,12 +2,70 @@
 <transfer default="chunk">
 <!-- TODO
  make a transfer rule saying  DET + ADJ  can be a SN:
-  The first was an animated feature     and 
+  The first was an animated feature     and
   the second was a TV live action version.
-  
+
 -->
 
   <section-def-cats>
+
+
+    <!-- UNUOPAJ VORTOJ -->
+    <def-cat n="more"><cat-item lemma="more" tags="det.qnt.*"/></def-cat>
+    <def-cat n="to"><cat-item lemma="to" tags="pr"/></def-cat>
+    <def-cat n="of"><cat-item lemma="of" tags="pr"/></def-cat>
+    <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
+    <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
+    <def-cat n="a"><cat-item lemma="a" tags="det.ind.*"/></def-cat>
+
+
+
+
+    <!-- KATEGORIOJ -->
+
+    <def-cat n="cnjcoo"><cat-item tags="cnjcoo"/></def-cat>
+    <def-cat n="cnjadv"><cat-item tags="cnjadv"/></def-cat>
+    <def-cat n="cnjsub"><cat-item tags="cnjsub"/></def-cat>
+
+    <def-cat n="prnpers">
+      <cat-item lemma="prpers" tags="prn.*"/>
+    </def-cat>
+
+<!-- prpers<prn><obj><p1><mf><sg> -->
+    <def-cat n="prnpers__sen_singularo">
+      <cat-item lemma="prpers" tags="prn.*.*.*.sp"/>
+      <cat-item lemma="prpers" tags="prn.*.*.*.pl"/>
+    </def-cat>
+
+    <def-cat n="prn">
+      <cat-item tags="prn.rel.*"/>
+      <cat-item tags="prn.itg.*"/>
+      <cat-item tags="prn.tn.*"/>
+    </def-cat>
+
+    <!-- ^si<prn><ref><p3><m><sg> -->
+    <def-cat n="prnref">
+      <cat-item tags="prn.ref.*"/>
+    </def-cat>
+
+
+    <def-cat n="adv">
+      <cat-item tags="adv"/>
+      <!-- added by Jacob: ^Kiam<adv><itg>$ -->
+      <cat-item tags="adv.*"/>
+    </def-cat>
+
+    <def-cat n="adj">
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+    </def-cat>
+
+    <def-cat n="cog"><cat-item tags="np.cog.*"/></def-cat>
+    <def-cat n="guio"><cat-item tags="guio"/></def-cat>
+
+
+
+
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/>
@@ -16,6 +74,7 @@
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.cog.*"/>-->
     </def-cat>
+
     <def-cat n="ant">
       <cat-item tags="np.ant.*"/>
     </def-cat>
@@ -24,6 +83,7 @@
       <cat-item tags="vblex.inf"/>
       <cat-item tags="vblex.sep.inf"/>
     </def-cat>
+
     <def-cat n="vblexger">
     <!--
         appealing:appeal<vblex><ger>
@@ -34,8 +94,8 @@
       <cat-item tags="vblex.ger"/>
       <cat-item tags="vblex.sep.ger"/>
     </def-cat>
-    <def-cat n="vaux">
-    <!-- 
+
+    <!--
   could:can<vaux><past>
         can<vaux><pres>
         may<vaux><inf>
@@ -46,9 +106,10 @@
         will<vaux><inf>
         would<vaux><inf>
     -->
-      <cat-item tags="vaux.*"/> 
+    <def-cat n="vaux">
+      <cat-item tags="vaux.*"/>
     </def-cat>
-    <def-cat n="vbser">
+
     <!--
         am:be<vbser><pres><p1><sg>
         are:be<vbser><pres>
@@ -60,9 +121,10 @@
         was:be<vbser><past><p3><sg>
         were:be<vbser><past>
     -->
+    <def-cat n="vbser">
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
-    <def-cat n="vbhaver">
+
     <!--
         had got:have<vblex><past># got
         had got:have<vblex><pp># got
@@ -76,16 +138,14 @@
         have:have<vblex><pres>
         having got:have<vblex><ger># got
         having:have<vblex><ger>
-    -->
-      <cat-item lemma="have" tags="vblex.*"/>
-    <!--
+
         NOTHING in en.dix is vbhaver....?
     -->
+    <def-cat n="vbhaver">
+      <cat-item lemma="have" tags="vblex.*"/>
       <cat-item lemma="have" tags="vbhaver.*"/>
     </def-cat>
-    
-    <def-cat n="vblex">
-      <cat-item tags="vblex.*"/>
+
       <!--
         do:do<vbdo><pres>
         does:do<vbdo><pres><p3><sg>
@@ -94,6 +154,8 @@
         doesn't:do<vbdo><pres><p3><sg>+not<adv>
         didn't:do<vbdo><past>+not<adv>
       -->
+    <def-cat n="vblex">
+      <cat-item tags="vblex.*"/>
       <cat-item tags="vbdo.*"/>
       <!--      <cat-item tags="vbser.*"/>-->
       <cat-item tags="vbhaver.*"/>
@@ -106,58 +168,9 @@
       <cat-item tags="vbhaver.*"/>
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
-        
-        
 
-    <def-cat n="prnpers">
-      <cat-item lemma="prpers" tags="prn.*"/>
-    </def-cat>
-    <def-cat n="prnref"><!-- ^si<prn><ref><p3><m><sg> -->
-      <cat-item tags="prn.ref.*"/>
-    </def-cat>
-    <def-cat n="prn">
-      <cat-item tags="prn.rel.*"/>
-      <cat-item tags="prn.itg.*"/>
-      <cat-item tags="prn.tn.*"/>
-    </def-cat>
-    <def-cat n="adv">
-      <cat-item tags="adv"/>
-      <!-- added by Jacob: ^Kiam<adv><itg>$ -->
-      <cat-item tags="adv.*"/>
-    </def-cat>
-    <def-cat n="adj">
-      <cat-item tags="adj"/>
-      <cat-item tags="adj.*"/>
-    </def-cat>
 
-    <def-cat n="to">
-      <cat-item lemma="to" tags="pr"/>
-    </def-cat>
-    <def-cat n="of">
-      <cat-item lemma="of" tags="pr"/>
-    </def-cat>
-<!--
-    -->
-    <def-cat n="more">
-      <cat-item lemma="more" tags="det.qnt.*"/>
-    </def-cat>
 
-    <def-cat n="cog">
-      <cat-item tags="np.cog.*"/>
-    </def-cat>
-    <def-cat n="guio">
-      <cat-item tags="guio"/>
-    </def-cat>
-
-    <def-cat n="a">
-      <cat-item lemma="a" tags="det.ind.*"/>
-    </def-cat>
-
-    <def-cat n="the">
-    <cat-item lemma="the" tags="det.def.*"/>
-    </def-cat>
-
-    <def-cat n="det">
     <!--
       <cat-item tags="det"/>
       <cat-item tags="det.*"/>
@@ -165,73 +178,66 @@ lt-expand apertium-eo-en.en.dix |  grep '<det>' | cut -f2 -d: | sort -u | sed 's
 lt-expand apertium-eo-en.en.dix |  grep '<det>' | grep ":>:" | cut -f3 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' >> x
 sort -t '"' -k 3 x
       -->
-    <cat-item lemma="the" tags="det.def.*"/>
-    <cat-item tags="det.def.*"/>
+    <def-cat n="det">
+            <cat-item lemma="the" tags="det.def.*"/>
+            <cat-item tags="det.def.*"/>
 
-    <cat-item lemma="that" tags="det.dem.*"/>
-    <cat-item lemma="this" tags="det.dem.*"/>
-    <cat-item tags="det.dem.*"/>
-    
-    <cat-item lemma="another" tags="det.ind.*"/>
-    <cat-item lemma="any" tags="det.ind.*"/>
-<!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
-    <cat-item lemma="both" tags="det.ind.*"/>
-    <cat-item lemma="each" tags="det.ind.*"/>
-    <cat-item lemma="either" tags="det.ind.*"/>
-    <cat-item lemma="every" tags="det.ind.*"/>
-    <cat-item lemma="no" tags="det.ind.*"/>
-    <cat-item lemma="other" tags="det.ind.*"/>
-    <cat-item lemma="such" tags="det.ind.*"/>
-    <cat-item lemma="the same" tags="det.ind.*"/>
-    <cat-item lemma="whatever" tags="det.ind.*"/>
+            <cat-item lemma="that" tags="det.dem.*"/>
+            <cat-item lemma="this" tags="det.dem.*"/>
+            <cat-item tags="det.dem.*"/>
 
-    <cat-item lemma="last" tags="det.ord.*"/>
-    <cat-item tags="det.ord.*"/>
+            <cat-item lemma="another" tags="det.ind.*"/>
+            <cat-item lemma="any" tags="det.ind.*"/>
+        <!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
+            <cat-item lemma="both" tags="det.ind.*"/>
+            <cat-item lemma="each" tags="det.ind.*"/>
+            <cat-item lemma="either" tags="det.ind.*"/>
+            <cat-item lemma="every" tags="det.ind.*"/>
+            <cat-item lemma="no" tags="det.ind.*"/>
+            <cat-item lemma="other" tags="det.ind.*"/>
+            <cat-item lemma="such" tags="det.ind.*"/>
+            <cat-item lemma="the same" tags="det.ind.*"/>
+            <cat-item lemma="whatever" tags="det.ind.*"/>
 
-    <cat-item lemma="her" tags="det.pos.*"/>
-    <cat-item lemma="his" tags="det.pos.*"/>
-    <cat-item lemma="its" tags="det.pos.*"/>
-    <cat-item lemma="my" tags="det.pos.*"/>
-    <cat-item lemma="our" tags="det.pos.*"/>
-    <cat-item lemma="their" tags="det.pos.*"/>
-    <cat-item lemma="your" tags="det.pos.*"/>
-    <cat-item tags="det.pos.*"/>
+            <cat-item lemma="last" tags="det.ord.*"/>
+            <cat-item tags="det.ord.*"/>
 
-    <cat-item lemma="a few" tags="det.qnt.*"/>
-    <cat-item lemma="a lot of" tags="det.qnt.*"/>
-    <cat-item lemma="as much" tags="det.qnt.*"/>
-    <cat-item lemma="enough" tags="det.qnt.*"/>
-    <cat-item lemma="fewer" tags="det.qnt.*"/>
-    <cat-item lemma="few" tags="det.qnt.*"/>
-    <cat-item lemma="less" tags="det.qnt.*"/>
-    <cat-item lemma="little" tags="det.qnt.*"/>
-    <cat-item lemma="lots of" tags="det.qnt.*"/>
-    <cat-item lemma="many" tags="det.qnt.*"/>
-    <cat-item lemma="more" tags="det.qnt.*"/>
-    <cat-item lemma="much" tags="det.qnt.*"/>
-    <cat-item lemma="quite a lot of" tags="det.qnt.*"/>
-    <cat-item lemma="so many" tags="det.qnt.*"/>
-    <cat-item lemma="some" tags="det.qnt.*"/>
-    <cat-item lemma="so much" tags="det.qnt.*"/>
-    <cat-item lemma="too many" tags="det.qnt.*"/>
-    <cat-item lemma="too much" tags="det.qnt.*"/>
-    <cat-item tags="det.qnt.*"/>
+            <cat-item lemma="her" tags="det.pos.*"/>
+            <cat-item lemma="his" tags="det.pos.*"/>
+            <cat-item lemma="its" tags="det.pos.*"/>
+            <cat-item lemma="my" tags="det.pos.*"/>
+            <cat-item lemma="our" tags="det.pos.*"/>
+            <cat-item lemma="their" tags="det.pos.*"/>
+            <cat-item lemma="your" tags="det.pos.*"/>
+            <cat-item tags="det.pos.*"/>
+
+            <cat-item lemma="a few" tags="det.qnt.*"/>
+            <cat-item lemma="a lot of" tags="det.qnt.*"/>
+            <cat-item lemma="as much" tags="det.qnt.*"/>
+            <cat-item lemma="enough" tags="det.qnt.*"/>
+            <cat-item lemma="fewer" tags="det.qnt.*"/>
+            <cat-item lemma="few" tags="det.qnt.*"/>
+            <cat-item lemma="less" tags="det.qnt.*"/>
+            <cat-item lemma="little" tags="det.qnt.*"/>
+            <cat-item lemma="lots of" tags="det.qnt.*"/>
+            <cat-item lemma="many" tags="det.qnt.*"/>
+            <cat-item lemma="more" tags="det.qnt.*"/>
+            <cat-item lemma="much" tags="det.qnt.*"/>
+            <cat-item lemma="quite a lot of" tags="det.qnt.*"/>
+            <cat-item lemma="so many" tags="det.qnt.*"/>
+            <cat-item lemma="some" tags="det.qnt.*"/>
+            <cat-item lemma="so much" tags="det.qnt.*"/>
+            <cat-item lemma="too many" tags="det.qnt.*"/>
+            <cat-item lemma="too much" tags="det.qnt.*"/>
+            <cat-item tags="det.qnt.*"/>
     </def-cat>
 
 
-    <def-cat n="cnjcoo">
-      <cat-item tags="cnjcoo"/>
-    </def-cat>
-    <def-cat n="cnjadv">
-      <cat-item tags="cnjadv"/>
-    </def-cat>
-    <def-cat n="cnjsub">
-      <cat-item tags="cnjsub"/>
-    </def-cat>
     <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
     </def-cat>
+
     <def-cat n="num_sen_ord">
       <cat-item tags="num"/>
       <cat-item tags="num.percent"/>
@@ -240,31 +246,25 @@ sort -t '"' -k 3 x
       <cat-item tags="num.pl"/>
 <!--      <cat-item tags="num.ord"/>   Jacob 6feb2009 forprenis, por igi  3rd<num><ord> of May-> 3a de majo, kaj ne  3a el majo -->
     </def-cat>
-    <def-cat n="pr">
-      <cat-item tags="pr"/>
-    </def-cat>
-    <def-cat n="cm">
-      <cat-item tags="cm"/>
-    </def-cat>
-    <def-cat n="apos">
-      <cat-item tags="apos"/>
-    </def-cat>
-    <def-cat n="sent">
-      <cat-item tags="sent"/>
-    </def-cat>
+
+    <def-cat n="pr"><cat-item tags="pr"/></def-cat>
+    <def-cat n="cm"><cat-item tags="cm"/></def-cat>
+    <def-cat n="apos"><cat-item tags="apos"/></def-cat>
+    <def-cat n="sent"><cat-item tags="sent"/></def-cat>
+
     <def-cat n="rel">
       <cat-item tags="rel.*"/>
     </def-cat>
-    <def-cat n="preadv">
-      <cat-item tags="preadv"/>
-    </def-cat>
+
+    <def-cat n="preadv"><cat-item tags="preadv"/></def-cat>
+
     <def-cat n="predet">
       <cat-item tags="predet"/>
       <cat-item tags="predet.*"/>
     </def-cat>
-    <def-cat n="gen">
-      <cat-item tags="gen"/>
-    </def-cat>
+
+    <def-cat n="gen"><cat-item tags="gen"/></def-cat>
+
     <def-cat n="genitive_possessors"> <!-- all that can fill the X in: X's dog  -->
       <cat-item tags=""/>        <!-- unknown words -->
       <cat-item tags="n.*"/>
@@ -273,10 +273,10 @@ sort -t '"' -k 3 x
       <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
       <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
     </def-cat>
-    <def-cat n="unknown">
-      <cat-item tags=""/>
-    </def-cat>
+
+    <def-cat n="unknown"><cat-item tags=""/></def-cat>
   </section-def-cats>
+
 
 
 
@@ -317,6 +317,7 @@ sort -t '"' -k 3 x
       <attr-item tags="det.itg"/>
       <attr-item tags="det.dem"/>
     </def-attr>
+
     <def-attr n="a_prn">
       <attr-item tags="prn"/>
       <attr-item tags="prn.ref"/>
@@ -326,6 +327,14 @@ sort -t '"' -k 3 x
       <attr-item tags="prn.obj"/>
       <attr-item tags="prn.tn"/>
     </def-attr>
+
+    <def-attr n="a_prn__sen__subj_obj">
+      <attr-item tags="prn"/>
+      <attr-item tags="prn.ref"/>
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="prn.tn"/>
+    </def-attr>
+
     <def-attr n="a_tns">
       <attr-item tags="pri"/>
       <attr-item tags="imp"/>
@@ -384,7 +393,7 @@ sort -t '"' -k 3 x
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
     <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
   </section-def-vars>
-  
+
   <section-def-macros>
 
 
@@ -392,41 +401,26 @@ sort -t '"' -k 3 x
       <choose><!-- taken from en-es.t1x, for use in macro firstWord -->
 	<when>
 	  <test>
-	    <equal>
-	      <clip pos="1" side="sl" part="a_np_acr"/>
-	      <lit v=""/>
-	    </equal>
+	    <equal><clip pos="1" side="sl" part="a_np_acr"/><lit v=""/></equal>
 	  </test>
 	  <choose>
 	    <when>
 	      <test>
-		<equal> 
-		  <var n="EOS"/>
-		  <lit v="true"/>
-		</equal> 
+		<equal><var n="EOS"/><lit v="true"/></equal>
 	      </test>
 	      <modify-case>
 		<clip pos="1" side="tl" part="lem"/>
 		<lit v="aa"/>
 	      </modify-case>
-	      <let>
-		<var n="caseFirstWord"/>
-		<lit v="Aa"/>
-	      </let>
+	      <let><var n="caseFirstWord"/><lit v="Aa"/></let>
 	    </when>
-	    <otherwise> 
-	      <let>
-		<var n="caseFirstWord"/>
-		<lit v="aa"/>
-	      </let>
+	    <otherwise>
+	      <let><var n="caseFirstWord"/><lit v="aa"/></let>
 	    </otherwise>
 	  </choose>
 	</when>
 	<otherwise>
-	  <let>
-	    <var n="caseFirstWord"/>
-	    <lit v="aa"/>
-	  </let>
+	  <let><var n="caseFirstWord"/><lit v="aa"/></let>
 	</otherwise>
       </choose>
       <let>
@@ -455,7 +449,7 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="temps"/><lit-tag v="cni"/></let>
         </when>
-<!-- 
+<!--
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="did"/></equal>
@@ -556,9 +550,9 @@ sort -t '"' -k 3 x
     <!-- This macro concords a noun and an adjective -->
     <def-macro n="set_adjectiu1" npar="1">
       <let><var n="adjectiu"/><lit v=""/></let>
-      <let><var n="preadv_added"/><lit v=""/></let>      
+      <let><var n="preadv_added"/><lit v=""/></let>
       <let><var n="adjectiu_tail"/><lit-tag v="3.4"/></let>
-<!--      
+<!--
       <let><var n="adjectiu_tail"/><lit-tag v="2.3"/></let>
       <choose>
         <when>
@@ -569,7 +563,7 @@ sort -t '"' -k 3 x
           </test>
         </when>
       </choose>
--->      
+-->
       <choose>
         <when>
           <test>
@@ -580,7 +574,7 @@ sort -t '"' -k 3 x
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
--->            
+-->
           </test>
           <let><var n="adjectiu"/><concat>
                 <lit v="pli"/><lit-tag v="preadv"/>
@@ -598,7 +592,7 @@ sort -t '"' -k 3 x
               <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
               <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
             </and>
--->            
+-->
           </test>
           <let><var n="adjectiu"/><concat>
                 <lit v="plej"/><lit-tag v="preadv"/>
@@ -799,7 +793,7 @@ sort -t '"' -k 3 x
 
 
 
-<!-- Its Not clear this rule makes more harm than good 
+<!-- Its Not clear this rule makes more harm than good
 
     <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
       <pattern>
@@ -1555,9 +1549,9 @@ sort -t '"' -k 3 x
           <chunk name="prnpers" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_gen"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
@@ -1565,11 +1559,52 @@ sort -t '"' -k 3 x
               <clip pos="1" side="tl" part="a_prs"/>
               <clip pos="1" side="tl" part="a_gen"/>
               <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="REGLA all of X      all of us => ni ĉiuj; It was fun for all of them => Ĝi estis amuza por ili ĉiu. ">
+      <pattern>
+        <pattern-item n="all"/>
+        <pattern-item n="of"/>
+        <pattern-item n="prnpers__sen_singularo"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="prn" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="a_prn__sen__subj_obj"/>
+              <clip pos="3" side="tl" part="a_prs"/>
+              <clip pos="3" side="tl" part="a_gen"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="2"/>
+            </lu>
+              <b pos="1"/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_prn"/>
+              <lit-tag v="pl"/>
+              <lit-tag v="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
 
 
     <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
@@ -1826,7 +1861,7 @@ sort -t '"' -k 3 x
               </and>
             </test>
             <out>
-              <chunk name="preadv_adj_nom" case="caseFirstWord">              
+              <chunk name="preadv_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -2125,7 +2160,7 @@ sort -t '"' -k 3 x
 
 
     <rule comment="REGLA: be VBLEXger">
-      <pattern><!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$ 
+      <pattern><!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$
                     ^applying/apply<vblex><ger>$  -->
         <pattern-item n="vbser"/>
         <pattern-item n="vblexger"/>
@@ -2780,7 +2815,6 @@ might:might<vaux><inf>
 
 
 
-
     <!-- Conjunctions -->
     <rule>
       <pattern>
@@ -2881,7 +2915,7 @@ might:might<vaux><inf>
 		  </equal>
 		</or>
 	      </not>
-	    </test>	      
+	    </test>
 	    <let>
 	      <var n="EOS"/>
 	      <lit v="true"/>
