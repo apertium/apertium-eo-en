@@ -20,6 +20,7 @@
 
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
 
+    <def-cat n="please"><cat-item lemma="please" tags="vblex.*"/></def-cat>
 
 
 
@@ -277,6 +278,13 @@ sort -t '"' -k 3 x
       <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->
       <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
       <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
+    </def-cat>
+
+    <!-- verb in present or imperative or past participle (to change the tense due to a bad election of the lexer) -->
+    <def-cat n="c_vblex_pres">
+      <cat-item tags="vblex.pres"/>
+      <cat-item tags="vblex.imp"/>
+      <cat-item tags="vblex.pp"/>
     </def-cat>
 
     <def-cat n="unknown"><cat-item tags=""/></def-cat>
@@ -3146,6 +3154,45 @@ might:might<vaux><inf>
         </out>
       </action>
     </rule>
+
+
+  <rule comment="RULE: please + vblex in present => please + vblex in imperative">
+     <pattern>
+       <pattern-item n="please"/>
+       <pattern-item n="c_vblex_pres"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="prs"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="prs"/>
+              <clip pos="1" side="tl" part="nbr"/>
+            </lu>
+          </chunk>
+         <b pos="1"/>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
 
 
     <rule>
