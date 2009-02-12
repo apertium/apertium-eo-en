@@ -1436,6 +1436,58 @@
 </pardef>
 
 
+<pardef n="w/ake__vblex__sep">
+<e>
+<p>
+  <l>ake</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="inf"/></r>
+</p>
+</e>
+<e>
+<p>
+  <l>ake</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/></r>
+</p>
+</e>
+<e>
+<p>
+  <l>akes</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/><s n="p3"/><s n="sg"/></r>
+</p>
+</e>
+<e r="LR">
+<p>
+  <l>aked</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="past"/></r>
+</p>
+</e>
+<e>
+<p>
+  <l>oke</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="past"/></r>
+</p>
+</e>
+<e>
+<p>
+  <l>aking</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="ger"/></r>
+</p>
+</e>
+<e r="LR">
+<p>
+  <l>aked</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="pp"/></r>
+</p>
+</e>
+<e>
+<p>
+  <l>oken</l>
+  <r>ake<s n="vblex"/><s n="sep"/><s n="pp"/></r>
+</p>
+</e>
+</pardef>
+
+
 
 
 
@@ -3714,8 +3766,10 @@
 <e>                           <p><l>them</l>                <r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
 
-<pardef n="probj_dem__prn">
-<e>                           <i></i></e>
+
+<pardef n="probj_dem__prn_not_empty">
+<e>                           <p><l><b/></l><r><j/></r></p><par n="probj__prn"/></e>
+<!--
 <e>                           <p><l><b/>me</l>              <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l><b/>you</l>             <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 <e>                           <p><l><b/>him</l>             <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
@@ -3723,11 +3777,19 @@
 <e>                           <p><l><b/>it</l>              <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 <e>                           <p><l><b/>us</l>              <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>                           <p><l><b/>them</l>            <r><j/>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+-->
 <e>                           <p><l><b/>this</l>            <r><j/>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l><b/>these</l>           <r><j/>this<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>                           <p><l><b/>that</l>            <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>                           <p><l><b/>those</l>           <r><j/>that<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
+
+
+<pardef n="probj_dem__prn">
+<e>                           <i></i></e>
+<e>                           <i></i><par n="probj_dem__prn_not_empty"/></e>
+</pardef>
+
 
 <pardef n="t/ake__vblex__sep">
 <e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
@@ -3876,6 +3938,7 @@
     </e>
 -->
 </pardef>
+
 <pardef n="appl/y__vblex__sep">
 <e>                           <p><l>y</l>                   <r>y<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
 <e>                           <p><l>y</l>                   <r>y<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
@@ -6943,7 +7006,6 @@
 <e lm="future">               <i>future</i><par n="expensive__adj"/></e>
 <e lm="give">                 <i>g</i><par n="g/ive__vblex"/></e>
 <e lm="get">                  <i>g</i><par n="g/et__vblex"/></e>
-<e lm="give up">              <i>g</i><par n="g/ive__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 <e lm="get dark">             <i>g</i><par n="g/et__vblex"/><p><l><b/>dark</l><r><g><b/>dark</g></r></p></e>
 <e lm="get hold of">          <i>g</i><par n="g/et__vblex"/><p><l><b/>hold<b/>of</l><r><g><b/>hold<b/>of</g></r></p></e>
 <e lm="gain">                 <i>gain</i><par n="house__n"/></e>
@@ -7901,7 +7963,7 @@
 <e lm="limit">                <i>limit</i><par n="accept__vblex"/></e>
 <e lm="limitation">           <i>limitation</i><par n="house__n"/></e>
 <e lm="line">                 <i>lin</i><par n="liv/e__vblex"/></e>
-<e lm="line up">              <i>lin</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
 <e lm="line">                 <i>line</i><par n="house__n"/></e>
 <e lm="lineage">              <i>lineage</i><par n="house__n"/></e>
 <e lm="linen">                <i>linen</i><par n="house__n"/></e>
@@ -10679,7 +10741,6 @@
 <e lm="toy">                  <i>toy</i><par n="house__n"/></e>
 <e lm="try">                  <i>tr</i><par n="appl/y__vblex"/></e>
 <e lm="trace">                <i>trac</i><par n="liv/e__vblex"/></e>
-<e lm="trace back">           <i>trac</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
 <e lm="trace">                <i>trace</i><par n="house__n"/></e>
 <e lm="track">                <i>track</i><par n="house__n"/></e>
 <e lm="traction">             <i>traction</i><par n="house__n"/></e>
@@ -18132,7 +18193,16 @@
 <e lm="take over">            <i>t</i><par n="t/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 <e lm="hand over">            <i>hand</i><par n="accept__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 
-<e lm="wake up">              <i>w</i><par n="aw/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+<e lm="wake PRN up">          <i>w</i><par n="w/ake__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
+<e lm="wake up">              <i>w</i><par n="w/ake__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+
+
+
+<e lm="trace back">           <i>trac</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
+<e lm="give up">              <i>g</i><par n="g/ive__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+<e lm="line up">              <i>lin</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 
 
 <e lm="over and over">  <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
