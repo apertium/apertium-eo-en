@@ -17,6 +17,7 @@
     <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
     <def-cat n="a"><cat-item lemma="a" tags="det.ind.*"/></def-cat>
+    <def-cat n="not"><cat-item lemma="not" tags="adv"/></def-cat>
 
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
 
@@ -2107,6 +2108,43 @@ sort -t '"' -k 3 x
     </rule>
 
 
+    <rule comment="REGLA: VBSER not">
+      <pattern>
+        <pattern-item n="vbser"/>
+        <pattern-item n="not"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="ser" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+
+
+
+
     <rule comment="REGLA: to VBLEXinf">
       <pattern><!-- to run, to swim -->
         <pattern-item n="to"/>
@@ -2761,6 +2799,7 @@ might:might<vaux><inf>
         </choose>
       </action>
     </rule>
+
 
 
 

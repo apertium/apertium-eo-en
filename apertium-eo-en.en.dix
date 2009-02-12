@@ -887,11 +887,20 @@
 <e>                           <p><l>d</l>                   <r>ve<s n="vbmod"/><s n="past"/></r></p></e>
 <e>                           <p><l>d</l>                   <r>ve<s n="vbmod"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ving</l>                <r>ve<s n="vbmod"/><s n="ger"/></r></p></e>
-<!-- JN  All paradigms had entries like:
+<!-- JN All paradigms had entries like:
     <e><p><l>ving</l><r>ve<s n="vbmod"/><s n="pprs"/></r></p></e>
     <e><p><l>ving</l><r>ve<s n="vbmod"/><s n="subs"/></r></p></e>
     which I have deleted per 12feb 2009
+
+TODO:<jacobEo> Regarding the <s n="subs"/>, perhaps I shouuld change 
+<s n="vblex"/><s n="ger"/> to  <s n="vblex"/><par n="ger_subs"/> and then 
+I can switch <subs> on and off in a ger_subs paradigm?
+
+<jimregan> yes
+<jimregan> put them in a pardef, and leave yourself one small change for the future - good thinking :)
+
 -->
+
 </pardef>
 
 
