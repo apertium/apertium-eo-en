@@ -1434,6 +1434,33 @@
     </e>
 -->
 </pardef>
+
+
+
+
+
+<pardef n="aw/ake__vblex__sep">
+<e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
+<e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
+<e>                           <p><l>akes</l>                <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e>                           <p><l>oke</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="past"/></r></p></e>
+<e>                           <p><l>aken</l>                <r>ake<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
+<e>                           <p><l>aking</l>               <r>ake<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e><!--
+    <e>
+      <p>
+        <l>aking</l> 
+        <r>ake<s n="vblex"/><s n="sep"/><s n="pprs"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>aking</l> 
+        <r>ake<s n="vblex"/><s n="sep"/><s n="subs"/></r> 
+      </p>
+    </e>
+-->
+</pardef>
 <pardef n="s/it__vblex">
 <e>                           <p><l>it</l>                  <r>it<s n="vblex"/><s n="inf"/></r></p></e>
 <e>                           <p><l>it</l>                  <r>it<s n="vblex"/><s n="pres"/></r></p></e>
@@ -10994,7 +11021,7 @@
 <e lm="wait">                 <i>wait</i><par n="accept__vblex"/></e>
 <e lm="waiter">               <i>waiter</i><par n="house__n"/></e>
 <e lm="waitress">             <i>waitress</i><par n="access__n"/></e>
-<e lm="wake">                 <i>wak</i><par n="liv/e__vblex"/></e>
+<e lm="wake">                 <i>w</i><par n="aw/ake__vblex"/></e>
 <e lm="walk">                 <i>walk</i><par n="house__n"/></e>
 <e lm="walk">                 <i>walk</i><par n="accept__vblex"/></e>
 <e lm="wall">                 <i>wall</i><par n="house__n"/></e>
@@ -18104,6 +18131,9 @@
 
 <e lm="take over">            <i>t</i><par n="t/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 <e lm="hand over">            <i>hand</i><par n="accept__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
+
+<e lm="wake up">              <i>w</i><par n="aw/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
 
 <e lm="over and over">  <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
 

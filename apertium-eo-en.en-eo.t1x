@@ -18,7 +18,7 @@
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
     <def-cat n="a"><cat-item lemma="a" tags="det.ind.*"/></def-cat>
 
-    <def-cat n="times"><cat-item lemma="time" tags="n.pl"/></def-cat>
+    <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
 
 
 
@@ -2986,12 +2986,37 @@ might:might<vaux><inf>
             </lu>
             <b pos="1"/>
             <lu>
-                  <lit v="oble"/>
-                  <lit-tag v="adv"/>
+                  <lit v="oble"/><lit-tag v="adv"/>
             </lu>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA NUM time   5 times => 5 fojoj, 5th time => 5a fojo,   ">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="times"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="num" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+                <lit v="fojo"/><lit-tag v="n"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="nom"/>
             </lu>
           </chunk>
         </out>
