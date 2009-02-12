@@ -18,6 +18,10 @@
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
     <def-cat n="a"><cat-item lemma="a" tags="det.ind.*"/></def-cat>
 
+    <def-cat n="times"><cat-item lemma="time" tags="n.pl"/></def-cat>
+
+
+
 
 
 
@@ -159,6 +163,7 @@
       <cat-item tags="vbdo.*"/>
       <!--      <cat-item tags="vbser.*"/>-->
       <cat-item tags="vbhaver.*"/>
+      <cat-item lemma="be over" tags="vbser.*"/>
     </def-cat>
 
     <def-cat n="vblex_vbser">
@@ -2867,21 +2872,12 @@ might:might<vaux><inf>
 	    <test>
 	      <not>
 		<or>
-		  <equal>
-		    <clip pos="1" side="sl" part="lem"/>
-		    <lit v=";"/>
-		  </equal>
-		  <equal>
-		    <clip pos="1" side="sl" part="lem"/>
-		    <lit v=":"/>
-		  </equal>
+		  <equal><clip pos="1" side="sl" part="lem"/><lit v=";"/></equal>
+		  <equal><clip pos="1" side="sl" part="lem"/><lit v=":"/></equal>
 		</or>
 	      </not>
 	    </test>
-	    <let>
-	      <var n="EOS"/>
-	      <lit v="true"/>
-	    </let>
+	    <let><var n="EOS"/><lit v="true"/></let>
 	  </when>
 	</choose>
         <out>
@@ -2965,6 +2961,38 @@ might:might<vaux><inf>
                   <lit v="el"/>
                   <lit-tag v="pr"/>
                 </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA NUM times NUM  5 times 8 => 5 oble 8 ">
+      <pattern>
+        <pattern-item n="num_sen_ord"/>
+        <pattern-item n="times"/>
+        <pattern-item n="num_sen_ord"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="num" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+                  <lit v="oble"/>
+                  <lit-tag v="adv"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
           </chunk>
         </out>
       </action>

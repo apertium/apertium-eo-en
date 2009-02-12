@@ -18092,6 +18092,22 @@
 <e lm="on Saturdays">       <i>on<b/>Saturdays</i><par n="maybe__adv"/></e>
 <e lm="on Sundays">         <i>on<b/>Sundays</i><par n="maybe__adv"/></e>
 
+
+<!-- Aldonoj Jacob 2009/02/12 -->
+
+<e lm="plus">         <i>plus</i><par n="after__cnjadv"/></e>
+<e lm="minus">         <i>minus</i><par n="after__cnjadv"/></e>
+<e lm="times">         <i>times</i><par n="after__cnjadv"/></e>
+<e lm="divided by">         <i>divided<b/>by</i><par n="after__cnjadv"/></e>
+
+<e lm="be over">            <i></i><par n="/be__vbser"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
+
+<e lm="take over">            <i>t</i><par n="t/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
+<e lm="hand over">            <i>hand</i><par n="accept__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
+
+<e lm="over and over">  <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
+
+
 	</section>
 	<section id="final" type="inconditional">
 <e i="">                      <par n="separa"/></e>
