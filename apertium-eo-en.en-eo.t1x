@@ -1568,44 +1568,6 @@ sort -t '"' -k 3 x
 
 
 
-    <rule comment="REGLA all of X      all of us => ni ĉiuj; It was fun for all of them => Ĝi estis amuza por ili ĉiu. ">
-      <pattern>
-        <pattern-item n="all"/>
-        <pattern-item n="of"/>
-        <pattern-item n="prnpers__sen_singularo"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="prn" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><lit-tag v="nom"/></tag>
-            </tags>
-            <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_prn__sen__subj_obj"/>
-              <clip pos="3" side="tl" part="a_prs"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <clip pos="3" side="tl" part="a_nbr"/>
-              <lit-tag v="2"/>
-            </lu>
-              <b pos="1"/>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_prn"/>
-              <lit-tag v="pl"/>
-              <lit-tag v="2"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-
-
 
     <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>

@@ -160,11 +160,12 @@
 <pardef n="cometa">
 <e>                           <par n="aposchar"/><p><l></l> <r><s n="apos"/></r></p></e>
 </pardef>
-    
+
 <pardef n="numeros">
 <e>                           <re>[0-9]+([.,][0-9]+)?</re><p><l></l><r><s n="num"/></r></p></e>
 <e>                           <re>[0-9]+([.,][0-9]+)?%</re><p><l></l><r><s n="num"/><s n="percent"/></r></p></e>
 </pardef>
+
     <!-- Years -->
 <pardef n="years">
 <e>                           <!--      <i>the<b/></i> -->
