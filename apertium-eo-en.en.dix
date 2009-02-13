@@ -591,6 +591,7 @@
 <pardef n="east__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="personnel__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
@@ -2474,9 +2475,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Japanese">             <i>Japanese</i><par n="expensive__adj"/></e>
 <e lm="Javier">               <i>Javier</i><par n="Mark__np"/></e>
 <e lm="Jerónimo">             <i>Jerónimo</i><par n="Mark__np"/></e>
-<e lm="Jesus">                <i>Jesus</i><par n="Mark__np"/></e>
 <e lm="Jesus">                <i>Jesus</i><par n="James__np"/></e>
-<e lm="Jesús">                <i>Jesús</i><par n="Mark__np"/></e>
 <e lm="Jesús">                <i>Jesús</i><par n="James__np"/></e>
 <e lm="Jordan">               <i>Jordan</i><par n="Mark__np"/></e>
 <e lm="Jordan">               <i>Jordan</i><par n="Mary__np"/></e>
@@ -8680,7 +8679,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="swan">                 <i>swan</i><par n="house__n"/></e>
 <e lm="sweep">                <i>swe</i><par n="ke/ep__vblex"/></e>
 <e lm="sweat">                <i>sweat</i><par n="east__n"/></e>
-<e lm="sweat">                <i>sweat</i><par n="house__n"/></e>
 <e lm="sweat">                <i>sweat</i><par n="accept__vblex"/></e>
 <e lm="sweater">              <i>sweater</i><par n="house__n"/></e>
 <e lm="sweet">                <i>sweet</i><par n="house__n"/></e>
@@ -10668,7 +10666,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="charismatic">          <i>charismatic</i><par n="expensive__adj"/></e>
 <e lm="charitable">           <i>charitable</i><par n="expensive__adj"/></e>
 <e lm="charlatan">            <i>charlatan</i><par n="house__n"/></e>
-<e lm="Charles">              <i>Charles</i><par n="Mark__np"/></e>
 <e lm="Charles">              <i>Charles</i><par n="James__np"/></e>
 <e lm="chartered">            <i>chartered</i><par n="expensive__adj"/></e>
 <e lm="chastise">             <i>chastis</i><par n="liv/e__vblex"/></e>
@@ -10880,7 +10877,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="complement">           <i>complement</i><par n="accept__vblex"/></e>
 <e lm="complementarity">      <i>complementarit</i><par n="bab/y__n"/></e>
 <e lm="completeness">         <i>completeness</i><par n="east__n"/></e>
-<e lm="completeness">         <i>completeness</i><par n="house__n"/></e>
 <e lm="complexity">           <i>complexit</i><par n="bab/y__n"/></e>
 <e lm="compliance">           <i>compliance</i><par n="house__n"/></e>
 <e lm="compliant">            <i>compliant</i><par n="expensive__adj"/></e>
@@ -12124,7 +12120,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fragrant">             <i>fragrant</i><par n="expensive__adj"/></e>
 <e lm="franchise">            <i>franchise</i><par n="house__n"/></e>
 <e lm="franchisee">           <i>franchisee</i><par n="house__n"/></e>
-<e lm="Francis">              <i>Francis</i><par n="Mark__np"/></e>
 <e lm="Francis">              <i>Francis</i><par n="James__np"/></e>
 <e lm="Frank">                <i>Frank</i><par n="Mark__np"/></e>
 <e lm="frank">                <i>frank</i><par n="expensive__adj"/></e>
@@ -12141,9 +12136,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="frequent">             <i>frequent</i><par n="accept__vblex"/></e>
 <e lm="fresco">               <i>fresco</i><par n="archipelago__n"/></e>
 <e lm="freshen">              <i>freshen</i><par n="accept__vblex"/></e>
-<e lm="friendliness">         <i>friendliness</i><par n="access__n"/></e>
 <e lm="friendliness">         <i>friendliness</i><par n="east__n"/></e>
-<e lm="friendliness">         <i>friendliness</i><par n="house__n"/></e>
 <e lm="friendly">             <i>friendl</i><par n="happ/y__adj"/></e>
 <e lm="frigidity">            <i>frigidit</i><par n="bab/y__n"/></e>
 <e lm="fringe">               <i>fring</i><par n="liv/e__vblex"/></e>
@@ -15241,9 +15234,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="stepdaughter">         <i>stepdaughter</i><par n="house__n"/></e>
 <e lm="Stephen">              <i>Stephen</i><par n="Mark__np"/></e>
 <e lm="stepmother">           <i>stepmother</i><par n="house__n"/></e>
-<e lm="steppe">               <i>steppe</i><par n="east__n"/></e>
 <e lm="steppe">               <i>steppe</i><par n="house__n"/></e>
-<e lm="steppe">               <i>steppe</i><par n="east__n"/></e>
 <e lm="stepson">              <i>stepson</i><par n="house__n"/></e>
 <e lm="stereotype">           <i>stereotyp</i><par n="liv/e__vblex"/></e>
 <e lm="stereotyping">         <i>stereotyping</i><par n="house__n"/></e>
@@ -15554,7 +15545,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="thinker">              <i>thinker</i><par n="house__n"/></e>
 <e lm="thirdly">              <i>thirdly</i><par n="maybe__adv"/></e>
 <e lm="thirst">               <i>thirst</i><par n="accept__vblex"/></e>
-<e lm="Thomas">               <i>Thomas</i><par n="Mark__np"/></e>
 <e lm="Thomas">               <i>Thomas</i><par n="James__np"/></e>
 <e lm="Thomas">               <i>Thomas</i><par n="Ifans__np"/></e>
 <e lm="thorough">             <i>thorough</i><par n="expensive__adj"/></e>
@@ -16021,7 +16011,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="warily">               <i>warily</i><par n="maybe__adv"/></e>
 <e lm="warming">              <i>warming</i><par n="house__n"/></e>
 <e lm="warmth">               <i>warmth</i><par n="east__n"/></e>
-<e lm="warmth">               <i>warmth</i><par n="house__n"/></e>
 <e lm="warp">                 <i>warp</i><par n="house__n"/></e>
 <e lm="warrant">              <i>warrant</i><par n="house__n"/></e>
 <e lm="warrior">              <i>warrior</i><par n="house__n"/></e>
