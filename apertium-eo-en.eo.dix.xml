@@ -131,6 +131,39 @@
       -->
 </pardef>
 
+
+    <pardef n="DNA__n">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
+    </pardef>
+
+
+
 <pardef n="BBC__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p></e>
 <!-- TODO Fix this!!
@@ -140,6 +173,26 @@
 <e r="RL">                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
 </pardef>
+
+
+<pardef n="acronimos">
+<!--  TODO FIX!
+<e>                           <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+-->
+<e>                           <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
+<e>                           <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
+</pardef>
+
+
 
 <pardef n="Ifans__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -560,36 +613,6 @@
 
 
 
-    <pardef n="DNA__n">
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="n"/><s n="sg"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="n"/><s n="pl"/><s n="nom"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="n"/><s n="sg"/><s n="acc"/></r> 
-      </p>
-    </e>
-
-    <e>
-      <p>
-        <l></l> 
-        <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
-      </p>
-    </e>
-    </pardef>
-
 
 
     <pardef n="nom__n">
@@ -680,6 +703,45 @@
       </p>
     </e>
     </pardef>
+
+
+
+
+    <pardef n="nomACR__n">
+    <e>
+      <p>
+        <l></l> 
+        <r><s n="n"/><s n="sg"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>-oj</l> 
+        <r><s n="n"/><s n="pl"/><s n="nom"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>-on</l> 
+        <r><s n="n"/><s n="sg"/><s n="acc"/></r> 
+      </p>
+    </e>
+
+    <e>
+      <p>
+        <l>-ojn</l> 
+        <r><s n="n"/><s n="pl"/><s n="acc"/></r> 
+      </p>
+    </e>
+    </pardef>
+
+
+
+
+
+
 
 
     <pardef n="la__det">
@@ -24568,6 +24630,11 @@
 <e lm="U.N.">                 <i>U.N.</i><par n="BBC__n"/></e>
 <e lm="UEFA">                 <i>UEFA</i><par n="BBC__n"/></e>
 <e lm="UN">                   <i>UN</i><par n="BBC__n"/></e>
+<e lm="US">                   <i>US</i><par n="BBC__n"/></e>
+<e lm="U.S.">                 <i>U.S.</i><par n="BBC__n"/></e>
+<e lm="UK">                   <i>UK</i><par n="BBC__n"/></e>
+<e lm="U.K.">                 <i>U.K.</i><par n="BBC__n"/></e>
+<e lm="EU">                   <i>EU</i><par n="BBC__n"/></e>
 
 <e>                           <i>Agostinacchio</i><par n="Smith__np"/></e>
 <e>                           <i>Almunia<b/>Amann</i><par n="Smith__np"/></e>
@@ -24669,6 +24736,13 @@
 <e lm="transpreni"><i>transpren</i><par n="verb__vblex"/></e>
 
 <e lm="denove kaj denove"><i>denove<b/>kaj<b/>denove</i><par n="komence__adv"/></e>
+<e>                           <par n="acronimos"/></e>
+
+<e lm="Apple">             <i>Apple</i><par n="Linux__np"/></e>
+<e lm="Linukso">             <i>Linukso</i><par n="Linux__np"/></e>
+<e lm="Macintosh.">        <i>Macintosh</i><par n="Linux__np"/></e>
+<e lm="KD">                <i>KD</i><par n="nomACR__n"/></e>
+
 
   </section>
 

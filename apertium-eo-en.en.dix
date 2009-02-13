@@ -807,6 +807,13 @@
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/></r></p></e>
 </pardef>
 
+<pardef n="acronimos">
+<e>                           <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+<e>                           <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
+</pardef>
+
 
 
 <pardef n="Linux__np">
@@ -2634,7 +2641,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Swiss">                <i>Swiss</i><par n="expensive__adj"/></e>
 <e lm="Switzerland">          <i>Switzerland</i><par n="Barcelona__np"/></e>
 <e lm="Syria">                <i>Syria</i><par n="Barcelona__np"/></e>
-<e lm="TV">                   <i>TV</i><par n="BBC__n"/></e>
 <e lm="Taiwan">               <i>Taiwan</i><par n="Barcelona__np"/></e>
 <e lm="Tanzania">             <i>Tanzania</i><par n="Barcelona__np"/></e>
 <e lm="Thailand">             <i>Thailand</i><par n="Barcelona__np"/></e>
@@ -16419,6 +16425,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="U.N.">                 <i>U.N.</i><par n="BBC__n"/></e>
 <e lm="UEFA">                 <i>UEFA</i><par n="BBC__n"/></e>
 <e lm="UN">                   <i>UN</i><par n="BBC__n"/></e>
+<e lm="US">                   <i>US</i><par n="BBC__n"/></e>
+<e lm="U.S.">                 <i>U.S.</i><par n="BBC__n"/></e>
+<e lm="UK">                   <i>UK</i><par n="BBC__n"/></e>
+<e lm="U.K.">                 <i>U.K.</i><par n="BBC__n"/></e>
+<e lm="EU">                   <i>EU</i><par n="BBC__n"/></e>
 
 <e lm="Palestinian">            <i>Palestinian</i><par n="house__n"/></e>
 <e lm="Palestinian">            <i>Palestinian</i><par n="expensive__adj"/></e>
@@ -16474,26 +16485,33 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="over and over">  <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
 
+<e>                           <par n="acronimos"/></e>
 
-	</section>
-	<section id="final" type="inconditional">
+<e lm="Apple">             <i>Apple</i><par n="Linux__np"/></e>
+<e lm="Linux">             <i>Linux</i><par n="Linux__np"/></e>
+<e lm="Macintosh.">        <i>Macintosh</i><par n="Linux__np"/></e>
+
+<e lm="CD">                <i>CD</i><par n="house__n"/></e>
+<e lm="TV">                <i>TV</i><par n="house__n"/></e>
+
+
+</section>
+
+<section id="final" type="inconditional">
 <e i="">                      <par n="separa"/></e>
 <e i="">                      <par n="numeros"/></e>
 <e i="">                      <par n="coma"/></e>
 <e i="">                      <par n="cometa"/></e>
 <!--  ( and ) should just be treated as white space and therefore not analyzed
-                              <e i="">
-        <par n="paresq"/>
-      </e>
-                              <e i="">
-        <par n="pardret"/>
-      </e>
+<e i=""><par n="paresq"/></e>
+<e i=""><par n="pardret"/></e>
 -->
 <e i="">                      <par n="guionet"/></e>
 <e i="">                      <par n="emails"/></e>
 <e i="">                      <par n="urls"/></e>
-	</section>
-	<section id="apostrophe" type="preblank">
+</section>
+
+<section id="apostrophe" type="preblank">
 <e>                           <p><l>'s</l>                  <r>'s<s n="gen"/></r></p></e>
-	</section>
+</section>
 </dictionary>

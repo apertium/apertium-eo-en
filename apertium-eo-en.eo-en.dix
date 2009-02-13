@@ -868,7 +868,7 @@ BUT:
 <e>       <i>GCompris<s n="np"/><s n="al"/></i></e>
 <e>       <i>SVN<s n="np"/><s n="al"/></i></e>
 <e>       <i>Apertium<s n="np"/><s n="al"/></i></e>
-<e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l>    <r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
+<e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l><r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
 
 
 <e>       <p><l>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberiĝo<s n="np"/><s n="al"/></l><r>Zapatista<b/>National<b/>Liberation<b/>Army<s n="np"/><s n="al"/></r></p></e>
@@ -31408,7 +31408,6 @@ TODO??
 <e>       <i>cm<s n="n"/><s n="acr"/></i></e>
 <e>       <i>mm<s n="n"/><s n="acr"/></i></e>
 
-<e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/><s n="acr"/></r></p></e>
 
 
 
@@ -31462,6 +31461,13 @@ TODO??
 <e>       <i>U.N.<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UN<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UEFA<s n="n"/><s n="acr"/></i></e>
+<e>       <i>U.S.<s n="n"/><s n="acr"/></i></e>
+<e>       <i>US<s n="n"/><s n="acr"/></i></e>
+<e>       <i>U.K.<s n="n"/><s n="acr"/></i></e>
+<e>       <i>UK<s n="n"/><s n="acr"/></i></e>
+<e>       <i>EU<s n="n"/><s n="acr"/></i></e>
+
+
 
 <!-- Aldonoj Hèctor 2009/02/10 -->
 <e>       <p><l>ni<b/>ĉiuj<s n="prn"/><s n="tn"/></l>   <r>all<b/>of<b/>us<s n="prn"/><s n="tn"/></r></p></e>
@@ -31503,6 +31509,20 @@ TODO??
 <e><p><l>veki<s n="vblex"/></l>         <r>wake<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e><p><l>vekiĝi<s n="vblex"/></l>       <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
  
+
+<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
+
+
+<e>       <i>Apple<s n="np"/><s n="al"/></i></e>
+<e>       <i>Macintosh<s n="np"/><s n="al"/></i></e>
+
+<e>       <p><l>Linukso<s n="np"/><s n="al"/></l><r>Linux<s n="np"/><s n="al"/></r></p></e>
+
+<e>       <p><l>KD<s n="n"/></l><r>CD<s n="n"/></r></p></e>
+<e r="RL"><p><l>televido<s n="n"/></l><r>TV<s n="n"/></r></p></e>
 
 
 </section>
