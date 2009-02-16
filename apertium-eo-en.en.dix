@@ -192,7 +192,7 @@
 </pardef>
 
 <pardef n="proper_names">
-<e>                           <re>(Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>                           <re>(St|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
 </pardef>
 
 
@@ -9719,6 +9719,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <par n="ordinals"/></e>
   
 <e>                           <par n="proper_names"/></e>
+
+<e>                           <i>Miss</i><par n="east__n"/></e>
+<e>                           <i>Ms</i><par n="east__n"/></e>
+<e>                           <i>Mrs</i><par n="east__n"/></e>
+<e>                           <i>Dr</i><par n="east__n"/></e>
+<e>                           <i>Mr</i><par n="east__n"/></e>
+
+
 <e>                           <par n="years"/></e>
 <e>                           <par n="time"/></e>
 

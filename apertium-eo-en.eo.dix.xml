@@ -120,7 +120,7 @@
 
 
 <pardef n="proper_names">
-<e><re>(s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc1"/></e>
+<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc1"/></e>
 
                            <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
 
