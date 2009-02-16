@@ -32,6 +32,7 @@ dev/paradigm-chopper.py -text
 /en-eo.prob -text svneol=unset#unset
 /en-eo_oldtag.prob -text svneol=unset#unset
 /eo-en.prob -text svneol=unset#unset
+/hitparade-en.txt -text
 java/build.xml -text
 java/src/apertium_eo_en/AldonuCxiujnVortojn.java -text
 java/src/apertium_eo_en/Iloj.java -text
