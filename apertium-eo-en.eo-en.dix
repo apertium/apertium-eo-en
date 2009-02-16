@@ -136,6 +136,10 @@
 	<section id="main" type="standard">
 
 
+<!-- por eviti ke ili estas re-generitaj -->
+<e i="yes"><p><l>kvar-jara<s n="adj"/></l>              <r>four<s n="adj"/></r></p></e>
+<e i="yes"><p><l>ses-jara<s n="adj"/></l>               <r>six<s n="adj"/></r></p></e>
+<e i="yes"><p><l>du-jara<s n="adj"/></l>                <r>two<s n="adj"/></r></p></e>
 
 
 <!--
@@ -24376,7 +24380,6 @@ TODO??
 		<!-- Already is <e r="LR"><l>fundamenti<vblex></l><r>found<vblex></r></e> -->
 <e i="yes"><p><l>fundamenti<s n="vblex"/></l>          <r>found<s n="vblex"/></r></p></e>
 <e>       <p><l>fondinto<s n="n"/></l>                 <r>founder<s n="n"/></r></p></e>
-<e>       <p><l>kvar-jara<s n="adj"/></l>              <r>four<s n="adj"/></r></p></e>
 <e>       <p><l>vulpo<s n="n"/></l>                    <r>fox<s n="n"/></r></p></e>
 		<!-- Already is <e r="LR"><l>porcieto<n></l><r>fraction<n></r></e> -->
 <e i="yes"><p><l>porcieto<s n="n"/></l>                <r>fraction<s n="n"/></r></p></e>
@@ -33771,7 +33774,6 @@ TODO??
 <e r="LR"><p><l>sidigi<s n="vblex"/></l>               <r>sit<s n="vblex"/></r></p></e>
 		<!-- Already is <e r="LR"><l>situi<vblex></l><r>situate<vblex></r></e> -->
 <e i="yes"><p><l>situi<s n="vblex"/></l>               <r>situate<s n="vblex"/></r></p></e>
-<e>       <p><l>ses-jara<s n="adj"/></l>               <r>six<s n="adj"/></r></p></e>
 <e>       <p><l>sesdeka<s n="adj"/></l>                <r>sixtieth<s n="adj"/></r></p></e>
 <e>       <p><l>glitkuristo<s n="n"/></l>              <r>skater<s n="n"/></r></p></e>
 <e r="LR"><p><l>glitkuranto<s n="n"/></l>              <r>skater<s n="n"/></r></p></e>
@@ -36232,7 +36234,6 @@ TODO??
 <e>       <p><l>tordeca<s n="adj"/></l>                <r>twisting<s n="adj"/></r></p></e>
 <e r="LR"><p><l>torda<s n="adj"/></l>                  <r>twisting<s n="adj"/></r></p></e>
 <e r="RL"><p><l>pepi<s n="vblex"/></l>                 <r>twitter<s n="vblex"/></r></p></e>
-<e>       <p><l>du-jara<s n="adj"/></l>                <r>two<s n="adj"/></r></p></e>
 <e>       <p><l>dudirekta<s n="adj"/></l>              <r>two-way<s n="adj"/></r></p></e>
 		<!-- Already is <e r="LR"><l>sampoentiĝi<vblex></l><r>tie<vblex></r></e> -->
 <e i="yes"><p><l>sampoentiĝi<s n="vblex"/></l>         <r>tie<s n="vblex"/></r></p></e>

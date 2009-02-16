@@ -1017,8 +1017,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <pardef n="accept__vblex">
 <!--
--->
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="imp"/></r></p></e>
+-->
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="inf"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
@@ -12125,7 +12125,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fortnightly">          <i>fortnightly</i><par n="expensive__adj"/></e>
 <e lm="fortunate">            <i>fortunate</i><par n="expensive__adj"/></e>
 <e lm="founder">              <i>founder</i><par n="house__n"/></e>
-<e lm="four">                 <i>four</i><par n="expensive__adj"/></e>
 <e lm="fox">                  <i>fox</i><par n="access__n"/></e>
 <e lm="fragmentation">        <i>fragmentation</i><par n="house__n"/></e>
 <e lm="fragmented">           <i>fragmented</i><par n="expensive__adj"/></e>
@@ -15016,7 +15015,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="sip">                  <i>sip</i><par n="step__vblex"/></e>
 <e lm="sip">                  <i>sip</i><par n="house__n"/></e>
 <e lm="sit">                  <i>s</i><par n="s/it__vblex"/></e>
-<e lm="six">                  <i>six</i><par n="expensive__adj"/></e>
 <e lm="sixtieth">             <i>sixtieth</i><par n="expensive__adj"/></e>
 <e lm="skater">               <i>skater</i><par n="house__n"/></e>
 <e lm="skeletal">             <i>skeletal</i><par n="expensive__adj"/></e>
@@ -15737,7 +15735,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="twinkle">              <i>twinkl</i><par n="liv/e__vblex"/></e>
 <e lm="twisting">             <i>twisting</i><par n="expensive__adj"/></e>
 <e lm="twitter">              <i>twitter</i><par n="accept__vblex"/></e>
-<e lm="two">                  <i>two</i><par n="expensive__adj"/></e>
 <e lm="two-way">              <i>two-way</i><par n="expensive__adj"/></e>
 <e lm="typeface">             <i>typeface</i><par n="house__n"/></e>
 <e lm="typewriter">           <i>typewriter</i><par n="house__n"/></e>
@@ -22568,8 +22565,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
     <e lm="Shepherd"><i>Shepherd</i><par n="Smith__np"/></e>
 
 
-
-
+<!--
+<e lm="four">                 <i>four</i><par n="expensive__adj"/></e>
+<e lm="two">                  <i>two</i><par n="expensive__adj"/></e>
+-->
 
 
 	</section>
