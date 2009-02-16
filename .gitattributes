@@ -30,6 +30,7 @@ dev/freeling.en-open.dix -text
 dev/paradigm-chopper.py -text
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
+/en-eo_oldtag.prob -text svneol=unset#unset
 /eo-en.prob -text svneol=unset#unset
 java/build.xml -text
 java/src/apertium_eo_en/AldonuCxiujnVortojn.java -text
