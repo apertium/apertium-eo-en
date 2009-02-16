@@ -29,7 +29,7 @@
 <def-label name="DOVBLEX" closed="true">
     <tags-item lemma="do" tags="vblex.inf"/>
     <tags-item lemma="do" tags="vblex.pres"/>
-    <tags-item lemma="do" tags="vblex.pri.p3.sg"/>
+    <tags-item lemma="do" tags="vblex.pres.p3.sg"/>
     <tags-item lemma="do" tags="vblex.past"/>
   </def-label>
 
@@ -175,17 +175,17 @@
     <tags-item tags="vblex.pres"/>
     <tags-item tags="vblex.sep.pres"/>
     <tags-item tags="vbser.pres"/>
-    <tags-item tags="vblex.pri.*"/>
-    <tags-item tags="vblex.sep.pri.*"/>
-    <tags-item tags="vbser.pri.*"/>
+    <tags-item tags="vblex.pres.*"/>
+    <tags-item tags="vblex.sep.pres.*"/>
+    <tags-item tags="vbser.pres.*"/>
   </def-label>
   <def-label name="VHAVEPRES" closed="true">
     <tags-item tags="vbhaver.pres"/>
-    <tags-item tags="vbhaver.pri.*"/>
+    <tags-item tags="vbhaver.pres.*"/>
   </def-label>
    <def-label name="VMODPRES" closed="true">
     <tags-item tags="vbmod.pres"/>
-    <tags-item tags="vbmod.pri.*"/>
+    <tags-item tags="vbmod.pres.*"/>
   </def-label>
 
   <def-label name="VAUX" closed="true">
@@ -194,13 +194,13 @@
     <tags-item tags="vaux.past"/>
     <tags-item tags="vbdo.pres.*"/>
  <!-- <tags-item tags="vbdo.pres"/>
-    <tags-item tags="vbdo.pri.*"/>
+    <tags-item tags="vbdo.pres.*"/>
     <tags-item tags="vbdo.past"/>  -->
   </def-label>
 
  <def-label name="VDO" closed="true">
     <tags-item tags="vbdo.pres"/>
-    <tags-item tags="vbdo.pri.*"/>
+    <tags-item tags="vbdo.pres.*"/>
     <tags-item tags="vbdo.past"/>
   </def-label>
 
