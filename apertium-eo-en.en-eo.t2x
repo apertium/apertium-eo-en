@@ -88,6 +88,17 @@
         <pattern-item n="SN"/>
       </pattern>
       <action>
+<!--
+<jacobEo_> http://bugs.apertium.org/cgi-bin/bugzilla/show_bug.cgi?id=81
+<jacobEo_>           Summary: Case change doesn't work in interrogative sentences
+<spectie> jacobEo_, btw, you can use
+<spectie>            <modify-case>
+<spectie>              <clip pos="1" side="tl" part="lem"/>
+<spectie>              <lit v="aa"/>
+<spectie>            </modify-case>
+<spectie>            <out>
+-->
+
         <out>
 	  <chunk>
             <lit v="ĉu"/>
