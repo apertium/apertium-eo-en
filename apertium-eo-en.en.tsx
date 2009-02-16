@@ -96,6 +96,7 @@
   <def-label name="NOMSG">
     <tags-item tags="n.sg"/>
     <tags-item tags="n.acr.sg"/>
+    <tags-item tags="n.acr.sp"/>
     <tags-item tags="n.unc.sg"/>
   </def-label>
   <def-label name="NOMPL">
@@ -116,6 +117,7 @@
 </def-label>
   <def-label name="NPALTRES">
     <tags-item tags="np.al.*"/>
+    <tags-item tags="np.alpha.*"/> <!--   ?????? -->
   </def-label>
   <def-label name="PREDET" closed="true">
     <tags-item tags="predet.*"/>

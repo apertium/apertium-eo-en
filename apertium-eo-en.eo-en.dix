@@ -185,9 +185,18 @@
 
 
 <!-- We have some <s n="ant"/>'s so we cant do the same here:
+
+<e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
+<e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Petro<s n="np"/><s n="ant"/></l>       <r>Pedro<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Vaŝingtono<s n="np"/><s n="ant"/></l>  <r>Washington<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Victoria<s n="np"/><s n="ant"/></r></p></e>
+<e r="RL"><p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Viktorio<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Virginia<s n="np"/><s n="ant"/></l>    <r>Virginia<s n="np"/><s n="ant"/></r></p></e>
+
+-->
 <e>       <re>[A-Z][a-z]*</re><p><l><s n="np"/><s n="ant"/></l><r><s n="np"/><s n="ant"/></r></p></e>
 <e>       <i><s n="np"/><s n="ant"/></i></e>
--->
 
 
 <e>       <i>DNA<s n="n"/><s n="acr"/></i></e>
@@ -248,6 +257,8 @@
 <e>       <p><l>Linukso<s n="np"/><s n="al"/></l>      <r>Linux<s n="np"/><s n="al"/></r></p></e>
 <e>       <p><l>KD<s n="n"/></l>                       <r>CD<s n="n"/></r></p></e>
 <e r="RL"><p><l>televido<s n="n"/></l>                 <r>TV<s n="n"/></r></p></e>
+
+<e>       <p><l>Boeing<s n="np"/><s n="al"/></l>      <r>Boeing<s n="np"/><s n="al"/></r></p></e>
 
 
 
@@ -908,76 +919,8 @@ BUT:
 <e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l>    <r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
 <e>       <p><l>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberiĝo<s n="np"/><s n="al"/></l><r>Zapatista<b/>National<b/>Liberation<b/>Army<s n="np"/><s n="al"/></r></p></e>
 <e>       <i>ABC<b/>News<s n="np"/><s n="al"/></i></e>
-<e>       <p><l>Manuelo<s n="np"/></l>                 <r>Manuel<s n="np"/></r></p></e>
-<e>       <p><l>Maria<s n="np"/></l>                   <r>María<s n="np"/></r></p></e>
-<e>       <p><l>Marta<s n="np"/></l>                   <r>Marta<s n="np"/></r></p></e>
-<e>       <p><l>Marteno<s n="np"/></l>                 <r>Martín<s n="np"/></r></p></e>
-<e>       <i>Jaime<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Gerardo<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Paris<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Robert<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Louis<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Henry<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Harry<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Edward<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Jacob<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Christian<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Jimmy<s n="np"/><s n="ant"/></i></e>
-<e>       <i>May<s n="np"/><s n="ant"/></i></e>
-<e>       <i>August<s n="np"/><s n="ant"/></i></e>
-<e>       <i>German<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Jordan<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Kenia<s n="np"/><s n="ant"/></i></e>
-<e>       <i>April<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Diego<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Israel<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Izabela<s n="np"/><s n="ant"/></i></e>
-<e>       <i>Isabel<s n="np"/><s n="ant"/></i></e>
-<e>       <p><l>Agnesa<s n="np"/><s n="ant"/></l>      <r>Inés<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Bazilo<s n="np"/><s n="ant"/></l>      <r>Basilio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Dario<s n="np"/><s n="ant"/></l>       <r>Darío<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Davido<s n="np"/><s n="ant"/></l>      <r>David<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Eleonora<s n="np"/><s n="ant"/></l>    <r>Leonor<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Eliza<s n="np"/><s n="ant"/></l>       <r>Elisa<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Emilio<s n="np"/><s n="ant"/></l>      <r>Emilio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Eŭgeno<s n="np"/><s n="ant"/></l>      <r>Eugenio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Georgo<s n="np"/><s n="ant"/></l>      <r>Jorge<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Grecia<s n="np"/><s n="ant"/></l>      <r>Grecia<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Ignaco<s n="np"/><s n="ant"/></l>      <r>Ignacio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Ilza<s n="np"/><s n="ant"/></l>        <r>Elsa<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
-<e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Johano<s n="np"/><s n="ant"/></l>      <r>Juan<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Jozefo<s n="np"/><s n="ant"/></l>      <r>José<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Julia<s n="np"/><s n="ant"/></l>       <r>Julia<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Juliano<s n="np"/><s n="ant"/></l>     <r>Julián<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Júpiter<s n="np"/><s n="ant"/></l>     <r>Júpiter<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Ĵeromo<s n="np"/><s n="ant"/></l>      <r>Jerónimo<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Georgia<s n="np"/><s n="ant"/></l>     <r>Georgia<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Ludoviko<s n="np"/><s n="ant"/></l>    <r>Luis<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Helena<s n="np"/><s n="ant"/></l>      <r>Elena<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Henriko<s n="np"/><s n="ant"/></l>     <r>Enrique<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Klaŭdo<s n="np"/><s n="ant"/></l>      <r>Claudio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Kristoforo<s n="np"/><s n="ant"/></l>  <r>Cristóbal<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Ksavero<s n="np"/><s n="ant"/></l>     <r>Javier<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Laŭrenco<s n="np"/><s n="ant"/></l>    <r>Lorenzo<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Leo<s n="np"/><s n="ant"/></l>         <r>Leo<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Libia<s n="np"/><s n="ant"/></l>       <r>Libia<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Mahometo<s n="np"/><s n="ant"/></l>    <r>Mahoma<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Manuelo<s n="np"/><s n="ant"/></l>     <r>Manuel<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Maria<s n="np"/><s n="ant"/></l>       <r>María<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Marteno<s n="np"/><s n="ant"/></l>     <r>Martín<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Merkuro<s n="np"/><s n="ant"/></l>     <r>Mercurio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Mikaelo<s n="np"/><s n="ant"/></l>     <r>Miguel<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Nikolao<s n="np"/><s n="ant"/></l>     <r>Nicolás<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Pacífico<s n="np"/><s n="ant"/></l>    <r>Pacífico<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>París<s n="np"/><s n="ant"/></l>       <r>París<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Petro<s n="np"/><s n="ant"/></l>       <r>Pedro<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Siria<s n="np"/><s n="ant"/></l>       <r>Siria<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Suzana<s n="np"/><s n="ant"/></l>      <r>Susana<s n="np"/><s n="ant"/></r></p></e>
-<e c="MG: revisar"><p><l>Valencia<s n="np"/><s n="ant"/></l><r>Valencia<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Vaŝingtono<s n="np"/><s n="ant"/></l>  <r>Washington<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Vilhelmo<s n="np"/><s n="ant"/></l>    <r>Guillermo<s n="np"/><s n="ant"/></r></p></e>
+
+
 <e>       <p><l>Afganio<s n="np"/><s n="top"/></l>     <r>Afghanistan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Alĝerio<s n="np"/><s n="top"/></l>     <r>Algeria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ameriko<s n="np"/><s n="top"/></l>     <r>America<s n="np"/><s n="top"/></r></p></e>
@@ -36848,8 +36791,6 @@ TODO??
 <e>       <p><l>viktimigado<s n="n"/></l>              <r>victimisation<s n="n"/></r></p></e>
 <e>       <p><l>viktimigi<s n="vblex"/></l>            <r>victimise<s n="vblex"/></r></p></e>
 <e>       <p><l>Victor<s n="np"/></l>                  <r>Victor<s n="np"/></r></p></e>
-<e>       <p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Victoria<s n="np"/><s n="ant"/></r></p></e>
-<e r="RL"><p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Viktorio<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>video<s n="n"/></l>                    <r>video<s n="n"/></r></p></e>
 <e r="LR"><p><l>videofilmo<s n="n"/></l>               <r>video<s n="n"/></r></p></e>
 <e r="LR"><p><l>videobendo<s n="n"/></l>               <r>video<s n="n"/></r></p></e>
@@ -36885,7 +36826,6 @@ TODO??
 <e r="LR"><p><l>violkolora<s n="adj"/></l>             <r>violet<s n="adj"/></r></p></e>
 <e>       <p><l>virgulino<s n="n"/></l>                <r>virgin<s n="n"/></r></p></e>
 <e>       <p><l>Virginio<s n="np"/><s n="top"/></l>    <r>Virginia<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Virginia<s n="np"/><s n="ant"/></l>    <r>Virginia<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>virtuala<s n="adj"/></l>               <r>virtual<s n="adj"/></r></p></e>
 <e r="LR"><p><l>surreta<s n="adj"/></l>                <r>virtual<s n="adj"/></r></p></e>
 <e r="LR"><p><l>kvazaŭa<s n="adj"/></l>                <r>virtual<s n="adj"/></r></p></e>
