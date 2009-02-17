@@ -194,40 +194,8 @@
 
 
 <pardef n="ordinals">
-    <!--  Ill just comment out now, we can delete later then
-      <e>
-        <re>[1-9]?</re>
-        <p>
-          <l>1a</l>
-          <r>1a<s n="num"/><s n="ord"/></r>
-        </p>
-      </e>
-      <e>
-        <re>[0-9]?</re>
-        <p>
-          <l>2a</l>
-          <r>2a<s n="num"/><s n="ord"/></r>
-        </p>
-      </e>
-      <e>
-        <re>[0-9]?</re>
-        <p>
-          <l>3a</l>
-          <r>3a<s n="num"/><s n="ord"/></r>
-        </p>
-      </e>
-      <e>
-        <re>[0-9]?</re>
-        <p>
-          <l>4a</l>
-          <r>4a<s n="num"/><s n="ord"/></r>
-        </p>
-      </e>
-      -->
 <e>                           <re>([0-9]+)?</re><p><l>a</l> <r>a<s n="num"/><s n="ord"/></r></p></e>
 </pardef>
-
-
 
 
 <pardef n="time">
@@ -26216,7 +26184,6 @@
 <e lm="Jemimah">              <i>Jemimah</i><par n="Mary__np"/></e>
 <e lm="Jemima">               <i>Jemima</i><par n="Mary__np"/></e>
 <e lm="Jemma">                <i>Jemma</i><par n="Mary__np"/></e>
-<e lm="Jena">                 <i>Jena</i><par n="Mary__np"/></e>
 <e lm="Jenara">               <i>Jenara</i><par n="Mary__np"/></e>
 <e lm="Jenaro">               <i>Jenaro</i><par n="Mark__np"/></e>
 <e lm="Jenifer">              <i>Jenifer</i><par n="Mary__np"/></e>
@@ -26244,7 +26211,6 @@
 <e lm="Jesuana">              <i>Jesuana</i><par n="Mary__np"/></e>
 <e lm="Jesumina">             <i>Jesumina</i><par n="Mary__np"/></e>
 <e lm="Jesusa">               <i>Jesusa</i><par n="Mary__np"/></e>
-<e lm="Jesus">                <i>Jesus</i><par n="Mark__np"/></e>
 <e lm="Jett">                 <i>Jett</i><par n="Mark__np"/></e>
 <e lm="Jevon">                <i>Jevon</i><par n="Mark__np"/></e>
 <e lm="Jewel">                <i>Jewel</i><par n="Mary__np"/></e>
@@ -29187,6 +29153,9 @@
 <e lm="Stanislav Gross">      <i>Stanislav<b/>Gross</i><par n="James__np"/></e>
 <e lm="Tönis">                <i>Tönis</i><par n="James__np"/></e>
 <e lm="Jacques">              <i>Jacques</i><par n="James__np"/></e>
+
+<e lm="Jesus">                <i>Jesus</i><par n="Mark__np"/></e>
+<e lm="Jena">                 <i>Jena</i><par n="Mary__np"/></e>
 
      
 <e lm="White">                <i>White</i><par n="Ifans__np"/></e>
