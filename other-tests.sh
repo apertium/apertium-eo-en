@@ -11,6 +11,7 @@ LIST=`
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Proposed_future_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
 wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Rejected_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Regression_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
 `;
 fi
 

@@ -25713,22 +25713,20 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 	<!--      Please move all things you correct manually ABOVE line no 1800!   -->
 	<!-- ====================================================================== -->
 <e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
+<e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Petro<s n="np"/><s n="ant"/></l>       <r>Pedro<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Vaŝingtono<s n="np"/><s n="ant"/></l>  <r>Washington<s n="np"/><s n="ant"/></r></p></e>
 
 	</section>
 
 
 
 	<section id="tralalaa-what-to-write-here" type="standard">
- <!-- 
+<!-- 
 <e>       <i>Smith<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Hyde<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Jekyll<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Stevenson<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Lanyon<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Utterson<s n="np"/><s n="cog"/></i></e>
-<e>       <i>Poole<s n="np"/><s n="cog"/></i></e>
--->
-<!-- The trick below seems only to work when we don't translate ANY cognomens, to DONT uncomment the cognomens above. Jacob 3feb 09 -->
+The trick below seems only to work when we don't translate ANY cognomens, to DONT uncomment the cognomens above. Jacob 3feb 09 -->
 
 <!--
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
@@ -25737,16 +25735,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
 <e>       <par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
 
-<!-- Tiuj cxi eble igos nin estonto ne uzi regexp por trakti  <s n="ant"/>'ojn
-
-<e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Petro<s n="np"/><s n="ant"/></l>       <r>Pedro<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Vaŝingtono<s n="np"/><s n="ant"/></l>  <r>Washington<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Victoria<s n="np"/><s n="ant"/></r></p></e>
-<e r="RL"><p><l>Victoria<s n="np"/><s n="ant"/></l>    <r>Viktorio<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Virginia<s n="np"/><s n="ant"/></l>    <r>Virginia<s n="np"/><s n="ant"/></r></p></e>
-
--->
 
 <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
 <e>       <par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>

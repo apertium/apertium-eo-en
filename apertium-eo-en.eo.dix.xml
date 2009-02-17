@@ -111,7 +111,7 @@
 
 
 
-<pardef n="nomacc1">
+<pardef n="nomacc0">
 <e><p><l></l><r><s n="nom"/></r></p></e>
 <e><p><l></l><r><s n="acc"/></r></p></e>
 </pardef>
@@ -120,7 +120,7 @@
 
 
 <pardef n="proper_names">
-<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc1"/></e>
+<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 
                            <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
 
@@ -153,7 +153,7 @@
 <e r="RL">                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="acc"/></r></p></e>
 
 -->
-<e  r="RL">                    <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p><par n="nomacc1"/></e>
+<e  r="RL">                    <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 
@@ -520,19 +520,16 @@
 
 
 
-
 <pardef n="James__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc1"/></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 <pardef n="Mark__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 <pardef n="Mary__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 <pardef n="Smith__np">
@@ -540,15 +537,6 @@
 <e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
-
-      <!--
-      <e r="RL">
-        <p>
-          <l></l> 
-          <r><s n="np"/><s n="sg"/><s n="nom"/></r> 
-        </p>
-      </e>
-      -->
 </pardef>
 
 
@@ -675,6 +663,7 @@
 <e lm="lia">                  <i>li</i><par n="adj__adj"/></e>
 <e lm="nia">                  <i>ni</i><par n="adj__adj"/></e>
 <e lm="ilia">                 <i>ili</i><par n="adj__adj"/></e>
+
 <e lm="plia">                 <i>plia</i><par n="tio__prn"/></e>
 <e lm="pli">                  <i>pli</i><par n="vere__preadv"/></e>
 <e lm="plej">                 <i>plej</i><par n="vere__preadv"/></e>
