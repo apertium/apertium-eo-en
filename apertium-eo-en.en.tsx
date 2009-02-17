@@ -33,13 +33,13 @@
     <tags-item lemma="do" tags="vblex.past"/>
   </def-label>
 
-
-  <def-label name="VERBS_DISCURS" closed="true">
+<!--
+  <def-label name="VERBS_DISCURS_PP" closed="true">
     <tags-item lemma="say" tags="vblex.pp"/>
     <tags-item lemma="explain" tags="vblex.pp"/>
     <tags-item lemma="add" tags="vblex.pp"/>
     <tags-item lemma="tell" tags="vblex.pp"/>
-  </def-label>
+  </def-label>-->
 
   <def-label name="INTNOM" closed="true">
     <tags-item tags="prn.itg.*"/>
@@ -78,7 +78,7 @@
     <tags-item tags="det.ind.*"/>
     <tags-item tags="det.def.*"/>
     <tags-item tags="det.pos.*"/>
-    <tags-item tags="det.itg.*"/>
+    <tags-item tags="det.itg.*"/> 
   </def-label>
 <def-label name="DETQNT_ORD" closed="true"><!--Poden anar precedits dels altres tipus de determinant -->
     <tags-item tags="det.qnt.*"/>
@@ -104,6 +104,7 @@
     <tags-item tags="n.acr.pl"/>
     <tags-item tags="n.unc.pl"/>
   </def-label>
+  
   <def-label name="INTERJ">
     <tags-item tags="ij"/>
   </def-label>
@@ -146,7 +147,7 @@
   </def-label>
   <def-label name="VHAVEPP" closed="true">
     <tags-item tags="vbhaver.pp"/>
-  </def-label><!--Aquest té sentit? l'auxiliar no té forma 'pp' no? -->
+  </def-label><!--Aquest t?? sentit? l'auxiliar no t?? forma 'pp' no? -->
 
 
   <def-label name="PAST">
@@ -194,7 +195,6 @@
     <tags-item tags="vaux.inf"/>
     <tags-item tags="vaux.pres"/>
     <tags-item tags="vaux.past"/>
-    <tags-item tags="vbdo.pres.*"/>
  <!-- <tags-item tags="vbdo.pres"/>
     <tags-item tags="vbdo.pres.*"/>
     <tags-item tags="vbdo.past"/>  -->
@@ -207,7 +207,7 @@
   </def-label>
 
 
- <def-label name="GER"><!--Per ara no distingim entre 'ger', 'pprs' i 'subs' pq cal estudiar-ho amb atenció i fer restriccions. -->
+ <def-label name="GER"><!--Per ara no distingim entre 'ger', 'pprs' i 'subs' pq cal estudiar-ho amb atenci?? i fer restriccions. -->
     <tags-item tags="vblex.ger"/>
     <tags-item tags="vblex.sep.ger"/>
     <tags-item tags="vblex.pprs"/>
@@ -240,6 +240,9 @@
   </def-label>
   <def-label name="RELAN" closed="true">
     <tags-item tags="rel.an.*"/>
+  </def-label>
+  <def-label name="RELAA" closed="true">
+    <tags-item tags="rel.aa.*"/>
   </def-label>
   <def-label name="RELNN" closed="true">
     <tags-item tags="rel.nn.*"/>
@@ -274,6 +277,14 @@
       <label-item label="PRNALTRES"/>
       <label-item label="NOMPL"/>
     </label-sequence>
+    <label-sequence>
+      <label-item label="PRNALTRES"/>
+      <label-item label="CANNOM"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="PRNALTRES"/>
+      <label-item label="WILLNOM"/>
+    </label-sequence>
    <label-sequence>
       <label-item label="VHAVEPP"/>
       <label-item label="PAST"/>
@@ -282,7 +293,7 @@
       <label-item label="VHAVEPP"/>
       <label-item label="INF"/>
     </label-sequence>
-  <!--   <label-sequence> Ho trec perquè ja hi ha un enforce-after que fa el mateix
+  <!--   <label-sequence> Ho trec perqu?? ja hi ha un enforce-after que fa el mateix
       <label-item label="VHAVEPAST"/>
       <label-item label="PAST"/>
     </label-sequence>
@@ -319,10 +330,10 @@
       <label-item label="PRNSUBJ"/>
       <label-item label="VLEXPP"/>
     </label-sequence> 
-    <label-sequence>
+  <!--  <label-sequence>
       <label-item label="PRNSUBJ"/>
-      <label-item label="VERBS_DISCURS"/>
-    </label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>
+    </label-sequence> -->
     <label-sequence>
       <label-item label="PRNSUBJ"/>
       <label-item label="VSERPP"/>
@@ -347,6 +358,14 @@
     <label-sequence>
       <label-item label="PRNSUBJ"/>
       <label-item label="NOMPL"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="PRNSUBJ"/>
+      <label-item label="CANNOM"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="PRNSUBJ"/>
+      <label-item label="WILLNOM"/>
     </label-sequence>
     <label-sequence>
       <label-item label="PRNSUBJ"/>
@@ -429,10 +448,10 @@
       <label-item label="RELAN"/>
       <label-item label="VHAVEPP"/>      
     </label-sequence>
-    <label-sequence>
+  <!--  <label-sequence>
       <label-item label="RELAN"/>
-      <label-item label="VERBS_DISCURS"/>      
-    </label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>      
+    </label-sequence> -->
     <label-sequence><!--no estic segura que aquesta prohib sigui adequada per a tots els rel 'nn' -->
       <label-item label="RELNN"/>
       <label-item label="VLEXPP"/>    
@@ -449,14 +468,14 @@
       <label-item label="RELNN"/>
       <label-item label="VHAVEPP"/>      
     </label-sequence>
-    <label-sequence>
+ <!--   <label-sequence>
       <label-item label="RELNN"/>
-      <label-item label="VERBS_DISCURS"/>      
-    </label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>      
+    </label-sequence> -->
 
  
 
-    <label-sequence><!--'Visitors who wanted to come', pq esculli el rel (no obstant, es farà malament: ask visitors who is the first) -->
+    <label-sequence><!--'Visitors who wanted to come', pq esculli el rel (no obstant, es far?? malament: ask visitors who is the first) -->
       <label-item label="NOMSG"/>
       <label-item label="INTNOM"/>      
     </label-sequence>
@@ -478,10 +497,10 @@
       <label-item label="ANTROPONIM"/>
       <label-item label="VLEXPP"/>
     </label-sequence>
-    <label-sequence>
+  <!--  <label-sequence>
       <label-item label="ANTROPONIM"/>
-      <label-item label="VERBS_DISCURS"/>
-    </label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>
+    </label-sequence> -->
     <label-sequence>
       <label-item label="ANTROPONIM"/>
       <label-item label="VSERPP"/>
@@ -494,10 +513,10 @@
       <label-item label="TOPONIM"/>
       <label-item label="VLEXPP"/>
     </label-sequence> 
-    <label-sequence>
+ <!--   <label-sequence>
       <label-item label="TOPONIM"/>
-      <label-item label="VERBS_DISCURS"/>
-    </label-sequence> 
+      <label-item label="VERBS_DISCURS_PP"/>
+    </label-sequence>  -->
     <label-sequence>
       <label-item label="TOPONIM"/>
       <label-item label="VSERPP"/>
@@ -510,10 +529,10 @@
       <label-item label="NPALTRES"/>
       <label-item label="VLEXPP"/>
     </label-sequence>
-    <label-sequence>
+  <!--  <label-sequence>
       <label-item label="NPALTRES"/>
-      <label-item label="VERBS_DISCURS"/>
-    </label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>
+    </label-sequence> -->
     <label-sequence>
       <label-item label="NPALTRES"/>
       <label-item label="VSERPP"/>
@@ -545,6 +564,14 @@
     <label-sequence>
       <label-item label="ADJPOS"/>
       <label-item label="NOMPL"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="ADJPOS"/>
+      <label-item label="CANNOM"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="ADJPOS"/>
+      <label-item label="WILLNOM"/>
     </label-sequence>
     <label-sequence>
       <label-item label="PRNSUBJ"/>
@@ -739,7 +766,7 @@
       <label-item label="DET"/>
       <label-item label="VAUX"/>
     </label-sequence>
-  <!--  <label-sequence><!-x-MG: soluciona "popular will." però no: yes, they will. Pensar-hi millor. -x->
+  <!--  <label-sequence><!-x-MG: soluciona "popular will." per?? no: yes, they will. Pensar-hi millor. -x->
       <label-item label="VAUX"/>
       <label-item label="SENT"/>
     </label-sequence> -->
@@ -769,25 +796,41 @@
       <label-item label="NOADV"/>
       <label-item label="NOMPL"/>
     </label-sequence>
-
     <label-sequence>
+      <label-item label="NOADV"/>
+      <label-item label="CANNOM"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="NOADV"/>
+      <label-item label="WILLNOM"/>
+    </label-sequence>
+
+  <!--  <label-sequence>
       <label-item label="VERBS_DISCURS"/>
       <label-item label="NOMPL"/>
     </label-sequence>
     <label-sequence>
       <label-item label="VERBS_DISCURS"/>
       <label-item label="NOMSG"/>
-    </label-sequence>
-    <label-sequence>
+    </label-sequence> -->
+   <!-- <label-sequence>
       <label-item label="CM"/>
-      <label-item label="VERBS_DISCURS"/>
-    </label-sequence>
-    <label-sequence>
+      <label-item label="VERBS_DISCURS_PP"/>
+    </label-sequence> -->
+   <!-- <label-sequence>
       <label-item label="VERBS_DISCURS"/>
       <label-item label="DET"/>
     </label-sequence>
     <label-sequence>
       <label-item label="VERBS_DISCURS"/>
+      <label-item label="DETQNT_ORD"/>
+    </label-sequence>-->
+    <label-sequence>
+      <label-item label="PRNSUBJ"/>
+      <label-item label="GEN"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="INTNOM"/>
       <label-item label="DETQNT_ORD"/>
     </label-sequence>
 
@@ -799,17 +842,17 @@
     <enforce-after label="VHAVEPAST">
       <label-set>
         <label-item label="VLEXPP"/>
-        <label-item label="VERBS_DISCURS"/>
+       <!-- <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
 	<label-item label="ADV"/>
 	<label-item label="NOT"/>
-	<label-item label="PRNSUBJ"/><!--per a interrogatives i altres inversions. Llavors caldria afegir més categories aquí o fer canvis en el transfer (had the man finished vs. they had the book) -->
+	<label-item label="PRNSUBJ"/><!--per a interrogatives i altres inversions. Llavors caldria afegir m??s categories aqu?? o fer canvis en el transfer (had the man finished vs. they had the book) -->
       </label-set>
     </enforce-after>
     <enforce-after label="VHAVEINF">
       <label-set>
         <label-item label="VLEXPP"/>
-        <label-item label="VERBS_DISCURS"/>
+      <!--  <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
 	<label-item label="ADV"/>
       </label-set>
@@ -817,17 +860,17 @@
      <enforce-after label="VHAVEPRES">
       <label-set>
         <label-item label="VLEXPP"/>
-        <label-item label="VERBS_DISCURS"/>
+    <!--    <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
 	<label-item label="ADV"/>
 	<label-item label="NOT"/>
-	<label-item label="PRNSUBJ"/><!--ídem més amunt -->
+	<label-item label="PRNSUBJ"/><!--??dem m??s amunt -->
       </label-set>
     </enforce-after>
      <enforce-after label="VHAVE">
       <label-set>
         <label-item label="VLEXPP"/>
-        <label-item label="VERBS_DISCURS"/>
+       <!-- <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
 	<label-item label="ADV"/>
 	<label-item label="NOT"/>
@@ -838,8 +881,36 @@
       <label-set>
         <label-item label="NOMSG"/>
         <label-item label="NOMPL"/>
+        <label-item label="CANNOM"/>
+        <label-item label="WILLNOM"/>
 	<label-item label="ADJ"/>
 	<label-item label="DET"/>
+      </label-set>
+    </enforce-after>
+
+     <enforce-after label="GEN">
+      <label-set>
+        <label-item label="NOMSG"/>
+        <label-item label="NOMPL"/>
+        <label-item label="CANNOM"/>
+        <label-item label="WILLNOM"/>
+	<label-item label="ADJ"/>
+	<label-item label="DETQNT_ORD"/>
+	<label-item label="NUM"/>
+	<label-item label="ANTROPONIM"/>
+	<label-item label="TOPONIM"/>
+	<label-item label="NPALTRES"/>
+      </label-set>
+    </enforce-after>
+     <enforce-after label="RELAA">
+      <label-set>
+        <label-item label="NOMSG"/>
+        <label-item label="NOMPL"/>
+        <label-item label="CANNOM"/>
+        <label-item label="WILLNOM"/>
+	<label-item label="ADJ"/>
+	<label-item label="DET"/>
+	<label-item label="DETQNT_ORD"/>
       </label-set>
     </enforce-after>
 
@@ -932,12 +1003,14 @@
 	<label-item label="CM"/>
       </label-set>
     </enforce-after> -->
-
-
- 
-   
+  
 
  </enforce-rules>
+
+
+ <preferences>
+   <prefer tags="n.acr.sg"/>
+ </preferences>
 
 
 </tagger>
