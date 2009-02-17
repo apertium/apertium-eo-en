@@ -21,7 +21,7 @@
 
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
 
-    <def-cat n="please"><cat-item lemma="please" tags="vblex.*"/></def-cat>
+    <def-cat n="please"><cat-item lemma="please" tags="vblex.*"/><cat-item lemma="please" tags="adv"/></def-cat>
 
 
 

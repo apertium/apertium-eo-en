@@ -269,6 +269,18 @@
 </tagset>
 
  <forbid>
+
+    <label-sequence>
+      <label-item label="NOMSG"/>
+      <label-item label="INF"/>      
+    </label-sequence>
+    <label-sequence>
+      <label-item label="NOMPL"/>
+      <label-item label="INF"/>      
+    </label-sequence>
+
+
+
     <label-sequence>
       <label-item label="PRNALTRES"/>
       <label-item label="NOMSG"/>
@@ -293,38 +305,6 @@
       <label-item label="VHAVEPP"/>
       <label-item label="INF"/>
     </label-sequence>
-  <!--   <label-sequence> Ho trec perqu?? ja hi ha un enforce-after que fa el mateix
-      <label-item label="VHAVEPAST"/>
-      <label-item label="PAST"/>
-    </label-sequence>
-    <label-sequence>
-      <label-item label="VHAVEPAST"/>
-      <label-item label="INF"/>
-    </label-sequence>
-    <label-sequence>
-      <label-item label="VHAVEINF"/>
-      <label-item label="PAST"/>
-    </label-sequence>
-     <label-sequence>
-      <label-item label="VHAVEINF"/>
-      <label-item label="INF"/>
-    </label-sequence>
-     <label-sequence>
-      <label-item label="VHAVEPRES"/>
-      <label-item label="PAST"/>
-    </label-sequence>
-    <label-sequence>
-      <label-item label="VHAVEPRES"/>
-      <label-item label="INF"/>
-    </label-sequence>
-     <label-sequence>
-      <label-item label="VHAVE"/>
-      <label-item label="PAST"/>
-    </label-sequence>
-    <label-sequence>
-      <label-item label="VHAVE"/>
-      <label-item label="INF"/>
-    </label-sequence>-->
 
     <label-sequence>
       <label-item label="PRNSUBJ"/>
@@ -1010,6 +990,7 @@
 
  <preferences>
    <prefer tags="n.acr.sg"/>
+<!--   <prefer tags="vblex.pres"/> -->
  </preferences>
 
 
