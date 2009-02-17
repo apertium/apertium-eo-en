@@ -22622,6 +22622,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Zulma">                <i>Zulma</i><par n="Mary__np"/></e>
 <e lm="Zulmara">              <i>Zulmara</i><par n="Mary__np"/></e>
 <e lm="Zunilda">              <i>Zunilda</i><par n="Mary__np"/></e>
+
+<!-- Tiuj cxi sekvaj havas r="RL" cxar ili jes estas propraj nomoj, sed prefere
+     ili estu tradukitaj, ol riski ke la senambiguilo misrekonas o-vorton 
+     kiel propra nomo kaj tiel ne tradukas gxin. Jacob 17feb2009. -->
 <e r="RL" lm="Prince">        <i>Prince</i><par n="Mark__np"/></e>
 <e r="RL" lm="Princess">      <i>Princess</i><par n="Mary__np"/></e>
 <e r="RL" lm="River">         <i>River</i><par n="Mark__np"/></e>
@@ -22640,12 +22644,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="RL" lm="Baby">                 <i>Baby</i><par n="Mary__np"/></e>
 <e r="RL" lm="Angel">                <i>Angel</i><par n="Mark__np"/></e>
 <e r="RL" lm="Angel">                <i>Angel</i><par n="Mary__np"/></e>
-
-
-
-
-
-
 
 
 
