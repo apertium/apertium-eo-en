@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Dictionary:
 	Sections: 3
@@ -9733,7 +9733,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <!-- Hèctor beg 2009.02.17 -->
-<e lm="vs">                   <i>vs</i><par n="at__pr"/></e>
+<!-- vs. is a coordination conjunction (cnjcoo): it always appears between two other words -->
+<e lm="vs">           <p><l>vs</l><r>vs.</r></p><par n="at__pr"/></e>
+<e lm="vs.">                   <i>vs.</i><par n="at__pr"/></e>
 <e lm="versus">               <i>versus</i><par n="at__pr"/></e>
 <e lm="several">              <i>several</i><par n="both__prn"/></e>
 <e lm="several">              <i>several</i><par n="expensive__adj"/></e>
