@@ -866,6 +866,7 @@
 <e lm="kio">                  <p><l>kion</l>                <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <e lm="kies">                 <p><l>kies</l>                 <r>kies<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="tiuj kiuj">            <p><l>tiuj<b/>kiuj</l>         <r>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
 
 	<!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
 	     comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
@@ -18317,7 +18318,6 @@
 <e lm="sakŝalmo">             <i>sak</i><par n="ŝ"/><i>almo</i><par n="nom__n"/></e>
 <e lm="ŝalmi">                <par n="ŝ"/><i>alm</i><par n="verb__vblex"/></e>
 <e lm="sakŝalmi">             <i>sak</i><par n="ŝ"/><i>alm</i><par n="verb__vblex"/></e>
-<e lm="petrolktpdukto">       <i>petrolktpdukto</i><par n="nom__n"/></e>
 <e lm="petroldukto">          <i>petroldukto</i><par n="nom__n"/></e>
 <e lm="korsaro">              <i>korsaro</i><par n="nom__n"/></e>
 <e lm="pirueto">              <i>pirueto</i><par n="nom__n"/></e>
@@ -23319,8 +23319,11 @@
 <e lm="KD">                   <i>KD</i><par n="nomACR__n"/></e>
 
 
+<!-- Aldonoj Hèctor 2009/02/18 -->
 
 
+<e r="LR" lm="ktp">                  <p><l>ktp</l><r>ktp.</r></p><par n="komence__adv"/></e>
+<e lm="ktp.">                 <i>ktp.</i><par n="komence__adv"/></e>
 
 
 

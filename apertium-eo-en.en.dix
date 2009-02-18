@@ -7701,7 +7701,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="reduce">               <i>reduc</i><par n="liv/e__vblex"/></e>
 <e lm="reduction">            <i>reduction</i><par n="house__n"/></e>
 <e lm="redundancy">           <i>redundanc</i><par n="bab/y__n"/></e>
-<e lm="refer">                <i>refer</i><par n="accept__vblex"/></e>
+<e lm="refer">                <i>refer</i><par n="occur__vblex"/></e>
 <e lm="reference">            <i>reference</i><par n="house__n"/></e>
 <e lm="refill">               <i>refill</i><par n="house__n"/></e>
 <e lm="refinery">             <i>refiner</i><par n="bab/y__n"/></e>
@@ -9733,9 +9733,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <!-- Hèctor beg 2009.02.17 -->
-<!-- vs. is a coordination conjunction (cnjcoo): it always appears between two other words -->
-<e lm="vs">           <p><l>vs</l><r>vs.</r></p><par n="at__pr"/></e>
-<e lm="vs.">                   <i>vs.</i><par n="at__pr"/></e>
+<!-- Jim: vs. is a coordination conjunction (cnjcoo): it always appears between two other words -->
+<!-- Hèctor: i'm not sure: dictionnaries says that 'versus' is a preposition -->
+<e r="LR" lm="vs">                   <p><l>vs</l><r>vs.</r></p><par n="at__pr"/></e>
+<e lm="vs.">                  <i>vs.</i><par n="at__pr"/></e>
 <e lm="versus">               <i>versus</i><par n="at__pr"/></e>
 <e lm="several">              <i>several</i><par n="both__prn"/></e>
 <e lm="several">              <i>several</i><par n="expensive__adj"/></e>
@@ -9769,6 +9770,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="despite">              <i>despite</i><par n="at__pr"/></e>
 <e lm="via">                  <i>via</i><par n="at__pr"/></e>
 <e r="LR" lm="toward">        <p><l>toward</l>              <r>towards</r></p><par n="at__pr"/></e>
+
+
+<e lm="the ones that">        <i>the<b/>ones<b/>that</i><par n="those_who__rel"/></e>
+<e lm="the ones who">         <i>the<b/>ones<b/>who</i><par n="those_who__rel"/></e>
+<e r="LR" lm="etc">           <p><l>etc</l><r>etc.</r></p><par n="maybe__adv"/></e>
+<e lm="etc.">                 <i>etc.</i><par n="maybe__adv"/></e>
 
 <!-- Hèctor beg 2009.02.18 -->
 
