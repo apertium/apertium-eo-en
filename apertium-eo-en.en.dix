@@ -192,7 +192,7 @@
 </pardef>
 
 <pardef n="proper_names">
-<e>                           <re>(St|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>                           <re>(St|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr|Don).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
 </pardef>
 
 
@@ -432,7 +432,7 @@
 </pardef>
     
 <pardef n="second__det">
-<!-- in Esåeranto they can be treated as adj. 
+<!-- in Esperanto they can be treated as adj. 
  
 <jacobEo> but I should keep the name "second__det", right? To be able to steal from other dicts ?
 <spectie> yes
@@ -2719,6 +2719,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="according">            <i>according</i><par n="at__pr"/></e>
 <e lm="according to">         <i>according<b/>to</i><par n="at__pr"/></e>
 <e lm="account">              <i>account</i><par n="house__n"/></e>
+<e lm="account">              <i>account</i><par n="accept__vblex"/></e>
 <e lm="accountancy">          <i>accountanc</i><par n="bab/y__n"/></e>
 <e lm="accountant">           <i>accountant</i><par n="house__n"/></e>
 <e lm="accounting">           <i>accounting</i><par n="house__n"/></e>
@@ -8886,6 +8887,27 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="ninth">                <i>ninth</i><par n="second__det"/></e>
 <e lm="tenth">                <i>tenth</i><par n="second__det"/></e>
     
+<e lm="eleventh">             <i>eleventh</i><par n="second__det"/></e>
+<e lm="twelfth">              <i>twelfth</i><par n="second__det"/></e>
+<e lm="thirteenth">           <i>thirteenth</i><par n="second__det"/></e>
+<e lm="forteenth">            <i>forteenth</i><par n="second__det"/></e>
+<e lm="fifteenth">            <i>fifteenth</i><par n="second__det"/></e>
+<e lm="sixteenth">            <i>sixteenth</i><par n="second__det"/></e>
+<e lm="seventeenth">          <i>seventeenth</i><par n="second__det"/></e>
+<e lm="eighteenth">           <i>eighteenth</i><par n="second__det"/></e>
+<e lm="nineteenth">           <i>nineteenth</i><par n="second__det"/></e>
+<e lm="twentieth">            <i>twentieth</i><par n="second__det"/></e>
+<e lm="thirtieth">            <i>thirtieth</i><par n="second__det"/></e>
+<e lm="fortieth">             <i>fortieth</i><par n="second__det"/></e>
+<e lm="fiftieth">             <i>fiftieth</i><par n="second__det"/></e>
+<e lm="sixtieth">             <i>sixtieth</i><par n="second__det"/></e>
+<e lm="seventieth">           <i>seventieth</i><par n="second__det"/></e>
+<e lm="eightieth">            <i>eightieth</i><par n="second__det"/></e>
+<e lm="ninetieth">            <i>ninetieth</i><par n="second__det"/></e>
+<e lm="hundreth">             <i>hundreth</i><par n="second__det"/></e>
+<e lm="thousandth">           <i>thousandth</i><par n="second__det"/></e>
+<e lm="milionth">             <i>milionth</i><par n="second__det"/></e>
+
 <e lm="though">               <i>though</i><par n="maybe__adv"/></e>
 <e lm="though">               <i>though</i><par n="after__cnjadv"/></e>
 <e lm="thought">              <i>thought</i><par n="house__n"/></e>
@@ -9727,7 +9749,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <i>Dr</i><par n="east__n"/></e>
 <e>                           <i>Mr</i><par n="east__n"/></e>
 
-
 <e>                           <par n="years"/></e>
 <e>                           <par n="time"/></e>
 
@@ -9777,7 +9798,40 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="LR" lm="etc">           <p><l>etc</l><r>etc.</r></p><par n="maybe__adv"/></e>
 <e lm="etc.">                 <i>etc.</i><par n="maybe__adv"/></e>
 
-<!-- Hèctor beg 2009.02.18 -->
+<!-- Hèctor end 2009.02.18 -->
+
+<!-- Hèctor beg 2009.02.19 -->
+
+<e>                           <i>Don</i><par n="east__n"/></e>
+
+<e r="LR" lm="kg">           <p><l>kg</l><r>kg.</r></p><par n="east__n"/></e>
+<e lm="kg.">                 <i>kg.</i><par n="east__n"/></e>
+<e r="LR" lm="km">           <p><l>km</l><r>km.</r></p><par n="east__n"/></e>
+<e lm="km.">                 <i>km.</i><par n="east__n"/></e>
+
+<e lm="learned">              <i>learned</i><par n="expensive__adj"/></e>
+
+<e lm="fairly">               <i>fairly</i><par n="expensive__adj"/></e>
+<e lm="fairly">               <i>fairly</i><par n="very__preadv"/></e>
+<e lm="folk">                 <i>folk</i><par n="house__n"/></e>
+<e lm="folk">                 <i>folk</i><par n="expensive__adj"/></e>
+<e lm="mainstream">           <i>mainstream</i><par n="house__n"/></e>
+<e lm="mainstream">           <i>mainstream</i><par n="expensive__adj"/></e>
+<e lm="in the mainstream">    <i>in<b/>the<b/>mainstream</i><par n="maybe__adv"/></e>
+<e lm="downtown">             <i>downtown</i><par n="house__n"/></e>
+<e lm="downtown area">        <i>downtown<b/>area</i><par n="house__n"/></e>
+<e lm="hence">                <i>hence</i><par n="maybe__adv"/></e>
+<e lm="henceforth">           <i>hence</i><par n="maybe__adv"/></e>
+<e lm="on behalf of">         <i>on<b/>behalf<b/>of</i><par n="at__pr"/></e>
+<e lm="on my behalf">         <i>on<b/>my<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on your behalf">       <i>on<b/>your<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on his behalf">        <i>on<b/>his<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on her behalf">        <i>on<b/>her<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on its behalf">        <i>on<b/>its<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on our behalf">        <i>on<b/>our<b/>behalf</i><par n="maybe__adv"/></e>
+<e lm="on their behalf">      <i>on<b/>their<b/>behalf</i><par n="maybe__adv"/></e>
+
+<!-- Hèctor end 2009.02.19 -->
 
 <!--- 
 ========================================================================================================
@@ -13418,7 +13472,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="middle">               <i>middle</i><par n="house__n"/></e>
 <e lm="middle-class">         <i>middle-class</i><par n="expensive__adj"/></e>
 <e lm="midst">                <i>midst</i><par n="house__n"/></e>
-<e lm="midwife">              <i>midwi</i><par n="li/fe__n"/></e>
+<e lm="midwife">              <i>midwife</i><par n="li/fe__n"/></e>
 <e lm="midwifery">            <i>midwifer</i><par n="bab/y__n"/></e>
 <e lm="mighty">               <i>mighty</i><par n="expensive__adj"/></e>
 <e lm="migrant">              <i>migrant</i><par n="expensive__adj"/></e>

@@ -351,6 +351,14 @@
 </pardef>
 
 
+<pardef n="nomsen__n">
+<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                   <r><s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
+</pardef>
+
+
 
 
 
@@ -960,6 +968,7 @@
 <e lm="tamen">                <i>tamen</i><par n="after__cnjadv"/></e>
 <e lm="tia">                  <i>tia</i><par n="ind__det"/></e>
 <e lm="tiam">                 <i>tiam</i><par n="after__cnjadv"/></e>
+<e lm="tial">                 <i>tial</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="at__pr"/></e>
 <e lm="tiel kiel">            <i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>
@@ -6416,6 +6425,7 @@
 <e lm="tezo">                 <i>tezo</i><par n="nom__n"/></e>
 <e lm="tia">                  <i>ti</i><par n="adj__adj"/></e>
 <e lm="tiam">                 <i>tiam</i><par n="komence__adv"/></e>
+<e lm="tial">                 <i>tial</i><par n="komence__adv"/></e>
 <e lm="tie">                  <i>tie</i><par n="komence__adv"/></e>
 <e lm="tiel">                 <i>tiel</i><par n="komence__adv"/></e>
 <e lm="timbalo">              <i>timbalo</i><par n="nom__n"/></e>
@@ -6612,6 +6622,26 @@
 <e>                           <i>na</i><par n="ŭ"/><i>e</i><par n="komence__adv"/></e>
 <e>                           <i>dek</i><par n="adj__adj"/></e>
 <e>                           <i>deke</i><par n="komence__adv"/></e>
+<e>                           <i>dekunue</i><par n="komence__adv"/></e>
+<e>                           <i>dekdue</i><par n="komence__adv"/></e>
+<e>                           <i>dektrie</i><par n="komence__adv"/></e>
+<e>                           <i>dekkvare</i><par n="komence__adv"/></e>
+<e>                           <i>dekkvine</i><par n="komence__adv"/></e>
+<e>                           <i>deksese</i><par n="komence__adv"/></e>
+<e>                           <i>deksepe</i><par n="komence__adv"/></e>
+<e>                           <i>dekoke</i><par n="komence__adv"/></e>
+<e>                           <i>deknaŭe</i><par n="komence__adv"/></e>
+<e>                           <i>dudeke</i><par n="komence__adv"/></e>
+<e>                           <i>trideke</i><par n="komence__adv"/></e>
+<e>                           <i>kvardeke</i><par n="komence__adv"/></e>
+<e>                           <i>kvindeke</i><par n="komence__adv"/></e>
+<e>                           <i>sesdeke</i><par n="komence__adv"/></e>
+<e>                           <i>sepdeke</i><par n="komence__adv"/></e>
+<e>                           <i>okdeke</i><par n="komence__adv"/></e>
+<e>                           <i>naŭdeke</i><par n="komence__adv"/></e>
+<e>                           <i>cente</i><par n="komence__adv"/></e>
+<e>                           <i>mile</i><par n="komence__adv"/></e>
+<e>                           <i>milione</i><par n="komence__adv"/></e>
 <e lm="unuflanke">            <i>unuflanke</i><par n="komence__adv"/></e>
 <e lm="unuforma">             <i>unuform</i><par n="adj__adj"/></e>
 <e lm="unuformeco">           <i>unuformeco</i><par n="nom__n"/></e>
@@ -14258,7 +14288,6 @@
 <e lm="fortikaĵo">            <i>fortika</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="fuorteto">             <i>fuorteto</i><par n="nom__n"/></e>
 <e lm="fuorto">               <i>fuorto</i><par n="nom__n"/></e>
-<e lm="kvardeka">             <i>kvardek</i><par n="adj__adj"/></e>
 <e lm="desfili">              <i>desfil</i><par n="verb__vblex"/></e>
 <e lm="duonmonate">           <i>duonmonate</i><par n="komence__adv"/></e>
 <e lm="duonmonata">           <i>duonmonat</i><par n="adj__adj"/></e>
@@ -16772,6 +16801,7 @@
 <e lm="magistro">             <i>magistro</i><par n="nom__n"/></e>
 <e lm="kvatirmastro">         <i>kvatirmastro</i><par n="nom__n"/></e>
 <e lm="s-ro">                 <i>s-ro</i><par n="nom__n"/></e>
+<e lm="d-ro">                 <i>d-ro</i><par n="nom__n"/></e>
 <e lm="majstri">              <i>majstr</i><par n="verb__vblex"/></e>
 <e lm="primajstri">           <i>primajstr</i><par n="verb__vblex"/></e>
 <e lm="majstroverko">         <i>majstroverko</i><par n="nom__n"/></e>
@@ -20659,7 +20689,6 @@
 <e lm="sidigi">               <i>sidig</i><par n="verb__vblex"/></e>
 <e lm="situi">                <i>situ</i><par n="verb__vblex"/></e>
 <e lm="ses-jara">             <i>ses-jar</i><par n="adj__adj"/></e>
-<e lm="sesdeka">              <i>sesdek</i><par n="adj__adj"/></e>
 <e lm="glitkuristo">          <i>glitkuristo</i><par n="nom__n"/></e>
 <e lm="glitkuranto">          <i>glitkuranto</i><par n="nom__n"/></e>
 <e lm="glitisto">             <i>glitisto</i><par n="nom__n"/></e>
@@ -21903,7 +21932,6 @@
 <e lm="puŝi">                 <i>pu</i><par n="ŝ"/><par n="verb__vblex"/></e>
 <e lm="prempinglo">           <i>prempinglo</i><par n="nom__n"/></e>
 <e lm="puŝpinglo">            <i>pu</i><par n="ŝ"/><i>pinglo</i><par n="nom__n"/></e>
-<e lm="ĵaudo">                <par n="ĵ"/><i>audo</i><par n="nom__n"/></e>
 <e lm="tiele">                <i>tiele</i><par n="komence__adv"/></e>
 <e lm="jene">                 <i>jene</i><par n="komence__adv"/></e>
 <e lm="tiko">                 <i>tiko</i><par n="nom__n"/></e>
@@ -23321,11 +23349,52 @@
 
 <!-- Aldonoj Hèctor 2009/02/18 -->
 
-
-<e r="LR" lm="ktp">                  <p><l>ktp</l><r>ktp.</r></p><par n="komence__adv"/></e>
+<e r="LR" lm="ktp">           <p><l>ktp</l><r>ktp.</r></p><par n="komence__adv"/></e>
 <e lm="ktp.">                 <i>ktp.</i><par n="komence__adv"/></e>
 
+<!-- Fino aldonoj Hèctor 2009/02/18 -->
 
+<!-- Aldonoj Hèctor 2009/02/19 -->
+
+<e lm="don">                  <i>don</i><par n="nomsen__n"/></e>
+<e lm="kg.">                  <i>kg.</i><par n="nomsen__n"/></e>
+<e lm="km.">                  <i>km.</i><par n="nomsen__n"/></e>
+
+<e lm="deka">                 <i>dek</i><par n="adj__adj"/></e>
+<e lm="dekunua">              <i>dekunu</i><par n="adj__adj"/></e>
+<e lm="dekdua">               <i>dekdu</i><par n="adj__adj"/></e>
+<e lm="dektria">              <i>dektri</i><par n="adj__adj"/></e>
+<e lm="dekkvara">             <i>dekkvar</i><par n="adj__adj"/></e>
+<e lm="dekkvina">             <i>dekkvin</i><par n="adj__adj"/></e>
+<e lm="deksesa">              <i>dekses</i><par n="adj__adj"/></e>
+<e lm="deksepa">              <i>deksep</i><par n="adj__adj"/></e>
+<e lm="dekoka">               <i>dekok</i><par n="adj__adj"/></e>
+<e lm="deknaŭa">              <i>deknaŭ</i><par n="adj__adj"/></e>
+<e lm="dudeka">               <i>dudek</i><par n="adj__adj"/></e>
+<e lm="trideka">              <i>tridek</i><par n="adj__adj"/></e>
+<e lm="kvardeka">             <i>kvardek</i><par n="adj__adj"/></e>
+<e lm="kvindeka">             <i>kvindek</i><par n="adj__adj"/></e>
+<e lm="sesdeka">              <i>sesdek</i><par n="adj__adj"/></e>
+<e lm="sepdeka">              <i>sepdek</i><par n="adj__adj"/></e>
+<e lm="okdeka">               <i>okdek</i><par n="adj__adj"/></e>
+<e lm="naŭdeka">              <i>naŭdek</i><par n="adj__adj"/></e>
+<e lm="centa">                <i>cent</i><par n="adj__adj"/></e>
+<e lm="mila">                 <i>mil</i><par n="adj__adj"/></e>
+<e lm="miliona">              <i>milion</i><par n="adj__adj"/></e>
+
+<e lm="de nun">               <i>de<b/>nun</i><par n="komence__adv"/></e>
+<e lm="en la ĉefa tendenco">  <i>en<b/>la<b/>ĉefa<b/>tendenco</i><par n="komence__adv"/></e>
+
+<e lm="en la nomo de">        <i>en<b/>la<b/>nomo<b/>de</i><par n="at__pr"/></e>
+<e lm="en mia nomo">          <i>en<b/>mia<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en via nomo">          <i>en<b/>via<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en lia nomo">          <i>en<b/>lia<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en ŝia nomo">          <i>en<b/>ŝia<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en ĝia nomo">          <i>en<b/>ĝia<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en nia nomo">          <i>en<b/>nia<b/>nomo</i><par n="komence__adv"/></e>
+<e lm="en ilia nomo">         <i>en<b/>ilia<b/>nomo</i><par n="komence__adv"/></e>
+
+<!-- Fino aldonoj Hèctor 2009/02/19 -->
 
 <!-- proper nouns -->
 <e>                           <i>Agostinacchio</i><par n="Smith__np"/></e>
