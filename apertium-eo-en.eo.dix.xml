@@ -770,9 +770,10 @@
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<!-- tio ŝajnas erara
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tioj</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tiojn</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-
+-->
 
     <!-- Fix: Somehow ^tio ĉi<prn><tn><mf><sg>$ comes out of prases like "I line this up." -->
 <e r="RL" lm="tio ĉi">        <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -781,8 +782,10 @@
 <e r="RL" lm="tio">           <p><l>tiujn</l>               <r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 <e lm="tio ĉi">               <p><l>tio<b/>ĉi</l>           <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="tio ĉi">               <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<!-- tio ŝajnas erara
 <e lm="tio ĉi">               <p><l>tioj<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="tio ĉi">               <p><l>tiojn<b/>ĉi</l>         <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 <e lm="ĉiuj">                 <p><l>ĉiuj</l>                <r>ĉiuj<s n="predet"/><s n="sp"/></r></p></e>
 <e lm="tio">                  <i>tio</i><par n="tio__prn"/></e>
 <e lm="tio">                  <i>tio</i><par n="nom__n"/></e>
@@ -23393,6 +23396,22 @@
 <e lm="en ĝia nomo">          <i>en<b/>ĝia<b/>nomo</i><par n="komence__adv"/></e>
 <e lm="en nia nomo">          <i>en<b/>nia<b/>nomo</i><par n="komence__adv"/></e>
 <e lm="en ilia nomo">         <i>en<b/>ilia<b/>nomo</i><par n="komence__adv"/></e>
+
+<e lm="koncerne">             <i>koncerne</i><par n="after__cnjadv"/></e>
+<e lm="kiom">                 <i>kiom</i><par n="after__cnjadv"/></e>
+<e lm="tiom kiom">            <i>tiom<b/>kiom</i><par n="after__cnjadv"/></e>
+<e lm="kvazaŭ">               <i>kvazaŭ</i><par n="after__cnjadv"/></e>
+
+<!--
+<e>       <p><l>kiom<s n="cnjadv"/></l>                <r>as<b/>far<b/>as<s n="cnjadv"/></r></p></e>
+<e>       <p><l>koncerne<s n="cnjadv"/></l>            <r>as<b/>for<s n="cnjadv"/></r></p></e>
+<e>       <p><l>tiom<b/>kiom<s n="cnjadv"/></l>        <r>as<b/>much<b/>as<s n="cnjadv"/></r></p></e>
+<e>       <p><l>tuj<b/>kiam<s n="cnjadv"/></l>         <r>as<b/>soon<b/>as<s n="cnjadv"/></r></p></e>
+<e>       <p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>if<s n="cnjadv"/></r></p></e>
+<e>       <p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>tought<b/>as<s n="cnjadv"/></r></p></e>
+<e r="RL"><p><l>por<s n="cnjadv"/></l>         <r>so<b/>as<b/>to<s n="cnjadv"/></r></p></e>
+<e r="RL"><p><l>ankaŭ<s n="adv"/></l>                  <r>as<b/>well<b/>as<s n="adv"/></r></p></e>
+-->
 
 <!-- Fino aldonoj Hèctor 2009/02/19 -->
 
