@@ -494,8 +494,17 @@
 -->
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
+
+<e>       <p><l>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l>         <r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e>       <p><l>tio<s n="prn"/><s n="tn"/><s n="sg"/></l>         <r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<!-- <e       ><p><l>tio<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e> -->
+
+<!--
 <e>       <p><l>tio<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e> -->
+
+<e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
+
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/></r></p></e>
@@ -775,6 +784,8 @@ BUT:
 <e>       <p><l>super<s n="adv"/></l>                  <r>over<s n="adv"/></r></p></e>
 
     <!-- Prepositions -->
+
+<e>       <p><l>da<s n="pr"/></l>                      <r>month__n__da<s n="pr"/></r></p></e>
 
 <e>       <p><l>ĉe<s n="pr"/></l>                      <r>at<s n="pr"/></r></p></e>
 <e>       <p><l>tra<s n="pr"/></l>                     <r>through<s n="pr"/></r></p></e>
@@ -1544,6 +1555,7 @@ TODO??
 <e r="RL"><p><l>ankoraŭ<s n="adv"/></l>                <r>still<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>ahead<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>forth<s n="adv"/></r></p></e>
+
 <e>       <p><l>apenaŭ<s n="adv"/></l>                 <r>barely<s n="adv"/></r></p></e>
 <e>       <p><l>hieraŭ<s n="adv"/></l>                 <r>yesterday<s n="adv"/></r></p></e>
 <e>       <p><l>hodiaŭ<s n="adv"/></l>                 <r>today<s n="adv"/></r></p></e>
@@ -6822,7 +6834,6 @@ TODO??
 <e>       <p><l>bonŝance<s n="adv"/></l>               <r>fortunately<s n="adv"/></r></p></e>
 <e>       <p><l>riĉaĵo<s n="n"/></l>                   <r>fortune<s n="n"/></r></p></e>
 <e>       <p><l>forumo<s n="n"/></l>                   <r>forum<s n="n"/></r></p></e>
-<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>forward<s n="adv"/></r></p></e>
 <e r="LR"><p><l>readresi<s n="vblex"/></l>             <r>forward<s n="vblex"/></r></p></e>
 <e>       <p><l>avanulo<s n="n"/></l>                  <r>forward<s n="n"/></r></p></e>
 <e r="LR"><p><l>impertinente<s n="adv"/></l>           <r>forward<s n="adv"/></r></p></e>
@@ -16125,8 +16136,12 @@ TODO??
      
 <e>       <p><l>nekutime<s n="adv"/></l>               <r>unusual<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aldone<s n="adv"/></l>                 <r>incidentally<s n="adv"/></r></p></e>
-<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>before<s n="adv"/></r></p></e>
-<e r="LR"><p><l>antaŭen<s n="adv"/></l>                <r>forward<s n="adv"/></r></p></e>
+
+
+<e>       <p><l>antaŭe<s n="adv"/></l>                  <r>before<s n="adv"/></r></p></e>
+<e>       <p><l>antaŭen<s n="adv"/></l>                <r>forward<s n="adv"/></r></p></e>
+
+
 <e r="LR"><p><l>apude<s n="adv"/></l>                  <r>near<s n="adv"/></r></p></e>
 <e r="RL"><p><l>apude<s n="adv"/></l>                  <r>near here<s n="adv"/></r></p></e>
 <e>       <p><l>atente<s n="adv"/></l>                 <r>attentively<s n="adv"/></r></p></e>
@@ -16250,6 +16265,7 @@ TODO??
 <e r="RL"><p><l>urbodomo<s n="n"/></l>                 <r>city<b/>council<s n="n"/></r></p></e>
 <e r="RL"><p><l>urbodomo<s n="n"/></l>                 <r>town<b/>council<s n="n"/></r></p></e>
 <e r="RL"><p><l>superi<s n="vblex"/></l>               <r>trace<g><b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
+
 
 
 <!---

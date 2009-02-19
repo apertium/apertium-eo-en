@@ -389,10 +389,9 @@
     
 <pardef n="the__det">
 <e>                           <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
-<!-- JN 16feb 2009: forigis por simpligi i.a. la tagger
-<e>                           <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sg"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="det"/><s n="def"/><s n="pl"/></r></p></e>
--->
+<!-- JN 16feb 2009: por simpligi i.a. la tagger, nur uzu de eo al en -->
+<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="/a__det">
@@ -587,8 +586,20 @@
 <pardef n="house__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<!--    <e r="LR"><p><l>s'</l><r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>-->
+<!--
+<e r="LR">                    <p><l>s'</l>                  <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e> -->
 </pardef>
+
+
+<!-- Tiuj cxi paradigmo permesas la formon "Twelve months' imprisonment" -> Dek du monatoj da malliberigo.
+TODO:  A months' imprisonment" -> monato da malliberigo.
+ -->
+<pardef n="month__n">
+<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>s'</l>                  <r><s n="n"/><s n="pl"/><j/>month__n__da<s n="pr"/></r></p></e>
+</pardef>
+
 
 <pardef n="east__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
@@ -4211,7 +4222,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="data">                 <i>data</i><par n="politics__n"/></e>
 <e lm="date">                 <i>date</i><par n="house__n"/></e>
 <e lm="daughter">             <i>daughter</i><par n="house__n"/></e>
-<e lm="day">                  <i>day</i><par n="house__n"/></e>
+<e lm="day">                  <i>day</i><par n="month__n"/></e>
 <e lm="dead person">          <i>dead<b/>person</i><par n="house__n"/></e>
 <e lm="deaf">                 <i>deaf</i><par n="long/__adj"/></e>
 <e lm="deal">                 <i>deal</i><par n="house__n"/></e>
@@ -5591,7 +5602,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="hostile">              <i>hostile</i><par n="expensive__adj"/></e>
 <e lm="hostility">            <i>hostilit</i><par n="bab/y__n"/></e>
 <e lm="hotel">                <i>hotel</i><par n="house__n"/></e>
-<e lm="hour">                 <i>hour</i><par n="house__n"/></e>
+<e lm="hour">                 <i>hour</i><par n="month__n"/></e>
 <e lm="house">                <i>house</i><par n="house__n"/></e>
 <e lm="household">            <i>household</i><par n="house__n"/></e>
 <e lm="housing">              <i>housing</i><par n="house__n"/></e>
@@ -6513,7 +6524,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="minor">                <i>minor</i><par n="expensive__adj"/></e>
 <e lm="minority">             <i>minorit</i><par n="bab/y__n"/></e>
 <e lm="mint">                 <i>mint</i><par n="house__n"/></e>
-<e lm="minute">               <i>minute</i><par n="house__n"/></e>
+<e lm="minute">               <i>minute</i><par n="month__n"/></e>
 <e lm="miracle">              <i>miracle</i><par n="house__n"/></e>
 <e lm="mirage">               <i>mirage</i><par n="house__n"/></e>
 <e lm="mirror">               <i>mirror</i><par n="house__n"/></e>
@@ -6558,7 +6569,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="monotone">             <i>monotone</i><par n="expensive__adj"/></e>
 <e lm="monsoon">              <i>monsoon</i><par n="house__n"/></e>
 <e lm="monster">              <i>monster</i><par n="house__n"/></e>
-<e lm="month">                <i>month</i><par n="house__n"/></e>
+<e lm="month">                <i>month</i><par n="month__n"/></e>
 <e lm="monthly">              <i>monthly</i><par n="expensive__adj"/></e>
 <e lm="monument">             <i>monument</i><par n="house__n"/></e>
 <e lm="monumental">           <i>monumental</i><par n="expensive__adj"/></e>
@@ -8078,7 +8089,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="seaweed">              <i>seaweed</i><par n="house__n"/></e>
 <e lm="secession">            <i>secession</i><par n="house__n"/></e>
 <e lm="second">               <i>second</i><par n="second__det"/></e>
-<e lm="second">               <i>second</i><par n="house__n"/></e>
+<e lm="second">               <i>second</i><par n="month__n"/></e>
 <!--    <e lm="second"><i>second</i><par n="accept__vblex"/></e> -->
 <!--    <e lm="second"><i>second</i><par n="maybe__adv"/></e> -->
 <e lm="secondary">            <i>secondary</i><par n="expensive__adj"/></e>
@@ -9398,7 +9409,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="weather">              <i>weather</i><par n="house__n"/></e>
 <e lm="web">                  <i>web</i><par n="house__n"/></e>
 <e lm="wedding">              <i>wedding</i><par n="house__n"/></e>
-<e lm="week">                 <i>week</i><par n="house__n"/></e>
+<e lm="week">                 <i>week</i><par n="month__n"/></e>
 <e lm="week in week out">     <i>week<b/>in<b/>week<b/>out</i><par n="maybe__adv"/></e>
 <e lm="weekly">               <i>weekly</i><par n="expensive__adj"/></e>
 <e lm="weekly">               <i>weekly</i><par n="maybe__adv"/></e>
@@ -9525,7 +9536,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="wrong">                <i>wrong</i><par n="maybe__adv"/></e>
 <e lm="yacht">                <i>yacht</i><par n="house__n"/></e>
 <e lm="yard">                 <i>yard</i><par n="house__n"/></e>
-<e lm="year">                 <i>year</i><par n="house__n"/></e>
+<e lm="year">                 <i>year</i><par n="month__n"/></e>
 <e lm="yearbook">             <i>yearbook</i><par n="house__n"/></e>
 <e lm="yellow">               <i>yellow</i><par n="long/__adj"/></e>
 <e lm="yen">                  <i>yen</i><par n="house__n"/></e>
