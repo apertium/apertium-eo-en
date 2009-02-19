@@ -52,17 +52,23 @@ echo "Translating using Apertium:" $DIRS
 
 for dir in $DIRS; do
 	if [ $dir = "en" ]; then
-		mode="en-eo";
+		mode="en-eo_oldtag";
+		#mode="en-eo";
 	else 
 		mode="eo-en";
 	fi
-	echo $mode
- 	cat test_SL_$dir | nl -s : | apertium -d $DATADIR $mode > testres_TL_$dir
-	cat test_TL_$dir | nl -s : | diff -Naurwi - testres_TL_$dir
+ 	cat test_SL_$dir | nl -s ' . ' > testtmp
+	cat testtmp | apertium -d $DATADIR $mode > testres
 
+	cat test_TL_$dir | nl -s ' . ' | diff -wi - testres | grep -r '[<>]' >> testtmp
 
-	cat test_TL_$dir | nl -s : | diff - testres_TL_$dir | grep -r '[<>]' > test_diff_$dir
-	for i in `cut -f2 -d' ' test_diff_$dir | cut -f1 | uniq`; do echo  --- $i ---; cat test_SL_$dir | nl -s : | grep -r "$i :" ; grep -r "^. $i\W" test_diff_$dir; done
+	FAIL=`grep "^<" testtmp |  cut -c2-8`; 
+#	if [[ "$FAIL"!="" ]]; then
+#		echo "< correct      > actual"
+#	else
+#		echo "All tests passed."
+#	fi
+	for i in $FAIL; do grep " $i . " testtmp; done
 
 done
 
