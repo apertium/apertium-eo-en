@@ -2,31 +2,105 @@
 <tagger name="english">
 <tagset>
 
-   <def-label name="TO" closed="true">
-    <tags-item lemma="to" tags="pr"/>
+<!-- Lemoj -->
+
+  <def-label name="TO"      closed="true"><tags-item lemma="to" tags="pr"/></def-label> 
+  <def-label name="FOR"     closed="true"><tags-item lemma="for" tags="pr"/></def-label> 
+  <def-label name="THATCNJ" closed="true"><tags-item lemma="that" tags="cnjsub"/></def-label> 
+  <def-label name="NOT"     closed="true"><tags-item lemma="not" tags="adv"/></def-label>
+  <def-label name="NOADV"   closed="true"><tags-item lemma="no" tags="adv"/></def-label>
+  <def-label name="CANNOM"  closed="true"><tags-item lemma="can" tags="n.*"/></def-label>
+  <def-label name="WILLNOM" closed="true"><tags-item lemma="will" tags="n.*"/></def-label>
+
+<!-- Kial faras eraron se oni enmetas??!?
+Word 'those' not found in the dictionary.   
+New ambiguity class: {THATPRN,DET}
+
+            ^those/that<det><dem><pl>/that<prn><tn><pl>$
+^that/that<cnjsub>/that<det><dem><sg>/that<prn><tn><sg>/that<rel><an><mf><sp>$
+
+  <def-label name="THATPRN" closed="true"><tags-item lemma="that" tags="prn.*"/></def-label>
+  -->
+
+
+  <def-label name="INTNOM" closed="true"><tags-item tags="prn.itg.*"/></def-label> 
+  <def-label name="INTADV" closed="true"><tags-item tags="adv.itg"/></def-label>
+  <def-label name="PREADV" closed="true"><tags-item tags="preadv"/></def-label>
+  <def-label name="ADV"><tags-item tags="adv"/></def-label> 
+
+  <def-label name="ADJ">
+    <tags-item tags="adj"/>
+    <tags-item tags="adj.comp"/>
+    <tags-item tags="adj.sup"/>
+    <tags-item tags="adj.sint"/>
+    <tags-item tags="adj.sint.comp"/>
+    <tags-item tags="adj.sint.sup"/>
+  </def-label>
+
+  <def-label name="ADJPOS" closed="true"><tags-item tags="adj.pos"/></def-label>
+  <def-label name="CNJSUBS" closed="true"><tags-item tags="cnjsub"/></def-label>
+  <def-label name="CNJCOORD" closed="true"><tags-item tags="cnjcoo"/></def-label>
+  <def-label name="CNJADV"><tags-item tags="cnjadv"/></def-label>
+
+
+  <def-label name="DET" closed="true">
+    <tags-item tags="det.dem.*"/>
+    <tags-item tags="det.ind.*"/>
+    <tags-item tags="det.def.*"/>
+    <tags-item tags="det.pos.*"/>
+    <tags-item tags="det.itg.*"/> 
+  </def-label>
+
+  <def-label name="DETQNT_ORD" closed="true"><!--Poden anar precedits dels altres tipus de determinant -->
+    <tags-item tags="det.qnt.*"/>
+    <tags-item tags="det.ord.*"/>
   </def-label> 
-  <def-label name="FOR" closed="true">
-    <tags-item lemma="for" tags="pr"/><!--MG. afegit 19-09-06. confon <pr> amb <cnjadv>, tb en altres cases ('en'). Caldria fer algo al respecte o potser amb un text etiquetat ho fa millor. -->
-  </def-label> 
-  <def-label name="THATCNJ" closed="true">
-    <tags-item lemma="that" tags="cnjsub"/>
-  </def-label> 
-  <def-label name="NOT" closed="true">
-    <tags-item lemma="not" tags="adv"/>
+
+<!--<def-label name="DETITG"><tags-item tags="det.itg.*"/></def-label> -->
+
+  <def-label name="NUM" closed="true">
+    <tags-item tags="num.*"/>
+    <tags-item tags="num"/>
   </def-label>
-  <def-label name="NOADV" closed="true">
-    <tags-item lemma="no" tags="adv"/>
+
+  <def-label name="NOMSG">
+    <tags-item tags="n.sg"/>
+    <tags-item tags="n.acr.sg"/>
+    <tags-item tags="n.acr.sp"/>
+    <tags-item tags="n.unc.sg"/>
   </def-label>
-  <def-label name="CANNOM" closed="true">
-    <tags-item lemma="can" tags="n.*"/>
+
+  <def-label name="NOMPL">
+    <tags-item tags="n.pl"/>
+    <tags-item tags="n.acr.pl"/>
+    <tags-item tags="n.unc.pl"/>
   </def-label>
-  <def-label name="WILLNOM" closed="true">
-    <tags-item lemma="will" tags="n.*"/>
+  
+  <def-label name="INTERJ"><tags-item tags="ij"/></def-label>
+  <def-label name="ANTROPONIM"><tags-item tags="np.ant.*"/><tags-item tags="np.cog.*"/></def-label>
+  <def-label name="TOPONIM"><tags-item tags="np.loc.*"/><tags-item tags="np.top.*"/></def-label>
+  
+  <def-label name="NPALTRES">
+    <tags-item tags="np.al.*"/>
+    <tags-item tags="np.alpha.*"/> <!--   ?????? -->
   </def-label>
- <!-- <def-label name="THATPRN" closed="true">
-    <tags-item lemma="that" tags="prn.*"/>
-  </def-label> -->
-<def-label name="DOVBLEX" closed="true">
+
+  <def-label name="PREDET" closed="true">    <tags-item tags="predet.*"/>  </def-label>
+  <def-label name="PREP" closed="true">    <tags-item tags="pr"/>  </def-label>
+  <def-label name="PRNSUBJ" closed="true">    <tags-item tags="prn.subj.*"/>  </def-label>
+  <def-label name="PRNOBJ" closed="true">    <tags-item tags="prn.obj.*"/>  </def-label>
+  <def-label name="PRNALTRES" closed="true">    <tags-item tags="prn.*"/>  </def-label>
+
+  <def-label name="RELAN" closed="true"><tags-item tags="rel.an.*"/></def-label>
+  <def-label name="RELAA" closed="true"><tags-item tags="rel.aa.*"/></def-label>
+  <def-label name="RELNN" closed="true"><tags-item tags="rel.nn.*"/></def-label>
+  <def-label name="RELADV" closed="true"><tags-item tags="rel.adv"/></def-label>
+  <def-label name="GEN" closed="true"><tags-item tags="gen"/></def-label>
+  <def-label name="GUIO" closed="true"><tags-item tags="guio"/></def-label> 
+  <def-label name="APOS" closed="true"><tags-item tags="apos"/></def-label> 
+
+
+  <def-label name="DOVBLEX" closed="true">
     <tags-item lemma="do" tags="vblex.inf"/>
     <tags-item lemma="do" tags="vblex.pres"/>
     <tags-item lemma="do" tags="vblex.pres.p3.sg"/>
@@ -41,101 +115,7 @@
     <tags-item lemma="tell" tags="vblex.pp"/>
   </def-label>-->
 
-  <def-label name="INTNOM" closed="true">
-    <tags-item tags="prn.itg.*"/>
-  </def-label> 
-  <def-label name="INTADV" closed="true">
-    <tags-item tags="adv.itg"/>
-  </def-label>
-  <def-label name="PREADV" closed="true">
-    <tags-item tags="preadv"/>
-  </def-label>
-  <def-label name="ADV">
-    <tags-item tags="adv"/>
-  </def-label> 
-  <def-label name="ADJ">
-    <tags-item tags="adj"/>
-    <tags-item tags="adj.comp"/>
-    <tags-item tags="adj.sup"/>
-    <tags-item tags="adj.sint"/>
-    <tags-item tags="adj.sint.comp"/>
-    <tags-item tags="adj.sint.sup"/>
-  </def-label>
-  <def-label name="ADJPOS" closed="true">
-    <tags-item tags="adj.pos"/>
-  </def-label>
-  <def-label name="CNJSUBS" closed="true">
-    <tags-item tags="cnjsub"/>
-  </def-label>
-  <def-label name="CNJCOORD" closed="true">
-    <tags-item tags="cnjcoo"/>
-  </def-label>
-  <def-label name="CNJADV">
-    <tags-item tags="cnjadv"/>
-  </def-label>
-  <def-label name="DET" closed="true">
-    <tags-item tags="det.dem.*"/>
-    <tags-item tags="det.ind.*"/>
-    <tags-item tags="det.def.*"/>
-    <tags-item tags="det.pos.*"/>
-    <tags-item tags="det.itg.*"/> 
-  </def-label>
-<def-label name="DETQNT_ORD" closed="true"><!--Poden anar precedits dels altres tipus de determinant -->
-    <tags-item tags="det.qnt.*"/>
-    <tags-item tags="det.ord.*"/>
-  </def-label> 
-
-<!--<def-label name="DETITG">
-    <tags-item tags="det.itg.*"/>
-  </def-label> -->
-
-  <def-label name="NUM" closed="true">
-    <tags-item tags="num.*"/>
-    <tags-item tags="num"/>
-  </def-label>
-  <def-label name="NOMSG">
-    <tags-item tags="n.sg"/>
-    <tags-item tags="n.acr.sg"/>
-    <tags-item tags="n.acr.sp"/>
-    <tags-item tags="n.unc.sg"/>
-  </def-label>
-  <def-label name="NOMPL">
-    <tags-item tags="n.pl"/>
-    <tags-item tags="n.acr.pl"/>
-    <tags-item tags="n.unc.pl"/>
-  </def-label>
-  
-  <def-label name="INTERJ">
-    <tags-item tags="ij"/>
-  </def-label>
-  <def-label name="ANTROPONIM">
-    <tags-item tags="np.ant.*"/>
-    <tags-item tags="np.cog.*"/>
-  </def-label>
-  <def-label name="TOPONIM">
-    <tags-item tags="np.loc.*"/>
-  	<tags-item tags="np.top.*"/>
-</def-label>
-  <def-label name="NPALTRES">
-    <tags-item tags="np.al.*"/>
-    <tags-item tags="np.alpha.*"/> <!--   ?????? -->
-  </def-label>
-  <def-label name="PREDET" closed="true">
-    <tags-item tags="predet.*"/>
-  </def-label>
-  <def-label name="PREP" closed="true">
-    <tags-item tags="pr"/>
-  </def-label>
-  <def-label name="PRNSUBJ" closed="true">
-    <tags-item tags="prn.subj.*"/>
-  </def-label>
-  <def-label name="PRNOBJ" closed="true">
-    <tags-item tags="prn.obj.*"/>
-  </def-label>
-  <def-label name="PRNALTRES" closed="true">
-    <tags-item tags="prn.*"/>
-  </def-label>
-   <def-label name="VLEXPP">
+  <def-label name="VLEXPP">
     <tags-item tags="vblex.pp"/>
     <tags-item tags="vblex.sep.pp"/>
   </def-label>
@@ -174,6 +154,7 @@
    <def-label name="VMODINF" closed="true">
     <tags-item tags="vbmod.inf"/>
   </def-label>
+
  <def-label name="PRES">
     <tags-item tags="vblex.pres"/>
     <tags-item tags="vblex.sep.pres"/>
@@ -238,38 +219,33 @@
   <def-label name="VSER" closed="true">
     <tags-item tags="vbser.*"/>
   </def-label>
-  <def-label name="RELAN" closed="true">
-    <tags-item tags="rel.an.*"/>
-  </def-label>
-  <def-label name="RELAA" closed="true">
-    <tags-item tags="rel.aa.*"/>
-  </def-label>
-  <def-label name="RELNN" closed="true">
-    <tags-item tags="rel.nn.*"/>
-  </def-label>
-  <def-label name="RELADV" closed="true">
-    <tags-item tags="rel.adv"/>
-  </def-label>
-  <def-label name="GEN" closed="true">
-    <tags-item tags="gen"/>
-  </def-label>
- <def-label name="GUIO" closed="true">
-    <tags-item tags="guio"/>
-  </def-label> 
-  <def-label name="APOS" closed="true">
-    <tags-item tags="apos"/>
-  </def-label> 
+
+
   <def-mult name="DETPREADV" closed="true">  
     <sequence>
       <tags-item tags="det.def.sp"/>
       <label-item label="PREADV"/>
     </sequence>
-</def-mult>
+  </def-mult>
 
 </tagset>
 
- <forbid>
+<forbid>
 
+
+<!-- Eviti some Republicans recommended that. -> kelkaj Respublikanoj rekomendita ke.  ne helpas meti CNJSUB-->
+    <label-sequence><label-item label="THATCNJ"/><label-item label="SENT"/></label-sequence>
+
+
+<!-- Eviti    Since 1990  
+^Since/Since<adv>/Since<cnjadv>/Since<pr>$ ^1990/1990<num>$
+^Since<cnjadv>$ ^1990<num>$  -> ^Pro tio ke<cnjadv>$ -->
+    <label-sequence>
+      <label-item label="CNJADV"/>      
+      <label-item label="NUM"/>
+    </label-sequence>
+
+<!-- por eviti "Dogs love him." -> Hundoj ami lin -->
     <label-sequence>
       <label-item label="NOMSG"/>
       <label-item label="INF"/>      
@@ -331,7 +307,8 @@
       <label-item label="PRNSUBJ"/>
       <label-item label="VHAVEINF"/>
     </label-sequence>
-<label-sequence>
+
+    <label-sequence>
       <label-item label="PRNSUBJ"/>
       <label-item label="NOMSG"/>
     </label-sequence>
