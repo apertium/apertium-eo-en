@@ -621,78 +621,38 @@ sort -t '"' -k 3 x
 
     <!-- Tiu cxi makroo rigardas anglan adjektivon kiel ^better/good<adj><sint><comp>$ kaj poste
          adjectiu = ^pli<preadv>$ ^bona<adj>
-         preadv_added = yes
-         adjectiu_tail = <3><4>
-          -->
+         preadv_added = yes   -->
     <def-macro n="set_adjectiu1" npar="1">
       <let><var n="adjectiu"/><lit v=""/></let>
       <let><var n="preadv_added"/><lit v=""/></let>
-      <let><var n="adjectiu_tail"/><lit-tag v="3.4"/></let>
-<!--
-      <let><var n="adjectiu_tail"/><lit-tag v="2.3"/></let>
       <choose>
-        <when>
-          <test>
-            <not>
-              <equal><var n="genere"/><lit v=""/></equal>
-            </not>
-          </test>
+        <when><!-- ^better/good<adj><sint><comp>$ -->
+          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><3><4>$ -->
+                <lit v="pli"/><lit-tag v="preadv"/><lit v="$ ^"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
+                </concat></let>
+          <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
-      </choose>
--->
-      <choose>
-        <when>
-          <test>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
-<!-- We drop the  check <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>, to allow for missing <sint> tag in the bidix -->
-<!--
-            <and>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal>
-              <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
-            </and>
--->
-          </test>
-          <let><var n="adjectiu"/><concat>
-                <lit v="pli"/><lit-tag v="preadv"/>
-                <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu_tail"/>
+
+        <when><!-- ^best/good<adj><sint><sup>$ -->
+          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><3><4>$ -->
+                <lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
 
         <when>
-          <test>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
-<!--
-            <and>
-              <equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal>
-              <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
-            </and>
--->
-          </test>
-          <let><var n="adjectiu"/><concat>
-                <lit v="plej"/><lit-tag v="preadv"/>
-                <lit v="$ ^"/><clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu_tail"/>
-                </concat></let>
-          <let><var n="preadv_added"/><lit v="yes"/></let>
-        </when>
-
-        <when>
-          <test>
-            <equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal>
-          </test>
-          <let><var n="adjectiu"/><concat>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu_tail"/>
+         <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
                 </concat></let>
         </when>
 
-        <otherwise><!-- This is never happening in Jacob's corpus -->
-          <let><var n="adjectiu"/><concat>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/>
-                <var n="adjectiu_tail"/>
-                </concat></let>
+        <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2><3><4>$ -->
+          <let><var n="adjectiu"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/></concat></let>
         </otherwise>
       </choose>
     </def-macro>
@@ -765,7 +725,9 @@ sort -t '"' -k 3 x
 <!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
 pos 1= do, will, shall aŭ would.
 pos 2= nekonjugaciita verbo
-La rezulto estas unu sola leksika formo (venos) -->
+La rezulto estas unu sola leksika formo (venos):
+verbfinal = pensi<3><4><5>
+ -->
       <def-macro n="conj_verb_compost2" npar="2">
 	<choose>
 	  <when>
@@ -778,8 +740,8 @@ La rezulto estas unu sola leksika formo (venos) -->
 		  <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="pers"/></let>
-		<let><var n="nbr_chunk"/><clip pos="1" side="sl" part="nbr"/></let>
+		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="a_prs"/></let>
+		<let><var n="nbr_chunk"/><clip pos="1" side="sl" part="a_nbr"/></let>
 		<let><var n="lema_SV"/><lit v="verbcj"/></let>
 		<let>
 		  <var n="verbfinal"/>
@@ -817,8 +779,7 @@ La rezulto estas unu sola leksika formo (venos) -->
 		  </concat>
 		</let>
 	      </when>
-	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let>
-            </otherwise>
+	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
 	    </choose>
 	  </when>
 	  <otherwise>
@@ -837,9 +798,9 @@ La rezulto estas unu sola leksika formo (venos) -->
 	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
 	    </test>
 	    <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
-	  </when>		
-	      <otherwise><let><var n="temps_chunk"/><lit-tag v="ERROR2"/></let></otherwise>
-	</choose>	
+	  </when>
+          <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+	</choose>
 	<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
 	<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
 	<let><var n="lema_SV"/><lit v="verbcj"/></let>
@@ -3451,15 +3412,15 @@ might:might<vaux><inf>
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="prs"/></tag>
-              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="prs"/>
-              <clip pos="1" side="tl" part="nbr"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
             </lu>
           </chunk>
          <b pos="1"/>
@@ -3495,11 +3456,8 @@ might:might<vaux><inf>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
 	<choose>
 	  <when>
-	    <test>
-	      <in caseless="yes">
-		<clip pos="2" side="sl" part="lem"/>
-		<list n="adv_neg"/>
-	      </in>
+	    <test><!-- se ADV estas "not" aux "never"... -->
+	      <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="adv_neg"/></in>
 	    </test>
 	    <let><var n="neg"/><lit-tag v="NEG"/></let>
 	  </when>
@@ -3538,9 +3496,7 @@ might:might<vaux><inf>
 	    </lu>
 	  </chunk>
 	</out>
-	<call-macro n="f_bcond1">
-	  <with-param pos="2"/>
-	</call-macro>
+	<call-macro n="f_bcond1"><with-param pos="2"/></call-macro>
       </action>
     </rule>
 
