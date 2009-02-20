@@ -2377,6 +2377,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Bulgarian">            <i>Bulgarian</i><par n="expensive__adj"/></e>
 <e lm="Cameroon">             <i>Cameroon</i><par n="Barcelona__np"/></e>
 <e lm="Canada">               <i>Canada</i><par n="Barcelona__np"/></e>
+<e lm="Canadian">             <i>Canadian</i><par n="house__n"/></e>
+<e lm="Canadian">             <i>Canadian</i><par n="expensive__adj"/></e>
 <e lm="Canarian">             <i>Canarian</i><par n="house__n"/></e>
 <e lm="Canarian">             <i>Canarian</i><par n="expensive__adj"/></e>
 <e lm="Canary Islands">       <i>Canary<b/>Islands</i><par n="United_States__np"/></e>
@@ -2416,6 +2418,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Cuban">                <i>Cuban</i><par n="expensive__adj"/></e>
 <e lm="Cyprus">               <i>Cyprus</i><par n="Barcelona__np"/></e>
 <e lm="Danish">               <i>Danish</i><par n="expensive__adj"/></e>
+<e lm="Danish">               <i>Danish</i><par n="house__n"/></e>
+<e lm="Dutch">                <i>Dutch</i><par n="expensive__adj"/></e>
+<e lm="Dutch">                <i>Dutch</i><par n="Dutch__n"/></e>
 <e lm="Darío">                <i>Darío</i><par n="Mark__np"/></e>
 <e lm="David">                <i>David</i><par n="Mark__np"/></e>
 <e lm="Denmark">              <i>Denmark</i><par n="Barcelona__np"/></e>
@@ -2469,6 +2474,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Haiti">                <i>Haiti</i><par n="Barcelona__np"/></e>
 <e lm="Holland">              <i>Holland</i><par n="Barcelona__np"/></e>
 <e lm="Hungarian">            <i>Hungarian</i><par n="expensive__adj"/></e>
+<e lm="Hungarian">            <i>Hungarian</i><par n="house__n"/></e>
 <e lm="Hungary">              <i>Hungary</i><par n="Barcelona__np"/></e>
 <e lm="Iberian">              <i>Iberian</i><par n="expensive__adj"/></e>
 <e lm="Iceland">              <i>Iceland</i><par n="Barcelona__np"/></e>
@@ -2622,12 +2628,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Soviet Union">         <i>Soviet Union</i><par n="Barcelona__np"/></e>
 <e lm="Spain">                <i>Spain</i><par n="Barcelona__np"/></e>
 <e lm="Spanish">              <i>Spanish</i><par n="expensive__adj"/></e>
+<e lm="Spanish">              <i>Spanish</i><par n="house__n"/></e>
 <e lm="Stockholm">            <i>Stockholm</i><par n="Barcelona__np"/></e>
 <e lm="Sudan">                <i>Sudan</i><par n="Barcelona__np"/></e>
 <e lm="Sunday">               <i>Sunday</i><par n="house__n"/></e>
 <e lm="Susana">               <i>Susana</i><par n="Mary__np"/></e>
 <e lm="Sweden">               <i>Sweden</i><par n="Barcelona__np"/></e>
 <e lm="Swedish">              <i>Swedish</i><par n="expensive__adj"/></e>
+<e lm="Swedish">              <i>Swedish</i><par n="house__n"/></e>
 <e lm="Swiss">                <i>Swiss</i><par n="politics__n"/></e>
 <e lm="Swiss">                <i>Swiss</i><par n="expensive__adj"/></e>
 <e lm="Switzerland">          <i>Switzerland</i><par n="Barcelona__np"/></e>
@@ -5430,6 +5438,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="godfather">            <i>godfather</i><par n="house__n"/></e>
 <e lm="gold">                 <i>gold</i><par n="house__n"/></e>
 <e lm="coup">                 <i>coup</i><par n="house__n"/></e>
+<e lm="coup d'état">          <i>coup<b/>d'état</i><par n="house__n"/></e>
+<e lm="coup de grâce">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="maybe__adv"/></e>
 <e lm="good morning">         <i>good<b/>morning</i><par n="hello__ij"/></e>
@@ -9869,8 +9879,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="along with">           <i>along<b/>with</i><par n="at__pr"/></e>
 <e lm="along the line">       <i>along<b/>the<b/>line</i><par n="maybe__adv"/></e>
 <e lm="along the lines">      <i>along<b/>the<b/>line</i><par n="maybe__adv"/></e>
-<e lm="alongside">            <i>apud</i><par n="at__pr"/></e>
-<e lm="alongside">            <i>apude</i><par n="maybe__adv"/></e>
+<e lm="alongside">            <i>alongside</i><par n="at__pr"/></e>
 <e lm="across">               <i>across</i><par n="at__pr"/></e>
 <e lm="across from">          <i>across<b/>from</i><par n="at__pr"/></e>
 <e lm="across the country">   <i>across<b/>the<b/>country</i><par n="maybe__adv"/></e>
@@ -9983,7 +9992,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="VAT">                   <i>VAT</i><par n="Barcelona__np"/></e>
 
+<e lm="Bolshevik">              <i>Bolshevik</i><par n="house__n"/></e>
+<e lm="Bolshevik">              <i>Bolshevik</i><par n="expensive__adj"/></e>
+<e lm="Menshevik">              <i>Menshevik</i><par n="house__n"/></e>
+<e lm="Menshevik">              <i>Menshevik</i><par n="expensive__adj"/></e>
+<e lm="Romance">                <i>Romance</i><par n="expensive__adj"/></e>
+
 <e lm="per capita">            <i>per<b/>capita</i><par n="maybe__adv"/></e>
+<!--
+<e lm="a number of">           <i>a<b/>number<b/>of</i><par n="at__pr"/></e>
+-->
 
 <!-- Hèctor beg 2009.02.20 -->
 

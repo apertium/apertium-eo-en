@@ -987,7 +987,9 @@ BUT:
 <e>       <p><l>Etiopio<s n="np"/><s n="top"/></l>     <r>Ethiopia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Eŭropo<s n="np"/><s n="top"/></l>      <r>Europe<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Filipinoj<s n="np"/><s n="top"/></l>   <r>Philippines<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Finnio<s n="np"/><s n="top"/></l>      <r>Finland<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Finnlando<s n="np"/><s n="top"/></l>   <r>Finland<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Finnio<s n="np"/><s n="top"/></l>      <r>Finland<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Suomio<s n="np"/><s n="top"/></l>      <r>Finland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Francio<s n="np"/><s n="top"/></l>     <r>France<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Galegio<s n="np"/><s n="top"/></l>     <r>Galicia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ganao<s n="np"/><s n="top"/></l>       <r>Ghana<s n="np"/><s n="top"/></r></p></e>
@@ -1064,6 +1066,7 @@ BUT:
 <e>       <p><l>Pekino<s n="np"/><s n="top"/></l>      <r>Peking<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Peruo<s n="np"/><s n="top"/></l>       <r>Peru<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Pollando<s n="np"/><s n="top"/></l>    <r>Poland<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Polio<s n="np"/><s n="top"/></l>       <r>Poland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Portugalio<s n="np"/><s n="top"/></l>  <r>Portugal<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Prago<s n="np"/><s n="top"/></l>       <r>Prague<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Romo<s n="np"/><s n="top"/></l>        <r>Rome<s n="np"/><s n="top"/></r></p></e>
@@ -1147,15 +1150,21 @@ BUT:
 <e>       <p><l>ĉilia<s n="adj"/></l>                  <r>Chilean<s n="adj"/></r></p></e>
 <e>       <p><l>ĉina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ĥina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
+<e>       <p><l>nederlanda<s n="adj"/></l>             <r>Dutch<s n="adj"/></r></p></e>
+<e>       <p><l>nederlandano<s n="n"/></l>             <r>Dutch<s n="n"/></r></p></e>
 <e>       <p><l>dana<s n="adj"/></l>                   <r>Danish<s n="adj"/></r></p></e>
+<e>       <p><l>dano<s n="n"/></l>                     <r>Danish<s n="n"/></r></p></e>
 <e>       <p><l>egipta<s n="adj"/></l>                 <r>Egyptian<s n="adj"/></r></p></e>
 <e>       <p><l>eŭropa<s n="adj"/></l>                 <r>European<s n="adj"/></r></p></e>
 <e>       <p><l>finna<s n="adj"/></l>                  <r>Finnish<s n="adj"/></r></p></e>
+<e>       <p><l>finno<s n="n"/></l>                    <r>Finnish<s n="n"/></r></p></e>
 <e>       <p><l>flandra<s n="adj"/></l>                <r>Flemish<s n="adj"/></r></p></e>
 <e>       <p><l>franca<s n="adj"/></l>                 <r>French<s n="adj"/></r></p></e>
 <e>       <p><l>gotika<s n="adj"/></l>                 <r>Gothic<s n="adj"/></r></p></e>
 <e>       <p><l>hispana<s n="adj"/></l>                <r>Spanish<s n="adj"/></r></p></e>
+<e>       <p><l>hispano<s n="n"/></l>                <r>Spanish<s n="n"/></r></p></e>
 <e>       <p><l>hungara<s n="adj"/></l>                <r>Hungarian<s n="adj"/></r></p></e>
+<e>       <p><l>hungaro<s n="n"/></l>                <r>Hungarian<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĥina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
 <e>       <p><l>ibera<s n="adj"/></l>                  <r>Iberian<s n="adj"/></r></p></e>
 <e>       <p><l>indonezia<s n="adj"/></l>              <r>Indonesian<s n="adj"/></r></p></e>
@@ -1180,11 +1189,13 @@ BUT:
 <e>       <p><l>Sovetio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Sovet-Unio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
+<e>       <p><l>svedo<s n="n"/></l>                    <r>Swedish<s n="n"/></r></p></e>
 <e>       <p><l>svisa<s n="adj"/></l>                  <r>Swiss<s n="adj"/></r></p></e>
 <e>       <p><l>turka<s n="adj"/></l>                  <r>Turkish<s n="adj"/></r></p></e>
 <e>       <p><l>albana<s n="adj"/></l>                 <r>Albanian<s n="adj"/></r></p></e>
 <e>       <p><l>amerika<s n="adj"/></l>                <r>American<s n="adj"/></r></p></e>
 <e>       <p><l>aŭstralia<s n="adj"/></l>              <r>Australian<s n="adj"/></r></p></e>
+<e>       <p><l>kanada<s n="adj"/></l>                 <r>Canadian<s n="adj"/></r></p></e>
 <e>       <p><l>kataluna<s n="adj"/></l>               <r>Catalan<s n="adj"/></r></p></e>
 <e>       <p><l>kolombia<s n="adj"/></l>               <r>Colombian<s n="adj"/></r></p></e>
 <e>       <p><l>indiana<s n="adj"/></l>                <r>Indian<s n="adj"/></r></p></e>
@@ -1293,6 +1304,7 @@ BUT:
 <e>       <p><l>argentinano<s n="n"/></l>              <r>Argentinian<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>aziano<s n="n"/></l>                   <r>Asian<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>aŭstraliano<s n="n"/></l>              <r>Australian<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>kanadano<s n="n"/></l>                 <r>Canadian<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>amerikano<s n="n"/></l>                <r>American<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>jugoslavo<s n="n"/></l>                <r>Yugoslav<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>kanario<s n="n"/></l>                  <r>Canarian<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -2095,6 +2107,20 @@ TODO??
 
 <e>       <p><l>turniro<s n="n"/></l>                  <r>open<s n="n"/></r></p></e>
 <e>       <p><l>per<b/>persono<s n="adv"/></l>         <r>per<b/>capita<s n="adv"/></r></p></e>
+<!--
+<e>       <p><l>iom<b/>da<s n="pr"/></l>               <r>a<b/>number<b/>of<s n="pr"/></r></p></e>
+-->
+
+<e>       <p><l>bolŝeviko<s n="n"/></l>                <r>Bolshevik<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>bolŝevika<s n="adj"/></l>              <r>Bolshevik<s n="adj"/></r></p></e>
+<e>       <p><l>menŝeviko<s n="n"/></l>                <r>Menshevik<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>menŝevika<s n="adj"/></l>              <r>Menshevik<s n="adj"/></r></p></e>
+<e>       <p><l>latinida<s n="adj"/></l>               <r>Romance<s n="adj"/></r></p></e>
+
+<e>       <p><l>puĉo<s n="n"/></l>                     <r>coup<s n="n"/></r></p></e>
+<e r="LR"><p><l>puĉo<s n="n"/></l>                     <r>coup<b/>d'état<s n="n"/></r></p></e>
+<e>       <p><l>mortobato<s n="n"/></l>                <r>coup<b/>de<b/>grâce<s n="n"/></r></p></e>
+<e r="LR"><p><l>ŝtatrenverso<s n="n"/></l>             <r>coup<s n="n"/></r></p></e>
 
 <!-- Hèctor end 2009.02.20 -->
 
@@ -2882,7 +2908,6 @@ TODO??
 <e r="LR"><p><l>inspektisto<s n="n"/></l>              <r>auditor<s n="n"/></r></p></e>
 <e>       <p><l>aŭditorio<s n="n"/></l>                <r>auditorium<s n="n"/></r></p></e>
 <e>       <p><l>onklino<s n="n"/></l>                  <r>aunt<s n="n"/></r></p></e>
-<e r="LR"><p><l>aŭstralia<s n="adj"/></l>              <r>Australian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aŭstria<s n="adj"/></l>                <r>Austrian<s n="adj"/></r></p></e>
 <e>       <p><l>aŭtentika<s n="adj"/></l>              <r>authentic<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aŭtenta<s n="adj"/></l>                <r>authentic<s n="adj"/></r></p></e>
@@ -15112,7 +15137,6 @@ TODO??
 <e r="RL"><p><l>bastono<s n="n"/></l>                  <r>clave<s n="n"/></r></p></e>
 <e>       <p><l>batado<s n="n"/></l>                   <r>licking<s n="n"/></r></p></e>
 <e>       <p><l>bataliono<s n="n"/></l>                <r>batallion<s n="n"/></r></p></e>
-<e r="RL"><p><l>bato<s n="n"/></l>                     <r>coup<s n="n"/></r></p></e>
 <e r="LR"><p><l>bazpilkado<s n="n"/></l>               <r>baseball<s n="n"/></r></p></e>
 <e r="LR"><p><l>bebo<s n="n"/><s n="m"/></l>           <r>baby<s n="n"/></r></p></e>
 <e>       <p><l>belvidejo<s n="n"/></l>                <r>oriel<s n="n"/></r></p></e>
@@ -18424,8 +18448,6 @@ TODO??
 <e>       <p><l>repuŝofensivo<s n="n"/></l>            <r>counteroffensive<s n="n"/></r></p></e>
 <e>       <p><l>kontraŭpezilo<s n="n"/></l>            <r>counterweight<s n="n"/></r></p></e>
 <e>       <p><l>gubernio<s n="n"/></l>                 <r>county<s n="n"/></r></p></e>
-<e r="LR"><p><l>puĉo<s n="n"/></l>                     <r>coup<s n="n"/></r></p></e>
-<e r="LR"><p><l>ŝtatrenverso<s n="n"/></l>             <r>coup<s n="n"/></r></p></e>
 <e>       <p><l>kupli<s n="vblex"/></l>                <r>couple<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kuraĝa<s n="adj"/></l>                 <r>courageous<s n="adj"/></r></p></e>
 <e r="RL"><p><l>ĝentile<s n="adv"/></l>                <r>courteously<s n="adv"/></r></p></e>
