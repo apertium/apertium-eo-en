@@ -379,6 +379,8 @@ sort -t '"' -k 3 x
       <attr-item tags="fti"/>
       <attr-item tags="past"/>
     </def-attr>
+
+    
     <def-attr n="a_gen">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
@@ -773,7 +775,7 @@ La rezulto estas unu sola leksika formo (venos) -->
 	    <choose>
 	      <when>
 		<test>
-		  <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
+		  <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
 		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="pers"/></let>
@@ -794,9 +796,9 @@ La rezulto estas unu sola leksika formo (venos) -->
 	      <when>
 		<test>
 		  <or>
-		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
-		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="past"/></equal>
-		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="inf"/></equal>
+		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
+		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
+		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
 		  </or>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
@@ -815,7 +817,7 @@ La rezulto estas unu sola leksika formo (venos) -->
 		  </concat>
 		</let>
 	      </when>
-	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="temps"/></concat></let>
+	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let>
             </otherwise>
 	    </choose>
 	  </when>
