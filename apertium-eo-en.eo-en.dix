@@ -964,8 +964,10 @@ BUT:
 <e>       <p><l>Bogoto<s n="np"/><s n="top"/></l>      <r>Bogota<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Bolivio<s n="np"/><s n="top"/></l>     <r>Bolivia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Bosnio<s n="np"/><s n="top"/></l>      <r>Bosnia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Bosnio-Hercegovino<s n="np"/><s n="top"/></l>  <r>Bosnia-Herzegovina<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Brazilo<s n="np"/><s n="top"/></l>     <r>Brazil<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Britio<s n="np"/><s n="top"/></l>      <r>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Britain<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Great<b/>Britain<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Bruselo<s n="np"/><s n="top"/></l>     <r>Brussels<s n="np"/><s n="top"/></r></p></e>
@@ -1015,6 +1017,7 @@ BUT:
 <e>       <p><l>Karakaso<s n="np"/><s n="top"/></l>    <r>Caracas<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Karibio<s n="np"/><s n="top"/></l>     <r>Carribean<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kartvelio<s n="np"/><s n="top"/></l>   <r>Georgia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kastilio<s n="np"/><s n="top"/></l>    <r>Castile<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kastilio-Leono<s n="np"/><s n="top"/></l><r>Castile<b/>and<b/>Leon<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Katalunio<s n="np"/><s n="top"/></l>   <r>Catalonia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kataro<s n="np"/><s n="top"/></l>      <r>Qatar<s n="np"/><s n="top"/></r></p></e>
@@ -1066,6 +1069,7 @@ BUT:
 <e>       <p><l>Romo<s n="np"/><s n="top"/></l>        <r>Rome<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ruando<s n="np"/><s n="top"/></l>      <r>Rwanda<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Rumanio<s n="np"/><s n="top"/></l>     <r>Romania<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Rumanio<s n="np"/><s n="top"/></l>     <r>Rumania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Rusio<s n="np"/><s n="top"/></l>       <r>Russia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Saharo<s n="np"/><s n="top"/></l>      <r>Sahara<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Saud-Arabio<s n="np"/><s n="top"/></l> <r>Saudi<b/>Arabia<s n="np"/><s n="top"/></r></p></e>
@@ -1087,8 +1091,10 @@ BUT:
 <e>       <p><l>Tunizio<s n="np"/><s n="top"/></l>     <r>Tunis<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Turkio<s n="np"/><s n="top"/></l>      <r>Turkey<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ukrainio<s n="np"/><s n="top"/></l>    <r>Ukraine<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Ukrajno<s n="np"/><s n="top"/></l>     <r>Ukraine<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Urugvajo<s n="np"/><s n="top"/></l>    <r>Uruguay<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Usono<s n="np"/><s n="top"/></l>       <r>United<b/>States<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>United<b/>States<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Varsovio<s n="np"/><s n="top"/></l>    <r>Warsaw<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vaŝingtono<s n="np"/><s n="top"/></l>  <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Venezuelo<s n="np"/><s n="top"/></l>   <r>Venezuela<s n="np"/><s n="top"/></r></p></e>
@@ -1125,7 +1131,6 @@ BUT:
 <e>       <p><l>germana<s n="adj"/></l>                <r>German<s n="adj"/></r></p></e>
 <e>       <p><l>persa<s n="adj"/></l>                  <r>Persian<s n="adj"/></r></p></e>
 <e>       <p><l>perua<s n="adj"/></l>                  <r>Peruvian<s n="adj"/></r></p></e>
-<e>       <p><l>pola<s n="adj"/></l>                   <r>Polish<s n="adj"/></r></p></e>
 <e>       <p><l>rusa<s n="adj"/></l>                   <r>Russian<s n="adj"/></r></p></e>
 <e>       <p><l>budhismo<s n="n"/></l>                 <r>Buddhism<s n="n"/></r></p></e>
 <e>       <p><l>afrika<s n="adj"/></l>                 <r>African<s n="adj"/></r></p></e>
@@ -1141,6 +1146,7 @@ BUT:
 <e>       <p><l>bulgara<s n="adj"/></l>                <r>Bulgarian<s n="adj"/></r></p></e>
 <e>       <p><l>ĉilia<s n="adj"/></l>                  <r>Chilean<s n="adj"/></r></p></e>
 <e>       <p><l>ĉina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
+<e r="LR"><p><l>ĥina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
 <e>       <p><l>dana<s n="adj"/></l>                   <r>Danish<s n="adj"/></r></p></e>
 <e>       <p><l>egipta<s n="adj"/></l>                 <r>Egyptian<s n="adj"/></r></p></e>
 <e>       <p><l>eŭropa<s n="adj"/></l>                 <r>European<s n="adj"/></r></p></e>
@@ -1158,7 +1164,8 @@ BUT:
 <e r="RL"><p><l>islama<s n="adj"/></l>                 <r>Muslim<s n="adj"/></r></p></e>
 <e>       <p><l>itala<s n="adj"/></l>                  <r>Italian<s n="adj"/></r></p></e>
 <e>       <p><l>kanaria<s n="adj"/></l>                <r>Canarian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>kastila<s n="adj"/></l>                <r>Spanish<s n="adj"/></r></p></e>
+<e>       <p><l>kastila<s n="adj"/></l>                <r>Castilian<s n="adj"/></r></p></e>
+<e>       <p><l>kastilia<s n="adj"/></l>               <r>Castilian<s n="adj"/></r></p></e>
 <e>       <p><l>kuba<s n="adj"/></l>                   <r>Cuban<s n="adj"/></r></p></e>
 <e>       <p><l>latina<s n="adj"/></l>                 <r>Latin<s n="adj"/></r></p></e>
 <e>       <p><l>maroka<s n="adj"/></l>                 <r>Moroccan<s n="adj"/></r></p></e>
@@ -1177,9 +1184,9 @@ BUT:
 <e>       <p><l>turka<s n="adj"/></l>                  <r>Turkish<s n="adj"/></r></p></e>
 <e>       <p><l>albana<s n="adj"/></l>                 <r>Albanian<s n="adj"/></r></p></e>
 <e>       <p><l>amerika<s n="adj"/></l>                <r>American<s n="adj"/></r></p></e>
-<e>       <p><l>aŭstrala<s n="adj"/></l>               <r>Australian<s n="adj"/></r></p></e>
+<e>       <p><l>aŭstralia<s n="adj"/></l>              <r>Australian<s n="adj"/></r></p></e>
 <e>       <p><l>kataluna<s n="adj"/></l>               <r>Catalan<s n="adj"/></r></p></e>
-<e>       <p><l>kolombiana<s n="adj"/></l>             <r>Colombian<s n="adj"/></r></p></e>
+<e>       <p><l>kolombia<s n="adj"/></l>               <r>Colombian<s n="adj"/></r></p></e>
 <e>       <p><l>indiana<s n="adj"/></l>                <r>Indian<s n="adj"/></r></p></e>
 <e>       <p><l>israela<s n="adj"/></l>                <r>Israeli<s n="adj"/></r></p></e>
 <e>       <p><l>jamajka<s n="adj"/></l>                <r>Jamaican<s n="adj"/></r></p></e>
@@ -1188,7 +1195,93 @@ BUT:
 <e>       <p><l>skandinava<s n="adj"/></l>             <r>Scandinavian<s n="adj"/></r></p></e>
 <e>       <p><l>valencia<s n="adj"/></l>               <r>Valencian<s n="adj"/></r></p></e>
 <e>       <p><l>jugoslava<s n="adj"/></l>              <r>Yugoslav<s n="adj"/></r></p></e>
+<e>       <p><l>slovena<s n="adj"/></l>                <r>Slovenian<s n="adj"/></r></p></e>
+<e>       <p><l>kroata<s n="adj"/></l>                 <r>Croation<s n="adj"/></r></p></e>
+<e>       <p><l>serba<s n="adj"/></l>                  <r>Serbian<s n="adj"/></r></p></e>
+<e>       <p><l>makedona<s n="adj"/></l>               <r>Macedonian<s n="adj"/></r></p></e>
+<e>       <p><l>kosova<s n="adj"/></l>                 <r>Kosovar<s n="adj"/></r></p></e>
+<e>       <p><l>bosnia<s n="adj"/></l>                 <r>Bosnian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>bosniano<s n="adj"/></l>               <r>Bosniak<s n="adj"/></r></p></e>
+<e r="LR"><p><l>bosna<s n="adj"/></l>                  <r>Bosnian<s n="adj"/></r></p></e>
+<e>       <p><l>hercegovina<s n="adj"/></l>            <r>Herzegovinan<s n="adj"/></r></p></e>
+<e>       <p><l>sloveno<s n="n"/></l>                  <r>Slovenian<s n="n"/></r></p></e>
+<e>       <p><l>kroato<s n="n"/></l>                   <r>Croation<s n="n"/></r></p></e>
+<e>       <p><l>serbo<s n="n"/></l>                    <r>Serbian<s n="n"/></r></p></e>
+<e>       <p><l>makedono<s n="n"/></l>                 <r>Macedonian<s n="n"/></r></p></e>
+<e>       <p><l>kosovano<s n="n"/></l>                 <r>Kosovar<s n="n"/></r></p></e>
+<e>       <p><l>bosniano<s n="n"/></l>                 <r>Bosnian<s n="n"/></r></p></e>
+<e r="RL"><p><l>bosniano<s n="n"/></l>                 <r>Bosniak<s n="n"/></r></p></e>
+<e r="LR"><p><l>bosno<s n="n"/></l>                    <r>Bosnian<s n="n"/></r></p></e>
+<e>       <p><l>hercegovinano<s n="n"/></l>            <r>Herzegovinan<s n="n"/></r></p></e>
 
+<e r="LR"><p><l>pola<s n="adj"/></l>                   <r>Pole<s n="adj"/></r></p></e>
+<e>       <p><l>polo<s n="n"/></l>                     <r>Pole<s n="n"/></r></p></e>
+<e>       <p><l>pola<s n="adj"/></l>                   <r>Polish<s n="adj"/></r></p></e>
+<e r="RL"><p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
+<e>       <p><l>rumana<s n="adj"/></l>                 <r>Romanian<s n="adj"/></r></p></e>
+<e>       <p><l>rumano<s n="n"/></l>                   <r>Romanian<s n="n"/></r></p></e>
+<e r="RL"><p><l>rumana<s n="adj"/></l>                 <r>Rumanian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>rumano<s n="n"/></l>                   <r>Rumanian<s n="n"/></r></p></e>
+<e>       <p><l>bulgara<s n="adj"/></l>                <r>Bulgarian<s n="adj"/></r></p></e>
+<e>       <p><l>bulgaro<s n="n"/></l>                  <r>Bulgarian<s n="n"/></r></p></e>
+<e>       <p><l>slovaka<s n="adj"/></l>                <r>Slovak<s n="adj"/></r></p></e>
+<e>       <p><l>slovako<s n="n"/></l>                  <r>Slovak<s n="n"/></r></p></e>
+<e>       <p><l>ĉeĥa<s n="adj"/></l>                   <r>Czech<s n="adj"/></r></p></e>
+<e>       <p><l>ĉeĥo<s n="n"/></l>                     <r>Czech<s n="n"/></r></p></e>
+<e>       <p><l>ukraina<s n="adj"/></l>                <r>Ukranian<s n="adj"/></r></p></e>
+<e>       <p><l>ukraino<s n="n"/></l>                  <r>Ukranian<s n="n"/></r></p></e>
+<e r="RL"><p><l>ukrajnano<s n="adj"/></l>              <r>Ukranian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>ukrajnano<s n="n"/></l>                <r>Ukranian<s n="n"/></r></p></e>
+<e>       <p><l>belorusa<s n="adj"/></l>               <r>Belarussian<s n="adj"/></r></p></e>
+<e>       <p><l>beloruso<s n="n"/></l>                 <r>Belarussian<s n="n"/></r></p></e>
+<e r="RL"><p><l>bjeloruso<s n="adj"/></l>              <r>Belarussian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>bjeloruso<s n="n"/></l>                <r>Belarussian<s n="n"/></r></p></e>
+<e>       <p><l>armena<s n="adj"/></l>               <r>Armenian<s n="adj"/></r></p></e>
+<e>       <p><l>armeno<s n="n"/></l>                 <r>Armenian<s n="n"/></r></p></e>
+<e>       <p><l>kartvela<s n="adj"/></l>               <r>Georgian<s n="adj"/></r></p></e>
+<e>       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
+<e r="RL"><p><l>georgiano<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
+<e>       <p><l>azera<s n="adj"/></l>               <r>Azerbaijan<s n="adj"/></r></p></e>
+<e>       <p><l>azero<s n="n"/></l>                 <r>Azerbaijan<s n="n"/></r></p></e>
+<e r="RL"><p><l>azerbajĝana<s n="adj"/></l>              <r>Azerbaijan<s n="adj"/></r></p></e>
+<e r="RL"><p><l>azerbajĝano<s n="n"/></l>                <r>Azerbaijan<s n="n"/></r></p></e>
+<e>       <p><l>kazaĥa<s n="adj"/></l>               <r>Kazakh<s n="adj"/></r></p></e>
+<e>       <p><l>kazaĥo<s n="n"/></l>                 <r>Kazakh<s n="n"/></r></p></e>
+<e r="RL"><p><l>kazaĥstana<s n="adj"/></l>              <r>Kazakh<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kazaĥstanano<s n="n"/></l>                <r>Kazakh<s n="n"/></r></p></e>
+<e>       <p><l>uzbeka<s n="adj"/></l>               <r>Uzbek<s n="adj"/></r></p></e>
+<e>       <p><l>uzbeko<s n="n"/></l>                 <r>Uzbek<s n="n"/></r></p></e>
+<e r="RL"><p><l>uzbekistana<s n="adj"/></l>              <r>Uzbek<s n="adj"/></r></p></e>
+<e r="RL"><p><l>uzbekistanano<s n="n"/></l>                <r>Uzbek<s n="n"/></r></p></e>
+<e>       <p><l>karakalpaka<s n="adj"/></l>               <r>Karakalpak<s n="adj"/></r></p></e>
+<e>       <p><l>karakalpako<s n="n"/></l>                 <r>Karakalpak<s n="n"/></r></p></e>
+<e>       <p><l>kirgiza<s n="adj"/></l>               <r>Kyrgyz<s n="adj"/></r></p></e>
+<e>       <p><l>kirgizo<s n="n"/></l>                 <r>Kyrgyz<s n="n"/></r></p></e>
+<e r="RL"><p><l>kirgizistana<s n="adj"/></l>              <r>Kyrgyz<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kirgizistanano<s n="n"/></l>                <r>Kyrgyz<s n="n"/></r></p></e>
+<e>       <p><l>taĝika<s n="adj"/></l>               <r>Tajik<s n="adj"/></r></p></e>
+<e>       <p><l>taĝiko<s n="n"/></l>                 <r>Tajik<s n="n"/></r></p></e>
+<e r="RL"><p><l>taĝiskistana<s n="adj"/></l>              <r>Tajik<s n="adj"/></r></p></e>
+<e r="RL"><p><l>taĝiskistanano<s n="n"/></l>                <r>Tajik<s n="n"/></r></p></e>
+<e>       <p><l>turkmena<s n="adj"/></l>               <r>Turkmen<s n="adj"/></r></p></e>
+<e>       <p><l>turkmeno<s n="n"/></l>                 <r>Turkmen<s n="n"/></r></p></e>
+<e r="RL"><p><l>turkmenistana<s n="adj"/></l>              <r>Turkmen<s n="adj"/></r></p></e>
+<e r="RL"><p><l>turkmenistanano<s n="n"/></l>                <r>Turkmen<s n="n"/></r></p></e>
+<e>       <p><l>ujgura<s n="adj"/></l>               <r>Uyghur<s n="adj"/></r></p></e>
+<e>       <p><l>ujguro<s n="n"/></l>                 <r>Uyghur<s n="n"/></r></p></e>
+<e>       <p><l>mongola<s n="adj"/></l>               <r>Mongol<s n="adj"/></r></p></e>
+<e>       <p><l>mongolo<s n="n"/></l>                 <r>Mongol<s n="n"/></r></p></e>
+<e>       <p><l>persa<s n="adj"/></l>               <r>Persian<s n="adj"/></r></p></e>
+<e>       <p><l>perso<s n="n"/></l>                 <r>Persian<s n="n"/></r></p></e>
+<e>       <p><l>irana<s n="adj"/></l>               <r>Iranian<s n="adj"/></r></p></e>
+<e>       <p><l>iranano<s n="n"/></l>                 <r>Iranian<s n="n"/></r></p></e>
+<e>       <p><l>ĉuvaŝa<s n="adj"/></l>               <r>Chuvash<s n="adj"/></r></p></e>
+<e>       <p><l>ĉuvaŝo<s n="n"/></l>                 <r>Chuvash<s n="n"/></r></p></e>
+<e>       <p><l>nepala<s n="adj"/></l>               <r>Nepali<s n="adj"/></r></p></e>
+<e>       <p><l>nepalano<s n="n"/></l>                 <r>Nepali<s n="n"/></r></p></e>
+<e>       <p><l>hebrea<s n="adj"/></l>               <r>Hebrew<s n="adj"/></r></p></e>
+<e>       <p><l>hebreo<s n="n"/></l>                 <r>Hebrew<s n="n"/></r></p></e>
 
 
     <!-- Nouns with gender: Nationalities -->
@@ -1988,7 +2081,20 @@ TODO??
 <e>       <p><l>subtera<s n="n"/></l>                  <r>underground<s n="adj"/></r></p></e>
 <e r="LR"><p><l>subgrunda<s n="n"/></l>                <r>underground<s n="adj"/></r></p></e>
 
-<e>       <p><l>antaŭ<s n="pr"/></l>                   <r>prior<b/>to<s n="pr"/></r></p></e>
+<e r="RL"><p><l>antaŭ<s n="pr"/></l>                   <r>prior<b/>to<s n="pr"/></r></p></e>
+
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>USA<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>USA<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Sovet-Unio<s n="np"/><s n="top"/></l>  <r>USSR<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Sovet-Unio<s n="np"/><s n="top"/></l>  <r>the<b/>USSR<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>UK<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>UK<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>US<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>US<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>AVI<s n="pr"/><s n="top"/></l>         <r>VAT<b/>to<s n="pr"/></r></p></e>
+
+<e>       <p><l>turniro<s n="n"/></l>                  <r>open<s n="n"/></r></p></e>
+<e>       <p><l>per<b/>persono<s n="adv"/></l>         <r>per<b/>capita<s n="adv"/></r></p></e>
 
 <!-- Hèctor end 2009.02.20 -->
 
@@ -7150,7 +7256,21 @@ TODO??
 <e r="LR"><p><l>aŭtentike<s n="adv"/></l>              <r>genuinely<s n="adv"/></r></p></e>
 <e>       <p><l>geografio<s n="n"/></l>                <r>geography<s n="n"/></r></p></e>
 <e>       <p><l>geometrio<s n="n"/></l>                <r>geometry<s n="n"/></r></p></e>
-<e>       <p><l>Gruzio<s n="np"/></l>                  <r>Georgia<s n="np"/></r></p></e>
+<e>       <p><l>Armenio<s n="np"/></l>                 <r>Armenia<s n="np"/></r></p></e>
+<e>       <p><l>Azerio<s n="np"/></l>                  <r>Azerbaijan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Azerbajĝano<s n="np"/></l>             <r>Azerbaijan<s n="np"/></r></p></e>
+<e>       <p><l>Kazaĥio<s n="np"/></l>                 <r>Kazakhstan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Kazaĥistano<s n="np"/></l>             <r>Kazakhstan<s n="np"/></r></p></e>
+<e>       <p><l>Uzbekio<s n="np"/></l>                 <r>Uzbekistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Uzbekistano<s n="np"/></l>             <r>Uzbekistan<s n="np"/></r></p></e>
+<e>       <p><l>Kirgizio<s n="np"/></l>                <r>Kyrgyzstan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Kirgizistano<s n="np"/></l>            <r>Kyrgyzstan<s n="np"/></r></p></e>
+<e>       <p><l>Taĝikio<s n="np"/></l>                 <r>Tajikistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Taĝikistano<s n="np"/></l>             <r>Tajikistan<s n="np"/></r></p></e>
+<e>       <p><l>Turkmenio<s n="np"/></l>               <r>Turkmenistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Turkmenistan<s n="np"/></l>            <r>Turkmenistan<s n="np"/></r></p></e>
+<e>       <p><l>Kartvelio<s n="np"/></l>               <r>Georgia<s n="np"/></r></p></e>
+<e r="LR"><p><l>Gruzio<s n="np"/></l>                  <r>Georgia<s n="np"/></r></p></e>
 <e r="LR"><p><l>Georgio<s n="np"/></l>                 <r>Georgia<s n="np"/></r></p></e>
 <e>       <p><l>mikrobo<s n="n"/></l>                  <r>germ<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝermo<s n="n"/></l>                    <r>germ<s n="n"/></r></p></e>
@@ -9702,7 +9822,9 @@ TODO??
 <e>       <p><l>norda<s n="adj"/></l>                  <r>north<s n="adj"/></r></p></e>
 <e>       <p><l>nordo<s n="n"/></l>                    <r>north<s n="n"/></r></p></e>
 <e>       <p><l>nordoriento<s n="n"/></l>              <r>northeast<s n="n"/></r></p></e>
+<e>       <p><l>nordorienta<s n="adj"/></l>            <r>northeast<s n="adj"/></r></p></e>
 <e>       <p><l>nordokcidento<s n="n"/></l>            <r>northwest<s n="n"/></r></p></e>
+<e>       <p><l>nordokcidenta<s n="adj"/></l>          <r>northwest<s n="adj"/></r></p></e>
 <e>       <p><l>nazo<s n="n"/></l>                     <r>nose<s n="n"/></r></p></e>
 <e>       <p><l>nostalgio<s n="n"/></l>                <r>nostalgia<s n="n"/></r></p></e>
 <e r="LR"><p><l>sopiro<s n="n"/></l>                   <r>nostalgia<s n="n"/></r></p></e>
@@ -11986,7 +12108,7 @@ TODO??
 <e r="LR"><p><l>romaneca<s n="adj"/></l>               <r>romantic<s n="adj"/></r></p></e>
 <e>       <p><l>romantikismo<s n="n"/></l>             <r>romanticism<s n="n"/></r></p></e>
 <e r="LR"><p><l>romaneco<s n="n"/></l>                 <r>romanticism<s n="n"/></r></p></e>
-<e>       <p><l>Romanio<s n="np"/></l>                 <r>Rome<s n="np"/></r></p></e>
+<e>       <p><l>Romo<s n="np"/></l>                    <r>Rome<s n="np"/></r></p></e>
 <e>       <p><l>tegmento<s n="n"/></l>                 <r>roof<s n="n"/></r></p></e>
 <e>       <p><l>ĉambro<s n="n"/></l>                   <r>room<s n="n"/></r></p></e>
 <e r="LR"><p><l>salono<s n="n"/></l>                   <r>room<s n="n"/></r></p></e>
@@ -12916,6 +13038,10 @@ TODO??
 <e r="LR"><p><l>sciiganto<s n="n"/></l>                <r>source<s n="n"/></r></p></e>
 <e>       <p><l>suda<s n="adj"/></l>                   <r>south<s n="adj"/></r></p></e>
 <e>       <p><l>sudo<s n="n"/></l>                     <r>south<s n="n"/></r></p></e>
+<e>       <p><l>sudorienta<s n="adj"/></l>             <r>southeast<s n="adj"/></r></p></e>
+<e>       <p><l>sudoriento<s n="n"/></l>               <r>southeast<s n="n"/></r></p></e>
+<e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwest<s n="adj"/></r></p></e>
+<e>       <p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
 <e>       <p><l>suverena<s n="adj"/></l>               <r>sovereign<s n="adj"/></r></p></e>
 <e>       <p><l>suvereno<s n="n"/></l>                 <r>sovereign<s n="n"/></r></p></e>
 <e>       <p><l>suvereneco<s n="n"/></l>               <r>sovereignty<s n="n"/></r></p></e>
@@ -14234,7 +14360,6 @@ TODO??
 <e>       <p><l>tirano<s n="n"/></l>                   <r>tyrant<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>pneŭo<s n="n"/></l>                    <r>tyre<s n="n"/></r></p></e>
 <e>       <p><l>malbela<s n="adj"/></l>                <r>ugly<s n="adj"/></r></p></e>
-<e>       <p><l>Ukrajno<s n="np"/></l>                 <r>Ukraine<s n="np"/></r></p></e>
 <e>       <p><l>ulcero<s n="n"/></l>                   <r>ulcer<s n="n"/></r></p></e>
 <e>       <p><l>finfina<s n="adj"/></l>                <r>ultimate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>definitiva<s n="adj"/></l>             <r>ultimate<s n="adj"/></r></p></e>
@@ -16876,7 +17001,8 @@ TODO??
 <e r="RL"><p><l>aspiro<s n="n"/></l>                   <r>aspiration<s n="n"/></r></p></e>
 <e>       <p><l>aspirino<s n="n"/></l>                 <r>aspirin<s n="n"/></r></p></e>
 <e>       <p><l>atakinto<s n="n"/></l>                 <r>assailant<s n="n"/></r></p></e>
-<e r="RL"><p><l>mortigi<s n="vblex"/></l>              <r>assassinate<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>murdi<s n="vblex"/></l>                <r>assassinate<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>murdo<s n="n"/></l>                    <r>assassination<s n="n"/></r></p></e>
 <e r="RL"><p><l>atenco<s n="n"/></l>                   <r>assault<s n="n"/></r></p></e>
 <e r="RL"><p><l>atenci<s n="vblex"/></l>               <r>assault<s n="vblex"/></r></p></e>
 <e>       <p><l>kunmetanto<s n="n"/></l>               <r>assembler<s n="n"/></r></p></e>
@@ -17078,7 +17204,8 @@ TODO??
 <e>       <p><l>konduta<s n="adj"/></l>                <r>behavioural<s n="adj"/></r></p></e>
 <e>       <p><l>senkapigi<s n="vblex"/></l>            <r>behead<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>estado<s n="n"/></l>                   <r>being<s n="n"/></r></p></e>
-<e>       <p><l>Bjelorusio<s n="np"/></l>              <r>Belarus<s n="np"/></r></p></e>
+<e>       <p><l>Belorusio<s n="np"/></l>               <r>Belarus<s n="np"/></r></p></e>
+<e r="LR"><p><l>Bjelorusio<s n="np"/></l>              <r>Belarus<s n="np"/></r></p></e>
 <e>       <p><l>rukti<s n="vblex"/></l>                <r>belch<s n="vblex"/></r></p></e>
 <e>       <p><l>kredanto<s n="n"/></l>                 <r>believer<s n="n"/></r></p></e>
 <e r="RL"><p><l>bagateligi<s n="vblex"/></l>           <r>belittle<s n="vblex"/></r></p></e>
@@ -20282,7 +20409,7 @@ TODO??
 <e r="RL"><p><l>aspekto<s n="n"/></l>                  <r>guise<s n="n"/></r></p></e>
 <e>       <p><l>gitaristo<s n="n"/></l>                <r>guitarist<s n="n"/></r></p></e>
 <e>       <p><l>Golfo<s n="np"/></l>                   <r>Gulf<s n="np"/></r></p></e>
-<e r="RL"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
+<e r="LR"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
 <e r="RL"><p><l>engluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekgluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>pafanto<s n="n"/></l>                  <r>gunman<s n="n"/></r></p></e>
@@ -21203,8 +21330,8 @@ TODO??
 <e r="LR"><p><l>scipovinta<s n="adj"/></l>             <r>known<s n="adj"/></r></p></e>
 <e>       <p><l>fingronodo<s n="n"/></l>               <r>knuckle<s n="n"/></r></p></e>
 <e>       <p><l>kriptono<s n="n"/></l>                 <r>krypton<s n="n"/></r></p></e>
-<e>       <p><l>Kurdistano<s n="np"/></l>              <r>Kurdistan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kurdio<s n="np"/></l>                  <r>Kurdistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Kurdistano<s n="np"/></l>              <r>Kurdistan<s n="np"/></r></p></e>
+<e>       <p><l>Kurdio<s n="np"/></l>                  <r>Kurdistan<s n="np"/></r></p></e>
 <e r="LR"><p><l>penlabori<s n="vblex"/></l>            <r>labour<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>labori<s n="vblex"/></l>               <r>labour<s n="vblex"/></r></p></e>
 <e>       <p><l>laĉi<s n="vblex"/></l>                 <r>lace<s n="vblex"/></r></p></e>
@@ -23606,7 +23733,7 @@ TODO??
 <e r="LR"><p><l>ruliĝado<s n="n"/></l>                 <r>rolling<s n="n"/></r></p></e>
 <e>       <p><l>roma<s n="adj"/></l>                   <r>roman<s n="adj"/></r></p></e>
 <e r="LR"><p><l>romania<s n="adj"/></l>                <r>roman<s n="adj"/></r></p></e>
-<e>       <p><l>Romano<s n="np"/></l>                  <r>Roman<s n="np"/></r></p></e>
+<e r="LR"><p><l>Romano<s n="np"/></l>                  <r>Roman<s n="np"/></r></p></e>
 <e r="LR"><p><l>Romana<s n="np"/></l>                  <r>Roman<s n="np"/></r></p></e>
 <e>       <p><l>romanecigi<s n="vblex"/></l>           <r>romanticise<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kaprioladi<s n="vblex"/></l>           <r>romp<s n="vblex"/></r></p></e>

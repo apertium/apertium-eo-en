@@ -2337,6 +2337,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="Arab">                 <i>Arab</i><par n="house__n"/></e>
 <e lm="Arab">                 <i>Arab</i><par n="expensive__adj"/></e>
+<e lm="Arabic">               <i>Arabic</i><par n="expensive__adj"/></e>
 <e lm="Arabia">               <i>Arabia</i><par n="Barcelona__np"/></e>
 <e lm="Aragon">               <i>Aragon</i><par n="Barcelona__np"/></e>
 <e lm="Argentina">            <i>Argentina</i><par n="Barcelona__np"/></e>
@@ -2382,7 +2383,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Cantabria">            <i>Cantabria</i><par n="Barcelona__np"/></e>
 <e lm="Caracas">              <i>Caracas</i><par n="Barcelona__np"/></e>
 <e lm="Carribean">            <i>Carribean</i><par n="Barcelona__np"/></e>
+<e lm="Castile">              <i>Castile</i><par n="Barcelona__np"/></e>
 <e lm="Castile and Leon">     <i>Castile<b/>and<b/>Leon</i><par n="Barcelona__np"/></e>
+<e lm="Castilian">            <i>Castilian</i><par n="house__n"/></e>
+<e lm="Castilian">            <i>Castilian</i><par n="expensive__adj"/></e>
 <e lm="Catalan">              <i>Catalan</i><par n="house__n"/></e>
 <e lm="Catalan">              <i>Catalan</i><par n="expensive__adj"/></e>
 <e lm="Catalonia">            <i>Catalonia</i><par n="Barcelona__np"/></e>
@@ -2594,6 +2598,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Protestant">           <i>Protestant</i><par n="expensive__adj"/></e>
 <e lm="Qatar">                <i>Qatar</i><par n="Barcelona__np"/></e>
 <e lm="Romania">              <i>Romania</i><par n="Barcelona__np"/></e>
+<e lm="Rumania">              <i>Rumania</i><par n="Barcelona__np"/></e>
 <e lm="Rome">                 <i>Rome</i><par n="Barcelona__np"/></e>
 <e lm="Russia">               <i>Russia</i><par n="Barcelona__np"/></e>
 <e lm="Russian">              <i>Russian</i><par n="house__n"/></e>
@@ -2639,7 +2644,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Turkish">              <i>Turkish</i><par n="expensive__adj"/></e>
 <e lm="Ukraine">              <i>Ukraine</i><par n="Barcelona__np"/></e>
 <e lm="United Kingdom">       <i>United<b/>Kingdom</i><par n="Barcelona__np"/></e>
+<e lm="the United Kingdom">   <i>the<b/>United<b/>Kingdom</i><par n="Barcelona__np"/></e>
 <e lm="United States">        <i>United<b/>States</i><par n="United_States__np"/></e>
+<e lm="the United States">    <i>the<b/>United<b/>States</i><par n="United_States__np"/></e>
 <e lm="Uruguay">              <i>Uruguay</i><par n="Barcelona__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 <e lm="Valencian">            <i>Valencian</i><par n="house__n"/></e>
@@ -2655,6 +2662,75 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Yugoslav">             <i>Yugoslav</i><par n="expensive__adj"/></e>
 <e lm="Yugoslavia">           <i>Yugoslavia</i><par n="Barcelona__np"/></e>
 <e lm="Yugoslavian">          <p><l>Yugoslavian</l>         <r>Yugoslav</r></p><par n="house__n"/></e>
+<e lm="Slovenian">            <i>Slovenian</i><par n="house__n"/></e>
+<e lm="Slovenian">            <i>Slovenian</i><par n="expensive__adj"/></e>
+<e lm="Croatian">             <i>Croatian</i><par n="house__n"/></e>
+<e lm="Croatian">             <i>Croatian</i><par n="expensive__adj"/></e>
+<e lm="Serbian">              <i>Serbian</i><par n="house__n"/></e>
+<e lm="Serbian">              <i>Serbian</i><par n="expensive__adj"/></e>
+<e lm="Macedonian">            <i>Macedonian</i><par n="house__n"/></e>
+<e lm="Macedonian">            <i>Macedonian</i><par n="expensive__adj"/></e>
+<e lm="Kosovar">              <i>Kosovar</i><par n="house__n"/></e>
+<e lm="Kosovar">              <i>Kosovar</i><par n="expensive__adj"/></e>
+<e lm="Bosnian">              <i>Bosnian</i><par n="house__n"/></e>
+<e lm="Bosnian">              <i>Bosnian</i><par n="expensive__adj"/></e>
+<e lm="Bosniak">              <i>Bosniak</i><par n="house__n"/></e>
+<e lm="Bosniak">              <i>Bosniak</i><par n="expensive__adj"/></e>
+<e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
+<e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
+<e lm="Pole">                 <i>Pole</i><par n="expensive__adj"/></e>
+<e lm="Pole">                 <i>Pole</i><par n="house__n"/></e>
+<e lm="Polish">               <i>Polish</i><par n="expensive__adj"/></e>
+<e lm="Polish">               <i>Polish</i><par n="house__n"/></e>
+<e lm="Romanian">             <i>Romanian</i><par n="expensive__adj"/></e>
+<e lm="Romanian">             <i>Romanian</i><par n="house__n"/></e>
+<e lm="Rumanian">             <i>Rumanian</i><par n="expensive__adj"/></e>
+<e lm="Rumanian">             <i>Rumanian</i><par n="house__n"/></e>
+<e lm="Bulgarian">            <i>Bulgarian</i><par n="expensive__adj"/></e>
+<e lm="Bulgarian">            <i>Bulgarian</i><par n="house__n"/></e>
+<e lm="Slovak">               <i>Slovak</i><par n="expensive__adj"/></e>
+<e lm="Slovak">               <i>Slovak</i><par n="house__n"/></e>
+<e lm="Czech">                <i>Czech</i><par n="expensive__adj"/></e>
+<e lm="Czech">                <i>Czech</i><par n="house__n"/></e>
+<e lm="Ukranian">             <i>Ukranian</i><par n="expensive__adj"/></e>
+<e lm="Ukranian">             <i>Ukranian</i><par n="house__n"/></e>
+<e lm="Belarussian">          <i>Belarussian</i><par n="expensive__adj"/></e>
+<e lm="Belarussian">          <i>Belarussian</i><par n="house__n"/></e>
+<e lm="Herzegovinan">         <i>Herzegovinan</i><par n="expensive__adj"/></e>
+<e lm="Herzegovinan">         <i>Herzegovinan</i><par n="expensive__adj"/></e>
+<e lm="Uyghur">            <i>Uyghur</i><par n="house__n"/></e>
+<e lm="Uyghur">            <i>Uyghur</i><par n="expensive__adj"/></e>
+<e lm="Armenian">            <i>Armenian</i><par n="house__n"/></e>
+<e lm="Armenian">            <i>Armenian</i><par n="expensive__adj"/></e>
+<e lm="Georgian">            <i>Georgian</i><par n="house__n"/></e>
+<e lm="Georgian">            <i>Georgian</i><par n="expensive__adj"/></e>
+<e lm="Azerbaijani">            <i>Azerbaijani</i><par n="house__n"/></e>
+<e lm="Azerbaijani">            <i>Azerbaijani</i><par n="expensive__adj"/></e>
+<e lm="Kazakh">            <i>Kazakh</i><par n="house__n"/></e>
+<e lm="Kazakh">            <i>Kazakh</i><par n="expensive__adj"/></e>
+<e lm="Uzbek">            <i>Uzbek</i><par n="house__n"/></e>
+<e lm="Uzbek">            <i>Uzbek</i><par n="expensive__adj"/></e>
+<e lm="Karakalpak">            <i>Karakalpak</i><par n="house__n"/></e>
+<e lm="Karakalpak">            <i>Karakalpak</i><par n="expensive__adj"/></e>
+<e lm="Kyrgyz">            <i>Kyrgyz</i><par n="house__n"/></e>
+<e lm="Kyrgyz">            <i>Kyrgyz</i><par n="expensive__adj"/></e>
+<e lm="Turkmen">             <i>Turkmen</i><par n="expensive__adj"/></e>
+<e lm="Turkmen">             <i>Turkmen</i><par n="house__n"/></e>
+<e lm="Nepali">             <i>Nepali</i><par n="expensive__adj"/></e>
+<e lm="Nepali">             <i>Nepali</i><par n="house__n"/></e>
+<e lm="Chuvash">             <i>Chuvash</i><par n="expensive__adj"/></e>
+<e lm="Chuvash">             <i>Chuvash</i><par n="house__n"/></e>
+<e lm="Persian">             <i>Persian</i><par n="expensive__adj"/></e>
+<e lm="Persian">             <i>Persian</i><par n="house__n"/></e>
+<e lm="Iranian">             <i>Iranian</i><par n="expensive__adj"/></e>
+<e lm="Iranian">             <i>Iranian</i><par n="house__n"/></e>
+<e lm="Mongolian">           <i>Mongolian</i><par n="expensive__adj"/></e>
+<e lm="Mongolian">           <i>Mongolian</i><par n="house__n"/></e>
+<e lm="Hebrew">           <i>Hebrew</i><par n="expensive__adj"/></e>
+<e lm="Hebrew">           <i>Hebrew</i><par n="house__n"/></e>
+
+
+
 <e lm="a bit">                <i>a<b/>bit</i><par n="maybe__adv"/></e>
 <e lm="a few">                <i>a<b/>few</i><par n="many__det"/></e>
 <e lm="a little bit">         <i>a<b/>little<b/>bit</i><par n="maybe__adv"/></e>
@@ -6768,7 +6844,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <!--    <e lm="northeast"><i>northeast</i><par n="maybe__adv"/></e> -->
 <!--    <e lm="northwest"><i>northwest</i><par n="maybe__adv"/></e> -->
 <e lm="northeast">            <i>northeast</i><par n="east__n"/></e>
+<e lm="northeast">            <i>northeast</i><par n="long/__adj"/></e>
 <e lm="northwest">            <i>northwest</i><par n="east__n"/></e>
+<e lm="northwest">            <i>northwest</i><par n="long/__adj"/></e>
 <e lm="nose">                 <i>nose</i><par n="house__n"/></e>
 <e lm="nostalgia">            <i>nostalgia</i><par n="house__n"/></e>
 <e lm="note down">            <i>not</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>down</l><r><g><b/>down</g></r></p></e>
@@ -6901,6 +6979,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="only">                 <i>only</i><par n="maybe__adv"/></e>
 <e lm="onto">                 <i>onto</i><par n="at__pr"/></e>
 <e lm="opaque">               <i>opaque</i><par n="expensive__adj"/></e>
+<e lm="open">                 <i>open</i><par n="house__n"/></e>
 <e lm="open">                 <i>open</i><par n="expensive__adj"/></e>
 <e lm="open">                 <i>open</i><par n="accept__vblex"/></e>
 <e lm="opening">              <i>opening</i><par n="house__n"/></e>
@@ -8408,6 +8487,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="south">                <i>south</i><par n="east__n"/></e>
 <e lm="south">                <i>south</i><par n="long/__adj"/></e>
 <!--    <e lm="south"><i>south</i><par n="maybe__adv"/></e> -->
+<e lm="southest">             <i>southest</i><par n="east__n"/></e>
+<e lm="southest">             <i>southest</i><par n="long/__adj"/></e>
+<e lm="southwest">            <i>southwest</i><par n="east__n"/></e>
+<e lm="southwest">            <i>southwest</i><par n="long/__adj"/></e>
 <e lm="sovereign">            <i>sovereign</i><par n="house__n"/></e>
 <e lm="sovereign">            <i>sovereign</i><par n="expensive__adj"/></e>
 <e lm="sovereignty">          <i>sovereignt</i><par n="bab/y__n"/></e>
@@ -9887,6 +9970,21 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="prior to">                  <i>prior<b/>to</i><par n="at__pr"/></e>
 
+<e lm="USA">                   <i>USA</i><par n="Barcelona__np"/></e>
+<e lm="the USA">               <i>the<b/>USA</i><par n="Barcelona__np"/></e>
+<e lm="USSR">                  <i>USSR</i><par n="Barcelona__np"/></e>
+<e lm="the USSR">              <i>the<b/>USSR</i><par n="Barcelona__np"/></e>
+<e lm="UK">                    <i>UK</i><par n="Barcelona__np"/></e>
+<e lm="the UK">                <i>the<b/>UK</i><par n="Barcelona__np"/></e>
+<e lm="US">                    <i>US</i><par n="Barcelona__np"/></e>
+<e lm="the US">                <i>the<b/>US</i><par n="Barcelona__np"/></e>
+<e r="LR" lm="U.K.">           <p><l>U.K.</l><r>UK</r></p><par n="Barcelona__np"/></e>
+<e r="LR" lm="U.S.">           <p><l>U.S.</l><r>US</r></p><par n="Barcelona__np"/></e>
+
+<e lm="VAT">                   <i>VAT</i><par n="Barcelona__np"/></e>
+
+<e lm="per capita">            <i>per<b/>capita</i><par n="maybe__adv"/></e>
+
 <!-- Hèctor beg 2009.02.20 -->
 
 <!--- 
@@ -10270,6 +10368,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="aspirin">              <i>aspirin</i><par n="house__n"/></e>
 <e lm="assailant">            <i>assailant</i><par n="house__n"/></e>
 <e lm="assassinate">          <i>assassinat</i><par n="liv/e__vblex"/></e>
+<e lm="assassination">        <i>assassination</i><par n="house__n"/></e>
 <e lm="assault">              <i>assault</i><par n="house__n"/></e>
 <e lm="assault">              <i>assault</i><par n="accept__vblex"/></e>
 <e lm="assembler">            <i>assembler</i><par n="house__n"/></e>
@@ -15290,9 +15389,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="sore">                 <i>sore</i><par n="house__n"/></e>
 <e lm="sorry">                <i>sorr</i><par n="happ/y__adj"/></e>
 <e lm="sour">                 <i>sour</i><par n="accept__vblex"/></e>
-<e lm="south-west">           <i>south-west</i><par n="east__n"/></e>
-<e lm="southeastern">         <i>southeastern</i><par n="expensive__adj"/></e>
 <e lm="southern">             <i>southern</i><par n="expensive__adj"/></e>
+<e lm="southeast">            <i>southeast</i><par n="expensive__adj"/></e>
+<e lm="south-east">           <i>south-east</i><par n="east__n"/></e>
+<e lm="southeastern">         <i>southeastern</i><par n="expensive__adj"/></e>
+<e lm="south-west">           <i>south-west</i><par n="east__n"/></e>
 <e lm="southwest">            <i>southwest</i><par n="east__n"/></e>
 <e lm="southwestern">         <i>southwestern</i><par n="expensive__adj"/></e>
 <e lm="sow">                  <i>sow</i><par n="accept__vblex"/></e>
@@ -16550,11 +16651,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="U.N.">                 <i>U.N.</i><par n="BBC__n"/></e>
 <e lm="UEFA">                 <i>UEFA</i><par n="BBC__n"/></e>
 <e lm="UN">                   <i>UN</i><par n="BBC__n"/></e>
-<e lm="US">                   <i>US</i><par n="BBC__n"/></e>
-<e lm="U.S.">                 <i>U.S.</i><par n="BBC__n"/></e>
-<e lm="UK">                   <i>UK</i><par n="BBC__n"/></e>
-<e lm="U.K.">                 <i>U.K.</i><par n="BBC__n"/></e>
 <e lm="EU">                   <i>EU</i><par n="BBC__n"/></e>
+
+<e lm="Grand Slam">           <i>Grand<b/>Slam</i><par n="BBC__n"/></e>
 
 <e lm="Palestinian">          <i>Palestinian</i><par n="house__n"/></e>
 <e lm="Palestinian">          <i>Palestinian</i><par n="expensive__adj"/></e>
@@ -17072,12 +17171,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
     <e lm="UDV"><i>UDV</i><par n="acronimos_par"/></e>
     <e lm="UEFA"><i>UEFA</i><par n="acronimos_par"/></e>
     <e lm="UFO"><i>UFO</i><par n="acronimos_par"/></e>
-    <e lm="UK"><i>UK</i><par n="acronimos_par"/></e>
     <e lm="ULA"><i>ULA</i><par n="acronimos_par"/></e>
     <e lm="UNITA"><i>UNITA</i><par n="acronimos_par"/></e>
     <e lm="UNIX"><i>UNIX</i><par n="acronimos_par"/></e>
     <e lm="URL"><i>URL</i><par n="acronimos_par"/></e>
-    <e lm="USA"><i>USA</i><par n="acronimos_par"/></e>
     <e lm="USB"><i>USB</i><par n="acronimos_par"/></e>
     <e lm="USC"><i>USC</i><par n="acronimos_par"/></e>
     <e lm="USGS"><i>USGS</i><par n="acronimos_par"/></e>
@@ -17085,7 +17182,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
     <e lm="US"><i>US</i><par n="acronimos_par"/></e>
     <e lm="USNC"><i>USNC</i><par n="acronimos_par"/></e>
     <e lm="USS"><i>USS</i><par n="acronimos_par"/></e>
-    <e lm="USSR"><i>USSR</i><par n="acronimos_par"/></e>
     <e lm="UTC"><i>UTC</i><par n="acronimos_par"/></e>
     <e lm="UT"><i>UT</i><par n="acronimos_par"/></e>
     <e lm="VA"><i>VA</i><par n="acronimos_par"/></e>
@@ -19329,8 +19425,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Georgania">            <i>Georgania</i><par n="Mary__np"/></e>
 <e lm="George">               <i>George</i><par n="Mark__np"/></e>
 <e lm="George W. Bush">       <i>George<b/>W.<b/>Bush</i><par n="Mark__np"/></e>
-<e lm="Georgia">              <i>Georgia</i><par n="Mary__np"/></e>
-<e lm="Georgie">              <i>Georgie</i><par n="Mary__np"/></e>
+<e lm="Armenia">              <i>Armenia</i><par n="Mary__np"/></e>
+<e lm="Azerbaijan">           <i>Azerbaijan</i><par n="Mary__np"/></e>
+<e lm="Kazakhstan">           <i>Kazakhstan</i><par n="Mary__np"/></e>
+<e lm="Uzbekistan">           <i>Uzbekistan</i><par n="Mary__np"/></e>
+<e lm="Kyrgyzstan">           <i>Kyrgyzstan</i><par n="Mary__np"/></e>
+<e lm="Tajikistan">           <i>Tajikistan</i><par n="Mary__np"/></e>
+<e lm="Turkmenistan">         <i>Turkmenistan</i><par n="Mary__np"/></e>
+<e lm="Chuvashia">            <i>Chuvashia</i><par n="Mary__np"/></e>
 <e lm="Georgina">             <i>Georgina</i><par n="Mary__np"/></e>
 <e lm="Georgio">              <i>Georgio</i><par n="Mark__np"/></e>
 <e lm="Geovana">              <i>Geovana</i><par n="Mary__np"/></e>
