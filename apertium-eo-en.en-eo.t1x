@@ -764,7 +764,7 @@ sort -t '"' -k 3 x
 pos 1= do, will, shall aŭ would.
 pos 2= nekonjugaciita verbo
 La rezulto estas unu sola leksika formo (venos) -->
-<def-macro n="conj_verb_compost2" npar="2">
+      <def-macro n="conj_verb_compost2" npar="2">
 	<choose>
 	  <when>
 	    <test>
@@ -773,9 +773,9 @@ La rezulto estas unu sola leksika formo (venos) -->
 	    <choose>
 	      <when>
 		<test>
-		  <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pri"/></equal>
+		  <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
 		</test>
-		<let><var n="temps_chunk"/><lit-tag v="pri"/></let>
+		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
 		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="pers"/></let>
 		<let><var n="nbr_chunk"/><clip pos="1" side="sl" part="nbr"/></let>
 		<let><var n="lema_SV"/><lit v="verbcj"/></let>
@@ -799,7 +799,7 @@ La rezulto estas unu sola leksika formo (venos) -->
 		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="inf"/></equal>
 		  </or>
 		</test>
-		<let><var n="temps_chunk"/><lit-tag v="pri"/></let>
+		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
 		<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
 		<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
 		<let><var n="lema_SV"/><lit v="verbcj"/></let>
@@ -815,6 +815,8 @@ La rezulto estas unu sola leksika formo (venos) -->
 		  </concat>
 		</let>
 	      </when>
+	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="temps"/></concat></let>
+            </otherwise>
 	    </choose>
 	  </when>
 	  <otherwise>
@@ -834,6 +836,7 @@ La rezulto estas unu sola leksika formo (venos) -->
 	    </test>
 	    <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
 	  </when>		
+	      <otherwise><let><var n="temps_chunk"/><lit-tag v="ERROR2"/></let></otherwise>
 	</choose>	
 	<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
 	<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
