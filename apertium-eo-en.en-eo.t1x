@@ -288,6 +288,24 @@ sort -t '"' -k 3 x
       <cat-item tags="vblex.pp"/>
     </def-cat>
 
+    <def-cat n="infpres">
+      <cat-item tags="vblex.inf"/>
+      <cat-item tags="vblex.pres"/>
+      <cat-item tags="vblex.sep.inf"/>
+      <cat-item tags="vblex.sep.pres"/>
+      <cat-item tags="vbser.inf"/>
+      <cat-item tags="vbser.pres"/>
+    </def-cat>
+
+    <def-cat n="do">
+      <cat-item lemma="do" tags="vbdo.*"/>
+      <cat-item lemma="do" tags="vblex.pri.*"/><!--ATENTU, nur nun ĉar la tagger eraras. -->
+      <cat-item lemma="do" tags="vblex.pres"/>
+      <cat-item lemma="do" tags="vblex.past"/>
+      <cat-item lemma="do" tags="vblex.inf"/>
+    </def-cat>
+
+
     <def-cat n="unknown"><cat-item tags=""/></def-cat>
   </section-def-cats>
 
@@ -406,7 +424,47 @@ sort -t '"' -k 3 x
     <def-var n="genere_second"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
     <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
+
+    <def-var n="tipus_verb"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="pers_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="nbr_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="neg"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="pronom"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="verbfinal"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="lema_SV"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+
+    <def-var n="DEBUG" v=""/>
+
   </section-def-vars>
+
+  <section-def-lists>
+
+    <def-list n="adv_neg">
+      <list-item v="not"/>
+      <list-item v="never"/>
+    </def-list>
+
+    <def-list n="reportingverb"> <!-- verboj ne postulantaj THAT -->
+      <list-item v="say"/>
+      <list-item v="admit"/>
+      <list-item v="agree"/>
+      <list-item v="decide"/>
+      <list-item v="deny"/>
+      <list-item v="explain"/>
+      <list-item v="insist"/>
+      <list-item v="promise"/>
+      <list-item v="recommend"/>
+      <list-item v="suggest"/>
+      <list-item v="point"/>
+      <list-item v="think"/>
+      <list-item v="believe"/>
+      <list-item v="hope"/>
+      <list-item v="fear"/>
+      <list-item v="suppose"/>
+    </def-list>
+
+  </section-def-lists>
 
   <section-def-macros>
 
@@ -484,16 +542,13 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
-
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
           </test>
           <let><var n="numero"/><lit-tag v="pl"/></let>
         </when>
-
-        <when>
-          <!-- do something more clever here -->
+        <when><!-- do something more clever here -->
           <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
           </test>
@@ -561,7 +616,12 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-    <!-- This macro concords a noun and an adjective -->
+
+    <!-- Tiu cxi makroo rigardas anglan adjektivon kiel ^better/good<adj><sint><comp>$ kaj poste
+         adjectiu = ^pli<preadv>$ ^bona<adj>
+         preadv_added = yes
+         adjectiu_tail = <3><4>
+          -->
     <def-macro n="set_adjectiu1" npar="1">
       <let><var n="adjectiu"/><lit v=""/></let>
       <let><var n="preadv_added"/><lit v=""/></let>
@@ -634,6 +694,186 @@ sort -t '"' -k 3 x
         </otherwise>
       </choose>
     </def-macro>
+
+
+
+
+<!-- ===============  NOVA ALDONO DE HECTOR ========== -->
+    <def-macro n="tipus_verbs1" npar="1">
+      <choose>
+	<when>
+	  <test>
+	    <equal><clip pos="1" side="tl" part="a_verb"/><lit-tag v="vblex.pron"/></equal>
+	  </test>
+	  <let><var n="tipus_verb"/><lit-tag v="pron"/></let>
+	</when>
+	<when>
+	  <test>
+	    <or>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="like"/></equal>
+	      <equal caseless="yes"><clip pos="1" side="tl" part="lemh"/><lit v="encantar"/></equal>
+	    </or>
+	  </test>
+	  <let><var n="tipus_verb"/><lit-tag v="like"/></let>
+	</when>
+	<when>
+	  <test>
+	    <or>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# sorry"/></equal>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# very sorry"/></equal>
+	    </or>
+	  </test>
+	  <let><var n="tipus_verb"/><lit-tag v="sorry"/></let>
+	</when>
+	<when><!-- (BCN)-->
+	  <test>
+	    <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
+	  </test>
+	  <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
+	</when>
+	<otherwise>
+	  <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_verb"/></let>
+	</otherwise>
+      </choose>
+    </def-macro>
+
+    <!--Tiu makroo devas esti aplikata en la reguloj, post la makroo tipus_verbs. 
+        Ĝi atribuas al la variablo 'pronom' la valoron de la pronomo, 
+        kiun devas havi la pronominalaj verboj -->
+    <def-macro n="pron1" npar="1">
+      <let><var n="pronom"/><lit v=""/></let>
+      <choose><!--envia el pronom en els verbs pronominals -->
+        <when>
+          <test>
+            <equal><var n="tipus_verb"/><lit-tag v="pron"/></equal>
+          </test>
+          <let><var n="pronom"/><lit v="prpers"/></let>
+          <append n="pronom">
+            <lit-tag v="prn.pro"/>
+            <lit-tag v="4"/>
+            <lit-tag v="mf"/>
+            <lit-tag v="5"/>
+            <lit v="$ ^"/>
+          </append>
+        </when>
+      </choose>
+    </def-macro>
+
+
+<!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
+pos 1= do, will, shall aŭ would.
+pos 2= nekonjugaciita verbo
+La rezulto estas unu sola leksika formo (venos) -->
+<def-macro n="conj_verb_compost2" npar="2">
+	<choose>
+	  <when>
+	    <test>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
+	    </test>
+	    <choose>
+	      <when>
+		<test>
+		  <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pri"/></equal>
+		</test>
+		<let><var n="temps_chunk"/><lit-tag v="pri"/></let>
+		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="pers"/></let>
+		<let><var n="nbr_chunk"/><clip pos="1" side="sl" part="nbr"/></let>
+		<let><var n="lema_SV"/><lit v="verbcj"/></let>
+		<let>
+		  <var n="verbfinal"/>
+		  <concat>
+		    <clip pos="2" side="tl" part="lemh"/>
+		    <clip pos="2" side="tl" part="a_verb"/>
+		    <lit-tag v="3"/>
+		    <lit-tag v="4"/>
+		    <lit-tag v="5"/>
+		    <clip pos="2" side="tl" part="lemq"/>
+		  </concat>
+		</let>
+	      </when>
+	      <when>
+		<test>
+		  <or>
+		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
+		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="past"/></equal>
+		    <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="inf"/></equal>
+		  </or>
+		</test>
+		<let><var n="temps_chunk"/><lit-tag v="pri"/></let>
+		<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
+		<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
+		<let><var n="lema_SV"/><lit v="verbcj"/></let>
+		<let>
+		  <var n="verbfinal"/>
+		  <concat>
+		    <clip pos="2" side="tl" part="lemh"/>
+		    <clip pos="2" side="tl" part="a_verb"/>
+		    <lit-tag v="3"/>
+		    <lit-tag v="4"/>
+		    <lit-tag v="5"/>
+		    <clip pos="2" side="tl" part="lemq"/>
+		  </concat>
+		</let>
+	      </when>
+	    </choose>
+	  </when>
+	  <otherwise>
+	    <choose>		
+	  <when>
+	    <test>
+	      <or>
+		<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+		<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+	      </or>
+	    </test>
+	    <let><var n="temps_chunk"/><lit-tag v="fti"/></let>
+	  </when>
+	  <when>
+	    <test>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+	    </test>
+	    <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
+	  </when>		
+	</choose>	
+	<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
+	<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
+	<let><var n="lema_SV"/><lit v="verbcj"/></let>
+	<let>
+	  <var n="verbfinal"/>
+	  <concat>
+	    <clip pos="2" side="tl" part="lemh"/>
+	    <clip pos="2" side="tl" part="a_verb"/>
+	    <lit-tag v="3"/>
+	    <lit-tag v="4"/>
+	    <lit-tag v="5"/>
+	    <clip pos="2" side="tl" part="lemq"/>
+	  </concat>
+	</let>
+      </otherwise>
+    </choose>
+  </def-macro>
+
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
+     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
+     ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
+     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
+     por ke ne aperu du sinsekvaj blankoj. -->
+    <def-macro n="f_bcond1" npar="1">
+      <choose>
+        <when>
+          <test>
+            <not>
+              <equal><b pos="1"/><lit v=" "/></equal>
+            </not>
+          </test>
+          <out>
+            <b pos="1"/>
+          </out>
+        </when>
+      </choose>
+    </def-macro>
+
+
   </section-def-macros>
 
 
@@ -3232,6 +3472,72 @@ might:might<vaux><inf>
      </action>
   </rule>
 
+
+    <rule comment="REGLA: AUX ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ĉiam pensas)">    
+      <pattern>
+	<pattern-item n="do"/> 
+	<pattern-item n="adv"/>
+	<pattern-item n="infpres"/>
+	<pattern-item n="do"/> 
+	<pattern-item n="do"/> 
+	<pattern-item n="do"/> 
+	<pattern-item n="do"/> 
+      </pattern>
+      <action>
+	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
+	<call-macro n="tipus_verbs1"><with-param pos="3"/></call-macro>
+	<call-macro n="pron1"><with-param pos="3"/></call-macro>
+	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
+	<choose>
+	  <when>
+	    <test>
+	      <in caseless="yes">
+		<clip pos="2" side="sl" part="lem"/>
+		<list n="adv_neg"/>
+	      </in>
+	    </test>
+	    <let><var n="neg"/><lit-tag v="NEG"/></let>
+	  </when>
+	  <otherwise>
+	    <let><var n="neg"/><lit v=""/></let>
+	  </otherwise>
+	</choose>
+	<out>
+	  <chunk name="adv" case="caseFirstWord">
+	    <tags>
+	      <tag><clip pos="2" side="tl" part="a_adv"/></tag>
+	      <tag><var n="neg"/></tag>
+	    </tags>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	  </chunk>
+	  <b pos="1"/>
+	  <chunk namefrom="lema_SV">
+	    <tags>	       
+	      <tag><lit-tag v="SV"/></tag>
+	      <tag><lit-tag v="tipus_verb="/></tag>
+	      <tag><var n="tipus_verb"/></tag>
+	      <tag><lit-tag v="temps_chunk="/></tag>
+	      <tag><var n="temps_chunk"/></tag>
+	      <tag><lit-tag v="pers_chunk="/></tag>
+	      <tag><var n="pers_chunk"/></tag>
+	      <tag><lit-tag v="nbr_chunk="/></tag>
+	      <tag><var n="nbr_chunk"/></tag>
+	    </tags> 
+	    <lu>
+	      <lit-tag v="pronom="/>
+	      <var n="pronom"/>
+	      <lit-tag v="verbfinal="/>
+	      <var n="verbfinal"/>
+	    </lu>
+	  </chunk>
+	</out>
+	<call-macro n="f_bcond1">
+	  <with-param pos="2"/>
+	</call-macro>
+      </action>
+    </rule>
 
 
     <rule>
