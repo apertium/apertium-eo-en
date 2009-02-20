@@ -768,6 +768,10 @@
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <!-- tio ŝajnas erara
@@ -3025,7 +3029,8 @@
 <e lm="flamo">                <i>flamo</i><par n="nom__n"/></e>
 <e lm="flandra">              <i>flandr</i><par n="adj__adj"/></e>
 <e lm="flanka">               <i>flank</i><par n="adj__adj"/></e>
-<e lm="flank(e)lasi">         <i>flank(e)las</i><par n="verb__vblex"/></e>
+<e lm="flanklasi">            <i>flanklas</i><par n="verb__vblex"/></e>
+<e lm="flankenlasi">         <i>flankenlas</i><par n="verb__vblex"/></e>
 <e lm="flanko">               <i>flanko</i><par n="nom__n"/></e>
 <e lm="flarado">              <i>flarado</i><par n="nom__n"/></e>
 <e lm="flati">                <i>flat</i><par n="verb__vblex"/></e>
@@ -5357,6 +5362,7 @@
 <e lm="pozo">                 <i>pozo</i><par n="nom__n"/></e>
 <e lm="pragmata">             <i>pragmat</i><par n="adj__adj"/></e>
 <e lm="prahistorio">          <i>prahistorio</i><par n="nom__n"/></e>
+<e lm="antaŭhistorio">        <i>antaŭhistorio</i><par n="nom__n"/></e>
 <e lm="praktiko">             <i>praktiko</i><par n="nom__n"/></e>
 <e lm="prava">                <i>prav</i><par n="adj__adj"/></e>
 <e lm="pravigi">              <i>pravig</i><par n="verb__vblex"/></e>
@@ -9220,10 +9226,13 @@
 <e lm="analiza">              <i>analiz</i><par n="adj__adj"/></e>
 <e lm="anafilaksio">          <i>anafilaksio</i><par n="nom__n"/></e>
 <e lm="anarkia">              <i>anarki</i><par n="adj__adj"/></e>
-<e lm="anarkisma">            <i>anarkism</i><par n="adj__adj"/></e>
-<e lm="anarkismo">            <i>anarkismo</i><par n="nom__n"/></e>
+<e lm="anarkiisma">           <i>anarkiism</i><par n="adj__adj"/></e>
+<e r="LR" lm="anarkisma">     <p><l>anarkisma</l><r>anarkiisma</r></p><par n="adj__adj"/></e>
+<e lm="anarkiismo">           <i>anarkiismo</i><par n="nom__n"/></e>
+<e r="LR" lm="anarkiismo">    <p><l>anarkismo</l><r>anarkiismo</r></p><par n="nom__n"/></e>
 <e lm="anatomia">             <i>anatomi</i><par n="adj__adj"/></e>
-<e lm="anatomisto">           <i>anatomisto</i><par n="nom__n"/></e>
+<e lm="anatomiisto">          <i>anatomiisto</i><par n="nom__n"/></e>
+<e r="LR" lm="anatomisto">    <p><l>anatomisto</l><r>anatomiisto</r></p><par n="nom__n"/></e>
 <e lm="praulo">               <i>praulo</i><par n="nom__n"/></e>
 <e lm="ankriĝi">              <i>ankri</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="flanka">               <i>flank</i><par n="adj__adj"/></e>
@@ -18685,6 +18694,7 @@
 <e lm="graveda">              <i>graved</i><par n="adj__adj"/></e>
 <e lm="prenipova">            <i>prenipov</i><par n="adj__adj"/></e>
 <e lm="prahistoria">          <i>prahistori</i><par n="adj__adj"/></e>
+<e lm="antaŭhistoria">        <i>antaŭhistori</i><par n="adj__adj"/></e>
 <e lm="prelato">              <i>prelato</i><par n="nom__n"/></e>
 <e lm="prepara">              <i>prepar</i><par n="adj__adj"/></e>
 <e lm="prejuĝa">              <i>preju</i><par n="ĝ"/><par n="adj__adj"/></e>

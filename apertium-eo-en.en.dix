@@ -2614,6 +2614,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Slovenia">             <i>Slovenia</i><par n="Barcelona__np"/></e>
 <e lm="South Africa">         <i>South<b/>Africa</i><par n="Barcelona__np"/></e>
 <e lm="Soviet">               <i>Soviet</i><par n="expensive__adj"/></e>
+<e lm="Soviet Union">         <i>Soviet Union</i><par n="Barcelona__np"/></e>
 <e lm="Spain">                <i>Spain</i><par n="Barcelona__np"/></e>
 <e lm="Spanish">              <i>Spanish</i><par n="expensive__adj"/></e>
 <e lm="Stockholm">            <i>Stockholm</i><par n="Barcelona__np"/></e>
@@ -3876,6 +3877,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="communist">            <i>communist</i><par n="house__n"/></e>
 <e lm="communist">            <i>communist</i><par n="expensive__adj"/></e>
 <e lm="community">            <i>communit</i><par n="bab/y__n"/></e>
+<e lm="communitarian">        <i>communitarian</i><par n="expensive__adj"/></e>
 <e lm="commutate">            <i>commutat</i><par n="liv/e__vblex"/></e>
 <e lm="compact">              <i>compact</i><par n="expensive__adj"/></e>
 <e lm="compact">              <i>compact</i><par n="accept__vblex"/></e>
@@ -8425,6 +8427,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="special">              <i>special</i><par n="expensive__adj"/></e>
 <e lm="specialist">           <i>specialist</i><par n="house__n"/></e>
 <e lm="speciality">           <i>specialit</i><par n="bab/y__n"/></e>
+<e lm="specialty">            <i>specialt</i><par n="bab/y__n"/></e>
 <e lm="specially">            <i>specially</i><par n="maybe__adv"/></e>
 <e lm="species">              <i>species</i><par n="politics__n"/></e>
 <e lm="specify">              <i>specif</i><par n="appl/y__vblex"/></e>
@@ -9843,7 +9846,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="on their behalf">      <i>on<b/>their<b/>behalf</i><par n="maybe__adv"/></e>
 
 <e lm="as far as">            <i>as<b/>far<b/>as</i><par n="after__cnjadv"/></e>
+<!-- forigita ĉar estas estas dikutita la plibonigo de la asociita traduko
 <e lm="as much as">           <i>as<b/>much<b/>as</i><par n="after__cnjadv"/></e>
+-->
 <e lm="as soon as">           <i>as<b/>soon<b/>as</i><par n="after__cnjadv"/></e>
 <e lm="as for">               <i>as<b/>for</i><par n="after__cnjadv"/></e>
 <e lm="as if">                <i>as<b/>if</i><par n="after__cnjadv"/></e>
@@ -9852,6 +9857,37 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="as well">              <i>as<b/>well</i><par n="maybe__adv"/></e>
 
 <!-- Hèctor end 2009.02.19 -->
+
+<!-- Hèctor beg 2009.02.20 -->
+
+<e lm="historic">              <i>historic</i><par n="expensive__adj"/></e>
+<e lm="succession">            <i>succession</i><par n="house__n"/></e>
+<e lm="specialize">            <i>specialize</i><par n="liv/e__vblex"/></e>
+<e lm="specialized court">     <i>specialized<b/>court</i><par n="house__n"/></e>
+<e lm="mainland">              <i>mainland</i><par n="house__n"/></e>
+<e lm="mainlander">            <i>mainlander</i><par n="house__n"/></e>
+<e lm="franc">                 <i>franc</i><par n="house__n"/></e>
+<e lm="loyalist">              <i>loyalist</i><par n="house__n"/></e>
+<e lm="follower">              <i>follower</i><par n="house__n"/></e>
+<e lm="loyal follower">        <i>loyal<b/>follower</i><par n="house__n"/></e>
+<e lm="underground">           <i>underground</i><par n="house__n"/></e>
+<e lm="underground">           <i>underground</i><par n="expensive__adj"/></e>
+<e lm="warfare">               <i>warfare</i><par n="expensive__adj"/></e>
+<e lm="germ warfare">          <i>germ<b/>warfare</i><par n="house__n"/></e>
+<e lm="guerrilla">             <i>guerrilla</i><par n="house__n"/></e>
+<e lm="guerrilla">             <i>guerrilla</i><par n="expensive__adj"/></e>
+<e lm="guerrilla war">         <i>guerrilla<b/>war</i><par n="house__n"/></e>
+<e lm="guerrilla warfare">     <i>guerrilla<b/>warfare</i><par n="house__n"/></e>
+<e lm="guerrilla group">       <i>guerrilla<b/>group</i><par n="house__n"/></e>
+<e r="LR" lm="guerilla">       <p><l>guerilla</l><r>guerrilla</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla">       <p><l>guerilla</l><r>guerrilla</r></p><par n="expensive__adj"/></e>
+<e r="LR" lm="guerilla war">   <p><l>guerilla<b/>war</l><r>guerrilla<b/>war</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla warfare">  <p><l>guerilla<b/>warfare</l><r>guerrilla<b/>warfare</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla group"> <p><l>guerilla<b/>group</l><r>guerrilla<b/>group</r></p><par n="house__n"/></e>
+
+<e lm="prior to">                  <i>prior<b/>to</i><par n="at__pr"/></e>
+
+<!-- Hèctor beg 2009.02.20 -->
 
 <!--- 
 ========================================================================================================
@@ -12483,8 +12519,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="grumble">              <i>grumbl</i><par n="liv/e__vblex"/></e>
 <e lm="grunt">                <i>grunt</i><par n="accept__vblex"/></e>
 <e lm="guarantor">            <i>guarantor</i><par n="house__n"/></e>
-<e lm="guerilla">             <i>guerilla</i><par n="expensive__adj"/></e>
-<e lm="guerrilla">            <i>guerrilla</i><par n="house__n"/></e>
 <e lm="guffaw">               <i>guffaw</i><par n="accept__vblex"/></e>
 <e lm="guidance">             <i>guidance</i><par n="house__n"/></e>
 <e lm="guise">                <i>guise</i><par n="house__n"/></e>
@@ -12838,6 +12872,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="indisputably">         <i>indisputably</i><par n="maybe__adv"/></e>
 <e lm="individualisation">    <i>individualisation</i><par n="house__n"/></e>
 <e lm="individualism">        <i>individualism</i><par n="house__n"/></e>
+<e lm="individualist">        <i>individualist</i><par n="expensive__adj"/></e>
 <e lm="individualistic">      <i>individualistic</i><par n="expensive__adj"/></e>
 <e r="LR" lm="individualization"><p><l>individualization</l><r>individualisation</r></p><par n="house__n"/></e>
 <e lm="indoctrinate">         <i>indoctrinat</i><par n="liv/e__vblex"/></e>
@@ -14655,6 +14690,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="regulator">            <i>regulator</i><par n="house__n"/></e>
 <e lm="regulatory">           <i>regulatory</i><par n="expensive__adj"/></e>
 <e lm="reign">                <i>reign</i><par n="accept__vblex"/></e>
+<e lm="reign">                <i>reign</i><par n="house__n"/></e>
 <e lm="reimbursement">        <i>reimbursement</i><par n="house__n"/></e>
 <e lm="reincarnation">        <i>reincarnation</i><par n="house__n"/></e>
 <e lm="reinflate">            <i>reinflat</i><par n="liv/e__vblex"/></e>

@@ -505,7 +505,8 @@
 
 <e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
 
-<e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiu<s n="prn"/><s n="rel"/><s n="ND"/></l><r>who<s n="prn"/><s n="rel"/></r></p></e>
@@ -1130,6 +1131,7 @@ BUT:
 <e>       <p><l>afrika<s n="adj"/></l>                 <r>African<s n="adj"/></r></p></e>
 <e>       <p><l>angla<s n="adj"/></l>                  <r>English<s n="adj"/></r></p></e>
 <e>       <p><l>araba<s n="adj"/></l>                  <r>Arab<s n="adj"/></r></p></e>
+<e r="RL"><p><l>araba<s n="adj"/></l>                  <r>Arabic<s n="adj"/></r></p></e>
 <e>       <p><l>argentina<s n="adj"/></l>              <r>Argentinian<s n="adj"/></r></p></e>
 <e>       <p><l>aŭstra<s n="adj"/></l>                 <r>Austrian<s n="adj"/></r></p></e>
 <e>       <p><l>azia<s n="adj"/></l>                   <r>Asian<s n="adj"/></r></p></e>
@@ -1168,6 +1170,8 @@ BUT:
 <e r="RL"><p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>skota<s n="adj"/></l>                  <r>Scottish<s n="adj"/></r></p></e>
 <e>       <p><l>sovetia<s n="adj"/></l>                <r>Soviet<s n="adj"/></r></p></e>
+<e>       <p><l>Sovetio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Sovet-Unio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
 <e>       <p><l>svisa<s n="adj"/></l>                  <r>Swiss<s n="adj"/></r></p></e>
 <e>       <p><l>turka<s n="adj"/></l>                  <r>Turkish<s n="adj"/></r></p></e>
@@ -1289,6 +1293,7 @@ BUT:
 
 
 <!-- these does NOT have gender in either language -->
+<!-- DUBINDA uzo de ge- en singularo (nenorma) -->
 <e>       <p><l>genepo<s n="n"/></l>                   <r>grandchild<s n="n"/></r></p></e>
 <e>       <p><l>geavo<s n="n"/></l>                    <r>grandparent<s n="n"/></r></p></e>
 <e>       <p><l>gepatro<s n="n"/></l>                  <r>parent<s n="n"/></r></p></e>
@@ -1316,7 +1321,7 @@ BUT:
 <e>       <p><l>adjutanto<s n="n"/></l>                <r>aide<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>amatoro<s n="n"/></l>                  <r>amateur<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>ambasadoro<s n="n"/></l>               <r>ambassador<s n="n"/></r></p><par n="MF_GD"/></e>
-<e>       <p><l>anarkisto<s n="n"/></l>                <r>anarchist<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>anarkiisto<s n="n"/></l>               <r>anarchist<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>prapatro<s n="n"/></l>                 <r>ancestor<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>simio<s n="n"/></l>                    <r>ape<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>arkitekto<s n="n"/></l>                <r>architect<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -1944,7 +1949,7 @@ TODO??
 
 <e>       <p><l>kiom<s n="cnjadv"/></l>                <r>as<b/>far<b/>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>koncerne<s n="cnjadv"/></l>            <r>as<b/>for<s n="cnjadv"/></r></p></e> <!-- necesas post akuzativo -->
-<!-- forigita ĉar estas neklara plibonigo
+<!-- forigita ĉar estas estas dikutita la plibonigo de tiu traduko
 <e>       <p><l>tiom<b/>kiom<s n="cnjadv"/></l>        <r>as<b/>much<b/>as<s n="cnjadv"/></r></p></e>
 -->
 <e>       <p><l>tuj<b/>kiam<s n="cnjadv"/></l>         <r>as<b/>soon<b/>as<s n="cnjadv"/></r></p></e>
@@ -1954,6 +1959,38 @@ TODO??
 <e r="RL"><p><l>ankaŭ<s n="adv"/></l>                  <r>as<b/>well<b/>as<s n="adv"/></r></p></e>
 
 <!-- Hèctor end 2009.02.19 -->
+
+<!-- Hèctor beg 2009.02.20 -->
+
+<e>       <p><l>historia<s n="adj"/></l>               <r>historic<s n="adj"/></r></p></e>
+<e>       <p><l>heredo<s n="n"/></l>                   <r>succession<s n="n"/></r></p></e>
+<e r="RL"><p><l>heredorajto<s n="n"/></l>              <r>succession<s n="n"/></r></p></e>
+<e>       <p><l>specialigi<s n="vblex"/></l>           <r>specialize<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>specialiĝi<s n="vblex"/></l>           <r>specialize<s n="vblex"/></r></p></e>
+<e>       <p><l>faktribunalo<s n="n"/></l>             <r>specialized<b/>court<s n="n"/></r></p></e>
+<e>       <p><l>metropolo<s n="n"/></l>                <r>mainland<s n="n"/></r></p></e>
+<e>       <p><l>metropolano<s n="n"/></l>              <r>mainlander<s n="n"/></r></p></e>
+<e>       <p><l>franko<s n="n"/></l>                   <r>franc<s n="n"/></r></p></e>
+<e r="LR"><p><l>milito<s n="n"/></l>                   <r>warfare<s n="n"/></r></p></e>
+<e r="RL"><p><l>militado<s n="n"/></l>                 <r>warfare<s n="n"/></r></p></e>
+<e r="RL"><p><l>militfarado<s n="n"/></l>              <r>warfare<s n="n"/></r></p></e>
+<e>       <p><l>aermilito<s n="n"/></l>                <r>air<b/>warfare<s n="n"/></r></p></e>
+<e>       <p><l>biologia<b/>milito<s n="n"/></l>       <r>germ<b/>warfare<s n="n"/></r></p></e>
+<e>       <p><l>gerilo<s n="n"/></l>                   <r>guerrilla<b/>war<s n="n"/></r></p></e>
+<e r="RL"><p><l>gerilo<s n="n"/></l>                   <r>guerrilla<b/>warfare<s n="n"/></r></p></e>
+<e>       <p><l>gerilano<s n="n"/></l>                 <r>guerrilla<s n="n"/></r></p></e>
+<e>       <p><l>gerila<s n="adj"/></l>                 <r>guerrilla<s n="adj"/></r></p></e>
+<e>       <p><l>gerilanaro<s n="n"/></l>               <r>guerrilla<b/>group<s n="n"/></r></p></e>
+<e>       <p><l>lojalulo<s n="n"/></l>                 <r>loyalist<s n="n"/></r></p></e>
+<e>       <p><l>adepto<s n="n"/></l>                   <r>follower<s n="n"/></r></p></e>
+<e r="RL"><p><l>lojalulo<s n="n"/></l>                 <r>loyal<b/>follower<s n="n"/></r></p></e>
+<e>       <p><l>metroo<s n="n"/></l>                   <r>underground<s n="n"/></r></p></e>
+<e>       <p><l>subtera<s n="n"/></l>                  <r>underground<s n="adj"/></r></p></e>
+<e r="LR"><p><l>subgrunda<s n="n"/></l>                <r>underground<s n="adj"/></r></p></e>
+
+<e>       <p><l>antaŭ<s n="pr"/></l>                   <r>prior<b/>to<s n="pr"/></r></p></e>
+
+<!-- Hèctor end 2009.02.20 -->
 
 	<!-- ====================================================================== -->
 	<!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
@@ -2381,7 +2418,7 @@ TODO??
 <e r="LR"><p><l>analizado<s n="n"/></l>                <r>analysis<s n="n"/></r></p></e>
 <e r="RL"><p><l>analizi<s n="vblex"/></l>              <r>analyze<s n="vblex"/></r></p></e>
 <e>       <p><l>anarkio<s n="n"/></l>                  <r>anarchy<s n="n"/></r></p></e>
-<e r="LR"><p><l>anarkismo<s n="n"/></l>                <r>anarchy<s n="n"/></r></p></e>
+<e r="LR"><p><l>anarkiismo<s n="n"/></l>               <r>anarchy<s n="n"/></r></p></e>
 <e>       <p><l>anatomio<s n="n"/></l>                 <r>anatomy<s n="n"/></r></p></e>
 <e r="LR"><p><l>praulo<s n="n"/></l>                   <r>ancestor<s n="n"/></r></p></e>
 <e>       <p><l>ankro<s n="n"/></l>                    <r>anchor<s n="n"/></r></p></e>
@@ -3603,7 +3640,7 @@ TODO??
 <e r="RL"><p><l>provizi<s n="vblex"/></l>              <r>cater<s n="vblex"/></r></p></e>
 <e>       <p><l>katedralo<s n="n"/></l>                <r>cathedral<s n="n"/></r></p></e>
 <e>       <p><l>kaŭzi<s n="vblex"/></l>                <r>cause<s n="vblex"/></r></p></e>
-<e>       <p><l>kaŭzomotivo<s n="n"/></l>              <r>cause<s n="n"/></r></p></e>
+<e>       <p><l>afero<s n="n"/></l>                    <r>cause<s n="n"/></r></p></e>
 <e r="LR"><p><l>rezultigi<s n="vblex"/></l>            <r>cause<s n="vblex"/></r></p></e>
 <e>       <p><l>kaverno<s n="n"/></l>                  <r>cave<s n="n"/></r></p></e>
 <e r="LR"><p><l>groto<s n="n"/></l>                    <r>cave<s n="n"/></r></p></e>
@@ -4102,6 +4139,7 @@ TODO??
 <e>       <p><l>komunisto<s n="n"/></l>                <r>communist<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="LR"><p><l>komunisma<s n="adj"/></l>              <r>communist<s n="adj"/></r></p></e>
 <e>       <p><l>komunumo<s n="n"/></l>                 <r>community<s n="n"/></r></p></e>
+<e>       <p><l>komunuma<s n="adj"/></l>               <r>communitarian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>asociitaro<s n="n"/></l>               <r>community<s n="n"/></r></p></e>
 <e>       <p><l>kompakta<s n="adj"/></l>               <r>compact<s n="adj"/></r></p></e>
 <e r="LR"><p><l>kunpremi<s n="vblex"/></l>             <r>compact<s n="vblex"/></r></p></e>
@@ -10735,7 +10773,7 @@ TODO??
 <e>       <p><l>prefero<s n="n"/></l>                  <r>preference<s n="n"/></r></p></e>
 <e r="RL"><p><l>preferi<s n="vblex"/></l>              <r>prefer<s n="vblex"/></r></p></e>
 <e>       <p><l>gravedeco<s n="n"/></l>                <r>pregnancy<s n="n"/></r></p></e>
-<e>       <p><l>prahistorio<s n="n"/></l>              <r>prehistory<s n="n"/></r></p></e>
+<e>       <p><l>antaŭhistorio<s n="n"/></l>            <r>prehistory<s n="n"/></r></p></e>
 <e>       <p><l>antaŭjuĝo<s n="n"/></l>                <r>prejudice<s n="n"/></r></p></e>
 <e r="LR"><p><l>malinklino<s n="n"/></l>               <r>prejudice<s n="n"/></r></p></e>
 <e>       <p><l>preludo<s n="n"/></l>                  <r>prelude<s n="n"/></r></p></e>
@@ -12899,6 +12937,7 @@ TODO??
 <e>       <p><l>speciala<s n="adj"/></l>               <r>special<s n="adj"/></r></p></e>
 <e>       <p><l>specialisto<s n="n"/></l>              <r>specialist<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>specialaĵo<s n="n"/></l>               <r>speciality<s n="n"/></r></p></e>
+<e r="RL"><p><l>specialaĵo<s n="n"/></l>               <r>specialty<s n="n"/></r></p></e>
 <e>       <p><l>speciale<s n="adv"/></l>               <r>specially<s n="adv"/></r></p></e>
 <e>       <p><l>specio<s n="n"/></l>                   <r>species<s n="n"/></r></p></e>
 <e>       <p><l>specife<s n="adv"/></l>                <r>specifically<s n="adv"/></r></p></e>
@@ -16009,7 +16048,8 @@ TODO??
 <e r="LR"><p><l>finaranĝi<s n="vblex"/></l>            <r>dismiss<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>fiŝi<s n="vblex"/></l>                 <r>fish<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>flagri<s n="vblex"/></l>               <r>wave<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>flank(e)lasi<s n="vblex"/></l>         <r>omit<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>flanklasi<s n="vblex"/></l>            <r>omit<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>flankenlasi<s n="vblex"/></l>          <r>omit<s n="vblex"/></r></p></e>
 <e>       <p><l>flustri<s n="vblex"/></l>              <r>whisper<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>forstreki<s n="vblex"/></l>            <r>stripe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>fosi<s n="vblex"/></l>                 <r>dig<s n="vblex"/></r></p></e>
@@ -16648,10 +16688,10 @@ TODO??
 <e>       <p><l>analiza<s n="adj"/></l>                <r>analytical<s n="adj"/></r></p></e>
 <e>       <p><l>anafilaksio<s n="n"/></l>              <r>anaphylaxis<s n="n"/></r></p></e>
 <e r="RL"><p><l>anarkia<s n="adj"/></l>                <r>anarchic<s n="adj"/></r></p></e>
-<e r="LR"><p><l>anarkisma<s n="adj"/></l>              <r>anarchic<s n="adj"/></r></p></e>
-<e r="RL"><p><l>anarkismo<s n="n"/></l>                <r>anarchism<s n="n"/></r></p></e>
+<e r="LR"><p><l>anarkiisma<s n="adj"/></l>             <r>anarchic<s n="adj"/></r></p></e>
+<e r="RL"><p><l>anarkiismo<s n="n"/></l>               <r>anarchism<s n="n"/></r></p></e>
 <e>       <p><l>anatomia<s n="adj"/></l>               <r>anatomical<s n="adj"/></r></p></e>
-<e>       <p><l>anatomisto<s n="n"/></l>               <r>anatomist<s n="n"/></r></p></e>
+<e>       <p><l>anatomiisto<s n="n"/></l>              <r>anatomist<s n="n"/></r></p></e>
 <e r="RL"><p><l>flanka<s n="adj"/></l>                 <r>ancillary<s n="adj"/></r></p></e>
 <e r="RL"><p><l>denove<s n="adv"/></l>                 <r>anew<s n="adv"/></r></p></e>
 <e>       <p><l>koleri<s n="vblex"/></l>               <r>anger<s n="vblex"/></r></p></e>
@@ -20236,8 +20276,6 @@ TODO??
 <e>       <p><l>grunti<s n="vblex"/></l>               <r>grunt<s n="vblex"/></r></p></e>
 <e>       <p><l>garantiinto<s n="n"/></l>              <r>guarantor<s n="n"/></r></p></e>
 <e r="LR"><p><l>certiginto<s n="n"/></l>               <r>guarantor<s n="n"/></r></p></e>
-<e>       <p><l>gerila<s n="adj"/></l>                 <r>guerilla<s n="adj"/></r></p></e>
-<e>       <p><l>gerilano<s n="n"/></l>                 <r>guerrilla<s n="n"/></r></p></e>
 <e>       <p><l>ridegi<s n="vblex"/></l>               <r>guffaw<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>gvido<s n="n"/></l>                    <r>guidance<s n="n"/></r></p></e>
 <e r="LR"><p><l>indikado<s n="n"/></l>                 <r>guidance<s n="n"/></r></p></e>
@@ -20746,6 +20784,7 @@ TODO??
 <e>       <p><l>individuigo<s n="n"/></l>              <r>individualisation<s n="n"/></r></p></e>
 <e>       <p><l>individuismo<s n="n"/></l>             <r>individualism<s n="n"/></r></p></e>
 <e>       <p><l>individuisma<s n="adj"/></l>           <r>individualistic<s n="adj"/></r></p></e>
+<e r="RL"><p><l>individuisma<s n="adj"/></l>           <r>individualist<s n="adj"/></r></p></e>
 <e>       <p><l>endoktrinigi<s n="vblex"/></l>         <r>indoctrinate<s n="vblex"/></r></p></e>
 <e>       <p><l>endoktrinigo<s n="n"/></l>             <r>indoctrination<s n="n"/></r></p></e>
 <e r="LR"><p><l>kredigado<s n="n"/></l>                <r>indoctrination<s n="n"/></r></p></e>
@@ -22828,7 +22867,7 @@ TODO??
 <e>       <p><l>prefikso<s n="n"/></l>                 <r>prefix<s n="n"/></r></p></e>
 <e>       <p><l>graveda<s n="adj"/></l>                <r>pregnant<s n="adj"/></r></p></e>
 <e>       <p><l>prenipova<s n="adj"/></l>              <r>prehensile<s n="adj"/></r></p></e>
-<e>       <p><l>prahistoria<s n="adj"/></l>            <r>prehistoric<s n="adj"/></r></p></e>
+<e>       <p><l>antaŭhistoria<s n="adj"/></l>          <r>prehistoric<s n="adj"/></r></p></e>
 <e>       <p><l>prelato<s n="n"/></l>                  <r>prelate<s n="n"/></r></p></e>
 <e>       <p><l>prepara<s n="adj"/></l>                <r>preliminary<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prejuĝa<s n="adj"/></l>                <r>preliminary<s n="adj"/></r></p></e>
@@ -23295,6 +23334,7 @@ TODO??
 <e>       <p><l>reguliga<s n="adj"/></l>               <r>regulatory<s n="adj"/></r></p></e>
 <e r="RL"><p><l>regi<s n="vblex"/></l>                 <r>reign<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>reĝi<s n="vblex"/></l>                 <r>reign<s n="vblex"/></r></p></e>
+<e>       <p><l>reĝado<s n="n"/></l>                   <r>reign<s n="n"/></r></p></e>
 <e r="RL"><p><l>repago<s n="n"/></l>                   <r>reimbursement<s n="n"/></r></p></e>
 <e>       <p><l>reenkarniĝo<s n="n"/></l>              <r>reincarnation<s n="n"/></r></p></e>
 <e>       <p><l>re-plenblovi<s n="vblex"/></l>         <r>reinflate<s n="vblex"/></r></p></e>
