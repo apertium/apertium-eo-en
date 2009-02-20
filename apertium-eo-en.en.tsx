@@ -232,6 +232,30 @@ New ambiguity class: {THATPRN,DET}
 
 <forbid>
 
+<!-- He saw that the house was good. seeming to show that the unhindered rage of Achilles.
+     evitu  that<det><dem><sg>/that<prn><tn><sg>  = tiu/tio preferu ^that<cnjsub>$  (ke) -->
+<!--    <label-sequence><label-item label="PRNALTRES"/><label-item label="DET"/></label-sequence> -->
+<!--    <label-sequence><label-item label="THATCNJ"/><label-item label="DET"/></label-sequence> 
+
+    <enforce-after label="THATCNJ">
+      <label-set>
+        <label-item label="DET"/>
+      </label-set>
+    </enforce-after>
+-->
+
+
+
+<!-- Both the cars = DET DET NOM, do ne eblas forbari DET DET 
+    <label-sequence><label-item label="DET"/><label-item label="DET"/></label-sequence>
+-->
+ 
+
+<!-- TODO
+     The house that served as ...  evitu  that<det><dem><sg>/that<prn><tn><sg>  = tiu/tio kaj ^that<cnjsub>$  (ke) 
+     Preferu KIU , sed gxi ne ekzistas en la vortaro ankoraux. -->
+
+
 
 <!-- Eviti some Republicans recommended that. -> kelkaj Respublikanoj rekomendita ke.  ne helpas meti CNJSUB-->
     <label-sequence><label-item label="THATCNJ"/><label-item label="SENT"/></label-sequence>
@@ -790,12 +814,17 @@ New ambiguity class: {THATPRN,DET}
       <label-item label="INTNOM"/>
       <label-item label="DETQNT_ORD"/>
     </label-sequence>
-
-
-
  </forbid>
 
+
+
+
+
+
+
  <enforce-rules>
+
+
     <enforce-after label="VHAVEPAST">
       <label-set>
         <label-item label="VLEXPP"/>
@@ -963,6 +992,8 @@ New ambiguity class: {THATPRN,DET}
   
 
  </enforce-rules>
+
+
 
 
  <preferences>
