@@ -193,6 +193,10 @@ sort -t '"' -k 3 x
             <cat-item lemma="this" tags="det.dem.*"/>
             <cat-item tags="det.dem.*"/>
 
+
+            <cat-item lemma="several" tags="det.ind.*"/>
+            <cat-item lemma="various" tags="det.ind.*"/>
+
             <cat-item lemma="another" tags="det.ind.*"/>
             <cat-item lemma="any" tags="det.ind.*"/>
         <!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
