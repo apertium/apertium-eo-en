@@ -417,7 +417,7 @@ sort -t '"' -k 3 x
     <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
     <def-var n="neg"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
     <def-var n="verbfinal"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
-    <def-var n="lema_SV"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
+    <def-var n="chunk_name"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
 
     <def-var n="DEBUG" v=""/>
 
@@ -600,6 +600,7 @@ sort -t '"' -k 3 x
             <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="GD"/></equal>
           </test>
           <let><var n="genere"/><lit-tag v="m"/></let>
+          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let>
         </when>
 
         <otherwise>
@@ -732,7 +733,6 @@ La rezulto estas unu sola leksika formo (venos):
 verbfinal = pensi<3><4><5>
  -->
       <def-macro n="conj_verb_compost2" npar="2">
-        <let><var n="lema_SV"/><lit v="verbcj"/></let>
         <let>
           <var n="verbfinal"/>
           <concat>
@@ -850,8 +850,8 @@ verbfinal = pensi<3><4><5>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
                   <lit-tag v="4"/>
                 </lu>
               </chunk>
@@ -961,16 +961,11 @@ verbfinal = pensi<3><4><5>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
-                  <lit v="la"/><lit-tag v="det"/><lit-tag v="def"/>
-                  <clip pos="4" side="tl" part="a_nbr"/>
-                  <lit-tag v="4"/>
+                  <lit v="la"/><lit-tag v="det.def.sp"/>
                 </lu>
                 <b/>
                 <lu>
-                  <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
+                  <clip pos="4" side="tl" part="whole"/>
                   <lit-tag v="4"/>
                 </lu>
                 <b/>
@@ -1093,9 +1088,7 @@ verbfinal = pensi<3><4><5>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
-                  <lit v="la"/><lit-tag v="det"/><lit-tag v="def"/>
-                  <clip pos="5" side="tl" part="a_nbr"/>
-                  <lit-tag v="4"/>
+                  <lit v="la"/><lit-tag v="det.def.sp"/>
                 </lu>
                 <b/>
                 <lu>
@@ -1970,31 +1963,15 @@ verbfinal = pensi<3><4><5>
                     <test><!-- a<det><ind><sg> good house  - bona domo -->
                         <equal><var n="preadv_added"/><lit v=""/></equal>              
                     </test>
-                    <out>
-                      <chunk name="adj_nom" case="caseFirstWord">
-                        <tags>
-                          <tag><lit-tag v="SN"/></tag>
-                          <tag><var n="genere"/></tag>
-                          <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                          <tag><lit-tag v="nom"/></tag>
-                        </tags>
-                        <lu>
-                          <var n="adjectiu"/>
-                        </lu>
-                        <b pos="1"/>
-                        <lu>
-                          <clip pos="3" side="tl" part="lem"/>
-                          <clip pos="3" side="tl" part="a_nom"/>
-                          <clip pos="3" side="tl" part="a_gen" link-to="2"/>
-                          <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                          <lit-tag v="4"/>
-                        </lu>
-                      </chunk>
-                    </out>
+                    <let><var n="chunk_name"/><lit v="adj_nom"/></let>
                   </when>
                   <otherwise><!-- a<det><ind><sg> better house  - pli bona domo -->
+                    <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
+                  </otherwise>
+                </choose>
+
                     <out>
-                      <chunk name="preadv_adj_nom" case="caseFirstWord">
+                      <chunk namefrom="chunk_name" case="caseFirstWord">
                         <tags>
                           <tag><lit-tag v="SN"/></tag>
                           <tag><var n="genere"/></tag>
@@ -2014,51 +1991,27 @@ verbfinal = pensi<3><4><5>
                         </lu>
                       </chunk>
                     </out>
-                  </otherwise>
-                </choose>
+
           </when>
 
-          <otherwise>
+
+          <otherwise>  <!-- Cxi-sube estas aliaj DET ol 'a' traktataj -->
                 <choose>
 
           <when>
             <test><!-- DET good house  - DET bona domo -->
                 <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
-            <out>
-              <chunk name="det_adj_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <var n="numero"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
+            <let><var n="chunk_name"/><lit v="det_adj_nom"/></let>
           </when>
 
           <otherwise>
+            <let><var n="chunk_name"/><lit v="det_preadv_adj_nom"/></let>
+          </otherwise>
+            </choose>
+
             <out><!-- DET best house  - DET plej bona domo -->
-              <chunk name="det_preadv_adj_nom" case="caseFirstWord">
+              <chunk namefrom="chunk_name" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><var n="genere"/></tag>
@@ -2073,7 +2026,6 @@ verbfinal = pensi<3><4><5>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="2"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
                   <var n="adjectiu"/>
                 </lu>
                 <b pos="2"/>
@@ -2086,9 +2038,7 @@ verbfinal = pensi<3><4><5>
                 </lu>
               </chunk>
             </out>
-          </otherwise>
 
-            </choose>
           </otherwise>
 
         </choose>
@@ -2361,6 +2311,7 @@ verbfinal = pensi<3><4><5>
       <action>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+        <let><var n="chunk_name"/><lit v="verbcj"/></let>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
 	<choose>
 	  <when>
@@ -2384,7 +2335,7 @@ verbfinal = pensi<3><4><5>
 	    </lu>
 	  </chunk>
 	  <b pos="1"/>
-	  <chunk namefrom="lema_SV">
+	  <chunk namefrom="chunk_name">
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
 	      <tag><var n="tipus_verb"/></tag>
