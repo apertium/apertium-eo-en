@@ -15,6 +15,7 @@
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
       <cat-item lemma="verb_vbger" tags="SV.*"/>
       <cat-item lemma="vaux_verb" tags="SV.*"/>
       <cat-item lemma="verb_pp" tags="SV.*"/>

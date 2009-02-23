@@ -178,6 +178,7 @@
 
 
 
+
     <!--
       <cat-item tags="det"/>
       <cat-item tags="det.*"/>
@@ -345,6 +346,14 @@ sort -t '"' -k 3 x
       <attr-item tags="vbser"/>
       <attr-item tags="vaux"/>
     </def-attr>
+    <def-attr n="a_verb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vblex.sep"/>
+      <attr-item tags="vbser"/>
+      <attr-item tags="vaux"/>
+    </def-attr>
+
+
     <def-attr n="a_det">
       <attr-item tags="det.def"/>
       <attr-item tags="det.ind"/>
@@ -421,8 +430,8 @@ sort -t '"' -k 3 x
     <def-var n="temps"/>
     <def-var n="adjectiu"/>
     <def-var n="adjectiu_tail"/>
-    <!-- if a "more" or "most" was added before an adj -->
-    <def-var n="preadv_added"/>
+    <def-var n="preadv_added"/>    <!-- if a "more" or "most" was added before an adj -->
+
     <def-var n="nomvar"/>
     <def-var n="nomvar_first"/>
     <def-var n="genere"/>
@@ -432,13 +441,10 @@ sort -t '"' -k 3 x
     <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
 
     <def-var n="tipus_verb"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="pers_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="nbr_chunk"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="neg"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="pronom"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="verbfinal"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
-    <def-var n="lema_SV"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
+    <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
+    <def-var n="neg"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
+    <def-var n="verbfinal"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
+    <def-var n="lema_SV"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
 
     <def-var n="DEBUG" v=""/>
 
@@ -501,10 +507,7 @@ sort -t '"' -k 3 x
 	  <let><var n="caseFirstWord"/><lit v="aa"/></let>
 	</otherwise>
       </choose>
-      <let>
-	<var n="EOS"/>
-	<lit v="false"/>
-      </let>
+      <let><var n="EOS"/><lit v="false"/></let>
     </def-macro>
 
 
@@ -564,7 +567,7 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-
+    <!-- kontrolas cxu la parametro estas konata vorto. Se jes "nomvar" := <nom>   -->
     <def-macro n="set_nomvar_if_known1" npar="1">
       <let><var n="nomvar"/><lit v=""/></let>
       <choose>
@@ -665,14 +668,8 @@ sort -t '"' -k 3 x
 
 
 <!-- ===============  NOVA ALDONO DE HECTOR ========== -->
-    <def-macro n="tipus_verbs1" npar="1">
+    <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
-	<when>
-	  <test>
-	    <equal><clip pos="1" side="tl" part="a_verb"/><lit-tag v="vblex.pron"/></equal>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="pron"/></let>
-	</when>
 	<when>
 	  <test>
 	    <or>
@@ -691,7 +688,7 @@ sort -t '"' -k 3 x
 	  </test>
 	  <let><var n="tipus_verb"/><lit-tag v="sorry"/></let>
 	</when>
-	<when><!-- (BCN)-->
+	<when>
 	  <test>
 	    <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
 	  </test>
@@ -705,10 +702,11 @@ sort -t '"' -k 3 x
 
     <!--Tiu makroo devas esti aplikata en la reguloj, post la makroo tipus_verbs. 
         Ĝi atribuas al la variablo 'pronom' la valoron de la pronomo, 
-        kiun devas havi la pronominalaj verboj -->
+        kiun devas havi la pronominalaj verboj.
+         pronominalaj verboj ne ekzistas en Eo nek en En, do mi forigas. Jacob
     <def-macro n="pron1" npar="1">
       <let><var n="pronom"/><lit v=""/></let>
-      <choose><!--envia el pronom en els verbs pronominals -->
+      <choose><!-*-envia el pronom en els verbs pronominals -*->
         <when>
           <test>
             <equal><var n="tipus_verb"/><lit-tag v="pron"/></equal>
@@ -724,6 +722,7 @@ sort -t '"' -k 3 x
         </when>
       </choose>
     </def-macro>
+-->
 
 
 <!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
@@ -744,8 +743,6 @@ verbfinal = pensi<3><4><5>
 		  <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-		<let><var n="pers_chunk"/><clip pos="1" side="sl" part="a_prs"/></let>
-		<let><var n="nbr_chunk"/><clip pos="1" side="sl" part="a_nbr"/></let>
 		<let><var n="lema_SV"/><lit v="verbcj"/></let>
 		<let>
 		  <var n="verbfinal"/>
@@ -768,8 +765,6 @@ verbfinal = pensi<3><4><5>
 		  </or>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-		<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
-		<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
 		<let><var n="lema_SV"/><lit v="verbcj"/></let>
 		<let>
 		  <var n="verbfinal"/>
@@ -805,8 +800,6 @@ verbfinal = pensi<3><4><5>
 	  </when>
           <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
 	</choose>
-	<let><var n="pers_chunk"/><lit-tag v="PD"/></let>
-	<let><var n="nbr_chunk"/><lit-tag v="ND"/></let>
 	<let><var n="lema_SV"/><lit v="verbcj"/></let>
 	<let>
 	  <var n="verbfinal"/>
@@ -822,6 +815,8 @@ verbfinal = pensi<3><4><5>
       </otherwise>
     </choose>
   </def-macro>
+
+
 
 <!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
      Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
@@ -848,6 +843,18 @@ verbfinal = pensi<3><4><5>
 
 
   <section-rules>
+
+
+
+    <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
+      <pattern>
+        <pattern-item n="a"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
 
     <!-- Sintagmas nominales -->
     <rule comment="REGLA: NOM">
@@ -964,7 +971,7 @@ verbfinal = pensi<3><4><5>
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
@@ -1791,16 +1798,6 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
-
-
-    <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
-      <pattern>
-        <pattern-item n="a"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-      </action>
-    </rule>
 
 
     <rule comment="REGLA: DET">
@@ -3448,15 +3445,15 @@ might:might<vaux><inf>
 	<pattern-item n="do"/> 
 	<pattern-item n="adv"/>
 	<pattern-item n="infpres"/>
+	<!--
 	<pattern-item n="do"/> 
 	<pattern-item n="do"/> 
 	<pattern-item n="do"/> 
-	<pattern-item n="do"/> 
+	<pattern-item n="do"/> -->
       </pattern>
       <action>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="tipus_verbs1"><with-param pos="3"/></call-macro>
-	<call-macro n="pron1"><with-param pos="3"/></call-macro>
+	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
 	<choose>
 	  <when>
@@ -3483,19 +3480,10 @@ might:might<vaux><inf>
 	  <chunk namefrom="lema_SV">
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
-	      <tag><lit-tag v="tipus_verb="/></tag>
 	      <tag><var n="tipus_verb"/></tag>
-	      <tag><lit-tag v="temps_chunk="/></tag>
 	      <tag><var n="temps_chunk"/></tag>
-	      <tag><lit-tag v="pers_chunk="/></tag>
-	      <tag><var n="pers_chunk"/></tag>
-	      <tag><lit-tag v="nbr_chunk="/></tag>
-	      <tag><var n="nbr_chunk"/></tag>
 	    </tags> 
 	    <lu>
-	      <lit-tag v="pronom="/>
-	      <var n="pronom"/>
-	      <lit-tag v="verbfinal="/>
 	      <var n="verbfinal"/>
 	    </lu>
 	  </chunk>
@@ -3503,6 +3491,9 @@ might:might<vaux><inf>
 	<call-macro n="f_bcond1"><with-param pos="2"/></call-macro>
       </action>
     </rule>
+
+
+
 
 
     <rule>
