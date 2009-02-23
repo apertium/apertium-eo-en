@@ -729,6 +729,18 @@ La rezulto estas unu sola leksika formo (venos):
 verbfinal = pensi<3><4><5>
  -->
       <def-macro n="conj_verb_compost2" npar="2">
+        <let><var n="lema_SV"/><lit v="verbcj"/></let>
+        <let>
+          <var n="verbfinal"/>
+          <concat>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="tl" part="a_verb"/>
+            <lit-tag v="3"/>
+            <lit-tag v="4"/>
+            <lit-tag v="5"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </concat>
+        </let>
 	<choose>
 	  <when>
 	    <test>
@@ -743,36 +755,12 @@ verbfinal = pensi<3><4><5>
                   </or>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-		<let><var n="lema_SV"/><lit v="verbcj"/></let>
-		<let>
-		  <var n="verbfinal"/>
-		  <concat>
-		    <clip pos="2" side="tl" part="lemh"/>
-		    <clip pos="2" side="tl" part="a_verb"/>
-		    <lit-tag v="3"/>
-		    <lit-tag v="4"/>
-		    <lit-tag v="5"/>
-		    <clip pos="2" side="tl" part="lemq"/>
-		  </concat>
-		</let>
 	      </when>
 	      <when>
 		<test>
 		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
 		</test>
 		<let><var n="temps_chunk"/><lit-tag v="past"/></let>
-		<let><var n="lema_SV"/><lit v="verbcj"/></let>
-		<let>
-		  <var n="verbfinal"/>
-		  <concat>
-		    <clip pos="2" side="tl" part="lemh"/>
-		    <clip pos="2" side="tl" part="a_verb"/>
-		    <lit-tag v="3"/>
-		    <lit-tag v="4"/>
-		    <lit-tag v="5"/>
-		    <clip pos="2" side="tl" part="lemq"/>
-		  </concat>
-		</let>
 	      </when>
 	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
 	    </choose>
@@ -796,18 +784,6 @@ verbfinal = pensi<3><4><5>
 	  </when>
           <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
 	</choose>
-	<let><var n="lema_SV"/><lit v="verbcj"/></let>
-	<let>
-	  <var n="verbfinal"/>
-	  <concat>
-	    <clip pos="2" side="tl" part="lemh"/>
-	    <clip pos="2" side="tl" part="a_verb"/>
-	    <lit-tag v="3"/>
-	    <lit-tag v="4"/>
-	    <lit-tag v="5"/>
-	    <clip pos="2" side="tl" part="lemq"/>
-	  </concat>
-	</let>
       </otherwise>
     </choose>
   </def-macro>
@@ -1834,9 +1810,9 @@ verbfinal = pensi<3><4><5>
 
 
 
-    <rule comment="REGLA: DET NOM NOM">
+    <rule comment="REGLA: a NOM NOM">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="a"/>
         <pattern-item n="nom"/>
         <pattern-item n="nom"/>
       </pattern>
@@ -1845,14 +1821,6 @@ verbfinal = pensi<3><4><5>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-        <choose>
-          <when>
-            <test>
-              <and><!-- a<det><ind> house dog  -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-              </and>
-            </test>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
@@ -1883,9 +1851,22 @@ verbfinal = pensi<3><4><5>
                 </lu>
               </chunk>
             </out>
-          </when>
+      </action>
+    </rule>
 
-          <otherwise>
+
+
+    <rule comment="REGLA: DET NOM NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_nom" case="caseFirstWord">
                 <tags>
@@ -1922,8 +1903,6 @@ verbfinal = pensi<3><4><5>
                 </lu>
               </chunk>
             </out>
-          </otherwise>
-        </choose>
       </action>
     </rule>
 
@@ -1942,68 +1921,70 @@ verbfinal = pensi<3><4><5>
         <choose>
           <when>
             <test>
-              <and><!-- a<det><ind><sg> good house  - bona domo -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-                <equal><var n="preadv_added"/><lit v=""/></equal>
-              </and>
-            </test>
-            <out>
-              <chunk name="adj_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <var n="adjectiu"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="a_gen" link-to="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-
-          <when>
-            <test>
-              <and><!-- a<det><ind><sg> better house  - pli bona domo -->
+              <and><!-- Speciala trakto de: a<det><ind><sg> - la determiner estas forigita -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
             </test>
-            <out>
-              <chunk name="preadv_adj_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
-                  <var n="adjectiu"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <clip pos="3" side="tl" part="a_gen" link-to="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
+
+                <choose>
+                  <when>
+                    <test><!-- a<det><ind><sg> good house  - bona domo -->
+                        <equal><var n="preadv_added"/><lit v=""/></equal>              
+                    </test>
+                    <out>
+                      <chunk name="adj_nom" case="caseFirstWord">
+                        <tags>
+                          <tag><lit-tag v="SN"/></tag>
+                          <tag><var n="genere"/></tag>
+                          <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                          <tag><lit-tag v="nom"/></tag>
+                        </tags>
+                        <lu>
+                          <var n="adjectiu"/>
+                        </lu>
+                        <b pos="1"/>
+                        <lu>
+                          <clip pos="3" side="tl" part="lem"/>
+                          <clip pos="3" side="tl" part="a_nom"/>
+                          <clip pos="3" side="tl" part="a_gen" link-to="2"/>
+                          <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
+                          <lit-tag v="4"/>
+                        </lu>
+                      </chunk>
+                    </out>
+                  </when>
+                  <otherwise><!-- a<det><ind><sg> better house  - pli bona domo -->
+                    <out>
+                      <chunk name="preadv_adj_nom" case="caseFirstWord">
+                        <tags>
+                          <tag><lit-tag v="SN"/></tag>
+                          <tag><var n="genere"/></tag>
+                          <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                          <tag><lit-tag v="nom"/></tag>
+                        </tags>
+                        <lu>
+                          <var n="adjectiu"/>
+                        </lu>
+                        <b pos="1"/>
+                        <lu>
+                          <clip pos="3" side="tl" part="lem"/>
+                          <clip pos="3" side="tl" part="a_nom"/>
+                          <clip pos="3" side="tl" part="a_gen" link-to="2"/>
+                          <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
+                          <lit-tag v="4"/>
+                        </lu>
+                      </chunk>
+                    </out>
+                  </otherwise>
+                </choose>
           </when>
 
+          <otherwise>
+                <choose>
+
           <when>
-            <test>
+            <test><!-- DET good house  - DET bona domo -->
                 <equal><var n="preadv_added"/><lit v=""/></equal>
             </test>
             <out>
@@ -2038,7 +2019,7 @@ verbfinal = pensi<3><4><5>
           </when>
 
           <otherwise>
-            <out>
+            <out><!-- DET best house  - DET plej bona domo -->
               <chunk name="det_preadv_adj_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
@@ -2068,6 +2049,10 @@ verbfinal = pensi<3><4><5>
               </chunk>
             </out>
           </otherwise>
+
+            </choose>
+          </otherwise>
+
         </choose>
       </action>
     </rule>
