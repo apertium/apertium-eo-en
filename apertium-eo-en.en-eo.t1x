@@ -16,7 +16,9 @@
     <def-cat n="of"><cat-item lemma="of" tags="pr"/></def-cat>
     <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
-    <def-cat n="a"><cat-item lemma="a" tags="det.ind.*"/></def-cat>
+
+    <def-cat n="a"><cat-item lemma="a" tags="det.ind.sg"/></def-cat>
+
     <def-cat n="not"><cat-item lemma="not" tags="adv"/></def-cat>
 
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
@@ -187,20 +189,21 @@ lt-expand apertium-eo-en.en.dix |  grep '<det>' | grep ":>:" | cut -f3 -d: | sor
 sort -t '"' -k 3 x
       -->
     <def-cat n="det">
-            <cat-item lemma="the" tags="det.def.*"/>
+<!--
+            <cat-item tags="det.*"/>
+-->            
+        <!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
             <cat-item tags="det.def.*"/>
-
-            <cat-item lemma="that" tags="det.dem.*"/>
-            <cat-item lemma="this" tags="det.dem.*"/>
             <cat-item tags="det.dem.*"/>
-
+            <cat-item tags="det.ord.*"/>
+            <cat-item tags="det.pos.*"/>
+            <cat-item tags="det.qnt.*"/>
 
             <cat-item lemma="several" tags="det.ind.*"/>
             <cat-item lemma="various" tags="det.ind.*"/>
 
             <cat-item lemma="another" tags="det.ind.*"/>
             <cat-item lemma="any" tags="det.ind.*"/>
-        <!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
             <cat-item lemma="both" tags="det.ind.*"/>
             <cat-item lemma="each" tags="det.ind.*"/>
             <cat-item lemma="either" tags="det.ind.*"/>
@@ -210,38 +213,6 @@ sort -t '"' -k 3 x
             <cat-item lemma="such" tags="det.ind.*"/>
             <cat-item lemma="the same" tags="det.ind.*"/>
             <cat-item lemma="whatever" tags="det.ind.*"/>
-
-            <cat-item lemma="last" tags="det.ord.*"/>
-            <cat-item tags="det.ord.*"/>
-
-            <cat-item lemma="her" tags="det.pos.*"/>
-            <cat-item lemma="his" tags="det.pos.*"/>
-            <cat-item lemma="its" tags="det.pos.*"/>
-            <cat-item lemma="my" tags="det.pos.*"/>
-            <cat-item lemma="our" tags="det.pos.*"/>
-            <cat-item lemma="their" tags="det.pos.*"/>
-            <cat-item lemma="your" tags="det.pos.*"/>
-            <cat-item tags="det.pos.*"/>
-
-            <cat-item lemma="a few" tags="det.qnt.*"/>
-            <cat-item lemma="a lot of" tags="det.qnt.*"/>
-            <cat-item lemma="as much" tags="det.qnt.*"/>
-            <cat-item lemma="enough" tags="det.qnt.*"/>
-            <cat-item lemma="fewer" tags="det.qnt.*"/>
-            <cat-item lemma="few" tags="det.qnt.*"/>
-            <cat-item lemma="less" tags="det.qnt.*"/>
-            <cat-item lemma="little" tags="det.qnt.*"/>
-            <cat-item lemma="lots of" tags="det.qnt.*"/>
-            <cat-item lemma="many" tags="det.qnt.*"/>
-            <cat-item lemma="more" tags="det.qnt.*"/>
-            <cat-item lemma="much" tags="det.qnt.*"/>
-            <cat-item lemma="quite a lot of" tags="det.qnt.*"/>
-            <cat-item lemma="so many" tags="det.qnt.*"/>
-            <cat-item lemma="some" tags="det.qnt.*"/>
-            <cat-item lemma="so much" tags="det.qnt.*"/>
-            <cat-item lemma="too many" tags="det.qnt.*"/>
-            <cat-item lemma="too much" tags="det.qnt.*"/>
-            <cat-item tags="det.qnt.*"/>
     </def-cat>
 
 
@@ -438,7 +409,8 @@ sort -t '"' -k 3 x
     <def-var n="genere_first"/>
     <def-var n="genere_second"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
-    <def-var n="EOS" v="true"/><!-- taken from en-es.t1x, for use in macro firstWord -->
+    <def-var n="EOS" v="false"/><!-- taken from en-es.t1x, for use in macro firstWord -->
+<!--    <def-var n="EOS" v="true"/> taken from en-es.t1x, for use in macro firstWord -->
 
     <def-var n="tipus_verb"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
     <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
@@ -574,7 +546,9 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-    <!-- kontrolas cxu la parametro estas konata vorto. Se jes "nomvar" := <nom>   -->
+    <!-- kontrolas cxu la parametro estas konata vorto. 
+         Se jes "nomvar" := <nom>. Se ne nomvar="".
+         Tio cxu estas por eviti ke nekonataj vortoj ricevos tag'on kiu poste estas montrata. -->
     <def-macro n="set_nomvar_if_known1" npar="1">
       <let><var n="nomvar"/><lit v=""/></let>
       <choose>
@@ -873,7 +847,7 @@ verbfinal = pensi<3><4><5>
         <pattern-item n="a"/>
       </pattern>
       <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+ <!--       <call-macro n="firstWord"><with-param pos="1"/></call-macro> -->
       </action>
     </rule>
 
@@ -1109,68 +1083,6 @@ verbfinal = pensi<3><4><5>
 
 -->
 
-
-<!-- Rule only affect 1 sentence in corpus
-    <rule comment="REGLA: a NOM/ANT NOM/ANT 's NOM:  a Jacob Smith's dog   => hundo de Jacob Smith">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <let><var n="nomvar_first"/><var n="nomvar"/></let>
-        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
-
-        <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-        <let><var n="genere_second"/><var n="genere"/></let>
-
-        <call-macro n="set_genere1"><with-param pos="5"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="5" side="tl" part="lem"/>
-                  <clip pos="5" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="5" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="4" side="tl" part="whole"/>
-                  </lu>
-                <b pos="4"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
-                  <var n="nomvar_first"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <var n="genere_second"/>
-                  <clip pos="3" side="tl" part="a_nbr"/>
-                  <var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
--->
 
     <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  the garden man's dog ">
       <pattern>
@@ -1883,6 +1795,7 @@ verbfinal = pensi<3><4><5>
 
 
 
+
     <rule comment="REGLA: DET NOM">
       <pattern>
         <pattern-item n="det"/>
@@ -1917,6 +1830,7 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
+
 
 
 
@@ -2028,7 +1942,7 @@ verbfinal = pensi<3><4><5>
         <choose>
           <when>
             <test>
-              <and><!-- a<det><ind><sg> -->
+              <and><!-- a<det><ind><sg> good house  - bona domo -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
                 <equal><var n="preadv_added"/><lit v=""/></equal>
@@ -2043,7 +1957,6 @@ verbfinal = pensi<3><4><5>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
-                  <!--             <clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><clip pos="3" side="tl" part="a_nbr" link-to="3"/>	     <lit-tag v="4"/>-->
                   <var n="adjectiu"/>
                 </lu>
                 <b pos="1"/>
@@ -2060,7 +1973,7 @@ verbfinal = pensi<3><4><5>
 
           <when>
             <test>
-              <and><!-- a<det><ind><sg> -->
+              <and><!-- a<det><ind><sg> better house  - pli bona domo -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
                 <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
               </and>
@@ -2375,6 +2288,93 @@ verbfinal = pensi<3><4><5>
 
 
 
+
+  <rule comment="RULE: please + vblex in present => please + vblex in imperative">
+     <pattern>
+       <pattern-item n="please"/>
+       <pattern-item n="c_vblex_pres"/>
+     </pattern>
+     <action>
+       <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+	      <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+         <b pos="1"/>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+    <rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ĉiam pensas)">    
+      <pattern>
+	<pattern-item n="do"/> 
+	<pattern-item n="adv"/>
+	<pattern-item n="infpres"/>
+      </pattern>
+      <action>
+	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
+	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
+	<choose>
+	  <when>
+	    <test><!-- se ADV estas "not" aux "never"... -->
+	      <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="adv_neg"/></in>
+	    </test>
+	    <let><var n="neg"/><lit-tag v="NEG"/></let>
+	  </when>
+	  <otherwise>
+	    <let><var n="neg"/><lit v=""/></let>
+	  </otherwise>
+	</choose>
+	<out>
+	  <chunk name="adv" case="caseFirstWord">
+	    <tags>
+	      <tag><clip pos="2" side="tl" part="a_adv"/></tag>
+	      <tag><var n="neg"/></tag>
+	    </tags>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	  </chunk>
+	  <b pos="1"/>
+	  <chunk namefrom="lema_SV">
+	    <tags>	       
+	      <tag><lit-tag v="SV"/></tag>
+	      <tag><var n="tipus_verb"/></tag>
+	      <tag><var n="temps_chunk"/></tag>
+	    </tags> 
+	    <lu>
+	      <var n="verbfinal"/>
+	    </lu>
+	  </chunk>
+	</out>
+	<call-macro n="f_bcond1"><with-param pos="2"/></call-macro>
+      </action>
+    </rule>
 
 
 
@@ -3452,94 +3452,6 @@ might:might<vaux><inf>
             </lu>
           </chunk>
         </out>
-      </action>
-    </rule>
-
-
-  <rule comment="RULE: please + vblex in present => please + vblex in imperative">
-     <pattern>
-       <pattern-item n="please"/>
-       <pattern-item n="c_vblex_pres"/>
-     </pattern>
-     <action>
-       <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-       <out>
-         <chunk name="verb" case="caseFirstWord">
-           <tags>
-              <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
-            </lu>
-          </chunk>
-         <b pos="1"/>
-         <chunk name="verb" case="caseFirstWord">
-           <tags>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-            </tags>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-            </lu>
-          </chunk>
-        </out>
-     </action>
-  </rule>
-
-
-    <rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ĉiam pensas)">    
-      <pattern>
-	<pattern-item n="do"/> 
-	<pattern-item n="adv"/>
-	<pattern-item n="infpres"/>
-      </pattern>
-      <action>
-	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
-	<choose>
-	  <when>
-	    <test><!-- se ADV estas "not" aux "never"... -->
-	      <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="adv_neg"/></in>
-	    </test>
-	    <let><var n="neg"/><lit-tag v="NEG"/></let>
-	  </when>
-	  <otherwise>
-	    <let><var n="neg"/><lit v=""/></let>
-	  </otherwise>
-	</choose>
-	<out>
-	  <chunk name="adv" case="caseFirstWord">
-	    <tags>
-	      <tag><clip pos="2" side="tl" part="a_adv"/></tag>
-	      <tag><var n="neg"/></tag>
-	    </tags>
-	    <lu>
-	      <clip pos="2" side="tl" part="whole"/>
-	    </lu>
-	  </chunk>
-	  <b pos="1"/>
-	  <chunk namefrom="lema_SV">
-	    <tags>	       
-	      <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-	      <tag><var n="temps_chunk"/></tag>
-	    </tags> 
-	    <lu>
-	      <var n="verbfinal"/>
-	    </lu>
-	  </chunk>
-	</out>
-	<call-macro n="f_bcond1"><with-param pos="2"/></call-macro>
       </action>
     </rule>
 
