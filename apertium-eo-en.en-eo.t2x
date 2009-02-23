@@ -14,12 +14,29 @@
     </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
+      <cat-item tags="SV.reporting.*"/>
+      <cat-item tags="SV.aliaj.*"/>
+      <cat-item tags="SV.like.*"/>
+      <cat-item tags="SV.sorry.*"/>
+      <!--
       <cat-item lemma="verb" tags="SV.*"/>
       <cat-item lemma="verbcj" tags="SV.*"/>
       <cat-item lemma="verb_vbger" tags="SV.*"/>
       <cat-item lemma="vaux_verb" tags="SV.*"/>
-      <cat-item lemma="verb_pp" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
     </def-cat>
+    <def-cat n="SVitrans">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.netransitiva.*"/>
+      <cat-item tags="SV.netransitiva2.*"/>
+      <!--
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
+    </def-cat>
+
     <def-cat n="SVYesNoQuestionStart">
       <cat-item lemma="xxx_ser" tags="SV.*"/>
       <cat-item lemma="xxx_vbdo" tags="SV.*"/>
@@ -27,6 +44,7 @@
     <def-cat n="Adv">
       <cat-item tags="Adv"/>
       <cat-item tags="CA"/>
+      <cat-item tags="NEG"/>
     </def-cat>
     <def-cat n="CC">
       <cat-item tags="CC"/>
@@ -408,6 +426,54 @@
         </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: SN Adv SV Adv SN">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+	  <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+             <clip pos="5" part="a_chunk"/>
+             <clip pos="5" part="gen"/>
+             <clip pos="5" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
   </section-rules>

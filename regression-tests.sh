@@ -33,12 +33,14 @@ if [ "$REGEN" == "1" ]; then
 	rm -f test_*
 	echo "Preparing (shouldn't be necessary if $TESTNAME not changed on webserver)"
 
-LIST=`grep '<li>' $TESTNAME | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+LIST=`grep '<li>' $TESTNAME | sed 's/<.*li>//g' | sed -r 's/\s+/_/g'`;
 
 for LINE in $LIST; do
 	dir=`echo $LINE | cut -f2 -d'(' | cut -f1 -d')'`;
 
-#	echo $LINE;
+	#echo $LINE;
+	#echo $dir;
+
 	SL=`echo $LINE | cut -f2 -d')' | sed 's/<i>//g' | sed 's/<\/i>//g' | sed 's/→/@/g' | cut -f1 -d'@' | sed 's/(note:/@/g' | sed 's/_/ /g'`;
 	TL=`echo $LINE | sed 's/(\w\w)//g' | sed 's/<i>//g' | sed 's/<\/i>_→/@/g' | cut -f2 -d'@' | sed 's/_/ /g'`;
 
