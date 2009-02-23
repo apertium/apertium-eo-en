@@ -255,6 +255,7 @@ sort -t '"' -k 3 x
       <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->
       <cat-item tags="np.cog.*"/><!-- Jekyll<np><cog><sg>  -->
       <cat-item tags="np.ant.*"/><!-- Susana:Susana<np><ant><f><sg>  Jacob:Jacob<np><ant><m><sg> -->
+<!-- eble simple:      <cat-item tags="np.*"/>    ??  -->
     </def-cat>
 
     <!-- verb in present or imperative or past participle (to change the tense due to a bad election of the lexer) -->
@@ -454,12 +455,14 @@ sort -t '"' -k 3 x
       <list-item v="seem"/>
     </def-list>
 
-
   </section-def-lists>
 
+
+
+
+
+
   <section-def-macros>
-
-
     <def-macro n="firstWord" npar="1">
       <choose><!-- taken from en-es.t1x, for use in macro firstWord -->
 	<when>
@@ -1654,6 +1657,7 @@ verbfinal = pensi<3><4><5>
       </action>
     </rule>
 
+
     <rule comment="REGLA: Prn">
       <pattern>
         <pattern-item n="prn"/>
@@ -1679,6 +1683,7 @@ verbfinal = pensi<3><4><5>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: PrnPers">
       <pattern>
@@ -1771,6 +1776,38 @@ verbfinal = pensi<3><4><5>
 
 
 
+<!--
+    <rule comment="REGLA: a NOM">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+            <out>
+              <chunk name="nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><var n="genere"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_nom"/>
+                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
+                  <lit-tag v="4"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
+
+
 
     <rule comment="REGLA: DET NOM">
       <pattern>
@@ -1806,6 +1843,7 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
+
 
 
 
