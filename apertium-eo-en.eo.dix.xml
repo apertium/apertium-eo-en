@@ -1440,6 +1440,7 @@
 <e lm="metiisto">             <i>metiist</i><par n="nommf__n"/></e>
 <e lm="milionulo">            <i>milionul</i><par n="nommf__n"/></e>
 <e lm="ministo">              <i>minist</i><par n="nommf__n"/></e>
+<e lm="ĉefministro">          <i>ĉefministr</i><par n="nommf__n"/></e>
 <e lm="ministro">             <i>ministr</i><par n="nommf__n"/></e>
 <e lm="monaĥo">               <i>mona</i><par n="ĥ"/><i></i><par n="nommf__n"/></e>
 <e lm="monarko">              <i>monar</i><par n="k_ĥ"/><i></i><par n="nommf__n"/></e>
@@ -7458,6 +7459,7 @@
 <e lm="prefere">              <i>prefere</i><par n="komence__adv"/></e>
 <e lm="proksime">             <i>proksime</i><par n="komence__adv"/></e>
 <e lm="propre">               <i>propre</i><par n="komence__adv"/></e>
+<e lm="reĝe">                 <i>re</i><par n="ĝ"/><i>e</i><par n="komence__adv"/></e>
 <e lm="reen">                 <i>reen</i><par n="komence__adv"/></e>
 <e lm="resume">               <i>resume</i><par n="komence__adv"/></e>
 <e lm="returnite">            <i>returnite</i><par n="komence__adv"/></e>
@@ -22758,7 +22760,7 @@
 <e lm="viktimigi">            <i>viktimig</i><par n="verb__vblex"/></e>
 <e lm="Viktoro">              <i>Viktoro</i><par n="Marko__np"/></e>
 <e lm="Viktoria">             <i>Viktoria</i><par n="Marko__np"/></e>
-<e lm="Viktorio">             <i>Viktorio</i><par n="Marko__np"/></e>
+<e lm="Viktorio">             <i>Viktorio</i><par n="Barcelono__np"/></e>
 <e lm="video">                <i>video</i><par n="nom__n"/></e>
 <e lm="videofilmo">           <i>videofilmo</i><par n="nom__n"/></e>
 <e lm="videobendo">           <i>videobendo</i><par n="nom__n"/></e>
@@ -23555,6 +23557,22 @@
 <e lm="kanadano"><i>kanadan</i><par n="nommf__n"/></e>
 <e lm="menŝeviko"><i>men</i><par n="ŝ"/><i>evik</i><par n="nommf__n"/></e>
 <e lm="AVI"><i>AVI</i><par n="DNA__n"/></e>
+
+<e lm="Antigvo"><i>Antigvo</i><par n="Barcelono__np"/></e>
+<e lm="Arubo"><i>Arubo</i><par n="Barcelono__np"/></e>
+<e lm="Barbudo"><i>Barbudo</i><par n="Barcelono__np"/></e>
+
+<e lm="Teksaso"><i>Teksaso</i><par n="Barcelono__np"/></e>
+<e lm="Kentukio"><i>Kentukio</i><par n="Barcelono__np"/></e>
+<e lm="Alabamo"><i>Alabamo</i><par n="Barcelono__np"/></e>
+<e lm="Tenesio"><i>Tenesio</i><par n="Barcelono__np"/></e>
+<e lm="Misisipio"><i>Misisipio</i><par n="Barcelono__np"/></e>
+<e lm="Florido"><i>Florido</i><par n="Barcelono__np"/></e>
+<e lm="Kalifornio"><i>Kalifornio</i><par n="Barcelono__np"/></e>
+<e lm="Masaĉuseco"><i>Masaĉuseco</i><par n="Barcelono__np"/></e>
+<e lm="Ontario"><i>Ontario</i><par n="Barcelono__np"/></e>
+<e lm="Kebekio"><i>Kebekio</i><par n="Barcelono__np"/></e>
+<e lm="Sevilo"><i>Sevilo</i><par n="Barcelono__np"/></e>
 <!-- Fino aldonoj 2009/02/23 -->
 
 <!-- proper nouns -->
@@ -25325,7 +25343,6 @@
 <e lm="Elissa">               <i>Elissa</i><par n="Mary__np"/></e>
 <e lm="Elivio">               <i>Elivio</i><par n="Mark__np"/></e>
 <e lm="Elizabeth">            <i>Elizabeth</i><par n="Mary__np"/></e>
-<e lm="Eliza">                <i>Eliza</i><par n="Mary__np"/></e>
 <e lm="Eliézer">              <i>Eliézer</i><par n="Mark__np"/></e>
 <e lm="Ella">                 <i>Ella</i><par n="Mary__np"/></e>
 <e lm="Elle">                 <i>Elle</i><par n="Mary__np"/></e>

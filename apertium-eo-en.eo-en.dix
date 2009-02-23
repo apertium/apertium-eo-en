@@ -1105,6 +1105,21 @@ BUT:
 <e>       <p><l>Vjetnamio<s n="np"/><s n="top"/></l>   <r>Vietnam<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Viktorio<s n="np"/><s n="top"/></l>    <r>Victoria<s n="np"/><s n="top"/></r></p></e>
 
+<e>       <p><l>Antigvo<s n="np"/><s n="top"/></l>     <r>Antigua<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Arubo<s n="np"/><s n="top"/></l>       <r>Aruba<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Barbudo<s n="np"/><s n="top"/></l>     <r>Barbuda<s n="np"/><s n="top"/></r></p></e>
+
+<e>       <p><l>Teksaso<s n="np"/><s n="top"/></l>     <r>Texas<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kentukio<s n="np"/><s n="top"/></l>    <r>Kentucky<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Masaĉuseco<s n="np"/><s n="top"/></l>  <r>Massachussets<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Alabamo<s n="np"/><s n="top"/></l>     <r>Alabamo<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Tenesio<s n="np"/><s n="top"/></l>     <r>Tenesio<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Misisipio<s n="np"/><s n="top"/></l>     <r>Misisipio<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Florido<s n="np"/><s n="top"/></l>     <r>Florida<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kalifornio<s n="np"/><s n="top"/></l>  <r>California<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kebekio<s n="np"/><s n="top"/></l>     <r>Quebec<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Ontario<s n="np"/><s n="top"/></l>     <r>Ontario<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Sevilo<s n="np"/><s n="top"/></l>     <r>Seville<s n="np"/><s n="top"/></r></p></e>
 
     <!-- Adjective nations and other uppercase things -->
 
@@ -8169,7 +8184,7 @@ TODO??
 <e r="LR"><p><l>infuzo<s n="n"/></l>                   <r>infusion<s n="n"/></r></p></e>
 <e>       <p><l>ingredienco<s n="n"/></l>              <r>ingredient<s n="n"/></r></p></e>
 <e r="LR"><p><l>konsistaĵo<s n="n"/></l>               <r>ingredient<s n="n"/></r></p></e>
-<e>       <p><l>enloĝanto<s n="n"/></l>                <r>inhabitant<s n="n"/></r></p></e>
+<e>       <p><l>loĝanto<s n="n"/></l>                  <r>inhabitant<s n="n"/></r></p></e>
 <e>       <p><l>enspiri<s n="vblex"/></l>              <r>inhale<s n="vblex"/></r></p></e>
 <e>       <p><l>esenca<s n="adj"/></l>                 <r>inherent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>denaska<s n="adj"/></l>                <r>inherent<s n="adj"/></r></p></e>
@@ -11026,6 +11041,7 @@ TODO??
 <e r="LR"><p><l>unuaklasa<s n="adj"/></l>              <r>prime<s n="adj"/></r></p></e>
 <e r="LR"><p><l>modela<s n="adj"/></l>                 <r>prime<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prima<s n="adj"/></l>                  <r>prime<s n="adj"/></r></p></e>
+<e>       <p><l>ĉefministro<s n="n"/></l>              <r>prime<b/>minister<s n="n"/></r></p></e>
 <e>       <p><l>primo<s n="n"/></l>                    <r>prime<s n="n"/></r></p></e>
 <e>       <p><l>primitiva<s n="adj"/></l>              <r>primitive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>praa<s n="adj"/></l>                   <r>primitive<s n="adj"/></r></p></e>
@@ -11890,7 +11906,7 @@ TODO??
 <e r="LR"><p><l>loĝadejo<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
 <e r="LR"><p><l>domicilo<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
 <e r="LR"><p><l>rezidejo<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
-<e>       <p><l>loĝanto<s n="n"/></l>                  <r>resident<s n="n"/></r></p><par n="MF_GD"/></e>
+<e r="RL"><p><l>loĝanto<s n="n"/></l>                  <r>resident<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>restaĵo<s n="n"/></l>                  <r>residue<s n="n"/></r></p></e>
 <e r="LR"><p><l>rekremento<s n="n"/></l>               <r>residue<s n="n"/></r></p></e>
 <e>       <p><l>eksiĝi<s n="vblex"/></l>               <r>resign<s n="vblex"/></r></p></e>
@@ -12186,6 +12202,7 @@ TODO??
 <e r="LR"><p><l>malpaciĝi<s n="vblex"/></l>            <r>row<s n="vblex"/></r></p></e>
 <e>       <p><l>reĝa<s n="adj"/></l>                   <r>royal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>imperiestra<s n="adj"/></l>            <r>royal<s n="adj"/></r></p></e>
+<e>       <p><l>reĝe<s n="adv"/></l>                   <r>royally<s n="adj"/></r></p></e>
 <e>       <p><l>froti<s n="vblex"/></l>                <r>rub<s n="vblex"/></r></p></e>
 <e>       <p><l>kaŭĉuko<s n="n"/></l>                  <r>rubber<s n="n"/></r></p></e>
 <e r="RL"><p><l>forĵetaĵo<s n="n"/></l>                <r>rubbish<s n="n"/></r></p></e>
