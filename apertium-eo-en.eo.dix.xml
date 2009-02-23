@@ -137,10 +137,10 @@
 
 
 <pardef n="DNA__n">
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="acr"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="acr"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="acr"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="acr"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
 
@@ -951,7 +951,10 @@
 <e lm="per en">               <i>per<b/>en</i><par n="at__pr"/></e>
 <e lm="per multe da">         <i>per<b/>multe<b/>da</i><par n="at__pr"/></e>
 <e lm="pere de">              <i>pere<b/>de</i><par n="at__pr"/></e>
+<!--
 <e lm="plura">                <i>plur</i><par n="plur/a__det"/></e>
+-->
+<e lm="plura">                <i>plura</i><par n="ind__det"/></e>
 <e lm="por">                  <i>por</i><par n="after__cnjadv"/></e>
 <e lm="por">                  <i>por</i><par n="at__pr"/></e>
 <e lm="por ke">               <i>por<b/>ke</i><par n="after__cnjadv"/></e>
@@ -23441,6 +23444,104 @@
 
 <e lm="per persono">  <i>per<b/>persono</i><par n="komence__adv"/></e>
 <!-- Fino aldonoj 2009/02/20 -->
+
+<!-- Aldonoj 2009/02/23 -->
+
+<e lm="Armenio"><i>Armenio</i><par n="Barcelono__np"/></e>
+<e lm="Azerio"><i>Azerio</i><par n="Barcelono__np"/></e>
+<e lm="Azerbajĝano"><i>Azerbajĝano</i><par n="Barcelono__np"/></e>
+<e lm="Kazaĥio"><i>Kazaĥio</i><par n="Barcelono__np"/></e>
+<e lm="Kazaĥstano"><i>Kazaĥstano</i><par n="Barcelono__np"/></e>
+<e lm="Kirgizio"><i>Kirgizio</i><par n="Barcelono__np"/></e>
+<e lm="Kirgizistano"><i>Kirgizistano</i><par n="Barcelono__np"/></e>
+<e lm="Taĝikio"><i>Taĝikio</i><par n="Barcelono__np"/></e>
+<e lm="Taĝikistano"><i>Taĝikistano</i><par n="Barcelono__np"/></e>
+<e lm="Turkmenio"><i>Turkmenio</i><par n="Barcelono__np"/></e>
+<e lm="Turkmenistano"><i>Turkmenistano</i><par n="Barcelono__np"/></e>
+<e lm="Kartvelio"><i>Kartvelio</i><par n="Barcelono__np"/></e>
+<e lm="Belorusio"><i>Belorusio</i><par n="Barcelono__np"/></e>
+<e lm="Finnlando"><i>Finnlando</i><par n="Barcelono__np"/></e>
+<e lm="Kastilio"><i>Kastilio</i><par n="Barcelono__np"/></e>
+<e lm="Sovet-Unio"><i>Sovet-Unio</i><par n="Barcelono__np"/></e>
+<e lm="Sovetio"><i>Sovetio</i><par n="Barcelono__np"/></e>
+<e lm="Ĉuvaŝio"><i>Ĉuvaŝio</i><par n="Barcelono__np"/></e>
+<e lm="armena"><i>armen</i><par n="adj__adj"/></e>
+<e lm="belorusa"><i>belorus</i><par n="adj__adj"/></e>
+<e lm="bolŝevika"><i>bol</i><par n="ŝ"/><i>evik</i><par n="adj__adj"/></e>
+<e lm="bosnia"><i>bosni</i><par n="adj__adj"/></e>
+<e lm="bosniano"><i>bosnian</i><par n="adj__adj"/></e>
+<e lm="hebrea"><i>hebre</i><par n="adj__adj"/></e>
+<e lm="hercegovina"><i>hercegovin</i><par n="adj__adj"/></e>
+<e lm="irana"><i>iran</i><par n="adj__adj"/></e>
+<e lm="kanada"><i>kanad</i><par n="adj__adj"/></e>
+<e lm="karakalpaka"><i>karakalpak</i><par n="adj__adj"/></e>
+<e lm="kartvela"><i>kartvel</i><par n="adj__adj"/></e>
+<e lm="kastilia"><i>kastili</i><par n="adj__adj"/></e>
+<e lm="kazaĥa"><i>kaza</i><par n="ĥ"/><par n="adj__adj"/></e>
+<e lm="kirgiza"><i>kirgiz</i><par n="adj__adj"/></e>
+<e lm="kosova"><i>kosov</i><par n="adj__adj"/></e>
+<e lm="makedona"><i>makedon</i><par n="adj__adj"/></e>
+<e lm="menŝevika"><i>men</i><par n="ŝ"/><i>evik</i><par n="adj__adj"/></e>
+<e lm="nederlanda"><i>nederland</i><par n="adj__adj"/></e>
+<e lm="nepala"><i>nepal</i><par n="adj__adj"/></e>
+<e lm="rumana"><i>ruman</i><par n="adj__adj"/></e>
+<e lm="serba"><i>serb</i><par n="adj__adj"/></e>
+<e lm="slovaka"><i>slovak</i><par n="adj__adj"/></e>
+<e lm="slovena"><i>sloven</i><par n="adj__adj"/></e>
+<e lm="subtera"><i>subter</i><par n="adj__adj"/></e>
+<e lm="turkmena"><i>turkmen</i><par n="adj__adj"/></e>
+<e lm="ujgura"><i>ujgur</i><par n="adj__adj"/></e>
+<e lm="ukraina"><i>ukrain</i><par n="adj__adj"/></e>
+<e lm="uzbeka"><i>uzbek</i><par n="adj__adj"/></e>
+<e lm="ĉeĥa"><par n="ĉ"/><i>e</i><par n="ĥ"/><par n="adj__adj"/></e>
+<e lm="ĉuvaŝa"><par n="ĉ"/><i>uva</i><par n="ŝ"/><par n="adj__adj"/></e>
+<e lm=""><par n="komence__adv"/></e>
+<e lm="apude"><i>apude</i><par n="komence__adv"/></e>
+<e lm="adepto"><i>adepto</i><par n="nom__n"/></e>
+<e lm="armeno"><i>armeno</i><par n="nom__n"/></e>
+<e lm="beloruso"><i>beloruso</i><par n="nom__n"/></e>
+<e lm="biologia milito"><i>biologia<b/>milito</i><par n="nom__n"/></e>
+<e lm="bosniano"><i>bosniano</i><par n="nom__n"/></e>
+<e lm="bulgaro"><i>bulgaro</i><par n="nom__n"/></e>
+<e lm="dano"><i>dano</i><par n="nom__n"/></e>
+<e lm="faktribunalo"><i>faktribunalo</i><par n="nom__n"/></e>
+<e lm="franko"><i>franko</i><par n="nom__n"/></e>
+<e lm="gerilanaro"><i>gerilanaro</i><par n="nom__n"/></e>
+<e lm="gerilo"><i>gerilo</i><par n="nom__n"/></e>
+<e lm="hercegovinano"><i>hercegovinano</i><par n="nom__n"/></e>
+<e lm="heredo"><i>heredo</i><par n="nom__n"/></e>
+<e lm="hispano"><i>hispano</i><par n="nom__n"/></e>
+<e lm="hungaro"><i>hungaro</i><par n="nom__n"/></e>
+<e lm="iranano"><i>iranano</i><par n="nom__n"/></e>
+<e lm="karakalpako"><i>karakalpako</i><par n="nom__n"/></e>
+<e lm="kartvelo"><i>kartvelo</i><par n="nom__n"/></e>
+<e lm="kazaĥo"><i>kaza</i><par n="ĥ"/><i>o</i><par n="nom__n"/></e>
+<e lm="kirgizo"><i>kirgizo</i><par n="nom__n"/></e>
+<e lm="kosovano"><i>kosovano</i><par n="nom__n"/></e>
+<e lm="lojalulo"><i>lojalulo</i><par n="nom__n"/></e>
+<e lm="makedono"><i>makedono</i><par n="nom__n"/></e>
+<e lm="metropolano"><i>metropolano</i><par n="nom__n"/></e>
+<e lm="mortobato"><i>mortobato</i><par n="nom__n"/></e>
+<e lm="nederlandano"><i>nederlandano</i><par n="nom__n"/></e>
+<e lm="nepalano"><i>nepalano</i><par n="nom__n"/></e>
+<e lm="polo"><i>polo</i><par n="nom__n"/></e>
+<e lm="reĝado"><i>re</i><par n="ĝ"/><i>ado</i><par n="nom__n"/></e>
+<e lm="rumano"><i>rumano</i><par n="nom__n"/></e>
+<e lm="serbo"><i>serbo</i><par n="nom__n"/></e>
+<e lm="slovako"><i>slovako</i><par n="nom__n"/></e>
+<e lm="sloveno"><i>sloveno</i><par n="nom__n"/></e>
+<e lm="svedo"><i>svedo</i><par n="nom__n"/></e>
+<e lm="turkmeno"><i>turkmeno</i><par n="nom__n"/></e>
+<e lm="ujguro"><i>ujguro</i><par n="nom__n"/></e>
+<e lm="ukraino"><i>ukraino</i><par n="nom__n"/></e>
+<e lm="uzbeko"><i>uzbeko</i><par n="nom__n"/></e>
+<e lm="ĉeĥo"><par n="ĉ"/><i>e</i><par n="ĥ"/><i>o</i><par n="nom__n"/></e>
+<e lm="ĉuvaŝo"><par n="ĉ"/><i>uva</i><par n="ŝ"/><i>o</i><par n="nom__n"/></e>
+<e lm="bolŝeviko"><i>bol</i><par n="ŝ"/><i>evik</i><par n="nommf__n"/></e>
+<e lm="kanadano"><i>kanadan</i><par n="nommf__n"/></e>
+<e lm="menŝeviko"><i>men</i><par n="ŝ"/><i>evik</i><par n="nommf__n"/></e>
+<e lm="AVI"><i>AVI</i><par n="DNA__n"/></e>
+<!-- Fino aldonoj 2009/02/23 -->
 
 <!-- proper nouns -->
 <e>                           <i>Agostinacchio</i><par n="Smith__np"/></e>

@@ -2596,7 +2596,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Peruvian">             <i>Peruvian</i><par n="expensive__adj"/></e>
 <e lm="Philippines">          <i>Philippines</i><par n="Barcelona__np"/></e>
 <e lm="Poland">               <i>Poland</i><par n="Barcelona__np"/></e>
-<e lm="Polish">               <i>Polish</i><par n="expensive__adj"/></e>
 <e lm="Portugal">             <i>Portugal</i><par n="Barcelona__np"/></e>
 <e lm="Portuguese">           <i>Portuguese</i><par n="expensive__adj"/></e>
 <e lm="Prague">               <i>Prague</i><par n="Barcelona__np"/></e>
@@ -2686,10 +2685,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Bosniak">              <i>Bosniak</i><par n="expensive__adj"/></e>
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
+<!-- Problems with "pole"
 <e lm="Pole">                 <i>Pole</i><par n="expensive__adj"/></e>
 <e lm="Pole">                 <i>Pole</i><par n="house__n"/></e>
+-->
 <e lm="Polish">               <i>Polish</i><par n="expensive__adj"/></e>
-<e lm="Polish">               <i>Polish</i><par n="house__n"/></e>
+<e lm="Polish">               <i>Polish</i><par n="access__n"/></e>
 <e lm="Romanian">             <i>Romanian</i><par n="expensive__adj"/></e>
 <e lm="Romanian">             <i>Romanian</i><par n="house__n"/></e>
 <e lm="Rumanian">             <i>Rumanian</i><par n="expensive__adj"/></e>
@@ -9990,7 +9991,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="LR" lm="U.K.">           <p><l>U.K.</l><r>UK</r></p><par n="Barcelona__np"/></e>
 <e r="LR" lm="U.S.">           <p><l>U.S.</l><r>US</r></p><par n="Barcelona__np"/></e>
 
-<e lm="VAT">                   <i>VAT</i><par n="Barcelona__np"/></e>
+<e lm="VAT">                   <i>VAT</i><par n="DNA__n"/></e>
 
 <e lm="Bolshevik">              <i>Bolshevik</i><par n="house__n"/></e>
 <e lm="Bolshevik">              <i>Bolshevik</i><par n="expensive__adj"/></e>
@@ -14387,7 +14388,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="LR" lm="polarization">  <p><l>polarization</l>        <r>polarisation</r></p><par n="house__n"/></e>
 <e r="LR" lm="polarize">      <p><l>polariz</l>             <r>polaris</r></p><par n="liv/e__vblex"/></e>
 <e lm="polecat">              <i>polecat</i><par n="house__n"/></e>
+<!-- Problems with Polish
 <e lm="polish">               <i>polish</i><par n="access__n"/></e>
+-->
+<e lm="polish">               <i>polish</i><par n="approach__vblex"/></e>
 <e lm="polite">               <i>polite</i><par n="handsome/__adj"/></e>
 <e lm="politely">             <i>politely</i><par n="maybe__adv"/></e>
 <e lm="political">            <i>political</i><par n="expensive__adj"/></e>
@@ -19443,14 +19447,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Georgania">            <i>Georgania</i><par n="Mary__np"/></e>
 <e lm="George">               <i>George</i><par n="Mark__np"/></e>
 <e lm="George W. Bush">       <i>George<b/>W.<b/>Bush</i><par n="Mark__np"/></e>
-<e lm="Armenia">              <i>Armenia</i><par n="Mary__np"/></e>
-<e lm="Azerbaijan">           <i>Azerbaijan</i><par n="Mary__np"/></e>
-<e lm="Kazakhstan">           <i>Kazakhstan</i><par n="Mary__np"/></e>
-<e lm="Uzbekistan">           <i>Uzbekistan</i><par n="Mary__np"/></e>
-<e lm="Kyrgyzstan">           <i>Kyrgyzstan</i><par n="Mary__np"/></e>
-<e lm="Tajikistan">           <i>Tajikistan</i><par n="Mary__np"/></e>
-<e lm="Turkmenistan">         <i>Turkmenistan</i><par n="Mary__np"/></e>
-<e lm="Chuvashia">            <i>Chuvashia</i><par n="Mary__np"/></e>
+<e lm="Armenia">              <i>Armenia</i><par n="Barcelona__np"/></e>
+<e lm="Azerbaijan">           <i>Azerbaijan</i><par n="Barcelona__np"/></e>
+<e lm="Kazakhstan">           <i>Kazakhstan</i><par n="Barcelona__np"/></e>
+<e lm="Uzbekistan">           <i>Uzbekistan</i><par n="Barcelona__np"/></e>
+<e lm="Kyrgyzstan">           <i>Kyrgyzstan</i><par n="Barcelona__np"/></e>
+<e lm="Tajikistan">           <i>Tajikistan</i><par n="Barcelona__np"/></e>
+<e lm="Turkmenistan">         <i>Turkmenistan</i><par n="Barcelona__np"/></e>
+<e lm="Chuvashia">            <i>Chuvashia</i><par n="Barcelona__np"/></e>
 <e lm="Georgina">             <i>Georgina</i><par n="Mary__np"/></e>
 <e lm="Georgio">              <i>Georgio</i><par n="Mark__np"/></e>
 <e lm="Geovana">              <i>Geovana</i><par n="Mary__np"/></e>

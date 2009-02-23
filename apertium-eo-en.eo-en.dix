@@ -1225,10 +1225,12 @@ BUT:
 <e r="LR"><p><l>bosno<s n="n"/></l>                    <r>Bosnian<s n="n"/></r></p></e>
 <e>       <p><l>hercegovinano<s n="n"/></l>            <r>Herzegovinan<s n="n"/></r></p></e>
 
+<!-- Problemoj kun "pole" (poluso)
 <e r="LR"><p><l>pola<s n="adj"/></l>                   <r>Pole<s n="adj"/></r></p></e>
 <e>       <p><l>polo<s n="n"/></l>                     <r>Pole<s n="n"/></r></p></e>
+-->
 <e>       <p><l>pola<s n="adj"/></l>                   <r>Polish<s n="adj"/></r></p></e>
-<e r="RL"><p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
+<e>       <p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
 <e>       <p><l>rumana<s n="adj"/></l>                 <r>Romanian<s n="adj"/></r></p></e>
 <e>       <p><l>rumano<s n="n"/></l>                   <r>Romanian<s n="n"/></r></p></e>
 <e r="RL"><p><l>rumana<s n="adj"/></l>                 <r>Rumanian<s n="adj"/></r></p></e>
@@ -2103,7 +2105,7 @@ TODO??
 <e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>UK<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>US<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>US<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>AVI<s n="pr"/><s n="top"/></l>         <r>VAT<b/>to<s n="pr"/></r></p></e>
+<e>       <p><l>AVI<s n="acr"/><s n="top"/></l>        <r>VAT<s n="acr"/></r></p></e>
 
 <e>       <p><l>turniro<s n="n"/></l>                  <r>open<s n="n"/></r></p></e>
 <e>       <p><l>per<b/>persono<s n="adv"/></l>         <r>per<b/>capita<s n="adv"/></r></p></e>
@@ -7285,7 +7287,7 @@ TODO??
 <e>       <p><l>Azerio<s n="np"/></l>                  <r>Azerbaijan<s n="np"/></r></p></e>
 <e r="LR"><p><l>Azerbajĝano<s n="np"/></l>             <r>Azerbaijan<s n="np"/></r></p></e>
 <e>       <p><l>Kazaĥio<s n="np"/></l>                 <r>Kazakhstan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kazaĥistano<s n="np"/></l>             <r>Kazakhstan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Kazaĥstano<s n="np"/></l>              <r>Kazakhstan<s n="np"/></r></p></e>
 <e>       <p><l>Uzbekio<s n="np"/></l>                 <r>Uzbekistan<s n="np"/></r></p></e>
 <e r="LR"><p><l>Uzbekistano<s n="np"/></l>             <r>Uzbekistan<s n="np"/></r></p></e>
 <e>       <p><l>Kirgizio<s n="np"/></l>                <r>Kyrgyzstan<s n="np"/></r></p></e>
@@ -7293,7 +7295,8 @@ TODO??
 <e>       <p><l>Taĝikio<s n="np"/></l>                 <r>Tajikistan<s n="np"/></r></p></e>
 <e r="LR"><p><l>Taĝikistano<s n="np"/></l>             <r>Tajikistan<s n="np"/></r></p></e>
 <e>       <p><l>Turkmenio<s n="np"/></l>               <r>Turkmenistan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Turkmenistan<s n="np"/></l>            <r>Turkmenistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Turkmenistano<s n="np"/></l>           <r>Turkmenistan<s n="np"/></r></p></e>
+<e>       <p><l>Ĉuvaŝio<s n="np"/></l>                 <r>Chuvashia<s n="np"/></r></p></e>
 <e>       <p><l>Kartvelio<s n="np"/></l>               <r>Georgia<s n="np"/></r></p></e>
 <e r="LR"><p><l>Gruzio<s n="np"/></l>                  <r>Georgia<s n="np"/></r></p></e>
 <e r="LR"><p><l>Georgio<s n="np"/></l>                 <r>Georgia<s n="np"/></r></p></e>
@@ -22884,7 +22887,11 @@ TODO??
 <e r="RL"><p><l>frakciado<s n="n"/></l>                <r>polarisation<s n="n"/></r></p></e>
 <e r="LR"><p><l>polarizo<s n="n"/></l>                 <r>polarisation<s n="n"/></r></p></e>
 <e>       <p><l>putoro<s n="n"/></l>                   <r>polecat<s n="n"/></r></p></e>
+<!--
 <e>       <p><l>ciro<s n="n"/></l>                     <r>polish<s n="n"/></r></p></e>
+-->
+<e r="LR"><p><l>cir.<s n="vblex"/></l>                 <r>polish<s n="vblex"/></r></p></e>
+<e>       <p><l>poluri<s n="vblex"/></l>               <r>polish<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>ĝentila<s n="adj"/></l>                <r>polite<s n="adj"/></r></p></e>
 <e r="RL"><p><l>ĝentile<s n="adv"/></l>                <r>politely<s n="adv"/></r></p></e>
 <e>       <p><l>politika<s n="adj"/></l>               <r>political<s n="adj"/></r></p></e>
