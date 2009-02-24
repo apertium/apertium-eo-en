@@ -438,7 +438,7 @@
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="tn"/><s n="sp"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="predet"/><s n="sp"/></r></p></e>
 -->
-<e>       <p><l>ĉiuj<s n="predet"/><s n="sp"/></l>     <r>all<s n="predet"/><s n="sp"/></r></p></e>
+<e>       <p><l>ĉiuj<s n="predet"/></l>     <r>all<s n="predet"/></r></p></e>
 
 
 <!-- anybody can be sad  → iu ajn povas esti malĝoja -->   
@@ -475,10 +475,17 @@
 <e>       <p><l>nenie<s n="prn"/></l>                  <r>nowhere<s n="prn"/></r></p></e>
 <e>       <p><l>ĉie<s n="prn"/></l>                    <r>everywhere<s n="prn"/></r></p></e>
 <e>       <p><l>iel<s n="adv"/></l>                    <r>somehow<s n="adv"/></r></p></e>
-<e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l> <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>       <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>which<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
-<e>       <p><l>kiu<b/>el<b/>ili<s n="prn"/></l>       <r>which<b/>one<s n="prn"/><s n="itg"/><s n="sg"/></r></p></e>
+
+
+<e>       <p><l>kies<s n="prn"/><s n="itg"/></l>        <r>whose<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>whom<s n="prn"/><s n="itg"/></r></p></e>
+<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>who<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l>  <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>        <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>which<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/></l><r>which<b/>one<s n="prn"/><s n="itg"/></r></p></e>
 
 <!--
 <e r="LR"><p><l>kio<s n="prn"/><s n="itg"/></l>        <r>what<s n="prn"/><s n="itg"/></r></p></e>
@@ -509,10 +516,7 @@
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
-<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>who<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiu<s n="prn"/><s n="rel"/><s n="ND"/></l><r>who<s n="prn"/><s n="rel"/></r></p></e>
-<e>       <p><l>kio<s n="prn"/><s n="itg"/></l>        <r>what<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kio<s n="prn"/><s n="itg"/><s n="ND"/></l><r>what<s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+<e>       <p><l>kiu<s n="prn"/><s n="rel"/></l><r>who<s n="prn"/><s n="rel"/></r></p></e>
 <e>       <p><l>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
@@ -716,15 +720,16 @@ BUT:
 <e>       <p><l>kelka<s n="det"/><s n="qnt"/></l>      <r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>kelka<s n="det"/></l>                  <r>a<b/>few<s n="det"/></r></p></e>
 <e>       <p><l>la<b/>sama<s n="det"/></l>             <r>the<b/>same<s n="det"/></r></p></e>
+
 <e>       <p><l>malmulta<s n="det"/><s n="qnt"/></l>   <r>little<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>malmulta<s n="det"/><s n="qnt"/><s n="sg"/></l><r>little<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+
 <e r="RL"><p><l>malmulta<s n="det"/><s n="qnt"/></l>   <r>few<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>malmulta<s n="det"/><s n="qnt"/><s n="pl"/></l><r>few<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+
 <e>       <p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>less<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>fewer<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>much<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>many<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>multa<s n="det"/><s n="qnt"/><s n="sp"/></l><r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>multa<s n="det"/></l>                  <r>a<b/>lot<b/>of<s n="det"/></r></p></e>
 <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>lots<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>multobla<s n="adj"/></l>               <r>multiple<s n="adj"/></r></p></e>
@@ -1201,8 +1206,8 @@ BUT:
 <e r="RL"><p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>skota<s n="adj"/></l>                  <r>Scottish<s n="adj"/></r></p></e>
 <e>       <p><l>sovetia<s n="adj"/></l>                <r>Soviet<s n="adj"/></r></p></e>
-<e>       <p><l>Sovetio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
-<e r="RL"><p><l>Sovet-Unio<s n="np"/><s n="top"/>"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Sovetio<s n="np"/><s n="top"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Sovet-Unio<s n="np"/><s n="top"/></l><r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
 <e>       <p><l>svedo<s n="n"/></l>                    <r>Swedish<s n="n"/></r></p></e>
 <e>       <p><l>svisa<s n="adj"/></l>                  <r>Swiss<s n="adj"/></r></p></e>
@@ -2027,8 +2032,6 @@ TODO??
 
 <!-- Hèctor beg 2009.02.18 -->
 
-<e>       <p><l>kies<s n="prn"/><s n="itg"/><s n="ND"/></l><r>whose<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiu<s n="prn"/><s n="itg"/><s n="ND"/></l><r>whom<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>whom<s n="rel"/><s n="an"/></r></p></e>
 <e>       <p><l>naskita<s n="adj"/></l>                <r>born<s n="adj"/></r></p></e>
 <e>       <p><l>malgraŭ<s n="pr"/></l>                 <r>despite<s n="pr"/></r></p></e>

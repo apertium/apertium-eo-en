@@ -900,28 +900,21 @@ verbfinal = pensi<3><4><5>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
+                  <clip pos="3" side="tl" part="lem"/>    <!-- hundo -->
+                  <clip pos="3" side="tl" part="tags"/>
                   <lit-tag v="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
                 </lu>
                 <b/>
                   <lu>
-                    <clip pos="2" side="tl" part="whole"/>
+                    <clip pos="2" side="tl" part="whole"/> <!-- de -->
                   </lu>
                 <b pos="2"/>
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <clip pos="1" side="tl" part="lem"/>     <!-- Jacob -->
+                  <clip pos="1" side="tl" part="tags"/>
                   <var n="nomvar"/>
                 </lu>
               </chunk>
@@ -944,39 +937,38 @@ verbfinal = pensi<3><4><5>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
         <let><var n="genere_first"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
               <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
-                  <lit v="la"/><lit-tag v="det.def.sp"/>
+                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
                 </lu>
                 <b/>
                 <lu>
-                  <clip pos="4" side="tl" part="whole"/>
-                  <lit-tag v="4"/>
+                  <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
+                  <clip pos="4" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
                 </lu>
                 <b/>
                   <lu>
-                    <clip pos="3" side="tl" part="whole"/>
+                    <clip pos="3" side="tl" part="whole"/>          <!-- de -->
                   </lu>
                 <b pos="3"/>
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
                   <clip pos="1" side="tl" part="a_det"/>
-                  <var n="numero"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
+                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkscius, sed ne je nekonataj vortoj -->
                   <lit-tag v="nom"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
+                  <clip pos="2 " side="tl" part="tags"/>
                   <var n="nomvar"/>
                 </lu>
               </chunk>
@@ -995,62 +987,11 @@ verbfinal = pensi<3><4><5>
         <pattern-item n="gen"/>
         <pattern-item n="nom"/>
       </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
-        <let><var n="nomvar_first"/><var n="nomvar"/></let>
-        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
-
-        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_second"/><var n="genere"/></let>
-
-        <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="3" side="tl" part="whole"/>
-                  </lu>
-                <b pos="3"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
-                  <var n="nomvar_first"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_second"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
-                  <var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
+...
 -->
 
 
-    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  the garden man's dog ">
+    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="genitive_possessors"/>
@@ -1071,50 +1012,49 @@ verbfinal = pensi<3><4><5>
         <let><var n="genere_second"/><var n="genere"/></let>
 
         <call-macro n="set_genere1"><with-param pos="5"/></call-macro>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
               <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
-                  <lit v="la"/><lit-tag v="det.def.sp"/>
+                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
                 </lu>
                 <b/>
                 <lu>
-                  <clip pos="5" side="tl" part="lem"/>
-                  <clip pos="5" side="tl" part="a_nom"/>
+                  <clip pos="5" side="tl" part="lem"/>            <!-- hundo -->
+                  <clip pos="5" side="tl" part="tags"/>
                   <lit-tag v="2"/>
-                  <clip pos="5" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
                 </lu>
                 <b/>
                   <lu>
-                    <clip pos="4" side="tl" part="whole"/>
+                    <clip pos="4" side="tl" part="whole"/>        <!-- de -->
                   </lu>
                 <b pos="1"/>
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
                   <clip pos="1" side="tl" part="a_det"/>
-                  <var n="numero"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
+                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkscius, sed ne je nekonataj vortoj -->
                   <lit-tag v="nom"/>
                 </lu>
                 <b pos="4"/>
                 <lu>
+                  <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
+                  <clip pos="2" side="tl" part="tags"/>
+<!--                  
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <clip pos="2" side="tl" part="a_gen"/>
+                  <clip pos="3" side="tl" part="a_nbr"/> -->
                   <var n="nomvar_first"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <var n="genere_second"/>
-                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <clip pos="3" side="tl" part="lem"/>            <!-- viro  -->
+                  <clip pos="3" side="tl" part="tags"/>
                   <var n="nomvar"/>
                 </lu>
               </chunk>
@@ -1141,17 +1081,12 @@ verbfinal = pensi<3><4><5>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="GD"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="4"/>
+                  <clip pos="1" side="tl" part="tags"/>
+                  <lit-tag v="nom"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
@@ -1160,10 +1095,8 @@ verbfinal = pensi<3><4><5>
                 <!-- <b pos="1"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
+                  <clip pos="2" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1180,17 +1113,12 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
+            <lu><!--               <clip pos="1" side="tl" part="whole"/>  -->
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="tags"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1207,16 +1135,12 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="tags"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1234,25 +1158,18 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="tags"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <!--              <clip pos="2" side="tl" part="a_gen"/>-->
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="tags"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1270,26 +1187,16 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_ant" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <!-- John Paul, Anne Marie *but* Jean Marie -->
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1307,24 +1214,16 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_ant" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="3"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1344,41 +1243,25 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_ant_cog_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <!-- John Paul, Anne Marie *but* Jean Marie -->
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="4"/>
+              <clip pos="3" side="tl" part="whole"/>
+              <lit-tag v="3"/>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="lem"/>
-              <clip pos="4" side="tl" part="a_nom"/>
-              <clip pos="4" side="tl" part="a_gen"/>
-              <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+              <clip pos="4" side="tl" part="whole"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
@@ -1398,33 +1281,21 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_cog_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="4"/>
+              <clip pos="3" side="tl" part="whole"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1443,34 +1314,21 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <!-- John Paul, Anne Marie *but* Jean Marie -->
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="4"/>
+              <clip pos="3" side="tl" part="whole"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1490,17 +1348,11 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant-ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -1508,18 +1360,12 @@ verbfinal = pensi<3><4><5>
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="3" side="tl" part="whole"/>
+              <lit-tag v="3"/>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="lem"/>
-              <clip pos="4" side="tl" part="a_nom"/>
-              <clip pos="4" side="tl" part="a_gen"/>
-              <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+              <clip pos="4" side="tl" part="whole"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
@@ -1540,25 +1386,16 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant_cog-cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <clip pos="2" side="tl" part="a_gen"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="2" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="2"/>
             <lu>
@@ -1566,10 +1403,7 @@ verbfinal = pensi<3><4><5>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="lem"/>
-              <clip pos="4" side="tl" part="a_nom"/>
-              <clip pos="4" side="tl" part="a_gen"/>
-              <clip pos="4" side="tl" part="a_nbr" link-to="3"/>
+              <clip pos="4" side="tl" part="whole"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
@@ -1592,17 +1426,11 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="ant-ant_cog-cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gen" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
@@ -1610,19 +1438,12 @@ verbfinal = pensi<3><4><5>
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-              <clip pos="3" side="tl" part="a_gen"/>
-              <!-- John Paul, Anne Marie *but* Jean Marie -->
-              <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+              <clip pos="3" side="tl" part="whole"/>
+              <lit-tag v="3"/>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="lem"/>
-              <clip pos="4" side="tl" part="a_nom"/>
-              <clip pos="4" side="tl" part="a_gen"/>
-              <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+              <clip pos="4" side="tl" part="whole"/>
               <lit-tag v="4"/>
             </lu>
             <b pos="4"/>
@@ -1631,16 +1452,14 @@ verbfinal = pensi<3><4><5>
             </lu>
             <b pos="5"/>
             <lu>
-              <clip pos="6" side="tl" part="lem"/>
-              <clip pos="6" side="tl" part="a_nom"/>
-              <clip pos="6" side="tl" part="a_gen"/>
-              <clip pos="6" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="4"/>
+              <clip pos="5" side="tl" part="whole"/>
+              <lit-tag v="5"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
 
     <rule comment="REGLA: Prn">
@@ -1653,16 +1472,13 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="prn" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><var n="numero"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_prn"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
-              <lit-tag v="3"/>
+              <var n="numero"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1679,24 +1495,16 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk name="prnpers" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="1" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_prn"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-              <clip pos="1" side="tl" part="a_gen"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
-              <lit-tag v="4"/>
+              <clip pos="1" side="tl" part="whole"/>
+              <lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
-
 
 
 
@@ -1709,14 +1517,11 @@ verbfinal = pensi<3><4><5>
             <out>
               <chunk name="det" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SD"/></tag>
-                  <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="SD.nom"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
-                  <lit-tag v="nom"/>
+                      <clip pos="1" side="tl" part="whole"/>
+                      <lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1735,23 +1540,17 @@ verbfinal = pensi<3><4><5>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
-                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <!-- <lit-tag v="2"/> no, keep <nom> -->
                   <lit-tag v="nom"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <!-- <lit-tag v="4"/> no, keep <nom> -->
+                  <clip pos="2" side="tl" part="whole"/>
+                  <!-- <lit-tag v="2"/> no, keep <nom> -->
                   <lit-tag v="nom"/>
                 </lu>
               </chunk>
@@ -1805,24 +1604,19 @@ verbfinal = pensi<3><4><5>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
+                  <clip pos="2" side="tl" part="tags"/>
                   <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
                 </lu>
               </chunk>
             </out>
@@ -1832,7 +1626,43 @@ verbfinal = pensi<3><4><5>
 
 
 
+    <rule comment="REGLA: a NOM NOM">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+        <let><var n="genere_first"/><var n="genere"/></let>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <!-- <b pos="1"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
+                <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <lu>
+                  <lit v="-"/>
+                  <lit-tag v="guio"/>
+                </lu>
+                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
 
+
+<!--
     <rule comment="REGLA: a NOM NOM">
       <pattern>
         <pattern-item n="a"/>
@@ -1852,7 +1682,6 @@ verbfinal = pensi<3><4><5>
                   <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
-                <!-- <b pos="1"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_nom"/>
@@ -1864,7 +1693,6 @@ verbfinal = pensi<3><4><5>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="a_nom"/>
@@ -1877,7 +1705,7 @@ verbfinal = pensi<3><4><5>
       </action>
     </rule>
 
-
+-->
 
     <rule comment="REGLA: DET NOM NOM">
       <pattern>

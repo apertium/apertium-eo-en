@@ -232,6 +232,16 @@ New ambiguity class: {THATPRN,DET}
 
 <forbid>
 
+<!-- ENMETU POSTE TODO TRE BONA IDEO, EBLE! ELPROVU!!!
+Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro 
+    <label-sequence>
+      <label-item label="NOMPL"/>
+      <label-item label="NOMSG"/>      
+    </label-sequence>
+-->
+
+
+
 <!-- He saw that the house was good. seeming to show that the unhindered rage of Achilles.
      evitu  that<det><dem><sg>/that<prn><tn><sg>  = tiu/tio preferu ^that<cnjsub>$  (ke) -->
 <!--    <label-sequence><label-item label="PRNALTRES"/><label-item label="DET"/></label-sequence> -->
