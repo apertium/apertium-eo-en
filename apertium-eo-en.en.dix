@@ -9429,6 +9429,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="vintage">              <i>vintage</i><par n="house__n"/></e>
 <e lm="violence">             <i>violence</i><par n="house__n"/></e>
 <e lm="violent">              <i>violent</i><par n="expensive__adj"/></e>
+<e lm="violently">            <i>violently</i><par n="maybe__adv"/></e>
 <e lm="violin">               <i>violin</i><par n="house__n"/></e>
 <!--        <e lm="virgin"><i>virgin</i><par n="house__n"/></e> -->
 <e lm="virgin">               <i>virgin</i><par n="expensive__adj"/></e>
@@ -10008,14 +10009,58 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Antigua">               <i>Antigua</i><par n="Barcelona__np"/></e>
 <e lm="Aruba">               <i>Aruba</i><par n="Barcelona__np"/></e>
 <e lm="Barbuda">               <i>Barbuda</i><par n="Barcelona__np"/></e>
-<e lm="Texas">               <i>Texas</i><par n="Barcelona__np"/></e>
-<e lm="Kentucky">               <i>Kentucky</i><par n="Barcelona__np"/></e>
-<e lm="Massachussets">               <i>Massachussets</i><par n="Barcelona__np"/></e>
+
 <e lm="Alabama">               <i>Alabama</i><par n="Barcelona__np"/></e>
-<e lm="Tennessee">               <i>Tennessee</i><par n="Barcelona__np"/></e>
-<e lm="Mississipi">               <i>Mississipi</i><par n="Barcelona__np"/></e>
-<e lm="Florida">               <i>Florida</i><par n="Barcelona__np"/></e>
+<e lm="Alaska">               <i>Alaska</i><par n="Barcelona__np"/></e>
+<e lm="Arizona">               <i>Arizona</i><par n="Barcelona__np"/></e>
+<e lm="Arkansas">               <i>Arkansas</i><par n="Barcelona__np"/></e>
 <e lm="California">               <i>California</i><par n="Barcelona__np"/></e>
+<e lm="Colorado">               <i>Colorado</i><par n="Barcelona__np"/></e>
+<e lm="Connecticut">               <i>Connecticut</i><par n="Barcelona__np"/></e>
+<e lm="Delaware">               <i>Delaware</i><par n="Barcelona__np"/></e>
+<e lm="Florida">               <i>Florida</i><par n="Barcelona__np"/></e>
+<e lm="Georgia">               <i>Georgia</i><par n="Barcelona__np"/></e>
+<e lm="Hawaii">               <i>Hawaii</i><par n="Barcelona__np"/></e>
+<e lm="Idaho">               <i>Idaho</i><par n="Barcelona__np"/></e>
+<e lm="Ilinois">               <i>Ilinois</i><par n="Barcelona__np"/></e>
+<e lm="Indiana">               <i>Indiana</i><par n="Barcelona__np"/></e>
+<e lm="Iowa">               <i>Iowa</i><par n="Barcelona__np"/></e>
+<e lm="Kansas">               <i>Kansas</i><par n="Barcelona__np"/></e>
+<e lm="Kentucky">               <i>Kentucky</i><par n="Barcelona__np"/></e>
+<e lm="Louisiana">               <i>Louisiana</i><par n="Barcelona__np"/></e>
+<e lm="Maine">               <i>Maine</i><par n="Barcelona__np"/></e>
+<e lm="Maryland">               <i>Maryland</i><par n="Barcelona__np"/></e>
+<e lm="Massachussetts">               <i>Massachussetts</i><par n="Barcelona__np"/></e>
+<e lm="Michigan">               <i>Michigan</i><par n="Barcelona__np"/></e>
+<e lm="Minnesota">               <i>Minnesota</i><par n="Barcelona__np"/></e>
+<e lm="Mississippi">               <i>Mississippi</i><par n="Barcelona__np"/></e>
+<e lm="Missouri">               <i>Missouri</i><par n="Barcelona__np"/></e>
+<e lm="Montana">               <i>Montana</i><par n="Barcelona__np"/></e>
+<e lm="Nebraska">               <i>Nebraska</i><par n="Barcelona__np"/></e>
+<e lm="Nevada">               <i>Nevada</i><par n="Barcelona__np"/></e>
+<e lm="New Hampshire">               <i>New<b/>Hampshire</i><par n="Barcelona__np"/></e>
+<e lm="New Jersey">               <i>New<b/>Jersey</i><par n="Barcelona__np"/></e>
+<e lm="New Mexico">               <i>New<b/>Mexico</i><par n="Barcelona__np"/></e>
+<e lm="New York">               <i>New<b/>York</i><par n="Barcelona__np"/></e>
+<e lm="North Carolina">               <i>North<b/>Carolina</i><par n="Barcelona__np"/></e>
+<e lm="North Dakota">               <i>North<b/>Dakota</i><par n="Barcelona__np"/></e>
+<e lm="Ohio">               <i>Ohio</i><par n="Barcelona__np"/></e>
+<e lm="Oklahoma">               <i>Oklahoma</i><par n="Barcelona__np"/></e>
+<e lm="Oregon">               <i>Oregon</i><par n="Barcelona__np"/></e>
+<e lm="Pennsylvania">               <i>Pennsylvania</i><par n="Barcelona__np"/></e>
+<e lm="Rhode Island">               <i>Rhode<b/>Island</i><par n="Barcelona__np"/></e>
+<e lm="South Carolina">               <i>South<b/>Carolina</i><par n="Barcelona__np"/></e>
+<e lm="South Dakota">               <i>South<b/>Dakota</i><par n="Barcelona__np"/></e>
+<e lm="Tennessee">               <i>Tennessee</i><par n="Barcelona__np"/></e>
+<e lm="Texas">               <i>Texas</i><par n="Barcelona__np"/></e>
+<e lm="Utah">               <i>Utah</i><par n="Barcelona__np"/></e>
+<e lm="Vermont">               <i>Vermont</i><par n="Barcelona__np"/></e>
+<e lm="Virginia">               <i>Virginia</i><par n="Barcelona__np"/></e>
+<e lm="Washington">               <i>Washington</i><par n="Barcelona__np"/></e>
+<e lm="West Virginia">               <i>West<b/>Virginia</i><par n="Barcelona__np"/></e>
+<e lm="Wisconsin">               <i>Wisconsin</i><par n="Barcelona__np"/></e>
+<e lm="Wyoming">               <i>Wyoming</i><par n="Barcelona__np"/></e>
+
 <e lm="Ontario">               <i>Ontario</i><par n="Barcelona__np"/></e>
 <e lm="Quebec">               <i>Quebec</i><par n="Barcelona__np"/></e>
 <e lm="Seville">               <i>Seville</i><par n="Barcelona__np"/></e>
@@ -16681,6 +16726,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="abortion">             <i>abortion</i><par n="house__n"/></e>
 
 <e lm="BBC">                  <i>BBC</i><par n="BBC__n"/></e>
+<e lm="NASA">                 <i>NASA</i><par n="BBC__n"/></e>
 <e lm="DNA">                  <i>DNA</i><par n="BBC__n"/></e>
 <e lm="FBI">                  <i>FBI</i><par n="BBC__n"/></e>
 <e lm="IBM">                  <i>IBM</i><par n="BBC__n"/></e>
