@@ -226,6 +226,14 @@
 <e>       <p><l>denove<b/>kaj<b/>denove<s n="adv"/></l><r>over<b/>and<b/>over<s n="adv"/></r></p></e>
 <e>       <p><l>veki<s n="vblex"/></l>                 <r>wake<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>vekiĝi<s n="vblex"/></l>               <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="LR"><p><l>ellitigi<s n="vblex"/></l>             <r>wake<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="LR"><p><l>ellitiĝi<s n="vblex"/></l>             <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>get<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>vekiĝi<s n="vblex"/></l>               <r>get<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e>       <p><l>reakiri<s n="vblex"/></l>              <r>get<g><b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>kapitulaci<s n="vblex"/></l>           <r>sell<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e>       <p><l>forvendi<s n="vblex"/></l>             <r>sell<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e>       <p><l>returne eliri<s n="vblex"/></l>        <r>get<g><b/>back<b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
@@ -1807,6 +1815,7 @@ TODO??
 <e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<b/>got<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<g><b/>got</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>instali<s n="vblex"/></l>              <r>set<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>klopodi<s n="vblex"/></l>              <r>set<g><b/>about</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>kapti<s n="vblex"/></l>                <r>pick<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>kapti<s n="vblex"/></l>                <r>reach<g><b/>for</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kontrakti<s n="vblex"/></l>            <r>hire<g><b/>out</g><s n="vblex"/></r></p></e>

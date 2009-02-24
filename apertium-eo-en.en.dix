@@ -2128,6 +2128,15 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>aking</l>               <r>ake<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e>
 </pardef>
 
+<pardef n="s/ell__vblex__sep">
+<e>                           <p><l>ell</l>                 <r>ell<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
+<e>                           <p><l>ell</l>                 <r>ell<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
+<e>                           <p><l>ells</l>                <r>ell<s n="vblex"/><s n="sep"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e>                           <p><l>old</l>                 <r>ell<s n="vblex"/><s n="sep"/><s n="past"/></r></p></e>
+<e>                           <p><l>old</l>                 <r>ell<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
+<e>                           <p><l>elling</l>              <r>ell<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e>
+</pardef>
+
 <pardef n="occur__vblex__sep">
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
@@ -2144,6 +2153,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ed</l>                  <r>e<s n="vblex"/><s n="sep"/><s n="past"/></r></p></e>
 <e>                           <p><l>ed</l>                  <r>e<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ing</l>                 <r>e<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e>
+</pardef>
+
+<pardef n="g/et__vblex__sep">
+<e>                           <p><l>et</l>                  <r>et<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
+<e>                           <p><l>et</l>                  <r>et<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
+<e>                           <p><l>ets</l>                 <r>et<s n="vblex"/><s n="sep"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e>                           <p><l>ot</l>                  <r>et<s n="vblex"/><s n="sep"/><s n="past"/></r></p></e>
+<e>                           <p><l>ot</l>                  <r>et<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
+<e r="LR">                    <p><l>otten</l>               <r>et<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
+<e>                           <p><l>etting</l>              <r>et<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e>
 </pardef>
 
 <pardef n="g/ive__vblex__sep">
@@ -8252,6 +8271,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="session">              <i>session</i><par n="house__n"/></e>
 <e lm="set">                  <i>set</i><par n="house__n"/></e>
 <e lm="set">                  <i>set</i><par n="cut__vblex"/></e>
+<e lm="set about">            <i>set</i><par n="cut__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>about</l><r><g><b/>about</g></r></p></e>
 <e lm="set up">               <i>set</i><par n="cut__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 <e lm="setscrew">             <i>setscrew</i><par n="house__n"/></e>
 <e lm="settle">               <i>settl</i><par n="liv/e__vblex"/></e>
@@ -16790,6 +16810,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="trace back">           <i>trac</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
 <e lm="give up">              <i>g</i><par n="g/ive__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 <e lm="line up">              <i>lin</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+<e lm="get PRN up">          <i>w</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
+<e lm="get up">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+<e lm="get PRN back">          <i>w</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>back</l><r><g>PRN<b/>back</g></r></p></e>
+<e lm="get back">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
+<e lm="get back out">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back<b/>out</l><r><g><b/>back<b/>out</g></r></p></e>
+<e lm="sell out">              <i>g</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
+<e lm="sell up">              <i>g</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 
 <e lm="over and over">        <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
 
