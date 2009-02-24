@@ -175,8 +175,6 @@
       </action>
     </rule>
 
-
-
     <rule comment="REGLA: SN SV SN">
       <pattern>
         <pattern-item n="SN"/>
@@ -428,6 +426,51 @@
       </action>
     </rule>
 
+
+<!--
+Tiu ĉi regulo (por kiu mankas la generado de 'al' ankoraŭ ne maturas, ĉar SN estas ankoraŭ tro malbone analizitaj
+    <rule comment="REGLA: SN SV SN SN: He told his mother something -> Li diris ioN AL lia patrino">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+             <clip pos="4" part="lem"/>
+             <clip pos="4" part="a_chunk"/>
+             <clip pos="4" part="gen"/>
+             <clip pos="4" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+^prnpers<SN><nom>{^Prpers<prn><p3><m><sg><2>$}$ ^verb<SV><aliaj><past>{^diri<vblex><past>$}$ ^prn<SN><acc>{^io<prn><tn><sg><2>$}$ ^det_nom<SN><nom>{^lia<det><pos><sg><2>$ ^patro<n><f><sg><2>$}$^sent<SENT>{^.<sent>$}
+->
+^prnpers<SN><nom>{^Prpers<prn><p3><m><sg><2>$}$ ^verb<SV><aliaj><past>{^diri<vblex><past>$}$ ^prn<SN><acc>{^io<prn><tn><sg><2>$}$ ^pr<PREP>{^al<pr>$}$ ^det_nom<SN><nom>{^lia<det><pos><sg><2>$ ^patro<n><f><sg><2>$}$^sent<SENT>{^.<sent>$}$
+t.e. necesas generi
+^pr<PREP>{^al<pr>$}$
+Tio ne funkcias: <lit v="^pr<PREP>{^al<pr>$}$ "/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
 
 
   </section-rules>
