@@ -280,6 +280,9 @@ sort -t '"' -k 3 x
 
 
 
+
+
+
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -388,17 +391,23 @@ sort -t '"' -k 3 x
 
   </section-def-attrs>
 
+
+
+
+
+
+
   <section-def-vars>
     <def-var n="numero"/>
     <def-var n="temps"/>
-    <def-var n="adjectiu"/>
-    <def-var n="adjectiu_tail"/>
+
+    <def-var n="adjectiu"/>        <!--- adjektivo - eble kun preadverbo (pli, plej) -->
     <def-var n="preadv_added"/>    <!-- if a "more" or "most" was added before an adj -->
 
     <def-var n="nomvar"/>
-    <def-var n="nomvar_first"/>
+    <def-var n="tmp1"/>
     <def-var n="genere"/>
-    <def-var n="genere_first"/>
+    <def-var n="tmp2"/>
     <def-var n="genere_second"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
     <def-var n="EOS" v="false"/><!-- taken from en-es.t1x, for use in macro firstWord -->
@@ -603,6 +612,7 @@ sort -t '"' -k 3 x
 
 
 
+
     <!-- Tiu cxi makroo rigardas anglan adjektivon kiel ^better/good<adj><sint><comp>$ kaj poste
          adjectiu = ^pli<preadv>$ ^bona<adj>
          preadv_added = yes   -->
@@ -644,7 +654,48 @@ sort -t '"' -k 3 x
 
 
 
-<!-- ===============  NOVA ALDONO DE HECTOR ========== -->
+    <!-- Tiu cxi makroo rigardas anglan adjektivon kaj la rilatan substantivon kaj poste
+         adjectiu = ^pli<preadv>$ ^bona<adj>
+         preadv_added = yes   -->
+    <def-macro n="set_adjectiu2" npar="2">
+      <let><var n="adjectiu"/><lit v=""/></let>
+      <let><var n="preadv_added"/><lit v=""/></let>
+      <choose>
+        <when><!-- ^better/good<adj><sint><comp>$ -->
+          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><3><4>$ -->
+                <get-case-from pos="1"><lit v="pli"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                </concat></let>
+          <let><var n="preadv_added"/><lit v="yes"/></let>
+        </when>
+
+        <when><!-- ^best/good<adj><sint><sup>$ -->
+          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><3><4>$ -->
+                <get-case-from pos="1"><lit v="plej"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                </concat></let>
+          <let><var n="preadv_added"/><lit v="yes"/></let>
+        </when>
+
+        <when>
+         <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
+          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                </concat></let>
+        </when>
+
+        <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2><3><4>$ -->
+          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                </concat></let>
+        </otherwise>
+      </choose>
+    </def-macro>
+
+
+
     <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
 	<when>
@@ -896,7 +947,7 @@ verbfinal = pensi<3><4><5>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
@@ -936,7 +987,7 @@ verbfinal = pensi<3><4><5>
         <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
@@ -1004,9 +1055,9 @@ verbfinal = pensi<3><4><5>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <let><var n="nomvar_first"/><var n="nomvar"/></let>
+        <let><var n="tmp1"/><var n="nomvar"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
 
         <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
@@ -1050,7 +1101,7 @@ verbfinal = pensi<3><4><5>
                   <clip pos="2" side="tl" part="a_nom"/>
                   <clip pos="2" side="tl" part="a_gen"/>
                   <clip pos="3" side="tl" part="a_nbr"/> -->
-                  <var n="nomvar_first"/>
+                  <var n="tmp1"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1077,7 +1128,7 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
@@ -1636,7 +1687,7 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
@@ -1663,50 +1714,6 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
-<!--
-    <rule comment="REGLA: a NOM NOM">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="nom"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
-        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-            <out>
-              <chunk name="nom_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="GD"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="4"/>
-                </lu>
-                <lu>
-                  <lit v="-"/>
-                  <lit-tag v="guio"/>
-                </lu>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <var n="genere"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
--->
 
     <rule comment="REGLA: DET NOM NOM">
       <pattern>
@@ -1717,46 +1724,84 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="genere_first"/><var n="genere"/></let>
+        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><lit-tag v="GD"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <var n="genere_first"/>
-                  <lit-tag v="sg"/>
-                  <lit-tag v="4"/>
+                  <clip pos="2" side="tl" part="tags"/>
+                  <lit-tag v="nom"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
                   <lit-tag v="guio"/>
                 </lu>
-                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
+                <!-- <b pos="2"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -->
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
-                  <var n="genere"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
+                  <clip pos="3" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
       </action>
     </rule>
+
+
+
+    <rule comment="REGLA: a ADJ NOM - a good house  - bona domo">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
+        <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+
+        <choose>
+          <when>
+            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
+            <let><var n="chunk_name"/><lit v="adj_nom"/></let>
+          </when>
+          <otherwise><!-- a<det><ind><sg> better house  - pli bona domo -->
+            <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
+          </otherwise>
+        </choose>
+
+            <out>
+              <chunk namefrom="chunk_name" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <var n="adjectiu"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+
+      </action>
+    </rule>
+
 
 
     <rule comment="REGLA: DET ADJ NOM">
@@ -1768,82 +1813,27 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-        <call-macro n="set_adjectiu1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
         <choose>
           <when>
-            <test>
-              <and><!-- Speciala trakto de: a<det><ind><sg> - la determiner estas forigita -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-                <equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="det.ind"/></equal>
-              </and>
-            </test>
-
-                <choose>
-                  <when>
-                    <test><!-- a<det><ind><sg> good house  - bona domo -->
-                        <equal><var n="preadv_added"/><lit v=""/></equal>              
-                    </test>
-                    <let><var n="chunk_name"/><lit v="adj_nom"/></let>
-                  </when>
-                  <otherwise><!-- a<det><ind><sg> better house  - pli bona domo -->
-                    <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
-                  </otherwise>
-                </choose>
-
-                    <out>
-                      <chunk namefrom="chunk_name" case="caseFirstWord">
-                        <tags>
-                          <tag><lit-tag v="SN"/></tag>
-                          <tag><var n="genere"/></tag>
-                          <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                          <tag><lit-tag v="nom"/></tag>
-                        </tags>
-                        <lu>
-                          <var n="adjectiu"/>
-                        </lu>
-                        <b pos="1"/>
-                        <lu>
-                          <clip pos="3" side="tl" part="lem"/>
-                          <clip pos="3" side="tl" part="a_nom"/>
-                          <clip pos="3" side="tl" part="a_gen" link-to="2"/>
-                          <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                          <lit-tag v="4"/>
-                        </lu>
-                      </chunk>
-                    </out>
-
-          </when>
-
-
-          <otherwise>  <!-- Cxi-sube estas aliaj DET ol 'a' traktataj -->
-                <choose>
-
-          <when>
-            <test><!-- DET good house  - DET bona domo -->
-                <equal><var n="preadv_added"/><lit v=""/></equal>
-            </test>
+            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
             <let><var n="chunk_name"/><lit v="det_adj_nom"/></let>
           </when>
-
           <otherwise>
             <let><var n="chunk_name"/><lit v="det_preadv_adj_nom"/></let>
           </otherwise>
-            </choose>
-
-            <out><!-- DET best house  - DET plej bona domo -->
+        </choose>
+            <out>
               <chunk namefrom="chunk_name" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
+                  <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
                   <var n="numero"/>
-                  <lit-tag v="4"/>
+                  <lit-tag v="2"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -1852,17 +1842,11 @@ verbfinal = pensi<3><4><5>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="a_nom"/>
+                  <clip pos="3" side="tl" part="tags"/>
                   <lit-tag v="2"/>
-                  <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
                 </lu>
               </chunk>
             </out>
-
-          </otherwise>
-
-        </choose>
       </action>
     </rule>
 
@@ -1874,64 +1858,35 @@ verbfinal = pensi<3><4><5>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
+
         <choose>
           <when>
-            <test>
-                <equal><var n="preadv_added"/><lit v=""/></equal>
-            </test>
-        <out>
-          <chunk name="adj_nom" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_adj"/>
-              <lit-tag v="2"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <lit-tag v="2"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
-            </lu>
-          </chunk>
-        </out>
+            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
+            <let><var n="chunk_name"/><lit v="adj_nom"/></let>
           </when>
+          <otherwise>
+            <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
+          </otherwise>
+        </choose>
 
-        <otherwise>
-        <out><!--  better dog. best dog. -->
-          <chunk name="preadv_adj_nom" case="caseFirstWord">
+            <out>
+              <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+                <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-                  <var n="adjectiu"/>
+                <var n="adjectiu"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
-        </otherwise>
-        </choose>
       </action>
     </rule>
 
@@ -1946,88 +1901,54 @@ verbfinal = pensi<3><4><5>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-<!--
-        <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
-        <call-macro n="set_adjectiu1"><with-param pos="2"/></call-macro>
--->
+        <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="3"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-<!--
+        <let><var n="tmp1"/><var n="preadv_added"/></let>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+
         <choose>
           <when>
-            <test>
-                <equal><var n="preadv_added"/><lit v=""/></equal>
-            </test>
--->
+            <test><and>
+                    <equal><var n="tmp1"/><lit v=""/></equal>
+                    <equal><var n="preadv_added"/><lit v=""/></equal>
+            </and></test>
+            <let><var n="chunk_name"/><lit v="adj_adj_nom"/></let>
+          </when>
+          <when>
+            <test><or>
+                    <equal><var n="tmp1"/><lit v=""/></equal>
+                    <equal><var n="preadv_added"/><lit v=""/></equal>
+            </or></test>
+            <let><var n="chunk_name"/><lit v="preadv_adj_adj_nom"/></let>
+          </when>
+          <otherwise>
+            <let><var n="chunk_name"/><lit v="preadv_adj_preadv_adj_nom"/></let>
+          </otherwise>
+        </choose>
+
         <out>
-          <chunk name="adj_adj_nom" case="caseFirstWord">
+          <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+                <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_adj"/>
-<!--
-              <lit-tag v="2"/>
--->
-              <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+                <var n="tmp2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_adj"/>
-<!--
-              <lit-tag v="2"/>
--->
-              <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
+                <var n="adjectiu"/>
             </lu>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="a_nom"/>
-<!--
+              <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="2"/>
--->
-              <clip pos="3" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
             </lu>
           </chunk>
         </out>
-<!--
-          </when>
-
-        <otherwise>
-        <out><!-  better dog. best dog. ->
-          <chunk name="preadv_adj_adj_nom" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-              <tag><lit-tag v="nom"/></tag>
-            </tags>
-            <lu>
-                  <var n="adjectiu"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_nom"/>
-              <lit-tag v="2"/>
-              <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-              <lit-tag v="4"/>
-            </lu>
-          </chunk>
-        </out>
-        </otherwise>
-        </choose>
--->
       </action>
     </rule>
-
 
 
 
@@ -2039,44 +1960,32 @@ verbfinal = pensi<3><4><5>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_adjectiu1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
         <choose>
           <when>
-            <test>
-                <equal><var n="preadv_added"/><lit v=""/></equal>
-            </test>
-        <out>
-          <chunk name="adj" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><lit-tag v="sg"/></tag>
-              <tag><lit-tag v="nom"/></tag>
-            </tags>
-            <lu>
-              <var n="adjectiu"/>
-            </lu>
-          </chunk>
-        </out>
+            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
+            <let><var n="chunk_name"/><lit v="adj"/></let>
           </when>
+          <otherwise>
+            <let><var n="chunk_name"/><lit v="preadv_adj"/></let>
+          </otherwise>
+        </choose>
 
-        <otherwise>
-        <out><!--  better. best. -->
-          <chunk name="preadv_adj" case="caseFirstWord">
+        <!--  Tio cxi estas fusxeta:  adjectiu=bona<adj><2> 
+        kaj mi bezonas finfine ^bona<adj><sg><nom>$, do mi metas la <sg> ekster la chunk'o!
+        Preadv_adj<SN><sg><nom>{^pli<preadv>$ ^bona<adj><2><3>$}
+        -->
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
-              <tag><var n="genere"/></tag>
-              <tag><lit-tag v="sg"/></tag>
-              <tag><lit-tag v="nom"/></tag>
+                <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
             <lu>
-                  <var n="adjectiu"/>
+                <var n="adjectiu"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
-        </otherwise>
-        </choose>
       </action>
     </rule>
 

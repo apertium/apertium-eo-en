@@ -113,7 +113,7 @@
 
 <pardef n="nomacc0">
 <e><p><l></l><r><s n="nom"/></r></p></e>
-<e><p><l></l><r><s n="acc"/></r></p></e>
+<e r="RL"><p><l></l><r><s n="acc"/></r></p></e>
 </pardef>
 
 
@@ -137,25 +137,22 @@
 
 
 <pardef n="DNA__n">
+<e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+<!--
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/><s n="acc"/></r></p></e>
-
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
+-->
 </pardef>
 
 
 
 
 <pardef n="BBC__n">
-<e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p></e>
-<!-- TODO Fix missing "acr" !!
-<e r="RL">                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="acc"/></r></p></e>
-
--->
-<e  r="RL">                    <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e>                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 
@@ -624,6 +621,8 @@
 <e>                           <p><l><b/>naŭ</l>             <r><b/>naŭ</r></p><par n="two__num"/></e>
 </pardef>
 	</pardefs>
+
+
 
 	<section id="main" type="standard">
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -17260,7 +17259,7 @@
 <e lm="moviĝi">               <i>movi</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="formoviĝi">            <i>formovi</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="kortuŝa">              <i>kortu</i><par n="ŝ"/><par n="adj__adj"/></e>
-<e lm="mp3">                  <i>mp3</i><par n="nom__n"/></e>
+<e lm="mp3">                  <i>mp3</i><par n="BBC__n"/></e>
 <e lm="cm">                   <i>cm</i><par n="DNA__n"/></e>
 <e lm="mm">                   <i>mm</i><par n="DNA__n"/></e>
 <e lm="muko">                 <i>muko</i><par n="nom__n"/></e>
@@ -29472,6 +29471,18 @@
 <e lm="Brown">                <i>Brown</i><par n="Ifans__np"/></e>
 <e lm="Hall">                 <i>Hall</i><par n="Ifans__np"/></e>
 
+
+
+<e lm="Arkansaso"><i>Arkansaso</i><par n="Barcelono__np"/></e>
+<e lm="Epifanio"><i>Epifanio</i><par n="Barcelono__np"/></e>
+<e lm="Nov-Hampŝiro"><i>Nov-Hamp</i><par n="ŝ"/><i>iro</i><par n="Barcelono__np"/></e>
+<e lm="Uzbekio"><i>Uzbekio</i><par n="Barcelono__np"/></e>
+<e lm="Mcdonald"><i>Mcdonald</i><par n="Smith__np"/></e>
+<e lm="Mclean"><i>Mclean</i><par n="Smith__np"/></e>
+<e lm="apude"><i>apude</i><par n="komence__adv"/></e>
+<e lm="monako"><i>monak</i><par n="nommf__n"/></e>
+<e lm="poluri"><i>polur</i><par n="verb__vblex"/></e>
+<e lm="returne eliri"><i>returne<b/>elir</i><par n="verb__vblex"/></e>
 
 
 	</section>
