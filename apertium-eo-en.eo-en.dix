@@ -108,8 +108,17 @@
 	</sdefs>
 	<pardefs>
  
-<pardef n="Abc">
+<pardef n="Abcx">
 <e><re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬ][IàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú]*</re></e>
+</pardef>
+
+<pardef n="Abc">
+<e><re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬÆØÅæøåàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñúŵã -.]*</re></e>
+</pardef>
+
+
+<pardef n="abc">
+<e><re>[IàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú]+</re></e>
 </pardef>
 
 
@@ -981,9 +990,9 @@ BUT:
 <e>       <p><l>Bosnio-Hercegovino<s n="np"/><s n="top"/></l>  <r>Bosnia-Herzegovina<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Brazilo<s n="np"/><s n="top"/></l>     <r>Brazil<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Britio<s n="np"/><s n="top"/></l>      <r>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Britain<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Great<b/>Britain<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Britain<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Great<b/>Britain<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Bruselo<s n="np"/><s n="top"/></l>     <r>Brussels<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Budapeŝto<s n="np"/><s n="top"/></l>   <r>Budapest<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Bukareŝto<s n="np"/><s n="top"/></l>   <r>Bucharest<s n="np"/><s n="top"/></r></p></e>
@@ -1086,7 +1095,7 @@ BUT:
 <e>       <p><l>Romo<s n="np"/><s n="top"/></l>        <r>Rome<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ruando<s n="np"/><s n="top"/></l>      <r>Rwanda<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Rumanio<s n="np"/><s n="top"/></l>     <r>Romania<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Rumanio<s n="np"/><s n="top"/></l>     <r>Rumania<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Rumanio<s n="np"/><s n="top"/></l>     <r>Rumania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Rusio<s n="np"/><s n="top"/></l>       <r>Russia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Saharo<s n="np"/><s n="top"/></l>      <r>Sahara<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Saud-Arabio<s n="np"/><s n="top"/></l> <r>Saudi<b/>Arabia<s n="np"/><s n="top"/></r></p></e>
@@ -1215,7 +1224,7 @@ BUT:
 <e>       <p><l>afrika<s n="adj"/></l>                 <r>African<s n="adj"/></r></p></e>
 <e>       <p><l>angla<s n="adj"/></l>                  <r>English<s n="adj"/></r></p></e>
 <e>       <p><l>araba<s n="adj"/></l>                  <r>Arab<s n="adj"/></r></p></e>
-<e r="LR"><p><l>araba<s n="adj"/></l>                  <r>Arabic<s n="adj"/></r></p></e>
+<e r="RL"><p><l>araba<s n="adj"/></l>                  <r>Arabic<s n="adj"/></r></p></e>
 <e>       <p><l>argentina<s n="adj"/></l>              <r>Argentinian<s n="adj"/></r></p></e>
 <e>       <p><l>aŭstra<s n="adj"/></l>                 <r>Austrian<s n="adj"/></r></p></e>
 <e>       <p><l>azia<s n="adj"/></l>                   <r>Asian<s n="adj"/></r></p></e>
@@ -1250,6 +1259,8 @@ BUT:
 <e>       <p><l>kanaria<s n="adj"/></l>                <r>Canarian<s n="adj"/></r></p></e>
 <e>       <p><l>kastila<s n="adj"/></l>                <r>Castilian<s n="adj"/></r></p></e>
 <e>       <p><l>kastilia<s n="adj"/></l>               <r>Castilian<s n="adj"/></r></p></e>
+<e>       <p><l>kastila<s n="n"/></l>                <r>Castilian<s n="n"/></r></p></e>
+<e>       <p><l>kastilia<s n="n"/></l>               <r>Castilian<s n="n"/></r></p></e>
 <e>       <p><l>kuba<s n="adj"/></l>                   <r>Cuban<s n="adj"/></r></p></e>
 <e>       <p><l>latina<s n="adj"/></l>                 <r>Latin<s n="adj"/></r></p></e>
 <e>       <p><l>maroka<s n="adj"/></l>                 <r>Moroccan<s n="adj"/></r></p></e>
@@ -1282,7 +1293,7 @@ BUT:
 <e>       <p><l>valencia<s n="adj"/></l>               <r>Valencian<s n="adj"/></r></p></e>
 <e>       <p><l>jugoslava<s n="adj"/></l>              <r>Yugoslav<s n="adj"/></r></p></e>
 <e>       <p><l>slovena<s n="adj"/></l>                <r>Slovenian<s n="adj"/></r></p></e>
-<e>       <p><l>kroata<s n="adj"/></l>                 <r>Croation<s n="adj"/></r></p></e>
+<e>       <p><l>kroata<s n="adj"/></l>                 <r>Croatian<s n="adj"/></r></p></e>
 <e>       <p><l>serba<s n="adj"/></l>                  <r>Serbian<s n="adj"/></r></p></e>
 <e>       <p><l>makedona<s n="adj"/></l>               <r>Macedonian<s n="adj"/></r></p></e>
 <e>       <p><l>kosova<s n="adj"/></l>                 <r>Kosovar<s n="adj"/></r></p></e>
@@ -1290,7 +1301,7 @@ BUT:
 <e r="LR"><p><l>bosna<s n="adj"/></l>                  <r>Bosnian<s n="adj"/></r></p></e>
 <e>       <p><l>hercegovina<s n="adj"/></l>            <r>Herzegovinan<s n="adj"/></r></p></e>
 <e>       <p><l>sloveno<s n="n"/></l>                  <r>Slovenian<s n="n"/></r></p></e>
-<e>       <p><l>kroato<s n="n"/></l>                   <r>Croation<s n="n"/></r></p></e>
+<e>       <p><l>kroato<s n="n"/></l>                   <r>Croatian<s n="n"/></r></p></e>
 <e>       <p><l>serbo<s n="n"/></l>                    <r>Serbian<s n="n"/></r></p></e>
 <e>       <p><l>makedono<s n="n"/></l>                 <r>Macedonian<s n="n"/></r></p></e>
 <e>       <p><l>kosovano<s n="n"/></l>                 <r>Kosovar<s n="n"/></r></p></e>
@@ -1328,10 +1339,10 @@ BUT:
 <e>       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
 <e r="RL"><p><l>georgiano<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
 <e r="RL"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
-<e>       <p><l>azera<s n="adj"/></l>               <r>Azerbaijan<s n="adj"/></r></p></e>
-<e>       <p><l>azero<s n="n"/></l>                 <r>Azerbaijan<s n="n"/></r></p></e>
-<e r="RL"><p><l>azerbajĝana<s n="adj"/></l>              <r>Azerbaijan<s n="adj"/></r></p></e>
-<e r="RL"><p><l>azerbajĝano<s n="n"/></l>                <r>Azerbaijan<s n="n"/></r></p></e>
+<e>       <p><l>azera<s n="adj"/></l>               <r>Azerbaijani<s n="adj"/></r></p></e>
+<e>       <p><l>azero<s n="n"/></l>                 <r>Azerbaijani<s n="n"/></r></p></e>
+<e r="RL"><p><l>azerbajĝana<s n="adj"/></l>              <r>Azerbaijani<s n="adj"/></r></p></e>
+<e r="RL"><p><l>azerbajĝano<s n="n"/></l>                <r>Azerbaijani<s n="n"/></r></p></e>
 <e>       <p><l>kazaĥa<s n="adj"/></l>               <r>Kazakh<s n="adj"/></r></p></e>
 <e>       <p><l>kazaĥo<s n="n"/></l>                 <r>Kazakh<s n="n"/></r></p></e>
 <e r="RL"><p><l>kazaĥstana<s n="adj"/></l>              <r>Kazakh<s n="adj"/></r></p></e>
@@ -1356,8 +1367,10 @@ BUT:
 <e r="RL"><p><l>turkmenistanano<s n="n"/></l>                <r>Turkmen<s n="n"/></r></p></e>
 <e>       <p><l>ujgura<s n="adj"/></l>               <r>Uyghur<s n="adj"/></r></p></e>
 <e>       <p><l>ujguro<s n="n"/></l>                 <r>Uyghur<s n="n"/></r></p></e>
-<e>       <p><l>mongola<s n="adj"/></l>               <r>Mongol<s n="adj"/></r></p></e>
-<e>       <p><l>mongolo<s n="n"/></l>                 <r>Mongol<s n="n"/></r></p></e>
+<e  r="RL"><p><l>mongola<s n="adj"/></l>               <r>Mongol<s n="adj"/></r></p></e>
+<e  r="RL"><p><l>mongolo<s n="n"/></l>                 <r>Mongol<s n="n"/></r></p></e>
+<e>       <p><l>mongola<s n="adj"/></l>               <r>Mongolian<s n="adj"/></r></p></e>
+<e>       <p><l>mongolo<s n="n"/></l>                 <r>Mongolian<s n="n"/></r></p></e>
 <e>       <p><l>persa<s n="adj"/></l>               <r>Persian<s n="adj"/></r></p></e>
 <!-- jam estas <e>       <p><l>perso<s n="n"/></l>                    <r>Persian<s n="n"/></r></p><par n="MF_GD"/></e>
 
@@ -2195,7 +2208,7 @@ TODO??
 <e>       <p><l>latinida<s n="adj"/></l>               <r>Romance<s n="adj"/></r></p></e>
 
 <e>       <p><l>puĉo<s n="n"/></l>                     <r>coup<s n="n"/></r></p></e>
-<e r="LR"><p><l>puĉo<s n="n"/></l>                     <r>coup<b/>d'état<s n="n"/></r></p></e>
+<e r="LR"><p><l>puĉo<s n="n"/></l>                     <r>coup<b/>d_état<s n="n"/></r></p></e>
 <e>       <p><l>mortobato<s n="n"/></l>                <r>coup<b/>de<b/>grâce<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝtatrenverso<s n="n"/></l>             <r>coup<s n="n"/></r></p></e>
 
@@ -26117,6 +26130,7 @@ LR restic can be lifted <e r="RL"><l>limigita<adj></l><r>finite<adj></r></e>
 RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 -->
 
+
 	<!-- ====================================================================== -->
 	<!--      Data here is traduku.net data which might be OVERWRITTEN          -->
 	<!--      Please move all things you correct manually ABOVE line no 1800!   -->
@@ -26141,11 +26155,11 @@ The trick below seems only to work when we don't translate ANY cognomens, to DON
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]* [A-ZÚ][a-zõéóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 -->
-<e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
+<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e> -->
 <e>       <par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
 
 
-<e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
+<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>-->
 <e>       <par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
 <!--
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>

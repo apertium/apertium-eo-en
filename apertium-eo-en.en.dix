@@ -2700,8 +2700,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Kosovar">              <i>Kosovar</i><par n="expensive__adj"/></e>
 <e lm="Bosnian">              <i>Bosnian</i><par n="house__n"/></e>
 <e lm="Bosnian">              <i>Bosnian</i><par n="expensive__adj"/></e>
+<!-- Kio estas tio cxi? Jacob
 <e lm="Bosniak">              <i>Bosniak</i><par n="house__n"/></e>
 <e lm="Bosniak">              <i>Bosniak</i><par n="expensive__adj"/></e>
+-->
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="house__n"/></e>
 <!-- Problems with "pole"
@@ -5458,8 +5460,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="godfather">            <i>godfather</i><par n="house__n"/></e>
 <e lm="gold">                 <i>gold</i><par n="house__n"/></e>
 <e lm="coup">                 <i>coup</i><par n="house__n"/></e>
+<!-- la ' ne funkscias, do uzu _ interne
 <e lm="coup d'état">          <i>coup<b/>d'état</i><par n="house__n"/></e>
-<e lm="coup de grâce">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
+-->
+<e lm="coup d'état">          <p><l>coup<b/>d'état</l><r>coup<b/>d_état</r></p><par n="house__n"/></e>
+<e lm="coup d'état" r="LR">   <p><l>coup<b/>d'etat</l><r>coup<b/>d_état</r></p><par n="house__n"/></e>
+<e lm="coup de grace">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="maybe__adv"/></e>
 <e lm="good morning">         <i>good<b/>morning</i><par n="hello__ij"/></e>
@@ -6874,9 +6880,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <!--    <e lm="northeast"><i>northeast</i><par n="maybe__adv"/></e> -->
 <!--    <e lm="northwest"><i>northwest</i><par n="maybe__adv"/></e> -->
 <e lm="northeast">            <i>northeast</i><par n="east__n"/></e>
-<e lm="northeast">            <i>northeast</i><par n="long/__adj"/></e>
+<e lm="northeast">            <i>northeast</i><par n="expensive__adj"/></e>
 <e lm="northwest">            <i>northwest</i><par n="east__n"/></e>
-<e lm="northwest">            <i>northwest</i><par n="long/__adj"/></e>
+<e lm="northwest">            <i>northwest</i><par n="expensive__adj"/></e>
 <e lm="nose">                 <i>nose</i><par n="house__n"/></e>
 <e lm="nostalgia">            <i>nostalgia</i><par n="house__n"/></e>
 <e lm="note down">            <i>not</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>down</l><r><g><b/>down</g></r></p></e>
@@ -8519,10 +8525,15 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="south">                <i>south</i><par n="east__n"/></e>
 <e lm="south">                <i>south</i><par n="long/__adj"/></e>
 <!--    <e lm="south"><i>south</i><par n="maybe__adv"/></e> -->
-<e lm="southest">             <i>southest</i><par n="east__n"/></e>
-<e lm="southest">             <i>southest</i><par n="long/__adj"/></e>
 <e lm="southwest">            <i>southwest</i><par n="east__n"/></e>
-<e lm="southwest">            <i>southwest</i><par n="long/__adj"/></e>
+<e lm="southwest">            <i>southwest</i><par n="expensive__adj"/></e>
+<e lm="southern">             <i>southern</i><par n="expensive__adj"/></e>
+<e lm="southeast">             <i>southeast</i><par n="east__n"/></e>
+<e lm="southeast">            <i>southeast</i><par n="expensive__adj"/></e>
+<e lm="south-east">           <i>south-east</i><par n="east__n"/></e>
+<e lm="southeastern">         <i>southeastern</i><par n="expensive__adj"/></e>
+<e lm="south-west">           <i>south-west</i><par n="east__n"/></e>
+<e lm="southwestern">         <i>southwestern</i><par n="expensive__adj"/></e>
 <e lm="sovereign">            <i>sovereign</i><par n="house__n"/></e>
 <e lm="sovereign">            <i>sovereign</i><par n="expensive__adj"/></e>
 <e lm="sovereignty">          <i>sovereignt</i><par n="bab/y__n"/></e>
@@ -15492,13 +15503,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="sore">                 <i>sore</i><par n="house__n"/></e>
 <e lm="sorry">                <i>sorr</i><par n="happ/y__adj"/></e>
 <e lm="sour">                 <i>sour</i><par n="accept__vblex"/></e>
-<e lm="southern">             <i>southern</i><par n="expensive__adj"/></e>
-<e lm="southeast">            <i>southeast</i><par n="expensive__adj"/></e>
-<e lm="south-east">           <i>south-east</i><par n="east__n"/></e>
-<e lm="southeastern">         <i>southeastern</i><par n="expensive__adj"/></e>
-<e lm="south-west">           <i>south-west</i><par n="east__n"/></e>
-<e lm="southwest">            <i>southwest</i><par n="east__n"/></e>
-<e lm="southwestern">         <i>southwestern</i><par n="expensive__adj"/></e>
 <e lm="sow">                  <i>sow</i><par n="accept__vblex"/></e>
 <e lm="sowing">               <i>sowing</i><par n="house__n"/></e>
 <e lm="soybean">              <i>soybean</i><par n="house__n"/></e>
@@ -17340,7 +17344,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 -->
 <e lm="Apple">                <i>Apple</i><par n="Linux__np"/></e>
 <e lm="Linux">                <i>Linux</i><par n="Linux__np"/></e>
-<e lm="Macintosh.">           <i>Macintosh</i><par n="Linux__np"/></e>
+<e lm="Macintosh">           <i>Macintosh</i><par n="Linux__np"/></e>
 
 <e lm="CD">                   <i>CD</i><par n="house__n"/></e>
 <e lm="TV">                   <i>TV</i><par n="house__n"/></e>

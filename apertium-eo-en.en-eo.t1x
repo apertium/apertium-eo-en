@@ -1242,12 +1242,14 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
           </chunk>
@@ -1269,12 +1271,14 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
           </chunk>
@@ -1298,22 +1302,25 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
-            <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="3"/>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="whole"/>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
@@ -1336,17 +1343,19 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
-            <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="3"/>
             </lu>
           </chunk>
@@ -1369,17 +1378,19 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
-            <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="3"/>
             </lu>
           </chunk>
@@ -1403,21 +1414,24 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+              <clip pos="2" side="tl" part="whole"/>   <!--   - guio    -->
             </lu>
             <b pos="2"/>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
               <lit-tag v="3"/>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="whole"/>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <clip pos="4" side="tl" part="tags"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
@@ -1441,12 +1455,14 @@ verbfinal = pensi<3><4><5>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
               <lit-tag v="2"/>
             </lu>
             <b pos="2"/>
@@ -1455,7 +1471,8 @@ verbfinal = pensi<3><4><5>
             </lu>
             <b pos="3"/>
             <lu>
-              <clip pos="4" side="tl" part="whole"/>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <clip pos="4" side="tl" part="tags"/>
               <lit-tag v="4"/>
             </lu>
           </chunk>
