@@ -239,7 +239,8 @@
 <e r="LR"><p><l>ellitiĝi<s n="vblex"/></l>             <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>get<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>vekiĝi<s n="vblex"/></l>               <r>get<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e>       <p><l>reakiri<s n="vblex"/></l>              <r>get<g><b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e>       <p><l>reakiri<s n="vblex"/></l>              <r>get<g>PRN<b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e>       <p><l>reveni<s n="vblex"/></l>              <r>get<g><b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>kapitulaci<s n="vblex"/></l>           <r>sell<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>forvendi<s n="vblex"/></l>             <r>sell<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>returne eliri<s n="vblex"/></l>        <r>get<g><b/>back<b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -1257,10 +1258,10 @@ BUT:
 <e r="RL"><p><l>islama<s n="adj"/></l>                 <r>Muslim<s n="adj"/></r></p></e>
 <e>       <p><l>itala<s n="adj"/></l>                  <r>Italian<s n="adj"/></r></p></e>
 <e>       <p><l>kanaria<s n="adj"/></l>                <r>Canarian<s n="adj"/></r></p></e>
-<e>       <p><l>kastila<s n="adj"/></l>                <r>Castilian<s n="adj"/></r></p></e>
+<e r="LR">       <p><l>kastila<s n="adj"/></l>                <r>Castilian<s n="adj"/></r></p></e>
 <e>       <p><l>kastilia<s n="adj"/></l>               <r>Castilian<s n="adj"/></r></p></e>
-<e>       <p><l>kastila<s n="n"/></l>                <r>Castilian<s n="n"/></r></p></e>
-<e>       <p><l>kastilia<s n="n"/></l>               <r>Castilian<s n="n"/></r></p></e>
+<e r="LR">       <p><l>kastilo<s n="n"/></l>                  <r>Castilian<s n="n"/></r></p></e>
+<e>       <p><l>kastilio<s n="n"/></l>                 <r>Castilian<s n="n"/></r></p></e>
 <e>       <p><l>kuba<s n="adj"/></l>                   <r>Cuban<s n="adj"/></r></p></e>
 <e>       <p><l>latina<s n="adj"/></l>                 <r>Latin<s n="adj"/></r></p></e>
 <e>       <p><l>maroka<s n="adj"/></l>                 <r>Moroccan<s n="adj"/></r></p></e>
@@ -2086,7 +2087,10 @@ TODO??
 <e>       <p><l>laŭ<b/>la<b/>ekzemplo<s n="pr"/></l>   <r>along<b/>the<b/>line<s n="pr"/></r></p></e>
 <e>       <p><l>laŭ<b/>la<b/>ekzemploj<s n="pr"/></l>  <r>along<b/>the<b/>lines<s n="pr"/></r></p></e>
 <e r="RL"><p><l>apud<s n="pr"/></l>                    <r>alongside<s n="pr"/></r></p></e>
-<e r="RL"><p><l>apude<s n="adv"/></l>                  <r>alongside<s n="adv"/></r></p></e>
+<e>       <p><l>flanko-ĉe-flanke<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
+<e r="LR"><p><l>apude<s n="adv"/></l>                  <r>alongside<s n="adv"/></r></p></e>
+<e r="LR"><p><l>ŝultro-ĉe-ŝultre<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
+<e r="LR"><p><l>paralele<s n="adv"/></l>               <r>alongside<s n="adv"/></r></p></e>
 <e>       <p><l>trans<s n="pr"/></l>                   <r>across<s n="pr"/></r></p></e>
 <e>       <p><l>transe<s n="adv"/></l>                 <r>across<s n="adv"/></r></p></e>
 <e>       <p><l>vidalvide<b/>al<s n="pr"/></l>         <r>across<b/>from<s n="pr"/></r></p></e>
@@ -2122,6 +2126,7 @@ TODO??
 
 <e>       <p><l>justa<s n="adj"/></l>                  <r>fairly<s n="adj"/></r></p></e>
 <e>       <p><l>juste<s n="adv"/></l>                  <r>fairly<s n="adv"/></r></p></e>
+<e>       <p><l>juste<s n="preadv"/></l>                  <r>fairly<s n="preadv"/></r></p></e>
 <e>       <p><l>homo<s n="n"/></l>                     <r>folk<s n="n"/></r></p></e>
 <e>       <p><l>folklora<s n="adj"/></l>               <r>folk<s n="adj"/></r></p></e>
 <e>       <p><l>ĉeftendenco<s n="n"/></l>              <r>mainstream<s n="n"/></r></p></e>
@@ -2208,7 +2213,7 @@ TODO??
 <e>       <p><l>latinida<s n="adj"/></l>               <r>Romance<s n="adj"/></r></p></e>
 
 <e>       <p><l>puĉo<s n="n"/></l>                     <r>coup<s n="n"/></r></p></e>
-<e r="LR"><p><l>puĉo<s n="n"/></l>                     <r>coup<b/>d_état<s n="n"/></r></p></e>
+<e r="RL"><p><l>puĉo<s n="n"/></l>                     <r>coup<b/>d'état<s n="n"/></r></p></e>
 <e>       <p><l>mortobato<s n="n"/></l>                <r>coup<b/>de<b/>grâce<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝtatrenverso<s n="n"/></l>             <r>coup<s n="n"/></r></p></e>
 
@@ -13159,8 +13164,14 @@ TODO??
 <e>       <p><l>sudo<s n="n"/></l>                     <r>south<s n="n"/></r></p></e>
 <e>       <p><l>sudorienta<s n="adj"/></l>             <r>southeast<s n="adj"/></r></p></e>
 <e>       <p><l>sudoriento<s n="n"/></l>               <r>southeast<s n="n"/></r></p></e>
+<e r="RL">       <p><l>sudoriento<s n="n"/></l>               <r>south-east<s n="n"/></r></p></e>
+<e>       <p><l>sudorienta<s n="adj"/></l>             <r>southeastern<s n="adj"/></r></p></e>
+<e r="RL"><p><l>suda<s n="adj"/></l>                   <r>southern<s n="adj"/></r></p></e>
 <e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwest<s n="adj"/></r></p></e>
 <e>       <p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
+<e r="RL">       <p><l>sudokcidento<s n="n"/></l>             <r>south-west<s n="n"/></r></p></e>
+<e><p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
+<e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwestern<s n="adj"/></r></p></e>
 <e>       <p><l>suverena<s n="adj"/></l>               <r>sovereign<s n="adj"/></r></p></e>
 <e>       <p><l>suvereno<s n="n"/></l>                 <r>sovereign<s n="n"/></r></p></e>
 <e>       <p><l>suvereneco<s n="n"/></l>               <r>sovereignty<s n="n"/></r></p></e>
@@ -16870,9 +16881,6 @@ TODO??
 <e>       <p><l>alianci<s n="vblex"/></l>              <r>ally<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>alliĝi<s n="vblex"/></l>               <r>ally<s n="vblex"/></r></p></e>
 <e>       <p><l>almanako<s n="n"/></l>                 <r>almanac<s n="n"/></r></p></e>
-<e>       <p><l>flanko-ĉe-flanke<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
-<e r="LR"><p><l>ŝultro-ĉe-ŝultre<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
-<e r="LR"><p><l>paralele<s n="adv"/></l>               <r>alongside<s n="adv"/></r></p></e>
 <e>       <p><l>alpako<s n="n"/></l>                   <r>alpaca<s n="n"/></r></p></e>
 <e>       <p><l>alfabeta<s n="adj"/></l>               <r>alphabetic<s n="adj"/></r></p></e>
 <e>       <p><l>alpa<s n="adj"/></l>                   <r>alpine<s n="adj"/></r></p></e>
@@ -24521,11 +24529,6 @@ TODO??
 <e r="LR"><p><l>amariĝi<s n="vblex"/></l>              <r>sour<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>acidigi<s n="vblex"/></l>              <r>sour<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>acidiĝi<s n="vblex"/></l>              <r>sour<s n="vblex"/></r></p></e>
-<e>       <p><l>sudokcidento<s n="n"/></l>             <r>south-west<s n="n"/></r></p></e>
-<e>       <p><l>sudorienta<s n="adj"/></l>             <r>southeastern<s n="adj"/></r></p></e>
-<e r="RL"><p><l>suda<s n="adj"/></l>                   <r>southern<s n="adj"/></r></p></e>
-<e r="RL"><p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
-<e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwestern<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ensemi<s n="vblex"/></l>               <r>sow<s n="vblex"/></r></p></e>
 <e>       <p><l>semi<s n="vblex"/></l>                 <r>sow<s n="vblex"/></r></p></e>
 <e>       <p><l>semado<s n="n"/></l>                   <r>sowing<s n="n"/></r></p></e>

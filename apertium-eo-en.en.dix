@@ -5463,8 +5463,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <!-- la ' ne funkscias, do uzu _ interne
 <e lm="coup d'état">          <i>coup<b/>d'état</i><par n="house__n"/></e>
 -->
-<e lm="coup d'état">          <p><l>coup<b/>d'état</l><r>coup<b/>d_état</r></p><par n="house__n"/></e>
-<e lm="coup d'état" r="LR">   <p><l>coup<b/>d'etat</l><r>coup<b/>d_état</r></p><par n="house__n"/></e>
+<e lm="coup d'état">          <p><l>coup<b/>d'état</l><r>coup<b/>d'état</r></p><par n="house__n"/></e>
+<e lm="coup d'état" r="LR">   <p><l>coup<b/>d'etat</l><r>coup<b/>d'état</r></p><par n="house__n"/></e>
 <e lm="coup de grace">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="maybe__adv"/></e>
@@ -8528,7 +8528,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="southwest">            <i>southwest</i><par n="east__n"/></e>
 <e lm="southwest">            <i>southwest</i><par n="expensive__adj"/></e>
 <e lm="southern">             <i>southern</i><par n="expensive__adj"/></e>
-<e lm="southeast">             <i>southeast</i><par n="east__n"/></e>
+<e lm="southeast">            <i>southeast</i><par n="east__n"/></e>
 <e lm="southeast">            <i>southeast</i><par n="expensive__adj"/></e>
 <e lm="south-east">           <i>south-east</i><par n="east__n"/></e>
 <e lm="southeastern">         <i>southeastern</i><par n="expensive__adj"/></e>
@@ -9909,7 +9909,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="along">                <i>along</i><par n="maybe__adv"/></e>
 <e lm="all along">            <i>all<b/>along</i><par n="maybe__adv"/></e>
 <e lm="all along">            <i>all<b/>along</i><par n="at__pr"/></e>
+<!-- Cxu bone? Demandu Francis!   Jacob
 <e lm="all along as a">       <i>all<b/>along<b/>as<b/>a</i><par n="after__cnjadv"/></e>
+-->
 <e lm="along with">           <i>along<b/>with</i><par n="at__pr"/></e>
 <e lm="along the line">       <i>along<b/>the<b/>line</i><par n="maybe__adv"/></e>
 <e lm="along the lines">      <i>along<b/>the<b/>line</i><par n="maybe__adv"/></e>
@@ -9988,7 +9990,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="historic">              <i>historic</i><par n="expensive__adj"/></e>
 <e lm="succession">            <i>succession</i><par n="house__n"/></e>
-<e lm="specialize">            <i>specialize</i><par n="liv/e__vblex"/></e>
+<e lm="specialize">            <i>specializ</i><par n="liv/e__vblex"/></e>
 <e lm="specialized court">     <i>specialized<b/>court</i><par n="house__n"/></e>
 <e lm="mainland">              <i>mainland</i><par n="house__n"/></e>
 <e lm="mainlander">            <i>mainlander</i><par n="house__n"/></e>
@@ -9997,8 +9999,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="follower">              <i>follower</i><par n="house__n"/></e>
 <e lm="loyal follower">        <i>loyal<b/>follower</i><par n="house__n"/></e>
 <e lm="underground">           <i>underground</i><par n="house__n"/></e>
+<!-- Ne adjektivoj 
 <e lm="underground">           <i>underground</i><par n="expensive__adj"/></e>
 <e lm="warfare">               <i>warfare</i><par n="expensive__adj"/></e>
+-->
 <e lm="germ warfare">          <i>germ<b/>warfare</i><par n="house__n"/></e>
 <e lm="guerrilla">             <i>guerrilla</i><par n="house__n"/></e>
 <e lm="guerrilla">             <i>guerrilla</i><par n="expensive__adj"/></e>
@@ -10053,7 +10057,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Georgia">               <i>Georgia</i><par n="Barcelona__np"/></e>
 <e lm="Hawaii">               <i>Hawaii</i><par n="Barcelona__np"/></e>
 <e lm="Idaho">               <i>Idaho</i><par n="Barcelona__np"/></e>
+<!-- Mankas
 <e lm="Ilinois">               <i>Ilinois</i><par n="Barcelona__np"/></e>
+-->
 <e lm="Indiana">               <i>Indiana</i><par n="Barcelona__np"/></e>
 <e lm="Iowa">               <i>Iowa</i><par n="Barcelona__np"/></e>
 <e lm="Kansas">               <i>Kansas</i><par n="Barcelona__np"/></e>
@@ -12734,7 +12740,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="guise">                <i>guise</i><par n="house__n"/></e>
 <e lm="guitarist">            <i>guitarist</i><par n="house__n"/></e>
 <e lm="Gulf">                 <i>Gulf</i><par n="Barcelona__np"/></e>
+<!--    malofta: fendego, tagger misprenas gxin gxuste nun. Jacob 25feb 2009
 <e lm="gulf">                 <i>gulf</i><par n="house__n"/></e>
+-->
 <e lm="gulp">                 <i>gulp</i><par n="accept__vblex"/></e>
 <e lm="gunman">               <i>gunm</i><par n="m/an__n"/></e>
 <e lm="gurgle">               <i>gurgl</i><par n="liv/e__vblex"/></e>
@@ -13737,7 +13745,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="middle">               <i>middle</i><par n="house__n"/></e>
 <e lm="middle-class">         <i>middle-class</i><par n="expensive__adj"/></e>
 <e lm="midst">                <i>midst</i><par n="house__n"/></e>
-<e lm="midwife">              <i>midwife</i><par n="li/fe__n"/></e>
+<e lm="midwife">              <i>midwi</i><par n="li/fe__n"/></e>
 <e lm="midwifery">            <i>midwifer</i><par n="bab/y__n"/></e>
 <e lm="mighty">               <i>mighty</i><par n="expensive__adj"/></e>
 <e lm="migrant">              <i>migrant</i><par n="expensive__adj"/></e>
@@ -16762,8 +16770,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="UN">                   <i>UN</i><par n="BBC__n"/></e>
 <e lm="EU">                   <i>EU</i><par n="BBC__n"/></e>
 
+<!-- XXX traduko mankas. Jacob
 <e lm="Grand Slam">           <i>Grand<b/>Slam</i><par n="BBC__n"/></e>
-
+-->
 <e lm="Palestinian">          <i>Palestinian</i><par n="house__n"/></e>
 <e lm="Palestinian">          <i>Palestinian</i><par n="expensive__adj"/></e>
 
@@ -16808,14 +16817,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="take over">            <i>t</i><par n="t/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 <e lm="hand over">            <i>hand</i><par n="accept__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 
-
-<e lm="wake PRN up">          <i>w</i><par n="w/ake__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
-<e lm="wake up">              <i>w</i><par n="w/ake__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
-
 <e lm="trace back">           <i>trac</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
 <e lm="give up">              <i>g</i><par n="g/ive__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 <e lm="line up">              <i>lin</i><par n="liv/e__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 
+
+<e lm="wake PRN up">          <i>w</i><par n="w/ake__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
+<e lm="wake up">              <i>w</i><par n="w/ake__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+
+<!-- XXXXX TODO Hector, cxu tie estis:
 <e lm="get PRN up">          <i>w</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
 <e lm="get up">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 <e lm="get PRN back">          <i>w</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>back</l><r><g>PRN<b/>back</g></r></p></e>
@@ -16823,6 +16834,21 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="get back out">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back<b/>out</l><r><g><b/>back<b/>out</g></r></p></e>
 <e lm="sell out">              <i>g</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
 <e lm="sell up">              <i>g</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+kaj tion ni devos enmeti denove.
+La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
+
+-->
+<e lm="get PRN up">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
+<e lm="get up">              <i>g</i><par n="g/et__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
+<e lm="get PRN back">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>back</l><r><g>PRN<b/>back</g></r></p></e>
+<e lm="get back">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
+<e lm="get back out">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back<b/>out</l><r><g><b/>back<b/>out</g></r></p></e>
+
+<e lm="sell out">              <i>s</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
+<e lm="sell up">              <i>s</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+
 
 <e lm="over and over">        <i>over<b/>and<b/>over</i><par n="maybe__adv"/></e>
 
