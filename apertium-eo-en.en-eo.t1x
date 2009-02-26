@@ -525,31 +525,6 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-    <def-macro n="set_numero1" npar="1">
-      <let><var n="numero"/><lit-tag v="sg"/></let>
-      <choose>
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="sg"/></let>
-        </when>
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="pl"/></let>
-        </when>
-        <when><!-- do something more clever here -->
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="sg"/></let>
-        </when>
-      </choose>
-    </def-macro>
-
-
     <!-- kontrolas cxu la parametro estas konata vorto. 
          Se jes "nomvar" := <nom>. Se ne nomvar="".
          Tio cxu estas por eviti ke nekonataj vortoj ricevos tag'on kiu poste estas montrata. -->
@@ -613,44 +588,36 @@ sort -t '"' -k 3 x
 
 
 
-    <!-- Tiu cxi makroo rigardas anglan adjektivon kiel ^better/good<adj><sint><comp>$ kaj poste
-         adjectiu = ^pli<preadv>$ ^bona<adj>
-         preadv_added = yes   -->
-    <def-macro n="set_adjectiu1" npar="1">
-      <let><var n="adjectiu"/><lit v=""/></let>
-      <let><var n="preadv_added"/><lit v=""/></let>
+
+    <def-macro n="set_numero1" npar="1">
+      <let><var n="numero"/><lit-tag v="sg"/></let>
       <choose>
-        <when><!-- ^better/good<adj><sint><comp>$ -->
-          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><3><4>$ -->
-                <lit v="pli"/><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
-                </concat></let>
-          <let><var n="preadv_added"/><lit v="yes"/></let>
-        </when>
-
-        <when><!-- ^best/good<adj><sint><sup>$ -->
-          <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><3><4>$ -->
-                <lit v="plej"/><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
-                </concat></let>
-          <let><var n="preadv_added"/><lit v="yes"/></let>
-        </when>
-
         <when>
-         <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/>
-                </concat></let>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
+          </test>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
-
-        <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2><3><4>$ -->
-          <let><var n="adjectiu"/><concat><clip pos="1" side="tl" part="lem"/><lit-tag v="adj.3.4"/></concat></let>
-        </otherwise>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+          </test>
+          <let><var n="numero"/><lit-tag v="pl"/></let>
+        </when>
+        <when><!-- do something more clever here -->
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
+          </test>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
+        </when>
+        <when><!-- Malica hacko??? Jacob 26feb09 -->
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
+          </test>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
+        </when>
       </choose>
     </def-macro>
-
 
 
 
@@ -658,37 +625,38 @@ sort -t '"' -k 3 x
          adjectiu = ^pli<preadv>$ ^bona<adj>
          preadv_added = yes   -->
     <def-macro n="set_adjectiu2" npar="2">
+      <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
       <let><var n="adjectiu"/><lit v=""/></let>
       <let><var n="preadv_added"/><lit v=""/></let>
       <choose>
         <when><!-- ^better/good<adj><sint><comp>$ -->
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><3><4>$ -->
+          <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="pli"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
 
         <when><!-- ^best/good<adj><sint><sup>$ -->
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><3><4>$ -->
+          <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="plej"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="yes"/></let>
         </when>
 
         <when>
          <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
-          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
         </when>
 
-        <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2><3><4>$ -->
-          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2><3><4>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+        <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2>$ -->
+          <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
         </otherwise>
       </choose>
@@ -1996,10 +1964,10 @@ verbfinal = pensi<3><4><5>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-                <tag><lit-tag v="SN.sg.nom"/></tag>
+                <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
-                <var n="adjectiu"/><lit-tag v="3"/>
+                <var n="adjectiu"/>
             </lu>
           </chunk>
         </out>

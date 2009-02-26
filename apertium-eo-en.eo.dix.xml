@@ -758,6 +758,8 @@
 <e lm="alia">                 <p><l>alian</l>               <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="ambaŭ">                <p><l>ambaŭ</l>               <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="ambaŭ">                <p><l>ambaŭ</l>               <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+<e lm="pluraj">                <p><l>pluraj</l>               <r>pluraj<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="pluraj">                <p><l>plurajn</l>               <r>pluraj<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="kelka">                <p><l>kelkaj</l>              <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kelka">                <p><l>kelkajn</l>             <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     
@@ -772,6 +774,7 @@
 <e lm="antaŭ">                <i>anta</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
 <e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
+<e lm="oble">              <i>oble</i><par n="after__cnjadv"/></e>
 <e lm="krom se">              <i>krom<b/>se</i><par n="after__cnjadv"/></e>
 <e lm="kaj tiel">             <i>kaj<b/>tiel</i><par n="after__cnjadv"/></e>
 <e lm="do">                   <i>do</i><par n="after__cnjadv"/></e>
@@ -969,6 +972,15 @@
 <e r="RL" lm="tro da">        <p><l>la<b/>tro<b/>da</l>     <r>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="laŭ">                  <i>la</i><par n="ŭ"/><i></i><par n="after__cnjadv"/></e>
 <e lm="laŭ">                  <i>la</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
+
+<e lm="laŭlonge de">                  <i>la</i><par n="ŭ"/><i>longe<b/>de</i><par n="at__pr"/></e>
+<e lm="trans">                  <i>trans</i><par n="at__pr"/></e>
+<e lm="vidalvide al">                  <i>vidalvide<b/>al</i><par n="at__pr"/></e>
+<e lm="">                  <i></i><par n="at__pr"/></e>
+<e lm="">                  <i></i><par n="at__pr"/></e>
+<e lm="">                  <i></i><par n="at__pr"/></e>
+
+
 <e lm="malgraŭ">              <i>malgra</i><par n="ŭ"/><i></i><par n="at__pr"/></e>
 <e lm="malmulta">             <i>malmulta</i><par n="quant__det"/></e>
 <e lm="malpli">               <i>malpli</i><par n="at__pr"/></e>
@@ -29488,7 +29500,7 @@
 <e lm="kroata"><i>kroat</i><par n="adj__adj"/></e>
 <e lm="mongola"><i>mongol</i><par n="adj__adj"/></e>
 <e lm="azerbajĝano"><i>azerbaj</i><par n="ĝ"/><i>ano</i><par n="nom__n"/></e>
-<e lm="kastilia"><i>kastilia</i><par n="nom__n"/></e>
+<e lm="kastilio"><i>kastilio</i><par n="nom__n"/></e>
 <e lm="kroato"><i>kroato</i><par n="nom__n"/></e>
 <e lm="mongolo"><i>mongolo</i><par n="nom__n"/></e>
 <e lm="sudoriento"><i>sudoriento</i><par n="nom__n"/></e>
