@@ -2,6 +2,87 @@
 
         * Release 0.9.3
 
+2009-02-24  hectoralos
+
+	  Iom the phrasal verbs (sed ili ne estas tre produktivaj, laŭ mi vidas...)
+	  Ŝtatoj de Usono
+	  1) become - intransive
+	  2) adj_adj_nom - first attempt (t1x)
+
+	  1) Traktado de k = ĥ en eo-monodix
+	  2) Akuzativigo de Barcelono__np
+	  3) Kreado de Marko__np (personaj nomoj laŭ e-morfologio)
+	  4) Isto-vortoj laŭ la genroparadigmo (mankas i.a. -anto, -ato, -into, -ito, -onto, -oto, -ano, -ulo, -estro)
+
+2009-02-23  nordfalk
+
+	  Pli bona trakto de A/An komence de frazo, kaj reordigado
+	  Komenco de transitiveco kaj ne-meto de akusativo
+	  Ne-ado funkscias!
+	  Aldonis <cat-item lemma="several" tags="det.ind.*"/> kaj <cat-item lemma="various" tags="det.ind.*"/>
+
+2009-02-20  hectoralos
+
+	  Pli da vortoj...
+	  Aldono de nomoj kaj adjektivoj de popoloj
+	  Pli da vortoj, korektoj de mistradukoj
+
+2009-02-19  nordfalk
+
+	  tiu/tio. Twelve months' imprisonment. → Dek du monatoj da malliberigo.
+	  Plibonigoj de la tagger
+
+2009-02-18  jimregan
+
+	  'vs.' includes a full stop (note: it should be cnjcoo, not pr)
+
+2009-02-18  hectoralos
+
+	  Pli da vortoj el "hit parade"
+	  Unuaj eroj de "hitparade.txt" envortarigitaj en en kaj en-eo dix (sed ne en eo)
+
+2009-02-17  nordfalk
+
+	  Nova versio de 'tagger'
+	  Pli da propraj nomoj
+
+2009-02-16  nordfalk
+
+	  mass NP add
+	  mass cleanup of uneeded entries
+	  added 5000 Proper nouns from eSpanish
+
+2009-02-12  hectoralos
+
+	  please + verbo -> bonvolu + verbo en infinitivo
+
+2009-02-12  hectoralos
+
+	  Tell = diri
+
+2009-02-12  nordfalk
+
+	  be over works
+	  5th time. He woke him up 5 times.
+	  kalkulado, verb + over, 'it' nun funkscias kun <acc>, k.s.
+
+2009-02-10  hectoralos
+
+	  on Mondays/Thuesdays...
+	  all of us/you/them
+	  on Monday/Thuesday...
+
+2009-02-06  nordfalk
+
+	  left / right fix
+	  Date fixes, 3rd<num><ord> of May-> 3a de majo, kaj ne 3a el majo
+
+2009-02-04  nordfalk
+
+	* ChangeLog, README:
+	  Revised (shoul've done before the release)
+
+
 2009-02-03 15:40  ftyers
 
 	* First stable release 0.9.0

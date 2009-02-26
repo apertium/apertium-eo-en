@@ -71,7 +71,7 @@
 
 
   <!-- using the old tagger -->
-  <mode name="en-eo_oldtag" install="yes">
+  <mode name="en-eo_oldtag" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
