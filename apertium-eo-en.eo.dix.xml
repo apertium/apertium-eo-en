@@ -2862,6 +2862,9 @@
 <e lm="epidemio">             <i>epidemio</i><par n="nom__n"/></e>
 <e lm="epilogo">              <i>epilogo</i><par n="nom__n"/></e>
 <e lm="episkopo">             <i>episkopo</i><par n="nom__n"/></e>
+<e lm="episkopa">             <i>episkop</i><par n="adj__adj"/></e>
+<e lm="episkoparo">           <i>episkoparo</i><par n="nom__n"/></e>
+<e lm="episkopeco">           <i>episkopeco</i><par n="nom__n"/></e>
 <e lm="epizodo">              <i>epizodo</i><par n="nom__n"/></e>
 <e lm="epoko">                <i>epoko</i><par n="nom__n"/></e>
 <e lm="epoleto">              <i>epoleto</i><par n="nom__n"/></e>
@@ -6459,7 +6462,9 @@
 <e lm="tenti">                <i>tent</i><par n="verb__vblex"/></e>
 <e lm="tento">                <i>tento</i><par n="nom__n"/></e>
 <e lm="teo">                  <i>teo</i><par n="nom__n"/></e>
+<e lm="teologo">              <i>teolog</i><par n="nommf__n"/></e>
 <e lm="teologio">             <i>teologio</i><par n="nom__n"/></e>
+<e lm="teoriisto">            <i>teoriist</i><par n="nommf__n"/></e>
 <e lm="teorio">               <i>teorio</i><par n="nom__n"/></e>
 <e lm="terapio">              <i>terapio</i><par n="nom__n"/></e>
 <e lm="teraso">               <i>teraso</i><par n="nom__n"/></e>
@@ -7546,7 +7551,7 @@
 <e lm="aviadilo">             <i>aviadilo</i><par n="nom__n"/></e>
 <e lm="aŭditorio">            <i>a</i><par n="ŭ"/><i>ditorio</i><par n="nom__n"/></e>
 <e lm="aŭtado">               <i>a</i><par n="ŭ"/><i>tado</i><par n="nom__n"/></e>
-<e lm="aŭtisto">              <i>a</i><par n="ŭ"/><i>tisto</i><par n="nom__n"/></e>
+<e lm="aŭtisto">              <i>a</i><par n="ŭ"/><i>tist</i><par n="nommf__n"/></e>
 <e lm="aŭtobuso">             <i>a</i><par n="ŭ"/><i>tobuso</i><par n="nom__n"/></e>
 <e lm="aŭtomobilo">           <i>a</i><par n="ŭ"/><i>tomobilo</i><par n="nom__n"/></e>
 <e lm="bakforno">             <i>bakforno</i><par n="nom__n"/></e>
@@ -7554,7 +7559,7 @@
 <e lm="balotantaro">          <i>balotantaro</i><par n="nom__n"/></e>
 <e lm="balotrajto">           <i>balotrajto</i><par n="nom__n"/></e>
 <e lm="bankado">              <i>bankado</i><par n="nom__n"/></e>
-<e lm="bankisto">             <i>bankisto</i><par n="nom__n"/></e>
+<e lm="bankisto">             <i>bankist</i><par n="nommf__n"/></e>
 <e lm="banĉambro">            <i>ban</i><par n="ĉ"/><i>ambro</i><par n="nom__n"/></e>
 <e lm="baptopatro">           <i>baptopatro</i><par n="nom__n"/></e>
 <e lm="basbalo">              <i>basbalo</i><par n="nom__n"/></e>
@@ -7671,7 +7676,7 @@
 <e lm="eniro">                <i>eniro</i><par n="nom__n"/></e>
 <e lm="enkarceriĝo">          <i>enkarceri</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
 <e lm="enketilo">             <i>enketilo</i><par n="nom__n"/></e>
-<e lm="enketisto">            <i>enketisto</i><par n="nom__n"/></e>
+<e lm="enketisto">            <i>enketist</i><par n="nommf__n"/></e>
 <e lm="enloĝanto">            <i>enlo</i><par n="ĝ"/><i>anto</i><par n="nom__n"/></e>
 <e lm="ennovaĵo">             <i>ennova</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="enrigardo">            <i>enrigardo</i><par n="nom__n"/></e>
@@ -7691,7 +7696,7 @@
 <e lm="etikedo">              <i>etikedo</i><par n="nom__n"/></e>
 <e lm="evakuo">               <i>evakuo</i><par n="nom__n"/></e>
 <e lm="fabo">                 <i>fabo</i><par n="nom__n"/></e>
-<e lm="fabrikisto">           <i>fabrikisto</i><par n="nom__n"/></e>
+<e lm="fabrikisto">           <i>fabrikist</i><par n="nommf__n"/></e>
 <e lm="faciliĝo">             <i>facili</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
 <e lm="fajenco">              <i>fajenco</i><par n="nom__n"/></e>
 <e lm="fajfilo">              <i>fajfilo</i><par n="nom__n"/></e>
@@ -7785,7 +7790,7 @@
 <e lm="instalaĵo">            <i>instala</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="instigo">              <i>instigo</i><par n="nom__n"/></e>
 <e lm="instituto">            <i>instituto</i><par n="nom__n"/></e>
-<e lm="instruisto">           <i>instruisto</i><par n="nom__n"/></e>
+<e lm="instruisto">           <i>instruist</i><par n="nommf__n"/></e>
 <e lm="instruo">              <i>instruo</i><par n="nom__n"/></e>
 <e lm="insurekcio">           <i>insurekcio</i><par n="nom__n"/></e>
 <e lm="integrigo">            <i>integrigo</i><par n="nom__n"/></e>
@@ -7858,7 +7863,7 @@
 <e lm="konscio">              <i>konscio</i><par n="nom__n"/></e>
 <e lm="konsileto">            <i>konsileto</i><par n="nom__n"/></e>
 <e lm="konsilio">             <i>konsilio</i><par n="nom__n"/></e>
-<e lm="konsilisto">           <i>konsilisto</i><par n="nom__n"/></e>
+<e lm="konsilisto">           <i>konsilist</i><par n="nommf__n"/></e>
 <e lm="konsisto">             <i>konsisto</i><par n="nom__n"/></e>
 <e lm="konstanteco">          <i>konstanteco</i><par n="nom__n"/></e>
 <e lm="konsterniĝo">          <i>konsterni</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -7868,7 +7873,7 @@
 <e lm="kontento">             <i>kontento</i><par n="nom__n"/></e>
 <e lm="konto">                <i>konto</i><par n="nom__n"/></e>
 <e lm="kontrabando">          <i>kontrabando</i><par n="nom__n"/></e>
-<e lm="kontraktisto">         <i>kontraktisto</i><par n="nom__n"/></e>
+<e lm="kontraktisto">         <i>kontraktist</i><par n="nommf__n"/></e>
 <e lm="kontraŭstaro">         <i>kontra</i><par n="ŭ"/><i>staro</i><par n="nom__n"/></e>
 <e lm="kontribuaĵo">          <i>kontribua</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="kontrolorganizo">      <i>kontrolorganizo</i><par n="nom__n"/></e>
@@ -7899,7 +7904,7 @@
 <e lm="kuracejo">             <i>kuracejo</i><par n="nom__n"/></e>
 <e lm="kuracilo">             <i>kuracilo</i><par n="nom__n"/></e>
 <e lm="kuraĝo">               <i>kura</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
-<e lm="kuristo">              <i>kuristo</i><par n="nom__n"/></e>
+<e lm="kuristo">              <i>kurist</i><par n="nommf__n"/></e>
 <e lm="kutimaĉo">             <i>kutima</i><par n="ĉ"/><i>o</i><par n="nom__n"/></e>
 <e lm="kvarono">              <i>kvarono</i><par n="nom__n"/></e>
 <e lm="kvitanco">             <i>kvitanco</i><par n="nom__n"/></e>
@@ -7920,7 +7925,7 @@
 <e lm="luanto">               <i>luanto</i><par n="nom__n"/></e>
 <e lm="ludado">               <i>ludado</i><par n="nom__n"/></e>
 <e lm="ludejo">               <i>ludejo</i><par n="nom__n"/></e>
-<e lm="ludisto">              <i>ludisto</i><par n="nom__n"/></e>
+<e lm="ludisto">              <i>ludist</i><par n="nommf__n"/></e>
 <e lm="lulilo">               <i>lulilo</i><par n="nom__n"/></e>
 <e lm="lupago">               <i>lupago</i><par n="nom__n"/></e>
 <e lm="malakcepto">           <i>malakcepto</i><par n="nom__n"/></e>
@@ -7979,11 +7984,11 @@
 <e lm="monfarejo">            <i>monfarejo</i><par n="nom__n"/></e>
 <e lm="monitorado">           <i>monitorado</i><par n="nom__n"/></e>
 <e lm="montogrimpado">        <i>montogrimpado</i><par n="nom__n"/></e>
-<e lm="montogrimpisto">       <i>montogrimpisto</i><par n="nom__n"/></e>
+<e lm="montogrimpisto">       <i>montogrimpist</i><par n="nommf__n"/></e>
 <e lm="montriĝo">             <i>montri</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
 <e lm="mortado">              <i>mortado</i><par n="nom__n"/></e>
 <e lm="mortaro">              <i>mortaro</i><par n="nom__n"/></e>
-<e lm="morteristo">           <i>morteristo</i><par n="nom__n"/></e>
+<e lm="morteristo">           <i>morterist</i><par n="nommf__n"/></e>
 <e lm="mortinto">             <i>mortinto</i><par n="nom__n"/></e>
 <e lm="movado">               <i>movado</i><par n="nom__n"/></e>
 <e lm="moviĝeblo">            <i>movi</i><par n="ĝ"/><i>eblo</i><par n="nom__n"/></e>
@@ -7995,7 +8000,7 @@
 <e lm="naskiginto">           <i>naskiginto</i><par n="nom__n"/></e>
 <e lm="naskotago">            <i>naskotago</i><par n="nom__n"/></e>
 <e lm="navigado">             <i>navigado</i><par n="nom__n"/></e>
-<e lm="navigisto">            <i>navigisto</i><par n="nom__n"/></e>
+<e lm="navigisto">            <i>navigist</i><par n="nommf__n"/></e>
 <e lm="navo">                 <i>navo</i><par n="nom__n"/></e>
 <e lm="naztuko">              <i>naztuko</i><par n="nom__n"/></e>
 <e lm="neagemo">              <i>neagemo</i><par n="nom__n"/></e>
@@ -8026,8 +8031,10 @@
 <e lm="organismo">            <i>organismo</i><par n="nom__n"/></e>
 <e lm="ornamado">             <i>ornamado</i><par n="nom__n"/></e>
 <e lm="ovacio">               <i>ovacio</i><par n="nom__n"/></e>
+<e lm="pacismo">              <i>pacismo</i><par n="nom__n"/></e>
+<e lm="pacisto">              <i>pacist</i><par n="nommf__n"/></e>
 <e lm="pacifismo">            <i>pacifismo</i><par n="nom__n"/></e>
-<e lm="pacifisto">            <i>pacifisto</i><par n="nom__n"/></e>
+<e lm="pacifisto">            <i>pacifist</i><par n="nommf__n"/></e>
 <e lm="pafaĵo">               <i>pafa</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="pafbruo">              <i>pafbruo</i><par n="nom__n"/></e>
 <e lm="pafilo">               <i>pafilo</i><par n="nom__n"/></e>
@@ -8053,7 +8060,7 @@
 <e lm="pediatriologo">        <i>pediatriologo</i><par n="nom__n"/></e>
 <e lm="pelado">               <i>pelado</i><par n="nom__n"/></e>
 <e lm="pelto">                <i>pelto</i><par n="nom__n"/></e>
-<e lm="pendumisto">           <i>pendumisto</i><par n="nom__n"/></e>
+<e lm="pendumisto">           <i>pendumist</i><par n="nommf__n"/></e>
 <e lm="penetro">              <i>penetro</i><par n="nom__n"/></e>
 <e lm="peno">                 <i>peno</i><par n="nom__n"/></e>
 <e lm="pensado">              <i>pensado</i><par n="nom__n"/></e>
@@ -8103,7 +8110,7 @@
 <e lm="preludo">              <i>preludo</i><par n="nom__n"/></e>
 <e lm="preparo">              <i>preparo</i><par n="nom__n"/></e>
 <e lm="preso">                <i>preso</i><par n="nom__n"/></e>
-<e lm="prezentisto">          <i>prezentisto</i><par n="nom__n"/></e>
+<e lm="prezentisto">          <i>prezentist</i><par n="nommf__n"/></e>
 <e lm="prezento">             <i>prezento</i><par n="nom__n"/></e>
 <e lm="prezidanto">           <i>prezidanto</i><par n="nom__n"/></e>
 <e lm="prezindaĵo">           <i>prezinda</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -8116,12 +8123,12 @@
 <e lm="probableco">           <i>probableco</i><par n="nom__n"/></e>
 <e lm="procedo">              <i>procedo</i><par n="nom__n"/></e>
 <e lm="procezo">              <i>procezo</i><par n="nom__n"/></e>
-<e lm="produktisto">          <i>produktisto</i><par n="nom__n"/></e>
+<e lm="produktisto">          <i>produktist</i><par n="nommf__n"/></e>
 <e lm="produktokvanto">       <i>produktokvanto</i><par n="nom__n"/></e>
-<e lm="profesiisto">          <i>profesiisto</i><par n="nom__n"/></e>
+<e lm="profesiulo">           <i>profesiul</i><par n="nommf__n"/></e>
 <e lm="prokrasto">            <i>prokrasto</i><par n="nom__n"/></e>
 <e lm="propozicio">           <i>propozicio</i><par n="nom__n"/></e>
-<e lm="protagonisto">         <i>protagonisto</i><par n="nom__n"/></e>
+<e lm="protagonisto">         <i>protagonist</i><par n="nommf__n"/></e>
 <e lm="protekto">             <i>protekto</i><par n="nom__n"/></e>
 <e lm="provludo">             <i>provludo</i><par n="nom__n"/></e>
 <e lm="pruntedoninto">        <i>pruntedoninto</i><par n="nom__n"/></e>
@@ -8135,7 +8142,7 @@
 <e lm="rajdo">                <i>rajdo</i><par n="nom__n"/></e>
 <e lm="rakonto">              <i>rakonto</i><par n="nom__n"/></e>
 <e lm="rampulo">              <i>rampulo</i><par n="nom__n"/></e>
-<e lm="ranĉisto">             <i>ran</i><par n="ĉ"/><i>isto</i><par n="nom__n"/></e>
+<e lm="ranĉisto">             <i>ran</i><par n="ĉ"/><i>ist</i><par n="nommf__n"/></e>
 <e lm="rastado">              <i>rastado</i><par n="nom__n"/></e>
 <e lm="raviĝo">               <i>ravi</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
 <e lm="razilo">               <i>razilo</i><par n="nom__n"/></e>
@@ -8210,8 +8217,8 @@
 <e lm="sitelo">               <i>sitelo</i><par n="nom__n"/></e>
 <e lm="skalo">                <i>skalo</i><par n="nom__n"/></e>
 <e lm="skalpo">               <i>skalpo</i><par n="nom__n"/></e>
-<e lm="skermisto">            <i>skermisto</i><par n="nom__n"/></e>
-<e lm="skiisto">              <i>skiisto</i><par n="nom__n"/></e>
+<e lm="skermisto">            <i>skermist</i><par n="nommf__n"/></e>
+<e lm="skiisto">              <i>skiist</i><par n="nommf__n"/></e>
 <e lm="skipo">                <i>skipo</i><par n="nom__n"/></e>
 <e lm="skribkaraktero">       <i>skribkaraktero</i><par n="nom__n"/></e>
 <e lm="skribtablo">           <i>skribtablo</i><par n="nom__n"/></e>
@@ -8253,7 +8260,7 @@
 <e lm="svingo">               <i>svingo</i><par n="nom__n"/></e>
 <e lm="tablojdo">             <i>tablojdo</i><par n="nom__n"/></e>
 <e lm="taglibro">             <i>taglibro</i><par n="nom__n"/></e>
-<e lm="taksiisto">            <i>taksiisto</i><par n="nom__n"/></e>
+<e lm="taksiisto">            <i>taksiist</i><par n="nommf__n"/></e>
 <e lm="takso">                <i>takso</i><par n="nom__n"/></e>
 <e lm="tanko">                <i>tanko</i><par n="nom__n"/></e>
 <e lm="tavoleto">             <i>tavoleto</i><par n="nom__n"/></e>
@@ -8365,7 +8372,7 @@
 <e lm="ĥoro">                 <par n="ĥ"/><i>oro</i><par n="nom__n"/></e>
 <e lm="ĵerzejo">              <par n="ĵ"/><i>erzejo</i><par n="nom__n"/></e>
 <e lm="ĵurintaro">            <par n="ĵ"/><i>urintaro</i><par n="nom__n"/></e>
-<e lm="ŝafisto">              <par n="ŝ"/><i>afisto</i><par n="nom__n"/></e>
+<e lm="ŝafisto">              <par n="ŝ"/><i>afist</i><par n="nommf__n"/></e>
 <e lm="ŝafo">                 <par n="ŝ"/><i>afo</i><par n="nom__n"/></e>
 <e lm="ŝajnigo">              <par n="ŝ"/><i>ajnigo</i><par n="nom__n"/></e>
 <e lm="ŝakrado">              <par n="ŝ"/><i>akrado</i><par n="nom__n"/></e>
@@ -8759,7 +8766,7 @@
 <e lm="abomeninde">           <i>abomeninde</i><par n="komence__adv"/></e>
 <e lm="abomeno">              <i>abomeno</i><par n="nom__n"/></e>
 <e lm="abortigi">             <i>abortig</i><par n="verb__vblex"/></e>
-<e lm="abortigisto">          <i>abortigisto</i><par n="nom__n"/></e>
+<e lm="abortigisto">          <i>abortigist</i><par n="nommf__n"/></e>
 <e lm="Abraham">              <i>Abraham</i><par n="Mark__np"/></e>
 <e lm="Abrahamo">             <i>Abrahamo</i><par n="Marko__np"/></e>
 <e lm="nuligo">               <i>nuligo</i><par n="nom__n"/></e>
@@ -8843,7 +8850,7 @@
 <e lm="packonsento">          <i>packonsento</i><par n="nom__n"/></e>
 <e lm="akordi">               <i>akord</i><par n="verb__vblex"/></e>
 <e lm="sekve">                <i>sekve</i><par n="komence__adv"/></e>
-<e lm="kontisto">             <i>kontisto</i><par n="nom__n"/></e>
+<e lm="kontisto">             <i>kontist</i><par n="nommf__n"/></e>
 <e lm="bilancado">            <i>bilancado</i><par n="nom__n"/></e>
 <e lm="akredito">             <i>akredito</i><par n="nom__n"/></e>
 <e lm="surkreskaĵo">          <i>surkreska</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -8903,7 +8910,7 @@
 <e lm="rolanto">              <i>rolanto</i><par n="nom__n"/></e>
 <e lm="aktorino">             <i>aktorino</i><par n="nom__n"/></e>
 <e lm="reale">                <i>reale</i><par n="komence__adv"/></e>
-<e lm="taksisto">             <i>taksisto</i><par n="nom__n"/></e>
+<e lm="taksisto">             <i>taksist</i><par n="nommf__n"/></e>
 <e lm="aktuario">             <i>aktuario</i><par n="nom__n"/></e>
 <e lm="ekagigi">              <i>ekagig</i><par n="verb__vblex"/></e>
 <e lm="agigi">                <i>agig</i><par n="verb__vblex"/></e>
@@ -8927,7 +8934,7 @@
 <e lm="toksiĝemulo">          <i>toksi</i><par n="ĝ"/><i>emulo</i><par n="nom__n"/></e>
 <e lm="drogemulo">            <i>drogemulo</i><par n="nom__n"/></e>
 <e lm="narkotaĵemulo">        <i>narkota</i><par n="ĵ"/><i>emulo</i><par n="nom__n"/></e>
-<e lm="narkotisto">           <i>narkotisto</i><par n="nom__n"/></e>
+<e lm="narkotisto">           <i>narkotist</i><par n="nommf__n"/></e>
 <e lm="toksikomaniulo">       <i>toksikomaniulo</i><par n="nom__n"/></e>
 <e lm="narkulo">              <i>narkulo</i><par n="nom__n"/></e>
 <e lm="aldono">               <i>aldono</i><par n="nom__n"/></e>
@@ -9034,7 +9041,7 @@
 <e lm="aerosolo">             <i>aerosolo</i><par n="nom__n"/></e>
 <e lm="aerospaca">            <i>aerospac</i><par n="adj__adj"/></e>
 <e lm="estetikulo">           <i>estetikulo</i><par n="nom__n"/></e>
-<e lm="estetikisto">          <i>estetikisto</i><par n="nom__n"/></e>
+<e lm="estetikisto">          <i>estetikist</i><par n="nommf__n"/></e>
 <e lm="malproksime">          <i>malproksime</i><par n="komence__adv"/></e>
 <e lm="amafero">              <i>amafero</i><par n="nom__n"/></e>
 <e lm="amaĵo">                <i>ama</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
@@ -9105,7 +9112,7 @@
 <e lm="agrabla">              <i>agrabl</i><par n="adj__adj"/></e>
 <e lm="plaĉa">                <i>pla</i><par n="ĉ"/><par n="adj__adj"/></e>
 <e lm="konsentema">           <i>konsentem</i><par n="adj__adj"/></e>
-<e lm="agrikulturisto">       <i>agrikulturisto</i><par n="nom__n"/></e>
+<e lm="agrikulturisto">       <i>agrikulturist</i><par n="nommf__n"/></e>
 <e lm="terkultivado">         <i>terkultivado</i><par n="nom__n"/></e>
 <e lm="agrokulturado">        <i>agrokulturado</i><par n="nom__n"/></e>
 <e lm="helpilo">              <i>helpilo</i><par n="nom__n"/></e>
@@ -9134,8 +9141,8 @@
 <e lm="albatroso">            <i>albatroso</i><par n="nom__n"/></e>
 <e lm="alkemio">              <i>al</i><par n="k_ĥ"/><i>emio</i><par n="nom__n"/></e>
 <e lm="alkemiisto">           <i>al</i><par n="k_ĥ"/><i>emiist</i><par n="nommf__n"/></e>
-<e lm="alkoholulo">           <i>alkoholulo</i><par n="nom__n"/></e>
-<e lm="dipsomaniulo">         <i>dipsomaniulo</i><par n="nom__n"/></e>
+<e lm="alkoholulo">           <i>alkoholul</i><par n="nommf__n"/></e>
+<e lm="dipsomaniulo">         <i>dipsomaniul</i><par n="nommf__n"/></e>
 <e lm="alkohola">             <i>alkohol</i><par n="adj__adj"/></e>
 <e lm="dipsomanio">           <i>dipsomanio</i><par n="nom__n"/></e>
 <e lm="atentigo">             <i>atentigo</i><par n="nom__n"/></e>
@@ -12120,7 +12127,7 @@
 <e lm="deklaracio">           <i>deklaracio</i><par n="nom__n"/></e>
 <e lm="sindeklaro">           <i>sindeklaro</i><par n="nom__n"/></e>
 <e lm="proklamo">             <i>proklamo</i><par n="nom__n"/></e>
-<e lm="eldiraĵoo">            <i>eldira</i><par n="ĵ"/><i>oo</i><par n="nom__n"/></e>
+<e lm="eldiraĵo">             <i>eldira</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="deklinacio">           <i>deklinacio</i><par n="nom__n"/></e>
 <e lm="malprogresi">          <i>malprogres</i><par n="verb__vblex"/></e>
 <e lm="malprogreso">          <i>malprogreso</i><par n="nom__n"/></e>
@@ -12913,7 +12920,7 @@
 <e lm="pluvtubo">             <i>pluvtubo</i><par n="nom__n"/></e>
 <e lm="laŭflue">              <i>la</i><par n="ŭ"/><i>flue</i><par n="komence__adv"/></e>
 <e lm="drakmo">               <i>drakmo</i><par n="nom__n"/></e>
-<e lm="desegnaĵoo">           <i>desegna</i><par n="ĵ"/><i>oo</i><par n="nom__n"/></e>
+<e lm="desegnaĵo">            <i>desegna</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="konskripcio">          <i>konskripcio</i><par n="nom__n"/></e>
 <e lm="rekrutigo">            <i>rekrutigo</i><par n="nom__n"/></e>
 <e lm="enarmeigo">            <i>enarmeigo</i><par n="nom__n"/></e>
@@ -17337,6 +17344,7 @@
 <e lm="mistika">              <i>mistik</i><par n="adj__adj"/></e>
 <e lm="mistikismo">           <i>mistikismo</i><par n="nom__n"/></e>
 <e lm="mistiko">              <i>mistiko</i><par n="nom__n"/></e>
+<e lm="mistikulo">            <i>mistikulo</i><par n="nom__n"/></e>
 <e lm="mita">                 <i>mit</i><par n="adj__adj"/></e>
 <e lm="mitologia">            <i>mitologi</i><par n="adj__adj"/></e>
 <e lm="nadiro">               <i>nadiro</i><par n="nom__n"/></e>
@@ -19286,7 +19294,7 @@
 <e lm="renomumi">             <i>renomum</i><par n="verb__vblex"/></e>
 <e lm="reenoficigi">          <i>reenoficig</i><par n="verb__vblex"/></e>
 <e lm="malantaŭa">            <i>malanta</i><par n="ŭ"/><par n="adj__adj"/></e>
-<e lm="malantaŭaĵoo">         <i>malanta</i><par n="ŭ"/><i>a</i><par n="ĵ"/><i>oo</i><par n="nom__n"/></e>
+<e lm="malantaŭaĵo">          <i>malanta</i><par n="ŭ"/><i>a</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="malfronta">            <i>malfront</i><par n="adj__adj"/></e>
 <e lm="rearmi">               <i>rearm</i><par n="verb__vblex"/></e>
 <e lm="rearanĝi">             <i>rearan</i><par n="ĝ"/><par n="verb__vblex"/></e>
@@ -22707,7 +22715,7 @@
 <e lm="transsalti">           <i>transsalt</i><par n="verb__vblex"/></e>
 <e lm="vektoro">              <i>vektoro</i><par n="nom__n"/></e>
 <e lm="vehiklo">              <i>vehiklo</i><par n="nom__n"/></e>
-<e lm="kontaĝanto">           <i>konta</i><par n="ĝ"/><i>anto</i><par n="nom__n"/></e>
+<e lm="kontaĝanto">           <i>konta</i><par n="ĝ"/><i>ant</i><par n="nommf__n"/></e>
 <e lm="vegetulo">             <i>vegetulo</i><par n="nom__n"/></e>
 <e lm="vegetaĵo">             <i>vegeta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="vegeta">               <i>veget</i><par n="adj__adj"/></e>
@@ -22719,7 +22727,7 @@
 <e lm="kovrotuko">            <i>kovrotuko</i><par n="nom__n"/></e>
 <e lm="velocipedo">           <i>velocipedo</i><par n="nom__n"/></e>
 <e lm="velura">               <i>velur</i><par n="adj__adj"/></e>
-<e lm="vendanto">             <i>vendanto</i><par n="nom__n"/></e>
+<e lm="vendanto">             <i>vendant</i><par n="nommf__n"/></e>
 <e lm="malpligrava">          <i>malpligrav</i><par n="adj__adj"/></e>
 <e lm="vejna">                <i>vejn</i><par n="adj__adj"/></e>
 <e lm="ventoli">              <i>ventol</i><par n="verb__vblex"/></e>
@@ -22771,14 +22779,14 @@
 <e lm="fikutimo">             <i>fikutimo</i><par n="nom__n"/></e>
 <e lm="diboĉaĵo">             <i>dibo</i><par n="ĉ"/><i>a</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="ŝraŭbtenilo">          <par n="ŝ"/><i>ra</i><par n="ŭ"/><i>btenilo</i><par n="nom__n"/></e>
-<e lm="vicprezidento">        <i>vicprezidento</i><par n="nom__n"/></e>
+<e lm="vicprezidento">        <i>vicprezident</i><par n="nommf__n"/></e>
 <e lm="malmoralaĵo">          <i>malmorala</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="malvirtaĵo">           <i>malvirta</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>
 <e lm="brutala">              <i>brutal</i><par n="adj__adj"/></e>
 <e lm="trafito">              <i>trafito</i><par n="nom__n"/></e>
 <e lm="ofendito">             <i>ofendito</i><par n="nom__n"/></e>
-<e lm="suferanto">            <i>suferanto</i><par n="nom__n"/></e>
-<e lm="suferinto">            <i>suferinto</i><par n="nom__n"/></e>
+<e lm="suferanto">            <i>suferant</i><par n="nommf__n"/></e>
+<e lm="suferinto">            <i>suferint</i><par n="nommf__n"/></e>
 <e lm="viktimigado">          <i>viktimigado</i><par n="nom__n"/></e>
 <e lm="viktimigi">            <i>viktimig</i><par n="verb__vblex"/></e>
 <e lm="Viktoro">              <i>Viktoro</i><par n="Marko__np"/></e>
@@ -22789,7 +22797,7 @@
 <e lm="videobendo">           <i>videobendo</i><par n="nom__n"/></e>
 <e lm="vidbendo">             <i>vidbendo</i><par n="nom__n"/></e>
 <e lm="vidkasedo">            <i>vidkasedo</i><par n="nom__n"/></e>
-<e lm="vidanto">              <i>vidanto</i><par n="nom__n"/></e>
+<e lm="vidanto">              <i>vidant</i><par n="nommf__n"/></e>
 <e lm="bildomontrilo">        <i>bildomontrilo</i><par n="nom__n"/></e>
 <e lm="spektado">             <i>spektado</i><par n="nom__n"/></e>
 <e lm="villo">                <i>villo</i><par n="nom__n"/></e>
@@ -22880,10 +22888,10 @@
 <e lm="baloto">               <i>baloto</i><par n="nom__n"/></e>
 <e lm="balotaro">             <i>balotaro</i><par n="nom__n"/></e>
 <e lm="baloti">               <i>balot</i><par n="verb__vblex"/></e>
-<e lm="balotanto">            <i>balotanto</i><par n="nom__n"/></e>
-<e lm="balotinto">            <i>balotinto</i><par n="nom__n"/></e>
-<e lm="voĉdonanto">           <i>vo</i><par n="ĉ"/><i>donanto</i><par n="nom__n"/></e>
-<e lm="voĉdoninto">           <i>vo</i><par n="ĉ"/><i>doninto</i><par n="nom__n"/></e>
+<e lm="balotanto">            <i>balotant</i><par n="nommf__n"/></e>
+<e lm="balotinto">            <i>balotint</i><par n="nommf__n"/></e>
+<e lm="voĉdonanto">           <i>vo</i><par n="ĉ"/><i>donant</i><par n="nommf__n"/></e>
+<e lm="voĉdoninto">           <i>vo</i><par n="ĉ"/><i>donint</i><par n="nommf__n"/></e>
 <e lm="balotadi">             <i>balotad</i><par n="verb__vblex"/></e>
 <e lm="voti">                 <i>vot</i><par n="verb__vblex"/></e>
 <e lm="senŝirmeco">           <i>sen</i><par n="ŝ"/><i>irmeco</i><par n="nom__n"/></e>
@@ -22914,7 +22922,7 @@
 <e lm="ploregi">              <i>ploreg</i><par n="verb__vblex"/></e>
 <e lm="talimezuro">           <i>talimezuro</i><par n="nom__n"/></e>
 <e lm="zono">                 <i>zono</i><par n="nom__n"/></e>
-<e lm="atendanto">            <i>atendanto</i><par n="nom__n"/></e>
+<e lm="atendanto">            <i>atendant</i><par n="nommf__n"/></e>
 <e lm="promenadi">            <i>promenad</i><par n="verb__vblex"/></e>
 <e lm="piedirado">            <i>piedirado</i><par n="nom__n"/></e>
 <e lm="parieto">              <i>parieto</i><par n="nom__n"/></e>
@@ -23023,7 +23031,7 @@
 <e lm="bonfarte">             <i>bonfarte</i><par n="komence__adv"/></e>
 <e lm="favore">               <i>favore</i><par n="komence__adv"/></e>
 <e lm="lerte">                <i>lerte</i><par n="komence__adv"/></e>
-<e lm="bondeziranto">         <i>bondeziranto</i><par n="nom__n"/></e>
+<e lm="bondeziranto">         <i>bondezirant</i><par n="nommf__n"/></e>
 <e lm="okcidentio">           <i>okcidentio</i><par n="nom__n"/></e>
 <e lm="okcidentia">           <i>okcidenti</i><par n="adj__adj"/></e>
 <e lm="Parlamento">           <i>Parlamento</i><par n="Barcelono__np"/></e>
@@ -23089,11 +23097,11 @@
 <e lm="flugilo">              <i>flugilo</i><par n="nom__n"/></e>
 <e lm="alo">                  <i>alo</i><par n="nom__n"/></e>
 <e lm="eskadro">              <i>eskadro</i><par n="nom__n"/></e>
-<e lm="elpoentinto">          <i>elpoentinto</i><par n="nom__n"/></e>
-<e lm="superinto">            <i>superinto</i><par n="nom__n"/></e>
-<e lm="venkinto">             <i>venkinto</i><par n="nom__n"/></e>
-<e lm="elektinto">            <i>elektinto</i><par n="nom__n"/></e>
-<e lm="triumfinto">           <i>triumfinto</i><par n="nom__n"/></e>
+<e lm="elpoentinto">          <i>elpoentint</i><par n="nommf__n"/></e>
+<e lm="superinto">            <i>superint</i><par n="nommf__n"/></e>
+<e lm="venkinto">             <i>venkint</i><par n="nommf__n"/></e>
+<e lm="elektinto">            <i>elektint</i><par n="nommf__n"/></e>
+<e lm="triumfinto">           <i>triumfint</i><par n="nommf__n"/></e>
 <e lm="laŭreato">             <i>la</i><par n="ŭ"/><i>reato</i><par n="nom__n"/></e>
 <e lm="gajna">                <i>gajn</i><par n="adj__adj"/></e>
 <e lm="venka">                <i>venk</i><par n="adj__adj"/></e>
@@ -23121,7 +23129,7 @@
 <e lm="deteni">               <i>deten</i><par n="verb__vblex"/></e>
 <e lm="kretena">              <i>kreten</i><par n="adj__adj"/></e>
 <e lm="etcerba">              <i>etcerb</i><par n="adj__adj"/></e>
-<e lm="memvidinto">           <i>memvidinto</i><par n="nom__n"/></e>
+<e lm="memvidinto">           <i>memvidint</i><par n="nommf__n"/></e>
 <e lm="spekti">               <i>spekt</i><par n="verb__vblex"/></e>
 <e lm="sorĉisto">             <i>sor</i><par n="ĉ"/><i>ist</i><par n="nommf__n"/></e>
 <e lm="ŝanceliĝo">            <par n="ŝ"/><i>anceli</i><par n="ĝ"/><i>o</i><par n="nom__n"/></e>
@@ -23150,7 +23158,7 @@
 <e lm="stablo">               <i>stablo</i><par n="nom__n"/></e>
 <e lm="efiki">                <i>efik</i><par n="verb__vblex"/></e>
 <e lm="strebadi">             <i>strebad</i><par n="verb__vblex"/></e>
-<e lm="laboranto">            <i>laboranto</i><par n="nom__n"/></e>
+<e lm="laboranto">            <i>laborant</i><par n="nommf__n"/></e>
 <e lm="laborantaro">          <i>laborantaro</i><par n="nom__n"/></e>
 <e lm="homforto">             <i>homforto</i><par n="nom__n"/></e>
 <e lm="laborklasa">           <i>laborklas</i><par n="adj__adj"/></e>
@@ -23175,9 +23183,9 @@
 <e lm="adori">                <i>ador</i><par n="verb__vblex"/></e>
 <e lm="adoradi">              <i>adorad</i><par n="verb__vblex"/></e>
 <e lm="idoli">                <i>idol</i><par n="verb__vblex"/></e>
-<e lm="preĝanto">             <i>pre</i><par n="ĝ"/><i>anto</i><par n="nom__n"/></e>
+<e lm="preĝanto">             <i>pre</i><par n="ĝ"/><i>ant</i><par n="nommf__n"/></e>
 <e lm="preĝantaro">           <i>pre</i><par n="ĝ"/><i>antaro</i><par n="nom__n"/></e>
-<e lm="adoranto">             <i>adoranto</i><par n="nom__n"/></e>
+<e lm="adoranto">             <i>adorant</i><par n="nommf__n"/></e>
 <e lm="monvaloro">            <i>monvaloro</i><par n="nom__n"/></e>
 <e lm="farinda">              <i>farind</i><par n="adj__adj"/></e>
 <e lm="peninda">              <i>penind</i><par n="adj__adj"/></e>
@@ -23202,7 +23210,7 @@
 <e lm="manartiko">            <i>manartiko</i><par n="nom__n"/></e>
 <e lm="ĉirkaŭmano">           <par n="ĉ"/><i>irka</i><par n="ŭ"/><i>mano</i><par n="nom__n"/></e>
 <e lm="verki">                <i>verk</i><par n="verb__vblex"/></e>
-<e lm="verkanto">             <i>verkanto</i><par n="nom__n"/></e>
+<e lm="verkanto">             <i>verkant</i><par n="nommf__n"/></e>
 <e lm="scenaristo">           <i>scenarist</i><par n="nommf__n"/></e>
 <e lm="tordiĝi">              <i>tordi</i><par n="ĝ"/><par n="verb__vblex"/></e>
 <e lm="skribaĵo">             <i>skriba</i><par n="ĵ"/><i>o</i><par n="nom__n"/></e>

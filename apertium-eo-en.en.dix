@@ -2673,6 +2673,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="the United Kingdom">   <i>the<b/>United<b/>Kingdom</i><par n="Barcelona__np"/></e>
 <e lm="United States">        <i>United<b/>States</i><par n="United_States__np"/></e>
 <e lm="the United States">    <i>the<b/>United<b/>States</i><par n="United_States__np"/></e>
+<e lm="United States of America">    <i>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
+<e lm="the United States of America">    <i>the<b/>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
 <e lm="Uruguay">              <i>Uruguay</i><par n="Barcelona__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 <e lm="Valencian">            <i>Valencian</i><par n="house__n"/></e>
@@ -8996,8 +8998,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="themselves">           <p><l>themselves</l>          <r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 <e lm="then">                 <i>then</i><par n="after__cnjadv"/></e>
 <e lm="then and there">       <i>then<b/>and<b/>there</i><par n="maybe__adv"/></e>
+<e lm="theologian">           <i>theologian</i><par n="house__n"/></e>
 <e lm="theology">             <i>theolog</i><par n="bab/y__n"/></e>
 <e lm="theory">               <i>theor</i><par n="bab/y__n"/></e>
+<e lm="theorist">             <i>theorist</i><par n="house__n"/></e>
 <e lm="therapy">              <i>therap</i><par n="bab/y__n"/></e>
 <e lm="there">                <i>there</i><par n="maybe__adv"/></e>
 <e lm="there again">          <i>there<b/>again</i><par n="maybe__adv"/></e>
@@ -12177,6 +12181,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="epididymis">           <i>epididym</i><par n="analys/is__n"/></e>
 <e lm="epilepsy">             <i>epileps</i><par n="bab/y__n"/></e>
 <e lm="Epiphany">             <i>Epiphany</i><par n="Barcelona__np"/></e>
+<e lm="episcopal">            <i>episcopal</i><par n="expensive__adj"/></e>
+<e lm="episcopate">           <i>episcopate</i><par n="house__n"/></e>
 <e lm="epistemological">      <i>epistemological</i><par n="expensive__adj"/></e>
 <e lm="epistle">              <i>epistle</i><par n="house__n"/></e>
 <e lm="epoch">                <i>epoch</i><par n="house__n"/></e>
@@ -13909,6 +13915,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="myopia">               <i>myopia</i><par n="house__n"/></e>
 <e lm="myriad">               <i>myriad</i><par n="house__n"/></e>
 <e lm="mystic">               <i>mystic</i><par n="expensive__adj"/></e>
+<e lm="mystic">               <i>mystic</i><par n="house__n"/></e>
 <e lm="mysticism">            <i>mysticism</i><par n="house__n"/></e>
 <e lm="mythical">             <i>mythical</i><par n="expensive__adj"/></e>
 <e lm="mythological">         <i>mythological</i><par n="expensive__adj"/></e>

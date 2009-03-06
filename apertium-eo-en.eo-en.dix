@@ -1122,6 +1122,8 @@ BUT:
 <e>       <p><l>Urugvajo<s n="np"/><s n="top"/></l>    <r>Uruguay<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Usono<s n="np"/><s n="top"/></l>       <r>United<b/>States<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>United<b/>States<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>United<b/>States<b/>of<b/>America<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Usono<s n="np"/><s n="top"/></l>       <r>the<b/>United<b/>States<b/>of<b/>America<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Varsovio<s n="np"/><s n="top"/></l>    <r>Warsaw<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vaŝingtono<s n="np"/><s n="top"/></l>  <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Venezuelo<s n="np"/><s n="top"/></l>   <r>Venezuela<s n="np"/><s n="top"/></r></p></e>
@@ -3340,7 +3342,6 @@ TODO??
 <e>       <p><l>biskvito<s n="n"/></l>                 <r>biscuit<s n="n"/></r></p></e>
 <e r="LR"><p><l>krakeno<s n="n"/></l>                  <r>biscuit<s n="n"/></r></p></e>
 <e>       <p><l>episkopo<s n="n"/></l>                 <r>bishop<s n="n"/></r></p></e>
-<e r="LR"><p><l>episkoparo<s n="n"/></l>               <r>bishop<s n="n"/></r></p></e>
 <e>       <p><l>peco<s n="n"/></l>                     <r>bit<s n="n"/></r></p></e>
 <e r="LR"><p><l>rompaĵo<s n="n"/></l>                  <r>bit<s n="n"/></r></p></e>
 <e r="LR"><p><l>iometo<s n="n"/></l>                   <r>bit<s n="n"/></r></p></e>
@@ -5749,7 +5750,7 @@ TODO??
 <e>       <p><l>dekduo<s n="n"/></l>                   <r>dozen<s n="n"/></r></p></e>
 <e>       <p><l>projekto<s n="n"/></l>                 <r>draft<s n="n"/></r></p></e>
 <e r="LR"><p><l>malneto<s n="n"/></l>                  <r>draft<s n="n"/></r></p></e>
-<e r="LR"><p><l>desegnaĵoo<s n="n"/></l>               <r>draft<s n="n"/></r></p></e>
+<e r="LR"><p><l>desegnaĵo<s n="n"/></l>                <r>draft<s n="n"/></r></p></e>
 <e r="LR"><p><l>konskripcio<s n="n"/></l>              <r>draft<s n="n"/></r></p></e>
 <e r="LR"><p><l>rekrutigo<s n="n"/></l>                <r>draft<s n="n"/></r></p></e>
 <e r="LR"><p><l>enarmeigo<s n="n"/></l>                <r>draft<s n="n"/></r></p></e>
@@ -10277,8 +10278,10 @@ TODO??
 <e r="LR"><p><l>movrapido<s n="n"/></l>                <r>pace<s n="n"/></r></p></e>
 <e r="LR"><p><l>paŝado<s n="n"/></l>                   <r>pace<s n="n"/></r></p></e>
 <e r="LR"><p><l>irmaniero<s n="n"/></l>                <r>pace<s n="n"/></r></p></e>
-<e>       <p><l>pacifismo<s n="n"/></l>                <r>pacifism<s n="n"/></r></p></e>
-<e>       <p><l>pacifisto<s n="n"/></l>                <r>pacifist<s n="n"/></r></p></e>
+<e r="RL"><p><l>pacifismo<s n="n"/></l>                <r>pacifism<s n="n"/></r></p></e>
+<e>       <p><l>pacismo<s n="n"/></l>                  <r>pacifism<s n="n"/></r></p></e>
+<e r="RL"><p><l>pacifisto<s n="n"/></l>                <r>pacifist<s n="n"/></r></p></e>
+<e>       <p><l>pacisto<s n="n"/></l>                  <r>pacifist<s n="n"/></r></p></e>
 <e r="RL"><p><l>amaso<s n="n"/></l>                    <r>pack<s n="n"/></r></p></e>
 <e r="LR"><p><l>kartaro<s n="n"/></l>                  <r>pack<s n="n"/></r></p></e>
 <e>       <p><l>pako<s n="n"/></l>                     <r>package<s n="n"/></r></p></e>
@@ -11201,8 +11204,7 @@ TODO??
 <e r="LR"><p><l>konfeso<s n="n"/></l>                  <r>profession<s n="n"/></r></p></e>
 <e>       <p><l>profesia<s n="adj"/></l>               <r>professional<s n="adj"/></r></p></e>
 <e r="LR"><p><l>profesiista<s n="adj"/></l>            <r>professional<s n="adj"/></r></p></e>
-<e>       <p><l>profesiisto<s n="n"/></l>              <r>professional<s n="n"/></r></p></e>
-<e r="LR"><p><l>profesiulo<s n="n"/></l>               <r>professional<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>profesiulo<s n="n"/></l>               <r>professional<s n="n"/></r></p></e>
 <e r="LR"><p><l>faka<s n="adj"/></l>                   <r>professional<s n="adj"/></r></p></e>
 <e>       <p><l>profesie<s n="adv"/></l>               <r>professionally<s n="adv"/></r></p></e>
 <e>       <p><l>profesoro<s n="n"/></l>                <r>professor<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -14031,7 +14033,9 @@ TODO??
 <e r="LR"><p><l>ĉeftemo<s n="n"/></l>                  <r>theme<s n="n"/></r></p></e>
 <e r="LR"><p><l>konstanto<s n="n"/></l>                <r>theme<s n="n"/></r></p></e>
 <e>       <p><l>teologio<s n="n"/></l>                 <r>theology<s n="n"/></r></p></e>
+<e>       <p><l>teologo<s n="n"/></l>                  <r>theologian<s n="n"/></r></p></e>
 <e>       <p><l>teorio<s n="n"/></l>                   <r>theory<s n="n"/></r></p></e>
+<e>       <p><l>teoriisto<s n="n"/></l>                <r>theorist<s n="n"/></r></p></e>
 <e>       <p><l>terapio<s n="n"/></l>                  <r>therapy<s n="n"/></r></p></e>
 <e r="LR"><p><l>kuracado<s n="n"/></l>                 <r>therapy<s n="n"/></r></p></e>
 <e r="RL"><p><l>poste<s n="adv"/></l>                  <r>thereafter<s n="adv"/></r></p></e>
@@ -18783,7 +18787,7 @@ TODO??
 <e r="LR"><p><l>deklaracio<s n="n"/></l>               <r>declaration<s n="n"/></r></p></e>
 <e r="LR"><p><l>sindeklaro<s n="n"/></l>               <r>declaration<s n="n"/></r></p></e>
 <e r="LR"><p><l>proklamo<s n="n"/></l>                 <r>declaration<s n="n"/></r></p></e>
-<e r="LR"><p><l>eldiraĵoo<s n="n"/></l>                <r>declaration<s n="n"/></r></p></e>
+<e r="LR"><p><l>eldiraĵo<s n="n"/></l>                 <r>declaration<s n="n"/></r></p></e>
 <e>       <p><l>deklinacio<s n="n"/></l>               <r>declination<s n="n"/></r></p></e>
 <e>       <p><l>dekotaĵo<s n="n"/></l>                 <r>decoction<s n="n"/></r></p></e>
 <e r="LR"><p><l>elkriptigi<s n="vblex"/></l>           <r>decode<s n="vblex"/></r></p></e>
@@ -19707,6 +19711,10 @@ TODO??
 <e>       <p><l>epididimo<s n="n"/></l>                <r>epididymis<s n="n"/></r></p></e>
 <e>       <p><l>epilepsio<s n="n"/></l>                <r>epilepsy<s n="n"/></r></p></e>
 <e>       <p><l>Epifanio<s n="np"/></l>                <r>Epiphany<s n="np"/></r></p></e>
+<e>       <p><l>episkopo<s n="n"/></l>                 <r>bishop<s n="n"/></r></p></e>
+<e>       <p><l>episkopa<s n="adj"/></l>               <r>episcopal<s n="adj"/></r></p></e>
+<e>       <p><l>episkoparo<s n="n"/></l>               <r>episcopate<s n="n"/></r></p></e>
+<e r="LR"><p><l>episkopeco<s n="n"/></l>               <r>episcopate<s n="n"/></r></p></e>
 <e>       <p><l>epistemologia<s n="adj"/></l>          <r>epistemological<s n="adj"/></r></p></e>
 <e>       <p><l>epistolo<s n="n"/></l>                 <r>epistle<s n="n"/></r></p></e>
 <e r="RL"><p><l>epoko<s n="n"/></l>                    <r>epoch<s n="n"/></r></p></e>
@@ -22178,6 +22186,7 @@ TODO??
 <e>       <p><l>miopeco<s n="n"/></l>                  <r>myopia<s n="n"/></r></p></e>
 <e>       <p><l>miriado<s n="n"/></l>                  <r>myriad<s n="n"/></r></p></e>
 <e>       <p><l>mistika<s n="adj"/></l>                <r>mystic<s n="adj"/></r></p></e>
+<e>       <p><l>mistikulo<s n="n"/></l>                <r>mystic<s n="n"/></r></p></e>
 <e>       <p><l>mistikismo<s n="n"/></l>               <r>mysticism<s n="n"/></r></p></e>
 <e r="LR"><p><l>mistiko<s n="n"/></l>                  <r>mysticism<s n="n"/></r></p></e>
 <e>       <p><l>mita<s n="adj"/></l>                   <r>mythical<s n="adj"/></r></p></e>
@@ -23433,7 +23442,7 @@ TODO??
 <e>       <p><l>renomumi<s n="vblex"/></l>             <r>reappoint<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>reenoficigi<s n="vblex"/></l>          <r>reappoint<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malantaŭa<s n="adj"/></l>              <r>rear<s n="adj"/></r></p></e>
-<e>       <p><l>malantaŭaĵoo<s n="n"/></l>             <r>rear<s n="n"/></r></p></e>
+<e>       <p><l>malantaŭaĵo<s n="n"/></l>              <r>rear<s n="n"/></r></p></e>
 <e>       <p><l>rearmi<s n="vblex"/></l>               <r>rearm<s n="vblex"/></r></p></e>
 <e>       <p><l>rearanĝi<s n="vblex"/></l>             <r>rearrange<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>eduki<s n="vblex"/></l>                <r>rear<s n="vblex"/></r></p></e>
@@ -25142,7 +25151,6 @@ TODO??
 <e r="LR"><p><l>tiaokaze<s n="adv"/></l>               <r>then<s n="adv"/></r></p></e>
 <e>       <p><l>teokratio<s n="n"/></l>                <r>theocracy<s n="n"/></r></p></e>
 <e>       <p><l>teokratia<s n="adj"/></l>              <r>theocratic<s n="adj"/></r></p></e>
-<e>       <p><l>teologiisto<s n="n"/></l>              <r>theologian<s n="n"/></r></p></e>
 <e>       <p><l>teologia<s n="adj"/></l>               <r>theological<s n="adj"/></r></p></e>
 <e>       <p><l>teoremo<s n="n"/></l>                  <r>theorem<s n="n"/></r></p></e>
 <e>       <p><l>teoria<s n="adj"/></l>                 <r>theoretical<s n="adj"/></r></p></e>
