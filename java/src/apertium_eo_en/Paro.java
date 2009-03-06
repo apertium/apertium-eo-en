@@ -8,7 +8,7 @@ public class Paro {
     public String orgEn;
     public String rootEn;
 
-    public boolean oneWord;
+    public boolean unuVortoEo;
 
     public final static String PROBLEM = "???";
     public final static String N = "n";
@@ -16,12 +16,14 @@ public class Paro {
     public final static String VBLEX = "vblex";
     public final static String ADJ = "adj";
     public final static String ADV = "adv";
+    public final static String PR = "pr";
 
     public String apertiumWordType = PROBLEM;
     private String apertiumExtraTags = "";
 
     public boolean gender;
     public boolean sint;
+    boolean rootEnNeEkzistas = false;
 
        
     public String apertiumWordType() {
@@ -39,6 +41,7 @@ public class Paro {
     public boolean adj() { return (apertiumWordType==ADJ); };
     public boolean adv() { return (apertiumWordType==ADV); };
     public boolean verb() { return (apertiumWordType==VBLEX); };
+    public boolean pr() { return (apertiumWordType==PR); };
     
     public void setKlasoTag(String _apertiumWordType) {
       apertiumWordType = _apertiumWordType;
@@ -112,14 +115,16 @@ public class Paro {
 */
 
     public String apertiumEn() {
-	if (noun()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"house__n\"/></e>";
-	if (adj()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"expensive__adj\"/></e>";
-	if (adv()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"maybe__adv\"/></e>";
-	if (verb()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"liv/e__vblex\"/></e>";
-	if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn +"</i><par n=\"a__np\"/></e>";
+	if (noun()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"house__n\"/></e>";
+	if (adj()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"expensive__adj\"/></e>";
+	if (adv()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"maybe__adv\"/></e>";
+	if (verb()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"liv/e__vblex\"/></e>";
+	if (pr()) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"at__pr\"/></e>";
+
+  if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ orgEn +"\"><i>"+ orgEn.replaceAll(" ", "<b/>") +"</i><par n=\"a__np\"/></e>";
 
       System.err.println("apertiumEn() problem for " + this + " "+apertiumExtraTags);
-  return "xxxproblem";
+      return "xxxproblem"+this;
     }
 
     
@@ -129,20 +134,22 @@ public class Paro {
     }
     
     private String apertiumEox() {
-      if (gender && noun()) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"nommf__n\"/></e>";
-      if (noun())           return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"nom__n\"/></e>";
-      if (adj())            return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"adj__adj\"/></e>";
-      if (adv())            return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"komence__adv\"/></e>";
-      if (verb())           return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"verb__vblex\"/></e>";
-      if (np() && apertiumExtraTags.equals("<al>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Linux__np\"/></e>";
-      if (np() && apertiumExtraTags.equals("<top>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Barcelono__np\"/></e>";
-      if (np() && apertiumExtraTags.equals("<ant><m>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mark__np\"/></e>";
-      if (np() && apertiumExtraTags.equals("<ant><f>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Mary__np\"/></e>";
-      if (np() && apertiumExtraTags.equals("<cog>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
-      if (np() && apertiumExtraTags.equals("<alpha>")) return "<e lm=\""+ rootEo +"\"><i>"+ par(rootEo) +"</i><par n=\"a__np\"/></e>";
+      String beg = "<e lm=\""+ rootEo +"\"><i>";
+      if (gender && noun()) return beg + par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"nommf__n\"/></e>";
+      if (noun())           return beg + par(rootEo) +"</i><par n=\"nom__n\"/></e>";
+      if (adj())            return beg + par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"adj__adj\"/></e>";
+      if (adv())            return beg + par(rootEo) +"</i><par n=\"komence__adv\"/></e>";
+      if (verb())           return beg + par(rootEo.substring(0,rootEo.length()-1)) +"</i><par n=\"verb__vblex\"/></e>";
+      if (pr())             return beg + par(rootEo) +"</i><par n=\"at__pr\"/></e>";
+      if (np() && apertiumExtraTags.equals("<al>")) return beg + par(rootEo) +"</i><par n=\"Linux__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<top>")) return beg +  par(rootEo) +"</i><par n=\"Barcelono__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<ant><m>")) return beg + par(rootEo) +"</i><par n=\"Mark__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<ant><f>")) return beg + par(rootEo) +"</i><par n=\"Mary__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<cog>")) return beg + par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
+      if (np() && apertiumExtraTags.equals("<alpha>")) return beg + par(rootEo) +"</i><par n=\"a__np\"/></e>";
       
       System.err.println("apertiumEo() problem for " + this + "  apertiumExtraTags="+apertiumExtraTags);
-      if (np()) return "<e lm=\""+ rootEo +"\"><i>"+ rootEo +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
+      if (np()) return beg + par(rootEo) +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
       return "";
     }
 
@@ -198,7 +205,7 @@ public class Paro {
   a = a + "       ".substring(a.length());
   //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
 	String wtype =  apertiumWordType();
-  String tot = "<e"+a+"><p><l>"+rootEo+"<s n=\""+wtype+"\"/></l><r>"+rootEn+"<s n=\""+wtype+"\"/>"+(sint?"<s n=\"sint\"/>":"")+"</r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
+  String tot = "<e"+a+"><p><l>"+rootEo.replaceAll(" ", "<b/>")+"<s n=\""+wtype+"\"/></l><r>"+rootEn.replaceAll(" ", "<b/>")+"<s n=\""+wtype+"\"/>"+(sint?"<s n=\"sint\"/>":"")+"</r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
   String spc = "                                                                                   ";
   if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
   //

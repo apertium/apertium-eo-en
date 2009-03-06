@@ -11,11 +11,15 @@ public class LeguTradukuNet {
   
   public LinkedHashMap<String, ArrayList<Paro>> tradukuEnParoj=new LinkedHashMap<String, ArrayList<Paro>>(50000);
   public LinkedHashMap<String, ArrayList<Paro>> tradukuEoParoj=new LinkedHashMap<String, ArrayList<Paro>>(50000);
+
+  /*
   PrintWriter noun=Iloj.ekskribuHtml("tradukunet-noun.txt");
   PrintWriter adj=Iloj.ekskribuHtml("tradukunet-adj.txt");
   PrintWriter adv=Iloj.ekskribuHtml("tradukunet-adv.txt");
   PrintWriter verb=Iloj.ekskribuHtml("tradukunet-verb.txt");
-  PrintWriter unknown=Iloj.ekskribuHtml("tradukunet-unknown.txt");
+   */
+  PrintWriter problema=Iloj.ekskribuHtml("tradukunet-problema.txt");
+
   static boolean debug;
 
   public static void montruHashMap(HashMap m) {
@@ -125,11 +129,13 @@ public class LeguTradukuNet {
       }
     }
     br.close();
+    /*
     noun.close();
     adj.close();
     adv.close();
     verb.close();
-    unknown.close();
+     */
+    problema.close();
     System.out.println("Finlegis TradukuNetDosieron() ===legita. Lasta estis: "+en+" -> "+eo);
   }
 
@@ -146,36 +152,29 @@ public class LeguTradukuNet {
   private void registru(int linNro, String en, String eo, float rango) {
     eo=duSpacojRegex.matcher(eo).replaceAll(" ").trim();
     if (eo.length()==0) return;
-    
-    if (en.indexOf(' ')!=-1 || eo.indexOf(' ')!=-1) return;
+
+    //if (!((en.indexOf(' ')!=-1 || eo.indexOf(' ')!=-1))) return;
+    //if (en.indexOf(' ')!=-1 || eo.indexOf(' ')!=-1) return;
     //System.err.println("en = '" + en+"'");
     //System.err.println("eo = '" + eo+"'");
     
     Paro p=analyze(eo, en);
     p.frango=rango;
-/*
+
     String dat=en+" @ "+p.rootEo+" @ "+p.wordType()+(rango<1?"":" ("+((int)rango)+")")+"    \t<=  "+eo+"\t"+linNro;
 
     //if (debug) System.out.println(dat);
 
     if (p.problem()) {
-      unknown.println(dat);
-    } else if (!p.oneWord) {
-      unknown.println(dat);
+      problema.println(dat);
+    } else if (!p.unuVortoEo) {
+      //problema.println(dat);
     } else if (en.indexOf(" ")!=-1) { // more than 1 English word
-      unknown.println(dat);
-    } else if (p.noun()) {
-      noun.println(dat);
-    } else if (p.adj()) {
-      adj.println(dat);
-    } else if (p.adv()) {
-      adv.println(dat);
-    } else if (p.verb()) {
-      verb.println(dat);
+      //problema.println(dat);
     } else {
-      unknown.println(dat);
+      //problema.println(dat);
     }
-*/
+
     aldonuParon(tradukuEnParoj, p.orgEn, p);
     aldonuParon(tradukuEoParoj, p.rootEo, p);
   }
@@ -212,7 +211,7 @@ public class LeguTradukuNet {
     Paro p=new Paro();
     p.orgEo=eo;
     p.orgEn=en;
-    p.oneWord=eo.indexOf(" ")==-1;
+    p.unuVortoEo=eo.indexOf(" ")==-1;
     
 
     char firstCh=eo.charAt(0);

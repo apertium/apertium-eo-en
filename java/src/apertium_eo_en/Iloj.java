@@ -8,6 +8,8 @@ import java.nio.charset.*;
 import java.text.*;
 import java.util.*;
 import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 
@@ -155,6 +157,10 @@ public class Iloj {
     }
 
     public static ArrayList<String> exec(String _execstr) throws IOException {
+        return exec(_execstr, false);
+    }
+
+    public static ArrayList<String> exec(String _execstr, boolean kontroluRetval) throws IOException {
     Process proces = Runtime.getRuntime().exec(_execstr);
     ArrayList<String> linioj = new ArrayList<String>(1000);
 
@@ -170,7 +176,17 @@ public class Iloj {
     proces.getInputStream().close();
     proces.getErrorStream().close();
     proces.getOutputStream().close();
-  //if (proces.exitValue()!=0) throw new IllegalStateException(_execstr + " donix "+proces.exitValue());
+
+    if (kontroluRetval) {
+            try {
+                proces.waitFor();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Iloj.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        if (proces.exitValue()!=0) throw new IllegalStateException(_execstr + " donis "+proces.exitValue());
+     }
+
+
 
     return linioj;
   }
@@ -207,27 +223,50 @@ public class Iloj {
     return enlemma;
   }
   
+  public static final String elhakuEtikedon(String enlemma) {
+      int i= enlemma.lastIndexOf('<');
+      if (i<0) return null;
+        enlemma = enlemma.substring(0,i);
+
+    return enlemma;
+  }
+
+
   
   public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixkomando) throws IOException {
-    Set<String> s = Collections.emptySet();
-    return leguDix(dixkomando, s);
+    //Set<String> s = Collections.emptySet();
+    return leguDix(dixkomando, null);
   }
-    
+
+  public static LinkedHashMap<String,ArrayList<String>>[] leguDix(LinkedHashMap<String,ArrayList<String>>[] xxParoj, String dixkomando) throws IOException {
+    return leguDix(xxParoj, dixkomando, null);
+  }
 
   public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixkomando, Set<String> foriguEtikedojn) throws IOException {
-    ArrayList<String> al = exec(dixkomando);
+    return leguDix(null, dixkomando, null);
+  }
 
-    LinkedHashMap<String,ArrayList<String>>[] xxParoj = new LinkedHashMap[2];
-    xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>(al.size());
-    xxParoj[1] = new LinkedHashMap<String,ArrayList<String>>(al.size());
+  public static LinkedHashMap<String,ArrayList<String>>[] leguDix(LinkedHashMap<String,ArrayList<String>>[] xxParoj, String dixkomando, Set<String> foriguEtikedojn) throws IOException {
+    ArrayList<String> al = exec(dixkomando, true);
+
+    if (xxParoj==null) xxParoj = new LinkedHashMap[2]; //LinkedHashMap<String,ArrayList<String>>[2];
+    if (xxParoj[0] ==null) {
+        xxParoj[0] = new LinkedHashMap<String,ArrayList<String>>(al.size());
+        xxParoj[1] = new LinkedHashMap<String,ArrayList<String>>(al.size());
+    }
+
 
     int n = 0;
   
     for (String l : al) {
       int i0 = l.indexOf(':');
       int i1 = l.lastIndexOf(':');
-      String kv0 = forprenuNenecesajnEtikedojn(l.substring(0,i0),foriguEtikedojn);
-      String kvi = forprenuNenecesajnEtikedojn(l.substring(i1+1),foriguEtikedojn);
+      String kv0 = (l.substring(0,i0));
+      String kvi = (l.substring(i1+1));
+      if (foriguEtikedojn!=null && !foriguEtikedojn.isEmpty()) {
+          kv0 = forprenuNenecesajnEtikedojn(kv0,foriguEtikedojn);
+          kvi = forprenuNenecesajnEtikedojn(kvi,foriguEtikedojn);
+      }
       if (i0<i1) {
         char c = l.charAt(i0+1);
         //System.out.println("c = "+c);

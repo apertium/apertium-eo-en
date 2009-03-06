@@ -13,7 +13,8 @@ import java.util.*;
  */
 public class AldonuCxiujnVortojn {
 
-  public static final boolean debug=false;
+//  public static final boolean debug=false;
+  public static boolean debug=false;
 
   /*
   private static Set<String> tenindiajEtikedoj = new HashSet<String>( Arrays.asList(
@@ -25,7 +26,7 @@ public class AldonuCxiujnVortojn {
 
   static void aldonuParon(Paro p, Map<String, ArrayList<Paro>> aldonuParojnEn, Map<String, ArrayList<Paro>> aldonuParojnEo, ArrayList<Paro> aldonuParojn) {
 
-    if (p.orgEn.equals("Aaron")) {
+    if (p.orgEn.equals("add")) {
                 dprintln(" "+p);
     }
 
@@ -113,7 +114,12 @@ public class AldonuCxiujnVortojn {
     
       
     if (trovitaLemo != null) {
-      ArrayList<String> aperTraduko = aperLemoAtTraduko.get(trovitaLemo);
+      String trovitaLemo2 = trovitaLemo;
+      ArrayList<String> aperTraduko = aperLemoAtTraduko.get(trovitaLemo2);
+      while (aperTraduko==null && trovitaLemo2!=null) {
+          trovitaLemo2 = Iloj.elhakuEtikedon(trovitaLemo2);
+          aperTraduko = aperLemoAtTraduko.get(trovitaLemo2);
+      }
 
       if (aperTraduko!=null) {
         if (debug) dprintln("Ne faras eo->en cxar en Apertium jam estas: "+trovitaLemo+"   -> "+aperTraduko);
@@ -176,25 +182,33 @@ public class AldonuCxiujnVortojn {
   public static void main(String[] args) throws Exception {
     
     final LeguTradukuNet legutradukunet=new LeguTradukuNet();
-    Thread leguT=new Iloj.Ek() {
-
-      public void ek() throws Exception {
-        legutradukunet.leguTradukuNetDosieron();
-      }
-    };
+    Thread leguT=new Iloj.Ek() { public void ek() throws Exception { legutradukunet.leguTradukuNetDosieron();  } };
     leguT.setPriority(Thread.MAX_PRIORITY);
     
     long tempo = System.currentTimeMillis();
 
-    LinkedHashMap<String, ArrayList<String>> aperEoDix[] =Iloj.leguDix("lt-expand apertium-eo-en.eo.dixtmp1",forprenindiajEtikedoj);
+    LinkedHashMap<String, ArrayList<String>> aperEoDix[] = new LinkedHashMap[2]; //LinkedHashMap<String,ArrayList<String>>[2];
+    LinkedHashMap<String, ArrayList<String>> aperEnDix[] = new LinkedHashMap[2];
+    LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = new LinkedHashMap[2];
 
-    LinkedHashMap<String, ArrayList<String>> aperEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.en.dix",forprenindiajEtikedoj);
-    //LinkedHashMap<String, ArrayList<String>> aperEnDix[]=Iloj.leguDix("zcat en.expanded.dix.gz");
+    Iloj.leguDix(aperEnDix,"lt-expand apertium-eo-en.en.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEoEnDix,"lt-expand apertium-eo-en.eo-en.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEoDix, "lt-expand apertium-eo-en.eo.dixtmp1",forprenindiajEtikedoj);
 
-    LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix",forprenindiajEtikedoj);
-    //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[]=Iloj.leguDix("lt-expand apertium-lille.eo-en.dix",forprenindiajEtikedoj);
-    //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("lt-expand apertium-eo-en.eo-en.dix");
-    //LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = Iloj.leguDix("echo");
+    Iloj.leguDix(aperEoEnDix,"lt-expand dev/ald_baze/ald_tradukunet.eo-en.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEoDix, "lt-expand dev/ald_baze/ald_tradukunet.eo.dix",forprenindiajEtikedoj);
+
+
+    /*
+    Iloj.leguDix(aperEoDix,"lt-expand dev/ald_plurvortoj/ald_tradukunet.eo-en.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEnDix,"lt-expand dev/ald_plurvortoj/ald_tradukunet.en.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEnDix,"lt-expand dev/ald_plurvortoj/apertium-eo-en.en_aldonata-plurvortoj.dix",forprenindiajEtikedoj);
+
+    Iloj.leguDix(aperEnDix, "lt-expand dev/apertium-eo-en.en_aldonata-freeling.dix",forprenindiajEtikedoj);
+
+ */
+
+
 
     Set<String> esperanto_nouns_with_gender = new HashSet<String>(Iloj.leguTekstDosieron("res/esperanto_nouns_with_gender.txt"));
     
@@ -217,7 +231,13 @@ public class AldonuCxiujnVortojn {
     masxo:
     for (ArrayList<Paro> alp : legutradukunet.tradukuEnParoj.values()) {
       for (Paro p : alp) {
-        if (!p.problem()&&p.oneWord&&p.orgEn.indexOf(" ")==-1&&p.orgEn.indexOf("&")==-1&&!p.plur) {
+        if (!p.problem() && p.orgEn.indexOf("&")==-1&&!p.plur) {//&&p.unuVortoEo && p.orgEn.indexOf(" ")==-1
+
+          if (p.orgEn.equals("anarchic")) {
+              debug=true;
+          } else
+              debug=false;
+
           if (haltuPost--<0) {
             System.out.println("HALTIS");
             break masxo;
@@ -244,7 +264,10 @@ public class AldonuCxiujnVortojn {
         
           if (p.rootEn==null) {
             mankantajEnVortoj.add(p.orgEn+"; "+p.apertiumWordType);
-            continue;
+            p.rootEnNeEkzistas = true;
+            p.rootEn = p.orgEn;
+            //enDixAldono.add(p.apertiumEn());
+            //continue;
           }
 
           
@@ -290,17 +313,20 @@ public class AldonuCxiujnVortojn {
 
     for (Paro p : aldonuParojn) {
       if (p.dir_eoEn==null||p.dir_enEo==null) {
+
+          if (p.rootEnNeEkzistas) {
+            enDixAldono.add(p.apertiumEn());
         eoDixAldono.add(p.apertiumEo());
-        //enDixAldono.add(p.apertiumEn());
         eoEnDixAldono.add(p.apertiumEoEn());
+          }
 
       } else {
-        if (debug) dprintln("NE aldonas2 "+p.apertiumEoEn());      //System.out.dprintln(Iloj.deCxapeloj(p.apertiumEoEn()));
+        if (debug) dprintln("NE aldonas2, cxar superflua: "+p.apertiumEoEn());      //System.out.dprintln(Iloj.deCxapeloj(p.apertiumEoEn()));
       }
     }
 
     Iloj.skribu(eoDixAldono, "ald_tradukunet.eo.dix");
-    //Iloj.skribu(enDixAldono, "ald_tradukunet.en.dix");
+    Iloj.skribu(enDixAldono, "ald_tradukunet.en.dix");
     Iloj.skribu(eoEnDixAldono, "ald_tradukunet.eo-en.dix");
 
     System.err.println("dosieroj skribite post " + (System.currentTimeMillis()-tempo)*0.001);
