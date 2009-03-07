@@ -34,6 +34,7 @@ public class LeguTradukuNet {
 
   public void leguTradukuNetDosieron() throws IOException {
     long haltuKiam=System.currentTimeMillis()+1000*3000;
+
     BufferedReader br;
     String linio;
     String en=null, eo=null;

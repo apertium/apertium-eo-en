@@ -17,13 +17,15 @@ public class Paro {
     public final static String ADJ = "adj";
     public final static String ADV = "adv";
     public final static String PR = "pr";
+    public final static String OTHER = "";
 
     public String apertiumWordType = PROBLEM;
     private String apertiumExtraTags = "";
 
     public boolean gender;
     public boolean sint;
-    boolean rootEnNeEkzistas = false;
+    boolean radikoJamEkzistas_en = true;
+    boolean radikoJamEkzistas_eo;
 
        
     public String apertiumWordType() {
@@ -147,10 +149,13 @@ public class Paro {
       if (np() && apertiumExtraTags.equals("<ant><f>")) return beg + par(rootEo) +"</i><par n=\"Mary__np\"/></e>";
       if (np() && apertiumExtraTags.equals("<cog>")) return beg + par(rootEo) +"</i><par n=\"Smith__np\"/></e>";
       if (np() && apertiumExtraTags.equals("<alpha>")) return beg + par(rootEo) +"</i><par n=\"a__np\"/></e>";
+
       
       System.err.println("apertiumEo() problem for " + this + "  apertiumExtraTags="+apertiumExtraTags);
-      if (np()) return beg + par(rootEo) +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
-      return "";
+      return
+          "<e lm=\""+ rootEo +"\"><i>" + par(rootEo) +"</i><p><l></l><r>" +simboloAlXml(apertiumExtraTags)+"</r></p></e>";
+      //if (np()) return beg + par(rootEo) +"</i>"+simboloAlXml(apertiumExtraTags)+"<par n=\"XXXX__pn\"/></e>";
+      //return "";
     }
 
 
@@ -205,7 +210,15 @@ public class Paro {
   a = a + "       ".substring(a.length());
   //return "<e"+a+"\"><p><l>"+rootEo+"<s n=\""+x+"\"/></l><r>"+rootEn+"<s n=\""+x+"\"/></r></p></e>";
 	String wtype =  apertiumWordType();
-  String tot = "<e"+a+"><p><l>"+rootEo.replaceAll(" ", "<b/>")+"<s n=\""+wtype+"\"/></l><r>"+rootEn.replaceAll(" ", "<b/>")+"<s n=\""+wtype+"\"/>"+(sint?"<s n=\"sint\"/>":"")+"</r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
+  if (wtype==OTHER) {
+      wtype = simboloAlXml(apertiumExtraTags);
+  } else {
+      wtype = "<s n=\""+wtype+"\"/>";
+  }
+
+  String tot = "<e"+a+"><p><l>"
+      +rootEo.replaceAll(" ", "<b/>")+wtype+"</l><r>"
+      +rootEn.replaceAll(" ", "<b/>")+wtype+(sint?"<s n=\"sint\"/>":"")+"</r></p>"+(gender?"<par n=\"MF_GD\"/>":"")+"</e>";
   String spc = "                                                                                   ";
   if (tot.length()<spc.length()) tot = tot + spc.substring(tot.length());
   //
