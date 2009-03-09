@@ -2379,7 +2379,7 @@ zig-zag__vblex
 
 <pardef n="ic/y__adv">
 <e>                           <p><l>y</l>                 <r>y<s n="adv"/></r></p></e>
-<e r="LR">                           <p><l>ily</l>                 <r>y<s n="adv"/></r></p></e>
+<e r="LR">                    <p><l>ily</l>               <r>y<s n="adv"/></r></p></e>
 </pardef>
 <pardef n="so__adv">
 <e>                           <p><l></l>                    <r><s n="adv"/></r></p></e>
@@ -16560,6 +16560,7 @@ The gods hold court.
 <e r="LR" lm="U.S.">           <p><l>U.S.</l><r>US</r></p><par n="Barcelona__np"/></e>
 
 <e lm="VAT">                   <i>VAT</i><par n="DNA__n"/></e>
+<e lm="AIDS">                   <i>VAT</i><par n="DNA__n"/></e>
 
 <e lm="Bolshevik">              <i>Bolshevik</i><par n="house__n"/></e>
 <e lm="Bolshevik">              <i>Bolshevik</i><par n="expensive__adj"/></e>
