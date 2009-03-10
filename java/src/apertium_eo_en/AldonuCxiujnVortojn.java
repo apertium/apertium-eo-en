@@ -209,12 +209,12 @@ public class AldonuCxiujnVortojn {
     LinkedHashMap<String, ArrayList<String>> aperEnDix[] = new LinkedHashMap[2];
     LinkedHashMap<String, ArrayList<String>> aperEoEnDix[] = new LinkedHashMap[2];
 
-    Iloj.leguDix(aperEnDix,"lt-expand apertium-eo-en.en.dix",forprenindiajEtikedoj);
-    Iloj.leguDix(aperEoEnDix,"lt-expand apertium-eo-en.eo-en.dix",forprenindiajEtikedoj);
-    Iloj.leguDix(aperEoDix, "lt-expand apertium-eo-en.eo.dixtmp1",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEnDix,"lt-expand apertium-eo-en.en.dix",forprenindiajEtikedoj, true);
+    Iloj.leguDix(aperEoEnDix,"lt-expand apertium-eo-en.eo-en.dix",forprenindiajEtikedoj, false);
+    Iloj.leguDix(aperEoDix, "lt-expand apertium-eo-en.eo.dixtmp1",forprenindiajEtikedoj, true);
 
-    Iloj.leguDix(aperEoEnDix,"lt-expand dev/ald_baze/ald_tradukunet.eo-en.dix",forprenindiajEtikedoj);
-    Iloj.leguDix(aperEoDix, "lt-expand dev/ald_baze/ald_tradukunet.eo.dix",forprenindiajEtikedoj);
+    Iloj.leguDix(aperEoEnDix,"lt-expand dev/ald_baze/ald_tradukunet.eo-en.dix",forprenindiajEtikedoj, false);
+    Iloj.leguDix(aperEoDix, "lt-expand dev/ald_baze/ald_tradukunet.eo.dix",forprenindiajEtikedoj, true);
 
 
     /*
@@ -255,7 +255,7 @@ public class AldonuCxiujnVortojn {
           parojTotale++;
         if (!p.problem() && p.orgEn.indexOf("&")==-1&&!p.plur&&p.unuVortoEo ) {//&& p.orgEn.indexOf(" ")==-1
 
-          if (p.orgEo.startsWith("cedeme")) {
+          if (p.orgEo.startsWith("honorat")) {
               debug=true;
           } else
               debug=false;
@@ -283,11 +283,14 @@ public class AldonuCxiujnVortojn {
           LinkedHashMap<String, ArrayList<String>> enSurfacoAlLemoj = aperEnDix[0];
           LinkedHashMap<String, ArrayList<String>> eoSurfacoAlLemoj = aperEoDix[0];
 
-          p.radikoJamEkzistas_eo = (surfacoAlLemoj(p.orgEo, eoSurfacoAlLemoj)!=null);
+          ArrayList<String> tmp_surfacoAlLemoj = surfacoAlLemoj(p.rootEo,  eoSurfacoAlLemoj);  // p.orgEo,
+          p.radikoJamEkzistas_eo = (tmp_surfacoAlLemoj !=null);
+          if (debug) dprintln("p.radikoJamEkzistas_eo=" +p.radikoJamEkzistas_eo+ "  surfacoAlLemoj("+p.rootEo+",  eoSurfacoAlLemoj)"+ tmp_surfacoAlLemoj);
 
 
           analizuEn(enSurfacoAlLemoj, p, aperEoEnDix[1]);
           p.radikoJamEkzistas_en = (p.rootEn!=null);
+          if (debug) dprintln("p.radikoJamEkzistas_en=" +p.radikoJamEkzistas_eo+ "  p.rootEn="+p.rootEn);
         
           if (!p.radikoJamEkzistas_en) {
             mankantajEnVortoj.add(p.orgEn+"; "+p.apertiumWordType);

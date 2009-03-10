@@ -239,14 +239,14 @@ public class Iloj {
   }
 
   public static LinkedHashMap<String,ArrayList<String>>[] leguDix(LinkedHashMap<String,ArrayList<String>>[] xxParoj, String dixkomando) throws IOException {
-    return leguDix(xxParoj, dixkomando, null);
+    return leguDix(xxParoj, dixkomando, null, false);
   }
 
   public static LinkedHashMap<String,ArrayList<String>>[] leguDix(String dixkomando, Set<String> foriguEtikedojn) throws IOException {
-    return leguDix(null, dixkomando, null);
+    return leguDix(null, dixkomando, null, false);
   }
 
-  public static LinkedHashMap<String,ArrayList<String>>[] leguDix(LinkedHashMap<String,ArrayList<String>>[] xxParoj, String dixkomando, Set<String> foriguEtikedojn) throws IOException {
+  public static LinkedHashMap<String,ArrayList<String>>[] leguDix(LinkedHashMap<String,ArrayList<String>>[] xxParoj, String dixkomando, Set<String> foriguEtikedojn, boolean nedirektita) throws IOException {
     ArrayList<String> al = exec(dixkomando, true);
 
     if (xxParoj==null) xxParoj = new LinkedHashMap[2]; //LinkedHashMap<String,ArrayList<String>>[2];
@@ -267,7 +267,7 @@ public class Iloj {
           kv0 = forprenuNenecesajnEtikedojn(kv0,foriguEtikedojn);
           kvi = forprenuNenecesajnEtikedojn(kvi,foriguEtikedojn);
       }
-      if (i0<i1) {
+      if (i0<i1 && !nedirektita) {
         char c = l.charAt(i0+1);
         //System.out.println("c = "+c);
         if (c=='>') add(kv0, kvi, xxParoj[0]);
