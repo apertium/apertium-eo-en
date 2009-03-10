@@ -855,7 +855,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="United_States__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="Mark__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
@@ -4087,6 +4087,7 @@ zig-zag__vblex
 <e lm="affiliates">           <i>affiliates</i><par n="pcs__n"/></e>
 <e lm="affiliation">          <i>affiliation</i><par n="vu__n"/></e>
 <e lm="afghan">               <i>afghan</i><par n="ca__adj"/></e>
+<e lm="afghan">               <i>afghan</i><par n="house__n"/></e>
 <e lm="afloat">               <i>afloat</i><par n="so__adv"/></e>
 <e lm="aftereffect">          <i>aftereffect</i><par n="up__n"/></e>
 <e lm="aftermath">            <i>aftermath</i><par n="vu__n"/></e>
@@ -6580,6 +6581,7 @@ The gods hold court.
 <e lm="metro">                <i>metro</i><par n="vu__n"/></e>
 <e lm="microcosm">            <i>microcosm</i><par n="vu__n"/></e>
 <e lm="middle">               <i>middle</i><par n="ca__adj"/></e>
+<e lm="Middle Ages">          <i>Middle<b/>Ages</i><par n="house__n"/></e>
 <e lm="middleman">            <i>middlem</i><par n="m/an__n"/></e>
 <e lm="middling">             <i>middling</i><par n="ca__adj"/></e>
 <e lm="midweek">              <i>midweek</i><par n="ca__adj"/></e>
@@ -6904,6 +6906,7 @@ The gods hold court.
 <e lm="panic">                <i>panic</i><par n="panic__vblex"/></e>
 <e lm="panicky">              <i>panicky</i><par n="ca__adj"/></e>
 <e lm="pantry">               <i>pantr</i><par n="fr/y__n"/></e>
+<e lm="papal">                <i>papal</i><par n="ca__adj"/></e>
 <e lm="paperback">            <i>paperback</i><par n="vu__n"/></e>
 <e lm="paradox">              <i>paradox</i><par n="ox__n"/></e>
 <e lm="paradoxical">          <i>paradoxical</i><par n="ii__adv"/></e>
@@ -7075,6 +7078,7 @@ The gods hold court.
 <e lm="populist">             <i>populist</i><par n="vu__n"/></e>
 <e lm="porcelain">            <i>porcelain</i><par n="vu__n"/></e>
 <e lm="pornographic">         <i>pornographic</i><par n="ca__adj"/></e>
+<e lm="porn">                 <i>porn</i><par n="ca__adj"/></e>
 <e lm="portend">              <i>portend</i><par n="vow__vblex"/></e>
 <e lm="portrayal">            <i>portrayal</i><par n="vu__n"/></e>
 <e lm="posh">                 <i>posh</i><par n="ca__adj"/></e>
@@ -8056,6 +8060,7 @@ The gods hold court.
 <e lm="subcontracting">       <i>subcontracting</i><par n="up__n"/></e>
 <e lm="subdue">               <i>subdu</i><par n="di/e__vblex"/></e>
 <e lm="subdued">              <i>subdued</i><par n="ca__adj"/></e>
+<e lm="subfield">             <i>subfield</i><par n="house__n"/></e>
 <e lm="subnational">          <i>subnational</i><par n="ca__adj"/></e>
 <e lm="subordinate">          <i>subordinate</i><par n="ca__adj"/></e>
 <e lm="subordinate">          <i>subordinate</i><par n="vu__n"/></e>
@@ -8529,6 +8534,7 @@ The gods hold court.
 <e lm="unwanted">             <i>unwanted</i><par n="ca__adj"/></e>
 <e lm="unwarranted">          <i>unwarranted</i><par n="ca__adj"/></e>
 <e lm="unwelcome">            <i>unwelcome</i><par n="ca__adj"/></e>
+<e lm="unwelcome">            <i>unwelcom</i><par n="liv/e__vblex"/></e>
 <e lm="unwieldy">             <i>unwieldy</i><par n="ca__adj"/></e>
 <e lm="unwillingness">        <i>unwillingness</i><par n="ox__n"/></e>
 <e lm="unwind">               <i>unwind</i><par n="vow__vblex"/></e>
@@ -8871,20 +8877,34 @@ The gods hold court.
 <e lm="there is">             <i>there<b/></i><par n="/be__vblex"/></e>
 <e lm="Afghanistan">          <i>Afghanistan</i><par n="Barcelona__np"/></e>
 <e lm="African">              <i>African</i><par n="expensive__adj"/></e>
+<e lm="Albania">              <i>Albania</i><par n="Barcelona__np"/></e>
 <e lm="Albanian">             <i>Albanian</i><par n="house__n"/></e>
 <e lm="Albanian">             <i>Albanian</i><par n="expensive__adj"/></e>
 <e lm="Algeria">              <i>Algeria</i><par n="Barcelona__np"/></e>
+<e lm="Alacant">              <i>Alacant</i><par n="Barcelona__np"/></e>
+<e lm="Alicante">             <i>Alicante</i><par n="Barcelona__np"/></e>
 <e lm="America">              <i>America</i><par n="Barcelona__np"/></e>
 <e lm="American">             <i>American</i><par n="house__n"/></e>
 <e lm="American">             <i>American</i><par n="expensive__adj"/></e>
 <e lm="Amsterdam">            <i>Amsterdam</i><par n="Barcelona__np"/></e>
 <e lm="Andalucia">            <i>Andalucia</i><par n="Barcelona__np"/></e>
-<e lm="Andes">                <i>Andes</i><par n="Barcelona__np"/></e>
+<e lm="Andes">                <i>Andes</i><par n="United_States__np"/></e>
+<e lm="the Andes">            <i>the<b/>Andes</i><par n="United_States__np"/></e>
 <e lm="Andorra">              <i>Andorra</i><par n="Barcelona__np"/></e>
 
 <!-- Jacob 6feb2009 faris r="RL", por ne kolizi kun la monatoj -->
 <e r="RL" lm="April">         <i>April</i><par n="Mary__np"/></e>
 <e r="RL" lm="August">        <i>August</i><par n="Mark__np"/></e>
+
+<e lm="Socrates">             <i>Socrates</i><par n="Mark__np"/></e>
+<!--
+<e lm="Plato">                <i>Plato</i><par n="Mark__np"/></e>
+<e lm="Aristotle">            <i>Aristotle</i><par n="Mark__np"/></e>
+-->
+<e lm="Alps">                 <i>Alps</i><par n="United_States__np"/></e>
+<e lm="the Alps">             <i>the<b/>Alps</i><par n="United_States__np"/></e>
+<e lm="Pyrenees">             <i>Pyrenees</i><par n="United_States__np"/></e>
+<e lm="the Pyrenees">         <i>the<b/>Pyrenees</i><par n="United_States__np"/></e>
 
 <e lm="Arab">                 <i>Arab</i><par n="house__n"/></e>
 <e lm="Arab">                 <i>Arab</i><par n="expensive__adj"/></e>
@@ -9040,6 +9060,7 @@ The gods hold court.
 <e lm="Irish">                <i>Irish</i><par n="politics__n"/></e>
 <e lm="Irish">                <i>Irish</i><par n="expensive__adj"/></e>
 <e lm="Isabel">               <i>Isabel</i><par n="Mary__np"/></e>
+<e lm="Islam">                <i>Islam</i><par n="house__n"/></e>
 <e lm="Islamic">              <i>Islamic</i><par n="expensive__adj"/></e>
 <e lm="Israel">               <i>Israel</i><par n="Mark__np"/></e>
 <e lm="Israel">               <i>Israel</i><par n="Barcelona__np"/></e>
@@ -9070,7 +9091,8 @@ The gods hold court.
 <e lm="Julián">               <i>Julián</i><par n="Mark__np"/></e>
 <e lm="Jupiter">              <i>Jupiter</i><par n="Barcelona__np"/></e>
 <e lm="Júpiter">              <i>Júpiter</i><par n="Mark__np"/></e>
-<e lm="Kenia">                <i>Kenia</i><par n="Mary__np"/></e>
+<e lm="Kabul">                <i>Kabul</i><par n="Barcelona__np"/></e>
+<e lm="Kenia">                <i>Kenia</i><par n="Barcelona__np"/></e>
 <e lm="Korea">                <i>Korea</i><par n="Barcelona__np"/></e>
 <e lm="Korean">               <i>Korean</i><par n="house__n"/></e>
 <e lm="Korean">               <i>Korean</i><par n="expensive__adj"/></e>
@@ -9102,7 +9124,9 @@ The gods hold court.
 <e lm="María">                <i>María</i><par n="Mary__np"/></e>
 <e lm="Mauritania">           <i>Mauritania</i><par n="Barcelona__np"/></e>
 <e lm="Mediterranean">        <i>Mediterranean</i><par n="Barcelona__np"/></e>
+<e lm="the Mediterranean">    <i>the<b/>>Mediterranean</i><par n="Barcelona__np"/></e>
 <e lm="Mediterranean">        <i>Mediterranean</i><par n="expensive__adj"/></e>
+<e lm="Mediterranean">        <i>Mediterranean</i><par n="house__n"/></e>
 <e lm="Mercurio">             <i>Mercurio</i><par n="Mark__np"/></e>
 <e lm="Mexican">              <i>Mexican</i><par n="house__n"/></e>
 <e lm="Mexican">              <i>Mexican</i><par n="expensive__adj"/></e>
@@ -9145,7 +9169,8 @@ The gods hold court.
 <e lm="Peru">                 <i>Peru</i><par n="Barcelona__np"/></e>
 <e lm="Peruvian">             <i>Peruvian</i><par n="house__n"/></e>
 <e lm="Peruvian">             <i>Peruvian</i><par n="expensive__adj"/></e>
-<e lm="Philippines">          <i>Philippines</i><par n="Barcelona__np"/></e>
+<e lm="Philippines">          <i>Philippines</i><par n="United_States__np"/></e>
+<e lm="the Philippines">      <i>the<b/>Philippines</i><par n="United_States__np"/></e>
 <e lm="Poland">               <i>Poland</i><par n="Barcelona__np"/></e>
 <e lm="Portugal">             <i>Portugal</i><par n="Barcelona__np"/></e>
 <e lm="Portuguese">           <i>Portuguese</i><par n="expensive__adj"/></e>
@@ -9175,6 +9200,7 @@ The gods hold court.
 <e lm="Slovenia">             <i>Slovenia</i><par n="Barcelona__np"/></e>
 <e lm="South Africa">         <i>South<b/>Africa</i><par n="Barcelona__np"/></e>
 <e lm="Soviet">               <i>Soviet</i><par n="expensive__adj"/></e>
+<e lm="Soviet">               <i>Soviet</i><par n="house__n"/></e>
 <e lm="Soviet Union">         <i>Soviet Union</i><par n="Barcelona__np"/></e>
 <e lm="Spain">                <i>Spain</i><par n="Barcelona__np"/></e>
 <e lm="Spanish">              <i>Spanish</i><par n="expensive__adj"/></e>
@@ -9205,6 +9231,8 @@ The gods hold court.
 <e lm="the United Kingdom">   <i>the<b/>United<b/>Kingdom</i><par n="Barcelona__np"/></e>
 <e lm="United States">        <i>United<b/>States</i><par n="United_States__np"/></e>
 <e lm="the United States">    <i>the<b/>United<b/>States</i><par n="United_States__np"/></e>
+<e lm="United States of America">    <i>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
+<e lm="the United States of America">    <i>the<b/>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
 <e lm="Uruguay">              <i>Uruguay</i><par n="Barcelona__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 <e lm="Valencian">            <i>Valencian</i><par n="house__n"/></e>
@@ -9591,6 +9619,13 @@ The gods hold court.
 <e lm="anger">                <i>anger</i><par n="house__n"/></e>
 <e lm="angina">               <i>angina</i><par n="house__n"/></e>
 <e lm="angle">                <i>angle</i><par n="house__n"/></e>
+<e lm="anglican">             <i>anglican</i><par n="house__n"/></e>
+<e lm="anglican">             <i>anglican</i><par n="expensive__adj"/></e>
+<e lm="Anglican Church">      <i>Anglican<b/>Church</i><par n="access__n"/></e>
+<e lm="Episcopal Church">     <i>Episcopal<b/>Church</i><par n="access__n"/></e>
+<e lm="Catholic Church">      <i>Catholic<b/>Church</i><par n="access__n"/></e>
+<e lm="Roman Catholic Church"><i>Roman<b/>Catholic<b/>Church</i><par n="access__n"/></e>
+<e lm="Orthodox Church">      <i>Orthodox<b/>Church</i><par n="access__n"/></e>
 <e lm="animal">               <i>animal</i><par n="house__n"/></e>
 <e lm="animal">               <i>animal</i><par n="expensive__adj"/></e>
 <e lm="animation">            <i>animation</i><par n="house__n"/></e>
@@ -9668,6 +9703,7 @@ The gods hold court.
 <e lm="arch">                 <i>arch</i><par n="access__n"/></e>
 <e lm="arch">                 <i>arch</i><par n="approach__vblex"/></e>
 <e lm="archbishop">           <i>archbishop</i><par n="house__n"/></e>
+<e lm="archbishopric">        <i>archbishopric</i><par n="house__n"/></e>
 <e lm="archipelago">          <i>archipelago</i><par n="house__n"/></e>
 <e lm="architect">            <i>architect</i><par n="house__n"/></e>
 <e lm="architecture">         <i>architecture</i><par n="house__n"/></e>
@@ -9992,6 +10028,7 @@ The gods hold court.
 <e lm="birthday">             <i>birthday</i><par n="house__n"/></e>
 <e lm="biscuit">              <i>biscuit</i><par n="house__n"/></e>
 <e lm="bishop">               <i>bishop</i><par n="house__n"/></e>
+<e lm="bishopric">            <i>bishopric</i><par n="house__n"/></e>
 <e lm="bit">                  <i>bit</i><par n="house__n"/></e>
 <e lm="bite">                 <i>bite</i><par n="house__n"/></e>
 <e lm="bitter">               <i>bitter</i><par n="common/__adj"/></e>
@@ -13582,11 +13619,11 @@ The gods hold court.
 <e lm="ordinary">             <i>ordinary</i><par n="expensive__adj"/></e>
 <e lm="orgy">                 <i>org</i><par n="bab/y__n"/></e>
 <e lm="organ">                <i>organ</i><par n="house__n"/></e>
-<e lm="organise">             <i>organis</i><par n="liv/e__vblex"/></e>
 <e lm="organism">             <i>organism</i><par n="house__n"/></e>
 <e lm="organist">             <i>organist</i><par n="house__n"/></e>
 <e lm="organise">             <i>organi</i><par n="authori/se__vblex"/></e>
 <e lm="organisation">         <i>organi</i><par n="organi/sation__n"/></e>
+<e lm="organize">             <i>organiz</i><par n="liv/e__vblex"/></e>
 <e lm="orgasm">               <i>orgasm</i><par n="house__n"/></e>
 <e lm="oriel">                <i>oriel</i><par n="house__n"/></e>
 <e lm="oriental">             <i>oriental</i><par n="expensive__adj"/></e>
@@ -14741,6 +14778,7 @@ The gods hold court.
 <!--    <e lm="second"><i>second</i><par n="accept__vblex"/></e> -->
 <!--    <e lm="second"><i>second</i><par n="maybe__adv"/></e> -->
 <e lm="secondary">            <i>secondary</i><par n="expensive__adj"/></e>
+<e lm="secondary school">     <i>secondary<b/>school</i><par n="house__n"/></e>
 <e lm="secret">               <i>secret</i><par n="house__n"/></e>
 <e lm="secret">               <i>secret</i><par n="expensive__adj"/></e>
 <e lm="secrete">              <i>secret</i><par n="liv/e__vblex"/></e>
@@ -15633,6 +15671,7 @@ The gods hold court.
 <e lm="toast">                <i>toast</i><par n="house__n"/></e>
 <e lm="tobacco">              <i>tobacco</i><par n="archipelago__n"/></e>
 <e lm="today">                <i>today</i><par n="maybe__adv"/></e>
+<e lm="today's">              <i>today's</i><par n="expensive__adj"/></e>
 <e lm="toe">                  <i>toe</i><par n="house__n"/></e>
 <e lm="together with">        <i>together<b/>with</i><par n="at__pr"/></e>
 <e lm="toilet">               <i>toilet</i><par n="house__n"/></e>
@@ -15876,6 +15915,8 @@ The gods hold court.
 <e lm="unnatural">            <i>unnatural</i><par n="expensive__adj"/></e>
 <e lm="unnecessary">          <i>unnecessary</i><par n="expensive__adj"/></e>
 <e lm="unofficial">           <i>unofficial</i><par n="expensive__adj"/></e>
+<e lm="unorganise">           <i>unorgani</i><par n="authori/se__vblex"/></e>
+<e lm="unorganize">           <i>unorganiz</i><par n="liv/e__vblex"/></e>
 <e lm="unpleasant">           <i>unpleasant</i><par n="expensive__adj"/></e>
 <e lm="unpopular">            <i>unpopular</i><par n="expensive__adj"/></e>
 <e lm="unreal">               <i>unreal</i><par n="expensive__adj"/></e>
@@ -16548,6 +16589,10 @@ The gods hold court.
 
 <e lm="prior to">                  <i>prior<b/>to</i><par n="at__pr"/></e>
 
+<e lm="balkan">                <i>balkan</i><par n="expensive__adj"/></e>
+<e lm="balkan">                <i>balkan</i><par n="house__n"/></e>
+<e lm="Balkans">               <i>Balkans</i><par n="United_States__np"/></e>
+<e lm="the Balkans">           <i>the<b/>Balkans</i><par n="United_States__np"/></e>
 <e lm="USA">                   <i>USA</i><par n="Barcelona__np"/></e>
 <e lm="the USA">               <i>the<b/>USA</i><par n="Barcelona__np"/></e>
 <e lm="USSR">                  <i>USSR</i><par n="Barcelona__np"/></e>
@@ -16574,7 +16619,7 @@ The gods hold court.
 -->
 
 <e lm="Antigua">               <i>Antigua</i><par n="Barcelona__np"/></e>
-<e lm="Aruba">               <i>Aruba</i><par n="Barcelona__np"/></e>
+<e lm="Aruba">                 <i>Aruba</i><par n="Barcelona__np"/></e>
 <e lm="Barbuda">               <i>Barbuda</i><par n="Barcelona__np"/></e>
 
 <e lm="Alabama">               <i>Alabama</i><par n="Barcelona__np"/></e>
@@ -18708,6 +18753,8 @@ The gods hold court.
 <e lm="epididymis">           <i>epididym</i><par n="analys/is__n"/></e>
 <e lm="epilepsy">             <i>epileps</i><par n="bab/y__n"/></e>
 <e lm="Epiphany">             <i>Epiphany</i><par n="Barcelona__np"/></e>
+<e lm="episcopal">            <i>episcopal</i><par n="expensive__adj"/></e>
+<e lm="episcopate">           <i>episcopate</i><par n="house__n"/></e>
 <e lm="epistemological">      <i>epistemological</i><par n="expensive__adj"/></e>
 <e lm="epistle">              <i>epistle</i><par n="house__n"/></e>
 <e lm="epoch">                <i>epoch</i><par n="house__n"/></e>
@@ -22547,6 +22594,7 @@ The gods hold court.
 <e lm="trader">               <i>trader</i><par n="house__n"/></e>
 <e lm="traditionalism">       <i>traditionalism</i><par n="house__n"/></e>
 <e lm="traditionalist">       <i>traditionalist</i><par n="house__n"/></e>
+<e lm="traditionalist">       <i>traditionalist</i><par n="expensive__adj"/></e>
 <e lm="traditionally">        <i>traditionally</i><par n="maybe__adv"/></e>
 <e lm="trafficker">           <i>trafficker</i><par n="house__n"/></e>
 <e lm="tragically">           <i>tragically</i><par n="maybe__adv"/></e>
