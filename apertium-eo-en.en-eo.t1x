@@ -141,9 +141,12 @@
         NOTHING in en.dix is vbhaver....?
     -->
     <def-cat n="vbhaver">
-      <cat-item lemma="have" tags="vblex.*"/>
+<!--      <cat-item lemma="have" tags="vblex.*"/> -->
       <cat-item lemma="have" tags="vbhaver.*"/>
     </def-cat>
+
+
+    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
 
       <!--
         do:do<vbdo><pres>
@@ -513,6 +516,15 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="temps"/><lit-tag v="cni"/></let>
         </when>
+
+
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
+          </test>
+          <let><var n="temps"/><lit-tag v="past"/></let>
+        </when>
+
 <!--
         <when>
           <test>
@@ -1946,7 +1958,7 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="1"/></call-macro>
-        <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
+        <call-macro n="set_genere1"><with-param pos="1"/></call-macro> 
         <choose>
           <when>
             <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
@@ -2240,7 +2252,7 @@ might:might<vaux><inf>
 
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
-        <pattern-item n="vaux"/>
+        <pattern-item n="vaux_vbhaver"/>
 <!--        <pattern-item n="vblex"/> -->
         <pattern-item n="vblex_vbser"/>
       </pattern>
@@ -2276,6 +2288,32 @@ might:might<vaux><inf>
               </chunk>
             </out>
           </when>
+
+          <when>
+            <test>
+                <!-- have washed  => lavis     -    has washed => lavis -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
+            </test>
+            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
+            <out>
+              <chunk name="verb" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+
 
           <when>
             <test>
@@ -2592,7 +2630,6 @@ might:might<vaux><inf>
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="vbhaver"/>
-<!--        <pattern-item n="vblex"/> -->
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
