@@ -289,6 +289,7 @@ sort -t '"' -k 3 x
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+      <attr-item tags="n.acr"/>
       <attr-item tags="np"/>
       <attr-item tags="np.al"/>
       <attr-item tags="np.ant"/>
@@ -1099,6 +1100,7 @@ verbfinal = pensi<3><4><5>
 
 
 
+<!--  TODO: ADJ NOM NOM:  Private testing companies -->
 
     <rule comment="REGLA: NOM NOM">
       <pattern>
@@ -1117,8 +1119,9 @@ verbfinal = pensi<3><4><5>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/>
-                  <lit-tag v="nom"/>
+<!--                  <clip pos="1" side="tl" part="tags"/> women<pl> volunteers=>virino-volontuloj-->
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="sg.nom"/>
                 </lu>
                 <lu>
                   <lit v="-"/>
@@ -2253,7 +2256,6 @@ might:might<vaux><inf>
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
         <pattern-item n="vaux_vbhaver"/>
-<!--        <pattern-item n="vblex"/> -->
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
@@ -2267,6 +2269,9 @@ might:might<vaux><inf>
                 <!-- will wash  => lavos     -    would wash => lavus -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+
+                <!-- have washed  => lavis     -    has washed => lavis -->
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -2289,30 +2294,6 @@ might:might<vaux><inf>
             </out>
           </when>
 
-          <when>
-            <test>
-                <!-- have washed  => lavis     -    has washed => lavis -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-            </test>
-            <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
-            <out>
-              <chunk name="verb" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="tipus_verb"/></tag>
-                  <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lemh"/>
-                  <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
-                  <clip pos="2" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
 
 
           <when>
