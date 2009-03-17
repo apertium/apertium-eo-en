@@ -962,18 +962,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="RL">                    <p><l>an</l>                  <r>an<s n="vaux"/><s n="inf"/></r></p></e>
 <e>                           <p><l>ould</l>                <r>an<s n="vaux"/><s n="past"/></r></p></e>
 </pardef>
-<pardef n="/be_able_to__vbmod">
-<e>                           <p><l>be<b/>able<b/>to</l>    <r>be<b/>able<b/>to<s n="vbmod"/><s n="inf"/></r></p></e>
-<e>                           <p><l>are<b/>able<b/>to</l>   <r>be<b/>able<b/>to<s n="vbmod"/><s n="pres"/></r></p></e>
-<e>                           <p><l>am<b/>able<b/>to</l>    <r>be<b/>able<b/>to<s n="vbmod"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
-<e>                           <p><l>is<b/>able<b/>to</l>    <r>be<b/>able<b/>to<s n="vbmod"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-<e>                           <p><l>was<b/>able<b/>to</l>   <r>be<b/>able<b/>to<s n="vbmod"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
-<e>                           <p><l>was<b/>able<b/>to</l>   <r>be<b/>able<b/>to<s n="vbmod"/><s n="past"/><s n="p3"/><s n="sg"/></r></p></e>
-<e>                           <p><l>were<b/>able<b/>to</l>  <r>be<b/>able<b/>to<s n="vbmod"/><s n="past"/></r></p></e>
-<e>                           <p><l>been<b/>able<b/>to</l>  <r>be<b/>able<b/>to<s n="vbmod"/><s n="pp"/></r></p></e>
-<e>                           <p><l>being<b/>able<b/>to</l> <r>be<b/>able<b/>to<s n="vbmod"/><s n="ger"/></r></p></e>
-
-</pardef>
 <pardef n="ha/ve__vbhaver">
 <e>                           <p><l>ve</l>                  <r>ve<s n="vbhaver"/><s n="inf"/></r></p></e>
 <e>                           <p><l>ve</l>                  <r>ve<s n="vbhaver"/><s n="pres"/></r></p></e>
@@ -1188,15 +1176,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 
-
-<pardef n="aw/ake__vblex__sep">
-<e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="inf"/></r></p></e>
-<e>                           <p><l>ake</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/></r></p></e>
-<e>                           <p><l>akes</l>                <r>ake<s n="vblex"/><s n="sep"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-<e>                           <p><l>oke</l>                 <r>ake<s n="vblex"/><s n="sep"/><s n="past"/></r></p></e>
-<e>                           <p><l>aken</l>                <r>ake<s n="vblex"/><s n="sep"/><s n="pp"/></r></p></e>
-<e>                           <p><l>aking</l>               <r>ake<s n="vblex"/><s n="sep"/><s n="ger"/></r></p></e>
-</pardef>
 
 <pardef n="s/it__vblex">
 <e>                           <p><l>it</l>                  <r>it<s n="vblex"/><s n="inf"/></r></p></e>
@@ -2301,7 +2280,6 @@ dict/um__n
 di/e__vblex
 down__vblex
 drip__vblex
-elite__n
 favo/ur__n
 fib/re__n
 ficus__n
@@ -2386,10 +2364,6 @@ zig-zag__vblex
 </pardef>
 <pardef n="electrochemical/s__n">
 <e>                           <p><l></l>                    <r>s<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="counsel/lor__n">
-<e>                           <p><l>ors</l>                 <r>lor<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>or</l>                  <r>lor<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="thin__vblex">
 <e>                           <p><l>ing</l>                 <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -2524,13 +2498,6 @@ zig-zag__vblex
 <e>                           <p><l>l</l>                   <r>l<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ls</l>                  <r>l<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="beat__vblex">
-<e>                           <p><l>ing</l>                 <r><s n="vblex"/><s n="ger"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="vblex"/><s n="past"/></r></p></e>
-<e>                           <p><l>en</l>                  <r><s n="vblex"/><s n="pp"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="vblex"/><s n="pres"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="cut__vblex">
 <e>                           <p><l>ting</l>                <r><s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="past"/></r></p></e>
@@ -2615,8 +2582,11 @@ zig-zag__vblex
 </pardef>
 
 <pardef n="up__n">
+<e>                           <i></i><par n="house__n"/></e>
+<!--
 <e>                           <p><l></l>                   <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+-->
 </pardef>
 
 
@@ -2854,10 +2824,14 @@ zig-zag__vblex
 <e>                           <p><l>an</l>                  <r>an<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="rumo/ur__n">
-<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>urs</l>                 <r>ur<s n="n"/><s n="pl"/></r></p></e>
+<!--
+<e>                           <i>r</i><par n="house__n"/></e>
+<e>                           <i>ur</i><par n="house__n"/></e>
+-->
 <e>                           <p><l>r</l>                   <r>ur<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ur</l>                  <r>ur<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>urs</l>                 <r>ur<s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="ass__n">
 <e>                           <p><l></l>                  <r><s n="n"/><s n="sg"/></r></p></e>
@@ -2902,8 +2876,11 @@ zig-zag__vblex
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="vu__n">
+<e>                           <i></i><par n="house__n"/></e>
+<!--
 <e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
+-->
 </pardef>
 <pardef n="criss/-cross__vblex">
 <e>                           <p><l>-crossed</l>            <r>-cross<s n="vblex"/><s n="past"/></r></p></e>
@@ -3175,15 +3152,6 @@ zig-zag__vblex
 <e>                           <p><l>ove</l>                 <r>eave<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>eave</l>                <r>eave<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>eaves</l>               <r>eave<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="armo/ury__n">
-<e>                           <p><l>ries</l>                <r>ury<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ry</l>                  <r>ury<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="elite__n">
-<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="sho/ot__vblex">
 <e>                           <p><l>oting</l>               <r>ot<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3561,10 +3529,6 @@ zig-zag__vblex
 <e>                           <p><l>ite</l>                 <r>ite<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ites</l>                <r>ite<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="/because__pr">
-<e>                           <p><l>'cause</l>              <r>because<s n="pr"/></r></p></e>
-<e>                           <p><l>because</l>             <r>because<s n="pr"/></r></p></e>
-</pardef>
 <pardef n="kidd/ie__n">
 <e>                           <p><l>ies</l>                 <r>ie<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>y</l>                   <r>ie<s n="n"/><s n="sg"/></r></p></e>
@@ -3659,10 +3623,7 @@ zig-zag__vblex
 <e>                           <p><l>'til</l>                <r>until<s n="pr"/></r></p></e>
 <e>                           <p><l>until</l>               <r>until<s n="pr"/></r></p></e>
 </pardef>
-<pardef n="abac/us__n">
-<e>                           <p><l>i</l>                   <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p></e>
-</pardef>
+
 <pardef n="bun/co__n">
 <e>                           <p><l>cos</l>                 <r>co<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>co</l>                  <r>co<s n="n"/><s n="sg"/></r></p></e>
@@ -3862,10 +3823,6 @@ zig-zag__vblex
 <e>                           <p><l>e</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="/and__cnjcoo">
-<e>                           <p><l>'n'</l>                 <r>and<s n="cnjcoo"/></r></p></e>
-<e>                           <p><l>and</l>                 <r>and<s n="cnjcoo"/></r></p></e>
 </pardef>
 <pardef n="palazz/o__n">
 <e>                           <p><l>i</l>                   <r>o<s n="n"/><s n="pl"/></r></p></e>
@@ -6287,7 +6244,7 @@ The gods hold court.
 <e lm="juror">                <i>juror</i><par n="vu__n"/></e>
 <e lm="justified">            <i>justified</i><par n="ca__adj"/></e>
 <e lm="jut">                  <i>jut</i><par n="jut__vblex"/></e>
-<e lm="kangaroo">             <i>kangaroo</i><par n="elite__n"/></e>
+<e lm="kangaroo">             <i>kangaroo</i><par n="house__n"/></e>
 <e lm="keel">                 <i>keel</i><par n="vu__n"/></e>
 <!-- XXX TODO Provu cxu en ordo
 <e lm="keen">                 <i>keen</i><par n="vow__vblex"/></e>
@@ -23959,7 +23916,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
     <e lm="ZFC"><i>ZFC</i><par n="acronimos_par"/></e>
     <e lm="ZF"><i>ZF</i><par n="acronimos_par"/></e>
     <e lm="ZX"><i>ZX</i><par n="acronimos_par"/></e>
--->
+<!-*- -->
 <e lm="Apple">                <i>Apple</i><par n="Linux__np"/></e>
 <e lm="Linux">                <i>Linux</i><par n="Linux__np"/></e>
 <e lm="Macintosh">           <i>Macintosh</i><par n="Linux__np"/></e>

@@ -867,18 +867,11 @@ verbfinal = pensi<3><4><5>
               <chunk name="nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
-<!--                  <tag><lit-tag v="SN"/></tag>
-                  <tag><clip pos="1" side="tl" part="a_nbr"/></tag> 
-                  <tag><lit-tag v="nom"/></tag>-->
                 </tags>
                 <lu>
 <!--              <clip pos="1" side="tl" part="whole"/> TODO: Kial ne funkcias? -->
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="tags"/>
-<!--
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="a_gen"/>
-                  <clip pos="1" side="tl" part="a_nbr"/> -->
                   <lit-tag v="2"/>
                 </lu>
               </chunk>
@@ -1077,11 +1070,6 @@ verbfinal = pensi<3><4><5>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
                   <clip pos="2" side="tl" part="tags"/>
-<!--                  
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <clip pos="2" side="tl" part="a_gen"/>
-                  <clip pos="3" side="tl" part="a_nbr"/> -->
                   <var n="tmp1"/>
                 </lu>
                 <b pos="2"/>
@@ -2361,11 +2349,11 @@ might:might<vaux><inf>
     </rule>
 
 
+
     <rule comment="REGLA: VAUX ADV VBLEX">
       <pattern>
         <pattern-item n="vaux"/>
         <pattern-item n="adv"/>
-<!--        <pattern-item n="vblex"/> -->
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
