@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Dictionary:
 	Sections: 3
-	Entries: 13952
+	Entries: 24717
 	Sdefs: 89
-	Paradigms: 289
+	Paradigms: 555
 
 -->
 <dictionary>
@@ -2356,8 +2356,8 @@ zig-zag__vblex
 -->
 
 <pardef n="ic/y__adv">
-<e>                           <p><l>y</l>                 <r>y<s n="adv"/></r></p></e>
-<e r="LR">                    <p><l>ily</l>               <r>y<s n="adv"/></r></p></e>
+<e>                           <p><l>y</l>                   <r>y<s n="adv"/></r></p></e>
+<e r="LR">                    <p><l>ily</l>                 <r>y<s n="adv"/></r></p></e>
 </pardef>
 <pardef n="so__adv">
 <e>                           <p><l></l>                    <r><s n="adv"/></r></p></e>
@@ -2593,7 +2593,7 @@ zig-zag__vblex
 
 <!-- Tiu cxi estas por 'winnings', growings kiu nepre NE estu analizita kiel nomo en singularo -->
 <pardef n="up_pl__n">
-<e r="RL">                    <p><l></l>                   <r><s n="n"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
@@ -2643,8 +2643,8 @@ zig-zag__vblex
 <e>                           <p><l>oot</l>                 <r>oot<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="gruel/ling__adj">
-<e r="LR">                           <p><l>ing</l>                 <r>ling<s n="adj"/></r></p></e>
-<e>                           <p><l>ling</l>                 <r>ling<s n="adj"/></r></p></e>
+<e r="LR">                    <p><l>ing</l>                 <r>ling<s n="adj"/></r></p></e>
+<e>                           <p><l>ling</l>                <r>ling<s n="adj"/></r></p></e>
 </pardef>
 <pardef n="hepatiti/s__n">
 <e>                           <p><l>des</l>                 <r>s<s n="n"/><s n="pl"/></r></p></e>
@@ -2704,10 +2704,10 @@ zig-zag__vblex
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="medal/list__n">
-<e r="LR">                           <p><l>ists</l>                <r>list<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                           <p><l>ist</l>                 <r>list<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>lists</l>                <r>list<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>list</l>                 <r>list<s n="n"/><s n="sg"/></r></p></e>
+<e r="LR">                    <p><l>ists</l>                <r>list<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>ist</l>                 <r>list<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>lists</l>               <r>list<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>list</l>                <r>list<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="dr/aw__vblex">
 <e>                           <p><l>awing</l>               <r>aw<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2834,7 +2834,7 @@ zig-zag__vblex
 <e>                           <p><l>urs</l>                 <r>ur<s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="ass__n">
-<e>                           <p><l></l>                  <r><s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="/be__vblex">
@@ -2894,7 +2894,7 @@ zig-zag__vblex
 </pardef>
 -->
 <pardef n="mumm/y__n">
-<e>                           <p><l>y</l>                 <r>y<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
@@ -3371,8 +3371,8 @@ zig-zag__vblex
 <e>                           <p><l>or</l>                  <r>er<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="ascend/ancy__n">
-<e r="LR">                           <p><l>encies</l>              <r>ancy<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                           <p><l>ency</l>                <r>ancy<s n="n"/><s n="sg"/></r></p></e>
+<e r="LR">                    <p><l>encies</l>              <r>ancy<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>ency</l>                <r>ancy<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ancies</l>              <r>ancy<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>ancy</l>                <r>ancy<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
@@ -3972,9 +3972,7 @@ zig-zag__vblex
 <e>                           <p><l>and</l>                 <r>and<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ands</l>                <r>and<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-
-        </pardefs>
-
+	</pardefs>
 
 	<section id="main" type="standard">
 <e lm="abashed">              <i>abashed</i><par n="ca__adj"/></e>
@@ -9188,8 +9186,8 @@ The gods hold court.
 <e lm="the United Kingdom">   <i>the<b/>United<b/>Kingdom</i><par n="Barcelona__np"/></e>
 <e lm="United States">        <i>United<b/>States</i><par n="United_States__np"/></e>
 <e lm="the United States">    <i>the<b/>United<b/>States</i><par n="United_States__np"/></e>
-<e lm="United States of America">    <i>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
-<e lm="the United States of America">    <i>the<b/>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
+<e lm="United States of America"><i>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
+<e lm="the United States of America"><i>the<b/>United<b/>States<b/>of<b/>America</i><par n="United_States__np"/></e>
 <e lm="Uruguay">              <i>Uruguay</i><par n="Barcelona__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 <e lm="Valencian">            <i>Valencian</i><par n="house__n"/></e>
@@ -9211,8 +9209,8 @@ The gods hold court.
 <e lm="Croatian">             <i>Croatian</i><par n="expensive__adj"/></e>
 <e lm="Serbian">              <i>Serbian</i><par n="house__n"/></e>
 <e lm="Serbian">              <i>Serbian</i><par n="expensive__adj"/></e>
-<e lm="Macedonian">            <i>Macedonian</i><par n="house__n"/></e>
-<e lm="Macedonian">            <i>Macedonian</i><par n="expensive__adj"/></e>
+<e lm="Macedonian">           <i>Macedonian</i><par n="house__n"/></e>
+<e lm="Macedonian">           <i>Macedonian</i><par n="expensive__adj"/></e>
 <e lm="Kosovar">              <i>Kosovar</i><par n="house__n"/></e>
 <e lm="Kosovar">              <i>Kosovar</i><par n="expensive__adj"/></e>
 <e lm="Bosnian">              <i>Bosnian</i><par n="house__n"/></e>
@@ -9245,36 +9243,36 @@ The gods hold court.
 <e lm="Belarussian">          <i>Belarussian</i><par n="house__n"/></e>
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="expensive__adj"/></e>
 <e lm="Herzegovinan">         <i>Herzegovinan</i><par n="expensive__adj"/></e>
-<e lm="Uyghur">            <i>Uyghur</i><par n="house__n"/></e>
-<e lm="Uyghur">            <i>Uyghur</i><par n="expensive__adj"/></e>
-<e lm="Armenian">            <i>Armenian</i><par n="house__n"/></e>
-<e lm="Armenian">            <i>Armenian</i><par n="expensive__adj"/></e>
-<e lm="Georgian">            <i>Georgian</i><par n="house__n"/></e>
-<e lm="Georgian">            <i>Georgian</i><par n="expensive__adj"/></e>
-<e lm="Azerbaijani">            <i>Azerbaijani</i><par n="house__n"/></e>
-<e lm="Azerbaijani">            <i>Azerbaijani</i><par n="expensive__adj"/></e>
-<e lm="Kazakh">            <i>Kazakh</i><par n="house__n"/></e>
-<e lm="Kazakh">            <i>Kazakh</i><par n="expensive__adj"/></e>
-<e lm="Uzbek">            <i>Uzbek</i><par n="house__n"/></e>
-<e lm="Uzbek">            <i>Uzbek</i><par n="expensive__adj"/></e>
-<e lm="Karakalpak">            <i>Karakalpak</i><par n="house__n"/></e>
-<e lm="Karakalpak">            <i>Karakalpak</i><par n="expensive__adj"/></e>
-<e lm="Kyrgyz">            <i>Kyrgyz</i><par n="house__n"/></e>
-<e lm="Kyrgyz">            <i>Kyrgyz</i><par n="expensive__adj"/></e>
-<e lm="Turkmen">             <i>Turkmen</i><par n="expensive__adj"/></e>
-<e lm="Turkmen">             <i>Turkmen</i><par n="house__n"/></e>
-<e lm="Nepali">             <i>Nepali</i><par n="expensive__adj"/></e>
-<e lm="Nepali">             <i>Nepali</i><par n="house__n"/></e>
-<e lm="Chuvash">             <i>Chuvash</i><par n="expensive__adj"/></e>
-<e lm="Chuvash">             <i>Chuvash</i><par n="house__n"/></e>
-<e lm="Persian">             <i>Persian</i><par n="expensive__adj"/></e>
-<e lm="Persian">             <i>Persian</i><par n="house__n"/></e>
-<e lm="Iranian">             <i>Iranian</i><par n="expensive__adj"/></e>
-<e lm="Iranian">             <i>Iranian</i><par n="house__n"/></e>
-<e lm="Mongolian">           <i>Mongolian</i><par n="expensive__adj"/></e>
-<e lm="Mongolian">           <i>Mongolian</i><par n="house__n"/></e>
-<e lm="Hebrew">           <i>Hebrew</i><par n="expensive__adj"/></e>
-<e lm="Hebrew">           <i>Hebrew</i><par n="house__n"/></e>
+<e lm="Uyghur">               <i>Uyghur</i><par n="house__n"/></e>
+<e lm="Uyghur">               <i>Uyghur</i><par n="expensive__adj"/></e>
+<e lm="Armenian">             <i>Armenian</i><par n="house__n"/></e>
+<e lm="Armenian">             <i>Armenian</i><par n="expensive__adj"/></e>
+<e lm="Georgian">             <i>Georgian</i><par n="house__n"/></e>
+<e lm="Georgian">             <i>Georgian</i><par n="expensive__adj"/></e>
+<e lm="Azerbaijani">          <i>Azerbaijani</i><par n="house__n"/></e>
+<e lm="Azerbaijani">          <i>Azerbaijani</i><par n="expensive__adj"/></e>
+<e lm="Kazakh">               <i>Kazakh</i><par n="house__n"/></e>
+<e lm="Kazakh">               <i>Kazakh</i><par n="expensive__adj"/></e>
+<e lm="Uzbek">                <i>Uzbek</i><par n="house__n"/></e>
+<e lm="Uzbek">                <i>Uzbek</i><par n="expensive__adj"/></e>
+<e lm="Karakalpak">           <i>Karakalpak</i><par n="house__n"/></e>
+<e lm="Karakalpak">           <i>Karakalpak</i><par n="expensive__adj"/></e>
+<e lm="Kyrgyz">               <i>Kyrgyz</i><par n="house__n"/></e>
+<e lm="Kyrgyz">               <i>Kyrgyz</i><par n="expensive__adj"/></e>
+<e lm="Turkmen">              <i>Turkmen</i><par n="expensive__adj"/></e>
+<e lm="Turkmen">              <i>Turkmen</i><par n="house__n"/></e>
+<e lm="Nepali">               <i>Nepali</i><par n="expensive__adj"/></e>
+<e lm="Nepali">               <i>Nepali</i><par n="house__n"/></e>
+<e lm="Chuvash">              <i>Chuvash</i><par n="expensive__adj"/></e>
+<e lm="Chuvash">              <i>Chuvash</i><par n="house__n"/></e>
+<e lm="Persian">              <i>Persian</i><par n="expensive__adj"/></e>
+<e lm="Persian">              <i>Persian</i><par n="house__n"/></e>
+<e lm="Iranian">              <i>Iranian</i><par n="expensive__adj"/></e>
+<e lm="Iranian">              <i>Iranian</i><par n="house__n"/></e>
+<e lm="Mongolian">            <i>Mongolian</i><par n="expensive__adj"/></e>
+<e lm="Mongolian">            <i>Mongolian</i><par n="house__n"/></e>
+<e lm="Hebrew">               <i>Hebrew</i><par n="expensive__adj"/></e>
+<e lm="Hebrew">               <i>Hebrew</i><par n="house__n"/></e>
 
 
 
@@ -10778,7 +10776,7 @@ The gods hold court.
 <e lm="criterion">            <i>criteri</i><par n="criteri/on__n"/></e>
 <e lm="critic">               <i>critic</i><par n="house__n"/></e>
 <e lm="critical">             <i>critical</i><par n="expensive__adj"/></e>
-<e lm="critically">             <i>critically</i><par n="maybe__adv"/></e>
+<e lm="critically">           <i>critically</i><par n="maybe__adv"/></e>
 <e lm="criticise">            <i>critici</i><par n="authori/se__vblex"/></e>
 <e lm="crop">                 <i>crop</i><par n="house__n"/></e>
 <e lm="cross">                <i>cross</i><par n="access__n"/></e>
@@ -11989,8 +11987,8 @@ The gods hold court.
 <!-- la ' ne funkscias, do uzu _ interne
 <e lm="coup d'état">          <i>coup<b/>d'état</i><par n="house__n"/></e>
 -->
-<e lm="coup d'état">          <p><l>coup<b/>d'état</l><r>coup<b/>d'état</r></p><par n="house__n"/></e>
-<e lm="coup d'état" r="LR">   <p><l>coup<b/>d'etat</l><r>coup<b/>d'état</r></p><par n="house__n"/></e>
+<e lm="coup d'état">          <p><l>coup<b/>d'état</l>      <r>coup<b/>d'état</r></p><par n="house__n"/></e>
+<e r="LR" lm="coup d'état">   <p><l>coup<b/>d'etat</l>      <r>coup<b/>d'état</r></p><par n="house__n"/></e>
 <e lm="coup de grace">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="maybe__adv"/></e>
@@ -16425,7 +16423,7 @@ The gods hold court.
 <!-- Hèctor beg 2009.02.17 -->
 <!-- Jim: vs. is a coordination conjunction (cnjcoo): it always appears between two other words -->
 <!-- Hèctor: i'm not sure: dictionnaries says that 'versus' is a preposition -->
-<e r="LR" lm="vs">                   <p><l>vs</l><r>vs.</r></p><par n="at__pr"/></e>
+<e r="LR" lm="vs">            <p><l>vs</l>                  <r>vs.</r></p><par n="at__pr"/></e>
 <e lm="vs.">                  <i>vs.</i><par n="at__pr"/></e>
 <e lm="versus">               <i>versus</i><par n="at__pr"/></e>
 <e lm="several">              <i>several</i><par n="both__prn"/></e>
@@ -16465,7 +16463,7 @@ The gods hold court.
 
 <e lm="the ones that">        <i>the<b/>ones<b/>that</i><par n="those_who__rel"/></e>
 <e lm="the ones who">         <i>the<b/>ones<b/>who</i><par n="those_who__rel"/></e>
-<e r="LR" lm="etc">           <p><l>etc</l><r>etc.</r></p><par n="maybe__adv"/></e>
+<e r="LR" lm="etc">           <p><l>etc</l>                 <r>etc.</r></p><par n="maybe__adv"/></e>
 <e lm="etc.">                 <i>etc.</i><par n="maybe__adv"/></e>
 
 <!-- Hèctor end 2009.02.18 -->
@@ -16474,10 +16472,10 @@ The gods hold court.
 
 <e>                           <i>Don</i><par n="east__n"/></e>
 
-<e r="LR" lm="kg">           <p><l>kg</l><r>kg.</r></p><par n="east__n"/></e>
-<e lm="kg.">                 <i>kg.</i><par n="east__n"/></e>
-<e r="LR" lm="km">           <p><l>km</l><r>km.</r></p><par n="east__n"/></e>
-<e lm="km.">                 <i>km.</i><par n="east__n"/></e>
+<e r="LR" lm="kg">            <p><l>kg</l>                  <r>kg.</r></p><par n="east__n"/></e>
+<e lm="kg.">                  <i>kg.</i><par n="east__n"/></e>
+<e r="LR" lm="km">            <p><l>km</l>                  <r>km.</r></p><par n="east__n"/></e>
+<e lm="km.">                  <i>km.</i><par n="east__n"/></e>
 
 <e lm="learned">              <i>learned</i><par n="expensive__adj"/></e>
 
@@ -16517,124 +16515,124 @@ The gods hold court.
 
 <!-- Hèctor beg 2009.02.20 -->
 
-<e lm="historic">              <i>historic</i><par n="expensive__adj"/></e>
-<e lm="succession">            <i>succession</i><par n="house__n"/></e>
-<e lm="specialize">            <i>specializ</i><par n="liv/e__vblex"/></e>
-<e lm="specialized court">     <i>specialized<b/>court</i><par n="house__n"/></e>
-<e lm="mainland">              <i>mainland</i><par n="house__n"/></e>
-<e lm="mainlander">            <i>mainlander</i><par n="house__n"/></e>
-<e lm="franc">                 <i>franc</i><par n="house__n"/></e>
-<e lm="loyalist">              <i>loyalist</i><par n="house__n"/></e>
-<e lm="follower">              <i>follower</i><par n="house__n"/></e>
-<e lm="loyal follower">        <i>loyal<b/>follower</i><par n="house__n"/></e>
-<e lm="underground">           <i>underground</i><par n="house__n"/></e>
+<e lm="historic">             <i>historic</i><par n="expensive__adj"/></e>
+<e lm="succession">           <i>succession</i><par n="house__n"/></e>
+<e lm="specialize">           <i>specializ</i><par n="liv/e__vblex"/></e>
+<e lm="specialized court">    <i>specialized<b/>court</i><par n="house__n"/></e>
+<e lm="mainland">             <i>mainland</i><par n="house__n"/></e>
+<e lm="mainlander">           <i>mainlander</i><par n="house__n"/></e>
+<e lm="franc">                <i>franc</i><par n="house__n"/></e>
+<e lm="loyalist">             <i>loyalist</i><par n="house__n"/></e>
+<e lm="follower">             <i>follower</i><par n="house__n"/></e>
+<e lm="loyal follower">       <i>loyal<b/>follower</i><par n="house__n"/></e>
+<e lm="underground">          <i>underground</i><par n="house__n"/></e>
 <!-- Ne adjektivoj 
 <e lm="underground">           <i>underground</i><par n="expensive__adj"/></e>
 <e lm="warfare">               <i>warfare</i><par n="expensive__adj"/></e>
 -->
-<e lm="germ warfare">          <i>germ<b/>warfare</i><par n="house__n"/></e>
-<e lm="guerrilla">             <i>guerrilla</i><par n="house__n"/></e>
-<e lm="guerrilla">             <i>guerrilla</i><par n="expensive__adj"/></e>
-<e lm="guerrilla war">         <i>guerrilla<b/>war</i><par n="house__n"/></e>
-<e lm="guerrilla warfare">     <i>guerrilla<b/>warfare</i><par n="house__n"/></e>
-<e lm="guerrilla group">       <i>guerrilla<b/>group</i><par n="house__n"/></e>
-<e r="LR" lm="guerilla">       <p><l>guerilla</l><r>guerrilla</r></p><par n="house__n"/></e>
-<e r="LR" lm="guerilla">       <p><l>guerilla</l><r>guerrilla</r></p><par n="expensive__adj"/></e>
-<e r="LR" lm="guerilla war">   <p><l>guerilla<b/>war</l><r>guerrilla<b/>war</r></p><par n="house__n"/></e>
-<e r="LR" lm="guerilla warfare">  <p><l>guerilla<b/>warfare</l><r>guerrilla<b/>warfare</r></p><par n="house__n"/></e>
-<e r="LR" lm="guerilla group"> <p><l>guerilla<b/>group</l><r>guerrilla<b/>group</r></p><par n="house__n"/></e>
+<e lm="germ warfare">         <i>germ<b/>warfare</i><par n="house__n"/></e>
+<e lm="guerrilla">            <i>guerrilla</i><par n="house__n"/></e>
+<e lm="guerrilla">            <i>guerrilla</i><par n="expensive__adj"/></e>
+<e lm="guerrilla war">        <i>guerrilla<b/>war</i><par n="house__n"/></e>
+<e lm="guerrilla warfare">    <i>guerrilla<b/>warfare</i><par n="house__n"/></e>
+<e lm="guerrilla group">      <i>guerrilla<b/>group</i><par n="house__n"/></e>
+<e r="LR" lm="guerilla">      <p><l>guerilla</l>            <r>guerrilla</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla">      <p><l>guerilla</l>            <r>guerrilla</r></p><par n="expensive__adj"/></e>
+<e r="LR" lm="guerilla war">  <p><l>guerilla<b/>war</l>     <r>guerrilla<b/>war</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla warfare"><p><l>guerilla<b/>warfare</l><r>guerrilla<b/>warfare</r></p><par n="house__n"/></e>
+<e r="LR" lm="guerilla group"><p><l>guerilla<b/>group</l>   <r>guerrilla<b/>group</r></p><par n="house__n"/></e>
 
-<e lm="prior to">                  <i>prior<b/>to</i><par n="at__pr"/></e>
+<e lm="prior to">             <i>prior<b/>to</i><par n="at__pr"/></e>
 
-<e lm="balkan">                <i>balkan</i><par n="expensive__adj"/></e>
-<e lm="balkan">                <i>balkan</i><par n="house__n"/></e>
-<e lm="Balkans">               <i>Balkans</i><par n="United_States__np"/></e>
-<e lm="the Balkans">           <i>the<b/>Balkans</i><par n="United_States__np"/></e>
-<e lm="USA">                   <i>USA</i><par n="Barcelona__np"/></e>
-<e lm="the USA">               <i>the<b/>USA</i><par n="Barcelona__np"/></e>
-<e lm="USSR">                  <i>USSR</i><par n="Barcelona__np"/></e>
-<e lm="the USSR">              <i>the<b/>USSR</i><par n="Barcelona__np"/></e>
-<e lm="UK">                    <i>UK</i><par n="Barcelona__np"/></e>
-<e lm="the UK">                <i>the<b/>UK</i><par n="Barcelona__np"/></e>
-<e lm="US">                    <i>US</i><par n="Barcelona__np"/></e>
-<e lm="the US">                <i>the<b/>US</i><par n="Barcelona__np"/></e>
-<e r="LR" lm="U.K.">           <p><l>U.K.</l><r>UK</r></p><par n="Barcelona__np"/></e>
-<e r="LR" lm="U.S.">           <p><l>U.S.</l><r>US</r></p><par n="Barcelona__np"/></e>
+<e lm="balkan">               <i>balkan</i><par n="expensive__adj"/></e>
+<e lm="balkan">               <i>balkan</i><par n="house__n"/></e>
+<e lm="Balkans">              <i>Balkans</i><par n="United_States__np"/></e>
+<e lm="the Balkans">          <i>the<b/>Balkans</i><par n="United_States__np"/></e>
+<e lm="USA">                  <i>USA</i><par n="Barcelona__np"/></e>
+<e lm="the USA">              <i>the<b/>USA</i><par n="Barcelona__np"/></e>
+<e lm="USSR">                 <i>USSR</i><par n="Barcelona__np"/></e>
+<e lm="the USSR">             <i>the<b/>USSR</i><par n="Barcelona__np"/></e>
+<e lm="UK">                   <i>UK</i><par n="Barcelona__np"/></e>
+<e lm="the UK">               <i>the<b/>UK</i><par n="Barcelona__np"/></e>
+<e lm="US">                   <i>US</i><par n="Barcelona__np"/></e>
+<e lm="the US">               <i>the<b/>US</i><par n="Barcelona__np"/></e>
+<e r="LR" lm="U.K.">          <p><l>U.K.</l>                <r>UK</r></p><par n="Barcelona__np"/></e>
+<e r="LR" lm="U.S.">          <p><l>U.S.</l>                <r>US</r></p><par n="Barcelona__np"/></e>
 
-<e lm="VAT">                   <i>VAT</i><par n="DNA__n"/></e>
-<e lm="AIDS">                   <i>VAT</i><par n="DNA__n"/></e>
+<e lm="VAT">                  <i>VAT</i><par n="DNA__n"/></e>
+<e lm="AIDS">                 <i>VAT</i><par n="DNA__n"/></e>
 
-<e lm="Bolshevik">              <i>Bolshevik</i><par n="house__n"/></e>
-<e lm="Bolshevik">              <i>Bolshevik</i><par n="expensive__adj"/></e>
-<e lm="Menshevik">              <i>Menshevik</i><par n="house__n"/></e>
-<e lm="Menshevik">              <i>Menshevik</i><par n="expensive__adj"/></e>
-<e lm="Romance">                <i>Romance</i><par n="expensive__adj"/></e>
+<e lm="Bolshevik">            <i>Bolshevik</i><par n="house__n"/></e>
+<e lm="Bolshevik">            <i>Bolshevik</i><par n="expensive__adj"/></e>
+<e lm="Menshevik">            <i>Menshevik</i><par n="house__n"/></e>
+<e lm="Menshevik">            <i>Menshevik</i><par n="expensive__adj"/></e>
+<e lm="Romance">              <i>Romance</i><par n="expensive__adj"/></e>
 
-<e lm="per capita">            <i>per<b/>capita</i><par n="maybe__adv"/></e>
+<e lm="per capita">           <i>per<b/>capita</i><par n="maybe__adv"/></e>
 <!--
 <e lm="a number of">           <i>a<b/>number<b/>of</i><par n="at__pr"/></e>
 -->
 
-<e lm="Antigua">               <i>Antigua</i><par n="Barcelona__np"/></e>
-<e lm="Aruba">                 <i>Aruba</i><par n="Barcelona__np"/></e>
-<e lm="Barbuda">               <i>Barbuda</i><par n="Barcelona__np"/></e>
+<e lm="Antigua">              <i>Antigua</i><par n="Barcelona__np"/></e>
+<e lm="Aruba">                <i>Aruba</i><par n="Barcelona__np"/></e>
+<e lm="Barbuda">              <i>Barbuda</i><par n="Barcelona__np"/></e>
 
-<e lm="Alabama">               <i>Alabama</i><par n="Barcelona__np"/></e>
+<e lm="Alabama">              <i>Alabama</i><par n="Barcelona__np"/></e>
 <e lm="Alaska">               <i>Alaska</i><par n="Barcelona__np"/></e>
-<e lm="Arizona">               <i>Arizona</i><par n="Barcelona__np"/></e>
-<e lm="Arkansas">               <i>Arkansas</i><par n="Barcelona__np"/></e>
-<e lm="California">               <i>California</i><par n="Barcelona__np"/></e>
-<e lm="Colorado">               <i>Colorado</i><par n="Barcelona__np"/></e>
-<e lm="Connecticut">               <i>Connecticut</i><par n="Barcelona__np"/></e>
-<e lm="Delaware">               <i>Delaware</i><par n="Barcelona__np"/></e>
-<e lm="Florida">               <i>Florida</i><par n="Barcelona__np"/></e>
-<e lm="Georgia">               <i>Georgia</i><par n="Barcelona__np"/></e>
+<e lm="Arizona">              <i>Arizona</i><par n="Barcelona__np"/></e>
+<e lm="Arkansas">             <i>Arkansas</i><par n="Barcelona__np"/></e>
+<e lm="California">           <i>California</i><par n="Barcelona__np"/></e>
+<e lm="Colorado">             <i>Colorado</i><par n="Barcelona__np"/></e>
+<e lm="Connecticut">          <i>Connecticut</i><par n="Barcelona__np"/></e>
+<e lm="Delaware">             <i>Delaware</i><par n="Barcelona__np"/></e>
+<e lm="Florida">              <i>Florida</i><par n="Barcelona__np"/></e>
+<e lm="Georgia">              <i>Georgia</i><par n="Barcelona__np"/></e>
 <e lm="Hawaii">               <i>Hawaii</i><par n="Barcelona__np"/></e>
-<e lm="Idaho">               <i>Idaho</i><par n="Barcelona__np"/></e>
+<e lm="Idaho">                <i>Idaho</i><par n="Barcelona__np"/></e>
 <!-- Mankas
 <e lm="Ilinois">               <i>Ilinois</i><par n="Barcelona__np"/></e>
 -->
-<e lm="Indiana">               <i>Indiana</i><par n="Barcelona__np"/></e>
-<e lm="Iowa">               <i>Iowa</i><par n="Barcelona__np"/></e>
+<e lm="Indiana">              <i>Indiana</i><par n="Barcelona__np"/></e>
+<e lm="Iowa">                 <i>Iowa</i><par n="Barcelona__np"/></e>
 <e lm="Kansas">               <i>Kansas</i><par n="Barcelona__np"/></e>
-<e lm="Kentucky">               <i>Kentucky</i><par n="Barcelona__np"/></e>
-<e lm="Louisiana">               <i>Louisiana</i><par n="Barcelona__np"/></e>
-<e lm="Maine">               <i>Maine</i><par n="Barcelona__np"/></e>
-<e lm="Maryland">               <i>Maryland</i><par n="Barcelona__np"/></e>
-<e lm="Massachussetts">               <i>Massachussetts</i><par n="Barcelona__np"/></e>
-<e lm="Michigan">               <i>Michigan</i><par n="Barcelona__np"/></e>
-<e lm="Minnesota">               <i>Minnesota</i><par n="Barcelona__np"/></e>
-<e lm="Mississippi">               <i>Mississippi</i><par n="Barcelona__np"/></e>
-<e lm="Missouri">               <i>Missouri</i><par n="Barcelona__np"/></e>
-<e lm="Montana">               <i>Montana</i><par n="Barcelona__np"/></e>
-<e lm="Nebraska">               <i>Nebraska</i><par n="Barcelona__np"/></e>
+<e lm="Kentucky">             <i>Kentucky</i><par n="Barcelona__np"/></e>
+<e lm="Louisiana">            <i>Louisiana</i><par n="Barcelona__np"/></e>
+<e lm="Maine">                <i>Maine</i><par n="Barcelona__np"/></e>
+<e lm="Maryland">             <i>Maryland</i><par n="Barcelona__np"/></e>
+<e lm="Massachussetts">       <i>Massachussetts</i><par n="Barcelona__np"/></e>
+<e lm="Michigan">             <i>Michigan</i><par n="Barcelona__np"/></e>
+<e lm="Minnesota">            <i>Minnesota</i><par n="Barcelona__np"/></e>
+<e lm="Mississippi">          <i>Mississippi</i><par n="Barcelona__np"/></e>
+<e lm="Missouri">             <i>Missouri</i><par n="Barcelona__np"/></e>
+<e lm="Montana">              <i>Montana</i><par n="Barcelona__np"/></e>
+<e lm="Nebraska">             <i>Nebraska</i><par n="Barcelona__np"/></e>
 <e lm="Nevada">               <i>Nevada</i><par n="Barcelona__np"/></e>
-<e lm="New Hampshire">               <i>New<b/>Hampshire</i><par n="Barcelona__np"/></e>
-<e lm="New Jersey">               <i>New<b/>Jersey</i><par n="Barcelona__np"/></e>
-<e lm="New Mexico">               <i>New<b/>Mexico</i><par n="Barcelona__np"/></e>
-<e lm="New York">               <i>New<b/>York</i><par n="Barcelona__np"/></e>
-<e lm="North Carolina">               <i>North<b/>Carolina</i><par n="Barcelona__np"/></e>
-<e lm="North Dakota">               <i>North<b/>Dakota</i><par n="Barcelona__np"/></e>
-<e lm="Ohio">               <i>Ohio</i><par n="Barcelona__np"/></e>
-<e lm="Oklahoma">               <i>Oklahoma</i><par n="Barcelona__np"/></e>
+<e lm="New Hampshire">        <i>New<b/>Hampshire</i><par n="Barcelona__np"/></e>
+<e lm="New Jersey">           <i>New<b/>Jersey</i><par n="Barcelona__np"/></e>
+<e lm="New Mexico">           <i>New<b/>Mexico</i><par n="Barcelona__np"/></e>
+<e lm="New York">             <i>New<b/>York</i><par n="Barcelona__np"/></e>
+<e lm="North Carolina">       <i>North<b/>Carolina</i><par n="Barcelona__np"/></e>
+<e lm="North Dakota">         <i>North<b/>Dakota</i><par n="Barcelona__np"/></e>
+<e lm="Ohio">                 <i>Ohio</i><par n="Barcelona__np"/></e>
+<e lm="Oklahoma">             <i>Oklahoma</i><par n="Barcelona__np"/></e>
 <e lm="Oregon">               <i>Oregon</i><par n="Barcelona__np"/></e>
-<e lm="Pennsylvania">               <i>Pennsylvania</i><par n="Barcelona__np"/></e>
-<e lm="Rhode Island">               <i>Rhode<b/>Island</i><par n="Barcelona__np"/></e>
-<e lm="South Carolina">               <i>South<b/>Carolina</i><par n="Barcelona__np"/></e>
-<e lm="South Dakota">               <i>South<b/>Dakota</i><par n="Barcelona__np"/></e>
-<e lm="Tennessee">               <i>Tennessee</i><par n="Barcelona__np"/></e>
-<e lm="Texas">               <i>Texas</i><par n="Barcelona__np"/></e>
-<e lm="Utah">               <i>Utah</i><par n="Barcelona__np"/></e>
-<e lm="Vermont">               <i>Vermont</i><par n="Barcelona__np"/></e>
-<e lm="Virginia">               <i>Virginia</i><par n="Barcelona__np"/></e>
-<e lm="Washington">               <i>Washington</i><par n="Barcelona__np"/></e>
-<e lm="West Virginia">               <i>West<b/>Virginia</i><par n="Barcelona__np"/></e>
-<e lm="Wisconsin">               <i>Wisconsin</i><par n="Barcelona__np"/></e>
-<e lm="Wyoming">               <i>Wyoming</i><par n="Barcelona__np"/></e>
+<e lm="Pennsylvania">         <i>Pennsylvania</i><par n="Barcelona__np"/></e>
+<e lm="Rhode Island">         <i>Rhode<b/>Island</i><par n="Barcelona__np"/></e>
+<e lm="South Carolina">       <i>South<b/>Carolina</i><par n="Barcelona__np"/></e>
+<e lm="South Dakota">         <i>South<b/>Dakota</i><par n="Barcelona__np"/></e>
+<e lm="Tennessee">            <i>Tennessee</i><par n="Barcelona__np"/></e>
+<e lm="Texas">                <i>Texas</i><par n="Barcelona__np"/></e>
+<e lm="Utah">                 <i>Utah</i><par n="Barcelona__np"/></e>
+<e lm="Vermont">              <i>Vermont</i><par n="Barcelona__np"/></e>
+<e lm="Virginia">             <i>Virginia</i><par n="Barcelona__np"/></e>
+<e lm="Washington">           <i>Washington</i><par n="Barcelona__np"/></e>
+<e lm="West Virginia">        <i>West<b/>Virginia</i><par n="Barcelona__np"/></e>
+<e lm="Wisconsin">            <i>Wisconsin</i><par n="Barcelona__np"/></e>
+<e lm="Wyoming">              <i>Wyoming</i><par n="Barcelona__np"/></e>
 
-<e lm="Ontario">               <i>Ontario</i><par n="Barcelona__np"/></e>
+<e lm="Ontario">              <i>Ontario</i><par n="Barcelona__np"/></e>
 <e lm="Quebec">               <i>Quebec</i><par n="Barcelona__np"/></e>
-<e lm="Seville">               <i>Seville</i><par n="Barcelona__np"/></e>
+<e lm="Seville">              <i>Seville</i><par n="Barcelona__np"/></e>
 <!-- Hèctor beg 2009.02.20 -->
 
 <!--- 
@@ -18203,7 +18201,7 @@ The gods hold court.
 <e lm="democratisation">      <i>democratisation</i><par n="house__n"/></e>
 <e lm="democratise">          <i>democratis</i><par n="liv/e__vblex"/></e>
 <e r="LR" lm="democratization"><p><l>democratization</l>    <r>democratisation</r></p><par n="house__n"/></e>
-<e r="LR" lm="democratize">   <p><l>democratiz</l>         <r>democratis</r></p><par n="liv/e__vblex"/></e>
+<e r="LR" lm="democratize">   <p><l>democratiz</l>          <r>democratis</r></p><par n="liv/e__vblex"/></e>
 <e lm="demodulate">           <i>demodulat</i><par n="liv/e__vblex"/></e>
 <e lm="demodulator">          <i>demodulator</i><par n="house__n"/></e>
 <e lm="demographic">          <i>demographic</i><par n="expensive__adj"/></e>
@@ -23297,7 +23295,7 @@ The gods hold court.
 -->
 
 <e lm="next fall">            <i>next<b/>fall</i><par n="maybe__adv"/></e>
-<e r="LR">                    <p><l>next<b/>autumn</l>        <r>next<b/>fall</r></p><par n="maybe__adv"/></e>
+<e r="LR">                    <p><l>next<b/>autumn</l>      <r>next<b/>fall</r></p><par n="maybe__adv"/></e>
 
 
 <e lm="person">               <i>person</i><par n="house__n"/></e>
@@ -23387,15 +23385,15 @@ kaj tion ni devos enmeti denove.
 La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 -->
-<e lm="get PRN up">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
-<e lm="get up">              <i>g</i><par n="g/et__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
+<e lm="get PRN up">           <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>up</l><r><g>PRN<b/>up</g></r></p></e>
+<e lm="get up">               <i>g</i><par n="g/et__vblex__sep"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 
-<e lm="get PRN back">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>back</l><r><g>PRN<b/>back</g></r></p></e>
-<e lm="get back">              <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
+<e lm="get PRN back">         <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn_not_empty"/><p><l><b/>back</l><r><g>PRN<b/>back</g></r></p></e>
+<e lm="get back">             <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
 
-<e lm="get back out">          <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back<b/>out</l><r><g><b/>back<b/>out</g></r></p></e>
+<e lm="get back out">         <i>g</i><par n="g/et__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>back<b/>out</l><r><g><b/>back<b/>out</g></r></p></e>
 
-<e lm="sell out">              <i>s</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
+<e lm="sell out">             <i>s</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
 <e lm="sell up">              <i>s</i><par n="s/ell__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>up</l><r><g><b/>up</g></r></p></e>
 
 
@@ -23919,7 +23917,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <!-*- -->
 <e lm="Apple">                <i>Apple</i><par n="Linux__np"/></e>
 <e lm="Linux">                <i>Linux</i><par n="Linux__np"/></e>
-<e lm="Macintosh">           <i>Macintosh</i><par n="Linux__np"/></e>
+<e lm="Macintosh">            <i>Macintosh</i><par n="Linux__np"/></e>
 
 <e lm="CD">                   <i>CD</i><par n="house__n"/></e>
 <e lm="TV">                   <i>TV</i><par n="house__n"/></e>
@@ -29746,19 +29744,19 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
      ili estu tradukitaj, ol riski ke la senambiguilo misrekonas o-vorton 
      kiel propra nomo kaj tiel ne tradukas gxin. Jacob 17feb2009. -->
      
-<e r="RL" lm="White">                <i>White</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Young">                <i>Young</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Wood">                 <i>Wood</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Hill">                 <i>Hill</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Morris">               <i>Morris</i><par n="Ifans__np"/></e>
-<e r="RL" lm="King">                 <i>King</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Baker">                <i>Baker</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Allen">                <i>Allen</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Knight">               <i>Knight</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Bell">                 <i>Bell</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Black">                <i>Black</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Brown">                <i>Brown</i><par n="Ifans__np"/></e>
-<e r="RL" lm="Hall">                 <i>Hall</i><par n="Ifans__np"/></e>
+<e r="RL" lm="White">         <i>White</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Young">         <i>Young</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Wood">          <i>Wood</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Hill">          <i>Hill</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Morris">        <i>Morris</i><par n="Ifans__np"/></e>
+<e r="RL" lm="King">          <i>King</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Baker">         <i>Baker</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Allen">         <i>Allen</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Knight">        <i>Knight</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Bell">          <i>Bell</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Black">         <i>Black</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Brown">         <i>Brown</i><par n="Ifans__np"/></e>
+<e r="RL" lm="Hall">          <i>Hall</i><par n="Ifans__np"/></e>
 
 <e r="RL" lm="Prince">        <i>Prince</i><par n="Mark__np"/></e>
 <e r="RL" lm="Princess">      <i>Princess</i><par n="Mary__np"/></e>
@@ -29766,18 +29764,18 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e r="RL" lm="Rosa">          <i>Rosa</i><par n="Mary__np"/></e>
 <e r="RL" lm="Ruby">          <i>Ruby</i><par n="Mary__np"/></e>
 <e r="RL" lm="Tea">           <i>Tea</i><par n="Mary__np"/></e>
-<e r="RL" lm="Sky">                  <i>Sky</i><par n="Mary__np"/></e>
-<e r="RL" lm="Sage">                 <i>Sage</i><par n="Mark__np"/></e>
-<e r="RL" lm="Sage">                 <i>Sage</i><par n="Mary__np"/></e>
-<e r="RL" lm="Rose">                 <i>Rose</i><par n="Mary__np"/></e>
-<e r="RL" lm="Paris">                <i>Paris</i><par n="Mary__np"/></e>
-<e r="RL" lm="Faith">                <i>Faith</i><par n="Mary__np"/></e>
-<e r="RL" lm="Diamond">              <i>Diamond</i><par n="Mary__np"/></e>
-<e r="RL" lm="Bush">                 <i>Bush</i><par n="Smith__np"/></e>
-<e r="RL" lm="Baby">                 <i>Baby</i><par n="Mark__np"/></e>
-<e r="RL" lm="Baby">                 <i>Baby</i><par n="Mary__np"/></e>
-<e r="RL" lm="Angel">                <i>Angel</i><par n="Mark__np"/></e>
-<e r="RL" lm="Angel">                <i>Angel</i><par n="Mary__np"/></e>
+<e r="RL" lm="Sky">           <i>Sky</i><par n="Mary__np"/></e>
+<e r="RL" lm="Sage">          <i>Sage</i><par n="Mark__np"/></e>
+<e r="RL" lm="Sage">          <i>Sage</i><par n="Mary__np"/></e>
+<e r="RL" lm="Rose">          <i>Rose</i><par n="Mary__np"/></e>
+<e r="RL" lm="Paris">         <i>Paris</i><par n="Mary__np"/></e>
+<e r="RL" lm="Faith">         <i>Faith</i><par n="Mary__np"/></e>
+<e r="RL" lm="Diamond">       <i>Diamond</i><par n="Mary__np"/></e>
+<e r="RL" lm="Bush">          <i>Bush</i><par n="Smith__np"/></e>
+<e r="RL" lm="Baby">          <i>Baby</i><par n="Mark__np"/></e>
+<e r="RL" lm="Baby">          <i>Baby</i><par n="Mary__np"/></e>
+<e r="RL" lm="Angel">         <i>Angel</i><par n="Mark__np"/></e>
+<e r="RL" lm="Angel">         <i>Angel</i><par n="Mary__np"/></e>
 
 
 
@@ -29790,37 +29788,37 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 <!-- Aldonoj Jacob 2009/03/06 -->
 
-<e lm="as a consequence"><i>as<b/>a<b/>consequence</i><par n="maybe__adv"/></e>
-<e lm="as a general rule"><i>as<b/>a<b/>general<b/>rule</i><par n="maybe__adv"/></e>
-<e lm="as a last resort"><i>as<b/>a<b/>last<b/>resort</i><par n="maybe__adv"/></e>
-<e lm="as a precaution"><i>as<b/>a<b/>precaution</i><par n="maybe__adv"/></e>
-<e lm="as a result"><i>as<b/>a<b/>result</i><par n="maybe__adv"/></e>
-<e lm="as a rule"><i>as<b/>a<b/>rule</i><par n="maybe__adv"/></e>
-<e lm="as a whole"><i>as<b/>a<b/>whole</i><par n="maybe__adv"/></e>
-<e lm="at a distance"><i>at<b/>a<b/>distance</i><par n="maybe__adv"/></e>
-<e lm="at a glance"><i>at<b/>a<b/>glance</i><par n="maybe__adv"/></e>
-<e lm="at a price"><i>at<b/>a<b/>price</i><par n="maybe__adv"/></e>
-<e lm="at a snail's pace"><i>at<b/>a<b/>snail's<b/>pace</i><par n="maybe__adv"/></e>
-<e lm="at a stretch"><i>at<b/>a<b/>stretch</i><par n="maybe__adv"/></e>
-<e lm="beyond a doubt"><i>beyond<b/>a<b/>doubt</i><par n="maybe__adv"/></e>
-<e lm="by a hair's breadth"><i>by<b/>a<b/>hair's<b/>breadth</i><par n="maybe__adv"/></e>
+<e lm="as a consequence">     <i>as<b/>a<b/>consequence</i><par n="maybe__adv"/></e>
+<e lm="as a general rule">    <i>as<b/>a<b/>general<b/>rule</i><par n="maybe__adv"/></e>
+<e lm="as a last resort">     <i>as<b/>a<b/>last<b/>resort</i><par n="maybe__adv"/></e>
+<e lm="as a precaution">      <i>as<b/>a<b/>precaution</i><par n="maybe__adv"/></e>
+<e lm="as a result">          <i>as<b/>a<b/>result</i><par n="maybe__adv"/></e>
+<e lm="as a rule">            <i>as<b/>a<b/>rule</i><par n="maybe__adv"/></e>
+<e lm="as a whole">           <i>as<b/>a<b/>whole</i><par n="maybe__adv"/></e>
+<e lm="at a distance">        <i>at<b/>a<b/>distance</i><par n="maybe__adv"/></e>
+<e lm="at a glance">          <i>at<b/>a<b/>glance</i><par n="maybe__adv"/></e>
+<e lm="at a price">           <i>at<b/>a<b/>price</i><par n="maybe__adv"/></e>
+<e lm="at a snail's pace">    <i>at<b/>a<b/>snail's<b/>pace</i><par n="maybe__adv"/></e>
+<e lm="at a stretch">         <i>at<b/>a<b/>stretch</i><par n="maybe__adv"/></e>
+<e lm="beyond a doubt">       <i>beyond<b/>a<b/>doubt</i><par n="maybe__adv"/></e>
+<e lm="by a hair's breadth">  <i>by<b/>a<b/>hair's<b/>breadth</i><par n="maybe__adv"/></e>
 <e lm="by a stroke of good luck"><i>by<b/>a<b/>stroke<b/>of<b/>good<b/>luck</i><par n="maybe__adv"/></e>
-<e lm="for a long time"><i>for<b/>a<b/>long<b/>time</i><par n="maybe__adv"/></e>
-<e lm="for a moment"><i>for<b/>a<b/>moment</i><par n="maybe__adv"/></e>
-<e lm="in a flash"><i>in<b/>a<b/>flash</i><par n="maybe__adv"/></e>
-<e lm="in a nutshell"><i>in<b/>a<b/>nutshell</i><par n="maybe__adv"/></e>
-<e lm="in a rush"><i>in<b/>a<b/>rush</i><par n="maybe__adv"/></e>
-<e lm="in a sense"><i>in<b/>a<b/>sense</i><par n="maybe__adv"/></e>
-<e lm="like a shot"><i>like<b/>a<b/>shot</i><par n="maybe__adv"/></e>
+<e lm="for a long time">      <i>for<b/>a<b/>long<b/>time</i><par n="maybe__adv"/></e>
+<e lm="for a moment">         <i>for<b/>a<b/>moment</i><par n="maybe__adv"/></e>
+<e lm="in a flash">           <i>in<b/>a<b/>flash</i><par n="maybe__adv"/></e>
+<e lm="in a nutshell">        <i>in<b/>a<b/>nutshell</i><par n="maybe__adv"/></e>
+<e lm="in a rush">            <i>in<b/>a<b/>rush</i><par n="maybe__adv"/></e>
+<e lm="in a sense">           <i>in<b/>a<b/>sense</i><par n="maybe__adv"/></e>
+<e lm="like a shot">          <i>like<b/>a<b/>shot</i><par n="maybe__adv"/></e>
 <e lm="on a case by case basis"><i>on<b/>a<b/>case<b/>by<b/>case<b/>basis</i><par n="maybe__adv"/></e>
-<e lm="to a certain extent"><i>to<b/>a<b/>certain<b/>extent</i><par n="maybe__adv"/></e>
-<e lm="to a certain degree"><i>to<b/>a<b/>certain<b/>degree</i><par n="maybe__adv"/></e>
-<e lm="to a degree"><i>to<b/>a<b/>degree</i><par n="maybe__adv"/></e>
-<e lm="to a high degree"><i>to<b/>a<b/>high<b/>degree</i><par n="maybe__adv"/></e>
-<e lm="to a large extent"><i>to<b/>a<b/>large<b/>extent</i><par n="maybe__adv"/></e>
-<e lm="without a break"><i>without<b/>a<b/>break</i><par n="maybe__adv"/></e>
-<e lm="without a doubt"><i>without<b/>a<b/>doubt</i><par n="maybe__adv"/></e>
-<e lm="without a trace"><i>without<b/>a<b/>trace</i><par n="maybe__adv"/></e>
+<e lm="to a certain extent">  <i>to<b/>a<b/>certain<b/>extent</i><par n="maybe__adv"/></e>
+<e lm="to a certain degree">  <i>to<b/>a<b/>certain<b/>degree</i><par n="maybe__adv"/></e>
+<e lm="to a degree">          <i>to<b/>a<b/>degree</i><par n="maybe__adv"/></e>
+<e lm="to a high degree">     <i>to<b/>a<b/>high<b/>degree</i><par n="maybe__adv"/></e>
+<e lm="to a large extent">    <i>to<b/>a<b/>large<b/>extent</i><par n="maybe__adv"/></e>
+<e lm="without a break">      <i>without<b/>a<b/>break</i><par n="maybe__adv"/></e>
+<e lm="without a doubt">      <i>without<b/>a<b/>doubt</i><par n="maybe__adv"/></e>
+<e lm="without a trace">      <i>without<b/>a<b/>trace</i><par n="maybe__adv"/></e>
 
 
 
