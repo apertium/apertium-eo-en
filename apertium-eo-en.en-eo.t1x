@@ -372,9 +372,7 @@ sort -t '"' -k 3 x
 
     <def-var n="nomvar"/>
     <def-var n="tmp1"/>
-    <def-var n="genere"/>
     <def-var n="tmp2"/>
-    <def-var n="genere_second"/>
     <def-var n="caseFirstWord"/><!-- taken from en-es.t1x, for use in macro firstWord -->
     <def-var n="EOS" v="false"/><!-- taken from en-es.t1x, for use in macro firstWord -->
 <!--    <def-var n="EOS" v="true"/> taken from en-es.t1x, for use in macro firstWord -->
@@ -517,24 +515,13 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-<!--
-    <def-attr n="a_gen">
-      <attr-item tags="m"/>
-      <attr-item tags="f"/>
-      <attr-item tags="nt"/>
-      <attr-item tags="mf"/>
-      <attr-item tags="GD"/>
-    </def-attr>
--->
     <def-macro n="set_genere1" npar="1">
-      <let><var n="genere"/><clip pos="1" side="tl" part="a_gen"/></let>
       <choose>
         <when>
           <test>
-            <equal caseless="yes"><var n="genere"/><lit-tag v="GD"/></equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="GD"/></equal>
           </test>
-          <let><var n="genere"/><lit-tag v="m"/></let>
-          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let>
+          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let> 
         </when>
       </choose>
     </def-macro>
@@ -902,7 +889,6 @@ verbfinal = pensi<3><4><5>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
@@ -942,7 +928,6 @@ verbfinal = pensi<3><4><5>
         <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="4"/></call-macro>
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
@@ -1012,12 +997,8 @@ verbfinal = pensi<3><4><5>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <let><var n="tmp1"/><var n="nomvar"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
-
         <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
-        <let><var n="genere_second"/><var n="genere"/></let>
-
         <call-macro n="set_genere1"><with-param pos="5"/></call-macro>
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
@@ -1079,7 +1060,6 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="1"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
@@ -1656,7 +1636,6 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
@@ -1693,7 +1672,6 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_genere1"><with-param pos="2"/></call-macro>
-        <let><var n="tmp2"/><var n="genere"/></let>
         <call-macro n="set_genere1"><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_nom" case="caseFirstWord">
