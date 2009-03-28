@@ -8,48 +8,32 @@
 -->
 
   <section-def-cats>
-
-
     <!-- UNUOPAJ VORTOJ -->
     <def-cat n="more"><cat-item lemma="more" tags="det.qnt.*"/></def-cat>
     <def-cat n="to"><cat-item lemma="to" tags="pr"/></def-cat>
     <def-cat n="of"><cat-item lemma="of" tags="pr"/></def-cat>
     <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
-
     <def-cat n="a"><cat-item lemma="a" tags="det.ind.sg"/></def-cat>
-
     <def-cat n="not"><cat-item lemma="not" tags="adv"/></def-cat>
-
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
-
     <def-cat n="please"><cat-item lemma="please" tags="vblex.*"/><cat-item lemma="please" tags="adv"/></def-cat>
 
-
-
-
-
     <!-- KATEGORIOJ -->
-
     <def-cat n="cnjcoo"><cat-item tags="cnjcoo"/></def-cat>
     <def-cat n="cnjadv"><cat-item tags="cnjadv"/></def-cat>
     <def-cat n="cnjsub"><cat-item tags="cnjsub"/></def-cat>
     <def-cat n="guio"><cat-item tags="guio"/></def-cat>
-
 
     <def-cat n="prn">
       <cat-item tags="prn.rel.*"/>
       <cat-item tags="prn.itg.*"/>
       <cat-item tags="prn.tn.*"/>
     </def-cat>
-
-    <!-- ^si<prn><ref><p3><m><sg> -->
-    <def-cat n="prnref"><cat-item tags="prn.ref.*"/></def-cat>
-
+    
+    <def-cat n="prnref"><cat-item tags="prn.ref.*"/></def-cat><!-- ^si<prn><ref><p3><m><sg> -->
     <def-cat n="prnpers"><cat-item lemma="prpers" tags="prn.*"/></def-cat>
-
-    <!-- prpers<prn><obj><p1><mf><sg> -->
-    <def-cat n="prnpers__sen_singularo">
+    <def-cat n="prnpers__sen_singularo"><!-- prpers<prn><obj><p1><mf><sg> -->
       <cat-item lemma="prpers" tags="prn.*.*.*.sp"/>
       <cat-item lemma="prpers" tags="prn.*.*.*.pl"/>
     </def-cat>
@@ -58,16 +42,13 @@
 
     <def-cat n="adv">
       <cat-item tags="adv"/>
-      <!-- added by Jacob: ^Kiam<adv><itg>$ -->
-      <cat-item tags="adv.*"/>
+      <cat-item tags="adv.*"/><!-- added by Jacob: ^Kiam<adv><itg>$ -->
     </def-cat>
 
     <def-cat n="adj">
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
     </def-cat>
-
-
 
     <def-cat n="nom">
       <cat-item tags="n.*"/>
@@ -81,19 +62,19 @@
     <def-cat n="ant"><cat-item tags="np.ant.*"/></def-cat>
     <def-cat n="cog"><cat-item tags="np.cog.*"/></def-cat>
 
-
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
       <cat-item tags="vblex.sep.inf"/>
     </def-cat>
 
-    <def-cat n="vblexger">
+
     <!--
         appealing:appeal<vblex><ger>
         appearing:appear<vblex><ger>
         appeasing:appease<vblex><ger>
         applying:apply<vblex><ger>
     -->
+    <def-cat n="vblexger">
       <cat-item tags="vblex.ger"/>
       <cat-item tags="vblex.sep.ger"/>
     </def-cat>
@@ -124,24 +105,7 @@
     -->
     <def-cat n="vbser"><cat-item lemma="be" tags="vbser.*"/></def-cat>
 
-    <!--
-        had got:have<vblex><past># got
-        had got:have<vblex><pp># got
-        had:have<vblex><past>
-        had:have<vblex><pp>
-        has got:have<vblex><pres><p3><sg># got
-        has:have<vblex><pres><p3><sg>
-        have got:have<vblex><inf># got
-        have got:have<vblex><pres># got
-        have:have<vblex><inf>
-        have:have<vblex><pres>
-        having got:have<vblex><ger># got
-        having:have<vblex><ger>
-
-        NOTHING in en.dix is vbhaver....?
-    -->
     <def-cat n="vbhaver">
-<!--      <cat-item lemma="have" tags="vblex.*"/> -->
       <cat-item lemma="have" tags="vbhaver.*"/>
     </def-cat>
 
@@ -229,9 +193,7 @@ sort -t '"' -k 3 x
     <def-cat n="apos"><cat-item tags="apos"/></def-cat>
     <def-cat n="sent"><cat-item tags="sent"/></def-cat>
 
-    <def-cat n="rel">
-      <cat-item tags="rel.*"/>
-    </def-cat>
+    <def-cat n="rel"><cat-item tags="rel.*"/></def-cat>
 
     <def-cat n="preadv"><cat-item tags="preadv"/></def-cat>
 
@@ -510,22 +472,18 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="temps"/><lit-tag v="fti"/></let>
         </when>
-
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
           </test>
           <let><var n="temps"/><lit-tag v="cni"/></let>
         </when>
-
-
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
           </test>
           <let><var n="temps"/><lit-tag v="past"/></let>
         </when>
-
 <!--
         <when>
           <test>
@@ -559,6 +517,30 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
+<!--
+    <def-attr n="a_gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+-->
+    <def-macro n="set_genere1" npar="1">
+      <let><var n="genere"/><clip pos="1" side="tl" part="a_gen"/></let>
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes"><var n="genere"/><lit-tag v="GD"/></equal>
+          </test>
+          <let><var n="genere"/><lit-tag v="m"/></let>
+          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
+
+<!--
     <def-macro n="set_genere1" npar="1">
       <let><var n="genere"/><lit-tag v="GN"/></let>
       <choose>
@@ -584,7 +566,6 @@ sort -t '"' -k 3 x
         </when>
 
         <when>
-          <!-- do something more clever here -->
           <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="GD"/></equal>
           </test>
@@ -598,7 +579,7 @@ sort -t '"' -k 3 x
       </choose>
     </def-macro>
 
-
+-->
 
 
 
