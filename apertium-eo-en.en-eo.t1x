@@ -428,35 +428,29 @@ sort -t '"' -k 3 x
 
 
   <section-def-macros>
-    <def-macro n="firstWord" npar="1">
-      <choose><!-- taken from en-es.t1x, for use in macro firstWord -->
+  
+  <!-- taken from en-es.t1x, for use in macro firstWord -->
+<def-macro n="firstWord" npar="1">
+  <choose>
 	<when>
 	  <test>
-	    <equal><clip pos="1" side="sl" part="a_np_acr"/><lit v=""/></equal>
+      <and>
+        <equal><clip pos="1" side="sl" part="a_np_acr"/><lit v=""/></equal>
+        <equal><var n="EOS"/><lit v="true"/></equal>
+      </and>
 	  </test>
-	  <choose>
-	    <when>
-	      <test>
-		<equal><var n="EOS"/><lit v="true"/></equal>
-	      </test>
-	      <modify-case>
-		<clip pos="1" side="tl" part="lem"/>
-		<lit v="aa"/>
-	      </modify-case>
-	      <let><var n="caseFirstWord"/><lit v="Aa"/></let>
-	    </when>
-	    <otherwise>
-	      <let><var n="caseFirstWord"/><lit v="aa"/></let>
-	    </otherwise>
-	  </choose>
-	</when>
-	<otherwise>
-	  <let><var n="caseFirstWord"/><lit v="aa"/></let>
-	</otherwise>
-      </choose>
-      <let><var n="EOS"/><lit v="false"/></let>
-    </def-macro>
-
+      <modify-case>
+        <clip pos="1" side="tl" part="lem"/>
+        <lit v="aa"/>
+      </modify-case>
+      <let><var n="caseFirstWord"/><lit v="Aa"/></let>
+      </when>
+      <otherwise>
+        <let><var n="caseFirstWord"/><lit v="aa"/></let>
+      </otherwise>
+    </choose>
+    <let><var n="EOS"/><lit v="false"/></let>
+  </def-macro>
 
 
 
@@ -494,27 +488,29 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
+
+
+
     <!-- kontrolas cxu la parametro estas konata vorto. 
          Se jes "nomvar" := <nom>. Se ne nomvar="".
          Tio cxu estas por eviti ke nekonataj vortoj ricevos tag'on kiu poste estas montrata. -->
     <def-macro n="set_nomvar_if_known1" npar="1">
-      <let><var n="nomvar"/><lit v=""/></let>
       <choose>
         <when>
-          <test>
-            <or>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
-            </or>
-          </test>
-         <let><var n="nomvar"/><lit-tag v="nom"/></let>
-        </when>
+        <test>
+          <equal><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></equal>
+        </test>
+        <let><var n="nomvar"/><lit v=""/></let>
+      </when>
+      <otherwise>
+       <let><var n="nomvar"/><lit-tag v="nom"/></let>
+      </otherwise>
+
       </choose>
     </def-macro>
 
 
+    <!-- Sxangxas la genron de vorto: Se la genro estas nekonata "GD" gxi estas sxangxata al vira genro -->
     <def-macro n="set_genere1" npar="1">
       <choose>
         <when>
@@ -527,75 +523,15 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-<!--
-    <def-macro n="set_genere1" npar="1">
-      <let><var n="genere"/><lit-tag v="GN"/></let>
-      <choose>
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></equal>
-          </test>
-          <let><var n="genere"/><lit-tag v="m"/></let>
-        </when>
-
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="f"/></equal>
-          </test>
-          <let><var n="genere"/><lit-tag v="f"/></let>
-        </when>
-
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="mf"/></equal>
-          </test>
-          <let><var n="genere"/><lit-tag v="mf"/></let>
-        </when>
-
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="GD"/></equal>
-          </test>
-          <let><var n="genere"/><lit-tag v="m"/></let>
-          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let>
-        </when>
-
-        <otherwise>
-          <let><var n="genere"/><lit-tag v="GN"/></let>
-        </otherwise>
-      </choose>
-    </def-macro>
-
--->
-
-
-
+<!-- atribuas "numero"  al "pl" se estas pluralo, kaj al "sg" alikaze  (ND, sp aux nekonata vorto sen numero-etikedo)-->
     <def-macro n="set_numero1" npar="1">
       <let><var n="numero"/><lit-tag v="sg"/></let>
       <choose>
         <when>
           <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="sg"/></let>
-        </when>
-        <when>
-          <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
           </test>
           <let><var n="numero"/><lit-tag v="pl"/></let>
-        </when>
-        <when><!-- do something more clever here -->
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="ND"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="sg"/></let>
-        </when>
-        <when><!-- Malica hacko??? Jacob 26feb09 -->
-          <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
-          </test>
-          <let><var n="numero"/><lit-tag v="sg"/></let>
         </when>
       </choose>
     </def-macro>
@@ -647,51 +583,52 @@ sort -t '"' -k 3 x
 
     <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
-	<when>
-	  <test>
-	    <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="netransitivaj"/></in>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="netransitiva"/></let>
-	</when>
-	<when>
-	  <test>
-	    <or>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="be"/></equal>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="seem"/></equal>
-	    </or>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="netransitiva2"/></let>
-	</when>
-	<when>
-	  <test>
-	    <or>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="like"/></equal>
-	      <equal caseless="yes"><clip pos="1" side="tl" part="lemh"/><lit v="encantar"/></equal>
-	    </or>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="like"/></let>
-	</when>
-	<when>
-	  <test>
-	    <or>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# sorry"/></equal>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# very sorry"/></equal>
-	    </or>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="sorry"/></let>
-	</when>
-	<when>
-	  <test>
-	    <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
-	  </test>
-	  <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
-	</when>
-	<otherwise>
-	  <!-- <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_verb"/></let> -->
-	  <let><var n="tipus_verb"/><lit-tag v="aliaj"/></let>
-	</otherwise>
+        <when>
+          <test>
+            <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="netransitivaj"/></in>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="netransitiva"/></let>
+        </when>
+        <when>
+          <test>
+            <or>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="be"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="seem"/></equal>
+            </or>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="netransitiva2"/></let>
+        </when>
+        <when>
+          <test>
+            <or>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lemh"/><lit v="like"/></equal>
+              <equal caseless="yes"><clip pos="1" side="tl" part="lemh"/><lit v="encantar"/></equal>
+            </or>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="like"/></let>
+        </when>
+        <when>
+          <test>
+            <or>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# sorry"/></equal>
+              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="be# very sorry"/></equal>
+            </or>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="sorry"/></let>
+        </when>
+        <when>
+          <test>
+            <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
+        </when>
+        <otherwise>
+          <!-- <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_verb"/></let> -->
+          <let><var n="tipus_verb"/><lit-tag v="aliaj"/></let>
+        </otherwise>
       </choose>
     </def-macro>
+
 
     <!--Tiu makroo devas esti aplikata en la reguloj, post la makroo tipus_verbs. 
         Ĝi atribuas al la variablo 'pronom' la valoron de la pronomo, 
@@ -724,64 +661,64 @@ pos 2= nekonjugaciita verbo
 La rezulto estas unu sola leksika formo (venos):
 verbfinal = pensi<3><4><5>
  -->
-      <def-macro n="conj_verb_compost2" npar="2">
-        <let>
-          <var n="verbfinal"/>
-          <concat>
-            <clip pos="2" side="tl" part="lemh"/>
-            <clip pos="2" side="tl" part="a_verb"/>
-            <lit-tag v="3"/>
-            <lit-tag v="4"/>
-            <lit-tag v="5"/>
-            <clip pos="2" side="tl" part="lemq"/>
-          </concat>
-        </let>
-	<choose>
-	  <when>
-	    <test>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
-	    </test>
-	    <choose>
-	      <when>
-		<test>
-                  <or>
-		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
-		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
-                  </or>
-		</test>
-		<let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-	      </when>
-	      <when>
-		<test>
-		    <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
-		</test>
-		<let><var n="temps_chunk"/><lit-tag v="past"/></let>
-	      </when>
-	      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
-	    </choose>
-	  </when>
-	  <otherwise>
-	    <choose>		
-	  <when>
-	    <test>
-	      <or>
-		<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-		<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-	      </or>
-	    </test>
-	    <let><var n="temps_chunk"/><lit-tag v="fti"/></let>
-	  </when>
-	  <when>
-	    <test>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-	    </test>
-	    <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
-	  </when>
-          <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
-	</choose>
-      </otherwise>
+    <def-macro n="conj_verb_compost2" npar="2">
+      <let>
+        <var n="verbfinal"/>
+        <concat>
+          <clip pos="2" side="tl" part="lemh"/>
+          <clip pos="2" side="tl" part="a_verb"/>
+          <lit-tag v="3"/>
+          <lit-tag v="4"/>
+          <lit-tag v="5"/>
+          <clip pos="2" side="tl" part="lemq"/>
+        </concat>
+      </let>
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
+          </test>
+          <choose>
+            <when>
+        <test>
+        <or>
+          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
+          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
+        </or>
+      </test>
+      <let><var n="temps_chunk"/><lit-tag v="pres"/></let>
+          </when>
+          <when>
+      <test>
+          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
+      </test>
+      <let><var n="temps_chunk"/><lit-tag v="past"/></let>
+          </when>
+          <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+        </choose>
+      </when>
+      <otherwise>
+        <choose>		
+      <when>
+        <test>
+          <or>
+      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+          </or>
+        </test>
+        <let><var n="temps_chunk"/><lit-tag v="fti"/></let>
+      </when>
+      <when>
+        <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+        </test>
+        <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
+      </when>
+            <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
     </choose>
-  </def-macro>
+        </otherwise>
+      </choose>
+    </def-macro>
 
 
 
