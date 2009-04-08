@@ -989,7 +989,44 @@ verbfinal = pensi<3><4><5>
 
 <!--  TODO: ADJ NOM NOM:  Private testing companies -->
 
-    <rule comment="REGLA: NOM NOM - NOM-NOM">
+<!--
+    <rule comment="REGLA: NOM NOM   - testo-firmaoj (malnova)">
+      <pattern>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+            <out>
+              <chunk name="nom_guio_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="sg.nom"/>
+                </lu>
+                <lu>
+                  <lit v="-"/>
+                  <lit-tag v="guio"/>
+                </lu>
+                <*-*- <b pos="1"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -*-*>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
+
+
+    <rule comment="REGLA: NOM NOM   - testaj firmaoj (nova provo)">
       <pattern>
         <pattern-item n="nom"/>
         <pattern-item n="nom"/>
@@ -1005,14 +1042,11 @@ verbfinal = pensi<3><4><5>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <lit-tag v="sg.nom"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
                 </lu>
-                <lu>
-                  <lit v="-"/>
-                  <lit-tag v="guio"/>
-                </lu>
-                <!-- <b pos="1"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -->
+            <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="tags"/>
@@ -1022,6 +1056,8 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
+
+
 
 
     <rule comment="REGLA: ANT">
@@ -1561,6 +1597,43 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
+<!--
+    <rule comment="REGLA: a NOM NOM (malnovA)">
+      <pattern>
+        <pattern-item n="a"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="nom_guio_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <*-*- <b pos="1"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -*-*>
+                <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <lu>
+                  <lit v="-"/>
+                  <lit-tag v="guio"/>
+                </lu>
+                <*-*- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -*-*>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
+
+
 
 
     <rule comment="REGLA: a NOM NOM">
@@ -1580,14 +1653,12 @@ verbfinal = pensi<3><4><5>
                 </tags>
                 <!-- <b pos="1"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
                 <lu>
-                  <clip pos="2" side="tl" part="whole"/>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
                   <lit-tag v="2"/>
                 </lu>
-                <lu>
-                  <lit v="-"/>
-                  <lit-tag v="guio"/>
-                </lu>
-                <!-- <b pos="2"/> inserts a space. Best: could just ONE space be deleted and rest of the blank be inserted? -->
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                   <lit-tag v="2"/>
@@ -1599,7 +1670,53 @@ verbfinal = pensi<3><4><5>
 
 
 
-    <rule comment="REGLA: DET NOM NOM">
+
+
+<!--
+    <rule comment="REGLA: DET NOM NOM (malnova)  la testo-firmaoj">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="det_nom_guio_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/>
+                  <lit-tag v="nom"/>
+                </lu>
+                <lu>
+                  <lit v="-"/>
+                  <lit-tag v="guio"/>
+                </lu>
+                <*-*- <b pos="2"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -*-*>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <clip pos="3" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
+
+    <rule comment="REGLA: DET NOM NOM (nova)  la testaj firmaoj">
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="nom"/>
@@ -1623,14 +1740,11 @@ verbfinal = pensi<3><4><5>
                 <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/>
-                  <lit-tag v="nom"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
                 </lu>
-                <lu>
-                  <lit v="-"/>
-                  <lit-tag v="guio"/>
-                </lu>
-                <!-- <b pos="2"/> inserts a space. Could just ONE space be deleted and rest of the blank be inserted. Francis: not that i'm aware of -->
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="tags"/>
@@ -1640,6 +1754,7 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
+
 
 
 

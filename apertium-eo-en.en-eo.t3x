@@ -53,15 +53,17 @@ nom_gen_nom
     <def-cat n="adj_nom">
       <cat-item name="adj_nom"/>
       <cat-item name="det_nom"/>
+      <cat-item name="nom_nom"/>
     </def-cat>
     <def-cat n="det_nom_nom">
-      <cat-item name="nom_nom"/>
+      <cat-item name="det_nom_nom"/>
+      <cat-item name="nom_guio_nom"/>
       <cat-item name="det_adj_nom"/>
       <cat-item name="preadv_adj_nom"/>
       <cat-item name="nom_gen_nom"/>
     </def-cat>
     <def-cat n="det_preadv_adj_nom">
-      <cat-item name="det_nom_nom"/>
+      <cat-item name="det_nom_guio_nom"/>
       <cat-item name="det_preadv_adj_nom"/>
       <cat-item name="det_nom_gen_nom"/>
       <cat-item name="nom_gen_det_nom"/>
