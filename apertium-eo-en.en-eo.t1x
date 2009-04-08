@@ -989,7 +989,7 @@ verbfinal = pensi<3><4><5>
 
 <!--  TODO: ADJ NOM NOM:  Private testing companies -->
 
-    <rule comment="REGLA: NOM NOM">
+    <rule comment="REGLA: NOM NOM - NOM-NOM">
       <pattern>
         <pattern-item n="nom"/>
         <pattern-item n="nom"/>
@@ -1005,7 +1005,6 @@ verbfinal = pensi<3><4><5>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-<!--                  <clip pos="1" side="tl" part="tags"/> women<pl> volunteers=>virino-volontuloj-->
                   <clip pos="1" side="tl" part="a_nom"/>
                   <lit-tag v="sg.nom"/>
                 </lu>
