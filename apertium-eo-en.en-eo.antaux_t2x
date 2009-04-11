@@ -93,11 +93,11 @@
             <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
             <clip pos="1" part="tags"/>
             <lit v="{"/>            
-            <clip pos="3" part="x_pgcontent"/>
+            <clip pos="3" part="content"/>
                 <b pos="3"/>
             <lit v="^de"/><lit-tag v="gen"/><lit v="$"/>
                 <b pos="2"/>
-            <clip pos="1" part="x_pgcontent"/>
+            <clip pos="1" part="content"/>
              <lit v="}"/>
           </chunk>
         </out>
