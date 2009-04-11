@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interchunk>
+
+  <section-def-cats>
+    <def-cat n="SN">
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
+    <def-cat n="GEN">
+      <cat-item tags="GEN"/>
+    </def-cat>
+    <def-cat n="unknown">
+       <cat-item lemma="unknown" tags=""/>
+    </def-cat>
+    <def-cat n="SVall">
+      <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.reporting.*"/>
+      <cat-item tags="SV.aliaj.*"/>
+      <cat-item tags="SV.like.*"/>
+      <cat-item tags="SV.sorry.*"/>
+      <!--
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
+    </def-cat>
+    <def-cat n="SVitrans">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.netransitiva.*"/>
+      <cat-item tags="SV.netransitiva2.*"/>
+      <!--
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
+    </def-cat>
+
+    <def-cat n="SVYesNoQuestionStart">
+      <cat-item lemma="xxx_ser" tags="SV.*"/>
+      <cat-item lemma="xxx_vbdo" tags="SV.*"/>
+    </def-cat>
+    <def-cat n="Adv">
+      <cat-item tags="Adv"/>
+      <cat-item tags="CA"/>
+      <cat-item tags="NEG"/>
+    </def-cat>
+    <def-cat n="CC">
+      <cat-item tags="CC"/>
+    </def-cat>
+  </section-def-cats>
+
+  <section-def-attrs>
+    <def-attr n="a_chunk">
+      <attr-item tags="SN"/>
+      <attr-item tags="SV"/>
+    </def-attr>
+
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="cas">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+    </def-attr>
+  </section-def-attrs>
+
+  <section-def-vars>
+    <def-var n="nombre"/>
+    <def-var n="genere"/>
+  </section-def-vars>
+
+  <section-rules>
+
+
+
+    <rule comment="REGLA: SN">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="GEN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="3" part="x_pgcontent"/>
+                <b pos="3"/>
+            <lit v="^de"/><lit-tag v="gen"/><lit v="$"/>
+                <b pos="2"/>
+            <clip pos="1" part="x_pgcontent"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+
+  </section-rules>
+</interchunk>

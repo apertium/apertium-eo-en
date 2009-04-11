@@ -3,49 +3,6 @@
 <postchunk>
 
   <section-def-cats>
-<!-- chunks:
-adj
-adj_nom
-adv
-ant
-ant_ant
-ant_ant_cog
-ant-ant_cog
-ant_ant_cog_cog
-ant-ant_cog-cog
-ant_cog
-ant_cog_cog
-ant_cog-cog
-cm
-cnjadv
-cnjcoo
-cog
-CS
-det
-det_adj_nom
-det_nom
-det_nom_nom
-nom
-nom_nom
-num
-pr
-preadv
-preadv_adj
-predet
-prn
-prnpers
-rel
-sent
-ser
-vaux_pp
-vaux_verb
-verb
-verb_pp
-verb_vbger
-det_preadv_adj_nom
-preadv_adj_nom
-nom_gen_nom
--->
 
     <def-cat n="nom">
       <cat-item name="nom"/>
@@ -122,7 +79,7 @@ nom_gen_nom
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="drop_gender1"><with-param pos="1"/></call-macro>
+        <!--<call-macro n="drop_gender1"><with-param pos="1"/></call-macro>-->
         <out>
           <lu>
             <clip pos="1" part="whole"/>
@@ -130,7 +87,7 @@ nom_gen_nom
         </out>
       </action>
     </rule>
-
+<!--
     <rule comment="CHUNK: adj_nom   - and others">
       <pattern>
         <pattern-item n="adj_nom"/>
@@ -282,6 +239,6 @@ nom_gen_nom
         </out>
       </action>
     </rule>
-
+-->
   </section-rules>
 </postchunk>
