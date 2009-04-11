@@ -106,19 +106,14 @@ nom_gen_nom
         <choose>
           <when>
             <test>
-              <equal>
-                <clip pos="1" part="a_gen"/>
-                <lit-tag v="GN"/>
-              </equal>
+              <equal><clip pos="1" part="a_gen"/><lit-tag v="GN"/></equal>
             </test>
-            <let>
-                <clip pos="1" part="a_gen"/>
-                <lit v=""/>
-            </let>
+            <let><clip pos="1" part="a_gen"/><lit v=""/></let>
            </when>
          </choose>
     </def-macro>
   </section-def-macros>
+
 
   <section-rules>
 

@@ -111,6 +111,25 @@
 
 
 
+<pardef n="sgpl">
+<e>                           <p><l></l>                    <r><s n="sg"/></r></p></e>
+<e>                           <p><l>j</l>                   <r><s n="pl"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="sp"/></r></p></e>
+</pardef>
+
+
+<pardef n="nomacc">
+<e>                           <p><l></l>                    <r><s n="nom"/></r></p></e>
+<e>                           <p><l>n</l>                   <r><s n="acc"/></r></p></e>
+</pardef>
+
+
+<pardef n="sgpl0">
+<e>                           <p><l></l>                    <r><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="pl"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="sp"/></r></p></e>
+</pardef>
+
 <pardef n="nomacc0">
 <e>                           <p><l></l>                    <r><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="acc"/></r></p></e>
@@ -119,8 +138,10 @@
 
 
 
+
 <pardef n="proper_names">
-<e>                           <re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
+       <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 
                            <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
 
@@ -153,6 +174,8 @@
 
 <pardef n="BBC__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<!--  US Highways ^US<n><acr><sp>$ ^Highway<n><pl>$ ^US<adj><pl><nom>$ ^Aŭtovojo<n><pl><nom>$ USaj Aŭtovojoj -->
+<e r="RL">                    <p><l>a</l>                    <r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
@@ -173,6 +196,13 @@
 <e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
 <e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
 <e r="RL">                    <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
+
+
+<!-- UAB Hospital ^UAB<n><acr><sp>$ ^Hospital<n><sg>$ UABa Hospitalo -->
+<e r="RL">                    <re>[A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
 </pardef>
 
@@ -215,6 +245,7 @@
 <e r="LR">                    <p><l>cx</l>                  <r>ĉ</r></p></e>
 <e>                           <p><l>ĉ</l>                   <r>ĉ</r></p></e>
 </pardef>
+
 <pardef n="ĝ">
 <e r="LR">                    <p><l>gx</l>                  <r>ĝ</r></p></e>
 <e>                           <p><l>ĝ</l>                   <r>ĝ</r></p></e>
@@ -558,26 +589,23 @@ Necesas difini paradigmon por adj-nomo terminoj
 </pardef>
 
 <pardef n="Barcelono__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="sg"/></r></p><par n="nomacc"/></e>
+
+<e r="RL">                    <p><l>-a</l>                  <r><s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
 <pardef n="Andoj__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="pl"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
 <pardef n="Marko__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="np"/><s n="ant"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="sg"/></r></p><par n="nomacc"/></e>
 
 <!-- Se estas genraj indikoj, ni fajfas -->
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<e r="RL">                     <p><l></l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
@@ -603,14 +631,42 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="Linux__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="al"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="al"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>      <r><s n="np"/><s n="al"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 </pardef>
 
+
+<pardef n="Linuks/o__np">
+<!-- fleksias normale -->
+<e>                           <p><l>o</l>     <r>o<s n="np"/><s n="al"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<!-- Linux men  -> Linuksaj viroj -->
+<e>                           <p><l>a</l>     <r>o<s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+</pardef>
+
+
+<pardef n="Apertium__np">
+<!-- fleksias sen finajxoj -->
+<e>                           <p><l></l>      <r><s n="np"/><s n="al"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+<!-- tamen, eblaj adjektivigi, ekz. Apertium men  -> Apertiumaj viroj -->
+<e>                           <p><l>a</l>     <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+</pardef>
+
+
+
+<pardef n="Apple__np">
+<!-- fleksias sen finajxoj -->
+<e>                           <p><l></l>      <r><s n="np"/><s n="al"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+<!-- adjektive, ankaux sen finajxoj. Apple men  -> Apple viroj -->
+<e>                           <p><l></l>      <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+</pardef>
+
+
+
+
+
+
 <pardef n="a__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="alpha"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="alpha"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
 
@@ -7220,14 +7276,23 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 
+<e>                           <par n="acronimos"/></e>
+<e lm="KD">                   <i>KD</i><par n="nomACR__n"/></e>
+
     <!-- np.al -->
-<e lm="Linukso">              <i>Linukso</i><par n="Linux__np"/></e>
-<e lm="GCompris">             <i>GCompris</i><par n="Linux__np"/></e>
-<e lm="SVN">                  <i>SVN</i><par n="Linux__np"/></e>
-<e lm="Apertium">             <i>Apertium</i><par n="Linux__np"/></e>
-<e lm="Vikipedio">            <i>Vikipedio</i><par n="Linux__np"/></e>
-<e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><i>o</i><par n="Linux__np"/></e>
-<e lm="ABC News">             <i>ABC<b/>News</i><par n="Linux__np"/></e>
+<e lm="Linukso">              <i>Linuks</i><par n="Linuks/o__np"/></e>
+<e lm="GCompris">             <i>GCompris</i><par n="Apertium__np"/></e>
+<e lm="SVN">                  <i>SVN</i><par n="Apertium__np"/></e>
+<e lm="Apertium">             <i>Apertium</i><par n="Apertium__np"/></e>
+<e lm="Vikipedio">            <i>Vikipedi</i><par n="Linuks/o__np"/></e>
+<e lm="Zapatista Armeo de Nacia Liberiĝo"><i>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberi</i><par n="ĝ"/><par n="Linuks/o__np"/></e>
+<e lm="ABC News">             <i>ABC<b/>News</i><par n="Apertium__np"/></e>
+
+<e lm="Apple">                <i>Apple</i><par n="Apertium__np"/></e>
+<e lm="Macintosh">           <i>Macintosh</i><par n="Apertium__np"/></e>
+<e lm="Boeing">               <i>Boeing</i><par n="Apertium__np"/></e>
+
+
     
 
     <!-- Multiwords -->
@@ -23440,13 +23505,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="transpreni">           <i>transpren</i><par n="i__vblex"/></e>
 <e lm="denove kaj denove">    <i>denove<b/>kaj<b/>denov</i><par n="e__adv"/></e>
 
-<e>                           <par n="acronimos"/></e>
-<e lm="Apple">                <i>Apple</i><par n="Linux__np"/></e>
-<e lm="Linukso">              <i>Linukso</i><par n="Linux__np"/></e>
-<e lm="Macintosh.">           <i>Macintosh</i><par n="Linux__np"/></e>
-<e lm="KD">                   <i>KD</i><par n="nomACR__n"/></e>
-
-
 <!-- Aldonoj Hèctor 2009/02/18 -->
 
 <e r="LR" lm="ktp">           <p><l>ktp</l>                 <r>ktp.</r></p><par n="jam__adv"/></e>
@@ -24222,7 +24280,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Aoife">                <i>Aoife</i><par n="Mary__np"/></e>
 <e lm="Aparicio">             <i>Aparicio</i><par n="Mark__np"/></e>
 <e lm="Apeles">               <i>Apeles</i><par n="Mark__np"/></e>
-<e lm="Apertium">             <i>Apertium</i><par n="Linux__np"/></e>
 <e lm="Apolinar">             <i>Apolinar</i><par n="Mark__np"/></e>
 <e lm="Apolinario">           <i>Apolinario</i><par n="Mark__np"/></e>
 <e lm="Apolodoro">            <i>Apolodoro</i><par n="Mark__np"/></e>
@@ -24561,7 +24618,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Blasinda">             <i>Blasinda</i><par n="Mary__np"/></e>
 <e lm="Blaze">                <i>Blaze</i><par n="Mark__np"/></e>
 <e lm="Bobby">                <i>Bobby</i><par n="Mark__np"/></e>
-<e lm="Boeing">               <i>Boeing</i><par n="Linux__np"/></e>
 <e lm="Bo">                   <i>Bo</i><par n="Mark__np"/></e>
 <e lm="Bonfilio">             <i>Bonfilio</i><par n="Mark__np"/></e>
 <e lm="Bonifacia">            <i>Bonifacia</i><par n="Mary__np"/></e>

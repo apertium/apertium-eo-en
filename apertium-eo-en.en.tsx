@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagger name="english">
 <tagset>
+<!--
+Do not add your own
+-> imperativo
+
+
+<spectie> in the tagger
+<jacobEo> IT<prprs> vs IT<acr>
+<jacobEo> how?
+<spectie> there is a way for specifying that you want a particular tag to take precedence
+<spectie> mireia did it in one of her packages
+<spectie> 'sec
+<jacobEo> Yes, I can only specfy ONE tag.
+<spectie>  
+<spectie>  <discard-on-ambiguity>
+<spectie>    <discard tags="n.acr.sp"/>
+<spectie>  </discard-on-ambiguity>
+-->
+
 
 <!-- Lemoj -->
 
