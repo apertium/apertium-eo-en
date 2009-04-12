@@ -377,7 +377,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="nomsen__n">
-<e>                           <p><l></l>                    <r><s n="n"/><par n="sgpl0"/><par n="nomacc0"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="n"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 </pardef>
 
 
@@ -541,6 +541,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l>-a</l>                  <r><s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
+<pardef n="Barcelon/o__np">
+<e>                           <p><l>o</l>                    <r>o<s n="np"/><s n="top"/><s n="sg"/></r></p><par n="nomacc"/></e>
+
+<e r="RL">                    <p><l>o-a</l>                  <r>o<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+</pardef>
+
+
 
 <pardef n="Andoj__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="pl"/></r></p><par n="nomacc"/></e>
@@ -553,6 +560,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- Se estas genraj indikoj, ni fajfas -->
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e r="RL">                     <p><l></l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
+</pardef>
+
+<pardef n="Mark/o__np">
+<e>                           <p><l>o</l>                    <r>o<s n="np"/><s n="ant"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<!-- Se estas genraj indikoj, ni fajfas -->
+<e r="RL">                    <p><l>o</l>                    <r>o<s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<e r="RL">                     <p><l>o</l>                   <r>o<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
@@ -1089,175 +1103,175 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="deko">                 <i>dek</i><par n="o__n"/></e>
 <e lm="dekduo">               <i>dekdu</i><par n="o__n"/></e>
 <e lm="dekkvino">             <i>dekkvin</i><par n="o__n"/></e>
-<e lm="Mediteraneo">          <i>Mediteraneo</i><par n="Barcelono__np"/></e>
+<e lm="Mediteraneo">          <i>Mediterane</i><par n="Barcelon/o__np"/></e>
 
 	<!--  landoj kaj urboj -->
-<e lm="Afganio">              <i>Afganio</i><par n="Barcelono__np"/></e>
-<e lm="Albanio">              <i>Albanio</i><par n="Barcelono__np"/></e>
-<e lm="Alakanto">             <i>Alakanto</i><par n="Barcelono__np"/></e>
-<e lm="Alĝerio">              <i>Al</i><par n="ĝ"/><i>erio</i><par n="Barcelono__np"/></e>
+<e lm="Afganio">              <i>Afgani</i><par n="Barcelon/o__np"/></e>
+<e lm="Albanio">              <i>Albani</i><par n="Barcelon/o__np"/></e>
+<e lm="Alakanto">             <i>Alakant</i><par n="Barcelon/o__np"/></e>
+<e lm="Alĝerio">              <i>Al</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
 <e lm="Alpoj">                <i>Alpoj</i><par n="Andoj__np"/></e>
-<e lm="Ameriko">              <i>Ameriko</i><par n="Barcelono__np"/></e>
-<e lm="Amsterdamo">           <i>Amsterdamo</i><par n="Barcelono__np"/></e>
-<e lm="Andaluzio">            <i>Andaluzio</i><par n="Barcelono__np"/></e>
+<e lm="Ameriko">              <i>Amerik</i><par n="Barcelon/o__np"/></e>
+<e lm="Amsterdamo">           <i>Amsterdam</i><par n="Barcelon/o__np"/></e>
+<e lm="Andaluzio">            <i>Andaluzi</i><par n="Barcelon/o__np"/></e>
 <e lm="Andoj">                <i>Andoj</i><par n="Andoj__np"/></e>
-<e lm="Andoro">               <i>Andoro</i><par n="Barcelono__np"/></e>
-<e lm="Anglio">               <i>Anglio</i><par n="Barcelono__np"/></e>
-<e lm="Arabio">               <i>Arabio</i><par n="Barcelono__np"/></e>
-<e lm="Aragono">              <i>Aragono</i><par n="Barcelono__np"/></e>
-<e lm="Argentino">            <i>Argentino</i><par n="Barcelono__np"/></e>
-<e lm="Asturio">              <i>Asturio</i><par n="Barcelono__np"/></e>
-<e lm="Ateno">                <i>Ateno</i><par n="Barcelono__np"/></e>
-<e lm="Aŭstralio">            <i>A</i><par n="ŭ"/><i>stralio</i><par n="Barcelono__np"/></e>
-<e lm="Aŭstrio">              <i>A</i><par n="ŭ"/><i>strio</i><par n="Barcelono__np"/></e>
-<e lm="Azio">                 <i>Azio</i><par n="Barcelono__np"/></e>
-<e lm="Barato">               <i>Barato</i><par n="Barcelono__np"/></e>
-<e lm="Barcelono">            <i>Barcelono</i><par n="Barcelono__np"/></e>
+<e lm="Andoro">               <i>Andor</i><par n="Barcelon/o__np"/></e>
+<e lm="Anglio">               <i>Angli</i><par n="Barcelon/o__np"/></e>
+<e lm="Arabio">               <i>Arabi</i><par n="Barcelon/o__np"/></e>
+<e lm="Aragono">              <i>Aragon</i><par n="Barcelon/o__np"/></e>
+<e lm="Argentino">            <i>Argentin</i><par n="Barcelon/o__np"/></e>
+<e lm="Asturio">              <i>Asturi</i><par n="Barcelon/o__np"/></e>
+<e lm="Ateno">                <i>Aten</i><par n="Barcelon/o__np"/></e>
+<e lm="Aŭstralio">            <i>A</i><par n="ŭ"/><i>strali</i><par n="Barcelon/o__np"/></e>
+<e lm="Aŭstrio">              <i>A</i><par n="ŭ"/><i>stri</i><par n="Barcelon/o__np"/></e>
+<e lm="Azio">                 <i>Azi</i><par n="Barcelon/o__np"/></e>
+<e lm="Barato">               <i>Barat</i><par n="Barcelon/o__np"/></e>
+<e lm="Barcelono">            <i>Barcelon</i><par n="Barcelon/o__np"/></e>
 <e lm="Bazilo">               <i>Bazilo</i><par n="Mark__np"/></e>
-<e lm="Belgio">               <i>Belgio</i><par n="Barcelono__np"/></e>
-<e lm="Beogrado">             <i>Beogrado</i><par n="Barcelono__np"/></e>
-<e lm="Berlino">              <i>Berlino</i><par n="Barcelono__np"/></e>
-<e lm="Berno">                <i>Berno</i><par n="Barcelono__np"/></e>
-<e lm="Bogoto">               <i>Bogoto</i><par n="Barcelono__np"/></e>
-<e lm="Bolivio">              <i>Bolivio</i><par n="Barcelono__np"/></e>
-<e lm="Bosnio">               <i>Bosnio</i><par n="Barcelono__np"/></e>
-<e lm="Brazilo">              <i>Brazilo</i><par n="Barcelono__np"/></e>
-<e lm="Britio">               <i>Britio</i><par n="Barcelono__np"/></e>
-<e lm="Bruselo">              <i>Bruselo</i><par n="Barcelono__np"/></e>
-<e lm="Budapeŝto">            <i>Budape</i><par n="ŝ"/><i>to</i><par n="Barcelono__np"/></e>
-<e lm="Bukareŝto">            <i>Bukare</i><par n="ŝ"/><i>to</i><par n="Barcelono__np"/></e>
-<e lm="Bulgario">             <i>Bulgario</i><par n="Barcelono__np"/></e>
-<e lm="Ĉadio">                <i>Ĉadio</i><par n="Barcelono__np"/></e>
-<e lm="Ĉilio">                <i>Ĉilio</i><par n="Barcelono__np"/></e>
-<e lm="Ĉinio">                <i>Ĉinio</i><par n="Barcelono__np"/></e>
-<e lm="Danio">                <i>Danio</i><par n="Barcelono__np"/></e>
-<e lm="Dublino">              <i>Dublino</i><par n="Barcelono__np"/></e>
-<e lm="Edinburgo">            <i>Edinburgo</i><par n="Barcelono__np"/></e>
-<e lm="Egiptio">              <i>Egiptio</i><par n="Barcelono__np"/></e>
-<e lm="Ekstremaduro">         <i>Ekstremaduro</i><par n="Barcelono__np"/></e>
-<e lm="Ekvadoro">             <i>Ekvadoro</i><par n="Barcelono__np"/></e>
-<e lm="Estonio">              <i>Estonio</i><par n="Barcelono__np"/></e>
-<e lm="Etiopio">              <i>Etiopio</i><par n="Barcelono__np"/></e>
-<e lm="Eŭropo">               <i>E</i><par n="ŭ"/><i>ropo</i><par n="Barcelono__np"/></e>
+<e lm="Belgio">               <i>Belgi</i><par n="Barcelon/o__np"/></e>
+<e lm="Beogrado">             <i>Beograd</i><par n="Barcelon/o__np"/></e>
+<e lm="Berlino">              <i>Berlin</i><par n="Barcelon/o__np"/></e>
+<e lm="Berno">                <i>Bern</i><par n="Barcelon/o__np"/></e>
+<e lm="Bogoto">               <i>Bogot</i><par n="Barcelon/o__np"/></e>
+<e lm="Bolivio">              <i>Bolivi</i><par n="Barcelon/o__np"/></e>
+<e lm="Bosnio">               <i>Bosni</i><par n="Barcelon/o__np"/></e>
+<e lm="Brazilo">              <i>Brazil</i><par n="Barcelon/o__np"/></e>
+<e lm="Britio">               <i>Briti</i><par n="Barcelon/o__np"/></e>
+<e lm="Bruselo">              <i>Brusel</i><par n="Barcelon/o__np"/></e>
+<e lm="Budapeŝto">            <i>Budape</i><par n="ŝ"/><i>t</i><par n="Barcelon/o__np"/></e>
+<e lm="Bukareŝto">            <i>Bukare</i><par n="ŝ"/><i>t</i><par n="Barcelon/o__np"/></e>
+<e lm="Bulgario">             <i>Bulgari</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉadio">                <i>Ĉadi</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉilio">                <i>Ĉili</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉinio">                <i>Ĉini</i><par n="Barcelon/o__np"/></e>
+<e lm="Danio">                <i>Dani</i><par n="Barcelon/o__np"/></e>
+<e lm="Dublino">              <i>Dublin</i><par n="Barcelon/o__np"/></e>
+<e lm="Edinburgo">            <i>Edinburg</i><par n="Barcelon/o__np"/></e>
+<e lm="Egiptio">              <i>Egipti</i><par n="Barcelon/o__np"/></e>
+<e lm="Ekstremaduro">         <i>Ekstremadur</i><par n="Barcelon/o__np"/></e>
+<e lm="Ekvadoro">             <i>Ekvador</i><par n="Barcelon/o__np"/></e>
+<e lm="Estonio">              <i>Estoni</i><par n="Barcelon/o__np"/></e>
+<e lm="Etiopio">              <i>Etiopi</i><par n="Barcelon/o__np"/></e>
+<e lm="Eŭropo">               <i>E</i><par n="ŭ"/><i>rop</i><par n="Barcelon/o__np"/></e>
 <e lm="Filipinoj">            <i>Filipinoj</i><par n="Andoj__np"/></e>
-<e lm="Finnio">               <i>Finnio</i><par n="Barcelono__np"/></e>
-<e lm="Francio">              <i>Francio</i><par n="Barcelono__np"/></e>
-<e lm="Galegio">              <i>Galegio</i><par n="Barcelono__np"/></e>
-<e lm="Ganao">                <i>Ganao</i><par n="Barcelono__np"/></e>
-<e lm="Gerardo">              <i>Gerardo</i><par n="Barcelono__np"/></e>
-<e lm="Germanio">             <i>Germanio</i><par n="Barcelono__np"/></e>
-<e lm="Granado">              <i>Granado</i><par n="Barcelono__np"/></e>
-<e lm="Grekio">               <i>Grekio</i><par n="Barcelono__np"/></e>
-<e lm="Gvatemalo">            <i>Gvatemalo</i><par n="Barcelono__np"/></e>
-<e lm="Gvineo">               <i>Gvineo</i><par n="Barcelono__np"/></e>
-<e r="LR" lm="Ĝibraltaro">    <p><l>Gxibraltaro</l>         <r>Ĝibraltaro</r></p><par n="Barcelono__np"/></e>
-<e lm="Ĝibraltaro">           <i>Ĝibraltaro</i><par n="Barcelono__np"/></e>
-<e lm="Haitio">               <i>Haitio</i><par n="Barcelono__np"/></e>
-<e lm="Hispanio">             <i>Hispanio</i><par n="Barcelono__np"/></e>
-<e lm="Hungario">             <i>Hungario</i><par n="Barcelono__np"/></e>
-<e lm="Indonezio">            <i>Indonezio</i><par n="Barcelono__np"/></e>
-<e lm="Irlando">              <i>Irlando</i><par n="Barcelono__np"/></e>
-<e lm="Islando">              <i>Islando</i><par n="Barcelono__np"/></e>
-<e lm="Israelo">              <i>Israelo</i><par n="Barcelono__np"/></e>
-<e lm="Italio">               <i>Italio</i><par n="Barcelono__np"/></e>
-<e lm="Jamajko">              <i>Jamajko</i><par n="Barcelono__np"/></e>
-<e lm="Japanio">              <i>Japanio</i><par n="Barcelono__np"/></e>
-<e lm="Jordanio">             <i>Jordanio</i><par n="Barcelono__np"/></e>
-<e lm="Jugoslavio">           <i>Jugoslavio</i><par n="Barcelono__np"/></e>
+<e lm="Finnio">               <i>Finni</i><par n="Barcelon/o__np"/></e>
+<e lm="Francio">              <i>Franci</i><par n="Barcelon/o__np"/></e>
+<e lm="Galegio">              <i>Galegi</i><par n="Barcelon/o__np"/></e>
+<e lm="Ganao">                <i>Gana</i><par n="Barcelon/o__np"/></e>
+<e lm="Gerardo">              <i>Gerard</i><par n="Barcelon/o__np"/></e>
+<e lm="Germanio">             <i>Germani</i><par n="Barcelon/o__np"/></e>
+<e lm="Granado">              <i>Granad</i><par n="Barcelon/o__np"/></e>
+<e lm="Grekio">               <i>Greki</i><par n="Barcelon/o__np"/></e>
+<e lm="Gvatemalo">            <i>Gvatemal</i><par n="Barcelon/o__np"/></e>
+<e lm="Gvineo">               <i>Gvine</i><par n="Barcelon/o__np"/></e>
+<e r="LR" lm="Ĝibraltaro">    <p><l>Gxibraltar</l><r>Ĝibraltar</r></p><par n="Barcelon/o__np"/></e>
+<e lm="Ĝibraltaro">           <i>Ĝibraltar</i><par n="Barcelon/o__np"/></e>
+<e lm="Haitio">               <i>Haiti</i><par n="Barcelon/o__np"/></e>
+<e lm="Hispanio">             <i>Hispani</i><par n="Barcelon/o__np"/></e>
+<e lm="Hungario">             <i>Hungari</i><par n="Barcelon/o__np"/></e>
+<e lm="Indonezio">            <i>Indonezi</i><par n="Barcelon/o__np"/></e>
+<e lm="Irlando">              <i>Irland</i><par n="Barcelon/o__np"/></e>
+<e lm="Islando">              <i>Island</i><par n="Barcelon/o__np"/></e>
+<e lm="Israelo">              <i>Israel</i><par n="Barcelon/o__np"/></e>
+<e lm="Italio">               <i>Itali</i><par n="Barcelon/o__np"/></e>
+<e lm="Jamajko">              <i>Jamajk</i><par n="Barcelon/o__np"/></e>
+<e lm="Japanio">              <i>Japani</i><par n="Barcelon/o__np"/></e>
+<e lm="Jordanio">             <i>Jordani</i><par n="Barcelon/o__np"/></e>
+<e lm="Jugoslavio">           <i>Jugoslavi</i><par n="Barcelon/o__np"/></e>
 <e lm="Júpiter">              <i>Júpiter</i><par n="Mark__np"/></e>
-<e lm="Jupitero">             <i>Jupitero</i><par n="Barcelono__np"/></e>
-<e lm="Kabulo">               <i>Kabulo</i><par n="Barcelono__np"/></e>
-<e lm="Kamerunio">            <i>Kamerunio</i><par n="Barcelono__np"/></e>
-<e lm="Kanado">               <i>Kanado</i><par n="Barcelono__np"/></e>
+<e lm="Jupitero">             <i>Jupiter</i><par n="Barcelon/o__np"/></e>
+<e lm="Kabulo">               <i>Kabul</i><par n="Barcelon/o__np"/></e>
+<e lm="Kamerunio">            <i>Kameruni</i><par n="Barcelon/o__np"/></e>
+<e lm="Kanado">               <i>Kanad</i><par n="Barcelon/o__np"/></e>
 <e lm="Kanarioj">             <i>Kanarioj</i><par n="Andoj__np"/></e>
-<e lm="Kantabrio">            <i>Kantabrio</i><par n="Barcelono__np"/></e>
-<e lm="Karakaso">             <i>Karakaso</i><par n="Barcelono__np"/></e>
-<e lm="Karibio">              <i>Karibio</i><par n="Barcelono__np"/></e>
-<e lm="Kartvelio">            <i>Kartvelio</i><par n="Barcelono__np"/></e>
-<e lm="Kastilio-Leono">       <i>Kastilio-Leono</i><par n="Barcelono__np"/></e>
-<e lm="Katalunio">            <i>Katalunio</i><par n="Barcelono__np"/></e>
-<e lm="Kataro">               <i>Kataro</i><par n="Barcelono__np"/></e>
-<e lm="Kenjo">                <i>Kenjo</i><par n="Barcelono__np"/></e>
-<e lm="Kipro">                <i>Kipro</i><par n="Barcelono__np"/></e>
-<e lm="Kolombio">             <i>Kolombio</i><par n="Barcelono__np"/></e>
-<e lm="Kongo">                <i>Kongo</i><par n="Barcelono__np"/></e>
-<e lm="Koreio">               <i>Koreio</i><par n="Barcelono__np"/></e>
-<e lm="Kroatio">              <i>Kroatio</i><par n="Barcelono__np"/></e>
-<e lm="Kubo">                 <i>Kubo</i><par n="Barcelono__np"/></e>
-<e lm="Latin-Ameriko">        <i>Latin-Ameriko</i><par n="Barcelono__np"/></e>
-<e lm="Latvio">               <i>Latvio</i><par n="Barcelono__np"/></e>
-<e lm="Leono">                <i>Leono</i><par n="Barcelono__np"/></e>
-<e lm="Libano">               <i>Libano</i><par n="Barcelono__np"/></e>
-<e lm="Liberio">              <i>Liberio</i><par n="Barcelono__np"/></e>
-<e lm="Libio">                <i>Libio</i><par n="Barcelono__np"/></e>
-<e lm="Limo">                 <i>Limo</i><par n="Barcelono__np"/></e>
-<e lm="Lisbono">              <i>Lisbono</i><par n="Barcelono__np"/></e>
-<e lm="Litovio">              <i>Litovio</i><par n="Barcelono__np"/></e>
-<e lm="Londono">              <i>Londono</i><par n="Barcelono__np"/></e>
-<e lm="Luksemburgio">         <i>Luksemburgio</i><par n="Barcelono__np"/></e>
-<e lm="Madagaskaro">          <i>Madagaskaro</i><par n="Barcelono__np"/></e>
-<e lm="Madrido">              <i>Madrido</i><par n="Barcelono__np"/></e>
-<e lm="Makedonio">            <i>Makedonio</i><par n="Barcelono__np"/></e>
-<e lm="Malto">                <i>Malto</i><par n="Barcelono__np"/></e>
-<e lm="Maroko">               <i>Maroko</i><par n="Barcelono__np"/></e>
-<e lm="Maŭritanio">           <i>Ma</i><par n="ŭ"/><i>ritanio</i><par n="Barcelono__np"/></e>
-<e lm="Mediteraneo">          <i>Mediteraneo</i><par n="Barcelono__np"/></e>
-<e lm="Meksiko">              <i>Meksiko</i><par n="Barcelono__np"/></e>
-<e lm="Monako">               <i>Monako</i><par n="Barcelono__np"/></e>
-<e lm="Montevideo">           <i>Montevideo</i><par n="Barcelono__np"/></e>
-<e lm="Montserato">           <i>Montserato</i><par n="Barcelono__np"/></e>
-<e lm="Moskvo">               <i>Moskvo</i><par n="Barcelono__np"/></e>
-<e lm="Navaro">               <i>Navaro</i><par n="Barcelono__np"/></e>
-<e lm="Nederlando">           <i>Nederlando</i><par n="Barcelono__np"/></e>
-<e lm="Nepalo">               <i>Nepalo</i><par n="Barcelono__np"/></e>
-<e lm="Niĝerio">              <i>Ni</i><par n="ĝ"/><i>erio</i><par n="Barcelono__np"/></e>
-<e lm="Nikaragvo">            <i>Nikaragvo</i><par n="Barcelono__np"/></e>
-<e lm="Norvegio">             <i>Norvegio</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Jorko">            <i>Nov-Jorko</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Zelando">          <i>Nov-Zelando</i><par n="Barcelono__np"/></e>
-<e lm="Pacifiko">             <i>Pacifiko</i><par n="Barcelono__np"/></e>
-<e lm="Pakistano">            <i>Pakistano</i><par n="Barcelono__np"/></e>
-<e lm="Panamo">               <i>Panamo</i><par n="Barcelono__np"/></e>
-<e lm="Paragvajo">            <i>Paragvajo</i><par n="Barcelono__np"/></e>
-<e lm="Parizo">               <i>Parizo</i><par n="Barcelono__np"/></e>
-<e lm="Pekino">               <i>Pekino</i><par n="Barcelono__np"/></e>
-<e lm="Peruo">                <i>Peruo</i><par n="Barcelono__np"/></e>
-<e lm="Pollando">             <i>Pollando</i><par n="Barcelono__np"/></e>
-<e lm="Portugalio">           <i>Portugalio</i><par n="Barcelono__np"/></e>
-<e lm="Prago">                <i>Prago</i><par n="Barcelono__np"/></e>
-<e lm="Romo">                 <i>Romo</i><par n="Barcelono__np"/></e>
-<e lm="Ruando">               <i>Ruando</i><par n="Barcelono__np"/></e>
-<e lm="Rumanio">              <i>Rumanio</i><par n="Barcelono__np"/></e>
-<e lm="Rusio">                <i>Rusio</i><par n="Barcelono__np"/></e>
-<e lm="Saharo">               <i>Saharo</i><par n="Barcelono__np"/></e>
-<e lm="Saud-Arabio">          <i>Saud-Arabio</i><par n="Barcelono__np"/></e>
-<e lm="Senegalo">             <i>Senegalo</i><par n="Barcelono__np"/></e>
-<e lm="Singapuro">            <i>Singapuro</i><par n="Barcelono__np"/></e>
-<e lm="Sirio">                <i>Sirio</i><par n="Barcelono__np"/></e>
-<e lm="Skotlando">            <i>Skotlando</i><par n="Barcelono__np"/></e>
-<e lm="Slovakio">             <i>Slovakio</i><par n="Barcelono__np"/></e>
-<e lm="Slovenio">             <i>Slovenio</i><par n="Barcelono__np"/></e>
-<e lm="Stokholmo">            <i>Stokholmo</i><par n="Barcelono__np"/></e>
-<e lm="Sud-Afriko">           <i>Sud-Afriko</i><par n="Barcelono__np"/></e>
-<e lm="Sudano">               <i>Sudano</i><par n="Barcelono__np"/></e>
-<e lm="Svedio">               <i>Svedio</i><par n="Barcelono__np"/></e>
-<e lm="Svisio">               <i>Svisio</i><par n="Barcelono__np"/></e>
-<e lm="Svislando">            <i>Svislando</i><par n="Barcelono__np"/></e>
-<e lm="Tajlando">             <i>Tajlando</i><par n="Barcelono__np"/></e>
-<e lm="Tajvano">              <i>Tajvano</i><par n="Barcelono__np"/></e>
-<e lm="Tanzanio">             <i>Tanzanio</i><par n="Barcelono__np"/></e>
-<e lm="Tokio">                <i>Tokio</i><par n="Barcelono__np"/></e>
-<e lm="Tunizio">              <i>Tunizio</i><par n="Barcelono__np"/></e>
-<e lm="Turkio">               <i>Turkio</i><par n="Barcelono__np"/></e>
-<e lm="Ukrainio">             <i>Ukrainio</i><par n="Barcelono__np"/></e>
-<e lm="Urugvajo">             <i>Urugvajo</i><par n="Barcelono__np"/></e>
-<e lm="Usono">                <i>Usono</i><par n="Barcelono__np"/></e>
-<e lm="Valencio">             <i>Valencio</i><par n="Barcelono__np"/></e>
-<e lm="Varsovio">             <i>Varsovio</i><par n="Barcelono__np"/></e>
-<e lm="Vaŝingtono">           <i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Barcelono__np"/></e>
-<e lm="Venezuelo">            <i>Venezuelo</i><par n="Barcelono__np"/></e>
-<e lm="Vieno">                <i>Vieno</i><par n="Barcelono__np"/></e>
-<e lm="Vjetnamio">            <i>Vjetnamio</i><par n="Barcelono__np"/></e>
+<e lm="Kantabrio">            <i>Kantabri</i><par n="Barcelon/o__np"/></e>
+<e lm="Karakaso">             <i>Karakas</i><par n="Barcelon/o__np"/></e>
+<e lm="Karibio">              <i>Karibi</i><par n="Barcelon/o__np"/></e>
+<e lm="Kartvelio">            <i>Kartveli</i><par n="Barcelon/o__np"/></e>
+<e lm="Kastilio-Leono">       <i>Kastilio-Leon</i><par n="Barcelon/o__np"/></e>
+<e lm="Katalunio">            <i>Kataluni</i><par n="Barcelon/o__np"/></e>
+<e lm="Kataro">               <i>Katar</i><par n="Barcelon/o__np"/></e>
+<e lm="Kenjo">                <i>Kenj</i><par n="Barcelon/o__np"/></e>
+<e lm="Kipro">                <i>Kipr</i><par n="Barcelon/o__np"/></e>
+<e lm="Kolombio">             <i>Kolombi</i><par n="Barcelon/o__np"/></e>
+<e lm="Kongo">                <i>Kong</i><par n="Barcelon/o__np"/></e>
+<e lm="Koreio">               <i>Korei</i><par n="Barcelon/o__np"/></e>
+<e lm="Kroatio">              <i>Kroati</i><par n="Barcelon/o__np"/></e>
+<e lm="Kubo">                 <i>Kub</i><par n="Barcelon/o__np"/></e>
+<e lm="Latin-Ameriko">        <i>Latin-Amerik</i><par n="Barcelon/o__np"/></e>
+<e lm="Latvio">               <i>Latvi</i><par n="Barcelon/o__np"/></e>
+<e lm="Leono">                <i>Leon</i><par n="Barcelon/o__np"/></e>
+<e lm="Libano">               <i>Liban</i><par n="Barcelon/o__np"/></e>
+<e lm="Liberio">              <i>Liberi</i><par n="Barcelon/o__np"/></e>
+<e lm="Libio">                <i>Libi</i><par n="Barcelon/o__np"/></e>
+<e lm="Limo">                 <i>Lim</i><par n="Barcelon/o__np"/></e>
+<e lm="Lisbono">              <i>Lisbon</i><par n="Barcelon/o__np"/></e>
+<e lm="Litovio">              <i>Litovi</i><par n="Barcelon/o__np"/></e>
+<e lm="Londono">              <i>London</i><par n="Barcelon/o__np"/></e>
+<e lm="Luksemburgio">         <i>Luksemburgi</i><par n="Barcelon/o__np"/></e>
+<e lm="Madagaskaro">          <i>Madagaskar</i><par n="Barcelon/o__np"/></e>
+<e lm="Madrido">              <i>Madrid</i><par n="Barcelon/o__np"/></e>
+<e lm="Makedonio">            <i>Makedoni</i><par n="Barcelon/o__np"/></e>
+<e lm="Malto">                <i>Malt</i><par n="Barcelon/o__np"/></e>
+<e lm="Maroko">               <i>Marok</i><par n="Barcelon/o__np"/></e>
+<e lm="Maŭritanio">           <i>Ma</i><par n="ŭ"/><i>ritani</i><par n="Barcelon/o__np"/></e>
+<e lm="Mediteraneo">          <i>Mediterane</i><par n="Barcelon/o__np"/></e>
+<e lm="Meksiko">              <i>Meksik</i><par n="Barcelon/o__np"/></e>
+<e lm="Monako">               <i>Monak</i><par n="Barcelon/o__np"/></e>
+<e lm="Montevideo">           <i>Montevide</i><par n="Barcelon/o__np"/></e>
+<e lm="Montserato">           <i>Montserat</i><par n="Barcelon/o__np"/></e>
+<e lm="Moskvo">               <i>Moskv</i><par n="Barcelon/o__np"/></e>
+<e lm="Navaro">               <i>Navar</i><par n="Barcelon/o__np"/></e>
+<e lm="Nederlando">           <i>Nederland</i><par n="Barcelon/o__np"/></e>
+<e lm="Nepalo">               <i>Nepal</i><par n="Barcelon/o__np"/></e>
+<e lm="Niĝerio">              <i>Ni</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
+<e lm="Nikaragvo">            <i>Nikaragv</i><par n="Barcelon/o__np"/></e>
+<e lm="Norvegio">             <i>Norvegi</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Jorko">            <i>Nov-Jork</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Zelando">          <i>Nov-Zeland</i><par n="Barcelon/o__np"/></e>
+<e lm="Pacifiko">             <i>Pacifik</i><par n="Barcelon/o__np"/></e>
+<e lm="Pakistano">            <i>Pakistan</i><par n="Barcelon/o__np"/></e>
+<e lm="Panamo">               <i>Panam</i><par n="Barcelon/o__np"/></e>
+<e lm="Paragvajo">            <i>Paragvaj</i><par n="Barcelon/o__np"/></e>
+<e lm="Parizo">               <i>Pariz</i><par n="Barcelon/o__np"/></e>
+<e lm="Pekino">               <i>Pekin</i><par n="Barcelon/o__np"/></e>
+<e lm="Peruo">                <i>Peru</i><par n="Barcelon/o__np"/></e>
+<e lm="Pollando">             <i>Polland</i><par n="Barcelon/o__np"/></e>
+<e lm="Portugalio">           <i>Portugali</i><par n="Barcelon/o__np"/></e>
+<e lm="Prago">                <i>Prag</i><par n="Barcelon/o__np"/></e>
+<e lm="Romo">                 <i>Rom</i><par n="Barcelon/o__np"/></e>
+<e lm="Ruando">               <i>Ruand</i><par n="Barcelon/o__np"/></e>
+<e lm="Rumanio">              <i>Rumani</i><par n="Barcelon/o__np"/></e>
+<e lm="Rusio">                <i>Rusi</i><par n="Barcelon/o__np"/></e>
+<e lm="Saharo">               <i>Sahar</i><par n="Barcelon/o__np"/></e>
+<e lm="Saud-Arabio">          <i>Saud-Arabi</i><par n="Barcelon/o__np"/></e>
+<e lm="Senegalo">             <i>Senegal</i><par n="Barcelon/o__np"/></e>
+<e lm="Singapuro">            <i>Singapur</i><par n="Barcelon/o__np"/></e>
+<e lm="Sirio">                <i>Siri</i><par n="Barcelon/o__np"/></e>
+<e lm="Skotlando">            <i>Skotland</i><par n="Barcelon/o__np"/></e>
+<e lm="Slovakio">             <i>Slovaki</i><par n="Barcelon/o__np"/></e>
+<e lm="Slovenio">             <i>Sloveni</i><par n="Barcelon/o__np"/></e>
+<e lm="Stokholmo">            <i>Stokholm</i><par n="Barcelon/o__np"/></e>
+<e lm="Sud-Afriko">           <i>Sud-Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Sudano">               <i>Sudan</i><par n="Barcelon/o__np"/></e>
+<e lm="Svedio">               <i>Svedi</i><par n="Barcelon/o__np"/></e>
+<e lm="Svisio">               <i>Svisi</i><par n="Barcelon/o__np"/></e>
+<e lm="Svislando">            <i>Svisland</i><par n="Barcelon/o__np"/></e>
+<e lm="Tajlando">             <i>Tajland</i><par n="Barcelon/o__np"/></e>
+<e lm="Tajvano">              <i>Tajvan</i><par n="Barcelon/o__np"/></e>
+<e lm="Tanzanio">             <i>Tanzani</i><par n="Barcelon/o__np"/></e>
+<e lm="Tokio">                <i>Toki</i><par n="Barcelon/o__np"/></e>
+<e lm="Tunizio">              <i>Tunizi</i><par n="Barcelon/o__np"/></e>
+<e lm="Turkio">               <i>Turki</i><par n="Barcelon/o__np"/></e>
+<e lm="Ukrainio">             <i>Ukraini</i><par n="Barcelon/o__np"/></e>
+<e lm="Urugvajo">             <i>Urugvaj</i><par n="Barcelon/o__np"/></e>
+<e lm="Usono">                <i>Uson</i><par n="Barcelon/o__np"/></e>
+<e lm="Valencio">             <i>Valenci</i><par n="Barcelon/o__np"/></e>
+<e lm="Varsovio">             <i>Varsovi</i><par n="Barcelon/o__np"/></e>
+<e lm="Vaŝingtono">           <i>Va</i><par n="ŝ"/><i>ington</i><par n="Barcelon/o__np"/></e>
+<e lm="Venezuelo">            <i>Venezuel</i><par n="Barcelon/o__np"/></e>
+<e lm="Vieno">                <i>Vien</i><par n="Barcelon/o__np"/></e>
+<e lm="Vjetnamio">            <i>Vjetnami</i><par n="Barcelon/o__np"/></e>
 <e lm="Vaŝingtono">           <i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Mark__np"/></e>
 
 
@@ -7084,10 +7098,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
     <!-- Anthroponyms -->
-<e lm="Sokrato">              <i>Sokrato</i><par n="Marko__np"/></e>
-<e lm="Platono">              <i>Platono</i><par n="Marko__np"/></e>
-<e lm="Aristotelo">           <i>Aristotelo</i><par n="Marko__np"/></e>
-<e lm="Aleksandro">           <i>Aleksandro</i><par n="Marko__np"/></e>
+<e lm="Sokrato">              <i>Sokrat</i><par n="Mark/o__np"/></e>
+<e lm="Platono">              <i>Platon</i><par n="Mark/o__np"/></e>
+<e lm="Aristotelo">           <i>Aristotel</i><par n="Mark/o__np"/></e>
+<e lm="Aleksandro">           <i>Aleksandr</i><par n="Mark/o__np"/></e>
 <e lm="Robert">               <i>Robert</i><par n="Mark__np"/></e>
 <e lm="Louis">                <i>Louis</i><par n="Mark__np"/></e>
 <e lm="Henry">                <i>Henry</i><par n="Mark__np"/></e>
@@ -7111,47 +7125,47 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="August">               <i>August</i><par n="Mark__np"/></e>
 <e lm="Agnesa">               <i>Agnesa</i><par n="Mary__np"/></e>
 <e lm="Christian">            <i>Christian</i><par n="Mark__np"/></e>
-<e lm="Dario">                <i>Dario</i><par n="Marko__np"/></e>
-<e lm="Davido">               <i>Davido</i><par n="Marko__np"/></e>
-<e lm="Diego">                <i>Diego</i><par n="Marko__np"/></e>
+<e lm="Dario">                <i>Dari</i><par n="Mark/o__np"/></e>
+<e lm="Davido">               <i>David</i><par n="Mark/o__np"/></e>
+<e lm="Diego">                <i>Dieg</i><par n="Mark/o__np"/></e>
 <e lm="Eleonora">             <i>Eleonora</i><par n="Marko__np"/></e>
 <e lm="Eliza">                <i>Eliza</i><par n="Marko__np"/></e>
-<e lm="Emilio">               <i>Emilio</i><par n="Marko__np"/></e>
-<e lm="Eŭgeno">               <i>E</i><par n="ŭ"/><i>geno</i><par n="Marko__np"/></e>
-<e lm="Georgo">               <i>Georgo</i><par n="Marko__np"/></e>
+<e lm="Emilio">               <i>Emili</i><par n="Mark/o__np"/></e>
+<e lm="Eŭgeno">               <i>E</i><par n="ŭ"/><i>gen</i><par n="Mark/o__np"/></e>
+<e lm="Georgo">               <i>Georg</i><par n="Mark/o__np"/></e>
 <e lm="Grecia">               <i>Grecia</i><par n="Mary__np"/></e>
-<e lm="Gerardo">              <i>Gerardo</i><par n="Marko__np"/></e>
+<e lm="Gerardo">              <i>Gerard</i><par n="Mark/o__np"/></e>
 <e lm="Helena">               <i>Helena</i><par n="Marko__np"/></e>
-<e lm="Henriko">              <i>Henriko</i><par n="Marko__np"/></e>
-<e lm="Ignaco">               <i>Ignaco</i><par n="Marko__np"/></e>
+<e lm="Henriko">              <i>Henrik</i><par n="Mark/o__np"/></e>
+<e lm="Ignaco">               <i>Ignac</i><par n="Mark/o__np"/></e>
 <e lm="Ilza">                 <i>Ilza</i><par n="Mary__np"/></e>
 <e lm="Izabela">              <i>Izabela</i><par n="Marko__np"/></e>
 <e lm="Israel">               <i>Israel</i><par n="Mark__np"/></e>
-<e lm="Jakobo">               <i>Jakobo</i><par n="Marko__np"/></e>
+<e lm="Jakobo">               <i>Jakob</i><par n="Mark/o__np"/></e>
 <e lm="Jaime">                <i>Jaime</i><par n="Mary__np"/></e>
 <e lm="Jaime">                <i>Jaime</i><par n="Mark__np"/></e>
-<e lm="Jesuo">                <i>Jesuo</i><par n="Marko__np"/></e>
-<e lm="Johano">               <i>Johano</i><par n="Marko__np"/></e>
-<e lm="Jozefo">               <i>Jozefo</i><par n="Marko__np"/></e>
+<e lm="Jesuo">                <i>Jesu</i><par n="Mark/o__np"/></e>
+<e lm="Johano">               <i>Johan</i><par n="Mark/o__np"/></e>
+<e lm="Jozefo">               <i>Jozef</i><par n="Mark/o__np"/></e>
 <e lm="Julia">                <i>Julia</i><par n="Marko__np"/></e>
-<e lm="Juliano">              <i>Juliano</i><par n="Marko__np"/></e>
-<e lm="Ĵeromo">               <i>Ĵeromo</i><par n="Marko__np"/></e>
-<e lm="Klaŭdo">               <i>Kla</i><par n="ŭ"/><i>do</i><par n="Marko__np"/></e>
-<e lm="Kristoforo">           <i>Kristoforo</i><par n="Marko__np"/></e>
-<e lm="Ksavero">              <i>Ksavero</i><par n="Marko__np"/></e>
-<e lm="Laŭrenco">             <i>La</i><par n="ŭ"/><i>renco</i><par n="Marko__np"/></e>
-<e lm="Ludoviko">             <i>Ludoviko</i><par n="Marko__np"/></e>
-<e lm="Mahometo">             <i>Mahometo</i><par n="Marko__np"/></e>
-<e lm="Manuelo">              <i>Manuelo</i><par n="Marko__np"/></e>
+<e lm="Juliano">              <i>Julian</i><par n="Mark/o__np"/></e>
+<e lm="Ĵeromo">               <i>Ĵerom</i><par n="Mark/o__np"/></e>
+<e lm="Klaŭdo">               <i>Kla</i><par n="ŭ"/><i>d</i><par n="Mark/o__np"/></e>
+<e lm="Kristoforo">           <i>Kristofor</i><par n="Mark/o__np"/></e>
+<e lm="Ksavero">              <i>Ksaver</i><par n="Mark/o__np"/></e>
+<e lm="Laŭrenco">             <i>La</i><par n="ŭ"/><i>renc</i><par n="Mark/o__np"/></e>
+<e lm="Ludoviko">             <i>Ludovik</i><par n="Mark/o__np"/></e>
+<e lm="Mahometo">             <i>Mahomet</i><par n="Mark/o__np"/></e>
+<e lm="Manuelo">              <i>Manuel</i><par n="Mark/o__np"/></e>
 <e lm="Maria">                <i>Maria</i><par n="Marko__np"/></e>
 <e lm="Marta">                <i>Marta</i><par n="Marko__np"/></e>
-<e lm="Marteno">              <i>Marteno</i><par n="Marko__np"/></e>
-<e lm="Merkuro">              <i>Merkuro</i><par n="Marko__np"/></e>
-<e lm="Mikaelo">              <i>Mikaelo</i><par n="Marko__np"/></e>
-<e lm="Nikolao">              <i>Nikolao</i><par n="Marko__np"/></e>
-<e lm="Petro">                <i>Petro</i><par n="Marko__np"/></e>
+<e lm="Marteno">              <i>Marten</i><par n="Mark/o__np"/></e>
+<e lm="Merkuro">              <i>Merkur</i><par n="Mark/o__np"/></e>
+<e lm="Mikaelo">              <i>Mikael</i><par n="Mark/o__np"/></e>
+<e lm="Nikolao">              <i>Nikola</i><par n="Mark/o__np"/></e>
+<e lm="Petro">                <i>Petr</i><par n="Mark/o__np"/></e>
 <e lm="Suzana">               <i>Suzana</i><par n="Marko__np"/></e>
-<e lm="Vilhelmo">             <i>Vilhelmo</i><par n="Marko__np"/></e>
+<e lm="Vilhelmo">             <i>Vilhelm</i><par n="Mark/o__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 
 
@@ -8774,7 +8788,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <e lm="Aaron">                <i>Aaron</i><par n="Mark__np"/></e>
-<e lm="Aarono">               <i>Aarono</i><par n="Marko__np"/></e>
+<e lm="Aarono">               <i>Aaron</i><par n="Mark/o__np"/></e>
 <e lm="abako">                <i>abak</i><par n="o__n"/></e>
 <e lm="fordoni">              <i>fordon</i><par n="i__vblex"/></e>
 <e lm="forrifuzi">            <i>forrifuz</i><par n="i__vblex"/></e>
@@ -8790,7 +8804,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="forkapto">             <i>forkapt</i><par n="o__n"/></e>
 <e lm="forkaptiĝo">           <i>forkapti</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="Abel">                 <i>Abel</i><par n="Mark__np"/></e>
-<e lm="Habelo">               <i>Habelo</i><par n="Marko__np"/></e>
+<e lm="Habelo">               <i>Habel</i><par n="Mark/o__np"/></e>
 <e lm="malkonfeso">           <i>malkonfes</i><par n="o__n"/></e>
 <e lm="forĵuro">              <i>for</i><par n="ĵ"/><i>ur</i><par n="o__n"/></e>
 <e lm="sinlavado">            <i>sinlavad</i><par n="o__n"/></e>
@@ -8805,7 +8819,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="abortigi">             <i>abortig</i><par n="i__vblex"/></e>
 <e lm="abortigisto">          <i>abortigist</i><par n="o__n"/></e>
 <e lm="Abraham">              <i>Abraham</i><par n="Mark__np"/></e>
-<e lm="Abrahamo">             <i>Abrahamo</i><par n="Marko__np"/></e>
+<e lm="Abrahamo">             <i>Abraham</i><par n="Mark/o__np"/></e>
 <e lm="nuligo">               <i>nulig</i><par n="o__n"/></e>
 <e lm="abrupte">              <i>abrupt</i><par n="e__adv"/></e>
 <e lm="absciso">              <i>abscis</i><par n="o__n"/></e>
@@ -8838,7 +8852,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="fiagado">              <i>fiagad</i><par n="o__n"/></e>
 <e lm="fiago">                <i>fiag</i><par n="o__n"/></e>
 <e lm="fitraktadi">           <i>fitraktad</i><par n="i__vblex"/></e>
-<e lm="Abisenio">             <i>Abisenio</i><par n="Barcelono__np"/></e>
+<e lm="Abisenio">             <i>Abiseni</i><par n="Barcelon/o__np"/></e>
 <e lm="superlerneja">         <i>superlernej</i><par n="a__adj"/></e>
 <e lm="docento">              <i>docent</i><par n="o__n"/></e>
 <e lm="universitatano">       <i>universitatan</i><par n="o__n"/></e>
@@ -9098,7 +9112,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="bonhavula">            <i>bonhavul</i><par n="a__adj"/></e>
 <e lm="riĉula">               <i>ri</i><par n="ĉ"/><i>ul</i><par n="a__adj"/></e>
 <e lm="pagebleco">            <i>pageblec</i><par n="o__n"/></e>
-<e lm="Afganistano">          <i>Afganistano</i><par n="Barcelono__np"/></e>
+<e lm="Afganistano">          <i>Afganistan</i><par n="Barcelon/o__np"/></e>
 <e lm="timema">               <i>timem</i><par n="a__adj"/></e>
 <e lm="malantaŭe">            <i>malanta</i><par n="ŭ"/><i></i><par n="e__adv"/></e>
 <e lm="posttagmezo">          <i>posttagmez</i><par n="o__n"/></e>
@@ -9335,7 +9349,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="vidpunkto">            <i>vidpunkt</i><par n="o__n"/></e>
 <e lm="fiŝanto">              <i>fi</i><par n="ŝ"/><i>ant</i><par n="o__n"/></e>
 <e lm="anglaĵo">              <i>angla</i><par n="ĵ"/><i></i><par n="o__n"/></e>
-<e lm="Angolo">               <i>Angolo</i><par n="Barcelono__np"/></e>
+<e lm="Angolo">               <i>Angol</i><par n="Barcelon/o__np"/></e>
 <e lm="kolere">               <i>koler</i><par n="e__adv"/></e>
 <e lm="kolera">               <i>koler</i><par n="a__adj"/></e>
 <e lm="inflamita">            <i>inflamit</i><par n="a__adj"/></e>
@@ -9392,7 +9406,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="antilopo">             <i>antilop</i><par n="o__n"/></e>
 <e lm="antologio">            <i>antologi</i><par n="o__n"/></e>
 <e lm="Anthony">              <i>Anthony</i><par n="Mark__np"/></e>
-<e lm="Antono">               <i>Antono</i><par n="Marko__np"/></e>
+<e lm="Antono">               <i>Anton</i><par n="Mark/o__np"/></e>
 <e lm="antropologo">          <i>antropolog</i><par n="o__n"/></e>
 <e lm="antropologia">         <i>antropologi</i><par n="a__adj"/></e>
 <e lm="antropologio">         <i>antropologi</i><par n="o__n"/></e>
@@ -9656,7 +9670,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ateisma">              <i>ateism</i><par n="a__adj"/></e>
 <e lm="atletismo">            <i>atletism</i><par n="o__n"/></e>
 <e lm="atletado">             <i>atletad</i><par n="o__n"/></e>
-<e lm="Atlantiko">            <i>Atlantiko</i><par n="Barcelono__np"/></e>
+<e lm="Atlantiko">            <i>Atlantik</i><par n="Barcelon/o__np"/></e>
 <e lm="atlaso">               <i>atlas</i><par n="o__n"/></e>
 <e lm="atolo">                <i>atol</i><par n="o__n"/></e>
 <e lm="atomigi">              <i>atomig</i><par n="i__vblex"/></e>
@@ -9957,7 +9971,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="konduta">              <i>kondut</i><par n="a__adj"/></e>
 <e lm="senkapigi">            <i>senkapig</i><par n="i__vblex"/></e>
 <e lm="estado">               <i>estad</i><par n="o__n"/></e>
-<e lm="Bjelorusio">           <i>Bjelorusio</i><par n="Barcelono__np"/></e>
+<e lm="Bjelorusio">           <i>Bjelorusi</i><par n="Barcelon/o__np"/></e>
 <e lm="rukti">                <i>rukt</i><par n="i__vblex"/></e>
 <e lm="kredaĵo">              <i>kreda</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="kredanto">             <i>kredant</i><par n="o__n"/></e>
@@ -9985,7 +9999,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="fleksado">             <i>fleksad</i><par n="o__n"/></e>
 <e lm="kurbigo">              <i>kurbig</i><par n="o__n"/></e>
 <e lm="sube">                 <i>sub</i><par n="e__adv"/></e>
-<e lm="Benedikto">            <i>Benedikto</i><par n="Marko__np"/></e>
+<e lm="Benedikto">            <i>Benedikt</i><par n="Mark/o__np"/></e>
 <e lm="Benedict">             <i>Benedict</i><par n="Mark__np"/></e>
 <e lm="utila">                <i>util</i><par n="a__adj"/></e>
 <e lm="profitiga">            <i>profitig</i><par n="a__adj"/></e>
@@ -10486,7 +10500,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="entombigo">            <i>entombig</i><par n="o__n"/></e>
 <e lm="entombiĝo">            <i>entombi</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="enteriĝo">             <i>enteri</i><par n="ĝ"/><i></i><par n="o__n"/></e>
-<e lm="Birmo">                <i>Birmo</i><par n="Barcelono__np"/></e>
+<e lm="Birmo">                <i>Birm</i><par n="Barcelon/o__np"/></e>
 <e lm="brulvundiĝi">          <i>brulvundi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="bruldifektiĝi">        <i>bruldifekti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="brulilo">              <i>brulil</i><par n="o__n"/></e>
@@ -10539,7 +10553,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="staĝanto">             <i>sta</i><par n="ĝ"/><i>ant</i><par n="o__n"/></e>
 <e lm="kadmio">               <i>kadmi</i><par n="o__n"/></e>
 <e lm="kadro">                <i>kadr</i><par n="o__n"/></e>
-<e lm="Kairo">                <i>Kairo</i><par n="Barcelono__np"/></e>
+<e lm="Kairo">                <i>Kair</i><par n="Barcelon/o__np"/></e>
 <e lm="kalcio">               <i>kalci</i><par n="o__n"/></e>
 <e lm="prikalkulo">           <i>prikalkul</i><par n="o__n"/></e>
 <e lm="kalkulaparato">        <i>kalkulaparat</i><par n="o__n"/></e>
@@ -10684,7 +10698,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="malŝate">              <i>mal</i><par n="ŝ"/><i>at</i><par n="e__adv"/></e>
 <e lm="vartanto">             <i>vartant</i><par n="o__n"/></e>
 <e lm="karesi">               <i>kares</i><par n="i__vblex"/></e>
-<e lm="Karibo">               <i>Karibo</i><par n="Barcelono__np"/></e>
+<e lm="Karibo">               <i>Karib</i><par n="Barcelon/o__np"/></e>
 <e lm="karikaturisto">        <i>karikaturist</i><par n="ino__n"/></e>
 <e lm="karnavalo">            <i>karnaval</i><par n="o__n"/></e>
 <e lm="karnomanĝulo">         <i>karnoman</i><par n="ĝ"/><i>ul</i><par n="o__n"/></e>
@@ -10716,7 +10730,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kontantaĵo">           <i>kontanta</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="kontanto">             <i>kontant</i><par n="o__n"/></e>
 <e lm="kesteto">              <i>kestet</i><par n="o__n"/></e>
-<e lm="Kaspio">               <i>Kaspio</i><par n="Barcelono__np"/></e>
+<e lm="Kaspio">               <i>Kaspi</i><par n="Barcelon/o__np"/></e>
 <e lm="kasavo">               <i>kasav</i><par n="o__n"/></e>
 <e lm="marmito">              <i>marmit</i><par n="o__n"/></e>
 <e lm="kasedo">               <i>kased</i><par n="o__n"/></e>
@@ -10766,9 +10780,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="katarismo">            <i>katarism</i><par n="o__n"/></e>
 <e lm="katarso">              <i>katars</i><par n="o__n"/></e>
 <e lm="katarsa">              <i>katars</i><par n="a__adj"/></e>
-<e lm="Kaŭkazio">             <i>Ka</i><par n="ŭ"/><i>kazio</i><par n="Barcelono__np"/></e>
+<e lm="Kaŭkazio">             <i>Ka</i><par n="ŭ"/><i>kazi</i><par n="Barcelon/o__np"/></e>
 <e lm="Kaŭkazia">             <i>Ka</i><par n="ŭ"/><i>kazia</i><par n="Barcelono__np"/></e>
-<e lm="Kaŭkazo">              <i>Ka</i><par n="ŭ"/><i>kazo</i><par n="Barcelono__np"/></e>
+<e lm="Kaŭkazo">              <i>Ka</i><par n="ŭ"/><i>kaz</i><par n="Barcelon/o__np"/></e>
 <e lm="florbrasiko">          <i>florbrasik</i><par n="o__n"/></e>
 <e lm="kaŭza">                <i>ka</i><par n="ŭ"/><i>z</i><par n="a__adj"/></e>
 <e lm="kaŭzeco">              <i>ka</i><par n="ŭ"/><i>zec</i><par n="o__n"/></e>
@@ -10911,7 +10925,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="karitata">             <i>karitat</i><par n="a__adj"/></e>
 <e lm="ĉarlatano">            <par n="ĉ"/><i>arlatan</i><par n="o__n"/></e>
 <e lm="Charles">              <i>Charles</i><par n="Mark__np"/></e>
-<e lm="Karlo">                <i>Karlo</i><par n="Marko__np"/></e>
+<e lm="Karlo">                <i>Karl</i><par n="Mark/o__np"/></e>
 <e lm="organigramo">          <i>organigram</i><par n="o__n"/></e>
 <e lm="luita">                <i>luit</i><par n="a__adj"/></e>
 <e lm="kursekvo">             <i>kursekv</i><par n="o__n"/></e>
@@ -11261,7 +11275,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="koluzii">              <i>koluzi</i><par n="i__vblex"/></e>
 <e lm="komplici">             <i>komplic</i><par n="i__vblex"/></e>
 <e lm="koluzio">              <i>koluzi</i><par n="o__n"/></e>
-<e lm="Kolonjo">              <i>Kolonjo</i><par n="Barcelono__np"/></e>
+<e lm="Kolonjo">              <i>Kolonj</i><par n="Barcelon/o__np"/></e>
 <e lm="kolombia">             <i>kolombi</i><par n="a__adj"/></e>
 <e lm="dupunkto">             <i>dupunkt</i><par n="o__n"/></e>
 <e lm="kojlo">                <i>kojl</i><par n="o__n"/></e>
@@ -11537,7 +11551,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="troplenigo">           <i>troplenig</i><par n="o__n"/></e>
 <e lm="tropleniĝo">           <i>tropleni</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="plenegiĝo">            <i>plenegi</i><par n="ĝ"/><i></i><par n="o__n"/></e>
-<e lm="Kongolo">              <i>Kongolo</i><par n="Barcelono__np"/></e>
+<e lm="Kongolo">              <i>Kongol</i><par n="Barcelon/o__np"/></e>
 <e lm="gratuli">              <i>gratul</i><par n="i__vblex"/></e>
 <e lm="kolektiĝi">            <i>kolekti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="kongregacio">          <i>kongregaci</i><par n="o__n"/></e>
@@ -13592,7 +13606,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="defrotiĝi">            <i>defroti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="formordeti">           <i>formordet</i><par n="i__vblex"/></e>
 <e lm="ravinigi">             <i>ravinig</i><par n="i__vblex"/></e>
-<e lm="Eroso">                <i>Eroso</i><par n="Barcelono__np"/></e>
+<e lm="Eroso">                <i>Eros</i><par n="Barcelon/o__np"/></e>
 <e lm="defroto">              <i>defrot</i><par n="o__n"/></e>
 <e lm="defrotiĝo">            <i>defroti</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="formordeto">           <i>formordet</i><par n="o__n"/></e>
@@ -14432,7 +14446,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="koncesio">             <i>koncesi</i><par n="o__n"/></e>
 <e lm="koncesiulo">           <i>koncesiul</i><par n="o__n"/></e>
 <e lm="Francis">              <i>Francis</i><par n="Mark__np"/></e>
-<e lm="Francisko">            <i>Francisko</i><par n="Marko__np"/></e>
+<e lm="Francisko">            <i>Francisk</i><par n="Mark/o__np"/></e>
 <e lm="Frank">                <i>Frank</i><par n="Mark__np"/></e>
 <e lm="malkaŝa">              <i>malka</i><par n="ŝ"/><par n="a__adj"/></e>
 <e lm="nekaŝema">             <i>neka</i><par n="ŝ"/><i>em</i><par n="a__adj"/></e>
@@ -14674,8 +14688,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="geofiziko">            <i>geofizik</i><par n="o__n"/></e>
 <e lm="geopolitika">          <i>geopolitik</i><par n="a__adj"/></e>
 <e lm="George">               <i>George</i><par n="Mark__np"/></e>
-<e lm="Gruzio">               <i>Gruzio</i><par n="Barcelono__np"/></e>
-<e lm="Georgio">              <i>Georgio</i><par n="Barcelono__np"/></e>
+<e lm="Gruzio">               <i>Gruzi</i><par n="Barcelon/o__np"/></e>
+<e lm="Georgio">              <i>Georgi</i><par n="Barcelon/o__np"/></e>
 <e lm="geranio">              <i>gerani</i><par n="o__n"/></e>
 <e lm="pelargonio">           <i>pelargoni</i><par n="o__n"/></e>
 <e lm="Gerard">               <i>Gerard</i><par n="Mark__np"/></e>
@@ -14813,7 +14827,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="grefti">               <i>greft</i><par n="i__vblex"/></e>
 <e lm="kungrefti">            <i>kungreft</i><par n="i__vblex"/></e>
 <e lm="greftiĝi">             <i>grefti</i><par n="ĝ"/><par n="i__vblex"/></e>
-<e lm="Gralo">                <i>Gralo</i><par n="Barcelono__np"/></e>
+<e lm="Gralo">                <i>Gral</i><par n="Barcelon/o__np"/></e>
 <e lm="grano">                <i>gran</i><par n="o__n"/></e>
 <e lm="ereto">                <i>eret</i><par n="o__n"/></e>
 <e lm="vejnaro">              <i>vejnar</i><par n="o__n"/></e>
@@ -14939,7 +14953,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="provoso">              <i>provos</i><par n="o__n"/></e>
 <e lm="biletisto">            <i>biletist</i><par n="ino__n"/></e>
 <e lm="manŝirmilo">           <i>man</i><par n="ŝ"/><i>irmil</i><par n="o__n"/></e>
-<e lm="Gvatemalio">           <i>Gvatemalio</i><par n="Barcelono__np"/></e>
+<e lm="Gvatemalio">           <i>Gvatemali</i><par n="Barcelon/o__np"/></e>
 <e lm="gerila">               <i>geril</i><par n="a__adj"/></e>
 <e lm="gerilano">             <i>gerilan</i><par n="o__n"/></e>
 <e lm="invitito">             <i>invitit</i><par n="o__n"/></e>
@@ -14954,7 +14968,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="skoltistino">          <i>skoltistin</i><par n="o__n"/></e>
 <e lm="aspekto">              <i>aspekt</i><par n="o__n"/></e>
 <e lm="gitaristo">            <i>gitarist</i><par n="ino__n"/></e>
-<e lm="Golfo">                <i>Golfo</i><par n="Barcelono__np"/></e>
+<e lm="Golfo">                <i>Golf</i><par n="Barcelon/o__np"/></e>
 <e lm="engluti">              <i>englut</i><par n="i__vblex"/></e>
 <e lm="ekgluti">              <i>ekglut</i><par n="i__vblex"/></e>
 <e lm="pafanto">              <i>pafant</i><par n="o__n"/></e>
@@ -15119,7 +15133,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="peza">                 <i>pez</i><par n="a__adj"/></e>
 <e lm="ega">                  <i>eg</i><par n="a__adj"/></e>
 <e lm="Hector">               <i>Hector</i><par n="Mark__np"/></e>
-<e lm="Hektoro">              <i>Hektoro</i><par n="Marko__np"/></e>
+<e lm="Hektoro">              <i>Hektor</i><par n="Mark/o__np"/></e>
 <e lm="heĝo">                 <i>he</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="erinaco">              <i>erinac</i><par n="o__n"/></e>
 <e lm="atenti">               <i>atent</i><par n="i__vblex"/></e>
@@ -15435,8 +15449,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="neleĝe">               <i>nele</i><par n="ĝ"/><i></i><par n="e__adv"/></e>
 <e lm="kontraŭregule">        <i>kontra</i><par n="ŭ"/><i>regul</i><par n="e__adv"/></e>
 <e lm="nelicencite">          <i>nelicencit</i><par n="e__adv"/></e>
-<e lm="Ilinojo">              <i>Ilinojo</i><par n="Barcelono__np"/></e>
-<e lm="Ilinojso">             <i>Ilinojso</i><par n="Barcelono__np"/></e>
+<e lm="Ilinojo">              <i>Ilinoj</i><par n="Barcelon/o__np"/></e>
+<e lm="Ilinojso">             <i>Ilinojs</i><par n="Barcelon/o__np"/></e>
 <e lm="analfabeteco">         <i>analfabetec</i><par n="o__n"/></e>
 <e lm="nelegoscio">           <i>nelegosci</i><par n="o__n"/></e>
 <e lm="nelegoscia">           <i>nelegosci</i><par n="a__adj"/></e>
@@ -15629,8 +15643,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="aŭtonomie">            <i>a</i><par n="ŭ"/><i>tonomi</i><par n="e__adv"/></e>
 <e lm="nedeterminita">        <i>nedeterminit</i><par n="a__adj"/></e>
 <e lm="indeksi">              <i>indeks</i><par n="i__vblex"/></e>
-<e lm="Barato">               <i>Barato</i><par n="Barcelono__np"/></e>
-<e lm="Hindio">               <i>Hindio</i><par n="Barcelono__np"/></e>
+<e lm="Barato">               <i>Barat</i><par n="Barcelon/o__np"/></e>
+<e lm="Hindio">               <i>Hindi</i><par n="Barcelon/o__np"/></e>
 <e lm="hinda">                <i>hind</i><par n="a__adj"/></e>
 <e lm="barata">               <i>barat</i><par n="a__adj"/></e>
 <e lm="hindo">                <i>hind</i><par n="o__n"/></e>
@@ -16147,7 +16161,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="juvelaro">             <i>juvelar</i><par n="o__n"/></e>
 <e lm="puzlo">                <i>puzl</i><par n="o__n"/></e>
 <e lm="dungiĝo">              <i>dungi</i><par n="ĝ"/><i></i><par n="o__n"/></e>
-<e lm="Ijobo">                <i>Ijobo</i><par n="Marko__np"/></e>
+<e lm="Ijobo">                <i>Ijob</i><par n="Mark/o__np"/></e>
 <e lm="trotkuri">             <i>trotkur</i><par n="i__vblex"/></e>
 <e lm="John">                 <i>John</i><par n="Mark__np"/></e>
 <e lm="kuna">                 <i>kun</i><par n="a__adj"/></e>
@@ -16159,8 +16173,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="petolaĵo">             <i>petola</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="ŝerce">                <par n="ŝ"/><i>erc</i><par n="e__adv"/></e>
 <e lm="sprite">               <i>sprit</i><par n="e__adv"/></e>
-<e lm="Jordano">              <i>Jordano</i><par n="Barcelono__np"/></e>
-<e lm="Jordano">              <i>Jordano</i><par n="Marko__np"/></e>
+<e lm="Jordano">              <i>Jordan</i><par n="Barcelon/o__np"/></e>
+<e lm="Jordano">              <i>Jordan</i><par n="Mark/o__np"/></e>
 <e lm="Josh">                 <i>Josh</i><par n="Mark__np"/></e>
 <e lm="ĵulo">                 <par n="ĵ"/><i>ul</i><par n="o__n"/></e>
 <e lm="revuo">                <i>revu</i><par n="o__n"/></e>
@@ -16186,7 +16200,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="diskruciĝejo">         <i>diskruci</i><par n="ĝ"/><i>ej</i><par n="o__n"/></e>
 <e lm="malaltrangulo">        <i>malaltrangul</i><par n="o__n"/></e>
 <e lm="junaĝulo">             <i>juna</i><par n="ĝ"/><i>ul</i><par n="o__n"/></e>
-<e lm="Jovo">                 <i>Jovo</i><par n="Marko__np"/></e>
+<e lm="Jovo">                 <i>Jov</i><par n="Mark/o__np"/></e>
 <e lm="juĝista">              <i>ju</i><par n="ĝ"/><i>ist</i><par n="a__adj"/></e>
 <e lm="justico">              <i>justic</i><par n="o__n"/></e>
 <e lm="juĝisto">              <i>ju</i><par n="ĝ"/><i>ist</i><par n="ino__n"/></e>
@@ -16258,8 +16272,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="scipovinta">           <i>scipovint</i><par n="a__adj"/></e>
 <e lm="fingronodo">           <i>fingronod</i><par n="o__n"/></e>
 <e lm="kriptono">             <i>kripton</i><par n="o__n"/></e>
-<e lm="Kurdistano">           <i>Kurdistano</i><par n="Barcelono__np"/></e>
-<e lm="Kurdio">               <i>Kurdio</i><par n="Barcelono__np"/></e>
+<e lm="Kurdistano">           <i>Kurdistan</i><par n="Barcelon/o__np"/></e>
+<e lm="Kurdio">               <i>Kurdi</i><par n="Barcelon/o__np"/></e>
 <e lm="diskomarko">           <i>diskomark</i><par n="o__n"/></e>
 <e lm="surskribeto">          <i>surskribet</i><par n="o__n"/></e>
 <e lm="epiteto">              <i>epitet</i><par n="o__n"/></e>
@@ -16314,8 +16328,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="lingvaĵo">             <i>lingva</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="velki">                <i>velk</i><par n="i__vblex"/></e>
 <e lm="rondiro">              <i>rondir</i><par n="o__n"/></e>
-<e lm="Samio">                <i>Samio</i><par n="Barcelono__np"/></e>
-<e lm="Laponio">              <i>Laponio</i><par n="Barcelono__np"/></e>
+<e lm="Samio">                <i>Sami</i><par n="Barcelon/o__np"/></e>
+<e lm="Laponio">              <i>Laponi</i><par n="Barcelon/o__np"/></e>
 <e lm="lektrinki">            <i>lektrink</i><par n="i__vblex"/></e>
 <e lm="plaŭdeti">             <i>pla</i><par n="ŭ"/><i>det</i><par n="i__vblex"/></e>
 <e lm="langotrinki">          <i>langotrink</i><par n="i__vblex"/></e>
@@ -16674,7 +16688,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="dehaki">               <i>dehak</i><par n="i__vblex"/></e>
 <e lm="ĉirkaŭhaki">           <par n="ĉ"/><i>irka</i><par n="ŭ"/><i>hak</i><par n="i__vblex"/></e>
 <e lm="grandsinjoro">         <i>grandsinjor</i><par n="o__n"/></e>
-<e lm="Loreno">               <i>Loreno</i><par n="Barcelono__np"/></e>
+<e lm="Loreno">               <i>Loren</i><par n="Barcelon/o__np"/></e>
 <e lm="malgajni">             <i>malgajn</i><par n="i__vblex"/></e>
 <e lm="malsukcesinto">        <i>malsukcesint</i><par n="o__n"/></e>
 <e lm="malsukcesulofiaskulo"> <i>malsukcesulofiaskul</i><par n="o__n"/></e>
@@ -16689,7 +16703,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="seniĝi">               <i>seni</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="pereinta">             <i>pereint</i><par n="a__adj"/></e>
 <e lm="lotaĵo">               <i>lota</i><par n="ĵ"/><i></i><par n="o__n"/></e>
-<e lm="Loto">                 <i>Loto</i><par n="Marko__np"/></e>
+<e lm="Loto">                 <i>Lot</i><par n="Mark/o__np"/></e>
 <e lm="belŝmiraĵo">           <i>bel</i><par n="ŝ"/><i>mira</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="linimento">            <i>liniment</i><par n="o__n"/></e>
 <e lm="lotuso">               <i>lotus</i><par n="o__n"/></e>
@@ -16719,7 +16733,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="lubriki">              <i>lubrik</i><par n="i__vblex"/></e>
 <e lm="bonokaze">             <i>bonokaz</i><par n="e__adv"/></e>
 <e lm="bonokaza">             <i>bonokaz</i><par n="a__adj"/></e>
-<e lm="Luko">                 <i>Luko</i><par n="Marko__np"/></e>
+<e lm="Luko">                 <i>Luk</i><par n="Mark/o__np"/></e>
 <e lm="lumbalgio">            <i>lumbalgi</i><par n="o__n"/></e>
 <e lm="lumba">                <i>lumb</i><par n="a__adj"/></e>
 <e lm="haŭtbutono">           <i>ha</i><par n="ŭ"/><i>tbuton</i><par n="o__n"/></e>
@@ -16731,7 +16745,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="tagmezmanĝi">          <i>tagmezman</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="ŝtelatendi">           <par n="ŝ"/><i>telatend</i><par n="i__vblex"/></e>
 <e lm="voluptemo">            <i>voluptem</i><par n="o__n"/></e>
-<e lm="Luksemburgo">          <i>Luksemburgo</i><par n="Barcelono__np"/></e>
+<e lm="Luksemburgo">          <i>Luksemburg</i><par n="Barcelon/o__np"/></e>
 <e lm="luksa">                <i>luks</i><par n="a__adj"/></e>
 <e lm="luksaĵo">              <i>luksa</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="limfo">                <i>limf</i><par n="o__n"/></e>
@@ -16826,7 +16840,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="evidentigi">           <i>evidentig</i><par n="i__vblex"/></e>
 <e lm="manifestiĝi">          <i>manifesti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="evidente">             <i>evident</i><par n="e__adv"/></e>
-<e lm="Manilo">               <i>Manilo</i><par n="Barcelono__np"/></e>
+<e lm="Manilo">               <i>Manil</i><par n="Barcelon/o__np"/></e>
 <e lm="manregi">              <i>manreg</i><par n="i__vblex"/></e>
 <e lm="manregado">            <i>manregad</i><par n="o__n"/></e>
 <e lm="manipulanto">          <i>manipulant</i><par n="o__n"/></e>
@@ -17078,7 +17092,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="meksikiano">           <i>meksikian</i><par n="o__n"/></e>
 <e lm="interetaĝo">           <i>intereta</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="Michael">              <i>Michael</i><par n="Mark__np"/></e>
-<e lm="Mikaelo">              <i>Mikaelo</i><par n="Marko__np"/></e>
+<e lm="Mikaelo">              <i>Mikael</i><par n="Mark/o__np"/></e>
 <e lm="mikrobiologo">         <i>mikrobiolog</i><par n="o__n"/></e>
 <e lm="mikrobiologio">        <i>mikrobiologi</i><par n="o__n"/></e>
 <e lm="mikroklimato">         <i>mikroklimat</i><par n="o__n"/></e>
@@ -17224,7 +17238,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="muntero">              <i>munter</i><par n="o__n"/></e>
 <e lm="kursero">              <i>kurser</i><par n="o__n"/></e>
 <e lm="Mohamed">              <i>Mohamed</i><par n="Mark__np"/></e>
-<e lm="Mohamedo">             <i>Mohamedo</i><par n="Marko__np"/></e>
+<e lm="Mohamedo">             <i>Mohamed</i><par n="Mark/o__np"/></e>
 <e lm="malseketigi">          <i>malseketig</i><par n="i__vblex"/></e>
 <e lm="formilo">              <i>formil</i><par n="o__n"/></e>
 <e lm="modelilo">             <i>modelil</i><par n="o__n"/></e>
@@ -17381,7 +17395,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="mutualeco">            <i>mutualec</i><par n="o__n"/></e>
 <e lm="buŝumo">               <i>bu</i><par n="ŝ"/><i>um</i><par n="o__n"/></e>
 <e lm="mialgio">              <i>mialgi</i><par n="o__n"/></e>
-<e lm="Mjanmaro">             <i>Mjanmaro</i><par n="Barcelono__np"/></e>
+<e lm="Mjanmaro">             <i>Mjanmar</i><par n="Barcelon/o__np"/></e>
 <e lm="miopeco">              <i>miopec</i><par n="o__n"/></e>
 <e lm="miriado">              <i>miriad</i><par n="o__n"/></e>
 <e lm="kaŝitaĵo">             <i>ka</i><par n="ŝ"/><i>ita</i><par n="ĵ"/><i></i><par n="o__n"/></e>
@@ -17540,7 +17554,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="plejproksima">         <i>plejproksim</i><par n="a__adj"/></e>
 <e lm="beleta">               <i>belet</i><par n="a__adj"/></e>
 <e lm="ĝua">                  <par n="ĝ"/><i>u</i><par n="a__adj"/></e>
-<e lm="Nico">                 <i>Nico</i><par n="Barcelono__np"/></e>
+<e lm="Nico">                 <i>Nic</i><par n="Barcelon/o__np"/></e>
 <e lm="ĝue">                  <par n="ĝ"/><i>u</i><par n="e__adv"/></e>
 <e lm="dolĉe">                <i>dol</i><par n="ĉ"/><i></i><par n="e__adv"/></e>
 <e lm="belete">               <i>belet</i><par n="e__adv"/></e>
@@ -17703,7 +17717,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="okupado">              <i>okupad</i><par n="o__n"/></e>
 <e lm="ekposedi">             <i>ekposed</i><par n="i__vblex"/></e>
 <e lm="fariĝo">               <i>fari</i><par n="ĝ"/><i></i><par n="o__n"/></e>
-<e lm="Oceanio">              <i>Oceanio</i><par n="Barcelono__np"/></e>
+<e lm="Oceanio">              <i>Oceani</i><par n="Barcelon/o__np"/></e>
 <e lm="oceana">               <i>ocean</i><par n="a__adj"/></e>
 <e lm="oceanografia">         <i>oceanografi</i><par n="a__adj"/></e>
 <e lm="oceanografio">         <i>oceanografi</i><par n="o__n"/></e>
@@ -17964,7 +17978,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="irrapido">             <i>irrapid</i><par n="o__n"/></e>
 <e lm="movrapido">            <i>movrapid</i><par n="o__n"/></e>
 <e lm="irmaniero">            <i>irmanier</i><par n="o__n"/></e>
-<e lm="Pacifiko">             <i>Pacifiko</i><par n="Barcelono__np"/></e>
+<e lm="Pacifiko">             <i>Pacifik</i><par n="Barcelon/o__np"/></e>
 <e lm="kvietigo">             <i>kvietig</i><par n="o__n"/></e>
 <e lm="interpacigo">          <i>interpacig</i><par n="o__n"/></e>
 <e lm="pacigi">               <i>pacig</i><par n="i__vblex"/></e>
@@ -18089,7 +18103,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="malgrandigeti">        <i>malgrandiget</i><par n="i__vblex"/></e>
 <e lm="naskinto">             <i>naskint</i><par n="o__n"/></e>
 <e lm="gepatra">              <i>gepatr</i><par n="a__adj"/></e>
-<e lm="Pariso">               <i>Pariso</i><par n="Marko__np"/></e>
+<e lm="Pariso">               <i>Paris</i><par n="Mark/o__np"/></e>
 <e lm="paroko">               <i>paro</i><par n="k_ĥ"/><i></i><par n="o__n"/></e>
 <e lm="egaleco">              <i>egalec</i><par n="o__n"/></e>
 <e lm="alparo">               <i>alpar</i><par n="o__n"/></e>
@@ -18181,7 +18195,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kondutado">            <i>kondutad</i><par n="o__n"/></e>
 <e lm="okazado">              <i>okazad</i><par n="o__n"/></e>
 <e lm="Paul">                 <i>Paul</i><par n="Mark__np"/></e>
-<e lm="Paŭlo">                <i>Pa</i><par n="ŭ"/><i>lo</i><par n="Marko__np"/></e>
+<e lm="Paŭlo">                <i>Pa</i><par n="ŭ"/><i>l</i><par n="Mark/o__np"/></e>
 <e lm="pavimi">               <i>pavim</i><par n="i__vblex"/></e>
 <e lm="paviliono">            <i>pavilion</i><par n="o__n"/></e>
 <e lm="pavimo">               <i>pavim</i><par n="o__n"/></e>
@@ -18371,7 +18385,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="fazano">               <i>fazan</i><par n="o__n"/></e>
 <e lm="fenomenologio">        <i>fenomenologi</i><par n="o__n"/></e>
 <e lm="Philip">               <i>Philip</i><par n="Mark__np"/></e>
-<e lm="Filipo">               <i>Filipo</i><par n="Marko__np"/></e>
+<e lm="Filipo">               <i>Filip</i><par n="Mark/o__np"/></e>
 <e lm="filistro">             <i>filistr</i><par n="o__n"/></e>
 <e lm="filiŝto">              <i>fili</i><par n="ŝ"/><i>t</i><par n="o__n"/></e>
 <e lm="Phillip">              <i>Phillip</i><par n="Mark__np"/></e>
@@ -19995,7 +20009,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ruliĝado">             <i>ruli</i><par n="ĝ"/><i>ad</i><par n="o__n"/></e>
 <e lm="roma">                 <i>rom</i><par n="a__adj"/></e>
 <e lm="romania">              <i>romani</i><par n="a__adj"/></e>
-<e lm="Romano">               <i>Romano</i><par n="Marko__np"/></e>
+<e lm="Romano">               <i>Roman</i><par n="Mark/o__np"/></e>
 <e lm="Romana">               <i>Romana</i><par n="Marko__np"/></e>
 <e lm="romanco">              <i>romanc</i><par n="o__n"/></e>
 <e lm="revema">               <i>revem</i><par n="a__adj"/></e>
@@ -20003,7 +20017,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="romaneca">             <i>romanec</i><par n="a__adj"/></e>
 <e lm="romanecigi">           <i>romanecig</i><par n="i__vblex"/></e>
 <e lm="romaneco">             <i>romanec</i><par n="o__n"/></e>
-<e lm="Romanio">              <i>Romanio</i><par n="Barcelono__np"/></e>
+<e lm="Romanio">              <i>Romani</i><par n="Barcelon/o__np"/></e>
 <e lm="salono">               <i>salon</i><par n="o__n"/></e>
 <e lm="enradikigi">           <i>enradikig</i><par n="i__vblex"/></e>
 <e lm="ŝnuro">                <par n="ŝ"/><i>nur</i><par n="o__n"/></e>
@@ -20068,7 +20082,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="rapidirigi">           <i>rapidirig</i><par n="i__vblex"/></e>
 <e lm="junko">                <i>junk</i><par n="o__n"/></e>
 <e lm="rapidegi">             <i>rapideg</i><par n="i__vblex"/></e>
-<e lm="Ruslando">             <i>Ruslando</i><par n="Barcelono__np"/></e>
+<e lm="Ruslando">             <i>Rusland</i><par n="Barcelon/o__np"/></e>
 <e lm="ruslanda">             <i>rusland</i><par n="a__adj"/></e>
 <e lm="ruslandano">           <i>ruslandan</i><par n="o__n"/></e>
 <e lm="rustigi">              <i>rustig</i><par n="i__vblex"/></e>
@@ -20147,7 +20161,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="salgusta">             <i>salgust</i><par n="a__adj"/></e>
 <e lm="malpudora">            <i>malpudor</i><par n="a__adj"/></e>
 <e lm="ĝentilformulo">        <par n="ĝ"/><i>entilformul</i><par n="o__n"/></e>
-<e lm="Samoo">                <i>Samoo</i><par n="Barcelono__np"/></e>
+<e lm="Samoo">                <i>Samo</i><par n="Barcelon/o__np"/></e>
 <e lm="provaĵo">              <i>prova</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="provi">                <i>prov</i><par n="i__vblex"/></e>
 <e lm="specimeni">            <i>specimen</i><par n="i__vblex"/></e>
@@ -20157,7 +20171,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="specimenaro">          <i>specimenar</i><par n="o__n"/></e>
 <e lm="specimenisto">         <i>specimenist</i><par n="ino__n"/></e>
 <e lm="Samuel">               <i>Samuel</i><par n="Mark__np"/></e>
-<e lm="Samuelo">              <i>Samuelo</i><par n="Marko__np"/></e>
+<e lm="Samuelo">              <i>Samuel</i><par n="Mark/o__np"/></e>
 <e lm="resanigejo">           <i>resanigej</i><par n="o__n"/></e>
 <e lm="sanktigi">             <i>sanktig</i><par n="i__vblex"/></e>
 <e lm="sanktiĝi">             <i>sankti</i><par n="ĝ"/><par n="i__vblex"/></e>
@@ -21295,7 +21309,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ŝablonaĵo">            <par n="ŝ"/><i>ablona</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="vicfilino">            <i>vicfilin</i><par n="o__n"/></e>
 <e lm="Stephen">              <i>Stephen</i><par n="Mark__np"/></e>
-<e lm="Stefano">              <i>Stefano</i><par n="Marko__np"/></e>
+<e lm="Stefano">              <i>Stefan</i><par n="Mark/o__np"/></e>
 <e lm="vicpatrino">           <i>vicpatrin</i><par n="o__n"/></e>
 <e lm="stepo">                <i>step</i><par n="o__n"/></e>
 <e lm="vicfilo">              <i>vicfil</i><par n="o__n"/></e>
@@ -22124,7 +22138,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="tonelaro">             <i>tonelar</i><par n="o__n"/></e>
 <e lm="enhavebleco">          <i>enhaveblec</i><par n="o__n"/></e>
 <e lm="Tony">                 <i>Tony</i><par n="Mark__np"/></e>
-<e lm="Tonĉjo">               <i>Ton</i><par n="ĉ"/><i>jo</i><par n="Marko__np"/></e>
+<e lm="Tonĉjo">               <i>Ton</i><par n="ĉ"/><i>j</i><par n="Mark/o__np"/></e>
 <e lm="laborilo">             <i>laboril</i><par n="o__n"/></e>
 <e lm="garnituro">            <i>garnitur</i><par n="o__n"/></e>
 <e lm="senefika">             <i>senefik</i><par n="a__adj"/></e>
@@ -22454,7 +22468,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="tipografio">           <i>tipografi</i><par n="o__n"/></e>
 <e lm="tirana">               <i>tiran</i><par n="a__adj"/></e>
 <e lm="tiraneca">             <i>tiranec</i><par n="a__adj"/></e>
-<e lm="Ukrajno">              <i>Ukrajno</i><par n="Barcelono__np"/></e>
+<e lm="Ukrajno">              <i>Ukrajn</i><par n="Barcelon/o__np"/></e>
 <e lm="ulceriĝi">             <i>ulceri</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="ulceriĝo">             <i>ulceri</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="pintpinta">            <i>pintpint</i><par n="a__adj"/></e>
@@ -22756,7 +22770,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="vasteco">              <i>vastec</i><par n="o__n"/></e>
 <e lm="kuvo">                 <i>kuv</i><par n="o__n"/></e>
 <e lm="tino">                 <i>tin</i><par n="o__n"/></e>
-<e lm="Vatikano">             <i>Vatikano</i><par n="Barcelono__np"/></e>
+<e lm="Vatikano">             <i>Vatikan</i><par n="Barcelon/o__np"/></e>
 <e lm="transsalti">           <i>transsalt</i><par n="i__vblex"/></e>
 <e lm="vektoro">              <i>vektor</i><par n="o__n"/></e>
 <e lm="vehiklo">              <i>vehikl</i><par n="o__n"/></e>
@@ -22834,9 +22848,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="suferinto">            <i>suferint</i><par n="o__n"/></e>
 <e lm="viktimigado">          <i>viktimigad</i><par n="o__n"/></e>
 <e lm="viktimigi">            <i>viktimig</i><par n="i__vblex"/></e>
-<e lm="Viktoro">              <i>Viktoro</i><par n="Marko__np"/></e>
+<e lm="Viktoro">              <i>Viktor</i><par n="Mark/o__np"/></e>
 <e lm="Viktoria">             <i>Viktoria</i><par n="Marko__np"/></e>
-<e lm="Viktorio">             <i>Viktorio</i><par n="Barcelono__np"/></e>
+<e lm="Viktorio">             <i>Viktori</i><par n="Barcelon/o__np"/></e>
 <e lm="video">                <i>vide</i><par n="o__n"/></e>
 <e lm="videofilmo">           <i>videofilm</i><par n="o__n"/></e>
 <e lm="videobendo">           <i>videobend</i><par n="o__n"/></e>
@@ -22860,7 +22874,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="viola">                <i>viol</i><par n="a__adj"/></e>
 <e lm="violkolora">           <i>violkolor</i><par n="a__adj"/></e>
 <e lm="virgulino">            <i>virgulin</i><par n="o__n"/></e>
-<e lm="Virginio">             <i>Virginio</i><par n="Barcelono__np"/></e>
+<e lm="Virginio">             <i>Virgini</i><par n="Barcelon/o__np"/></e>
 <e lm="Virginia">             <i>Virginia</i><par n="Barcelono__np"/></e>
 <e lm="virtuala">             <i>virtual</i><par n="a__adj"/></e>
 <e lm="surreta">              <i>surret</i><par n="a__adj"/></e>
@@ -22997,7 +23011,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="mandato">              <i>mandat</i><par n="o__n"/></e>
 <e lm="lavadi">               <i>lavad</i><par n="i__vblex"/></e>
 <e lm="tralavi">              <i>tralav</i><par n="i__vblex"/></e>
-<e lm="Vaŝingtonio">          <i>Va</i><par n="ŝ"/><i>ingtonio</i><par n="Barcelono__np"/></e>
+<e lm="Vaŝingtonio">          <i>Va</i><par n="ŝ"/><i>ingtoni</i><par n="Barcelon/o__np"/></e>
 <e lm="forpasigi">            <i>forpasig</i><par n="i__vblex"/></e>
 <e lm="perdigi">              <i>perdig</i><par n="i__vblex"/></e>
 <e lm="elĵetindaĵo">          <i>el</i><par n="ĵ"/><i>etinda</i><par n="ĵ"/><i></i><par n="o__n"/></e>
@@ -23079,7 +23093,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="bondeziranto">         <i>bondezirant</i><par n="o__n"/></e>
 <e lm="okcidentio">           <i>okcidenti</i><par n="o__n"/></e>
 <e lm="okcidentia">           <i>okcidenti</i><par n="a__adj"/></e>
-<e lm="Parlamento">           <i>Parlamento</i><par n="Barcelono__np"/></e>
+<e lm="Parlamento">           <i>Parlament</i><par n="Barcelon/o__np"/></e>
 <e lm="Westminster">          <i>Westminster</i><par n="Barcelono__np"/></e>
 <e lm="senspinula">           <i>senspinul</i><par n="a__adj"/></e>
 <e lm="cedemula">             <i>cedemul</i><par n="a__adj"/></e>
@@ -23528,24 +23542,24 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <!-- Aldonoj 2009/02/23 -->
 
-<e lm="Armenio">              <i>Armenio</i><par n="Barcelono__np"/></e>
-<e lm="Azerio">               <i>Azerio</i><par n="Barcelono__np"/></e>
-<e lm="Azerbajĝano">          <i>Azerbajĝano</i><par n="Barcelono__np"/></e>
-<e lm="Kazaĥio">              <i>Kazaĥio</i><par n="Barcelono__np"/></e>
-<e lm="Kazaĥstano">           <i>Kazaĥstano</i><par n="Barcelono__np"/></e>
-<e lm="Kirgizio">             <i>Kirgizio</i><par n="Barcelono__np"/></e>
-<e lm="Kirgizistano">         <i>Kirgizistano</i><par n="Barcelono__np"/></e>
-<e lm="Taĝikio">              <i>Taĝikio</i><par n="Barcelono__np"/></e>
-<e lm="Taĝikistano">          <i>Taĝikistano</i><par n="Barcelono__np"/></e>
-<e lm="Turkmenio">            <i>Turkmenio</i><par n="Barcelono__np"/></e>
-<e lm="Turkmenistano">        <i>Turkmenistano</i><par n="Barcelono__np"/></e>
-<e lm="Kartvelio">            <i>Kartvelio</i><par n="Barcelono__np"/></e>
-<e lm="Belorusio">            <i>Belorusio</i><par n="Barcelono__np"/></e>
-<e lm="Finnlando">            <i>Finnlando</i><par n="Barcelono__np"/></e>
-<e lm="Kastilio">             <i>Kastilio</i><par n="Barcelono__np"/></e>
-<e lm="Sovet-Unio">           <i>Sovet-Unio</i><par n="Barcelono__np"/></e>
-<e lm="Sovetio">              <i>Sovetio</i><par n="Barcelono__np"/></e>
-<e lm="Ĉuvaŝio">              <i>Ĉuvaŝio</i><par n="Barcelono__np"/></e>
+<e lm="Armenio">              <i>Armeni</i><par n="Barcelon/o__np"/></e>
+<e lm="Azerio">               <i>Azeri</i><par n="Barcelon/o__np"/></e>
+<e lm="Azerbajĝano">          <i>Azerbajĝan</i><par n="Barcelon/o__np"/></e>
+<e lm="Kazaĥio">              <i>Kazaĥi</i><par n="Barcelon/o__np"/></e>
+<e lm="Kazaĥstano">           <i>Kazaĥstan</i><par n="Barcelon/o__np"/></e>
+<e lm="Kirgizio">             <i>Kirgizi</i><par n="Barcelon/o__np"/></e>
+<e lm="Kirgizistano">         <i>Kirgizistan</i><par n="Barcelon/o__np"/></e>
+<e lm="Taĝikio">              <i>Taĝiki</i><par n="Barcelon/o__np"/></e>
+<e lm="Taĝikistano">          <i>Taĝikistan</i><par n="Barcelon/o__np"/></e>
+<e lm="Turkmenio">            <i>Turkmeni</i><par n="Barcelon/o__np"/></e>
+<e lm="Turkmenistano">        <i>Turkmenistan</i><par n="Barcelon/o__np"/></e>
+<e lm="Kartvelio">            <i>Kartveli</i><par n="Barcelon/o__np"/></e>
+<e lm="Belorusio">            <i>Belorusi</i><par n="Barcelon/o__np"/></e>
+<e lm="Finnlando">            <i>Finnland</i><par n="Barcelon/o__np"/></e>
+<e lm="Kastilio">             <i>Kastili</i><par n="Barcelon/o__np"/></e>
+<e lm="Sovet-Unio">           <i>Sovet-Uni</i><par n="Barcelon/o__np"/></e>
+<e lm="Sovetio">              <i>Soveti</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉuvaŝio">              <i>Ĉuvaŝi</i><par n="Barcelon/o__np"/></e>
 <e lm="armena">               <i>armen</i><par n="a__adj"/></e>
 <e lm="belorusa">             <i>belorus</i><par n="a__adj"/></e>
 <e lm="bolŝevika">            <i>bol</i><par n="ŝ"/><i>evik</i><par n="a__adj"/></e>
@@ -23622,65 +23636,65 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="menŝeviko">            <i>men</i><par n="ŝ"/><i>evik</i><par n="ino__n"/></e>
 <e lm="AVI">                  <i>AVI</i><par n="DNA__n"/></e>
 <e lm="Aidoso">               <i>Aidoso</i><par n="DNA__n"/></e>
-<e lm="Antigvo">              <i>Antigvo</i><par n="Barcelono__np"/></e>
-<e lm="Arubo">                <i>Arubo</i><par n="Barcelono__np"/></e>
-<e lm="Barbudo">              <i>Barbudo</i><par n="Barcelono__np"/></e>
-<e lm="Alabamo">              <i>Alabamo</i><par n="Barcelono__np"/></e>
-<e lm="Alasko">               <i>Alasko</i><par n="Barcelono__np"/></e>
-<e lm="Arizono">              <i>Arizono</i><par n="Barcelono__np"/></e>
-<e lm="Arkanso">              <i>Arkanso</i><par n="Barcelono__np"/></e>
-<e lm="Delavaro">             <i>Delavaro</i><par n="Barcelono__np"/></e>
-<e lm="Florido">              <i>Florido</i><par n="Barcelono__np"/></e>
-<e lm="Georgio">              <i>Georgio</i><par n="Barcelono__np"/></e>
-<e lm="Havajo">               <i>Havajo</i><par n="Barcelono__np"/></e>
-<e lm="Idaho">                <i>Idaho</i><par n="Barcelono__np"/></e>
-<e lm="Ilinojo">              <i>Ilinojo</i><par n="Barcelono__np"/></e>
-<e lm="Indianao">             <i>Indianao</i><par n="Barcelono__np"/></e>
-<e lm="Iovao">                <i>Iovao</i><par n="Barcelono__np"/></e>
-<e lm="Kalifornio">           <i>Kalifornio</i><par n="Barcelono__np"/></e>
-<e lm="Kansaso">              <i>Kansaso</i><par n="Barcelono__np"/></e>
-<e lm="Kentukio">             <i>Kentukio</i><par n="Barcelono__np"/></e>
-<e lm="Koloradio">            <i>Koloradio</i><par n="Barcelono__np"/></e>
-<e lm="Konektikuto">          <i>Konektikuto</i><par n="Barcelono__np"/></e>
-<e lm="Luiziano">             <i>Luiziano</i><par n="Barcelono__np"/></e>
-<e lm="Majno">                <i>Majno</i><par n="Barcelono__np"/></e>
-<e lm="Marilando">            <i>Marilando</i><par n="Barcelono__np"/></e>
-<e lm="Masaĉuseco">           <i>Masaĉuseco</i><par n="Barcelono__np"/></e>
-<e lm="Miĉigano">             <i>Miĉigano</i><par n="Barcelono__np"/></e>
-<e lm="Minesoto">             <i>Minesoto</i><par n="Barcelono__np"/></e>
-<e lm="Misisipio">            <i>Misisipio</i><par n="Barcelono__np"/></e>
-<e lm="Misurio">              <i>Misurio</i><par n="Barcelono__np"/></e>
-<e lm="Montano">              <i>Montano</i><par n="Barcelono__np"/></e>
-<e lm="Nebrasko">             <i>Nebrasko</i><par n="Barcelono__np"/></e>
-<e lm="Nevado">               <i>Nevado</i><par n="Barcelono__np"/></e>
-<e lm="Nord-Dakoto">          <i>Nord-Dakoto</i><par n="Barcelono__np"/></e>
-<e lm="Nord-Karolino">        <i>Nord-Karolino</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Jorkio">           <i>Nov-Jorkio</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Ĵerzejo">          <i>Nov-Ĵerzejo</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Meksiko">          <i>Nov-Meksiko</i><par n="Barcelono__np"/></e>
-<e lm="Ohio">                 <i>Ohio</i><par n="Barcelono__np"/></e>
-<e lm="Okcidenta Virginio">   <i>Okcidenta<b/>Virginio</i><par n="Barcelono__np"/></e>
-<e lm="Oklahomo">             <i>Oklahomo</i><par n="Barcelono__np"/></e>
-<e lm="Oregono">              <i>Oregono</i><par n="Barcelono__np"/></e>
-<e lm="Pensilvanio">          <i>Pensilvanio</i><par n="Barcelono__np"/></e>
-<e lm="Rod-Insulo">           <i>Rod-Insulo</i><par n="Barcelono__np"/></e>
-<e lm="Sud-Dakoto">           <i>Sud-Dakoto</i><par n="Barcelono__np"/></e>
-<e lm="Sud-Karolino">         <i>Sud-Karolino</i><par n="Barcelono__np"/></e>
-<e lm="Teksaso">              <i>Teksaso</i><par n="Barcelono__np"/></e>
-<e lm="Tenesio">              <i>Tenesio</i><par n="Barcelono__np"/></e>
-<e lm="Utaho">                <i>Utaho</i><par n="Barcelono__np"/></e>
-<e lm="Vajomingo">            <i>Vajomingo</i><par n="Barcelono__np"/></e>
-<e lm="Vaŝingtonio">          <i>Vaŝingtonio</i><par n="Barcelono__np"/></e>
-<e lm="Vermonto">             <i>Vermonto</i><par n="Barcelono__np"/></e>
-<e lm="Virginio">             <i>Virginio</i><par n="Barcelono__np"/></e>
-<e lm="Viskonsino">           <i>Viskonsino</i><par n="Barcelono__np"/></e>
-<e lm="Kolorado">             <i>Kolorado</i><par n="Barcelono__np"/></e>
-<e lm="Misisipo">             <i>Misisipo</i><par n="Barcelono__np"/></e>
-<e lm="Misuro">               <i>Misuro</i><par n="Barcelono__np"/></e>
-<e lm="Vaŝingtono">           <i>Vaŝingtono</i><par n="Barcelono__np"/></e>
-<e lm="Ontario">              <i>Ontario</i><par n="Barcelono__np"/></e>
-<e lm="Kebekio">              <i>Kebekio</i><par n="Barcelono__np"/></e>
-<e lm="Sevilo">               <i>Sevilo</i><par n="Barcelono__np"/></e>
+<e lm="Antigvo">              <i>Antigv</i><par n="Barcelon/o__np"/></e>
+<e lm="Arubo">                <i>Arub</i><par n="Barcelon/o__np"/></e>
+<e lm="Barbudo">              <i>Barbud</i><par n="Barcelon/o__np"/></e>
+<e lm="Alabamo">              <i>Alabam</i><par n="Barcelon/o__np"/></e>
+<e lm="Alasko">               <i>Alask</i><par n="Barcelon/o__np"/></e>
+<e lm="Arizono">              <i>Arizon</i><par n="Barcelon/o__np"/></e>
+<e lm="Arkanso">              <i>Arkans</i><par n="Barcelon/o__np"/></e>
+<e lm="Delavaro">             <i>Delavar</i><par n="Barcelon/o__np"/></e>
+<e lm="Florido">              <i>Florid</i><par n="Barcelon/o__np"/></e>
+<e lm="Georgio">              <i>Georgi</i><par n="Barcelon/o__np"/></e>
+<e lm="Havajo">               <i>Havaj</i><par n="Barcelon/o__np"/></e>
+<e lm="Idaho">                <i>Idah</i><par n="Barcelon/o__np"/></e>
+<e lm="Ilinojo">              <i>Ilinoj</i><par n="Barcelon/o__np"/></e>
+<e lm="Indianao">             <i>Indiana</i><par n="Barcelon/o__np"/></e>
+<e lm="Iovao">                <i>Iova</i><par n="Barcelon/o__np"/></e>
+<e lm="Kalifornio">           <i>Kaliforni</i><par n="Barcelon/o__np"/></e>
+<e lm="Kansaso">              <i>Kansas</i><par n="Barcelon/o__np"/></e>
+<e lm="Kentukio">             <i>Kentuki</i><par n="Barcelon/o__np"/></e>
+<e lm="Koloradio">            <i>Koloradi</i><par n="Barcelon/o__np"/></e>
+<e lm="Konektikuto">          <i>Konektikut</i><par n="Barcelon/o__np"/></e>
+<e lm="Luiziano">             <i>Luizian</i><par n="Barcelon/o__np"/></e>
+<e lm="Majno">                <i>Majn</i><par n="Barcelon/o__np"/></e>
+<e lm="Marilando">            <i>Mariland</i><par n="Barcelon/o__np"/></e>
+<e lm="Masaĉuseco">           <i>Masaĉusec</i><par n="Barcelon/o__np"/></e>
+<e lm="Miĉigano">             <i>Miĉigan</i><par n="Barcelon/o__np"/></e>
+<e lm="Minesoto">             <i>Minesot</i><par n="Barcelon/o__np"/></e>
+<e lm="Misisipio">            <i>Misisipi</i><par n="Barcelon/o__np"/></e>
+<e lm="Misurio">              <i>Misuri</i><par n="Barcelon/o__np"/></e>
+<e lm="Montano">              <i>Montan</i><par n="Barcelon/o__np"/></e>
+<e lm="Nebrasko">             <i>Nebrask</i><par n="Barcelon/o__np"/></e>
+<e lm="Nevado">               <i>Nevad</i><par n="Barcelon/o__np"/></e>
+<e lm="Nord-Dakoto">          <i>Nord-Dakot</i><par n="Barcelon/o__np"/></e>
+<e lm="Nord-Karolino">        <i>Nord-Karolin</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Jorkio">           <i>Nov-Jorki</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Ĵerzejo">          <i>Nov-Ĵerzej</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Meksiko">          <i>Nov-Meksik</i><par n="Barcelon/o__np"/></e>
+<e lm="Ohio">                 <i>Ohi</i><par n="Barcelon/o__np"/></e>
+<e lm="Okcidenta Virginio">   <i>Okcidenta<b/>Virgini</i><par n="Barcelon/o__np"/></e>
+<e lm="Oklahomo">             <i>Oklahom</i><par n="Barcelon/o__np"/></e>
+<e lm="Oregono">              <i>Oregon</i><par n="Barcelon/o__np"/></e>
+<e lm="Pensilvanio">          <i>Pensilvani</i><par n="Barcelon/o__np"/></e>
+<e lm="Rod-Insulo">           <i>Rod-Insul</i><par n="Barcelon/o__np"/></e>
+<e lm="Sud-Dakoto">           <i>Sud-Dakot</i><par n="Barcelon/o__np"/></e>
+<e lm="Sud-Karolino">         <i>Sud-Karolin</i><par n="Barcelon/o__np"/></e>
+<e lm="Teksaso">              <i>Teksas</i><par n="Barcelon/o__np"/></e>
+<e lm="Tenesio">              <i>Tenesi</i><par n="Barcelon/o__np"/></e>
+<e lm="Utaho">                <i>Utah</i><par n="Barcelon/o__np"/></e>
+<e lm="Vajomingo">            <i>Vajoming</i><par n="Barcelon/o__np"/></e>
+<e lm="Vaŝingtonio">          <i>Vaŝingtoni</i><par n="Barcelon/o__np"/></e>
+<e lm="Vermonto">             <i>Vermont</i><par n="Barcelon/o__np"/></e>
+<e lm="Virginio">             <i>Virgini</i><par n="Barcelon/o__np"/></e>
+<e lm="Viskonsino">           <i>Viskonsin</i><par n="Barcelon/o__np"/></e>
+<e lm="Kolorado">             <i>Kolorad</i><par n="Barcelon/o__np"/></e>
+<e lm="Misisipo">             <i>Misisip</i><par n="Barcelon/o__np"/></e>
+<e lm="Misuro">               <i>Misur</i><par n="Barcelon/o__np"/></e>
+<e lm="Vaŝingtono">           <i>Vaŝington</i><par n="Barcelon/o__np"/></e>
+<e lm="Ontario">              <i>Ontari</i><par n="Barcelon/o__np"/></e>
+<e lm="Kebekio">              <i>Kebeki</i><par n="Barcelon/o__np"/></e>
+<e lm="Sevilo">               <i>Sevil</i><par n="Barcelon/o__np"/></e>
 
 <!-- Fino aldonoj 2009/02/23 -->
 
@@ -29519,10 +29533,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Black">                <i>Black</i><par n="Ifans__np"/></e>
 <e lm="Brown">                <i>Brown</i><par n="Ifans__np"/></e>
 <e lm="Hall">                 <i>Hall</i><par n="Ifans__np"/></e>
-<e lm="Arkansaso">            <i>Arkansaso</i><par n="Barcelono__np"/></e>
-<e lm="Epifanio">             <i>Epifanio</i><par n="Barcelono__np"/></e>
-<e lm="Nov-Hampŝiro">         <i>Nov-Hamp</i><par n="ŝ"/><i>iro</i><par n="Barcelono__np"/></e>
-<e lm="Uzbekio">              <i>Uzbekio</i><par n="Barcelono__np"/></e>
+<e lm="Arkansaso">            <i>Arkansas</i><par n="Barcelon/o__np"/></e>
+<e lm="Epifanio">             <i>Epifani</i><par n="Barcelon/o__np"/></e>
+<e lm="Nov-Hampŝiro">         <i>Nov-Hamp</i><par n="ŝ"/><i>ir</i><par n="Barcelon/o__np"/></e>
+<e lm="Uzbekio">              <i>Uzbeki</i><par n="Barcelon/o__np"/></e>
 <e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
 <e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 <e lm="apude">                <i>apud</i><par n="e__adv"/></e>
