@@ -1772,6 +1772,70 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
+    <rule comment="REGLA: DET NOM NOM NOM NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+            <out>
+              <chunk name="det_nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
+                  <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
+                  <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="4" side="tl" part="lem"/>
+                  <lit-tag v="adj"/>
+                  <clip pos="4" side="tl" part="a_acr"/><!-- se estas akronimo -->
+                  <clip pos="4" side="tl" part="a_gen"/><!-- se havas genron -->
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="2"/>
+                </lu>
+                <b pos="4"/>
+                <lu>
+                  <clip pos="5" side="tl" part="lem"/>
+                  <clip pos="5" side="tl" part="tags"/>
+                  <lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
 
     <rule comment="REGLA: a ADJ NOM - a good house  - bona domo">
       <pattern>
