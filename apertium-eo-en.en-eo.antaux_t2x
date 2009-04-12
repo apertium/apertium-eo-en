@@ -3,7 +3,7 @@
 
   <section-def-cats>
     <def-cat n="SN">
-      <cat-item tags="SN"/>
+      <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
     <def-cat n="GEN">
@@ -43,6 +43,7 @@
 
 
 
+
     <rule comment="REGLA: SN1's SN2  al  SN2 de SN1">
       <pattern>
         <pattern-item n="SN"/>
@@ -65,6 +66,94 @@
         </out>
       </action>
     </rule>
+
+
+
+
+<!--
+
+
+    <rule comment="REGLA: SN1's SN2 SN3  al  SN2 SN3 de SN1">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="GEN"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="3" part="content"/>
+                <b pos="3"/>
+            <clip pos="4" part="content"/>
+                <b/>
+            <lit v="^de"/><lit-tag v="gen"/><lit v="$"/>
+                <b pos="2"/>
+            <clip pos="1" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+    <rule comment="REGLA: SN0 SN1's SN2  al  SN2 de SN0 SN1">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="GEN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="4" part="content"/>
+                <b/>
+            <lit v="^de"/><lit-tag v="gen"/><lit v="$"/>
+                <b pos="3"/>
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+
+
+    <rule comment="REGLA: SN1 and SN2   -   SN ">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="CC"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+                <b pos="2"/>
+            <clip pos="3" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
 
 

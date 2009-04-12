@@ -1410,33 +1410,17 @@ verbfinal = pensi<3><4><5>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-              <lit-tag v="2"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="whole"/></lu>
             <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
+            <lu><clip pos="2" side="tl" part="whole"/></lu>
             <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-              <lit-tag v="3"/>
-            </lu>
+            <lu><clip pos="3" side="tl" part="whole"/></lu>
             <b pos="3"/>
-            <lu>
-              <clip pos="4" side="tl" part="whole"/>
-              <lit-tag v="4"/>
-            </lu>
+            <lu><clip pos="4" side="tl" part="whole"/></lu>
             <b pos="4"/>
-            <lu>
-              <clip pos="5" side="tl" part="whole"/>
-            </lu>
+            <lu><clip pos="5" side="tl" part="whole"/></lu>
             <b pos="5"/>
-            <lu>
-              <clip pos="5" side="tl" part="whole"/>
-              <lit-tag v="5"/>
-            </lu>
+            <lu><clip pos="5" side="tl" part="whole"/></lu>
           </chunk>
         </out>
       </action>
@@ -1456,6 +1440,10 @@ verbfinal = pensi<3><4><5>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
+<!--
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="whole"/><lit-tag v="2"/></lu>
+-->            
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_prn"/>
@@ -1501,10 +1489,7 @@ verbfinal = pensi<3><4><5>
                 <tags>
                   <tag><lit-tag v="SD.nom"/></tag>
                 </tags>
-                <lu>
-                      <clip pos="1" side="tl" part="whole"/>
-                      <lit-tag v="2"/>
-                </lu>
+                <lu><clip pos="1" side="tl" part="whole"/><lit-tag v="2"/></lu>
               </chunk>
             </out>
       </action>
@@ -1959,6 +1944,9 @@ verbfinal = pensi<3><4><5>
         </out>
       </action>
     </rule>
+
+
+
 
 
 
@@ -3021,7 +3009,7 @@ might:might<vaux><inf>
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3127,7 +3115,7 @@ might:might<vaux><inf>
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
