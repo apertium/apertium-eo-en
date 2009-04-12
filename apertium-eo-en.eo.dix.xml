@@ -245,7 +245,6 @@
 <e r="LR">                    <p><l>cx</l>                  <r>ĉ</r></p></e>
 <e>                           <p><l>ĉ</l>                   <r>ĉ</r></p></e>
 </pardef>
-
 <pardef n="ĝ">
 <e r="LR">                    <p><l>gx</l>                  <r>ĝ</r></p></e>
 <e>                           <p><l>ĝ</l>                   <r>ĝ</r></p></e>
@@ -277,8 +276,6 @@
 <e>                           <p><l>a</l>                   <r>a<s n="det"/><s n="qnt"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
-
-
 <pardef n="jam__adv">
 <e>                           <p><l></l>                    <r><s n="adv"/></r></p></e>
 </pardef>
@@ -291,27 +288,26 @@
 <e>                           <p><l></l>                    <r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
 </pardef>
 
-
 <pardef n="kial__adv">
 <e>                           <p><l></l>                    <r><s n="adv"/><s n="itg"/></r></p></e>
 </pardef>
 
 <pardef n="tro__preadv">
 <e>                           <p><l></l>                    <r><s n="preadv"/></r></p></e>
-
 </pardef>
+
 <pardef n="kaj__cnjcoo">
 <e>                           <p><l></l>                    <r><s n="cnjcoo"/></r></p></e>
-
 </pardef>
+
 <pardef n="after__cnjadv">
 <e>                           <p><l></l>                    <r><s n="cnjadv"/></r></p></e>
-
 </pardef>
+
 <pardef n="ke__cnjsub">
 <e>                           <p><l></l>                    <r><s n="cnjsub"/></r></p></e>
-
 </pardef>
+
 <pardef n="al__pr">
 <e>                           <p><l></l>                    <r><s n="pr"/></r></p></e>
 </pardef>
@@ -326,13 +322,9 @@
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
-
-
 <pardef n="e__adv">
 <e>                           <p><l>e</l>                    <r>e<s n="adv"/></r></p></e>
 </pardef>
-
-
 
 <pardef n="a__adj">
 <e>                           <p><l>a</l>                   <r>a<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
@@ -343,7 +335,7 @@
 <pardef n="o__n">
 <e>                           <p><l>o</l>                    <r>o<s n="n"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
-<!-- PROVO: Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<!-- Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
 <e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
@@ -356,7 +348,7 @@
 <!-- kiam genro mankas, ni elektas la o-formojn -->
 <e r="RL">                           <p><l>o</l>                   <r>o<s n="n"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
-<!-- PROVO: Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<!-- Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
 <e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/><s n="m"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 <e r="RL">                           <p><l>ina</l>                 <r>o<s n="adj"/><s n="f"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 <e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
@@ -385,17 +377,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="nomsen__n">
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="n"/><par n="sgpl0"/><par n="nomacc0"/></r></p></e>
 </pardef>
-
-
-
-
-
-
 
 
 <pardef n="la__det">
@@ -411,11 +394,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="mia__det">
-<e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>j</l>                   <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r></p></e>
 <e>                           <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                           <p><l>jn</l>                  <r><s n="det"/><s n="pos"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
@@ -572,7 +554,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e r="RL">                     <p><l></l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 </pardef>
-
 
 
 <pardef n="James__np">
