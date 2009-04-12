@@ -274,10 +274,7 @@
 
 
 <pardef n="plur/a__det">
-<e>                           <p><l>a</l>                   <r>a<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>aj</l>                  <r>a<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>an</l>                  <r>a<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>ajn</l>                 <r>a<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l>a</l>                   <r>a<s n="det"/><s n="qnt"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
@@ -320,19 +317,13 @@
 </pardef>
 
 <pardef n="ĉiu__prn">
-<e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>j</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>jn</l>                  <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 <e r="RL">                    <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e r="RL">                    <p><l>j</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="tio__prn">
-<e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>j</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>jn</l>                  <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
@@ -344,46 +335,31 @@
 
 
 <pardef n="a__adj">
-<e>                           <p><l>a</l>                   <r>a<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>aj</l>                  <r>a<s n="adj"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>an</l>                  <r>a<s n="adj"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>ajn</l>                 <r>a<s n="adj"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l>a</l>                   <r>a<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
 
 <pardef n="o__n">
-<e>                           <p><l>o</l>                    <r>o<s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>oj</l>                   <r>o<s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>on</l>                   <r>o<s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>ojn</l>                  <r>o<s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l>o</l>                    <r>o<s n="n"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
-<!-- PROVO: Permesu o-vortojn igxi a-vortojn (fare de la transfero)
--->
-
-<e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                           <p><l>aj</l>                  <r>o<s n="adj"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                           <p><l>an</l>                  <r>o<s n="adj"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                           <p><l>ajn</l>                 <r>o<s n="adj"/><s n="pl"/><s n="acc"/></r></p></e>
+<!-- PROVO: Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
 
 <pardef n="ino__n">
-<e>                           <p><l>o</l>                   <r>o<s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>oj</l>                  <r>o<s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>ino</l>                 <r>o<s n="n"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>inoj</l>                <r>o<s n="n"/><s n="f"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>on</l>                  <r>o<s n="n"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>ojn</l>                 <r>o<s n="n"/><s n="m"/><s n="pl"/><s n="acc"/></r></p></e>
-<e>                           <p><l>inon</l>                <r>o<s n="n"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>inojn</l>               <r>o<s n="n"/><s n="f"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l>o</l>                   <r>o<s n="n"/><s n="m"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e>                           <p><l>ino</l>                 <r>o<s n="n"/><s n="f"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
 <!-- kiam genro mankas, ni elektas la o-formojn -->
-<e r="RL">                           <p><l>o</l>                   <r>o<s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                           <p><l>oj</l>                  <r>o<s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                           <p><l>on</l>                  <r>o<s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                           <p><l>ojn</l>                 <r>o<s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                           <p><l>o</l>                   <r>o<s n="n"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+
+<!-- PROVO: Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/><s n="m"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e r="RL">                           <p><l>ina</l>                 <r>o<s n="adj"/><s n="f"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e r="RL">                           <p><l>a</l>                   <r>o<s n="adj"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 </pardef>
 
 
@@ -424,24 +400,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <pardef n="la__det">
 <e>                           <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="def"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 </pardef>
 
 
 <pardef n="unu__det">
 <e>                           <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 </pardef>
 
 
