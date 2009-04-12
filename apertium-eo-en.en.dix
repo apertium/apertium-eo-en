@@ -869,11 +869,17 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="Mary__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="Smith__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="np"/><s n="cog"/><s n="pl"/></r></p></e>
 <e>                           <p><l>s'</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
 </pardef>
+
+<pardef n="Michel__np">
+<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
+</pardef>
+
 <pardef n="Ifans__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/></r></p></e>
 </pardef>
@@ -23126,7 +23132,8 @@ The gods hold court.
 <e>                           <i>Lux</i><par n="Smith__np"/></e>
 <e>                           <i>Mandelson</i><par n="Smith__np"/></e>
 <e>                           <i>Meroi</i><par n="Smith__np"/></e>
-<e>                           <i>Michel</i><par n="Smith__np"/></e>
+<e>                           <i>Michel</i><par n="Michel__np"/></e>
+<e>                           <i>Michels</i><par n="Smith__np"/></e>
 <e>                           <i>Milosevic</i><par n="Smith__np"/></e>
 <e>                           <i>Mutsch</i><par n="Smith__np"/></e>
 <e>                           <i>Nejstgaard</i><par n="Smith__np"/></e>

@@ -143,6 +143,9 @@
 <e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
        <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 
+<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
+       <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
+
                            <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
 
           <!-- damn, doesent work :-( ????
@@ -605,21 +608,28 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <!-- Se estas genraj indikoj, ni fajfas -->
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
-<e r="RL">                     <p><l></l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
+
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
 </pardef>
 
 
 
 <pardef n="James__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="Mark__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="Mary__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="Smith__np">
@@ -627,6 +637,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/></r></p><par n="sgpl0"/></e>
 </pardef>
 
 
