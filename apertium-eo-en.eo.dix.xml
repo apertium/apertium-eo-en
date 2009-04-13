@@ -442,9 +442,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
-
-
-
+ 
 <pardef n="quant2__det">
 <e>                           <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
@@ -455,6 +453,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
+ 
 
 
 
@@ -663,6 +662,11 @@ Necesas difini paradigmon por adj-nomo terminoj
 	</pardefs>
 
 	<section id="main" type="standard">
+	
+<e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
+<e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
+	
+	
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>vi</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
 <e r="LR">                    <p><l>ci</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
@@ -705,11 +709,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ni">                   <p><l>nin<b/>mem</l>          <r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
 
 
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 
 
     <!-- Possessives -->
@@ -750,17 +749,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="plia">                 <i>pli</i><par n="a__adj"/></e>
 <e lm="pliaĝa">               <i>pliaĝ</i><par n="a__adj"/></e>
 <e lm="pli da">               <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
-<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
+<e r="RL" lm="pli da">        <p><l>pli<b/>da</l>           <r>pli<b/>da<s n="det"/><s n="qnt"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 <e lm="sufiĉe da">            <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
-<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
+<e r="RL" lm="sufiĉe da">     <p><l>sufiĉe<b/>da</l>        <r>sufiĉe<b/>da<s n="det"/><s n="qnt"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 <e lm="adiaŭ">                <i>adia</i><par n="ŭ"/><i></i><par n="adiós__ij"/></e>
 <e lm="saluton">              <i>saluton</i><par n="adiós__ij"/></e>
 <e lm="ĝis poste">            <par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
@@ -33670,6 +33661,19 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="laŭ la ekzemplo">      <i>la</i><par n="ŭ"/><i><b/>la<b/>ekzemplo</i><par n="al__pr"/></e>
 <e lm="laŭ la ekzemploj">     <i>la</i><par n="ŭ"/><i><b/>la<b/>ekzemploj</i><par n="al__pr"/></e>
 <e lm="en la venonta aŭtuno"> <i>en<b/>la<b/>venonta<b/>a</i><par n="ŭ"/><i>tuno</i><par n="jam__adv"/></e>
+
+
+
+
+
+<!-- Aferoj ne uzataj en la direkto en->eo, sed kiun ni versxajne bezonos en la alia direkto
+
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 
 	</section>
 	<section id="final" type="inconditional">

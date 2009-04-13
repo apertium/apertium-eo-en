@@ -1439,6 +1439,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ing</l>                 <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
+
 <pardef n="d/ie__vblex">
 <e>                           <p><l>ie</l>                  <r>ie<s n="vblex"/><s n="inf"/></r></p></e>
 <e>                           <p><l>ie</l>                  <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
@@ -3889,13 +3890,6 @@ zig-zag__vblex
 </pardef>
 <pardef n="ok/ay__adv">
 <e>                           <p><l></l>                    <r>ay<s n="adv"/></r></p></e>
-</pardef>
-<pardef n="deal__vblex">
-<e>                           <p><l>ing</l>                 <r><s n="vblex"/><s n="ger"/></r></p></e>
-<e>                           <p><l>t</l>                   <r><s n="vblex"/><s n="past"/></r></p></e>
-<e>                           <p><l>t</l>                   <r><s n="vblex"/><s n="pp"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="vblex"/><s n="pres"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="militar/y__n">
 <e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
@@ -12795,7 +12789,11 @@ The gods hold court.
 <e lm="lean">                 <i>lean</i><par n="accept__vblex"/></e>
 <e lm="leap">                 <i>leap</i><par n="house__n"/></e>
 <e lm="leap">                 <i>leap</i><par n="accept__vblex"/></e>
+
 <e lm="learn">                <i>learn</i><par n="deal__vblex"/></e>
+<e lm="learn" r="LR">         <i>learn</i><p><l>ed</l>      <r><s n="vblex"/><s n="past"/></r></p></e>
+
+
 <e lm="lease">                <i>leas</i><par n="liv/e__vblex"/></e>
 <e lm="lease">                <i>lease</i><par n="house__n"/></e>
 <e lm="least">                <i>least</i><par n="maybe__adv"/></e>
