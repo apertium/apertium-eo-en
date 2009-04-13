@@ -59,10 +59,10 @@ for dir in $DIRS; do
 	else 
 		mode="eo-en";
 	fi
- 	cat test_SL_$dir | nl -s ' . ' > testtmp
+ 	cat test_SL_$dir | nl -s ' : ' > testtmp
 	cat testtmp | apertium -d $DATADIR $mode > testres
 
-	cat test_TL_$dir | nl -s ' . ' | diff -wi - testres | grep -r '[<>]' >> testtmp
+	cat test_TL_$dir | nl -s ' : ' | diff -wi - testres | grep -r '[<>]' >> testtmp
 
 	FAIL=`grep "^<" testtmp |  cut -c2-8`; 
 #	if [[ "$FAIL"!="" ]]; then
@@ -70,7 +70,7 @@ for dir in $DIRS; do
 #	else
 #		echo "All tests passed."
 #	fi
-	for i in $FAIL; do grep " $i . " testtmp; done
+	for i in $FAIL; do grep " $i : " testtmp; done
 
 done
 

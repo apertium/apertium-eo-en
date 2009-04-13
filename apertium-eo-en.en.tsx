@@ -6,6 +6,10 @@ Do not add your own
 -> imperativo
 
 
+
+ enkonduku A kiel litero, sed forte preferu la <det>
+ 
+
 <spectie> in the tagger
 <jacobEo> IT<prprs> vs IT<acr>
 <jacobEo> how?
