@@ -28,14 +28,16 @@
     <def-cat n="cnjsub"><cat-item tags="cnjsub"/></def-cat>
     <def-cat n="guio"><cat-item tags="guio"/></def-cat>
 
-    <def-cat n="prn">
+    <def-cat n="prnaltres">
       <cat-item tags="prn.rel.*"/>
       <cat-item tags="prn.itg.*"/>
       <cat-item tags="prn.tn.*"/>
     </def-cat>
     
     <def-cat n="prnref"><cat-item tags="prn.ref.*"/></def-cat><!-- ^si<prn><ref><p3><m><sg> -->
+
     <def-cat n="prnpers"><cat-item lemma="prpers" tags="prn.*"/></def-cat>
+
     <def-cat n="prnpers__sen_singularo"><!-- prpers<prn><obj><p1><mf><sg> -->
       <cat-item lemma="prpers" tags="prn.*.*.*.sp"/>
       <cat-item lemma="prpers" tags="prn.*.*.*.pl"/>
@@ -435,20 +437,17 @@ sort -t '"' -k 3 x
   <section-def-macros>
   
   <!-- taken from en-es.t1x, for use in macro firstWord -->
-<def-macro n="firstWord" npar="1">
-  <choose>
-	<when>
-	  <test>
-      <and>
-        <equal><clip pos="1" side="sl" part="a_np_acr"/><lit v=""/></equal>
-        <equal><var n="EOS"/><lit v="true"/></equal>
-      </and>
-	  </test>
-      <modify-case>
-        <clip pos="1" side="tl" part="lem"/>
-        <lit v="aa"/>
-      </modify-case>
-      <let><var n="caseFirstWord"/><lit v="Aa"/></let>
+  <def-macro n="firstWord" npar="1">
+    <choose>
+      <when>
+        <test>
+          <and>
+            <equal><var n="EOS"/><lit v="true"/></equal>
+            <equal><clip pos="1" side="sl" part="a_np_acr"/><lit v=""/></equal>
+          </and>
+        </test>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
+        <let><var n="caseFirstWord"/><lit v="Aa"/></let>
       </when>
       <otherwise>
         <let><var n="caseFirstWord"/><lit v="aa"/></let>
@@ -778,7 +777,7 @@ verbfinal = pensi<3><4><5>
 
     <rule comment="REGLA: Prn">
       <pattern>
-        <pattern-item n="prn"/>
+        <pattern-item n="prnaltres"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -910,31 +909,6 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
-
-    <rule comment="REGLA NUM time   5 times => 5 fojoj, 5th time => 5a fojo,   ">
-      <pattern>
-        <pattern-item n="num"/>
-        <pattern-item n="times"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="num" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-                <lit v="fojo"/><lit-tag v="n"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="nom"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
 <!--
     <rule comment="REGLA NUM of the     5 of the => 5 el la ">
       <pattern>
@@ -980,6 +954,31 @@ verbfinal = pensi<3><4><5>
 
 
 
+    <rule comment="REGLA NUM time   5 times => 5 fojoj, 5th time => 5a fojo,   ">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="times"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="num" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+                <lit v="fojo"/><lit-tag v="n"/><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="nom"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
 
 
@@ -989,7 +988,7 @@ verbfinal = pensi<3><4><5>
         <pattern-item n="a"/>
       </pattern>
       <action>
- <!--       <call-macro n="firstWord"><with-param pos="1"/></call-macro> -->
+<!--        <call-macro n="firstWord"><with-param pos="1"/></call-macro> -->
       </action>
     </rule>
 
@@ -1015,37 +1014,6 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
-
-<!--
-    <rule comment="REGLA: a NOM">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
-            <out>
-              <chunk name="nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><var n="genere"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="a_nom"/>
-                  <lit-tag v="2"/>
-                  <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
-                  <lit-tag v="4"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
--->
 
 
 
@@ -1341,8 +1309,6 @@ verbfinal = pensi<3><4><5>
 
 
 
-    <!-- Sintagmas adjetivos -->
-
     <rule comment="REGLA: ADJ">
       <pattern>
         <pattern-item n="adj"/>
@@ -1379,49 +1345,6 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
-
-
-    <rule comment="REGLA: a ADJ NOM - a good house  - bona domo">
-      <pattern>
-        <pattern-item n="a"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-        <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
-        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
-
-        <choose>
-          <when>
-            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
-            <let><var n="chunk_name"/><lit v="adj_nom"/></let>
-          </when>
-          <otherwise><!-- a<det><ind><sg> better house  - pli bona domo -->
-            <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
-          </otherwise>
-        </choose>
-
-            <out>
-              <chunk namefrom="chunk_name" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <lu>
-                  <var n="adjectiu"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
-                </lu>
-              </chunk>
-            </out>
-
-      </action>
-    </rule>
 
 
 
@@ -1582,171 +1505,6 @@ verbfinal = pensi<3><4><5>
 
 
 
-
-    <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
-      <pattern>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>    <!-- hundo -->
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="2" side="tl" part="whole"/> <!-- de -->
-                  </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>     <!-- Jacob -->
-                  <clip pos="1" side="tl" part="tags"/><var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
-      <pattern>
-        <pattern-item n="det"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
-        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
-            <out>
-              <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <lu>
-                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
-                </lu>
-                <b/>
-                <lu>
-                  <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="3" side="tl" part="whole"/>          <!-- de -->
-                  </lu>
-                <b pos="3"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="a_gen"/>
-                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
-                  <lit-tag v="nom"/>
-                </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
-                  <clip pos="2 " side="tl" part="tags"/><var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
-
-
-<!-- Its Not clear this rule makes more harm than good
-
-    <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
-      <pattern>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-...
--->
-
-
-    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
-      <pattern>
-        <pattern-item n="det"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
-        <let><var n="tmp1"/><var n="nomvar"/></let>
-        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
-        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
-            <out>
-              <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <lu>
-                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
-                </lu>
-                <b/>
-                <lu>
-                  <clip pos="5" side="tl" part="lem"/>            <!-- hundo -->
-                  <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
-                </lu>
-                <b/>
-                  <lu>
-                    <clip pos="4" side="tl" part="whole"/>        <!-- de -->
-                  </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="a_gen"/>
-                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
-                  <lit-tag v="nom"/>
-                </lu>
-                <b pos="4"/>
-                <lu>
-                  <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
-                  <clip pos="2" side="tl" part="tags"/><var n="tmp1"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>            <!-- viro  -->
-                  <clip pos="3" side="tl" part="tags"/><var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
-
-
-
-
-
 <!--  TODO: ADJ NOM NOM:  Private testing companies -->
 
 <!--
@@ -1817,6 +1575,9 @@ verbfinal = pensi<3><4><5>
             </out>
       </action>
     </rule>
+
+
+
 
 
 
@@ -2151,6 +1912,171 @@ verbfinal = pensi<3><4><5>
             <lu><clip pos="5" side="tl" part="whole"/></lu>
           </chunk>
         </out>
+      </action>
+    </rule>
+
+
+
+
+
+
+
+    <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
+      <pattern>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+            <out>
+              <chunk name="nom_gen_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>    <!-- hundo -->
+                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="2" side="tl" part="whole"/> <!-- de -->
+                  </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>     <!-- Jacob -->
+                  <clip pos="1" side="tl" part="tags"/><var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+            <out>
+              <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
+                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="3" side="tl" part="whole"/>          <!-- de -->
+                  </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
+                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
+                  <clip pos="2 " side="tl" part="tags"/><var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+
+<!-- Its Not clear this rule makes more harm than good
+
+    <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
+      <pattern>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+...
+-->
+
+
+    <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
+        <let><var n="tmp1"/><var n="nomvar"/></let>
+        <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+            <out>
+              <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="5" side="tl" part="lem"/>            <!-- hundo -->
+                  <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
+                </lu>
+                <b/>
+                  <lu>
+                    <clip pos="4" side="tl" part="whole"/>        <!-- de -->
+                  </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
+                  <clip pos="1" side="tl" part="a_det"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gen"/>
+                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
+                  <lit-tag v="nom"/>
+                </lu>
+                <b pos="4"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
+                  <clip pos="2" side="tl" part="tags"/><var n="tmp1"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>            <!-- viro  -->
+                  <clip pos="3" side="tl" part="tags"/><var n="nomvar"/>
+                </lu>
+              </chunk>
+            </out>
       </action>
     </rule>
 
