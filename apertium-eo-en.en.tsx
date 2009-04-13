@@ -6,6 +6,13 @@ Do not add your own
 -> imperativo
 
 
+^enough/enough<adj>/enough<adv>/enough<det><qnt><sp>$ ^blood/blood<n><sg>$ 
+prefer DET N kompare al ADJ N
+
+
+prefer
+
+
 
  enkonduku A kiel litero, sed forte preferu la <det>
  

@@ -50,15 +50,17 @@ done
 fi
 
 
-echo "Translating using Apertium:" $DIRS
 
 for dir in $DIRS; do
 	if [ $dir = "en" ]; then
-		mode="en-eo_oldtag";
-		#mode="en-eo";
+		#mode="en-eo_oldtag";
+		mode="en-eo";
 	else 
 		mode="eo-en";
 	fi
+
+	echo "Translating using  apertium -d $DATADIR $mode"
+
  	cat test_SL_$dir | nl -s ' : ' > testtmp
 	cat testtmp | apertium -d $DATADIR $mode > testres
 

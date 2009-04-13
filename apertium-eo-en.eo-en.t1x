@@ -157,6 +157,29 @@
      </action>
   </rule>
 
+<!--
+  <rule>
+     <pattern>
+       <pattern-item n="c_prn"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="prn" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>             
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+-->
 
   <rule>
      <pattern>

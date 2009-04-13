@@ -4,7 +4,9 @@
 
   <section-def-cats>
     <def-cat n="nom">
+      <cat-item name="default"/>
       <cat-item name="nom"/>
+      <cat-item name="prn"/>
     </def-cat>
     <def-cat n="adj_nom">
       <cat-item name="adj_nom"/>
@@ -63,6 +65,7 @@
 
   <section-def-macros>
     <def-macro n="drop_nomacc1" npar="1">   
+    <!--
         <choose>
           <when>
             <test>
@@ -71,6 +74,8 @@
             <let><clip pos="1" part="a_nomacc"/><lit v=""/></let>
            </when>
          </choose>
+         -->
+            <let><clip pos="1" part="a_nomacc"/><lit v=""/></let>
     </def-macro>
   </section-def-macros>
 
