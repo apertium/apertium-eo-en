@@ -500,10 +500,15 @@
 <e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>who<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l>  <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>        <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>  <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l>        <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>which<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/></l><r>which<b/>one<s n="prn"/><s n="itg"/></r></p></e>
+
+
+<e>       <p><l>kiom<s n="det"/><s n="itg"/></l>        <r>how<b/>much<s n="det"/><s n="itg"/></r></p></e>
+<e>       <p><l>kiom<b/>da<s n="det"/><s n="itg"/></l>  <r>how<b/>many<s n="det"/><s n="itg"/></r></p></e>
+
 
 <!--
 <e r="LR"><p><l>kio<s n="prn"/><s n="itg"/></l>        <r>what<s n="prn"/><s n="itg"/></r></p></e>
@@ -746,9 +751,16 @@ BUT:
 <e>       <p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>less<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>malpli<b/>da<s n="det"/><s n="qnt"/></l><r>fewer<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>much<s n="det"/><s n="qnt"/></r></p></e>
-<e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>many<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
-<e>       <p><l>multa<s n="det"/></l>                  <r>a<b/>lot<b/>of<s n="det"/></r></p></e>
+<e><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>many<s n="det"/><s n="qnt"/></r></p></e>
+<e r="RL">       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
+
+
+<e ><p><l>multa<s n="prn"/><s n="tn"/></l>      <r>many<s n="prn"/><s n="tn"/></r></p></e>
+<!-- their greater ones.         -->
+<e ><p><l>xxx<s n="prn"/><s n="tn"/><s n="pl"/></l>      <r>one<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+
+
+
 <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>lots<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>multobla<s n="adj"/></l>               <r>multiple<s n="adj"/></r></p></e>
 <e r="LR" c="frases negatives. EN-CA: per trànsfer"><p><l>neniu<s n="det"/><s n="ind"/></l><r>any<s n="det"/><s n="ind"/></r></p></e>
@@ -845,7 +857,7 @@ BUT:
 <e r="RL" c="MG: He fell off his chair"><p><l>de<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
 <e>       <p><l>dum<s n="pr"/></l>                     <r>during<s n="pr"/></r></p></e>
 <e r="RL"><p><l>dum<s n="pr"/></l>                     <r>throughout<s n="pr"/></r></p></e>
-<e>       <p><l>krom<s n="adv"/></l>                   <r>but<s n="adv"/></r></p></e>
+<e>       <p><l>sed<s n="adv"/></l>                   <r>but<s n="adv"/></r></p></e>
 <e>       <p><l>krom<s n="pr"/></l>                    <r>except<s n="pr"/></r></p></e>
 <e r="RL"><p><l>krom<s n="pr"/></l>                    <r>but<s n="pr"/></r></p></e>
 <e>       <p><l>inter<s n="pr"/></l>                   <r>between<s n="pr"/></r></p></e>
@@ -26804,7 +26816,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>sino<s n="n"/></l><r>bosom<s n="n"/></r></p></e>                   
 <e       ><p><l>botanika<s n="adj"/></l><r>botanical<s n="adj"/></r></p></e>       
 <e r="RL"><p><l>fuŝi<s n="vblex"/></l><r>botch<s n="vblex"/></r></p></e>           
-<e r="RL"><p><l>kune<s n="adv"/></l><r>both<s n="adv"/></r></p></e>                
+<e><p><l>ambaŭ<s n="adv"/></l><r>both<s n="adv"/></r></p></e>                
 <e r="RL"><p><l>resalto<s n="n"/></l><r>bounce<s n="n"/></r></p></e>               
 <e r="LR"><p><l>resalteco<s n="n"/></l><r>bounce<s n="n"/></r></p></e>             
 <e r="RL"><p><l>mallibera<s n="adj"/></l><r>bound<s n="adj"/></r></p></e>          

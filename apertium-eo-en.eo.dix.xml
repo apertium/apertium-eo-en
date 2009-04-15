@@ -757,8 +757,12 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ĝis poste">            <par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
 <e lm="ĝis revido">           <par n="ĝ"/><i>is<b/>revido</i><par n="adiós__ij"/></e>
 <e lm="bonan matenon">        <i>bonan<b/>matenon</i><par n="adiós__ij"/></e>
-<e lm="kelka">                <i>kelka</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kelka">                <i>kelka</i><p><l>jn</l>      <r><s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
+<e lm="kelka">                <i>kelka</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+
+<e lm="multa">                <i>multa</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+
+
 <e lm="plejparto">            <i>plejparto</i><p><l></l>    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL" lm="plejparto">     <i>plejparto</i><p><l></l>    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="ie">                   <i>ie</i><p><l></l>           <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -926,11 +930,14 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kio">                  <p><l>kion</l>                <r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kio">                  <p><l>kioj</l>                <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kio">                  <p><l>kiojn</l>               <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL" lm="kiom">          <p><l>kio</l>                 <r>kiom<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL" lm="kiom">          <p><l>kiom</l>                <r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL" lm="kiom">          <p><l>kio</l>                 <r>kiom<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+
+<e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="prn"/><s n="itg"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+<e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="prn"/><s n="itg"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+<e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="det"/><s n="itg"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+<e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="det"/><s n="itg"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
+
+
+
 <e lm="kio">                  <p><l>kio</l>                 <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kio">                  <p><l>kion</l>                <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kiu el ili">           <p><l>kiu<b/>el<b/>ili</l>    <r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -979,6 +986,15 @@ Necesas difini paradigmon por adj-nomo terminoj
     <!-- the English determiner 'a' just disappears in Esperanto -->
 <e r="RL" lm="det__a">        <p><l></l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL" lm="det__a">        <p><l></l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
+
+    <!-- aliaj tre specialaj reguloj -->
+<e r="RL" lm="xxx">        <p><l>el</l>                    <r>el<s n="adv"/></r></p></e>
+
+<e r="RL" lm="xxx">                <p><l></l>       <r>xxx<s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+
+
+
+
 <e lm="malpli da">            <p><l>la<b/>malpli<b/>da</l>  <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL" lm="malpli da">     <p><l>la<b/>malpli<b/>da</l>  <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL" lm="malpli da">     <p><l>la<b/>malpli<b/>da</l>  <r>malpli<b/>da<s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>

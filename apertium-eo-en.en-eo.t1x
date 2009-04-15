@@ -15,6 +15,7 @@
     <def-cat n="more"><cat-item lemma="more" tags="det.qnt.*"/></def-cat>
     <def-cat n="to"><cat-item lemma="to" tags="pr"/></def-cat>
     <def-cat n="of"><cat-item lemma="of" tags="pr"/></def-cat>
+    <def-cat n="out"><cat-item lemma="out" tags="pr"/><cat-item lemma="out" tags="adv"/></def-cat>
     <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
     <def-cat n="the"><cat-item lemma="the" tags="det.def.*"/></def-cat>
     <def-cat n="a"><cat-item lemma="a" tags="det.ind.sg"/></def-cat>
@@ -60,6 +61,17 @@
       <cat-item tags="np.al.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
+
+
+    <def-cat n="nom_prnaltres">
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.al.*"/>
+      <cat-item tags="np.top.*"/>
+      <cat-item tags="prn.rel.*"/>
+      <cat-item tags="prn.itg.*"/>
+      <cat-item tags="prn.tn.*"/>
+    </def-cat>
+
 
     <def-cat n="ant"><cat-item tags="np.ant.*"/></def-cat>
     <def-cat n="cog"><cat-item tags="np.cog.*"/></def-cat>
@@ -195,7 +207,6 @@ sort -t '"' -k 3 x
     <def-cat n="apos"><cat-item tags="apos"/></def-cat>
 
     <def-cat n="sent_komopunkto_dupunkto"><cat-item lemma=";" tags="sent"/><cat-item lemma=":" tags="sent"/></def-cat>
-
     <def-cat n="sent"><cat-item tags="sent"/></def-cat>
 
     <def-cat n="rel"><cat-item tags="rel.*"/></def-cat>
@@ -288,13 +299,6 @@ sort -t '"' -k 3 x
       <attr-item tags="vbser"/>
       <attr-item tags="vaux"/>
     </def-attr>
-    <def-attr n="a_verb">
-      <attr-item tags="vblex"/>
-      <attr-item tags="vblex.sep"/>
-      <attr-item tags="vbser"/>
-      <attr-item tags="vaux"/>
-    </def-attr>
-
 
     <def-attr n="a_det">
       <attr-item tags="det.def"/>
@@ -638,7 +642,7 @@ sort -t '"' -k 3 x
           <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
         </when>
         <otherwise>
-          <!-- <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_verb"/></let> -->
+          <!-- <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_vrb"/></let> -->
           <let><var n="tipus_verb"/><lit-tag v="aliaj"/></let>
         </otherwise>
       </choose>
@@ -681,7 +685,7 @@ verbfinal = pensi<3><4><5>
         <var n="verbfinal"/>
         <concat>
           <clip pos="2" side="tl" part="lemh"/>
-          <clip pos="2" side="tl" part="a_verb"/><lit-tag v="3.4.5"/>
+          <clip pos="2" side="tl" part="a_vrb"/><lit-tag v="3.4.5"/>
           <clip pos="2" side="tl" part="lemq"/>
         </concat>
       </let>
@@ -1055,7 +1059,7 @@ verbfinal = pensi<3><4><5>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
             <out>
-              <chunk name="det_nom" case="caseFirstWord">
+              <chunk name="det_nom2" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
@@ -1211,7 +1215,7 @@ verbfinal = pensi<3><4><5>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
             <out>
-              <chunk name="det_nom_nom" case="caseFirstWord">
+              <chunk name="det_3nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
@@ -1266,7 +1270,7 @@ verbfinal = pensi<3><4><5>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
             <out>
-              <chunk name="det_nom_nom" case="caseFirstWord">
+              <chunk name="det_4nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
@@ -1362,7 +1366,7 @@ verbfinal = pensi<3><4><5>
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="adj"/>
-        <pattern-item n="nom"/>
+        <pattern-item n="nom_prnaltres"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1696,7 +1700,7 @@ verbfinal = pensi<3><4><5>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant" case="caseFirstWord">
+          <chunk name="cog_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
@@ -2104,27 +2108,6 @@ verbfinal = pensi<3><4><5>
 
 
 
-    <rule>
-      <pattern>
-        <pattern-item n="adv"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="adv" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="Adv"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-
 
 
 
@@ -2282,6 +2265,47 @@ the ones who:the ones who<rel><nn><mf><pl>
       </action>
     </rule>
 
+<!-- regulo en antax_t2x ne funkscias, bedauxrinde..... 
+    <rule>
+      <pattern>
+        <pattern-item n="out"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="out" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="Adv"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+
+
+
+    <rule>
+      <pattern>
+        <pattern-item n="adv"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="adv" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="Adv"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 <!-- of<pr> off<pr> on<pr> onto<pr> over<pr> per<pr> -->
@@ -2411,10 +2435,8 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
+	            <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -2428,6 +2450,39 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
+
+    <rule comment="REGLA: level out - elebenigi">
+      <pattern>
+        <pattern-item n="vblex"/>
+        <pattern-item n="out"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="el_verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+      	      <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            
+            <lu>
+              <lit v="el"/><lit-tag v="adv"/>
+            </lu>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: VBSER">
       <pattern>
         <pattern-item n="vbser"/>
@@ -2439,10 +2494,8 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="ser" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
+      	      <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -2465,13 +2518,11 @@ the ones who:the ones who<rel><nn><mf><pl>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ser" case="caseFirstWord">
+          <chunk name="ser_not" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
 	            <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -2491,7 +2542,9 @@ the ones who:the ones who<rel><nn><mf><pl>
 
 
 
-  <rule comment="RULE: please + vblex in present => please + vblex in imperative">
+
+
+  <rule comment="RULE: please + vblex in present => please + vblex in infinitive">
      <pattern>
        <pattern-item n="please"/>
        <pattern-item n="c_vblex_pres"/>
@@ -2499,24 +2552,20 @@ the ones who:the ones who<rel><nn><mf><pl>
      <action>
        <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
        <out>
-         <chunk name="verb" case="caseFirstWord">
+         <chunk name="pls_verb1" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
 	      <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
             </lu>
           </chunk>
          <b pos="1"/>
-         <chunk name="verb" case="caseFirstWord">
+         <chunk name="pls_verb2" case="caseFirstWord">
            <tags>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
@@ -2540,7 +2589,6 @@ the ones who:the ones who<rel><nn><mf><pl>
 <action>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-        <let><var n="chunk_name"/><lit v="verbcj"/></let>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
 	<choose>
 	  <when>
@@ -2554,7 +2602,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	  </otherwise>
 	</choose>
 	<out>
-	  <chunk name="adv" case="caseFirstWord">
+	  <chunk name="adv2" case="caseFirstWord">
 	    <tags>
 	      <tag><clip pos="2" side="tl" part="a_adv"/></tag>
 	      <tag><var n="neg"/></tag>
@@ -2564,7 +2612,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	    </lu>
 	  </chunk>
 	  <b pos="1"/>
-	  <chunk namefrom="chunk_name">
+	  <chunk name="verbcj">
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
 	      <tag><var n="tipus_verb"/></tag>
@@ -2595,9 +2643,8 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
+      	      <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="2" side="tl" part="a_prs"/></tag>
             </tags>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -2625,9 +2672,8 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="verb_vbger" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
+	            <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="2" side="tl" part="a_prs"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
@@ -2687,8 +2733,6 @@ might:might<vaux><inf>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
@@ -2718,10 +2762,9 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
                   <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <lit v="povi"/>
@@ -2744,10 +2787,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+	                <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -2792,10 +2833,8 @@ might:might<vaux><inf>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -2827,10 +2866,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -2856,10 +2893,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -2889,7 +2924,6 @@ might:might<vaux><inf>
         <pattern-item n="vaux"/>
         <pattern-item n="adv"/>
         <pattern-item n="adv"/>
-<!--        <pattern-item n="vblex"/> -->
         <pattern-item n="vblex_vbser"/>
       </pattern>
       <action>
@@ -2910,10 +2944,8 @@ might:might<vaux><inf>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -2948,10 +2980,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -2981,10 +3011,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3038,10 +3066,8 @@ might:might<vaux><inf>
               <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <lit v="esti"/><lit-tag v="vbser"/>
@@ -3069,10 +3095,8 @@ might:might<vaux><inf>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                   <tag><lit-tag v="DEBUG_MAY"/></tag>
                 </tags>
                 <lu>
@@ -3100,10 +3124,8 @@ might:might<vaux><inf>
               <chunk name="verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/>
@@ -3134,10 +3156,8 @@ might:might<vaux><inf>
               <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <lit v="povi"/>
@@ -3160,10 +3180,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3214,10 +3232,8 @@ might:might<vaux><inf>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
@@ -3240,10 +3256,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>

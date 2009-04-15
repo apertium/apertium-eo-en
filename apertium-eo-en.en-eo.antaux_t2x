@@ -12,6 +12,13 @@ NUM SN -> SN
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="out">
+      <cat-item lemma="out" tags="Adv"/>
+    </def-cat>
     <def-cat n="GEN">
       <cat-item tags="GEN"/>
     </def-cat>
@@ -50,7 +57,7 @@ NUM SN -> SN
 
 
 
-    <rule comment="REGLA: SN1's SN2  al  SN2 de SN1">
+    <rule comment="REGLA: SN1's SN2   -   SN2 de SN1">
       <pattern>
         <pattern-item n="SN"/>
         <pattern-item n="GEN"/>
@@ -153,6 +160,28 @@ NUM SN -> SN
             <clip pos="2" part="content"/>
                 <b pos="2"/>
             <clip pos="3" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+    <rule comment="REGLA: SV out (wash out)  -   elSV (ellavi)">
+      <pattern>
+        <pattern-item n="SV"/>
+        <pattern-item n="out"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <lit v="{^el"/><lit-tag v="adv"/><lit v="$"/>
+            <!-- <clip pos="2" part="content"/>-->
+            <clip pos="1" part="content"/>
              <lit v="}"/>
           </chunk>
         </out>

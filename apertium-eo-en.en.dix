@@ -9933,14 +9933,14 @@ The gods hold court.
 <e lm="beetroot">             <i>beetroot</i><par n="house__n"/></e>
 <e lm="before">               <i>before</i><par n="maybe__adv"/></e>
 <e lm="before">               <i>before</i><par n="after__cnjadv"/></e>
-<!--    <e lm="before"><i>before</i><par n="at__pr"/></e> -->
+<e lm="before"><i>before</i><par n="at__pr"/></e>
 <e lm="begin">                <i>beg</i><par n="beg/in__vblex"/></e>
 <e lm="beg">                  <i>beg</i><par n="plug__vblex"/></e>
 <e lm="begging">              <i>begging</i><par n="house__n"/></e>
 <e lm="beginning">            <i>beginning</i><par n="house__n"/></e>
 <e lm="behaviour">            <i>behaviour</i><par n="house__n"/></e>
 <e lm="behind">               <i>behind</i><par n="maybe__adv"/></e>
-<!--    <e lm="behind"><i>behind</i><par n="at__pr"/></e> -->
+<e lm="behind"><i>behind</i><par n="at__pr"/></e>
 <e lm="belief">               <i>belief</i><par n="house__n"/></e>
 <e lm="believe">              <i>believ</i><par n="liv/e__vblex"/></e>
 <e lm="bell">                 <i>bell</i><par n="house__n"/></e>
@@ -10135,9 +10135,11 @@ The gods hold court.
 <e lm="business">             <i>business</i><par n="expensive__adj"/></e>
 <e lm="but">                  <i>but</i><par n="and__cnjcoo"/></e>
 <!-- removed, as too much bacame <adv>, see  http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests.
-    <e lm="but"><i>but</i><par n="maybe__adv"/></e>
-    <e lm="but"><i>but</i><par n="at__pr"/></e>
+<e lm="but"><i>but</i><par n="at__pr"/></e>
     -->
+<e lm="but"><i>but</i><par n="maybe__adv"/></e>
+
+
 <e lm="but rather">           <i>but<b/>rather</i><par n="and__cnjcoo"/></e>
 <e lm="butter">               <i>butter</i><par n="house__n"/></e>
 <e lm="buttock">              <i>buttock</i><par n="house__n"/></e>
@@ -10145,7 +10147,7 @@ The gods hold court.
 <e lm="by">                   <i>by</i><par n="at__pr"/></e>
 <e lm="by dint of">           <i>by<b/>dint<b/>of</i><par n="at__pr"/></e>
 <e lm="by force">             <i>by<b/>force</i><par n="maybe__adv"/></e>
-    <!-- <e lm="by forced marches"><i>by<b/>forced<b/>marches</i><par n="maybe__adv"/></e>-->
+<e lm="by forced marches"><i>by<b/>forced<b/>marches</i><par n="maybe__adv"/></e>
 <e lm="by hand">              <i>by<b/>hand</i><par n="maybe__adv"/></e>
 <e lm="by means of">          <i>by<b/>means<b/>of</i><par n="at__pr"/></e>
 <e lm="come out">             <i>c</i><par n="bec/ome__vblex"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
@@ -10375,7 +10377,7 @@ The gods hold court.
 <e lm="city">                 <i>cit</i><par n="bab/y__n"/></e>
 <e lm="cite">                 <i>cit</i><par n="liv/e__vblex"/></e>
 <e lm="citadel">              <i>citadel</i><par n="house__n"/></e>
-<!--    <e lm="citizen"><i>citizen</i><par n="house__n"/></e>-->
+<e lm="citizen"><i>citizen</i><par n="house__n"/></e>
 <e lm="city council">         <i>city<b/>council</i><par n="house__n"/></e>
 <e lm="civil">                <i>civil</i><par n="common/__adj"/></e>
 <e lm="civilise">             <i>civili</i><par n="authori/se__vblex"/></e>
@@ -10980,7 +10982,6 @@ The gods hold court.
 <e lm="destination">          <i>destination</i><par n="house__n"/></e>
 <e lm="destroy">              <i>destroy</i><par n="enjoy__vblex"/></e>
 <e lm="destroyer">            <i>destroyer</i><par n="house__n"/></e>
-<!--    <e lm="destroyer"><i>destroyer</i><par n="expensive__adj"/></e> -->
 <e lm="destruction">          <i>destruction</i><par n="house__n"/></e>
 <e lm="detachment">           <i>detachment</i><par n="house__n"/></e>
 <e lm="detail">               <i>detail</i><par n="house__n"/></e>
@@ -11228,7 +11229,7 @@ The gods hold court.
 <e lm="eardrum">              <i>eardrum</i><par n="house__n"/></e>
 <e lm="earl">                 <i>earl</i><par n="house__n"/></e>
 <e lm="early">                <i>earl</i><par n="happ/y__adj"/></e>
-<!--    <e lm="early"><i>early</i><par n="maybe__adv"/></e> -->
+<e lm="early"><i>early</i><par n="maybe__adv"/></e>
 <e lm="earn">                 <i>earn</i><par n="accept__vblex"/></e>
 <e lm="earnestly">            <i>earnestly</i><par n="maybe__adv"/></e>
 <e lm="earnings">             <i>earnings</i><par n="personnel__n"/></e>
@@ -12083,7 +12084,7 @@ The gods hold court.
 <e lm="hake">                 <i>hake</i><par n="house__n"/></e>
 <e lm="half">                 <i>hal</i><par n="wol/f__n"/></e>
 <e lm="half">                 <i>half</i><par n="expensive__adj"/></e>
-<!--    <e lm="half"><i>half</i><par n="maybe__adv"/></e> -->
+<e lm="half"><i>half</i><par n="maybe__adv"/></e>
 <e lm="hall">                 <i>hall</i><par n="house__n"/></e>
 <e lm="halt">                 <i>halt</i><par n="accept__vblex"/></e>
 <e lm="ham">                  <i>ham</i><par n="house__n"/></e>
@@ -12173,7 +12174,7 @@ The gods hold court.
 <e lm="hide">                 <i>hide</i><par n="house__n"/></e>
 <e lm="hierarchy">            <i>hierarch</i><par n="bab/y__n"/></e>
 <e lm="high">                 <i>high</i><par n="long/__adj"/></e>
-<!--    <e lm="high"><i>high</i><par n="maybe__adv"/></e> -->
+<e lm="high"><i>high</i><par n="maybe__adv"/></e>
 <e lm="high court">           <i>high<b/>court</i><par n="east__n"/></e>
 <e lm="high school">          <i>high<b/>school</i><par n="house__n"/></e>
 <e lm="highlight">            <i>highlight</i><par n="house__n"/></e>
@@ -12207,7 +12208,7 @@ The gods hold court.
 <e lm="hollow">               <i>hollow</i><par n="expensive__adj"/></e>
 <e lm="homage">               <i>homage</i><par n="house__n"/></e>
 <e lm="home">                 <i>home</i><par n="house__n"/></e>
-<!--    <e lm="home"><i>home</i><par n="maybe__adv"/></e>  -->
+<e lm="home"><i>home</i><par n="maybe__adv"/></e>
 <e lm="homeland">             <i>homeland</i><par n="house__n"/></e>
 <e lm="homework">             <i>homework</i><par n="house__n"/></e>
 <e lm="homicide">             <i>homicide</i><par n="house__n"/></e>
@@ -12247,9 +12248,9 @@ The gods hold court.
 <e lm="hover">                <i>hover</i><par n="accept__vblex"/></e>
 <e lm="how">                  <i>how</i><par n="very__preadv"/></e>
 <e lm="how">                  <i>how</i><par n="where__adv"/></e>
-<!--    <e lm="how many"><i>how<b/>many</i><par n="how_many__det"/></e> -->
+<e lm="how many"><i>how<b/>many</i><par n="how_many__det"/></e>
 <e lm="how many">             <i>how<b/>many</i><par n="how_many__prn"/></e>
-<!--    <e lm="how much"><i>how<b/>much</i><par n="how_much__det"/></e> -->
+<e lm="how much"><i>how<b/>much</i><par n="how_much__det"/></e>
 <e lm="how much">             <i>how<b/>much</i><par n="how_much__prn"/></e>
 <e lm="however">              <i>however</i><par n="maybe__adv"/></e>
 <e lm="huge">                 <i>huge</i><par n="expensive__adj"/></e>
@@ -12600,7 +12601,7 @@ The gods hold court.
 <e lm="inundate">             <i>inundat</i><par n="liv/e__vblex"/></e>
 <e lm="inundation">           <i>inundation</i><par n="house__n"/></e>
 <e lm="invalid">              <i>invalid</i><par n="house__n"/></e>
-<!--    <e lm="invalid"><i>invalid</i><par n="expensive__adj"/></e> -->
+<e lm="invalid"><i>invalid</i><par n="expensive__adj"/></e>
 <e lm="invalidate">           <i>invalidat</i><par n="liv/e__vblex"/></e>
 <e lm="invasion">             <i>invasion</i><par n="house__n"/></e>
 <e lm="invent">               <i>invent</i><par n="accept__vblex"/></e>
@@ -12800,7 +12801,6 @@ The gods hold court.
 <e lm="leather">              <i>leather</i><par n="house__n"/></e>
 <e lm="left">                 <i>left</i><par n="house__n"/></e>
 <e lm="left">                 <i>left</i><par n="expensive__adj"/></e>
-<!-- this was commented away. why? Jacob -->    
 <e lm="left">                 <i>left</i><par n="maybe__adv"/></e>
 <e lm="left-hand">            <i>left-hand</i><par n="expensive__adj"/></e>
 <e lm="left-handed">          <i>left-handed</i><par n="expensive__adj"/></e>
@@ -12892,7 +12892,6 @@ The gods hold court.
 <e lm="litter">               <i>litter</i><par n="accept__vblex"/></e>
 <e lm="little">               <i>little</i><par n="much__det"/></e>
 <e lm="little">               <i>little</i><par n="expensive__adj"/></e>
-<!-- this was commented away. why? Jacob -->
 <e lm="little">               <i>little</i><par n="maybe__adv"/></e>
 <e lm="liturgy">              <i>liturg</i><par n="bab/y__n"/></e>
 <e lm="live">                 <i>liv</i><par n="liv/e__vblex"/></e>
@@ -12918,7 +12917,6 @@ The gods hold court.
 <e lm="logistics">            <i>logistics</i><par n="politics__n"/></e>
 <e lm="logotype">             <i>logotype</i><par n="house__n"/></e>
 <e lm="long">                 <i>long</i><par n="long/__adj"/></e>
-<!-- this was commented away. why? Jacob -->    
 <e lm="long">                 <i>long</i><par n="maybe__adv"/></e>
 <e lm="longhand">             <i>longhand</i><par n="maybe__adv"/></e>
 <e lm="look">                 <i>look</i><par n="house__n"/></e>
@@ -12955,7 +12953,8 @@ The gods hold court.
 <e lm="lunch">                <i>lunch</i><par n="approach__vblex"/></e>
 <e lm="lung">                 <i>lung</i><par n="house__n"/></e>
 <e lm="lust">                 <i>lust</i><par n="house__n"/></e>
-<!--    <e lm="luxury"><i>luxur</i><par n="bab/y__n"/></e> -->
+
+<e lm="luxury"><i>luxur</i><par n="bab/y__n"/></e>
 <e lm="lyre">                 <i>lyre</i><par n="house__n"/></e>
 <e lm="lyric">                <i>lyric</i><par n="house__n"/></e>
 <e lm="lyric">                <i>lyric</i><par n="expensive__adj"/></e>
@@ -13013,7 +13012,7 @@ The gods hold court.
 <e lm="manufacturing">        <i>manufacturing</i><par n="house__n"/></e>
 <e lm="manuscript">           <i>manuscript</i><par n="house__n"/></e>
 <e lm="many">                 <i>many</i><par n="many__det"/></e>
-    <!-- JN: its 'multaj' anyway, so just use the det <e lm="many"><i>many</i><par n="both__prn"/></e>  -->
+<e lm="many"><i>many</i><par n="both__prn"/></e>  
 <e lm="map">                  <i>map</i><par n="house__n"/></e>
 <e lm="marathon">             <i>marathon</i><par n="house__n"/></e>
 <e lm="marble">               <i>marble</i><par n="house__n"/></e>
@@ -13148,9 +13147,7 @@ The gods hold court.
 <e lm="mind">                 <i>mind</i><par n="accept__vblex"/></e>
 <e lm="mine">                 <i>mine</i><par n="house__n"/></e>
 <e lm="mine">                 <i>mine</i><par n="mine__adj"/></e>
-<!--    
-    <e lm="mine"><i>mine</i><par n="mine__prn"/></e>
--->
+<e lm="mine"><i>mine</i><par n="mine__prn"/></e>
 <e lm="miner">                <i>miner</i><par n="house__n"/></e>
 <e lm="mineral">              <i>mineral</i><par n="house__n"/></e>
 <e lm="mineral">              <i>mineral</i><par n="expensive__adj"/></e>
@@ -13231,7 +13228,8 @@ The gods hold court.
 <e lm="mortgage">             <i>mortgage</i><par n="house__n"/></e>
 <e lm="mosaic">               <i>mosaic</i><par n="house__n"/></e>
 <e lm="mosque">               <i>mosque</i><par n="house__n"/></e>
-<!--       <e lm="most"><i>most</i><par n="enough__det"/></e> -->
+
+<e lm="most"><i>most</i><par n="enough__det"/></e>
 <e lm="most">                 <i>most</i><par n="very__preadv"/></e>
 <e lm="most">                 <i>most</i><par n="maybe__adv"/></e>
 <e lm="most">                 <i>most</i><par n="both__prn"/></e>
@@ -13324,7 +13322,7 @@ The gods hold court.
 <e lm="naïve">                <i>naïve</i><par n="nice/__adj"/></e>
 <e lm="near">                 <i>near</i><par n="long/__adj"/></e>
 <e lm="near">                 <i>near</i><par n="maybe__adv"/></e>
-<!--    <e lm="near"><i>near</i><par n="at__pr"/></e> -->
+<e lm="near"><i>near</i><par n="at__pr"/></e>
 <e lm="near here">            <i>near<b/>here</i><par n="maybe__adv"/></e>
 <e lm="nearby">               <i>nearby</i><par n="expensive__adj"/></e>
 <e lm="necessarily">          <i>necessarily</i><par n="maybe__adv"/></e>
@@ -13533,7 +13531,8 @@ The gods hold court.
 <e lm="on time">              <i>on<b/>time</i><par n="maybe__adv"/></e>
 <e lm="on top">               <i>on<b/>top</i><par n="maybe__adv"/></e>
 
-<!--    <e lm="one"><i>one</i><par n="the_other__prn"/></e>  -->
+
+<e lm="one"><i>one</i><par n="the_other__prn"/></e>
 <e lm="ongoing">              <i>ongoing</i><par n="expensive__adj"/></e>
 <e lm="onion">                <i>onion</i><par n="house__n"/></e>
 <e lm="only">                 <i>only</i><par n="expensive__adj"/></e>
@@ -13600,7 +13599,7 @@ The gods hold court.
 <e lm="osseous">              <i>osseous</i><par n="expensive__adj"/></e>
 <e lm="ostrich">              <i>ostrich</i><par n="access__n"/></e>
 <e lm="out">                  <i>out</i><par n="maybe__adv"/></e>
-<!--    <e lm="out"><i>out</i><par n="at__pr"/></e> -->
+<e lm="out"><i>out</i><par n="at__pr"/></e>
 <e lm="out of place">         <i>out<b/>of<b/>place</i><par n="maybe__adv"/></e>
 <e lm="out of position">      <i>out<b/>of<b/>position</i><par n="maybe__adv"/></e>
 <e lm="out of turn">          <i>out<b/>of<b/>turn</i><par n="maybe__adv"/></e>
@@ -13615,7 +13614,7 @@ The gods hold court.
 <e lm="outside">              <i>outside</i><par n="house__n"/></e>
 <e lm="outside">              <i>outside</i><par n="expensive__adj"/></e>
 <e lm="outside">              <i>outside</i><par n="maybe__adv"/></e>
-<!--    <e lm="outside"><i>outside</i><par n="at__pr"/></e> -->
+<e lm="outside"><i>outside</i><par n="at__pr"/></e>
 <e lm="oval">                 <i>oval</i><par n="house__n"/></e>
 <e lm="oval">                 <i>oval</i><par n="expensive__adj"/></e>
 <e lm="ovation">              <i>ovation</i><par n="house__n"/></e>
@@ -13776,7 +13775,7 @@ The gods hold court.
 <e lm="perform">              <i>perform</i><par n="accept__vblex"/></e>
 <e lm="performance">          <i>performance</i><par n="house__n"/></e>
 <e lm="performer">            <i>performer</i><par n="house__n"/></e>
-<!--    <e lm="perfume"><i>perfum</i><par n="liv/e__vblex"/></e> -->
+<e lm="perfume"><i>perfum</i><par n="liv/e__vblex"/></e>
 <e lm="perfume">              <i>perfume</i><par n="house__n"/></e>
 <e lm="perhaps">              <i>perhaps</i><par n="maybe__adv"/></e>
 <e lm="perimeter">            <i>perimeter</i><par n="house__n"/></e>
