@@ -2265,102 +2265,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
      -->
 
 
-<!--
-Uzataj estas: 
-ag/eing__n
-ago__adv
-alumn/us__n
-armo/ured__adj
-ascend/ancy__n
-ass__n
-ax/e__n
-ban__vblex
-b/are__vblex
-bas/is__n
-/be__vblex
-b/y__adv
-ca__adj
-che/quebook__n
-criss/-cross__vblex
-dat/um__n
-dict/um__n
-di/e__vblex
-down__vblex
-drip__vblex
-favo/ur__n
-fib/re__n
-ficus__n
-fr/y__n
-fuel__vblex
-grandchild__n
-grip/e__vblex
-gruel/ling__adj
-hal/f__n
-hepatiti/s__n
-hipp/ie__n
-hit__vblex
-h/old__vblex
-hoo/f__n
-hug__vblex
-ic/y__adv
-ii__adv
-jar__vblex
-jewel/ler__n
-jut__vblex
-kid__vblex
-labo/urer__n
-li/fe__n
-lir/a__n
-localit/y__n
-m/an__n
-meag/re__adj
-medal/list__n
-mix__vblex
-mo/uldy__adj
-mumm/y__n
-ok/ay__adv
-out-trade__vblex
-ox__n
-panic__vblex
-patrol__vblex
-pcs__n
-phon/ey__adj
-plug__vblex
-pl/y__vblex
-p.m__n
-prod__vblex
-quit__vblex
-ram__vblex
-r/ide__vblex
-rumo/ur__n
-salespe/rson__n
-s/ceptical__adj
-s/ee__vblex
-slid/e__vblex
-so__adv
-sob__vblex
-spokespe/rson__n
-stri/fe__n
-stun__vblex
-temp/o__n
-thin__vblex
-tip__vblex
-to/y__n
-trot__vblex
-up__n
-up__pr
-up__vblex
-v/ie__vblex
-vow__vblex
-vu__n
-wag/gon__n
-wed__vblex
-whir__vblex
-wr/ing__vblex
-yen__n
-zero__n
-zig-zag__vblex
--->
 
 <pardef n="ic/y__adv">
 <e>                           <p><l>y</l>                   <r>y<s n="adv"/></r></p></e>
@@ -4754,9 +4658,9 @@ The gods hold court.
 <e lm="colloquy">             <i>colloqu</i><par n="mumm/y__n"/></e>
 <e lm="colonial">             <i>colonial</i><par n="vu__n"/></e>
 <!-- XXX TODO Provu cxu en ordo
-<e lm="color">                <i>color</i><par n="vow__vblex"/></e>
 <e lm="color">                <i>color</i><par n="ca__adj"/></e>
 -->
+<e lm="color">                <i>color</i><par n="vow__vblex"/></e>
 <e lm="combatant">            <i>combatant</i><par n="up__n"/></e>
 <e lm="combine">              <i>combine</i><par n="up__n"/></e>
 <e lm="comedic">              <i>comedic</i><par n="ca__adj"/></e>
@@ -5087,9 +4991,7 @@ The gods hold court.
 <e lm="dictum">               <i>dict</i><par n="dict/um__n"/></e>
 <e lm="die-hard">             <i>die-hard</i><par n="ca__adj"/></e>
 <e lm="diesel">               <i>diesel</i><par n="ca__adj"/></e>
-<!-- XXX TODO Provu cxu en ordo
 <e lm="dig">                  <i>dig</i><par n="vu__n"/></e>
--->
 <e lm="digest">               <i>digest</i><par n="vow__vblex"/></e>
 <e lm="dignitary">            <i>dignitar</i><par n="fr/y__n"/></e>
 <e lm="dilapidated">          <i>dilapidated</i><par n="ca__adj"/></e>
@@ -5198,10 +5100,7 @@ The gods hold court.
 <e lm="doubter">              <i>doubter</i><par n="vu__n"/></e>
 <e lm="dove">                 <i>dove</i><par n="vu__n"/></e>
 <e lm="dowdy">                <i>dowdy</i><par n="ca__adj"/></e>
-<!-- XXX TODO Provu cxu en ordo
 <e lm="down">                 <i>down</i><par n="down__vblex"/></e>
-<e lm="down">                 <i>down</i><par n="ca__adj"/></e>
--->
 <e lm="downbeat">             <i>downbeat</i><par n="ca__adj"/></e>
 <e lm="downgrade">            <i>downgrade</i><par n="vu__n"/></e>
 <e lm="downgrading">          <i>downgrading</i><par n="vu__n"/></e>
@@ -5498,9 +5397,6 @@ The gods hold court.
 <e lm="filth">                <i>filth</i><par n="vu__n"/></e>
 <e lm="finalize">             <i>finaliz</i><par n="di/e__vblex"/></e>
 <e lm="financing">            <i>financing</i><par n="up__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="find">                 <i>find</i><par n="vu__n"/></e>
--->
 <e lm="fingering">            <i>fingering</i><par n="up__n"/></e>
 <e lm="fingerprint">          <i>fingerprint</i><par n="vu__n"/></e>
 <e lm="fireball">             <i>fireball</i><par n="vu__n"/></e>
@@ -5510,9 +5406,6 @@ The gods hold court.
 <e lm="firsthand">            <i>firsthand</i><par n="so__adv"/></e>
 <e lm="fisherman">            <i>fisherm</i><par n="m/an__n"/></e>
 <e lm="fissure">              <i>fissure</i><par n="up__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="fit">                  <i>fit</i><par n="vu__n"/></e>
--->
 <e lm="fitting">              <i>fitting</i><par n="ii__adv"/></e>
 <e lm="fitting">              <i>fitting</i><par n="up__n"/></e>
 <e lm="fixation">             <i>fixation</i><par n="vu__n"/></e>
@@ -5558,9 +5451,6 @@ The gods hold court.
 <e lm="fodder">               <i>fodder</i><par n="vu__n"/></e>
 <e lm="foe">                  <i>foe</i><par n="vu__n"/></e>
 <e lm="fog">                  <i>fog</i><par n="vu__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="fog">                  <i>fog</i><par n="hug__vblex"/></e>
--->
 <e lm="foggy">                <i>foggy</i><par n="ca__adj"/></e>
 <e lm="foil">                 <i>foil</i><par n="vow__vblex"/></e>
 <e lm="foiled">               <i>foiled</i><par n="ca__adj"/></e>
@@ -5568,9 +5458,7 @@ The gods hold court.
 <e lm="fondness">             <i>fondness</i><par n="ox__n"/></e>
 <e lm="foodstuff">            <i>foodstuff</i><par n="vu__n"/></e>
 <e lm="fool">                 <i>fool</i><par n="vow__vblex"/></e>
-<!-- XXX TODO Provu cxu en ordo
 <e lm="fool">                 <i>fool</i><par n="ca__adj"/></e>
--->
 <e lm="fooling">              <i>fooling</i><par n="up__n"/></e>
 <e lm="footage">              <i>footage</i><par n="vu__n"/></e>
 <e lm="footing">              <i>footing</i><par n="up__n"/></e>
@@ -11982,10 +11870,7 @@ The gods hold court.
 <e lm="godfather">            <i>godfather</i><par n="house__n"/></e>
 <e lm="gold">                 <i>gold</i><par n="house__n"/></e>
 <e lm="coup">                 <i>coup</i><par n="house__n"/></e>
-<!-- la ' ne funkscias, do uzu _ interne
 <e lm="coup d'état">          <i>coup<b/>d'état</i><par n="house__n"/></e>
--->
-<e lm="coup d'état">          <p><l>coup<b/>d'état</l>      <r>coup<b/>d'état</r></p><par n="house__n"/></e>
 <e r="LR" lm="coup d'état">   <p><l>coup<b/>d'etat</l>      <r>coup<b/>d'état</r></p><par n="house__n"/></e>
 <e lm="coup de grace">        <i>coup<b/>de<b/>grâce</i><par n="house__n"/></e>
 <e lm="good">                 <i>good</i><par n="house__n"/></e>
@@ -12187,11 +12072,6 @@ The gods hold court.
 <e lm="hire">                 <i>hir</i><par n="liv/e__vblex"/></e>
 <e lm="hire out">             <i>hir</i><par n="liv/e__vblex"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
 <e lm="hire">                 <i>hire</i><par n="house__n"/></e>
-<e lm="his">                  <i>his</i><par n="her__det"/></e>
-<e lm="his">                  <i>his</i><par n="mine__adj"/></e>
-<!--    
-    <e lm="his"><i>his</i><par n="mine__prn"/></e>
--->
 <e lm="history">              <i>histor</i><par n="bab/y__n"/></e>
 <e lm="historical">           <i>historical</i><par n="expensive__adj"/></e>
 <e lm="historically">         <i>historically</i><par n="maybe__adv"/></e>
@@ -12958,7 +12838,8 @@ The gods hold court.
 <e lm="mouse">                <i>m</i><par n="m/ouse__n"/></e>
 <e lm="man">                  <i>m</i><par n="m/an__n"/></e>
 <e lm="make">                 <i>ma</i><par n="ma/ke__vblex"/></e>
-<!-- commented out by Jacob as "make a mistake"->"fari eraron" works fine without this line   <e lm="make a mistake"><i>ma</i><par n="ma/ke__vblex"/><p><l><b/>a<b/>mistake</l><r><g><b/>a<b/>mistake</g></r></p></e>  -->
+<!-- commented out by Jacob as "make a mistake"->"fari eraron" works fine without this line   
+<e lm="make a mistake"><i>ma</i><par n="ma/ke__vblex"/><p><l><b/>a<b/>mistake</l><r><g><b/>a<b/>mistake</g></r></p></e>  -->
 <e lm="machine">              <i>machine</i><par n="house__n"/></e>
 <e lm="machinery">            <i>machiner</i><par n="bab/y__n"/></e>
 <e lm="mad">                  <i>mad</i><par n="glad/__adj"/></e>
@@ -13143,8 +13024,6 @@ The gods hold court.
 <e lm="mind">                 <i>mind</i><par n="house__n"/></e>
 <e lm="mind">                 <i>mind</i><par n="accept__vblex"/></e>
 <e lm="mine">                 <i>mine</i><par n="house__n"/></e>
-<e lm="mine">                 <i>mine</i><par n="mine__adj"/></e>
-<e lm="mine"><i>mine</i><par n="mine__prn"/></e>
 <e lm="miner">                <i>miner</i><par n="house__n"/></e>
 <e lm="mineral">              <i>mineral</i><par n="house__n"/></e>
 <e lm="mineral">              <i>mineral</i><par n="expensive__adj"/></e>
@@ -13533,8 +13412,7 @@ The gods hold court.
 <e lm="ongoing">              <i>ongoing</i><par n="expensive__adj"/></e>
 <e lm="onion">                <i>onion</i><par n="house__n"/></e>
 <e lm="only">                 <i>only</i><par n="expensive__adj"/></e>
-    <!-- The references are only a small selection. -->
-<e lm="only">                 <i>only</i><par n="maybe__adv"/></e>
+<e lm="only" c="The references are only a small selection">                 <i>only</i><par n="maybe__adv"/></e>
 <e lm="onto">                 <i>onto</i><par n="at__pr"/></e>
 <e lm="opaque">               <i>opaque</i><par n="expensive__adj"/></e>
 <e lm="open">                 <i>open</i><par n="house__n"/></e>
@@ -14212,7 +14090,6 @@ The gods hold court.
 <e lm="purpose">              <i>purpose</i><par n="house__n"/></e>
 <e lm="purposely">            <i>purposely</i><par n="maybe__adv"/></e>
 <e lm="pursue">               <i>pursu</i><par n="liv/e__vblex"/></e>
-<!--    <e lm="pursuit"><i>pursuit</i><par n="house__n"/></e> -->
 <e lm="push">                 <i>push</i><par n="access__n"/></e>
 <e lm="push">                 <i>push</i><par n="approach__vblex"/></e>
 <e lm="put">                  <i>put</i><par n="cut__vblex"/></e>
@@ -14668,7 +14545,6 @@ The gods hold court.
 <e lm="save">                 <i>sav</i><par n="liv/e__vblex"/></e>
 <e lm="saving">               <i>saving</i><par n="house__n"/></e>
 <e lm="saw">                  <i>saw</i><par n="house__n"/></e>
-<!--    <e lm="saw"><i>saw</i><par n="accept__vblex"/></e> -->
 <e lm="saying">               <i>saying</i><par n="house__n"/></e>
 <e lm="scabies">              <i>scabies</i><par n="politics__n"/></e>
 <e lm="scale">                <i>scale</i><par n="house__n"/></e>
@@ -14729,8 +14605,14 @@ The gods hold court.
 <e lm="seaweed">              <i>seaweed</i><par n="house__n"/></e>
 <e lm="secession">            <i>secession</i><par n="house__n"/></e>
 <e lm="second">               <i>second</i><par n="second__det"/></e>
+<e lm="temper">               <i>temper</i><par n="month__n"/></e>
+
+
 <e lm="second">               <i>second</i><par n="month__n"/></e>
-<!--    <e lm="second"><i>second</i><par n="accept__vblex"/></e> -->
+
+
+<e lm="second"><i>second</i><par n="accept__vblex"/></e>
+<!--     -->
 <!--    <e lm="second"><i>second</i><par n="maybe__adv"/></e> -->
 <e lm="secondary">            <i>secondary</i><par n="expensive__adj"/></e>
 <e lm="secondary school">     <i>secondary<b/>school</i><par n="house__n"/></e>
@@ -15510,11 +15392,7 @@ The gods hold court.
 <e lm="theatre">              <i>theatre</i><par n="house__n"/></e>
 <e lm="theatrical">           <i>theatrical</i><par n="expensive__adj"/></e>
 <e lm="theft">                <i>theft</i><par n="house__n"/></e>
-<e lm="their">                <i>their</i><par n="her__det"/></e>
-<e lm="theirs">               <i>theirs</i><par n="mine__adj"/></e>
-<!--    
-    <e lm="theirs"><i>theirs</i><par n="mine__prn"/></e>
--->
+
 <e lm="theme">                <i>theme</i><par n="house__n"/></e>
 <e lm="themselves">           <p><l>themselves</l>          <r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 <e lm="then">                 <i>then</i><par n="after__cnjadv"/></e>
@@ -16299,38 +16177,46 @@ The gods hold court.
 <e lm="Zapatista National Liberation Army"><i>Zapatista<b/>National<b/>Liberation<b/>Army</i><par n="Linux__np"/></e>
 <e lm="ABC News">             <i>ABC<b/>News</i><par n="Linux__np"/></e>
 
-    <!-- Personal pronouns -->
-
-<e lm="your">                 <i>your</i><par n="her__det"/></e>
-<e lm="yours">                <i>yours</i><par n="mine__adj"/></e>
-<!--    
-    <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
--->
-<e lm="yourself">             <p><l>yourself</l>            <r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-<e lm="yourselves">           <p><l>yourselves</l>          <r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-<e lm="my">                   <i>my</i><par n="her__det"/></e>
-<e lm="myself">               <p><l>myself</l>              <r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-<e lm="hers">                 <i>hers</i><par n="mine__adj"/></e>
-<!--
-    <e lm="hers"><i>hers</i><par n="mine__prn"/></e>
--->
-<e lm="herself">              <p><l>herself</l>             <r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="himself">              <p><l>himself</l>             <r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="its">                  <i>its</i><par n="her__det"/></e>
-<e lm="itself">               <p><l>itself</l>              <r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 
 <e lm="other">                <i>other</i><par n="other__det"/></e>
 <e lm="others">               <i>others</i><par n="both__prn"/></e>
-<e lm="our">                  <i>our</i><par n="her__det"/></e>
-<e lm="ours">                 <i>ours</i><par n="mine__adj"/></e>
-<!--    
-    <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
--->
-<e lm="ourselves">            <p><l>ourselves</l>           <r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 
-    <!-- Bad Esperanto hack! "to be" -> "be" 
-    <e lm="to be"><p><l>to<b/>be</l><r>be<s n="vbser"/><s n="inf"/></r></p></e>
- -->
+    <!-- Personal pronouns -->
+
+<e lm="yourself">             <p><l>yourself</l>            <r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e lm="yourselves">           <p><l>yourselves</l>          <r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+<e lm="myself">               <p><l>myself</l>              <r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e lm="herself">              <p><l>herself</l>             <r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e lm="himself">              <p><l>himself</l>             <r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="ourselves">            <p><l>ourselves</l>           <r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e lm="itself">               <p><l>itself</l>              <r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+
+<e lm="our">                  <i>our</i><par n="her__det"/></e>
+<e lm="your">                 <i>your</i><par n="her__det"/></e>
+<e lm="my">                   <i>my</i><par n="her__det"/></e>
+<e lm="its">                  <i>its</i><par n="her__det"/></e>
+<e lm="their">                <i>their</i><par n="her__det"/></e>
+<e lm="his">                  <i>his</i><par n="her__det"/></e>
+
+<e lm="mine">                 <i>mine</i><par n="mine__adj"/></e>
+<e lm="yours">                <i>yours</i><par n="mine__adj"/></e>
+<e lm="hers">                 <i>hers</i><par n="mine__adj"/></e>
+<e lm="his">                  <i>his</i><par n="mine__adj"/></e>
+<e lm="ours">                 <i>ours</i><par n="mine__adj"/></e>
+<e lm="theirs">               <i>theirs</i><par n="mine__adj"/></e>
+
+
+    <!-- Possesive pronouns -->
+
+<!--    
+<e lm="mine"><i>mine</i><par n="mine__prn"/></e>
+    <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
+    <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
+    <e lm="theirs"><i>theirs</i><par n="mine__prn"/></e>
+    <e lm="his"><i>his</i><par n="mine__prn"/></e>
+    <e lm="hers"><i>hers</i><par n="mine__prn"/></e>
+-->
+
 
     <!-- Phrases -->
 <e lm="I'm">                  <p><l>I'm</l>                 <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>

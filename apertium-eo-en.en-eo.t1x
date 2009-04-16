@@ -2401,8 +2401,8 @@ the ones who:the ones who<rel><nn><mf><pl>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="unknown" case="caseFirstWord">
-            <tags>
-              <tag><lit v=""/></tag>
+            <tags><!-- Traktu nekonatajn vortojn kiel nomoj en la venontaj stagxo -->
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
