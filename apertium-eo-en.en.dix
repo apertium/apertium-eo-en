@@ -164,6 +164,16 @@
 <e>                           <par n="aposchar"/><p><l></l> <r><s n="apos"/></r></p></e>
 </pardef>
 
+
+<!-- Tiu cxu pardef zorgas pri la genitivo cxe vortoj finigxantaj kun s. Ekzemple
+     Paris' 
+-->     
+<pardef n="gen__apos">
+<e>                           <p><l></l>                    <r></r></p></e>
+<e>                           <p><l>'</l>                   <r><j/>'s<s n="gen"/></r></p></e>
+</pardef>
+
+
 <pardef n="numeros">
 <e>                           <re>[0-9]+([.,][0-9]+)?</re><p><l></l><r><s n="num"/></r></p></e>
 <e>                           <re>[0-9]+([.,][0-9]+)?%</re><p><l></l><r><s n="num"/><s n="percent"/></r></p></e>
@@ -172,11 +182,11 @@
     <!-- Years -->
 <pardef n="years">
 <e>                           <!--      <i>the<b/></i> -->
-<re>[0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p></e>
+<re>[0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p><par n="gen__apos"/></e>
 <e>                           <!--      <i>the<b/></i> -->
-<re>[0-9][0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p></e>
+<re>[0-9][0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p><par n="gen__apos"/></e>
 <e>                           <!--      <i>the<b/></i> -->
-<re>[0-9][0-9][0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p></e>
+<re>[0-9][0-9][0-9]0</re><p><l>s</l><r>s<s n="num"/><s n="sp"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
 <pardef n="time">
@@ -540,7 +550,7 @@
     
 <pardef n="the_other__prn">
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="all_of_us__prn">
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
@@ -586,7 +596,7 @@
 
 <pardef n="house__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <!--
 <e r="LR">                    <p><l>s'</l>                  <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e> -->
 </pardef>
@@ -613,50 +623,52 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="Dutch__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ies</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
 <pardef n="drachma__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>e</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <!--    <e r="LR"><p><l>s'</l><r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>-->
 <e r="LR">                    <p><l>i</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="organi/sation__n">
 <e>                           <p><l>sation</l>              <r>sation<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>sations</l>             <r>sation<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>sations</l>             <r>sation<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e r="LR">                    <p><l>zation</l>              <r>sation<s n="n"/><s n="sg"/></r></p></e>
-<e r="LR">                    <p><l>zations</l>             <r>sation<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>zations</l>             <r>sation<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
 <pardef n="access__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>es'</l>                 <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="bab/y__n">
 <e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ys</l>                  <r>y<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ies'</l>                <r>y<s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
-<e r="LR">                    <p><l>ys'</l>                 <r>y<s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ys</l>                  <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="analys/is__n">
-<e>                           <p><l>is</l>                  <r>is<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>es</l>                  <r>is<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>is</l>                  <r>is<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>es</l>                  <r>is<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="maxim/um__n">
 <e>                           <p><l>um</l>                  <r>um<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>a</l>                   <r>um<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ums</l>                 <r>um<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>ums</l>                 <r>um<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="mon/ey__n">
 <e>                           <p><l>ey</l>                  <r>ey<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>eys</l>                 <r>ey<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ies</l>                 <r>ey<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>eys</l>                 <r>ey<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ies</l>                 <r>ey<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="m/an__n">
 <e>                           <p><l>an</l>                  <r>an<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>en</l>                  <r>an<s n="n"/><s n="pl"/></r></p></e>
@@ -664,40 +676,43 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="bass__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e r="LR">                    <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>es'</l>                 <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="bus__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ses</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>es'</l>                 <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
-<e r="LR">                    <p><l>ses'</l>                <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ses</l>                 <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="politics__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
+
 <pardef n="wol/f__n">
 <e>                           <p><l>f</l>                   <r>f<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ves'</l>                <r>f<s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
-<e r="LR">                    <p><l>fs</l>                  <r>f<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>fs</l>                  <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="li/fe__n">
 <e>                           <p><l>fe</l>                  <r>fe<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ves</l>                 <r>fe<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>fe<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="p/erson__n">
 <e>                           <p><l>erson</l>               <r>erson<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>eople</l>               <r>erson<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ersons</l>              <r>erson<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>eople</l>               <r>erson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ersons</l>              <r>erson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="staff__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="child__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ren</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
@@ -714,32 +729,32 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="br/other__n">
 <e>                           <p><l>other</l>               <r>other<s n="n"/><s n="sg"/></r></p></e>
 <e r="LR">                    <p><l>ethren</l>              <r>other<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>others</l>              <r>other<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>others</l>              <r>other<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="stimul/us__n">
-<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>i</l>                   <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>us</l>                  <r>us<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>us</l>                  <r>us<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="larva__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>e</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="ind/ex__n">
-<e>                           <p><l>ex</l>                  <r>ex<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>exes</l>                <r>ex<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ices</l>                <r>ex<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ex</l>                  <r>ex<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>exes</l>                <r>ex<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ices</l>                <r>ex<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="appendi/x__n">
-<e>                           <p><l>x</l>                   <r>x<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ces</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>xes</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>x</l>                   <r>x<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>ces</l>                 <r>x<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>xes</l>                 <r>x<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="criteri/on__n">
 <e>                           <p><l>on</l>                  <r>on<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>a</l>                   <r>on<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ons</l>                 <r>on<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>ons</l>                 <r>on<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="ox__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
@@ -747,23 +762,22 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 </pardef>
 <pardef n="quiz__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>zes</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>zes'</l>                <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>zes</l>                 <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="schema__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e r="LR">                    <p><l>ta</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="gen/us__n">
-<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>era</l>                 <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="tableau__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>x</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>x</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="t/ooth__n">
 <e>                           <p><l>ooth</l>                <r>ooth<s n="n"/><s n="sg"/></r></p></e>
@@ -776,7 +790,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="dilettant/e__n">
 <e>                           <p><l>e</l>                   <r>e<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>i</l>                   <r>e<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="kibbutz__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
@@ -785,7 +799,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="librett/o__n">
 <e>                           <p><l>o</l>                   <r>o<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>i</l>                   <r>o<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>os</l>                  <r>o<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>os</l>                  <r>o<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="lir/a__n">
 <e>                           <p><l>a</l>                   <r>a<s n="n"/><s n="sg"/></r></p></e>
@@ -794,32 +808,32 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="pen/ny__n">
 <e>                           <p><l>ny</l>                  <r>ny<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ce</l>                  <r>ny<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>nies</l>                <r>ny<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>nies</l>                <r>ny<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="phalan/x__n">
 <e>                           <p><l>x</l>                   <r>x<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ges</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>xes</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ges</l>                 <r>x<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>xes</l>                 <r>x<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="corp/us__n">
-<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ora</l>                 <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="archipelago__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="cact/us__n">
-<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>i</l>                   <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>us</l>                  <r>us<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>uses</l>                <r>us<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>us</l>                  <r>us<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="zebra__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e r="LR">                    <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
@@ -854,16 +868,13 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 <pardef n="Barcelona__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="United_States__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="top"/><s n="pl"/></r></p></e>
 </pardef>
+
 <pardef n="Mark__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
-</pardef>
-
-<pardef n="James__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
-<e r="LR">                    <p><l>'</l>                   <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><j/>'s<s n="gen"/></r></p></e>
 </pardef>
 
 <pardef n="Mary__np">
@@ -872,9 +883,9 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="Smith__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="np"/><s n="cog"/><s n="pl"/></r></p></e>
-<e>                           <p><l>s'</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="np"/><s n="cog"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 
 <pardef n="Michel__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
@@ -2347,7 +2358,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="pancrea/s__n">
 <e>                           <p><l>ta</l>                  <r>s<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="ey/e__vblex">
 <e>                           <p><l>eing</l>                <r>e<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2359,7 +2370,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="obbligat/o__n">
 <e>                           <p><l>i</l>                   <r>o<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>os</l>                  <r>o<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>os</l>                  <r>o<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="fr/eeze__vblex">
 <e>                           <p><l>eezing</l>              <r>eeze<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2369,7 +2380,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>eezes</l>               <r>eeze<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="ox__n">
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="drip__vblex">
@@ -2384,7 +2395,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="bee/f__n">
 <e>                           <p><l>f</l>                   <r>f<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>f</l>                   <r>f<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="down__vblex">
@@ -2416,13 +2427,13 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="f/etus__n">
-<e>                           <p><l>etuses</l>              <r>etus<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>oetuses</l>             <r>etus<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>etus</l>                <r>etus<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>oetus</l>               <r>etus<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>etuses</l>              <r>etus<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>oetuses</l>             <r>etus<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>etus</l>                <r>etus<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>oetus</l>               <r>etus<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="hal/f__n">
-<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>f</l>                   <r>f<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="st/and__vblex">
@@ -2477,7 +2488,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="dict/um__n">
 <e>                           <p><l>a</l>                   <r>um<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ums</l>                 <r>um<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ums</l>                 <r>um<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>um</l>                  <r>um<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="r/ide__vblex">
@@ -2488,16 +2499,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ides</l>                <r>ide<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="offen/ce__n">
-<e>                           <p><l>ses</l>                 <r>ce<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ses</l>                 <r>ce<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>se</l>                  <r>ce<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="up__n">
 <e>                           <i></i><par n="house__n"/></e>
-<!--
-<e>                           <p><l></l>                   <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
--->
 </pardef>
 
 
@@ -2505,7 +2512,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <!-- Tiu cxi estas por 'winnings', growings kiu nepre NE estu analizita kiel nomo en singularo -->
 <pardef n="up_pl__n">
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
 
@@ -2514,8 +2521,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="spokespe/rson__n">
 <e>                           <p><l>ople</l>                <r>rson<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>oples</l>               <r>rson<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>rsons</l>               <r>rson<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>oples</l>               <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>rsons</l>               <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>rson</l>                <r>rson<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="w/ind__vblex">
@@ -2528,8 +2535,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>inds</l>                <r>ind<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="hosan/a__n">
-<e>                           <p><l>as</l>                  <r>a<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>nas</l>                 <r>a<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>as</l>                  <r>a<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>nas</l>                 <r>a<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>a</l>                   <r>a<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>na</l>                  <r>a<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
@@ -2559,7 +2566,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="hepatiti/s__n">
 <e>                           <p><l>des</l>                 <r>s<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="up__vblex">
 <e>                           <p><l>ing</l>                 <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -2585,7 +2592,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="hono/urs__n">
-<e>                           <p><l>rs</l>                  <r>urs<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>rs</l>                  <r>urs<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="br/eak__vblex">
 <e>                           <p><l>eaking</l>              <r>eak<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2615,9 +2622,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="medal/list__n">
-<e r="LR">                    <p><l>ists</l>                <r>list<s n="n"/><s n="pl"/></r></p></e>
-<e r="LR">                    <p><l>ist</l>                 <r>list<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>lists</l>               <r>list<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                    <p><l>ists</l>                <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                    <p><l>ist</l>                 <r>list<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>lists</l>               <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>list</l>                <r>list<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="dr/aw__vblex">
@@ -2645,11 +2652,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ies</l>                 <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="favo/ur__n">
-<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>r</l>                   <r>ur<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="counsellor/s__n">
-<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>s</l>                   <r>s<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l></l>                    <r>s<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="jut__vblex">
@@ -2670,7 +2677,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="fr/y__n">
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="ram__vblex">
@@ -2726,8 +2733,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>aves</l>                <r>ave<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="to/y__n">
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ys</l>                  <r>y<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>ys</l>                  <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="m/an__n">
@@ -2735,18 +2742,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>an</l>                  <r>an<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="rumo/ur__n">
-<!--
-<e>                           <i>r</i><par n="house__n"/></e>
-<e>                           <i>ur</i><par n="house__n"/></e>
--->
 <e>                           <p><l>r</l>                   <r>ur<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ur</l>                  <r>ur<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>urs</l>                 <r>ur<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>rs</l>                  <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>urs</l>                 <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="ass__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="/be__vblex">
 <e>                           <p><l>being</l>               <r>be<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2779,7 +2782,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>n</l>                   <r><s n="adv"/></r></p></e>
 </pardef>
 <pardef n="li/fe__n">
-<e>                           <p><l>ves</l>                 <r>fe<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>fe<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>fe</l>                  <r>fe<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="vas__n">
@@ -2788,30 +2791,23 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="vu__n">
 <e>                           <i></i><par n="house__n"/></e>
-<!--
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
--->
 </pardef>
+
 <pardef n="criss/-cross__vblex">
 <e>                           <p><l>-crossed</l>            <r>-cross<s n="vblex"/><s n="past"/></r></p></e>
 <e>                           <p><l>crossed</l>             <r>-cross<s n="vblex"/><s n="past"/></r></p></e>
 <e>                           <p><l>-cross</l>              <r>-cross<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>cross</l>               <r>-cross<s n="vblex"/><s n="pres"/></r></p></e>
 </pardef>
-<!--
-<pardef n="mumm/y__n">
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
-</pardef>
--->
+
 <pardef n="mumm/y__n">
 <e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
 
 <pardef n="t/yre__n">
-<e>                           <p><l>ires</l>                <r>yre<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ires</l>                <r>yre<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ire</l>                 <r>yre<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="f/ind__vblex">
@@ -2836,7 +2832,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="loa/f__n">
-<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="le/ad__vblex">
 <e>                           <p><l>ading</l>               <r>ad<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2846,15 +2842,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>d</l>                   <r>ad<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ad</l>                  <r>ad<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ads</l>                 <r>ad<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="counterbid__n">
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="predict\/advocate__vblex">
-<e>                           <p><l>d</l>                   <r>advocate<s n="vblex"/><s n="past"/></r></p></e>
-<e>                           <p><l></l>                    <r>advocate<s n="vblex"/><s n="pres"/></r></p></e>
 </pardef>
 <pardef n="w/eave__vblex">
 <e>                           <p><l>eaving</l>              <r>eave<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2888,11 +2875,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ears</l>                <r>ear<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="fib/re__n">
-<e>                           <p><l>ers</l>                 <r>re<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ers</l>                 <r>re<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>er</l>                  <r>re<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="labo/urer__n">
-<e>                           <p><l>rers</l>                <r>urer<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>rers</l>                <r>urer<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>rer</l>                 <r>urer<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="wen/d__vblex">
@@ -2905,22 +2892,22 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ds</l>                  <r>d<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="ax/e__n">
-<e>                           <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l></l>                    <r>e<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="practi/sed__adj">
 <e>                           <p><l>ced</l>                 <r>sed<s n="adj"/></r></p></e>
 </pardef>
 <pardef n="hoo/f__n">
-<e>                           <p><l>fs</l>                  <r>f<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>fs</l>                  <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e r="LR">                           <p><l>ves</l>                 <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>f</l>                   <r>f<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="favo/urite__adj">
 <e>                           <p><l>rite</l>                <r>urite<s n="adj"/></r></p></e>
 </pardef>
 <pardef n="panel/ling__n">
-<e>                           <p><l>ings</l>                <r>ling<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ings</l>                <r>ling<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ing</l>                 <r>ling<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="s/ceptical__adj">
@@ -2974,8 +2961,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="bas/is__n">
-<e>                           <p><l>es</l>                  <r>is<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>is</l>                  <r>is<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>es</l>                  <r>is<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>is</l>                  <r>is<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="wr/ing__vblex">
 <e>                           <p><l>inging</l>              <r>ing<s n="vblex"/><s n="ger"/></r></p></e>
@@ -2996,8 +2983,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ells</l>                <r>ell<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="salespe/rson__n">
-<e>                           <p><l>ople</l>                <r>rson<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>rsons</l>               <r>rson<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR">                           <p><l>ople</l>                <r>rson<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>rsons</l>               <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>rson</l>                <r>rson<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="hit__vblex">
@@ -3021,11 +3008,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>own</l>                 <r>y<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>y</l>                   <r>y<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ies</l>                 <r>y<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="near__pr">
-<e>                           <p><l></l>                    <r><s n="pr"/></r></p></e>
-<e>                           <p><l>er</l>                  <r><s n="pr"/></r></p></e>
-<e>                           <p><l>est</l>                 <r><s n="pr"/></r></p></e>
 </pardef>
 <pardef n="br/ing__vblex">
 <e>                           <p><l>inging</l>              <r>ing<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3072,14 +3054,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ots</l>                 <r>ot<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="che/quebook__n">
-<e>                           <p><l>ckbooks</l>             <r>quebook<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ckbooks</l>             <r>quebook<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ckbook</l>              <r>quebook<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="/tsar__n">
-<e>                           <p><l>czars</l>               <r>tsar<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>tsars</l>               <r>tsar<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>czar</l>                <r>tsar<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>tsar</l>                <r>tsar<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="fe/ed__vblex">
 <e>                           <p><l>eding</l>               <r>ed<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3119,8 +3095,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>oes</l>                 <r>o<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="high/top__n">
-<e>                           <p><l>-tops</l>               <r>top<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>tops</l>                <r>top<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>-tops</l>               <r>top<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>tops</l>                <r>top<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>-top</l>                <r>top<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>top</l>                 <r>top<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
@@ -3159,11 +3135,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="/good__adv">
 <e>                           <p><l>well</l>                <r>good<s n="adv"/></r></p></e>
 </pardef>
-<pardef n="ind/ex__n">
-<e>                           <p><l>exes</l>                <r>ex<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ices</l>                <r>ex<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ex</l>                  <r>ex<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="criteri/on__n">
 <e>                           <p><l>a</l>                   <r>on<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>ons</l>                 <r>on<s n="n"/><s n="pl"/></r></p></e>
@@ -3177,7 +3148,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>inks</l>                <r>ink<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="mo/uld__n">
-<e>                           <p><l>lds</l>                 <r>uld<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>lds</l>                 <r>uld<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ld</l>                  <r>uld<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="t/ake__vblex">
@@ -3199,7 +3170,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="di/e__n">
 <e>                           <p><l>ce</l>                  <r>e<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>es</l>                  <r>e<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>e</l>                   <r>e<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="overc/ome__vblex">
@@ -3239,14 +3210,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>es</l>                  <r>e<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="good/y__n">
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ie</l>                  <r>y<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+<e>                           <p><l>ie</l>                  <r>y<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="child__n">
-<e>                           <p><l>ren</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>s</l>                   <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="beg/et__vblex">
 <e>                           <p><l>etting</l>              <r>et<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3286,11 +3252,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e r="LR">                    <p><l>ency</l>                <r>ancy<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ancies</l>              <r>ancy<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>ancy</l>                <r>ancy<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="bus__n">
-<e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ses</l>                 <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="jewel/ler__n">
 <e>                           <p><l>ers</l>                 <r>ler<s n="n"/><s n="pl"/></r></p></e>
@@ -3350,7 +3311,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 <pardef n="alumn/us__n">
 <e>                           <p><l>i</l>                   <r>us<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="t/ie__vblex">
 <e>                           <p><l>iing</l>                <r>ie<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3359,11 +3320,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ied</l>                 <r>ie<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ie</l>                  <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ies</l>                 <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="matri/x__n">
-<e>                           <p><l>ces</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>xes</l>                 <r>x<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>x</l>                   <r>x<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="li/ght__vblex">
 <e>                           <p><l>ghting</l>              <r>ght<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3410,18 +3366,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ning</l>                <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>s</l>                   <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="kron/a__n">
-<e>                           <p><l>as</l>                  <r>a<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>er</l>                  <r>a<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>or</l>                  <r>a<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ur</l>                  <r>a<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>a</l>                   <r>a<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>e</l>                   <r>a<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="hipp/ie__n">
-<e>                           <p><l>ies</l>                 <r>ie<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>ie<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>ie</l>                  <r>ie<s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>y</l>                   <r>ie<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="plug__vblex">
 <e>                           <p><l>ging</l>                <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -3440,19 +3387,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ite</l>                 <r>ite<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ites</l>                <r>ite<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="kidd/ie__n">
-<e>                           <p><l>ies</l>                 <r>ie<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>y</l>                   <r>ie<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="n/ot__adv">
 <e>                           <p><l>'t</l>                  <r>ot<s n="adv"/></r></p></e>
 <e>                           <p><l>ot</l>                  <r>ot<s n="adv"/></r></p></e>
 <e>                           <p><l>t</l>                   <r>ot<s n="adv"/></r></p></e>
-</pardef>
-<pardef n="shvartze__n">
-<e>                           <p><l>rs</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
-<e>                           <p><l>r</l>                   <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="wil/ful__adj">
 <e>                           <p><l>lful</l>                <r>ful<s n="adj"/></r></p></e>
@@ -3469,20 +3407,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>a</l>                   <r>um<s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>um</l>                  <r>um<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="b/oloney__n">
-<e>                           <p><l>aloneies</l>            <r>oloney<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>aloney</l>              <r>oloney<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="dr/ive__vblex">
 <e>                           <p><l>iving</l>               <r>ive<s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l>ove</l>                 <r>ive<s n="vblex"/><s n="past"/></r></p></e>
 <e>                           <p><l>iven</l>                <r>ive<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ive</l>                 <r>ive<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ives</l>                <r>ive<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="phon/ey__n">
-<e>                           <p><l>ies</l>                 <r>ey<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>y</l>                   <r>ey<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="out-trade__vblex">
 <e>                           <p><l>d</l>                   <r><s n="vblex"/><s n="past"/></r></p></e>
@@ -3525,7 +3455,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="ficus__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="pl"/></r></p></e>
 <e>                           <p><l>es</l>                  <r><s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
+<e r="LR">                           <p><l></l>                    <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="errat/um__n">
 <e>                           <p><l>a</l>                   <r>um<s n="n"/><s n="pl"/></r></p></e>
@@ -3536,7 +3466,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 
 <pardef n="bun/co__n">
-<e>                           <p><l>cos</l>                 <r>co<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>cos</l>                 <r>co<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>co</l>                  <r>co<s n="n"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ko</l>                  <r>co<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
@@ -3548,7 +3478,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ees</l>                 <r>ee<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="hom/o__n">
-<e>                           <p><l>ines</l>                <r>o<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>ines</l>                <r>o<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 <e>                           <p><l>o</l>                   <r>o<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="lir/a__n">
@@ -3574,11 +3504,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ite</l>                 <r>ite<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>ites</l>                <r>ite<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="pen/is__n">
-<e>                           <p><l>es</l>                  <r>is<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>ises</l>                <r>is<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>is</l>                  <r>is<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
 <pardef n="c/ome__vblex">
 <e>                           <p><l>oming</l>               <r>ome<s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l>ame</l>                 <r>ome<s n="vblex"/><s n="past"/></r></p></e>
@@ -3586,10 +3511,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>ome</l>                 <r>ome<s n="vblex"/><s n="pp"/></r></p></e>
 <e>                           <p><l>ome</l>                 <r>ome<s n="vblex"/><s n="pres"/></r></p></e>
 <e>                           <p><l>omes</l>                <r>ome<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="/kerb__n">
-<e>                           <p><l>curbs</l>               <r>kerb<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>curb</l>                <r>kerb<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="fe/el__vblex">
 <e>                           <p><l>eling</l>               <r>el<s n="vblex"/><s n="ger"/></r></p></e>
@@ -3632,13 +3553,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e>                           <p><l>orks</l>                <r>ork<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="localit/y__n">
-<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="pl"/></r></p></e>
+<e>                           <p><l>y</l>                   <r>y<s n="n"/><s n="sg"/></r></p></e>
+<e>                           <p><l>ies</l>                 <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
-<pardef n="favo/urite__n">
-<e>                           <p><l>rites</l>               <r>urite<s n="n"/><s n="pl"/></r></p></e>
-<e>                           <p><l>rite</l>                <r>urite<s n="n"/><s n="sg"/></r></p></e>
-</pardef>
+
+<!-- GXIS CXI TIE XXXXXXXXXXXXX -->
 <pardef n="sl/ay__vblex">
 <e>                           <p><l>aying</l>               <r>ay<s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l>ew</l>                  <r>ay<s n="vblex"/><s n="past"/></r></p></e>
@@ -4030,7 +3949,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="apologist">            <i>apologist</i><par n="up__n"/></e>
 <e lm="appal">                <i>appal</i><par n="vow__vblex"/></e>
 <e lm="appalling">            <i>appalling</i><par n="ca__adj"/></e>
-<e lm="apparatus">            <i>apparatus</i><par n="ficus__n"/></e>
+<e lm="apparatus">            <i>apparatus</i><par n="ficus__n"/><par n="gen__apos"/></e>
 <e lm="apparel">              <i>apparel</i><par n="vu__n"/></e>
 <e lm="apparition">           <i>apparition</i><par n="up__n"/></e>
 <e lm="appendage">            <i>appendage</i><par n="up__n"/></e>
@@ -8919,8 +8838,8 @@ The gods hold court.
 <e lm="Japanese">             <i>Japanese</i><par n="expensive__adj"/></e>
 <e lm="Javier">               <i>Javier</i><par n="Mark__np"/></e>
 <e lm="Jerónimo">             <i>Jerónimo</i><par n="Mark__np"/></e>
-<e lm="Jesus">                <i>Jesus</i><par n="James__np"/></e>
-<e lm="Jesús">                <i>Jesús</i><par n="James__np"/></e>
+<e lm="Jesus">                <i>Jesus</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Jesús">                <i>Jesús</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Jordan">               <i>Jordan</i><par n="Mark__np"/></e>
 <e lm="Jordan">               <i>Jordan</i><par n="Mary__np"/></e>
 <e lm="Jordan">               <i>Jordan</i><par n="Barcelona__np"/></e>
@@ -8999,9 +8918,9 @@ The gods hold court.
 <e lm="Pakistan">             <i>Pakistan</i><par n="Barcelona__np"/></e>
 <e lm="Panama">               <i>Panama</i><par n="Barcelona__np"/></e>
 <e lm="Paraguay">             <i>Paraguay</i><par n="Barcelona__np"/></e>
-<e lm="Paris">                <i>Paris</i><par n="Mary__np"/></e>
-<e lm="Paris">                <i>Paris</i><par n="Barcelona__np"/></e>
-<e lm="París">                <i>París</i><par n="Mark__np"/></e>
+<e lm="Paris">                <i>Paris</i><par n="Mary__np"/><par n="gen__apos"/></e>
+<e lm="Paris">                <i>Paris</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
+<e lm="París">                <i>París</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Pedro">                <i>Pedro</i><par n="Mark__np"/></e>
 <e lm="Peking">               <i>Peking</i><par n="Barcelona__np"/></e>
 <e lm="Persian">              <i>Persian</i><par n="house__n"/></e>
@@ -17475,7 +17394,7 @@ The gods hold court.
 <e lm="charismatic">          <i>charismatic</i><par n="expensive__adj"/></e>
 <e lm="charitable">           <i>charitable</i><par n="expensive__adj"/></e>
 <e lm="charlatan">            <i>charlatan</i><par n="house__n"/></e>
-<e lm="Charles">              <i>Charles</i><par n="James__np"/></e>
+<e lm="Charles">              <i>Charles</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="chartered">            <i>chartered</i><par n="expensive__adj"/></e>
 <e lm="chastise">             <i>chastis</i><par n="liv/e__vblex"/></e>
 <e lm="chatroom">             <i>chatroom</i><par n="house__n"/></e>
@@ -18930,7 +18849,7 @@ The gods hold court.
 <e lm="fragrant">             <i>fragrant</i><par n="expensive__adj"/></e>
 <e lm="franchise">            <i>franchise</i><par n="house__n"/></e>
 <e lm="franchisee">           <i>franchisee</i><par n="house__n"/></e>
-<e lm="Francis">              <i>Francis</i><par n="James__np"/></e>
+<e lm="Francis">              <i>Francis</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Frank">                <i>Frank</i><par n="Mark__np"/></e>
 <e lm="frank">                <i>frank</i><par n="expensive__adj"/></e>
 <e lm="frantically">          <i>frantically</i><par n="maybe__adv"/></e>
@@ -19726,7 +19645,7 @@ The gods hold court.
 <e lm="jade">                 <i>jade</i><par n="house__n"/></e>
 <e lm="jaguar">               <i>jaguar</i><par n="house__n"/></e>
 <e lm="jam">                  <i>jam</i><par n="program__vblex"/></e>
-<e lm="James">                <i>James</i><par n="James__np"/></e>
+<e lm="James">                <i>James</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="James">                <i>James</i><par n="Mark__np"/></e>
 <e lm="James">                <i>James</i><par n="Ifans__np"/></e>
 <e lm="january">              <i>Januar</i><par n="bab/y__n"/></e>
@@ -22354,7 +22273,7 @@ The gods hold court.
 <e lm="thinker">              <i>thinker</i><par n="house__n"/></e>
 <e lm="thirdly">              <i>thirdly</i><par n="maybe__adv"/></e>
 <e lm="thirst">               <i>thirst</i><par n="accept__vblex"/></e>
-<e lm="Thomas">               <i>Thomas</i><par n="James__np"/></e>
+<e lm="Thomas">               <i>Thomas</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Thomas">               <i>Thomas</i><par n="Ifans__np"/></e>
 <e lm="thorough">             <i>thorough</i><par n="expensive__adj"/></e>
 <e lm="thoroughfare">         <i>thoroughfare</i><par n="house__n"/></e>
@@ -23942,7 +23861,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Adelmar">              <i>Adelmar</i><par n="Mark__np"/></e>
 <e lm="Adelmo">               <i>Adelmo</i><par n="Mark__np"/></e>
 <e lm="Adelqui">              <i>Adelqui</i><par n="Mark__np"/></e>
-<e lm="Adelquis">             <i>Adelquis</i><par n="Mark__np"/></e>
+<e lm="Adelquis">             <i>Adelquis</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Ademar">               <i>Ademar</i><par n="Mark__np"/></e>
 <e lm="Ademaro">              <i>Ademaro</i><par n="Mark__np"/></e>
 <e lm="Aden">                 <i>Aden</i><par n="Mark__np"/></e>
@@ -26578,7 +26497,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Jamel">                <i>Jamel</i><par n="Mark__np"/></e>
 <e lm="James II">             <i>James<b/>II</i><par n="Mark__np"/></e>
 <e lm="James I">              <i>James<b/>I</i><par n="Mark__np"/></e>
-<e lm="James">                <i>James</i><par n="James__np"/></e>
+<e lm="James">                <i>James</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="James">                <i>James</i><par n="Mark__np"/></e>
 <e lm="Jameson">              <i>Jameson</i><par n="Mark__np"/></e>
 <e lm="Jamie">                <i>Jamie</i><par n="Mark__np"/></e>
@@ -29595,36 +29514,36 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Moore">                <i>Moore</i><par n="Ifans__np"/></e>
 <e lm="Turner">               <i>Turner</i><par n="Ifans__np"/></e>
 
-<e lm="James">                <i>James</i><par n="James__np"/></e>
-<e lm="Carles">               <i>Carles</i><par n="James__np"/></e>
-<e lm="Carlos">               <i>Carlos</i><par n="James__np"/></e>
-<e lm="Dennis">               <i>Dennis</i><par n="James__np"/></e>
-<e lm="Francis">              <i>Francis</i><par n="James__np"/></e>
-<e lm="Lewis">                <i>Lewis</i><par n="James__np"/></e>
-<e lm="Lluís">                <i>Lluís</i><par n="James__np"/></e>
-<e lm="Louis">                <i>Louis</i><par n="James__np"/></e>
-<e lm="Lucas">                <i>Lucas</i><par n="James__np"/></e>
-<e lm="Luis">                 <i>Luis</i><par n="James__np"/></e>
-<e lm="Nicolas">              <i>Nicolas</i><par n="James__np"/></e>
-<e lm="Thomas">               <i>Thomas</i><par n="James__np"/></e>
-<e lm="Charles">              <i>Charles</i><par n="James__np"/></e>
-<e lm="Erasmus">              <i>Erasmus</i><par n="James__np"/></e>
-<e lm="Giles">                <i>Giles</i><par n="James__np"/></e>
-<e lm="Gyles">                <i>Gyles</i><par n="James__np"/></e>
-<e lm="Hercules">             <i>Hercules</i><par n="James__np"/></e>
-<e lm="Jakys">                <i>Jakys</i><par n="James__np"/></e>
-<e lm="Jenlyns">              <i>Jenlyns</i><par n="James__np"/></e>
-<e lm="Morys">                <i>Morys</i><par n="James__np"/></e>
-<e lm="Nicholas">             <i>Nicholas</i><par n="James__np"/></e>
-<e lm="Pers">                 <i>Pers</i><par n="James__np"/></e>
-<e lm="Piers">                <i>Piers</i><par n="James__np"/></e>
-<e lm="Thames">               <i>Thames</i><par n="James__np"/></e>
-<e lm="Tomas">                <i>Tomas</i><par n="James__np"/></e>
-<e lm="Tomàs">                <i>Tomàs</i><par n="James__np"/></e>
-<e lm="Zacheus">              <i>Zacheus</i><par n="James__np"/></e>
-<e lm="Stanislav Gross">      <i>Stanislav<b/>Gross</i><par n="James__np"/></e>
-<e lm="Tönis">                <i>Tönis</i><par n="James__np"/></e>
-<e lm="Jacques">              <i>Jacques</i><par n="James__np"/></e>
+<e lm="James">                <i>James</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Carles">               <i>Carles</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Carlos">               <i>Carlos</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Dennis">               <i>Dennis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Francis">              <i>Francis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Lewis">                <i>Lewis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Lluís">                <i>Lluís</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Louis">                <i>Louis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Lucas">                <i>Lucas</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Luis">                 <i>Luis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Nicolas">              <i>Nicolas</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Thomas">               <i>Thomas</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Charles">              <i>Charles</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Erasmus">              <i>Erasmus</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Giles">                <i>Giles</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Gyles">                <i>Gyles</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Hercules">             <i>Hercules</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Jakys">                <i>Jakys</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Jenlyns">              <i>Jenlyns</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Morys">                <i>Morys</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Nicholas">             <i>Nicholas</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Pers">                 <i>Pers</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Piers">                <i>Piers</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Thames">               <i>Thames</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Tomas">                <i>Tomas</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Tomàs">                <i>Tomàs</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Zacheus">              <i>Zacheus</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Stanislav Gross">      <i>Stanislav<b/>Gross</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Tönis">                <i>Tönis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Jacques">              <i>Jacques</i><par n="Mark__np"/><par n="gen__apos"/></e>
 
 
 <!-- Tiuj cxi sekvaj havas r="RL" cxar ili jes estas propraj nomoj, sed prefere
