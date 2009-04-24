@@ -28,6 +28,10 @@ prefer
 <spectie>  <discard-on-ambiguity>
 <spectie>    <discard tags="n.acr.sp"/>
 <spectie>  </discard-on-ambiguity>
+
+
+prefer
+preadv adj
 -->
 
 

@@ -223,6 +223,8 @@
 <e r="RL"><p><l>dimanĉe<s n="adv"/></l>                <r>on<b/>Sundays<s n="adv"/></r></p></e>
 
 
+<e>       <p><l>ekzemple<s n="cnjadv"/></l>                <r>for<b/>instance<s n="cnjadv"/></r></p></e>
+
 <!-- Aldonoj Jacob 2009/02/12 -->
 
 <e>       <p><l>oble<s n="cnjadv"/></l>                <r>times<s n="cnjadv"/></r></p></e>
@@ -274,6 +276,9 @@
 
 
     <!-- Numerals -->
+<!--
+<e>       <p><l>one<s n="prn"/><s n="tn"/></l>  <r>unu<s n="prn"/><s n="tn"/></r></p></e>
+-->
 
 <e>       <p><l>nulo<s n="num"/></l>                   <r>zero<s n="num"/></r></p></e>
 <e>       <p><l>unu<s n="num"/></l>                    <r>one<s n="num"/></r></p></e>
@@ -663,12 +668,30 @@ BUT:
 <e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e> -->
 <e>       <p><l>plura<s n="det"/><s n="qnt"/></l>      <r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
+<!--
+<e>       <p><l>plejparto<s n="n"/><s n="sp"/><g/>de<s n="pr"/><j/>la<s n="det"/><s n="def"/></l>      <r>most<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>plejparto<b/>de<b/>la<s n="det"/><s n="qnt"/></l><r>most<s n="det"/><s n="qnt"/></r></p></e>
+-->
+
+
+<e>       <p><l>plejparto<g><b/>de<b/>la</g><s n="det"/><s n="qnt"/></l> <r>most<s n="det"/><s n="qnt"/></r></p></e>
+
+
+
+<e r="LR"><p><l>plej<s n="det"/><s n="qnt"/></l>       <r>most<s n="det"/><s n="qnt"/></r></p></e>
+
+
+
 <!--  any house  -> ajna domo -->
 <e>       <p><l>ajna<s n="det"/><s n="ind"/></l>       <r>any<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>either<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>whatever<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l>       <r>another<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>alia<s n="det"/><s n="ind"/></l>       <r>other<s n="det"/><s n="ind"/></r></p></e>
+
+<e>       <p><l>profesia<s n="adj"/></l>                  <r>pro<s n="adj"/></r></p></e>
+<e>       <p><l>profesiulo<s n="n"/></l>                  <r>pro<s n="n"/></r></p></e>
+
 <e>       <p><l>lasta<s n="adj"/></l>                  <r>last<s n="adj"/></r></p></e>
 <e>       <p><l>unua<s n="adj"/></l>                   <r>first<s n="adj"/></r></p></e>
 <e>       <p><l>dua<s n="adj"/></l>                    <r>second<s n="adj"/></r></p></e>
@@ -731,6 +754,11 @@ BUT:
 <e>       <p><l>cente<s n="adv"/></l>                  <r>hundreth<s n="adv"/></r></p></e>
 <e>       <p><l>mile<s n="adv"/></l>                   <r>thousandth<s n="adv"/></r></p></e>
 <e>       <p><l>milione<s n="adv"/></l>                <r>milionth<s n="adv"/></r></p></e>
+
+<e>       <p><l>kaj<b/>tiel<b/>plu<s n="adv"/></l>                <r>and<b/>so<b/>on<s n="adv"/></r></p></e>
+
+
+
 <e>       <p><l>ambaŭ<s n="det"/><s n="ind"/></l>      <r>both<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>each<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>every<s n="det"/><s n="ind"/></r></p></e>
@@ -842,6 +870,9 @@ BUT:
 <e>       <p><l>en<s n="pr"/></l>                      <r>in<s n="pr"/></r></p></e>
 <e r="RL"><p><l>en<s n="pr"/></l>                      <r>inside<s n="pr"/></r></p></e>
 <e r="RL"><p><l>en<s n="pr"/></l>                      <r>into<s n="pr"/></r></p></e>
+
+<e><p><l>ekster<s n="pr"/></l>                <r>outside<s n="pr"/></r></p></e>
+
 <e>       <p><l>sur<s n="pr"/></l>                     <r>on<s n="pr"/></r></p></e>
 <e>       <p><l>al<s n="pr"/></l>                      <r>to<s n="pr"/></r></p></e>
 <e r="RL"><p><l>al<s n="pr"/></l>                      <r>onto<s n="pr"/></r></p></e>
@@ -978,13 +1009,13 @@ BUT:
 <e>       <p><l>Afganio<s n="np"/><s n="top"/></l>     <r>Afghanistan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Albanio<s n="np"/><s n="top"/></l>     <r>Albania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Alakanto<s n="np"/><s n="top"/></l>    <r>Alacant<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Alakanto<s n="np"/><s n="top"/></l>    <r>Alicante<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Alakanto<s n="np"/><s n="top"/></l>    <r>Alicante<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Alĝerio<s n="np"/><s n="top"/></l>     <r>Algeria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ameriko<s n="np"/><s n="top"/></l>     <r>America<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Amsterdamo<s n="np"/><s n="top"/></l>  <r>Amsterdam<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Andaluzio<s n="np"/><s n="top"/></l>   <r>Andalucia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Andoj<s n="np"/><s n="top"/></l>       <r>Andes<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Andoj<s n="np"/><s n="top"/></l>       <r>the<b/>Andes<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Andoj<s n="np"/><s n="top"/></l>       <r>the<b/>Andes<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Andoro<s n="np"/><s n="top"/></l>      <r>Andorra<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Anglio<s n="np"/><s n="top"/></l>      <r>England<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Arabio<s n="np"/><s n="top"/></l>      <r>Arabia<s n="np"/><s n="top"/></r></p></e>
@@ -1027,7 +1058,7 @@ BUT:
 <e>       <p><l>Etiopio<s n="np"/><s n="top"/></l>     <r>Ethiopia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Eŭropo<s n="np"/><s n="top"/></l>      <r>Europe<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Filipinoj<s n="np"/><s n="top"/></l>   <r>Philippines<s n="np"/><s n="top"/></r></p></e>
-<e r="LR"><p><l>Filipinoj<s n="np"/><s n="top"/></l>   <r>the<b/>Philippines<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Filipinoj<s n="np"/><s n="top"/></l>   <r>the<b/>Philippines<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Finnlando<s n="np"/><s n="top"/></l>   <r>Finland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Finnio<s n="np"/><s n="top"/></l>      <r>Finland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Suomio<s n="np"/><s n="top"/></l>      <r>Finland<s n="np"/><s n="top"/></r></p></e>
@@ -1087,7 +1118,6 @@ BUT:
 <e>       <p><l>Malto<s n="np"/><s n="top"/></l>       <r>Malta<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Maroko<s n="np"/><s n="top"/></l>      <r>Morocco<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Maŭritanio<s n="np"/><s n="top"/></l>  <r>Mauritania<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Meksiko<s n="np"/><s n="top"/></l>     <r>Mexico<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Monako<s n="np"/><s n="top"/></l>      <r>Monaco<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Montevideo<s n="np"/><s n="top"/></l>  <r>Montevideo<s n="np"/><s n="top"/></r></p></e>
@@ -1289,8 +1319,6 @@ BUT:
 <e>       <p><l>kuba<s n="adj"/></l>                   <r>Cuban<s n="adj"/></r></p></e>
 <e>       <p><l>latina<s n="adj"/></l>                 <r>Latin<s n="adj"/></r></p></e>
 <e>       <p><l>maroka<s n="adj"/></l>                 <r>Moroccan<s n="adj"/></r></p></e>
-<e>       <p><l>mediteranea<s n="adj"/></l>            <r>Mediterranean<s n="adj"/></r></p></e>
-<e>       <p><l>mediteraneano<s n="n"/></l>            <r>Mediterranean<s n="n"/></r></p></e>
 <e>       <p><l>norvega<s n="adj"/></l>                <r>Norwegian<s n="adj"/></r></p></e>
 <e>       <p><l>niĝeria<s n="adj"/></l>                <r>Nigerian<s n="adj"/></r></p></e>
 <e>       <p><l>portugala<s n="adj"/></l>              <r>Portuguese<s n="adj"/></r></p></e>
@@ -1869,6 +1897,10 @@ TODO??
 <e>       <p><l>kunvenigi<s n="vblex"/></l>            <r>bring<g><b/>together</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>lasi<s n="vblex"/></l>                 <r>give<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>mallumiĝi<s n="vblex"/></l>            <r>get<g><b/>dark</g><s n="vblex"/></r></p></e>
+
+<e       ><p><l><g>tiel<b/></g>fari<s n="vblex"/></l>            <r>do<g><b/>so</g><s n="vblex"/></r></p></e>
+
+
 <e>       <p><l>malsati<s n="vblex"/></l>              <r>be<g><b/>hungry</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>there<b/>be<s n="vblex"/></r></p></e>
 <e>       <p><l>fuŝi<s n="vblex"/></l>                 <r>mess<g><b/>up</g><s n="vblex"/></r></p></e>
@@ -2271,8 +2303,13 @@ TODO??
 <e r="RL"><p><l>Pireneoj<s n="np"/><s n="top"/></l>    <r>the<b/>Pyrenees<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Balkanoj<s n="np"/><s n="top"/></l>    <r>Balkans<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Balkanoj<s n="np"/><s n="top"/></l>    <r>the<b/>Balkans<s n="np"/><s n="top"/></r></p></e>
+
+<e>       <p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>the<b/>Mediterranean<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>mediteranea<s n="adj"/></l>            <r>Mediterranean<s n="adj"/></r></p></e>
+<e>       <p><l>mediteraneano<s n="n"/></l>            <r>Mediterranean<s n="n"/></r></p></e>
+
 <e>       <p><l>balkana<s n="adj"/></l>                <r>balkan<s n="adj"/></r></p></e>
 <e>       <p><l>balkanano<s n="n"/></l>                <r>balkan<s n="n"/></r></p></e>
 <e>       <p><l>islamo<s n="n"/></l>                   <r>Islam<s n="n"/></r></p></e>
@@ -2294,6 +2331,14 @@ TODO??
 	<!--      up ABOVE this line!                                               -->
 	<!-- ====================================================================== -->
 
+
+<!--
+	</section>
+
+
+
+	<section id="auxtomate-farita-de-traduku.net" type="standard">
+-->
 
 <e>       <p><l>forlasi<s n="vblex"/></l>              <r>abandon<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>fordoni<s n="vblex"/></l>              <r>abandon<s n="vblex"/></r></p></e>
@@ -7201,14 +7246,13 @@ TODO??
 <e r="LR"><p><l>kontraŭbatali<s n="vblex"/></l>        <r>fight<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>interbatiĝi<s n="vblex"/></l>          <r>fight<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>boksi<s n="vblex"/></l>                <r>fight<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>trovi<s n="vblex"/></l>                <r>found<s n="vblex"/></r></p></e>
 <e>       <p><l>fundamento<s n="n"/></l>               <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>fonduso<s n="n"/></l>                  <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>fondo<s n="n"/></l>                    <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>fondiĝo<s n="n"/></l>                  <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>komencanto<s n="n"/></l>               <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>konstrufosaĵo<s n="n"/></l>            <r>foundation<s n="n"/></r></p></e>
-<e r="LR"><p><l>fondi<s n="vblex"/></l>                <r>found<s n="vblex"/></r></p></e>
+<e><p><l>fondi<s n="vblex"/></l>                <r>found<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>fundamenti<s n="vblex"/></l>           <r>found<s n="vblex"/></r></p></e>
 <e>       <p><l>fontano<s n="n"/></l>                  <r>fountain<s n="n"/></r></p></e>
 <e>       <p><l>frakcio<s n="n"/></l>                  <r>fraction<s n="n"/></r></p></e>
@@ -9900,8 +9944,9 @@ TODO??
 <e>       <p><l>preskaŭ<s n="adv"/></l>                <r>almost<s n="adv"/></r></p></e>
 <e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>nearly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>practically<s n="adv"/></r></p></e>
-<e r="RL"><p><l>preskaŭ<s n="adv"/></l>                <r>near<s n="adv"/></r></p></e>
-<e>       <p><l>preskaŭa<s n="adj"/></l>               <r>near<s n="adj"/></r></p></e>
+<e><p><l>proksime<b/>al<s n="adv"/></l>                <r>near<s n="adv"/></r></p></e>
+<e>       <p><l>proksime<b/>al<s n="pr"/></l>               <r>near<s n="pr"/></r></p></e>
+<e>       <p><l>proksima<s n="adj"/></l>               <r>near<s n="adj"/></r></p></e>
 <e r="RL"><p><l>apuda<s n="adj"/></l>                  <r>nearby<s n="adj"/></r></p></e>
 <e>       <p><l>nepre<s n="adv"/></l>                  <r>necessarily<s n="adv"/></r></p></e>
 <e r="LR"><p><l>necese<s n="adv"/></l>                 <r>necessarily<s n="adv"/></r></p></e>
@@ -10282,7 +10327,7 @@ TODO??
 <e r="LR"><p><l>organizaĵo<s n="n"/></l>               <r>organisation<s n="n"/></r></p></e>
 <e r="LR"><p><l>organizado<s n="n"/></l>               <r>organisation<s n="n"/></r></p></e>
 <e>       <p><l>organizi<s n="vblex"/></l>             <r>organise<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>organizi<s n="vblex"/></l>             <r>organize<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>organizi<s n="vblex"/></l>             <r>organize<s n="vblex"/></r></p></e>
 <e>       <p><l>organismo<s n="n"/></l>                <r>organism<s n="n"/></r></p></e>
 <e>       <p><l>orgasmo<s n="n"/></l>                  <r>orgasm<s n="n"/></r></p></e>
 <e>       <p><l>orgio<s n="n"/></l>                    <r>orgy<s n="n"/></r></p></e>
@@ -10893,6 +10938,7 @@ TODO??
 <e r="LR"><p><l>ĉefpunkto<s n="n"/></l>                <r>point<s n="n"/></r></p></e>
 <e r="LR"><p><l>poento<s n="n"/></l>                   <r>point<s n="n"/></r></p></e>
 <e>       <p><l>indiki<s n="vblex"/></l>               <r>point<s n="vblex"/></r></p></e>
+<e>       <p><l>atentigi<s n="vblex"/></l>             <r>point<g><b/>out</g><s n="vblex"/></r></p></e>
 <e r="LR"><p><l>trakforko<s n="n"/></l>                <r>point<s n="n"/></r></p></e>
 <e>       <p><l>veneno<s n="n"/></l>                   <r>poison<s n="n"/></r></p></e>
 <e r="LR"><p><l>venenaĵo<s n="n"/></l>                 <r>poison<s n="n"/></r></p></e>
@@ -11364,7 +11410,6 @@ TODO??
 <e>       <p><l>senprokrasta<s n="adj"/></l>           <r>prompt<s n="adj"/></r></p></e>
 <e r="LR"><p><l>baldaŭa<s n="adj"/></l>                <r>prompt<s n="adj"/></r></p></e>
 <e r="RL"><p><l>instigi<s n="vblex"/></l>              <r>prompt<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>atentigi<s n="vblex"/></l>             <r>prompt<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>suflori<s n="vblex"/></l>              <r>prompt<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>estigi<s n="vblex"/></l>               <r>prompt<s n="vblex"/></r></p></e>
 <e>       <p><l>pronomo<s n="n"/></l>                  <r>pronoun<s n="n"/></r></p></e>
@@ -16532,7 +16577,7 @@ TODO??
 
 
 <e r="LR"><p><l>apude<s n="adv"/></l>                  <r>near<s n="adv"/></r></p></e>
-<e r="RL"><p><l>apude<s n="adv"/></l>                  <r>near here<s n="adv"/></r></p></e>
+<e r="RL"><p><l>apude<s n="adv"/></l>                  <r>near<b/>here<s n="adv"/></r></p></e>
 <e>       <p><l>atente<s n="adv"/></l>                 <r>attentively<s n="adv"/></r></p></e>
 <e r="LR" c="añadir también 'regardless of' como 'a pesar de'"><p><l>ĉiakoste<s n="adv"/></l><r>regardless<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiusemajne<s n="adv"/></l>             <r>weekly<s n="adv"/></r></p></e>

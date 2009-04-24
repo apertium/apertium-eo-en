@@ -170,6 +170,7 @@ sort -t '"' -k 3 x
             <cat-item tags="det.ord.*"/>
             <cat-item tags="det.pos.*"/>
             <cat-item tags="det.qnt.*"/>
+            <cat-item tags="det.itg.*"/>
 
             <cat-item lemma="several" tags="det.ind.*"/>
             <cat-item lemma="various" tags="det.ind.*"/>
@@ -306,6 +307,7 @@ sort -t '"' -k 3 x
       <attr-item tags="det.pos"/>
       <attr-item tags="det.qnt"/>
       <attr-item tags="det.itg"/>
+      <attr-item tags="det.qnt"/>
       <attr-item tags="det.dem"/>
     </def-attr>
 
@@ -437,6 +439,7 @@ sort -t '"' -k 3 x
       <list-item v="be"/>
       <list-item v="seem"/>
       <list-item v="become"/>
+      <list-item v="appear"/>
     </def-list>
 
   </section-def-lists>
@@ -1007,6 +1010,25 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
+
+    <rule comment="REGLA: DET - alia ol 'a'">
+      <pattern>
+        <pattern-item n="det"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+            <out>
+              <chunk name="det" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SD.nom"/></tag>
+                </tags>
+                <lu><clip pos="1" side="tl" part="whole"/><lit-tag v="2"/></lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
     <!-- Sintagmas nominales -->
     <rule comment="REGLA: NOM">
       <pattern>
@@ -1030,24 +1052,6 @@ verbfinal = pensi<3><4><5>
     </rule>
 
 
-
-
-    <rule comment="REGLA: DET">
-      <pattern>
-        <pattern-item n="det"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-            <out>
-              <chunk name="det" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SD.nom"/></tag>
-                </tags>
-                <lu><clip pos="1" side="tl" part="whole"/><lit-tag v="2"/></lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
 
 
     <rule comment="REGLA: more NOM, f.eks. 'more tea'  to 'Pli da teo'">
@@ -1096,11 +1100,12 @@ verbfinal = pensi<3><4><5>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="lemh"/>
                   <clip pos="1" side="tl" part="a_det"/>
                   <clip pos="1" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_nbr"/>
                   <lit-tag v="2"/>
+                  <clip pos="1" side="tl" part="lemq"/>
                 </lu>
                 <b pos="1"/>
                 <lu>

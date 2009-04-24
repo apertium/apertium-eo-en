@@ -138,7 +138,6 @@
 
 
 
-
 <pardef n="proper_names">
 <e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
        <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
@@ -394,7 +393,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="mia__det">
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r></p></e>
+<e r="RL">                    <p><l></l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>j</l>                   <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r></p></e>
@@ -666,6 +665,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
 <e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
 	
+
+<e lm="tiel fari">            <i>tiel<b/>far</i><par n="i__vblex"/></e>
+
 	
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>vi</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
@@ -758,21 +760,19 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ĝis revido">           <par n="ĝ"/><i>is<b/>revido</i><par n="adiós__ij"/></e>
 <e lm="bonan matenon">        <i>bonan<b/>matenon</i><par n="adiós__ij"/></e>
 
-<e lm="kelka">                <i>kelka</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+<e lm="kelka">                <i>kelka</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc"/></e>
+<e lm="multa">                <i>multa</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc"/></e>
+<e lm="plejparto">            <i>plejparto</i><p><l></l>    <r><s n="prn"/><s n="tn"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
-<e lm="multa">                <i>multa</i><p><l>j</l>       <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
 
-
-<e lm="plejparto">            <i>plejparto</i><p><l></l>    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL" lm="plejparto">     <i>plejparto</i><p><l></l>    <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="ie">                   <i>ie</i><p><l></l>           <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="nenie">                <i>nenie</i><p><l></l>        <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ĉie">                  <par n="ĉ"/><i>ie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ajna">                 <i>ajna</i><par n="ind__det"/></e>
 <e lm="akorde kun">           <i>akorde<b/>kun</i><par n="al__pr"/></e>
 <e lm="al">                   <i>al</i><par n="al__pr"/></e>
-<e lm="alia">                 <p><l>alia</l>                <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="alia">                 <i>alia</i><par n="ind__det"/></e>
+<e lm="alia">                 <p><l>alia</l>                <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="alia">                 <p><l>aliaj</l>               <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="alia">                 <p><l>aliajn</l>              <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="alia">                 <p><l>alian</l>               <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -781,8 +781,11 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ambaŭ">                <p><l>ambaŭ</l>               <r>ambaŭ<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
 <e lm="ambaŭ">                <i>amba</i><par n="ŭ"/><p><l></l><r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+
 <e lm="pluraj">               <p><l>pluraj</l>              <r>pluraj<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="pluraj">               <p><l>plurajn</l>             <r>pluraj<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+
+
 <e lm="kelka">                <p><l>kelkaj</l>              <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kelka">                <p><l>kelkajn</l>             <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
     
@@ -792,18 +795,27 @@ Necesas difini paradigmon por adj-nomo terminoj
     <!-- some say -->
 <e lm="kelka">                <p><l>kelkaj</l>              <r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
 <e lm="kelka">                <p><l>kelkajn</l>             <r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
+
 <e lm="ambaŭ">                <i>amba</i><par n="ŭ"/><i></i><par n="ambaŭ__det"/></e>
 <e lm="anstataŭ">             <i>anstata</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
+<e lm="ekster">                <i>ekster</i><par n="al__pr"/></e>
 <e lm="antaŭ">                <i>anta</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
+<e lm="malantaŭ">                <i>malanta</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 <e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="oble">                 <i>oble</i><par n="after__cnjadv"/></e>
 <e lm="krom se">              <i>krom<b/>se</i><par n="after__cnjadv"/></e>
 <e lm="kaj tiel">             <i>kaj<b/>tiel</i><par n="after__cnjadv"/></e>
 <e lm="do">                   <i>do</i><par n="after__cnjadv"/></e>
+<e lm="ekzemple">                   <i>ekzemple</i><par n="after__cnjadv"/></e>
 <e lm="sed tamen">            <i>sed<b/>tamen</i><par n="after__cnjadv"/></e>
 <e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="al__pr"/></e>
 <e lm="apud">                 <i>apud</i><par n="al__pr"/></e>
+<e lm="proksime al">                 <i>proksime<b/>al</i><par n="al__pr"/></e>
+<e lm="proksime al">                 <i>proksime<b/>al</i><par n="jam__adv"/></e>
+
+
+
 <e lm="aŭ">                   <i>a</i><par n="ŭ"/><i></i><par n="kaj__cnjcoo"/></e>
 <e lm="certa">                <i>certa</i><par n="ind__det"/></e>
 <e lm="certe">                <i>certe</i><par n="after__cnjadv"/></e>
@@ -1013,6 +1025,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="malmulta">             <i>malmulta</i><par n="quant__det"/></e>
 <e lm="malpli">               <i>malpli</i><par n="al__pr"/></e>
 <e lm="multa">                <i>multa</i><par n="quant__det"/></e>
+
+<e lm="plejparto de la">      <i>plejparto</i><par n="quant__det"/><p><l><b/>de<b/>la</l><r><g><b/>de<b/>la</g></r></p></e>
+
 <e lm="nek">                  <i>nek</i><par n="kaj__cnjcoo"/></e>
 <e lm="nenio">                <p><l>nenio</l>               <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="nenio">                <p><l>nenion</l>              <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -23405,6 +23420,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <i>Mandelson</i><par n="Smith__np"/></e>
 <e>                           <i>Meroi</i><par n="Smith__np"/></e>
 <e>                           <i>Michel</i><par n="Smith__np"/></e>
+<e>                           <i>Michels</i><par n="Smith__np"/></e>
 <e>                           <i>Milosevic</i><par n="Smith__np"/></e>
 <e>                           <i>Mutsch</i><par n="Smith__np"/></e>
 <e>                           <i>Nejstgaard</i><par n="Smith__np"/></e>
@@ -31779,7 +31795,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="polistireno">          <i>polistiren</i><par n="o__n"/></e>
 <e lm="senhavulo">            <i>senhavul</i><par n="o__n"/></e>
 <e lm="papo">                 <i>pap</i><par n="o__n"/></e>
-<e lm="papa">                 <i>papa</i><par n="a__adj"/></e>
+<e lm="papa">                 <i>pap</i><par n="a__adj"/></e>
 <e lm="loĝata">               <i>lo</i><par n="ĝ"/><i>at</i><par n="a__adj"/></e>
 <e lm="demagogo">             <i>demagog</i><par n="o__n"/></e>
 <e lm="porna">                <i>porn</i><par n="a__adj"/></e>
@@ -33681,6 +33697,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 
+<e lm="kaj tiel plu">       <i>kaj<b/>tiel<b/>plu</i><par n="jam__adv"/></e>
+<e lm="ambaŭ">                <i>amba</i><par n="ŭ"/><par n="jam__adv"/></e>
+<e lm="episkaro">              <i>episkar</i><par n="o__n"/></e>
 
 <!-- Aferoj ne uzataj en la direkto en->eo, sed kiun ni versxajne bezonos en la alia direkto
 
