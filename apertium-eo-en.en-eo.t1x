@@ -2633,7 +2633,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 
 
 
-<rule comment="REGLA: do VERB (I do think -> mi jes pensas) ">    
+<rule comment="REGLA: do VERB (I do think -> mi ja pensas) ">    
   <pattern>
 	<pattern-item n="do"/> 
 	<pattern-item n="infpres"/>
@@ -2648,7 +2648,7 @@ the ones who:the ones who<rel><nn><mf><pl>
          <tag><lit-tag v="Adv"/></tag>
 	    </tags>
 	    <lu>
-	      <lit v="jes"/>
+	      <lit v="ja"/>
 	      <lit-tag v="adv"/>
 	    </lu>
 	  </chunk>
