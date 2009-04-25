@@ -2313,7 +2313,7 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
-<!-- of<pr> off<pr> on<pr> onto<pr> over<pr> per<pr> -->
+<!-- of<pr> off<pr> on<pr> onto<pr> over<pr> per<pr> ... -->
     <rule>
       <pattern>
         <pattern-item n="pr"/>
@@ -2340,9 +2340,8 @@ the ones who:the ones who<rel><nn><mf><pl>
         <pattern-item n="gen"/>
       </pattern>
       <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="gen" case="caseFirstWord">
+          <chunk name="gen">
             <tags>
               <tag><lit-tag v="GEN"/></tag>
             </tags>
@@ -2366,7 +2365,7 @@ the ones who:the ones who<rel><nn><mf><pl>
         <out>
           <chunk name="sent">
             <tags>
-              <tag><lit-tag v="SENT"/></tag>
+              <tag><lit-tag v="S"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2385,7 +2384,7 @@ the ones who:the ones who<rel><nn><mf><pl>
         <out>
           <chunk name="sent">
             <tags>
-              <tag><lit-tag v="SENT"/></tag>
+              <tag><lit-tag v="S"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2634,6 +2633,43 @@ the ones who:the ones who<rel><nn><mf><pl>
 
 
 
+<rule comment="REGLA: do VERB (I do think -> mi jes pensas) ">    
+  <pattern>
+	<pattern-item n="do"/> 
+	<pattern-item n="infpres"/>
+</pattern>
+<action>
+	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
+	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="2"/></call-macro>	
+	<out>
+	  <chunk name="adv3" case="caseFirstWord">
+	    <tags>
+         <tag><lit-tag v="Adv"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="jes"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	  </chunk>
+	  <b pos="1"/>
+	  <chunk name="verbcj">
+	    <tags>	       
+	      <tag><lit-tag v="SV"/></tag>
+	      <tag><var n="tipus_verb"/></tag>
+	      <tag><var n="temps_chunk"/></tag>
+	    </tags> 
+	    <lu>
+	      <var n="verbfinal"/>
+	    </lu>
+	  </chunk>
+	</out>
+  </action>
+</rule>
+
+
+
+
 
 
     <rule comment="REGLA: to VBLEXinf">
@@ -2645,7 +2681,7 @@ the ones who:the ones who<rel><nn><mf><pl>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
         <out>
-          <chunk name="verb" case="caseFirstWord">
+          <chunk name="verbInf" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
       	      <tag><var n="tipus_verb"/></tag>
@@ -2733,7 +2769,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="verb2" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="tipus_verb"/></tag>
@@ -2835,7 +2871,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="verb3" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -2946,7 +2982,7 @@ might:might<vaux><inf>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="verb4" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3097,7 +3133,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="past"/></let>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="verb3a" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3126,7 +3162,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="verb" case="caseFirstWord">
+              <chunk name="verb3b" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>

@@ -26909,10 +26909,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 		<!-- ******************************
 			    group acronimos_par
 			****************************** -->
-
-<e>                      <par n="acronimos"/></e>
 <!--
 
+<e>                      <par n="acronimos"/></e>
+-->
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
 <e lm="AAA">             <i>AAA</i><par n="acronimos_par"/></e>
 <e lm="AAAI">            <i>AAAI</i><par n="acronimos_par"/></e>
@@ -27432,6 +27432,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="ZF">              <i>ZF</i><par n="acronimos_par"/></e>
 <e lm="ZFC">             <i>ZFC</i><par n="acronimos_par"/></e>
 <e lm="ZX">              <i>ZX</i><par n="acronimos_par"/></e>
+<!--
+
 <!-*- -->
 
 
