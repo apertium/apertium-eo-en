@@ -23,7 +23,7 @@ while c: #{
 	
 	if c == ' ' or c == '\n': #{
 		an = 0;
-		if buf.count("'") > 1: #{
+		if buf.count("'") > 1 and buf.count("s'") > 0: #{
 			sys.stdout.write(buf.replace("'", "[']"));
 		else: #{
 			sys.stdout.write(buf);
