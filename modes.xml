@@ -34,6 +34,42 @@
     </pipeline>
   </mode>
 
+  <mode name="en-eo-gen" install="yes">
+    <pipeline>
+      <program name="../../../usr/bin/python">
+        <file name="dev/gen-test.py"/>
+      </program>
+      <program name="lt-proc">
+        <file name="en-eo.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="en-eo.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-eo-en.en-eo.t1x"/>
+        <file name="en-eo.t1x.bin"/>
+        <file name="en-eo.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eo-en.en-eo.t2x"/>
+        <file name="en-eo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eo-en.en-eo.t3x"/>
+        <file name="en-eo.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="en-eo.autogen.bin"/>
+      </program>
+      <!--
+      <program name="lt-proc -p">
+        <file name="en-eo.autopgen.bin"/>
+      </program> 
+      -->
+    </pipeline>
+  </mode>
+
 
   <mode name="en-eo-trigram" install="no">
     <pipeline>

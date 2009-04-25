@@ -219,6 +219,8 @@ sort -t '"' -k 3 x
       <cat-item tags="predet.*"/>
     </def-cat>
 
+    <def-cat n="gen__apos"><cat-item lemma="'" tags="gen"/></def-cat>
+
     <def-cat n="gen"><cat-item tags="gen"/></def-cat>
 
     <def-cat n="genitive_possessors"> <!-- all that can fill the X in: X's dog  -->
@@ -1997,7 +1999,7 @@ verbfinal = pensi<3><4><5>
                 <lu>
                   <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
                 </lu>
-                <b/>
+                <b pos="3"/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
                   <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
@@ -2006,7 +2008,7 @@ verbfinal = pensi<3><4><5>
                   <lu>
                     <clip pos="3" side="tl" part="whole"/>          <!-- de -->
                   </lu>
-                <b pos="3"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
                   <clip pos="1" side="tl" part="a_det"/>
@@ -2335,6 +2337,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 
 
 
+
     <rule comment="REGLA: non-recognized genitive ('s) fallback :  XXX's YYY   => XXX'a YYY">
       <pattern>
         <pattern-item n="gen"/>
@@ -2353,6 +2356,52 @@ the ones who:the ones who<rel><nn><mf><pl>
       </action>
     </rule>
 
+
+    <rule comment="REGLA: non-recognized genitive ('s) fallback :  XXX's YYY   => XXX'a YYY">
+      <pattern>
+        <pattern-item n="gen"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="gen">
+            <tags>
+              <tag><lit-tag v="GEN"/></tag>
+            </tags>
+            <lu>
+              <lit v="a"/><lit-tag v="gen"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: '.   (ripara regulo)">
+      <pattern>
+        <pattern-item n="gen__apos"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="default2">
+            <tags>
+              <tag><lit-tag v="default"/></tag>
+            </tags>
+            <lu>
+              <lit v="'"/><lit-tag v="apos"/>
+            </lu>
+          </chunk>
+          <chunk name="sent2">
+            <tags>
+              <tag><lit-tag v="S"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 
