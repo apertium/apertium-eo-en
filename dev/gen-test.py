@@ -24,7 +24,7 @@ while c: #{
 	if c == ' ' or c == '\n': #{
 		an = 0;
 		if buf.count("'") > 1: #{
-			sys.stdout.write(buf.replace("'", "\\'"));
+			sys.stdout.write(buf.replace("'", "[']"));
 		else: #{
 			sys.stdout.write(buf);
 		#}
@@ -34,3 +34,5 @@ while c: #{
 
 	c = sys.stdin.read(1);
 #}
+
+sys.stdout.write(buf);
