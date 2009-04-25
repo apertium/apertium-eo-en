@@ -28,6 +28,7 @@
 dev/apertium-eo-en.en_aldonota.dix -text
 dev/freeling.en-open-chopped.dix -text
 dev/freeling.en-open.dix -text
+dev/gen-test.py -text
 dev/paradigm-chopper.py -text
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
