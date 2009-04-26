@@ -2357,24 +2357,6 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
-    <rule comment="REGLA: non-recognized genitive ('s) fallback :  XXX's YYY   => XXX'a YYY">
-      <pattern>
-        <pattern-item n="gen"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="gen">
-            <tags>
-              <tag><lit-tag v="GEN"/></tag>
-            </tags>
-            <lu>
-              <lit v="a"/><lit-tag v="gen"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
 
 
     <rule comment="REGLA: SENT ;: - frazparto">
@@ -2806,7 +2788,6 @@ might:might<vaux><inf>
           </when>
 
 
-
           <when>
             <test>
               <or>
@@ -2814,7 +2795,7 @@ might:might<vaux><inf>
                   <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
                   <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
                 </and>
-                <!-- might:might<vaux><inf> wash  =>  ???-->
+                <!-- might:might<vaux><inf> wash  =>  povus lavi -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
               </or>
             </test>
@@ -2828,8 +2809,8 @@ might:might<vaux><inf>
                   <tag><clip pos="2" side="tl" part="a_prs"/></tag>
                 </tags>
                 <lu>
+<!--                  <clip pos="1" side="tl" part="whole"/> -->
                   <lit v="povi"/>
-                  <!-- Fran's proposal: <lit-tag v="vaux.pres"/>-->
                   <lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="1"/>
@@ -2843,6 +2824,7 @@ might:might<vaux><inf>
             </out>
           </when>
 
+
           <otherwise>
             <out>
               <chunk name="vaux_verb" case="caseFirstWord">
@@ -2850,6 +2832,7 @@ might:might<vaux><inf>
                   <tag><lit-tag v="SV"/></tag>
 	                <tag><var n="tipus_verb"/></tag>
                   <tag><var n="temps"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_prs"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>

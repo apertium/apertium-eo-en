@@ -28,10 +28,8 @@ while c: #{
 
 	#if c == ' ' or c == '\n' or c == '.' or c == ',' or c == ':' or c == ';': #{
 	if spc>4 or c == '\n' or c == '.' or c == ',' or c == ':' or c == ';': #{
-		an = 0;
-		spc = 0;
 		#if buf.count("'") > 1 and buf.count("s'") > 0: #{
-		if buf.count("'") > 1: #{
+		if an > 0: #{
 			#sys.stdout.write(buf.replace("'", "[']"));
 
 			# Match 'start and end' of word boundary
@@ -43,6 +41,8 @@ while c: #{
 			sys.stdout.write(buf);
 		#}
 		buf = '';
+		an = 0;
+		spc = 0;
 	#}
 
 
