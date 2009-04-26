@@ -2376,36 +2376,6 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
-<!--
-    <rule comment="REGLA: '.   (ripara regulo)">
-      <pattern>
-        <pattern-item n="gen__apos"/>
-        <pattern-item n="sent"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="default2">
-            <tags>
-              <tag><lit-tag v="default"/></tag>
-            </tags>
-            <lu>
-              <lit v="'"/><lit-tag v="apos"/>
-            </lu>
-          </chunk>
-          <chunk name="sent2">
-            <tags>
-              <tag><lit-tag v="S"/></tag>
-            </tags>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
--->
-
-
 
     <rule comment="REGLA: SENT ;: - frazparto">
       <pattern>

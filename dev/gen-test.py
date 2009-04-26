@@ -2,7 +2,7 @@
 # coding=utf-8
 # -*- encoding: utf-8 -*-
 
-import sys, codecs, copy;
+import sys, codecs, copy, re;
 
 sys.stdin  = codecs.getreader('utf-8')(sys.stdin);
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout);
@@ -30,10 +30,15 @@ while c: #{
 	if spc>4 or c == '\n' or c == '.' or c == ',' or c == ':' or c == ';': #{
 		an = 0;
 		spc = 0;
-		if buf.count("'") > 1 and buf.count("s'") > 0: #{
-			#TODO sys.stdout.write(buf.replace("'word", "[']word"));
-			#TODO sys.stdout.write(buf.replace("word'", "word[']"));
-			sys.stdout.write(buf.replace("'", "[']"));
+		#if buf.count("'") > 1 and buf.count("s'") > 0: #{
+		if buf.count("'") > 1: #{
+			#sys.stdout.write(buf.replace("'", "[']"));
+
+			# Match 'start and end' of word boundary
+			buf = re.sub("(\W)'(\w+(?:\W+\w+){0,5}?)'(\W)", "\\1[']\\2[']\\3", buf)
+			#buf = re.sub("(\W)'(\w)", "\\1[']\\2", buf)
+			#buf = re.sub("(\w)'(\W)", "\\1[']\\2", buf)
+			sys.stdout.write(buf);
 		else: #{
 			sys.stdout.write(buf);
 		#}
