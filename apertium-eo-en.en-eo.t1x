@@ -402,7 +402,6 @@ sort -t '"' -k 3 x
 
     <def-var n="tipus_verb"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
     <def-var n="temps_chunk"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
-    <def-var n="neg"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
     <def-var n="verbfinal"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
     <def-var n="chunk_name"/><!-- taken from en-ca.t1x, for use in macro "conj_verb_compost2" -->
 
@@ -414,7 +413,7 @@ sort -t '"' -k 3 x
 
     <def-list n="adv_neg">
       <list-item v="not"/>
-      <list-item v="never"/>
+    <!--  <list-item v="never"/> -->
     </def-list>
 
     <def-list n="reportingverb"> <!-- verboj ne postulantaj THAT -->
@@ -748,16 +747,24 @@ verbfinal = pensi<3><4><5>
      ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
      Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
      por ke ne aperu du sinsekvaj blankoj. -->
-    <def-macro n="f_bcond1" npar="1">
+    <def-macro n="sendu_blankon_se_havas_formaton" npar="1">
       <choose>
         <when>
           <test>
-            <not>
-              <equal><b pos="1"/><lit v=" "/></equal>
-            </not>
+            <not><equal><b pos="1"/><lit v=" "/></equal></not>
           </test>
           <out>
             <b pos="1"/>
+    <!--
+          <chunk name="sendu_blankon_se_havas_formaton">
+            <tags>
+                  <tag><lit-tag v="sendu_blankon_se_havas_formaton"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/><lit-tag v="1"/>
+            </lu>
+          </chunk>
+     XXXXXXX NE FUNKSCIAS -->
           </out>
         </when>
       </choose>
@@ -2586,7 +2593,38 @@ the ones who:the ones who<rel><nn><mf><pl>
   </rule>
 
 
-<rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ĉiam pensas)">    
+
+<rule comment="REGLA: do VERB (I do think -> mi ja pensas) ">    
+<pattern>
+	<pattern-item n="do"/> 
+	<pattern-item n="infpres"/>
+</pattern>
+<action>
+	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
+	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="2"/></call-macro>	
+	<out>
+	  <chunk name="ja" case="caseFirstWord">
+	    <tags><tag><lit-tag v="Adv"/></tag></tags>
+	    <lu><lit v="ja"/><lit-tag v="adv"/></lu>
+	  </chunk>
+	  <b pos="1"/>
+	  <chunk name="verbcj">
+	    <tags>	       
+	      <tag><lit-tag v="SV"/></tag>
+	      <tag><var n="tipus_verb"/></tag>
+	      <tag><var n="temps_chunk"/></tag>
+	    </tags> 
+	    <lu>
+	      <var n="verbfinal"/>
+	    </lu>
+	  </chunk>
+	</out>
+  </action>
+</rule>
+
+
+<rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ja ĉiam pensas)">    
   <pattern>
 	<pattern-item n="do"/> 
 	<pattern-item n="adv"/>
@@ -2596,65 +2634,37 @@ the ones who:the ones who<rel><nn><mf><pl>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
-	<choose>
-	  <when>
-	    <test><!-- se ADV estas "not" aux "never"... -->
-	      <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="adv_neg"/></in>
-	    </test>
-	    <let><var n="neg"/><lit-tag v="NEG"/></let>
-	  </when>
-	  <otherwise>
-	    <let><var n="neg"/><lit v=""/></let>
-	  </otherwise>
-	</choose>
+
+
+   <choose>
+     <when>
+       <test><not><!-- se ADV NE estas "not" aux "never"... -->
+         <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="not"/></equal>
+       </not></test>
+     <out>
+	  <chunk name="ja2" case="caseFirstWord">
+	    <tags><tag><lit-tag v="Adv"/></tag></tags>
+	    <lu><lit v="ja"/><lit-tag v="adv"/></lu>
+	  </chunk>
+	   <b pos="1"/>
+	   </out>
+     </when>
+     <otherwise>
+    	<call-macro n="sendu_blankon_se_havas_formaton"><with-param pos="1"/></call-macro>
+     </otherwise>
+   </choose>
+
+
 	<out>
 	  <chunk name="adv2" case="caseFirstWord">
 	    <tags>
-	      <tag><clip pos="2" side="tl" part="a_adv"/></tag>
-	      <tag><var n="neg"/></tag>
+          <tag><lit-tag v="Adv"/></tag>
 	    </tags>
 	    <lu>
 	      <clip pos="2" side="tl" part="whole"/>
 	    </lu>
 	  </chunk>
-	  <b pos="1"/>
-	  <chunk name="verbcj">
-	    <tags>	       
-	      <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-	      <tag><var n="temps_chunk"/></tag>
-	    </tags> 
-	    <lu>
-	      <var n="verbfinal"/>
-	    </lu>
-	  </chunk>
-	</out>
-	<call-macro n="f_bcond1"><with-param pos="2"/></call-macro>
-  </action>
-</rule>
-
-
-
-<rule comment="REGLA: do VERB (I do think -> mi ja pensas) ">    
-  <pattern>
-	<pattern-item n="do"/> 
-	<pattern-item n="infpres"/>
-</pattern>
-<action>
-	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="2"/></call-macro>	
-	<out>
-	  <chunk name="adv3" case="caseFirstWord">
-	    <tags>
-         <tag><lit-tag v="Adv"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="ja"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	  </chunk>
-	  <b pos="1"/>
+	  <b pos="2"/>
 	  <chunk name="verbcj">
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
@@ -2668,7 +2678,6 @@ the ones who:the ones who<rel><nn><mf><pl>
 	</out>
   </action>
 </rule>
-
 
 
 
