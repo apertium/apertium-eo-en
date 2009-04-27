@@ -157,6 +157,41 @@
     </def-cat>
 
 
+    <!-- verb in present or imperative or past participle (to change the tense due to a bad election of the lexer) -->
+    <def-cat n="c_vblex_pres">
+      <cat-item tags="vblex.pres"/>
+      <cat-item tags="vblex.imp"/>
+      <cat-item tags="vblex.pp"/>
+    </def-cat>
+
+    <def-cat n="infpres">
+      <cat-item tags="vblex.inf"/>
+      <cat-item tags="vblex.pres"/>
+      <cat-item tags="vblex.past"/>
+      <cat-item tags="vblex.sep.inf"/>
+      <cat-item tags="vblex.sep.pres"/>
+      <cat-item tags="vbser.inf"/>
+      <cat-item tags="vbser.pres"/>
+      <cat-item tags="vaux.inf"/>
+    </def-cat>
+
+    <def-cat n="do">
+      <cat-item lemma="do" tags="vbdo.*"/>
+      <cat-item lemma="do" tags="vblex.pri.*"/><!--ATENTU, nur nun ĉar la tagger eraras. -->
+      <cat-item lemma="do" tags="vblex.pres"/>
+      <cat-item lemma="do" tags="vblex.past"/>
+      <cat-item lemma="do" tags="vblex.inf"/>
+    </def-cat>
+
+
+    <def-cat n="vb_all">
+      <cat-item tags="vbser.*"/>
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="vbdo.*"/>
+      <cat-item tags="vaux.*"/>
+      <cat-item tags="vbhaver.*"/>
+    </def-cat>
+
 
 
     <!--
@@ -239,31 +274,6 @@ sort -t '"' -k 3 x
 <!-- eble simple:      <cat-item tags="np.*"/>    ??  -->
     </def-cat>
 
-    <!-- verb in present or imperative or past participle (to change the tense due to a bad election of the lexer) -->
-    <def-cat n="c_vblex_pres">
-      <cat-item tags="vblex.pres"/>
-      <cat-item tags="vblex.imp"/>
-      <cat-item tags="vblex.pp"/>
-    </def-cat>
-
-    <def-cat n="infpres">
-      <cat-item tags="vblex.inf"/>
-      <cat-item tags="vblex.pres"/>
-      <cat-item tags="vblex.sep.inf"/>
-      <cat-item tags="vblex.sep.pres"/>
-      <cat-item tags="vbser.inf"/>
-      <cat-item tags="vbser.pres"/>
-    </def-cat>
-
-    <def-cat n="do">
-      <cat-item lemma="do" tags="vbdo.*"/>
-      <cat-item lemma="do" tags="vblex.pri.*"/><!--ATENTU, nur nun ĉar la tagger eraras. -->
-      <cat-item lemma="do" tags="vblex.pres"/>
-      <cat-item lemma="do" tags="vblex.past"/>
-      <cat-item lemma="do" tags="vblex.inf"/>
-    </def-cat>
-
-
     <def-cat n="unknown"><cat-item tags=""/></def-cat>
   </section-def-cats>
 
@@ -336,12 +346,14 @@ sort -t '"' -k 3 x
       <attr-item tags="prn.tn"/>
     </def-attr>
 
+
     <def-attr n="a_tns">
       <attr-item tags="pri"/>
       <attr-item tags="imp"/>
       <attr-item tags="pp"/>
       <attr-item tags="pres"/>
       <attr-item tags="inf"/>
+      <attr-item tags="cni"/>
       <attr-item tags="ger"/>
       <attr-item tags="subs"/>
       <attr-item tags="pprs"/>
@@ -582,6 +594,7 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="tipus_verb"/><lit-tag v="netransitiva"/></let>
         </when>
+        <!--
         <when>
           <test>
             <or>
@@ -615,6 +628,7 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
         </when>
+        -->
         <otherwise>
           <!-- <let><var n="tipus_verb"/><clip pos="1" side="tl" part="a_vrb"/></let> -->
           <let><var n="tipus_verb"/><lit-tag v="aliaj"/></let>
@@ -623,29 +637,86 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-    <!--Tiu makroo devas esti aplikata en la reguloj, post la makroo tipus_verbs. 
-        Ĝi atribuas al la variablo 'pronom' la valoron de la pronomo, 
-        kiun devas havi la pronominalaj verboj.
-         pronominalaj verboj ne ekzistas en Eo nek en En, do mi forigas. Jacob
-    <def-macro n="pron1" npar="1">
-      <let><var n="pronom"/><lit v=""/></let>
-      <choose><!-*-envia el pronom en els verbs pronominals -*->
-        <when>
-          <test>
-            <equal><var n="tipus_verb"/><lit-tag v="pron"/></equal>
-          </test>
-          <let><var n="pronom"/><lit v="prpers"/></let>
-          <append n="pronom">
-            <lit-tag v="prn.pro"/>
-            <lit-tag v="4"/>
-            <lit-tag v="mf"/>
-            <lit-tag v="5"/>
-            <lit v="$ ^"/>
-          </append>
-        </when>
-      </choose>
-    </def-macro>
--->
+
+
+<!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
+pos 1= do, will, shall aŭ would.
+pos 2= nekonjugaciita verbo
+
+La rezulto estas unu sola leksika formo (venos):
+verbfinal = pensi<vblex><pres>
+ -->
+
+<def-macro n="set_verbkonj2_do" npar="2">
+<choose>
+
+  <when>
+    <test>
+    <or>
+      <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
+      <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
+    </or>
+    </test>
+    <let><var n="macro_tmp1"/><lit-tag v="pres"/></let>
+  </when>
+
+  <when>
+    <test>
+      <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
+    </test>
+    <let><var n="macro_tmp1"/><lit-tag v="past"/></let>
+  </when>
+
+  <otherwise><let><var n="macro_tmp1"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+
+  </choose>
+  <let>
+    <var n="verbkonj"/>
+    <concat>
+      <clip pos="2" side="tl" part="lemh"/>
+      <clip pos="2" side="tl" part="a_vrb"/><var n="macro_tmp1"/>
+      <clip pos="2" side="tl" part="lemq"/>
+    </concat>
+  </let>
+</def-macro>
+
+
+
+
+<def-macro n="set_verbkonj2_willShallWould" npar="2">
+
+    <choose>		
+      <when>
+        <test>
+          <or>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+          </or>
+        </test>
+        <let><var n="macro_tmp1"/><lit-tag v="fti"/></let>
+      </when>
+
+      <when>
+        <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+        </test>
+        <let><var n="macro_tmp1"/><lit-tag v="cni"/></let>
+      </when>
+
+      <otherwise><let><var n="macro_tmp1"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+
+    </choose>
+<let>
+  <var n="verbkonj"/>
+  <concat>
+    <clip pos="2" side="tl" part="lemh"/>
+    <clip pos="2" side="tl" part="a_vrb"/><var n="macro_tmp1"/>
+    <clip pos="2" side="tl" part="lemq"/>
+  </concat>
+</let>
+
+</def-macro>
+
 
 
 
@@ -657,7 +728,10 @@ sort -t '"' -k 3 x
     <choose>
       <when>
         <test>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+          <or>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+          </or>
         </test>
         <let><var n="temps"/><lit-tag v="fti"/></let>
       </when>
@@ -686,101 +760,6 @@ sort -t '"' -k 3 x
 
 
 
-<!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
-pos 1= do, will, shall aŭ would.
-pos 2= nekonjugaciita verbo
-
-La rezulto estas unu sola leksika formo (venos):
-verbfinal = pensi<vblex><pres>
- -->
-
-<def-macro n="set_verbkonj2" npar="2">
-<choose>
-
-  <when>
-    <test>
-      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
-    </test>
-    <choose>
-
-      <when>
-        <test>
-        <or>
-          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
-          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
-        </or>
-        </test>
-        <let><var n="macro_tmp1"/><lit-tag v="pres"/></let>
-      </when>
-
-      <when>
-        <test>
-          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
-        </test>
-        <let><var n="macro_tmp1"/><lit-tag v="past"/></let>
-      </when>
-
-      <otherwise><let><var n="macro_tmp1"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
-
-    </choose>
-  </when>
-
-  <otherwise>
-    <choose>		
-      <when>
-        <test>
-          <or>
-            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-          </or>
-        </test>
-        <let><var n="macro_tmp1"/><lit-tag v="fti"/></let>
-      </when>
-
-      <when>
-        <test>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-        </test>
-        <let><var n="macro_tmp1"/><lit-tag v="cni"/></let>
-      </when>
-
-      <otherwise><let><var n="macro_tmp1"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
-
-    </choose>
-  </otherwise>
-</choose>
-<let>
-  <var n="verbkonj"/>
-  <concat>
-    <clip pos="2" side="tl" part="lemh"/>
-    <clip pos="2" side="tl" part="a_vrb"/><var n="macro_tmp1"/>
-    <clip pos="2" side="tl" part="lemq"/>
-  </concat>
-</let>
-
-</def-macro>
-
-
-
-
-<!--Per mirar si el blanc conté o no format. Cal posar aquesta funció en les regles en què desaparegui alguna paraula, per tal de decidir si el blanc de la paraula eliminada s'ha d'eliminar o conservar. Si conté format cal conservar-la, si no en conté cal eliminar-la perquè no apareguin dos espais seguits. -->
-    <def-macro n="f_bcond" npar="1">
-      <choose>
-        <when>
-          <test>
-            <not>
-              <equal>
-                <b pos="1"/>
-                <lit v=" "/>
-              </equal>
-            </not>
-          </test>
-          <out>
-            <b pos="1"/>
-          </out>
-        </when>
-      </choose>
-    </def-macro>
 
 
 <!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
@@ -813,10 +792,9 @@ verbfinal = pensi<vblex><pres>
   </section-def-macros>
 
 
+
+
   <section-rules>
-
-
-
 
     <rule comment="REGLA: prnref   - himself, themselves">
       <pattern>
@@ -837,7 +815,6 @@ verbfinal = pensi<vblex><pres>
         </out>
       </action>
     </rule>
-
 
 
 
@@ -2476,33 +2453,6 @@ the ones who:the ones who<rel><nn><mf><pl>
 <!-- *************************************************************-->
 
 
-    <rule>
-      <pattern>
-        <pattern-item n="vblex"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="verb" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-	            <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-
 
     <rule comment="REGLA: to VBLEXinf">
       <pattern><!-- to run, to swim -->
@@ -2570,7 +2520,7 @@ the ones who:the ones who<rel><nn><mf><pl>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
         <out>
-          <chunk name="verb_vbger" case="caseFirstWord">
+          <chunk name="be_vbger" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
 	            <tag><var n="tipus_verb"/></tag>
@@ -2627,31 +2577,6 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
-
-    <rule comment="REGLA: VBSER">
-      <pattern>
-        <pattern-item n="vbser"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="ser" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-      	      <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
 
     <rule comment="REGLA: VBSER not">
@@ -2735,7 +2660,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 <action>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-	<call-macro n="set_verbkonj2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
+	<call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="3"/></call-macro>	
 
    <choose>
      <when>
@@ -2790,7 +2715,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 <action>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-	<call-macro n="set_verbkonj2"><with-param pos="1"/><with-param pos="2"/></call-macro>	
+	<call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="2"/></call-macro>	
 	<out>
 	  <chunk name="ja" case="caseFirstWord">
 	    <tags><tag><lit-tag v="Adv"/></tag></tags>
@@ -2823,53 +2748,6 @@ may:may<vaux><inf>
 might:might<vaux><inf>
 -->
 
-<!--
-<rule comment="REGLA: VAUX VBLEX">
-  <pattern>
-    <pattern-item n="vaux_vbhaver"/>
-    <pattern-item n="vblex_vbser"/>
-  </pattern>
-<action>
-	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-	<call-macro n="set_verbkonj2"><with-param pos="1"/><with-param pos="2"/></call-macro>	
-
-            <out>
-              <chunk name="verb2" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="tipus_verb"/></tag>
-                  <tag><var n="temps"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="2" side="tl" part="lemh"/>
-                  <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
-                  <clip pos="2" side="tl" part="lemq"/>
-                </lu>
-              </chunk>
-            </out>
-
-	<out>
-	  <chunk name="ja" case="caseFirstWord">
-	    <tags><tag><lit-tag v="Adv"/></tag></tags>
-	    <lu><lit v="ja"/><lit-tag v="adv"/></lu>
-	  </chunk>
-	  <b pos="1"/>
-	  <chunk name="verbcj">
-	    <tags>	       
-	      <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-	    </tags> 
-	    <lu>
-	      <var n="verbkonj"/>
-	    </lu>
-	  </chunk>
-	</out>
-  </action>
-</rule>
--->
-
 
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
@@ -2890,6 +2768,8 @@ might:might<vaux><inf>
 
                 <!-- have washed  => lavis     -    has washed => lavis -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
+
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -2929,9 +2809,7 @@ might:might<vaux><inf>
       	          <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
-<!--                  <clip pos="1" side="tl" part="whole"/> -->
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.cni"/>
+                  <lit v="povi"/><lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2947,13 +2825,16 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb2" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
 	                <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lemh"/>
+                  <clip pos="1" side="tl" part="a_vrb"/>
+                  <clip pos="1" side="tl" part="a_tns"/>
+                  <clip pos="1" side="tl" part="lemq"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -2973,7 +2854,7 @@ might:might<vaux><inf>
 
     <rule comment="REGLA: VAUX ADV VBLEX">
       <pattern>
-        <pattern-item n="vaux"/>
+        <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="adv"/>
         <pattern-item n="vblex_vbser"/>
       </pattern>
@@ -2987,6 +2868,8 @@ might:might<vaux><inf>
               <or>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -3023,7 +2906,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb3" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3049,7 +2932,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb4" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3079,7 +2962,7 @@ might:might<vaux><inf>
 
     <rule comment="REGLA: VAUX ADV ADV VBLEX">
       <pattern>
-        <pattern-item n="vaux"/>
+        <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="adv"/>
         <pattern-item n="adv"/>
         <pattern-item n="vblex_vbser"/>
@@ -3095,6 +2978,8 @@ might:might<vaux><inf>
                 <!-- will wash  => lavos     -    would wash => lavus -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -3134,7 +3019,7 @@ might:might<vaux><inf>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb5" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3164,7 +3049,7 @@ might:might<vaux><inf>
 
           <otherwise>
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb6" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3198,7 +3083,7 @@ might:might<vaux><inf>
 
     <rule comment="REGLA: VAUX VBHAVER VBLEX">
       <pattern>
-        <pattern-item n="vaux"/>
+        <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="vbhaver"/>
         <pattern-item n="vblex_vbser"/>
       </pattern>
@@ -3214,6 +3099,8 @@ might:might<vaux><inf>
                 <!-- will wash  => lavos     -    would wash => lavus -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -3327,7 +3214,7 @@ might:might<vaux><inf>
 
           <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb7" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3358,7 +3245,7 @@ might:might<vaux><inf>
 
     <rule comment="REGLA: VAUX VBSER VBLEXGER">
       <pattern>
-        <pattern-item n="vaux"/>
+        <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="vbser"/>
         <pattern-item n="vblexger"/>
       </pattern>
@@ -3373,6 +3260,8 @@ might:might<vaux><inf>
                 <!-- I will/would be washing my hands  => Mi estos/estus lavanta miajn manojn  -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
               </or>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
@@ -3400,7 +3289,7 @@ might:might<vaux><inf>
           <otherwise><!-- can be describing=>povas esti priskribanta  OK
                           may be confusing=>povi esti konfuzanta TODO: povAS esti konfuzanta -->
             <out>
-              <chunk name="vaux_verb" case="caseFirstWord">
+              <chunk name="vaux_verb8" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
@@ -3424,6 +3313,35 @@ might:might<vaux><inf>
             </out>
           </otherwise>
         </choose>
+      </action>
+    </rule>
+
+
+
+
+
+    <rule>
+      <pattern>
+        <pattern-item n="vb_all"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="verb_all" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+	            <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
 

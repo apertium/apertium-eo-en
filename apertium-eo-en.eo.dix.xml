@@ -139,7 +139,7 @@
 
 
 <pardef n="proper_names">
-<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
+<e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr|Don).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
        <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 
                            <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
@@ -4398,6 +4398,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="lombardo">             <i>lombard</i><par n="o__n"/></e>
 <e lm="longa hararo">         <i>longa harar</i><par n="o__n"/></e>
 <e lm="longa">                <i>long</i><par n="a__adj"/></e>
+<e lm="longe">                <i>long</i><par n="e__adv"/></e>
 <e lm="longitudo">            <i>longitud</i><par n="o__n"/></e>
 <e lm="longtempe">            <i>longtemp</i><par n="e__adv"/></e>
 <e lm="loŝantaro">            <i>lo</i><par n="ŝ"/><i>antar</i><par n="o__n"/></e>

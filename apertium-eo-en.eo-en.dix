@@ -1889,8 +1889,10 @@ TODO??
 <e r="RL"><p><l>fali<s n="vblex"/></l>                 <r>fall<g><b/>down</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>fini<s n="vblex"/></l>                 <r>round<g><b/>off</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>flegi<s n="vblex"/></l>                <r>take<g><b/>care<b/>of</g><s n="vblex"/></r></p></e>
-<e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<b/>got<s n="vblex"/></r></p></e>
+
 <e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<g><b/>got</g><s n="vblex"/></r></p></e>
+<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>have<g><b/>to</g><s n="vaux"/></r></p></e>
+
 <e r="RL"><p><l>instali<s n="vblex"/></l>              <r>set<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>klopodi<s n="vblex"/></l>              <r>set<g><b/>about</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>kapti<s n="vblex"/></l>                <r>pick<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -2327,6 +2329,10 @@ TODO??
 <e       ><p><l>en<b/>la<b/>venonta<b/>somero<s n="adv"/></l><r>next<b/>summer<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>venonta<b/>aŭtuno<s n="adv"/></l><r>next<b/>fall<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>venonta<b/>vintro<s n="adv"/></l><r>next<b/>winter<s n="adv"/></r></p></e>
+
+
+<e>       <p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/></r></p></e>
+<e>       <p><l>longe<s n="adv"/></l>                  <r>long<s n="adv"/></r></p></e>
 
 	<!-- ====================================================================== -->
 	<!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
@@ -9230,8 +9236,7 @@ TODO??
 <e>       <p><l>logike<s n="adv"/></l>                 <r>logically<s n="adv"/></r></p></e>
 <e r="LR"><p><l>laŭrezone<s n="adv"/></l>              <r>logically<s n="adv"/></r></p></e>
 <e>       <p><l>loĝistiko<s n="n"/></l>                <r>logistics<s n="n"/></r></p></e>
-<e>       <p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/></r></p></e>
-<e>       <p><l>laŭlonge<s n="adv"/></l>               <r>long<s n="adv"/></r></p></e>
+<e r="LR"><p><l>laŭlonge<s n="adv"/></l>               <r>long<s n="adv"/></r></p></e>
 <e r="LR"><p><l>delonga<s n="adj"/></l>                <r>long<s n="adj"/></r></p></e>
 <e r="LR"><p><l>delonge<s n="adv"/></l>                <r>long<s n="adv"/></r></p></e>
 <e>       <p><l>rigardo<s n="n"/></l>                  <r>look<s n="n"/></r></p></e>
@@ -13082,7 +13087,7 @@ TODO??
 <e>       <p><l>peko<s n="n"/></l>                     <r>sin<s n="n"/></r></p></e>
 <e r="LR"><p><l>pekado<s n="n"/></l>                   <r>sin<s n="n"/></r></p></e>
 <e r="LR"><p><l>pekeco<s n="n"/></l>                   <r>sin<s n="n"/></r></p></e>
-<e>       <p><l>ekde<s n="adv"/></l>                   <r>since<s n="adv"/></r></p></e>
+<e r="RL"><p><l>poste<s n="adv"/></l>                   <r>since<s n="adv"/></r></p></e>
 <e>       <p><l>sincera<s n="adj"/></l>                <r>sincere<s n="adj"/></r></p></e>
 <e r="LR"><p><l>netrompa<s n="adj"/></l>               <r>sincere<s n="adj"/></r></p></e>
 <e>       <p><l>sincere<s n="adv"/></l>                <r>sincerely<s n="adv"/></r></p></e>

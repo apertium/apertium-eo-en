@@ -830,6 +830,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e r="RL"><p><l>an</l>        <r>an<s n="vaux"/><s n="inf"/></r></p></e>
   <e>       <p><l>ould</l>      <r>an<s n="vaux"/><s n="past"/></r></p></e>
 </pardef>
+
+<pardef n="ha/ve__vbmod">
+  <e>       <p><l>ve</l>        <r>ve<s n="vaux"/><s n="inf"/></r></p></e>
+  <e>       <p><l>ve</l>        <r>ve<s n="vaux"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r>ve<s n="vaux"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>d</l>         <r>ve<s n="vaux"/><s n="past"/></r></p></e>
+  <e r="RL"><p><l>d</l>         <r>ve<s n="vaux"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ving</l>      <r>ve<s n="vaux"/><s n="ger"/></r></p></e>
+</pardef>
+
 <pardef n="ha/ve__vbhaver">
   <e>       <p><l>ve</l>        <r>ve<s n="vbhaver"/><s n="inf"/></r></p></e>
   <e>       <p><l>ve</l>        <r>ve<s n="vbhaver"/><s n="pres"/></r></p></e>
@@ -27929,6 +27939,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="should">          <i>should</i><par n="will/__vbmod"/></e>
 <e lm="will">            <i>will</i><par n="will/__vbmod"/></e>
 <e lm="would">           <i>would</i><par n="will/__vbmod"/></e>
+<e lm="have to">         <i>ha</i><par n="ha/ve__vbmod"/><p><l><b/>to</l><r><g><b/>to</g></r></p></e>
 
 		<!-- ******************************
 			    group vaux_symbol
