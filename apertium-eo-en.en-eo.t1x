@@ -416,12 +416,13 @@ sort -t '"' -k 3 x
     <def-var n="venontaVortoEstuMajuskla"/><!-- macro firstWord -->
 
 
-
-
     <def-var n="tipus_verb"/><!-- taken from en-ca.t1x, for use in macro tipus_verbs -->
     <def-var n="macro_tmp1"/><!-- taken from en-ca.t1x, for use in macro "set_verbkonj2" -->
     <def-var n="verbkonj"/><!-- taken from en-ca.t1x, for use in macro "set_verbkonj2" -->
     <def-var n="chunk_name"/><!-- taken from en-ca.t1x, for use in macro "set_verbkonj2" -->
+
+    <def-var n="determiner"/>     <!--- determiner kun tag'oj kaj ebla spaco -->
+
 
     <def-var n="DEBUG" v=""/>
 
@@ -582,6 +583,21 @@ sort -t '"' -k 3 x
                 </concat></let>
         </otherwise>
       </choose>
+    </def-macro>
+
+
+
+
+    <def-macro n="set_determiner2" npar="2">
+      <let><var n="determiner"/><concat>
+        <lit v="^"/>
+          <clip pos="1" side="tl" part="lem"/>
+          <clip pos="1" side="tl" part="a_det"/>
+          <clip pos="2" side="tl" part="a_nbr"/>
+          <lit-tag v="2"/>
+        <lit v="$"/>
+        <b pos="1"/>
+      </concat></let>
     </def-macro>
 
 
@@ -770,6 +786,30 @@ verbfinal = pensi<vblex><pres>
      
      Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
     <def-macro n="sendu_blankon_se_havas_formaton" npar="1">
+      <choose>
+        <when>
+          <test>
+            <not><equal><b pos="1"/><lit v=" "/></equal></not>
+          </test>
+          <out>
+            <b pos="1"/><!--
+            <chunk name="sendu_blankon_se_havas_formaton">
+              <tags><tag><lit-tag v="xx"/></tag></tags>
+              <lu>
+                <b pos="1"/>
+              </lu>
+            </chunk>-->
+          </out>
+        </when>
+      </choose>
+    </def-macro>
+
+
+
+<!-- Por 
+     
+     Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
+    <def-macro n="set_detvar" npar="2">
       <choose>
         <when>
           <test>
@@ -1016,7 +1056,6 @@ verbfinal = pensi<vblex><pres>
 
 
 
-
     <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>
         <pattern-item n="a"/>
@@ -1033,10 +1072,10 @@ verbfinal = pensi<vblex><pres>
           <let><var n="EOS"/><lit v="false"/></let>
       </action>
     </rule>
+<!--
+-->
 
-
-
-    <rule comment="REGLA: DET - alia ol 'a'">
+    <rule comment="REGLA: DET the, his, ... (alia ol 'a')">
       <pattern>
         <pattern-item n="det"/>
       </pattern>
@@ -1119,20 +1158,22 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+        <call-macro n="set_determiner2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
+                <var n="determiner"/>
+                <!--
                 <lu>
-                  <clip pos="1" side="tl" part="lemh"/>
+                  <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_nbr"/>
                   <lit-tag v="2"/>
-                  <clip pos="1" side="tl" part="lemq"/>
                 </lu>
                 <b pos="1"/>
+                -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="tags"/>
@@ -1402,7 +1443,6 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
-        <let><var n="numero"/><clip pos="3" side="tl" part="a_nbr"/></let>
         <choose>
           <when>
             <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
@@ -1420,7 +1460,7 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <var n="numero"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
                   <lit-tag v="2"/>
                 </lu>
                 <b pos="1"/>
@@ -2008,7 +2048,7 @@ verbfinal = pensi<vblex><pres>
         <pattern-item n="nom"/>
       </pattern>
       <action>
-         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
@@ -2035,7 +2075,6 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
                   <clip pos="1" side="tl" part="a_gen"/>
                   <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
                   <lit-tag v="nom"/>
