@@ -1718,6 +1718,8 @@ TODO??
 <e><p><l>nenomita<s n="adj"/></l><r>unnamed<s n="adj"/></r></p></e>          
 <e><p><l>kordoloro<s n="n"/></l><r>anguish<s n="n"/></r></p></e>            
 <e><p><l>afliktiĝo<s n="n"/></l><r>grief<s n="n"/></r></p></e>                
+<e><p><l>trudeniro<s n="n"/></l>                <r>raid<s n="n"/></r></p></e>
+<e><p><l>trudeniri<s n="vblex"/></l>            <r>raid<s n="vblex"/></r></p></e>
 
 <e>       <p><l>polico<s n="n"/></l>                   <r>police<s n="n"/></r></p></e>
 <e>       <p><l>kisto<s n="n"/></l>                    <r>cyst<s n="n"/></r></p></e>
@@ -11645,8 +11647,7 @@ TODO??
 <e>       <p><l>kolerego<s n="n"/></l>                 <r>rage<s n="n"/></r></p></e>
 <e r="LR"><p><l>incitegiĝo<s n="n"/></l>               <r>rage<s n="n"/></r></p></e>
 <e r="RL"><p><l>furioza<s n="adj"/></l>                <r>raging<s n="adj"/></r></p></e>
-<e>       <p><l>rastado<s n="n"/></l>                  <r>raid<s n="n"/></r></p></e>
-<e r="LR"><p><l>trudeniro<s n="n"/></l>                <r>raid<s n="n"/></r></p></e>
+<e r="LR">       <p><l>rastado<s n="n"/></l>                  <r>raid<s n="n"/></r></p></e>
 <e r="LR"><p><l>enretigo<s n="n"/></l>                 <r>raid<s n="n"/></r></p></e>
 <e r="LR"><p><l>enrompo<s n="n"/></l>                  <r>raid<s n="n"/></r></p></e>
 <e r="LR"><p><l>sturmo<s n="n"/></l>                   <r>raid<s n="n"/></r></p></e>
@@ -20686,7 +20687,6 @@ TODO??
 <e r="LR"><p><l>enradikighinta<s n="adj"/></l>         <r>habitual<s n="adj"/></r></p></e>
 <e r="LR"><p><l>rutiniĝinta<s n="adj"/></l>            <r>habitual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>haki<s n="vblex"/></l>                 <r>hack<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>trudeniri<s n="vblex"/></l>            <r>hack<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>trahaki<s n="vblex"/></l>              <r>hack<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kodumi<s n="vblex"/></l>               <r>hack<s n="vblex"/></r></p></e>
 <e>       <p><l>marĉandado<s n="n"/></l>               <r>haggling<s n="n"/></r></p></e>
@@ -30121,10 +30121,11 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e       ><p><l>ĉifona<s n="adj"/></l><r>ragged<s n="adj"/></r></p></e>            
 <e       ><p><l>ragtimmuziko<s n="n"/></l><r>ragtime<s n="n"/></r></p></e>         
 <e r="LR"><p><l>ragtimo<s n="n"/></l><r>ragtime<s n="n"/></r></p></e>              
+
+
 <e r="LR"><p><l>razii<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>           
 <e r="LR"><p><l>rabiradi<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>        
 <e r="LR"><p><l>marodi<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>          
-<e r="RL"><p><l>rasti<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>           
 <e r="LR"><p><l>rabiri<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>          
 <e r="LR"><p><l>raziadi<s n="vblex"/></l><r>raid<s n="vblex"/></r></p></e>         
 <e       ><p><l>ĉielarko<s n="n"/></l><r>rainbow<s n="n"/></r></p></e>             

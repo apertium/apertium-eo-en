@@ -79,6 +79,12 @@
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
       <cat-item tags="vblex.sep.inf"/>
+      <!--<cat-item tags="vbhaver.inf"/> -->
+      <cat-item tags="vbser.inf"/>
+    </def-cat>
+
+    <def-cat n="vbhaverinf">
+      <cat-item tags="vbhaver.inf"/>
     </def-cat>
 
 
@@ -681,72 +687,106 @@ sort -t '"' -k 3 x
 <!--konjugacias verbon konsistanta en helpverbo kaj nepersona formo (will come).
 pos 1= do, will, shall aŭ would.
 pos 2= nekonjugaciita verbo
+
 La rezulto estas unu sola leksika formo (venos):
 verbfinal = pensi<3><4><5>
+temps_chunk = past
  -->
-    <def-macro n="conj_verb_compost2" npar="2">
-      <let>
-        <var n="verbfinal"/>
-        <concat>
-          <clip pos="2" side="tl" part="lemh"/>
-          <clip pos="2" side="tl" part="a_vrb"/><lit-tag v="3.4.5"/>
-          <clip pos="2" side="tl" part="lemq"/>
-        </concat>
-      </let>
-      <choose>
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
-          </test>
-          <choose>
-            <when>
+<def-macro n="conj_verb_compost2" npar="2">
+<let>
+  <var n="verbfinal"/>
+  <concat>
+    <clip pos="2" side="tl" part="lemh"/>
+    <clip pos="2" side="tl" part="a_vrb"/><lit-tag v="3.4.5"/>
+    <clip pos="2" side="tl" part="lemq"/>
+  </concat>
+</let>
+<choose>
+
+  <when>
+    <test>
+      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="do"/></equal>
+    </test>
+    <choose>
+
+      <when>
         <test>
         <or>
           <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="pres"/></equal>
           <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="inf"/></equal>
         </or>
-      </test>
-      <let><var n="temps_chunk"/><lit-tag v="pres"/></let>
-          </when>
-          <when>
-      <test>
-          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
-      </test>
-      <let><var n="temps_chunk"/><lit-tag v="past"/></let>
-          </when>
-          <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
-        </choose>
+        </test>
+        <let><var n="temps_chunk"/><lit-tag v="pres"/></let>
       </when>
-      <otherwise>
-        <choose>		
+
+      <when>
+        <test>
+          <equal><clip pos="1" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
+        </test>
+        <let><var n="temps_chunk"/><lit-tag v="past"/></let>
+      </when>
+
+      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR1_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+
+    </choose>
+  </when>
+
+  <otherwise>
+    <choose>		
       <when>
         <test>
           <or>
-      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
           </or>
         </test>
         <let><var n="temps_chunk"/><lit-tag v="fti"/></let>
       </when>
+
       <when>
         <test>
           <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
         </test>
         <let><var n="temps_chunk"/><lit-tag v="cni"/></let>
       </when>
-            <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+
+      <otherwise><let><var n="temps_chunk"/><concat><lit-tag v="ERROR2_"/><clip pos="1" side="sl" part="a_tns"/></concat></let></otherwise>
+
     </choose>
-        </otherwise>
+  </otherwise>
+</choose>
+</def-macro>
+
+
+
+
+<!--Per mirar si el blanc conté o no format. Cal posar aquesta funció en les regles en què desaparegui alguna paraula, per tal de decidir si el blanc de la paraula eliminada s'ha d'eliminar o conservar. Si conté format cal conservar-la, si no en conté cal eliminar-la perquè no apareguin dos espais seguits. -->
+    <def-macro n="f_bcond" npar="1">
+      <choose>
+        <when>
+          <test>
+            <not>
+              <equal>
+                <b pos="1"/>
+                <lit v=" "/>
+              </equal>
+            </not>
+          </test>
+          <out>
+            <b pos="1"/>
+          </out>
+        </when>
       </choose>
     </def-macro>
-
 
 
 <!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
      Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
      ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
      Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
-     por ke ne aperu du sinsekvaj blankoj. -->
+     por ke ne aperu du sinsekvaj blankoj. 
+     
+     Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
     <def-macro n="sendu_blankon_se_havas_formaton" npar="1">
       <choose>
         <when>
@@ -754,17 +794,13 @@ verbfinal = pensi<3><4><5>
             <not><equal><b pos="1"/><lit v=" "/></equal></not>
           </test>
           <out>
-            <b pos="1"/>
-    <!--
-          <chunk name="sendu_blankon_se_havas_formaton">
-            <tags>
-                  <tag><lit-tag v="sendu_blankon_se_havas_formaton"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/><lit-tag v="1"/>
-            </lu>
-          </chunk>
-     XXXXXXX NE FUNKSCIAS -->
+            <b pos="1"/><!--
+            <chunk name="sendu_blankon_se_havas_formaton">
+              <tags><tag><lit-tag v="xx"/></tag></tags>
+              <lu>
+                <b pos="1"/>
+              </lu>
+            </chunk>-->
           </out>
         </when>
       </choose>
@@ -2568,8 +2604,7 @@ the ones who:the ones who<rel><nn><mf><pl>
          <chunk name="pls_verb1" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+	            <tag><var n="tipus_verb"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
@@ -2624,6 +2659,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 </rule>
 
 
+
 <rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ja ĉiam pensas)">    
   <pattern>
 	<pattern-item n="do"/> 
@@ -2634,7 +2670,6 @@ the ones who:the ones who<rel><nn><mf><pl>
 	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
 	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
 	<call-macro n="conj_verb_compost2"><with-param pos="1"/><with-param pos="3"/></call-macro>	
-
 
    <choose>
      <when>
@@ -2648,12 +2683,12 @@ the ones who:the ones who<rel><nn><mf><pl>
 	  </chunk>
 	   <b pos="1"/>
 	   </out>
+	   <let><var n="caseFirstWord"/><lit v="aa"/></let>
      </when>
      <otherwise>
     	<call-macro n="sendu_blankon_se_havas_formaton"><with-param pos="1"/></call-macro>
      </otherwise>
    </choose>
-
 
 	<out>
 	  <chunk name="adv2" case="caseFirstWord">
@@ -2678,6 +2713,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	</out>
   </action>
 </rule>
+
 
 
 
@@ -2710,10 +2746,38 @@ the ones who:the ones who<rel><nn><mf><pl>
     </rule>
 
 
+    <rule comment="REGLA: to have suffered  -  suferi">
+      <pattern>
+        <pattern-item n="to"/>
+        <pattern-item n="vbhaverinf"/>
+        <pattern-item n="vblex_vbser"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="verbInf2" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+      	      <tag><var n="tipus_verb"/></tag>
+              <tag><lit-tag v="inf"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
+
+
+    <!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$ ^applying/apply<vblex><ger>$  -->
     <rule comment="REGLA: be VBLEXger">
-      <pattern><!-- ^be/be<vbser><inf>$ ^being/be<vbser><ger>$  ^been/be<vbser><pp>$
-                    ^applying/apply<vblex><ger>$  -->
+      <pattern>
         <pattern-item n="vbser"/>
         <pattern-item n="vblexger"/>
       </pattern>
@@ -2756,7 +2820,6 @@ should:should<vaux><inf>
 may:may<vaux><inf>
 might:might<vaux><inf>
 -->
-
     <rule comment="REGLA: VAUX VBLEX">
       <pattern>
         <pattern-item n="vaux_vbhaver"/>
@@ -2876,7 +2939,6 @@ might:might<vaux><inf>
           <when>
             <test>
               <or>
-                <!-- will not wash  => ne lavos     -    would not wash => ne lavus -->
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
                 <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
               </or>
