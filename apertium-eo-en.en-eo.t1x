@@ -193,15 +193,19 @@
     </def-cat>
 
 
+    <def-cat n="det">
+            <cat-item tags="det.*"/>
+    </def-cat>
+
 
     <!--
-      <cat-item tags="det"/>
+      <cat-item tags="det_sen_a"/>
       <cat-item tags="det.*"/>
 lt-expand apertium-eo-en.en.dix |  grep '<det>' | cut -f2 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' > x
 lt-expand apertium-eo-en.en.dix |  grep '<det>' | grep ":>:" | cut -f3 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' >> x
 sort -t '"' -k 3 x
       -->
-    <def-cat n="det">
+    <def-cat n="det_sen_a">
 <!--
             <cat-item tags="det.*"/>
 -->            
@@ -287,6 +291,7 @@ sort -t '"' -k 3 x
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="n.acr"/>
+      <attr-item tags="n.acr.re"/>
       <attr-item tags="np"/>
       <attr-item tags="np.al"/>
       <attr-item tags="np.ant"/>
@@ -295,6 +300,7 @@ sort -t '"' -k 3 x
     </def-attr>
     <def-attr n="a_acr">
       <attr-item tags="acr"/>
+      <attr-item tags="acr.re"/>
       <attr-item tags="np.al"/>
       <attr-item tags="np.top"/>
     </def-attr>
@@ -529,6 +535,20 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
+
+    <!-- Sxangxas la numeron de vorto: Se la numero estas nekonata "sp" gxi estas sxangxata al singularo -->
+    <def-macro n="ordigu_numeron1" npar="1">
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+        </when>
+      </choose>
+    </def-macro>
+
+
 <!-- atribuas "numero"  al "pl" se estas pluralo, kaj al "sg" alikaze  (ND, sp aux nekonata vorto sen numero-etikedo)-->
     <def-macro n="set_numero1" npar="1">
       <let><var n="numero"/><lit-tag v="sg"/></let>
@@ -586,19 +606,6 @@ sort -t '"' -k 3 x
     </def-macro>
 
 
-
-
-    <def-macro n="set_determiner2" npar="2">
-      <let><var n="determiner"/><concat>
-        <lit v="^"/>
-          <clip pos="1" side="tl" part="lem"/>
-          <clip pos="1" side="tl" part="a_det"/>
-          <clip pos="2" side="tl" part="a_nbr"/>
-          <lit-tag v="2"/>
-        <lit v="$"/>
-        <b pos="1"/>
-      </concat></let>
-    </def-macro>
 
 
 
@@ -785,7 +792,7 @@ verbfinal = pensi<vblex><pres>
      por ke ne aperu du sinsekvaj blankoj. 
      
      Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
-    <def-macro n="sendu_blankon_se_havas_formaton" npar="1">
+    <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
       <choose>
         <when>
           <test>
@@ -806,27 +813,45 @@ verbfinal = pensi<vblex><pres>
 
 
 
-<!-- Por 
-     
-     Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
-    <def-macro n="set_detvar" npar="2">
+
+    <def-macro n="set_determiner3" npar="3">
       <choose>
         <when>
           <test>
-            <not><equal><b pos="1"/><lit v=" "/></equal></not>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
           </test>
-          <out>
-            <b pos="1"/><!--
-            <chunk name="sendu_blankon_se_havas_formaton">
-              <tags><tag><lit-tag v="xx"/></tag></tags>
-              <lu>
-                <b pos="1"/>
-              </lu>
-            </chunk>-->
-          </out>
+
+<!--
+        <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="lem"/><lit v="A"/></equal>
+          </test>
+          <let><var n="venontaVortoEstuMajuskla"/><lit v="true"/></let>
         </when>
+        </choose>
+          <let><var n="EOS"/><lit v="false"/></let>
+-->
+
+          <let><var n="determiner"/><concat>
+            <b pos="1"/>
+          </concat></let>
+        </when>
+
+        <otherwise>
+          <let><var n="determiner"/><concat>
+            <lit v="^"/>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_det"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="2"/>
+            <lit v="$"/>
+            <b pos="1"/>
+          </concat></let>
+        </otherwise>
       </choose>
     </def-macro>
+
 
 
   </section-def-macros>
@@ -1014,7 +1039,7 @@ verbfinal = pensi<vblex><pres>
                 </lu>
           </chunk>
           <b pos="2"/>
-          <chunk name="det">
+          <chunk name="det_sen_a">
             <tags>
               <tag><lit-tag v="SD"/></tag>
               <tag><lit-tag v="sp"/></tag>
@@ -1077,12 +1102,12 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: DET the, his, ... (alia ol 'a')">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="det_sen_a"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="det" case="caseFirstWord">
+              <chunk name="det_sen_a" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SD.nom"/></tag>
                 </tags>
@@ -1127,7 +1152,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
             <out>
-              <chunk name="det_nom2" case="caseFirstWord">
+              <chunk name="more_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
@@ -1158,22 +1183,13 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
-        <call-macro n="set_determiner2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
                 <var n="determiner"/>
-                <!--
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
-                </lu>
-                <b pos="1"/>
-                -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="tags"/>
@@ -1190,7 +1206,7 @@ verbfinal = pensi<vblex><pres>
 <!--
     <rule comment="REGLA: DET NOM NOM (malnova)  la testo-firmaoj">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="det_sen_a"/>
         <pattern-item n="nom"/>
         <pattern-item n="nom"/>
       </pattern>
@@ -1241,18 +1257,13 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
             <out>
-              <chunk name="det_nom_nom" case="caseFirstWord">
+              <chunk name="det_2nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="3" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
-                </lu>
-                <b pos="1"/>
+                <var n="determiner"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <lit-tag v="adj"/>
@@ -1285,18 +1296,13 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
             <out>
               <chunk name="det_3nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="4" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
-                </lu>
-                <b pos="1"/>
+                <var n="determiner"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <lit-tag v="adj"/>
@@ -1340,18 +1346,13 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="5"/></call-macro>
             <out>
               <chunk name="det_4nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="5" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
-                </lu>
-                <b pos="1"/>
+                <var n="determiner"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <lit-tag v="adj"/>
@@ -1442,7 +1443,10 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+        <call-macro n="ordigu_numeron1"><with-param pos="3"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+ 
         <choose>
           <when>
             <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
@@ -1457,13 +1461,7 @@ verbfinal = pensi<vblex><pres>
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="3" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
-                </lu>
-                <b pos="1"/>
+                <var n="determiner"/>
                 <lu>
                   <var n="adjectiu"/>
                 </lu>
@@ -1478,6 +1476,10 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
+<!--
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
+                <var n="determiner"/>
+-->
 
     <rule comment="REGLA: ADJ NOM">
       <pattern>
@@ -2042,7 +2044,7 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="det_sen_a"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="gen"/>
         <pattern-item n="nom"/>
@@ -2106,7 +2108,7 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="det_sen_a"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="gen"/>
@@ -2716,7 +2718,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	   <let><var n="caseFirstWord"/><lit v="aa"/></let>
      </when>
      <otherwise>
-    	<call-macro n="sendu_blankon_se_havas_formaton"><with-param pos="1"/></call-macro>
+    	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
      </otherwise>
    </choose>
 

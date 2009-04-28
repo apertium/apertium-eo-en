@@ -100,6 +100,7 @@ New ambiguity class: {THATPRN,DET}
     <tags-item tags="n.sg"/>
     <tags-item tags="n.acr.sg"/>
     <tags-item tags="n.acr.sp"/>
+    <tags-item tags="n.acr.re.sp"/>
     <tags-item tags="n.unc.sg"/>
   </def-label>
 

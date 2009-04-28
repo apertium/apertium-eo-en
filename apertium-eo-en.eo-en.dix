@@ -10,6 +10,7 @@
 <dictionary>
 	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚàáâäçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú</alphabet>
 	<sdefs>
+		<sdef n="re" /> 
 		<sdef n="alpha" /> 
 		<sdef n="tn" /> 
 		<sdef n="nt" /> 
@@ -246,10 +247,6 @@
 <e r="RL"><p><l>kapitulaci<s n="vblex"/></l>           <r>sell<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>forvendi<s n="vblex"/></l>             <r>sell<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>returne eliri<s n="vblex"/></l>        <r>get<g><b/>back<b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="sp"/></i></e>
 <e>       <i>Apple<s n="np"/><s n="al"/></i></e>
 <e>       <i>Macintosh<s n="np"/><s n="al"/></i></e>
 <e>       <p><l>Linukso<s n="np"/><s n="al"/></l>      <r>Linux<s n="np"/><s n="al"/></r></p></e>
@@ -260,6 +257,11 @@
 
 
 
+
+<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 
 
 

@@ -10,6 +10,7 @@
 <dictionary>
 	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÛÜÚàáâäãçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭ</alphabet>
 	<sdefs>
+		<sdef n="re" /> 
 		<sdef n="alpha" /> 
 		<sdef n="acc" /> 
 		<sdef n="nomiacc" /> 
@@ -159,13 +160,6 @@
 <pardef n="DNA__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/></r></p><par n="nomacc0"/></e>
-<!--
-<e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
--->
 </pardef>
 
 
@@ -178,32 +172,20 @@
 </pardef>
 
 
-<pardef n="acronimos">
-<!--  TODO FIX! -->
-<e>                           <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
-<e>                           <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
-<e>                           <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
-<e>                           <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="sp"/></r></p><par n="nomacc0"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l></l><r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
-<e r="RL">                    <re>[A-Z][A-Z]</re><p><l></l> <r><s n="n"/><s n="acr"/><s n="sp"/></r></p><par n="nomacc0"/></e>
-
-
+<pardef n="acronimos_regex_par">
+  <e>       <p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></r></p></e>
 <!-- UAB Hospital ^UAB<n><acr><sp>$ ^Hospital<n><sg>$ UABa Hospitalo -->
-<e r="RL">                    <re>[A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
-<e r="RL">                    <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><p><l>a</l><r><s n="adj"/><s n="acr"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
-
+  <e r="RL"><p><l>a</l>         <r><s n="adj"/><s n="acr"/><s n="re"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+  <e r="RL"><p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/></r></p><par n="sgpl0"/><par n="nomacc0"/></e>
 </pardef>
+
+<pardef n="acronimos">
+  <e>       <re>[A-Z][A-Z]</re><par n="acronimos_regex_par"/></e>
+  <e>       <re>[A-Z][A-Z][A-Z]</re><par n="acronimos_regex_par"/></e>
+  <e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><par n="acronimos_regex_par"/></e>
+  <e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><par n="acronimos_regex_par"/></e>
+</pardef>
+
 
 
 
