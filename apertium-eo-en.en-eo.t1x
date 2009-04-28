@@ -536,7 +536,7 @@ sort -t '"' -k 3 x
 
 
 
-    <!-- Sxangxas la numeron de vorto: Se la numero estas nekonata "sp" gxi estas sxangxata al singularo -->
+    <!-- Sxangxas la numeron de vorto: Se la numero estas nekonata "sp" gxi estas sxangxata al singularo 
     <def-macro n="ordigu_numeron1" npar="1">
       <choose>
         <when>
@@ -547,9 +547,9 @@ sort -t '"' -k 3 x
         </when>
       </choose>
     </def-macro>
+-->
 
-
-<!-- atribuas "numero"  al "pl" se estas pluralo, kaj al "sg" alikaze  (ND, sp aux nekonata vorto sen numero-etikedo)-->
+    <!-- atribuas "numero"  al "pl" se estas pluralo, kaj al "sg" alikaze  (ND, sp aux nekonata vorto sen numero-etikedo)-->
     <def-macro n="set_numero1" npar="1">
       <let><var n="numero"/><lit-tag v="sg"/></let>
       <choose>
@@ -845,6 +845,35 @@ verbfinal = pensi<vblex><pres>
               <clip pos="1" side="tl" part="a_det"/>
               <clip pos="3" side="tl" part="a_nbr"/>
               <lit-tag v="2"/>
+            <lit v="$"/>
+            <b pos="1"/>
+          </concat></let>
+        </otherwise>
+      </choose>
+    </def-macro>
+
+
+
+    <def-macro n="set_determiner_de_genitivo3" npar="3">
+      <call-macro n="set_numero1"><with-param pos="3"/></call-macro>
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+          </test>
+
+          <let><var n="determiner"/><concat>
+            <b pos="1"/>
+          </concat></let>
+        </when>
+
+        <otherwise>
+              <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+          <let><var n="determiner"/><concat>
+            <lit v="^"/>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_det"/>
+              <var n="numero"/><lit-tag v="nom"/>
             <lit v="$"/>
             <b pos="1"/>
           </concat></let>
@@ -1443,7 +1472,6 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-<!--        <call-macro n="ordigu_numeron1"><with-param pos="3"/></call-macro>-->
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
  
@@ -1476,10 +1504,6 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
-<!--
-        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
-                <var n="determiner"/>
--->
 
     <rule comment="REGLA: ADJ NOM">
       <pattern>
@@ -2051,10 +2075,10 @@ verbfinal = pensi<vblex><pres>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <call-macro n="set_determiner_de_genitivo3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
             <out>
               <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
@@ -2074,14 +2098,18 @@ verbfinal = pensi<vblex><pres>
                     <clip pos="3" side="tl" part="whole"/>          <!-- de -->
                   </lu>
                 <b pos="2"/>
+                <var n="determiner"/>  <!-- lia -->
+                <!--
                 <lu>
-                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
+                  <clip pos="1" side="tl" part="lem"/>              
                   <clip pos="1" side="tl" part="a_det"/>
                   <clip pos="1" side="tl" part="a_gen"/>
-                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
+                  <var n="numero"/> 
                   <lit-tag v="nom"/>
                 </lu>
                 <b pos="1"/>
+                -->
+                <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
                   <clip pos="2 " side="tl" part="tags"/><var n="nomvar"/>
