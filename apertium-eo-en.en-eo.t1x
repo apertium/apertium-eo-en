@@ -194,44 +194,9 @@
 
 
     <def-cat n="det">
-            <cat-item tags="det.*"/>
-    </def-cat>
-
-
-    <!--
-      <cat-item tags="det_sen_a"/>
       <cat-item tags="det.*"/>
-lt-expand apertium-eo-en.en.dix |  grep '<det>' | cut -f2 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' > x
-lt-expand apertium-eo-en.en.dix |  grep '<det>' | grep ":>:" | cut -f3 -d: | sort -u | sed 's/<sp>/.*/g' | sed 's/></./g'  | sed 's/</" tags="/g' | sed 's/^/    <cat-item lemma="/g' | sed 's/pl>/*/g' | sed 's/sg>/*/g' | sed 's/>//g' | sort -u | sed 's/$/"\/>/g' >> x
-sort -t '"' -k 3 x
-      -->
-    <def-cat n="det_sen_a">
-<!--
-            <cat-item tags="det.*"/>
--->            
-        <!--    <cat-item lemma="a" tags="det.ind.*"/>   DONT transfer this -->
-            <cat-item tags="det.def.*"/>
-            <cat-item tags="det.dem.*"/>
-            <cat-item tags="det.ord.*"/>
-            <cat-item tags="det.pos.*"/>
-            <cat-item tags="det.qnt.*"/>
-            <cat-item tags="det.itg.*"/>
-
-            <cat-item lemma="several" tags="det.ind.*"/>
-            <cat-item lemma="various" tags="det.ind.*"/>
-
-            <cat-item lemma="another" tags="det.ind.*"/>
-            <cat-item lemma="any" tags="det.ind.*"/>
-            <cat-item lemma="both" tags="det.ind.*"/>
-            <cat-item lemma="each" tags="det.ind.*"/>
-            <cat-item lemma="either" tags="det.ind.*"/>
-            <cat-item lemma="every" tags="det.ind.*"/>
-            <cat-item lemma="no" tags="det.ind.*"/>
-            <cat-item lemma="other" tags="det.ind.*"/>
-            <cat-item lemma="such" tags="det.ind.*"/>
-            <cat-item lemma="the same" tags="det.ind.*"/>
-            <cat-item lemma="whatever" tags="det.ind.*"/>
     </def-cat>
+
 
 
     <def-cat n="num">
@@ -558,14 +523,16 @@ sort -t '"' -k 3 x
 
     <!-- atribuas "numero"  al "pl" se estas pluralo, kaj al "sg" alikaze  (ND, sp aux nekonata vorto sen numero-etikedo)-->
     <def-macro n="set_numero1" npar="1">
-      <let><var n="numero"/><lit-tag v="sg"/></let>
       <choose>
         <when>
           <test>
-            <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+            <equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
           </test>
           <let><var n="numero"/><lit-tag v="pl"/></let>
         </when>
+        <otherwise>
+          <let><var n="numero"/><lit-tag v="sg"/></let>
+        </otherwise>
       </choose>
     </def-macro>
 
@@ -624,6 +591,12 @@ sort -t '"' -k 3 x
           </test>
           <let><var n="tipus_verb"/><lit-tag v="netransitiva"/></let>
         </when>
+        <when>
+          <test>
+            <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
+        </when>
         <!--
         <when>
           <test>
@@ -651,12 +624,6 @@ sort -t '"' -k 3 x
             </or>
           </test>
           <let><var n="tipus_verb"/><lit-tag v="sorry"/></let>
-        </when>
-        <when>
-          <test>
-            <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="reportingverb"/></in>
-          </test>
-          <let><var n="tipus_verb"/><lit-tag v="reporting"/></let>
         </when>
         -->
         <otherwise>
@@ -821,12 +788,6 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <def-macro n="set_determiner3" npar="3">
-      <choose>
-        <when>
-          <test>
-            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
-          </test>
 
 <!--
         <choose>
@@ -840,11 +801,23 @@ verbfinal = pensi<vblex><pres>
           <let><var n="EOS"/><lit v="false"/></let>
 -->
 
-          <let><var n="determiner"/><concat>
-            <b pos="1"/>
-          </concat></let>
-        </when>
+    <def-macro n="set_determiner3" npar="3">
+      <choose>
+        <when>
+          <test>
+            <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
+          </test>
 
+          <choose>
+            <when><test><equal><b pos="1"/><lit v=" "/></equal></test>
+              <let><var n="determiner"/><lit v=""/></let>
+            </when>
+            <otherwise>
+              <let><var n="determiner"/><concat><b pos="1"/></concat></let>
+            </otherwise>
+          </choose>
+        </when>
+        
         <otherwise>
           <let><var n="determiner"/><concat>
             <lit v="^"/>
@@ -869,9 +842,14 @@ verbfinal = pensi<vblex><pres>
             <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
           </test>
 
-          <let><var n="determiner"/><concat>
-            <b pos="1"/>
-          </concat></let>
+          <choose>
+            <when><test><equal><b pos="1"/><lit v=" "/></equal></test>
+              <let><var n="determiner"/><lit v=""/></let>
+            </when>
+            <otherwise>
+              <let><var n="determiner"/><concat><b pos="1"/></concat></let>
+            </otherwise>
+          </choose>
         </when>
 
         <otherwise>
@@ -1075,7 +1053,7 @@ verbfinal = pensi<vblex><pres>
                 </lu>
           </chunk>
           <b pos="2"/>
-          <chunk name="det_sen_a">
+          <chunk name="det5">
             <tags>
               <tag><lit-tag v="SD"/></tag>
               <tag><lit-tag v="sp"/></tag>
@@ -1116,7 +1094,8 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
-
+<!--
+-->
     <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>
         <pattern-item n="a"/>
@@ -1133,17 +1112,15 @@ verbfinal = pensi<vblex><pres>
           <let><var n="EOS"/><lit v="false"/></let>
       </action>
     </rule>
-<!--
--->
 
     <rule comment="REGLA: DET the, his, ... (alia ol 'a')">
       <pattern>
-        <pattern-item n="det_sen_a"/>
+        <pattern-item n="det"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="det_sen_a" case="caseFirstWord">
+              <chunk name="det" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SD.nom"/></tag>
                 </tags>
@@ -1242,7 +1219,7 @@ verbfinal = pensi<vblex><pres>
 <!--
     <rule comment="REGLA: DET NOM NOM (malnova)  la testo-firmaoj">
       <pattern>
-        <pattern-item n="det_sen_a"/>
+        <pattern-item n="det"/>
         <pattern-item n="nom"/>
         <pattern-item n="nom"/>
       </pattern>
@@ -1481,33 +1458,24 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
- 
-        <choose>
-          <when>
-            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
-            <let><var n="chunk_name"/><lit v="det_adj_nom"/></let>
-          </when>
-          <otherwise>
-            <let><var n="chunk_name"/><lit v="det_preadv_adj_nom"/></let>
-          </otherwise>
-        </choose>
-            <out>
-              <chunk namefrom="chunk_name" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <var n="determiner"/>
-                <lu>
-                  <var n="adjectiu"/>
-                </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
-                </lu>
-              </chunk>
-            </out>
+
+        <out>
+        <chunk name="det_preadv?_adj_nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <var n="determiner"/>
+            <lu>
+              <var n="adjectiu"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="tags"/>
+              <lit-tag v="2"/>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
 
@@ -1522,18 +1490,8 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
 
-        <choose>
-          <when>
-            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
-            <let><var n="chunk_name"/><lit v="adj_nom"/></let>
-          </when>
-          <otherwise>
-            <let><var n="chunk_name"/><lit v="preadv_adj_nom"/></let>
-          </otherwise>
-        </choose>
-
-            <out>
-              <chunk namefrom="chunk_name" case="caseFirstWord">
+        <out>
+          <chunk name="preadv?_adj_nom" case="caseFirstWord">
             <tags>
                 <tag><lit-tag v="SN.nom"/></tag>
             </tags>
@@ -1568,28 +1526,8 @@ verbfinal = pensi<vblex><pres>
         <let><var n="tmp2"/><var n="adjectiu"/></let>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
 
-        <choose>
-          <when>
-            <test><and>
-                    <equal><var n="tmp1"/><lit v=""/></equal>
-                    <equal><var n="preadv_added"/><lit v=""/></equal>
-            </and></test>
-            <let><var n="chunk_name"/><lit v="adj_adj_nom"/></let>
-          </when>
-          <when>
-            <test><or>
-                    <equal><var n="tmp1"/><lit v=""/></equal>
-                    <equal><var n="preadv_added"/><lit v=""/></equal>
-            </or></test>
-            <let><var n="chunk_name"/><lit v="preadv_adj_adj_nom"/></let>
-          </when>
-          <otherwise>
-            <let><var n="chunk_name"/><lit v="preadv_adj_preadv_adj_nom"/></let>
-          </otherwise>
-        </choose>
-
         <out>
-          <chunk namefrom="chunk_name" case="caseFirstWord">
+          <chunk name="preadv?_adj_adj_nom" case="caseFirstWord">
             <tags>
                 <tag><lit-tag v="SN.nom"/></tag>
             </tags>
@@ -1612,6 +1550,45 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
+
+    <rule comment="REGLA: DET ADJ ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom_prnaltres"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="4"/></call-macro>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>        
+        <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
+ 
+          <out>
+          <chunk name="det_preadv?_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN.nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp2"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <clip pos="4" side="tl" part="lem"/>
+                <clip pos="4" side="tl" part="tags"/>
+                <lit-tag v="2"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
 
 
 
