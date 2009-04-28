@@ -125,6 +125,9 @@
 </pardef>
 
 
+<pardef n="sgplnomacc"><e><par n="sgpl"/><par n="nomacc"/></e></pardef>
+
+
 <pardef n="sgpl0">
 <e>                           <p><l></l>                    <r><s n="sg"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="pl"/></r></p></e>
@@ -137,23 +140,13 @@
 </pardef>
 
 
+<pardef n="sgplnomacc0"><e><par n="sgpl0"/><par n="nomacc0"/></e></pardef>
+
 
 
 <pardef n="proper_names">
 <e><re>(St|s\-ro|s\-ino|f\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr|Don).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
        <p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc0"/></e>
-
-                           <!--	<re>(s\-ro|s\-ino|d\-ro|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re> -->
-
-          <!-- damn, doesent work :-( ????
-      <e>
-	<p><l>f\-inon<b/></l><r>f\-ino<b/></r></p><re>([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re>
-        <p>
-          <l/>
-         <r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/><s n="acc"/></r>
-        </p>
-      </e>
-      -->
 </pardef>
 
 
@@ -806,6 +799,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="al__pr"/></e>
 <e lm="ĉe">                   <par n="ĉ"/><i>e</i><par n="al__pr"/></e>
 <e lm="ĉirkaŭ">               <par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
+
 <e lm="ĉio">                  <par n="ĉ"/><i>io</i><par n="ĉiu__prn"/></e>
 <e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ĉiu__prn"/></e>
 <e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
@@ -816,16 +810,11 @@ Necesas difini paradigmon por adj-nomo terminoj
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="tio__prn"/></r></p></e>
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="dem__det"/></r></p></e>
 -->
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiun</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiuj</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiujn</l><r>i<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
+<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <!-- tio ŝajnas erara
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tioj</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tiojn</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
@@ -836,6 +825,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL" lm="tio">           <p><l>tion</l>                <r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e r="RL" lm="tio ĉi">        <p><l>tiujn<b/>ĉi</l>         <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 <e r="RL" lm="tio">           <p><l>tiujn</l>               <r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+
 <e lm="tio ĉi">               <p><l>tio<b/>ĉi</l>           <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="tio ĉi">               <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <!-- tio ŝajnas erara
@@ -944,21 +934,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
 
 
+<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="rel"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="itg"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
+<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="det"/><s n="itg"/></r></p><par n="sgpl"/><par n="nomacc"/></e>
 
-
-	<!-- XXX couldnt a pardef for just <s n="sg"/><s n="nom"/> etc be made which could be used here below and in all other pardefs? -->
-<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiun</l>                <r>kiu<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kiu">                  <p><l>kiuj</l>                <r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiujn</l>               <r>kiu<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiun</l>                <r>kiu<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kiu">                  <p><l>kiuj</l>                <r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiujn</l>               <r>kiu<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiun</l>                <r>kiu<s n="det"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kiu">                  <p><l>kiuj</l>                <r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kiu">                  <p><l>kiujn</l>               <r>kiu<s n="det"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="koncerne al">          <i>koncerne<b/>al</i><par n="al__pr"/></e>
 <e lm="kondiĉe ke">           <i>kondi</i><par n="ĉ"/><i>e<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="konfome al">           <i>konfome<b/>al</i><par n="al__pr"/></e>

@@ -1443,7 +1443,7 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-        <call-macro n="ordigu_numeron1"><with-param pos="3"/></call-macro>
+<!--        <call-macro n="ordigu_numeron1"><with-param pos="3"/></call-macro>-->
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
  
