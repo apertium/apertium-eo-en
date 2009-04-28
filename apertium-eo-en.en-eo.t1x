@@ -278,6 +278,13 @@ sort -t '"' -k 3 x
 <!-- eble simple:      <cat-item tags="np.*"/>    ??  -->
     </def-cat>
 
+
+
+
+
+
+
+
     <def-cat n="unknown"><cat-item tags=""/></def-cat>
   </section-def-cats>
 
@@ -2068,7 +2075,7 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
       <pattern>
-        <pattern-item n="det_sen_a"/>
+        <pattern-item n="det"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="gen"/>
         <pattern-item n="nom"/>
@@ -2099,17 +2106,6 @@ verbfinal = pensi<vblex><pres>
                   </lu>
                 <b pos="2"/>
                 <var n="determiner"/>  <!-- lia -->
-                <!--
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>              
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_gen"/>
-                  <var n="numero"/> 
-                  <lit-tag v="nom"/>
-                </lu>
-                <b pos="1"/>
-                -->
-                <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
                   <clip pos="2 " side="tl" part="tags"/><var n="nomvar"/>
@@ -2136,7 +2132,7 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
       <pattern>
-        <pattern-item n="det_sen_a"/>
+        <pattern-item n="det"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="gen"/>
@@ -2144,14 +2140,13 @@ verbfinal = pensi<vblex><pres>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <let><var n="tmp1"/><var n="nomvar"/></let>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
-        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+        <call-macro n="set_determiner_de_genitivo3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
                 <tags>
@@ -2169,16 +2164,8 @@ verbfinal = pensi<vblex><pres>
                   <lu>
                     <clip pos="4" side="tl" part="whole"/>        <!-- de -->
                   </lu>
-                <b pos="1"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>              <!-- lia -->
-                  <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="a_gen"/>
-                  <var n="numero"/> <!-- <clip pos="2" side="tl" part="a_nbr"/> funkcius, sed ne je nekonataj vortoj -->
-                  <lit-tag v="nom"/>
-                </lu>
                 <b pos="4"/>
+                <var n="determiner"/>                             <!-- lia -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
                   <clip pos="2" side="tl" part="tags"/><var n="tmp1"/>
