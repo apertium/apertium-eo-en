@@ -773,16 +773,13 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 
 
-<!--
 <pardef n="litero">
+<!--
+  <e>       <p><l></l>          <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e> 
+  -->
   <e>       <p><l></l>          <r><s n="num"/><s n="sg"/></r></p></e>
 </pardef>
-  -->
 
-
-<pardef n="litero">
-  <e>       <p><l></l>          <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e> 
-</pardef>
 
 	<!--        Numbers    par defs -->
 
@@ -27874,6 +27871,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="whether">         <i>whether</i><par n="after__cnjadv"/></e>
 <e lm="while">           <i>while</i><par n="after__cnjadv"/></e>
 <e lm="yet">             <i>yet</i><par n="after__cnjadv"/></e>
+
+
+<e lm="i.e.">              <i>i.e.</i><par n="after__cnjadv"/></e>
+<e lm="e.g.">              <i>e.g.</i><par n="after__cnjadv"/></e>
+
 
 		<!-- ******************************
 			    group cnjcoo

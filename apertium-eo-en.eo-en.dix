@@ -150,7 +150,7 @@
 
 <pardef n="litero">
   <e>       <i><s n="num"/><s n="sg"/></i></e>
-  <e>       <i><s n="np"/><s n="alpha"/></i></e>
+<!--  <e>       <i><s n="np"/><s n="alpha"/></i></e> -->
 </pardef>
 
 
@@ -311,6 +311,10 @@
 
 
 <e>       <p><l>ekzemple<s n="cnjadv"/></l>                <r>for<b/>instance<s n="cnjadv"/></r></p></e>
+
+
+<e>       <p><l>t.e.<s n="cnjadv"/></l>                <r>i.e.<s n="cnjadv"/></r></p></e>
+<e>       <p><l>ekz.<s n="cnjadv"/></l>                <r>e.g.<s n="cnjadv"/></r></p></e>
 
 <!-- Aldonoj Jacob 2009/02/12 -->
 

@@ -598,9 +598,14 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="litero">
+<!--
 <e>                           <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e>
 <e r="RL">                    <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p><par n="nomacc0"/></e>
+-->
+  <e>       <p><l></l>          <r><s n="num"/><s n="sg"/></r></p></e>
 </pardef>
+
+
 
 
 <pardef n="unu__num">
@@ -784,6 +789,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="do">                   <i>do</i><par n="after__cnjadv"/></e>
 <e lm="ekzemple">                   <i>ekzemple</i><par n="after__cnjadv"/></e>
 <e lm="sed tamen">            <i>sed<b/>tamen</i><par n="after__cnjadv"/></e>
+
+
+
+<e lm="t.e.">              <i>t.e.</i><par n="after__cnjadv"/></e>
+<e lm="ekz.">              <i>ekz.</i><par n="after__cnjadv"/></e>
+
+
 <e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="al__pr"/></e>
 <e lm="apud">                 <i>apud</i><par n="al__pr"/></e>
 <e lm="proksime al">                 <i>proksime<b/>al</i><par n="al__pr"/></e>
