@@ -597,7 +597,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 
-<pardef n="a__np">
+<pardef n="litero">
 <e>                           <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e>
 <e r="RL">                    <p><l></l>      <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 </pardef>
@@ -7163,32 +7163,32 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="y"><i>y</i><par n="nom__n"/></e>
 <e lm="z"><i>z</i><par n="nom__n"/></e>
 -->
-<e lm="a">                    <i>a</i><par n="a__np"/></e>
-<e lm="b">                    <i>b</i><par n="a__np"/></e>
-<e lm="c">                    <i>c</i><par n="a__np"/></e>
-<e lm="d">                    <i>d</i><par n="a__np"/></e>
-<e lm="e">                    <i>e</i><par n="a__np"/></e>
-<e lm="f">                    <i>f</i><par n="a__np"/></e>
-<e lm="g">                    <i>g</i><par n="a__np"/></e>
-<e lm="h">                    <i>h</i><par n="a__np"/></e>
-<e lm="i">                    <i>i</i><par n="a__np"/></e>
-<e lm="j">                    <i>j</i><par n="a__np"/></e>
-<e lm="k">                    <i>k</i><par n="a__np"/></e>
-<e lm="l">                    <i>l</i><par n="a__np"/></e>
-<e lm="m">                    <i>m</i><par n="a__np"/></e>
-<e lm="n">                    <i>n</i><par n="a__np"/></e>
-<e lm="o">                    <i>o</i><par n="a__np"/></e>
-<e lm="p">                    <i>p</i><par n="a__np"/></e>
-<e lm="q">                    <i>q</i><par n="a__np"/></e>
-<e lm="r">                    <i>r</i><par n="a__np"/></e>
-<e lm="s">                    <i>s</i><par n="a__np"/></e>
-<e lm="t">                    <i>t</i><par n="a__np"/></e>
-<e lm="u">                    <i>u</i><par n="a__np"/></e>
-<e lm="v">                    <i>v</i><par n="a__np"/></e>
-<e lm="w">                    <i>w</i><par n="a__np"/></e>
-<e lm="x">                    <i>x</i><par n="a__np"/></e>
-<e lm="y">                    <i>y</i><par n="a__np"/></e>
-<e lm="z">                    <i>z</i><par n="a__np"/></e>
+<e lm="a">                    <i>a</i><par n="litero"/></e>
+<e lm="b">                    <i>b</i><par n="litero"/></e>
+<e lm="c">                    <i>c</i><par n="litero"/></e>
+<e lm="d">                    <i>d</i><par n="litero"/></e>
+<e lm="e">                    <i>e</i><par n="litero"/></e>
+<e lm="f">                    <i>f</i><par n="litero"/></e>
+<e lm="g">                    <i>g</i><par n="litero"/></e>
+<e lm="h">                    <i>h</i><par n="litero"/></e>
+<e lm="i">                    <i>i</i><par n="litero"/></e>
+<e lm="j">                    <i>j</i><par n="litero"/></e>
+<e lm="k">                    <i>k</i><par n="litero"/></e>
+<e lm="l">                    <i>l</i><par n="litero"/></e>
+<e lm="m">                    <i>m</i><par n="litero"/></e>
+<e lm="n">                    <i>n</i><par n="litero"/></e>
+<e lm="o">                    <i>o</i><par n="litero"/></e>
+<e lm="p">                    <i>p</i><par n="litero"/></e>
+<e lm="q">                    <i>q</i><par n="litero"/></e>
+<e lm="r">                    <i>r</i><par n="litero"/></e>
+<e lm="s">                    <i>s</i><par n="litero"/></e>
+<e lm="t">                    <i>t</i><par n="litero"/></e>
+<e lm="u">                    <i>u</i><par n="litero"/></e>
+<e lm="v">                    <i>v</i><par n="litero"/></e>
+<e lm="w">                    <i>w</i><par n="litero"/></e>
+<e lm="x">                    <i>x</i><par n="litero"/></e>
+<e lm="y">                    <i>y</i><par n="litero"/></e>
+<e lm="z">                    <i>z</i><par n="litero"/></e>
 
     <!-- Cognomen -->
 <e lm="Smith">                <i>Smith</i><par n="Smith__np"/></e>
