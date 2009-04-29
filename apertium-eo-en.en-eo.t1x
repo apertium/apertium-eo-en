@@ -73,8 +73,14 @@
     </def-cat>
 
 
+<!--
     <def-cat n="ant"><cat-item tags="np.ant.*"/></def-cat>
     <def-cat n="cog"><cat-item tags="np.cog.*"/></def-cat>
+-->
+    <def-cat n="ant_cog">
+      <cat-item tags="np.ant.*"/>
+      <cat-item tags="np.cog.*"/>
+    </def-cat>
 
     <def-cat n="vblexinf">
       <cat-item tags="vblex.inf"/>
@@ -1792,7 +1798,7 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="REGLA: ANT">
       <pattern>
-        <pattern-item n="ant"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1810,32 +1816,10 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
-
-    <rule comment="REGLA: COG">
+    <rule comment="REGLA: ANT ANT">
       <pattern>
-        <pattern-item n="cog"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="cog" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: ANT COG">
-      <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1844,81 +1828,44 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
     </rule>
 
-
-    <rule comment="REGLA: ANT ANT">
+    <rule comment="REGLA: ANT ANT ANT">
       <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="ant"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="ant_ant" case="caseFirstWord">
+          <chunk name="ant_cog" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <b pos="2"/>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
     </rule>
 
 
-    <rule comment="REGLA: COG COG">
+    <rule comment="REGLA: ANT ANT ANT ANT">
       <pattern>
-        <pattern-item n="cog"/>
-        <pattern-item n="cog"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="cog_cog" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
-            </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: ANT ANT COG COG">
-      <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1927,100 +1874,25 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
-            <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
-            <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <b pos="2"/>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="3"/>
-            <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
     </rule>
 
 
-    <rule comment="REGLA: ANT COG COG">
+    <rule comment="REGLA: ANT - ANT ANT">
       <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
-        <pattern-item n="cog"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="ant_cog_cog" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
-            </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
-            <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: ANT ANT COG">
-      <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="ant_ant_cog" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
-            </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
-            <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: ANT GUIO ANT COG">
-      <pattern>
-        <pattern-item n="ant"/>
+        <pattern-item n="ant_cog"/>
         <pattern-item n="guio"/>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -2029,36 +1901,25 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>   <!--   - guio    -->
-            </lu>
+            <lu><clip pos="2" side="tl" part="whole"/></lu>
             <b pos="2"/>
-            <lu>
-                  <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="3"/>
-            <lu>
-                  <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
     </rule>
 
 
-    <rule comment="REGLA: ANT COG GUIO COG">
+    <rule comment="REGLA: ANT ANT - ANT">
       <pattern>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
         <pattern-item n="guio"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -2067,38 +1928,27 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
-            </lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
-            <lu>
-                  <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
+            <lu><clip pos="3" side="tl" part="whole"/></lu>
             <b pos="3"/>
-            <lu>
-                  <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="nom"/>
-            </lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
     </rule>
 
 
-    <rule comment="REGLA: ANT GUIO ANT COG GUIO COG">
+    <rule comment="REGLA: ANT - ANT ANT - ANT">
       <pattern>
-        <pattern-item n="ant"/>
+        <pattern-item n="ant_cog"/>
         <pattern-item n="guio"/>
-        <pattern-item n="ant"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
+        <pattern-item n="ant_cog"/>
         <pattern-item n="guio"/>
-        <pattern-item n="cog"/>
+        <pattern-item n="ant_cog"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -2107,17 +1957,17 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="whole"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="1"/>
             <lu><clip pos="2" side="tl" part="whole"/></lu>
             <b pos="2"/>
-            <lu><clip pos="3" side="tl" part="whole"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="3"/>
-            <lu><clip pos="4" side="tl" part="whole"/></lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
             <b pos="4"/>
             <lu><clip pos="5" side="tl" part="whole"/></lu>
             <b pos="5"/>
-            <lu><clip pos="5" side="tl" part="whole"/></lu>
+            <lu><clip pos="6" side="tl" part="lem"/><clip pos="6" side="tl" part="tags"/><lit-tag v="2"/></lu>
           </chunk>
         </out>
       </action>
