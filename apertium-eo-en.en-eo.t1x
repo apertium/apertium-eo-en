@@ -1003,10 +1003,9 @@ verbfinal = pensi<vblex><pres>
             <tags>
               <tag><lit-tag v="PREP"/></tag>
             </tags>
-                <lu>
-                  <lit v="el"/>
-                  <lit-tag v="pr"/>
-                </lu>
+            <lu>
+              <lit v="el"/><lit-tag v="pr"/>
+            </lu>
           </chunk>
         </out>
       </action>
@@ -1225,8 +1224,7 @@ verbfinal = pensi<vblex><pres>
                 <var n="determiner"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1302,14 +1300,12 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="3" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1341,8 +1337,7 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="4" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1350,14 +1345,12 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="4" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1391,8 +1384,7 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1400,8 +1392,7 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
@@ -1409,14 +1400,12 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="4" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="4" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <b pos="4"/>
                 <lu>
                   <clip pos="5" side="tl" part="lem"/>
-                  <clip pos="5" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
               </chunk>
             </out>
@@ -1479,8 +1468,7 @@ verbfinal = pensi<vblex><pres>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="tags"/>
-              <lit-tag v="2"/>
+              <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1541,8 +1529,7 @@ verbfinal = pensi<vblex><pres>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="tags"/>
-              <lit-tag v="2"/>
+              <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1581,8 +1568,7 @@ verbfinal = pensi<vblex><pres>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="tags"/>
-              <lit-tag v="2"/>
+              <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
             </lu>
           </chunk>
         </out>
@@ -1659,8 +1645,7 @@ verbfinal = pensi<vblex><pres>
               <b pos="3"/>
               <lu>
                 <clip pos="4" side="tl" part="lem"/>
-                <clip pos="4" side="tl" part="tags"/>
-                <lit-tag v="2"/>
+                <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
               </lu>
             </chunk>
           </out>
@@ -1705,8 +1690,7 @@ verbfinal = pensi<vblex><pres>
               <b pos="4"/>
               <lu>
                 <clip pos="5" side="tl" part="lem"/>
-                <clip pos="5" side="tl" part="tags"/>
-                <lit-tag v="2"/>
+                <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
               </lu>
             </chunk>
           </out>
@@ -1777,8 +1761,7 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="1" side="tl" part="a_acr"/>
                   <clip pos="1" side="tl" part="a_gen"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
-                  <lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
             <b pos="1"/>
                 <lu>
@@ -1816,6 +1799,7 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
+
     <rule comment="REGLA: ANT ANT">
       <pattern>
         <pattern-item n="ant_cog"/>
@@ -1835,6 +1819,7 @@ verbfinal = pensi<vblex><pres>
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: ANT ANT ANT">
       <pattern>
@@ -1977,8 +1962,6 @@ verbfinal = pensi<vblex><pres>
 
 
 
-
-
     <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
       <pattern>
         <pattern-item n="genitive_possessors"/>
@@ -2000,6 +1983,7 @@ verbfinal = pensi<vblex><pres>
                   <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
                 <b/>
+                <b pos="1"/>
                   <lu>
                     <clip pos="2" side="tl" part="whole"/> <!-- de -->
                   </lu>
