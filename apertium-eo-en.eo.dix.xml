@@ -955,8 +955,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="unu">                  <i>unu</i><par n="unu__det"/></e>
 
     <!-- the English determiner 'a' just disappears in Esperanto -->
-<e r="RL" lm="det__a">        <p><l></l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL" lm="det__a">        <p><l></l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="RL" lm="det__a">        <p><l>a</l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL" lm="det__a">        <p><l>a</l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
 
     <!-- aliaj tre specialaj reguloj -->
 <e r="RL" lm="el">          <p><l>el</l>                    <r>el<s n="adv"/></r></p></e>

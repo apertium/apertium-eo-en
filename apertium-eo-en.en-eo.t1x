@@ -245,12 +245,16 @@
 
 
 
-
-
-
-
-
     <def-cat n="unknown"><cat-item tags=""/></def-cat>
+
+    <def-cat n="unknown_adv_num">
+      <cat-item tags=""/>
+      <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/><!-- ^Kiam<adv><itg>$ -->
+      <cat-item tags="num"/>
+      <cat-item tags="num.*"/>
+    </def-cat>
+
   </section-def-cats>
 
 
@@ -440,6 +444,16 @@
       <list-item v="appear"/>
     </def-list>
 
+
+    <def-list n="willwouldshallhave"> <!-- help verboj kiuj malaperos en Esperantp-->
+      <list-item v="have"/>
+      <list-item v="will"/>
+      <list-item v="would"/>
+      <list-item v="shall"/>
+    </def-list>
+
+
+
   </section-def-lists>
 
 
@@ -449,7 +463,7 @@
 
   <section-def-macros>
   
-  <!-- Makroo -->
+  <!-- ekzamenas la vorton kaj metas majuskligajn informojn en variablo "firstWord" -->
   <def-macro n="firstWord" npar="1">
     <choose>
       <when>
@@ -552,7 +566,7 @@
                 <get-case-from pos="1"><lit v="pli"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
-          <let><var n="preadv_added"/><lit v="yes"/></let>
+          <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
 
         <when><!-- ^best/good<adj><sint><sup>$ -->
@@ -561,7 +575,7 @@
                 <get-case-from pos="1"><lit v="plej"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
                 <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
                 </concat></let>
-          <let><var n="preadv_added"/><lit v="yes"/></let>
+          <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
 
         <when>
@@ -885,7 +899,7 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="prnref" case="caseFirstWord">
             <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/><lit-tag v="2"/>
@@ -1416,20 +1430,8 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro> 
-        <choose>
-          <when>
-            <test><equal><var n="preadv_added"/><lit v=""/></equal></test>
-            <let><var n="chunk_name"/><lit v="adj"/></let>
-          </when>
-          <otherwise>
-            <let><var n="chunk_name"/><lit v="preadv_adj"/></let>
-          </otherwise>
-        </choose>
+        <let><var n="chunk_name"/><concat><lit v="adj"/><var n="preadv_added"/></concat></let>
 
-        <!--  Tio cxi estas fusxeta:  adjectiu=bona<adj><2> 
-        kaj mi bezonas finfine ^bona<adj><sg><nom>$, do mi metas la <sg> ekster la chunk'o!
-        Preadv_adj<SN><sg><nom>{^pli<preadv>$ ^bona<adj><2><3>$}
-        -->
         <out>
           <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
@@ -1451,7 +1453,7 @@ verbfinal = pensi<vblex><pres>
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="adj"/>
-        <pattern-item n="nom_prnaltres"/>
+        <pattern-item n="nom"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -1479,6 +1481,38 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
+<!-- enmeti??
+    <rule comment="REGLA: DET UNKNOWN/ADV/NUM NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="unknown_adv_num"/>
+        <pattern-item n="nom_prnaltres"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+
+        <out>
+        <chunk name="det_unknown_nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <var n="determiner"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <clip pos="3" side="tl" part="tags"/>
+              <lit-tag v="2"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
 
     <rule comment="REGLA: ADJ NOM">
       <pattern>
@@ -1551,29 +1585,66 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <rule comment="REGLA: DET ADJ ADJ NOM">
+    <rule comment="REGLA: DET UNKNOWN/ADV/NUM UNKNOWN/ADV/NUM NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="nom_prnaltres"/>
+        <pattern-item n="unknown_adv_num"/>
+        <pattern-item n="unknown_adv_num"/>
+        <pattern-item n="nom"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
-        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="4"/></call-macro>
-        <let><var n="tmp2"/><var n="adjectiu"/></let>        
-        <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
  
           <out>
-          <chunk name="det_preadv?_adj_nom" case="caseFirstWord">
+          <chunk name="det_unkn_unkn_nom" case="caseFirstWord">
               <tags>
                 <tag><lit-tag v="SN.nom"/></tag>
               </tags>
               <var n="determiner"/>
               <lu>
-                  <var n="tmp2"/>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <clip pos="4" side="tl" part="lem"/>
+                <clip pos="4" side="tl" part="tags"/>
+                <lit-tag v="2"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA: DET ADJ ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="4"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>        
+        <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN.nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
               </lu>
               <b pos="2"/>
               <lu>
@@ -1591,7 +1662,50 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
-
+    <rule comment="REGLA: DET ADJ ADJ ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="5"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>        
+        <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="5"/></call-macro>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>        
+        <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="5"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="5"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN.nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                  <var n="tmp2"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="4"/>
+              <lu>
+                <clip pos="5" side="tl" part="lem"/>
+                <clip pos="5" side="tl" part="tags"/>
+                <lit-tag v="2"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
 
 
 
@@ -2794,16 +2908,7 @@ might:might<vaux><inf>
         <choose>
           <when>
             <test>
-              <or>
-                <!-- will wash  => lavos     -    would wash => lavus -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-
-                <!-- have washed  => lavis     -    has washed => lavis -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
@@ -2898,12 +3003,7 @@ might:might<vaux><inf>
         <choose>
           <when>
             <test>
-              <or>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
@@ -3007,13 +3107,7 @@ might:might<vaux><inf>
         <choose>
           <when>
             <test>
-              <or>
-                <!-- will wash  => lavos     -    would wash => lavus -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
@@ -3114,7 +3208,7 @@ might:might<vaux><inf>
 
 
 
-    <rule comment="REGLA: VAUX VBHAVER VBLEX">
+    <rule comment="REGLA: VAUX VBHAVER VBLEX/VBSER - would have been,  would have ended,  might have allowed,  could have levelled out, may have represented,  might have been">
       <pattern>
         <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="vbhaver"/>
@@ -3128,13 +3222,7 @@ might:might<vaux><inf>
 
           <when>
             <test>
-              <or>
-                <!-- will wash  => lavos     -    would wash => lavus -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
@@ -3144,8 +3232,7 @@ might:might<vaux><inf>
       	          <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
-                  <lit v="esti"/><lit-tag v="vbser"/>
-                  <var n="temps"/>
+                  <lit v="esti"/><lit-tag v="vbser"/><var n="temps"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -3177,8 +3264,7 @@ might:might<vaux><inf>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3199,14 +3285,12 @@ might:might<vaux><inf>
       	          <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
-                  <lit v="eble"/>
-                  <lit-tag v="adv"/>
+                  <lit v="eble"/><lit-tag v="adv"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3230,14 +3314,12 @@ might:might<vaux><inf>
       	          <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.past"/>
+                  <lit v="povi"/><lit-tag v="vaux.past"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="inf"/>
+                  <clip pos="3" side="tl" part="a_vrb"/><lit-tag v="inf"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3258,8 +3340,7 @@ might:might<vaux><inf>
                 <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
-                  <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <clip pos="2" side="tl" part="a_vrb"/><var n="temps"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
                 <b pos="2"/>
@@ -3289,13 +3370,7 @@ might:might<vaux><inf>
         <choose>
           <when>
             <test>
-              <or>
-                <!-- I will/would be washing my hands  => Mi estos/estus lavanta miajn manojn  -->
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="will"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="would"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="shall"/></equal>
-                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="have"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
