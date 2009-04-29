@@ -155,7 +155,10 @@
 <pardef n="gen__apos">
   <e>       <p><l></l>          <r></r></p></e>
   <e>       <p><l>'</l>         <r><j/>'<s n="gen"/></r></p></e>
+  <e r="LR"><p><l>’</l>         <r><j/>'<s n="gen"/></r></p></e>
 </pardef>
+
+
 
 
 <pardef n="numeros">
@@ -4389,41 +4392,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="beat">            <i>b</i><par n="b/eat__vblex"/></e>
 
 
-<!-- TODO: tagger training with 
-<e lm="a"><i>a</i><par n="house__n"/></e>
-<e lm="i"><i>i</i><par n="house__n"/></e>
-<e lm="s"><i>s</i><par n="house__n"/><par n="gen__apos"/></e>
-
-<e lm="b"><i>b</i><par n="house__n"/></e>
-<e lm="c"><i>c</i><par n="house__n"/></e>
-<e lm="d"><i>d</i><par n="house__n"/></e>
-<e lm="e"><i>e</i><par n="house__n"/></e>
-<e lm="f"><i>f</i><par n="house__n"/></e>
-<e lm="g"><i>g</i><par n="house__n"/></e>
-<e lm="h"><i>h</i><par n="house__n"/></e>
-<e lm="j"><i>j</i><par n="house__n"/></e>
-<e lm="k"><i>k</i><par n="house__n"/></e>
-<e lm="l"><i>l</i><par n="house__n"/></e>
-<e lm="m"><i>m</i><par n="house__n"/></e>
-<e lm="n"><i>n</i><par n="house__n"/></e>
-<e lm="o"><i>o</i><par n="house__n"/></e>
-<e lm="p"><i>p</i><par n="house__n"/></e>
-<e lm="q"><i>q</i><par n="house__n"/></e>
-<e lm="r"><i>r</i><par n="house__n"/></e>
-<e lm="t"><i>t</i><par n="house__n"/></e>
-<e lm="u"><i>u</i><par n="house__n"/></e>
-<e lm="v"><i>v</i><par n="house__n"/></e>
-<e lm="w"><i>w</i><par n="house__n"/></e>
-<e lm="x"><i>x</i><par n="house__n"/></e>
-<e lm="y"><i>y</i><par n="house__n"/></e>
-<e lm="z"><i>z</i><par n="house__n"/></e>
- -->
-
-<!-- TODO: tagger training with 
-<e lm="a"><i>a</i><par n="litero"/></e>
-<e lm="i"><i>i</i><par n="litero"/></e>
-<e lm="s"><i>s</i><par n="litero"/><par n="gen__apos"/></e>
- -->
 <e lm="b">               <i>b</i><par n="litero"/></e>
 <e lm="baby">            <i>bab</i><par n="bab/y__n"/></e>
 <e lm="babble">          <i>babbl</i><par n="liv/e__vblex"/></e>
@@ -28012,6 +27980,14 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 <e>                      <par n="years"/></e>
 <e>                      <par n="time"/></e>
+
+
+<!-- TODO: tagger training with 
+<e lm="a"><i>a</i><par n="litero"/></e>
+ -->
+<e lm="i"><i>i</i><par n="litero"/></e>
+<e lm="s"><i>s</i><par n="litero"/></e>
+
 	</section>
 
 	<section id="final" type="inconditional">
@@ -28026,6 +28002,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e>                      <par n="guionet"/></e>
 <e>                      <par n="emails"/></e>
 <e>                      <par n="urls"/></e>
+
+
+
+
 	</section>
 	<section id="apostrophe" type="preblank">
 
@@ -28065,5 +28045,7 @@ The gods hold court.
 -->
 
 <e>                      <p><l>'s</l>        <r>'s<s n="gen"/></r></p></e>
+<e r="LR">               <p><l>’s</l>        <r>'s<s n="gen"/></r></p></e>
+
 	</section>
 </dictionary>
