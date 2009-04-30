@@ -11,13 +11,14 @@
     </def-cat>
 
 
-    <def-cat n="genitive_possessors">
-      <cat-item tags=""/>        <!-- unknown words -->
-      <cat-item tags="n.*"/>
-      <cat-item tags="np.*"/>
+    <def-cat n="apos_aposgen">
+      <cat-item tags="apos"/>
+      <cat-item lemma="'" tags="gen"/>
     </def-cat>
 
+
     <def-cat n="any">
+      <cat-item tags=""/>        <!-- unknown words -->
       <cat-item tags="*"/>
     </def-cat>
 
@@ -32,7 +33,7 @@
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="numero"/>
+    <def-var n="aposv" v="[']"/>
   </section-def-vars>
 
   <section-def-macros>
@@ -52,13 +53,7 @@
             <not><equal><b pos="1"/><lit v=" "/></equal></not>
           </test>
           <out>
-            <b pos="1"/><!--
-            <chunk name="sendu_blankon_se_havas_formaton">
-              <tags><tag><lit-tag v="xx"/></tag></tags>
-              <lu>
-                <b pos="1"/>
-              </lu>
-            </chunk>-->
+            <b pos="1"/>
           </out>
         </when>
       </choose>
@@ -74,17 +69,17 @@
       <pattern>
         <pattern-item n="apos"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
@@ -94,11 +89,11 @@
         <pattern-item n="apos"/>
         <pattern-item n="any"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
@@ -106,7 +101,7 @@
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="3"/><with-param pos="4"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
@@ -117,11 +112,11 @@
         <pattern-item n="any"/>
         <pattern-item n="any"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
@@ -131,7 +126,7 @@
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="4"/><with-param pos="5"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
@@ -143,11 +138,11 @@
         <pattern-item n="any"/>
         <pattern-item n="any"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
@@ -159,7 +154,7 @@
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="5"/><with-param pos="6"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
@@ -173,11 +168,11 @@
         <pattern-item n="any"/>
         <pattern-item n="any"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
@@ -191,7 +186,7 @@
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="6"/><with-param pos="7"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
@@ -206,11 +201,11 @@
         <pattern-item n="any"/>
         <pattern-item n="any"/>
         <pattern-item n="any"/>
-        <pattern-item n="aposgen"/>
+        <pattern-item n="apos_aposgen"/>
       </pattern>
       <action>
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
@@ -226,7 +221,7 @@
 	    </out>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="7"/><with-param pos="8"/></call-macro>  
 	    <out>
-	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+        <var n="aposv"/>
 	    </out>
       </action>
     </rule>
