@@ -155,7 +155,7 @@
 <pardef n="gen__apos">
   <e>       <p><l></l>          <r></r></p></e>
   <e>       <p><l>'</l>         <r><j/>'<s n="gen"/></r></p></e>
-  <e r="LR"><p><l>’</l>         <r><j/>'<s n="gen"/></r></p></e>
+<!--  <e r="LR"><p><l>’</l>         <r><j/>'<s n="gen"/></r></p></e> -->
 </pardef>
 
 
@@ -28008,12 +28008,12 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e>                      <par n="guionet"/></e>
 <e>                      <par n="emails"/></e>
 <e>                      <par n="urls"/></e>
-
-
-
-
-	</section>
+	</section> 
+ 
 	<section id="apostrophe" type="preblank">
+
+<e>                      <p><l>'s</l>        <r>'s<s n="gen"/></r></p></e>
+<!-- <e r="LR">               <p><l>’s</l>        <r>'s<s n="gen"/></r></p></e>-->
 
 <!-- XXX TODO plibonigu la tagger: 
  He fell off his chair .
@@ -28049,9 +28049,6 @@ Mutual Broadcasting System
 The gods hold court.
 
 -->
-
-<e>                      <p><l>'s</l>        <r>'s<s n="gen"/></r></p></e>
-<e r="LR">               <p><l>’s</l>        <r>'s<s n="gen"/></r></p></e>
 
 	</section>
 </dictionary>
