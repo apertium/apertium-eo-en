@@ -21,6 +21,12 @@ while c: #{
 		sys.stdout.write('[' + str(count));
 		continue;
 	#}
+	if c == ' ': #{
+		count = count + 1;
+		c = sys.stdin.read(1);
+		sys.stdout.write('[' + str(count) + ']');
+		continue;
+	#}
 	sys.stdout.write(c);
 
 	c = sys.stdin.read(1);
