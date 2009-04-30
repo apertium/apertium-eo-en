@@ -10,6 +10,10 @@
         <file name="en-eo.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer -n">
+        <file name="apertium-eo-en.en-eo.genitive.t1x"/>
+        <file name="en-eo.genitive.t1x.bin"/>
+      </program>
       <program name="apertium-transfer">
         <file name="apertium-eo-en.en-eo.t1x"/>
         <file name="en-eo.t1x.bin"/>

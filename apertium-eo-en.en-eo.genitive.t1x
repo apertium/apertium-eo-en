@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<transfer>
+
+  <section-def-cats>
+    <def-cat n="apos">
+      <cat-item tags="apos"/>
+    </def-cat>
+
+    <def-cat n="aposgen">
+      <cat-item lemma="'" tags="gen"/>
+    </def-cat>
+
+
+    <def-cat n="genitive_possessors">
+      <cat-item tags=""/>        <!-- unknown words -->
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
+    </def-cat>
+
+    <def-cat n="any">
+      <cat-item tags=""/>        <!-- unknown words -->
+      <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="*"/>
+    </def-cat>
+
+  </section-def-cats>
+
+  <section-def-vars>
+    <def-var n="numero"/>
+  </section-def-vars>
+
+
+  <section-rules>
+    <rule>
+      <pattern>
+        <pattern-item n="apos"/>
+        <pattern-item n="any"/>
+        <pattern-item n="aposgen"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu>
+      		<clip pos="1" side="tl" part="whole"/>
+	      </lu>
+	      <b pos="1"/>
+	      <lu>
+		      <clip pos="2" side="tl" part="whole"/>
+	      </lu>
+	      <b pos="2"/>
+	      <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+	      </lu>
+	    </out>
+      </action>
+    </rule>
+  </section-rules>
+</transfer>
