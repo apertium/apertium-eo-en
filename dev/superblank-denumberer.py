@@ -14,16 +14,16 @@ while c: #{
 		continue;
 	#}
 	if c == '[': #{
-		count = count + 1;
+		count = (count + 1) % 10000;
 		nr = "";
 		while c != ']': #{
 			c = sys.stdin.read(1);
 			nr = nr + c;
 		#}
-		sys.stdout.write(' ');
+		sys.stdout.write('\n');
 		if nr != str(count)+']':
 			sys.stdout.write('[SUPERBLANK COUNT MISMATCH ' + str(count)+'/'+nr);
-			# SPECTIE count = str2num(nr.substing(nr,nr.length()-1)
+			count = int(nr[0:-1]); # SPECTIE count = str2num(nr.substing(nr,nr.length()-1)
 		c = sys.stdin.read(1);
 		continue;
 	#}

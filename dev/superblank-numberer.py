@@ -14,7 +14,7 @@ while c: #{
 		continue;
 	#}
 	if c == '[': #{
-		count = count + 1;
+		count = (count + 1) % 10000;
 		while c != ']': #{
 			c = sys.stdin.read(1);
 		#}
@@ -22,7 +22,7 @@ while c: #{
 		continue;
 	#}
 	if c == ' ': #{
-		count = count + 1;
+		count = (count + 1) % 10000;
 		c = sys.stdin.read(1);
 		sys.stdout.write('[' + str(count) + ']');
 		continue;
