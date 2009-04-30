@@ -155,9 +155,13 @@
 <pardef n="gen__apos">
   <e>       <p><l></l>          <r></r></p></e>
   <e>       <p><l>'</l>         <r><j/>'<s n="gen"/></r></p></e>
-<!--  <e r="LR"><p><l>’</l>         <r><j/>'<s n="gen"/></r></p></e> -->
 </pardef>
 
+
+<!--
+  <e>       <p><l>XXXXXXUNUSED</l>          <r>XXXXXX</r></p></e>
+
+  <e r="LR"><p><l>’</l>         <r><j/>'<s n="gen"/></r></p></e> -->
 
 
 
@@ -12965,7 +12969,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Humphrey">        <i>Humphrey</i><par n="Mark__np"/></e>
 <e lm="hunch">           <i>hunch</i><par n="access__n"/></e>
 <e lm="hunch">           <i>hunch</i><par n="mix__vblex"/></e>
-
 <e lm="hundred">         <i>hundred</i><par n="house__n"/></e>
 <e lm="hundredth">       <i>hundredth</i><par n="up__n"/></e>
 <e lm="hundredth">       <i>hundredth</i><par n="expensive__adj"/></e>
@@ -13115,11 +13118,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="idyll">           <i>idyll</i><par n="house__n"/></e>
 <e lm="Ieuan">           <i>Ieuan</i><par n="Mark__np"/></e>
 <e lm="Ifan">            <i>Ifan</i><par n="Mark__np"/></e>
-
-
-
-
-
 <e lm="Ifans">           <i>Ifans</i><par n="Ifans__np"/><par n="gen__apos"/></e>
 <e lm="Ifigenia">        <i>Ifigenia</i><par n="Mary__np"/></e>
 <e lm="Ifor">            <i>Ifor</i><par n="Mark__np"/></e>
@@ -27994,6 +27992,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="i"><i>i</i><par n="litero"/></e>
 <e lm="s"><i>s</i><par n="litero"/></e>
 
+<e>                      <p><l>'s</l>        <r>'s<s n="gen"/></r></p></e>
+
 	</section>
 
 	<section id="final" type="inconditional">
@@ -28010,12 +28010,12 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e>                      <par n="urls"/></e>
 	</section> 
  
-	<section id="apostrophe" type="preblank">
 
-<e>                      <p><l>'s</l>        <r>'s<s n="gen"/></r></p></e>
-<!-- <e r="LR">               <p><l>’s</l>        <r>'s<s n="gen"/></r></p></e>-->
 
 <!-- XXX TODO plibonigu la tagger: 
+	<section id="apostrophe" type="preblank">
+
+
  He fell off his chair .
 <    228 . Li falis de lia seĝo.
 >    228 . Li falis ekstere lia seĝo .
@@ -28048,7 +28048,7 @@ Mutual Broadcasting System
 
 The gods hold court.
 
+	</section>
 -->
 
-	</section>
 </dictionary>
