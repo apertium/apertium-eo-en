@@ -411,6 +411,9 @@
 
     <def-var n="determiner"/>     <!--- determiner kun tag'oj kaj ebla spaco -->
 
+    <def-var n="blanko"/>     <!--- de "set_blankon_se_havas_formaton2" -->
+
+
 
     <def-var n="DEBUG" v=""/>
 
@@ -807,6 +810,28 @@ verbfinal = pensi<vblex><pres>
 
 
 
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
+     "blanko" havos valoron "" se estas nur blanko " ", kaj
+     la enhavon de la blanko gxi enhavis ion alian.
+ -->
+    <def-macro n="set_blankon_se_havas_formaton2" npar="2">
+      <choose>
+        <when>
+          <test>
+            <equal><b pos="1"/><lit v=" "/></equal>
+          </test>
+
+          <let><var n="blanko"/><lit v=""/></let>
+        </when>
+
+        <otherwise>
+          <let><var n="blanko"/><b pos="1"/></let>
+        </otherwise>
+      </choose>
+    </def-macro>
+
+
+
 
 
 <!--
@@ -855,22 +880,15 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <def-macro n="set_determiner_de_genitivo3" npar="3">
-      <call-macro n="set_numero1"><with-param pos="3"/></call-macro>
+    <def-macro n="set_determiner_de_genitivo2" npar="2">
+      <call-macro n="set_numero1"><with-param pos="2"/></call-macro>
       <choose>
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="a"/></equal>
           </test>
 
-          <choose>
-            <when><test><equal><b pos="1"/><lit v=" "/></equal></test>
-              <let><var n="determiner"/><lit v=""/></let>
-            </when>
-            <otherwise>
-              <let><var n="determiner"/><concat><b pos="1"/></concat></let>
-            </otherwise>
-          </choose>
+          <let><var n="determiner"/><lit v=""/></let>
         </when>
 
         <otherwise>
@@ -882,7 +900,7 @@ verbfinal = pensi<vblex><pres>
               <var n="numero"/><lit-tag v="nom"/>
               <clip pos="1" side="tl" part="lemq"/>
             <lit v="$"/>
-            <b pos="1"/>
+            <b/>
           </concat></let>
         </otherwise>
       </choose>
@@ -1989,7 +2007,7 @@ verbfinal = pensi<vblex><pres>
                   <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
                 <b/>
-                <b pos="1"/>
+                <b pos="1"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                   <lu>
                     <clip pos="2" side="tl" part="whole"/> <!-- de -->
                   </lu>
@@ -2016,8 +2034,11 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="set_nomvar_if_known1"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
-        <call-macro n="set_determiner_de_genitivo3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_determiner_de_genitivo2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <let><var n="tmp2"/><var n="blanko"/></let>
+      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
                 <tags>
@@ -2026,16 +2047,18 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
                 </lu>
-                <b pos="3"/>
+                <var n="tmp2"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
+                <b/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
                   <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
+                <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
                   <lu>
                     <clip pos="3" side="tl" part="whole"/>          <!-- de -->
                   </lu>
-                <b pos="2"/>
+                <b pos="3"/>
                 <var n="determiner"/>  <!-- lia -->
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>              <!-- gxardenisto -->
@@ -2046,19 +2069,6 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
-
-
-<!-- Its Not clear this rule makes more harm than good
-
-    <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
-      <pattern>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-...
--->
 
 
     <rule comment="REGLA: DET NOM/ANT NOM/ANT 's NOM:  his garden man's dog   - La hundo de lia ĝardeno viro ">
@@ -2077,20 +2087,25 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="set_nomvar_if_known1"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
-        <call-macro n="set_determiner_de_genitivo3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="set_determiner_de_genitivo2"><with-param pos="1"/><with-param pos="3"/></call-macro>
+      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <let><var n="tmp2"/><var n="blanko"/></let>
+      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="3"/><with-param pos="4"/></call-macro>
             <out>
               <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SN.nom"/></tag>
                 </tags>
+                <var n="tmp2"/>
                 <lu>
                   <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
                 </lu>
-                <b/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="5" side="tl" part="lem"/>            <!-- hundo -->
                   <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
                 </lu>
+                <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
                   <lu>
                     <clip pos="4" side="tl" part="whole"/>        <!-- de -->
@@ -2101,7 +2116,7 @@ verbfinal = pensi<vblex><pres>
                   <clip pos="2" side="tl" part="lem"/>            <!-- ĝardeno -->
                   <clip pos="2" side="tl" part="tags"/><var n="tmp1"/>
                 </lu>
-                <b pos="2"/>
+                <b/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>            <!-- viro  -->
                   <clip pos="3" side="tl" part="tags"/><var n="nomvar"/>
@@ -2113,6 +2128,19 @@ verbfinal = pensi<vblex><pres>
 
 
 
+
+
+<!-- Its Not clear this rule makes more harm than good
+
+    <rule comment="REGLA: NOM/ANT NOM/ANT 's NOM:  Jacob Smith's dog   => hundo de Jacob Smith">
+      <pattern>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="genitive_possessors"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="nom"/>
+      </pattern>
+...
+-->
 
 
 
@@ -2449,6 +2477,7 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
         <out>
           <chunk name="verbInf" case="caseFirstWord">
             <tags>
@@ -2477,6 +2506,8 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>  
         <out>
           <chunk name="verbInf2" case="caseFirstWord">
             <tags>
@@ -2541,6 +2572,7 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
+      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
         <out>
           <chunk name="el_verb" case="caseFirstWord">
             <tags>
@@ -2744,13 +2776,13 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-        <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb2" case="caseFirstWord">
                 <tags>
@@ -2802,6 +2834,7 @@ might:might<vaux><inf>
 
 
           <otherwise>
+          <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb2" case="caseFirstWord">
                 <tags>
@@ -2839,12 +2872,12 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-        <let><var n="temps"/><clip pos="3" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb3" case="caseFirstWord">
@@ -2904,6 +2937,7 @@ might:might<vaux><inf>
           </when>
 
           <otherwise>
+            <let><var n="temps"/><clip pos="3" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb4" case="caseFirstWord">
                 <tags>
@@ -2943,13 +2977,13 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="4"/></call-macro>
-        <let><var n="temps"/><clip pos="4" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb4" case="caseFirstWord">
                 <tags>
@@ -3015,6 +3049,7 @@ might:might<vaux><inf>
           </when>
 
           <otherwise>
+            <let><var n="temps"/><clip pos="4" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb6" case="caseFirstWord">
                 <tags>
@@ -3057,7 +3092,6 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-        <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
 
           <when>
@@ -3065,6 +3099,7 @@ might:might<vaux><inf>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
@@ -3168,6 +3203,7 @@ might:might<vaux><inf>
 
 
           <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
+            <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb7" case="caseFirstWord">
                 <tags>
@@ -3206,13 +3242,13 @@ might:might<vaux><inf>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-        <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
         <choose>
           <when>
             <test>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
@@ -3236,6 +3272,7 @@ might:might<vaux><inf>
 
           <otherwise><!-- can be describing=>povas esti priskribanta  OK
                           may be confusing=>povi esti konfuzanta TODO: povAS esti konfuzanta -->
+            <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb8" case="caseFirstWord">
                 <tags>
