@@ -765,9 +765,17 @@ BUT:
 <e>       <p><l>plejparto<b/>de<b/>la<s n="det"/><s n="qnt"/></l><r>most<s n="det"/><s n="qnt"/></r></p></e>
 -->
 
+<!--
+-->
 
-<e>       <p><l>plejparto<g><b/>de<b/>la</g><s n="det"/><s n="qnt"/></l> <r>most<s n="det"/><s n="qnt"/></r></p></e>
+<e r="RL"><p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/></l> <r>most<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/></l><r>most<g><b/>of</g><s n="det"/><s n="qnt"/></r></p></e>
 
+<!--
+<e>       <p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/><s n="sp"/></l> <r>most<g><b/>of</g><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+
+<e>       <p><l>konatiĝi<g><b/>kun</g><s n="vblex"/></l><r>become<g><b/>acquainted<b/>with</g><s n="vblex"/></r></p></e>
+-->
 
 
 <e r="LR"><p><l>plej<s n="det"/><s n="qnt"/></l>       <r>most<s n="det"/><s n="qnt"/></r></p></e>
@@ -12109,8 +12117,7 @@ TODO??
 <e r="LR"><p><l>sinvenĝo<s n="n"/></l>                 <r>reprisal<s n="n"/></r></p></e>
 <e r="LR"><p><l>reprezalio<s n="n"/></l>               <r>reprisal<s n="n"/></r></p></e>
 <e>       <p><l>reprodukti<s n="vblex"/></l>           <r>reproduce<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>kopio<s n="n"/></l>                    <r>reproduction<s n="n"/></r></p></e>
-<e r="LR"><p><l>reproduktado<s n="n"/></l>             <r>reproduction<s n="n"/></r></p></e>
+<e><p><l>reproduktado<s n="n"/></l>             <r>reproduction<s n="n"/></r></p></e>
 <e>       <p><l>rampulo<s n="n"/></l>                  <r>reptile<s n="n"/></r></p></e>
 <e>       <p><l>respubliko<s n="n"/></l>               <r>republic<s n="n"/></r></p></e>
 <e>       <p><l>respublikano<s n="n"/></l>             <r>republican<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -15458,7 +15465,7 @@ TODO??
 <e r="LR"><p><l>ĉirkaŭvojo<s n="n"/></l>               <r>round<s n="n"/></r></p></e>
 <e r="LR"><p><l>dankmono<s n="n"/></l>                 <r>tip<s n="n"/></r></p></e>
 <e r="LR"><p><l>datenbanko<s n="n"/></l>               <r>bank<s n="n"/></r></p></e>
-<e c="dada (cat) en plural (el tagger hauria d'escollar sg o pl en anglès). MG: Falta fer entrada específica ca-en per a 'dada' en singular, si cal (?)"><p><l>datumo<s n="n"/></l><r>data<s n="n"/></r></p></e>
+<e>       <p><l>datumo<s n="n"/></l>                   <r>data<s n="n"/></r></p></e>
 <e r="LR"><p><l>dekkvino<s n="n"/></l>                 <r>fortnight<s n="n"/></r></p></e>
 <e r="LR"><p><l>delico<s n="n"/></l>                   <r>delight<s n="n"/></r></p></e>
 <e r="LR"><p><l>demonstracio<s n="n"/></l>             <r>demonstration<s n="n"/></r></p></e>

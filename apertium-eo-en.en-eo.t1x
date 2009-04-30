@@ -841,10 +841,11 @@ verbfinal = pensi<vblex><pres>
         <otherwise>
           <let><var n="determiner"/><concat>
             <lit v="^"/>
-              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
               <clip pos="1" side="tl" part="a_det"/>
               <clip pos="3" side="tl" part="a_nbr"/>
               <lit-tag v="2"/>
+              <clip pos="1" side="tl" part="lemq"/>
             <lit v="$"/>
             <b pos="1"/>
           </concat></let>
@@ -876,9 +877,10 @@ verbfinal = pensi<vblex><pres>
               <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
           <let><var n="determiner"/><concat>
             <lit v="^"/>
-              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
               <clip pos="1" side="tl" part="a_det"/>
               <var n="numero"/><lit-tag v="nom"/>
+              <clip pos="1" side="tl" part="lemq"/>
             <lit v="$"/>
             <b pos="1"/>
           </concat></let>
@@ -1143,7 +1145,11 @@ verbfinal = pensi<vblex><pres>
                 <tags>
                   <tag><lit-tag v="SD.nom"/></tag>
                 </tags>
-                <lu><clip pos="1" side="tl" part="whole"/><lit-tag v="2"/></lu>
+                <lu>
+                  <clip pos="1" side="tl" part="lemh"/>
+                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="1" side="tl" part="lemq"/>
+                </lu>
               </chunk>
             </out>
       </action>

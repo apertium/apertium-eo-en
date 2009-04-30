@@ -2419,7 +2419,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="be missing">      <i></i><par n="/be__vblex"/><p><l><b/>missing</l><r><g><b/>missing</g></r></p></e>
 <e lm="go in">           <i></i><par n="/go__vblex"/><p><l><b/>in</l><r><g><b/>in</g></r></p></e>
 <e lm="go on">           <i></i><par n="/go__vblex"/><p><l><b/>on</l><r><g><b/>on</g></r></p></e>
-<e lm="go on">           <i></i><par n="/go__vblex"/><p><l><b/>on</l><r><j/>on<s n="pr"/></r></p></e>
 <e lm="go back">         <i></i><par n="/go__vblex"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
 <e lm="be hungry">       <par n="/be__vblex"/><p><l><b/>hungry</l><r><g><b/>hungry</g></r></p></e>
 
@@ -24448,8 +24447,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="thank">           <i>thank</i><par n="accept__vblex"/></e>
 <e lm="thankfully">      <i>thankfully</i><par n="maybe__adv"/></e>
 <e lm="thankless">       <i>thankless</i><par n="expensive__adj"/></e>
-<!--    
+
+
     <e lm="that"><i>that</i><par n="that__rel"/></e>
+
+<!--    
 -->
 <e lm="thaw">            <i>thaw</i><par n="house__n"/></e>
 <e lm="thaw">            <i>thaw</i><par n="accept__vblex"/></e>
@@ -27635,6 +27637,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="more">            <i>more</i><par n="enough__det"/></e>
 
 <e lm="most">            <i>most</i><par n="enough__det"/></e>
+<e lm="most of">         <i>most</i><par n="enough__det"/><p><l><b/>of</l><r><g><b/>of</g></r></p></e>
+
+<e lm="become acquainted with"><i>bec</i><par n="bec/ome__vblex"/><p><l><b/>acquainted<b/>with</l><r><g><b/>acquainted<b/>with</g></r></p></e>
+
 <e lm="much">            <i>much</i><par n="much__det"/></e>
 <e lm="my">              <i>my</i><par n="her__det"/></e>
 <e lm="nineteenth">      <i>nineteenth</i><par n="second__det"/></e>

@@ -210,6 +210,8 @@ New ambiguity class: {THATPRN,DET}
     <tags-item tags="vaux.inf"/>
     <tags-item tags="vaux.pres"/>
     <tags-item tags="vaux.past"/>
+    <tags-item tags="vaux.pres.*"/>
+    <tags-item tags="vaux.ger"/>
  <!-- <tags-item tags="vbdo.pres"/>
     <tags-item tags="vbdo.pres.*"/>
     <tags-item tags="vbdo.past"/>  -->
@@ -801,30 +803,37 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
       <label-item label="NOADV"/>
       <label-item label="PAST"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="INF"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="PRES"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="GER"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="NOMSG"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="NOMPL"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="CANNOM"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="NOADV"/>
       <label-item label="WILLNOM"/>
@@ -850,10 +859,12 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
       <label-item label="VERBS_DISCURS"/>
       <label-item label="DETQNT_ORD"/>
     </label-sequence>-->
+
     <label-sequence>
       <label-item label="PRNSUBJ"/>
       <label-item label="GEN"/>
     </label-sequence>
+
     <label-sequence>
       <label-item label="INTNOM"/>
       <label-item label="DETQNT_ORD"/>
@@ -867,43 +878,55 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
 
 
  <enforce-rules>
-
+<!--
+    <enforce-after label="TO">
+      <label-set>
+        <label-item label="INF"/>
+        <label-item label="VHAVEINF"/>
+        <label-item label="VMODINF"/>
+      </label-set>
+    </enforce-after>
+-->
 
     <enforce-after label="VHAVEPAST">
       <label-set>
         <label-item label="VLEXPP"/>
        <!-- <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
-	<label-item label="ADV"/>
-	<label-item label="NOT"/>
-	<label-item label="PRNSUBJ"/><!--per a interrogatives i altres inversions. Llavors caldria afegir m??s categories aqu?? o fer canvis en el transfer (had the man finished vs. they had the book) -->
+        <label-item label="ADV"/>
+        <label-item label="NOT"/>
+        <label-item label="PRNSUBJ"/><!--per a interrogatives i altres inversions. Llavors caldria afegir m??s categories aqu?? o fer canvis en el transfer (had the man finished vs. they had the book) -->
       </label-set>
     </enforce-after>
+
     <enforce-after label="VHAVEINF">
       <label-set>
         <label-item label="VLEXPP"/>
       <!--  <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
-	<label-item label="ADV"/>
+      <label-item label="ADV"/>
       </label-set>
     </enforce-after>
+
+
      <enforce-after label="VHAVEPRES">
       <label-set>
         <label-item label="VLEXPP"/>
     <!--    <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
-	<label-item label="ADV"/>
-	<label-item label="NOT"/>
-	<label-item label="PRNSUBJ"/><!--??dem m??s amunt -->
+        <label-item label="ADV"/>
+        <label-item label="NOT"/>
+        <label-item label="PRNSUBJ"/><!--??dem m??s amunt -->
       </label-set>
     </enforce-after>
+
      <enforce-after label="VHAVE">
       <label-set>
         <label-item label="VLEXPP"/>
        <!-- <label-item label="VERBS_DISCURS_PP"/>-->
         <label-item label="VSERPP"/>
-	<label-item label="ADV"/>
-	<label-item label="NOT"/>
+        <label-item label="ADV"/>
+        <label-item label="NOT"/>
       </label-set>
     </enforce-after>
 
@@ -913,8 +936,8 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
         <label-item label="NOMPL"/>
         <label-item label="CANNOM"/>
         <label-item label="WILLNOM"/>
-	<label-item label="ADJ"/>
-	<label-item label="DET"/>
+        <label-item label="ADJ"/>
+        <label-item label="DET"/>
       </label-set>
     </enforce-after>
 
@@ -924,14 +947,15 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
         <label-item label="NOMPL"/>
         <label-item label="CANNOM"/>
         <label-item label="WILLNOM"/>
-	<label-item label="ADJ"/>
-	<label-item label="DETQNT_ORD"/>
-	<label-item label="NUM"/>
-	<label-item label="ANTROPONIM"/>
-	<label-item label="TOPONIM"/>
-	<label-item label="NPALTRES"/>
+        <label-item label="ADJ"/>
+        <label-item label="DETQNT_ORD"/>
+        <label-item label="NUM"/>
+        <label-item label="ANTROPONIM"/>
+        <label-item label="TOPONIM"/>
+        <label-item label="NPALTRES"/>
       </label-set>
     </enforce-after>
+    
      <enforce-after label="RELAA">
       <label-set>
         <label-item label="NOMSG"/>
@@ -1042,7 +1066,18 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
 
  <preferences>
    <prefer tags="n.acr.sg"/>
-<!--   <prefer tags="vblex.pres"/> -->
+
+<!-- provu, por maloftigi <pp>:
+<prefer tags="vblex.inf"/>
+<prefer tags="vblex.past"/>
+<prefer tags="vblex.pres"/>
+<prefer tags="vblex.pres.*"/>
+<prefer tags="vbdo.inf"/>
+<prefer tags="vbdo.past"/>
+<prefer tags="vbdo.pres"/>
+<prefer tags="vbdo.pres.*"/>
+-->
+
  </preferences>
 
 
