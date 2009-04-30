@@ -30,6 +30,7 @@ dev/freeling.en-open-chopped.dix -text
 dev/freeling.en-open.dix -text
 dev/gen-test.py -text
 dev/paradigm-chopper.py -text
+dev/superblank-numberer.py -text
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
 /en-eo_oldtag.prob -text svneol=unset#unset
