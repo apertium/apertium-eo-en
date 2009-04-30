@@ -24,7 +24,7 @@ $(BASENAME).$(LANG1).dixtmp1: $(BASENAME).$(LANG1).dix.xml
 	mv tmp1 $@
      
 $(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dixtmp1
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
+	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1 $(BASENAME).$(LANG1).acx
 	lt-comp lr $(BASENAME).$(LANG1).dixtmp1 $@
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
@@ -103,6 +103,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml \
 	   $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).$(LANG2).tsx  \
            $(PREFIX1).prob $(PREFIX2).prob \
+	   $(BASENAME).$(LANG2).acx \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
            $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x \
            $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x \
