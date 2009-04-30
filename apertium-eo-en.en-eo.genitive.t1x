@@ -18,13 +18,18 @@
     </def-cat>
 
     <def-cat n="any">
-      <cat-item tags=""/>        <!-- unknown words -->
-      <cat-item tags="n.*"/>
-      <cat-item tags="np.*"/>
       <cat-item tags="*"/>
     </def-cat>
 
   </section-def-cats>
+ 
+  <section-def-attrs>
+    <def-attr n="nbr">
+      <attr-item tags="sp"/>
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+    </def-attr>
+  </section-def-attrs>
 
   <section-def-vars>
     <def-var n="numero"/>
@@ -40,19 +45,59 @@
       </pattern>
       <action>
 	    <out>
-	      <lu>
-      		<clip pos="1" side="tl" part="whole"/>
-	      </lu>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	      <b pos="1"/>
-	      <lu>
-		      <clip pos="2" side="tl" part="whole"/>
-	      </lu>
+	      <lu><clip pos="2" side="tl" part="whole"/></lu>
 	      <b pos="2"/>
-	      <lu>
-		      <clip pos="1" side="tl" part="whole"/>
-	      </lu>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	    </out>
       </action>
     </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="apos"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="aposgen"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	      <b pos="1"/>
+	      <lu><clip pos="2" side="tl" part="whole"/></lu>
+	      <b pos="2"/>
+	      <lu><clip pos="3" side="tl" part="whole"/></lu>
+	    </out>
+	    <out>
+	      <b pos="3"/>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	    </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="apos"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="aposgen"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	      <b pos="1"/>
+	      <lu><clip pos="2" side="tl" part="whole"/></lu>
+	      <b pos="2"/>
+	      <lu><clip pos="3" side="tl" part="whole"/></lu>
+	      <b pos="3"/>
+	      <lu><clip pos="4" side="tl" part="whole"/></lu>
+	      <b pos="4"/>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	    </out>
+      </action>
+    </rule>
+
   </section-rules>
 </transfer>
