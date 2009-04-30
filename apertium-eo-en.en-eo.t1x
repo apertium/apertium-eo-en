@@ -3109,7 +3109,7 @@ might:might<vaux><inf>
                 <lu>
                   <lit v="esti"/><lit-tag v="vbser"/><var n="temps"/>
                 </lu>
-                <b pos="1"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
@@ -3127,6 +3127,7 @@ might:might<vaux><inf>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="past"/></let>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb3a" case="caseFirstWord">
                 <tags>
@@ -3136,7 +3137,7 @@ might:might<vaux><inf>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
                 </lu>
-                <b pos="1"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
@@ -3153,6 +3154,7 @@ might:might<vaux><inf>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="verb3b" case="caseFirstWord">
                 <tags>
@@ -3162,7 +3164,7 @@ might:might<vaux><inf>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
                 </lu>
-                <b pos="1"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
@@ -3182,6 +3184,7 @@ might:might<vaux><inf>
             </or>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
             <out>
               <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
@@ -3191,7 +3194,7 @@ might:might<vaux><inf>
                 <lu>
                   <lit v="povi"/><lit-tag v="vaux.past"/>
                 </lu>
-                <b pos="1"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/><lit-tag v="inf"/>
@@ -3261,7 +3264,7 @@ might:might<vaux><inf>
                   <var n="temps"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
-                <b pos="1"/>
+                <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="whole"/>
                 </lu>
