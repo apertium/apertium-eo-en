@@ -35,6 +35,39 @@
     <def-var n="numero"/>
   </section-def-vars>
 
+  <section-def-macros>
+  
+
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
+     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
+     ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
+     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
+     por ke ne aperu du sinsekvaj blankoj. 
+     
+     Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
+    <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
+      <choose>
+        <when>
+          <test>
+            <not><equal><b pos="1"/><lit v=" "/></equal></not>
+          </test>
+          <out>
+            <b pos="1"/><!--
+            <chunk name="sendu_blankon_se_havas_formaton">
+              <tags><tag><lit-tag v="xx"/></tag></tags>
+              <lu>
+                <b pos="1"/>
+              </lu>
+            </chunk>-->
+          </out>
+        </when>
+      </choose>
+    </def-macro>
+  </section-def-macros>
+
+
+
+
 
   <section-rules>
     <rule>
@@ -48,7 +81,9 @@
 	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	      <b pos="1"/>
 	      <lu><clip pos="2" side="tl" part="whole"/></lu>
-	      <b pos="2"/>
+	    </out>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>  
+	    <out>
 	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	    </out>
       </action>
@@ -69,8 +104,8 @@
 	      <b pos="2"/>
 	      <lu><clip pos="3" side="tl" part="whole"/></lu>
 	    </out>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="3"/><with-param pos="4"/></call-macro>  
 	    <out>
-	      <b pos="3"/>
 	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	    </out>
       </action>
@@ -93,7 +128,37 @@
 	      <lu><clip pos="3" side="tl" part="whole"/></lu>
 	      <b pos="3"/>
 	      <lu><clip pos="4" side="tl" part="whole"/></lu>
+	    </out>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="4"/><with-param pos="5"/></call-macro>  
+	    <out>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	    </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="apos"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="any"/>
+        <pattern-item n="aposgen"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu><clip pos="1" side="tl" part="whole"/></lu>
+	      <b pos="1"/>
+	      <lu><clip pos="2" side="tl" part="whole"/></lu>
+	      <b pos="2"/>
+	      <lu><clip pos="3" side="tl" part="whole"/></lu>
+	      <b pos="3"/>
+	      <lu><clip pos="4" side="tl" part="whole"/></lu>
 	      <b pos="4"/>
+	      <lu><clip pos="5" side="tl" part="whole"/></lu>
+	    </out>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="5"/><with-param pos="6"/></call-macro>  
+	    <out>
 	      <lu><clip pos="1" side="tl" part="whole"/></lu>
 	    </out>
       </action>
