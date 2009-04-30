@@ -21,7 +21,7 @@ while c: #{
 			nr = nr + c;
 		#}
 		sys.stdout.write(' ');
-		if nr != str(count)+']'
+		if nr != str(count)+']':
 			sys.stdout.write('[SUPERBLANK COUNT MISMATCH ' + str(count)+'/'+nr);
 			# SPECTIE count = str2num(nr.substing(nr,nr.length()-1)
 		c = sys.stdin.read(1);
