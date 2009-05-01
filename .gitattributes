@@ -28,6 +28,9 @@
 /check_sint_tag.sh -text
 /configure.ac -text
 dev/apertium-eo-en.en_aldonota.dix -text
+dev/eval-Archimedes.apertium-1.0.txt -text
+dev/eval-Archimedes.en.txt -text
+dev/eval-Archimedes.post-edited.txt -text
 dev/freeling.en-open-chopped.dix -text
 dev/freeling.en-open.dix -text
 dev/gen-test.py -text
