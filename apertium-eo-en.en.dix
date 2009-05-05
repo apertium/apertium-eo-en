@@ -215,18 +215,21 @@
 </pardef>
     
 <pardef n="long/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>er</l>        <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>est</l>       <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="happ/y__adj">
+  <e r="RL"><p><l>y</l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="sh/y__adj">
+  <e r="RL"><p><l>y</l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -235,30 +238,35 @@
 </pardef>
     
 <pardef n="nice/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>r</l>         <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>st</l>        <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="big/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ger</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>gest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="hot/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ter</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>test</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="thin/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ner</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>nest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="dim/__adj">
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>mer</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>mest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -2418,6 +2426,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="go out">          <i></i><par n="/go__vblex"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
 <e lm="be born">         <i></i><par n="/be__vblex"/><p><l><b/>born</l><r><g><b/>born</g></r></p></e>
 <e lm="be worth">        <i></i><par n="/be__vblex"/><p><l><b/>worth</l><r><g><b/>worth</g></r></p></e>
+<e lm="be usefull">      <i></i><par n="/be__vblex"/><p><l><b/>usefull</l><r><g><b/>usefull</g></r></p></e>
 <e lm="bad">             <i></i><par n="/bad__adj"/></e>
 <e lm="good">            <i></i><par n="/good__adj"/></e>
 <e lm="be missing">      <i></i><par n="/be__vblex"/><p><l><b/>missing</l><r><g><b/>missing</g></r></p></e>
@@ -26893,8 +26902,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 		<!-- ******************************
 			    group acronimos_par
 			****************************** -->
-<e>                      <par n="acronimos"/></e>
 <!--
+<e>                      <par n="acronimos"/></e>
 
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
 <e lm="AAA">             <i>AAA</i><par n="acronimos_par"/></e>
@@ -27764,8 +27773,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="regarding">       <i>regarding</i><par n="at__pr"/></e>
 <e lm="round">           <i>round</i><par n="at__pr"/></e>
 <e lm="since">           <i>since</i><par n="at__pr"/></e>
-<e lm="so as to">        <i>so<b/>as<b/>to</i><par n="at__pr"/></e>
 <!--    <e lm="such a"><i>such a</i><par n="another__det"/></e>-->
+<e lm="so as to">        <i>so<b/>as<b/>to</i><par n="at__pr"/></e>
 <e lm="such as">         <i>such<b/>as</i><par n="at__pr"/></e>
 <e lm="thanks to">       <i>thanks<b/>to</i><par n="at__pr"/></e>
 <e lm="through">         <i>through</i><par n="at__pr"/></e>
@@ -27824,9 +27833,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="provided">        <i>provided</i><par n="after__cnjadv"/></e>
 <e lm="since">           <i>since</i><par n="after__cnjadv"/></e>
 <e lm="so">              <i>so</i><par n="after__cnjadv"/></e>
+
 <!-- XXX mankas en bidix. Jacob. 26feb09
 <e lm="as thought">           <i>as<b/>thought</i><par n="after__cnjadv"/></e> -->
-<e lm="so as to">        <i>so<b/>as<b/>to</i><par n="after__cnjadv"/></e>
+
+
 <e lm="so that">         <i>so<b/>that</i><par n="after__cnjadv"/></e>
 <e lm="then">            <i>then</i><par n="after__cnjadv"/></e>
 <e lm="therefore">       <i>therefore</i><par n="after__cnjadv"/></e>

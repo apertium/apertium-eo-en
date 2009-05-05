@@ -45,6 +45,11 @@ preadv adj
   <def-label name="CANNOM"  closed="true"><tags-item lemma="can" tags="n.*"/></def-label>
   <def-label name="WILLNOM" closed="true"><tags-item lemma="will" tags="n.*"/></def-label>
 
+  <def-label name="PREP_WITH_INF" closed="true">
+    <tags-item lemma="in order to" tags="pr"/>
+    <tags-item lemma="so as to" tags="pr"/>
+  </def-label>
+
 <!-- Kial faras eraron se oni enmetas??!?
 Word 'those' not found in the dictionary.   
 New ambiguity class: {THATPRN,DET}
@@ -878,6 +883,15 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
 
 
  <enforce-rules>
+
+
+
+    <enforce-after label="PREP_WITH_INF">
+      <label-set>
+        <label-item label="INF"/>
+      </label-set>
+    </enforce-after>
+
 <!--
     <enforce-after label="TO">
       <label-set>

@@ -1009,7 +1009,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="plura">                <i>plur</i><par n="plur/a__det"/></e>
 -->
 <e lm="plura">                <i>plura</i><par n="ind__det"/></e>
-<e lm="por">                  <i>por</i><par n="after__cnjadv"/></e>
+<!-- <e lm="por">                  <i>por</i><par n="after__cnjadv"/></e> -->
 <e lm="por">                  <i>por</i><par n="al__pr"/></e>
 <e lm="por ke">               <i>por<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="post">                 <i>post</i><par n="al__pr"/></e>
@@ -1021,7 +1021,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="se">                   <i>se</i><par n="after__cnjadv"/></e>
 <e lm="sed">                  <i>sed</i><par n="kaj__cnjcoo"/></e>
 <e lm="sed prefere">          <i>sed<b/>prefere</i><par n="kaj__cnjcoo"/></e>
-<e lm="sed">                  <i>sed</i><par n="al__pr"/></e>
+<!-- <e lm="sed">                  <i>sed</i><par n="al__pr"/></e> -->
 <e lm="sekve">                <i>sekve</i><par n="after__cnjadv"/></e>
 <e lm="sen">                  <i>sen</i><par n="al__pr"/></e>
 <e lm="sub">                  <i>sub</i><par n="al__pr"/></e>
@@ -2448,7 +2448,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="degelo">               <i>degel</i><par n="o__n"/></e>
 <e lm="degelo">               <i>degel</i><par n="i__vblex"/></e>
 <e lm="degradi">              <i>degrad</i><par n="i__vblex"/></e>
-<e lm="de">                   <i>d</i><par n="e__adv"/></e>
 <e lm="deĵoro">               <i>de</i><par n="ĵ"/><i>or</i><par n="o__n"/></e>
 <e lm="dekadenco">            <i>dekadenc</i><par n="o__n"/></e>
 <e lm="deklari">              <i>deklar</i><par n="i__vblex"/></e>
@@ -15186,7 +15185,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="montriĝeto">           <i>montri</i><par n="ĝ"/><i>et</i><par n="o__n"/></e>
 <e lm="hippotamo">            <i>hippotam</i><par n="o__n"/></e>
 <e lm="hipio">                <i>hipi</i><par n="o__n"/></e>
-<e lm="la">                   <i>l</i><par n="a__adj"/></e>
 <e lm="sibli">                <i>sibl</i><par n="i__vblex"/></e>
 <e lm="prisibli">             <i>prisibl</i><par n="i__vblex"/></e>
 <e lm="histogramo">           <i>histogram</i><par n="o__n"/></e>

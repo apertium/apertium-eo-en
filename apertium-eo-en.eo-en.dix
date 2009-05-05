@@ -985,6 +985,7 @@ BUT:
 <e r="RL"><p><l>de<s n="gen"/></l><r>'<s n="gen"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>by<s n="pr"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>from<s n="pr"/></r></p></e>
+<e r="LR"><p><l>el<s n="pr"/></l>                      <r>from<s n="pr"/></r></p></e>
 <e c="since 1910"><p><l>ekde<s n="pr"/></l>            <r>since<s n="pr"/></r></p></e>
 <e r="RL" c="MG: He fell off his chair"><p><l>de<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
 <e>       <p><l>dum<s n="pr"/></l>                     <r>during<s n="pr"/></r></p></e>
@@ -1973,6 +1974,9 @@ TODO??
 <e r="RL"><p><l>trairi<s n="vblex"/></l>               <r>travel<g><b/>across</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>trakti<s n="vblex"/></l>               <r>deal<g><b/>with</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>trovi<s n="vblex"/></l>                <r>come<g><b/>across</g><s n="vblex"/></r></p></e>
+
+<e><p><l>utili<s n="vblex"/></l>              <r>be<g><b/>usefull</g><s n="vblex"/></r></p></e>
+
 <e r="RL"><p><l>utiligi<s n="vblex"/></l>              <r>take<g><b/>advantage<b/>of</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>valori<s n="vblex"/></l>               <r>be<g><b/>worth</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>vicigi<s n="vblex"/></l>               <r>line<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -2268,7 +2272,7 @@ TODO??
 <e>       <p><l>tuj<b/>kiam<s n="cnjadv"/></l>         <r>as<b/>soon<b/>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>if<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>tought<b/>as<s n="cnjadv"/></r></p></e>
-<e r="RL"><p><l>por<s n="cnjadv"/></l>                 <r>so<b/>as<b/>to<s n="cnjadv"/></r></p></e>
+<!-- <e r="RL"><p><l>por<s n="cnjadv"/></l>                 <r>so<b/>as<b/>to<s n="cnjadv"/></r></p></e>-->
 <e r="RL"><p><l>ankaŭ<s n="adv"/></l>                  <r>as<b/>well<b/>as<s n="adv"/></r></p></e>
 
 <!-- Hèctor end 2009.02.19 -->
@@ -2375,6 +2379,9 @@ TODO??
 
 <e>       <p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/></r></p></e>
 <e>       <p><l>longe<s n="adv"/></l>                  <r>long<s n="adv"/></r></p></e>
+
+<e>       <p><l>edukado<s n="n"/></l>                  <r>education<s n="n"/></r></p></e>
+<e ><p><l>lernado<s n="n"/></l>                  <r>learning<s n="n"/></r></p></e>
 
 	<!-- ====================================================================== -->
 	<!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
@@ -2599,7 +2606,6 @@ TODO??
 <e r="LR"><p><l>avanci<s n="vblex"/></l>               <r>advance<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>avancigi<s n="vblex"/></l>             <r>advance<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>sukcesigi<s n="vblex"/></l>            <r>advance<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>evoluigi<s n="vblex"/></l>             <r>advance<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>alpaŝi<s n="vblex"/></l>               <r>advance<s n="vblex"/></r></p></e>
 <e>       <p><l>avantaĝo<s n="n"/></l>                 <r>advantage<s n="n"/></r></p></e>
 <e r="LR"><p><l>oportunaĵo<s n="n"/></l>               <r>advantage<s n="n"/></r></p></e>
@@ -6164,13 +6170,12 @@ TODO??
 <e r="LR"><p><l>editoro<s n="n"/></l>                  <r>editor<s n="n"/></r></p></e>
 <e>       <p><l>ĉefartikolo<s n="n"/></l>              <r>editorial<s n="n"/></r></p></e>
 <e>       <p><l>eduki<s n="vblex"/></l>                <r>educate<s n="vblex"/></r></p></e>
-<e>       <p><l>edukado<s n="n"/></l>                  <r>education<s n="n"/></r></p></e>
+
 <e r="LR"><p><l>edukiteco<s n="n"/></l>                <r>education<s n="n"/></r></p></e>
 <e r="LR"><p><l>instruiteco<s n="n"/></l>              <r>education<s n="n"/></r></p></e>
 <e r="LR"><p><l>eduko<s n="n"/></l>                    <r>education<s n="n"/></r></p></e>
 <e r="LR"><p><l>klerigado<s n="n"/></l>                <r>education<s n="n"/></r></p></e>
 <e r="LR"><p><l>klereco<s n="n"/></l>                  <r>education<s n="n"/></r></p></e>
-<e r="LR"><p><l>lernado<s n="n"/></l>                  <r>education<s n="n"/></r></p></e>
 <e r="LR"><p><l>didaktiko<s n="n"/></l>                <r>education<s n="n"/></r></p></e>
 <e>       <p><l>angilo<s n="n"/></l>                   <r>eel<s n="n"/></r></p></e>
 <e r="LR"><p><l>angilaĵo<s n="n"/></l>                 <r>eel<s n="n"/></r></p></e>
@@ -19177,7 +19182,7 @@ TODO??
 <e r="RL"><p><l>ruinigi<s n="vblex"/></l>              <r>devastate<s n="vblex"/></r></p></e>
 <e>       <p><l>ruiniĝo<s n="n"/></l>                  <r>devastation<s n="n"/></r></p></e>
 <e r="LR"><p><l>detruiĝo<s n="n"/></l>                 <r>devastation<s n="n"/></r></p></e>
-<e r="RL"><p><l>evoluigi<s n="vblex"/></l>             <r>develop<s n="vblex"/></r></p></e>
+<e><p><l>evoluigi<s n="vblex"/></l>             <r>develop<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekesti<s n="vblex"/></l>               <r>develop<s n="vblex"/></r></p></e>
 <e>       <p><l>ellaboranto<s n="n"/></l>              <r>developer<s n="n"/></r></p></e>
 <e r="RL"><p><l>evolua<s n="adj"/></l>                 <r>developmental<s n="adj"/></r></p></e>
@@ -21709,7 +21714,6 @@ TODO??
 <e r="RL"><p><l>flugfolio<s n="n"/></l>                <r>leaflet<s n="n"/></r></p></e>
 <e r="LR"><p><l>faldfolio<s n="n"/></l>                <r>leaflet<s n="n"/></r></p></e>
 <e r="RL"><p><l>lernanto<s n="n"/></l>                 <r>learner<s n="n"/></r></p><par n="MF_GD"/></e>
-<e r="RL"><p><l>lernado<s n="n"/></l>                  <r>learning<s n="n"/></r></p></e>
 <e r="LR"><p><l>lerno<s n="n"/></l>                    <r>learning<s n="n"/></r></p></e>
 <e r="LR"><p><l>ellernado<s n="n"/></l>                <r>learning<s n="n"/></r></p></e>
 <e r="LR"><p><l>lerniteco<s n="n"/></l>                <r>learning<s n="n"/></r></p></e>

@@ -15,6 +15,12 @@
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
+  
+  <def-cat n="c_pli_plej">
+     <cat-item lemma="pli" tags="preadv"/>
+     <cat-item lemma="plej" tags="preadv"/>
+  </def-cat>
+
   <def-cat n="c_adv">
      <cat-item tags="adv"/>
      <cat-item tags="preadv"/>
@@ -40,6 +46,12 @@
      <attr-item tags="n"/>
      <attr-item tags="np"/>
      <attr-item tags="np.ant"/>
+     <attr-item tags="np.top"/>
+     <attr-item tags="np.al"/>
+     <attr-item tags="np.ant"/>
+     <attr-item tags="np.ant.m"/>
+     <attr-item tags="np.ant.f"/>
+     <attr-item tags="np.cog"/>
      <attr-item tags="np.top"/>
   </def-attr>
 
@@ -111,8 +123,122 @@
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="genere"/>
-  <def-var n="caso"/>
+  <def-var n="adv_adjectiu"/>
+  <def-var n="superlatiu1"/>
 </section-def-vars>
+
+
+
+
+
+
+
+<section-def-macros> 
+
+
+<!--
+^dark<adj><sint>$
+^dark<adj><sint><comp>$
+^dark<adj><sint><sup>$
+
+^malluma<adj><sg><nom>$
+^pli<preadv>$ ^malluma<adj><sg><nom>$
+^plej<preadv>$ ^malluma<adj><sg><nom>$
+
+-->
+
+<def-macro n="pli_plej_adj" npar="2">
+	<choose>
+	  <when>
+	    <test>
+	      <and>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
+      		<equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
+	      </and>
+	    </test>
+	    <let>
+	      <var n="adv_adjectiu"/>
+        <concat>
+          <clip pos="2" side="tl" part="lem"/> 
+          <clip pos="2" side="tl" part="a_adj"/>
+          <lit-tag v="comp"/>
+        </concat>
+	    </let>
+	  </when>
+	  <when>
+	    <test>
+	      <and>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="plej"/></equal>
+          <equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
+	      </and>
+	    </test>
+	    <let>	      
+	      <clip pos="1" side="tl" part="lem"/> 
+	      <get-case-from pos="1">
+	      <lit v="much"/>
+	      </get-case-from>
+	    </let>
+	    <let>
+	      <var n="adv_adjectiu"/>
+		<concat>
+		  <clip pos="1" side="tl" part="whole"/> 
+		  <lit v="$ ^"/>
+		  <clip pos="2" side="tl" part="lem"/> 
+		  <clip pos="2" side="tl" part="a_adj"/>
+		  <lit-tag v="comp"/>
+		</concat>
+	    </let>
+	  </when>
+	  <when>
+	    <test>
+	      <and>
+		<equal caseless="yes">
+		  <clip pos="1" side="sl" part="lem"/>
+		  <lit v="ben"/>
+		</equal>
+		<not>
+		  <equal>
+		    <clip pos="2" side="sl" part="a_adj"/>
+		    <lit-tag v="vblex.pp"/>
+		  </equal>
+		</not>
+	      </and>
+	    </test>
+	    <let>
+	      <var n="adv_adjectiu"/>
+		<concat>
+		  <get-case-from pos="1">
+		    <lit v="very"/>
+		  </get-case-from>
+		  <lit-tag v="preadv"/> 
+		  <lit v="$ ^"/>
+		  <clip pos="2" side="tl" part="lem"/> 
+		  <clip pos="2" side="tl" part="a_adj"/>
+		</concat>
+	    </let>
+	  </when>
+	  <otherwise>
+	    <let>
+	      <var n="adv_adjectiu"/>
+		<concat>
+		  <clip pos="1" side="tl" part="whole"/> 
+		  <lit v="$ ^"/>
+		  <var n="superlatiu1"/>
+		  <clip pos="2" side="tl" part="lem"/> 
+		  <clip pos="2" side="tl" part="a_adj"/>
+		</concat>
+	    </let>
+	  </otherwise>
+	</choose>
+
+	      
+		
+		
+</def-macro>
+
+  </section-def-macros> 
+
+
 
 <section-rules>
   <rule>
@@ -190,9 +316,31 @@
          <chunk name="adj" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <!--<tag><clip pos="1" side="tl" part="a_gen"/></tag> -->
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-             <!-- <tag><clip pos="1" side="tl" part="a_cas"/></tag> -->
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_pli_plej"/>
+       <pattern-item n="c_adj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adj" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -318,11 +466,12 @@
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
               <clip pos="1" side="tl" part="a_prs"/>
               <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
