@@ -1,4 +1,4 @@
-VERSION=0.9.5
+VERSION=0.9.8
 LANG1=eo
 LANG2=en
 PREFIX1=$(LANG1)-$(LANG2)
@@ -110,6 +110,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml \
 	   $(BASENAME).$(LANG2).acx \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
            $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x \
+	   $(BASENAME).$(PREFIX2).genitive.t1x \
            $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x \
            modes.xml multi-gen.sh
 
