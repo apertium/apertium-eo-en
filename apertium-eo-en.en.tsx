@@ -273,27 +273,6 @@ New ambiguity class: {THATPRN,DET}
 
 <forbid>
 
-<!-- ENMETU POSTE TODO TRE BONA IDEO, EBLE! ELPROVU!!!
-Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro 
-    <label-sequence>
-      <label-item label="NOMPL"/>
-      <label-item label="NOMSG"/>      
-    </label-sequence>
--->
-
-
-
-<!-- He saw that the house was good. seeming to show that the unhindered rage of Achilles.
-     evitu  that<det><dem><sg>/that<prn><tn><sg>  = tiu/tio preferu ^that<cnjsub>$  (ke) -->
-<!--    <label-sequence><label-item label="PRNALTRES"/><label-item label="DET"/></label-sequence> -->
-<!--    <label-sequence><label-item label="THATCNJ"/><label-item label="DET"/></label-sequence> 
-
-    <enforce-after label="THATCNJ">
-      <label-set>
-        <label-item label="DET"/>
-      </label-set>
-    </enforce-after>
--->
 
 
 
@@ -981,6 +960,23 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
 	<label-item label="DETQNT_ORD"/>
       </label-set>
     </enforce-after>
+ 
+
+
+
+<!-- He saw that the house was good. seeming to show that the unhindered rage of Achilles.
+     evitu  that<det><dem><sg>/that<prn><tn><sg>  = tiu/tio preferu ^that<cnjsub>$  (ke) -->
+<!--
+   <label-sequence><label-item label="THATCNJ"/><label-item label="DET"/></label-sequence> 
+   <label-sequence><label-item label="PRNALTRES"/><label-item label="DET"/></label-sequence> 
+    <enforce-after label="THATCNJ">
+      <label-set>
+        <label-item label="DET"/>
+      </label-set>
+    </enforce-after>
+-->
+
+
 
 <!--   <enforce-after label="VAUX"><!-*-afegit MG 26/02/07 -*->
       <label-set>
@@ -1081,16 +1077,7 @@ Jacob 24feb 2009. Por eviti   "Farmers work" - Kultivistoj-laboro
  <preferences>
    <prefer tags="n.acr.sg"/>
 
-<!-- provu, por maloftigi <pp>:
-<prefer tags="vblex.inf"/>
-<prefer tags="vblex.past"/>
-<prefer tags="vblex.pres"/>
-<prefer tags="vblex.pres.*"/>
-<prefer tags="vbdo.inf"/>
-<prefer tags="vbdo.past"/>
-<prefer tags="vbdo.pres"/>
-<prefer tags="vbdo.pres.*"/>
--->
+<!-- maloftigu <pp> iel -->
 
  </preferences>
 
