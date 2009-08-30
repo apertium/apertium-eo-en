@@ -645,8 +645,20 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
 <e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
 	
+<!--
+Mankas en bidix aux en angla dix
 
+<e lm="malpli">               <i>malpli</i><par n="tro__preadv"/></e>
+<e lm="iom">                  <i>iom</i><par n="tro__preadv"/></e>
+<e lm="multe">                <i>multe</i><par n="tro__preadv"/></e>
+<e lm="multe pli">            <i>multe<b/>pli</i><par n="tro__preadv"/></e>
+<e lm="pli">                  <i>pli</i><par n="al__pr"/></e>
+
+<e lm="tiel fari">            <p><l>tiel<b/></l><r><g>tiel<b/></g></r></p><i>far</i><par n="i__vblex"/></e>
+
+-->
 <e lm="tiel fari">            <i>tiel<b/>far</i><par n="i__vblex"/></e>
+
 
 	
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
@@ -710,15 +722,11 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="nia">                  <i>ni</i><par n="a__adj"/></e>
 <e lm="ilia">                 <i>ili</i><par n="a__adj"/></e>
 
-<e lm="plia">                 <i>plia</i><par n="tio__prn"/></e>
+<e r="RL" lm="plia">                 <i>plia</i><par n="tio__prn"/></e>
 <e lm="pli">                  <i>pli</i><par n="tro__preadv"/></e>
 <e lm="plej">                 <i>plej</i><par n="tro__preadv"/></e>
 <e lm="vere">                 <i>vere</i><par n="tro__preadv"/></e>
 <e lm="jen">                  <i>jen</i><par n="jam__adv"/></e>
-<e lm="malpli">               <i>malpli</i><par n="tro__preadv"/></e>
-<e lm="iom">                  <i>iom</i><par n="tro__preadv"/></e>
-<e lm="multe">                <i>multe</i><par n="tro__preadv"/></e>
-<e lm="multe pli">            <i>multe<b/>pli</i><par n="tro__preadv"/></e>
 <e lm="sufiĉe">               <i>sufi</i><par n="ĉ"/><i>e</i><par n="tro__preadv"/></e>
 <e lm="tiel">                 <i>tiel</i><par n="tro__preadv"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="tro__preadv"/></e>
@@ -726,7 +734,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="tro">                  <i>tro</i><par n="tro__preadv"/></e>
 <e>                           <i>iu<b/>ajn</i><par n="tro__preadv"/></e>
 <e lm="pli">                  <i>pli</i><par n="jam__adv"/></e>
-<e lm="pli">                  <i>pli</i><par n="al__pr"/></e>
+
+
 <e lm="da">                   <i>da</i><par n="al__pr"/></e>
 <e lm="plia">                 <i>pli</i><par n="a__adj"/></e>
 <e lm="pliaĝa">               <i>pliaĝ</i><par n="a__adj"/></e>
@@ -8931,7 +8940,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="intertempa">           <i>intertemp</i><par n="a__adj"/></e>
 <e lm="klopodado">            <i>klopodad</i><par n="o__n"/></e>
 <e lm="aktivismo">            <i>aktivism</i><par n="o__n"/></e>
-<e lm="aktivulo">             <i>aktivul</i><par n="ino__n"/></e>
 <e lm="partizano">            <i>partizan</i><par n="o__n"/></e>
 <e lm="aktivado">             <i>aktivad</i><par n="o__n"/></e>
 <e lm="programero">           <i>programer</i><par n="o__n"/></e>
