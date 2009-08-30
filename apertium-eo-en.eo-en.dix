@@ -532,6 +532,8 @@
      Aristotle conducted most of the scientific thinking
      most of the time -->
 <e>       <p><l>plejparto<s n="prn"/><s n="tn"/><s n="sg"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>plejparto<s n="prn"/><s n="tn"/><s n="pl"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+
 <e>       <p><l>kelka<s n="prn"/><s n="tn"/><s n="pl"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e>       <p><l>alia<s n="prn"/><s n="tn"/></l>        <r>others<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/></l><r>another<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
@@ -950,7 +952,8 @@ BUT:
 
     <!-- Prepositions -->
 
-<e>       <p><l>da<s n="pr"/></l>                      <r>month__n__da<s n="pr"/></r></p></e>
+<e r="RL"><p><l>da<s n="pr"/></l>                      <r>month__n__da<s n="pr"/></r></p></e>
+<e r="LR"><p><l>da<s n="pr"/></l>                      <r>of<s n="pr"/></r></p></e>
 
 <e>       <p><l>ĉe<s n="pr"/></l>                      <r>at<s n="pr"/></r></p></e>
 <e>       <p><l>tra<s n="pr"/></l>                     <r>through<s n="pr"/></r></p></e>
