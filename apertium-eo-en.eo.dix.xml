@@ -484,9 +484,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>i</l>                   <r>i<s n="vaux"/><s n="inf"/></r></p></e>
 <e>                           <p><l>as</l>                  <r>i<s n="vaux"/><s n="pres"/></r></p></e>
 <e>                           <p><l>is</l>                  <r>i<s n="vaux"/><s n="past"/></r></p></e>
-<e>                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vaux"/><s n="fts"/></r></p></e>
+<e>                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
+<e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
+<e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
+<e>                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
+<!-- Ne uzataj en->eo
 <e>                           <p><l>ita</l>                 <r>i<s n="vaux"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>itaj</l>                <r>i<s n="vaux"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>                           <p><l>itan</l>                <r>i<s n="vaux"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -496,11 +500,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>inta</l>                <r>i<s n="vaux"/><s n="pp3"/></r></p></e>
 <e>                           <p><l>inta</l>                <r>i<s n="vaux"/><s n="pp3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>intaj</l>               <r>i<s n="vaux"/><s n="pp3"/><s n="pl"/></r></p></e>
-<e>                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
 <e>                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
-<e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
-<e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
 <e>                           <p><l>u</l>                   <r>i<s n="vaux"/><s n="imp"/></r></p></e>
+-->
 </pardef>
  
 
@@ -635,14 +637,16 @@ Necesas difini paradigmon por adj-nomo terminoj
     
 <pardef n="du__num">
 <e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="acc"/></r></p></e>
+<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
+<!--
 <e>                           <p><l><b/>cent</l>            <r><b/>cent<s n="num"/><s n="sp"/></r></p></e>
 <e>                           <p><l><b/>mil</l>             <r><b/>mil<s n="num"/><s n="sp"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="acc"/></r></p></e>
 <e>                           <p><l><b/>cent</l>            <r><b/>cent<s n="num"/><s n="sp"/><s n="acc"/></r></p></e>
 <e>                           <p><l><b/>mil</l>             <r><b/>mil<s n="num"/><s n="sp"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
 <e>                           <p><l><b/>cent</l>            <r><b/>cent<s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
 <e>                           <p><l><b/>mil</l>             <r><b/>mil<s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
+-->
 </pardef>
     
         
@@ -673,6 +677,7 @@ Mankas en bidix aux en angla dix
 <e lm="multe">                <i>multe</i><par n="tro__preadv"/></e>
 <e lm="multe pli">            <i>multe<b/>pli</i><par n="tro__preadv"/></e>
 <e lm="pli">                  <i>pli</i><par n="al__pr"/></e>
+<e lm="malpli">               <i>malpli</i><par n="al__pr"/></e>
 
 Senutilaj - forprenu
 <e lm="kelka">                <p><l>kelkaj</l>              <r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -1016,7 +1021,6 @@ Senutilaj - forprenu
 <e lm="vidalvide al">         <i>vidalvide<b/>al</i><par n="al__pr"/></e>
 <e lm="malgraŭ">              <i>malgra</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 <e lm="malmulta">             <i>malmulta</i><par n="quant__det"/></e>
-<e lm="malpli">               <i>malpli</i><par n="al__pr"/></e>
 <e lm="multa">                <i>multa</i><par n="quant__det"/></e>
 
 <e lm="plejparto de">         <i>plejparto</i><par n="quant__det"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
@@ -1029,7 +1033,6 @@ Senutilaj - forprenu
 <e lm="neniu">                <p><l>neniun</l>              <r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="ol">                   <i>ol</i><par n="kaj__cnjcoo"/></e>
 <e lm="per">                  <i>per</i><par n="al__pr"/></e>
-<e lm="per en">               <i>per<b/>en</i><par n="al__pr"/></e>
 <e lm="per multe da">         <i>per<b/>multe<b/>da</i><par n="al__pr"/></e>
 <e lm="pere de">              <i>pere<b/>de</i><par n="al__pr"/></e>
 <!--
@@ -1043,7 +1046,15 @@ Senutilaj - forprenu
 <e lm="post kiam">            <i>post<b/>kiam</i><par n="after__cnjadv"/></e>
 <e lm="pro">                  <i>pro</i><par n="al__pr"/></e>
 <e lm="pro tio ke">           <i>pro<b/>tio<b/>ke</i><par n="after__cnjadv"/></e>
+
+<!-- ne uzataj en->eo
+<e lm="per en">               <i>per<b/>en</i><par n="al__pr"/></e>
 <e lm="pro tio ke">           <i>pro<b/>tio<b/>ke</i><par n="kaj__cnjcoo"/></e>
+<e lm="ŝajne">                <par n="ŝ"/><i>ajne</i><par n="after__cnjadv"/></e>
+<e lm="tial">                 <i>tial</i><par n="after__cnjadv"/></e>
+<e lm="tiel ke">              <i>tiel<b/>ke</i><par n="al__pr"/></e>
+-->
+
 <e lm="rilate al">            <i>rilate<b/>al</i><par n="al__pr"/></e>
 <e lm="se">                   <i>se</i><par n="after__cnjadv"/></e>
 <e lm="sed">                  <i>sed</i><par n="kaj__cnjcoo"/></e>
@@ -1055,13 +1066,10 @@ Senutilaj - forprenu
 <e lm="super">                <i>super</i><par n="al__pr"/></e>
 <e lm="sur">                  <i>sur</i><par n="al__pr"/></e>
 <e lm="pri">                  <i>pri</i><par n="al__pr"/></e>
-<e lm="ŝajne">                <par n="ŝ"/><i>ajne</i><par n="after__cnjadv"/></e>
 <e lm="tamen">                <i>tamen</i><par n="after__cnjadv"/></e>
 <e lm="tia">                  <i>tia</i><par n="ind__det"/></e>
 <e lm="tiam">                 <i>tiam</i><par n="after__cnjadv"/></e>
-<e lm="tial">                 <i>tial</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
-<e lm="tiel ke">              <i>tiel<b/>ke</i><par n="al__pr"/></e>
 <e lm="tiel kiel">            <i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>
 <e lm="tra">                  <i>tra</i><par n="al__pr"/></e>
 <e lm="tuj kiam">             <i>tuj<b/>kiam</i><par n="after__cnjadv"/></e>
