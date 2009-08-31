@@ -1590,8 +1590,6 @@ BUT:
 
 
 <e><p><l>guruo<s n="n"/></l><r>guru<s n="n"/></r></p><par n="MF_GD"/></e>
-<e><p><l>monaĥino<s n="n"/></l><r>nun<s n="n"/></r></p></e>
-<e>       <p><l>monako<s n="n"/></l>                   <r>monk<s n="n"/></r></p><par n="MF_GD"/></e>
 
 
 
@@ -2165,7 +2163,21 @@ TODO??
 <e r="RL"><p><l>reganto<s n="n"/></l>                  <r>mandator<s n="n"/></r></p><par n="MF_GD"/></e>
 <e>       <p><l>parlamentano<s n="n"/></l>             <r>member<g><b/>of<b/>parliament</g><s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="LR"><p><l>aktivulo<s n="n"/></l>                 <r>militant<s n="n"/></r></p><par n="MF_GD"/></e>
+
+<e>       <p><l>monarko<s n="n"/></l>                  <r>monarch<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>monaĥo<s n="n"/><s n="f"/></l><r>nun<s n="n"/></r></p></e>
+<e>       <p><l>monaĥo<s n="n"/><s n="m"/></l><r>monk<s n="n"/></r></p></e>
+
+<e>       <p><l>monaĥinejo<s n="n"/></l>               <r>convent<s n="n"/></r></p></e>
+<e>       <p><l>monaĥejo<s n="n"/></l>				   <r>monastery<s n="n"/></r></p></e>           
+
+<!--
 <e r="LR"><p><l>monarko<s n="n"/></l>                  <r>monarch<s n="n"/></r></p><par n="MF_GD"/></e>
+<e>       <p><l>monarko<s n="n"/></l>                  <r>monarch<s n="n"/></r></p></e>
+<e r="LR"><p><l>monarkino<s n="n"/></l>                <r>monarch<s n="n"/></r></p></e>
+-->
+
+
 <e r="LR"><p><l>montgrimpisto<s n="n"/></l>            <r>mountaineer<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="RL"><p><l>notario<s n="n"/></l>                  <r>notary<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="LR"><p><l>telefonisto<s n="n"/></l>              <r>operator<s n="n"/></r></p><par n="MF_GD"/></e>
@@ -4851,8 +4863,6 @@ TODO??
 <e r="LR"><p><l>vortbatalo<s n="n"/></l>               <r>controversy<s n="n"/></r></p></e>
 <e>       <p><l>oportuno<s n="n"/></l>                 <r>convenience<s n="n"/></r></p></e>
 <e r="LR"><p><l>oportuneco<s n="n"/></l>               <r>convenience<s n="n"/></r></p></e>
-<e>       <p><l>monakinejo<s n="n"/></l>               <r>convent<s n="n"/></r></p></e>
-<e r="LR"><p><l>monakejo<s n="n"/></l>                 <r>convent<s n="n"/></r></p></e>
 <e>       <p><l>kongreso<s n="n"/></l>                 <r>convention<s n="n"/></r></p></e>
 <e r="LR"><p><l>konvencio<s n="n"/></l>                <r>convention<s n="n"/></r></p></e>
 <e>       <p><l>konverĝi<s n="vblex"/></l>             <r>converge<s n="vblex"/></r></p></e>
@@ -9805,8 +9815,6 @@ TODO??
 <e r="LR"><p><l>tempeto<s n="n"/></l>                  <r>moment<s n="n"/></r></p></e>
 <e r="LR"><p><l>tempero<s n="n"/></l>                  <r>moment<s n="n"/></r></p></e>
 <e r="RL"><p><l>momenta<s n="adj"/></l>                <r>momentary<s n="adj"/></r></p></e>
-<e>       <p><l>monarko<s n="n"/></l>                  <r>monarch<s n="n"/></r></p></e>
-<e r="LR"><p><l>monarkino<s n="n"/></l>                <r>monarch<s n="n"/></r></p></e>
 <e>       <p><l>monarkio<s n="n"/></l>                 <r>monarchy<s n="n"/></r></p></e>
 <e r="LR"><p><l>reĝlando<s n="n"/></l>                 <r>monarchy<s n="n"/></r></p></e>
 <e>       <p><l>mono<s n="n"/></l>                     <r>money<s n="n"/></r></p></e>
@@ -29462,7 +29470,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>kvietigi<s n="vblex"/></l><r>mollify<s n="vblex"/></r></p></e>     
 <e r="RL"><p><l>panjo<s n="n"/></l><r>mom<s n="n"/></r></p></e>                    
 <e r="RL"><p><l>decidiga<s n="adj"/></l><r>momentous<s n="adj"/></r></p></e>       
-<e r="RL"><p><l>monaĥejo<s n="n"/></l><r>monastery<s n="n"/></r></p></e>           
+
 <e r="RL"><p><l>nomo<s n="n"/></l><r>moniker<s n="n"/></r></p></e>                 
 <e r="RL"><p><l>abomena<s n="adj"/></l><r>monstrous<s n="adj"/></r></p></e>        
 <e       ><p><l>monate<s n="adv"/></l><r>monthly<s n="adv"/></r></p></e>           
@@ -29590,7 +29598,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>kubutpuŝo<s n="n"/></l><r>nudge<s n="n"/></r></p></e>              
 <e r="RL"><p><l>sensenta<s n="adj"/></l><r>numb<s n="adj"/></r></p></e>            
 <e       ><p><l>religiulino<s n="n"/></l><r>nun<s n="n"/></r></p></e>              
-<e r="LR"><p><l>monaĥino<s n="n"/></l><r>nun<s n="n"/></r></p></e>                 
 <e       ><p><l>vartejo<s n="n"/></l><r>nursery<s n="n"/></r></p></e>              
 <e r="LR"><p><l>infanvartejo<s n="n"/></l><r>nursery<s n="n"/></r></p></e>         
 <e r="LR"><p><l>plantvartejo<s n="n"/></l><r>nursery<s n="n"/></r></p></e>         
@@ -32263,7 +32270,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e       ><p><l>misfarinto<s n="n"/></l><r>miscreant<s n="n"/></r></p></e>         
 <e r="LR"><p><l>misulo<s n="n"/></l><r>miscreant<s n="n"/></r></p></e>             
 <e       ><p><l>ŝtatano<s n="n"/></l><r>national<s n="n"/></r></p></e>             
-<e r="LR"><p><l>monaĥino<s n="n"/></l><r>nun<s n="n"/></r></p></e>                 
 <e r="RL"><p><l>flego<s n="n"/></l><r>nursing<s n="n"/></r></p></e>                
 <e       ><p><l>bizarulo<s n="n"/></l><r>oddball<s n="n"/></r></p></e>             
 <e r="LR"><p><l>strangulo<s n="n"/></l><r>oddball<s n="n"/></r></p></e>            

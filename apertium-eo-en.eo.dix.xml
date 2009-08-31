@@ -231,11 +231,19 @@
 <e r="LR">                    <p><l>hx</l>                  <r>ĥ</r></p></e>
 <e>                           <p><l>ĥ</l>                   <r>ĥ</r></p></e>
 </pardef>
-<pardef n="k_ĥ">
+
+<pardef n="k_ĥ"><!-- preferu k sed permesu ĥ -->
 <e r="LR">                    <p><l>hx</l>                  <r>k</r></p></e>
 <e r="LR">                    <p><l>ĥ</l>                   <r>k</r></p></e>
 <e>                           <p><l>k</l>                   <r>k</r></p></e>
 </pardef>
+
+<pardef n="ĥ_k"><!-- preferu ĥ sed permesu k -->
+<e r="LR">                    <p><l>hx</l>                  <r>ĥ</r></p></e>
+<e>                           <p><l>ĥ</l>                   <r>ĥ</r></p></e>
+<e r="LR">                    <p><l>k</l>                   <r>ĥ</r></p></e>
+</pardef>
+
 <pardef n="ĵ">
 <e r="LR">                    <p><l>jx</l>                  <r>ĵ</r></p></e>
 <e>                           <p><l>ĵ</l>                   <r>ĵ</r></p></e>
@@ -1523,8 +1531,15 @@ Senutilaj - forprenu
 <e lm="ministo">              <i>minist</i><par n="ino__n"/></e>
 <e lm="ĉefministro">          <i>ĉefministr</i><par n="ino__n"/></e>
 <e lm="ministro">             <i>ministr</i><par n="ino__n"/></e>
-<e lm="monaĥo">               <i>mona</i><par n="ĥ"/><i></i><par n="ino__n"/></e>
+
+<e lm="monaĥo">               <i>mona</i><par n="ĥ_k"/><i></i><par n="ino__n"/></e>
 <e lm="monarko">              <i>monar</i><par n="k_ĥ"/><i></i><par n="ino__n"/></e>
+
+<e lm="monarkio">             <i>monar</i><par n="k_ĥ"/><i>i</i><par n="o__n"/></e>
+<e lm="monaĥejo">             <i>mona</i><par n="ĥ_k"/><i>ej</i><par n="o__n"/></e>
+<e lm="monakinejo">           <i>mona</i><par n="ĥ_k"/><i>inej</i><par n="o__n"/></e>
+
+
 <e lm="monpruntisto">         <i>monpruntist</i><par n="ino__n"/></e>
 <e lm="montgrimpisto">        <i>montgrimpist</i><par n="ino__n"/></e>
 <e lm="mortinto">             <i>mortint</i><par n="o__n"/></e>
@@ -4797,9 +4812,6 @@ Senutilaj - forprenu
 <e lm="molusko">              <i>molusk</i><par n="o__n"/></e>
 <e lm="momenta">              <i>moment</i><par n="a__adj"/></e>
 <e lm="momento">              <i>moment</i><par n="o__n"/></e>
-<e lm="monakejo">             <i>mona</i><par n="k_ĥ"/><i>ej</i><par n="o__n"/></e>
-<e lm="monako">               <i>mona</i><par n="k_ĥ"/><i></i><par n="o__n"/></e>
-<e lm="monarkio">             <i>monar</i><par n="k_ĥ"/><i>i</i><par n="o__n"/></e>
 <e lm="monata">               <i>monat</i><par n="a__adj"/></e>
 <e lm="monato">               <i>monat</i><par n="o__n"/></e>
 <e lm="monda">                <i>mond</i><par n="a__adj"/></e>
@@ -8054,8 +8066,6 @@ Senutilaj - forprenu
 <e lm="miro">                 <i>mir</i><par n="o__n"/></e>
 <e lm="misfaro">              <i>misfar</i><par n="o__n"/></e>
 <e lm="mokado">               <i>mokad</i><par n="o__n"/></e>
-<e lm="monarko">              <i>monar</i><par n="k_ĥ"/><i></i><par n="o__n"/></e>
-<e lm="monakinejo">           <i>mona</i><par n="k_ĥ"/><i>inej</i><par n="o__n"/></e>
 <e lm="monfarejo">            <i>monfarej</i><par n="o__n"/></e>
 <e lm="monitorado">           <i>monitorad</i><par n="o__n"/></e>
 <e lm="montogrimpado">        <i>montogrimpad</i><par n="o__n"/></e>
@@ -17274,7 +17284,6 @@ Senutilaj - forprenu
 <e lm="tempeto">              <i>tempet</i><par n="o__n"/></e>
 <e lm="tempero">              <i>temper</i><par n="o__n"/></e>
 <e lm="impeto">               <i>impet</i><par n="o__n"/></e>
-<e lm="monarkino">            <i>monar</i><par n="k_ĥ"/><i>in</i><par n="o__n"/></e>
 <e lm="monarkismo">           <i>monar</i><par n="k_ĥ"/><i>ism</i><par n="o__n"/></e>
 <e lm="monarkisto">           <i>monar</i><par n="k_ĥ"/><i>ist</i><par n="ino__n"/></e>
 <e lm="mona">                 <i>mon</i><par n="a__adj"/></e>
@@ -29562,7 +29571,6 @@ Senutilaj - forprenu
 <e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
 <e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 <e lm="apude">                <i>apud</i><par n="e__adv"/></e>
-<e lm="monako">               <i>monak</i><par n="ino__n"/></e>
 <e lm="poluri">               <i>polur</i><par n="i__vblex"/></e>
 <e lm="returne eliri">        <i>returne<b/>elir</i><par n="i__vblex"/></e>
 <e lm="azerbajĝana">          <i>azerbaj</i><par n="ĝ"/><i>an</i><par n="a__adj"/></e>
@@ -33145,7 +33153,6 @@ Senutilaj - forprenu
 <e lm="homero">               <i>homer</i><par n="o__n"/></e>
 <e lm="junulino">             <i>junulin</i><par n="o__n"/></e>
 <e lm="mastrino">             <i>mastrin</i><par n="o__n"/></e>
-<e lm="monaĥejo">             <i>mona</i><par n="ĥ"/><i>ej</i><par n="o__n"/></e>
 <e lm="vidvino">              <i>vidvin</i><par n="o__n"/></e>
 <e lm="ĥaoso">                <par n="ĥ"/><i>aos</i><par n="o__n"/></e>
 <e lm="atentoni">             <i>atenton</i><par n="i__vblex"/></e>
@@ -33532,7 +33539,6 @@ Senutilaj - forprenu
 <e lm="luktisto">             <i>luktist</i><par n="ino__n"/></e>
 <e lm="nenomita">             <i>nenomit</i><par n="a__adj"/></e>
 <e lm="adoleskantino">        <i>adoleskantin</i><par n="o__n"/></e>
-<e lm="monaĥino">             <i>mona</i><par n="ĥ"/><i>in</i><par n="o__n"/></e>
 <e lm="paroĥestro">           <i>paro</i><par n="ĥ"/><i>estr</i><par n="o__n"/></e>
 <e lm="guruo">                <i>guru</i><par n="ino__n"/></e>
 <e lm="akcesoraĵo">           <i>akcesora</i><par n="ĵ"/><i></i><par n="o__n"/></e>
