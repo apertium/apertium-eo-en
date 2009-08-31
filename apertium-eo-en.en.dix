@@ -352,12 +352,19 @@
 <pardef n="that__cnjsub">
   <e>       <p><l></l>          <r><s n="cnjsub"/></r></p></e>
 </pardef>
+
+
+<pardef n="sp0">
+  <e>       <p><l></l>          <r><s n="sp"/></r></p></e>
+<!-- JN 16feb 2009: por simpligi i.a. la Tagger, nur uzu de eo al en -->
+  <e r="RL"><p><l></l>          <r><s n="sg"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="pl"/></r></p></e>
+</pardef>
+
+
     
 <pardef n="the__det">
-  <e>       <p><l></l>          <r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
-<!-- JN 16feb 2009: por simpligi i.a. la Tagger, nur uzu de eo al en -->
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="def"/><s n="sg"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="def"/><s n="pl"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="det"/><s n="def"/></r></p><par n="sp0"/></e>
 </pardef>
 
 <pardef n="/a__det">
@@ -371,9 +378,7 @@
 </pardef>
 
 <pardef n="other__det">
-  <e>       <p><l></l>          <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="det"/><s n="ind"/></r></p><par n="sp0"/></e>
 </pardef>
     
 <pardef n="several__det">
@@ -381,9 +386,7 @@
 </pardef>
     
 <pardef n="her__det">
-  <e r="LR"><p><l></l>          <r><s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="pos"/><s n="sg"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="pos"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sp0"/></e>
 </pardef>
     
 <pardef n="th/is__det">
@@ -402,28 +405,10 @@
 <jacobEo> but I should keep the name "second__det", right? To be able to steal from other dicts ?
 <spectie> yes
 <spectie> i'd make three entries
-<spectie> and not put the different tags in the same paradigm 
- 
-    <e r="LR">
-      <p>
-        <l/> 
-        <r><s n="det"/><s n="ord"/><s n="sp"/></r> 
-      </p>
-    </e>
-
-    <e r="RL">
-      <p>
-        <l/> 
-        <r><s n="det"/><s n="ord"/><s n="sg"/></r> 
-      </p>
-    </e>
-
-    <e r="RL">
-      <p>
-        <l/> 
-        <r><s n="det"/><s n="ord"/><s n="pl"/></r> 
-      </p>
-    </e>
+<spectie> and not put the different tags in the same paradigm  
+    <e r="LR">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="sp"/></r>       </p>    </e>
+    <e r="RL">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="sg"/></r>       </p>    </e>
+    <e r="RL">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="pl"/></r>       </p>   </e>
 -->
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
@@ -438,9 +423,7 @@
 </pardef>
     
 <pardef n="enough__det">
-  <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
-  <e r="RL"><p><l></l>          <r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/></r></p><par n="sp0"/></e>
 </pardef>
 
 <pardef n="how_many__det">
@@ -482,19 +465,22 @@
 </pardef>
     
 <pardef n="all__prn">
-  <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/></r></p><par n="sp0"/></e>
 </pardef>
     
 <pardef n="the_other__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="what__prn">
-  <e>       <p><l></l>          <r><s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="prn"/><s n="itg"/></r></p><par n="sp0"/></e>
 </pardef>
+
 <pardef n="which_one__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="itg"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="how_many__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="itg"/><s n="pl"/></r></p></e>
 </pardef>
@@ -502,7 +488,7 @@
   <e>       <p><l></l>          <r><s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="that__rel">
-  <e>       <p><l></l>          <r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="rel"/><s n="an"/><s n="mf"/></r></p><par n="sp0"/></e>
 </pardef>
 <pardef n="where__rel">
   <e>       <p><l></l>          <r><s n="rel"/><s n="adv"/></r></p></e>

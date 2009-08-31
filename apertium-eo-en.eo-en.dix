@@ -595,13 +595,12 @@
 
 
 <e>       <p><l>kies<s n="prn"/><s n="itg"/></l>        <r>whose<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>whom<s n="prn"/><s n="itg"/></r></p></e>
-<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>who<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
+<e>		  <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>who<s n="prn"/><s n="itg"/></r></p></e>
+<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>which<s n="prn"/><s n="itg"/></r></p></e>
+<e r="RL"><p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>whom<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kio<s n="prn"/><s n="itg"/></l>         <r>what<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiom<s n="prn"/><s n="itg"/></l>  <r>how<b/>much<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiom<b/>da<s n="prn"/><s n="itg"/></l>        <r>how<b/>many<s n="prn"/><s n="itg"/></r></p></e>
-<e>       <p><l>kiu<s n="prn"/><s n="itg"/></l>         <r>which<s n="prn"/><s n="itg"/></r></p></e>
 <e>       <p><l>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/></l><r>which<b/>one<s n="prn"/><s n="itg"/></r></p></e>
 
 
@@ -619,19 +618,11 @@
 <e>       <p><l>neniu<s n="prn"/></l>                  <r>no<b/>one<s n="prn"/></r></p></e>
 
 
-<!-- removed Jacob 27oct 08 as too many 'either' of class <det> got categorized as <prn> by tagger.
-<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>either<s n="prn"/></r></p></e>
--->
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
 
 <e>       <p><l>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l>         <r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e>       <p><l>tio<s n="prn"/><s n="tn"/><s n="sg"/></l>         <r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
-<!-- <e       ><p><l>tio<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e> -->
-
-<!--
-<e>       <p><l>tio<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/></l>         <r>that<s n="prn"/><s n="tn"/></r></p></e> -->
 
 <e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
 

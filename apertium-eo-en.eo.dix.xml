@@ -714,7 +714,9 @@ Senutilaj - forprenu
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>vi</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
 <e r="LR">                    <p><l>ci</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
+<!--
 <e>                           <p><l>li</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
+-->
 <e>                           <p><l>li</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>ŝi</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e r="LR">                    <p><l>sxi</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
@@ -941,7 +943,6 @@ Senutilaj - forprenu
 <e lm="ĝis">                  <par n="ĝ"/><i>is</i><par n="al__pr"/></e>
 <e lm="inter">                <i>inter</i><par n="al__pr"/></e>
 
-<e lm="iu">                   <i>iu</i><par n="quant__det"/></e>
 
 <e lm="iu">                   <p><l>iu</l>                  <r>iu<s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
 <e lm="io">                   <p><l>io</l>                  <r>io<s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
@@ -958,7 +959,8 @@ Senutilaj - forprenu
 <e lm="kio ajn">              <p><l>kion<b/>ajn</l>         <r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kaj">                  <i>kaj</i><par n="kaj__cnjcoo"/></e>
 <e lm="kaj ankaŭ">            <i>kaj<b/>ankaŭ</i><par n="kaj__cnjcoo"/></e>
-<e lm="antaŭ">                <i>kaj<b/>anta</i><par n="ŭ"/><i></i><par n="after__cnjadv"/></e>
+
+
 <e lm="ke">                   <i>ke</i><par n="ke__cnjsub"/></e>
 <e lm="kelka">                <i>kelka</i><par n="quant__det"/></e>
 <e lm="kial">                 <i>kial</i><par n="kial__adv"/></e>
@@ -974,16 +976,11 @@ Senutilaj - forprenu
 <e lm="post kiam">            <i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
 
 <e lm="kio">                  <p><l>kio</l>                 <r>kio<s n="prn"/><s n="rel"/></r></p><par n="sgplnomacc"/></e>
-<e lm="kio">                  <p><l>kion</l>                <r>kio<s n="prn"/><s n="rel"/><s n="sg"/><s n="acc"/></r></p></e>
-<!--
-<e lm="kio">                  <p><l>kioj</l>                <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kio">                  <p><l>kiojn</l>               <r>kio<s n="prn"/><s n="rel"/><s n="pl"/><s n="acc"/></r></p></e>
--->
+
 <e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="prn"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="prn"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="det"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="det"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
-
 
 
 <e lm="kio">                  <p><l>kio</l>                 <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
