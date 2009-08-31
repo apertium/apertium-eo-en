@@ -153,6 +153,10 @@
 <pardef n="DNA__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/></r></p><par n="nomacc0"/></e>
+
+<!-- Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<e r="RL">                    <p><l></l>                    <r><s n="adj"/><s n="acr"/></r></p><par n="sgplnomacc0"/></e>
+
 </pardef>
 
 
@@ -352,6 +356,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <pardef n="nomsen__n">
 <e>                           <p><l></l>                    <r><s n="n"/></r></p><par n="sgplnomacc0"/></e>
+
+<!-- Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
+<e r="RL">                    <p><l></l>                    <r><s n="adj"/></r></p><par n="sgplnomacc0"/></e>
+
 </pardef>
 
 
@@ -362,31 +370,42 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <pardef n="unu__det">
+<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc0"/></e>
+<!--
 <e>                           <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc0"/></e>
+-->
 </pardef>
 
 
 <pardef n="mia__det">
+<e>                    <p><l></l>                   <r><s n="det"/><s n="pos"/></r></p><par n="sgplnomacc"/></e>
+<!--
 <e r="RL">                    <p><l></l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r></p></e>
 <e>                           <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>j</l>                   <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r></p></e>
 <e>                           <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                           <p><l>jn</l>                  <r><s n="det"/><s n="pos"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
     
     
 <pardef n="dem__det">
+<e>                    <p><l></l>                    <r><s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
+<!--
 <e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
     
     
 <pardef n="ind__det">
+<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
+<!--
 <e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -394,6 +413,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
     
 <pardef n="ambaŭ__det">
@@ -401,6 +421,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 </pardef>
     
 <pardef n="quant__det">
+<e>                    <p><l></l>                    <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc"/></e>
+<!--
 <e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
@@ -408,10 +430,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
 
  
 <pardef n="quant2__det">
+<e>                           <p><l></l>                    <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
+<!--
 <e>                           <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
@@ -419,6 +444,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
 
  
