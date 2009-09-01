@@ -386,7 +386,7 @@
 </pardef>
     
 <pardef n="her__det">
-  <e r="LR"><p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sp0"/></e>
+  <e><p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sp0"/></e>
 </pardef>
     
 <pardef n="th/is__det">
@@ -23232,6 +23232,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sport">           <i>sport</i><par n="house__n"/></e>
 <e lm="sporting">        <i>sporting</i><par n="expensive__adj"/></e>
 <e lm="sportsman">       <i>sportsm</i><par n="m/an__n"/></e>
+<e lm="sportswoman">     <i>sportswom</i><par n="m/an__n"/></e>
 <e lm="spot">            <i>spot</i><par n="trot__vblex"/></e>
 <e lm="spot">            <i>spot</i><par n="house__n"/></e>
 <e lm="spotless">        <i>spotless</i><par n="expensive__adj"/></e>
@@ -25947,7 +25948,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="vicar">           <i>vicar</i><par n="house__n"/></e>
 <e lm="vicarious">       <i>vicarious</i><par n="expensive__adj"/></e>
 <e lm="vice">            <i>vice</i><par n="house__n"/></e>
-<e lm="vice-president">  <i>vice-president</i><par n="house__n"/></e>
+<e r="LR" lm="vice-president">  <i>vice-president</i><par n="house__n"/></e>
 <e lm="vice minister">   <p><l>vice<b/>minister</l><r>vice-minister</r></p><par n="house__n"/></e>
 <e lm="vice president">  <p><l>vice<b/>president</l><r>vice-president</r></p><par n="house__n"/></e>
 <e lm="vice versa">      <i>vice<b/>versa</i><par n="maybe__adv"/></e>

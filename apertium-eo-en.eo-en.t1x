@@ -12,6 +12,26 @@
   <def-cat n="c_vbser">
      <cat-item tags="vbser.*"/>
   </def-cat>
+  <def-cat n="c_vb_fti">
+     <cat-item tags="vblex.fti"/>
+     <cat-item tags="vbser.fti"/>
+     <cat-item tags="vaux.fti"/>
+  </def-cat>
+  <def-cat n="c_vb_cni">
+     <cat-item tags="vblex.cni"/>
+     <cat-item tags="vbser.cni"/>
+     <cat-item tags="vaux.cni"/>
+  </def-cat>
+  <def-cat n="c_vb_pp2">
+     <cat-item tags="vblex.pp2.*"/>
+     <cat-item tags="vbser.pp2.*"/>
+     <cat-item tags="vaux.pp2.*"/>
+  </def-cat>
+  <def-cat n="c_vb_pp3">
+     <cat-item tags="vblex.pp3.*"/>
+     <cat-item tags="vbser.pp3.*"/>
+     <cat-item tags="vaux.pp3.*"/>
+  </def-cat>
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
@@ -87,11 +107,16 @@
 
   <def-attr n="a_tns">
      <attr-item tags="inf"/>
+     <attr-item tags="imp"/>
      <attr-item tags="pres"/>
      <attr-item tags="past"/>
      <attr-item tags="fti"/>
      <attr-item tags="cni"/>
      <attr-item tags="fts"/>
+     <attr-item tags="pp"/>
+     <attr-item tags="pp2"/>
+     <attr-item tags="pp3"/>
+     <attr-item tags="ger"/>
   </def-attr>
 
   <def-attr n="a_gen">
@@ -152,19 +177,14 @@
 	  <when>
 	    <test>
 	      <and>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
+			<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
       		<equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
 	      </and>
 	    </test>
-	    <let>
-	      <var n="adv_adjectiu"/>
-        <concat>
-          <clip pos="2" side="tl" part="lem"/> 
-          <clip pos="2" side="tl" part="a_adj"/>
-          <lit-tag v="comp"/>
-        </concat>
-	    </let>
+	    <let><var n="adv_adjectiu"/>
+			<concat><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="comp"/></concat></let>
 	  </when>
+
 	  <when>
 	    <test>
 	      <and>
@@ -172,51 +192,27 @@
           <equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
 	      </and>
 	    </test>
-	    <let>	      
-	      <clip pos="1" side="tl" part="lem"/> 
-	      <get-case-from pos="1">
-	      <lit v="much"/>
-	      </get-case-from>
-	    </let>
-	    <let>
-	      <var n="adv_adjectiu"/>
-		<concat>
-		  <clip pos="1" side="tl" part="whole"/> 
-		  <lit v="$ ^"/>
-		  <clip pos="2" side="tl" part="lem"/> 
-		  <clip pos="2" side="tl" part="a_adj"/>
-		  <lit-tag v="comp"/>
-		</concat>
-	    </let>
+	    <let><clip pos="1" side="tl" part="lem"/> 
+	      <get-case-from pos="1"><lit v="much"/></get-case-from></let>
+	    <let><var n="adv_adjectiu"/>
+		  <concat><clip pos="1" side="tl" part="whole"/><lit v="$ ^"/><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="comp"/></concat></let>
 	  </when>
+
 	  <when>
 	    <test>
 	      <and>
-		<equal caseless="yes">
-		  <clip pos="1" side="sl" part="lem"/>
-		  <lit v="ben"/>
-		</equal>
-		<not>
-		  <equal>
-		    <clip pos="2" side="sl" part="a_adj"/>
-		    <lit-tag v="vblex.pp"/>
-		  </equal>
-		</not>
+			<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="ben"/></equal>
+			<not><equal><clip pos="2" side="sl" part="a_adj"/><lit-tag v="vblex.pp"/></equal></not>
 	      </and>
 	    </test>
-	    <let>
-	      <var n="adv_adjectiu"/>
+	    <let>	      <var n="adv_adjectiu"/>
 		<concat>
-		  <get-case-from pos="1">
-		    <lit v="very"/>
-		  </get-case-from>
-		  <lit-tag v="preadv"/> 
-		  <lit v="$ ^"/>
-		  <clip pos="2" side="tl" part="lem"/> 
-		  <clip pos="2" side="tl" part="a_adj"/>
+		  <get-case-from pos="1"><lit v="very"/></get-case-from>
+		  <lit-tag v="preadv"/><lit v="$ ^"/><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/>
 		</concat>
 	    </let>
 	  </when>
+
 	  <otherwise>
 	    <let>
 	      <var n="adv_adjectiu"/>
@@ -230,11 +226,21 @@
 	    </let>
 	  </otherwise>
 	</choose>
-
-	      
-		
-		
 </def-macro>
+
+
+<!-- konvertas imperativon al infinitivo -->
+<def-macro n="imp_inf" npar="1">
+	<choose>
+	  <when>
+	    <test>
+      		<equal><clip pos="1" side="tl" part="a_tns"/><lit-tag v="imp"/></equal>
+	    </test>
+	    <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="inf"/></let>
+	  </when>
+	  </choose>
+</def-macro>
+
 
   </section-def-macros> 
 
@@ -337,7 +343,7 @@
      </pattern>
      <action>
        <out>
-         <chunk name="adj" case="caseFirstWord">
+         <chunk name="pliplej_adj" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -451,14 +457,101 @@
 
 
 
-
   <rule>
      <pattern>
-       <pattern-item n="c_vblex"/>
+       <pattern-item n="c_vb_fti"/>
      </pattern>
      <action>
        <out>
-         <chunk name="verb" case="caseFirstWord">
+         <chunk name="vb_fti" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+			<b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_vb_cni"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="vb_cni" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+			<b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_vb_pp2"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="vb_pp2" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+			<b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_vb_pp3"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="vb_pp3" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
@@ -468,9 +561,7 @@
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="pp"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -486,7 +577,7 @@
      </pattern>
      <action>
        <out>
-         <chunk name="verb" case="caseFirstWord">
+         <chunk name="vbser" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
@@ -504,6 +595,37 @@
         </out>
      </action>
   </rule>
+
+
+
+
+  <rule>
+     <pattern>
+       <pattern-item n="c_vblex"/>
+     </pattern>
+     <action>
+        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <clip pos="1" side="tl" part="a_prs"/>
+<!--              <clip pos="1" side="tl" part="a_nbr"/> -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
 
 
 </section-rules>
