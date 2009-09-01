@@ -1372,7 +1372,8 @@ BUT:
 <e>       <p><l>Sovetio<s n="np"/><s n="top"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Sovet-Unio<s n="np"/><s n="top"/></l><r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
-<e>       <p><l>svedo<s n="n"/></l>                    <r>Swedish<s n="n"/></r></p></e>
+<e r="RL">       <p><l>svedo<s n="n"/></l>                    <r>Swedish<s n="n"/></r></p></e>
+<e><p><l>svedo<s n="n"/></l><r>swede<s n="n"/></r></p></e>                  
 <e>       <p><l>svisa<s n="adj"/></l>                  <r>Swiss<s n="adj"/></r></p></e>
 <e>       <p><l>turka<s n="adj"/></l>                  <r>Turkish<s n="adj"/></r></p></e>
 <e>       <p><l>albana<s n="adj"/></l>                 <r>Albanian<s n="adj"/></r></p></e>
@@ -1861,6 +1862,15 @@ TODO??
 <e>       <p><l>ankoraŭ<s n="adv"/></l>                <r>yet<s n="adv"/></r></p></e>
     <!-- frases afirmatives i interrogatives -->
 <e r="RL"><p><l>ankoraŭ<s n="adv"/></l>                <r>still<s n="adv"/></r></p></e>
+
+<e>       <p><l>antaŭe<s n="adv"/></l>                  <r>before<s n="adv"/></r></p></e>
+<e r="RL">       <p><l>antaŭe<s n="adv"/></l>                 <r>formerly<s n="adv"/></r></p></e>
+<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>previously<s n="adv"/></r></p></e>
+<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>ago<s n="adv"/></r></p></e>
+<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>earlier<s n="adv"/></r></p></e>
+
+<e>       <p><l>antaŭen<s n="adv"/></l>                <r>forward<s n="adv"/></r></p></e>
+
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>ahead<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>forth<s n="adv"/></r></p></e>
 
@@ -2209,7 +2219,7 @@ TODO??
 <e>       <p><l>diversa<s n="det"/><s n="ind"/></l>    <r>various<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>diversa<s n="adj"/></l>                <r>various<s n="adj"/></r></p></e>
 <e r="RL"><p><l>laŭ<s n="pr"/></l>                     <r>along<s n="pr"/></r></p></e>
-<e>       <p><l>antaŭen<s n="adv"/></l>                <r>along<s n="adv"/></r></p></e>
+<e r="RL"><p><l>antaŭen<s n="adv"/></l>                <r>along<s n="adv"/></r></p></e>
 <e>       <p><l>laŭlonge<b/>de<s n="pr"/></l>          <r>all<b/>along<s n="pr"/></r></p></e>
 <e r="RL"><p><l>ekde<b/>la<b/>komenco<s n="adv"/></l>  <r>all<b/>along<s n="adv"/></r></p></e>
 <e r="RL"><p><l>ĉiam<b/>kiel<s n="adv"/></l>           <r>all<b/>along<b/>as<b/>a<s n="adv"/></r></p></e>
@@ -2218,7 +2228,6 @@ TODO??
 <e>       <p><l>laŭ<b/>la<b/>ekzemploj<s n="pr"/></l>  <r>along<b/>the<b/>lines<s n="pr"/></r></p></e>
 <e r="RL"><p><l>apud<s n="pr"/></l>                    <r>alongside<s n="pr"/></r></p></e>
 <e>       <p><l>flanko-ĉe-flanke<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
-<e r="LR"><p><l>apude<s n="adv"/></l>                  <r>alongside<s n="adv"/></r></p></e>
 <e r="LR"><p><l>ŝultro-ĉe-ŝultre<s n="adv"/></l>       <r>alongside<s n="adv"/></r></p></e>
 <e r="LR"><p><l>paralele<s n="adv"/></l>               <r>alongside<s n="adv"/></r></p></e>
 <e>       <p><l>trans<s n="pr"/></l>                   <r>across<s n="pr"/></r></p></e>
@@ -7282,7 +7291,6 @@ TODO??
 <e>       <p><l>eksa<s n="adj"/></l>                   <r>former<s n="adj"/></r></p></e>
 <e r="LR"><p><l>siatempa<s n="adj"/></l>               <r>former<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tiama<s n="adj"/></l>                  <r>former<s n="adj"/></r></p></e>
-<e>       <p><l>antaŭe<s n="adv"/></l>                 <r>formerly<s n="adv"/></r></p></e>
 <e>       <p><l>formi<s n="vblex"/></l>                <r>form<s n="vblex"/></r></p></e>
 <e>       <p><l>formulo<s n="n"/></l>                  <r>formula<s n="n"/></r></p></e>
 <e>       <p><l>formuli<s n="vblex"/></l>              <r>formulate<s n="vblex"/></r></p></e>
@@ -11226,6 +11234,7 @@ TODO??
 <e r="LR"><p><l>prezentiĝi<s n="vblex"/></l>           <r>present<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>donaco<s n="n"/></l>                   <r>present<s n="n"/></r></p></e>
 <e r="RL"><p><l>nuna<s n="adj"/></l>                   <r>present<s n="adj"/></r></p></e>
+<e r="LR"><p><l>aktuala<s n="adj"/></l>                <r>present<s n="adj"/></r></p></e>
 <e r="LR"><p><l>nuntempo<s n="n"/></l>                 <r>present<s n="n"/></r></p></e>
 <e r="LR"><p><l>estanteco<s n="n"/></l>                <r>present<s n="n"/></r></p></e>
 <e r="LR"><p><l>alesti<s n="vblex"/></l>               <r>present<s n="vblex"/></r></p></e>
@@ -11281,7 +11290,6 @@ TODO??
 <e r="LR"><p><l>malhelpa<s n="adj"/></l>               <r>preventive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>evita<s n="adj"/></l>                  <r>preventive<s n="adj"/></r></p></e>
 <e r="RL"><p><l>antaŭa<s n="adj"/></l>                 <r>previous<s n="adj"/></r></p></e>
-<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>previously<s n="adv"/></r></p></e>
 <e>       <p><l>predo<s n="n"/></l>                    <r>prey<s n="n"/></r></p></e>
 <e>       <p><l>prezo<s n="n"/></l>                    <r>price<s n="n"/></r></p></e>
 <e>       <p><l>alprezigi<s n="vblex"/></l>            <r>price<s n="vblex"/></r></p></e>
@@ -15447,7 +15455,6 @@ TODO??
 <e r="RL"><p><l>brutaro<s n="n"/></l>                  <r>cattle<s n="n"/></r></p></e>
 <e>       <p><l>brutaro<s n="n"/></l>                  <r>livestock<s n="n"/></r></p></e>
 <e r="LR"><p><l>buĉejo<s n="n"/></l>                   <r>slaughterhouse<s n="n"/></r></p></e>
-<e r="LR"><p><l>buĉistbutiko<s n="n"/></l>             <r>butcher's<s n="n"/></r></p></e>
 <e r="LR"><p><l>buterpano<s n="n"/></l>                <r>slice<s n="n"/></r></p></e>
 <e>       <p><l>cento<s n="n"/></l>                    <r>hundred<s n="n"/></r></p></e>
 <e r="LR"><p><l>centono<s n="n"/></l>                  <r>cent<s n="n"/></r></p></e>
@@ -16372,7 +16379,7 @@ TODO??
 <e r="LR"><p><l>senmanka<s n="adj"/></l>               <r>flawless<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senmezura<s n="adj"/></l>              <r>immoderate<s n="adj"/></r></p></e>
 <e>       <p><l>sennombra<s n="adj"/></l>              <r>innumerable<s n="adj"/></r></p></e>
-<e>       <p><l>senpaga<s n="adj"/></l>                <r><s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>senpaga<s n="adj"/></l>                <r>free<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>senrezerva<s n="adj"/></l>             <r>unconditional<s n="adj"/></r></p></e>
 <e r="RL"><p><l>serena<s n="adj"/></l>                 <r>sober<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>plain<s n="adj"/><s n="sint"/></r></p></e>
@@ -16618,9 +16625,6 @@ TODO??
 <e>       <p><l>nekutime<s n="adv"/></l>               <r>unusual<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aldone<s n="adv"/></l>                 <r>incidentally<s n="adv"/></r></p></e>
 
-
-<e>       <p><l>antaŭe<s n="adv"/></l>                  <r>before<s n="adv"/></r></p></e>
-<e>       <p><l>antaŭen<s n="adv"/></l>                <r>forward<s n="adv"/></r></p></e>
 
 
 <e r="LR"><p><l>apude<s n="adv"/></l>                  <r>near<s n="adv"/></r></p></e>
@@ -16988,7 +16992,6 @@ TODO??
 <e>       <p><l>agnostika<s n="adj"/></l>              <r>agnostic<s n="adj"/></r></p></e>
 <e>       <p><l>agnostikulo<s n="n"/></l>              <r>agnostic<s n="n"/></r></p></e>
 <e>       <p><l>agnostikismo<s n="n"/></l>             <r>agnosticism<s n="n"/></r></p></e>
-<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>ago<s n="adv"/></r></p></e>
 <e r="RL"><p><l>dolora<s n="adj"/></l>                 <r>agonized<s n="adj"/></r></p></e>
 <e r="LR"><p><l>angora<s n="adj"/></l>                 <r>agonized<s n="adj"/></r></p></e>
 <e r="RL"><p><l>agrara<s n="adj"/></l>                 <r>agrarian<s n="adj"/></r></p></e>
@@ -19626,7 +19629,6 @@ TODO??
 <e r="LR"><p><l>avide<s n="adv"/></l>                  <r>eagerly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>entuziasmo<s n="n"/></l>               <r>eagerness<s n="n"/></r></p></e>
 <e r="LR"><p><l>avideco<s n="n"/></l>                  <r>eagerness<s n="n"/></r></p></e>
-<e r="RL"><p><l>antaŭe<s n="adv"/></l>                 <r>earlier<s n="adv"/></r></p></e>
 <e r="LR"><p><l>frumatene<s n="adv"/></l>              <r>early<s n="adv"/></r></p></e>
 <e r="LR"><p><l>frumonate<s n="adv"/></l>              <r>early<s n="adv"/></r></p></e>
 <e r="LR"><p><l>frujare<s n="adv"/></l>                <r>early<s n="adv"/></r></p></e>
@@ -31208,7 +31210,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e       ><p><l>balanciĝado<s n="n"/></l><r>sway<s n="n"/></r></p></e>             
 <e       ><p><l>ŝvitĉemizo<s n="n"/></l><r>sweatshirt<s n="n"/></r></p></e>        
 <e       ><p><l>ŝvita<s n="adj"/></l><r>sweaty<s n="adj"/></r></p></e>             
-<e r="RL"><p><l>svedo<s n="n"/></l><r>swede<s n="n"/></r></p></e>                  
 <e       ><p><l>dolĉigo<s n="n"/></l><r>sweetener<s n="n"/></r></p></e>            
 <e r="RL"><p><l>karulino<s n="n"/></l><r>sweetheart<s n="n"/></r></p></e>          
 <e r="LR"><p><l>amindulo<s n="n"/></l><r>sweetheart<s n="n"/></r></p></e>          

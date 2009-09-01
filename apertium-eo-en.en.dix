@@ -326,14 +326,14 @@
 </pardef>
     
 <pardef n="glad/__adj">
-  <e r="RL">       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e r="LR"><p><l>der</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>dest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="fun/__adj">
-  <e r="RL">       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e r="RL">       <p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ner</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>nest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -10880,6 +10880,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Finley">          <i>Finley</i><par n="Mark__np"/></e>
 <e lm="Finn">            <i>Finn</i><par n="Mark__np"/></e>
 <e lm="Finnish">         <i>Finnish</i><par n="expensive__adj"/></e>
+<e lm="Finnish">         <i>Finnish</i><par n="house__n"/></e>
 <e lm="Fiona">           <i>Fiona</i><par n="Mary__np"/></e>
 <e lm="Fiorela">         <i>Fiorela</i><par n="Mary__np"/></e>
 <e lm="Fiorella">        <i>Fiorella</i><par n="Mary__np"/></e>
@@ -16553,6 +16554,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Melvin">          <i>Melvin</i><par n="Mark__np"/></e>
 <e lm="member of parliament"><i>member</i><par n="house__n"/><p><l><b/>of<b/>parliament</l><r><g><b/>of<b/>parliament</g></r></p></e>
 <e lm="member">          <i>member</i><par n="house__n"/></e>
+<e lm="party member">          <i>party<b/>member</i><par n="house__n"/></e>
 <e lm="membership">      <i>membership</i><par n="house__n"/></e>
 <e lm="membrane">        <i>membrane</i><par n="house__n"/></e>
 <e lm="memento">         <i>memento</i><par n="house__n"/></e>
