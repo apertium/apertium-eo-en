@@ -602,7 +602,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- fleksias normale -->
 <e>                           <p><l>o</l>     <r>o<s n="np"/><s n="al"/></r></p><par n="sgplnomacc"/></e>
 <!-- Linux men  -> Linuksaj viroj -->
-<e>                           <p><l>a</l>     <r>o<s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc"/></e>
+<e r="RL">                           <p><l>a</l>     <r>o<s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
 
 
@@ -610,7 +610,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- fleksias sen finajxoj -->
 <e>                           <p><l></l>      <r><s n="np"/><s n="al"/></r></p><par n="sgplnomacc0"/></e>
 <!-- tamen, eblaj adjektivigi, ekz. Apertium men  -> Apertiumaj viroj -->
-<e>                           <p><l>a</l>     <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc"/></e>
+<e r="RL">                           <p><l>a</l>     <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
 
 
@@ -619,7 +619,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- fleksias sen finajxoj -->
 <e>                           <p><l></l>      <r><s n="np"/><s n="al"/></r></p><par n="sgplnomacc0"/></e>
 <!-- adjektive, ankaux sen finajxoj. Apple men  -> Apple viroj -->
-<e>                           <p><l></l>      <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc0"/></e>
+<e r="RL">                           <p><l></l>      <r><s n="adj"/><s n="np"/><s n="al"/></r></p><par n="sgplnomacc0"/></e>
 </pardef>
 
 
@@ -5357,9 +5357,6 @@ Senutilaj - forprenu
 <e lm="plato">                <i>plat</i><par n="o__n"/></e>
 <e lm="pledi">                <i>pled</i><par n="i__vblex"/></e>
 <e lm="plejaĝulo">            <i>plejaĝul</i><par n="o__n"/></e>
-<e lm="plej granda">          <i>plej<b/>grand</i><par n="a__adj"/></e>
-<e lm="plej malbona">         <i>plej<b/>malbon</i><par n="a__adj"/></e>
-<e lm="plej malgranda">       <i>plej<b/>malgrand</i><par n="a__adj"/></e>
 <e lm="plena">                <i>plen</i><par n="a__adj"/></e>
 <e lm="plendo">               <i>plend</i><par n="o__n"/></e>
 <e lm="plene">                <i>plen</i><par n="e__adv"/></e>
@@ -6601,7 +6598,7 @@ Senutilaj - forprenu
 <e lm="traktoro">             <i>traktor</i><par n="o__n"/></e>
 <e lm="tramo">                <i>tram</i><par n="o__n"/></e>
 <e lm="tranĉa">               <i>tran</i><par n="ĉ"/><i></i><par n="a__adj"/></e>
-<e lm="tranĉaĵo">             <i>tran</i><par n="ĉ"/><i>a</i><par n="ĵ"/><i>ĵ</i><par n="o__n"/></e>
+<e lm="tranĉaĵo">             <i>tran</i><par n="ĉ"/><i>a</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="tranĉeĝo">             <i>tran</i><par n="ĉ"/><i>e</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="tranĉeo">              <i>tran</i><par n="ĉ"/><i>e</i><par n="o__n"/></e>
 <e lm="tranĉi">               <i>tran</i><par n="ĉ"/><i></i><par n="i__vblex"/></e>
