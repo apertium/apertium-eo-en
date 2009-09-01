@@ -524,6 +524,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="personnel__n">
   <e>       <p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="Dutch__n">
@@ -4033,10 +4034,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Aser">            <i>Aser</i><par n="Mark__np"/></e>
 <e lm="asexual">         <i>asexual</i><par n="expensive__adj"/></e>
 <e lm="ash">             <i>ash</i><par n="access__n"/></e>
+<!-- <e lm="ashes">           <i>ashes</i><par n="east__n"/><par n="gen__apos"/></e> -->
 <e lm="ashamed">         <i>ashamed</i><par n="expensive__adj"/></e>
 <e lm="Ashanti">         <i>Ashanti</i><par n="Mary__np"/></e>
 <e lm="Asher">           <i>Asher</i><par n="Mark__np"/></e>
-<e lm="ashes">           <i>ashes</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="Ashlee">          <i>Ashlee</i><par n="Mary__np"/></e>
 <e lm="Ashleigh">        <i>Ashleigh</i><par n="Mary__np"/></e>
 <e lm="Ashley">          <i>Ashley</i><par n="Mary__np"/></e>
@@ -4186,7 +4187,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Atos">            <i>Atos</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="atrium">          <i>atrium</i><par n="house__n"/></e>
 <e lm="atrocious">       <i>atrocious</i><par n="expensive__adj"/></e>
-<!--    <e lm="atomisation"><i>atomi</i><par n="organi/sation__n"/></e> -->
+<e lm="atomisation"><i>atomi</i><par n="organi/sation__n"/></e>
 <e lm="atrocity">        <i>atrocit</i><par n="bab/y__n"/></e>
 <e lm="atrophy">         <i>atroph</i><par n="bab/y__n"/></e>
 <e lm="attach">          <i>attach</i><par n="approach__vblex"/></e>

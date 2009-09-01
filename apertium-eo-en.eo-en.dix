@@ -3797,7 +3797,7 @@ TODO??
 <e r="LR"><p><l>pliiĝadi<s n="vblex"/></l>             <r>build<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>plimultigadi<s n="vblex"/></l>         <r>build<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>plimultiĝadi<s n="vblex"/></l>         <r>build<s n="vblex"/></r></p></e>
-<e>       <p><l>dika<s n="adj"/></l>                   <r>bulky<s n="adj"/></r></p></e>
+<e r="RL"><p><l>dika<s n="adj"/></l>                   <r>bulky<s n="adj"/></r></p></e>
 <e r="LR"><p><l>dikega<s n="adj"/></l>                 <r>bulky<s n="adj"/></r></p></e>
 <e r="LR"><p><l>grandeca<s n="adj"/></l>               <r>bulky<s n="adj"/></r></p></e>
 <e r="LR"><p><l>dikkorpa<s n="adj"/></l>               <r>bulky<s n="adj"/></r></p></e>
@@ -14229,7 +14229,6 @@ TODO??
 <e>       <p><l>termometro<s n="n"/></l>               <r>thermometer<s n="n"/></r></p></e>
 <e>       <p><l>tezo<s n="n"/></l>                     <r>thesis<s n="n"/></r></p></e>
 <e r="LR"><p><l>disertaĵo<s n="n"/></l>                <r>thesis<s n="n"/></r></p></e>
-<e r="RL"><p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/></r></p></e>
 <e>       <p><l>densaĵo<s n="n"/></l>                  <r>thicket<s n="n"/></r></p></e>
 <e r="LR"><p><l>densejo<s n="n"/></l>                  <r>thicket<s n="n"/></r></p></e>
 <e r="LR"><p><l>arbetaĵaro<s n="n"/></l>               <r>thicket<s n="n"/></r></p></e>
@@ -16162,8 +16161,8 @@ TODO??
 <e r="LR"><p><l>devena<s n="adj"/></l>                 <r>natural<s n="adj"/></r></p></e>
 <e>       <p><l>diferenca<s n="adj"/></l>              <r>unlike<s n="adj"/></r></p></e>
 <e r="LR"><p><l>digna<s n="adj"/></l>                  <r>worthy<s n="adj"/></r></p></e>
-<e r="RL"><p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL" c="check"><p><l>dika<s n="adj"/></l>         <r>fat<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>dika<s n="adj"/></l>         <r>fat<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>distrita<s n="adj"/></l>               <r>careless<s n="adj"/></r></p></e>
 <e>       <p><l>diversa<s n="adj"/></l>                <r>diverse<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dolĉa<s n="adj"/></l>                  <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
@@ -17307,7 +17306,7 @@ TODO??
 <e r="LR"><p><l>asketeco<s n="n"/></l>                 <r>asceticism<s n="n"/></r></p></e>
 <e>       <p><l>neseksa<s n="adj"/></l>                <r>asexual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>honta<s n="adj"/></l>                  <r>ashamed<s n="adj"/></r></p></e>
-<e>       <p><l>cindro<s n="n"/></l>                   <r>ashes<s n="n"/></r></p></e>
+<e>       <p><l>cindro<s n="n"/></l>                   <r>ash<s n="n"/></r></p></e>
 <e>       <p><l>marborde<s n="adv"/></l>               <r>ashore<s n="adv"/></r></p></e>
 <e>       <p><l>dormanta<s n="adj"/></l>               <r>asleep<s n="adj"/></r></p></e>
 <e>       <p><l>aspido<s n="n"/></l>                   <r>asp<s n="n"/></r></p></e>
@@ -26650,7 +26649,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>suprenirejo<s n="n"/></l><r>ascent<s n="n"/></r></p></e>           
 <e r="LR"><p><l>supriĝo<s n="n"/></l><r>ascent<s n="n"/></r></p></e>               
 <e r="RL"><p><l>atribui<s n="vblex"/></l><r>ascribe<s n="vblex"/></r></p></e>      
-<e r="RL"><p><l>cindro<s n="n"/></l><r>ash<s n="n"/></r></p></e>                   
 <e r="RL"><p><l>aspiri<s n="vblex"/></l><r>aspire<s n="vblex"/></r></p></e>        
 <e       ><p><l>sikario<s n="n"/></l><r>assassin<s n="n"/></r></p></e>             
 <e r="LR"><p><l>atencisto<s n="n"/></l><r>assassin<s n="n"/></r></p></e>           
