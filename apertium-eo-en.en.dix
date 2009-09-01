@@ -213,6 +213,15 @@
 <pardef n="expensive__adj">
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
 </pardef>
+
+
+<!-- Permesu provizore ke la "sint" mankas. Tio ĝenerale ne estas bona ideo, ĉar ĝi necesas por ekz "pli granda" -> "bigger" 
+<pardef n="sint">
+  <e>       <p><l></l>          <r><s n="sint"/></r></p></e>
+  <e r="RL"><p><l></l>          <r></r></p></e>
+</pardef>
+-->
+
     
 <pardef n="long/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
@@ -222,14 +231,14 @@
 </pardef>
     
 <pardef n="happ/y__adj">
-  <e r="RL"><p><l>y</l>          <r><s n="adj"/></r></p></e>
+  <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="sh/y__adj">
-  <e r="RL"><p><l>y</l>          <r><s n="adj"/></r></p></e>
+  <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -273,36 +282,42 @@
 </pardef>
     
 <pardef n="common/__adj">
-  <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
-  <e r="LR"><p><l>er</l>        <r><s n="adj"/><s n="comp"/></r></p></e>
-  <e r="LR"><p><l>est</l>       <r><s n="adj"/><s n="sup"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e r="LR"><p><l>er</l>        <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+  <e r="LR"><p><l>est</l>       <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="lovel/y__adj">
-  <e>       <p><l>y</l>         <r>y<s n="adj"/></r></p></e>
-  <e r="LR"><p><l>ier</l>       <r>y<s n="adj"/><s n="comp"/></r></p></e>
-  <e r="LR"><p><l>iest</l>      <r>y<s n="adj"/><s n="sup"/></r></p></e>
+  <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
+  <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
+  <e r="LR"><p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+  <e r="LR"><p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="handsome/__adj">
-  <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
-  <e r="LR"><p><l>r</l>         <r><s n="adj"/><s n="comp"/></r></p></e>
-  <e r="LR"><p><l>st</l>        <r><s n="adj"/><s n="sup"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e r="LR"><p><l>r</l>         <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+  <e r="LR"><p><l>st</l>        <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="/good__adj">
+  <e r="RL">       <p><l>good</l>      <r>good<s n="adj"/></r></p></e>
   <e>       <p><l>good</l>      <r>good<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>better</l>    <r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>best</l>      <r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="/bad__adj">
+  <e r="RL"><p><l>bad</l><r>bad<s n="adj"/></r></p></e>
   <e>       <p><l>bad</l>       <r>bad<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>worse</l>     <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>worst</l>     <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="f/ar__adj">
+  <e r="RL">       <p><l>ar</l>        <r>ar<s n="adj"/></r></p></e>
   <e>       <p><l>ar</l>        <r>ar<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>urther</l>    <r>ar<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>arther</l>    <r>ar<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
@@ -311,12 +326,14 @@
 </pardef>
     
 <pardef n="glad/__adj">
-  <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
-  <e r="LR"><p><l>der</l>       <r><s n="adj"/><s n="comp"/></r></p></e>
-  <e r="LR"><p><l>dest</l>      <r><s n="adj"/><s n="sup"/></r></p></e>
+  <e r="RL">       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
+  <e r="LR"><p><l>der</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
+  <e r="LR"><p><l>dest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
     
 <pardef n="fun/__adj">
+  <e r="RL">       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ner</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>nest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
@@ -520,10 +537,13 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="east__n">
   <e>       <p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
+  <!-- permesu pluralon de Esperanto -->
+  <e r="RL"><p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="personnel__n">
   <e>       <p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
+  <!-- permesu singularon de Esperanto -->
   <e r="RL"><p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 
@@ -886,9 +906,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>being</l>     <r>be<s n="vblex"/><s n="ger"/></r></p></e>
 
 		<!-- Below is content of 2nd definition of /be__vblex -->
-  <e>       <p><l>'m</l>        <r>be<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>'re</l>       <r>be<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>'s</l>        <r>be<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>'m</l>        <r>be<s n="vblex"/><s n="pres"/></r></p></e>
+  <e r="LR"><p><l>'re</l>       <r>be<s n="vblex"/><s n="pres"/></r></p></e>
+  <e r="LR"><p><l>'s</l>        <r>be<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 
 
@@ -7782,7 +7802,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="cusp">            <i>cusp</i><par n="house__n"/></e>
 <e lm="custody">         <i>custod</i><par n="bab/y__n"/></e>
 <e lm="Custodio">        <i>Custodio</i><par n="Mark__np"/></e>
-<e lm="custom">          <p><l>custom</l>    <r>custom<s n="n"/><s n="sg"/></r></p></e>
+<e lm="custom">          <i>custom</i><par n="east__n"/></e>
 <e lm="custom">          <i>custom</i><par n="expensive__adj"/></e>
 <e lm="customary">       <i>customary</i><par n="expensive__adj"/></e>
 <e lm="customer">        <i>customer</i><par n="house__n"/></e>
@@ -11059,6 +11079,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="foil">            <i>foil</i><par n="house__n"/></e>
 <e lm="foiled">          <i>foiled</i><par n="expensive__adj"/></e>
 <e lm="fold">            <i>fold</i><par n="house__n"/></e>
+<e lm="scaffold">            <i>scaffold</i><par n="house__n"/></e>
 <e lm="fold">            <i>fold</i><par n="accept__vblex"/></e>
 <e lm="folder">          <i>folder</i><par n="house__n"/></e>
 <e lm="folding">         <i>folding</i><par n="house__n"/></e>
@@ -18196,6 +18217,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="opaque">          <i>opaque</i><par n="expensive__adj"/></e>
 <e lm="open">            <i>open</i><par n="house__n"/></e>
 <e lm="open">            <i>open</i><par n="expensive__adj"/></e>
+<e lm="closed">            <i>closed</i><par n="expensive__adj"/></e>
 <e lm="open">            <i>open</i><par n="accept__vblex"/></e>
 <e lm="opener">          <i>opener</i><par n="house__n"/></e>
 <e lm="opening">         <i>opening</i><par n="house__n"/></e>
