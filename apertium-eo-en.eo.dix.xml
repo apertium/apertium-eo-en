@@ -686,7 +686,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <!-- Bezonas -->
-<e lm="esti">                 <i>est</i><par n="ser__vblex"/></e>
 <e lm="alvenanta">            <i>alvenant</i><par n="a__adj"/></e>
 <e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det2"/></e>
 <e lm="tiu">                  <i>tiu</i><par n="tio__prn"/></e>
@@ -848,6 +847,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="konservita">           <i>konservit</i><par n="a__adj"/></e>
 <e lm="kondamnita">           <i>kondamnit</i><par n="a__adj"/></e>
 
+<e lm="esti">                 <i>est</i><par n="ser__vblex"/></e>
 	
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>vi</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
@@ -903,7 +903,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="lia">                  <i>lia</i><par n="mia__det"/></e>
 <e lm="nia">                  <i>nia</i><par n="mia__det"/></e>
 <e lm="ilia">                 <i>ilia</i><par n="mia__det"/></e>
-
+ 
 <e lm="mia">                  <i>mi</i><par n="a__adj"/></e>
 <e lm="via">                  <i>vi</i><par n="a__adj"/></e>
 <e lm="ŝia">                  <par n="ŝ"/><i>i</i><par n="a__adj"/></e>
@@ -922,7 +922,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kiel">                 <i>kiel</i><par n="tro__preadv"/></e>
 <e lm="tre">                  <i>tre</i><par n="tro__preadv"/></e>
 <e lm="tro">                  <i>tro</i><par n="tro__preadv"/></e>
-<e>                           <i>iu<b/>ajn</i><par n="tro__preadv"/></e>
+<e lm="iu ajn">                           <i>iu<b/>ajn</i><par n="tro__preadv"/></e>
 <e lm="pli">                  <i>pli</i><par n="jam__adv"/></e>
 
 
