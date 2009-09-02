@@ -676,38 +676,192 @@ Necesas difini paradigmon por adj-nomo terminoj
 	
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
 <e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
-	
-<!--
-Mankas en bidix aux en angla dix
-
-<e lm="malpli">               <i>malpli</i><par n="tro__preadv"/></e>
-<e lm="iom">                  <i>iom</i><par n="tro__preadv"/></e>
-<e lm="multe">                <i>multe</i><par n="tro__preadv"/></e>
-<e lm="multe pli">            <i>multe<b/>pli</i><par n="tro__preadv"/></e>
-<e lm="pli">                  <i>pli</i><par n="al__pr"/></e>
-<e lm="malpli">               <i>malpli</i><par n="al__pr"/></e>
 
 
-<e lm="Leono">                <i>Leon</i><par n="Barcelon/o__np"/></e>
-<e lm="Kenjo">                <i>Kenj</i><par n="Barcelon/o__np"/></e>
-<e lm="deko">                 <i>dek</i><par n="o__n"/></e>
-<e lm="Gerardo">              <i>Gerard</i><par n="Barcelon/o__np"/></e>
-<e lm="Valencio">             <i>Valenci</i><par n="Barcelon/o__np"/></e>
-<e lm="egipto">               <i>egipt</i><par n="ino__n"/></e>
-<e lm="ekzekutisto">          <i>ekzekutist</i><par n="ino__n"/></e>
-<e lm="elmigrinto">           <i>elmigrint</i><par n="ino__n"/></e>
-<e lm="enmigranto">           <i>enmigrant</i><par n="ino__n"/></e>
-<e lm="impertinentulo">       <i>impertinentul</i><par n="ino__n"/></e>
+<!-- Beznas -->
+<e lm="esti">                 <i>est</i><par n="ser__vblex"/></e>
+<e lm="alvenanta">            <i>alvenant</i><par n="a__adj"/></e>
+<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
+<e lm="tiu">                  <i>tiu</i><par n="tio__prn"/></e>
+<e lm="ja">                  <i>ja</i><par n="jam__adv"/></e>
+<e lm="tio">                  <i>tio</i><par n="tio__prn"/></e>
+<e lm="dresita">              <i>dresit</i><par n="a__adj"/></e>
+<e lm="malaperinta">          <i>malaperint</i><par n="a__adj"/></e>
+<e lm="ligno">                <i>lign</i><par n="o__n"/></e>
+<e lm="KE">                   <i>KE</i><par n="jam__adv"/></e>
+<e lm="koincidanta">          <i>koincidant</i><par n="a__adj"/></e>
+<e lm="centralizita">         <i>centralizit</i><par n="a__adj"/></e>
+<e lm="azerbajĝana">          <i>azerbaj</i><par n="ĝ"/><i>an</i><par n="a__adj"/></e>
+<e lm="azerbajĝano">          <i>azerbaj</i><par n="ĝ"/><i>an</i><par n="o__n"/></e>
+<e lm="rekorda">              <i>rekord</i><par n="a__adj"/></e>
+<e lm="komputilizita">        <i>komputilizit</i><par n="a__adj"/></e>
+<e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
+<e lm="ĵurinta">              <par n="ĵ"/><i>urint</i><par n="a__adj"/></e>
+<e lm="tantiemo">             <i>tantiem</i><par n="o__n"/></e>
+<e lm="bonvoli">              <i>bonvol</i><par n="i__vblex"/></e>
+<e lm="aktuale">              <i>aktual</i><par n="e__adv"/></e>
+<e lm="konsilisto">           <i>konsilist</i><par n="ino__n"/></e>
+<e lm="inundita">             <i>inundit</i><par n="a__adj"/></e>
+<e lm="projektita">           <i>projektit</i><par n="a__adj"/></e>
+<e lm="kontraŭita">           <i>kontra</i><par n="ŭ"/><i>it</i><par n="a__adj"/></e>
+<e lm="interrompita">         <i>interrompit</i><par n="a__adj"/></e>
+<e lm="Don">                  <i>Don</i><par n="nomsen__n"/></e>
+<e lm="terurita">             <i>terurit</i><par n="a__adj"/></e>
+<e lm="mastrino">             <i>mastrin</i><par n="o__n"/></e>
+<e lm="fiksita">              <i>fiksit</i><par n="a__adj"/></e>
+<e lm="ŝarĝita">              <par n="ŝ"/><i>ar</i><par n="ĝ"/><i>it</i><par n="a__adj"/></e>
+<e lm="asociita">             <i>asociit</i><par n="a__adj"/></e>
+<e lm="haltigita">            <i>haltigit</i><par n="a__adj"/></e>
+<e lm="trafita">              <i>trafit</i><par n="a__adj"/></e>
 
 
-Senutilaj - forprenu
-<e lm="kelka">                <p><l>kelkaj</l>              <r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="kelka">                <p><l>kelkajn</l>             <r>kelkaj<s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="kelka">                <p><l>kelkaj</l>              <r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-<e lm="kelka">                <p><l>kelkajn</l>             <r>kelkaj<s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
 
+
+
+<!-- eble -->
+
+<e lm="aborte">               <i>abort</i><par n="e__adv"/></e>
+<e lm="adoleskantino">        <i>adoleskantin</i><par n="o__n"/></e>
+<e lm="alarmita">             <i>alarmit</i><par n="a__adj"/></e>
+<e lm="alfundiĝinta">         <i>alfundi</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
+<e lm="alligita">             <i>alligit</i><par n="a__adj"/></e>
+<e lm="anstataŭigita">        <i>anstata</i><par n="ŭ"/><i>igit</i><par n="a__adj"/></e>
+<e lm="antaŭdecidita">        <i>anta</i><par n="ŭ"/><i>decidit</i><par n="a__adj"/></e>
+<e lm="Arkanso">              <i>Arkans</i><par n="Barcelon/o__np"/></e>
+<e lm="aŭstrala">             <i>aŭstral</i><par n="a__adj"/></e>
+<e lm="aŭtomatigita">         <i>a</i><par n="ŭ"/><i>tomatigit</i><par n="a__adj"/></e>
+<e lm="bindita">              <i>bindit</i><par n="a__adj"/></e>
+<e lm="certa">                <i>certa</i><par n="ind__det"/></e>
+<e lm="certe">                <i>certe</i><par n="after__cnjadv"/></e>
+<e lm="difeki">               <i>difek</i><par n="i__vblex"/></e>
+<e lm="disparoli">            <i>disparol</i><par n="i__vblex"/></e>
+<e lm="dormante">             <i>dormant</i><par n="e__adv"/></e>
+<e lm="du-jara">              <i>du-jar</i><par n="a__adj"/></e>
+<e lm="elprovita">            <i>elprovit</i><par n="a__adj"/></e>
+<e lm="enfermita">            <i>enfermit</i><par n="a__adj"/></e>
+<e lm="enloĝi">               <i>enlo</i><par n="ĝ"/><par n="i__vblex"/></e>
+<e lm="Epifanio">             <i>Epifani</i><par n="o__n"/></e>
+<e lm="Epifanio">             <i>Epifanio</i><par n="Mark__np"/></e>
+<e lm="Epifanio">             <i>Epifani</i><par n="Barcelon/o__np"/></e>
+<e lm="episkoparo">           <i>episkopar</i><par n="o__n"/></e>
+<e lm="episkopeco">           <i>episkopec</i><par n="o__n"/></e>
+<!--    <e lm="esti"><i>est</i><par n="i__vblex"/></e> -->
+<e lm="flikita">              <i>flikit</i><par n="a__adj"/></e>
+<e lm="geniala">              <i>genial</i><par n="a__adj"/></e>
+<e lm="ĥaoso">                <par n="ĥ"/><i>aos</i><par n="o__n"/></e>
+<e lm="katenita">             <i>katenit</i><par n="a__adj"/></e>
+<!-- ne - lm="ke" ĉi-sube bonŝance zorgas    <e><i>K</i><par n="e__adv"/></e> -->
+<e lm="kebeko">               <i>kebek</i><par n="o__n"/></e>
+<e lm="kolombiana">           <i>kolombian</i><par n="a__adj"/></e>
+<e lm="kompakti">             <i>kompakt</i><par n="i__vblex"/></e>
+<e lm="koncerne">             <i>koncern</i><par n="e__adv"/></e>
+<e lm="konsiderante">         <i>konsiderante</i><par n="after__cnjadv"/></e>
+<e lm="konsilisto">           <i>konsilist</i><par n="o__n"/></e>
+<e lm="konsternita">          <i>konsternit</i><par n="a__adj"/></e>
+<e lm="kontraŭhorloĝe">       <i>kontra</i><par n="ŭ"/><i>horlo</i><par n="ĝ"/><i></i><par n="e__adv"/></e>
+<e lm="konverso">             <i>konvers</i><par n="o__n"/></e>
+<e lm="konvri">               <i>konvr</i><par n="i__vblex"/></e>
+<e lm="kulpi">                <i>kulp</i><par n="i__vblex"/></e>
+
+<e lm="kvar-jara">            <i>kvar-jar</i><par n="a__adj"/></e>
+<e lm="lepora">               <i>lepor</i><par n="a__adj"/></e>
+<e lm="liceo">                <i>lice</i><par n="o__n"/></e>
+<e lm="ligita">               <i>ligit</i><par n="a__adj"/></e>
+<e lm="likvidita">            <i>likvidit</i><par n="a__adj"/></e>
+<e lm="liriko">               <i>lirik</i><par n="o__n"/></e>
+<e lm="makulita">             <i>makulit</i><par n="a__adj"/></e>
+<e lm="malfruiĝinta">         <i>malfrui</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
+<e lm="malleviĝinta">         <i>mallevi</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
+<e lm="malmulta">             <i>malmult</i><par n="a__adj"/></e>
+<e lm="mekanizita">           <i>mekanizit</i><par n="a__adj"/></e>
+<e lm="misfarinta">           <i>misfarint</i><par n="a__adj"/></e>
+<e lm="mutaciinta">           <i>mutaciint</i><par n="a__adj"/></e>
+
+<e lm="noktomeze">            <i>noktomez</i><par n="e__adv"/></e>
+<e lm="ofendita">             <i>ofendit</i><par n="a__adj"/></e>
+<e lm="origita">              <i>origit</i><par n="a__adj"/></e>
+<e lm="orita">                <i>orit</i><par n="a__adj"/></e>
+<e lm="pafanto">              <i>pafant</i><par n="o__n"/></e>
+<e lm="parfumita">            <i>parfumit</i><par n="a__adj"/></e>
+<e lm="paroĥestro">           <i>paro</i><par n="ĥ"/><i>estr</i><par n="o__n"/></e>
+<e lm="pentanta">             <i>pentant</i><par n="a__adj"/></e>
+<e lm="perfortita">           <i>perfortit</i><par n="a__adj"/></e>
+<e lm="perinta">              <i>perint</i><par n="a__adj"/></e>
+<e lm="plisita">              <i>plisit</i><par n="a__adj"/></e>
+<e lm="prahistoria">          <i>prahistori</i><par n="a__adj"/></e>
+<e lm="prahistorio">          <i>prahistori</i><par n="o__n"/></e>
+<e lm="preskaŭa">             <i>preska</i><par n="ŭ"/><i></i><par n="a__adj"/></e>
+<e lm="preskribita">          <i>preskribit</i><par n="a__adj"/></e>
+<e lm="ridante">              <i>ridant</i><par n="e__adv"/></e>
+<e lm="rokenrolo">            <i>rokenrol</i><par n="o__n"/></e>
+<e lm="Romanio">              <i>Romani</i><par n="Barcelon/o__np"/></e>
+<e lm="senigita">             <i>senigit</i><par n="a__adj"/></e>
+<e lm="ses-jara">             <i>ses-jar</i><par n="a__adj"/></e>
+<e lm="siblado">              <i>siblad</i><par n="o__n"/></e>
+<e lm="soifanta">             <i>soifant</i><par n="a__adj"/></e>
+<e lm="subnacia">             <i>subnaci</i><par n="a__adj"/></e>
+<e lm="superlerneja">         <i>superlernej</i><par n="a__adj"/></e>
+<e lm="ŝirmita">              <par n="ŝ"/><i>irmit</i><par n="a__adj"/></e>
+<e lm="ŝoforinta">            <par n="ŝ"/><i>oforint</i><par n="a__adj"/></e>
+<e lm="tegita">               <i>tegit</i><par n="a__adj"/></e>
+<e lm="tramalsekiĝinta">      <i>tramalseki</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
+<e lm="vestita">              <i>vestit</i><par n="a__adj"/></e>
+<e lm="vidvino">              <i>vidvin</i><par n="o__n"/></e>
+<e lm="Virginia">             <i>Virginia</i><par n="Barcelono__np"/></e>
+<e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
+<e lm="zumadanta">            <i>zumadant</i><par n="a__adj"/></e>
+
+<!-- eble ne -->
+
+
+<e lm="tiam">                 <i>tiam</i><par n="jam__adv"/></e>
+<e lm="tio">                  <i>ti</i><par n="o__n"/></e>
+<e lm="unu">                  <i>unu</i><par n="unu__det"/></e>
+<e lm="nenio">                <i>neni</i><par n="o__n"/></e>
+<e lm="kelka">                <i>kelk</i><par n="a__adj"/></e>
+<e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="al__pr"/></e>
+<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
+<e lm="ekde">                 <i>ekd</i><par n="e__adv"/></e>
+<e lm="ene">                  <i>ene</i><par n="al__pr"/></e>
+<e lm="esti">                 <i>est</i><par n="i__vblex"/></e>
+
+<e lm="kiel">                 <i>kiel</i><par n="kaj__cnjcoo"/></e>
+<e lm="kiom">                 <i>kiom</i><par n="jam__adv"/></e>
+<e lm="krom">                 <i>krom</i><par n="jam__adv"/></e>
+<e lm="kune">                 <i>kune</i><par n="al__pr"/></e>
+
+<e lm="oble">                 <i>obl</i><par n="e__adv"/></e>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Aferoj ne uzataj en la direkto en->eo, sed kiun ni versxajne bezonos en la alia direkto
+
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
 
+
+
+
+
+
+
+<e lm="konservita">           <i>konservit</i><par n="a__adj"/></e>
+<e lm="kondamnita">           <i>kondamnit</i><par n="a__adj"/></e>
 
 	
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
@@ -858,19 +1012,13 @@ Senutilaj - forprenu
 
 
 <e lm="aŭ">                   <i>a</i><par n="ŭ"/><i></i><par n="kaj__cnjcoo"/></e>
-<e lm="certa">                <i>certa</i><par n="ind__det"/></e>
-<e lm="certe">                <i>certe</i><par n="after__cnjadv"/></e>
 <e lm="ĉiufoje kiam">         <par n="ĉ"/><i>iufoje<b/>kiam</i><par n="after__cnjadv"/></e>
 <e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="after__cnjadv"/></e>
-<e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="al__pr"/></e>
 <e lm="ĉe">                   <par n="ĉ"/><i>e</i><par n="al__pr"/></e>
 <e lm="ĉirkaŭ">               <par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 
 <e lm="ĉio">                  <par n="ĉ"/><i>io</i><par n="ĉiu__prn"/></e>
 <e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ĉiu__prn"/></e>
-<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
-<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
-<e lm="tiu">                  <i>tiu</i><par n="tio__prn"/></e>
 <e lm="tiu">                  <i>tiu</i><par n="dem__det"/></e>
 <!-- Hm. doesent work:
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="tio__prn"/></r></p></e>
@@ -899,8 +1047,6 @@ Senutilaj - forprenu
 <e lm="tio ĉi">               <p><l>tiojn<b/>ĉi</l>         <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
 <e lm="ĉiuj">                 <p><l>ĉiuj</l>                <r>ĉiuj<s n="predet"/><s n="sp"/></r></p></e>
-<e lm="tio">                  <i>tio</i><par n="tio__prn"/></e>
-<e lm="tio">                  <i>ti</i><par n="o__n"/></e>
 <e lm="tiom da">              <i>tiom<b/>da</i><par n="quant2__det"/></e>
 <e lm="tiom multe">           <i>tiom<b/>multe</i><par n="quant2__det"/></e>
 <e lm="tiom multe da">        <i>tiom<b/>multe<b/>da</i><par n="quant2__det"/></e>
@@ -921,11 +1067,8 @@ Senutilaj - forprenu
 <e lm="ekde">                 <i>ekde</i><par n="al__pr"/></e>
 <e lm="ekzemple">             <i>ekzemple</i><par n="after__cnjadv"/></e>
 <e lm="en">                   <i>en</i><par n="al__pr"/></e>
-<e lm="ene">                  <i>ene</i><par n="al__pr"/></e>
 <e lm="ene de">               <i>ene<b/>de</i><par n="al__pr"/></e>
 <e lm="en konsento kun">      <i>en<b/>konsento<b/>kun</i><par n="al__pr"/></e>
-<e lm="esti">                 <i>est</i><par n="ser__vblex"/></e>
-<!--    <e lm="esti"><i>est</i><par n="i__vblex"/></e> -->
 <e lm="povi">                 <i>pov</i><par n="pov/i__vaux"/></e>
 <e lm="devi">                 <i>dev</i><par n="pov/i__vaux"/></e>
 <e lm="voli">                 <i>vol</i><par n="pov/i__vaux"/></e>
@@ -969,7 +1112,6 @@ Senutilaj - forprenu
 <e lm="kie">                  <i>kie</i><par n="kie__rel"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="kial__adv"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="after__cnjadv"/></e>
-<e lm="kiel">                 <i>kiel</i><par n="kaj__cnjcoo"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="al__pr"/></e>
 <e lm="kiom">                 <i>kiom</i><par n="tro__preadv"/></e>
 <e lm="post kiam">            <i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
@@ -1000,20 +1142,16 @@ Senutilaj - forprenu
 <e lm="koncerne al">          <i>koncerne<b/>al</i><par n="al__pr"/></e>
 <e lm="kondiĉe ke">           <i>kondi</i><par n="ĉ"/><i>e<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="konfome al">           <i>konfome<b/>al</i><par n="al__pr"/></e>
-<e lm="konsiderante">         <i>konsiderante</i><par n="after__cnjadv"/></e>
 <e lm="konsiderante">         <i>konsiderante</i><par n="al__pr"/></e>
 <e lm="kontraŭ">              <i>kontra</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 <e lm="kontraŭe">             <i>kontra</i><par n="ŭ"/><i>e</i><par n="after__cnjadv"/></e>
 <e lm="koste de">             <i>koste<b/>de</i><par n="al__pr"/></e>
 <e lm="krom">                 <i>krom</i><par n="al__pr"/></e>
-<e lm="krom">                 <i>krom</i><par n="jam__adv"/></e>
 <e lm="krom se">              <i>krom<b/>se</i><par n="after__cnjadv"/></e>
 <e lm="kun">                  <i>kun</i><par n="al__pr"/></e>
-<e lm="kune">                 <i>kune</i><par n="al__pr"/></e>
 <e lm="kune kun">             <i>kune<b/>kun</i><par n="al__pr"/></e>
 <e lm="kvankam">              <i>kvankam</i><par n="after__cnjadv"/></e>
 <e lm="la">                   <i>la</i><par n="la__det"/></e>
-<e lm="unu">                  <i>unu</i><par n="unu__det"/></e>
 
     <!-- the English determiner 'a' just disappears in Esperanto -->
 <e r="RL" lm="det__a">        <p><l>a</l>                    <r>det__a<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -1483,7 +1621,6 @@ Senutilaj - forprenu
 <e lm="komponisto">           <i>komponist</i><par n="ino__n"/></e>
 <e lm="komunisto">            <i>komunist</i><par n="ino__n"/></e>
 <e lm="konsilanto">           <i>konsilant</i><par n="ino__n"/></e>
-<e lm="konsilisto">           <i>konsilist</i><par n="ino__n"/></e>
 <e lm="konstruisto">          <i>konstruist</i><par n="ino__n"/></e>
 <e lm="konsulo">              <i>konsul</i><par n="ino__n"/></e>
 <e lm="konsumanto">           <i>konsumant</i><par n="ino__n"/></e>
@@ -1721,7 +1858,6 @@ Senutilaj - forprenu
 <e lm="aboni">                <i>abon</i><par n="i__vblex"/></e>
 <e lm="aborto">               <i>abort</i><par n="o__n"/></e>
 <e lm="aborti">               <i>abort</i><par n="i__vblex"/></e>
-<e lm="aborte">               <i>abort</i><par n="e__adv"/></e>
 <e lm="abrikoto">             <i>abrikot</i><par n="o__n"/></e>
 <e lm="abrupta">              <i>abrupt</i><par n="a__adj"/></e>
 <e lm="abrupte">              <i>abrupt</i><par n="e__adv"/></e>
@@ -3848,13 +3984,9 @@ Senutilaj - forprenu
 <e lm="kazeiĝi">              <i>kazei</i><par n="ĝ"/><i></i><par n="i__vblex"/></e>
 <e lm="kazerno">              <i>kazern</i><par n="o__n"/></e>
 <e lm="kazo">                 <i>kaz</i><par n="o__n"/></e>
-<e lm="bonvoli">              <i>bonvol</i><par n="i__vblex"/></e>
 <e>                           <i>p.K.</i><par n="jam__adv"/></e>
 <e>                           <i>a.K.</i><par n="jam__adv"/></e>
 <e>                           <i>aKE</i><par n="jam__adv"/></e>
-<!-- ne - lm="ke" ĉi-sube bonŝance zorgas    <e><i>K</i><par n="e__adv"/></e> -->
-<e lm="ke">                   <i>k</i><par n="e__adv"/></e>
-<e lm="kelka">                <i>kelk</i><par n="a__adj"/></e>
 <e lm="kelkfoje">             <i>kelkfoj</i><par n="e__adv"/></e>
 <e lm="kelo">                 <i>kel</i><par n="o__n"/></e>
 <e lm="kemiaĵo">              <i>kemiaĵ</i><par n="o__n"/></e>
@@ -3867,7 +3999,6 @@ Senutilaj - forprenu
 <e lm="kilogramo">            <i>kilogram</i><par n="o__n"/></e>
 <e lm="kilometro">            <i>kilometr</i><par n="o__n"/></e>
 <e lm="kino">                 <i>kin</i><par n="o__n"/></e>
-<e lm="kiom">                 <i>kiom</i><par n="jam__adv"/></e>
 <e lm="kiosko">               <i>kiosk</i><par n="o__n"/></e>
 <e lm="kirlo">                <i>kirl</i><par n="o__n"/></e>
 <e lm="kirurgia">             <i>kirurgi</i><par n="a__adj"/></e>
@@ -4082,7 +4213,6 @@ Senutilaj - forprenu
 <e lm="kontraŭa">             <i>kontra</i><par n="ŭ"/><i></i><par n="a__adj"/></e>
 <e lm="kontraŭdiri">          <i>kontra</i><par n="ŭ"/><i>dir</i><par n="i__vblex"/></e>
 <e lm="kontraŭe">             <i>kontra</i><par n="ŭ"/><i></i><par n="e__adv"/></e>
-<e lm="kontraŭhorloĝe">       <i>kontra</i><par n="ŭ"/><i>horlo</i><par n="ĝ"/><i></i><par n="e__adv"/></e>
 <e lm="kontraŭleĝa">          <i>kontra</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="a__adj"/></e>
 <e lm="kontraŭleĝe">          <i>kontra</i><par n="ŭ"/><i>le</i><par n="ĝ"/><i></i><par n="e__adv"/></e>
 <e lm="kontraŭnatura">        <i>kontra</i><par n="ŭ"/><i>natur</i><par n="a__adj"/></e>
@@ -4097,7 +4227,6 @@ Senutilaj - forprenu
 <e lm="konveni">              <i>konven</i><par n="i__vblex"/></e>
 <e lm="konverĝi">             <i>konver</i><par n="ĝ"/><i></i><par n="i__vblex"/></e>
 <e lm="konversacio">          <i>konversaci</i><par n="o__n"/></e>
-<e lm="konverso">             <i>konvers</i><par n="o__n"/></e>
 <e lm="konvertiĝo">           <i>konverti</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="konverti">             <i>konvert</i><par n="i__vblex"/></e>
 <e lm="konvinki">             <i>konvink</i><par n="i__vblex"/></e>
@@ -4320,7 +4449,6 @@ Senutilaj - forprenu
 <e lm="legomo">               <i>legom</i><par n="o__n"/></e>
 <e lm="leki">                 <i>lek</i><par n="i__vblex"/></e>
 <e lm="lenso">                <i>lens</i><par n="o__n"/></e>
-<e lm="lepora">               <i>lepor</i><par n="a__adj"/></e>
 <e lm="lerneja">              <i>lernej</i><par n="a__adj"/></e>
 <e lm="lernejo">              <i>lernej</i><par n="o__n"/></e>
 <e lm="altlerneja">           <i>altlernej</i><par n="a__adj"/></e>
@@ -4350,7 +4478,6 @@ Senutilaj - forprenu
 <e lm="ligamento">            <i>ligament</i><par n="o__n"/></e>
 <e lm="ligi">                 <i>lig</i><par n="i__vblex"/></e>
 <e lm="lignaĵejo">            <i>ligna</i><par n="ĵ"/><i>ej</i><par n="o__n"/></e>
-<e lm="ligno">                <i>lign</i><par n="o__n"/></e>
 <e lm="ligo">                 <i>lig</i><par n="o__n"/></e>
 <e lm="liko">                 <i>lik</i><par n="o__n"/></e>
 <e lm="likva">                <i>likv</i><par n="a__adj"/></e>
@@ -4369,7 +4496,6 @@ Senutilaj - forprenu
 <e lm="lino">                 <i>lin</i><par n="o__n"/></e>
 <e lm="lipo">                 <i>lip</i><par n="o__n"/></e>
 <e lm="lirika">               <i>lirik</i><par n="a__adj"/></e>
-<e lm="liriko">               <i>lirik</i><par n="o__n"/></e>
 <e lm="liro">                 <i>lir</i><par n="o__n"/></e>
 <e lm="listo">                <i>list</i><par n="o__n"/></e>
 <e lm="literaturo">           <i>literatur</i><par n="o__n"/></e>
@@ -4536,7 +4662,6 @@ Senutilaj - forprenu
 <e lm="mallumigi">            <i>mallumig</i><par n="i__vblex"/></e>
 <e lm="mallumo">              <i>mallum</i><par n="o__n"/></e>
 <e lm="malmorala">            <i>malmoral</i><par n="a__adj"/></e>
-<e lm="malmulta">             <i>malmult</i><par n="a__adj"/></e>
 <e lm="malneto">              <i>malnet</i><par n="o__n"/></e>
 <e lm="malnobla">             <i>malnobl</i><par n="a__adj"/></e>
 <e lm="malnova">              <i>malnov</i><par n="a__adj"/></e>
@@ -4629,7 +4754,6 @@ Senutilaj - forprenu
 <e lm="marmito">              <i>marmit</i><par n="o__n"/></e>
 <e lm="marmoro">              <i>marmor</i><par n="o__n"/></e>
 <e lm="maro">                 <i>mar</i><par n="o__n"/></e>
-<e lm="maroka">               <i>maroka</i><par n="o__n"/></e>
 <e lm="marŝi">                <i>mar</i><par n="ŝ"/><i></i><par n="i__vblex"/></e>
 <e lm="martelo">              <i>martel</i><par n="o__n"/></e>
 <e lm="marto">                <i>mart</i><par n="o__n"/></e>
@@ -4937,7 +5061,6 @@ Senutilaj - forprenu
 <e lm="nenecesa">             <i>neneces</i><par n="a__adj"/></e>
 <e lm="neniam">               <i>neniam</i><par n="jam__adv"/></e>
 <e lm="neniigi">              <i>neniig</i><par n="i__vblex"/></e>
-<e lm="nenio">                <i>neni</i><par n="o__n"/></e>
 <e lm="neoksidebla">          <i>neoksidebl</i><par n="a__adj"/></e>
 <e lm="neono">                <i>neon</i><par n="o__n"/></e>
 <e lm="nepara">               <i>nepar</i><par n="a__adj"/></e>
@@ -4974,7 +5097,7 @@ Senutilaj - forprenu
 <e lm="neŭtrono">             <i>ne</i><par n="ŭ"/><i>tron</i><par n="o__n"/></e>
 <e lm="nevidebla">            <i>nevidebl</i><par n="a__adj"/></e>
 <e lm="niĉo">                 <i>ni</i><par n="ĉ"/><i></i><par n="o__n"/></e>
-<e lm="nigra">                <i>nigra</i><par n="o__n"/></e>
+<e lm="nigro">                <i>nigr</i><par n="o__n"/></e>
 <e lm="nigra">                <i>nigr</i><par n="a__adj"/></e>
 <e lm="nigrigi">              <i>nigrig</i><par n="i__vblex"/></e>
 <e lm="nikotino">             <i>nikotin</i><par n="o__n"/></e>
@@ -4988,7 +5111,6 @@ Senutilaj - forprenu
 <e lm="nodo">                 <i>nod</i><par n="o__n"/></e>
 <e lm="nokta trinkejo">       <i>nokta trinkej</i><par n="o__n"/></e>
 <e lm="nokto">                <i>nokt</i><par n="o__n"/></e>
-<e lm="noktomeze">            <i>noktomez</i><par n="e__adv"/></e>
 <e lm="noktomezo">            <i>noktomez</i><par n="o__n"/></e>
 <e lm="nombra">               <i>nombr</i><par n="a__adj"/></e>
 <e lm="nombro">               <i>nombr</i><par n="o__n"/></e>
@@ -5459,7 +5581,6 @@ Senutilaj - forprenu
 <e lm="pozitive">             <i>pozitiv</i><par n="e__adv"/></e>
 <e lm="pozo">                 <i>poz</i><par n="o__n"/></e>
 <e lm="pragmata">             <i>pragmat</i><par n="a__adj"/></e>
-<e lm="prahistorio">          <i>prahistori</i><par n="o__n"/></e>
 <e lm="antaŭhistorio">        <i>antaŭhistori</i><par n="o__n"/></e>
 <e lm="praktiko">             <i>praktik</i><par n="o__n"/></e>
 <e lm="prava">                <i>prav</i><par n="a__adj"/></e>
@@ -5488,7 +5609,6 @@ Senutilaj - forprenu
 <e lm="prepozicio">           <i>prepozici</i><par n="o__n"/></e>
 <e lm="pres-arto">            <i>pres-art</i><par n="o__n"/></e>
 <e lm="presi">                <i>pres</i><par n="i__vblex"/></e>
-<e lm="preskaŭa">             <i>preska</i><par n="ŭ"/><i></i><par n="a__adj"/></e>
 <e lm="preskaŭ">              <i>preska</i><par n="ŭ"/><i></i><par n="jam__adv"/></e>
 <e lm="preskribi">            <i>preskrib</i><par n="i__vblex"/></e>
 <e lm="prestiĝa">             <i>presti</i><par n="ĝ"/><i></i><par n="a__adj"/></e>
@@ -5869,7 +5989,6 @@ Senutilaj - forprenu
 <e lm="robo">                 <i>rob</i><par n="o__n"/></e>
 <e lm="roboto">               <i>robot</i><par n="o__n"/></e>
 <e lm="rojo">                 <i>roj</i><par n="o__n"/></e>
-<e lm="rokenrolo">            <i>rokenrol</i><par n="o__n"/></e>
 <e lm="rokmuziko">            <i>rokmuzik</i><par n="o__n"/></e>
 <e lm="roko">                 <i>rok</i><par n="o__n"/></e>
 <e lm="romanika">             <i>romanik</i><par n="a__adj"/></e>
@@ -6466,7 +6585,6 @@ Senutilaj - forprenu
 <e lm="tamen">                <i>tamen</i><par n="jam__adv"/></e>
 <e lm="tampono">              <i>tampon</i><par n="o__n"/></e>
 <e lm="tamtame">              <i>tamtam</i><par n="e__adv"/></e>
-<e lm="tantiemo">             <i>tantiem</i><par n="o__n"/></e>
 <e lm="tapiŝo">               <i>tapi</i><par n="ŝ"/><i></i><par n="o__n"/></e>
 <e lm="tarifo">               <i>tarif</i><par n="o__n"/></e>
 <e lm="tasko">                <i>task</i><par n="o__n"/></e>
@@ -6533,7 +6651,6 @@ Senutilaj - forprenu
 <e lm="testudo">              <i>testud</i><par n="o__n"/></e>
 <e lm="tezo">                 <i>tez</i><par n="o__n"/></e>
 <e lm="tia">                  <i>ti</i><par n="a__adj"/></e>
-<e lm="tiam">                 <i>tiam</i><par n="jam__adv"/></e>
 <e lm="tial">                 <i>tial</i><par n="jam__adv"/></e>
 <e lm="tie">                  <i>ti</i><par n="e__adv"/></e>
 <e lm="tiel">                 <i>tiel</i><par n="jam__adv"/></e>
@@ -6940,9 +7057,7 @@ Senutilaj - forprenu
 <e lm="zorgo">                <i>zorg</i><par n="o__n"/></e>
 <e lm="albana">               <i>alban</i><par n="a__adj"/></e>
 <e lm="amerika">              <i>amerik</i><par n="a__adj"/></e>
-<e lm="aŭstrala">             <i>aŭstral</i><par n="a__adj"/></e>
 <e lm="kataluna">             <i>katalun</i><par n="a__adj"/></e>
-<e lm="kolombiana">           <i>kolombian</i><par n="a__adj"/></e>
 <e lm="indiana">              <i>indian</i><par n="a__adj"/></e>
 <e lm="israela">              <i>israel</i><par n="a__adj"/></e>
 <e lm="jamajka">              <i>jamajk</i><par n="a__adj"/></e>
@@ -7028,17 +7143,13 @@ Senutilaj - forprenu
 <e lm="polica">               <i>polic</i><par n="a__adj"/></e>
 <e lm="konatiĝi">             <i>konatiĝ</i><par n="i__vblex"/></e>
 <e lm="konatiĝi kun">         <i>konatiĝ</i><par n="i__vblex"/><p><l><b/>kun</l><r><g><b/>kun</g></r></p></e>
-<e lm="kulpi">                <i>kulp</i><par n="i__vblex"/></e>
 <e lm="blindi">               <i>blind</i><par n="i__vblex"/></e>
 <e lm="pezigi">               <i>pezig</i><par n="i__vblex"/></e>
 <e lm="kampanji">             <i>kampanj</i><par n="i__vblex"/></e>
 <e lm="karikaturi">           <i>karikatur</i><par n="i__vblex"/></e>
 <e lm="katapulti">            <i>katapult</i><par n="i__vblex"/></e>
-<e lm="kompakti">             <i>kompakt</i><par n="i__vblex"/></e>
 <e lm="kontakti">             <i>kontakt</i><par n="i__vblex"/></e>
-<e lm="konvri">               <i>konvr</i><par n="i__vblex"/></e>
 <e lm="krucumi">              <i>krucum</i><par n="i__vblex"/></e>
-<e lm="difeki">               <i>difek</i><par n="i__vblex"/></e>
 <e lm="debati">               <i>debat</i><par n="i__vblex"/></e>
 <e lm="malpliiĝi">            <i>malpliiĝ</i><par n="i__vblex"/></e>
 <e lm="detali">               <i>detal</i><par n="i__vblex"/></e>
@@ -7078,7 +7189,7 @@ Senutilaj - forprenu
 <e lm="telefoni">             <i>telefon</i><par n="i__vblex"/></e>
 <e lm="tempomezuri">          <i>tempomezur</i><par n="i__vblex"/></e>
 <e lm="translokigi">          <i>translokig</i><par n="i__vblex"/></e>
-<e lm="zorge">                <i>zorge</i><par n="i__vblex"/></e>
+<e lm="zorgi">                <i>zorgi</i><par n="i__vblex"/></e>
 <e lm="fidi">                 <i>fid</i><par n="i__vblex"/></e>
 <e lm="scivoli">              <i>scivol</i><par n="i__vblex"/></e>
 <e lm="maltrankvili">         <i>maltrankvil</i><par n="i__vblex"/></e>
@@ -7086,7 +7197,6 @@ Senutilaj - forprenu
 <e lm="furioza">              <i>furioz</i><par n="a__adj"/></e>
 <e lm="momenta">              <i>moment</i><par n="a__adj"/></e>
 <e lm="elkora">               <i>elkor</i><par n="a__adj"/></e>
-<e lm="genial">               <i>genial</i><par n="a__adj"/></e>
 <e lm="danĝera">              <i>danĝer</i><par n="a__adj"/></e>
 <e lm="malmodera">            <i>malmoder</i><par n="a__adj"/></e>
 <e lm="senefika">             <i>senefik</i><par n="a__adj"/></e>
@@ -7489,7 +7599,6 @@ Senutilaj - forprenu
 <e lm="akcepteble">           <i>akceptebl</i><par n="e__adv"/></e>
 <e lm="akcidente">            <i>akcident</i><par n="e__adv"/></e>
 <e lm="akre">                 <i>akr</i><par n="e__adv"/></e>
-<e lm="aktuale">              <i>aktual</i><par n="e__adv"/></e>
 <e lm="akute">                <i>akut</i><par n="e__adv"/></e>
 <e lm="antaŭ ĉio">            <i>anta</i><par n="ŭ"/><i><b/></i><par n="ĉ"/><i>io</i><par n="jam__adv"/></e>
 <!-- Francis says its bad :-( <e lm="ĉiuj krom"><par n="ĉ"/><i>iuj<b/>krom</i><par n="jam__adv"/></e> -->
@@ -7502,7 +7611,6 @@ Senutilaj - forprenu
 <e lm="cetere">               <i>ceter</i><par n="e__adv"/></e>
 <e lm="dise">                 <i>dis</i><par n="e__adv"/></e>
 <e lm="egale">                <i>egal</i><par n="e__adv"/></e>
-<e lm="ekde">                 <i>ekd</i><par n="e__adv"/></e>
 <e lm="flankenmetite">        <i>flankenmetit</i><par n="e__adv"/></e>
 <e lm="foje">                 <i>foj</i><par n="e__adv"/></e>
 <e lm="forte">                <i>fort</i><par n="e__adv"/></e>
@@ -7511,7 +7619,6 @@ Senutilaj - forprenu
 <e lm="interese">             <i>interes</i><par n="e__adv"/></e>
 <e lm="je">                   <i>j</i><par n="e__adv"/></e>
 <e lm="jes">                  <i>jes</i><par n="jam__adv"/></e>
-<e lm="ja">                  <i>ja</i><par n="jam__adv"/></e>
 <e lm="juste">                <i>just</i><par n="e__adv"/></e>
 <e lm="juste">                <i>juste</i><par n="tro__preadv"/></e>
 <e lm="komforte">             <i>komfort</i><par n="e__adv"/></e>
@@ -7923,7 +8030,6 @@ Senutilaj - forprenu
 <e lm="konscio">              <i>konsci</i><par n="o__n"/></e>
 <e lm="konsileto">            <i>konsilet</i><par n="o__n"/></e>
 <e lm="konsilio">             <i>konsili</i><par n="o__n"/></e>
-<e lm="konsilisto">           <i>konsilist</i><par n="o__n"/></e>
 <e lm="konsisto">             <i>konsist</i><par n="o__n"/></e>
 <e lm="konstanteco">          <i>konstantec</i><par n="o__n"/></e>
 <e lm="konsterniĝo">          <i>konsterni</i><par n="ĝ"/><i></i><par n="o__n"/></e>
@@ -7938,7 +8044,7 @@ Senutilaj - forprenu
 <e lm="kontribuaĵo">          <i>kontribua</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="kontrolorganizo">      <i>kontrolorganiz</i><par n="o__n"/></e>
 <e lm="konvinkiĝo">           <i>konvinki</i><par n="ĝ"/><i></i><par n="o__n"/></e>
-<e lm="koordinato">           <i>koordin</i><par n="o__n"/></e>
+<e lm="koordinato">           <i>koordinat</i><par n="o__n"/></e>
 <e lm="korbopilko">           <i>korbopilk</i><par n="o__n"/></e>
 <e lm="korespondado">         <i>korespondad</i><par n="o__n"/></e>
 <e lm="korpuso">              <i>korpus</i><par n="o__n"/></e>
@@ -8495,7 +8601,6 @@ Senutilaj - forprenu
 <e lm="diplomiĝi">            <i>diplomi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="disbati">              <i>disbat</i><par n="i__vblex"/></e>
 <e lm="disigi">               <i>disig</i><par n="i__vblex"/></e>
-<e lm="disparoli">            <i>disparol</i><par n="i__vblex"/></e>
 <e lm="dispozicii">           <i>dispozici</i><par n="i__vblex"/></e>
 <e lm="disvastigi">           <i>disvastig</i><par n="i__vblex"/></e>
 <e lm="dungi">                <i>dung</i><par n="i__vblex"/></e>
@@ -8859,7 +8964,6 @@ Senutilaj - forprenu
 <e lm="fiago">                <i>fiag</i><par n="o__n"/></e>
 <e lm="fitraktadi">           <i>fitraktad</i><par n="i__vblex"/></e>
 <e lm="Abisenio">             <i>Abiseni</i><par n="Barcelon/o__np"/></e>
-<e lm="superlerneja">         <i>superlernej</i><par n="a__adj"/></e>
 <e lm="docento">              <i>docent</i><par n="o__n"/></e>
 <e lm="universitatano">       <i>universitatan</i><par n="o__n"/></e>
 <e lm="akademia">             <i>akademi</i><par n="a__adj"/></e>
@@ -9339,12 +9443,12 @@ Senutilaj - forprenu
 <e lm="anafilaksio">          <i>anafilaksi</i><par n="o__n"/></e>
 <e lm="anarkia">              <i>anar</i><par n="k_ĥ"/><i>i</i><par n="a__adj"/></e>
 <e lm="anarkiisma">           <i>anar</i><par n="k_ĥ"/><i>iism</i><par n="a__adj"/></e>
-<e r="LR" lm="anarkisma">     <p><l>anarkisma</l>           <r>anarkiisma</r></p><par n="a__adj"/></e>
+<e r="LR" lm="anarkisma">     <p><l>anarkism</l>           <r>anarkiism</r></p><par n="a__adj"/></e>
 <e lm="anarkiismo">           <i>anar</i><par n="k_ĥ"/><i>iism</i><par n="o__n"/></e>
 <e r="LR" lm="anarkiismo">    <p><l>anarkism</l>           <r>anarkiism</r></p><par n="o__n"/></e>
 <e lm="anatomia">             <i>anatomi</i><par n="a__adj"/></e>
 <e lm="anatomiisto">          <i>anatomiist</i><par n="ino__n"/></e>
-<e r="LR" lm="anatomisto">    <p><l>anatomisto</l>          <r>anatomiisto</r></p><par n="ino__n"/></e>
+<e r="LR" lm="anatomisto">    <p><l>anatomist</l>          <r>anatomiist</r></p><par n="ino__n"/></e>
 <e lm="praulo">               <i>praul</i><par n="o__n"/></e>
 <e lm="ankriĝi">              <i>ankri</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="flanka">               <i>flank</i><par n="a__adj"/></e>
@@ -10100,8 +10204,6 @@ Senutilaj - forprenu
 <e lm="naskiĝotago">          <i>naski</i><par n="ĝ"/><i>otag</i><par n="o__n"/></e>
 <e lm="naskiĝdatreveno">      <i>naski</i><par n="ĝ"/><i>datreven</i><par n="o__n"/></e>
 <e lm="krakeno">              <i>kraken</i><par n="o__n"/></e>
-<e lm="episkoparo">           <i>episkopar</i><par n="o__n"/></e>
-<e lm="episkopeco">           <i>episkopec</i><par n="o__n"/></e>
 <e lm="bisono">               <i>bison</i><par n="o__n"/></e>
 <e lm="rompaĵo">              <i>rompa</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="iometo">               <i>iomet</i><par n="o__n"/></e>
@@ -13572,7 +13674,6 @@ Senutilaj - forprenu
 <e lm="epidemiologio">        <i>epidemiologi</i><par n="o__n"/></e>
 <e lm="epididimo">            <i>epididim</i><par n="o__n"/></e>
 <e lm="epilepsio">            <i>epilepsi</i><par n="o__n"/></e>
-<e lm="Epifanio">             <i>Epifani</i><par n="o__n"/></e>
 <e lm="seriero">              <i>serier</i><par n="o__n"/></e>
 <e lm="epistemologia">        <i>epistemologi</i><par n="a__adj"/></e>
 <e lm="epistolo">             <i>epistol</i><par n="o__n"/></e>
@@ -14437,7 +14538,6 @@ Senutilaj - forprenu
 <e lm="konstrufosaĵo">        <i>konstrufosa</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="fundamenti">           <i>fundament</i><par n="i__vblex"/></e>
 <e lm="fondinto">             <i>fondint</i><par n="o__n"/></e>
-<e lm="kvar-jara">            <i>kvar-jar</i><par n="a__adj"/></e>
 <e lm="vulpo">                <i>vulp</i><par n="o__n"/></e>
 <e lm="porcieto">             <i>porciet</i><par n="o__n"/></e>
 <e lm="rompebla">             <i>rompebl</i><par n="a__adj"/></e>
@@ -14979,7 +15079,6 @@ Senutilaj - forprenu
 <e lm="Golfo">                <i>Golf</i><par n="Barcelon/o__np"/></e>
 <e lm="engluti">              <i>englut</i><par n="i__vblex"/></e>
 <e lm="ekgluti">              <i>ekglut</i><par n="i__vblex"/></e>
-<e lm="pafanto">              <i>pafant</i><par n="o__n"/></e>
 <e lm="armito">               <i>armit</i><par n="o__n"/></e>
 <e lm="pafatencinto">         <i>pafatencint</i><par n="o__n"/></e>
 <e lm="pafatencisto">         <i>pafatencist</i><par n="ino__n"/></e>
@@ -15769,7 +15868,6 @@ Senutilaj - forprenu
 <e lm="elpensemo">            <i>elpensem</i><par n="o__n"/></e>
 <e lm="ingoto">               <i>ingot</i><par n="o__n"/></e>
 <e lm="maldankemo">           <i>maldankem</i><par n="o__n"/></e>
-<e lm="enloĝi">               <i>enlo</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="enspiro">              <i>enspir</i><par n="o__n"/></e>
 <e lm="enspiratoro">          <i>enspirator</i><par n="o__n"/></e>
 <e lm="enradikigita">         <i>enradikigit</i><par n="a__adj"/></e>
@@ -16902,7 +17000,6 @@ Senutilaj - forprenu
 <e lm="geedziĝi">             <i>geedzi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="edziĝi">               <i>edzi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="edziniĝi">             <i>edzini</i><par n="ĝ"/><par n="i__vblex"/></e>
-<e lm="ligita">               <i>ligit</i><par n="a__adj"/></e>
 <e lm="direktanto">           <i>direktant</i><par n="o__n"/></e>
 <e lm="viciganto">            <i>vicigant</i><par n="o__n"/></e>
 <e lm="arigi">                <i>arig</i><par n="i__vblex"/></e>
@@ -18807,7 +18904,6 @@ Senutilaj - forprenu
 <e lm="prefikso">             <i>prefiks</i><par n="o__n"/></e>
 <e lm="graveda">              <i>graved</i><par n="a__adj"/></e>
 <e lm="prenipova">            <i>prenipov</i><par n="a__adj"/></e>
-<e lm="prahistoria">          <i>prahistori</i><par n="a__adj"/></e>
 <e lm="antaŭhistoria">        <i>antaŭhistori</i><par n="a__adj"/></e>
 <e lm="prelato">              <i>prelat</i><par n="o__n"/></e>
 <e lm="prepara">              <i>prepar</i><par n="a__adj"/></e>
@@ -20023,7 +20119,6 @@ Senutilaj - forprenu
 <e lm="romaneca">             <i>romanec</i><par n="a__adj"/></e>
 <e lm="romanecigi">           <i>romanecig</i><par n="i__vblex"/></e>
 <e lm="romaneco">             <i>romanec</i><par n="o__n"/></e>
-<e lm="Romanio">              <i>Romani</i><par n="Barcelon/o__np"/></e>
 <e lm="salono">               <i>salon</i><par n="o__n"/></e>
 <e lm="enradikigi">           <i>enradikig</i><par n="i__vblex"/></e>
 <e lm="ŝnuro">                <par n="ŝ"/><i>nur</i><par n="o__n"/></e>
@@ -20816,7 +20911,6 @@ Senutilaj - forprenu
 <e lm="sidi">                 <i>sid</i><par n="i__vblex"/></e>
 <e lm="sidigi">               <i>sidig</i><par n="i__vblex"/></e>
 <e lm="situi">                <i>situ</i><par n="i__vblex"/></e>
-<e lm="ses-jara">             <i>ses-jar</i><par n="a__adj"/></e>
 <e lm="glitkuristo">          <i>glitkurist</i><par n="ino__n"/></e>
 <e lm="glitkuranto">          <i>glitkurant</i><par n="ino__n"/></e>
 <e lm="glitisto">             <i>glitist</i><par n="ino__n"/></e>
@@ -22463,7 +22557,6 @@ Senutilaj - forprenu
 <e lm="plektiĝi">             <i>plekti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="tordeca">              <i>tordec</i><par n="a__adj"/></e>
 <e lm="torda">                <i>tord</i><par n="a__adj"/></e>
-<e lm="du-jara">              <i>du-jar</i><par n="a__adj"/></e>
 <e lm="dudirekta">            <i>dudirekt</i><par n="a__adj"/></e>
 <e lm="sampoentiĝi">          <i>sampoenti</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="litertipo">            <i>litertip</i><par n="o__n"/></e>
@@ -22881,7 +22974,6 @@ Senutilaj - forprenu
 <e lm="violkolora">           <i>violkolor</i><par n="a__adj"/></e>
 <e lm="virgulino">            <i>virgulin</i><par n="o__n"/></e>
 <e lm="Virginio">             <i>Virgini</i><par n="Barcelon/o__np"/></e>
-<e lm="Virginia">             <i>Virginia</i><par n="Barcelono__np"/></e>
 <e lm="virtuala">             <i>virtual</i><par n="a__adj"/></e>
 <e lm="surreta">              <i>surret</i><par n="a__adj"/></e>
 <e lm="preskaŭ">              <i>preska</i><par n="ŭ"/><par n="jam__adv"/></e>
@@ -23347,7 +23439,6 @@ Senutilaj - forprenu
 <e lm="Thomas">               <i>Thomas</i><par n="Ifans__np"/></e>
 <e lm="Victor">               <i>Victor</i><par n="Mark__np"/></e>
 <e lm="Victoria">             <i>Victoria</i><par n="Mary__np"/></e>
-<e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
 <e lm="Wood">                 <i>Wood</i><par n="Ifans__np"/></e>
 
 
@@ -23463,7 +23554,6 @@ Senutilaj - forprenu
 
 <!-- Aldonoj Jacob 2009/02/12 -->
 
-<e lm="oble">                 <i>obl</i><par n="e__adv"/></e>
 <e lm="plus">                 <i>plus</i><par n="after__cnjadv"/></e>
 <e lm="minus">                <i>minus</i><par n="after__cnjadv"/></e>
 <e lm="oble">                 <i>oble</i><par n="after__cnjadv"/></e>
@@ -23481,7 +23571,6 @@ Senutilaj - forprenu
 
 <!-- Aldonoj Hèctor 2009/02/19 -->
 
-<e lm="don">                  <i>don</i><par n="nomsen__n"/></e>
 <e lm="kg.">                  <i>kg.</i><par n="nomsen__n"/></e>
 <e lm="km.">                  <i>km.</i><par n="nomsen__n"/></e>
 <e lm="deka">                 <i>dek</i><par n="a__adj"/></e>
@@ -23649,7 +23738,6 @@ Senutilaj - forprenu
 <e lm="Alabamo">              <i>Alabam</i><par n="Barcelon/o__np"/></e>
 <e lm="Alasko">               <i>Alask</i><par n="Barcelon/o__np"/></e>
 <e lm="Arizono">              <i>Arizon</i><par n="Barcelon/o__np"/></e>
-<e lm="Arkanso">              <i>Arkans</i><par n="Barcelon/o__np"/></e>
 <e lm="Delavaro">             <i>Delavar</i><par n="Barcelon/o__np"/></e>
 <e lm="Florido">              <i>Florid</i><par n="Barcelon/o__np"/></e>
 <e lm="Georgio">              <i>Georgi</i><par n="Barcelon/o__np"/></e>
@@ -25538,7 +25626,6 @@ Senutilaj - forprenu
 <e lm="Envisat">              <i>Envisat</i><par n="Mary__np"/></e>
 <e lm="Enzo">                 <i>Enzo</i><par n="Mark__np"/></e>
 <e lm="EOS Aqua">             <i>EOS<b/>Aqua</i><par n="Mary__np"/></e>
-<e lm="Epifanio">             <i>Epifanio</i><par n="Mark__np"/></e>
 <e lm="Epuyen">               <i>Epuyen</i><par n="Mark__np"/></e>
 <e lm="Eraldo">               <i>Eraldo</i><par n="Mark__np"/></e>
 <e lm="Eranio">               <i>Eranio</i><par n="Mark__np"/></e>
@@ -29097,7 +29184,6 @@ Senutilaj - forprenu
 <e lm="Violet">               <i>Violet</i><par n="Mary__np"/></e>
 <e lm="Virgilia">             <i>Virgilia</i><par n="Mary__np"/></e>
 <e lm="Virgilio">             <i>Virgilio</i><par n="Mark__np"/></e>
-<e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
 <e lm="Virginio">             <i>Virginio</i><par n="Mark__np"/></e>
 <e lm="Viridiana">            <i>Viridiana</i><par n="Mary__np"/></e>
 <e lm="Virma">                <i>Virma</i><par n="Mary__np"/></e>
@@ -29541,7 +29627,6 @@ Senutilaj - forprenu
 <e lm="Brown">                <i>Brown</i><par n="Ifans__np"/></e>
 <e lm="Hall">                 <i>Hall</i><par n="Ifans__np"/></e>
 <e lm="Arkansaso">            <i>Arkansas</i><par n="Barcelon/o__np"/></e>
-<e lm="Epifanio">             <i>Epifani</i><par n="Barcelon/o__np"/></e>
 <e lm="Nov-Hampŝiro">         <i>Nov-Hamp</i><par n="ŝ"/><i>ir</i><par n="Barcelon/o__np"/></e>
 <e lm="Uzbekio">              <i>Uzbeki</i><par n="Barcelon/o__np"/></e>
 <e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
@@ -29549,10 +29634,8 @@ Senutilaj - forprenu
 <e lm="apude">                <i>apud</i><par n="e__adv"/></e>
 <e lm="poluri">               <i>polur</i><par n="i__vblex"/></e>
 <e lm="returne eliri">        <i>returne<b/>elir</i><par n="i__vblex"/></e>
-<e lm="azerbajĝana">          <i>azerbaj</i><par n="ĝ"/><i>an</i><par n="a__adj"/></e>
 <e lm="kroata">               <i>kroat</i><par n="a__adj"/></e>
 <e lm="mongola">              <i>mongol</i><par n="a__adj"/></e>
-<e lm="azerbajĝano">          <i>azerbaj</i><par n="ĝ"/><i>an</i><par n="o__n"/></e>
 <e lm="kastilio">             <i>kastili</i><par n="o__n"/></e>
 <e lm="kroato">               <i>kroat</i><par n="o__n"/></e>
 <e lm="mongolo">              <i>mongol</i><par n="o__n"/></e>
@@ -29787,7 +29870,6 @@ Senutilaj - forprenu
 <e lm="malleviĝema">          <i>mallevi</i><par n="ĝ"/><i>em</i><par n="a__adj"/></e>
 <e lm="plagi">                <i>plag</i><par n="i__vblex"/></e>
 <e lm="abelvakso">            <i>abelvaks</i><par n="o__n"/></e>
-<e lm="esti">                 <i>est</i><par n="i__vblex"/></e>
 <e lm="bipo">                 <i>bip</i><par n="o__n"/></e>
 <e lm="hupsono">              <i>hupson</i><par n="o__n"/></e>
 <e lm="bipilo">               <i>bipil</i><par n="o__n"/></e>
@@ -31902,7 +31984,6 @@ Senutilaj - forprenu
 <e lm="ricevanto">            <i>ricevant</i><par n="o__n"/></e>
 <e lm="kvaronjare">           <i>kvaronjar</i><par n="e__adv"/></e>
 <e lm="nuligi">               <i>nulig</i><par n="i__vblex"/></e>
-<e lm="kebeko">               <i>kebek</i><par n="o__n"/></e>
 <e lm="subpremi">             <i>subprem</i><par n="i__vblex"/></e>
 <e lm="pridemandi">           <i>pridemand</i><par n="i__vblex"/></e>
 <e lm="rapidiĝi">             <i>rapidi</i><par n="ĝ"/><par n="i__vblex"/></e>
@@ -32536,7 +32617,6 @@ Senutilaj - forprenu
 <e lm="balbuto">              <i>balbut</i><par n="o__n"/></e>
 <e lm="subigi">               <i>subig</i><par n="i__vblex"/></e>
 <e lm="nevigla">              <i>nevigl</i><par n="a__adj"/></e>
-<e lm="subnacia">             <i>subnaci</i><par n="a__adj"/></e>
 <e lm="subŝtata">             <i>subŝtat</i><par n="a__adj"/></e>
 <e lm="subalternulo">         <i>subalternul</i><par n="o__n"/></e>
 <e lm="filia">                <i>fili</i><par n="a__adj"/></e>
@@ -33074,7 +33154,6 @@ Senutilaj - forprenu
 <e lm="spezobilanco">         <i>spezobilanc</i><par n="o__n"/></e>
 <e lm="ĝirokonto">            <par n="ĝ"/><i>irokont</i><par n="o__n"/></e>
 <e lm="estingiĝi">            <i>estingi</i><par n="ĝ"/><par n="i__vblex"/></e>
-<e lm="liceo">                <i>lice</i><par n="o__n"/></e>
 <e lm="homarano">             <i>homaran</i><par n="o__n"/></e>
 <e lm="plie">                 <i>pli</i><par n="e__adv"/></e>
 <e lm="enmane">               <i>enman</i><par n="e__adv"/></e>
@@ -33118,81 +33197,21 @@ Senutilaj - forprenu
 <e lm="ekvekiĝi">             <i>ekveki</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="ciferi">               <i>cifer</i><par n="i__vblex"/></e>
 <e lm="priverki">             <i>priverk</i><par n="i__vblex"/></e>
-<e lm="vestita">              <i>vestit</i><par n="a__adj"/></e>
-<e lm="zumadanta">            <i>zumadant</i><par n="a__adj"/></e>
-<e lm="ĵurinta">              <par n="ĵ"/><i>urint</i><par n="a__adj"/></e>
-<e lm="ŝarĝita">              <par n="ŝ"/><i>ar</i><par n="ĝ"/><i>it</i><par n="a__adj"/></e>
-<e lm="ŝirmita">              <par n="ŝ"/><i>irmit</i><par n="a__adj"/></e>
-<e lm="ŝoforinta">            <par n="ŝ"/><i>oforint</i><par n="a__adj"/></e>
 <e lm="transe">               <i>trans</i><par n="e__adv"/></e>
 <e lm="amaĵistino">           <i>ama</i><par n="ĵ"/><i>istin</i><par n="o__n"/></e>
 <e lm="homero">               <i>homer</i><par n="o__n"/></e>
 <e lm="junulino">             <i>junulin</i><par n="o__n"/></e>
-<e lm="mastrino">             <i>mastrin</i><par n="o__n"/></e>
-<e lm="vidvino">              <i>vidvin</i><par n="o__n"/></e>
-<e lm="ĥaoso">                <par n="ĥ"/><i>aos</i><par n="o__n"/></e>
 <e lm="atentoni">             <i>atenton</i><par n="i__vblex"/></e>
 <e lm="kareni">               <i>karen</i><par n="i__vblex"/></e>
-<e lm="alarmita">             <i>alarmit</i><par n="a__adj"/></e>
-<e lm="alfundiĝinta">         <i>alfundi</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
-<e lm="alligita">             <i>alligit</i><par n="a__adj"/></e>
-<e lm="alvenanta">            <i>alvenant</i><par n="a__adj"/></e>
-<e lm="anstataŭigita">        <i>anstata</i><par n="ŭ"/><i>igit</i><par n="a__adj"/></e>
-<e lm="antaŭdecidita">        <i>anta</i><par n="ŭ"/><i>decidit</i><par n="a__adj"/></e>
-<e lm="asociita">             <i>asociit</i><par n="a__adj"/></e>
-<e lm="aŭtomatigita">         <i>a</i><par n="ŭ"/><i>tomatigit</i><par n="a__adj"/></e>
-<e lm="bindita">              <i>bindit</i><par n="a__adj"/></e>
-<e lm="centralizita">         <i>centralizit</i><par n="a__adj"/></e>
 <e lm="difektita">            <i>difektit</i><par n="a__adj"/></e>
-<e lm="dresita">              <i>dresit</i><par n="a__adj"/></e>
-<e lm="elprovita">            <i>elprovit</i><par n="a__adj"/></e>
 <e lm="eluzita">              <i>eluzit</i><par n="a__adj"/></e>
-<e lm="enfermita">            <i>enfermit</i><par n="a__adj"/></e>
 <e lm="enradikiĝinta">        <i>enradiki</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
 <e lm="eŭropa">               <i>e</i><par n="ŭ"/><i>rop</i><par n="a__adj"/></e>
-<e lm="fiksita">              <i>fiksit</i><par n="a__adj"/></e>
-<e lm="flikita">              <i>flikit</i><par n="a__adj"/></e>
-<e lm="haltigita">            <i>haltigit</i><par n="a__adj"/></e>
 <e lm="improvizita">          <i>improvizit</i><par n="a__adj"/></e>
-<e lm="interrompita">         <i>interrompit</i><par n="a__adj"/></e>
-<e lm="inundita">             <i>inundit</i><par n="a__adj"/></e>
-<e lm="katenita">             <i>katenit</i><par n="a__adj"/></e>
-<e lm="koincidanta">          <i>koincidant</i><par n="a__adj"/></e>
-<e lm="komputilizita">        <i>komputilizit</i><par n="a__adj"/></e>
-<e lm="kondamnita">           <i>kondamnit</i><par n="a__adj"/></e>
-<e lm="konservita">           <i>konservit</i><par n="a__adj"/></e>
-<e lm="konsternita">          <i>konsternit</i><par n="a__adj"/></e>
-<e lm="kontraŭita">           <i>kontra</i><par n="ŭ"/><i>it</i><par n="a__adj"/></e>
 <e lm="lana">                 <i>lan</i><par n="a__adj"/></e>
 <e lm="libia">                <i>libi</i><par n="a__adj"/></e>
-<e lm="likvidita">            <i>likvidit</i><par n="a__adj"/></e>
-<e lm="makulita">             <i>makulit</i><par n="a__adj"/></e>
-<e lm="malaperinta">          <i>malaperint</i><par n="a__adj"/></e>
-<e lm="malfruiĝinta">         <i>malfrui</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
-<e lm="malleviĝinta">         <i>mallevi</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
-<e lm="mekanizita">           <i>mekanizit</i><par n="a__adj"/></e>
-<e lm="misfarinta">           <i>misfarint</i><par n="a__adj"/></e>
-<e lm="mutaciinta">           <i>mutaciint</i><par n="a__adj"/></e>
-<e lm="ofendita">             <i>ofendit</i><par n="a__adj"/></e>
 <e lm="okazonta">             <i>okazont</i><par n="a__adj"/></e>
-<e lm="origita">              <i>origit</i><par n="a__adj"/></e>
-<e lm="orita">                <i>orit</i><par n="a__adj"/></e>
-<e lm="parfumita">            <i>parfumit</i><par n="a__adj"/></e>
-<e lm="pentanta">             <i>pentant</i><par n="a__adj"/></e>
-<e lm="perfortita">           <i>perfortit</i><par n="a__adj"/></e>
-<e lm="perinta">              <i>perint</i><par n="a__adj"/></e>
-<e lm="plisita">              <i>plisit</i><par n="a__adj"/></e>
-<e lm="preskribita">          <i>preskribit</i><par n="a__adj"/></e>
-<e lm="projektita">           <i>projektit</i><par n="a__adj"/></e>
-<e lm="rekorda">              <i>rekord</i><par n="a__adj"/></e>
-<e lm="senigita">             <i>senigit</i><par n="a__adj"/></e>
 <e lm="siria">                <i>siri</i><par n="a__adj"/></e>
-<e lm="soifanta">             <i>soifant</i><par n="a__adj"/></e>
-<e lm="spertonta">            <i>spertont</i><par n="a__adj"/></e>
-<e lm="tegita">               <i>tegit</i><par n="a__adj"/></e>
-<e lm="terurita">             <i>terurit</i><par n="a__adj"/></e>
-<e lm="trafita">              <i>trafit</i><par n="a__adj"/></e>
-<e lm="tramalsekiĝinta">      <i>tramalseki</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
 <e lm="postefiko">            <i>postefik</i><par n="o__n"/></e>
 <e lm="surondiĝo">            <i>surondi</i><par n="ĝ"/><i></i><par n="o__n"/></e>
 <e lm="apologiisto">          <i>apologiist</i><par n="ino__n"/></e>
@@ -33514,8 +33533,6 @@ Senutilaj - forprenu
 <e lm="banderolo">            <i>banderol</i><par n="o__n"/></e>
 <e lm="luktisto">             <i>luktist</i><par n="ino__n"/></e>
 <e lm="nenomita">             <i>nenomit</i><par n="a__adj"/></e>
-<e lm="adoleskantino">        <i>adoleskantin</i><par n="o__n"/></e>
-<e lm="paroĥestro">           <i>paro</i><par n="ĥ"/><i>estr</i><par n="o__n"/></e>
 <e lm="guruo">                <i>guru</i><par n="ino__n"/></e>
 <e lm="akcesoraĵo">           <i>akcesora</i><par n="ĵ"/><i></i><par n="o__n"/></e>
 <e lm="komplico">             <i>komplic</i><par n="o__n"/></e>
@@ -33676,10 +33693,6 @@ Senutilaj - forprenu
 <e lm="medalulo">             <i>medalul</i><par n="o__n"/></e>
 <e lm="medalgajninto">        <i>medalgajnint</i><par n="o__n"/></e>
 <e lm="gajnado">              <i>gajnad</i><par n="o__n"/></e>
-<e lm="dormante">             <i>dormant</i><par n="e__adv"/></e>
-<e lm="koncerne">             <i>koncern</i><par n="e__adv"/></e>
-<e lm="ridante">              <i>ridant</i><par n="e__adv"/></e>
-<e lm="siblado">              <i>siblad</i><par n="o__n"/></e>
 <e lm="bufoni">               <i>bufon</i><par n="i__vblex"/></e>
 <e lm="oficoni">              <i>oficon</i><par n="i__vblex"/></e>
 <e lm="tiuj kiuj">            <i>tiuj<b/>kiuj</i><p><l></l> <r><s n="prn"/><s n="itg"/><s n="pl"/></r></p></e>
@@ -33694,14 +33707,7 @@ Senutilaj - forprenu
 <e lm="ambaŭ">                <i>amba</i><par n="ŭ"/><par n="jam__adv"/></e>
 <e lm="episkaro">              <i>episkar</i><par n="o__n"/></e>
 
-<!-- Aferoj ne uzataj en la direkto en->eo, sed kiun ni versxajne bezonos en la alia direkto
 
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="oni">                  <p><l>oni</l>                 <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="oni">                  <p><l>onin</l>                <r>oni<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
--->
 
 	</section>
 	<section id="final" type="inconditional">
