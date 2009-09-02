@@ -472,25 +472,22 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>os</l>                  <r>i<s n="vbser"/><s n="fti"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vbser"/><s n="cni"/></r></p></e>
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vbser"/><s n="fts"/></r></p></e>
-<e>                           <p><l>onta</l>                <r>i<s n="vbser"/><s n="pp2"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ontaj</l>               <r>i<s n="vbser"/><s n="pp2"/><s n="pl"/></r></p></e>
-<e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p></e>
-<e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/><s n="sg"/></r></p></e>
-<e>                           <p><l>intaj</l>               <r>i<s n="vbser"/><s n="pp3"/><s n="pl"/></r></p></e>
 
 <e r="RL">                    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p></e>
-<e>                           <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>itaj</l>                <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>itan</l>                <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>itajn</l>               <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL" c="TODO:remetu">    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p><par n="sgplnomacc"/></e>
+
+<e>                           <p><l>onta</l>                <r>i<s n="vbser"/><s n="pp2"/></r></p><par n="sgplnomacc"/></e>
+
+<e r="RL">                    <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p></e>
+<e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p><par n="sgplnomacc"/></e>
+
 
 <!--
-
-
 <e>                           <p><l>anta</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
 -->
-<e>                           <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p></e>
+<e r="RL" c="TODO:remetu">    <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p><par n="sgplnomacc"/></e>
+<e r="RL">                    <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vbser"/><s n="ger"/></r></p></e>
 <e>                           <p><l>u</l>                   <r>i<s n="vbser"/><s n="imp"/></r></p></e>
 
