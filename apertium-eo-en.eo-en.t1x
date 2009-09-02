@@ -671,6 +671,7 @@
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
+        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbser_vbpp3" case="caseFirstWord">
            <tags>
@@ -701,6 +702,7 @@
        <pattern-item n="c_vbser"/>
      </pattern>
      <action>
+        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbser" case="caseFirstWord">
            <tags>

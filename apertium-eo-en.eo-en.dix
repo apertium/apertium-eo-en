@@ -295,9 +295,6 @@
 
 
 <!-- Aldonoj Hèctor 2009/02/10 -->
-<e>       <p><l>ni<b/>ĉiuj<s n="prn"/><s n="tn"/></l>  <r>all<b/>of<b/>us<s n="prn"/><s n="tn"/></r></p></e>
-<e>       <p><l>vi<b/>ĉiuj<s n="prn"/><s n="tn"/></l>  <r>all<b/>of<b/>you<s n="prn"/><s n="tn"/></r></p></e>
-<e>       <p><l>ili<b/>ĉiuj<s n="prn"/><s n="tn"/></l> <r>all<b/>of<b/>them<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>lunde<s n="adv"/></l>                  <r>on<b/>Monday<s n="adv"/></r></p></e>
 <e>       <p><l>marde<s n="adv"/></l>                  <r>on<b/>Tuesday<s n="adv"/></r></p></e>
 <e>       <p><l>merkrede<s n="adv"/></l>               <r>on<b/>Wednesday<s n="adv"/></r></p></e>
@@ -524,11 +521,17 @@
 
     <!-- Pronouns -->
 
+<e>       <p><l>ni<b/>ĉiuj<s n="prn"/><s n="tn"/></l>  <r>all<b/>of<b/>us<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>vi<b/>ĉiuj<s n="prn"/><s n="tn"/></l>  <r>all<b/>of<b/>you<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>ili<b/>ĉiuj<s n="prn"/><s n="tn"/></l> <r>all<b/>of<b/>them<s n="prn"/><s n="tn"/></r></p></e>
 
 <!-- everything is big   -> ĉio estas granda  -->
 <e>       <p><l>ĉio<s n="prn"/><s n="tn"/></l>         <r>everything<s n="prn"/><s n="tn"/></r></p></e>
 <!-- each has its own house   -> ĉiu havas ĝian propran domon  -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>each<s n="prn"/><s n="tn"/></r></p></e>
+<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everybody<s n="prn"/><s n="tn"/></r></p></e>
+<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everyone<s n="prn"/><s n="tn"/></r></p></e>
+
 
 <!-- ^each<det><ind><sg>  each dog has its own house   -> ĉiu hundo havas ĝian propran domon  -->
 
@@ -545,8 +548,6 @@
 <e>       <p><l>kelka<s n="prn"/><s n="tn"/></l>       <r>few<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>ambaŭ<s n="prn"/><s n="tn"/></l>       <r>both<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>neniu<s n="prn"/><s n="tn"/></l>       <r>none<s n="prn"/><s n="tn"/></r></p></e>
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everybody<s n="prn"/><s n="tn"/></r></p></e>
-<e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/></l>         <r>everyone<s n="prn"/><s n="tn"/></r></p></e>
 
 <!-- all are Christians -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
@@ -633,6 +634,30 @@
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l>   <r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
+
+
+
+<e ><p><l>multa<s n="prn"/><s n="tn"/></l>      <r>many<s n="prn"/><s n="tn"/></r></p></e>
+<!-- their greater ones.         -->
+<e ><p><l>xxx<s n="prn"/><s n="tn"/><s n="pl"/></l>      <r>one<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+
+
+<!-- if it is not prevented by something else.   
+     Aristotle reasoned that man must have a function uncommon to anything else 
+     It is unclear whether or not the strikers or anyone else will return to save him.
+     dynamic dialogue above all else.
+     if all else fails
+     Sartre doubts that Abraham can know that the voice he hears is really the voice of his God and not of someone else
+     -->
+<e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l><r>else<s n="adv"/></r></p></e>
+
+
+<e>       <p><l>pluraj<s n="prn"/><s n="tn"/></l>      <r>several<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>that<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>who<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
+
 <e>       <p><l>kiu<s n="prn"/><s n="rel"/></l><r>who<s n="prn"/><s n="rel"/></r></p></e>
 <e>       <p><l>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -643,7 +668,6 @@
 <e>       <p><l>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-
 
     <!-- Personal pronouns -->
 
@@ -867,7 +891,6 @@ BUT:
 <e r="RL"><p><l>kelka<s n="det"/><s n="qnt"/><s n="pl"/></l><r>some<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 <e>       <p><l>kelka<s n="det"/><s n="qnt"/></l>      <r>a<b/>few<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>kelka<s n="det"/></l>                  <r>a<b/>few<s n="det"/></r></p></e>
-<e>       <p><l>la<b/>sama<s n="det"/></l>             <r>the<b/>same<s n="det"/></r></p></e>
 
 <e>       <p><l>malmulta<s n="det"/><s n="qnt"/></l>   <r>little<s n="det"/><s n="qnt"/></r></p></e>
 
@@ -879,10 +902,6 @@ BUT:
 <e><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>many<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL">       <p><l>multa<s n="det"/><s n="qnt"/></l>      <r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 
-
-<e ><p><l>multa<s n="prn"/><s n="tn"/></l>      <r>many<s n="prn"/><s n="tn"/></r></p></e>
-<!-- their greater ones.         -->
-<e ><p><l>xxx<s n="prn"/><s n="tn"/><s n="pl"/></l>      <r>one<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 
 
 
@@ -1646,17 +1665,6 @@ BUT:
 <e>       <p><l>multaj<b/>manoj<b/>faciligas<b/>laboron<s n="ij"/></l><r>many<b/>hands<b/>make<b/>light<b/>work<s n="ij"/></r></p></e>
 
 
-
-<!-- if it is not prevented by something else.   
-     Aristotle reasoned that man must have a function uncommon to anything else 
-     It is unclear whether or not the strikers or anyone else will return to save him.
-     dynamic dialogue above all else.
-     if all else fails
-     Sartre doubts that Abraham can know that the voice he hears is really the voice of his God and not of someone else
-     -->
-<e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l><r>else<s n="adv"/></r></p></e>
-
-
 <!-- comparatives. -->
 
 
@@ -2214,7 +2222,6 @@ TODO??
 <e r="RL"><p><l>kontraŭ<s n="pr"/></l>                 <r>vs.<s n="pr"/></r></p></e>
 <e>       <p><l>kontraŭ<s n="pr"/></l>                 <r>versus<s n="pr"/></r></p></e>
 <e>       <p><l>plura<s n="det"/><s n="ind"/></l>      <r>several<s n="det"/><s n="ind"/></r></p></e>
-<e>       <p><l>pluraj<s n="prn"/><s n="tn"/></l>      <r>several<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>plura<s n="adj"/></l>                  <r>several<s n="adj"/></r></p></e>
 <e>       <p><l>diversa<s n="det"/><s n="ind"/></l>    <r>various<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>diversa<s n="adj"/></l>                <r>various<s n="adj"/></r></p></e>
@@ -2247,8 +2254,7 @@ TODO??
 <e>       <p><l>malgraŭ<s n="pr"/></l>                 <r>despite<s n="pr"/></r></p></e>
 <e r="RL"><p><l>tra<s n="pr"/></l>                     <r>via<s n="pr"/></r></p></e>
 
-<e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>that<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
-<e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>who<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
+
 <e>       <p><l>ktp.<s n="adv"/></l>                   <r>etc.<s n="adv"/></r></p></e>
 
 <!-- Hèctor end 2009.02.18 -->

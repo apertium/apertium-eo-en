@@ -412,17 +412,22 @@ Necesas difini paradigmon por adj-nomo terminoj
     
     
 <pardef n="ind__det">
-<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
+<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
 <!--
+<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
 <e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
 </pardef>
+
+<pardef n="ind__det2">
+<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
+</pardef>
+
     
 <pardef n="ambaŭ__det">
 <e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc0"/></e>
@@ -467,17 +472,21 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>os</l>                  <r>i<s n="vbser"/><s n="fti"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vbser"/><s n="cni"/></r></p></e>
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vbser"/><s n="fts"/></r></p></e>
-<e r="RL">                    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p></e>
-<e>                           <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>itaj</l>                <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>itan</l>                <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>itajn</l>               <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
 <e>                           <p><l>onta</l>                <r>i<s n="vbser"/><s n="pp2"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ontaj</l>               <r>i<s n="vbser"/><s n="pp2"/><s n="pl"/></r></p></e>
 <e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p></e>
 <e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>intaj</l>               <r>i<s n="vbser"/><s n="pp3"/><s n="pl"/></r></p></e>
+
+<e r="RL">                    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p></e>
+<e>                           <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>                           <p><l>itaj</l>                <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>                           <p><l>itan</l>                <r>i<s n="vbser"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                           <p><l>itajn</l>               <r>i<s n="vbser"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
+
 <!--
+
+
 <e>                           <p><l>anta</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
 -->
@@ -673,17 +682,18 @@ Necesas difini paradigmon por adj-nomo terminoj
 	</pardefs>
 
 	<section id="main" type="standard">
+
 	
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
 <e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
 
 
-<!-- Beznas -->
+<!-- Bezonas -->
 <e lm="esti">                 <i>est</i><par n="ser__vblex"/></e>
 <e lm="alvenanta">            <i>alvenant</i><par n="a__adj"/></e>
-<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det"/></e>
+<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det2"/></e>
 <e lm="tiu">                  <i>tiu</i><par n="tio__prn"/></e>
-<e lm="ja">                  <i>ja</i><par n="jam__adv"/></e>
+<e lm="ja">                   <i>ja</i><par n="jam__adv"/></e>
 <e lm="tio">                  <i>tio</i><par n="tio__prn"/></e>
 <e lm="dresita">              <i>dresit</i><par n="a__adj"/></e>
 <e lm="malaperinta">          <i>malaperint</i><par n="a__adj"/></e>
@@ -810,28 +820,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Virginia">             <i>Virginia</i><par n="Barcelono__np"/></e>
 <e lm="Virginia">             <i>Virginia</i><par n="Mary__np"/></e>
 <e lm="zumadanta">            <i>zumadant</i><par n="a__adj"/></e>
-
-<!-- eble ne -->
-
-
-<e lm="tiam">                 <i>tiam</i><par n="jam__adv"/></e>
-<e lm="tio">                  <i>ti</i><par n="o__n"/></e>
-<e lm="unu">                  <i>unu</i><par n="unu__det"/></e>
-<e lm="nenio">                <i>neni</i><par n="o__n"/></e>
-<e lm="kelka">                <i>kelk</i><par n="a__adj"/></e>
-<e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="al__pr"/></e>
-<e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="quant__det"/></e>
-<e lm="ekde">                 <i>ekd</i><par n="e__adv"/></e>
-<e lm="ene">                  <i>ene</i><par n="al__pr"/></e>
-<e lm="esti">                 <i>est</i><par n="i__vblex"/></e>
-
-<e lm="kiel">                 <i>kiel</i><par n="kaj__cnjcoo"/></e>
-<e lm="kiom">                 <i>kiom</i><par n="jam__adv"/></e>
-<e lm="krom">                 <i>krom</i><par n="jam__adv"/></e>
-<e lm="kune">                 <i>kune</i><par n="al__pr"/></e>
-
-<e lm="oble">                 <i>obl</i><par n="e__adv"/></e>
-
 
 
 
@@ -962,10 +950,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ie">                   <i>ie</i><p><l></l>           <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="nenie">                <i>nenie</i><p><l></l>        <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ĉie">                  <par n="ĉ"/><i>ie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ajna">                 <i>ajna</i><par n="ind__det"/></e>
+<e lm="ajna">                 <i>ajna</i><par n="ind__det2"/></e>
 <e lm="akorde kun">           <i>akorde<b/>kun</i><par n="al__pr"/></e>
 <e lm="al">                   <i>al</i><par n="al__pr"/></e>
-<e lm="alia">                 <i>alia</i><par n="ind__det"/></e>
+<e lm="alia">                 <i>alia</i><par n="ind__det2"/></e>
 <e lm="alia">                 <p><l>alia</l>                <r>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="alia">                 <p><l>aliaj</l>               <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="alia">                 <p><l>aliajn</l>              <r>alia<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
@@ -1060,7 +1048,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- genitive -->
 <e lm="de">                   <p><l>de</l>                  <r>de<s n="gen"/></r></p></e>
 <e lm="a">                    <p><l>-a</l>                  <r>a<s n="gen"/></r></p></e>
-<e lm="diversa">              <i>diversa</i><par n="ind__det"/></e>
+<e lm="diversa">              <i>diversa</i><par n="ind__det2"/></e>
 <e lm="dum">                  <i>dum</i><par n="after__cnjadv"/></e>
 <e lm="dum">                  <i>dum</i><par n="al__pr"/></e>
 <e lm="ekde">                 <i>ekde</i><par n="after__cnjadv"/></e>
@@ -1168,7 +1156,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="malpli">               <p><l>malpli</l>              <r>malpli<s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="malpli da">            <p><l>malpli<b/>da</l>        <r>malpli<b/>da<s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="tro da">               <p><l>tro<b/>da</l>           <r>tro<b/>da<s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
-<e lm="la sama">              <i>la<b/>sama</i><par n="ind__det"/></e>
 <e lm="laŭ">                  <i>la</i><par n="ŭ"/><i></i><par n="after__cnjadv"/></e>
 <e lm="laŭ">                  <i>la</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 <e lm="laŭlonge de">          <i>la</i><par n="ŭ"/><i>longe<b/>de</i><par n="al__pr"/></e>
@@ -1184,17 +1171,15 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="nenio">                <p><l>nenio</l>               <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="nenio">                <p><l>nenion</l>              <r>nenio<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="neniu">                <p><l>neniu</l>               <r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="neniu">                <i>neniu</i><par n="ind__det"/></e>
 <e lm="neniu">                <p><l>neniun</l>              <r>neniu<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="neniu">                <i>neniu</i><par n="ind__det2"/></e>
 <e lm="ol">                   <i>ol</i><par n="kaj__cnjcoo"/></e>
 <e lm="per">                  <i>per</i><par n="al__pr"/></e>
 <e lm="per multe da">         <i>per<b/>multe<b/>da</i><par n="al__pr"/></e>
 <e lm="pere de">              <i>pere<b/>de</i><par n="al__pr"/></e>
-<!--
-<e lm="plura">                <i>plur</i><par n="plur/a__det"/></e>
--->
-<e lm="plura">                <i>plura</i><par n="ind__det"/></e>
-<!-- <e lm="por">                  <i>por</i><par n="after__cnjadv"/></e> -->
+
+<e lm="plura">                <i>plura</i><par n="ind__det2"/></e>
+
 <e lm="por">                  <i>por</i><par n="al__pr"/></e>
 <e lm="por ke">               <i>por<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="post">                 <i>post</i><par n="al__pr"/></e>
@@ -1222,7 +1207,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="sur">                  <i>sur</i><par n="al__pr"/></e>
 <e lm="pri">                  <i>pri</i><par n="al__pr"/></e>
 <e lm="tamen">                <i>tamen</i><par n="after__cnjadv"/></e>
-<e lm="tia">                  <i>tia</i><par n="ind__det"/></e>
+<e lm="tia">                  <i>tia</i><par n="ind__det2"/></e>
 <e lm="tiam">                 <i>tiam</i><par n="after__cnjadv"/></e>
 <e lm="tiel ke">              <i>tiel<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="tiel kiel">            <i>tiel<b/>kiel</i><par n="after__cnjadv"/></e>

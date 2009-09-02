@@ -3181,7 +3181,7 @@ might:might<vaux><inf>
             <test><!-- I could have washed => Mi povis lavi. OK TODO  "Mi povintus lavi" would be better-->
             <or>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="can"/></equal>
-              <equal caseless="yes"><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
+              <equal><clip pos="1" side="sl" part="a_tns"/><lit v="past"/></equal>
             </or>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
@@ -3206,7 +3206,37 @@ might:might<vaux><inf>
           </when>
 
 
-          <otherwise><!--  must have been, should have led,  must have observed,  must have felt -->
+          <otherwise><!--  must have been, should have led,  must have observed,  must have felt 
+		  devis esti, devus gvidi, devis observi,  devis senti.
+		  -->
+            <let><var n="temps"/><lit-tag v="past"/></let>
+			<choose><when>
+				<test><equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="should"/></equal></test>
+				<let><var n="temps"/><lit-tag v="cni"/></let>
+			</when></choose>
+			<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <out>
+              <chunk name="vaux_verb7" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+      	          <tag><var n="tipus_verb"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lemh"/>
+                  <clip pos="1" side="tl" part="a_vrb"/><var n="temps"/>
+                  <clip pos="1" side="tl" part="lemq"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="lemh"/>
+                  <clip pos="3" side="tl" part="a_vrb"/><lit-tag v="inf"/>
+                  <clip pos="3" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
+<!--
+          <otherwise>must have been, should have led,  must have observed,  must have felt 
+		  devas havi estita, devus havi gvidita,  devas havi observita,  devas havi sentita.
             <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb7" case="caseFirstWord">
@@ -3229,6 +3259,7 @@ might:might<vaux><inf>
                 </lu>
               </chunk>
             </out>
+-->
           </otherwise>
         </choose>
       </action>
