@@ -131,12 +131,17 @@
     -->
     <def-cat n="vbser"><cat-item lemma="be" tags="vbser.*"/></def-cat>
 
-    <def-cat n="vbhaver">
-      <cat-item lemma="have" tags="vbhaver.*"/>
-    </def-cat>
+<!-- ne estas diferenco inter
+    <def-cat n="vbhaver"><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
+	kaj
+    <def-cat n="vbhaver"><cat-item lemma="have" tags="*"/></def-cat>
+	-->
+    <def-cat n="vbhaver"><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
 
 
-    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
+<!--tagger ne rekonas vbhaver en frazoj kiel  "has recently been made". Do ne fidu la vbhaver.
+    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="vbhaver.*"/></def-cat> 	-->
+    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="*"/></def-cat>
 
       <!--
         do:do<vbdo><pres>
