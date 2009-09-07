@@ -819,7 +819,14 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
     <e r="LR"><p><l><b/>thousand<b/>and</l><r><b/>thousand<s n="num"/><s n="sp"/></r></p></e>
 -->
 </pardef>
-    
+
+<pardef n="hundred__num">
+  <e>       <p><l></l>          <r><s n="num"/><s n="sp"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+</pardef>
+
+
 <pardef n="twenty__num">
   <e>       <p><l></l>          <r></r></p><par n="two__num"/></e>
   <e>       <p><l>-one</l>      <r>-one</r></p><par n="two__num"/></e>
@@ -12988,9 +12995,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Humphrey">        <i>Humphrey</i><par n="Mark__np"/></e>
 <e lm="hunch">           <i>hunch</i><par n="access__n"/></e>
 <e lm="hunch">           <i>hunch</i><par n="mix__vblex"/></e>
-<e lm="hundred">         <i>hundred</i><par n="house__n"/></e>
-<e lm="hundredth">       <i>hundredth</i><par n="up__n"/></e>
-<e lm="hundredth">       <i>hundredth</i><par n="expensive__adj"/></e>
 <e lm="Hungarian">       <i>Hungarian</i><par n="expensive__adj"/></e>
 <e lm="Hungarian">       <i>Hungarian</i><par n="house__n"/></e>
 <e lm="Hungary">         <i>Hungary</i><par n="Barcelona__np"/></e>
@@ -24576,7 +24580,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="thought">         <i>thought</i><par n="house__n"/></e>
 <e lm="thoughtful">      <i>thoughtful</i><par n="expensive__adj"/></e>
 <e lm="thoughtless">     <i>thoughtless</i><par n="expensive__adj"/></e>
-<e lm="thousand">        <i>thousand</i><par n="house__n"/></e>
 <e lm="throw">           <i>thr</i><par n="bl/ow__vblex"/></e>
 <e lm="thrall">          <i>thrall</i><par n="up__n"/></e>
 <e lm="thrash">          <i>thrash</i><par n="approach__vblex"/></e>
@@ -27566,7 +27569,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 		<!-- ******************************
 			    group num
 			****************************** -->
-<e lm="billion">         <i>billion</i><par n="two__num"/></e>
+<e lm="billion">         <i>billion</i><par n="hundred__num"/></e>
 
 <e lm="eight">           <i>eight</i><par n="two__num"/></e>
 <e lm="eighteen">        <i>eighteen</i><par n="two__num"/></e>
@@ -27582,14 +27585,17 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
     <e lm="a hundred"><i>a<b/>hundred</i><par n="million__num"/></e>
     <e lm="a thousand"><i>a<b/>thousand</i><par n="million__num"/></e>
 -->
-<e lm="hundred">         <i>hundred</i><par n="two__num"/></e>
+<e lm="hundred">         <i>hundred</i><par n="hundred__num"/></e>
+<e lm="hundredth">       <i>hundredth</i><par n="up__n"/></e>
+<e lm="hundredth">       <i>hundredth</i><par n="expensive__adj"/></e>
 <!--
     <e lm="a million"><i>a<b/>million</i><par n="million__num"/></e>
     <e lm="one hundred"><i>one<b/>hundred</i><par n="million__num"/></e>
     <e lm="one thousand"><i>one<b/>thousand</i><par n="million__num"/></e>
     <e lm="one million"><i>one<b/>million</i><par n="million__num"/></e>
 -->
-<e lm="million">         <i>million</i><par n="two__num"/></e>
+<e lm="thousand">        <i>thousand</i><par n="hundred__num"/></e>
+<e lm="million">         <i>million</i><par n="hundred__num"/></e>
 <e lm="nine">            <i>nine</i><par n="two__num"/></e>
 <e lm="nineteen">        <i>nineteen</i><par n="two__num"/></e>
 <e lm="ninety">          <i>ninety</i><par n="twenty__num"/></e>
@@ -27603,7 +27609,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sixteen">         <i>sixteen</i><par n="two__num"/></e>
 <e lm="sixty">           <i>sixty</i><par n="twenty__num"/></e>
 
-<e lm="ten">             <i>ten</i><par n="two__num"/></e>
+<e lm="ten">             <i>ten</i><par n="hundred__num"/></e>
 <e lm="thirteen">        <i>thirteen</i><par n="two__num"/></e>
 <e lm="thirty">          <i>thirty</i><par n="twenty__num"/></e>
 <e lm="three">           <i>three</i><par n="two__num"/></e>

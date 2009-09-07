@@ -653,7 +653,7 @@
 
 
 <e>       <p><l>pluraj<s n="prn"/><s n="tn"/></l>      <r>several<s n="prn"/><s n="tn"/></r></p></e>
-<e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>that<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
+<e r="RL">       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>that<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/></l><r>the<b/>ones<b/>who<s n="rel"/><s n="nn"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
@@ -710,9 +710,7 @@ BUT:
      He spoke as he was driving  => dum
      -->
 <e>       <p><l>kiel<s n="cnjadv"/></l>                <r>as<s n="cnjadv"/></r></p></e>
-<e r="LR"><p><l>laŭ<s n="cnjadv"/></l>                 <r>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kondiĉe<b/>ke<s n="cnjadv"/></l>       <r>on<b/>condition<b/>that<s n="cnjadv"/></r></p></e>
-<e>       <p><l>kontraŭe<s n="cnjadv"/></l>            <r>on<b/>the<b/>contrary<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvankam<s n="cnjadv"/></l>             <r>although<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>kvankam<s n="cnjadv"/></l>             <r>though<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kaj<b/>tiel<s n="cnjadv"/></l>         <r>thus<s n="cnjadv"/></r></p></e>
@@ -728,7 +726,6 @@ BUT:
 <e r="LR"><p><l>ekde<s n="cnjadv"/></l>                <r>since<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>se<s n="cnjadv"/></l>                  <r>provided<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĉu<s n="cnjadv"/></l>                  <r>whether<s n="cnjadv"/></r></p></e>
-<e>       <p><l>ĉiufoje<b/>pli<s n="cnjadv"/></l>      <r>increasingly<s n="cnjadv"/></r></p></e>
 <e>       <p><l>sekve<s n="cnjadv"/></l>               <r>therefore<s n="cnjadv"/></r></p></e>
 <e>       <p><l>tamen<s n="cnjadv"/></l>               <r>even<b/>so<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>tamen<s n="cnjadv"/></l>               <r>however<s n="cnjadv"/></r></p></e>
@@ -2220,7 +2217,7 @@ TODO??
 
 <!-- Hèctor beg 2009.02.17 -->
 <e r="RL"><p><l>kontraŭ<s n="pr"/></l>                 <r>vs.<s n="pr"/></r></p></e>
-<e>       <p><l>kontraŭ<s n="pr"/></l>                 <r>versus<s n="pr"/></r></p></e>
+<e r="RL"><p><l>kontraŭ<s n="pr"/></l>                 <r>versus<s n="pr"/></r></p></e>
 <e>       <p><l>plura<s n="det"/><s n="ind"/></l>      <r>several<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>plura<s n="adj"/></l>                  <r>several<s n="adj"/></r></p></e>
 <e>       <p><l>diversa<s n="det"/><s n="ind"/></l>    <r>various<s n="det"/><s n="ind"/></r></p></e>
@@ -15464,6 +15461,8 @@ TODO??
 <e r="LR"><p><l>buĉejo<s n="n"/></l>                   <r>slaughterhouse<s n="n"/></r></p></e>
 <e r="LR"><p><l>buterpano<s n="n"/></l>                <r>slice<s n="n"/></r></p></e>
 <e>       <p><l>cento<s n="n"/></l>                    <r>hundred<s n="n"/></r></p></e>
+<e>       <p><l>milo<s n="n"/></l>                    <r>thousand<s n="n"/></r></p></e>
+<e>       <p><l>deko<s n="n"/></l>                    <r>ten<s n="n"/></r></p></e>
 <e r="LR"><p><l>centono<s n="n"/></l>                  <r>cent<s n="n"/></r></p></e>
 <e>       <p><l>centralizo<s n="n"/></l>               <r>centralisation<s n="n"/></r></p></e>
 <e r="LR"><p><l>cigaredingo<s n="n"/></l>              <r>filter<s n="n"/></r></p></e>
