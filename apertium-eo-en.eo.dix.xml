@@ -170,10 +170,13 @@
 
 
 <pardef n="acronimos_regex_par">
-  <e>       <p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></r></p></e>
 <!-- UAB Hospital ^UAB<n><acr><sp>$ ^Hospital<n><sg>$ UABa Hospitalo -->
   <e r="RL"><p><l>a</l>         <r><s n="adj"/><s n="acr"/><s n="re"/></r></p><par n="sgplnomacc"/></e>
   <e r="RL"><p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/></r></p><par n="sgplnomacc0"/></e>
+
+<!-- Jacob 7sept 2009. En direkto eo->en ni provizore sopozu ke estas nominativo -->
+  <e r="LR"><p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/><s n="sg"/><s n="nom"/></r></p></e>
+
 </pardef>
 
 <pardef n="acronimos">
@@ -184,12 +187,9 @@
 </pardef>
 
 
-
-
-
 <pardef n="Ifans__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+<!-- Jacob 7sept 2009. En direkto eo->en ni provizore sopozu ke estas nominativo -->
+<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
 </pardef>
 
@@ -258,10 +258,6 @@
 </pardef>
 
 
-<pardef n="plur/a__det">
-<e>                           <p><l>a</l>                   <r>a<s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc"/></e>
-</pardef>
-
 <pardef n="jam__adv">
 <e>                           <p><l></l>                    <r><s n="adv"/></r></p></e>
 </pardef>
@@ -300,8 +296,6 @@
 
 <pardef n="ĉiu__prn">
 <e>                           <p><l></l>                    <r><s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
-<e r="RL">                    <p><l></l>                    <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
-<e r="RL">                    <p><l>j</l>                   <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="tio__prn">
@@ -377,52 +371,16 @@ Necesas difini paradigmon por adj-nomo terminoj
 </pardef>
 
 
-<pardef n="unu__det">
-<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc0"/></e>
-<!--
-<e>                           <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc0"/></e>
--->
-</pardef>
-
 
 <pardef n="mia__det">
 <e>                    <p><l></l>                   <r><s n="det"/><s n="pos"/></r></p><par n="sgplnomacc"/></e>
-<!--
-<e r="RL">                    <p><l></l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="det"/><s n="pos"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>j</l>                   <r><s n="det"/><s n="pos"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sp"/><s n="acc"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="det"/><s n="pos"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>jn</l>                  <r><s n="det"/><s n="pos"/><s n="pl"/><s n="acc"/></r></p></e>
--->
 </pardef>
     
     
 <pardef n="dem__det">
 <e>                    <p><l></l>                    <r><s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
-<!--
-<e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="dem"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="dem"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="dem"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="dem"/><s n="pl"/><s n="acc"/></r></p></e>
--->
 </pardef>
     
-    
-<pardef n="ind__det">
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
-<!--
-<e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
-<e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="ind"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="ind"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
--->
-</pardef>
 
 <pardef n="ind__det2">
 <e>                    <p><l></l>                    <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
@@ -435,58 +393,38 @@ Necesas difini paradigmon por adj-nomo terminoj
     
 <pardef n="quant__det">
 <e>                    <p><l></l>                    <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc"/></e>
-<!--
-<e r="LR">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>j</l>                   <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l>n</l>                   <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l>jn</l>                  <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
--->
 </pardef>
 
  
 <pardef n="quant2__det">
-<e>                           <p><l></l>                    <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
-<!--
-<e>                           <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sp"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
--->
+<e>                    <p><l></l>                    <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
 </pardef>
 
  
-
-
-
-
 <pardef n="ser__vblex">
 <e>                           <p><l>i</l>                   <r>i<s n="vbser"/><s n="inf"/></r></p></e>
 <e>                           <p><l>as</l>                  <r>i<s n="vbser"/><s n="pres"/></r></p></e>
 <e>                           <p><l>is</l>                  <r>i<s n="vbser"/><s n="past"/></r></p></e>
 <e>                           <p><l>os</l>                  <r>i<s n="vbser"/><s n="fti"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vbser"/><s n="cni"/></r></p></e>
+<!--
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vbser"/><s n="fts"/></r></p></e>
-
+-->
 <e r="RL">                    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p></e>
+<!-- 
 <e r="RL" c="TODO:remetu">    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p><par n="sgplnomacc"/></e>
-
-<e>                           <p><l>onta</l>                <r>i<s n="vbser"/><s n="pp2"/></r></p><par n="sgplnomacc"/></e>
-
-<e r="RL">                    <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p></e>
-<e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p><par n="sgplnomacc"/></e>
-
+-->
 
 <!--
+<e>                           <p><l>onta</l>                <r>i<s n="vbser"/><s n="pp2"/></r></p><par n="sgplnomacc"/></e>
+-->
+<e r="RL">                    <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p></e>
+<!--
+<e>                           <p><l>inta</l>                <r>i<s n="vbser"/><s n="pp3"/></r></p><par n="sgplnomacc"/></e>
 <e>                           <p><l>anta</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vbser"/><s n="gerpast"/></r></p></e>
--->
 <e r="RL" c="TODO:remetu">    <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p><par n="sgplnomacc"/></e>
+-->
 <e r="RL">                    <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vbser"/><s n="ger"/></r></p></e>
 <e>                           <p><l>u</l>                   <r>i<s n="vbser"/><s n="imp"/></r></p></e>
@@ -498,7 +436,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>as</l>                  <r>i<s n="vaux"/><s n="pres"/></r></p></e>
 <e>                           <p><l>is</l>                  <r>i<s n="vaux"/><s n="past"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
+<!--
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vaux"/><s n="fts"/></r></p></e>
+-->
 <e>                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
 <e>                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
@@ -512,10 +452,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>ontaj</l>               <r>i<s n="vaux"/><s n="pp2"/><s n="pl"/></r></p></e>
 <e>                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
 <e>                           <p><l>u</l>                   <r>i<s n="vaux"/><s n="imp"/></r></p></e>
--->
 <e>                           <p><l>inta</l>                <r>i<s n="vaux"/><s n="pp3"/></r></p></e>
 <e>                           <p><l>inta</l>                <r>i<s n="vaux"/><s n="pp3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>intaj</l>               <r>i<s n="vaux"/><s n="pp3"/><s n="pl"/></r></p></e>
+-->
 </pardef>
  
 
@@ -525,21 +465,27 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>is</l>                  <r>i<s n="vblex"/><s n="past"/></r></p></e>
 <e>                           <p><l>os</l>                  <r>i<s n="vblex"/><s n="fti"/></r></p></e>
 <e>                           <p><l>us</l>                  <r>i<s n="vblex"/><s n="cni"/></r></p></e>
+<!--
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vblex"/><s n="fts"/></r></p></e>
+-->
 <e r="RL">                    <p><l>ita</l>                 <r>i<s n="vblex"/><s n="pp"/></r></p></e>
+<!--
 <e>                           <p><l>ita</l>                 <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>itaj</l>                <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>                           <p><l>itan</l>                <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                           <p><l>itajn</l>               <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
 <e>                           <p><l>onta</l>                <r>i<s n="vblex"/><s n="pp2"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ontaj</l>               <r>i<s n="vblex"/><s n="pp2"/><s n="pl"/></r></p></e>
+-->
 <!--
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vblex"/><s n="gerpast"/></r></p></e>
 <e>                           <p><l>anta</l>                <r>i<s n="vblex"/><s n="gerpast"/></r></p></e>
 -->
 <e r="RL">                    <p><l>inta</l>                <r>i<s n="vblex"/><s n="pp3"/></r></p></e>
+<!--
 <e>                           <p><l>inta</l>                <r>i<s n="vblex"/><s n="pp3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>intaj</l>               <r>i<s n="vblex"/><s n="pp3"/><s n="pl"/></r></p></e>
+-->
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l>anta</l>                <r>i<s n="vblex"/><s n="ger"/></r></p></e>
 <e>                           <p><l>u</l>                   <r>i<s n="vblex"/><s n="imp"/></r></p></e>
@@ -594,8 +540,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <pardef n="Smith__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
 
@@ -651,8 +597,6 @@ Necesas difini paradigmon por adj-nomo terminoj
     
 <pardef n="du__num">
 <e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="acc"/></r></p></e>
-<e>                           <p><l></l>                    <r><s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
 <!--
 <e>                           <p><l><b/>cent</l>            <r><b/>cent<s n="num"/><s n="sp"/></r></p></e>
 <e>                           <p><l><b/>mil</l>             <r><b/>mil<s n="num"/><s n="sp"/></r></p></e>
@@ -726,18 +670,14 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <!-- eble -->
 
-<e lm="aborte">               <i>abort</i><par n="e__adv"/></e>
-<e lm="adoleskantino">        <i>adoleskantin</i><par n="o__n"/></e>
 <e lm="alarmita">             <i>alarmit</i><par n="a__adj"/></e>
 <e lm="alfundiĝinta">         <i>alfundi</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
 <e lm="alligita">             <i>alligit</i><par n="a__adj"/></e>
 <e lm="anstataŭigita">        <i>anstata</i><par n="ŭ"/><i>igit</i><par n="a__adj"/></e>
 <e lm="antaŭdecidita">        <i>anta</i><par n="ŭ"/><i>decidit</i><par n="a__adj"/></e>
-<e lm="Arkanso">              <i>Arkans</i><par n="Barcelon/o__np"/></e>
 <e lm="aŭstrala">             <i>aŭstral</i><par n="a__adj"/></e>
 <e lm="aŭtomatigita">         <i>a</i><par n="ŭ"/><i>tomatigit</i><par n="a__adj"/></e>
 <e lm="bindita">              <i>bindit</i><par n="a__adj"/></e>
-<e lm="certa">                <i>certa</i><par n="ind__det"/></e>
 <e lm="certe">                <i>certe</i><par n="after__cnjadv"/></e>
 <e lm="difeki">               <i>difek</i><par n="i__vblex"/></e>
 <e lm="disparoli">            <i>disparol</i><par n="i__vblex"/></e>
