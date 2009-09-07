@@ -905,7 +905,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 
 <e lm="aŭ">                   <i>a</i><par n="ŭ"/><i></i><par n="kaj__cnjcoo"/></e>
-<e lm="ĉiufoje kiam">         <par n="ĉ"/><i>iufoje<b/>kiam</i><par n="after__cnjadv"/></e>
 <e lm="ĉar">                  <par n="ĉ"/><i>ar</i><par n="after__cnjadv"/></e>
 <e lm="ĉe">                   <par n="ĉ"/><i>e</i><par n="al__pr"/></e>
 <e lm="ĉirkaŭ">               <par n="ĉ"/><i>irka</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
@@ -921,24 +920,18 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
 <e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
 <e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tio</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/></r></p><par n="nomacc"/></e>
-<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tion</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/></r></p><par n="nomacc"/></e>
-<!-- tio ŝajnas erara
-<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tioj</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="ĉi tio">               <par n="ĉ"/><p><l>i<b/>tiojn</l><r>i<b/>tio<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
--->
 
     <!-- Fix: Somehow ^tio ĉi<prn><tn><mf><sg>$ comes out of prases like "I line this up." -->
+<!--
 <e r="RL" lm="tio ĉi">        <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e r="RL" lm="tio">           <p><l>tion</l>                <r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
 <e r="RL" lm="tio ĉi">        <p><l>tiujn<b/>ĉi</l>         <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
 <e r="RL" lm="tio">           <p><l>tiujn</l>               <r>tio<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+-->
 
 <e lm="tio ĉi">               <p><l>tio<b/>ĉi</l>           <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="tio ĉi">               <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<!-- tio ŝajnas erara
-<e lm="tio ĉi">               <p><l>tioj<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="tio ĉi">               <p><l>tiojn<b/>ĉi</l>         <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
--->
+
 <e lm="ĉiuj">                 <p><l>ĉiuj</l>                <r>ĉiuj<s n="predet"/><s n="sp"/></r></p></e>
 <e lm="tiom da">              <i>tiom<b/>da</i><par n="quant2__det"/></e>
 <e lm="tiom multe">           <i>tiom<b/>multe</i><par n="quant2__det"/></e>
@@ -982,15 +975,19 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="io">                   <p><l>io</l>                  <r>io<s n="prn"/><s n="tn"/></r></p><par n="sgplnomacc"/></e>
 
 <e lm="iu ajn">               <p><l>iu<b/>ajn</l>           <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="iu ajn">               <p><l>iuj<b/>ajn</l>          <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="iu ajn">               <p><l>iun<b/>ajn</l>          <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="iu ajn">               <p><l>iujn<b/>ajn</l>         <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="io ajn">               <p><l>io<b/>ajn</l>           <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="io ajn">               <p><l>ioj<b/>ajn</l>          <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="io ajn">               <p><l>ion<b/>ajn</l>          <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="io ajn">               <p><l>iojn<b/>ajn</l>         <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="kio ajn">              <p><l>kio<b/>ajn</l>          <r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kio ajn">              <p><l>kion<b/>ajn</l>         <r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+
+<!--
+<e lm="iu ajn">               <p><l>iuj<b/>ajn</l>          <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="iu ajn">               <p><l>iujn<b/>ajn</l>         <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+<e lm="io ajn">               <p><l>ioj<b/>ajn</l>          <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="io ajn">               <p><l>iojn<b/>ajn</l>         <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
+
 <e lm="kaj">                  <i>kaj</i><par n="kaj__cnjcoo"/></e>
 <e lm="kaj ankaŭ">            <i>kaj<b/>ankaŭ</i><par n="kaj__cnjcoo"/></e>
 
@@ -1008,7 +1005,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kiom">                 <i>kiom</i><par n="tro__preadv"/></e>
 <e lm="post kiam">            <i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
 
+<!--
 <e lm="kio">                  <p><l>kio</l>                 <r>kio<s n="prn"/><s n="rel"/></r></p><par n="sgplnomacc"/></e>
+-->
 
 <e lm="kiom">                 <p><l>kiom</l>                <r>kiom<s n="prn"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
 <e lm="kiom da">              <p><l>kiom<b/>da</l>          <r>kiom<b/>da<s n="prn"/><s n="itg"/></r></p><par n="sgplnomacc0"/></e>
@@ -1021,20 +1020,26 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kiu el ili">           <p><l>kiu<b/>el<b/>ili</l>    <r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kiu el ili">           <p><l>kiun<b/>el<b/>ili</l>   <r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kies">                 <p><l>kies</l>                <r>kies<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+
 <e lm="tiuj kiuj">            <p><l>tiuj<b/>kiuj</l>        <r>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
 
 	<!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
 	     comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
+		 		 
 <e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
-
+<!--
 <e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="rel"/></r></p><par n="sgplnomacc"/></e>
+-->
 <e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="prn"/><s n="itg"/></r></p><par n="sgplnomacc"/></e>
+<!--
 <e lm="kiu">                  <p><l>kiu</l>                 <r>kiu<s n="det"/><s n="itg"/></r></p><par n="sgplnomacc"/></e>
+-->
 
 <e lm="koncerne al">          <i>koncerne<b/>al</i><par n="al__pr"/></e>
 <e lm="kondiĉe ke">           <i>kondi</i><par n="ĉ"/><i>e<b/>ke</i><par n="after__cnjadv"/></e>
 <e lm="konfome al">           <i>konfome<b/>al</i><par n="al__pr"/></e>
 <e lm="konsiderante">         <i>konsiderante</i><par n="al__pr"/></e>
+
 <e lm="kontraŭ">              <i>kontra</i><par n="ŭ"/><i></i><par n="al__pr"/></e>
 <e lm="kontraŭe">             <i>kontra</i><par n="ŭ"/><i>e</i><par n="after__cnjadv"/></e>
 <e lm="koste de">             <i>koste<b/>de</i><par n="al__pr"/></e>
