@@ -38,6 +38,56 @@
     </pipeline>
   </mode>
 
+  <mode name="en-eo-profiler" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="profiler/en-eo.automorf.bin"/>
+      </program>
+      <program name="apertium-dixtools profilecollect">
+        <file name="dixtools-profiledata.en-eo.en.txt"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="en-eo.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer -n">
+        <file name="apertium-eo-en.en-eo.genitive.t1x"/>
+        <file name="en-eo.genitive.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer">
+        <file name="apertium-eo-en.en-eo.t1x"/>
+        <file name="en-eo.t1x.bin"/>
+        <file name="en-eo.autobil.bin"/>
+      </program>
+<!--
+      <program name="apertium-transfer">
+        <file name="apertium-eo-en.en-eo.t1x"/>
+        <file name="en-eo.t1x.bin"/>
+        <file name="profiler/en-eo.autobil.bin"/>
+      </program>
+      <program name="apertium-dixtools profilecollect">
+        <file name="dixtools-profiledata.en-eo.en-eo.txt"/>
+      </program>
+-->
+      <program name="apertium-interchunk">
+        <file name="apertium-eo-en.en-eo.t2x"/>
+        <file name="en-eo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eo-en.en-eo.t3x"/>
+        <file name="en-eo.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="profiler/en-eo.autogen.bin"/>
+      </program>
+      <program name="apertium-dixtools profilecollect">
+        <file name="dixtools-profiledata.en-eo.eo.txt"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
   <mode name="en-eo-gen" install="no">
     <pipeline>
       <program name="../../../usr/bin/python">

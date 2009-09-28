@@ -124,8 +124,8 @@
 
 
 		<pardef n="MF_GD">
-		<e r="RL">
 <!--				<l><s n="GD"/></l>   Jacob 24a de feb 2009. Ni elektu virajn formojn se estas dubo. -->
+		<e r="RL">
 			<p>
 				<l><s n="m"/></l>
 				<r></r>
@@ -164,48 +164,15 @@
 -->
 <e>       <p><l>abono<s n="n"/></l>                    <r>subscription<s n="n"/></r></p></e>
 
-<!-- por eviti ke ili estas re-generitaj, mi metas la jenon cxi-tie -->
+<!-- por eviti ke ili estas re-generitaj, mi metas la jenon cxi-tie 
 <e i="yes"><p><l>kvar-jara<s n="adj"/></l>              <r>four<s n="adj"/></r></p></e>
 <e i="yes"><p><l>ses-jara<s n="adj"/></l>               <r>six<s n="adj"/></r></p></e>
 <e i="yes"><p><l>du-jara<s n="adj"/></l>                <r>two<s n="adj"/></r></p></e>
-
+-->
 
 <e>       <i>mp3<s n="n"/><s n="acr"/></i></e>
 <e>       <i>cm<s n="n"/><s n="acr"/></i></e>
 <e>       <i>mm<s n="n"/><s n="acr"/></i></e>
-
-
-
-<!--
-
-
-<e       ><p><l>a<s n="n"/></l><r>a<s n="n"/></r></p></e>
-<e       ><p><l>b<s n="n"/></l><r>b<s n="n"/></r></p></e>                          
-<e       ><p><l>c<s n="n"/></l><r>c<s n="n"/></r></p></e>                          
-<e       ><p><l>d<s n="n"/></l><r>d<s n="n"/></r></p></e>                          
-<e       ><p><l>e<s n="n"/></l><r>e<s n="n"/></r></p></e>                          
-<e       ><p><l>f<s n="n"/></l><r>f<s n="n"/></r></p></e>                          
-<e       ><p><l>g<s n="n"/></l><r>g<s n="n"/></r></p></e>                          
-<e       ><p><l>h<s n="n"/></l><r>h<s n="n"/></r></p></e>                          
-<e       ><p><l>i<s n="n"/></l><r>i<s n="n"/></r></p></e>                          
-<e       ><p><l>j<s n="n"/></l><r>j<s n="n"/></r></p></e>                          
-<e       ><p><l>k<s n="n"/></l><r>k<s n="n"/></r></p></e>                          
-<e       ><p><l>l<s n="n"/></l><r>l<s n="n"/></r></p></e>                          
-<e       ><p><l>m<s n="n"/></l><r>m<s n="n"/></r></p></e>                          
-<e       ><p><l>n<s n="n"/></l><r>n<s n="n"/></r></p></e>                          
-<e       ><p><l>o<s n="n"/></l><r>o<s n="n"/></r></p></e>                          
-<e       ><p><l>p<s n="n"/></l><r>p<s n="n"/></r></p></e>                          
-<e       ><p><l>q<s n="n"/></l><r>q<s n="n"/></r></p></e>                          
-<e       ><p><l>r<s n="n"/></l><r>r<s n="n"/></r></p></e>                          
-<e       ><p><l>s<s n="n"/></l><r>s<s n="n"/></r></p></e>                          
-<e       ><p><l>t<s n="n"/></l><r>t<s n="n"/></r></p></e>                          
-<e       ><p><l>u<s n="n"/></l><r>u<s n="n"/></r></p></e>                          
-<e       ><p><l>v<s n="n"/></l><r>v<s n="n"/></r></p></e>                          
-<e       ><p><l>w<s n="n"/></l><r>w<s n="n"/></r></p></e>                          
-<e       ><p><l>x<s n="n"/></l><r>x<s n="n"/></r></p></e>                          
-<e       ><p><l>y<s n="n"/></l><r>y<s n="n"/></r></p></e>                          
-<e       ><p><l>z<s n="n"/></l><r>z<s n="n"/></r></p></e>                          
--->
 
 
 
@@ -236,34 +203,6 @@
 <e>       <i>y</i><par n="litero"/></e>
 <e>       <i>z</i><par n="litero"/></e>
 
-<!--
-<e>       <p><l>a<s n="np"/></l>                       <r>a<s n="np"/></r></p></e>
-<e>       <p><l>b<s n="np"/></l>                       <r>b<s n="np"/></r></p></e>
-<e>       <p><l>c<s n="np"/></l>                       <r>c<s n="np"/></r></p></e>
-<e>       <p><l>d<s n="np"/></l>                       <r>d<s n="np"/></r></p></e>
-<e>       <p><l>e<s n="np"/></l>                       <r>e<s n="np"/></r></p></e>
-<e>       <p><l>f<s n="np"/></l>                       <r>f<s n="np"/></r></p></e>
-<e>       <p><l>g<s n="np"/></l>                       <r>g<s n="np"/></r></p></e>
-<e>       <p><l>h<s n="np"/></l>                       <r>h<s n="np"/></r></p></e>
-<e>       <p><l>i<s n="np"/></l>                       <r>i<s n="np"/></r></p></e>
-<e>       <p><l>j<s n="np"/></l>                       <r>j<s n="np"/></r></p></e>
-<e>       <p><l>k<s n="np"/></l>                       <r>k<s n="np"/></r></p></e>
-<e>       <p><l>l<s n="np"/></l>                       <r>l<s n="np"/></r></p></e>
-<e>       <p><l>m<s n="np"/></l>                       <r>m<s n="np"/></r></p></e>
-<e>       <p><l>n<s n="np"/></l>                       <r>n<s n="np"/></r></p></e>
-<e>       <p><l>o<s n="np"/></l>                       <r>o<s n="np"/></r></p></e>
-<e>       <p><l>p<s n="np"/></l>                       <r>p<s n="np"/></r></p></e>
-<e>       <p><l>q<s n="np"/></l>                       <r>q<s n="np"/></r></p></e>
-<e>       <p><l>r<s n="np"/></l>                       <r>r<s n="np"/></r></p></e>
-<e>       <p><l>s<s n="np"/></l>                       <r>s<s n="np"/></r></p></e>
-<e>       <p><l>t<s n="np"/></l>                       <r>t<s n="np"/></r></p></e>
-<e>       <p><l>u<s n="np"/></l>                       <r>u<s n="np"/></r></p></e>
-<e>       <p><l>v<s n="np"/></l>                       <r>v<s n="np"/></r></p></e>
-<e>       <p><l>w<s n="np"/></l>                       <r>w<s n="np"/></r></p></e>
-<e>       <p><l>x<s n="np"/></l>                       <r>x<s n="np"/></r></p></e>
-<e>       <p><l>y<s n="np"/></l>                       <r>y<s n="np"/></r></p></e>
-<e>       <p><l>z<s n="np"/></l>                       <r>z<s n="np"/></r></p></e>
--->
 
 <e>       <p><l>botanika<s n="adj"/></l>               <r>botanic<s n="adj"/></r></p></e>
 <e>       <p><l>palestina<s n="adj"/></l>              <r>palestinian<s n="adj"/></r></p></e>
@@ -273,8 +212,6 @@
 <e>       <p><l>eksterlande<s n="adv"/></l>            <r>abroad<s n="adv"/></r></p></e>
 <e>       <p><l>pli<b/>frue<s n="adv"/></l>            <r>sooner<s n="adv"/></r></p></e>
 <e>       <p><l>poltrona<s n="adj"/></l>               <r>cowardly<s n="adj"/></r></p></e>
-
-
 
 
 <e>       <i>DNA<s n="n"/><s n="acr"/></i></e>
@@ -291,6 +228,13 @@
 <e>       <i>U.K.<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UK<s n="n"/><s n="acr"/></i></e>
 <e>       <i>EU<s n="n"/><s n="acr"/></i></e>
+
+
+
+<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 
 
 
@@ -346,13 +290,6 @@
 
 <e>       <p><l>Boeing<s n="np"/><s n="al"/></l>      <r>Boeing<s n="np"/><s n="al"/></r></p></e>
 
-
-
-
-<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
-<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 
 
 
@@ -1429,10 +1366,14 @@ BUT:
 -->
 <e>       <p><l>pola<s n="adj"/></l>                   <r>Polish<s n="adj"/></r></p></e>
 <e>       <p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
+<e>       <p><l>poluso<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
+<e r="LR"><p><l>stango<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
+<e r="LR"><p><l>fosto<s n="n"/></l>                    <r>pole<s n="n"/></r></p></e>
+<e r="LR"><p><l>polo<s n="n"/></l>                     <r>pole<s n="n"/></r></p><par n="MF_GD"/></e>
+
+
 <e>       <p><l>rumana<s n="adj"/></l>                 <r>Romanian<s n="adj"/></r></p></e>
 <e>       <p><l>rumano<s n="n"/></l>                   <r>Romanian<s n="n"/></r></p></e>
-<e r="RL"><p><l>rumana<s n="adj"/></l>                 <r>Rumanian<s n="adj"/></r></p></e>
-<e r="RL"><p><l>rumano<s n="n"/></l>                   <r>Rumanian<s n="n"/></r></p></e>
 <e>       <p><l>bulgara<s n="adj"/></l>                <r>Bulgarian<s n="adj"/></r></p></e>
 <e>       <p><l>bulgaro<s n="n"/></l>                  <r>Bulgarian<s n="n"/></r></p></e>
 <e>       <p><l>slovaka<s n="adj"/></l>                <r>Slovak<s n="adj"/></r></p></e>
@@ -1441,44 +1382,44 @@ BUT:
 <e>       <p><l>ĉeĥo<s n="n"/></l>                     <r>Czech<s n="n"/></r></p></e>
 <e>       <p><l>ukraina<s n="adj"/></l>                <r>Ukranian<s n="adj"/></r></p></e>
 <e>       <p><l>ukraino<s n="n"/></l>                  <r>Ukranian<s n="n"/></r></p></e>
-<e r="RL"><p><l>ukrajnano<s n="adj"/></l>              <r>Ukranian<s n="adj"/></r></p></e>
-<e r="RL"><p><l>ukrajnano<s n="n"/></l>                <r>Ukranian<s n="n"/></r></p></e>
+<e r="LR"><p><l>ukrajnana<s n="adj"/></l>              <r>Ukranian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>ukrajnano<s n="n"/></l>                <r>Ukranian<s n="n"/></r></p></e>
 <e>       <p><l>belorusa<s n="adj"/></l>               <r>Belarussian<s n="adj"/></r></p></e>
 <e>       <p><l>beloruso<s n="n"/></l>                 <r>Belarussian<s n="n"/></r></p></e>
-<e r="RL"><p><l>bjeloruso<s n="adj"/></l>              <r>Belarussian<s n="adj"/></r></p></e>
-<e r="RL"><p><l>bjeloruso<s n="n"/></l>                <r>Belarussian<s n="n"/></r></p></e>
+<e r="LR"><p><l>bjelorusa<s n="adj"/></l>              <r>Belarussian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>bjeloruso<s n="n"/></l>                <r>Belarussian<s n="n"/></r></p></e>
 <e>       <p><l>armena<s n="adj"/></l>               <r>Armenian<s n="adj"/></r></p></e>
 <e>       <p><l>armeno<s n="n"/></l>                 <r>Armenian<s n="n"/></r></p></e>
 <e>       <p><l>kartvela<s n="adj"/></l>               <r>Georgian<s n="adj"/></r></p></e>
 <e>       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
-<e r="RL"><p><l>georgiano<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
-<e r="RL"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
+<e r="LR"><p><l>georgiana<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
 <e>       <p><l>azera<s n="adj"/></l>               <r>Azerbaijani<s n="adj"/></r></p></e>
 <e>       <p><l>azero<s n="n"/></l>                 <r>Azerbaijani<s n="n"/></r></p></e>
-<e r="RL"><p><l>azerbajĝana<s n="adj"/></l>              <r>Azerbaijani<s n="adj"/></r></p></e>
-<e r="RL"><p><l>azerbajĝano<s n="n"/></l>                <r>Azerbaijani<s n="n"/></r></p></e>
+<e r="LR"><p><l>azerbajĝana<s n="adj"/></l>              <r>Azerbaijani<s n="adj"/></r></p></e>
+<e r="LR"><p><l>azerbajĝano<s n="n"/></l>                <r>Azerbaijani<s n="n"/></r></p></e>
 <e>       <p><l>kazaĥa<s n="adj"/></l>               <r>Kazakh<s n="adj"/></r></p></e>
 <e>       <p><l>kazaĥo<s n="n"/></l>                 <r>Kazakh<s n="n"/></r></p></e>
-<e r="RL"><p><l>kazaĥstana<s n="adj"/></l>              <r>Kazakh<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kazaĥstanano<s n="n"/></l>                <r>Kazakh<s n="n"/></r></p></e>
+<e r="LR"><p><l>kazaĥstana<s n="adj"/></l>              <r>Kazakh<s n="adj"/></r></p></e>
+<e r="LR"><p><l>kazaĥstanano<s n="n"/></l>                <r>Kazakh<s n="n"/></r></p></e>
 <e>       <p><l>uzbeka<s n="adj"/></l>               <r>Uzbek<s n="adj"/></r></p></e>
 <e>       <p><l>uzbeko<s n="n"/></l>                 <r>Uzbek<s n="n"/></r></p></e>
-<e r="RL"><p><l>uzbekistana<s n="adj"/></l>              <r>Uzbek<s n="adj"/></r></p></e>
-<e r="RL"><p><l>uzbekistanano<s n="n"/></l>                <r>Uzbek<s n="n"/></r></p></e>
+<e r="LR"><p><l>uzbekistana<s n="adj"/></l>              <r>Uzbek<s n="adj"/></r></p></e>
+<e r="LR"><p><l>uzbekistanano<s n="n"/></l>                <r>Uzbek<s n="n"/></r></p></e>
 <e>       <p><l>karakalpaka<s n="adj"/></l>               <r>Karakalpak<s n="adj"/></r></p></e>
 <e>       <p><l>karakalpako<s n="n"/></l>                 <r>Karakalpak<s n="n"/></r></p></e>
 <e>       <p><l>kirgiza<s n="adj"/></l>               <r>Kyrgyz<s n="adj"/></r></p></e>
 <e>       <p><l>kirgizo<s n="n"/></l>                 <r>Kyrgyz<s n="n"/></r></p></e>
-<e r="RL"><p><l>kirgizistana<s n="adj"/></l>              <r>Kyrgyz<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kirgizistanano<s n="n"/></l>                <r>Kyrgyz<s n="n"/></r></p></e>
+<e r="LR"><p><l>kirgizistana<s n="adj"/></l>              <r>Kyrgyz<s n="adj"/></r></p></e>
+<e r="LR"><p><l>kirgizistanano<s n="n"/></l>                <r>Kyrgyz<s n="n"/></r></p></e>
 <e>       <p><l>taĝika<s n="adj"/></l>               <r>Tajik<s n="adj"/></r></p></e>
 <e>       <p><l>taĝiko<s n="n"/></l>                 <r>Tajik<s n="n"/></r></p></e>
-<e r="RL"><p><l>taĝiskistana<s n="adj"/></l>              <r>Tajik<s n="adj"/></r></p></e>
-<e r="RL"><p><l>taĝiskistanano<s n="n"/></l>                <r>Tajik<s n="n"/></r></p></e>
+<e r="LR"><p><l>taĝiskistana<s n="adj"/></l>              <r>Tajik<s n="adj"/></r></p></e>
+<e r="LR"><p><l>taĝiskistanano<s n="n"/></l>                <r>Tajik<s n="n"/></r></p></e>
 <e>       <p><l>turkmena<s n="adj"/></l>               <r>Turkmen<s n="adj"/></r></p></e>
 <e>       <p><l>turkmeno<s n="n"/></l>                 <r>Turkmen<s n="n"/></r></p></e>
-<e r="RL"><p><l>turkmenistana<s n="adj"/></l>              <r>Turkmen<s n="adj"/></r></p></e>
-<e r="RL"><p><l>turkmenistanano<s n="n"/></l>                <r>Turkmen<s n="n"/></r></p></e>
+<e r="LR"><p><l>turkmenistana<s n="adj"/></l>              <r>Turkmen<s n="adj"/></r></p></e>
+<e r="LR"><p><l>turkmenistanano<s n="n"/></l>                <r>Turkmen<s n="n"/></r></p></e>
 <e>       <p><l>ujgura<s n="adj"/></l>               <r>Uyghur<s n="adj"/></r></p></e>
 <e>       <p><l>ujguro<s n="n"/></l>                 <r>Uyghur<s n="n"/></r></p></e>
 <e  r="RL"><p><l>mongola<s n="adj"/></l>               <r>Mongol<s n="adj"/></r></p></e>
@@ -11016,10 +10957,6 @@ TODO??
 <e>       <p><l>pokero<s n="n"/></l>                   <r>poker<s n="n"/></r></p></e>
 <e r="LR"><p><l>fajrostango<s n="n"/></l>              <r>poker<s n="n"/></r></p></e>
 <e>       <p><l>polusa<s n="adj"/></l>                 <r>polar<s n="adj"/></r></p></e>
-<e>       <p><l>poluso<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
-<e r="LR"><p><l>stango<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
-<e r="LR"><p><l>fosto<s n="n"/></l>                    <r>pole<s n="n"/></r></p></e>
-<e r="LR"><p><l>polo<s n="n"/></l>                     <r>pole<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="RL"><p><l>politiko<s n="n"/></l>                 <r>policy<s n="n"/></r></p></e>
 <e r="LR"><p><l>poliso<s n="n"/></l>                   <r>policy<s n="n"/></r></p></e>
 <e>       <p><l>politike<s n="adv"/></l>               <r>politically<s n="adv"/></r></p></e>
