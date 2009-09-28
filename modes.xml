@@ -38,7 +38,7 @@
     </pipeline>
   </mode>
 
-  <mode name="en-eo-profiler" install="yes">
+  <mode name="en-eo-profiler" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="profiler/en-eo.automorf.bin"/>
