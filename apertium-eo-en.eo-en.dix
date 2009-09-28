@@ -2,9 +2,10 @@
 <!--
 	Dictionary:
 	Sections: 2
-	Entries: 31977
+	Entries: 31943
 	Sdefs: 96
 	Paradigms: 5
+	Last processed by: apertium-dixtools fix -alignBidix before-clean.dix x.dix
 
 -->
 <dictionary>
@@ -1193,7 +1194,6 @@ BUT:
 <e>       <p><l>Nov-Ĵerzejo<s n="np"/><s n="top"/></l> <r>New<b/>Jersey<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nov-Meksiko<s n="np"/><s n="top"/></l> <r>New<b/>Mexico<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Nov-Jorkio<s n="np"/><s n="top"/></l>  <r>New<b/>York<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Nov-Jorko<s n="np"/><s n="top"/></l>   <r>New<b/>York<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nord-Karolino<s n="np"/><s n="top"/></l><r>North<b/>Carolina<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nord-Dakoto<s n="np"/><s n="top"/></l> <r>North<b/>Dakota<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ohio<s n="np"/><s n="top"/></l>        <r>Ohio<s n="np"/><s n="top"/></r></p></e>
@@ -1209,7 +1209,6 @@ BUT:
 <e>       <p><l>Vermonto<s n="np"/><s n="top"/></l>    <r>Vermont<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Okcidenta<b/>Virginio<s n="np"/><s n="top"/></l><r>West<b/>Virginia<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Vaŝingtonio<s n="np"/><s n="top"/></l> <r>Washington<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Vaŝingtono<s n="np"/><s n="top"/></l>  <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Viskonsino<s n="np"/><s n="top"/></l>  <r>Wisconsin<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vajomingo<s n="np"/><s n="top"/></l>   <r>Wyoming<s n="np"/><s n="top"/></r></p></e>
 
@@ -1347,7 +1346,6 @@ BUT:
 <e>       <p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
 <e>       <p><l>rumana<s n="adj"/></l>                 <r>Romanian<s n="adj"/></r></p></e>
 <e>       <p><l>rumano<s n="n"/></l>                   <r>Romanian<s n="n"/></r></p></e>
-<e>       <p><l>bulgara<s n="adj"/></l>                <r>Bulgarian<s n="adj"/></r></p></e>
 <e>       <p><l>bulgaro<s n="n"/></l>                  <r>Bulgarian<s n="n"/></r></p></e>
 <e>       <p><l>slovaka<s n="adj"/></l>                <r>Slovak<s n="adj"/></r></p></e>
 <e>       <p><l>slovako<s n="n"/></l>                  <r>Slovak<s n="n"/></r></p></e>
@@ -1363,14 +1361,14 @@ BUT:
 <e r="LR"><p><l>bjeloruso<s n="n"/></l>                <r>Belarussian<s n="n"/></r></p></e>
 <e>       <p><l>armena<s n="adj"/></l>                 <r>Armenian<s n="adj"/></r></p></e>
 <e>       <p><l>armeno<s n="n"/></l>                   <r>Armenian<s n="n"/></r></p></e>
-<e r="LR">       <p><l>kartvela<s n="adj"/></l>               <r>Georgian<s n="adj"/></r></p></e>
-<e r="LR">       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
-<e><p><l>georgiana<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
-<e><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
-<e r="LR">       <p><l>azera<s n="adj"/></l>                  <r>Azerbaijani<s n="adj"/></r></p></e>
-<e r="LR">       <p><l>azero<s n="n"/></l>                    <r>Azerbaijani<s n="n"/></r></p></e>
-<e><p><l>azerbajĝana<s n="adj"/></l>            <r>Azerbaijani<s n="adj"/></r></p></e>
-<e><p><l>azerbajĝano<s n="n"/></l>              <r>Azerbaijani<s n="n"/></r></p></e>
+<e>       <p><l>kartvela<s n="adj"/></l>               <r>Georgian<s n="adj"/></r></p></e>
+<e>       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
+<e r="LR"><p><l>georgiana<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
+<e>       <p><l>azera<s n="adj"/></l>                  <r>Azerbaijani<s n="adj"/></r></p></e>
+<e>       <p><l>azero<s n="n"/></l>                    <r>Azerbaijani<s n="n"/></r></p></e>
+<e r="LR"><p><l>azerbajĝana<s n="adj"/></l>            <r>Azerbaijani<s n="adj"/></r></p></e>
+<e r="LR"><p><l>azerbajĝano<s n="n"/></l>              <r>Azerbaijani<s n="n"/></r></p></e>
 <e>       <p><l>kazaĥa<s n="adj"/></l>                 <r>Kazakh<s n="adj"/></r></p></e>
 <e>       <p><l>kazaĥo<s n="n"/></l>                   <r>Kazakh<s n="n"/></r></p></e>
 <e r="LR"><p><l>kazaĥstana<s n="adj"/></l>             <r>Kazakh<s n="adj"/></r></p></e>
@@ -1399,7 +1397,6 @@ BUT:
 <e r="RL"><p><l>mongolo<s n="n"/></l>                  <r>Mongol<s n="n"/></r></p></e>
 <e>       <p><l>mongola<s n="adj"/></l>                <r>Mongolian<s n="adj"/></r></p></e>
 <e>       <p><l>mongolo<s n="n"/></l>                  <r>Mongolian<s n="n"/></r></p></e>
-<e>       <p><l>persa<s n="adj"/></l>                  <r>Persian<s n="adj"/></r></p></e>
 <!-- jam estas <e>       <p><l>perso<s n="n"/></l>                    <r>Persian<s n="n"/></r></p><par n="MF_GD"/></e>
 
 <e>       <p><l>perso<s n="n"/></l>                 <r>Persian<s n="n"/></r></p></e>
@@ -2294,7 +2291,6 @@ TODO??
 <e>       <p><l>Balkanoj<s n="np"/><s n="top"/></l>    <r>Balkans<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Balkanoj<s n="np"/><s n="top"/></l>    <r>the<b/>Balkans<s n="np"/><s n="top"/></r></p></e>
 
-<e>       <p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Mediteraneo<s n="np"/><s n="top"/></l> <r>the<b/>Mediterranean<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>mediteranea<s n="adj"/></l>            <r>Mediterranean<s n="adj"/></r></p></e>
@@ -13279,7 +13275,6 @@ TODO??
 <e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwest<s n="adj"/></r></p></e>
 <e>       <p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
 <e r="RL"><p><l>sudokcidento<s n="n"/></l>             <r>south-west<s n="n"/></r></p></e>
-<e>       <p><l>sudokcidento<s n="n"/></l>             <r>southwest<s n="n"/></r></p></e>
 <e>       <p><l>sudokcidenta<s n="adj"/></l>           <r>southwestern<s n="adj"/></r></p></e>
 <e>       <p><l>suverena<s n="adj"/></l>               <r>sovereign<s n="adj"/></r></p></e>
 <e>       <p><l>suvereno<s n="n"/></l>                 <r>sovereign<s n="n"/></r></p></e>
@@ -15307,7 +15302,6 @@ TODO??
 <e r="RL"><p><l>apologio<s n="n"/></l>                 <r>apologia<s n="n"/></r></p></e>
 <e r="RL"><p><l>apoteko<s n="n"/></l>                  <r>chemist's<s n="n"/></r></p></e>
 <e r="LR"><p><l>ardezo<s n="n"/></l>                   <r>blackboard<s n="n"/></r></p></e>
-<e r="LR"><p><l>arkipelago<s n="n"/></l>               <r>archipelago<s n="n"/></r></p></e>
 <e r="LR"><p><l>arkipielago<s n="n"/></l>              <r>archipelago<s n="n"/></r></p></e>
 <e r="RL"><p><l>arkivo<s n="n"/></l>                   <r>archive<s n="n"/></r></p></e>
 <e r="LR"><p><l>arko<s n="n"/></l>                     <r>arch<s n="n"/></r></p></e>
@@ -15375,7 +15369,6 @@ TODO??
 <e r="LR"><p><l>buĉejo<s n="n"/></l>                   <r>slaughterhouse<s n="n"/></r></p></e>
 <e r="LR"><p><l>buterpano<s n="n"/></l>                <r>slice<s n="n"/></r></p></e>
 <e>       <p><l>cento<s n="n"/></l>                    <r>hundred<s n="n"/></r></p></e>
-<e>       <p><l>milo<s n="n"/></l>                     <r>thousand<s n="n"/></r></p></e>
 <e>       <p><l>deko<s n="n"/></l>                     <r>ten<s n="n"/></r></p></e>
 <e r="LR"><p><l>centono<s n="n"/></l>                  <r>cent<s n="n"/></r></p></e>
 <e>       <p><l>centralizo<s n="n"/></l>               <r>centralisation<s n="n"/></r></p></e>
@@ -20286,7 +20279,6 @@ TODO??
 <e r="RL"><p><l>fortikaĵo<s n="n"/></l>                <r>fort<s n="n"/></r></p></e>
 <e r="LR"><p><l>fuorteto<s n="n"/></l>                 <r>fort<s n="n"/></r></p></e>
 <e r="LR"><p><l>fuorto<s n="n"/></l>                   <r>fort<s n="n"/></r></p></e>
-<e>       <p><l>kvardeka<s n="adj"/></l>               <r>fortieth<s n="adj"/></r></p></e>
 <e>       <p><l>duonmonate<s n="adv"/></l>             <r>fortnightly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>duonmonata<s n="adj"/></l>             <r>fortnightly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>dusemajne<s n="adv"/></l>              <r>fortnightly<s n="adv"/></r></p></e>
@@ -24444,7 +24436,6 @@ TODO??
 <e>       <p><l>trinketo<s n="n"/></l>                 <r>sip<s n="n"/></r></p></e>
 <e r="RL"><p><l>sidi<s n="vblex"/></l>                 <r>sit<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>sidigi<s n="vblex"/></l>               <r>sit<s n="vblex"/></r></p></e>
-<e>       <p><l>sesdeka<s n="adj"/></l>                <r>sixtieth<s n="adj"/></r></p></e>
 <e>       <p><l>glitkuristo<s n="n"/></l>              <r>skater<s n="n"/></r></p></e>
 <e r="LR"><p><l>glitkuranto<s n="n"/></l>              <r>skater<s n="n"/></r></p></e>
 <e r="LR"><p><l>glitisto<s n="n"/></l>                 <r>skater<s n="n"/></r></p></e>
@@ -32077,7 +32068,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>almezurado<s n="n"/></l>               <r>fitting<s n="n"/></r></p></e>
 <e>       <p><l>inundiĝo<s n="n"/></l>                 <r>flooding<s n="n"/></r></p></e>
 <e r="LR"><p><l>ondado<s n="n"/></l>                   <r>flooding<s n="n"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e>       <p><l>arlekenado<s n="n"/></l>               <r>fooling<s n="n"/></r></p></e>
 <e r="RL"><p><l>bazo<s n="n"/></l>                     <r>footing<s n="n"/></r></p></e>
 <e r="LR"><p><l>piedteno<s n="n"/></l>                 <r>footing<s n="n"/></r></p></e>
@@ -32212,7 +32202,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>lageto<s n="n"/></l>                   <r>pond<s n="n"/></r></p></e>
 <e r="RL"><p><l>afiŝo<s n="n"/></l>                    <r>posting<s n="n"/></r></p></e>
 <e r="LR"><p><l>postenigo<s n="n"/></l>                <r>posting<s n="n"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>prerio<s n="n"/></l>                   <r>prairie<s n="n"/></r></p></e>
 <e>       <p><l>predikado<s n="n"/></l>                <r>preaching<s n="n"/></r></p></e>
 <e r="RL"><p><l>krutaĵo<s n="n"/></l>                  <r>precipice<s n="n"/></r></p></e>
@@ -32262,7 +32251,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>rimeso<s n="n"/></l>                   <r>remittance<s n="n"/></r></p></e>
 <e r="RL"><p><l>raportado<s n="n"/></l>                <r>reporting<s n="n"/></r></p></e>
 <e>       <p><l>savisto<s n="n"/></l>                  <r>rescuer<s n="n"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>spino<s n="n"/></l>                    <r>ridge<s n="n"/></r></p></e>
 <e>       <p><l>sonorado<s n="n"/></l>                 <r>ringing<s n="n"/></r></p></e>
 <e r="LR"><p><l>sonorigado<s n="n"/></l>               <r>ringing<s n="n"/></r></p></e>
@@ -32419,7 +32407,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>agrablaĵo<s n="n"/></l>                <r>amenity<s n="n"/></r></p></e>
 <e r="RL"><p><l>interparolado<s n="n"/></l>            <r>colloquy<s n="n"/></r></p></e>
 <e r="RL"><p><l>sendito<s n="n"/></l>                  <r>emissary<s n="n"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malforteco<s n="n"/></l>               <r>frailty<s n="n"/></r></p></e>
 <e r="LR"><p><l>kadukeco<s n="n"/></l>                 <r>frailty<s n="n"/></r></p></e>
 <e r="LR"><p><l>pereemeco<s n="n"/></l>                <r>frailty<s n="n"/></r></p></e>
@@ -32432,12 +32419,10 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>ribelo<s n="n"/></l>                   <r>mutiny<s n="n"/></r></p></e>
 <e r="LR"><p><l>ribelado<s n="n"/></l>                 <r>mutiny<s n="n"/></r></p></e>
 <e r="RL"><p><l>apartaĵo<s n="n"/></l>                 <r>peculiarity<s n="n"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
 <e>       <p><l>hundido<s n="n"/></l>                  <r>puppy<s n="n"/></r></p></e>
 <e r="LR"><p><l>hundeto<s n="n"/></l>                  <r>puppy<s n="n"/></r></p></e>
 <e r="LR"><p><l>hundĉjo<s n="n"/></l>                  <r>puppy<s n="n"/></r></p></e>
 <e r="RL"><p><l>deponejo<s n="n"/></l>                 <r>repository<s n="n"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e>       <p><l>subskribinto<s n="n"/></l>             <r>signatory<s n="n"/></r></p></e>
 <e r="RL"><p><l>kaprico<s n="n"/></l>                  <r>vagary<s n="n"/></r></p></e>
 <e>       <p><l>viziulo<s n="n"/></l>                  <r>visionary<s n="n"/></r></p></e>
@@ -32460,7 +32445,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>absorbe<s n="adv"/></l>                <r>engrossing<s n="adv"/></r></p></e>
 <e>       <p><l>penige<s n="adv"/></l>                 <r>exacting<s n="adv"/></r></p></e>
 <e r="LR"><p><l>postuleme<s n="adv"/></l>              <r>exacting<s n="adv"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malpie<s n="adv"/></l>                 <r>godless<s n="adv"/></r></p></e>
 <e r="RL"><p><l>korŝire<s n="adv"/></l>                <r>heartbreaking<s n="adv"/></r></p></e>
 <e r="LR"><p><l>korkrevige<s n="adv"/></l>             <r>heartbreaking<s n="adv"/></r></p></e>
@@ -32497,14 +32481,12 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>absurde<s n="adv"/></l>                <r>nonsensical<s n="adv"/></r></p></e>
 <e>       <p><l>sensune<s n="adv"/></l>                <r>overcast<s n="adv"/></r></p></e>
 <e>       <p><l>filantropie<s n="adv"/></l>            <r>philanthropic<s n="adv"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
 <e>       <p><l>fareble<s n="adv"/></l>                <r>practicable<s n="adv"/></r></p></e>
 <e r="LR"><p><l>efektivigeble<s n="adv"/></l>          <r>practicable<s n="adv"/></r></p></e>
 <e r="LR"><p><l>plenumeble<s n="adv"/></l>             <r>practicable<s n="adv"/></r></p></e>
 <e r="LR"><p><l>indignige<s n="adv"/></l>              <r>provocative<s n="adv"/></r></p></e>
 <e>       <p><l>riproĉinde<s n="adv"/></l>             <r>reprehensible<s n="adv"/></r></p></e>
 <e r="RL"><p><l>antipatie<s n="adv"/></l>              <r>repugnant<s n="adv"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tranvile<s n="adv"/></l>               <r>restful<s n="adv"/></r></p></e>
 <e>       <p><l>pie<s n="adv"/></l>                    <r>reverent<s n="adv"/></r></p></e>
 <e r="RL"><p><l>pikeme<s n="adv"/></l>                 <r>sarcastic<s n="adv"/></r></p></e>
@@ -32529,9 +32511,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>plejeble<s n="adv"/></l>               <r>uttermost<s n="adv"/></r></p></e>
 <e r="RL"><p><l>ĉagrene<s n="adv"/></l>                <r>vexatious<s n="adv"/></r></p></e>
 <e r="LR"><p><l>ĉikaneme<s n="adv"/></l>               <r>vexatious<s n="adv"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>absorbe<s n="adv"/></l>                <r>absorbing<s n="adv"/></r></p></e>
 <e>       <p><l>cedeme<s n="adv"/></l>                 <r>accommodating<s n="adv"/></r></p></e>
 <e r="LR"><p><l>vidalvide<s n="adv"/></l>              <r>across<s n="adv"/></r></p></e>
@@ -32570,7 +32549,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>ellacige<s n="adv"/></l>               <r>exhausting<s n="adv"/></r></p></e>
 <e r="LR"><p><l>false<s n="adv"/></l>                  <r>falsely<s n="adv"/></r></p></e>
 <e r="RL"><p><l>konvene<s n="adv"/></l>                <r>fitting<s n="adv"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e>       <p><l>froste<s n="adv"/></l>                 <r>freezing<s n="adv"/></r></p></e>
 <e r="RL"><p><l>timige<s n="adv"/></l>                 <r>frightening<s n="adv"/></r></p></e>
 <e r="LR"><p><l>timinde<s n="adv"/></l>                <r>frightful<s n="adv"/></r></p></e>
@@ -32609,7 +32587,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>kompleze<s n="adv"/></l>               <r>obliging<s n="adv"/></r></p></e>
 <e r="RL"><p><l>obstine<s n="adv"/></l>                <r>persisting<s n="adv"/></r></p></e>
 <e r="RL"><p><l>maltrankvilige<s n="adv"/></l>         <r>perturbing<s n="adv"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malpie<s n="adv"/></l>                 <r>profane<s n="adv"/></r></p></e>
 <e r="LR"><p><l>progreseme<s n="adv"/></l>             <r>progressively<s n="adv"/></r></p></e>
 <e r="LR"><p><l>progresisme<s n="adv"/></l>            <r>progressively<s n="adv"/></r></p></e>
@@ -32619,7 +32596,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>verŝajne<s n="adv"/></l>               <r>promising<s n="adv"/></r></p></e>
 <e>       <p><l>atinginte<s n="adv"/></l>              <r>ranking<s n="adv"/></r></p></e>
 <e r="RL"><p><l>koncerne<s n="adv"/></l>               <r>regarding<s n="adv"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="LR"><p><l>instrue<s n="adv"/></l>                <r>revealing<s n="adv"/></r></p></e>
 <e r="RL"><p><l>kontentige<s n="adv"/></l>             <r>rewarding<s n="adv"/></r></p></e>
 <e>       <p><l>ritece<s n="adv"/></l>                 <r>ritualistic<s n="adv"/></r></p></e>
@@ -32664,7 +32640,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>sensune<s n="adv"/></l>                <r>cloudy<s n="adv"/></r></p></e>
 <e r="LR"><p><l>nebulece<s n="adv"/></l>               <r>cloudy<s n="adv"/></r></p></e>
 <e r="RL"><p><l>urĝe<s n="adv"/></l>                   <r>emergency<s n="adv"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>delikate<s n="adv"/></l>               <r>gingerly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>pie<s n="adv"/></l>                    <r>godly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>mojose<s n="adv"/></l>                 <r>groovy<s n="adv"/></r></p></e>
@@ -32673,8 +32648,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>iluzie<s n="adv"/></l>                 <r>illusory<s n="adv"/></r></p></e>
 <e r="RL"><p><l>bele<s n="adv"/></l>                   <r>loverly<s n="adv"/></r></p></e>
 <e>       <p><l>humide<s n="adv"/></l>                 <r>muggy<s n="adv"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>aĉe<s n="adv"/></l>                    <r>shitty<s n="adv"/></r></p></e>
 <e r="RL"><p><l>timige<s n="adv"/></l>                 <r>spooky<s n="adv"/></r></p></e>
 <e r="RL"><p><l>fideble<s n="adv"/></l>                <r>trusty<s n="adv"/></r></p></e>
@@ -32687,20 +32660,14 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>ventege<s n="adv"/></l>                <r>windy<s n="adv"/></r></p></e>
 <e r="LR"><p><l>frakseno<s n="n"/></l>                 <r>ash<s n="n"/></r></p></e>
 <e r="RL"><p><l>blato<s n="n"/></l>                    <r>cockroach<s n="n"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e>       <p><l>marĉo<s n="n"/></l>                    <r>marsh<s n="n"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>siblado<s n="n"/></l>                  <r>whizz<s n="n"/></r></p></e>
 <e>       <p><l>dependanto<s n="n"/></l>               <r>dependent<s n="n"/></r></p></e>
 <e r="LR"><p><l>familiano<s n="n"/></l>                <r>dependent<s n="n"/></r></p></e>
-<e r="LR"><p><l>bufoni<s n="vblex"/></l>               <r>fool<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kultivado<s n="n"/></l>                <r>growing<s n="n"/></r></p></e>
 <e>       <p><l>ellaciga<s n="adj"/></l>               <r>gruelling<s n="adj"/></r></p></e>
 <e>       <p><l>medalulo<s n="n"/></l>                 <r>medallist<s n="n"/></r></p></e>
 <e r="LR"><p><l>medalgajninto<s n="n"/></l>            <r>medallist<s n="n"/></r></p></e>
-<e r="LR"><p><l>oficoni<s n="vblex"/></l>              <r>power<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>honorata<s n="adj"/></l>               <r>respected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>parolado<s n="n"/></l>                 <r>speaking<s n="n"/></r></p></e>
 <e r="LR"><p><l>gajnado<s n="n"/></l>                  <r>winning<s n="n"/></r></p></e>              
 
