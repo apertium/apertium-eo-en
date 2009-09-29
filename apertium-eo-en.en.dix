@@ -618,7 +618,8 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="politics__n">
   <e>       <p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
+ <!-- TODO: meti r="RL" kaj retejnu la tagger -->
+  <e><p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="wol/f__n">
