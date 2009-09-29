@@ -2,10 +2,9 @@
 <!--
 	Dictionary:
 	Sections: 2
-	Entries: 31943
+	Entries: 31936
 	Sdefs: 96
 	Paradigms: 5
-	Last processed by: apertium-dixtools fix -alignBidix before-clean.dix x.dix
 
 -->
 <dictionary>
@@ -126,9 +125,8 @@
 
 <pardef n="MF_GD">
 <!--				<l><s n="GD"/></l>   Jacob 24a de feb 2009. Ni elektu virajn formojn se estas dubo. -->  
-  <e r="RL"><p><l><s n="m"/></l><r></r></p></e>
+  <e>       <p><l><s n="m"/></l><r></r></p></e>
   <e r="LR"><p><l><s n="f"/></l><r></r></p></e>
-  <e r="LR"><p><l><s n="m"/></l><r></r></p></e>
 </pardef>
 
 
@@ -1346,6 +1344,8 @@ BUT:
 <e>       <p><l>polo<s n="n"/></l>                     <r>Polish<s n="n"/></r></p></e>
 <e>       <p><l>rumana<s n="adj"/></l>                 <r>Romanian<s n="adj"/></r></p></e>
 <e>       <p><l>rumano<s n="n"/></l>                   <r>Romanian<s n="n"/></r></p></e>
+<e r="RL"><p><l>rumana<s n="adj"/></l>                 <r>Rumanian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>rumano<s n="n"/></l>                   <r>Rumanian<s n="n"/></r></p></e>
 <e>       <p><l>bulgaro<s n="n"/></l>                  <r>Bulgarian<s n="n"/></r></p></e>
 <e>       <p><l>slovaka<s n="adj"/></l>                <r>Slovak<s n="adj"/></r></p></e>
 <e>       <p><l>slovako<s n="n"/></l>                  <r>Slovak<s n="n"/></r></p></e>
@@ -1365,10 +1365,10 @@ BUT:
 <e>       <p><l>kartvelo<s n="n"/></l>                 <r>Georgian<s n="n"/></r></p></e>
 <e r="LR"><p><l>georgiana<s n="adj"/></l>              <r>Georgian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>georgiano<s n="n"/></l>                <r>Georgian<s n="n"/></r></p></e>
-<e>       <p><l>azera<s n="adj"/></l>                  <r>Azerbaijani<s n="adj"/></r></p></e>
-<e>       <p><l>azero<s n="n"/></l>                    <r>Azerbaijani<s n="n"/></r></p></e>
-<e r="LR"><p><l>azerbajĝana<s n="adj"/></l>            <r>Azerbaijani<s n="adj"/></r></p></e>
-<e r="LR"><p><l>azerbajĝano<s n="n"/></l>              <r>Azerbaijani<s n="n"/></r></p></e>
+<e r="LR"><p><l>azera<s n="adj"/></l>                  <r>Azerbaijani<s n="adj"/></r></p></e>
+<e r="LR"><p><l>azero<s n="n"/></l>                    <r>Azerbaijani<s n="n"/></r></p></e>
+<e>       <p><l>azerbajĝana<s n="adj"/></l>            <r>Azerbaijani<s n="adj"/></r></p></e>
+<e>       <p><l>azerbajĝano<s n="n"/></l>              <r>Azerbaijani<s n="n"/></r></p></e>
 <e>       <p><l>kazaĥa<s n="adj"/></l>                 <r>Kazakh<s n="adj"/></r></p></e>
 <e>       <p><l>kazaĥo<s n="n"/></l>                   <r>Kazakh<s n="n"/></r></p></e>
 <e r="LR"><p><l>kazaĥstana<s n="adj"/></l>             <r>Kazakh<s n="adj"/></r></p></e>
@@ -2138,7 +2138,6 @@ TODO??
 <e>       <p><l>laŭlonge<b/>de<s n="pr"/></l>          <r>all<b/>along<s n="pr"/></r></p></e>
 <e r="RL"><p><l>ekde<b/>la<b/>komenco<s n="adv"/></l>  <r>all<b/>along<s n="adv"/></r></p></e>
 <e r="RL"><p><l>ĉiam<b/>kiel<s n="adv"/></l>           <r>all<b/>along<b/>as<b/>a<s n="adv"/></r></p></e>
-<e>       <p><l>kune<b/>kun<s n="pr"/></l>             <r>along<b/>with<s n="pr"/></r></p></e>
 <e>       <p><l>laŭ<b/>la<b/>ekzemplo<s n="pr"/></l>   <r>along<b/>the<b/>line<s n="pr"/></r></p></e>
 <e>       <p><l>laŭ<b/>la<b/>ekzemploj<s n="pr"/></l>  <r>along<b/>the<b/>lines<s n="pr"/></r></p></e>
 <e r="RL"><p><l>apud<s n="pr"/></l>                    <r>alongside<s n="pr"/></r></p></e>
@@ -4399,7 +4398,6 @@ TODO??
 <e>       <p><l>familiara<s n="adj"/></l>              <r>colloquial<s n="adj"/></r></p></e>
 <e r="LR"><p><l>idiotisma<s n="adj"/></l>              <r>colloquial<s n="adj"/></r></p></e>
 <e>       <p><l>kolokvo<s n="n"/></l>                  <r>colloquium<s n="n"/></r></p></e>
-<e r="LR"><p><l>kolombia<s n="adj"/></l>               <r>Colombian<s n="adj"/></r></p></e>
 <e>       <p><l>kolonelo<s n="n"/></l>                 <r>colonel<s n="n"/></r></p><par n="MF_GD"/></e>
 <e r="LR"><p><l>regimentestro<s n="n"/></l>            <r>colonel<s n="n"/></r></p></e>
 <e>       <p><l>koloso<s n="n"/></l>                   <r>colossus<s n="n"/></r></p></e>
@@ -11262,7 +11260,6 @@ TODO??
 <e>       <p><l>premio<s n="n"/></l>                   <r>prize<s n="n"/></r></p></e>
 <e r="LR"><p><l>gajno<s n="n"/></l>                    <r>prize<s n="n"/></r></p></e>
 <e r="LR"><p><l>profesio<s n="n"/></l>                 <r>pro<s n="n"/></r></p></e>
-<e r="LR"><p><l>profesia<s n="adj"/></l>               <r>pro<s n="adj"/></r></p></e>
 <e>       <p><l>probableco<s n="n"/></l>               <r>probability<s n="n"/></r></p></e>
 <e>       <p><l>verŝajna<s n="adj"/></l>               <r>probable<s n="adj"/></r></p></e>
 <e>       <p><l>verŝajne<s n="adv"/></l>               <r>probably<s n="adv"/></r></p></e>
@@ -15604,7 +15601,6 @@ TODO??
 <e r="LR"><p><l>kaŝtanujo<s n="n"/></l>                <r>chestnuttree<s n="n"/></r></p></e>
 <e r="LR"><p><l>katarakto<s n="n"/></l>                <r>cataract<s n="n"/></r></p></e>
 <e r="RL"><p><l>kataro<s n="n"/></l>                   <r>catarrh<s n="n"/></r></p></e>
-<e r="LR"><p><l>katekismo<s n="n"/></l>                <r>catechism<s n="n"/></r></p></e>
 <e r="LR"><p><l>kelnero<s n="n"/></l>                  <r>waiter<s n="n"/></r></p></e>
 <e>       <p><l>kiosko<s n="n"/></l>                   <r>kiosk<s n="n"/></r></p></e>
 <e>       <p><l>klarneto<s n="n"/></l>                 <r>clarinet<s n="n"/></r></p></e>
@@ -15630,7 +15626,6 @@ TODO??
 <e r="RL"><p><l>konsidero<s n="n"/></l>                <r>regard<s n="n"/></r></p></e>
 <e r="LR"><p><l>kontrabandaĵo<s n="n"/></l>            <r>smuggling<s n="n"/></r></p></e>
 <e>       <p><l>konvalesko<s n="n"/></l>               <r>convalescence<s n="n"/></r></p></e>
-<e r="LR"><p><l>koordinato<s n="n"/></l>               <r>coordinate<s n="n"/></r></p></e>
 <e r="RL" c="check"><p><l>koralo<s n="n"/></l>         <r>choral<s n="n"/></r></p></e>
 <e r="LR"><p><l>korbato<s n="n"/></l>                  <r>beat<s n="n"/></r></p></e>
 <e r="LR"><p><l>korbopilkado<s n="n"/></l>             <r>basketball<s n="n"/></r></p></e>
@@ -15729,7 +15724,6 @@ TODO??
 <e r="RL"><p><l>mizero<s n="n"/></l>                   <r>pittance<s n="n"/></r></p></e>
 <e r="RL"><p><l>momento<s n="n"/></l>                  <r>while<s n="n"/></r></p></e>
 <e r="LR"><p><l>monako<s n="n"/></l>                   <r>friar<s n="n"/></r></p></e>
-<e r="LR"><p><l>monarkio<s n="n"/></l>                 <r>monarchy<s n="n"/></r></p></e>
 <e r="LR"><p><l>montgrimpado<s n="n"/></l>             <r>mountaineering<s n="n"/></r></p></e>
 <e r="LR"><p><l>monturo<s n="n"/></l>                  <r>mount<s n="n"/></r></p></e>
 <e r="LR"><p><l>moralaĵo<s n="n"/></l>                 <r>moral<s n="n"/></r></p></e>
@@ -16127,7 +16121,6 @@ TODO??
 <e r="LR"><p><l>sendecida<s n="adj"/></l>              <r>hesitant<s n="adj"/></r></p></e>
 <e r="LR"><p><l>hida<s n="adj"/></l>                   <r>horrible<s n="adj"/></r></p></e>
 <e r="RL"><p><l>humila<s n="adj"/></l>                 <r>humble<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>kemia<s n="adj"/></l>                  <r>chemical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>implicita<s n="adj"/></l>              <r>implicit<s n="adj"/></r></p></e>
 <e r="LR"><p><l>impresa<s n="adj"/></l>                <r>impressive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>impulsiĝema<s n="adj"/></l>            <r>impulsive<s n="adj"/></r></p></e>
@@ -20625,7 +20618,7 @@ TODO??
 <e r="RL"><p><l>aspekto<s n="n"/></l>                  <r>guise<s n="n"/></r></p></e>
 <e>       <p><l>gitaristo<s n="n"/></l>                <r>guitarist<s n="n"/></r></p></e>
 <e>       <p><l>Golfo<s n="np"/></l>                   <r>Gulf<s n="np"/></r></p></e>
-<e r="LR"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
+<e>       <p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
 <e r="RL"><p><l>engluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekgluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>pafanto<s n="n"/></l>                  <r>gunman<s n="n"/></r></p></e>
@@ -28396,7 +28389,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>ŝtatestra<s n="adj"/></l>              <r>gubernatorial<s n="adj"/></r></p></e>
 <e>       <p><l>divenprovado<s n="n"/></l>             <r>guesswork<s n="n"/></r></p></e>
 <e r="RL"><p><l>kulpo<s n="n"/></l>                    <r>guilt<s n="n"/></r></p></e>
-<e r="RL"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
 <e r="RL"><p><l>maĉgumo<s n="n"/></l>                  <r>gum<s n="n"/></r></p></e>
 <e r="LR"><p><l>gumo<s n="n"/></l>                     <r>gum<s n="n"/></r></p></e>
 <e r="LR"><p><l>gingivo<s n="n"/></l>                  <r>gum<s n="n"/></r></p></e>
@@ -30975,7 +30967,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>piedingo<s n="n"/></l>                 <r>stirrup<s n="n"/></r></p></e>
 <e>       <p><l>kudrero<s n="n"/></l>                  <r>stitch<s n="n"/></r></p></e>
 <e r="LR"><p><l>stebero<s n="n"/></l>                  <r>stitch<s n="n"/></r></p></e>
-<e r="LR"><p><l>provizaro<s n="n"/></l>                <r>stockpile<s n="n"/></r></p></e>
 <e>       <p><l>provizarigi<s n="vblex"/></l>          <r>stockpile<s n="vblex"/></r></p></e>
 <e>       <p><l>stokejo<s n="n"/></l>                  <r>stockroom<s n="n"/></r></p></e>
 <e r="RL"><p><l>hejti<s n="vblex"/></l>                <r>stoke<s n="vblex"/></r></p></e>
