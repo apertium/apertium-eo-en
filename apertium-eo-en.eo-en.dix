@@ -541,8 +541,11 @@
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
 
-<e>       <p><l>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<!-- tio(j) - that     tiu(j) - those -->
 <e>       <p><l>tio<s n="prn"/><s n="tn"/><s n="sg"/></l><r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>tio<s n="prn"/><s n="tn"/><s n="pl"/></l><r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e>       <p><l>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
 
@@ -849,6 +852,7 @@ BUT:
 <e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>tiom<b/>multe<b/>da<s n="det"/><s n="qnt"/></l><r>so<b/>many<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>tiom<b/>multe<s n="det"/><s n="qnt"/></l><r>as<b/>much<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>tiom<s n="det"/><s n="qnt"/></l> <r>that<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>enough<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>sufiĉe<b/>da<s n="det"/><s n="qnt"/></l><r>quite<b/>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
 
@@ -922,6 +926,7 @@ BUT:
 <e r="RL"><p><l>ĉirkaŭ<s n="pr"/></l>                  <r>round<s n="pr"/></r></p></e>
 <e>       <p><l>de<s n="pr"/></l>                      <r>of<s n="pr"/></r></p></e>
 <e c="Jacob's house==Domo de Jacob"><p><l>de<s n="gen"/></l><r>'s<s n="gen"/></r></p></e>
+<e r="LR" c="Jacob-a domo"><p><l>a<s n="gen"/></l><r>'s<s n="gen"/></r></p></e>
 <e r="RL"><p><l>de<s n="gen"/></l>                     <r>'<s n="gen"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>by<s n="pr"/></r></p></e>
 <e r="RL"><p><l>de<s n="pr"/></l>                      <r>from<s n="pr"/></r></p></e>
@@ -1336,7 +1341,7 @@ BUT:
 <e>       <p><l>makedona<s n="adj"/></l>               <r>Macedonian<s n="adj"/></r></p></e>
 <e>       <p><l>kosova<s n="adj"/></l>                 <r>Kosovar<s n="adj"/></r></p></e>
 <e>       <p><l>bosnia<s n="adj"/></l>                 <r>Bosnian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>bosna<s n="adj"/></l>                  <r>Bosnian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>bosniana<s n="adj"/></l>               <r>Bosnian<s n="adj"/></r></p></e>
 <e>       <p><l>hercegovina<s n="adj"/></l>            <r>Herzegovinan<s n="adj"/></r></p></e>
 <e>       <p><l>sloveno<s n="n"/></l>                  <r>Slovenian<s n="n"/></r></p></e>
 <e>       <p><l>kroato<s n="n"/></l>                   <r>Croatian<s n="n"/></r></p></e>
@@ -2200,9 +2205,8 @@ TODO??
 
 <e>       <p><l>kiom<s n="cnjadv"/></l>                <r>as<b/>far<b/>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>koncerne<s n="cnjadv"/></l>            <r>as<b/>for<s n="cnjadv"/></r></p></e> <!-- necesas post akuzativo -->
-<!-- forigita ĉar estas estas dikutita la plibonigo de tiu traduko
-<e>       <p><l>tiom<b/>kiom<s n="cnjadv"/></l>        <r>as<b/>much<b/>as<s n="cnjadv"/></r></p></e>
--->
+<!-- unudirekta ĉar estas estas dikutita la plibonigo de tiu traduko -->
+<e r="LR"><p><l>tiom<b/>kiom<s n="cnjadv"/></l>        <r>as<b/>much<b/>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>tuj<b/>kiam<s n="cnjadv"/></l>         <r>as<b/>soon<b/>as<s n="cnjadv"/></r></p></e>
 <e>       <p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>if<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>kvazaŭ<s n="cnjadv"/></l>              <r>as<b/>tought<b/>as<s n="cnjadv"/></r></p></e>
@@ -5280,7 +5284,6 @@ TODO??
 <e>       <p><l>deficito<s n="n"/></l>                 <r>deficit<s n="n"/></r></p></e>
 <e>       <p><l>difini<s n="vblex"/></l>               <r>define<s n="vblex"/></r></p></e>
 <e>       <p><l>senduba<s n="adj"/></l>                <r>definite<s n="adj"/></r></p></e>
-<e r="LR"><p><l>ja<s n="adj"/></l>                     <r>definite<s n="adj"/></r></p></e>
 <e>       <p><l>difino<s n="n"/></l>                   <r>definition<s n="n"/></r></p></e>
 <e r="LR"><p><l>precizigo<s n="n"/></l>                <r>definition<s n="n"/></r></p></e>
 <e>       <p><l>definitive<s n="adv"/></l>             <r>definitively<s n="adv"/></r></p></e>
@@ -9295,7 +9298,13 @@ TODO??
 <e r="LR"><p><l>voluptemo<s n="n"/></l>                <r>lust<s n="n"/></r></p></e>
 <e>       <p><l>Luksemburgo<s n="np"/></l>             <r>Luxembourg<s n="np"/></r></p></e>
 <e>       <p><l>lirika<s n="adj"/></l>                 <r>lyric<s n="adj"/></r></p></e>
-<e>       <p><l>kantoteksto<s n="n"/></l>              <r>lyric<s n="n"/></r></p></e>
+
+<!-- liriko(j) = lyric  -      kantoteksto(j) = lyrics -->
+<e>       <p><l>liriko<s n="n"/><s n="sg"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
+<e>       <p><l>liriko<s n="n"/><s n="pl"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
+<e>       <p><l>kantoteksto<s n="n"/><s n="sg"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
+<e>       <p><l>kantoteksto<s n="n"/><s n="pl"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
+
 <e>       <p><l>maŝino<s n="n"/></l>                   <r>machine<s n="n"/></r></p></e>
 <e>       <p><l>maŝinaro<s n="n"/></l>                 <r>machinery<s n="n"/></r></p></e>
 <e>       <p><l>freneza<s n="adj"/></l>                <r>mad<s n="adj"/></r></p></e>
@@ -10896,9 +10905,12 @@ TODO??
 
 
 <!-- Workaround for please -->
-<e>       <p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="pres"/></r></p></e>
+<e r="RL"><p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="pres"/></r></p></e>
 <e r="RL"><p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="vblex"/><s n="imp"/></r></p></e>
 <e r="RL"><p><l>bonvoli<s n="vblex"/><s n="imp"/></l>  <r>please<s n="adv"/></r></p></e>
+<e r="LR"><p><l>bonvoli<s n="vblex"/></l>              <r>please<s n="vblex"/></r></p></e>
+
+
 <e>       <p><l>plezuro<s n="n"/></l>                  <r>pleasure<s n="n"/></r></p></e>
 <e r="LR"><p><l>amuzado<s n="n"/></l>                  <r>pleasure<s n="n"/></r></p></e>
 <e r="LR"><p><l>bontrovo<s n="n"/></l>                 <r>pleasure<s n="n"/></r></p></e>
@@ -15669,8 +15681,6 @@ TODO??
 <e r="LR"><p><l>lino<s n="n"/></l>                     <r>linen<s n="n"/></r></p></e>
 <e>       <p><l>liro<s n="n"/></l>                     <r>lyre<s n="n"/></r></p></e>
 <e r="LR"><p><l>manskribo<s n="n"/></l>                <r>handwriting<s n="n"/></r></p></e>
-<e>       <p><l>liriko<s n="n"/><s n="sg"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
-<e>       <p><l>kantoteksto<s n="n"/><s n="sg"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>lito<s n="n"/></l>                     <r>mulch<s n="n"/></r></p></e>
 <e r="LR"><p><l>locio<s n="n"/></l>                    <r>lotion<s n="n"/></r></p></e>
 <e>       <p><l>logoo<s n="n"/></l>                    <r>logotype<s n="n"/></r></p></e>

@@ -624,16 +624,17 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 	<section id="main" type="standard">
 
-	
+<!--
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
 <e r="LR"><p><l>surfaco LR nur AL lemmo DE surfaco</l><r>lemmo LR nur AL lemmo DE surfaco</r></p></e>
-
+-->
 
 <!-- Bezonas -->
 <e lm="alvenanta">            <i>alvenant</i><par n="a__adj"/></e>
 <e lm="ĉiu">                  <par n="ĉ"/><i>iu</i><par n="ind__det2"/></e>
 <e lm="tiu">                  <i>tiu</i><par n="tio__prn"/></e>
-<e lm="ja">                   <i>ja</i><par n="jam__adv"/></e>
+<!-- TODO: Traduku 'ja' al la angla -->
+<e r="RL" lm="ja">                   <i>ja</i><par n="jam__adv"/></e>
 <e lm="tio">                  <i>tio</i><par n="tio__prn"/></e>
 <e lm="dresita">              <i>dresit</i><par n="a__adj"/></e>
 <e lm="malaperinta">          <i>malaperint</i><par n="a__adj"/></e>
@@ -675,7 +676,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="alligita">             <i>alligit</i><par n="a__adj"/></e>
 <e lm="anstataŭigita">        <i>anstata</i><par n="ŭ"/><i>igit</i><par n="a__adj"/></e>
 <e lm="antaŭdecidita">        <i>anta</i><par n="ŭ"/><i>decidit</i><par n="a__adj"/></e>
-<e lm="aŭstrala">             <i>aŭstral</i><par n="a__adj"/></e>
+<!-- <e lm="aŭstrala">             <i>aŭstral</i><par n="a__adj"/></e>-->
 <e lm="aŭtomatigita">         <i>a</i><par n="ŭ"/><i>tomatigit</i><par n="a__adj"/></e>
 <e lm="bindita">              <i>bindit</i><par n="a__adj"/></e>
 <e lm="dormante">             <i>dormant</i><par n="e__adv"/></e>
@@ -897,7 +898,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ekz.">              <i>ekz.</i><par n="after__cnjadv"/></e>
 
 
-<e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="al__pr"/></e>
+<!-- <e lm="antaŭ ol">             <i>anta</i><par n="ŭ"/><i><b/>ol</i><par n="al__pr"/></e> -->
 <e lm="apud">                 <i>apud</i><par n="al__pr"/></e>
 <e lm="proksime al">                 <i>proksime<b/>al</i><par n="al__pr"/></e>
 <e lm="proksime al">                 <i>proksime<b/>al</i><par n="jam__adv"/></e>
@@ -933,6 +934,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="tio ĉi">               <p><l>tion<b/>ĉi</l>          <r>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <e lm="ĉiuj">                 <p><l>ĉiuj</l>                <r>ĉiuj<s n="predet"/><s n="sp"/></r></p></e>
+<e lm="tiom">                 <i>tiom</i><par n="quant2__det"/></e>
 <e lm="tiom da">              <i>tiom<b/>da</i><par n="quant2__det"/></e>
 <e lm="tiom multe">           <i>tiom<b/>multe</i><par n="quant2__det"/></e>
 <e lm="tiom multe da">        <i>tiom<b/>multe<b/>da</i><par n="quant2__det"/></e>
@@ -5451,7 +5453,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="posta steveno">        <i>posta steven</i><par n="o__n"/></e>
 <e lm="postebrio">            <i>postebri</i><par n="o__n"/></e>
 <e lm="poste">                <i>post</i><par n="e__adv"/></e>
-<e lm="poste">                <i>poste</i><par n="o__n"/></e>
 <e lm="posteno">              <i>posten</i><par n="o__n"/></e>
 <e lm="postgusto">            <i>postgust</i><par n="o__n"/></e>
 <e lm="postmorta">            <i>postmort</i><par n="a__adj"/></e>
@@ -5626,7 +5627,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="prunti">               <i>prunt</i><par n="i__vblex"/></e>
 <e lm="prunto">               <i>prunt</i><par n="o__n"/></e>
 <e lm="pruvi">                <i>pruv</i><par n="i__vblex"/></e>
-<e lm="psika">                <i>psika</i><par n="o__n"/></e>
+<e lm="psiko">                <i>psik</i><par n="o__n"/></e>
 <e lm="psika">                <i>psik</i><par n="a__adj"/></e>
 <e lm="psikologia">           <i>psikologi</i><par n="a__adj"/></e>
 <e lm="psikologie">           <i>psikologi</i><par n="e__adv"/></e>
@@ -7080,7 +7081,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="telefoni">             <i>telefon</i><par n="i__vblex"/></e>
 <e lm="tempomezuri">          <i>tempomezur</i><par n="i__vblex"/></e>
 <e lm="translokigi">          <i>translokig</i><par n="i__vblex"/></e>
-<e lm="zorgi">                <i>zorgi</i><par n="i__vblex"/></e>
 <e lm="fidi">                 <i>fid</i><par n="i__vblex"/></e>
 <e lm="scivoli">              <i>scivol</i><par n="i__vblex"/></e>
 <e lm="maltrankvili">         <i>maltrankvil</i><par n="i__vblex"/></e>
@@ -12247,7 +12247,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="manka">                <i>mank</i><par n="a__adj"/></e>
 <e lm="malsanktigi">          <i>malsanktig</i><par n="i__vblex"/></e>
 <e lm="malpurigi">            <i>malpurig</i><par n="i__vblex"/></e>
-<e lm="ja">                   <i>j</i><par n="a__adj"/></e>
 <e lm="sendube">              <i>sendub</i><par n="e__adv"/></e>
 <e lm="certege">              <i>certeg</i><par n="e__adv"/></e>
 <e lm="aŭdeble">              <i>a</i><par n="ŭ"/><i>debl</i><par n="e__adv"/></e>
@@ -19072,7 +19071,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="psalterio">            <i>psalteri</i><par n="o__n"/></e>
 <e lm="pseŭdonimo">           <i>pse</i><par n="ŭ"/><i>donim</i><par n="o__n"/></e>
 <e lm="pseŭdoscienca">        <i>pse</i><par n="ŭ"/><i>doscienc</i><par n="a__adj"/></e>
-<e lm="psiko">                <i>psik</i><par n="o__n"/></e>
 <e lm="psikiatria">           <i>psikiatri</i><par n="a__adj"/></e>
 <e lm="psikiatro">            <i>psikiatr</i><par n="o__n"/></e>
 <e lm="psikiatrio">           <i>psikiatri</i><par n="o__n"/></e>
