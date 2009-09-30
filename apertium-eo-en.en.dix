@@ -764,6 +764,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="Linux__np">
   <e>       <p><l></l>          <r><s n="np"/><s n="al"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l>s</l>         <r><s n="np"/><s n="al"/><s n="pl"/></r></p></e>
 </pardef>
 
 
@@ -10543,7 +10544,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fair">            <i>fair</i><par n="house__n"/></e>
 <e lm="fair">            <i>fair</i><par n="long/__adj"/></e>
 
-<e lm="fairly">          <i>fairly</i><par n="expensive__adj"/></e>
+<e lm="fairly">          <i>fairly</i><par n="maybe__adv"/></e>
 <e lm="fairness">        <i>fairness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="faith">           <i>faith</i><par n="house__n"/></e>
 <e r="RL" lm="Faith">    <i>Faith</i><par n="Mary__np"/></e>
@@ -26948,7 +26949,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 			    group acronimos_par
 			****************************** -->
 <e>                      <par n="acronimos"/></e>
-<e>           <i>AT&amp;T</i><par n="BBC__n"/></e>
+<e lm="AT&amp;T">        <i>AT&amp;T</i><par n="BBC__n"/></e>
 
 <!--
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
