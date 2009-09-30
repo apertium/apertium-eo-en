@@ -534,10 +534,10 @@ Necesas difini paradigmon por adj-nomo terminoj
 </pardef>
 
 
-<pardef n="Marko__np">
-<e>                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<pardef n="Maria__np">
+<e r="RL">                           <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <!-- Se estas genraj indikoj, ni fajfas -->
-<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
+<e>                    <p><l></l>                    <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e r="RL">                     <p><l></l>                   <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 </pardef>
 
@@ -7179,18 +7179,18 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Dario">                <i>Dari</i><par n="Mark/o__np"/></e>
 <e lm="Davido">               <i>David</i><par n="Mark/o__np"/></e>
 <e lm="Diego">                <i>Dieg</i><par n="Mark/o__np"/></e>
-<e lm="Eleonora">             <i>Eleonora</i><par n="Marko__np"/></e>
-<e lm="Eliza">                <i>Eliza</i><par n="Marko__np"/></e>
+<e lm="Eleonora">             <i>Eleonora</i><par n="Maria__np"/></e>
+<e lm="Eliza">                <i>Eliza</i><par n="Maria__np"/></e>
 <e lm="Emilio">               <i>Emili</i><par n="Mark/o__np"/></e>
 <e lm="Eŭgeno">               <i>E</i><par n="ŭ"/><i>gen</i><par n="Mark/o__np"/></e>
 <e lm="Georgo">               <i>Georg</i><par n="Mark/o__np"/></e>
 <e lm="Grecia">               <i>Grecia</i><par n="Mary__np"/></e>
 <e lm="Gerardo">              <i>Gerard</i><par n="Mark/o__np"/></e>
-<e lm="Helena">               <i>Helena</i><par n="Marko__np"/></e>
+<e lm="Helena">               <i>Helena</i><par n="Maria__np"/></e>
 <e lm="Henriko">              <i>Henrik</i><par n="Mark/o__np"/></e>
 <e lm="Ignaco">               <i>Ignac</i><par n="Mark/o__np"/></e>
 <e lm="Ilza">                 <i>Ilza</i><par n="Mary__np"/></e>
-<e lm="Izabela">              <i>Izabela</i><par n="Marko__np"/></e>
+<e lm="Izabela">              <i>Izabela</i><par n="Maria__np"/></e>
 <e lm="Israel">               <i>Israel</i><par n="Mark__np"/></e>
 <e lm="Jakobo">               <i>Jakob</i><par n="Mark/o__np"/></e>
 <e lm="Jaime">                <i>Jaime</i><par n="Mary__np"/></e>
@@ -7198,7 +7198,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Jesuo">                <i>Jesu</i><par n="Mark/o__np"/></e>
 <e lm="Johano">               <i>Johan</i><par n="Mark/o__np"/></e>
 <e lm="Jozefo">               <i>Jozef</i><par n="Mark/o__np"/></e>
-<e lm="Julia">                <i>Julia</i><par n="Marko__np"/></e>
+<e lm="Julia">                <i>Julia</i><par n="Maria__np"/></e>
 <e lm="Juliano">              <i>Julian</i><par n="Mark/o__np"/></e>
 <e lm="Ĵeromo">               <i>Ĵerom</i><par n="Mark/o__np"/></e>
 <e lm="Klaŭdo">               <i>Kla</i><par n="ŭ"/><i>d</i><par n="Mark/o__np"/></e>
@@ -7208,14 +7208,14 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Ludoviko">             <i>Ludovik</i><par n="Mark/o__np"/></e>
 <e lm="Mahometo">             <i>Mahomet</i><par n="Mark/o__np"/></e>
 <e lm="Manuelo">              <i>Manuel</i><par n="Mark/o__np"/></e>
-<e lm="Maria">                <i>Maria</i><par n="Marko__np"/></e>
-<e lm="Marta">                <i>Marta</i><par n="Marko__np"/></e>
+<e lm="Maria">                <i>Maria</i><par n="Maria__np"/></e>
+<e lm="Marta">                <i>Marta</i><par n="Maria__np"/></e>
 <e lm="Marteno">              <i>Marten</i><par n="Mark/o__np"/></e>
 <e lm="Merkuro">              <i>Merkur</i><par n="Mark/o__np"/></e>
 <e lm="Mikaelo">              <i>Mikael</i><par n="Mark/o__np"/></e>
 <e lm="Nikolao">              <i>Nikola</i><par n="Mark/o__np"/></e>
 <e lm="Petro">                <i>Petr</i><par n="Mark/o__np"/></e>
-<e lm="Suzana">               <i>Suzana</i><par n="Marko__np"/></e>
+<e lm="Suzana">               <i>Suzana</i><par n="Maria__np"/></e>
 <e lm="Vilhelmo">             <i>Vilhelm</i><par n="Mark/o__np"/></e>
 <e lm="Valencia">             <i>Valencia</i><par n="Mary__np"/></e>
 
@@ -20045,7 +20045,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="roma">                 <i>rom</i><par n="a__adj"/></e>
 <e lm="romania">              <i>romani</i><par n="a__adj"/></e>
 <e lm="Romano">               <i>Roman</i><par n="Mark/o__np"/></e>
-<e lm="Romana">               <i>Romana</i><par n="Marko__np"/></e>
+<e lm="Romana">               <i>Romana</i><par n="Maria__np"/></e>
 <e lm="romanco">              <i>romanc</i><par n="o__n"/></e>
 <e lm="revema">               <i>revem</i><par n="a__adj"/></e>
 <e lm="reva">                 <i>rev</i><par n="a__adj"/></e>
@@ -22881,7 +22881,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="viktimigado">          <i>viktimigad</i><par n="o__n"/></e>
 <e lm="viktimigi">            <i>viktimig</i><par n="i__vblex"/></e>
 <e lm="Viktoro">              <i>Viktor</i><par n="Mark/o__np"/></e>
-<e lm="Viktoria">             <i>Viktoria</i><par n="Marko__np"/></e>
+<e lm="Viktoria">             <i>Viktoria</i><par n="Maria__np"/></e>
 <e lm="Viktorio">             <i>Viktori</i><par n="Barcelon/o__np"/></e>
 <e lm="video">                <i>vide</i><par n="o__n"/></e>
 <e lm="videofilmo">           <i>videofilm</i><par n="o__n"/></e>
