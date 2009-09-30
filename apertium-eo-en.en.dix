@@ -104,12 +104,12 @@
 	</sdefs>
 	<pardefs>
 
-<pardef n="ouml">
+<pardef n="ö">
   <e>       <p><l>ö</l>         <r>ö</r></p></e>
   <e r="LR"><p><l>oe</l>        <r>ö</r></p></e>
 </pardef>
 
-<pardef n="uuml">
+<pardef n="ü">
   <e>       <p><l>ü</l>         <r>ü</r></p></e>
   <e r="LR"><p><l>ue</l>        <r>ü</r></p></e>
 </pardef>
@@ -750,6 +750,7 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="acronimos_par">
   <e>       <p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="n"/><s n="acr"/><s n="re"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="acronimos">
@@ -7871,7 +7872,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="die">             <i>d</i><par n="d/ie__vblex"/></e>
 <e lm="dig">             <i>d</i><par n="d/ig__vblex"/></e>
 <e lm="d">               <i>d</i><par n="litero"/></e>
-<e lm="D">               <i>D</i><par n="ouml"/><i>rler</i><par n="Smith__np"/></e>
+<e lm="D">               <i>D</i><par n="ö"/><i>rler</i><par n="Smith__np"/></e>
 <e lm="dab">             <i>dab</i><par n="dub__vblex"/></e>
 <e lm="Dacia">           <i>Dacia</i><par n="Mary__np"/></e>
 <e lm="Daciano">         <i>Daciano</i><par n="Mark__np"/></e>
@@ -14173,8 +14174,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Iñaki">           <i>Iñaki</i><par n="Mark__np"/></e>
 <e lm="Iñigo">           <i>Iñigo</i><par n="Mark__np"/></e>
 <e lm="j">               <i>j</i><par n="litero"/></e>
-<e lm="Jürgen">          <i>J</i><par n="uuml"/><i>rgen</i><par n="Mark__np"/></e>
-<e lm="Jürgen Trumpf">   <i>J</i><par n="uuml"/><i>rgen<b/>Trumpf</i><par n="Mark__np"/></e>
+<e lm="Jürgen">          <i>J</i><par n="ü"/><i>rgen</i><par n="Mark__np"/></e>
+<e lm="Jürgen Trumpf">   <i>J</i><par n="ü"/><i>rgen<b/>Trumpf</i><par n="Mark__np"/></e>
 <e lm="J. M. Bischoff">  <i>J.<b/>M.<b/>Bischoff</i><par n="Mark__np"/></e>
 <e lm="Jaazael">         <i>Jaazael</i><par n="Mark__np"/></e>
 <e lm="Jaaziel">         <i>Jaaziel</i><par n="Mark__np"/></e>
@@ -18550,7 +18551,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="ozone">           <i>ozone</i><par n="house__n"/></e>
 <e lm="Ozías">           <i>Ozías</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="p">               <i>p</i><par n="litero"/></e>
-<e lm="Pöttering">       <i>P</i><par n="ouml"/><i>ttering</i><par n="Smith__np"/></e>
+<e lm="Pöttering">       <i>P</i><par n="ö"/><i>ttering</i><par n="Smith__np"/></e>
 <e lm="pay">             <i>pa</i><par n="pa/y__vblex"/></e>
 <e lm="Pabla">           <i>Pabla</i><par n="Mary__np"/></e>
 <e lm="Pablo">           <i>Pablo</i><par n="Mark__np"/></e>
@@ -24127,7 +24128,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="t">               <i>t</i><par n="litero"/></e>
 
 <e lm="take over">       <i>t</i><par n="t/ake__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
-<e lm="Tönis">           <i>T</i><par n="ouml"/><i>nis</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Tönis">           <i>T</i><par n="ö"/><i>nis</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="tab">             <i>tab</i><par n="house__n"/></e>
 <e lm="Tabaré">          <i>Tabaré</i><par n="Mark__np"/></e>
 <e lm="Tabitha">         <i>Tabitha</i><par n="Mary__np"/></e>
@@ -26933,10 +26934,12 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e><i>Ignaco</i><par n="Mark__np"/></e>
 <e><i>Ilza</i><par n="Mary__np"/></e>
 <e><i>Manuelo</i><par n="Mark__np"/></e>
-<!--
-<e><i>Jozef</i><par n="Mark__np"/></e>
 <e><i>Claude</i><par n="Mark__np"/></e>
-<e><i></i><par n="Mary__np"/></e>
+<e><i>Mercury</i><par n="Mark__np"/></e>
+<e><i>Jozef</i><par n="Mark__np"/></e>
+<e><i>Wilhelm</i><par n="Mark__np"/></e>
+
+<!--
 <e><i></i><par n="Mary__np"/></e>
 <e><i></i><par n="Mary__np"/></e>
 -->

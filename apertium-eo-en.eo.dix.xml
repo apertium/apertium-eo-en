@@ -193,12 +193,12 @@
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
 </pardef>
 
-<pardef n="ouml">
+<pardef n="ö">
 <e>                           <p><l>ö</l>                   <r>ö</r></p></e>
 <e r="LR">                    <p><l>oe</l>                  <r>ö</r></p></e>
 </pardef>
 
-<pardef n="uuml">
+<pardef n="ü">
 <e>                           <p><l>ü</l>                   <r>ü</r></p></e>
 <e r="LR">                    <p><l>ue</l>                  <r>ü</r></p></e>
 </pardef>
@@ -23416,7 +23416,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <i>Bralo</i><par n="Smith__np"/></e>
 <e>                           <i>Custódio</i><par n="Smith__np"/></e>
 <e>                           <i>Dimas</i><par n="Smith__np"/></e>
-<e>                           <i>D</i><par n="ouml"/><i>rler</i><par n="Smith__np"/></e>
+<e>                           <i>D</i><par n="ö"/><i>rler</i><par n="Smith__np"/></e>
 <e>                           <i>Ducho</i><par n="Smith__np"/></e>
 <e>                           <i>Endlein</i><par n="Smith__np"/></e>
 <e>                           <i>Fige</i><par n="Smith__np"/></e>
@@ -23747,7 +23747,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <i>Bralo</i><par n="Smith__np"/></e>
 <e>                           <i>Custódio</i><par n="Smith__np"/></e>
 <e>                           <i>Dimas</i><par n="Smith__np"/></e>
-<e>                           <i>D</i><par n="ouml"/><i>rler</i><par n="Smith__np"/></e>
+<e>                           <i>D</i><par n="ö"/><i>rler</i><par n="Smith__np"/></e>
 <e>                           <i>Dörler</i><par n="Smith__np"/></e>
 <e>                           <i>Ducho</i><par n="Smith__np"/></e>
 <e>                           <i>Endlein</i><par n="Smith__np"/></e>
@@ -26719,9 +26719,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Joyce">                <i>Joyce</i><par n="Mary__np"/></e>
 <e lm="Joy">                  <i>Joy</i><par n="Mary__np"/></e>
 <e lm="Júpiter">              <i>Júpiter</i><par n="Mark__np"/></e>
-<e lm="Jürgen">               <i>J</i><par n="uuml"/><i>rgen</i><par n="Mark__np"/></e>
+<e lm="Jürgen">               <i>J</i><par n="ü"/><i>rgen</i><par n="Mark__np"/></e>
 <e lm="Jørgen Mohr">          <i>Jørgen<b/>Mohr</i><par n="Mark__np"/></e>
-<e lm="Jürgen Trumpf">        <i>J</i><par n="uuml"/><i>rgen<b/>Trumpf</i><par n="Mark__np"/></e>
+<e lm="Jürgen Trumpf">        <i>J</i><par n="ü"/><i>rgen<b/>Trumpf</i><par n="Mark__np"/></e>
 <e lm="Jürgen Trumpf">        <i>Jürgen<b/>Trumpf</i><par n="Mark__np"/></e>
 <e lm="Jésica">               <i>Jésica</i><par n="Mary__np"/></e>
 <e lm="Juana del Pilar">      <i>Juana<b/>del<b/>Pilar</i><par n="Mary__np"/></e>
@@ -28199,7 +28199,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Prudence">             <i>Prudence</i><par n="Mary__np"/></e>
 <e lm="Prudencio">            <i>Prudencio</i><par n="Mark__np"/></e>
 <e lm="Práxedes">             <i>Práxedes</i><par n="Mary__np"/></e>
-<e lm="Pöttering">            <i>P</i><par n="ouml"/><i>ttering</i><par n="Smith__np"/></e>
+<e lm="Pöttering">            <i>P</i><par n="ö"/><i>ttering</i><par n="Smith__np"/></e>
 <e lm="Publia">               <i>Publia</i><par n="Mary__np"/></e>
 <e lm="Publio">               <i>Publio</i><par n="Mark__np"/></e>
 <e lm="Pujol">                <i>Pujol</i><par n="Smith__np"/></e>
@@ -28932,7 +28932,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Tiziana">              <i>Tiziana</i><par n="Mary__np"/></e>
 <e lm="Tiziano">              <i>Tiziano</i><par n="Mark__np"/></e>
 <e lm="Tània">                <i>Tània</i><par n="Mary__np"/></e>
-<e lm="Tönis">                <i>T</i><par n="ouml"/><i>nis</i><par n="Mark__np"/></e>
+<e lm="Tönis">                <i>T</i><par n="ö"/><i>nis</i><par n="Mark__np"/></e>
 <e lm="Tobías">               <i>Tobías</i><par n="Mark__np"/></e>
 <e lm="Tobias">               <i>Tobias</i><par n="Mark__np"/></e>
 <e lm="Toby">                 <i>Toby</i><par n="Mark__np"/></e>

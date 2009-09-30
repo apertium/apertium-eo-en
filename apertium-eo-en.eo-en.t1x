@@ -64,6 +64,8 @@
 <section-def-attrs>
   <def-attr n="a_nom">
      <attr-item tags="n"/>
+     <attr-item tags="n.acr"/>
+     <attr-item tags="n.acr.re"/>
      <attr-item tags="np"/>
      <attr-item tags="np.ant"/>
      <attr-item tags="np.top"/>
