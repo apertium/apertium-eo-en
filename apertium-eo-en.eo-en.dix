@@ -456,7 +456,6 @@
 <e>       <p><l>plejparto<s n="prn"/><s n="tn"/><s n="sg"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>plejparto<s n="prn"/><s n="tn"/><s n="pl"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 
-<e>       <p><l>kelka<s n="prn"/><s n="tn"/><s n="pl"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e>       <p><l>alia<s n="prn"/><s n="tn"/></l>        <r>others<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/></l><r>another<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>       <p><l>plia<s n="prn"/><s n="tn"/></l>        <r>another<b/>one<s n="prn"/><s n="tn"/></r></p></e>
@@ -478,6 +477,12 @@
 <e>       <p><l>ĉiuj<s n="predet"/></l>                <r>all<s n="predet"/></r></p></e>
 
 
+<e>       <p><l>kelka<s n="prn"/><s n="tn"/><s n="pl"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>iu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>iu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>some<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+
+
+
 <!-- anybody can be sad  → iu ajn povas esti malĝoja -->   
 <e>       <p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anybody<s n="prn"/><s n="tn"/></r></p></e>
 
@@ -495,7 +500,6 @@
 -->
 <!-- it can be any of them → povas esti kiu ajn de ili -->
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>any<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>iu<s n="prn"/></l>                     <r>any<s n="prn"/><s n="tn"/></r></p></e>
 
 
 <!--
