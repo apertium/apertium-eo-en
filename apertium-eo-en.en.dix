@@ -27668,6 +27668,81 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="become acquainted with"><i>bec</i><par n="bec/ome__vblex"/><p><l><b/>acquainted<b/>with</l><r><g><b/>acquainted<b/>with</g></r></p></e>
 
 <e lm="much">            <i>much</i><par n="much__det"/></e>
+
+<!--
+<jacobEo> spectie: whats the word class of "much" in: A) mixed at much lower temperatures.  B)  Although much of the Westndash   ?
+* Gekz (n=brendan@unaffiliated/gekz) has joined #Apertium
+* Gekz_ has quit (Read error: 60 (Operation timed out))
+* fajro has quit ("Leaving.")
+<jacobEo> ah. prn.
+* Gekz_ (n=brendan@unaffiliated/gekz) has joined #Apertium
+<jimregan>  apertium: trondtr * r15748 /incubator/apertium-sme-smj/dev/Tromso_workshop_2009/linguistic-notes.txt: Lost and partially restored, just as the ten commandments
+<jimregan> now /that's/ a commit message :)
+<spectie> back
+<spectie> disismt2, actually there are less
+<spectie> jimregan, :D
+<spectie> jacobEo, i'd say A = adverb
+* Gekz` (n=brendan@unaffiliated/gekz) has joined #Apertium
+<spectie> and B = determiner ?
+<spectie> or pronoun
+<spectie> more likely pronoun
+<jacobEo> thx
+<spectie> but in the en dix i have it is only in as det.qnt = determiner/quantifier = "There is not much beer"
+<jacobEo> yes
+<jacobEo> and therefore translations are wrong. especially in "much of" cases.
+<jacobEo> could "much of" be a word added to en en.dix ? 
+<spectie> it would be better to add 'much' as a pronoun
+<jacobEo> yes, OK
+<spectie> it would be much better ;)
+<jacobEo> use 
+<jacobEo> <pardef n="everyone__prn">
+<jacobEo>   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<jacobEo> </pardef>
+<jacobEo> or
+<spectie> darthxaher, add crlscode.sty please
+<jacobEo> <pardef n="both__prn">
+<jacobEo>   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+<jacobEo> </pardef>
+<jacobEo> ?
+<spectie> jacobEo, ok
+<darthxaher> ok :)
+<spectie> it's looking _much_ better!
+<jacobEo> or a sp variant?
+<spectie> jacobEo, it is pl
+<spectie> no?
+<jimregan> well, logically at least :)
+<jacobEo> Agassi missed much of the early part
+<spectie> Agassi ?
+<spectie> oh
+<spectie> jacobEo, sounds plural there
+<jimregan> 'everyone' is oddball because it's logically plural but grammatically singular
+<darthxaher> spectie: added, please check
+<spectie> looks nice
+<spectie> and the pseudo-code too
+<jimregan> no; wait; logically singular too... time for coffee
+<spectie> darthxaher, one thing to add, about perhaps porting the tool to foma ?
+<spectie> i added a bibtex item
+<darthxaher> spectie: oh, sure :)
+* Gekz` has quit (Read error: 60 (Operation timed out))
+
+<spectie> Agassi ?
+<spectie> oh
+<spectie> jacobEo, sounds plural there
+<jimregan> 'everyone' is oddball because it's logically plural but grammatically singular
+<darthxaher> spectie: added, please check
+<spectie> looks nice
+<spectie> and the pseudo-code too
+<jimregan> no; wait; logically singular too... time for coffee
+<spectie> darthxaher, one thing to add, about perhaps porting the tool to foma ?
+<spectie> i added a bibtex item
+<darthxaher> spectie: oh, sure :)
+* Gekz` has quit (Read error: 60 (Operation timed out))
+<jacobEo> ok, pl. But tagger never chooses it :-|
+<jacobEo> and what about  "much faster".  ?
+
+<e lm="much">            <i>much</i><par n="everyone__prn"/></e>
+-->
+
 <e lm="my">              <i>my</i><par n="her__det"/></e>
 <e lm="nineteenth">      <i>nineteenth</i><par n="second__det"/></e>
 <e lm="ninetieth">       <i>ninetieth</i><par n="second__det"/></e>
