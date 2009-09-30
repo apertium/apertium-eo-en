@@ -536,10 +536,11 @@
 
 <e>       <p><l>nenio<s n="prn"/></l>                  <r>nothing<s n="prn"/></r></p></e>
 <e>       <p><l>neniu<s n="prn"/></l>                  <r>no<b/>one<s n="prn"/></r></p></e>
-
-
-<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>nobody<s n="prn"/></r></p></e>
+
+<!-- forigu
+<e r="RL"><p><l>neniu<s n="prn"/></l>                  <r>none<s n="prn"/><s n="tn"/><s n="nt"/><s n="sg"/></r></p></e>
+-->
 
 <!-- tio(j) - that     tiu(j) - those -->
 <e>       <p><l>tio<s n="prn"/><s n="tn"/><s n="sg"/></l><r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
@@ -809,8 +810,8 @@ BUT:
 
 
 <e>       <p><l>ambaŭ<s n="det"/><s n="ind"/></l>      <r>both<s n="det"/><s n="ind"/></r></p></e>
-<e>       <p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>each<s n="det"/><s n="ind"/></r></p></e>
-<e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/></l>        <r>every<s n="det"/><s n="ind"/></r></p></e>
+<e>       <p><l>ĉiu<s n="det"/><s n="ind"/><s n="sg"/></l><r>each<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+<e r="RL"><p><l>ĉiu<s n="det"/><s n="ind"/><s n="sg"/></l><r>every<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
 
 
 <!-- <e>       <p><l>kelka<s n="det"/><s n="qnt"/></l>      <r>some<s n="det"/><s n="qnt"/></r></p></e> -->
