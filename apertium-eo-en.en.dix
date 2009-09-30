@@ -26933,8 +26933,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e><i>Ilza</i><par n="Mary__np"/></e>
 <e><i>Manuelo</i><par n="Mark__np"/></e>
 <!--
-<e><i></i><par n="Mary__np"/></e>
-<e><i></i><par n="Mary__np"/></e>
+<e><i>Jozef</i><par n="Mark__np"/></e>
+<e><i>Claude</i><par n="Mark__np"/></e>
 <e><i></i><par n="Mary__np"/></e>
 <e><i></i><par n="Mary__np"/></e>
 <e><i></i><par n="Mary__np"/></e>
@@ -27645,6 +27645,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 			    group det
 			****************************** -->
 <e lm="a">               <i></i><par n="/a__det"/></e>
+<e r="RL" lm="a">               <i>a</i><par n="litero"/></e>
 <e lm="a few">           <i>a<b/>few</i><par n="many__det"/></e>
 <e lm="a lot of">        <i>a<b/>lot<b/>of</i><par n="enough__det"/></e>
 <e lm="another">         <i>another</i><par n="another__det"/></e>
