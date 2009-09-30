@@ -789,7 +789,6 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
   <e>       <p><l>s</l>         <r><s n="np"/><s n="cog"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
-
 <pardef n="Michel__np">
   <e>       <p><l></l>          <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
 </pardef>
@@ -2064,9 +2063,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="network">         <i>network</i><par n="vow__vblex"/></e>
 <e lm="network">         <i>network</i><par n="house__n"/></e>
 -->
-  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e r="LR"><p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e r="RL"><p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -2077,8 +2076,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 
 <pardef n="down__vblex">
-  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
@@ -4506,7 +4505,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="bakelite">        <i>bakelite</i><par n="house__n"/></e>
 <e lm="baker">           <i>baker</i><par n="house__n"/></e>
 <e lm="bakery">          <i>baker</i><par n="bab/y__n"/></e>
-<e lm="Baker">           <i>Baker</i><par n="Ifans__np"/></e>
+<e lm="Baker">           <i>Baker</i><par n="Smith__np"/></e>
 <e lm="balance">         <i>balanc</i><par n="liv/e__vblex"/></e>
 <e lm="balance">         <i>balance</i><par n="house__n"/></e>
 <e lm="balanced">        <i>balanced</i><par n="expensive__adj"/></e>
@@ -12929,9 +12928,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hospitalisation"> <i>hospitalisation</i><par n="house__n"/></e>
 <e lm="hospitality">     <i>hospitalit</i><par n="fr/y__n"/></e>
 <e lm="Hossana">         <i>Hossana</i><par n="Mary__np"/></e>
-<e lm="host">            <i>host</i><par n="vow__vblex"/></e>
+<e lm="host">            <i>host</i><par n="accept__vblex"/></e>
 <e lm="host">            <i>host</i><par n="house__n"/></e>
-<e lm="host">            <i>host</i><par n="expensive__adj"/></e>
+<!-- <e lm="host">            <i>host</i><par n="expensive__adj"/></e> -->
 <e lm="hostage">         <i>hostage</i><par n="house__n"/></e>
 <e lm="hostel">          <i>hostel</i><par n="house__n"/></e>
 <e lm="hostess">         <i>hostess</i><par n="access__n"/><par n="gen__apos"/></e>
@@ -23582,7 +23581,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="store">           <i>store</i><par n="house__n"/></e>
 <e lm="storeroom">       <i>storeroom</i><par n="up__n"/></e>
 <e lm="stork">           <i>stork</i><par n="house__n"/></e>
-<e lm="storm">           <i>storm</i><par n="vow__vblex"/></e>
+<e lm="storm">           <i>storm</i><par n="accept__vblex"/></e>
 <e lm="storm">           <i>storm</i><par n="house__n"/></e>
 <e lm="stormy">          <i>storm</i><par n="happ/y__adj"/></e>
 <e lm="storytelling">    <i>storytelling</i><par n="up__n"/></e>
