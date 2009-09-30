@@ -2295,12 +2295,8 @@ TODO??
 
 <!-- Hèctor beg 2009.03.10 -->
 <e>       <p><l>papa<s n="adj"/></l>                   <r>papal<s n="adj"/></r></p></e>
-<e>       <p><l>Sokrato<s n="np"/><s n="ant"/></l>     <r>Socrates<s n="np"/><s n="ant"/></r></p></e>
-<!-- Ial ili ne funkcias, mi ne komprenas kial
-<e>       <p><l>Platono<s n="np"/><s n="ant"/></l>     <r>Plato<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Aristotelo<s n="np"/><s n="ant"/></l>  <r>Aristotle<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Aleksandro<s n="np"/><s n="ant"/></l>  <r>Alexander<s n="np"/><s n="ant"/></r></p></e>
--->
+
+
 <e>       <p><l>Alpoj<s n="np"/><s n="top"/></l>       <r>Alps<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Alpoj<s n="np"/><s n="top"/></l>       <r>the<b/>Alps<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Pireneoj<s n="np"/><s n="top"/></l>    <r>Pyrenees<s n="np"/><s n="top"/></r></p></e>
@@ -26264,10 +26260,31 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 	<!--      Data here is traduku.net data which might be OVERWRITTEN          -->
 	<!--      Please move all things you correct manually ABOVE line no 1800!   -->
 	<!-- ====================================================================== -->
+
+<!--
+<e>       <par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
+-->
 <e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>Jesuo<s n="np"/><s n="ant"/></l>       <r>Jesús<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Petro<s n="np"/><s n="ant"/></l>       <r>Pedro<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Vaŝingtono<s n="np"/><s n="ant"/></l>  <r>Washington<s n="np"/><s n="ant"/></r></p></e>
+
+
+<e>       <p><l>Sokrato</l><r>Socrates</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+
+<!-- ne funkscias.
+<e>       <p><l>Platono<s n="np"/><s n="ant"/></l>     <r>Plato<s n="np"/><s n="ant"/></r></p></e> 
+     do, trafu la plenan formon: -->
+<e>       <p><l>Platono</l><r>Plato</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+<e r="RL"><p><l>Platono</l><r>Platon</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+
+<!--
+<e>       <p><l>Aristotelo<s n="np"/><s n="ant"/></l>  <r>Aristotle<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Aleksandro<s n="np"/><s n="ant"/></l>  <r>Alexander<s n="np"/><s n="ant"/></r></p></e>
+-->
+<e>       <p><l>Aristotelo</l><r>Aristotle</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+<e>       <p><l>Aleksandro</l><r>Alexander</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
+
 
 
 
