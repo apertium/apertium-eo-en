@@ -2038,72 +2038,81 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>y</l>         <r>y<s n="adv"/></r></p></e>
   <e r="LR"><p><l>ily</l>       <r>y<s n="adv"/></r></p></e>
 </pardef>
+
 <pardef n="thin__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="ban__vblex">
-  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="vow__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="ii__adv">
   <e>       <p><l>ly</l>        <r><s n="adv"/></r></p></e>
 </pardef>
+
 <pardef n="down__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e r="LR"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="mix__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+</pardef>
+
+<pardef n="mix__vblex">
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>es</l>        <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="hal/f__n">
   <e>       <p><l>ves</l>       <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>f</l>         <r>f<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="wed__vblex">
-  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="hug__vblex">
-  <e>       <p><l>ging</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ged</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ged</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ging</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
-<pardef n="di/e__vblex">
-  <e>       <p><l>ing</l>       <r>e<s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>e</l>         <r>e<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>es</l>        <r>e<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
+<pardef n="di/e__vblex"><e><par n="liv/e__vblex"/></e></pardef>
+
 <pardef n="dict/um__n">
   <e>       <p><l>a</l>         <r>um<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>ums</l>       <r>um<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
@@ -10545,6 +10554,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fair">            <i>fair</i><par n="long/__adj"/></e>
 
 <e lm="fairly">          <i>fairly</i><par n="maybe__adv"/></e>
+<e lm="royally">          <i>royally</i><par n="maybe__adv"/></e>
 <e lm="fairness">        <i>fairness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="faith">           <i>faith</i><par n="house__n"/></e>
 <e r="RL" lm="Faith">    <i>Faith</i><par n="Mary__np"/></e>
@@ -18984,7 +18994,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="pentagon">        <i>pentagon</i><par n="house__n"/></e>
 <e lm="pentathlon">      <i>pentathlon</i><par n="house__n"/></e>
 <e lm="penultimate">     <i>penultimate</i><par n="expensive__adj"/></e>
-<e lm="people">          <i>peopl</i><par n="di/e__vblex"/></e>
+<!-- <e lm="people">          <i>peopl</i><par n="di/e__vblex"/></e>-->
 <e lm="people">          <i>people</i><par n="house__n"/></e><!-- as in 'people', 'peoples' of the world -->
 <e lm="Pep">             <i>Pep</i><par n="Mark__np"/></e>
 <e lm="pepper">          <i>pepper</i><par n="vow__vblex"/></e>

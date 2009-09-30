@@ -1769,7 +1769,6 @@ TODO??
 <e r="RL" c="MG: davant d'un nom (la no col·laboració : non-collaboration)"><p><l>ne<s n="adv"/></l><r>non<s n="adv"/></r></p></e>
 <e r="RL" c="MG: Després d'un verb (lèxic, modal, do, have)"><p><l>ne<s n="adv"/></l><r>not<s n="adv"/></r></p></e>
 <e>       <p><l>neniam<s n="adv"/></l>                 <r>never<s n="adv"/></r></p></e>
-<e r="RL"><p><l>neniam<s n="adv"/></l>                 <r>ever<s n="adv"/></r></p></e>
 <!--
 <e r="RL"><p><l>ĉiam<s n="adv"/></l>                 <r>ever<s n="adv"/></r></p></e>
 -->
@@ -1829,6 +1828,9 @@ TODO??
 <e>       <p><l>malĝoja<s n="adj"/></l>                <r>sad<s n="adj"/></r></p></e>
 <e>       <p><l>aktiveco<s n="n"/></l>                 <r>activity<s n="n"/></r></p></e>
 <e>       <p><l>iel<b/>ajn<s n="adv"/></l>             <r>in<b/>any<b/>way<s n="adv"/></r></p></e>
+
+<e>       <p><l>iam<b/>ajn<s n="adv"/></l>                 <r>ever<s n="adv"/></r></p></e>
+
 <e>       <p><l>ensaluto<s n="n"/></l>                 <r>login<s n="n"/></r></p></e>
 <e>       <p><l>ensaluti<s n="vblex"/></l>             <r>log<g><b/>in</g><s n="vblex"/></r></p></e>
 <e>       <p><l>adiaŭi<s n="vblex"/></l>               <r>log<g><b/>out</g><s n="vblex"/></r></p></e>
@@ -12412,7 +12414,7 @@ TODO??
 <e r="LR"><p><l>malpaciĝi<s n="vblex"/></l>            <r>row<s n="vblex"/></r></p></e>
 <e>       <p><l>reĝa<s n="adj"/></l>                   <r>royal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>imperiestra<s n="adj"/></l>            <r>royal<s n="adj"/></r></p></e>
-<e>       <p><l>reĝe<s n="adv"/></l>                   <r>royally<s n="adj"/></r></p></e>
+<e>       <p><l>reĝe<s n="adv"/></l>                   <r>royally<s n="adv"/></r></p></e>
 <e>       <p><l>froti<s n="vblex"/></l>                <r>rub<s n="vblex"/></r></p></e>
 <e>       <p><l>kaŭĉuko<s n="n"/></l>                  <r>rubber<s n="n"/></r></p></e>
 <e r="RL"><p><l>forĵetaĵo<s n="n"/></l>                <r>rubbish<s n="n"/></r></p></e>
@@ -16693,8 +16695,6 @@ TODO??
 ========================================================================================================
 -->
 
-<e>       <p><l>Aaron<s n="np"/></l>                   <r>Aaron<s n="np"/></r></p></e>
-<e r="LR"><p><l>Aarono<s n="np"/></l>                  <r>Aaron<s n="np"/></r></p></e>
 <e>       <p><l>abako<s n="n"/></l>                    <r>abacus<s n="n"/></r></p></e>
 <e r="RL"><p><l>forlaso<s n="n"/></l>                  <r>abandonment<s n="n"/></r></p></e>
 <e r="LR"><p><l>forlasiteco<s n="n"/></l>              <r>abandonment<s n="n"/></r></p></e>
@@ -16706,8 +16706,6 @@ TODO??
 <e>       <p><l>abdomena<s n="adj"/></l>               <r>abdominal<s n="adj"/></r></p></e>
 <e>       <p><l>forkapto<s n="n"/></l>                 <r>abduction<s n="n"/></r></p></e>
 <e r="LR"><p><l>forkaptiĝo<s n="n"/></l>               <r>abduction<s n="n"/></r></p></e>
-<e>       <p><l>Abel<s n="np"/></l>                    <r>Abel<s n="np"/></r></p></e>
-<e r="LR"><p><l>Habelo<s n="np"/></l>                  <r>Abel<s n="np"/></r></p></e>
 <e r="RL"><p><l>malkonfeso<s n="n"/></l>               <r>abjuration<s n="n"/></r></p></e>
 <e r="LR"><p><l>forĵuro<s n="n"/></l>                  <r>abjuration<s n="n"/></r></p></e>
 <e>       <p><l>sinlavado<s n="n"/></l>                <r>ablution<s n="n"/></r></p></e>
@@ -16721,8 +16719,6 @@ TODO??
 <e r="RL"><p><l>abomeno<s n="n"/></l>                  <r>abomination<s n="n"/></r></p></e>
 <e>       <p><l>abortigisto<s n="n"/></l>              <r>abortionist<s n="n"/></r></p></e>
 <e>       <p><l>abortigo<s n="n"/></l>                 <r>abortion<s n="n"/></r></p></e>
-<e>       <p><l>Abraham<s n="np"/></l>                 <r>Abraham<s n="np"/></r></p></e>
-<e r="LR"><p><l>Abrahamo<s n="np"/></l>                <r>Abraham<s n="np"/></r></p></e>
 <e r="RL"><p><l>nuligo<s n="n"/></l>                   <r>abrogation<s n="n"/></r></p></e>
 <e r="RL"><p><l>abrupte<s n="adv"/></l>                <r>abruptly<s n="adv"/></r></p></e>
 <e>       <p><l>absciso<s n="n"/></l>                  <r>abscissa<s n="n"/></r></p></e>
@@ -16742,6 +16738,14 @@ TODO??
 <e>       <p><l>absurde<s n="adv"/></l>                <r>absurdly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>sensence<s n="adv"/></l>               <r>absurdly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>abunde<s n="adv"/></l>                 <r>abundantly<s n="adv"/></r></p></e>
+
+<e>       <p><l>Aaron<s n="np"/></l>                   <r>Aaron<s n="np"/></r></p></e>
+<e r="LR"><p><l>Aarono<s n="np"/><s n="ant"/></l>                  <r>Aaron<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Abel<s n="np"/></l>                    <r>Abel<s n="np"/></r></p></e>
+<e r="LR"><p><l>Habelo<s n="np"/><s n="ant"/></l>                  <r>Abel<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Abraham<s n="np"/></l>                 <r>Abraham<s n="np"/></r></p></e>
+<e r="LR"><p><l>Abrahamo<s n="np"/><s n="ant"/></l>                <r>Abraham<s n="np"/><s n="ant"/></r></p></e>
+
 <e>       <p><l>Abisenio<s n="np"/></l>                <r>Abyssinia<s n="np"/></r></p></e>
 <e>       <p><l>docento<s n="n"/></l>                  <r>academic<s n="n"/></r></p></e>
 <e r="LR"><p><l>universitatano<s n="n"/></l>           <r>academic<s n="n"/></r></p></e>
@@ -16955,7 +16959,7 @@ TODO??
 <e>       <p><l>algebra<s n="adj"/></l>                <r>algebraic<s n="adj"/></r></p></e>
 <e>       <p><l>algoritma<s n="adj"/></l>              <r>algorithmic<s n="adj"/></r></p></e>
 <e>       <p><l>Alice<s n="np"/></l>                   <r>Alice<s n="np"/></r></p></e>
-<e r="LR"><p><l>Alica<s n="np"/></l>                   <r>Alice<s n="np"/></r></p></e>
+<e r="LR"><p><l>Alica<s n="np"/><s n="ant"/></l>                   <r>Alice<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>malsimpatiigi<s n="vblex"/></l>        <r>alienate<s n="vblex"/></r></p></e>
 <e>       <p><l>malsimpatiiĝo<s n="n"/></l>            <r>alienation<s n="n"/></r></p></e>
 <e r="LR"><p><l>malamikigo<s n="n"/></l>               <r>alienation<s n="n"/></r></p></e>
@@ -17104,7 +17108,7 @@ TODO??
 <e>       <p><l>antilopo<s n="n"/></l>                 <r>antelope<s n="n"/></r></p></e>
 <e r="RL"><p><l>antologio<s n="n"/></l>                <r>anthology<s n="n"/></r></p></e>
 <e>       <p><l>Anthony<s n="np"/></l>                 <r>Anthony<s n="np"/></r></p></e>
-<e r="LR"><p><l>Antono<s n="np"/></l>                  <r>Anthony<s n="np"/></r></p></e>
+<e r="LR"><p><l>Antono<s n="np"/><s n="ant"/></l>                  <r>Anthony<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>antropologo<s n="n"/></l>              <r>anthropologist<s n="n"/></r></p></e>
 <e>       <p><l>antropologia<s n="adj"/></l>           <r>anthropological<s n="adj"/></r></p></e>
 <e>       <p><l>antropologio<s n="n"/></l>             <r>anthropology<s n="n"/></r></p></e>
@@ -17363,7 +17367,7 @@ TODO??
 <e r="LR"><p><l>logilo<s n="n"/></l>                   <r>bait<s n="n"/></r></p></e>
 <e r="RL"><p><l>inciti<s n="vblex"/></l>               <r>bait<s n="vblex"/></r></p></e>
 <e>       <p><l>bakelito<s n="n"/></l>                 <r>bakelite<s n="n"/></r></p></e>
-<e>       <p><l>Baker<s n="np"/></l>                   <r>Baker<s n="np"/></r></p></e>
+<e>       <p><l>Baker<s n="np"/><s n="ant"/></l>                   <r>Baker<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>balkono<s n="n"/></l>                  <r>balcony<s n="n"/></r></p></e>
 <e>       <p><l>kalveco<s n="n"/></l>                  <r>baldness<s n="n"/></r></p></e>
 <e r="RL"><p><l>pako<s n="n"/></l>                     <r>bale<s n="n"/></r></p></e>
