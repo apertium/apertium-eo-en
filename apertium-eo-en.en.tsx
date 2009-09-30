@@ -2,6 +2,11 @@
 <tagger name="english">
 <tagset>
 <!--
+TODO: aldonu kaj retrejnu la tagger
+<e lm="much">            <i>much</i><par n="everyone__prn"/></e>
+
+
+
 Do not add your own
 -> imperativo
 
