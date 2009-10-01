@@ -266,13 +266,10 @@
 <e r="RL"><p><l>kapitulaci<s n="vblex"/></l>           <r>sell<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>forvendi<s n="vblex"/></l>             <r>sell<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>returne eliri<s n="vblex"/></l>        <r>get<g><b/>back<b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e>       <i>Apple<s n="np"/><s n="al"/></i></e>
-<e>       <i>Macintosh<s n="np"/><s n="al"/></i></e>
+
 <e>       <p><l>Linukso<s n="np"/><s n="al"/></l>      <r>Linux<s n="np"/><s n="al"/></r></p></e>
 <e>       <p><l>KD<s n="n"/></l>                       <r>CD<s n="n"/></r></p></e>
 <e r="RL"><p><l>televido<s n="n"/></l>                 <r>TV<s n="n"/></r></p></e>
-
-<e>       <p><l>Boeing<s n="np"/><s n="al"/></l>       <r>Boeing<s n="np"/><s n="al"/></r></p></e>
 
 
 
@@ -1002,14 +999,11 @@ BUT:
 
 
     <!-- Proper nouns -->
-<e>       <i>GCompris<s n="np"/><s n="al"/></i></e>
-<e>       <i>SVN<s n="np"/><s n="al"/></i></e>
-<e>       <i>Apertium<s n="np"/><s n="al"/></i></e>
 <e>       <p><l>Vikipedio<s n="np"/><s n="al"/></l>    <r>Wikipedia<s n="np"/><s n="al"/></r></p></e>
 <e>       <p><l>Zapatista<b/>Armeo<b/>de<b/>Nacia<b/>Liberiĝo<s n="np"/><s n="al"/></l><r>Zapatista<b/>National<b/>Liberation<b/>Army<s n="np"/><s n="al"/></r></p></e>
-<e>       <i>ABC<b/>News<s n="np"/><s n="al"/></i></e>
 
 
+<e r="LR"><p><l>Afganistano<s n="np"/><s n="top"/></l>             <r>Afghanistan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Afganio<s n="np"/><s n="top"/></l>     <r>Afghanistan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Albanio<s n="np"/><s n="top"/></l>     <r>Albania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Alakanto<s n="np"/><s n="top"/></l>    <r>Alacant<s n="np"/><s n="top"/></r></p></e>
@@ -2610,7 +2604,6 @@ TODO??
 <e r="RL"><p><l>havigi<s n="vblex"/></l>               <r>afford<s n="vblex"/></r></p></e>
 <e>       <p><l>malaltekosta<s n="adj"/></l>           <r>affordable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prezoinda<s n="adj"/></l>              <r>affordable<s n="adj"/></r></p></e>
-<e>       <p><l>Afganistano<s n="np"/></l>             <r>Afghanistan<s n="np"/></r></p></e>
 <e r="RL"><p><l>poste<s n="adv"/></l>                  <r>after<s n="adv"/></r></p></e>
 <e r="RL"><p><l>poste<s n="adv"/></l>                  <r>afterwards<s n="adv"/></r></p></e>
 <e>       <p><l>aĝo<s n="n"/></l>                      <r>age<s n="n"/></r></p></e>
@@ -4647,7 +4640,7 @@ TODO??
 <e r="LR"><p><l>tropleniĝo<s n="n"/></l>               <r>congestion<s n="n"/></r></p></e>
 <e r="LR"><p><l>plenegiĝo<s n="n"/></l>                <r>congestion<s n="n"/></r></p></e>
 <e>       <p><l>konglomeraĵo<s n="n"/></l>             <r>conglomerate<s n="n"/></r></p></e>
-<e>       <p><l>Kongolo<s n="np"/></l>                 <r>Congo<s n="np"/></r></p></e>
+<e>       <p><l>Kongo<s n="np"/><s n="top"/></l>                 <r>Congo<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>kongreso<s n="n"/></l>                 <r>congress<s n="n"/></r></p></e>
 <e>       <p><l>konjunkcio<s n="n"/></l>               <r>conjunction<s n="n"/></r></p></e>
 <e>       <p><l>konekto<s n="n"/></l>                  <r>connection<s n="n"/></r></p></e>
@@ -5189,7 +5182,6 @@ TODO??
 <e r="LR"><p><l>kunulino<s n="n"/></l>                 <r>date<s n="n"/></r></p></e>
 <e>       <p><l>dati<s n="vblex"/></l>                 <r>date<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>datiĝi<s n="vblex"/></l>               <r>date<s n="vblex"/></r></p></e>
-<e>       <p><l>David<s n="np"/></l>                   <r>David<s n="np"/></r></p></e>
 <e>       <p><l>tago<s n="n"/></l>                     <r>day<s n="n"/></r></p></e>
 <e>       <p><l>surda<s n="adj"/></l>                  <r>deaf<s n="adj"/></r></p></e>
 <e>       <p><l>interkonsento<s n="n"/></l>            <r>deal<s n="n"/></r></p></e>
@@ -7497,23 +7489,23 @@ TODO??
 <e r="LR"><p><l>aŭtentike<s n="adv"/></l>              <r>genuinely<s n="adv"/></r></p></e>
 <e>       <p><l>geografio<s n="n"/></l>                <r>geography<s n="n"/></r></p></e>
 <e>       <p><l>geometrio<s n="n"/></l>                <r>geometry<s n="n"/></r></p></e>
-<e>       <p><l>Armenio<s n="np"/></l>                 <r>Armenia<s n="np"/></r></p></e>
-<e>       <p><l>Azerio<s n="np"/></l>                  <r>Azerbaijan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Azerbajĝano<s n="np"/></l>             <r>Azerbaijan<s n="np"/></r></p></e>
-<e>       <p><l>Kazaĥio<s n="np"/></l>                 <r>Kazakhstan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kazaĥstano<s n="np"/></l>              <r>Kazakhstan<s n="np"/></r></p></e>
-<e>       <p><l>Uzbekio<s n="np"/></l>                 <r>Uzbekistan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Uzbekistano<s n="np"/></l>             <r>Uzbekistan<s n="np"/></r></p></e>
-<e>       <p><l>Kirgizio<s n="np"/></l>                <r>Kyrgyzstan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kirgizistano<s n="np"/></l>            <r>Kyrgyzstan<s n="np"/></r></p></e>
-<e>       <p><l>Taĝikio<s n="np"/></l>                 <r>Tajikistan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Taĝikistano<s n="np"/></l>             <r>Tajikistan<s n="np"/></r></p></e>
-<e>       <p><l>Turkmenio<s n="np"/></l>               <r>Turkmenistan<s n="np"/></r></p></e>
-<e r="LR"><p><l>Turkmenistano<s n="np"/></l>           <r>Turkmenistan<s n="np"/></r></p></e>
-<e>       <p><l>Ĉuvaŝio<s n="np"/></l>                 <r>Chuvashia<s n="np"/></r></p></e>
-<e>       <p><l>Kartvelio<s n="np"/></l>               <r>Georgia<s n="np"/></r></p></e>
-<e r="LR"><p><l>Gruzio<s n="np"/></l>                  <r>Georgia<s n="np"/></r></p></e>
-<e r="LR"><p><l>Georgio<s n="np"/></l>                 <r>Georgia<s n="np"/></r></p></e>
+<e>       <p><l>Armenio<s n="np"/><s n="top"/></l>                 <r>Armenia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Azerio<s n="np"/><s n="top"/></l>                  <r>Azerbaijan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Azerbajĝano<s n="np"/><s n="top"/></l>             <r>Azerbaijan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kazaĥio<s n="np"/><s n="top"/></l>                 <r>Kazakhstan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Kazaĥstano<s n="np"/><s n="top"/></l>              <r>Kazakhstan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Uzbekio<s n="np"/><s n="top"/></l>                 <r>Uzbekistan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Uzbekistano<s n="np"/><s n="top"/></l>             <r>Uzbekistan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kirgizio<s n="np"/><s n="top"/></l>                <r>Kyrgyzstan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Kirgizistano<s n="np"/><s n="top"/></l>            <r>Kyrgyzstan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Taĝikio<s n="np"/><s n="top"/></l>                 <r>Tajikistan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Taĝikistano<s n="np"/><s n="top"/></l>             <r>Tajikistan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Turkmenio<s n="np"/><s n="top"/></l>               <r>Turkmenistan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Turkmenistano<s n="np"/><s n="top"/></l>           <r>Turkmenistan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Ĉuvaŝio<s n="np"/><s n="top"/></l>                 <r>Chuvashia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kartvelio<s n="np"/><s n="top"/></l>               <r>Georgia<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Gruzio<s n="np"/><s n="top"/></l>                  <r>Georgia<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Georgio<s n="np"/><s n="top"/></l>                 <r>Georgia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>mikrobo<s n="n"/></l>                  <r>germ<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝermo<s n="n"/></l>                    <r>germ<s n="n"/></r></p></e>
 <e r="LR"><p><l>germaneca<s n="adj"/></l>              <r>German<s n="adj"/></r></p></e>
@@ -7701,7 +7693,7 @@ TODO??
 <e r="LR"><p><l>provoso<s n="n"/></l>                  <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>biletisto<s n="n"/></l>                <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>manŝirmilo<s n="n"/></l>               <r>guard<s n="n"/></r></p></e>
-<e>       <p><l>Gvatemalio<s n="np"/></l>              <r>Guatemala<s n="np"/></r></p></e>
+<e>       <p><l>Gvatemalio<s n="np"/><s n="top"/></l>              <r>Guatemala<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>konjekti<s n="vblex"/></l>             <r>guess<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>konjekto<s n="n"/></l>                 <r>guess<s n="n"/></r></p></e>
 <e r="LR"><p><l>diveni<s n="vblex"/></l>               <r>guess<s n="vblex"/></r></p></e>
@@ -8298,8 +8290,8 @@ TODO??
 <e r="LR"><p><l>aŭtonome<s n="adv"/></l>               <r>independently<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aŭtonomie<s n="adv"/></l>              <r>independently<s n="adv"/></r></p></e>
 <e>       <p><l>indekso<s n="n"/></l>                  <r>index<s n="n"/></r></p></e>
-<e>       <p><l>Barato<s n="np"/></l>                  <r>India<s n="np"/></r></p></e>
-<e r="LR"><p><l>Hindio<s n="np"/></l>                  <r>India<s n="np"/></r></p></e>
+<e>       <p><l>Barato<s n="np"/><s n="top"/></l>                  <r>India<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Hindio<s n="np"/><s n="top"/></l>                  <r>India<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>hinda<s n="adj"/></l>                  <r>Indian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>barata<s n="adj"/></l>                 <r>Indian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>hindo<s n="n"/></l>                    <r>Indian<s n="n"/></r></p></e>
@@ -8730,7 +8722,7 @@ TODO??
 <e r="LR"><p><l>spritaĵo<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>trompeto<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>petolaĵo<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
-<e>       <p><l>Jordano<s n="np"/></l>                 <r>Jordan<s n="np"/></r></p></e>
+<e>       <p><l>Jordano<s n="np"/><s n="top"/></l>                 <r>Jordan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>ĵurnalismo<s n="n"/></l>               <r>journalism<s n="n"/></r></p></e>
 <e>       <p><l>ĵurnalisto<s n="n"/></l>               <r>journalist<s n="n"/></r></p></e>
 <e>       <p><l>vojaĝo<s n="n"/></l>                   <r>journey<s n="n"/></r></p></e>
@@ -8760,7 +8752,7 @@ TODO??
 <e>       <p><l>subulo<s n="n"/></l>                   <r>junior<s n="n"/></r></p></e>
 <e r="LR"><p><l>malaltrangulo<s n="n"/></l>            <r>junior<s n="n"/></r></p></e>
 <e r="LR"><p><l>junaĝulo<s n="n"/></l>                 <r>junior<s n="n"/></r></p></e>
-<e>       <p><l>Jovo<s n="np"/></l>                    <r>Jupiter<s n="np"/></r></p></e>
+<e>       <p><l>Jupitero<s n="np"/><s n="top"/></l>                    <r>Jupiter<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>jura<s n="adj"/></l>                   <r>juridical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>juĝista<s n="adj"/></l>                <r>juridical<s n="adj"/></r></p></e>
 <e>       <p><l>jurisdikcio<s n="n"/></l>              <r>jurisdiction<s n="n"/></r></p></e>
@@ -9302,7 +9294,7 @@ TODO??
 <e>       <p><l>pulmo<s n="n"/></l>                    <r>lung<s n="n"/></r></p></e>
 <e>       <p><l>volupto<s n="n"/></l>                  <r>lust<s n="n"/></r></p></e>
 <e r="LR"><p><l>voluptemo<s n="n"/></l>                <r>lust<s n="n"/></r></p></e>
-<e>       <p><l>Luksemburgo<s n="np"/></l>             <r>Luxembourg<s n="np"/></r></p></e>
+<e>       <p><l>Luksemburgo<s n="np"/><s n="top"/></l>             <r>Luxembourg<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>lirika<s n="adj"/></l>                 <r>lyric<s n="adj"/></r></p></e>
 
 <!-- liriko(j) = lyric  -      kantoteksto(j) = lyrics -->
@@ -10497,7 +10489,6 @@ TODO??
 <e r="LR"><p><l>parametro<s n="n"/></l>                <r>parameter<s n="n"/></r></p></e>
 <e>       <p><l>pardono<s n="n"/></l>                  <r>pardon<s n="n"/></r></p></e>
 <e r="LR"><p><l>naskinto<s n="n"/></l>                 <r>parent<s n="n"/></r></p></e>
-<e>       <p><l>Pariso<s n="np"/></l>                  <r>Paris<s n="np"/></r></p></e>
 <e>       <p><l>parko<s n="n"/></l>                    <r>park<s n="n"/></r></p></e>
 <e>       <p><l>parki<s n="vblex"/></l>                <r>park<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>restigi<s n="vblex"/></l>              <r>park<s n="vblex"/></r></p></e>
@@ -12359,7 +12350,7 @@ TODO??
 <e r="LR"><p><l>romaneca<s n="adj"/></l>               <r>romantic<s n="adj"/></r></p></e>
 <e>       <p><l>romantikismo<s n="n"/></l>             <r>romanticism<s n="n"/></r></p></e>
 <e r="LR"><p><l>romaneco<s n="n"/></l>                 <r>romanticism<s n="n"/></r></p></e>
-<e>       <p><l>Romo<s n="np"/></l>                    <r>Rome<s n="np"/></r></p></e>
+<e>       <p><l>Romo<s n="np"/><s n="top"/></l>                    <r>Rome<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>tegmento<s n="n"/></l>                 <r>roof<s n="n"/></r></p></e>
 <e>       <p><l>ĉambro<s n="n"/></l>                   <r>room<s n="n"/></r></p></e>
 <e r="LR"><p><l>salono<s n="n"/></l>                   <r>room<s n="n"/></r></p></e>
@@ -12451,7 +12442,7 @@ TODO??
 <e r="LR"><p><l>impeti<s n="vblex"/></l>               <r>rush<s n="vblex"/></r></p></e>
 <e>       <p><l>rapidi<s n="vblex"/></l>               <r>rush<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>rapidegi<s n="vblex"/></l>             <r>rush<s n="vblex"/></r></p></e>
-<e>       <p><l>Ruslando<s n="np"/></l>                <r>Russia<s n="np"/></r></p></e>
+<e>       <p><l>Ruslando<s n="np"/><s n="top"/></l>                <r>Russia<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>ruslanda<s n="adj"/></l>               <r>Russian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ruslandano<s n="n"/></l>               <r>Russian<s n="n"/></r></p></e>
 <e>       <p><l>senkompata<s n="adj"/></l>             <r>ruthless<s n="adj"/></r></p></e>
@@ -15014,8 +15005,7 @@ TODO??
 <e>       <p><l>lavi<s n="vblex"/></l>                 <r>wash<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>lavadi<s n="vblex"/></l>               <r>wash<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>tralavi<s n="vblex"/></l>              <r>wash<s n="vblex"/></r></p></e>
-<e>       <p><l>Vaŝingtonio<s n="np"/></l>             <r>Washington<s n="np"/></r></p></e>
-<e r="LR"><p><l>Washington<s n="np"/></l>              <r>Washington<s n="np"/></r></p></e>
+<e>       <p><l>Vaŝingtonio<s n="np"/><s n="top"/></l>             <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>malŝpari<s n="vblex"/></l>             <r>waste<s n="vblex"/></r></p></e>
 <e>       <p><l>malŝparo<s n="n"/></l>                 <r>waste<s n="n"/></r></p></e>
 <e r="LR"><p><l>forpasigi<s n="vblex"/></l>            <r>waste<s n="vblex"/></r></p></e>
@@ -16731,14 +16721,11 @@ TODO??
 <e r="LR"><p><l>sensence<s n="adv"/></l>               <r>absurdly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>abunde<s n="adv"/></l>                 <r>abundantly<s n="adv"/></r></p></e>
 
-<e>       <p><l>Aaron<s n="np"/></l>                   <r>Aaron<s n="np"/></r></p></e>
 <e r="LR"><p><l>Aarono<s n="np"/><s n="ant"/></l>                  <r>Aaron<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Abel<s n="np"/></l>                    <r>Abel<s n="np"/></r></p></e>
 <e r="LR"><p><l>Habelo<s n="np"/><s n="ant"/></l>                  <r>Abel<s n="np"/><s n="ant"/></r></p></e>
-<e>       <p><l>Abraham<s n="np"/></l>                 <r>Abraham<s n="np"/></r></p></e>
 <e r="LR"><p><l>Abrahamo<s n="np"/><s n="ant"/></l>                <r>Abraham<s n="np"/><s n="ant"/></r></p></e>
 
-<e>       <p><l>Abisenio<s n="np"/></l>                <r>Abyssinia<s n="np"/></r></p></e>
+<e>       <p><l>Abisenio<s n="np"/><s n="top"/></l>                <r>Abyssinia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>docento<s n="n"/></l>                  <r>academic<s n="n"/></r></p></e>
 <e r="LR"><p><l>universitatano<s n="n"/></l>           <r>academic<s n="n"/></r></p></e>
 <e>       <p><l>akademia<s n="adj"/></l>               <r>academic<s n="adj"/></r></p></e>
@@ -16950,7 +16937,6 @@ TODO??
 <e>       <p><l>algebro<s n="n"/></l>                  <r>algebra<s n="n"/></r></p></e>
 <e>       <p><l>algebra<s n="adj"/></l>                <r>algebraic<s n="adj"/></r></p></e>
 <e>       <p><l>algoritma<s n="adj"/></l>              <r>algorithmic<s n="adj"/></r></p></e>
-<e>       <p><l>Alice<s n="np"/></l>                   <r>Alice<s n="np"/></r></p></e>
 <e r="LR"><p><l>Alica<s n="np"/><s n="ant"/></l>                   <r>Alice<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>malsimpatiigi<s n="vblex"/></l>        <r>alienate<s n="vblex"/></r></p></e>
 <e>       <p><l>malsimpatiiĝo<s n="n"/></l>            <r>alienation<s n="n"/></r></p></e>
@@ -17055,7 +17041,7 @@ TODO??
 <e>       <p><l>koleri<s n="vblex"/></l>               <r>anger<s n="vblex"/></r></p></e>
 <e>       <p><l>fiŝanto<s n="n"/></l>                  <r>angler<s n="n"/></r></p></e>
 <e>       <p><l>anglaĵo<s n="n"/></l>                  <r>anglicism<s n="n"/></r></p></e>
-<e>       <p><l>Angolo<s n="np"/></l>                  <r>Angola<s n="np"/></r></p></e>
+<e>       <p><l>Angolo<s n="np"/><s n="top"/></l>                  <r>Angola<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>kolere<s n="adv"/></l>                 <r>angrily<s n="adv"/></r></p></e>
 <e r="RL"><p><l>kolera<s n="adj"/></l>                 <r>angry<s n="adj"/></r></p></e>
 <e r="LR"><p><l>inflamita<s n="adj"/></l>              <r>angry<s n="adj"/></r></p></e>
@@ -17099,7 +17085,6 @@ TODO??
 <e r="LR"><p><l>antaŭdati<s n="vblex"/></l>            <r>antedate<s n="vblex"/></r></p></e>
 <e>       <p><l>antilopo<s n="n"/></l>                 <r>antelope<s n="n"/></r></p></e>
 <e r="RL"><p><l>antologio<s n="n"/></l>                <r>anthology<s n="n"/></r></p></e>
-<e>       <p><l>Anthony<s n="np"/></l>                 <r>Anthony<s n="np"/></r></p></e>
 <e r="LR"><p><l>Antono<s n="np"/><s n="ant"/><s n="m"/></l>      <r>Anthony<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e>       <p><l>antropologo<s n="n"/></l>              <r>anthropologist<s n="n"/></r></p></e>
 <e>       <p><l>antropologia<s n="adj"/></l>           <r>anthropological<s n="adj"/></r></p></e>
@@ -17276,7 +17261,7 @@ TODO??
 <e>       <p><l>ateismo<s n="n"/></l>                  <r>atheism<s n="n"/></r></p></e>
 <e>       <p><l>ateisto<s n="n"/></l>                  <r>atheist<s n="n"/></r></p></e>
 <e>       <p><l>ateisma<s n="adj"/></l>                <r>atheistic<s n="adj"/></r></p></e>
-<e>       <p><l>Atlantiko<s n="np"/></l>               <r>Atlantic<s n="np"/></r></p></e>
+<e>       <p><l>Atlantiko<s n="np"/><s n="top"/></l>               <r>Atlantic<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>atlaso<s n="n"/></l>                   <r>atlas<s n="n"/></r></p></e>
 <e>       <p><l>atolo<s n="n"/></l>                    <r>atoll<s n="n"/></r></p></e>
 <e>       <p><l>atomigi<s n="vblex"/></l>              <r>atomise<s n="vblex"/></r></p></e>
@@ -17359,7 +17344,6 @@ TODO??
 <e r="LR"><p><l>logilo<s n="n"/></l>                   <r>bait<s n="n"/></r></p></e>
 <e r="RL"><p><l>inciti<s n="vblex"/></l>               <r>bait<s n="vblex"/></r></p></e>
 <e>       <p><l>bakelito<s n="n"/></l>                 <r>bakelite<s n="n"/></r></p></e>
-<e>       <p><l>Baker<s n="np"/></l>                   <r>Baker<s n="np"/></r></p></e>
 <e>       <p><l>balkono<s n="n"/></l>                  <r>balcony<s n="n"/></r></p></e>
 <e>       <p><l>kalveco<s n="n"/></l>                  <r>baldness<s n="n"/></r></p></e>
 <e r="RL"><p><l>pako<s n="n"/></l>                     <r>bale<s n="n"/></r></p></e>
@@ -17436,12 +17420,11 @@ TODO??
 <e>       <p><l>konduta<s n="adj"/></l>                <r>behavioural<s n="adj"/></r></p></e>
 <e>       <p><l>senkapigi<s n="vblex"/></l>            <r>behead<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>estado<s n="n"/></l>                   <r>being<s n="n"/></r></p></e>
-<e>       <p><l>Belorusio<s n="np"/></l>               <r>Belarus<s n="np"/></r></p></e>
-<e r="LR"><p><l>Bjelorusio<s n="np"/></l>              <r>Belarus<s n="np"/></r></p></e>
+<e>       <p><l>Belorusio<s n="np"/><s n="top"/></l>               <r>Belarus<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Bjelorusio<s n="np"/><s n="top"/></l>              <r>Belarus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>rukti<s n="vblex"/></l>                <r>belch<s n="vblex"/></r></p></e>
 <e>       <p><l>kredanto<s n="n"/></l>                 <r>believer<s n="n"/></r></p></e>
 <e r="RL"><p><l>bagateligi<s n="vblex"/></l>           <r>belittle<s n="vblex"/></r></p></e>
-<e>       <p><l>Bell<s n="np"/></l>                    <r>Bell<s n="np"/></r></p></e>
 <e r="RL"><p><l>batalema<s n="adj"/></l>               <r>belligerent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malpacema<s n="adj"/></l>              <r>belligerent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>alfrontema<s n="adj"/></l>             <r>belligerent<s n="adj"/></r></p></e>
@@ -17456,8 +17439,7 @@ TODO??
 <e r="RL"><p><l>flekso<s n="n"/></l>                   <r>bending<s n="n"/></r></p></e>
 <e r="LR"><p><l>kurbigo<s n="n"/></l>                  <r>bending<s n="n"/></r></p></e>
 <e r="RL"><p><l>sube<s n="adv"/></l>                   <r>beneath<s n="adv"/></r></p></e>
-<e>       <p><l>Benedikto<s n="np"/></l>               <r>Benedict<s n="np"/></r></p></e>
-<e r="LR"><p><l>Benedict<s n="np"/></l>                <r>Benedict<s n="np"/></r></p></e>
+<e>       <p><l>Benedikto<s n="np"/><s n="ant"/></l>               <r>Benedict<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>utila<s n="adj"/></l>                  <r>beneficial<s n="adj"/></r></p></e>
 <e r="LR"><p><l>profitiga<s n="adj"/></l>              <r>beneficial<s n="adj"/></r></p></e>
 <e r="LR"><p><l>profitodona<s n="adj"/></l>            <r>beneficial<s n="adj"/></r></p></e>
@@ -17508,7 +17490,6 @@ TODO??
 <e r="LR"><p><l>dupartia<s n="adj"/></l>               <r>bilateral<s n="adj"/></r></p></e>
 <e>       <p><l>mirtelo<s n="n"/></l>                  <r>bilberry<s n="n"/></r></p></e>
 <e>       <p><l>dulingvismo<s n="n"/></l>              <r>bilingualism<s n="n"/></r></p></e>
-<e>       <p><l>Bill<s n="np"/></l>                    <r>Bill<s n="np"/></r></p></e>
 <e>       <p><l>miliarda<s n="adj"/></l>               <r>billionth<s n="adj"/></r></p></e>
 <e r="LR"><p><l>biliona<s n="adj"/></l>                <r>billionth<s n="adj"/></r></p></e>
 <e>       <p><l>ondiĝi<s n="vblex"/></l>               <r>billow<s n="vblex"/></r></p></e>
@@ -17605,7 +17586,6 @@ TODO??
 <e r="LR"><p><l>gaskono<s n="n"/></l>                  <r>boaster<s n="n"/></r></p></e>
 <e>       <p><l>fanfaroneco<s n="n"/></l>              <r>boastfulness<s n="n"/></r></p></e>
 <e r="LR"><p><l>fanfaronemo<s n="n"/></l>              <r>boastfulness<s n="n"/></r></p></e>
-<e>       <p><l>Bobby<s n="np"/></l>                   <r>Bobby<s n="np"/></r></p></e>
 <e>       <p><l>bobsledo<s n="n"/></l>                 <r>bobsled<s n="n"/></r></p></e>
 <e>       <p><l>korsaĵo<s n="n"/></l>                  <r>bodice<s n="n"/></r></p></e>
 <e r="RL"><p><l>demono<s n="n"/></l>                   <r>bogeyman<s n="n"/></r></p></e>
@@ -17680,7 +17660,6 @@ TODO??
 <e r="LR"><p><l>vinkulo<s n="n"/></l>                  <r>bracket<s n="n"/></r></p></e>
 <e>       <p><l>saleta<s n="adj"/></l>                 <r>brackish<s n="adj"/></r></p></e>
 <e>       <p><l>brakteo<s n="n"/></l>                  <r>bract<s n="n"/></r></p></e>
-<e>       <p><l>Brad<s n="np"/></l>                    <r>Brad<s n="np"/></r></p></e>
 <e r="RL"><p><l>fanfaroni<s n="vblex"/></l>            <r>brag<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>marko<s n="n"/></l>                    <r>brand<s n="n"/></r></p></e>
 <e r="LR"><p><l>brulmarko<s n="n"/></l>                <r>brand<s n="n"/></r></p></e>
@@ -17812,7 +17791,7 @@ TODO??
 <e>       <p><l>entombigo<s n="n"/></l>                <r>burial<s n="n"/></r></p></e>
 <e r="LR"><p><l>entombiĝo<s n="n"/></l>                <r>burial<s n="n"/></r></p></e>
 <e r="LR"><p><l>enteriĝo<s n="n"/></l>                 <r>burial<s n="n"/></r></p></e>
-<e>       <p><l>Birmo<s n="np"/></l>                   <r>Burma<s n="np"/></r></p></e>
+<e>       <p><l>Birmo<s n="np"/><s n="top"/></l>                   <r>Burma<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>brulilo<s n="n"/></l>                  <r>burner<s n="n"/></r></p></e>
 <e r="LR"><p><l>surdiskigilo<s n="n"/></l>             <r>burner<s n="n"/></r></p></e>
 <e>       <p><l>brula<s n="adj"/></l>                  <r>burning<s n="adj"/></r></p></e>
@@ -17820,7 +17799,6 @@ TODO??
 <e>       <p><l>brulgusta<s n="adj"/></l>              <r>burnt<s n="adj"/></r></p></e>
 <e>       <p><l>tuneli<s n="vblex"/></l>               <r>burrow<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>stipendio<s n="n"/></l>                <r>bursary<s n="n"/></r></p></e>
-<e>       <p><l>Bush<s n="np"/></l>                    <r>Bush<s n="np"/></r></p></e>
 <e>       <p><l>arbusto<s n="n"/></l>                  <r>bush<s n="n"/></r></p></e>
 <e r="RL"><p><l>negocisto<s n="n"/></l>                <r>businessman<s n="n"/></r></p></e>
 <e>       <p><l>negocistino<s n="n"/></l>              <r>businesswoman<s n="n"/></r></p></e>
@@ -17854,7 +17832,7 @@ TODO??
 <e>       <p><l>kadastra<s n="adj"/></l>               <r>cadastral<s n="adj"/></r></p></e>
 <e>       <p><l>kadmio<s n="n"/></l>                   <r>cadmium<s n="n"/></r></p></e>
 <e r="RL"><p><l>kadro<s n="n"/></l>                    <r>cadre<s n="n"/></r></p></e>
-<e>       <p><l>Kairo<s n="np"/></l>                   <r>Cairo<s n="np"/></r></p></e>
+<e>       <p><l>Kairo<s n="np"/><s n="top"/></l>                   <r>Cairo<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>kalcio<s n="n"/></l>                   <r>calcium<s n="n"/></r></p></e>
 <e r="RL"><p><l>kalkulado<s n="n"/></l>                <r>calculus<s n="n"/></r></p></e>
 <e r="LR"><p><l>prikalkulado<s n="n"/></l>             <r>calculus<s n="n"/></r></p></e>
@@ -17935,7 +17913,7 @@ TODO??
 <e r="LR"><p><l>malzorge<s n="adv"/></l>               <r>carelessly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>vartanto<s n="n"/></l>                 <r>carer<s n="n"/></r></p></e>
 <e r="RL"><p><l>karesi<s n="vblex"/></l>               <r>caress<s n="vblex"/></r></p></e>
-<e>       <p><l>Karibo<s n="np"/></l>                  <r>Caribbean<s n="np"/></r></p></e>
+<e>       <p><l>Karibo<s n="np"/><s n="top"/></l>                  <r>Caribbean<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>karikaturisto<s n="n"/></l>            <r>caricaturist<s n="n"/></r></p></e>
 <e>       <p><l>karnavalo<s n="n"/></l>                <r>carnival<s n="n"/></r></p></e>
 <e>       <p><l>karnomanĝulo<s n="n"/></l>             <r>carnivore<s n="n"/></r></p></e>
@@ -17962,7 +17940,7 @@ TODO??
 <e r="LR"><p><l>kontantaĵo<s n="n"/></l>               <r>cash<s n="n"/></r></p></e>
 <e r="LR"><p><l>kontanto<s n="n"/></l>                 <r>cash<s n="n"/></r></p></e>
 <e r="RL"><p><l>kesteto<s n="n"/></l>                  <r>casket<s n="n"/></r></p></e>
-<e>       <p><l>Kaspio<s n="np"/></l>                  <r>Caspian Sea<s n="np"/></r></p></e>
+<e>       <p><l>Kaspio<s n="np"/><s n="top"/></l>                  <r>Caspian Sea<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>kasavo<s n="n"/></l>                   <r>cassava<s n="n"/></r></p></e>
 <e r="RL"><p><l>marmito<s n="n"/></l>                  <r>casserole<s n="n"/></r></p></e>
 <e>       <p><l>kasedo<s n="n"/></l>                   <r>cassette<s n="n"/></r></p></e>
@@ -17989,9 +17967,9 @@ TODO??
 <e>       <p><l>katarismo<s n="n"/></l>                <r>catharism<s n="n"/></r></p></e>
 <e>       <p><l>katarso<s n="n"/></l>                  <r>catharsis<s n="n"/></r></p></e>
 <e>       <p><l>katarsa<s n="adj"/></l>                <r>cathartic<s n="adj"/></r></p></e>
-<e>       <p><l>Kaŭkazio<s n="np"/></l>                <r>Caucasus<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kaŭkazia<s n="np"/></l>                <r>Caucasus<s n="np"/></r></p></e>
-<e r="LR"><p><l>Kaŭkazo<s n="np"/></l>                 <r>Caucasus<s n="np"/></r></p></e>
+<e>       <p><l>Kaŭkazio<s n="np"/><s n="top"/></l>                <r>Caucasus<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Kaŭkazia<s n="np"/><s n="top"/></l>                <r>Caucasus<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Kaŭkazo<s n="np"/><s n="top"/></l>                 <r>Caucasus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>florbrasiko<s n="n"/></l>              <r>cauliflower<s n="n"/></r></p></e>
 <e>       <p><l>kaŭza<s n="adj"/></l>                  <r>causal<s n="adj"/></r></p></e>
 <e>       <p><l>kaŭzeco<s n="n"/></l>                  <r>causality<s n="n"/></r></p></e>
@@ -18078,8 +18056,7 @@ TODO??
 <e r="RL"><p><l>bonfara<s n="adj"/></l>                <r>charitable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>karitata<s n="adj"/></l>               <r>charitable<s n="adj"/></r></p></e>
 <e>       <p><l>ĉarlatano<s n="n"/></l>                <r>charlatan<s n="n"/></r></p></e>
-<e>       <p><l>Charles<s n="np"/></l>                 <r>Charles<s n="np"/></r></p></e>
-<e r="LR"><p><l>Karlo<s n="np"/></l>                   <r>Charles<s n="np"/></r></p></e>
+<e r="LR"><p><l>Karlo<s n="np"/><s n="ant"/></l>                   <r>Charles<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>luita<s n="adj"/></l>                  <r>chartered<s n="adj"/></r></p></e>
 <e r="RL"><p><l>puni<s n="vblex"/></l>                 <r>chastise<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>babilejo<s n="n"/></l>                 <r>chatroom<s n="n"/></r></p></e>
@@ -18302,7 +18279,7 @@ TODO??
 <e>       <p><l>koluzii<s n="vblex"/></l>              <r>collude<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>komplici<s n="vblex"/></l>             <r>collude<s n="vblex"/></r></p></e>
 <e>       <p><l>koluzio<s n="n"/></l>                  <r>collusion<s n="n"/></r></p></e>
-<e>       <p><l>Kolonjo<s n="np"/></l>                 <r>Cologne<s n="np"/></r></p></e>
+<e>       <p><l>Kolonjo<s n="np"/><s n="top"/></l>                 <r>Cologne<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>dupunkto<s n="n"/></l>                 <r>colon<s n="n"/></r></p></e>
 <e r="LR"><p><l>kojlo<s n="n"/></l>                    <r>colon<s n="n"/></r></p></e>
 <e>       <p><l>kolonia<s n="adj"/></l>                <r>colonial<s n="adj"/></r></p></e>
@@ -18317,7 +18294,6 @@ TODO??
 <e>       <p><l>koloniano<s n="n"/></l>                <r>colonist<s n="n"/></r></p></e>
 <e r="RL"><p><l>kolonia<s n="adj"/></l>                <r>colonizing<s n="adj"/></r></p></e>
 <e r="RL"><p><l>kolonio<s n="n"/></l>                  <r>colony<s n="n"/></r></p></e>
-<e>       <p><l>Colt<s n="np"/></l>                    <r>Colt<s n="np"/></r></p></e>
 <e r="RL"><p><l>bunta<s n="adj"/></l>                  <r>colourful<s n="adj"/></r></p></e>
 <e>       <p><l>senkolora<s n="adj"/></l>              <r>colourless<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senkoloriĝinta<s n="adj"/></l>         <r>colourless<s n="adj"/></r></p></e>
@@ -18525,8 +18501,7 @@ TODO??
 <e>       <p><l>konsonanco<s n="n"/></l>               <r>consonance<s n="n"/></r></p></e>
 <e>       <p><l>konsonanto<s n="n"/></l>               <r>consonant<s n="n"/></r></p></e>
 <e r="RL"><p><l>konspiro<s n="n"/></l>                 <r>conspiracy<s n="n"/></r></p></e>
-<e>       <p><l>Konstanco<s n="np"/></l>               <r>Constance<s n="np"/></r></p></e>
-<e r="LR"><p><l>Constance<s n="np"/></l>               <r>Constance<s n="np"/></r></p></e>
+<e>       <p><l>Konstanco<s n="np"/><s n="ant"/></l>               <r>Constance<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>konstanto<s n="n"/></l>                <r>constant<s n="n"/></r></p></e>
 <e r="RL"><p><l>koncernato<s n="n"/></l>               <r>constituency<s n="n"/></r></p></e>
 <e r="LR"><p><l>interesato<s n="n"/></l>               <r>constituency<s n="n"/></r></p></e>
@@ -18595,7 +18570,6 @@ TODO??
 <e>       <p><l>konvulsio<s n="n"/></l>                <r>convulsion<s n="n"/></r></p></e>
 <e r="RL"><p><l>kuirado<s n="n"/></l>                  <r>cooking<s n="n"/></r></p></e>
 <e r="LR"><p><l>kuiraĵo<s n="n"/></l>                  <r>cooking<s n="n"/></r></p></e>
-<e>       <p><l>Cooper<s n="np"/></l>                  <r>Cooper<s n="np"/></r></p></e>
 <e>       <p><l>barelisto<s n="n"/></l>                <r>cooper<s n="n"/></r></p></e>
 <e r="RL"><p><l>kunlabori<s n="vblex"/></l>            <r>cooperate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kunlaboro<s n="n"/></l>                <r>cooperation<s n="n"/></r></p></e>
@@ -18611,7 +18585,6 @@ TODO??
 <e r="LR"><p><l>aŭtorrajto<s n="n"/></l>               <r>copyright<s n="n"/></r></p></e>
 <e>       <p><l>koriandro<s n="n"/></l>                <r>coriander<s n="n"/></r></p></e>
 <e>       <p><l>korko<s n="n"/></l>                    <r>cork<s n="n"/></r></p></e>
-<e>       <p><l>Cork<s n="np"/></l>                    <r>Cork<s n="np"/></r></p></e>
 <e>       <p><l>korki<s n="vblex"/></l>                <r>cork<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>korkeciĝi<s n="vblex"/></l>            <r>cork<s n="vblex"/></r></p></e>
 <e>       <p><l>korkotirilo<s n="n"/></l>              <r>corkscrew<s n="n"/></r></p></e>
@@ -18818,7 +18791,6 @@ TODO??
 <e>       <p><l>viŝeti<s n="vblex"/></l>               <r>dab<s n="vblex"/></r></p></e>
 <e>       <p><l>dajmono<s n="n"/></l>                  <r>daemon<s n="n"/></r></p></e>
 <e r="RL"><p><l>ponardo<s n="n"/></l>                  <r>dagger<s n="n"/></r></p></e>
-<e>       <p><l>Dale<s n="np"/></l>                    <r>Dale<s n="np"/></r></p></e>
 <e r="RL"><p><l>damni<s n="vblex"/></l>                <r>damn<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>diabla<s n="adj"/></l>                 <r>damned<s n="adj"/></r></p></e>
 <e r="LR"><p><l>damninda<s n="adj"/></l>               <r>damned<s n="adj"/></r></p></e>
@@ -18855,7 +18827,6 @@ TODO??
 <e>       <p><l>surdiga<s n="adj"/></l>                <r>deafening<s n="adj"/></r></p></e>
 <e r="RL"><p><l>negocisto<s n="n"/></l>                <r>dealer<s n="n"/></r></p></e>
 <e r="LR"><p><l>komercisto<s n="n"/></l>               <r>dealer<s n="n"/></r></p></e>
-<e>       <p><l>Dean<s n="np"/></l>                    <r>Dean<s n="np"/></r></p></e>
 <e r="RL"><p><l>kara<s n="adj"/></l>                   <r>dear<s n="adj"/></r></p></e>
 <e r="LR"><p><l>karega<s n="adj"/></l>                 <r>dear<s n="adj"/></r></p></e>
 <e>       <p><l>debeti<s n="vblex"/></l>               <r>debit<s n="vblex"/></r></p></e>
@@ -19630,7 +19601,7 @@ TODO??
 <e r="RL"><p><l>kvalifiko<s n="n"/></l>                <r>eligibility<s n="n"/></r></p></e>
 <e r="LR"><p><l>elektebleco<s n="n"/></l>              <r>eligibility<s n="n"/></r></p></e>
 <e>       <p><l>elektebla<s n="adj"/></l>              <r>eligible<s n="adj"/></r></p></e>
-<e>       <p><l>Elija<s n="np"/></l>                   <r>Elijah<s n="np"/></r></p></e>
+<e>       <p><l>Elija<s n="np"/><s n="ant"/></l>                   <r>Elijah<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>elito<s n="n"/></l>                    <r>elite<s n="n"/></r></p></e>
 <e r="LR"><p><l>eminentularo<s n="n"/></l>             <r>elite<s n="n"/></r></p></e>
 <e>       <p><l>elitismo<s n="n"/></l>                 <r>elitism<s n="n"/></r></p></e>
@@ -19812,7 +19783,7 @@ TODO??
 <e>       <p><l>epidemiologio<s n="n"/></l>            <r>epidemiology<s n="n"/></r></p></e>
 <e>       <p><l>epididimo<s n="n"/></l>                <r>epididymis<s n="n"/></r></p></e>
 <e>       <p><l>epilepsio<s n="n"/></l>                <r>epilepsy<s n="n"/></r></p></e>
-<e>       <p><l>Epifanio<s n="np"/></l>                <r>Epiphany<s n="np"/></r></p></e>
+<e>       <p><l>Epifanio<s n="np"/><s n="top"/></l>                <r>Epiphany<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>episkopa<s n="adj"/></l>               <r>episcopal<s n="adj"/></r></p></e>
 <e>       <p><l>episkaro<s n="n"/></l>                 <r>episcopate<s n="n"/></r></p></e>
 		<!-- Already is <e><l>episkaro<n></l><r>episcopate<n></r></e> -->
@@ -19848,7 +19819,8 @@ TODO??
 <e r="LR"><p><l>defrotiĝi<s n="vblex"/></l>            <r>erode<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>formordeti<s n="vblex"/></l>           <r>erode<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ravinigi<s n="vblex"/></l>             <r>erode<s n="vblex"/></r></p></e>
-<e>       <p><l>Eroso<s n="np"/></l>                   <r>Eros<s n="np"/></r></p></e>
+<e>       <p><l>Eroso<s n="np"/><s n="ant"/></l>                   <r>Eros<s n="np"/><s n="ant"/></r></p></e>
+<e>       <p><l>Eroso<s n="np"/><s n="top"/></l>                   <r>Eros<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>erari<s n="vblex"/></l>                <r>err<s n="vblex"/></r></p></e>
 <e>       <p><l>erupcii<s n="vblex"/></l>              <r>erupt<s n="vblex"/></r></p></e>
 <e>       <p><l>eskatologio<s n="n"/></l>              <r>eschatology<s n="n"/></r></p></e>
@@ -20211,8 +20183,8 @@ TODO??
 <e r="LR"><p><l>birdaro<s n="n"/></l>                  <r>flock<s n="n"/></r></p></e>
 <e r="RL"><p><l>kaheli<s n="vblex"/></l>               <r>floor<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>flora<s n="adj"/></l>                  <r>floral<s n="adj"/></r></p></e>
-<e>       <p><l>Florenco<s n="np"/></l>                <r>Florence<s n="np"/></r></p></e>
-<e r="LR"><p><l>Florenca<s n="np"/></l>                <r>Florence<s n="np"/></r></p></e>
+<e>       <p><l>Florenco<s n="np"/><s n="ant"/></l>                <r>Florence<s n="np"/><s n="ant"/></r></p></e>
+<e r="LR"><p><l>Florenca<s n="np"/><s n="ant"/></l>                <r>Florence<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>floristo<s n="n"/></l>                 <r>florist<s n="n"/></r></p></e>
 <e>       <p><l>floteto<s n="n"/></l>                  <r>flotilla<s n="n"/></r></p></e>
 <e r="LR"><p><l>elkreski<s n="vblex"/></l>             <r>flourish<s n="vblex"/></r></p></e>
@@ -20312,9 +20284,7 @@ TODO??
 <e r="RL"><p><l>franĉizo<s n="n"/></l>                 <r>franchise<s n="n"/></r></p></e>
 <e r="LR"><p><l>koncesio<s n="n"/></l>                 <r>franchise<s n="n"/></r></p></e>
 <e>       <p><l>koncesiulo<s n="n"/></l>               <r>franchisee<s n="n"/></r></p></e>
-<e>       <p><l>Francis<s n="np"/></l>                 <r>Francis<s n="np"/></r></p></e>
-<e r="LR"><p><l>Francisko<s n="np"/></l>               <r>Francis<s n="np"/></r></p></e>
-<e>       <p><l>Frank<s n="np"/></l>                   <r>Frank<s n="np"/></r></p></e>
+<e r="LR"><p><l>Francisko<s n="np"/><s n="ant"/></l>               <r>Francisco<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>malkaŝa<s n="adj"/></l>                <r>frank<s n="adj"/></r></p></e>
 <e>       <p><l>panike<s n="adv"/></l>                 <r>frantically<s n="adv"/></r></p></e>
 <e r="LR"><p><l>ĉiariskeme<s n="adv"/></l>             <r>frantically<s n="adv"/></r></p></e>
@@ -20561,7 +20531,7 @@ TODO??
 <e r="RL"><p><l>grefti<s n="vblex"/></l>               <r>graft<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kungrefti<s n="vblex"/></l>            <r>graft<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>greftiĝi<s n="vblex"/></l>             <r>graft<s n="vblex"/></r></p></e>
-<e>       <p><l>Gralo<s n="np"/></l>                   <r>Grail<s n="np"/></r></p></e>
+<e>       <p><l>Gralo<s n="np"/><s n="top"/></l>                   <r>Grail<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>gramatika<s n="adj"/></l>              <r>grammatical<s n="adj"/></r></p></e>
 <e>       <p><l>gramofono<s n="n"/></l>                <r>gramophone<s n="n"/></r></p></e>
 <e>       <p><l>Grant<s n="np"/></l>                   <r>Grant<s n="np"/></r></p></e>
@@ -20642,7 +20612,7 @@ TODO??
 <e r="LR"><p><l>indikado<s n="n"/></l>                 <r>guidance<s n="n"/></r></p></e>
 <e r="RL"><p><l>aspekto<s n="n"/></l>                  <r>guise<s n="n"/></r></p></e>
 <e>       <p><l>gitaristo<s n="n"/></l>                <r>guitarist<s n="n"/></r></p></e>
-<e>       <p><l>Golfo<s n="np"/></l>                   <r>Gulf<s n="np"/></r></p></e>
+<e>       <p><l>Golfo<s n="np"/><s n="top"/></l>                   <r>Gulf<s n="np"/><s n="top"/></r></p></e>
 		<!-- Already is <e r="LR"><l>fendego<n></l><r>ravine<n></r></e> -->
 <e r="RL"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
 <e r="RL"><p><l>engluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
@@ -20758,8 +20728,7 @@ TODO??
 <e>       <p><l>ĉiela<s n="adj"/></l>                  <r>heavenly<s n="adj"/></r></p></e>
 <e>       <p><l>peza<s n="adj"/></l>                   <r>heavy<s n="adj"/><s n="sint"/></r></p></e>
 <e r="LR"><p><l>ega<s n="adj"/></l>                    <r>heavy<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>Hector<s n="np"/></l>                  <r>Hector<s n="np"/></r></p></e>
-<e r="LR"><p><l>Hektoro<s n="np"/></l>                 <r>Hector<s n="np"/></r></p></e>
+<e r="LR"><p><l>Hektoro<s n="np"/><s n="ant"/></l>                 <r>Hector<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>heĝo<s n="n"/></l>                     <r>hedge<s n="n"/></r></p></e>
 <e>       <p><l>erinaco<s n="n"/></l>                  <r>hedgehog<s n="n"/></r></p></e>
 <e r="RL"><p><l>atenti<s n="vblex"/></l>               <r>heed<s n="vblex"/></r></p></e>
@@ -20976,8 +20945,8 @@ TODO??
 <e r="RL"><p><l>kontraŭleĝe<s n="adv"/></l>            <r>illicitly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>kontraŭregule<s n="adv"/></l>          <r>illicitly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>nelicencite<s n="adv"/></l>            <r>illicitly<s n="adv"/></r></p></e>
-<e>       <p><l>Ilinojo<s n="np"/></l>                 <r>Illinois<s n="np"/></r></p></e>
-<e r="LR"><p><l>Ilinojso<s n="np"/></l>                <r>Illinois<s n="np"/></r></p></e>
+<e>       <p><l>Ilinojo<s n="np"/><s n="top"/></l>                 <r>Illinois<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Ilinojso<s n="np"/><s n="top"/></l>                <r>Illinois<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>analfabeteco<s n="n"/></l>             <r>illiteracy<s n="n"/></r></p></e>
 <e r="LR"><p><l>nelegoscio<s n="n"/></l>               <r>illiteracy<s n="n"/></r></p></e>
 <e>       <p><l>nelegoscia<s n="adj"/></l>             <r>illiterate<s n="adj"/></r></p></e>
@@ -21486,7 +21455,7 @@ TODO??
 <e>       <p><l>ĵeleo<s n="n"/></l>                    <r>jelly<s n="n"/></r></p></e>
 <e r="LR"><p><l>gelatenaĵo<s n="n"/></l>               <r>jelly<s n="n"/></r></p></e>
 <e r="LR"><p><l>gelateno<s n="n"/></l>                 <r>jelly<s n="n"/></r></p></e>
-<e>       <p><l>Jesuo<s n="np"/></l>                   <r>Jesus<s n="np"/></r></p></e>
+<e>       <p><l>Jesuo<s n="np"/><s n="ant"/></l>                   <r>Jesus<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>jeto<s n="n"/></l>                     <r>jet<s n="n"/></r></p></e>
 <e r="LR"><p><l>jetaviadilo<s n="n"/></l>              <r>jet<s n="n"/></r></p></e>
 <e r="LR"><p><l>gagato<s n="n"/></l>                   <r>jet<s n="n"/></r></p></e>
@@ -21518,7 +21487,6 @@ TODO??
 <e>       <p><l>elefanĉjo<s n="n"/></l>                <r>jumbo<s n="n"/></r></p></e>
 <e r="LR"><p><l>elefanjo<s n="n"/></l>                 <r>jumbo<s n="n"/></r></p></e>
 <e>       <p><l>diskruciĝejo<s n="n"/></l>             <r>junction<s n="n"/></r></p></e>
-<e>       <p><l>Juĝisto<s n="np"/></l>                 <r>Justice<s n="np"/></r></p></e>
 <e r="RL"><p><l>prava<s n="adj"/></l>                  <r>justifiable<s n="adj"/></r></p></e>
 <e>       <p><l>junula<s n="adj"/></l>                 <r>juvenile<s n="adj"/></r></p></e>
 <e r="LR"><p><l>junulara<s n="adj"/></l>               <r>juvenile<s n="adj"/></r></p></e>
@@ -21567,8 +21535,8 @@ TODO??
 <e r="LR"><p><l>scipovinta<s n="adj"/></l>             <r>known<s n="adj"/></r></p></e>
 <e>       <p><l>fingronodo<s n="n"/></l>               <r>knuckle<s n="n"/></r></p></e>
 <e>       <p><l>kriptono<s n="n"/></l>                 <r>krypton<s n="n"/></r></p></e>
-<e r="LR"><p><l>Kurdistano<s n="np"/></l>              <r>Kurdistan<s n="np"/></r></p></e>
-<e>       <p><l>Kurdio<s n="np"/></l>                  <r>Kurdistan<s n="np"/></r></p></e>
+<e r="LR"><p><l>Kurdistano<s n="np"/><s n="top"/></l>              <r>Kurdistan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kurdio<s n="np"/><s n="top"/></l>                  <r>Kurdistan<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>penlabori<s n="vblex"/></l>            <r>labour<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>labori<s n="vblex"/></l>               <r>labour<s n="vblex"/></r></p></e>
 <e>       <p><l>laĉi<s n="vblex"/></l>                 <r>lace<s n="vblex"/></r></p></e>
@@ -21586,8 +21554,8 @@ TODO??
 <e>       <p><l>bienhavanto<s n="n"/></l>              <r>landowner<s n="n"/></r></p></e>
 <e r="RL"><p><l>velki<s n="vblex"/></l>                <r>languish<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>rondiro<s n="n"/></l>                  <r>lap<s n="n"/></r></p></e>
-<e>       <p><l>Samio<s n="np"/></l>                   <r>Lapland<s n="np"/></r></p></e>
-<e r="LR"><p><l>Laponio<s n="np"/></l>                 <r>Lapland<s n="np"/></r></p></e>
+<e>       <p><l>Samio<s n="np"/><s n="top"/></l>                   <r>Lapland<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Laponio<s n="np"/><s n="top"/></l>                 <r>Lapland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>lektrinki<s n="vblex"/></l>            <r>lap<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>plaŭdeti<s n="vblex"/></l>             <r>lap<s n="vblex"/></r></p></e>
 <e>       <p><l>langotrinki<s n="vblex"/></l>          <r>lap<s n="vblex"/></r></p></e>
@@ -21813,10 +21781,9 @@ TODO??
 <e>       <p><l>malstreĉa<s n="adj"/></l>              <r>loose<s n="adj"/></r></p></e>
 <e r="LR"><p><l>sakeca<s n="adj"/></l>                 <r>loose<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dehaki<s n="vblex"/></l>               <r>lop<s n="vblex"/></r></p></e>
-<e>       <p><l>Loreno<s n="np"/></l>                  <r>Lorraine<s n="np"/></r></p></e>
+<e>       <p><l>Loreno<s n="np"/><s n="top"/></l>                  <r>Lorraine<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>nerevenigebla<s n="adj"/></l>          <r>lost<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pereinta<s n="adj"/></l>               <r>lost<s n="adj"/></r></p></e>
-<e>       <p><l>Loto<s n="np"/></l>                    <r>Lot<s n="np"/></r></p></e>
 <e>       <p><l>lotuso<s n="n"/></l>                   <r>lotus<s n="n"/></r></p></e>
 <e r="RL"><p><l>laŭta<s n="adj"/></l>                  <r>loud<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laŭtega<s n="adj"/></l>                <r>loud<s n="adj"/></r></p></e>
@@ -21836,7 +21803,7 @@ TODO??
 <e>       <p><l>lubriki<s n="vblex"/></l>              <r>lubricate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>bonsorta<s n="adj"/></l>               <r>lucky<s n="adj"/></r></p></e>
 <e r="LR"><p><l>bonokaza<s n="adj"/></l>               <r>lucky<s n="adj"/></r></p></e>
-<e>       <p><l>Luko<s n="np"/></l>                    <r>Luke<s n="np"/></r></p></e>
+<e>       <p><l>Luko<s n="np"/><s n="ant"/></l>                    <r>Luke<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>lumbalgio<s n="n"/></l>                <r>lumbago<s n="n"/></r></p></e>
 <e>       <p><l>lumba<s n="adj"/></l>                  <r>lumbar<s n="adj"/></r></p></e>
 <e>       <p><l>luna<s n="adj"/></l>                   <r>lunar<s n="adj"/></r></p></e>
@@ -21904,7 +21871,7 @@ TODO??
 <e>       <p><l>manikuristino<s n="n"/></l>            <r>manicurist<s n="n"/></r></p></e>
 <e r="LR"><p><l>manflegistino<s n="n"/></l>            <r>manicurist<s n="n"/></r></p></e>
 <e r="RL"><p><l>evidente<s n="adv"/></l>               <r>manifestly<s n="adv"/></r></p></e>
-<e>       <p><l>Manilo<s n="np"/></l>                  <r>Manila<s n="np"/></r></p></e>
+<e>       <p><l>Manilo<s n="np"/><s n="top"/></l>                  <r>Manila<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>manipulanto<s n="n"/></l>              <r>manipulator<s n="n"/></r></p></e>
 <e r="LR"><p><l>manreganto<s n="n"/></l>               <r>manipulator<s n="n"/></r></p></e>
 <e>       <p><l>manao<s n="n"/></l>                    <r>manna<s n="n"/></r></p></e>
@@ -22288,7 +22255,7 @@ TODO??
 <e r="RL"><p><l>reciprokeco<s n="n"/></l>              <r>mutuality<s n="n"/></r></p></e>
 <e r="LR"><p><l>mutualeco<s n="n"/></l>                <r>mutuality<s n="n"/></r></p></e>
 <e>       <p><l>mialgio<s n="n"/></l>                  <r>myalgia<s n="n"/></r></p></e>
-<e>       <p><l>Mjanmaro<s n="np"/></l>                <r>Myanmar<s n="np"/></r></p></e>
+<e>       <p><l>Mjanmaro<s n="np"/><s n="top"/></l>                <r>Myanmar<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>miopeco<s n="n"/></l>                  <r>myopia<s n="n"/></r></p></e>
 <e>       <p><l>miriado<s n="n"/></l>                  <r>myriad<s n="n"/></r></p></e>
 <e>       <p><l>mistika<s n="adj"/></l>                <r>mystic<s n="adj"/></r></p></e>
@@ -22393,7 +22360,7 @@ TODO??
 <e r="LR"><p><l>novalveninto<s n="n"/></l>             <r>newcomer<s n="n"/></r></p></e>
 <e>       <p><l>novaĵelsendo<s n="n"/></l>             <r>newscast<s n="n"/></r></p></e>
 <e>       <p><l>neŭtono<s n="n"/></l>                  <r>newton<s n="n"/></r></p></e>
-<e>       <p><l>Nico<s n="np"/></l>                    <r>Nice<s n="np"/></r></p></e>
+<e>       <p><l>Nico<s n="np"/><s n="top"/></l>                    <r>Nice<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nick<s n="np"/></l>                    <r>Nick<s n="np"/></r></p></e>
 <e>       <p><l>noĉeto<s n="n"/></l>                   <r>nick<s n="n"/></r></p></e>
 <e r="LR"><p><l>enfendo<s n="n"/></l>                  <r>nick<s n="n"/></r></p></e>
@@ -22508,7 +22475,7 @@ TODO??
 <e r="LR"><p><l>tempaltempa<s n="adj"/></l>            <r>occasional<s n="adj"/></r></p></e>
 <e r="RL"><p><l>okazigi<s n="vblex"/></l>              <r>occasion<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>loĝanto<s n="n"/></l>                  <r>occupant<s n="n"/></r></p></e>
-<e>       <p><l>Oceanio<s n="np"/></l>                 <r>Oceania<s n="np"/></r></p></e>
+<e>       <p><l>Oceanio<s n="np"/><s n="top"/></l>                 <r>Oceania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>oceana<s n="adj"/></l>                 <r>oceanic<s n="adj"/></r></p></e>
 <e>       <p><l>oceanografia<s n="adj"/></l>           <r>oceanographic<s n="adj"/></r></p></e>
 <e>       <p><l>oceanografio<s n="n"/></l>             <r>oceanography<s n="n"/></r></p></e>
@@ -22695,7 +22662,7 @@ TODO??
 <e r="RL"><p><l>virbovo<s n="n"/></l>                  <r>ox<s n="n"/></r></p></e>
 <e>       <p><l>oksimoro<s n="n"/></l>                 <r>oxymoron<s n="n"/></r></p></e>
 <e>       <p><l>ostro<s n="n"/></l>                    <r>oyster<s n="n"/></r></p></e>
-<e>       <p><l>Pacifiko<s n="np"/></l>                <r>Pacific<s n="np"/></r></p></e>
+<e>       <p><l>Pacifiko<s n="np"/><s n="top"/></l>                <r>Pacific<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>kvietigo<s n="n"/></l>                 <r>pacification<s n="n"/></r></p></e>
 <e r="LR"><p><l>interpacigo<s n="n"/></l>              <r>pacification<s n="n"/></r></p></e>
 <e r="RL"><p><l>pacigi<s n="vblex"/></l>               <r>pacify<s n="vblex"/></r></p></e>
@@ -24063,7 +24030,7 @@ TODO??
 <e r="LR"><p><l>salgusta<s n="adj"/></l>               <r>salty<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malpudora<s n="adj"/></l>              <r>salty<s n="adj"/></r></p></e>
 <e>       <p><l>ĝentilformulo<s n="n"/></l>            <r>salutation<s n="n"/></r></p></e>
-<e>       <p><l>Samoo<s n="np"/></l>                   <r>Samoa<s n="np"/></r></p></e>
+<e>       <p><l>Samoo<s n="np"/><s n="top"/></l>                   <r>Samoa<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>provi<s n="vblex"/></l>                <r>sample<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>specimeni<s n="vblex"/></l>            <r>sample<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekgustumi<s n="vblex"/></l>            <r>sample<s n="vblex"/></r></p></e>
@@ -25818,7 +25785,7 @@ TODO??
 <e r="RL"><p><l>vastaĵo<s n="n"/></l>                  <r>vastness<s n="n"/></r></p></e>
 <e>       <p><l>kuvo<s n="n"/></l>                     <r>vat<s n="n"/></r></p></e>
 <e r="LR"><p><l>tino<s n="n"/></l>                     <r>vat<s n="n"/></r></p></e>
-<e>       <p><l>Vatikano<s n="np"/></l>                <r>Vatican<s n="np"/></r></p></e>
+<e>       <p><l>Vatikano<s n="np"/><s n="top"/></l>                <r>Vatican<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>transsalti<s n="vblex"/></l>           <r>vault<s n="vblex"/></r></p></e>
 <e>       <p><l>vektoro<s n="n"/></l>                  <r>vector<s n="n"/></r></p></e>
 <e r="LR"><p><l>kontaĝanto<s n="n"/></l>               <r>vector<s n="n"/></r></p></e>
@@ -25846,7 +25813,7 @@ TODO??
 <e r="LR"><p><l>aŭtentigi<s n="vblex"/></l>            <r>verify<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>konfirmi<s n="vblex"/></l>             <r>verify<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>vulgara<s n="adj"/></l>                <r>vernacular<s n="adj"/></r></p></e>
-<e>       <p><l>Verono<s n="np"/></l>                  <r>Verona<s n="np"/></r></p></e>
+<e>       <p><l>Verono<s n="np"/><s n="top"/></l>                  <r>Verona<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>diverstalenta<s n="adj"/></l>          <r>versatile<s n="adj"/></r></p></e>
 <e r="LR"><p><l>multkapabla<s n="adj"/></l>            <r>versatile<s n="adj"/></r></p></e>
 <e r="LR"><p><l>multetalenta<s n="adj"/></l>           <r>versatile<s n="adj"/></r></p></e>
@@ -26040,8 +26007,7 @@ TODO??
 <e>       <p><l>bonveno<s n="n"/></l>                  <r>welcome<s n="n"/></r></p></e>
 <e>       <p><l>veldi<s n="vblex"/></l>                <r>weld<s n="vblex"/></r></p></e>
 <e>       <p><l>bondeziranto<s n="n"/></l>             <r>well-wisher<s n="n"/></r></p></e>
-<e>       <p><l>Parlamento<s n="np"/></l>              <r>Westminster<s n="np"/></r></p></e>
-<e r="LR"><p><l>Westminster<s n="np"/></l>             <r>Westminster<s n="np"/></r></p></e>
+<e r="LR">       <p><l>Parlamento<s n="np"/></l>              <r>Westminster<s n="np"/></r></p></e>
 <e>       <p><l>balenisto<s n="n"/></l>                <r>whaler<s n="n"/></r></p></e>
 <e r="LR"><p><l>balenŝipo<s n="n"/></l>                <r>whaler<s n="n"/></r></p></e>
 <e r="RL"><p><l>ruli<s n="vblex"/></l>                 <r>wheel<s n="vblex"/></r></p></e>
@@ -32776,6 +32742,29 @@ The trick below seems only to work when we don't translate ANY cognomens, to DON
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
 <e>       <re>[A-ZÚa-zéõóöäíáòñú]* [A-ZÚa-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
 <e>       <re>[A-ZÚa-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
+-->
+
+
+<!--
+A regex takes all 'bare' np words and translates them to the same:
+<jacobEo> <e>       <par n="Abc"/><i><s n="np"/></i></e>
+<jacobEo> where
+<jacobEo> <pardef n="Abc">
+<jacobEo>   <e>       <re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬÆØÅæøåàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñúŵã -.]*</re></e>
+<jacobEo> </pardef>
+<jacobEo> and then I have only the EXCEPTIONS in the bidix.
+<jacobEo> EXCEPTIONS = lemma changes.
+<jacobEo> EXCEPTIONS = lemma changes. f.eks. np.top. Paris -> Parizo.
+<jacobEo> but np.ant, np.al, np.cog almost never changes. 
+<jimregan> but np.cog is mf
+<jacobEo> yes
+<jimregan> np.al can be useful for other things
+<jimregan> jacobEo: try it if you want
+<jimregan> it's your thing
+<jimregan> I'm not a fan of that idea
+<jimregan> plus, it'll probably make the compiled dictionaries bigger
+<jacobEo> its longest match. So if a np.al changes, I just put it in as a <s n="np"/><s n="al"/>.
+<jacobEo> but now only writing <s n="np"/> is impossible, as the regex has priority.
 -->
 
 <e>       <par n="Abc"/><i><s n="np"/></i></e>
