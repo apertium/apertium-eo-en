@@ -130,6 +130,7 @@
 
 
 <e r="LR" c="devus - should"><p><l>devi<s n="vaux"/><s n="cni"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
+<e r="LR" c="devis - should"><p><l>devi<s n="vaux"/><s n="past"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
 
 
 <e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
@@ -138,9 +139,9 @@
  <e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>-->
 <!-- LR: Esperanto al angla - riparoj de vaux-verboj -->
 <e r="LR" c="volus - would"><p><l>voli<s n="vaux"/><s n="cni"/></l><r>would<s n="vaux"/><s n="inf"/></r></p></e>
-<e r="LR" c="volas - want"><p><l>voli<s n="vaux"/><s n="pres"/></l><r>want<s n="vaux"/><s n="pres"/></r></p></e>
-<e r="LR" c="volis - wanted"><p><l>voli<s n="vaux"/><s n="past"/></l><r>want<s n="vaux"/><s n="past"/></r></p></e>
-<e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vaux"/><s n="pres"/></r></p></e>
+<e r="LR" c="volas - want"><p><l>voli<s n="vaux"/><s n="pres"/></l><r>want<s n="vblex"/><s n="pres"/></r></p></e>
+<e r="LR" c="volis - wanted"><p><l>voli<s n="vaux"/><s n="past"/></l><r>want<s n="vblex"/><s n="past"/></r></p></e>
+<e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vblex"/><s n="pres"/></r></p></e>
 
 
 <e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
@@ -1133,6 +1134,7 @@ BUT:
 <e>       <p><l>Kipro<s n="np"/><s n="top"/></l>       <r>Cyprus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kolombio<s n="np"/><s n="top"/></l>    <r>Colombia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kongo<s n="np"/><s n="top"/></l>       <r>Congo<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Kongolo<s n="np"/><s n="top"/></l>     <r>Congo<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Koreio<s n="np"/><s n="top"/></l>      <r>Korea<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kroatio<s n="np"/><s n="top"/></l>     <r>Croatia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kubo<s n="np"/><s n="top"/></l>        <r>Cuba<s n="np"/><s n="top"/></r></p></e>
@@ -1168,6 +1170,7 @@ BUT:
 <e>       <p><l>Panamo<s n="np"/><s n="top"/></l>      <r>Panama<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Paragvajo<s n="np"/><s n="top"/></l>   <r>Paraguay<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Parizo<s n="np"/><s n="top"/></l>      <r>Paris<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Pariso<s n="np"/><s n="ant"/></l>      <r>Paris<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Pekino<s n="np"/><s n="top"/></l>      <r>Peking<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Peruo<s n="np"/><s n="top"/></l>       <r>Peru<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Pollando<s n="np"/><s n="top"/></l>    <r>Poland<s n="np"/><s n="top"/></r></p></e>
@@ -8731,6 +8734,7 @@ TODO??
 <e r="LR"><p><l>trompeto<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>petolaĵo<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>Jordano<s n="np"/><s n="top"/></l>     <r>Jordan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Jordano<s n="np"/><s n="ant"/></l>     <r>Jordan<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>ĵurnalismo<s n="n"/></l>               <r>journalism<s n="n"/></r></p></e>
 <e>       <p><l>ĵurnalisto<s n="n"/></l>               <r>journalist<s n="n"/></r></p></e>
 <e>       <p><l>vojaĝo<s n="n"/></l>                   <r>journey<s n="n"/></r></p></e>
@@ -16542,7 +16546,7 @@ TODO??
 
     <!-- Adverbs -->
      
-<e>       <p><l>nekutime<s n="adv"/></l>               <r>unusual<s n="adv"/></r></p></e>
+<e>       <p><l>nekutime<s n="adv"/></l>               <r>unusually<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aldone<s n="adv"/></l>                 <r>incidentally<s n="adv"/></r></p></e>
 
 
@@ -31653,6 +31657,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>vigla<s n="adj"/></l>                  <r>vibrant<s n="adj"/></r></p></e>
 <e r="RL"><p><l>viktimigi<s n="vblex"/></l>            <r>victimize<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>venkinto<s n="n"/></l>                 <r>victor<s n="n"/></r></p></e>
+<e>       <p><l>Viktoro<s n="np"/><s n="ant"/></l>                  <r>Victor<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>viktoriana<s n="adj"/></l>             <r>victorian<s n="adj"/></r></p></e>
 <e r="RL"><p><l>videobendo<s n="n"/></l>               <r>videotape<s n="n"/></r></p></e>
 <e r="RL"><p><l>konkuri<s n="vblex"/></l>              <r>vie<s n="vblex"/></r></p></e>

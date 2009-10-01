@@ -794,12 +794,9 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
   <e>       <p><l>s</l>         <r><s n="np"/><s n="cog"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 
-<pardef n="Michel__np">
-  <e>       <p><l></l>          <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
-</pardef>
-
 <pardef n="Ifans__np">
   <e>       <p><l></l>          <r><s n="np"/><s n="cog"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="np"/><s n="cog"/><s n="pl"/></r></p></e>
 </pardef>
 
 
@@ -7402,7 +7399,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="cooling">         <i>cooling</i><par n="house__n"/></e>
 <e lm="coolness">        <i>coolness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="Cooper">          <i>Cooper</i><par n="Mark__np"/></e>
-<e lm="Cooper">          <i>Cooper</i><par n="Ifans__np"/></e>
+<e lm="Cooper">          <i>Cooper</i><par n="Smith__np"/></e>
 <e lm="cooper">          <i>cooper</i><par n="house__n"/></e>
 <e lm="cooperate">       <i>cooperat</i><par n="liv/e__vblex"/></e>
 <e lm="cooperation">     <i>cooperation</i><par n="house__n"/></e>
@@ -16671,7 +16668,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Michael">         <i>Michael</i><par n="Mark__np"/></e>
 <e lm="Michaela">        <i>Michaela</i><par n="Mary__np"/></e>
 <e lm="Micheal">         <i>Micheal</i><par n="Mark__np"/></e>
-<e lm="Michel">          <i>Michel</i><par n="Michel__np"/></e>
 <e lm="Michel">          <i>Michel</i><par n="Smith__np"/></e>
 <e lm="Michel">          <i>Michel</i><par n="Mark__np"/></e>
 <e lm="Michelle">        <i>Michelle</i><par n="Mary__np"/></e>
@@ -25919,7 +25915,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="vernacular">      <i>vernacular</i><par n="expensive__adj"/></e>
 <e lm="Vernon">          <i>Vernon</i><par n="Mark__np"/></e>
 <e lm="Vernón">          <i>Vernón</i><par n="Mary__np"/></e>
-<e lm="Verona">          <i>Verona</i><par n="Mary__np"/></e>
+<e lm="Verona">          <i>Verona</i><par n="Barcelona__np"/></e>
 <e lm="Veronica">        <i>Veronica</i><par n="Mary__np"/></e>
 <e lm="versatile">       <i>versatile</i><par n="expensive__adj"/></e>
 <e lm="verse">           <i>verse</i><par n="house__n"/></e>

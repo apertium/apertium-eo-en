@@ -450,9 +450,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!--
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vaux"/><s n="fts"/></r></p></e>
 -->
-<e c="TODO">                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
-<e c="TODO">                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
-<e c="TODO">                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
+<e>                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
+<e r="RL" c="TODO">                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
+<e r="RL" c="TODO">                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
 <!-- Ne uzataj en->eo c="TODO" 
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
@@ -558,14 +558,16 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- Jacob 7sept 2009. En direkto eo->en ni provizore sopozu ke estas nominativo -->
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
+<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
 
 <pardef n="Smith__np">
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l>ojn</l>                 <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
+<e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>                           <p><l>ojn</l>                 <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
 
@@ -1040,6 +1042,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kien">                 <i>kien</i><par n="kial__adv"/></e>
 <e lm="kie">                  <i>kie</i><par n="kie__rel"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="kial__adv"/></e>
+
+<e lm="kiamaniere">           <i>kiamanier</i><par n="kial__adv"/></e>
+
 <e lm="kiel">                 <i>kiel</i><par n="after__cnjadv"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="al__pr"/></e>
 <e lm="kiom">                 <i>kiom</i><par n="tro__preadv"/></e>
@@ -11772,7 +11777,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ŝatindi">              <par n="ŝ"/><i>atind</i><par n="i__vblex"/></e>
 <e lm="malvarmetigi">         <i>malvarmetig</i><par n="i__vblex"/></e>
 <e lm="malfervoro">           <i>malfervor</i><par n="o__n"/></e>
-<e lm="Cooper">               <i>Cooper</i><par n="Smith__np"/></e>
 <e lm="barelisto">            <i>barelist</i><par n="ino__n"/></e>
 <e lm="kunlaboro">            <i>kunlabor</i><par n="o__n"/></e>
 <e lm="kunlabora">            <i>kunlabor</i><par n="a__adj"/></e>
@@ -14878,7 +14882,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="gramatika">            <i>gramatik</i><par n="a__adj"/></e>
 <e lm="gramofono">            <i>gramofon</i><par n="o__n"/></e>
 <e lm="gratifiki">            <i>gratifik</i><par n="i__vblex"/></e>
-<e lm="Grant">                <i>Grant</i><par n="Smith__np"/></e>
 <e lm="grajneto">             <i>grajnet</i><par n="o__n"/></e>
 <e lm="grapfrukto">           <i>grapfrukt</i><par n="o__n"/></e>
 <e lm="grafeo">               <i>grafe</i><par n="o__n"/></e>
@@ -15360,7 +15363,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="dommastro">            <i>dommastr</i><par n="o__n"/></e>
 <e lm="domkonstruado">        <i>domkonstruad</i><par n="o__n"/></e>
 <e lm="entenejo">             <i>entenej</i><par n="o__n"/></e>
-<e lm="kiamaniere">           <i>kiamanier</i><par n="e__adv"/></e>
 <e lm="haŭbizo">              <i>ha</i><par n="ŭ"/><i>biz</i><par n="o__n"/></e>
 <e lm="ululo">                <i>ulul</i><par n="o__n"/></e>
 <e lm="plorego">              <i>ploreg</i><par n="o__n"/></e>
@@ -16240,7 +16242,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="diskruciĝejo">         <i>diskruci</i><par n="ĝ"/><i>ej</i><par n="o__n"/></e>
 <e lm="malaltrangulo">        <i>malaltrangul</i><par n="o__n"/></e>
 <e lm="junaĝulo">             <i>juna</i><par n="ĝ"/><i>ul</i><par n="o__n"/></e>
-<e lm="Jovo">                 <i>Jov</i><par n="Mark/o__np"/></e>
 <e lm="juĝista">              <i>ju</i><par n="ĝ"/><i>ist</i><par n="a__adj"/></e>
 <e lm="justico">              <i>justic</i><par n="o__n"/></e>
 <e lm="juĝisto">              <i>ju</i><par n="ĝ"/><i>ist</i><par n="ino__n"/></e>
@@ -16949,7 +16950,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="pistomiksi">           <i>pistomiks</i><par n="i__vblex"/></e>
 <e lm="masoĥismo">            <i>maso</i><par n="ĥ"/><i>ism</i><par n="o__n"/></e>
 <e lm="masoĥisma">            <i>maso</i><par n="ĥ"/><i>ism</i><par n="a__adj"/></e>
-<e lm="Framasono">            <i>Framasono</i><par n="Smith__np"/></e>
 <e lm="meso">                 <i>mes</i><par n="o__n"/></e>
 <e lm="amasbuĉado">           <i>amasbu</i><par n="ĉ"/><i>ad</i><par n="o__n"/></e>
 <e lm="masiva">               <i>masiv</i><par n="a__adj"/></e>
@@ -22833,7 +22833,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kontroladi">           <i>kontrolad</i><par n="i__vblex"/></e>
 <e lm="aŭtentigi">            <i>a</i><par n="ŭ"/><i>tentig</i><par n="i__vblex"/></e>
 <e lm="konfirmi">             <i>konfirm</i><par n="i__vblex"/></e>
-<e lm="Verono">               <i>Verono</i><par n="Mary__np"/></e>
+<e lm="Verono">               <i>Veron<par n="Barcelon/o__np"/></e>
 <e lm="diverstalenta">        <i>diverstalent</i><par n="a__adj"/></e>
 <e lm="multkapabla">          <i>multkapabl</i><par n="a__adj"/></e>
 <e lm="multetalenta">         <i>multetalent</i><par n="a__adj"/></e>
@@ -23349,8 +23349,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="zoologo">              <i>zoolog</i><par n="o__n"/></e>
 <e lm="zoologio">             <i>zoologi</i><par n="o__n"/></e>
 <e lm="Bell">                 <i>Bell</i><par n="Ifans__np"/></e>
+<e lm="Cooper">               <i>Cooper</i><par n="Smith__np"/></e>
 <e lm="Cooper">               <i>Cooper</i><par n="Mark__np"/></e>
-<e lm="Cooper">               <i>Cooper</i><par n="Ifans__np"/></e>
 <e lm="Eroso">                <i>Eroso</i><par n="Mark__np"/></e>
 <e lm="Grant">                <i>Grant</i><par n="Ifans__np"/></e>
 <e lm="Gray">                 <i>Gray</i><par n="Ifans__np"/></e>
