@@ -1228,7 +1228,7 @@ BUT:
 <e>       <p><l>Utaho<s n="np"/><s n="top"/></l>       <r>Utah<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vermonto<s n="np"/><s n="top"/></l>    <r>Vermont<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Okcidenta<b/>Virginio<s n="np"/><s n="top"/></l><r>West<b/>Virginia<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Vaŝingtonio<s n="np"/><s n="top"/></l> <r>Washington<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Vaŝingtonio<s n="np"/><s n="top"/></l> <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Viskonsino<s n="np"/><s n="top"/></l>  <r>Wisconsin<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vajomingo<s n="np"/><s n="top"/></l>   <r>Wyoming<s n="np"/><s n="top"/></r></p></e>
 
@@ -7685,7 +7685,7 @@ TODO??
 <e r="LR"><p><l>provoso<s n="n"/></l>                  <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>biletisto<s n="n"/></l>                <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>manŝirmilo<s n="n"/></l>               <r>guard<s n="n"/></r></p></e>
-<e>       <p><l>Gvatemalio<s n="np"/><s n="top"/></l>  <r>Guatemala<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Gvatemalio<s n="np"/><s n="top"/></l>  <r>Guatemala<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>konjekti<s n="vblex"/></l>             <r>guess<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>konjekto<s n="n"/></l>                 <r>guess<s n="n"/></r></p></e>
 <e r="LR"><p><l>diveni<s n="vblex"/></l>               <r>guess<s n="vblex"/></r></p></e>
@@ -8713,7 +8713,7 @@ TODO??
 <e r="LR"><p><l>spritaĵo<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>trompeto<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
 <e r="LR"><p><l>petolaĵo<s n="n"/></l>                 <r>joke<s n="n"/></r></p></e>
-<e>       <p><l>Jordano<s n="np"/><s n="top"/></l>     <r>Jordan<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Jordano<s n="np"/><s n="top"/></l>     <r>Jordan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>ĵurnalismo<s n="n"/></l>               <r>journalism<s n="n"/></r></p></e>
 <e>       <p><l>ĵurnalisto<s n="n"/></l>               <r>journalist<s n="n"/></r></p></e>
 <e>       <p><l>vojaĝo<s n="n"/></l>                   <r>journey<s n="n"/></r></p></e>
@@ -9284,14 +9284,14 @@ TODO??
 <e>       <p><l>pulmo<s n="n"/></l>                    <r>lung<s n="n"/></r></p></e>
 <e>       <p><l>volupto<s n="n"/></l>                  <r>lust<s n="n"/></r></p></e>
 <e r="LR"><p><l>voluptemo<s n="n"/></l>                <r>lust<s n="n"/></r></p></e>
-<e>       <p><l>Luksemburgo<s n="np"/><s n="top"/></l> <r>Luxembourg<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Luksemburgo<s n="np"/><s n="top"/></l> <r>Luxembourg<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>lirika<s n="adj"/></l>                 <r>lyric<s n="adj"/></r></p></e>
 
 <!-- liriko(j) = lyric  -      kantoteksto(j) = lyrics -->
 <e>       <p><l>liriko<s n="n"/><s n="sg"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
-<e>       <p><l>liriko<s n="n"/><s n="pl"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>liriko<s n="n"/><s n="pl"/></l>        <r>lyric<s n="n"/><s n="sg"/></r></p></e>
 <e>       <p><l>kantoteksto<s n="n"/><s n="sg"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
-<e>       <p><l>kantoteksto<s n="n"/><s n="pl"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>kantoteksto<s n="n"/><s n="pl"/></l>   <r>lyric<s n="n"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>maŝino<s n="n"/></l>                   <r>machine<s n="n"/></r></p></e>
 <e>       <p><l>maŝinaro<s n="n"/></l>                 <r>machinery<s n="n"/></r></p></e>
@@ -9454,7 +9454,7 @@ TODO??
 <e r="LR"><p><l>majstro<s n="n"/></l>                  <r>master<s n="n"/></r></p></e>
 <e r="LR"><p><l>magistro<s n="n"/></l>                 <r>master<s n="n"/></r></p></e>
 <e r="LR"><p><l>kvatirmastro<s n="n"/></l>             <r>master<s n="n"/></r></p></e>
-<e r="LR"><p><l>s-ro<s n="n"/></l>                     <r>master<s n="n"/></r></p></e>
+<e i="yes"><p><l>s-ro<s n="n"/></l>                    <r>master<s n="n"/></r></p></e>
 <e>       <p><l>masturbo<s n="n"/></l>                 <r>masturbation<s n="n"/></r></p></e>
 <e>       <p><l>matĉo<s n="n"/></l>                    <r>match<s n="n"/></r></p></e>
 <e r="LR"><p><l>konkursero<s n="n"/></l>               <r>match<s n="n"/></r></p></e>
@@ -12268,7 +12268,7 @@ TODO??
 <e>       <p><l>rigideco<s n="n"/></l>                 <r>rigidity<s n="n"/></r></p></e>
 <e>       <p><l>rigora<s n="adj"/></l>                 <r>rigourous<s n="adj"/></r></p></e>
 <e>       <p><l>rigoro<s n="n"/></l>                   <r>rigour<s n="n"/></r></p></e>
-<e>       <p><l>rigoreco<s n="n"/></l>                 <r>rigour<s n="n"/></r></p></e>
+<e r="LR"><p><l>rigoreco<s n="n"/></l>                 <r>rigour<s n="n"/></r></p></e>
 <e r="LR"><p><l>severeco<s n="n"/></l>                 <r>rigour<s n="n"/></r></p></e>
 <e r="LR"><p><l>streĉeco<s n="n"/></l>                 <r>rigour<s n="n"/></r></p></e>
 <e>       <p><l>ringo<s n="n"/></l>                    <r>ring<s n="n"/></r></p></e>
@@ -12431,7 +12431,7 @@ TODO??
 <e r="LR"><p><l>impeti<s n="vblex"/></l>               <r>rush<s n="vblex"/></r></p></e>
 <e>       <p><l>rapidi<s n="vblex"/></l>               <r>rush<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>rapidegi<s n="vblex"/></l>             <r>rush<s n="vblex"/></r></p></e>
-<e>       <p><l>Ruslando<s n="np"/><s n="top"/></l>    <r>Russia<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Ruslando<s n="np"/><s n="top"/></l>    <r>Russia<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>ruslanda<s n="adj"/></l>               <r>Russian<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ruslandano<s n="n"/></l>               <r>Russian<s n="n"/></r></p></e>
 <e>       <p><l>senkompata<s n="adj"/></l>             <r>ruthless<s n="adj"/></r></p></e>
