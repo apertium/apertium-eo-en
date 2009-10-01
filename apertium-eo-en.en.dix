@@ -130,6 +130,11 @@
 </pardef>
 
 
+<pardef n="ou"><!-- color/colour, harbour / harbor, favour / favor -->
+  <e>       <p><l>ou</l>         <r>ou</r></p></e>
+  <e r="LR"><p><l>o</l>        <r>ou</r></p></e>
+</pardef>
+
 
   
 <pardef n="guionet">
@@ -6873,21 +6878,26 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="colonialist">     <i>colonialist</i><par n="expensive__adj"/></e>
 <e lm="colonise">        <i>colonis</i><par n="liv/e__vblex"/></e>
 <e lm="colonisation">    <i>colonisation</i><par n="house__n"/></e>
-<e lm="colonist">        <i>colonist</i><par n="house__n"/></e>
 <e r="LR" lm="colonization"><p><l>colonization</l><r>colonisation</r></p><par n="house__n"/></e>
+<e lm="colonist">        <i>colonist</i><par n="house__n"/></e>
 <e lm="colonizing">      <i>colonizing</i><par n="expensive__adj"/></e>
 <e lm="colophon">        <i>colophon</i><par n="house__n"/></e>
+
 <!-- XXX TODO Provu cxu en ordo
-<e lm="color">                <i>color</i><par n="ca__adj"/></e>
+<e lm="colour">                <i>colour</i><par n="ca__adj"/></e>
+<e lm="watercolour">     <i>watercolour</i><par n="house__n"/></e>
 -->
-<e lm="color">           <i>color</i><par n="vow__vblex"/></e>
-<e r="LR" lm="color">    <p><l>color</l>     <r>colour</r></p><par n="house__n"/></e>
+<e lm="watercolour">     <i>watercol</i><par n="ou"/><i>r</i><par n="house__n"/></e>
+<e lm="colour">           <i>col</i><par n="ou"/><i>r</i><par n="accept__vblex"/></e>
+<e lm="colour">          <i>col</i><par n="ou"/><i>r</i><par n="vow__vblex"/></e>
+<e lm="colour">           <i>col</i><par n="ou"/><i>r</i><par n="house__n"/></e>
+<e lm="colourful">        <i>col</i><par n="ou"/><i>rful</i><par n="expensive__adj"/></e>
+<e lm="colourless">       <i>col</i><par n="ou"/><i>rless</i><par n="expensive__adj"/></e>
+<e lm="discolour">        <i>discol</i><par n="ou"/><i>r</i><par n="accept__vblex"/></e>
+
+
 <e lm="Colorado">        <i>Colorado</i><par n="Barcelona__np"/></e>
 <e lm="colossus">        <i>colossus</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="colour">          <i>colour</i><par n="house__n"/></e>
-<e lm="colour">          <i>colour</i><par n="accept__vblex"/></e>
-<e lm="colourful">       <i>colourful</i><par n="expensive__adj"/></e>
-<e lm="colourless">      <i>colourless</i><par n="expensive__adj"/></e>
 <e lm="Colt">            <i>Colt</i><par n="Mark__np"/></e>
 <e lm="Colten">          <i>Colten</i><par n="Mark__np"/></e>
 <e lm="Colton">          <i>Colton</i><par n="Mark__np"/></e>
@@ -8789,8 +8799,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="disclose">        <i>disclos</i><par n="liv/e__vblex"/></e>
 <e lm="disclosure">      <i>disclosure</i><par n="house__n"/></e>
 <e lm="disco">           <i>disco</i><par n="up__n"/></e>
-<e lm="discolor">        <i>discolor</i><par n="accept__vblex"/></e>
-<e lm="discolour">       <i>discolour</i><par n="accept__vblex"/></e>
 <e lm="discomfit">       <i>discomfit</i><par n="admit__vblex"/></e>
 <e lm="discomfort">      <i>discomfort</i><par n="house__n"/></e>
 <e lm="disconnect">      <i>disconnect</i><par n="accept__vblex"/></e>
@@ -26317,7 +26325,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="watchword">       <i>watchword</i><par n="up__n"/></e>
 <e lm="water">           <i>water</i><par n="house__n"/></e>
 <e lm="water">           <i>water</i><par n="accept__vblex"/></e>
-<e lm="watercolour">     <i>watercolour</i><par n="house__n"/></e>
 <e lm="waterfall">       <i>waterfall</i><par n="house__n"/></e>
 <e lm="watermelon">      <i>watermelon</i><par n="house__n"/></e>
 <e lm="waterproof">      <i>waterproof</i><par n="expensive__adj"/></e>
