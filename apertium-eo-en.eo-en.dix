@@ -108,35 +108,71 @@
 		<sdef n="nom" /> 
 	</sdefs>
 	<pardefs>
- 
-<pardef n="Abcx">
-  <e>       <re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬ][IàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú]*</re></e>
-</pardef>
 
 <pardef n="Abc">
   <e>       <re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬÆØÅæøåàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñúŵã -.]*</re></e>
 </pardef>
-
-
-<pardef n="abc">
-  <e>       <re>[IàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú]+</re></e>
-</pardef>
-
-
-<pardef n="MF_GD">
-<!--				<l><s n="GD"/></l>   Jacob 24a de feb 2009. Ni elektu virajn formojn se estas dubo. -->  
-  <e>       <p><l><s n="m"/></l><r></r></p></e>
-  <e r="LR"><p><l><s n="f"/></l><r></r></p></e>
-</pardef>
-
 
 <pardef n="litero">
   <e>       <i><s n="num"/><s n="sg"/></i></e>
 <!--  <e>       <i><s n="np"/><s n="alpha"/></i></e> -->
 </pardef>
 	</pardefs>
-
+	
+	
 	<section id="main" type="standard">
+
+<e r="RL"><p><l>fini<s n="vblex"/></l>                 <r>be<g><b/>over</g><s n="vbser"/></r></p></e>
+<e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>there<b/>be<s n="vblex"/></r></p></e>
+
+
+<e>       <p><l>povi<s n="vaux"/></l>                  <r>can<s n="vaux"/></r></p></e>
+
+
+<e r="LR" c="devus - should"><p><l>devi<s n="vaux"/><s n="cni"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
+
+
+<e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
+<e r="RL"><p><l>voli<s n="vaux"/></l>                  <r>would<s n="vaux"/></r></p></e>
+<!-- ne enmetu will - will estas nur futuro kaj oni zorgu pri tio dum transfero
+ <e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>-->
+<!-- LR: Esperanto al angla - riparoj de vaux-verboj -->
+<e r="LR" c="volus - would"><p><l>voli<s n="vaux"/><s n="cni"/></l><r>would<s n="vaux"/><s n="inf"/></r></p></e>
+<e r="LR" c="volas - want"><p><l>voli<s n="vaux"/><s n="pres"/></l><r>want<s n="vaux"/><s n="pres"/></r></p></e>
+<e r="LR" c="volis - wanted"><p><l>voli<s n="vaux"/><s n="past"/></l><r>want<s n="vaux"/><s n="past"/></r></p></e>
+<e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vaux"/><s n="pres"/></r></p></e>
+
+
+<e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
+<e r="LR" c="povus - could"><p><l>povi<s n="vaux"/><s n="cni"/></l><r>can<s n="vaux"/><s n="past"/></r></p></e>
+
+
+<!-- Auxillary verbs - should really be handled in tranfer (all of them?) -->
+<e>       <p><l>devi<s n="vaux"/><s n="fti"/></l>      <r>shall<s n="vaux"/><s n="inf"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/><s n="cni"/></l>      <r>should<s n="vaux"/><s n="inf"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/><s n="pres"/></l>     <r>must<s n="vaux"/><s n="inf"/></r></p></e>
+<e>       <p><l>devi<s n="vaux"/></l>                  <r>shall<s n="vaux"/></r></p></e>
+<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>should<s n="vaux"/></r></p></e>
+<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>must<s n="vaux"/></r></p></e>
+
+<e>       <p><l>ebli<s n="vaux"/></l>                  <r>might<s n="vaux"/></r></p></e>
+
+<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>have<g><b/>to</g><s n="vaux"/></r></p></e>
+
+
+<e>       <p><l>esti<s n="vbser"/></l>                 <r>be<s n="vbser"/></r></p></e>
+<e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>to<b/>be<s n="vbser"/></r></p></e>
+
+<e>       <p><l>fari<s n="vblex"/></l>                 <r>do<s n="vblex"/></r></p></e>
+<e>       <p><l>havi<s n="vblex"/></l>                 <r>have<s n="vblex"/></r></p></e>
+
+
+<e r="RL"><p><l>fari<s n="vblex"/></l>                 <r>do<s n="vbdo"/></r></p></e>
+<e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<s n="vbhaver"/></r></p></e>
+
+
+
+
 
 <!-- TODO: Diskutu kun Francis. adj formo al n? 
 <e>       <p><l>abona<s n="adj"/></l>                  <r>subscription<s n="n"/></r></p></e>
@@ -248,7 +284,6 @@
 <e>       <p><l>dividita<b/>per<s n="cnjadv"/></l>     <r>divided<b/>by<s n="cnjadv"/></r></p></e>
 <e>       <p><l>transdoni<s n="vblex"/></l>            <r>hand<g><b/>over</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>transpreni<s n="vblex"/></l>           <r>take<g><b/>over</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e r="RL"><p><l>fini<s n="vblex"/></l>                 <r>be<g><b/>over</g><s n="vbser"/></r></p></e>
 <e>       <p><l>denove<b/>kaj<b/>denove<s n="adv"/></l><r>over<b/>and<b/>over<s n="adv"/></r></p></e>
 
 <e>       <p><l>veki<s n="vblex"/></l>                 <r>wake<s n="vblex"/></r></p></e>
@@ -1708,11 +1743,8 @@ TODO??
 <e>       <p><l>malferma<s n="adj"/></l>               <r>open<s n="adj"/></r></p></e>
 <e>       <p><l>ĉi<b/>tie<s n="adv"/></l>              <r>here<s n="adv"/></r></p></e>
 <e>       <p><l>paro<s n="n"/></l>                     <r>pair<s n="n"/></r></p></e>
-<e>       <p><l>povi<s n="vaux"/></l>                  <r>can<s n="vaux"/></r></p></e>
 
-<!-- ne enmetu will - will estas nur futuro kaj oni zorgu pri tio dum transfero
- <e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>-->
-<e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
+
 <e>       <p><l>aro<s n="n"/></l>                      <r>set<s n="n"/></r></p></e>
 <e>       <p><l>bela<s n="adj"/></l>                   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
 <e>       <p><l>bona<s n="adj"/></l>                   <r>good<s n="adj"/><s n="sint"/></r></p></e>
@@ -1720,22 +1752,8 @@ TODO??
 <e>       <p><l>rapida<s n="adj"/></l>                 <r>fast<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>quick<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>swift<s n="adj"/></r></p></e>
-<e>       <p><l>fari<s n="vblex"/></l>                 <r>do<s n="vblex"/></r></p></e>
-<e>       <p><l>havi<s n="vblex"/></l>                 <r>have<s n="vblex"/></r></p></e>
-<e>       <p><l>esti<s n="vbser"/></l>                 <r>be<s n="vbser"/></r></p></e>
-<e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>to<b/>be<s n="vbser"/></r></p></e>
 
 
-<!-- Auxillary verbs - should really be handled in tranfer (all of them?) -->
-<e>       <p><l>devi<s n="vaux"/><s n="fti"/></l>      <r>shall<s n="vaux"/><s n="inf"/></r></p></e>
-<e>       <p><l>devi<s n="vaux"/><s n="cni"/></l>      <r>should<s n="vaux"/><s n="inf"/></r></p></e>
-<e>       <p><l>devi<s n="vaux"/><s n="pres"/></l>     <r>must<s n="vaux"/><s n="inf"/></r></p></e>
-<e>       <p><l>devi<s n="vaux"/></l>                  <r>shall<s n="vaux"/></r></p></e>
-<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>should<s n="vaux"/></r></p></e>
-<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>must<s n="vaux"/></r></p></e>
-<e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
-<e r="RL"><p><l>voli<s n="vaux"/></l>                  <r>would<s n="vaux"/></r></p></e>
-<e>       <p><l>ebli<s n="vaux"/></l>                  <r>might<s n="vaux"/></r></p></e>
 <e>       <p><l>malsupren<s n="adv"/></l>              <r>down<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiam<s n="adv"/></l>                   <r>always<s n="adv"/></r></p></e>
 <e r="LR"><p><l>jen<s n="adv"/></l>                    <r>here<s n="adv"/></r></p></e>
@@ -1881,7 +1899,6 @@ TODO??
 <e r="RL"><p><l>flegi<s n="vblex"/></l>                <r>take<g><b/>care<b/>of</g><s n="vblex"/></r></p></e>
 
 <e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<g><b/>got</g><s n="vblex"/></r></p></e>
-<e r="RL"><p><l>devi<s n="vaux"/></l>                  <r>have<g><b/>to</g><s n="vaux"/></r></p></e>
 
 <e r="RL"><p><l>instali<s n="vblex"/></l>              <r>set<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>klopodi<s n="vblex"/></l>              <r>set<g><b/>about</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -1897,7 +1914,6 @@ TODO??
 
 
 <e>       <p><l>malsati<s n="vblex"/></l>              <r>be<g><b/>hungry</g><s n="vblex"/></r></p></e>
-<e r="RL"><p><l>esti<s n="vbser"/></l>                 <r>there<b/>be<s n="vblex"/></r></p></e>
 <e>       <p><l>fuŝi<s n="vblex"/></l>                 <r>mess<g><b/>up</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>manki<s n="vblex"/></l>                <r>be<g><b/>missing</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>naskiĝi<s n="vblex"/></l>              <r>be<g><b/>born</g><s n="vblex"/></r></p></e>
@@ -16412,8 +16428,6 @@ TODO??
 <e r="RL"><p><l>belega<s n="adj"/></l>                 <r>lovely<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>blinda<s n="adj"/></l>                 <r>blind<s n="adj"/><s n="sint"/></r></p></e>
 <e r="RL"><p><l>blonda<s n="adj"/></l>                 <r>blond<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>fari<s n="vblex"/></l>                 <r>do<s n="vbdo"/></r></p></e>
-<e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<s n="vbhaver"/></r></p></e>
 <e r="RL"><p><l>ĵeti<s n="vblex"/></l>                 <r>sling<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kadukiĝi<s n="vblex"/></l>             <r>age<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kanaligi<s n="vblex"/></l>             <r>pipe<s n="vblex"/></r></p></e>
@@ -25894,7 +25908,6 @@ TODO??
 <e>       <p><l>monpaperujo<s n="n"/></l>              <r>wallet<s n="n"/></r></p></e>
 <e r="RL"><p><l>draŝi<s n="vblex"/></l>                <r>wallop<s n="vblex"/></r></p></e>
 <e>       <p><l>rosmaro<s n="n"/></l>                  <r>walrus<s n="n"/></r></p></e>
-<e r="RL"><p><l>deziro<s n="n"/></l>                   <r>want<s n="n"/></r></p></e>
 <e>       <p><l>trili<s n="vblex"/></l>                <r>warble<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kvartalo<s n="n"/></l>                 <r>ward<s n="n"/></r></p></e>
 <e r="RL"><p><l>singarde<s n="adv"/></l>               <r>warily<s n="adv"/></r></p></e>

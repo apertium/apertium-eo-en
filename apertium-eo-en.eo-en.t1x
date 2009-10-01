@@ -15,12 +15,10 @@
   <def-cat n="c_vb_fti">
      <cat-item tags="vblex.fti"/>
      <cat-item tags="vbser.fti"/>
-     <cat-item tags="vaux.fti"/>
   </def-cat>
   <def-cat n="c_vb_cni">
      <cat-item tags="vblex.cni"/>
      <cat-item tags="vbser.cni"/>
-     <cat-item tags="vaux.cni"/>
   </def-cat>
   <def-cat n="c_vb_pp2">
      <cat-item tags="vblex.pp2.*"/>
@@ -30,7 +28,7 @@
   <def-cat n="c_vb_pp3">
      <cat-item tags="vblex.pp3.*"/>
      <cat-item tags="vbser.pp3.*"/>
-     <cat-item tags="vaux.pp3.*"/>
+<!--     <cat-item tags="vaux.pp3.*"/> -->
   </def-cat>
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>

@@ -447,13 +447,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>i</l>                   <r>i<s n="vaux"/><s n="inf"/></r></p></e>
 <e>                           <p><l>as</l>                  <r>i<s n="vaux"/><s n="pres"/></r></p></e>
 <e>                           <p><l>is</l>                  <r>i<s n="vaux"/><s n="past"/></r></p></e>
-<e c="TODO" r="RL">                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
 <!--
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vaux"/><s n="fts"/></r></p></e>
 -->
-<e c="TODO" r="RL">                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
+<e c="TODO">                           <p><l>us</l>                  <r>i<s n="vaux"/><s n="cni"/></r></p></e>
+<e c="TODO">                           <p><l>anta</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
+<e c="TODO">                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="ger"/></r></p></e>
-<e c="TODO" r="RL">                           <p><l>os</l>                  <r>i<s n="vaux"/><s n="fti"/></r></p></e>
 <!-- Ne uzataj en->eo c="TODO" 
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
 <e>                           <p><l>ita</l>                 <r>i<s n="vaux"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -565,7 +565,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>oj</l>                  <r><s n="np"/><s n="cog"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="RL">                    <p><l></l>                    <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL">                    <p><l>ojn</l>                 <r><s n="np"/><s n="cog"/><s n="pl"/><s n="acc"/></r></p></e>
 </pardef>
 
 
@@ -647,6 +647,17 @@ Necesas difini paradigmon por adj-nomo terminoj
 	</pardefs>
 
 	<section id="main" type="standard">
+
+<e lm="povi">                 <i>pov</i><par n="pov/i__vaux"/></e>
+<e lm="devi">                 <i>dev</i><par n="pov/i__vaux"/></e>
+<e lm="voli">                 <i>vol</i><par n="pov/i__vaux"/></e>
+<e r="RL" lm="ebli">                 <i>ebl</i><par n="pov/i__vaux"/></e>
+
+<!-- ne enmetu helpverbon voli por will - will estas nur futuro kaj oni zorgu pri tio dum transfero
+    <e lm="voli"><i>vol</i><par n="pov/i__vaux"/></e>
+-->
+
+
 
 <!--
 <e r="RL"><p><l>surfaco RL nur DE lemmo AL surfaco</l><r>lemmo RL nur DE lemmo AL surfaco</r></p></e>
@@ -980,14 +991,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="en">                   <i>en</i><par n="al__pr"/></e>
 <e lm="ene de">               <i>ene<b/>de</i><par n="al__pr"/></e>
 <e lm="en konsento kun">      <i>en<b/>konsento<b/>kun</i><par n="al__pr"/></e>
-<e lm="povi">                 <i>pov</i><par n="pov/i__vaux"/></e>
-<e lm="devi">                 <i>dev</i><par n="pov/i__vaux"/></e>
-<e lm="voli">                 <i>vol</i><par n="pov/i__vaux"/></e>
-<e lm="ebli">                 <i>ebl</i><par n="pov/i__vaux"/></e>
-
-<!-- ne enmetu helpverbon voli por will - will estas nur futuro kaj oni zorgu pri tio dum transfero
-    <e lm="voli"><i>vol</i><par n="pov/i__vaux"/></e>
--->
 
     
     
@@ -6155,7 +6158,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="servi">                <i>serv</i><par n="i__vblex"/></e>
 <e lm="servo">                <i>serv</i><par n="o__n"/></e>
 <e lm="servotablo">           <i>servotabl</i><par n="o__n"/></e>
-<e lm="se satiĝi">            <i>se<b/>sati</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="severa">               <i>sever</i><par n="a__adj"/></e>
 <e lm="sezono">               <i>sezon</i><par n="o__n"/></e>
 <e lm="sidejo">               <i>sidej</i><par n="o__n"/></e>
