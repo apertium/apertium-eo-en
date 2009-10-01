@@ -250,16 +250,18 @@
 <e>       <p><l>transpreni<s n="vblex"/></l>           <r>take<g><b/>over</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>fini<s n="vblex"/></l>                 <r>be<g><b/>over</g><s n="vbser"/></r></p></e>
 <e>       <p><l>denove<b/>kaj<b/>denove<s n="adv"/></l><r>over<b/>and<b/>over<s n="adv"/></r></p></e>
+
 <e>       <p><l>veki<s n="vblex"/></l>                 <r>wake<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>wake<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>awake<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>waken<s n="vblex"/></r></p></e>
-<e>       <p><l>vekiĝi<s n="vblex"/></l>               <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e r="LR"><p><l>ellitigi<s n="vblex"/></l>             <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e r="LR"><p><l>ellitiĝi<s n="vblex"/></l>             <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>veki<s n="vblex"/></l>                 <r>get<g>PRN<b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+
+<e>       <p><l>vekiĝi<s n="vblex"/></l>               <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>vekiĝi<s n="vblex"/></l>               <r>get<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
-<e>       <p><l>reakiri<s n="vblex"/></l>              <r>get<g>PRN<b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>vekiĝi<s n="vblex"/></l>               <r>awake<s n="vblex"/></r></p></e>
+
+<e r="LR"><p><l>ellitiĝi<s n="vblex"/></l>             <r>wake<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
+<e r="RL"><p><l>reakiri<s n="vblex"/></l>              <r>get<g>PRN<b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>reveni<s n="vblex"/></l>               <r>get<g><b/>back</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>kapitulaci<s n="vblex"/></l>           <r>sell<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e>       <p><l>forvendi<s n="vblex"/></l>             <r>sell<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p></e>
@@ -23684,7 +23686,7 @@ TODO??
 <e>       <p><l>rifuĝinto<s n="n"/></l>                <r>refugee<s n="n"/></r></p></e>
 <e>       <p><l>refuto<s n="n"/></l>                   <r>refutation<s n="n"/></r></p></e>
 <e r="LR"><p><l>reatingi<s n="vblex"/></l>             <r>regain<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>reakiri<s n="vblex"/></l>              <r>regain<s n="vblex"/></r></p></e>
+<e><p><l>reakiri<s n="vblex"/></l>              <r>regain<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>rigardi<s n="vblex"/></l>              <r>regard<s n="vblex"/></r></p></e>
 <e>       <p><l>regento<s n="n"/></l>                  <r>regent<s n="n"/></r></p></e>
 <e>       <p><l>reĝmortigo<s n="n"/></l>               <r>regicide<s n="n"/></r></p></e>
@@ -32762,16 +32764,21 @@ The trick below seems only to work when we don't translate ANY cognomens, to DON
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]* [A-ZÚ][a-zõéóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 -->
-<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e> -->
+<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e> 
 <e>       <par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
+-->
 
-
-<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>-->
+<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
 <e>       <par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
+-->
+
 <!--
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
 <e>       <re>[A-ZÚa-zéõóöäíáòñú]* [A-ZÚa-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
 <e>       <re>[A-ZÚa-zéõóöäíáòñú]*</re><i><s n="np"/><s n="ant"/></i></e>
 -->
+
+<e>       <par n="Abc"/><i><s n="np"/></i></e>
+
 	</section>
 </dictionary>
