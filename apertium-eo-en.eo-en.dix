@@ -148,7 +148,7 @@
 <e r="LR" c="povus - could"><p><l>povi<s n="vaux"/><s n="cni"/></l><r>can<s n="vaux"/><s n="past"/></r></p></e>
 
 <e r="LR" c="povante - can"><p><l>povi<s n="vaux"/><s n="ger"/></l><r>can<s n="vaux"/><s n="pres"/></r></p></e>
-<e r="LR" c="devante - must"><p><l>devi<s n="vaux"/><s n="ger"/><r>must<s n="vaux"/><s n="inf"/></r></p></e>
+<e r="LR" c="devante - needing"><p><l>devi<s n="vaux"/><s n="ger"/></l><r>need<s n="vblex"/><s n="ger"/></r></p></e>
 
 <!-- Auxillary verbs - should really be handled in tranfer (all of them?) -->
 <e>       <p><l>devi<s n="vaux"/><s n="fti"/></l>      <r>shall<s n="vaux"/><s n="inf"/></r></p></e>
