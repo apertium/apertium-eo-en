@@ -2115,17 +2115,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="di/e__vblex"><e><par n="liv/e__vblex"/></e></pardef>
 
 <pardef n="dict/um__n">
-  <e>       <p><l>a</l>         <r>um<s n="n"/><s n="pl"/></r></p></e>
-  <e>       <p><l>ums</l>       <r>um<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>um</l>        <r>um<s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>a</l>         <r>um<s n="n"/><s n="pl"/></r></p></e>
+  <e r="LR">       <p><l>ums</l>       <r>um<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
-<pardef n="r/ide__vblex">
-  <e>       <p><l>iding</l>     <r>ide<s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ode</l>       <r>ide<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>idden</l>     <r>ide<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ide</l>       <r>ide<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ides</l>      <r>ide<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
 
 <pardef n="up__n">
   <e>       <i></i><par n="house__n"/></e>
@@ -2138,15 +2132,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e r="RL"><p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
 <pardef n="spokespe/rson__n">
-  <e>       <p><l>ople</l>      <r>rson<s n="n"/><s n="pl"/></r></p></e>
-  <e>       <p><l>oples</l>     <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
-  <e>       <p><l>rsons</l>     <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>rson</l>      <r>rson<s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ople</l>      <r>rson<s n="n"/><s n="pl"/></r></p></e>
+  <e r="LR">       <p><l>oples</l>     <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+  <e r="LR">       <p><l>rsons</l>     <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="gruel/ling__adj">
-  <e r="LR"><p><l>ing</l>       <r>ling<s n="adj"/></r></p></e>
   <e>       <p><l>ling</l>      <r>ling<s n="adj"/></r></p></e>
+  <e r="LR"><p><l>ing</l>       <r>ling<s n="adj"/></r></p></e>
 </pardef>
 <pardef n="hepatiti/s__n">
   <e>       <p><l>des</l>       <r>s<s n="n"/><s n="pl"/></r></p></e>
@@ -2159,21 +2154,24 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="fuel__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ling</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ling</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e r="LR">       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e  r="LR">       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
 </pardef>
+
 <pardef n="medal/list__n">
-  <e r="LR"><p><l>ists</l>      <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+  <e>       <p><l>list</l>      <r>list<s n="n"/><s n="sg"/></r></p></e>
   <e r="LR"><p><l>ist</l>       <r>list<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>lists</l>     <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
-  <e>       <p><l>list</l>      <r>list<s n="n"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>ists</l>      <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="jut__vblex">
   <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -8646,6 +8644,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="didactic">        <i>didactic</i><par n="expensive__adj"/></e>
 <e lm="Didier">          <i>Didier</i><par n="Mark__np"/></e>
 <e lm="Didío">           <i>Didío</i><par n="Mark__np"/></e>
+<e lm="Georgie">              <i>Georgie</i><par n="Mary__np"/></e>
+<e lm="Turner">               <i>Turner</i><par n="Mark__np"/></e>
+<e lm="Verona" r="RL">               <i>Verona</i><par n="Mary__np"/></e>
 
 <e lm="dice" r="RL" >    <p><l>die</l>      <r>dice<s n="n"/><s n="sg"/></r></p></e>
 <e lm="dice">            <p><l>dice</l>     <r>dice<s n="n"/><s n="pl"/></r></p></e>
@@ -18492,7 +18493,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="overpower">       <i>overpower</i><par n="accept__vblex"/></e>
 <e lm="overpriced">      <i>overpriced</i><par n="expensive__adj"/></e>
 <e lm="overproduction">  <i>overproduction</i><par n="house__n"/></e>
-<e lm="override">        <i>overr</i><par n="r/ide__vblex"/></e>
+<e lm="override">        <i>overr</i><par n="ab/ide__vblex"/></e>
 <e lm="overriding">      <i>overriding</i><par n="expensive__adj"/></e>
 <e lm="overrule">        <i>overrul</i><par n="liv/e__vblex"/></e>
 <e lm="overrun">         <i>overrun</i><par n="up__n"/></e>
@@ -20846,7 +20847,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="reinflate">       <i>reinflat</i><par n="liv/e__vblex"/></e>
 <e lm="reinforce">       <i>reinforc</i><par n="liv/e__vblex"/></e>
 <e lm="reinforcement">   <i>reinforcement</i><par n="up__n"/></e>
-<e lm="reinstall">       <i>reinstall</i><par n="fuel__vblex"/></e>
+<e lm="reinstall">       <i>reinstal</i><par n="fuel__vblex"/></e>
 <e lm="reinstate">       <i>reinstat</i><par n="liv/e__vblex"/></e>
 <e lm="reinstatement">   <i>reinstatement</i><par n="up__n"/></e>
 <e lm="reintegrate">     <i>reintegrat</i><par n="liv/e__vblex"/></e>
