@@ -219,6 +219,7 @@
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
 </pardef>
 
+<pardef n="ca__adj"><e><par n="expensive__adj"/></e></pardef>
 
 <!-- Permesu provizore ke la "sint" mankas. Tio ĝenerale ne estas bona ideo, ĉar ĝi necesas por ekz "pli granda" -> "bigger" 
 <pardef n="sint">
@@ -528,7 +529,6 @@
 <e r="LR">                    <p><l>s'</l>                  <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e> -->
 </pardef>
 
-<pardef n="ca__adj"><e><par n="house__n"/></e></pardef>
 <pardef n="up__n"><e><i></i><par n="house__n"/></e></pardef>
 <pardef n="vu__n"><e><i></i><par n="house__n"/></e></pardef>
 
@@ -1004,6 +1004,17 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ing</l>       <r>e<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+<pardef n="di/e__vblex"><e><par n="liv/e__vblex"/></e></pardef>
+
+<pardef n="d/ie__vblex">
+  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>ies</l>       <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ying</l>      <r>ie<s n="vblex"/><s n="ger"/></r></p></e>
+</pardef>
+
     
 <pardef n="appl/y__vblex">
   <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="inf"/></r></p></e>
@@ -1045,6 +1056,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+<pardef n="mix__vblex"><e><par n="approach__vblex"/></e></pardef>
 
 <pardef n="admit__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
@@ -1054,15 +1066,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+<pardef n="jut__vblex"><e><par n="admit__vblex"/></e></pardef>
 
 <pardef n="fit__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e r="LR"><p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e r="LR"><p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e><p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e><p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
@@ -1319,15 +1330,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-
-<pardef n="d/ie__vblex">
-  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ies</l>       <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ying</l>      <r>ie<s n="vblex"/><s n="ger"/></r></p></e>
-</pardef>
 
 <pardef n="d/ig__vblex">
   <e>       <p><l>ig</l>        <r>ig<s n="vblex"/><s n="inf"/></r></p></e>
@@ -2091,8 +2093,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 
 
-<pardef n="mix__vblex"><e><par n="approach__vblex"/></e></pardef>
-
 <pardef n="hal/f__n">
   <e>       <p><l>ves</l>       <r>f<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>f</l>         <r>f<s n="n"/><s n="sg"/></r></p></e>
@@ -2116,7 +2116,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ging</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-<pardef n="di/e__vblex"><e><par n="liv/e__vblex"/></e></pardef>
 
 <pardef n="dict/um__n">
   <e>       <p><l>um</l>        <r>um<s n="n"/><s n="sg"/></r></p></e>
@@ -2173,13 +2172,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>lists</l>     <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e r="LR"><p><l>ists</l>      <r>list<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
-<pardef n="jut__vblex">
-  <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
+
+
+
 <pardef n="trot__vblex">
   <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -2224,14 +2220,13 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 
 
-
-
 <pardef n="panic__vblex">
-  <e>       <p><l>king</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>king</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 <pardef n="kid__vblex">
   <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
@@ -12925,9 +12920,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hour">            <i>hour</i><par n="month__n"/></e>
 <e lm="hourlong">        <i>hourlong</i><par n="expensive__adj"/></e>
 <e lm="house">           <i>house</i><par n="house__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="house">                <i>hous</i><par n="di/e__vblex"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="house">                <i>hous</i><par n="di/e__vblex"/></e>
 <e lm="household">       <i>household</i><par n="expensive__adj"/></e>
 <e lm="household">       <i>household</i><par n="house__n"/></e>
 <e lm="householder">     <i>householder</i><par n="house__n"/></e>
@@ -15701,9 +15695,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="London">          <i>London</i><par n="Barcelona__np"/></e>
 <e lm="London">          <i>London</i><par n="Mark__np"/></e>
 <e lm="London">          <i>London</i><par n="Mary__np"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="london">               <i>london</i><par n="ca__adj"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="London">               <i>London</i><par n="ca__adj"/></e>
 <e lm="lone">            <i>lone</i><par n="expensive__adj"/></e>
 <e lm="lonely">          <i>lonel</i><par n="happ/y__adj"/></e>
 <e lm="lonesome">        <i>lonesome</i><par n="expensive__adj"/></e>
@@ -15783,9 +15776,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="loving">          <i>loving</i><par n="expensive__adj"/></e>
 <e lm="low">             <i>low</i><par n="long/__adj"/></e>
 <e lm="low">             <i>low</i><par n="maybe__adv"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="low">                  <i>low</i><par n="vu__n"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="low">                  <i>low</i><par n="vu__n"/></e>
 <e lm="low-cost">        <i>low-cost</i><par n="expensive__adj"/></e>
 <e lm="low-end">         <i>low-end</i><par n="expensive__adj"/></e>
 <e lm="lower">           <i>lower</i><par n="accept__vblex"/></e>
@@ -16101,9 +16093,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="mammoth">         <i>mammoth</i><par n="expensive__adj"/></e>
 <e lm="mammoth">         <i>mammoth</i><par n="house__n"/></e>
 <e lm="manacle">         <i>manacl</i><par n="liv/e__vblex"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="man">                  <i>man</i><par n="ban__vblex"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="man">                  <i>man</i><par n="ban__vblex"/></e>
 <e lm="manacle">         <i>manacle</i><par n="up__n"/></e>
 <e lm="manage">          <i>manag</i><par n="liv/e__vblex"/></e>
 <e lm="management">      <i>management</i><par n="house__n"/></e>
