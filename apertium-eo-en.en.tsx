@@ -5,7 +5,9 @@
 TODO: aldonu kaj retrejnu la tagger
 <e lm="much">            <i>much</i><par n="everyone__prn"/></e>
 
-
+TODO
+ would tire of her   - laciĝus de ŝi => volus pneŭo de ŝi
+ he would wear       - li portus     => li volus eluziĝon
 
 Do not add your own
 -> imperativo
@@ -218,6 +220,7 @@ New ambiguity class: {THATPRN,DET}
 
   <def-label name="VAUX" closed="true">
     <tags-item tags="vaux.inf"/>
+    <tags-item tags="vaux.cni"/>
     <tags-item tags="vaux.pres"/>
     <tags-item tags="vaux.past"/>
     <tags-item tags="vaux.pres.*"/>
