@@ -864,6 +864,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vaux"/><s n="inf"/></r></p></e>
 </pardef>
 
+<pardef n="may/__vbmod">
+  <e>       <p><l></l>          <r><s n="vaux"/><s n="pres"/></r></p></e>
+</pardef>
+
+
 <pardef n="c/an__vbmod">
   <e>       <p><l>an</l>        <r>an<s n="vaux"/><s n="pres"/></r></p></e>
   <e r="RL"><p><l>an</l>        <r>an<s n="vaux"/><s n="inf"/></r></p></e>
@@ -2190,10 +2195,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
+
+
 <pardef n="fr/y__n">
-  <e>       <p><l>ies</l>       <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>y</l>         <r>y<s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ies</l>       <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
+
+
 <pardef n="ram__vblex">
   <e>       <p><l>ming</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>med</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
@@ -2244,13 +2253,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="pl/y__vblex">
-  <e>       <p><l>ying</l>      <r>y<s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ied</l>       <r>y<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ied</l>       <r>y<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ies</l>       <r>y<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
+<pardef n="pl/y__vblex"><e><par n="appl/y__vblex"/></e></pardef>
+
 <pardef n="fib/re__n">
   <e>       <p><l>ers</l>       <r>re<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>er</l>        <r>re<s n="n"/><s n="sg"/></r></p></e>
@@ -17585,12 +17590,13 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="next">            <i>next</i><par n="expensive__adj"/></e>
 <e r="LR" lm="next autumn"><p><l>next<b/>autumn</l><r>next<b/>fall</r></p><par n="maybe__adv"/></e>
 
+<e r="LR">                    <p><l>botanic</l>           <r>botanical</r></p><par n="expensive__adj"/></e>
+<e r="LR">                    <p><l>archaeologic</l>      <r>archaeological</r></p><par n="expensive__adj"/></e>
+
 <!-- Mis-skribos kiuj ankoraux ne estas en la vortaro. Jacob 26feb09
 
-<e r="LR">                    <p><l>archaeological</l>      <r>archaeologic</r></p><par n="expensive__adj"/></e>
 <e r="LR">                    <p><l>asymptotical</l>        <r>asymptotic</r></p><par n="expensive__adj"/></e>
 <e r="LR">                    <p><l>bipedal</l>             <r>biped</r></p><par n="expensive__adj"/></e>
-<e r="LR">                    <p><l>botanical</l>           <r>botanic</r></p><par n="expensive__adj"/></e>
 <e r="LR">                    <p><l>cartographical</l>      <r>cartographic</r></p><par n="expensive__adj"/></e>
 <e r="LR">                    <p><l>kinetic</l>             <r>kinetical</r></p><par n="expensive__adj"/></e>
 <e r="LR">                    <p><l>epigraphic</l>          <r>epigraphical</r></p><par n="expensive__adj"/></e>
@@ -28041,7 +28047,7 @@ TODO: aldonu kaj retrejnu la tagger
 			    group vbmod
 			****************************** -->
 <e lm="can">             <i>c</i><par n="c/an__vbmod"/></e>
-<e lm="may">             <i>may</i><par n="will/__vbmod"/></e>
+<e lm="may">             <i>may</i><par n="may/__vbmod"/></e>
 <e lm="might">           <i>might</i><par n="will/__vbmod"/></e>
 <e lm="must">            <i>must</i><par n="will/__vbmod"/></e>
 <e lm="shall">           <i>shall</i><par n="will/__vbmod"/></e>

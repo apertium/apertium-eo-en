@@ -221,7 +221,7 @@
 <e>       <i>z</i><par n="litero"/></e>
 
 
-<e>       <p><l>botanika<s n="adj"/></l>               <r>botanic<s n="adj"/></r></p></e>
+<e>       <p><l>botanika<s n="adj"/></l>               <r>botanical<s n="adj"/></r></p></e>
 <e>       <p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>palestinano<s n="n"/></l>              <r>Palestinian<s n="n"/></r></p></e>
 <e>       <p><l>Esperanto<s n="n"/></l>                <r>Esperanto<s n="n"/></r></p></e>
@@ -7415,8 +7415,6 @@ TODO??
 <e r="LR"><p><l>bruegado<s n="n"/></l>                 <r>fuss<s n="n"/></r></p></e>
 <e r="LR"><p><l>bruego<s n="n"/></l>                   <r>fuss<s n="n"/></r></p></e>
 <e r="LR"><p><l>malpaciĝo<s n="n"/></l>                <r>fuss<s n="n"/></r></p></e>
-<e r="LR"><p><l>ĉikanado<s n="n"/></l>                 <r>fuss<s n="n"/></r></p></e>
-<e r="LR"><p><l>ĉikano<s n="n"/></l>                   <r>fuss<s n="n"/></r></p></e>
 <e r="LR"><p><l>plendado<s n="n"/></l>                 <r>fuss<s n="n"/></r></p></e>
 <e r="LR"><p><l>dorlotado<s n="n"/></l>                <r>fuss<s n="n"/></r></p></e>
 <e>       <p><l>estonteco<s n="n"/></l>                <r>future<s n="n"/></r></p></e>
@@ -17779,7 +17777,8 @@ TODO??
 <e r="LR"><p><l>buleo<s n="n"/></l>                    <r>bull<s n="n"/></r></p></e>
 <e>       <p><l>buldozo<s n="n"/></l>                  <r>bulldozer<s n="n"/></r></p></e>
 <e>       <p><l>kugloimuna<s n="adj"/></l>             <r>bulletproof<s n="adj"/></r></p></e>
-<e r="RL"><p><l>ĉikanado<s n="n"/></l>                 <r>bullying<s n="n"/></r></p></e>
+<e ><p><l>ĉikanado<s n="n"/></l>                 <r>bullying<s n="n"/></r></p></e>
+<e r="LR"><p><l>ĉikano<s n="n"/></l>                   <r>fuss<s n="n"/></r></p></e>
 <e r="LR"><p><l>tiranado<s n="n"/></l>                 <r>bullying<s n="n"/></r></p></e>
 <e r="RL"><p><l>bufro<s n="n"/></l>                    <r>bumper<s n="n"/></r></p></e>
 <e r="RL"><p><l>bulko<s n="n"/></l>                    <r>bun<s n="n"/></r></p></e>
@@ -20369,7 +20368,7 @@ TODO??
 <e r="LR"><p><l>kunfandigi<s n="vblex"/></l>           <r>fuse<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>aglomeri<s n="vblex"/></l>             <r>fuse<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>konglomeriĝi<s n="vblex"/></l>         <r>fuse<s n="vblex"/></r></p></e>
-<e>       <p><l>ĉikani<s n="vblex"/></l>               <r>fuss<s n="vblex"/></r></p></e>
+<e r="RL">       <p><l>ĉikani<s n="vblex"/></l>               <r>fuss<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>vana<s n="adj"/></l>                   <r>futile<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senruzulta<s n="adj"/></l>             <r>futile<s n="adj"/></r></p></e>
 <e>       <p><l>futureca<s n="adj"/></l>               <r>futuristic<s n="adj"/></r></p></e>
@@ -26815,8 +26814,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>enua<s n="adj"/></l>                   <r>bored<s n="adj"/></r></p></e>
 <e r="RL"><p><l>porti<s n="vblex"/></l>                <r>bare<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>sino<s n="n"/></l>                     <r>bosom<s n="n"/></r></p></e>
-		<!-- Already is <e><l>botanika<adj></l><r>botanic<adj></r></e> -->
-<e r="RL"><p><l>botanika<s n="adj"/></l>               <r>botanical<s n="adj"/></r></p></e>
 <e r="RL"><p><l>fuŝi<s n="vblex"/></l>                 <r>botch<s n="vblex"/></r></p></e>
 <e>       <p><l>ambaŭ<s n="adv"/></l>                  <r>both<s n="adv"/></r></p></e>
 <e r="RL"><p><l>resalto<s n="n"/></l>                  <r>bounce<s n="n"/></r></p></e>
@@ -26883,7 +26880,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>ŝveli<s n="vblex"/></l>                <r>bulge<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>pogranda<s n="adj"/></l>               <r>bulk<s n="adj"/></r></p></e>
 <e r="RL"><p><l>megafono<s n="n"/></l>                 <r>bullhorn<s n="n"/></r></p></e>
-<e r="RL"><p><l>ĉikani<s n="vblex"/></l>               <r>bully<s n="vblex"/></r></p></e>
+<e><p><l>ĉikani<s n="vblex"/></l>               <r>bully<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>tirani<s n="vblex"/></l>               <r>bully<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>optimisma<s n="adj"/></l>              <r>bullish<s n="adj"/></r></p></e>
 <e r="LR"><p><l>haŭsa<s n="adj"/></l>                  <r>bullish<s n="adj"/></r></p></e>
