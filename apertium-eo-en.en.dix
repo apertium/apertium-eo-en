@@ -4689,6 +4689,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="bazaar">          <i>bazaar</i><par n="house__n"/></e>
 
 
+<e lm="AIDS">            <i>AIDS</i><par n="BBC__n"/></e>
 <e lm="BBC">             <i>BBC</i><par n="BBC__n"/></e>
 <e lm="BC">              <i>BC</i><par n="maybe__adv"/></e>
 <e lm="BCE">             <i>BCE</i><par n="maybe__adv"/></e>
@@ -26904,6 +26905,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Íker">            <i>Íker</i><par n="Mark__np"/></e>
 <e lm="Òscar">           <i>Òscar</i><par n="Mark__np"/></e>
 <e lm="Úlehla">          <i>Úlehla</i><par n="Smith__np"/></e>
+<e lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
+<e lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
+<e lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
+<e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
+<e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 
 <e><i>Agnesa</i><par n="Mary__np"/></e>
 <e><i>Davido</i><par n="Mark__np"/></e>
@@ -27921,9 +27927,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="as far as">       <i>as<b/>far<b/>as</i><par n="after__cnjadv"/></e>
 <e lm="as for">          <i>as<b/>for</i><par n="after__cnjadv"/></e>
 <e lm="as if">           <i>as<b/>if</i><par n="after__cnjadv"/></e>
-<!-- forigita ĉar estas estas dikutita la plibonigo de la asociita traduko
-<e lm="as much as">           <i>as<b/>much<b/>as</i><par n="after__cnjadv"/></e>
---> 
+<!-- forigita ĉar estas estas dikutita la plibonigo de la asociita traduko --> 
+<e r="RL" lm="as much as">           <i>as<b/>much<b/>as</i><par n="after__cnjadv"/></e>
+
 <e lm="as soon as">      <i>as<b/>soon<b/>as</i><par n="after__cnjadv"/></e>
 <e lm="as well as">      <i>as<b/>well<b/>as</i><par n="after__cnjadv"/></e>
 <e lm="because">         <i>because</i><par n="after__cnjadv"/></e>

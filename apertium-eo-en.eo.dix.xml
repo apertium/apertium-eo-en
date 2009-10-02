@@ -147,13 +147,9 @@
 <pardef n="DNA__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 <e r="RL">                    <p><l></l>                    <r><s n="n"/><s n="acr"/><s n="pl"/></r></p><par n="nomacc0"/></e>
-
 <!-- Permesu o-vortojn igxi a-vortojn (fare de la transfero) -->
 <e r="RL">                    <p><l></l>                    <r><s n="adj"/><s n="acr"/></r></p><par n="sgplnomacc0"/></e>
-
 </pardef>
-
-
 
 
 <pardef n="BBC__n">
@@ -23523,7 +23519,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="centa">                <i>cent</i><par n="a__adj"/></e>
 <e lm="mila">                 <i>mil</i><par n="a__adj"/></e>
 <e lm="miliona">              <i>milion</i><par n="a__adj"/></e>
-<e lm="de nun">               <i>de<b/>nun</i><par n="jam__adv"/></e>
+<!-- <e lm="de nun">               <i>de<b/>nun</i><par n="jam__adv"/></e> -->
 <e lm="en la ĉefa tendenco">  <i>en<b/>la<b/>ĉefa<b/>tendenco</i><par n="jam__adv"/></e>
 <e lm="en la nomo de">        <i>en<b/>la<b/>nomo<b/>de</i><par n="al__pr"/></e>
 <e lm="en mia nomo">          <i>en<b/>mia<b/>nomo</i><par n="jam__adv"/></e>
@@ -23542,8 +23538,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <!-- Aldonoj 2009/02/20 -->
 
-<e lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
 <e lm="Inés">                 <i>Inés</i><par n="Mary__np"/></e>
+<e lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
 <e lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
 <e lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
 <e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
