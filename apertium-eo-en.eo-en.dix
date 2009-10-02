@@ -141,12 +141,14 @@
 <e r="LR" c="volus - would"><p><l>voli<s n="vaux"/><s n="cni"/></l><r>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e r="LR" c="volas - want"><p><l>voli<s n="vaux"/><s n="pres"/></l><r>want<s n="vblex"/><s n="pres"/></r></p></e>
 <e r="LR" c="volis - wanted"><p><l>voli<s n="vaux"/><s n="past"/></l><r>want<s n="vblex"/><s n="past"/></r></p></e>
-<e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vblex"/><s n="pres"/></r></p></e>
+<e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vblex"/><s n="ger"/></r></p></e>
 
 
 <e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
 <e r="LR" c="povus - could"><p><l>povi<s n="vaux"/><s n="cni"/></l><r>can<s n="vaux"/><s n="past"/></r></p></e>
 
+<e r="LR" c="povante - can"><p><l>povi<s n="vaux"/><s n="ger"/></l><r>can<s n="vaux"/><s n="pres"/></r></p></e>
+<e r="LR" c="devante - must"><p><l>devi<s n="vaux"/><s n="ger"/><r>must<s n="vaux"/><s n="inf"/></r></p></e>
 
 <!-- Auxillary verbs - should really be handled in tranfer (all of them?) -->
 <e>       <p><l>devi<s n="vaux"/><s n="fti"/></l>      <r>shall<s n="vaux"/><s n="inf"/></r></p></e>
@@ -5568,8 +5570,6 @@ TODO??
 <e r="LR"><p><l>forpasi<s n="vblex"/></l>              <r>die<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>formorti<s n="vblex"/></l>             <r>die<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>malfortiĝi<s n="vblex"/></l>           <r>die<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>stampilo<s n="n"/></l>                 <r>die<s n="n"/></r></p></e>
-<e r="LR"><p><l>kubo<s n="n"/></l>                     <r>die<s n="n"/></r></p></e>
 <e>       <p><l>dieto<s n="n"/></l>                    <r>diet<s n="n"/></r></p></e>
 <e>       <p><l>malsami<s n="vblex"/></l>              <r>differ<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>malsamopinii<s n="vblex"/></l>         <r>differ<s n="vblex"/></r></p></e>
@@ -15600,7 +15600,7 @@ TODO??
 <e r="LR"><p><l>juneco<s n="n"/></l>                   <r>youth<s n="n"/></r></p></e>
 <e r="LR"><p><l>juvelarto<s n="n"/></l>                <r>jewellery<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĵargono<s n="n"/></l>                  <r>slang<s n="n"/></r></p></e>
-<e r="LR"><p><l>ĵetkubo<s n="n"/></l>                  <r>die<s n="n"/></r></p></e>
+<e><p><l>ĵetkubo<s n="n"/></l>                  <r>dice<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĵeto<s n="n"/></l>                     <r>launching<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĵurio<s n="n"/></l>                    <r>jury<s n="n"/></r></p></e>
 <e>       <p><l>kafeino<s n="n"/></l>                  <r>caffeine<s n="n"/></r></p></e>
@@ -18750,7 +18750,7 @@ TODO??
 <e r="LR"><p><l>kristaliĝi<s n="vblex"/></l>           <r>crystallise<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>definitiviĝi<s n="vblex"/></l>         <r>crystallise<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>definitivigi<s n="vblex"/></l>         <r>crystallise<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>kubo<s n="n"/></l>                     <r>cube<s n="n"/></r></p></e>
+<e><p><l>kubo<s n="n"/></l>                     <r>cube<s n="n"/></r></p></e>
 <e r="RL"><p><l>mankateni<s n="vblex"/></l>            <r>cuff<s n="vblex"/></r></p></e>
 <e>       <p><l>kulpulo<s n="n"/></l>                  <r>culprit<s n="n"/></r></p></e>
 <e r="LR"><p><l>kulpigito<s n="n"/></l>                <r>culprit<s n="n"/></r></p></e>

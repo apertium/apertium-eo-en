@@ -8635,7 +8635,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="diary">           <i>diar</i><par n="bab/y__n"/></e>
 <e lm="diarrhea">        <i>diarrhea</i><par n="house__n"/></e>
 <e lm="diaspora">        <i>diaspora</i><par n="house__n"/></e>
-<e lm="die">             <p><l>dice</l>      <r>die</r></p><par n="personnel__n"/></e>
 <e lm="dichotomy">       <i>dichotom</i><par n="bab/y__n"/></e>
 <e lm="dictum">          <i>dict</i><par n="dict/um__n"/></e>
 <e lm="dictate">         <i>dictat</i><par n="liv/e__vblex"/></e>
@@ -8647,7 +8646,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="didactic">        <i>didactic</i><par n="expensive__adj"/></e>
 <e lm="Didier">          <i>Didier</i><par n="Mark__np"/></e>
 <e lm="Didío">           <i>Didío</i><par n="Mark__np"/></e>
-<e lm="die">             <i>die</i><par n="east__n"/></e>
+
+<e lm="dice" r="RL" >    <p><l>die</l>      <r>dice<s n="n"/><s n="sg"/></r></p></e>
+<e lm="dice">            <p><l>dice</l>     <r>dice<s n="n"/><s n="pl"/></r></p></e>
+<e lm="dice" r="LR" >    <p><l>dices</l>    <r>dice<s n="n"/><s n="pl"/></r></p></e>
+
 <e lm="die-hard">        <i>die-hard</i><par n="expensive__adj"/></e>
 <e lm="Diego">           <i>Diego</i><par n="Mark__np"/></e>
 <e lm="dielectric">      <i>dielectric</i><par n="house__n"/></e>
