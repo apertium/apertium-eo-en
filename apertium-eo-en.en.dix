@@ -957,6 +957,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
+<pardef n="zig-zag__vblex"><e><par n="accept__vblex"/></e></pardef>
 
 <pardef n="found__vblex">
 <!--
@@ -1311,6 +1312,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>led</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ling</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+<pardef n="patrol__vblex"><e><par n="control__vblex"/></e></pardef>
 
 <pardef n="ke/ep__vblex">
   <e>       <p><l>ep</l>        <r>ep<s n="vblex"/><s n="inf"/></r></p></e>
@@ -1875,13 +1877,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>bing</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-<pardef n="bed__vblex">
+
+<pardef n="sob__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>bed</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>bed</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>bing</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
 <pardef n="program__vblex">
@@ -2107,6 +2110,23 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
+<pardef n="bed__vblex"><e><par n="wed__vblex"/></e></pardef>
+<pardef n="kid__vblex"><e><par n="wed__vblex"/></e></pardef>
+
+
+<pardef n="prod__vblex">
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+</pardef>
+
+
 <pardef n="hug__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
@@ -2146,13 +2166,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>des</l>       <r>s<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>s</l>         <r>s<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
-<pardef n="sob__vblex">
-  <e>       <p><l>bing</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>bed</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>bed</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
 
 <pardef n="fuel__vblex">
   <e r="RL"><p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
@@ -2177,14 +2190,15 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <pardef n="trot__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
 
@@ -2227,13 +2241,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>king</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-</pardef>
-<pardef n="kid__vblex">
-  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="pl/y__vblex"><e><par n="appl/y__vblex"/></e></pardef>
@@ -2284,22 +2291,20 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ckbook</l>    <r>quebook<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="v/ie__vblex">
+  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>ies</l>       <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ying</l>      <r>ie<s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ies</l>       <r>ie<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="jar__vblex">
-  <e>       <p><l>ring</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>red</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>red</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
-<pardef n="zig-zag__vblex">
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>red</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>red</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ring</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 <pardef n="armo/ured__adj">
   <e>       <p><l>red</l>       <r>ured<s n="adj"/></r></p></e>
@@ -2343,36 +2348,38 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>a</l>         <r>um<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>um</l>        <r>um<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="out-trade__vblex">
-  <e>       <p><l>d</l>         <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-</pardef>
+
 <pardef n="meag/re__adj">
   <e>       <p><l>er</l>        <r>re<s n="adj"/></r></p></e>
 </pardef>
+
 <pardef n="ficus__n">
   <e>       <p><l></l>          <r><s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>es</l>        <r><s n="n"/><s n="pl"/></r></p></e>
   <e r="LR"><p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="quit__vblex">
-  <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="wag/gon__n">
   <e>       <p><l>ons</l>       <r>gon<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>on</l>        <r>gon<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="temp/o__n">
+  <e>       <p><l>o</l>         <r>o<s n="n"/><s n="sg"/></r></p></e>
   <e>       <p><l>i</l>         <r>o<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>os</l>        <r>o<s n="n"/><s n="pl"/></r></p></e>
-  <e>       <p><l>o</l>         <r>o<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="b/are__vblex">
   <e>       <p><l>aring</l>     <r>are<s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>ared</l>      <r>are<s n="vblex"/><s n="past"/></r></p></e>
@@ -2382,13 +2389,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>are</l>       <r>are<s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>ares</l>      <r>are<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-<pardef n="patrol__vblex">
-  <e>       <p><l>ling</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>led</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
+
+
 <pardef n="zero__n">
   <e>       <p><l>es</l>        <r><s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p></e>
@@ -2397,16 +2400,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="ok/ay__adv">
   <e>       <p><l></l>          <r>ay<s n="adv"/></r></p></e>
 </pardef>
-<pardef n="prod__vblex">
-  <e>       <p><l>ding</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ded</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
+
 <pardef n="stri/fe__n">
   <e>       <p><l>fes</l>       <r>fe<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>ves</l>       <r>fe<s n="n"/><s n="pl"/></r></p></e>
@@ -16439,7 +16434,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Mckenna">         <i>Mckenna</i><par n="Mary__np"/></e>
 <e lm="McKenzie">        <i>McKenzie</i><par n="Mark__np"/></e>
 <e lm="Mckenzie">        <i>Mckenzie</i><par n="Mary__np"/></e>
-<e lm="McLean">          <i>McLean</i><par n="Ifans__np"/></e>
 <e lm="meet">            <i>me</i><par n="me/et__vblex"/></e>
 <e lm="mead">            <i>mead</i><par n="house__n"/></e>
 <e lm="meadow">          <i>meadow</i><par n="house__n"/></e>
@@ -20528,12 +20522,12 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="razor">           <i>razor</i><par n="house__n"/></e>
 <e lm="Raúl">            <i>Raúl</i><par n="Mark__np"/></e>
 <e lm="re-elect">        <i>re-elect</i><par n="accept__vblex"/></e>
-<e lm="re-emerge">       <i>re-emerge</i><par n="out-trade__vblex"/></e>
+<e lm="re-emerge">       <i>re-emerg</i><par n="liv/e__vblex"/></e>
 <e lm="re-enact">        <i>re-enact</i><par n="zig-zag__vblex"/></e>
 <e lm="re-enter">        <i>re-enter</i><par n="accept__vblex"/></e>
 <e lm="re-establish">    <i>re-establish</i><par n="zig-zag__vblex"/></e>
-<e lm="re-evaluate">     <i>re-evaluate</i><par n="out-trade__vblex"/></e>
-<e lm="re-examine">      <i>re-examine</i><par n="out-trade__vblex"/></e>
+<e lm="re-evaluate">     <i>re-evaluat</i><par n="liv/e__vblex"/></e>
+<e lm="re-examine">      <i>re-examin</i><par n="liv/e__vblex"/></e>
 <e lm="reach">           <i>reach</i><par n="access__n"/></e>
 <e lm="reach for">       <i>reach</i><par n="approach__vblex"/><p><l><b/>for</l><r><g><b/>for</g></r></p></e>
 <e lm="reach">           <i>reach</i><par n="approach__vblex"/></e>
@@ -22466,14 +22460,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="shooting">        <i>shooting</i><par n="house__n"/></e>
 <e lm="shootout">        <i>shootout</i><par n="up__n"/></e>
 <e lm="shop">            <i>shop</i><par n="house__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="shop">                 <i>shop</i><par n="drip__vblex"/></e>
--->
 <e lm="shopkeeper">      <i>shopkeeper</i><par n="up__n"/></e>
 <e lm="shoplifting">     <i>shoplifting</i><par n="up__n"/></e>
-<!-- hmm.... unue kontroli kiel funkscias
-<e lm="shop">                 <i>shop</i><par n="step__vblex"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="shop">                 <i>shop</i><par n="step__vblex"/></e>
 <e lm="shopper">         <i>shopper</i><par n="house__n"/></e>
 <e lm="shopping">        <i>shopping</i><par n="house__n"/></e>
 <e lm="shore">           <i>shore</i><par n="house__n"/></e>
