@@ -3628,10 +3628,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="anthology">       <i>antholog</i><par n="bab/y__n"/></e>
 <e lm="Anthony">         <i>Anthony</i><par n="Mark__np"/></e>
 <e lm="anthrax">         <i>anthrax</i><par n="access__n"/></e>
-<e lm="anthropology">    <i>anthropolog</i><par n="bab/y__n"/></e>
 <e lm="anthropological"> <i>anthropological</i><par n="expensive__adj"/></e>
 <e lm="anthropologist">  <i>anthropologist</i><par n="house__n"/></e>
-<e lm="anthropology">    <i>anthropology</i><par n="politics__n"/></e>
+<e lm="anthropology">    <i>anthropolog</i><par n="bab/y__n"/></e>
+<!-- <e lm="anthropology">    <i>anthropology</i><par n="politics__n"/></e>-->
 <e lm="anthropomorphism"><i>anthropomorphism</i><par n="house__n"/></e>
 <e lm="antibiotic">      <i>antibiotic</i><par n="expensive__adj"/></e>
 <e lm="antibiotic">      <i>antibiotic</i><par n="house__n"/></e>
@@ -3812,7 +3812,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="arbitrage">       <i>arbitrage</i><par n="up__n"/></e>
 <e lm="arbitrager">      <i>arbitrager</i><par n="up__n"/></e>
 <e lm="arbitrariness">   <i>arbitrariness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>
+<!-- <e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>-->
 <e lm="arbitrary">       <i>arbitrary</i><par n="expensive__adj"/></e>
 <e lm="arbitration">     <i>arbitration</i><par n="up__n"/></e>
 <e lm="arbitrator">      <i>arbitrator</i><par n="up__n"/></e>
@@ -7555,7 +7555,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="cradle">          <i>cradle</i><par n="house__n"/></e>
 <e lm="craft">           <i>craft</i><par n="vow__vblex"/></e>
 <e lm="craft">           <i>craft</i><par n="house__n"/></e>
-<e lm="craft">           <i>craft</i><par n="politics__n"/></e>
 <e lm="crafty">          <i>crafty</i><par n="expensive__adj"/></e>
 <e lm="crag">            <i>crag</i><par n="house__n"/></e>
 <e lm="Craig">           <i>Craig</i><par n="Mark__np"/></e>
@@ -21413,7 +21412,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Romana">          <i>Romana</i><par n="Mary__np"/></e>
 <e lm="romance">         <i>romanc</i><par n="di/e__vblex"/></e>
 <e lm="romance">         <i>romance</i><par n="house__n"/></e>
-<e lm="romance">         <i>romance</i><par n="expensive__adj"/></e>
 <e lm="Romance">         <i>Romance</i><par n="expensive__adj"/></e>
 <e lm="Romanela">        <i>Romanela</i><par n="Mary__np"/></e>
 <e lm="Romanella">       <i>Romanella</i><par n="Mary__np"/></e>
@@ -22842,7 +22840,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
     <!-- Cognomen -->
 <e lm="Smith">           <i>Smith</i><par n="Smith__np"/></e>
-<e lm="Smith">           <i>Smith</i><par n="Ifans__np"/></e>
 <e lm="smog">            <i>smog</i><par n="house__n"/></e>
 <e lm="smoke">           <i>smok</i><par n="liv/e__vblex"/></e>
 <e lm="smoke">           <i>smoke</i><par n="house__n"/></e>
