@@ -23539,11 +23539,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <!-- Aldonoj 2009/02/20 -->
 
 <e lm="Inés">                 <i>Inés</i><par n="Mary__np"/></e>
-<e lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
-<e lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
-<e lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
-<e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
-<e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 <e lm="establita">            <i>establit</i><par n="a__adj"/></e>
 <e lm="folklora">             <i>folklor</i><par n="a__adj"/></e>
 <e lm="naskita">              <i>naskit</i><par n="a__adj"/></e>
@@ -26650,7 +26645,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Jonatan">              <i>Jonatan</i><par n="Mark__np"/></e>
 <e lm="Jonathan">             <i>Jonathan</i><par n="Mark__np"/></e>
 <e lm="Jonathon">             <i>Jonathon</i><par n="Mark__np"/></e>
-<e lm="Jones">                <i>Jones</i><par n="Smith__np"/></e>
 <e lm="Jon">                  <i>Jon</i><par n="Mark__np"/></e>
 <e lm="Jonás">                <i>Jonás</i><par n="Mark__np"/></e>
 <e lm="Jordana">              <i>Jordana</i><par n="Mary__np"/></e>
@@ -27522,6 +27516,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Mckenna">              <i>Mckenna</i><par n="Mary__np"/></e>
 <e lm="McKenzie">             <i>McKenzie</i><par n="Mark__np"/></e>
 <e lm="Mckenzie">             <i>Mckenzie</i><par n="Mary__np"/></e>
+
+<e r="LR" lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
+<e r="LR" lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
+<e r="LR" lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
+<e r="LR" lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
+<e r="LR" lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
+
 <e lm="Meadow">               <i>Meadow</i><par n="Mary__np"/></e>
 <e lm="Meagan">               <i>Meagan</i><par n="Mary__np"/></e>
 <e lm="Meaghan">              <i>Meaghan</i><par n="Mary__np"/></e>
@@ -28047,9 +28048,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Pantaleón">            <i>Pantaleón</i><par n="Mark__np"/></e>
 <e lm="Paola">                <i>Paola</i><par n="Mary__np"/></e>
 <e lm="Paolo">                <i>Paolo</i><par n="Mark__np"/></e>
-<e lm="Parker">               <i>Parker</i><par n="Mark__np"/></e>
-<e lm="Parker">               <i>Parker</i><par n="Mary__np"/></e>
-<e lm="Parker">               <i>Parker</i><par n="Smith__np"/></e>
+<e lm="Parker">          <i>Parker</i><par n="Mark__np"/></e>
+<e lm="Parker">          <i>Parker</i><par n="Smith__np"/></e>
 <e lm="Parmenia">             <i>Parmenia</i><par n="Mary__np"/></e>
 <e lm="Parmenio">             <i>Parmenio</i><par n="Mark__np"/></e>
 <e lm="Parrish">              <i>Parrish</i><par n="Smith__np"/></e>
@@ -29373,7 +29373,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Ifans">                <i>Ifans</i><par n="Ifans__np"/></e>
 <e lm="Bourne">               <i>Bourne</i><par n="Ifans__np"/></e>
 <e lm="Randerson">            <i>Randerson</i><par n="Ifans__np"/></e>
-<e lm="Parker">               <i>Parker</i><par n="Ifans__np"/></e>
 <e lm="Bennett">              <i>Bennett</i><par n="Ifans__np"/></e>
 <e lm="Cook">                 <i>Cook</i><par n="Ifans__np"/></e>
 <e lm="Shaw">                 <i>Shaw</i><par n="Ifans__np"/></e>

@@ -959,6 +959,18 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <pardef n="zig-zag__vblex"><e><par n="accept__vblex"/></e></pardef>
 
+
+<pardef n="cost__vblex">
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e r="LR"><p><l>ed</l>          <r><s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+</pardef>
+
+
 <pardef n="found__vblex">
 <!--
 <e>                           <p><l></l>                    <r><s n="vblex"/><s n="imp"/></r></p></e>
@@ -1259,14 +1271,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>inging</l>    <r>ing<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-<pardef n="cost__vblex">
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-</pardef>
 
 <pardef n="b/uy__vblex">
   <e>       <p><l>uy</l>        <r>uy<s n="vblex"/><s n="inf"/></r></p></e>
@@ -1752,15 +1756,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>inks</l>      <r>ink<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ank</l>       <r>ink<s n="vblex"/><s n="past"/></r></p></e>
   <e r="LR"><p><l>unk</l>       <r>ink<s n="vblex"/><s n="past"/></r></p></e>
+  <e r="LR"><p><l>inked</l>     <r>ink<s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ank</l>       <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
+  <e r="LR"><p><l>unk</l>       <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
+  <e r="LR"><p><l>inked</l>     <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
   <e r="LR"><p><l>unk</l>       <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>inking</l>    <r>ink<s n="vblex"/><s n="ger"/></r></p></e>
 		<!-- Below is content of 2nd definition of st/ink__vblex -->
 
-  <e>       <p><l>inked</l>     <r>ink<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>unk</l>       <r>ink<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>inked</l>     <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>unk</l>       <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
 </pardef>
 
 <pardef n="slid/e__vblex">
@@ -2179,12 +2182,12 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+  <e r="LR"><p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ted</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ting</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
 
@@ -2209,9 +2212,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>y</l>         <r>y<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="rumo/ur__n">
-  <e>       <p><l>r</l>         <r>ur<s n="n"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>r</l>         <r>ur<s n="n"/><s n="sg"/></r></p></e>
   <e>       <p><l>ur</l>        <r>ur<s n="n"/><s n="sg"/></r></p></e>
-  <e>       <p><l>rs</l>        <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
+  <e r="LR"><p><l>rs</l>        <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>urs</l>       <r>ur<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
 </pardef>
 <pardef n="ago__adv">
@@ -2378,9 +2381,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <pardef n="zero__n">
-  <e>       <p><l>es</l>        <r><s n="n"/><s n="pl"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
+  <e>       <p><l>es</l>        <r><s n="n"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 <pardef n="ok/ay__adv">
   <e>       <p><l></l>          <r>ay<s n="adv"/></r></p></e>
@@ -3812,7 +3815,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="arbitrage">       <i>arbitrage</i><par n="up__n"/></e>
 <e lm="arbitrager">      <i>arbitrager</i><par n="up__n"/></e>
 <e lm="arbitrariness">   <i>arbitrariness</i><par n="access__n"/><par n="gen__apos"/></e>
-<!-- <e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>-->
+<!-- <e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>--> 
 <e lm="arbitrary">       <i>arbitrary</i><par n="expensive__adj"/></e>
 <e lm="arbitration">     <i>arbitration</i><par n="up__n"/></e>
 <e lm="arbitrator">      <i>arbitrator</i><par n="up__n"/></e>
@@ -4351,7 +4354,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="award">           <i>award</i><par n="accept__vblex"/></e>
 <e lm="aware">           <i>aware</i><par n="handsome/__adj"/></e>
 <e lm="awareness">       <i>awareness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="awareness">       <i>awareness</i><par n="east__n"/><par n="gen__apos"/></e>
+<!-- <e lm="awareness">       <i>awareness</i><par n="east__n"/><par n="gen__apos"/></e> -->
 <e lm="awash">           <i>awash</i><par n="expensive__adj"/></e>
 <e lm="away">            <i>away</i><par n="maybe__adv"/></e>
 <e lm="awesome">         <i>awesome</i><par n="expensive__adj"/></e>
@@ -5063,7 +5066,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="blindfold">       <i>blindfold</i><par n="accept__vblex"/></e>
 <e lm="blindly">         <i>blindly</i><par n="maybe__adv"/></e>
 <e lm="blindness">       <i>blindness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="blindness">       <i>blindness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="blink">           <i>blink</i><par n="up__n"/></e>
 <e lm="blink">           <i>blink</i><par n="accept__vblex"/></e>
 <e lm="blister">         <i>blister</i><par n="accept__vblex"/></e>
@@ -6668,7 +6670,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <!-- XXX TODO Provu cxu en ordo -->
 <e r="RL" lm="cloud">                <i>cloud</i><par n="vow__vblex"/></e>
 <e lm="clouded">         <i>clouded</i><par n="expensive__adj"/></e>
-<e lm="cloudiness">      <i>cloudiness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="cloudiness">      <i>cloudiness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="cloudless">       <i>cloudless</i><par n="expensive__adj"/></e>
 <e lm="clout">           <i>clout</i><par n="up__n"/></e>
@@ -6960,7 +6961,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="competent">       <i>competent</i><par n="expensive__adj"/></e>
 <e lm="competition">     <i>competition</i><par n="house__n"/></e>
 <e lm="competitive">     <i>competitive</i><par n="expensive__adj"/></e>
-<e lm="competitiveness"> <i>competitiveness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="competitiveness"> <i>competitiveness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="competitor">      <i>competitor</i><par n="house__n"/></e>
 <e lm="compile">         <i>compil</i><par n="liv/e__vblex"/></e>
@@ -9312,7 +9312,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="e-mail">          <i>e-mail</i><par n="house__n"/></e>
 <e lm="eager">           <i>eager</i><par n="expensive__adj"/></e>
 <e lm="eagerly">         <i>eagerly</i><par n="maybe__adv"/></e>
-<e lm="eagerness">       <i>eagerness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="eagerness">       <i>eagerness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="eagle">           <i>eagle</i><par n="house__n"/></e>
 <e lm="Ean">             <i>Ean</i><par n="Mark__np"/></e>
@@ -9464,7 +9463,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="effective">       <i>effective</i><par n="expensive__adj"/></e>
 <e lm="effectively">     <i>effectively</i><par n="maybe__adv"/></e>
 <e lm="effectiveness">   <i>effectiveness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="effectiveness">   <i>effectiveness</i><par n="house__n"/><par n="gen__apos"/></e>
 <e lm="effervesce">      <i>effervesc</i><par n="liv/e__vblex"/></e>
 <e lm="effervescence">   <i>effervescence</i><par n="house__n"/></e>
 <e lm="effete">          <i>effete</i><par n="expensive__adj"/></e>
@@ -12986,7 +12984,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hurried">         <i>hurried</i><par n="expensive__adj"/></e>
 <e lm="hurt">            <i>hurt</i><par n="up__n"/></e>
 <e lm="hurt">            <i>hurt</i><par n="cost__vblex"/></e>
-<e lm="hurt">            <i>hurt</i><par n="accept__vblex"/></e>
 <e lm="hurtful">         <i>hurtful</i><par n="ii__adv"/></e>
 <e lm="hurtle">          <i>hurtl</i><par n="di/e__vblex"/></e>
 <e lm="husband">         <i>husband</i><par n="house__n"/></e>
@@ -13360,7 +13357,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="incapacitate">    <i>incapacitat</i><par n="liv/e__vblex"/></e>
 <e lm="incarcerate">     <i>incarcerat</i><par n="di/e__vblex"/></e>
 <e lm="incendiary">      <i>incendiary</i><par n="expensive__adj"/></e>
-<e lm="incense">         <i>incense</i><par n="house__n"/></e>
 <e lm="incense">         <i>incense</i><par n="politics__n"/></e>
 <e lm="incentive">       <i>incentive</i><par n="house__n"/></e>
 <e lm="inception">       <i>inception</i><par n="up__n"/></e>
@@ -13930,7 +13926,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="invent">          <i>invent</i><par n="accept__vblex"/></e>
 <e lm="invention">       <i>invention</i><par n="house__n"/></e>
 <e lm="inventive">       <i>inventive</i><par n="expensive__adj"/></e>
-<e lm="inventiveness">   <i>inventiveness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="inventiveness">   <i>inventiveness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="inventory">       <i>inventor</i><par n="bab/y__n"/></e>
 <e lm="inventory">       <i>inventor</i><par n="appl/y__vblex"/></e>
@@ -14461,7 +14456,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Jonatan">         <i>Jonatan</i><par n="Mark__np"/></e>
 <e lm="Jonathan">        <i>Jonathan</i><par n="Mark__np"/></e>
 <e lm="Jonathon">        <i>Jonathon</i><par n="Mark__np"/></e>
-<e lm="Jones">           <i>Jones</i><par n="Smith__np"/><par n="gen__apos"/></e>
 <e lm="Jones">           <i>Jones</i><par n="Ifans__np"/><par n="gen__apos"/></e>
 <e lm="Jonás">           <i>Jonás</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Jordan">          <i>Jordan</i><par n="Mark__np"/></e>
@@ -15190,8 +15184,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Leandro">         <i>Leandro</i><par n="Mark__np"/></e>
 <e lm="Leanna">          <i>Leanna</i><par n="Mary__np"/></e>
 <e lm="leap">            <i>leap</i><par n="house__n"/></e>
-<e lm="leap">            <i>leap</i><par n="accept__vblex"/></e>
 <e lm="leap">            <i>leap</i><par n="deal__vblex"/></e>
+<e c="varia skribo" r="LR" lm="leap">            <i>leap</i><par n="accept__vblex"/></e>
 <e lm="leapfrog">        <i>leapfrog</i><par n="accept__vblex"/></e>
 <e lm="Learco">          <i>Learco</i><par n="Mark__np"/></e>
 
@@ -15893,7 +15887,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Mackenzie">       <i>Mackenzie</i><par n="Mary__np"/></e>
 <e lm="Mackenzie">       <i>Mackenzie</i><par n="Ifans__np"/></e>
 <e lm="mackerel">        <i>mackerel</i><par n="house__n"/></e>
-<e lm="Macleod">         <i>Macleod</i><par n="Ifans__np"/></e>
 <e lm="MacLeod">         <i>MacLeod</i><par n="Ifans__np"/></e>
 <e lm="Maclovia">        <i>Maclovia</i><par n="Mary__np"/></e>
 <e lm="Maclovio">        <i>Maclovio</i><par n="Mark__np"/></e>
@@ -16417,6 +16410,13 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Mckenna">         <i>Mckenna</i><par n="Mary__np"/></e>
 <e lm="McKenzie">        <i>McKenzie</i><par n="Mark__np"/></e>
 <e lm="Mckenzie">        <i>Mckenzie</i><par n="Mary__np"/></e>
+
+<e r="LR"  lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
+<e r="LR" lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
+<e  r="LR" lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
+<e  r="LR" lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
+<e  r="LR" lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
+
 <e lm="meet">            <i>me</i><par n="me/et__vblex"/></e>
 <e lm="mead">            <i>mead</i><par n="house__n"/></e>
 <e lm="meadow">          <i>meadow</i><par n="house__n"/></e>
@@ -16845,7 +16845,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="mistress">        <i>mistress</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="mistrust">        <i>mistrust</i><par n="up__n"/></e>
 <e lm="misunderstand">   <i>misunderst</i><par n="st/and__vblex"/></e>
-<e lm="misunderstand">   <i>misunderstand</i><par n="accept__vblex"/></e>
 <e lm="misunderstanding"><i>misunderstanding</i><par n="house__n"/></e>
 <e lm="misuse">          <i>misus</i><par n="liv/e__vblex"/></e>
 <e lm="misuse">          <i>misuse</i><par n="house__n"/></e>
@@ -18698,9 +18697,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="park">            <i>park</i><par n="house__n"/></e>
 <e lm="park">            <i>park</i><par n="accept__vblex"/></e>
 <e lm="Parker">          <i>Parker</i><par n="Mark__np"/></e>
-<e lm="Parker">          <i>Parker</i><par n="Mary__np"/></e>
 <e lm="Parker">          <i>Parker</i><par n="Smith__np"/></e>
-<e lm="Parker">          <i>Parker</i><par n="Ifans__np"/></e>
 <e lm="parking">         <i>parking</i><par n="house__n"/></e>
 <e lm="parlance">        <i>parlance</i><par n="up__n"/></e>
 <e lm="parley">          <i>parle</i><par n="fr/y__n"/></e>
@@ -19078,9 +19075,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="petite">          <i>petite</i><par n="expensive__adj"/></e>
 <e lm="petition">        <i>petition</i><par n="house__n"/></e>
 <e lm="Petra">           <i>Petra</i><par n="Mary__np"/></e>
-<e lm="petrify">         <i>petrif</i><par n="appl/y__vblex"/></e>
 <e lm="petrified">       <i>petrified</i><par n="expensive__adj"/></e>
-<e lm="petrify">         <i>petrify</i><par n="accept__vblex"/></e>
+<e lm="petrify">         <i>petrif</i><par n="appl/y__vblex"/></e>
+<e r="LR" lm="petrify">         <i>petrify</i><par n="accept__vblex"/></e>
 <e lm="petrochemical">   <i>petrochemical</i><par n="expensive__adj"/></e>
 <e lm="petrochemical">   <i>petrochemical</i><par n="house__n"/></e>
 <e lm="petrol">          <i>petrol</i><par n="house__n"/></e>
@@ -19438,8 +19435,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="policymaker">     <i>policymaker</i><par n="up__n"/></e>
 <e lm="Polidoro">        <i>Polidoro</i><par n="Mark__np"/></e>
 <e lm="polish">          <i>polish</i><par n="expensive__adj"/></e>
+<e  c="RL ĉar estas ankaŭ 'polish' sen majusklo" r="LR" lm="Polish">          <i>Polish</i><par n="expensive__adj"/></e>
 <e lm="polish">          <i>polish</i><par n="access__n"/></e>
-<e lm="Polish">          <i>Polish</i><par n="expensive__adj"/></e>
 <e c="RL ĉar estas ankaŭ 'polish' sen majusklo" r="LR" lm="Polish">          <i>Polish</i><par n="access__n"/></e>
 <!-- Problems with "pole"
 <e lm="Pole">                 <i>Pole</i><par n="expensive__adj"/></e>
@@ -20863,7 +20860,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="religion">        <i>religion</i><par n="house__n"/></e>
 <e lm="religious">       <i>religious</i><par n="expensive__adj"/></e>
 <e lm="religiously">     <i>religiously</i><par n="maybe__adv"/></e>
-<e lm="religiousness">   <i>religiousness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="religiousness">   <i>religiousness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="relinquish">      <i>relinquish</i><par n="approach__vblex"/></e>
 <e lm="relish">          <i>relish</i><par n="mix__vblex"/></e>
@@ -21651,7 +21647,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sadistic">        <i>sadistic</i><par n="expensive__adj"/></e>
 <e lm="sadly">           <i>sadly</i><par n="maybe__adv"/></e>
 <e lm="sadness">         <i>sadness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="sadness">         <i>sadness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="Sadoc">           <i>Sadoc</i><par n="Mark__np"/></e>
 <e lm="safari">          <i>safari</i><par n="house__n"/></e>
 <e lm="safe">            <i>safe</i><par n="up__n"/></e>
@@ -22349,7 +22344,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sharp">           <i>sharp</i><par n="long/__adj"/></e>
 <e lm="sharpen">         <i>sharpen</i><par n="accept__vblex"/></e>
 <e lm="sharply">         <i>sharply</i><par n="maybe__adv"/></e>
-<e lm="sharpness">       <i>sharpness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="sharpness">       <i>sharpness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="Sharí">           <i>Sharí</i><par n="Mary__np"/></e>
 <e lm="shatter">         <i>shatter</i><par n="accept__vblex"/></e>
@@ -22484,7 +22478,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="shred">           <i>shred</i><par n="accept__vblex"/></e>
 <e lm="shrewd">          <i>shrewd</i><par n="long/__adj"/></e>
 <e lm="shrewdness">      <i>shrewdness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="shrewdness">      <i>shrewdness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="Shreya">          <i>Shreya</i><par n="Mary__np"/></e>
 <e lm="shrimp">          <i>shrimp</i><par n="house__n"/></e>
 <e lm="shrine">          <i>shrine</i><par n="up__n"/></e>
@@ -22819,7 +22812,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="slurry">          <i>slurr</i><par n="bab/y__n"/></e>
 <e lm="sly">             <i>sly</i><par n="expensive__adj"/></e>
 <e lm="slyly">           <i>slyly</i><par n="maybe__adv"/></e>
-<e lm="slyness">         <i>slyness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="slyness">         <i>slyness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="smack">           <i>smack</i><par n="accept__vblex"/></e>
 <e lm="small">           <i>small</i><par n="long/__adj"/></e>
@@ -22932,7 +22924,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="softener">        <i>softener</i><par n="up__n"/></e>
 <e lm="softly">          <i>softly</i><par n="maybe__adv"/></e>
 <e lm="softness">        <i>softness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="softness">        <i>softness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="software">        <i>software</i><par n="house__n"/></e>
 <e lm="Sofía">           <i>Sofía</i><par n="Mary__np"/></e>
 <e lm="soggy">           <i>soggy</i><par n="expensive__adj"/></e>
@@ -24552,7 +24543,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="throne">          <i>throne</i><par n="house__n"/></e>
 <e lm="through">         <i>through</i><par n="maybe__adv"/></e>
 <e lm="thrust">          <i>thrust</i><par n="up__n"/></e>
-<e lm="thrust">          <i>thrust</i><par n="cost__vblex"/></e>
+<e lm="thrust">          <i>thrust</i><par n="accept__vblex"/></e>
 <e lm="thug">            <i>thug</i><par n="up__n"/></e>
 <e lm="thumb">           <i>thumb</i><par n="house__n"/></e>
 <e lm="thumbtack">       <i>thumbtack</i><par n="house__n"/></e>
@@ -25387,7 +25378,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="unglamorous">     <i>unglamorous</i><par n="expensive__adj"/></e>
 <e lm="unhappy">         <i>unhapp</i><par n="happ/y__adj"/></e>
 <e lm="unhappiness">     <i>unhappiness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="unhappiness">     <i>unhappiness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="unharmed">        <i>unharmed</i><par n="expensive__adj"/></e>
 <e lm="unhealthy">       <i>unhealthy</i><par n="expensive__adj"/></e>
 <e lm="unhinge">         <i>unhing</i><par n="di/e__vblex"/></e>
@@ -25427,7 +25417,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Unique">          <i>Unique</i><par n="Mary__np"/></e>
 <e lm="uniquely">        <i>uniquely</i><par n="maybe__adv"/></e>
 <e lm="uniqueness">      <i>uniqueness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="uniqueness">      <i>uniqueness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="unit">            <i>unit</i><par n="house__n"/></e>
 <e lm="unite">           <i>unit</i><par n="liv/e__vblex"/></e>
 <e lm="unity">           <i>unit</i><par n="bab/y__n"/></e>
@@ -25538,7 +25527,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="unspecified">     <i>unspecified</i><par n="expensive__adj"/></e>
 <e lm="unstable">        <i>unstable</i><par n="expensive__adj"/></e>
 <e lm="unsteadiness">    <i>unsteadiness</i><par n="access__n"/><par n="gen__apos"/></e>
-<e lm="unsteadiness">    <i>unsteadiness</i><par n="east__n"/><par n="gen__apos"/></e>
 <e lm="unsteady">        <i>unsteady</i><par n="expensive__adj"/></e>
 <e lm="unstinting">      <i>unstinting</i><par n="expensive__adj"/></e>
 <e lm="unstoppable">     <i>unstoppable</i><par n="expensive__adj"/></e>
@@ -26865,11 +26853,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Íker">            <i>Íker</i><par n="Mark__np"/></e>
 <e lm="Òscar">           <i>Òscar</i><par n="Mark__np"/></e>
 <e lm="Úlehla">          <i>Úlehla</i><par n="Smith__np"/></e>
-<e lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
-<e lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
-<e lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
-<e lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
-<e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 
 <e><i>Agnesa</i><par n="Mary__np"/></e>
 <e><i>Davido</i><par n="Mark__np"/></e>
