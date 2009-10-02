@@ -1039,7 +1039,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kie">                  <i>kie</i><par n="kie__rel"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="kial__adv"/></e>
 
-<e lm="kiamaniere">           <i>kiamanier</i><par n="kial__adv"/></e>
+<e lm="kiamaniere">           <i>kiamaniere</i><par n="kial__adv"/></e>
 
 <e lm="kiel">                 <i>kiel</i><par n="after__cnjadv"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="al__pr"/></e>
@@ -23343,7 +23343,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="bestoĝardeno">         <i>besto</i><par n="ĝ"/><i>arden</i><par n="o__n"/></e>
 <e lm="zoologo">              <i>zoolog</i><par n="o__n"/></e>
 <e lm="zoologio">             <i>zoologi</i><par n="o__n"/></e>
-<e lm="Bell">                 <i>Bell</i><par n="Ifans__np"/></e>
 <e lm="Cooper">               <i>Cooper</i><par n="Smith__np"/></e>
 <e lm="Cooper">               <i>Cooper</i><par n="Mark__np"/></e>
 <e lm="Eroso">                <i>Eroso</i><par n="Mark__np"/></e>
@@ -27510,19 +27509,22 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Mayid">                <i>Mayid</i><par n="Mark__np"/></e>
 <e lm="Mayor">                <i>Mayor</i><par n="Smith__np"/></e>
 <e lm="Mayra">                <i>Mayra</i><par n="Mary__np"/></e>
-<e lm="McCain">               <i>McCain</i><par n="Smith__np"/></e>
-<e lm="McCreedy">             <i>McCreedy</i><par n="Smith__np"/></e>
+
+
+<e lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
 <e lm="Mckayla">              <i>Mckayla</i><par n="Mary__np"/></e>
 <e lm="Mckenna">              <i>Mckenna</i><par n="Mary__np"/></e>
-<e lm="McKenzie">             <i>McKenzie</i><par n="Mark__np"/></e>
 <e lm="Mckenzie">             <i>Mckenzie</i><par n="Mary__np"/></e>
 
+<e lm="McCain">               <i>McCain</i><par n="Smith__np"/></e>
+<e lm="McCreedy">             <i>McCreedy</i><par n="Smith__np"/></e>
+<e lm="McKenzie">             <i>McKenzie</i><par n="Mark__np"/></e>
+<!--
 <e r="LR" lm="Mckenzie">             <i>Mckenzie</i><par n="Mark__np"/></e>
 <e r="LR" lm="Mccain">               <i>Mccain</i><par n="Smith__np"/></e>
 <e r="LR" lm="Mccreedy">             <i>Mccreedy</i><par n="Smith__np"/></e>
 <e r="LR" lm="Mcdonald">             <i>Mcdonald</i><par n="Smith__np"/></e>
-<e r="LR" lm="Mclean">               <i>Mclean</i><par n="Smith__np"/></e>
-
+-->
 <e lm="Meadow">               <i>Meadow</i><par n="Mary__np"/></e>
 <e lm="Meagan">               <i>Meagan</i><par n="Mary__np"/></e>
 <e lm="Meaghan">              <i>Meaghan</i><par n="Mary__np"/></e>
@@ -29491,7 +29493,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Griffiths">            <i>Griffiths</i><par n="Ifans__np"/></e>
 <e lm="Cyfanswm">             <i>Cyfanswm</i><par n="Ifans__np"/></e>
 <e lm="Colman">               <i>Colman</i><par n="Ifans__np"/></e>
-<e lm="Cooper">               <i>Cooper</i><par n="Ifans__np"/></e>
 <e lm="Murphy">               <i>Murphy</i><par n="Ifans__np"/></e>
 <e lm="Parry">                <i>Parry</i><par n="Ifans__np"/></e>
 <e lm="Price">                <i>Price</i><par n="Ifans__np"/></e>
