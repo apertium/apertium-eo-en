@@ -220,8 +220,8 @@
 
 
 <e>       <p><l>botanika<s n="adj"/></l>               <r>botanic<s n="adj"/></r></p></e>
-<e>       <p><l>palestina<s n="adj"/></l>              <r>palestinian<s n="adj"/></r></p></e>
-<e>       <p><l>palestinano<s n="n"/></l>              <r>palestinian<s n="n"/></r></p></e>
+<e>       <p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
+<e>       <p><l>palestinano<s n="n"/></l>              <r>Palestinian<s n="n"/></r></p></e>
 <e>       <p><l>Esperanto<s n="n"/></l>                <r>Esperanto<s n="n"/></r></p></e>
 <e>       <p><l>transnacia<s n="adj"/></l>             <r>multinational<s n="adj"/></r></p></e>
 <e>       <p><l>eksterlande<s n="adv"/></l>            <r>abroad<s n="adv"/></r></p></e>
@@ -238,19 +238,24 @@
 <e>       <i>U.N.<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UN<s n="n"/><s n="acr"/></i></e>
 <e>       <i>UEFA<s n="n"/><s n="acr"/></i></e>
-<e>       <i>U.S.<s n="n"/><s n="acr"/></i></e>
-<e>       <i>US<s n="n"/><s n="acr"/></i></e>
-<e>       <i>U.K.<s n="n"/><s n="acr"/></i></e>
-<e>       <i>UK<s n="n"/><s n="acr"/></i></e>
 <e>       <i>EU<s n="n"/><s n="acr"/></i></e>
 <e>       <i>AT&amp;T<s n="n"/><s n="acr"/></i></e>
 
+<e>       <i>US<s n="n"/><s n="acr"/></i></e>
+<e>       <i>U.S.<s n="n"/><s n="acr"/></i></e>
+<e>       <i>U.K.<s n="n"/><s n="acr"/></i></e>
+<e>       <i>UK<s n="n"/><s n="acr"/></i></e>
 
-
+<!--
 <e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/><s n="sp"/></i></e>
+-->
+<e>       <re>[A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
+<e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
 
 
 
@@ -1113,6 +1118,7 @@ BUT:
 <e>       <p><l>Irlando<s n="np"/><s n="top"/></l>     <r>Ireland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Islando<s n="np"/><s n="top"/></l>     <r>Iceland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Israelo<s n="np"/><s n="top"/></l>     <r>Israel<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Palestino<s n="np"/><s n="top"/></l>   <r>Palestine<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Italio<s n="np"/><s n="top"/></l>      <r>Italy<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Jamajko<s n="np"/><s n="top"/></l>     <r>Jamaica<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Japanio<s n="np"/><s n="top"/></l>     <r>Japan<s n="np"/><s n="top"/></r></p></e>
