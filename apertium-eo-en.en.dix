@@ -1681,15 +1681,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>oting</l>     <r>ot<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-<pardef n="plan__vblex">
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-</pardef>
-
 <pardef n="prov/e__vblex">
   <e>       <p><l>e</l>         <r>e<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>e</l>         <r>e<s n="vblex"/><s n="pres"/></r></p></e>
@@ -2049,7 +2040,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e r="LR"><p><l>ily</l>       <r>y<s n="adv"/></r></p></e>
 </pardef>
 
-<pardef n="thin__vblex">
+
+<pardef n="plan__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
@@ -2058,15 +2050,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-<pardef n="ban__vblex">
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-</pardef>
-
+<pardef n="thin__vblex"><e><par n="plan__vblex"/></e></pardef>
+<pardef n="ban__vblex"><e><par n="plan__vblex"/></e></pardef>
+<pardef n="stun__vblex"><e><par n="plan__vblex"/></e></pardef>
 
 
 <pardef n="vow__vblex">
@@ -2261,19 +2247,25 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="s/ceptical__adj">
   <e>       <p><l>keptical</l>  <r>ceptical<s n="adj"/></r></p></e>
 </pardef>
+
 <pardef n="grip/e__vblex">
-  <e>       <p><l>ing</l>       <r>e<s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>e</l>         <r>e<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>e</l>         <r>e<s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>es</l>        <r>e<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ed</l>        <r>e<s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ing</l>       <r>e<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="wr/ing__vblex">
-  <e>       <p><l>inging</l>    <r>ing<s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ung</l>       <r>ing<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ung</l>       <r>ing<s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>ing</l>       <r>ing<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>ing</l>       <r>ing<s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>ings</l>      <r>ing<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>ung</l>       <r>ing<s n="vblex"/><s n="past"/></r></p></e>
+  <e>       <p><l>ung</l>       <r>ing<s n="vblex"/><s n="pp"/></r></p></e>
+  <e>       <p><l>inging</l>    <r>ing<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+
 <pardef n="salespe/rson__n">
   <e r="LR"><p><l>ople</l>      <r>rson<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>rsons</l>     <r>rson<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
@@ -2290,6 +2282,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ckbooks</l>   <r>quebook<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>ckbook</l>    <r>quebook<s n="n"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="v/ie__vblex">
   <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>ie</l>        <r>ie<s n="vblex"/><s n="pres"/></r></p></e>
@@ -2298,6 +2291,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>ied</l>       <r>ie<s n="vblex"/><s n="pp"/></r></p></e>
 </pardef>
+
 <pardef n="jar__vblex">
   <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
@@ -2330,16 +2324,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>i</l>         <r>us<s n="n"/><s n="pl"/></r></p></e>
   <e>       <p><l>us</l>        <r>us<s n="n"/><s n="sg"/></r></p><par n="gen__apos"/></e>
 </pardef>
-<pardef n="stun__vblex">
-  <e>       <p><l>ing</l>       <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ed</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l>ned</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ning</l>      <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
+
 <pardef n="hipp/ie__n">
   <e>       <p><l>ies</l>       <r>ie<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>ie</l>        <r>ie<s n="n"/><s n="sg"/></r></p></e>
@@ -9688,7 +9673,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Emely">           <i>Emely</i><par n="Mary__np"/></e>
 <e lm="emerald">         <i>emerald</i><par n="house__n"/></e>
 <e lm="emerge">          <i>emerg</i><par n="liv/e__vblex"/></e>
-<e lm="emerge">          <i>emerge</i><par n="accept__vblex"/></e>
 <e lm="emergency">       <i>emergenc</i><par n="ic/y__adv"/></e>
 <e lm="emergency">       <i>emergenc</i><par n="bab/y__n"/></e>
 <e lm="emergence">       <i>emergence</i><par n="up__n"/></e>
@@ -14404,7 +14388,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="jewel">           <i>jewel</i><par n="house__n"/></e>
 <e lm="Jewel">           <i>Jewel</i><par n="Mary__np"/></e>
 <e lm="jewellery">       <i>jeweller</i><par n="bab/y__n"/></e>
-<e lm="jewelry">         <p><l>jewelr</l>    <r>jeweller</r></p><par n="bab/y__n"/></e>
+<e r="LR" lm="jewelry">         <p><l>jewelr</l>    <r>jeweller</r></p><par n="bab/y__n"/></e>
 <e lm="jewish">          <i>jewish</i><par n="expensive__adj"/></e>
 <e lm="Jezabel">         <i>Jezabel</i><par n="Mary__np"/></e>
 <e lm="Jhesua">          <i>Jhesua</i><par n="Mark__np"/></e>
@@ -19456,14 +19440,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Polidoro">        <i>Polidoro</i><par n="Mark__np"/></e>
 <e lm="polish">          <i>polish</i><par n="expensive__adj"/></e>
 <e lm="polish">          <i>polish</i><par n="access__n"/></e>
+<e lm="Polish">          <i>Polish</i><par n="expensive__adj"/></e>
+<e c="RL ĉar estas ankaŭ 'polish' sen majusklo" r="LR" lm="Polish">          <i>Polish</i><par n="access__n"/></e>
 <!-- Problems with "pole"
 <e lm="Pole">                 <i>Pole</i><par n="expensive__adj"/></e>
 <e lm="Pole">                 <i>Pole</i><par n="house__n"/></e>
--->
-<e lm="Polish">          <i>Polish</i><par n="expensive__adj"/></e>
-<e lm="Polish">          <i>Polish</i><par n="access__n"/></e>
-<!-- Problems with Polish
-<e lm="polish">               <i>polish</i><par n="access__n"/></e>
 -->
 <e lm="polish">          <i>polish</i><par n="approach__vblex"/></e>
 <e lm="polite">          <i>polite</i><par n="handsome/__adj"/></e>
@@ -23765,9 +23746,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="sufficiently">    <i>sufficiently</i><par n="maybe__adv"/></e>
 <e lm="suffocate">       <i>suffocat</i><par n="liv/e__vblex"/></e>
 <e lm="suffrage">        <i>suffrage</i><par n="house__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="such">                 <i>such</i><par n="ca__adj"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="such">                 <i>such</i><par n="ca__adj"/></e>
 <e lm="sufi">            <i>sufi</i><par n="expensive__adj"/></e>
 <e lm="sugar">           <i>sugar</i><par n="house__n"/></e>
 <e lm="suggest">         <i>suggest</i><par n="accept__vblex"/></e>
@@ -26767,7 +26747,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Yugoslav">        <i>Yugoslav</i><par n="house__n"/></e>
 <e lm="Yugoslav">        <i>Yugoslav</i><par n="expensive__adj"/></e>
 <e lm="Yugoslavia">      <i>Yugoslavia</i><par n="Barcelona__np"/></e>
-<e lm="Yugoslavian">     <p><l>Yugoslavian</l><r>Yugoslav</r></p><par n="house__n"/></e>
+<e r="LR" lm="Yugoslavian">     <p><l>Yugoslavian</l><r>Yugoslav</r></p><par n="house__n"/></e>
 <e lm="Yuliana">         <i>Yuliana</i><par n="Mary__np"/></e>
 <e lm="Yulisa">          <i>Yulisa</i><par n="Mary__np"/></e>
 <e lm="Yumbel">          <i>Yumbel</i><par n="Mark__np"/></e>
