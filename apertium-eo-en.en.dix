@@ -2365,7 +2365,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <pardef n="temp/o__n">
   <e>       <p><l>o</l>         <r>o<s n="n"/><s n="sg"/></r></p></e>
   <e>       <p><l>i</l>         <r>o<s n="n"/><s n="pl"/></r></p></e>
-  <e>       <p><l>os</l>        <r>o<s n="n"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>os</l>        <r>o<s n="n"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="b/are__vblex">
