@@ -27607,9 +27607,9 @@ TODO: aldonu kaj retrejnu la tagger
 		<!-- ******************************
 			    group acronimos_par
 			****************************** -->
-<e>                      <par n="acronimos"/></e>
 <e lm="AT&amp;T">        <i>AT&amp;T</i><par n="BBC__n"/></e>
 
+<!--
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
 <e lm="AAA">             <i>AAA</i><par n="acronimos_par"/></e>
 <e lm="AAAI">            <i>AAAI</i><par n="acronimos_par"/></e>
@@ -28129,7 +28129,8 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="ZF">              <i>ZF</i><par n="acronimos_par"/></e>
 <e lm="ZFC">             <i>ZFC</i><par n="acronimos_par"/></e>
 <e lm="ZX">              <i>ZX</i><par n="acronimos_par"/></e>
-
+-->
+<e>                      <par n="acronimos"/></e>
 	</section>
 
 	<section id="final" type="inconditional">
