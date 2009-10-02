@@ -528,7 +528,9 @@
 <e r="LR">                    <p><l>s'</l>                  <r><s n="n"/><s n="pl"/><j/>'s<s n="gen"/></r></p></e> -->
 </pardef>
 
-
+<pardef n="ca__adj"><e><par n="house__n"/></e></pardef>
+<pardef n="up__n"><e><i></i><par n="house__n"/></e></pardef>
+<pardef n="vu__n"><e><i></i><par n="house__n"/></e></pardef>
 
 <!-- Tiuj cxi paradigmo permesas la formon "Twelve months' imprisonment" -> Dek du monatoj da malliberigo.
 TODO:  A months' imprisonment" -> monato da malliberigo.
@@ -1811,6 +1813,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ped</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ping</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
+<pardef n="tip__vblex"><e><par n="step__vblex"/></e></pardef>
 
 <pardef n="st/ick__vblex">
   <e>       <p><l>ick</l>       <r>ick<s n="vblex"/><s n="inf"/></r></p></e>
@@ -2122,10 +2125,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
 </pardef>
 
 
-<pardef n="up__n">
-  <e>       <i></i><par n="house__n"/></e>
-</pardef>
-
 
 
 <!-- Tiu cxi estas por 'winnings', growings kiu nepre NE estu analizita kiel nomo en singularo -->
@@ -2200,12 +2199,14 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <pardef n="ram__vblex">
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>ming</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>med</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>med</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
+
 <pardef n="to/y__n">
   <e r="LR"><p><l>ies</l>       <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
   <e>       <p><l>ys</l>        <r>y<s n="n"/><s n="pl"/></r></p><par n="gen__apos"/></e>
@@ -2221,20 +2222,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
   <e r="LR"><p><l>ly</l>        <r><s n="adv"/></r></p></e>
 </pardef>
-<pardef n="tip__vblex">
-  <e>       <p><l>ping</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
-  <e>       <p><l>ped</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>ped</l>       <r><s n="vblex"/><s n="pp"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-</pardef>
 
-<pardef n="criss/-cross__vblex">
-  <e>       <p><l>-crossed</l>  <r>-cross<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>crossed</l>   <r>-cross<s n="vblex"/><s n="past"/></r></p></e>
-  <e>       <p><l>-cross</l>    <r>-cross<s n="vblex"/><s n="pres"/></r></p></e>
-  <e>       <p><l>cross</l>     <r>-cross<s n="vblex"/><s n="pres"/></r></p></e>
-</pardef>
+
+
+
 <pardef n="panic__vblex">
   <e>       <p><l>king</l>      <r><s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>ked</l>       <r><s n="vblex"/><s n="past"/></r></p></e>
@@ -5778,9 +5769,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Canada">          <i>Canada</i><par n="Barcelona__np"/></e>
 <e lm="Canadian">        <i>Canadian</i><par n="house__n"/></e>
 <e lm="Canadian">        <i>Canadian</i><par n="expensive__adj"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="can">                  <i>can</i><par n="ban__vblex"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="can">                  <i>can</i><par n="ban__vblex"/></e>
 <e lm="canal">           <i>canal</i><par n="up__n"/></e>
 <e lm="Canarian">        <i>Canarian</i><par n="house__n"/></e>
 <e lm="Canarian">        <i>Canarian</i><par n="expensive__adj"/></e>
@@ -6700,9 +6690,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="clothing">        <i>clothing</i><par n="house__n"/></e>
 <e lm="cloudy">          <i>cloud</i><par n="ic/y__adv"/></e>
 <e lm="cloud">           <i>cloud</i><par n="house__n"/></e>
-<!-- XXX TODO Provu cxu en ordo
-<e lm="cloud">                <i>cloud</i><par n="vow__vblex"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="cloud">                <i>cloud</i><par n="vow__vblex"/></e>
 <e lm="clouded">         <i>clouded</i><par n="expensive__adj"/></e>
 <e lm="cloudiness">      <i>cloudiness</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="cloudiness">      <i>cloudiness</i><par n="east__n"/><par n="gen__apos"/></e>
@@ -6870,10 +6859,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="colonizing">      <i>colonizing</i><par n="expensive__adj"/></e>
 <e lm="colophon">        <i>colophon</i><par n="house__n"/></e>
 
-<!-- XXX TODO Provu cxu en ordo
-<e lm="colour">                <i>colour</i><par n="ca__adj"/></e>
-<e lm="watercolour">     <i>watercolour</i><par n="house__n"/></e>
--->
+<!-- XXX TODO Provu cxu en ordo -->
+<e r="RL" lm="colour">        <i>col</i><par n="ou"/><i>r</i><par n="expensive__adj"/></e>
+
 <e lm="watercolour">     <i>watercol</i><par n="ou"/><i>r</i><par n="house__n"/></e>
 <e lm="colour">           <i>col</i><par n="ou"/><i>r</i><par n="accept__vblex"/></e>
 <e lm="colour">           <i>col</i><par n="ou"/><i>r</i><par n="house__n"/></e>
@@ -7663,7 +7651,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Crispino">        <i>Crispino</i><par n="Mark__np"/></e>
 <e lm="Crispulo">        <i>Crispulo</i><par n="Mark__np"/></e>
 <e lm="Crispín">         <i>Crispín</i><par n="Mark__np"/></e>
-<e lm="criss-cross">     <i>criss</i><par n="criss/-cross__vblex"/></e>
+
+<e lm="criss-cross">     <i>criss-cross</i><par n="approach__vblex"/></e>
+<e r="LR" lm="criss-cross">     <p><l>crisscross</l><r>criss-cross</r></p><par n="approach__vblex"/></e>
+
 <e lm="Cristal">         <i>Cristal</i><par n="Mary__np"/></e>
 <e lm="Cristian">        <i>Cristian</i><par n="Mark__np"/></e>
 <e lm="Cristina">        <i>Cristina</i><par n="Mary__np"/></e>
@@ -9677,6 +9668,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Emanuel">         <i>Emanuel</i><par n="Mark__np"/></e>
 <e lm="embalm">          <i>embalm</i><par n="accept__vblex"/></e>
 <e lm="embargo">         <i>embargo</i><par n="house__n"/></e>
+<!-- XXX TODO Provu sen RL -->
+<e r="RL" lm="embargo">         <i>embargo</i><par n="mix__vblex"/></e>
 <e lm="embark">          <i>embark</i><par n="accept__vblex"/></e>
 <e lm="embarrass">       <i>embarrass</i><par n="approach__vblex"/></e>
 <e lm="embarrassed">     <i>embarrassed</i><par n="expensive__adj"/></e>
@@ -10490,6 +10483,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fall down">       <i>f</i><par n="f/all__vblex"/><p><l><b/>down</l><r><g><b/>down</g></r></p></e>
 <e lm="far">             <i>f</i><par n="f/ar__adj"/></e>
 <e lm="find">            <i>f</i><par n="f/ind__vblex"/></e>
+<e r="RL" lm="find">                 <i>find</i><par n="vu__n"/></e>
 <e lm="foot">            <i>f</i><par n="f/oot__n"/></e>
 <e lm="fall">            <i>f</i><par n="f/all__vblex"/></e>
 <e lm="f">               <i>f</i><par n="litero"/></e>
@@ -11084,6 +11078,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fodder">          <i>fodder</i><par n="up__n"/></e>
 <e lm="foe">             <i>foe</i><par n="up__n"/></e>
 <e lm="fog">             <i>fog</i><par n="up__n"/></e>
+<e lm="fog">                  <i>fog</i><par n="hug__vblex"/></e>
 <e lm="foggy">           <i>foggy</i><par n="expensive__adj"/></e>
 <e lm="foil">            <i>foil</i><par n="vow__vblex"/></e>
 <e lm="foil">            <i>foil</i><par n="house__n"/></e>
@@ -27526,6 +27521,8 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="shall">           <i>shall</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
 <e lm="will" c="volas">  <i>will</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
 
+<e r="RL" lm="should"><i>should</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
+<e r="RL" lm="would"> <i>would</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 <e r="RL" lm="might">           <i>might</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 <e r="RL" lm="must">            <i>must</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 <e r="RL" lm="shall">           <i>shall</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
