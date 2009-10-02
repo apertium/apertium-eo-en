@@ -864,10 +864,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vaux"/><s n="inf"/></r></p></e>
 </pardef>
 
-<pardef n="may/__vbmod">
-  <e>       <p><l></l>          <r><s n="vaux"/><s n="pres"/></r></p></e>
-</pardef>
-
 
 <pardef n="c/an__vbmod">
   <e>       <p><l>an</l>        <r>an<s n="vaux"/><s n="pres"/></r></p></e>
@@ -4691,7 +4687,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="bayonet">         <i>bayonet</i><par n="house__n"/></e>
 <e lm="bazaar">          <i>bazaar</i><par n="house__n"/></e>
 
-
+<e lm="AT&amp;T">        <i>AT&amp;T</i><par n="BBC__n"/></e>
 <e lm="AIDS">            <i>AIDS</i><par n="BBC__n"/></e>
 <e lm="BBC">             <i>BBC</i><par n="BBC__n"/></e>
 <e lm="BC">              <i>BC</i><par n="maybe__adv"/></e>
@@ -27521,15 +27517,19 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="can">             <i>c</i><par n="c/an__vbmod"/></e>
 <e lm="have to">         <i>ha</i><par n="ha/ve__vbmod"/><p><l><b/>to</l><r><g><b/>to</g></r></p></e>
 
-<e lm="should">          <i>should</i><p><l></l><r><s n="vaux"/><s n="cni"/></r></p></e>
+<e lm="should" c="devus"><i>should</i><p><l></l><r><s n="vaux"/><s n="cni"/></r></p></e>
 <e lm="may" c="povas">   <i>may</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
 <e lm="would" c="volus"> <i>would</i><p><l></l><r><s n="vaux"/><s n="cni"/></r></p></e>
 
-<e lm="might">           <i>might</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
-<e lm="must">            <i>must</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
+<e lm="might" c="eblas"><i>might</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
+<e lm="must">            <i>must</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="shall">           <i>shall</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
-<e lm="will">            <i>will</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
+<e lm="will" c="volas">  <i>will</i><p><l></l><r><s n="vaux"/><s n="pres"/></r></p></e>
 
+<e r="RL" lm="might">           <i>might</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
+<e r="RL" lm="must">            <i>must</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
+<e r="RL" lm="shall">           <i>shall</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
+<e r="RL" lm="will">            <i>will</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 
 
 		<!-- ******************************
@@ -27607,7 +27607,6 @@ TODO: aldonu kaj retrejnu la tagger
 		<!-- ******************************
 			    group acronimos_par
 			****************************** -->
-<e lm="AT&amp;T">        <i>AT&amp;T</i><par n="BBC__n"/></e>
 
 <!--
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
