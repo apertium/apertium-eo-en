@@ -28081,9 +28081,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e>                      <par n="coma"/></e>
 <e>                      <par n="cometa"/></e>
 <!--  ( and ) should just be treated as white space and therefore not analyzed
-<e i=""><par n="paresq"/></e>
-<e i=""><par n="pardret"/></e>
 -->
+<e  r="RL">                           <re>[\(\[]</re><p><l></l>     <r><s n="lpar"/></r></p></e>
+<e  r="RL">                           <re>[\)\]]</re><p><l></l>     <r><s n="rpar"/></r></p></e>
 <e>                      <par n="guionet"/></e>
 <e>                      <par n="emails"/></e>
 <e>                      <par n="urls"/></e>
