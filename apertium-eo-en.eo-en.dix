@@ -513,8 +513,9 @@
 <!-- all are Christians -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 
-<!-- All but the children saw it -->
+<!-- All but the children saw it 
 <e>       <p><l>ĉiuj<b/>krom<s n="prn"/><s n="tn"/><s n="sp"/></l><r>all XXXXX KIE ESTAS but???<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
+-->
 
 <!-- all houses, all the houses  -->
 <!-- Fran: Don't change word class
@@ -610,9 +611,9 @@
 
 
 <e>       <p><l>multa<s n="prn"/><s n="tn"/></l>       <r>many<s n="prn"/><s n="tn"/></r></p></e>
-<!-- their greater ones.         -->
+<!-- their greater ones.        
 <e>       <p><l>xxx<s n="prn"/><s n="tn"/><s n="pl"/></l><r>one<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
-
+ -->
 
 <!-- if it is not prevented by something else.   
      Aristotle reasoned that man must have a function uncommon to anything else 
@@ -631,15 +632,21 @@
 
 
 <e>       <p><l>kiu<s n="prn"/><s n="rel"/></l>        <r>who<s n="prn"/><s n="rel"/></r></p></e>
+
 <e>       <p><l>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>yourself<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>herself<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>itself<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-<e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>one self<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></l><r>ourselves<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>yourselves<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>themselves<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
+
+<e>       <p><l>mem<s n="prn"/><s n="ref"/></l><r>self<s n="prn"/><s n="ref"/></r></p></e>
+<e>       <p><l>oni<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>oneself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+
 
     <!-- Personal pronouns -->
 
@@ -663,6 +670,7 @@
 <e r="RL"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
 
+<e c="one"><p><l>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
 
     <!-- Conjunctions - Conjunctive adverb  -->
@@ -895,7 +903,8 @@ BUT:
 <e>       <p><l>pli<s n="adv"/></l>                    <r>more<s n="adv"/></r></p></e>
 <e>       <p><l>tia<s n="det"/><s n="ind"/></l>        <r>such<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>tiu<s n="det"/><s n="dem"/></l>        <r>that<s n="det"/><s n="dem"/></r></p></e>
-<e>       <p><l>ĉi<b/>tiu<s n="det"/><s n="dem"/></l>  <r>this<s n="det"/><s n="dem"/></r></p></e>
+<e><p><l>ĉi<b/>tiu<s n="det"/><s n="dem"/></l>  <r>this<s n="det"/><s n="dem"/></r></p></e>
+<e r="LR"><p><l>ĉi<s n="det"/><s n="dem"/></l>  <r>this<s n="det"/><s n="dem"/></r></p></e>
 
 
 	<!-- multi-word "determiners" -->
@@ -930,6 +939,12 @@ BUT:
 <e>       <p><l>ĝia<s n="adj"/></l>                    <r>its<s n="adj"/></r></p></e>
 <e>       <p><l>ilia<s n="adj"/></l>                   <r>theirs<s n="adj"/></r></p></e>
 
+<!-- XXX TODO -->
+<e r="LR"><p><l>sia<s n="det"/><s n="pos"/></l>        <r>his<s n="det"/><s n="pos"/></r></p></e>
+<e r="LR"><p><l>sia<s n="adj"/></l>                    <r>his<s n="adj"/></r></p></e>
+
+<e r="LR"><p><l>onia<s n="det"/><s n="pos"/></l>       <r>ones<s n="det"/><s n="pos"/></r></p></e>
+<e r="LR"><p><l>onia<s n="adj"/></l>                   <r>ones<s n="adj"/></r></p></e>
 
     <!-- pre-adverbs -->
 
@@ -3399,6 +3414,7 @@ TODO??
 <e r="LR"><p><l>belo<s n="n"/></l>                     <r>beauty<s n="n"/></r></p></e>
 <e r="LR"><p><l>belulino<s n="n"/></l>                 <r>beauty<s n="n"/></r></p></e>
 <e>       <p><l>fariĝi<s n="vblex"/></l>               <r>become<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>iĝi<s n="vblex"/></l>               <r>become<s n="vblex"/></r></p></e>
 <e>       <p><l>lito<s n="n"/></l>                     <r>bed<s n="n"/></r></p></e>
 <e r="LR"><p><l>fluejo<s n="n"/></l>                   <r>bed<s n="n"/></r></p></e>
 <e r="LR"><p><l>kuŝujo<s n="n"/></l>                   <r>bed<s n="n"/></r></p></e>

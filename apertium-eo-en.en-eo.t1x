@@ -248,6 +248,7 @@
 
     <def-cat n="genitive_possessors"> <!-- all that can fill the X in: X's dog  -->
       <cat-item tags=""/>        <!-- unknown words -->
+<!--      <cat-item tags="prn.*"/>-->
       <cat-item tags="n.*"/>
       <cat-item tags="np.al.*"/> <!-- Apertium<np><al><sg> -->
       <cat-item tags="np.top.*"/><!-- Amsterdam<np><top><sg> -->

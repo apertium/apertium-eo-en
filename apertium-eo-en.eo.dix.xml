@@ -808,32 +808,38 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>ni</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>ili</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p><par n="nomacc"/></e>
 
+<e>                           <p><l>oni</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
+
+<e lm="mem">             <p><l>mem</l>     <r>mem<s n="prn"/><s n="ref"/></r></p></e>
+<e lm="oni mem">                   <p><l>oni<b/>mem</l>           <r>oni<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="oni mem">                   <p><l>oni<b/>mem</l>           <r>oni<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+
+<e>       <p><l>oni</l>       <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 
 
 <!-- Zeuz himself saw....   => Zeus mem vidis -->
-<e lm="si">                   <p><l>si<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="vi">                   <p><l>vi<b/>mem</l>           <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="vi">                   <p><l>vi<b/>mem</l>           <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
-<e lm="mi">                   <p><l>mi<b/>mem</l>           <r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="si">                   <p><l>ŝi<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="si">                   <p><l>li<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="si">                   <p><l>ĝi<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ni">                   <p><l>ni<b/>mem</l>           <r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="si mem">                   <p><l>si<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="vi mem">                   <p><l>vi<b/>mem</l>           <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="vi mem">                   <p><l>vi<b/>mem</l>           <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="mi mem">                   <p><l>mi<b/>mem</l>           <r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="si mem">                   <p><l>ŝi<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="si mem">                   <p><l>li<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="si mem">                   <p><l>ĝi<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="ni mem">                   <p><l>ni<b/>mem</l>           <r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
 
 <!-- Zeuz saw himself  ....   => Zeus vidis sin  -->
-<e lm="si">                   <p><l>sin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="vi">                   <p><l>vin<b/>mem</l>          <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="vi">                   <p><l>vin<b/>mem</l>          <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
-<e lm="mi">                   <p><l>min<b/>mem</l>          <r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="si">                   <p><l>ŝin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="si">                   <p><l>lin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="si">                   <p><l>ĝin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="ni">                   <p><l>nin<b/>mem</l>          <r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
-
-
+<e lm="si mem">                   <p><l>sin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+<e lm="vi mem">                   <p><l>vin<b/>mem</l>          <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="vi mem">                   <p><l>vin<b/>mem</l>          <r>vi<s n="prn"/><s n="ref"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
+<e lm="mi mem">                   <p><l>min<b/>mem</l>          <r>mi<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="si mem">                   <p><l>ŝin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="si mem">                   <p><l>lin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="si mem">                   <p><l>ĝin<b/>mem</l>          <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="ni mem">                   <p><l>nin<b/>mem</l>          <r>ni<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
 
 
     <!-- Possessives -->
+
 <e lm="mia">                  <i>mia</i><par n="mia__det"/></e>
 <e lm="via">                  <i>via</i><par n="mia__det"/></e>
 <e lm="ŝia">                  <par n="ŝ"/><i>ia</i><par n="mia__det"/></e>
@@ -849,6 +855,14 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="lia">                  <i>li</i><par n="a__adj"/></e>
 <e lm="nia">                  <i>ni</i><par n="a__adj"/></e>
 <e lm="ilia">                 <i>ili</i><par n="a__adj"/></e>
+
+<e lm="sia">                  <i>sia</i><par n="mia__det"/></e>
+<e lm="onia">                 <i>onia</i><par n="mia__det"/></e>
+
+<e lm="sia">                  <i>si</i><par n="a__adj"/></e>
+<e lm="onia">                 <i>oni</i><par n="a__adj"/></e>
+
+
 
 <e r="RL" lm="plia">                 <i>plia</i><par n="tiu__prn"/></e>
 <e lm="pli">                  <i>pli</i><par n="tro__preadv"/></e>
@@ -944,7 +958,8 @@ Necesas difini paradigmon por adj-nomo terminoj
     <e lm="ĉi tiu"><par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<par n="dem__det"/></r></p></e>
 -->
 
-<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu<s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
+<e lm="ĉi">                   <par n="ĉ"/><p><l>i</l><r>i<s n="det"/><s n="dem"/></r></p><par n="sgplnomacc0"/></e>
+<e lm="ĉi tiu">               <par n="ĉ"/><p><l>i<b/>tiu</l><r>i<b/>tiu</r></p><par n="dem__det"/></e>
 <e lm="ĉi tiu">               <par n="ĉ"/><i>i<b/>tiu</i><par n="tiu__prn"/></e>
 <e lm="ĉi tio">               <par n="ĉ"/><i>i<b/>tio</i><par n="tio__prn"/></e>
 
@@ -3580,6 +3595,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="idolo">                <i>idol</i><par n="o__n"/></e>
 <e lm="infano">               <i>infan</i><par n="o__n"/></e>
 <e lm="ignori">               <i>ignor</i><par n="i__vblex"/></e>
+<e lm="iĝi">                  <i>i</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="ikono">                <i>ikon</i><par n="o__n"/></e>
 <e lm="iktero">               <i>ikter</i><par n="o__n"/></e>
 <e lm="ilo">                  <i>il</i><par n="o__n"/></e>
