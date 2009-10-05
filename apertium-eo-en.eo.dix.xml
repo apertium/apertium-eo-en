@@ -809,13 +809,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>ili</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p><par n="nomacc"/></e>
 
 
-<!--
-
-<e>                           <p><l>ĝi</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-<e>                           <p><l>ĝi</l>                  <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-
--->
-
 
 <!-- Zeuz himself saw....   => Zeus mem vidis -->
 <e lm="si">                   <p><l>si<b/>mem</l>           <r>si<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -23461,6 +23454,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="abortigo">             <i>abortig</i><par n="o__n"/></e>
 <e lm="palestinano">          <i>palestinan</i><par n="ino__n"/></e>
 <e lm="Esperanto">            <i>Esperant</i><par n="o__n"/></e>
+<e r="LR" lm="Esperanto">     <p><l>esperant</l><r>Esperant</r></p><i></i><par n="o__n"/></e>
 
 <!-- Aldonoj Hèctor 2009/02/10 -->
 <e lm="ni ĉiuj">              <p><l>ni<b/>ĉiuj</l>          <r>ni<b/>ĉiuj<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -33629,6 +33623,23 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="ambaŭ">                <i>amba</i><par n="ŭ"/><par n="jam__adv"/></e>
 <e lm="episkaro">              <i>episkar</i><par n="o__n"/></e>
 
+
+<!--
+ 12983 ^oni/*oni$
+   6250 ^sia/*sia$
+   5798 ^sian/*sian$
+   4243 ^ĉi/*ĉi$
+   4207 ^sin/*sin$
+   3899 ^Eternulo/*Eternulo$
+   3202 ^vd/*vd$
+   3033 ^mem/*mem$
+   2845 ^siaj/*siaj$
+
+One oneself's oneself's here oneself an eternal-person
+oni sia sian ĉi sin Eternulo 
+-->
+
+<e lm="Eternulo">              <i>Eternul</i><par n="o__n"/></e>
 
 
 	</section>
