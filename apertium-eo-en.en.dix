@@ -895,7 +895,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <pardef n="/be__vbser">
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="inf"/></r></p></e>
-  <e>       <p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+  <e r="LR"><p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+  <e r="RL"><p><l>is</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
   <e>       <p><l>am</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
   <e>       <p><l>is</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>was</l>       <r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -27537,6 +27538,7 @@ TODO: aldonu kaj retrejnu la tagger
 			****************************** -->
 <e lm="be">              <par n="/be__vbser"/></e>
 <e lm="be over">         <i></i><par n="/be__vbser"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
+<e lm="be possible">     <i></i><par n="/be__vbser"/><p><l><b/>possible</l><r><g><b/>possible</g></r></p></e>
 <e lm="ain't">           <p><l>ain't</l>     <r>be<s n="vbser"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="aren't">          <p><l>aren't</l>    <r>be<s n="vbser"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="isn't">           <p><l>isn't</l>     <r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/><j/>not<s n="adv"/></r></p></e>
