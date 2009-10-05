@@ -797,9 +797,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>mi</l>                  <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>vi</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
 <e r="LR">                    <p><l>ci</l>                  <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
-<!--
-<e>                           <p><l>li</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
--->
 <e>                           <p><l>li</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                           <p><l>ŝi</l>                  <r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e r="LR">                    <p><l>sxi</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="nomacc"/></e>
@@ -809,6 +806,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e>                           <p><l>ili</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p><par n="nomacc"/></e>
 
 <e>                           <p><l>oni</l>                 <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
+
+<e lm="si">             <p><l>si</l>      <r>si<s n="prn"/><s n="ref"/><s n="nom"/></r></p></e>
+<e lm="si">             <p><l>sin</l>     <r>si<s n="prn"/><s n="ref"/><s n="acc"/></r></p></e>
 
 <e lm="mem">             <p><l>mem</l>     <r>mem<s n="prn"/><s n="ref"/></r></p></e>
 <e lm="oni mem">                   <p><l>oni<b/>mem</l>           <r>oni<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
