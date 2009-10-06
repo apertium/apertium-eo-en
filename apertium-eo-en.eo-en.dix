@@ -1717,7 +1717,12 @@ TODO??
 <e>       <re>([0-9]*)?</re><p><l>2a<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
 <e>       <re>([0-9]*)?</re><p><l>3a<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
 <e>       <re>([0-9]*)?</re><p><l>4a<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<!--
 <e>       <re>([0-9]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+-->
+<e r="RL"><re>([1-4]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e>       <re>([0,5-9]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+
 
 <!-- was:
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>

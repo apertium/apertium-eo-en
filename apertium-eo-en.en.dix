@@ -196,6 +196,11 @@
   <e>       <re>([0-9]*)?</re><p><l>3rd</l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
   <e>       <re>([0-9]*)?</re><p><l>4th</l><r>4th<s n="num"/><s n="ord"/></r></p></e>
   <e>       <re>([0-9]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<!--
+  <e>       <re>([0]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>([1-4]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
+  <e>       <re>([5-9]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
+-->
 </pardef>
 
 <pardef n="proper_names">
