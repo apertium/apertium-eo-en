@@ -1,4 +1,4 @@
-
+make
 echo
 echo ./testvoc_en-eo.sh 
 ./testvoc_en-eo.sh 
