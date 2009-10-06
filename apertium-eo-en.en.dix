@@ -27149,6 +27149,18 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="much">            <i>much</i><par n="much__det"/></e>
 
 <!--
+<jacobEo> multe da elementoj
+<jacobEo> ^multe da/multe da<det><qnt><sg><nom>$ ^elementoj/elemento<n><pl><nom>$
+<jacobEo> ^multe da<det><qnt><sg><nom>$ ^elemento<n><pl><nom>$
+<jacobEo> ^det_nom<SN><pl>{^much<det><qnt><2>$ ^element<n><2>$}$
+<jacobEo> ^much<det><qnt><pl>$ ^element<n><pl>$
+<jacobEo> #much elements
+<jacobEo> transfer makes "much" plural.
+<jacobEo> but its sg in en.dix
+-->
+<e lm="much" r="RL">     <p><l>many</l><r>much</r></p><par n="many__det"/></e>
+
+<!--
 <jacobEo> spectie: whats the word class of "much" in: A) mixed at much lower temperatures.  B)  Although much of the Westndash   ?
 * Gekz (n=brendan@unaffiliated/gekz) has joined #Apertium
 * Gekz_ has quit (Read error: 60 (Operation timed out))
