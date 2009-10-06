@@ -27258,6 +27258,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="so much">         <i>so<b/>much</i><par n="much__det"/></e>
 <!-- It appears that much of the original -->
 <e r="RL" lm="that much">       <i>that<b/>much</i><par n="much__det"/></e>
+<e r="RL">     <p><l>that<b/>many</l><r>that<b/>much</r></p><par n="many__det"/></e>
+
+
 <e lm="some">            <i>some</i><par n="enough__det"/></e>
 <e lm="such">            <i>such</i><par n="other__det"/></e>
 <e lm="tenth">           <i>tenth</i><par n="second__det"/></e>
