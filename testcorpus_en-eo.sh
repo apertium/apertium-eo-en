@@ -2,6 +2,7 @@
 
 TMP=/tmp/en-eo
 CRP=corpa/en.crp.txt
+mkdir -p testcache
 NOVA=testcache/corpus_en-eo_nova_traduko.txt
 ORIGINA=testcache/corpus_en-eo_origina_traduko.txt
 
