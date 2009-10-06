@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PREF=testcache/testvoc_en-eo
+PREF=/tmp/testvoc_eo-en
 
  lt-expand apertium-eo-en.eo.dixtmp1 |grep -v REGEXP | grep -e ':>:' -e '\w:\w' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f1 -d'%' > ${PREF}0.txt &
 
