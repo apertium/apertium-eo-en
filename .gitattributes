@@ -27,6 +27,9 @@
 /check_others.sh -text
 /check_sint_tag.sh -text
 /configure.ac -text
+corpa/elpaki.sh -text
+corpa/enwiki.crp.txt.bz2 -text
+corpa/eowiki.crp.txt.bz2 -text
 dev/apertium-eo-en.en_aldonota.dix -text
 dev/eval-Archimedes.apertium-1.0.txt -text
 dev/eval-Archimedes.en.txt -text
