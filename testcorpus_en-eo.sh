@@ -8,6 +8,7 @@ ORIGINA=testcache/corpus_en-eo_origina_traduko.txt
 
 if [ ! -e $CRP ]
 then
+	echo Elpakas $CRP
 	bunzip2 -c corpa/enwiki.crp.txt.bz2 > $CRP
 fi
 
