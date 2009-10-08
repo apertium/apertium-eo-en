@@ -6,6 +6,11 @@ mkdir -p testcache
 NOVA=testcache/corpus_eo-en_nova_traduko.txt
 ORIGINA=testcache/corpus_eo-en_origina_traduko.txt
 
+if [ ! -e $CRP ]
+then
+	bunzip2 -c corpa/eowiki.crp.txt.bz2 > $CRP
+fi
+
 make -s -j 3 && cat $CRP | apertium -d . eo-en > $NOVA || exit
 echo
 grep '#' $NOVA && echo -e "^ Estis mankoj eo la cellingva dix, montrata supre ^\n"
