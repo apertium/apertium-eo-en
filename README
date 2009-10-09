@@ -3,12 +3,13 @@ Esperanto--English
 You need apertium-3.1 and lttoolbox-3.1 to use this translator.  To compile
 the linguistical data simply do:
 
+./configure
 make
 
 inside of this directory.
 
 
 
-Further documentation is available at: http://wiki.apertium.org/wiki/English_and_Esperanto
+Further documentation is available in the README and at: http://wiki.apertium.org/wiki/English_and_Esperanto
 
 
