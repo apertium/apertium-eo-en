@@ -1,4 +1,4 @@
-VERSION=0.9.8
+VERSION=0.9.9
 LANG1=eo
 LANG2=en
 PREFIX1=$(LANG1)-$(LANG2)
@@ -139,9 +139,10 @@ apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 
 install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
+	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(PREFIX2).mode $(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).genitive.t1x  $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
-CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG2).dixtmp1  $(TARGETS) modes *.mode *.bin
+CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG2).dixtmp1  $(TARGETS) modes *.mode *.bin apertium-eo-en.eo-multiwords.xml
