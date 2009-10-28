@@ -2,7 +2,7 @@
 <interchunk>
 
   <section-def-cats>
-    <def-cat n="SN">
+    <def-cat c="saluton" n="SN">
       <cat-item tags="SN.*"/>
     </def-cat>
     <def-cat n="unknown">
@@ -58,7 +58,7 @@
   </section-def-cats>
 
   <section-def-attrs>
-    <def-attr n="a_chunk">
+    <def-attr c="saluton" n="a_chunk">
       <attr-item tags="SN"/>
       <attr-item tags="SV"/>
     </def-attr>
@@ -94,8 +94,8 @@
       <pattern>
         <pattern-item n="SN"/>
       </pattern>
-      <action>
-        <out>
+      <action c="saluton">
+        <out c="saluton">
           <chunk>
             <clip pos="1" part="whole"/>
           </chunk>

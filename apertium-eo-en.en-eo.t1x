@@ -8,7 +8,7 @@
 -->
 
   <section-def-cats>
-    <def-cat n="NEAKTIVA"><cat-item lemma="moaaasasasNEAKTIVAre" tags="det.qnt.*"/></def-cat>
+    <def-cat c="saluton" n="NEAKTIVA"><cat-item lemma="moaaasasasNEAKTIVAre" tags="det.qnt.*"/></def-cat>
 
 
     <!-- UNUOPAJ VORTOJ -->
@@ -485,10 +485,10 @@
   <section-def-macros>
   
   <!-- ekzamenas la vorton kaj metas majuskligajn informojn en variablo "firstWord" -->
-  <def-macro n="firstWord" npar="1">
+  <def-macro c="saluton" n="firstWord" npar="1">
     <choose>
-      <when>
-        <test>
+      <when c="saluton">
+        <test c="saluton">
         <or>
           <and>
             <equal><var n="EOS"/><lit v="true"/></equal>
@@ -500,7 +500,7 @@
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
         <let><var n="caseFirstWord"/><lit v="Aa"/></let>
       </when>
-      <otherwise>
+      <otherwise c="saluton">
         <let><var n="caseFirstWord"/><lit v="aa"/></let>
       </otherwise>
     </choose>
@@ -514,7 +514,7 @@
     <!-- kontrolas cxu la parametro estas konata vorto. 
          Se jes "nomvar" := <nom>. Se ne nomvar="".
          Tio cxu estas por eviti ke nekonataj vortoj ricevos tag'on kiu poste estas montrata. -->
-    <def-macro n="set_nomvar_if_known1" npar="1">
+    <def-macro n="set_nomvar_if_known1" c="saluton" npar="1">
       <choose>
         <when>
         <test>
@@ -530,7 +530,7 @@
 
 
     <!-- Sxangxas la genron de vorto: Se la genro estas nekonata "GD" gxi estas sxangxata al vira genro -->
-    <def-macro n="ordigu_genron" npar="1">
+    <def-macro n="ordigu_genron" npar="1" c="saluton" >
       <choose>
         <when>
           <test>
@@ -620,7 +620,7 @@
 
     <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
-        <when>
+        <when c="saluton">
           <test>
             <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="netransitivaj"/></in>
           </test>
@@ -931,11 +931,11 @@ verbfinal = pensi<vblex><pres>
       <pattern>
         <pattern-item n="prnref"/>
       </pattern>
-      <action>
+      <action  c="saluton">
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="prnref" case="caseFirstWord">
+        <out  c="saluton">
+          <chunk name="prnref"  c="saluton" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>

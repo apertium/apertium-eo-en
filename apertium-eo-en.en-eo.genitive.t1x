@@ -3,8 +3,8 @@
 
 
   <section-def-cats>
-    <def-cat n="apos">
-      <cat-item tags="apos"/>
+    <def-cat c="saluton" n="apos">
+      <cat-item c="saluton" tags="apos"/>
     </def-cat>
 
     <def-cat n="aposgen">
@@ -26,8 +26,8 @@
   </section-def-cats>
  
   <section-def-attrs>
-    <def-attr n="nbr">
-      <attr-item tags="sp"/>
+    <def-attr c="saluton" n="nbr">
+      <attr-item c="saluton" tags="sp"/>
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
     </def-attr>
@@ -49,8 +49,8 @@
      Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
     <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
       <choose>
-        <when>
-          <test>
+        <when c="saluton">
+          <test c="saluton">
             <not><equal><b pos="1"/><lit v=" "/></equal></not>
           </test>
           <out>

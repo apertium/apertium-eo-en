@@ -44,7 +44,7 @@ preadv adj
 
 <!-- Lemoj -->
 
-  <def-label name="TO"      closed="true"><tags-item lemma="to" tags="pr"/></def-label> 
+  <def-label c="saluton" name="TO"      closed="true"><tags-item lemma="to" tags="pr"/></def-label> 
   <def-label name="FOR"     closed="true"><tags-item lemma="for" tags="pr"/></def-label> 
   <def-label name="THATCNJ" closed="true"><tags-item lemma="that" tags="cnjsub"/></def-label> 
   <def-label name="NOT"     closed="true"><tags-item lemma="not" tags="adv"/></def-label>
@@ -270,7 +270,7 @@ New ambiguity class: {THATPRN,DET}
   </def-label>
 
 
-  <def-mult name="DETPREADV" closed="true">  
+  <def-mult c="saluton" name="DETPREADV" closed="true">  
     <sequence>
       <tags-item tags="det.def.sp"/>
       <label-item label="PREADV"/>
@@ -296,13 +296,13 @@ New ambiguity class: {THATPRN,DET}
 
 
 <!-- Eviti some Republicans recommended that. -> kelkaj Respublikanoj rekomendita ke.  ne helpas meti CNJSUB-->
-    <label-sequence><label-item label="THATCNJ"/><label-item label="SENT"/></label-sequence>
+    <label-sequence c="saluton"><label-item label="THATCNJ"/><label-item label="SENT"/></label-sequence>
 
 
 <!-- Eviti    Since 1990  
 ^Since/Since<adv>/Since<cnjadv>/Since<pr>$ ^1990/1990<num>$
 ^Since<cnjadv>$ ^1990<num>$  -> ^Pro tio ke<cnjadv>$ -->
-    <label-sequence>
+    <label-sequence c="saluton">
       <label-item label="CNJADV"/>      
       <label-item label="NUM"/>
     </label-sequence>
@@ -873,9 +873,9 @@ New ambiguity class: {THATPRN,DET}
 
 
 
-    <enforce-after label="PREP_WITH_INF">
-      <label-set>
-        <label-item label="INF"/>
+    <enforce-after c="saluton" label="PREP_WITH_INF">
+      <label-set c="saluton">
+        <label-item c="saluton" label="INF"/>
       </label-set>
     </enforce-after>
 
@@ -1083,7 +1083,7 @@ New ambiguity class: {THATPRN,DET}
 
 
  <preferences>
-   <prefer tags="n.acr.sg"/>
+   <prefer c="saluton" tags="n.acr.sg"/>
 
 <!-- maloftigu <pp> iel -->
 
