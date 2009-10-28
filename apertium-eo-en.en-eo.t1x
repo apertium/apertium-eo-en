@@ -2195,15 +2195,35 @@ verbfinal = pensi<vblex><pres>
 
     <rule comment="arms, legs, hands, and feet  - brakoj, kruroj, manoj kaj piedoj">
       <pattern>
+        <pattern-item n="and_or_nor"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="sncoo" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SNcoo"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="arms, legs, hands, and feet  - brakoj, kruroj, manoj kaj piedoj">
+      <pattern>
         <pattern-item n="cm"/>
         <pattern-item n="and_or_nor"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="cnjcoo" case="caseFirstWord">
+          <chunk name="sncoo" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="CC"/></tag>
+              <tag><lit-tag v="SNcoo"/></tag>
             </tags>
             <b pos="1"/>
             <lu>
