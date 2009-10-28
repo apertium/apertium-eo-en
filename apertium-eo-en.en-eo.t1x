@@ -23,6 +23,9 @@
     <def-cat n="times"><cat-item lemma="time" tags="n.*"/></def-cat>
     <def-cat n="please"><cat-item lemma="please" tags="vblex.*"/><cat-item lemma="please" tags="adv"/></def-cat>
 
+
+    <def-cat n="and_or_nor"><cat-item lemma="and" tags="cnjcoo"/><cat-item lemma="or" tags="cnjcoo"/><cat-item lemma="nor" tags="cnjcoo"/></def-cat>
+
     <!-- KATEGORIOJ -->
     <def-cat n="cnjcoo"><cat-item tags="cnjcoo"/></def-cat>
     <def-cat n="cnjadv"><cat-item tags="cnjadv"/></def-cat>
@@ -1994,43 +1997,6 @@ verbfinal = pensi<vblex><pres>
 
 
 
-
-    <rule comment="REGLA: NOM/ANT 's NOM:  Jacob's dog   => hundo de Jacob">
-      <pattern>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>    <!-- hundo -->
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
-                </lu>
-                <b/>
-                <b pos="1"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
-                  <lu>
-                    <clip pos="2" side="tl" part="whole"/> <!-- de -->
-                  </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>     <!-- Jacob -->
-                  <clip pos="1" side="tl" part="tags"/><var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
-
     <rule comment="REGLA: DET NOM/ANT 's NOM:  his gardener's dog => la hundo de lia gxardenisto">
       <pattern>
         <pattern-item n="det"/>
@@ -2227,6 +2193,30 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
+    <rule comment="arms, legs, hands, and feet  - brakoj, kruroj, manoj kaj piedoj">
+      <pattern>
+        <pattern-item n="cm"/>
+        <pattern-item n="and_or_nor"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="cnjcoo" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="CC"/></tag>
+            </tags>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
     <rule>
       <pattern>
         <pattern-item n="cm"/>
@@ -2235,7 +2225,7 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="cm">
             <tags>
-              <tag><lit-tag v="CC"/></tag>
+              <tag><lit-tag v="CM"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

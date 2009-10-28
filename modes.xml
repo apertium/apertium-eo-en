@@ -207,7 +207,7 @@
 
 
 
-  <mode name="en-eo-trigram" install="no">
+  <mode name="en-eo-trigram" install="yes">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
