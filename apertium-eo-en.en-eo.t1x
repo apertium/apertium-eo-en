@@ -2098,9 +2098,9 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundA -->
                   <lit-tag v="adj"/>
-                  <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
-                  <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="3" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
+                  <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
+                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
