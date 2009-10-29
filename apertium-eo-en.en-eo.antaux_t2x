@@ -64,7 +64,8 @@ NUM SN -> SN
 
 
 
-    <rule comment="REGLA: SN1's SN2   -   SN2 de SN1">
+    <rule comment="REGLA: SN1's SN2   -   SN2 de SN1  
+	- tiu ĉi estas nur RIPARO de t1x, ĉar ĉi tie en interchunk NE eblas ŝanĝi la etikedon de SN2 de (2) al (nom)!!">
       <pattern>
         <pattern-item n="SN"/>
         <pattern-item n="GEN"/>
@@ -73,8 +74,9 @@ NUM SN -> SN
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
+            <clip pos="1" part="lem" c="^nom_conj_nom_conj_nom"/>
             <clip pos="1" part="tags"/>
+            <lit-tag v="ERARA_RIPARO"/>
             <lit v="{"/>            
             <clip pos="3" part="content"/>
                 <b/>
