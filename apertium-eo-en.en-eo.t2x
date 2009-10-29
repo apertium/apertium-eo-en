@@ -208,6 +208,29 @@
       </action>
     </rule>
 
+
+    <rule comment="REGLA: SV SN - akusativo">
+      <pattern>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="a_chunk"/>
+      	     <lit-tag v="acc"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 <!-- Ni kolektas tion ĉi en UNU SN en dosiero: antaux_t2x
     <rule comment="REGLA: SN SV SN SNcoo SN">
       <pattern>
