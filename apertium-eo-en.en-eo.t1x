@@ -2278,29 +2278,6 @@ verbfinal = pensi<vblex><pres>
       </action>
     </rule>
 
-<!--
-    <rule comment="arms, legs, hands, and feet  - brakoj, kruroj, manoj kaj piedoj">
-      <pattern>
-        <pattern-item n="cm"/>
-        <pattern-item n="and_or_nor"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="and_or" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="and_or"/></tag>
-            </tags>
-            <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
--->
-
 
 
     <!-- Conjunctions -->
@@ -2642,6 +2619,36 @@ the ones who:the ones who<rel><nn><mf><pl>
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="REGLA: of VBLEXger - of being, of running, of looking - esti, kuri, vidi">
+      <pattern>
+        <pattern-item n="of"/>
+        <pattern-item n="vblexger"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+        <out>
+          <chunk name="verbInf" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+      	      <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
     <rule comment="REGLA: to have suffered  -  suferi">
