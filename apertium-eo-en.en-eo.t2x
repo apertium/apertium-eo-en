@@ -2,6 +2,10 @@
 <interchunk>
 
   <section-def-cats>
+    <def-cat n="SNsubj" c="Eblaj subjektoj de subjekt-verbo-objekto frazo">
+      <cat-item tags="SN.*"/>
+      <cat-item tags="REL"/>
+    </def-cat>
     <def-cat c="saluton" n="SN">
       <cat-item tags="SN.*"/>
     </def-cat>
@@ -51,9 +55,6 @@
     </def-cat>
     <def-cat n="CC">
       <cat-item tags="CC"/>
-    </def-cat>
-    <def-cat n="SNcoo">
-      <cat-item tags="SNcoo"/>
     </def-cat>
   </section-def-cats>
 
@@ -181,9 +182,9 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: SN SV SN">
+    <rule comment="REGLA: SN SV SN - akusativo">
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="SNsubj"/>
         <pattern-item n="SV"/>
         <pattern-item n="SN"/>
       </pattern>
@@ -207,12 +208,13 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: SN SV SN CC SN">
+<!-- Ni kolektas tion ĉi en UNU SN en dosiero: antaux_t2x
+    <rule comment="REGLA: SN SV SN SNcoo SN">
       <pattern>
         <pattern-item n="SN"/>
         <pattern-item n="SV"/>
         <pattern-item n="SN"/>
-        <pattern-item n="CC"/>
+        <pattern-item n="SNcoo"/>
         <pattern-item n="SN"/>
       </pattern>
       <action>
@@ -232,7 +234,7 @@
              <clip pos="3" part="a_chunk"/>
              <clip pos="3" part="gen"/>
              <clip pos="3" part="nbr"/>
-	     <lit-tag v="acc"/>
+	         <lit-tag v="acc"/>
             <clip pos="3" part="chcontent"/>
           </chunk>
 	  <b pos="3"/>
@@ -245,12 +247,13 @@
              <clip pos="5" part="a_chunk"/>
              <clip pos="5" part="gen"/>
              <clip pos="5" part="nbr"/>
-	     <lit-tag v="acc"/>
+	         <lit-tag v="acc"/>
             <clip pos="5" part="chcontent"/>
           </chunk>
         </out>
       </action>
     </rule>
+-->
 <!--
     <rule comment="REGLA: SN SV SN CC SN SV">
       <pattern>
@@ -304,7 +307,7 @@
 -->
 
 
-    <rule comment="REGLA: SN SV SN CC SN Adv">
+    <rule comment="REGLA: SN SV SN CC SN Adv - akusativo">
       <pattern>
         <pattern-item n="SN"/>
         <pattern-item n="SV"/>
