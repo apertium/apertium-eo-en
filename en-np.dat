@@ -1,0 +1,97 @@
+## list of words that may be included in a Named Entity
+## e.g.  "Banco de Comercio"  "Pedro Villacasas de la Morena"
+<FunctionWords>
+the
+a
+an
+of
+for
+'s
+&
+</FunctionWords>
+## Punctuation mark tags after which a capitalized word
+## may be indicating just a sentence (or clause) beginning
+<SpecialPunct>
+(
+)
+{
+.
+...
+:
+-
+"
+'
+''
+``
+¿
+?
+¡
+!
+</SpecialPunct>
+## Section <NounAdjs> lists the tags that are considered a possible NP 
+## when they are capitalized at sentence beggining 
+<NounAdj>
+n
+adj
+</NounAdj>
+## Closed categories. Any word belonging to these categories will not
+## be considered NP, even if capitalized.
+<ClosedCats>
+predet
+preadv
+def
+det
+dem
+pr
+cnjadv
+cnjcoo
+cnjsub
+</ClosedCats>
+# Tags for non-words
+<DateNumPunct>
+num
+sent
+cm
+lquest
+lpar
+rpar
+</DateNumPunct>
+## upper limit to consider an all-caps sentence as a NE.
+<TitleLimit>
+0
+</TitleLimit>
+## Words that may be names even though they do not comply the default rules
+<Names>
+</Names>
+## Words that will NOT be proper names. Value 0 => ignore as NE if it is a capitalized word alone. Value 1=> always ignore as NE. (e.g. "I" in English is usually not a NE when alone, but it may be in "King Henry I" )
+<Ignore>
+i 0
+english 0
+spanish 0
+dutch 0
+german 0
+french 0
+basque 0
+catalan 0
+january 1
+february 1
+march 1
+april 1
+may 1
+june 1
+july 1
+august 1
+september 1
+october 1
+november 1
+december 1
+monday 1
+tuesday 1
+wednesday 1
+thursday 1
+friday 1
+saturday 1
+sunday 1
+NP 1
+</Ignore>
+
