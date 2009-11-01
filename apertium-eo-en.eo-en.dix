@@ -34,7 +34,6 @@
 		<sdef n="ant" /> 
 		<sdef n="gen" /> 
 		<sdef n="sp" /> 
-		<sdef n="sint" /> 
 		<sdef n="ger" /> 
 		<sdef n="inf" /> 
 		<sdef n="top" /> 
@@ -1659,29 +1658,14 @@ BUT:
 <e>       <p><l>multaj<b/>manoj<b/>faciligas<b/>laboron<s n="ij"/></l><r>many<b/>hands<b/>make<b/>light<b/>work<s n="ij"/></r></p></e>
 
 
-<!-- comparatives. -->
 
 
-<!-- xxx JN: Hmm?? Bruges ikke lige nu
-<e>       <p><l>plej<b/>bona<s n="adj"/></l>           <r>best<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
--->
-
-
-<e>       <p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>granda<s n="adj"/></l>                 <r>big<s n="adj"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>great<s n="adj"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>bulky<s n="adj"/></r></p></e>
+<e r="RL"><p><l>granda<s n="adj"/></l>                 <r>large<s n="adj"/></r></p></e>
 <e>       <p><l>plej<b/>bone<s n="adv"/></l>           <r>best<s n="adv"/></r></p></e>
 
-<!-- These RUINS the translations!   
-<e>       <p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-<e r="RL"><p><l>plej<b/>malbona<s n="adj"/></l>        <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
-<e>       <p><l>plej<b/>malgranda<s n="adj"/></l>      <r>lesser<s n="adj"/></r></p></e>
-<e r="RL"><p><l>plej<b/>malgranda<s n="adj"/></l>      <r>minor<s n="adj"/></r></p></e>
-
-<e>       <p><l>pli bona<s n="adj"/></l>               <r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-
--->
 
 
     <!-- Regexes -->
@@ -1782,11 +1766,11 @@ TODO??
 
 
 <e>       <p><l>aro<s n="n"/></l>                      <r>set<s n="n"/></r></p></e>
-<e>       <p><l>bela<s n="adj"/></l>                   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>bona<s n="adj"/></l>                   <r>good<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>bela<s n="adj"/></l>                   <r>nice<s n="adj"/></r></p></e>
+<e>       <p><l>bona<s n="adj"/></l>                   <r>good<s n="adj"/></r></p></e>
 <e>       <p><l>bonega<s n="adj"/></l>                 <r>excellent<s n="adj"/></r></p></e>
-<e>       <p><l>rapida<s n="adj"/></l>                 <r>fast<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>quick<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>rapida<s n="adj"/></l>                 <r>fast<s n="adj"/></r></p></e>
+<e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>quick<s n="adj"/></r></p></e>
 <e r="RL"><p><l>rapida<s n="adj"/></l>                 <r>swift<s n="adj"/></r></p></e>
 
 
@@ -1913,7 +1897,7 @@ TODO??
 <e>       <p><l>stirrado<s n="n"/></l>                 <r>steering<b/>wheel<s n="n"/></r></p></e>
 <e>       <p><l>taksiisto<s n="n"/></l>                <r>taxi<b/>driver<s n="n"/></r></p></e>
 <e>       <p><l>urbodomo<s n="n"/></l>                 <r>town<b/>hall<s n="n"/></r></p></e>
-<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>of<b/>note<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>of<b/>note<s n="adj"/></r></p></e>
 <e r="RL"><p><l>aperi<s n="vblex"/></l>                <r>show<g><b/>up</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>aperi<s n="vblex"/></l>                <r>turn<g><b/>up</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>atingi<s n="vblex"/></l>               <r>get<g><b/>hold<b/>of</g><s n="vblex"/></r></p></e>
@@ -2936,7 +2920,7 @@ TODO??
 <e>       <p><l>proksimume<s n="adv"/></l>             <r>approximately<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aproksime<s n="adv"/></l>              <r>approximately<s n="adv"/></r></p></e>
 <e>       <p><l>abrikoto<s n="n"/></l>                 <r>apricot<s n="n"/></r></p></e>
-<e>       <p><l>taŭga<s n="adj"/></l>                  <r>apt<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>taŭga<s n="adj"/></l>                  <r>apt<s n="adj"/></r></p></e>
 <e>       <p><l>kapableco<s n="n"/></l>                <r>aptitude<s n="n"/></r></p></e>
 <e>       <p><l>akva<s n="adj"/></l>                   <r>aquatic<s n="adj"/></r></p></e>
 <e>       <p><l>akvedukto<s n="n"/></l>                <r>aqueduct<s n="n"/></r></p></e>
@@ -3279,10 +3263,10 @@ TODO??
 <e r="LR"><p><l>priveti<s n="vblex"/></l>              <r>back<s n="vblex"/></r></p></e>
 <e>       <p><l>returnite<s n="adv"/></l>              <r>backwards<s n="adv"/></r></p></e>
 <e r="LR"><p><l>retroen<s n="adv"/></l>                <r>backwards<s n="adv"/></r></p></e>
-<e>       <p><l>malbona<s n="adj"/></l>                <r>bad<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>nebona<s n="adj"/></l>                 <r>bad<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>fuŝa<s n="adj"/></l>                   <r>bad<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>ranca<s n="adj"/></l>                  <r>bad<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malbona<s n="adj"/></l>                <r>bad<s n="adj"/></r></p></e>
+<e r="LR"><p><l>nebona<s n="adj"/></l>                 <r>bad<s n="adj"/></r></p></e>
+<e r="LR"><p><l>fuŝa<s n="adj"/></l>                   <r>bad<s n="adj"/></r></p></e>
+<e r="LR"><p><l>ranca<s n="adj"/></l>                  <r>bad<s n="adj"/></r></p></e>
 <e>       <p><l>melo<s n="n"/></l>                     <r>badger<s n="n"/></r></p></e>
 <e>       <p><l>severe<s n="adv"/></l>                 <r>badly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aĉe<s n="adv"/></l>                    <r>badly<s n="adv"/></r></p></e>
@@ -4187,9 +4171,9 @@ TODO??
 <e r="LR"><p><l>interparoleti<s n="vblex"/></l>        <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>konversacii<s n="vblex"/></l>          <r>chat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>babiladi<s n="vblex"/></l>             <r>chat<s n="vblex"/></r></p></e>
-<e>       <p><l>malmultekosta<s n="adj"/></l>          <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>tombakeca<s n="adj"/></l>              <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malmultekosta<s n="adj"/></l>          <r>cheap<s n="adj"/></r></p></e>
+<e r="LR"><p><l>malkara<s n="adj"/></l>                <r>cheap<s n="adj"/></r></p></e>
+<e r="LR"><p><l>tombakeca<s n="adj"/></l>              <r>cheap<s n="adj"/></r></p></e>
 <e>       <p><l>trompi<s n="vblex"/></l>               <r>cheat<s n="vblex"/></r></p></e>
 <e>       <p><l>trompanto<s n="n"/></l>                <r>cheat<s n="n"/></r></p></e>
 <e r="LR"><p><l>trompulo<s n="n"/></l>                 <r>cheat<s n="n"/></r></p></e>
@@ -4945,7 +4929,7 @@ TODO??
 <e>       <p><l>kosti<s n="vblex"/></l>                <r>cost<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>elspezigi<s n="vblex"/></l>            <r>cost<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>senigi<s n="vblex"/></l>               <r>cost<s n="vblex"/></r></p></e>
-<e>       <p><l>multekosta<s n="adj"/></l>             <r>costly<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>multekosta<s n="adj"/></l>             <r>costly<s n="adj"/></r></p></e>
 <e>       <p><l>kostumo<s n="n"/></l>                  <r>costume<s n="n"/></r></p></e>
 <e r="LR"><p><l>maskvesto<s n="n"/></l>                <r>costume<s n="n"/></r></p></e>
 <e>       <p><l>katuno<s n="n"/></l>                   <r>cotton<s n="n"/></r></p></e>
@@ -6270,7 +6254,7 @@ TODO??
 <e>       <p><l>dunganto<s n="n"/></l>                 <r>employer<s n="n"/></r></p></e>
 <e>       <p><l>dungado<s n="n"/></l>                  <r>employment<s n="n"/></r></p></e>
 <e r="LR"><p><l>dungateco<s n="n"/></l>                <r>employment<s n="n"/></r></p></e>
-<e>       <p><l>malplena<s n="adj"/></l>               <r>empty<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malplena<s n="adj"/></l>               <r>empty<s n="adj"/></r></p></e>
 <e>       <p><l>senhoma<s n="adj"/></l>                <r>empty<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senmebla<s n="adj"/></l>               <r>empty<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senobjekta<s n="adj"/></l>             <r>empty<s n="adj"/></r></p></e>
@@ -7157,8 +7141,8 @@ TODO??
 <e>       <p><l>etaĝo<s n="n"/></l>                    <r>floor<s n="n"/></r></p></e>
 <e r="LR"><p><l>planko<s n="n"/></l>                   <r>floor<s n="n"/></r></p></e>
 <e r="LR"><p><l>kahelo<s n="n"/></l>                   <r>floor<s n="n"/></r></p></e>
-<e>       <p><l>malrigida<s n="adj"/></l>              <r>floppy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>balanciĝanta<s n="adj"/></l>           <r>floppy<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malrigida<s n="adj"/></l>              <r>floppy<s n="adj"/></r></p></e>
+<e r="LR"><p><l>balanciĝanta<s n="adj"/></l>           <r>floppy<s n="adj"/></r></p></e>
 <e>       <p><l>vegetaĵaro<s n="n"/></l>               <r>flora<s n="n"/></r></p></e>
 <e>       <p><l>faruno<s n="n"/></l>                   <r>flour<s n="n"/></r></p></e>
 <e>       <p><l>fluo<s n="n"/></l>                     <r>flow<s n="n"/></r></p></e>
@@ -7840,7 +7824,7 @@ TODO??
 <e r="LR"><p><l>senĝene<s n="adv"/></l>                <r>happily<s n="adv"/></r></p></e>
 <e r="LR"><p><l>kontente<s n="adv"/></l>               <r>happily<s n="adv"/></r></p></e>
 <e>       <p><l>feliĉo<s n="n"/></l>                   <r>happiness<s n="n"/></r></p></e>
-<e>       <p><l>feliĉa<s n="adj"/></l>                 <r>happy<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>feliĉa<s n="adj"/></l>                 <r>happy<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ĉagrenadi<s n="vblex"/></l>            <r>harass<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>molesti<s n="vblex"/></l>              <r>harass<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>turmentiĝi<s n="vblex"/></l>           <r>harass<s n="vblex"/></r></p></e>
@@ -16091,26 +16075,26 @@ TODO??
 <e>       <p><l>zekino<s n="n"/></l>                   <r>spangle<s n="n"/></r></p></e>
 <e>       <p><l>zigomo<s n="n"/></l>                   <r>cheekbone<s n="n"/></r></p></e>
 <e>       <p><l>abstrakta<s n="adj"/></l>              <r>abstract<s n="adj"/></r></p></e>
-<e r="RL"><p><l>acida<s n="adj"/></l>                  <r>sour<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>acida<s n="adj"/></l>                  <r>sour<s n="adj"/></r></p></e>
 <e>       <p><l>adoptita<s n="adj"/></l>               <r>adoptive<s n="adj"/></r></p></e>
 <e r="RL"><p><l>adoptita<s n="adj"/></l>               <r>foster<s n="adj"/></r></p></e>
 <e r="LR"><p><l>adversa<s n="adj"/></l>                <r>adverse<s n="adj"/></r></p></e>
 <e r="RL"><p><l>afabla<s n="adj"/></l>                 <r>genial<s n="adj"/></r></p></e>
-<e r="RL"><p><l>afabla<s n="adj"/></l>                 <r>kind<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>afabla<s n="adj"/></l>                 <r>kind<s n="adj"/></r></p></e>
 <e r="LR"><p><l>agrokultura<s n="adj"/></l>            <r>agricultural<s n="adj"/></r></p></e>
-<e r="RL"><p><l>akra<s n="adj"/></l>                   <r>sharp<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>akra<s n="adj"/></l>                   <r>spiky<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>akurata<s n="adj"/></l>                <r>prompt<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>alta<s n="adj"/></l>                   <r>high<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>alta<s n="adj"/></l>                   <r>tall<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL" c="check"><p><l>amuza<s n="adj"/></l>        <r>fun<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>akra<s n="adj"/></l>                   <r>sharp<s n="adj"/></r></p></e>
+<e r="RL"><p><l>akra<s n="adj"/></l>                   <r>spiky<s n="adj"/></r></p></e>
+<e r="RL"><p><l>akurata<s n="adj"/></l>                <r>prompt<s n="adj"/></r></p></e>
+<e r="RL"><p><l>alta<s n="adj"/></l>                   <r>high<s n="adj"/></r></p></e>
+<e r="RL"><p><l>alta<s n="adj"/></l>                   <r>tall<s n="adj"/></r></p></e>
+<e r="RL" c="check"><p><l>amuza<s n="adj"/></l>        <r>fun<s n="adj"/></r></p></e>
 <e r="LR"><p><l>arda<s n="adj"/></l>                   <r>passionate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>arida<s n="adj"/></l>                  <r>arid<s n="adj"/></r></p></e>
 <e r="LR"><p><l>artista<s n="adj"/></l>                <r>artistic<s n="adj"/></r></p></e>
-<e r="RL"><p><l>aspra<s n="adj"/></l>                  <r>rough<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>aspra<s n="adj"/></l>                  <r>rough<s n="adj"/></r></p></e>
 <e r="RL"><p><l>atingebla<s n="adj"/></l>              <r>obtainable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aŭdovida<s n="adj"/></l>               <r>audiovisual<s n="adj"/></r></p></e>
-<e r="RL"><p><l>brila<s n="adj"/></l>                  <r>shiny<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>brila<s n="adj"/></l>                  <r>shiny<s n="adj"/></r></p></e>
 <e r="RL"><p><l>buŝa<s n="adj"/></l>                   <r>buccal<s n="adj"/></r></p></e>
 <e r="RL"><p><l>centra<s n="adj"/></l>                 <r>centre<s n="adj"/></r></p></e>
 <e r="LR"><p><l>certa<s n="adj"/></l>                  <r>undoubted<s n="adj"/></r></p></e>
@@ -16118,23 +16102,23 @@ TODO??
 <e r="LR"><p><l>defensiva<s n="adj"/></l>              <r>defensive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>dekstra<s n="adj"/></l>                <r>right<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dekstra<s n="adj"/></l>                <r>right-hand<s n="adj"/></r></p></e>
-<e r="RL"><p><l>delikata<s n="adj"/></l>               <r>tricky<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>densa<s n="adj"/></l>                  <r>dense<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>delikata<s n="adj"/></l>               <r>tricky<s n="adj"/></r></p></e>
+<e r="RL"><p><l>densa<s n="adj"/></l>                  <r>dense<s n="adj"/></r></p></e>
 <e r="LR"><p><l>devena<s n="adj"/></l>                 <r>natural<s n="adj"/></r></p></e>
 <e>       <p><l>diferenca<s n="adj"/></l>              <r>unlike<s n="adj"/></r></p></e>
 <e r="LR"><p><l>digna<s n="adj"/></l>                  <r>worthy<s n="adj"/></r></p></e>
-<e>       <p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>dika<s n="adj"/></l>                   <r>fat<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/></r></p></e>
+<e r="RL"><p><l>dika<s n="adj"/></l>                   <r>fat<s n="adj"/></r></p></e>
 <e r="LR"><p><l>distrita<s n="adj"/></l>               <r>careless<s n="adj"/></r></p></e>
 		<!-- Already is <e><l>diversa<adj></l><r>various<adj></r></e> -->
 <e r="RL"><p><l>diversa<s n="adj"/></l>                <r>diverse<s n="adj"/></r></p></e>
-<e r="RL"><p><l>dolĉa<s n="adj"/></l>                  <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>dolĉa<s n="adj"/></l>                  <r>sweet<s n="adj"/></r></p></e>
 <e>       <p><l>duonmonata<s n="adj"/></l>             <r>twice-weekly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ekskluziva<s n="adj"/></l>             <r>exclusive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ekstercentra<s n="adj"/></l>           <r>peripheral<s n="adj"/></r></p></e>
 <e>       <p><l>eksternorma<s n="adj"/></l>            <r>abnormal<s n="adj"/></r></p></e>
 <e r="LR" c="check"><p><l>ekzercita<s n="adj"/></l>    <r>expert<s n="adj"/></r></p></e>
-<e r="RL"><p><l>eleganta<s n="adj"/></l>               <r>fancy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>eleganta<s n="adj"/></l>               <r>fancy<s n="adj"/></r></p></e>
 <e>       <p><l>eltenebla<s n="adj"/></l>              <r>bearable<s n="adj"/></r></p></e>
 <e>       <p><l>endemia<s n="adj"/></l>                <r>endemical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>energidona<s n="adj"/></l>             <r>energetic<s n="adj"/></r></p></e>
@@ -16143,35 +16127,35 @@ TODO??
 <e r="LR"><p><l>estinta<s n="adj"/></l>                <r>past<s n="adj"/></r></p></e>
 <e r="LR"><p><l>fa<s n="adj"/></l>                     <r>shameful<s n="adj"/></r></p></e>
 <e r="LR"><p><l>fabela<s n="adj"/></l>                 <r>terrific<s n="adj"/></r></p></e>
-<e r="LR"><p><l>flua<s n="adj"/></l>                   <r>easy<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>facila<s n="adj"/></l>                 <r>easy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>fajna<s n="adj"/></l>                  <r>fine<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>flua<s n="adj"/></l>                   <r>easy<s n="adj"/></r></p></e>
+<e>       <p><l>facila<s n="adj"/></l>                 <r>easy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>fajna<s n="adj"/></l>                  <r>fine<s n="adj"/></r></p></e>
 <e>       <p><l>faldebla<s n="adj"/></l>               <r>collapsible<s n="adj"/></r></p></e>
-<e r="RL"><p><l>falsa<s n="adj"/></l>                  <r>false<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>falsa<s n="adj"/></l>                  <r>false<s n="adj"/></r></p></e>
 <e r="RL"><p><l>familiara<s n="adj"/></l>              <r>family<s n="adj"/></r></p></e>
 <e r="LR"><p><l>furioze<s n="adj"/></l>                <r>fierce<s n="adj"/></r></p></e>
-<e r="RL"><p><l>fiera<s n="adj"/></l>                  <r>proud<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>fiera<s n="adj"/></l>                  <r>proud<s n="adj"/></r></p></e>
 <e>       <p><l>fiksa<s n="adj"/></l>                  <r>fixed<s n="adj"/></r></p></e>
-<e r="RL"><p><l>firma<s n="adj"/></l>                  <r>firm<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>flava<s n="adj"/></l>                  <r>yellow<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>firma<s n="adj"/></l>                  <r>firm<s n="adj"/></r></p></e>
+<e r="RL"><p><l>flava<s n="adj"/></l>                  <r>yellow<s n="adj"/></r></p></e>
 <e r="LR" c="check"><p><l>fluanta<s n="adj"/></l>      <r>common<s n="adj"/></r></p></e>
-<e r="RL"><p><l>forta<s n="adj"/></l>                  <r>strong<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>forta<s n="adj"/></l>                  <r>strong<s n="adj"/></r></p></e>
 <e r="LR"><p><l>fotografa<s n="adj"/></l>              <r>photographic<s n="adj"/></r></p></e>
-<e r="RL"><p><l>fragila<s n="adj"/></l>                <r>brittle<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>fragila<s n="adj"/></l>                <r>brittle<s n="adj"/></r></p></e>
 <e r="RL"><p><l>fremda<s n="adj"/></l>                 <r>extraneous<s n="adj"/></r></p></e>
-<e r="RL"><p><l>freneza<s n="adj"/></l>                <r>crazy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>freŝa<s n="adj"/></l>                  <r>cool<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>freŝa<s n="adj"/></l>                  <r>fresh<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>frua<s n="adj"/></l>                   <r>early<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>freneza<s n="adj"/></l>                <r>crazy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>freŝa<s n="adj"/></l>                  <r>cool<s n="adj"/></r></p></e>
+<e r="RL"><p><l>freŝa<s n="adj"/></l>                  <r>fresh<s n="adj"/></r></p></e>
+<e r="RL"><p><l>frua<s n="adj"/></l>                   <r>early<s n="adj"/></r></p></e>
 <e r="LR"><p><l>futura<s n="adj"/></l>                 <r>future<s n="adj"/></r></p></e>
-<e r="RL"><p><l>gaja<s n="adj"/></l>                   <r>merry<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>gaja<s n="adj"/></l>                   <r>merry<s n="adj"/></r></p></e>
 <e>       <p><l>geedza<s n="adj"/></l>                 <r>conjugal<s n="adj"/></r></p></e>
 <e>       <p><l>geometria<s n="adj"/></l>              <r>geometrical<s n="adj"/></r></p></e>
-<e r="RL"><p><l>glata<s n="adj"/></l>                  <r>smooth<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>amuza<s n="adj"/></l>                  <r>funny<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>grave<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>gray<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>grey<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>glata<s n="adj"/></l>                  <r>smooth<s n="adj"/></r></p></e>
+<e r="RL"><p><l>amuza<s n="adj"/></l>                  <r>funny<s n="adj"/></r></p></e>
+<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>grave<s n="adj"/></r></p></e>
+<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>gray<s n="adj"/></r></p></e>
+<e r="RL"><p><l>griza<s n="adj"/></l>                  <r>grey<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ĝeneralvalida<s n="adj"/></l>          <r>polyvalent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>hazarda<s n="adj"/></l>                <r>casual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>hela<s n="adj"/></l>                   <r>ligthful<s n="adj"/></r></p></e>
@@ -16179,7 +16163,7 @@ TODO??
 <e>       <p><l>heterogena<s n="adj"/></l>             <r>heterogeneous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>sendecida<s n="adj"/></l>              <r>hesitant<s n="adj"/></r></p></e>
 <e r="LR"><p><l>hida<s n="adj"/></l>                   <r>horrible<s n="adj"/></r></p></e>
-<e r="RL"><p><l>humila<s n="adj"/></l>                 <r>humble<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>humila<s n="adj"/></l>                 <r>humble<s n="adj"/></r></p></e>
 <e r="LR"><p><l>implicita<s n="adj"/></l>              <r>implicit<s n="adj"/></r></p></e>
 <e r="LR"><p><l>impresa<s n="adj"/></l>                <r>impressive<s n="adj"/></r></p></e>
 <e r="LR"><p><l>impulsiĝema<s n="adj"/></l>            <r>impulsive<s n="adj"/></r></p></e>
@@ -16187,87 +16171,87 @@ TODO??
 <e>       <p><l>inklina<s n="adj"/></l>                <r>liable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>intera<s n="adj"/></l>                 <r>intermediate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>interaga<s n="adj"/></l>               <r>interactive<s n="adj"/></r></p></e>
-<e r="RL"><p><l>iometa<s n="adj"/></l>                 <r>tiny<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>iometa<s n="adj"/></l>                 <r>tiny<s n="adj"/></r></p></e>
 <e r="LR"><p><l>izolita<s n="adj"/></l>                <r>separate<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>fit<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>able<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>fit<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kapabla<s n="adj"/></l>                <r>able<s n="adj"/></r></p></e>
 <e r="LR"><p><l>batala<s n="adj"/></l>                 <r>combat<s n="adj"/></r></p></e>
 <e r="LR"><p><l>kontraŭnatura<s n="adj"/></l>          <r>unnatural<s n="adj"/></r></p></e>
 <e r="RL"><p><l>korpa<s n="adj"/></l>                  <r>corporal<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kruda<s n="adj"/></l>                  <r>crude<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>kruda<s n="adj"/></l>                  <r>raw<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>kulpa<s n="adj"/></l>                  <r>guilty<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>kuraĝa<s n="adj"/></l>                 <r>brave<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>kruda<s n="adj"/></l>                  <r>crude<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kruda<s n="adj"/></l>                  <r>raw<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kulpa<s n="adj"/></l>                  <r>guilty<s n="adj"/></r></p></e>
+<e r="RL"><p><l>kuraĝa<s n="adj"/></l>                 <r>brave<s n="adj"/></r></p></e>
 <e r="LR"><p><l>kvalifikita<s n="adj"/></l>            <r>qualified<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kvieta<s n="adj"/></l>                 <r>still<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>kvieta<s n="adj"/></l>                 <r>still<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laborema<s n="adj"/></l>               <r>painstaking<s n="adj"/></r></p></e>
-<e r="RL"><p><l>larĝa<s n="adj"/></l>                  <r>broad<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>larĝa<s n="adj"/></l>                  <r>wide<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>larĝa<s n="adj"/></l>                  <r>broad<s n="adj"/></r></p></e>
+<e r="RL"><p><l>larĝa<s n="adj"/></l>                  <r>wide<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laŭgrada<s n="adj"/></l>               <r>gradual<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laŭteksta<s n="adj"/></l>              <r>textual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>right-handed<s n="adj"/></r></p></e>
-<e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>clever<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>smart<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>libera<s n="adj"/></l>                 <r>free<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>longa<s n="adj"/></l>                  <r>lengthy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>clever<s n="adj"/></r></p></e>
+<e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>smart<s n="adj"/></r></p></e>
+<e r="RL"><p><l>libera<s n="adj"/></l>                 <r>free<s n="adj"/></r></p></e>
+<e r="RL"><p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/></r></p></e>
+<e r="RL"><p><l>longa<s n="adj"/></l>                  <r>lengthy<s n="adj"/></r></p></e>
 <e r="LR"><p><l>lukra<s n="adj"/></l>                  <r>yielding<s n="adj"/></r></p></e>
 <e r="RL"><p><l>maksimuma<s n="adj"/></l>              <r>maximal<s n="adj"/></r></p></e>
 <e r="RL"><p><l>malakurata<s n="adj"/></l>             <r>delinquent<s n="adj"/></r></p></e>
-<e>       <p><l>malbela<s n="adj"/></l>                <r>ugly<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>malbela<s n="adj"/></l>                <r>ugly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malbenita<s n="adj"/></l>              <r>fucking<s n="adj"/></r></p></e>
-<e r="RL"><p><l>malbona<s n="adj"/></l>                <r>mean<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malbona<s n="adj"/></l>                <r>nasty<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>malbonkonduta<s n="adj"/></l>          <r>naughty<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malbona<s n="adj"/></l>                <r>mean<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malbona<s n="adj"/></l>                <r>nasty<s n="adj"/></r></p></e>
+<e>       <p><l>malbonkonduta<s n="adj"/></l>          <r>naughty<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malbrua<s n="adj"/></l>                <r>silent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malcerta<s n="adj"/></l>               <r>doubtful<s n="adj"/></r></p></e>
 <e r="RL" c="check"><p><l>maldekstra<s n="adj"/></l>   <r>left<s n="adj"/></r></p></e>
 <e r="LR"><p><l>maldesktramana<s n="adj"/></l>         <r>left-handed<s n="adj"/></r></p></e>
-<e r="RL"><p><l>maldika<s n="adj"/></l>                <r>thin<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>maldika<s n="adj"/></l>                <r>thin<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malestima<s n="adj"/></l>              <r>pejorative<s n="adj"/></r></p></e>
 		<!-- Already is <e r="LR"><l>malfeliĉa<adj></l><r>sad<adj></r></e> -->
-<e r="RL"><p><l>malfeliĉa<s n="adj"/></l>              <r>unhappy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malforta<s n="adj"/></l>               <r>feeble<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malforta<s n="adj"/></l>               <r>weak<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malfrua<s n="adj"/></l>                <r>late<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malgranda<s n="adj"/></l>              <r>small<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malĝentila<s n="adj"/></l>             <r>earthy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malklara<s n="adj"/></l>               <r>muddy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malfeliĉa<s n="adj"/></l>              <r>unhappy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malforta<s n="adj"/></l>               <r>feeble<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malforta<s n="adj"/></l>               <r>weak<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malfrua<s n="adj"/></l>                <r>late<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malgranda<s n="adj"/></l>              <r>small<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malĝentila<s n="adj"/></l>             <r>earthy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malklara<s n="adj"/></l>               <r>muddy<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malkomforta<s n="adj"/></l>            <r>uncomfortable<s n="adj"/></r></p></e>
 <e r="RL"><p><l>malkontenta<s n="adj"/></l>            <r>unsatisfied<s n="adj"/></r></p></e>
 <e>       <p><l>malkontinua<s n="adj"/></l>            <r>discontinuous<s n="adj"/></r></p></e>
-<e r="RL"><p><l>mallarĝa<s n="adj"/></l>               <r>narrow<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>mallonga<s n="adj"/></l>               <r>short<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malluma<s n="adj"/></l>                <r>dark<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malnova<s n="adj"/></l>                <r>old<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malofta<s n="adj"/></l>                <r>rare<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malpeza<s n="adj"/></l>                <r>light<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>mallarĝa<s n="adj"/></l>               <r>narrow<s n="adj"/></r></p></e>
+<e r="RL"><p><l>mallonga<s n="adj"/></l>               <r>short<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malluma<s n="adj"/></l>                <r>dark<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malnova<s n="adj"/></l>                <r>old<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malofta<s n="adj"/></l>                <r>rare<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malpeza<s n="adj"/></l>                <r>light<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malpreciza<s n="adj"/></l>             <r>imprecise<s n="adj"/></r></p></e>
-<e r="RL"><p><l>malprofunda<s n="adj"/></l>            <r>shallow<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malprofunda<s n="adj"/></l>            <r>shallow<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malproksima<s n="adj"/></l>            <r>distant<s n="adj"/></r></p></e>
-<e r="RL"><p><l>malproksima<s n="adj"/></l>            <r>far<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malproksima<s n="adj"/></l>            <r>far<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malprospera<s n="adj"/></l>            <r>fruitless<s n="adj"/></r></p></e>
-<e r="RL"><p><l>malpura<s n="adj"/></l>                <r>gross<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>malpura<s n="adj"/></l>                <r>dirty<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malrapida<s n="adj"/></l>              <r>slow<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malpura<s n="adj"/></l>                <r>gross<s n="adj"/></r></p></e>
+<e>       <p><l>malpura<s n="adj"/></l>                <r>dirty<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malrapida<s n="adj"/></l>              <r>slow<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malregula<s n="adj"/></l>              <r>irregular<s n="adj"/></r></p></e>
-<e r="RL"><p><l>malriĉa<s n="adj"/></l>                <r>poor<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>malsana<s n="adj"/></l>                <r>ill<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malsana<s n="adj"/></l>                <r>sick<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malserioza<s n="adj"/></l>             <r>silly<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>malriĉa<s n="adj"/></l>                <r>poor<s n="adj"/></r></p></e>
+<e>       <p><l>malsana<s n="adj"/></l>                <r>ill<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malsana<s n="adj"/></l>                <r>sick<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malserioza<s n="adj"/></l>             <r>silly<s n="adj"/></r></p></e>
 <e>       <p><l>maltimida<s n="adj"/></l>              <r>blatant<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malutila<s n="adj"/></l>               <r>harmful<s n="adj"/></r></p></e>
 <e r="LR"><p><l>media<s n="adj"/></l>                  <r>environmental<s n="adj"/></r></p></e>
 <e r="LR"><p><l>miksita<s n="adj"/></l>                <r>mixed<s n="adj"/></r></p></e>
-<e r="RL"><p><l>milda<s n="adj"/></l>                  <r>gentle<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>milda<s n="adj"/></l>                  <r>mild<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>milda<s n="adj"/></l>                  <r>gentle<s n="adj"/></r></p></e>
+<e r="RL"><p><l>milda<s n="adj"/></l>                  <r>mild<s n="adj"/></r></p></e>
 <e r="LR"><p><l>misfortuna<s n="adj"/></l>             <r>miserable<s n="adj"/></r></p></e>
-<e r="RL"><p><l>mola<s n="adj"/></l>                   <r>soft<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>mola<s n="adj"/></l>                   <r>tender<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>mola<s n="adj"/></l>                   <r>soft<s n="adj"/></r></p></e>
+<e r="RL"><p><l>mola<s n="adj"/></l>                   <r>tender<s n="adj"/></r></p></e>
 <e r="LR"><p><l>monata<s n="adj"/></l>                 <r>monthly<s n="adj"/></r></p></e>
 <e>       <p><l>monotona<s n="adj"/></l>               <r>monotone<s n="adj"/></r></p></e>
-<e r="RL"><p><l>muta<s n="adj"/></l>                   <r>dumb<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>naiva<s n="adj"/></l>                  <r>naïve<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>muta<s n="adj"/></l>                   <r>dumb<s n="adj"/></r></p></e>
+<e r="RL"><p><l>naiva<s n="adj"/></l>                  <r>naïve<s n="adj"/></r></p></e>
 <e>       <p><l>naŭtika<s n="adj"/></l>                <r>nautical<s n="adj"/></r></p></e>
 <e r="RL"><p><l>neakceptebla<s n="adj"/></l>           <r>inadmissible<s n="adj"/></r></p></e>
 <e r="LR"><p><l>nedeca<s n="adj"/></l>                 <r>wrong<s n="adj"/></r></p></e>
@@ -16285,60 +16269,60 @@ TODO??
 <e r="LR"><p><l>netransitiva<s n="adj"/></l>           <r>neutral<s n="adj"/></r></p></e>
 <e r="RL"><p><l>neŭtra<s n="adj"/></l>                 <r>neuter<s n="adj"/></r></p></e>
 <e r="LR"><p><l>neŭtra<s n="adj"/></l>                 <r>neutral<s n="adj"/></r></p></e>
-<e r="RL"><p><l>nobla<s n="adj"/></l>                  <r>noble<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>nobla<s n="adj"/></l>                  <r>noble<s n="adj"/></r></p></e>
 <e>       <p><l>notaria<s n="adj"/></l>                <r>notarial<s n="adj"/></r></p></e>
-<e r="RL"><p><l>nova<s n="adj"/></l>                   <r>new<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>nuda<s n="adj"/></l>                   <r>nude<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>nova<s n="adj"/></l>                   <r>new<s n="adj"/></r></p></e>
+<e r="RL"><p><l>nuda<s n="adj"/></l>                   <r>nude<s n="adj"/></r></p></e>
 <e>       <p><l>nula<s n="adj"/></l>                   <r>invalid<s n="adj"/></r></p></e>
 <e r="LR"><p><l>nutra<s n="adj"/></l>                  <r>nutritious<s n="adj"/></r></p></e>
 <e r="RL"><p><l>obeema<s n="adj"/></l>                 <r>dutiful<s n="adj"/></r></p></e>
-<e r="RL"><p><l>okulfrapa<s n="adj"/></l>              <r>showy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>ombra<s n="adj"/></l>                  <r>shady<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>okulfrapa<s n="adj"/></l>              <r>showy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>ombra<s n="adj"/></l>                  <r>shady<s n="adj"/></r></p></e>
 <e r="LR"><p><l>opaka<s n="adj"/></l>                  <r>opaque<s n="adj"/></r></p></e>
 <e>       <p><l>osta<s n="adj"/></l>                   <r>osseous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pedagogia<s n="adj"/></l>              <r>didactic<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>multekosta<adj></l><r>costly<adj><sint></r></e> -->
-<e i="yes"><p><l>peniga<s n="adj"/></l>                <r>costly<s n="adj"/><s n="sint"/></r></p></e>
+		<!-- Already is <e><l>multekosta<adj></l><r>costly<adj></r></e> -->
+<e i="yes"><p><l>peniga<s n="adj"/></l>                <r>costly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pentrinda<s n="adj"/></l>              <r>picturesque<s n="adj"/></r></p></e>
 <e r="RL"><p><l>perceptebla<s n="adj"/></l>            <r>perceivable<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pionira<s n="adj"/></l>                <r>innovative<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pla<s n="adj"/></l>                    <r>complementary<s n="adj"/></r></p></e>
-<e r="RL"><p><l>plena<s n="adj"/></l>                  <r>full<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>plena<s n="adj"/></l>                  <r>full<s n="adj"/></r></p></e>
 <e r="LR"><p><l>plia<s n="adj"/></l>                   <r>additional<s n="adj"/></r></p></e>
 <e r="RL"><p><l>posta<s n="adj"/></l>                  <r>posterior<s n="adj"/></r></p></e>
 <e>       <p><l>postmorta<s n="adj"/></l>              <r>posthumous<s n="adj"/></r></p></e>
 <e r="LR" c="check"><p><l>pritraktata<s n="adj"/></l>  <r>pending<s n="adj"/></r></p></e>
 <e r="LR"><p><l>produktema<s n="adj"/></l>             <r>productive<s n="adj"/></r></p></e>
-<e r="RL"><p><l>profunda<s n="adj"/></l>               <r>deep<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>proksima<s n="adj"/></l>               <r>close<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>proksima<s n="adj"/></l>               <r>near<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>profunda<s n="adj"/></l>               <r>deep<s n="adj"/></r></p></e>
+<e r="RL"><p><l>proksima<s n="adj"/></l>               <r>close<s n="adj"/></r></p></e>
+<e r="RL"><p><l>proksima<s n="adj"/></l>               <r>near<s n="adj"/></r></p></e>
 <e r="RL"><p><l>proksima<s n="adj"/></l>               <r>comer<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prosperita<s n="adj"/></l>             <r>successful<s n="adj"/></r></p></e>
-<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>clean<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>net<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>pure<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>clean<s n="adj"/></r></p></e>
+<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>net<s n="adj"/></r></p></e>
+<e r="RL"><p><l>pura<s n="adj"/></l>                   <r>pure<s n="adj"/></r></p></e>
 <e r="LR"><p><l>respondeca<s n="adj"/></l>             <r>responsible<s n="adj"/></r></p></e>
 <e>       <p><l>retroaktiva<s n="adj"/></l>            <r>retroactive<s n="adj"/></r></p></e>
 <e>       <p><l>retroira<s n="adj"/></l>               <r>retrograde<s n="adj"/></r></p></e>
 <e r="LR"><p><l>retrospekta<s n="adj"/></l>            <r>retrospective<s n="adj"/></r></p></e>
-<e r="RL"><p><l>riĉa<s n="adj"/></l>                   <r>rich<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>riĉa<s n="adj"/></l>                   <r>wealthy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>riĉa<s n="adj"/></l>                   <r>rich<s n="adj"/></r></p></e>
+<e r="RL"><p><l>riĉa<s n="adj"/></l>                   <r>wealthy<s n="adj"/></r></p></e>
 <e>       <p><l>rivera<s n="adj"/></l>                 <r>fluvial<s n="adj"/></r></p></e>
 <e r="LR"><p><l>romanika<s n="adj"/></l>               <r>Romance<s n="adj"/></r></p></e>
-<e r="RL"><p><l>ronda<s n="adj"/></l>                  <r>round<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>rozkolora<s n="adj"/></l>              <r>pink<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>saĝa<s n="adj"/></l>                   <r>wise<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>sana<s n="adj"/></l>                   <r>healthy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>sankta<s n="adj"/></l>                 <r>holy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>seka<s n="adj"/></l>                   <r>dry<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>ronda<s n="adj"/></l>                  <r>round<s n="adj"/></r></p></e>
+<e r="RL"><p><l>rozkolora<s n="adj"/></l>              <r>pink<s n="adj"/></r></p></e>
+<e r="RL"><p><l>saĝa<s n="adj"/></l>                   <r>wise<s n="adj"/></r></p></e>
+<e r="RL"><p><l>sana<s n="adj"/></l>                   <r>healthy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>sankta<s n="adj"/></l>                 <r>holy<s n="adj"/></r></p></e>
+<e r="RL"><p><l>seka<s n="adj"/></l>                   <r>dry<s n="adj"/></r></p></e>
 <e r="LR"><p><l>sekulara<s n="adj"/></l>               <r>mundane<s n="adj"/></r></p></e>
-<e r="RL"><p><l>sekura<s n="adj"/></l>                 <r>safe<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>sekura<s n="adj"/></l>                 <r>sure<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>sekura<s n="adj"/></l>                 <r>safe<s n="adj"/></r></p></e>
+<e r="RL"><p><l>sekura<s n="adj"/></l>                 <r>sure<s n="adj"/></r></p></e>
 <e r="LR"><p><l>semajna<s n="adj"/></l>                <r>weekly<s n="adj"/></r></p></e>
 <e>       <p><l>semestra<s n="adj"/></l>               <r>semiannual<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senatenda<s n="adj"/></l>              <r>unexpected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>senefika<s n="adj"/></l>               <r>inoperable<s n="adj"/></r></p></e>
-<e r="RL"><p><l>senfrukta<s n="adj"/></l>              <r>barren<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>senfrukta<s n="adj"/></l>              <r>barren<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senintenca<s n="adj"/></l>             <r>involuntary<s n="adj"/></r></p></e>
 <e r="RL"><p><l>seninterrompa<s n="adj"/></l>          <r>uninterruptible<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senkonsidera<s n="adj"/></l>           <r>informal<s n="adj"/></r></p></e>
@@ -16346,42 +16330,42 @@ TODO??
 <e r="LR"><p><l>senmanka<s n="adj"/></l>               <r>flawless<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senmezura<s n="adj"/></l>              <r>immoderate<s n="adj"/></r></p></e>
 <e>       <p><l>sennombra<s n="adj"/></l>              <r>innumerable<s n="adj"/></r></p></e>
-<e r="LR"><p><l>senpaga<s n="adj"/></l>                <r>free<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>senpaga<s n="adj"/></l>                <r>free<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senrezerva<s n="adj"/></l>             <r>unconditional<s n="adj"/></r></p></e>
-<e r="RL"><p><l>serena<s n="adj"/></l>                 <r>sober<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>plain<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>simple<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>serena<s n="adj"/></l>                 <r>sober<s n="adj"/></r></p></e>
+<e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>plain<s n="adj"/></r></p></e>
+<e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>simple<s n="adj"/></r></p></e>
 <e r="RL"><p><l>simpla<s n="adj"/></l>                 <r>facile<s n="adj"/></r></p></e>
-<e r="RL"><p><l>sincera<s n="adj"/></l>                <r>sincere<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>sincera<s n="adj"/></l>                <r>sincere<s n="adj"/></r></p></e>
 <e>       <p><l>sindikata<s n="adj"/></l>              <r>sindical<s n="adj"/></r></p></e>
-<e r="RL"><p><l>sinistra<s n="adj"/></l>               <r>grim<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>solida<s n="adj"/></l>                 <r>solid<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>sovaĝa<s n="adj"/></l>                 <r>wild<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>sinistra<s n="adj"/></l>               <r>grim<s n="adj"/></r></p></e>
+<e r="RL"><p><l>solida<s n="adj"/></l>                 <r>solid<s n="adj"/></r></p></e>
+<e r="RL"><p><l>sovaĝa<s n="adj"/></l>                 <r>wild<s n="adj"/></r></p></e>
 <e r="LR"><p><l>splenda<s n="adj"/></l>                <r>splendid<s n="adj"/></r></p></e>
-<e r="RL"><p><l>sprita<s n="adj"/></l>                 <r>bright<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>odd<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>strange<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>weird<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>sprita<s n="adj"/></l>                 <r>bright<s n="adj"/></r></p></e>
+<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>odd<s n="adj"/></r></p></e>
+<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>strange<s n="adj"/></r></p></e>
+<e r="RL"><p><l>stranga<s n="adj"/></l>                <r>weird<s n="adj"/></r></p></e>
 <e r="LR"><p><l>strida<s n="adj"/></l>                 <r>strident<s n="adj"/></r></p></e>
 <e>       <p><l>subevoluinta<s n="adj"/></l>           <r>underdeveloped<s n="adj"/></r></p></e>
 <e>       <p><l>submetata<s n="adj"/></l>              <r>subject<s n="adj"/></r></p></e>
-<e r="RL"><p><l>subtila<s n="adj"/></l>                <r>subtle<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>subtila<s n="adj"/></l>                <r>subtle<s n="adj"/></r></p></e>
 <e r="LR"><p><l>suma<s n="adj"/></l>                   <r>global<s n="adj"/></r></p></e>
 <e r="LR"><p><l>supozata<s n="adj"/></l>               <r>presumptive<s n="adj"/></r></p></e>
-<e r="RL"><p><l>surda<s n="adj"/></l>                  <r>deaf<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>surda<s n="adj"/></l>                  <r>deaf<s n="adj"/></r></p></e>
 <e r="LR"><p><l>suspektema<s n="adj"/></l>             <r>reluctant<s n="adj"/></r></p></e>
-<e r="RL"><p><l>svelta<s n="adj"/></l>                 <r>slim<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>svelta<s n="adj"/></l>                 <r>slim<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ŝipa<s n="adj"/></l>                   <r>naval<s n="adj"/></r></p></e>
 <e>       <p><l>taga<s n="adj"/></l>                   <r>diurnal<s n="adj"/></r></p></e>
 <e>       <p><l>tekstila<s n="adj"/></l>               <r>textile<s n="adj"/></r></p></e>
 <e>       <p><l>telefona<s n="adj"/></l>               <r>telephonic<s n="adj"/></r></p></e>
 <e r="LR"><p><l>temerara<s n="adj"/></l>               <r>reckless<s n="adj"/></r></p></e>
-<e r="LR"><p><l>tenera<s n="adj"/></l>                 <r>fond<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>tergloba<s n="adj"/></l>               <r>earthly<s n="adj"/><s n="sint"/></r></p></e>
+<e r="LR"><p><l>tenera<s n="adj"/></l>                 <r>fond<s n="adj"/></r></p></e>
+<e r="RL"><p><l>tergloba<s n="adj"/></l>               <r>earthly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tia<s n="adj"/></l>                    <r>local<s n="adj"/></r></p></e>
-<e r="RL"><p><l>timema<s n="adj"/></l>                 <r>shy<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>quiet<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>timema<s n="adj"/></l>                 <r>shy<s n="adj"/></r></p></e>
+<e>       <p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/></r></p></e>
+<e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>quiet<s n="adj"/></r></p></e>
 <e>       <p><l>transversa<s n="adj"/></l>             <r>transversal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>travid(ebl)a<s n="adj"/></l>           <r>transparent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>trimonata<s n="adj"/></l>              <r>quarterly<s n="adj"/></r></p></e>
@@ -16390,10 +16374,10 @@ TODO??
 <e>       <p><l>umbilika<s n="adj"/></l>               <r>umbilical<s n="adj"/></r></p></e>
 <e r="RL"><p><l>urba<s n="adj"/></l>                   <r>citizen<s n="adj"/></r></p></e>
 <e>       <p><l>vapora<s n="adj"/></l>                 <r>vaporous<s n="adj"/></r></p></e>
-<e r="RL"><p><l>varmeta<s n="adj"/></l>                <r>warm<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>vasta<s n="adj"/></l>                  <r>vast<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>vera<s n="adj"/></l>                   <r>true<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>vila<s n="adj"/></l>                   <r>hairy<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>varmeta<s n="adj"/></l>                <r>warm<s n="adj"/></r></p></e>
+<e r="RL"><p><l>vasta<s n="adj"/></l>                  <r>vast<s n="adj"/></r></p></e>
+<e r="RL"><p><l>vera<s n="adj"/></l>                   <r>true<s n="adj"/></r></p></e>
+<e r="RL"><p><l>vila<s n="adj"/></l>                   <r>hairy<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aboli<s n="vblex"/></l>                <r>abolish<s n="vblex"/></r></p></e>
 <e>       <p><l>abolicii<s n="vblex"/></l>             <r>abolish<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>aborti<s n="vblex"/></l>               <r>abort<s n="vblex"/></r></p></e>
@@ -16468,10 +16452,10 @@ TODO??
 <e r="RL"><p><l>instigi<s n="vblex"/></l>              <r>abet<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>interkonsentigi<s n="vblex"/></l>      <r>conciliate<s n="vblex"/></r></p></e>
 <e r="LR" c="encerrar o recluir"><p><l>internigi<s n="vblex"/></l><r>confine<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>bela<s n="adj"/></l>                   <r>pretty<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>belega<s n="adj"/></l>                 <r>lovely<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>blinda<s n="adj"/></l>                 <r>blind<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>blonda<s n="adj"/></l>                 <r>blond<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>bela<s n="adj"/></l>                   <r>pretty<s n="adj"/></r></p></e>
+<e r="RL"><p><l>belega<s n="adj"/></l>                 <r>lovely<s n="adj"/></r></p></e>
+<e r="RL"><p><l>blinda<s n="adj"/></l>                 <r>blind<s n="adj"/></r></p></e>
+<e r="RL"><p><l>blonda<s n="adj"/></l>                 <r>blond<s n="adj"/></r></p></e>
 <e r="RL"><p><l>ĵeti<s n="vblex"/></l>                 <r>sling<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kadukiĝi<s n="vblex"/></l>             <r>age<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kanaligi<s n="vblex"/></l>             <r>pipe<s n="vblex"/></r></p></e>
@@ -16668,18 +16652,18 @@ TODO??
 <e>       <p><l>anarkia<s n="adj"/></l>                <r>anarchist<s n="adj"/></r></p></e>
 <e r="LR"><p><l>animala<s n="adj"/></l>                <r>animal<s n="adj"/></r></p></e>
 <e>       <p><l>korala<s n="adj"/></l>                 <r>choral<s n="adj"/></r></p></e>
-<e r="RL"><p><l>klara<s n="adj"/></l>                  <r>clear<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malvarma<s n="adj"/></l>               <r>cold<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>justa<s n="adj"/></l>                  <r>fair<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>plata<s n="adj"/></l>                  <r>flat<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>verda<s n="adj"/></l>                  <r>green<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>nura<s n="adj"/></l>                   <r>just<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>magra<s n="adj"/></l>                  <r>lean<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>malalta<s n="adj"/></l>                <r>low<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>norda<s n="adj"/></l>                  <r>north<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL"><p><l>suda<s n="adj"/></l>                   <r>south<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>klara<s n="adj"/></l>                  <r>clear<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malvarma<s n="adj"/></l>               <r>cold<s n="adj"/></r></p></e>
+<e r="RL"><p><l>justa<s n="adj"/></l>                  <r>fair<s n="adj"/></r></p></e>
+<e r="RL"><p><l>plata<s n="adj"/></l>                  <r>flat<s n="adj"/></r></p></e>
+<e r="RL"><p><l>verda<s n="adj"/></l>                  <r>green<s n="adj"/></r></p></e>
+<e r="RL"><p><l>nura<s n="adj"/></l>                   <r>just<s n="adj"/></r></p></e>
+<e r="RL"><p><l>magra<s n="adj"/></l>                  <r>lean<s n="adj"/></r></p></e>
+<e r="RL"><p><l>malalta<s n="adj"/></l>                <r>low<s n="adj"/></r></p></e>
+<e r="RL"><p><l>norda<s n="adj"/></l>                  <r>north<s n="adj"/></r></p></e>
+<e r="RL"><p><l>suda<s n="adj"/></l>                   <r>south<s n="adj"/></r></p></e>
 <e>       <p><l>substantiva<s n="adj"/></l>            <r>substantive<s n="adj"/></r></p></e>
-<e r="RL"><p><l>blanka<s n="adj"/></l>                 <r>white<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>blanka<s n="adj"/></l>                 <r>white<s n="adj"/></r></p></e>
 <e>       <p><l>blindi<s n="vblex"/></l>               <r>blind<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>disciplini<s n="vblex"/></l>           <r>discipline<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekskuzi<s n="vblex"/></l>              <r>excuse<s n="vblex"/></r></p></e>
@@ -16695,7 +16679,7 @@ TODO??
 <e r="LR"><p><l>ŝui<s n="vblex"/></l>                  <r>shoe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>surfaci<s n="vblex"/></l>              <r>surface<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>telefoni<s n="vblex"/></l>             <r>telephone<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>elkora<s n="adj"/></l>                 <r>fond<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>elkora<s n="adj"/></l>                 <r>fond<s n="adj"/></r></p></e>
 <e>       <p><l>maldekstrula<s n="adj"/></l>           <r>left-handed<s n="adj"/></r></p></e>
 <e>       <p><l>fermo<s n="n"/></l>                    <r>closing<s n="n"/></r></p></e>
 <e>       <p><l>ferma<s n="adj"/></l>                  <r>closed<s n="adj"/></r></p></e>
@@ -20764,8 +20748,8 @@ TODO??
 <e>       <p><l>paganismo<s n="n"/></l>                <r>heathenism<s n="n"/></r></p></e>
 <e r="LR"><p><l>senreligieco<s n="n"/></l>             <r>heathenism<s n="n"/></r></p></e>
 <e>       <p><l>ĉiela<s n="adj"/></l>                  <r>heavenly<s n="adj"/></r></p></e>
-<e>       <p><l>peza<s n="adj"/></l>                   <r>heavy<s n="adj"/><s n="sint"/></r></p></e>
-<e r="LR"><p><l>ega<s n="adj"/></l>                    <r>heavy<s n="adj"/><s n="sint"/></r></p></e>
+<e>       <p><l>peza<s n="adj"/></l>                   <r>heavy<s n="adj"/></r></p></e>
+<e r="LR"><p><l>ega<s n="adj"/></l>                    <r>heavy<s n="adj"/></r></p></e>
 <e r="LR"><p><l>Hektoro<s n="np"/><s n="ant"/></l>     <r>Hector<s n="np"/><s n="ant"/></r></p></e>
 <e r="RL"><p><l>heĝo<s n="n"/></l>                     <r>hedge<s n="n"/></r></p></e>
 <e>       <p><l>erinaco<s n="n"/></l>                  <r>hedgehog<s n="n"/></r></p></e>

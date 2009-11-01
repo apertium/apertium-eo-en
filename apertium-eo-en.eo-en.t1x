@@ -37,6 +37,8 @@
   <def-cat n="c_pli_plej">
      <cat-item lemma="pli" tags="preadv"/>
      <cat-item lemma="plej" tags="preadv"/>
+     <cat-item lemma="pli" tags="adv"/>
+     <cat-item lemma="plej" tags="adv"/>
   </def-cat>
 
   <def-cat n="c_adv">
@@ -150,12 +152,250 @@
 
 </section-def-attrs>
 
+
+
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="genere"/>
   <def-var n="adv_adjectiu"/>
   <def-var n="superlatiu1"/>
 </section-def-vars>
+
+
+  <section-def-lists>
+
+    <def-list n="adj_kun_sint" c="
+		Adjektivoj kiuj en la angla estas sintezaj, 
+		ekz. big, bigger, biggest.  
+		kaj ne big, more big, most big.
+		Tiuj estas markitaj en en.dix per la marko (sint)">
+      <list-item v="able"/>
+      <list-item v="angry"/>
+      <list-item v="apt"/>
+      <list-item v="avid"/>
+      <list-item v="bad"/>
+      <list-item v="bare"/>
+      <list-item v="barren"/>
+      <list-item v="big"/>
+      <list-item v="blind"/>
+      <list-item v="blond"/>
+      <list-item v="blunt"/>
+      <list-item v="bold"/>
+      <list-item v="brave"/>
+      <list-item v="bright"/>
+      <list-item v="brittle"/>
+      <list-item v="broad"/>
+      <list-item v="bulky"/>
+      <list-item v="busy"/>
+      <list-item v="calm"/>
+      <list-item v="cheap"/>
+      <list-item v="clean"/>
+      <list-item v="clear"/>
+      <list-item v="clever"/>
+      <list-item v="close"/>
+      <list-item v="coarse"/>
+      <list-item v="cold"/>
+      <list-item v="cool"/>
+      <list-item v="costly"/>
+      <list-item v="crazy"/>
+      <list-item v="crude"/>
+      <list-item v="dark"/>
+      <list-item v="deaf"/>
+      <list-item v="dear"/>
+      <list-item v="deep"/>
+      <list-item v="dense"/>
+      <list-item v="dirty"/>
+      <list-item v="dry"/>
+      <list-item v="dumb"/>
+      <list-item v="early"/>
+      <list-item v="earthly"/>
+      <list-item v="earthy"/>
+      <list-item v="easy"/>
+      <list-item v="empty"/>
+      <list-item v="fair"/>
+      <list-item v="false"/>
+      <list-item v="fancy"/>
+      <list-item v="far"/>
+      <list-item v="fast"/>
+      <list-item v="fat"/>
+      <list-item v="feeble"/>
+      <list-item v="fine"/>
+      <list-item v="firm"/>
+      <list-item v="fit"/>
+      <list-item v="flaky"/>
+      <list-item v="flat"/>
+      <list-item v="fleshy"/>
+      <list-item v="floppy"/>
+      <list-item v="fond"/>
+      <list-item v="free"/>
+      <list-item v="fresh"/>
+      <list-item v="friendly"/>
+      <list-item v="full"/>
+      <list-item v="fun"/>
+      <list-item v="funky"/>
+      <list-item v="funny"/>
+      <list-item v="fuzzy"/>
+      <list-item v="gentle"/>
+      <list-item v="glassy"/>
+      <list-item v="good"/>
+      <list-item v="grave"/>
+      <list-item v="gray"/>
+      <list-item v="greasy"/>
+      <list-item v="great"/>
+      <list-item v="green"/>
+      <list-item v="grey"/>
+      <list-item v="grim"/>
+      <list-item v="gross"/>
+      <list-item v="guilty"/>
+      <list-item v="hairy"/>
+      <list-item v="handy"/>
+      <list-item v="happy"/>
+      <list-item v="hard"/>
+      <list-item v="harsh"/>
+      <list-item v="hasty"/>
+      <list-item v="hazy"/>
+      <list-item v="healthy"/>
+      <list-item v="heavy"/>
+      <list-item v="high"/>
+      <list-item v="holy"/>
+      <list-item v="hot"/>
+      <list-item v="humble"/>
+      <list-item v="hungry"/>
+      <list-item v="ill"/>
+      <list-item v="impure"/>
+      <list-item v="inert"/>
+      <list-item v="just"/>
+      <list-item v="keen"/>
+      <list-item v="kind"/>
+      <list-item v="large"/>
+      <list-item v="late"/>
+      <list-item v="lazy"/>
+      <list-item v="lean"/>
+      <list-item v="lengthy"/>
+      <list-item v="lewd"/>
+      <list-item v="light"/>
+      <list-item v="lonely"/>
+      <list-item v="long"/>
+      <list-item v="loud"/>
+      <list-item v="lovely"/>
+      <list-item v="low"/>
+      <list-item v="lucky"/>
+      <list-item v="mean"/>
+      <list-item v="merry"/>
+      <list-item v="mild"/>
+      <list-item v="mock"/>
+      <list-item v="muddy"/>
+      <list-item v="naïve"/>
+      <list-item v="narrow"/>
+      <list-item v="nasty"/>
+      <list-item v="naughty"/>
+      <list-item v="near"/>
+      <list-item v="neat"/>
+      <list-item v="needy"/>
+      <list-item v="net"/>
+      <list-item v="new"/>
+      <list-item v="nice"/>
+      <list-item v="noble"/>
+      <list-item v="noisy"/>
+      <list-item v="north"/>
+      <list-item v="nude"/>
+      <list-item v="odd"/>
+      <list-item v="old"/>
+      <list-item v="peaty"/>
+      <list-item v="pink"/>
+      <list-item v="plain"/>
+      <list-item v="poor"/>
+      <list-item v="pretty"/>
+      <list-item v="prickly"/>
+      <list-item v="prompt"/>
+      <list-item v="proud"/>
+      <list-item v="pure"/>
+      <list-item v="purple"/>
+      <list-item v="quick"/>
+      <list-item v="quiet"/>
+      <list-item v="rare"/>
+      <list-item v="raw"/>
+      <list-item v="rich"/>
+      <list-item v="risky"/>
+      <list-item v="rough"/>
+      <list-item v="round"/>
+      <list-item v="safe"/>
+      <list-item v="salty"/>
+      <list-item v="sandy"/>
+      <list-item v="sane"/>
+      <list-item v="scaly"/>
+      <list-item v="shady"/>
+      <list-item v="shallow"/>
+      <list-item v="sharp"/>
+      <list-item v="shiny"/>
+      <list-item v="shoddy"/>
+      <list-item v="short"/>
+      <list-item v="showy"/>
+      <list-item v="shrewd"/>
+      <list-item v="shy"/>
+      <list-item v="sick"/>
+      <list-item v="silly"/>
+      <list-item v="simple"/>
+      <list-item v="sincere"/>
+      <list-item v="slim"/>
+      <list-item v="slow"/>
+      <list-item v="small"/>
+      <list-item v="smart"/>
+      <list-item v="smooth"/>
+      <list-item v="sober"/>
+      <list-item v="soft"/>
+      <list-item v="solid"/>
+      <list-item v="sore"/>
+      <list-item v="sorry"/>
+      <list-item v="sour"/>
+      <list-item v="south"/>
+      <list-item v="spicy"/>
+      <list-item v="spiky"/>
+      <list-item v="starry"/>
+      <list-item v="steep"/>
+      <list-item v="sticky"/>
+      <list-item v="still"/>
+      <list-item v="stormy"/>
+      <list-item v="strange"/>
+      <list-item v="stray"/>
+      <list-item v="streaky"/>
+      <list-item v="strong"/>
+      <list-item v="subtle"/>
+      <list-item v="sunny"/>
+      <list-item v="sure"/>
+      <list-item v="sweet"/>
+      <list-item v="tall"/>
+      <list-item v="tender"/>
+      <list-item v="thick"/>
+      <list-item v="thin"/>
+      <list-item v="tight"/>
+      <list-item v="tiny"/>
+      <list-item v="tough"/>
+      <list-item v="tricky"/>
+      <list-item v="true"/>
+      <list-item v="ugly"/>
+      <list-item v="unhappy"/>
+      <list-item v="unkind"/>
+      <list-item v="unlucky"/>
+      <list-item v="unworthy"/>
+      <list-item v="vast"/>
+      <list-item v="warm"/>
+      <list-item v="wary"/>
+      <list-item v="weak"/>
+      <list-item v="wealthy"/>
+      <list-item v="weird"/>
+      <list-item v="white"/>
+      <list-item v="wide"/>
+      <list-item v="wild"/>
+      <list-item v="windy"/>
+      <list-item v="wise"/>
+      <list-item v="woody"/>
+      <list-item v="wry"/>
+      <list-item v="yellow"/>
+      <list-item v="young"/>
+    </def-list>
+
+  </section-def-lists>
 
 
 
@@ -165,6 +405,33 @@
 
 <section-def-macros> 
 
+
+
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
+     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
+     ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
+     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
+     por ke ne aperu du sinsekvaj blankoj. 
+     
+     Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
+    <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
+      <choose>
+        <when>
+          <test>
+            <not><equal><b pos="1"/><lit v=" "/></equal></not>
+          </test>
+          <out>
+            <b pos="1"/><!--
+            <chunk name="sendu_blankon_se_havas_formaton">
+              <tags><tag><lit-tag v="xx"/></tag></tags>
+              <lu>
+                <b pos="1"/>
+              </lu>
+            </chunk>-->
+          </out>
+        </when>
+      </choose>
+    </def-macro>
 
 <!--
 ^dark<adj><sint>$
@@ -178,58 +445,37 @@
 -->
 
 <def-macro n="pli_plej_adj" npar="2">
-	<choose>
-	  <when>
-	    <test>
-	      <and>
+   <choose c="Ĉu estas sinteza adjektivo? Ekz pli bona → better(sint)(comp)">
+     <when>
+	  <test>
+		<in caseless="yes"><clip pos="2" side="tl" part="lemh"/><list n="adj_kun_sint"/></in>
+	  </test>
+    	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+		<choose c="Ĉu pli aŭ plej? Metu (comp) aŭ (sup) en variablo">
+		<when>
+		  <test>
 			<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
-      		<equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
-	      </and>
-	    </test>
-	    <let><var n="adv_adjectiu"/>
-			<concat><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="comp"/></concat></let>
+		  </test>
+			<let><var n="adv_adjectiu"/><concat>
+				<clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.comp"/>
+			</concat></let>
+		</when>
+		<otherwise c="ne estis 'pli' do devas esti 'plej'">
+			<let><var n="adv_adjectiu"/><concat>
+				<clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.sup"/>
+			</concat></let>
+		</otherwise>
+	   </choose>
 	  </when>
-
-	  <when>
-	    <test>
-	      <and>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="plej"/></equal>
-          <equal><clip pos="2" side="tl" part="a_adj"/><lit-tag v="adj.sint"/></equal>
-	      </and>
-	    </test>
-	    <let><clip pos="1" side="tl" part="lem"/> 
-	      <get-case-from pos="1"><lit v="much"/></get-case-from></let>
-	    <let><var n="adv_adjectiu"/>
-		  <concat><clip pos="1" side="tl" part="whole"/><lit v="$ ^"/><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/><lit-tag v="comp"/></concat></let>
-	  </when>
-
-	  <when>
-	    <test>
-	      <and>
-			<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="ben"/></equal>
-			<not><equal><clip pos="2" side="sl" part="a_adj"/><lit-tag v="vblex.pp"/></equal></not>
-	      </and>
-	    </test>
-	    <let>	      <var n="adv_adjectiu"/>
-		<concat>
-		  <get-case-from pos="1"><lit v="very"/></get-case-from>
-		  <lit-tag v="preadv"/><lit v="$ ^"/><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="a_adj"/>
-		</concat>
-	    </let>
-	  </when>
-
-	  <otherwise>
-	    <let>
-	      <var n="adv_adjectiu"/>
-		<concat>
-		  <clip pos="1" side="tl" part="whole"/> 
-		  <lit v="$ ^"/>
-		  <var n="superlatiu1"/>
-		  <clip pos="2" side="tl" part="lem"/> 
-		  <clip pos="2" side="tl" part="a_adj"/>
-		</concat>
-	    </let>
-	  </otherwise>
+		<otherwise c="ne estis sint - la variablo devas enhavi ambaŭ vortojn">
+			<let><var n="adv_adjectiu"/><concat>
+				<clip pos="1" side="tl" part="whole"/>
+				<lit v="$"/><b pos="1"/><lit v="^"/>
+				<clip pos="2" side="tl" part="lemh"/>
+				<clip pos="2" side="tl" part="a_adj"/>
+				<clip pos="2" side="tl" part="lemq"/>
+			</concat></let>
+		</otherwise>	   
 	</choose>
 </def-macro>
 
@@ -347,16 +593,15 @@
        <pattern-item n="c_adj"/>
      </pattern>
      <action>
+    	<call-macro n="pli_plej_adj"><with-param pos="1"/><with-param pos="2"/></call-macro>
        <out>
-         <chunk name="pliplej_adj" case="caseFirstWord">
+         <chunk name="sint?_adj" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_adj"/>
-             <clip pos="1" side="tl" part="lemq"/>
+		     <var n="adv_adjectiu"/>
            </lu>
          </chunk>
        </out>
