@@ -87,6 +87,7 @@
     </pipeline>
   </mode>
 
+
   <mode name="en-eo-pn" install="no">
     <pipeline>
       <program name="lt-proc">
@@ -128,6 +129,9 @@
         <file name="en-eo.autopgen.bin"/>
       </program> 
       -->
+
+      <!-- Removes special mark: -->
+      <program name="apertium-pn-recogniser-final"/>
     </pipeline>
   </mode>
 
