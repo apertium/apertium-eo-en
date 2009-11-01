@@ -117,13 +117,22 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml \
 apertium_eo_endir=$(prefix)/share/apertium/apertium-$(PREFIX1)/
 apertium_eo_modesdir=$(prefix)/share/apertium/modes/
 
-$(PREFIX1).mode: modes.xml
+modes: modes.xml
 	apertium-gen-modes modes.xml
 	cp *.mode modes/
 
-$(PREFIX2).mode: modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
+$(PREFIX1).mode: modes
+
+$(PREFIX2).mode: modes
+
+
+#$(PREFIX1).mode: modes.xml
+#	apertium-gen-modes modes.xml
+#	cp *.mode modes/
+#
+#$(PREFIX2).mode: modes.xml
+#	apertium-gen-modes modes.xml
+#	cp *.mode modes/
 
 apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 	$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
