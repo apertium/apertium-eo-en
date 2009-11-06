@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
-  <mode name="en-eo-old3stage" install="no">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="en-eo.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="en-eo.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer -n">
-        <file name="apertium-eo-en.en-eo.genitive.t1x"/>
-        <file name="en-eo.genitive.t1x.bin"/>
-      </program>
-      <program name="apertium-transfer">
-        <file name="apertium-eo-en.en-eo.t1x"/>
-        <file name="en-eo.t1x.bin"/>
-        <file name="en-eo.autobil.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eo-en.en-eo.t2x"/>
-        <file name="en-eo.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eo-en.en-eo.t3x"/>
-        <file name="en-eo.t3x.bin"/>
-      </program>
-      <program name="lt-proc $1">
-        <file name="en-eo.autogen.bin"/>
-      </program>
-      <!--
-      <program name="lt-proc -p">
-        <file name="en-eo.autopgen.bin"/>
-      </program> 
-      -->
-    </pipeline>
-  </mode>
-
-
+ 
   <mode name="en-eo" install="no">
     <pipeline>
       <program name="lt-proc">
@@ -47,13 +10,6 @@
       <program name="apertium-tagger -g $2">
         <file name="en-eo.prob"/>
       </program>
-
-      <!-- Proper noun recogniser: 
-      <program name="apertium-pn-recogniser">
-        <file name="en-np.dat"/>
-      </program>
-	  -->
-
       <program name="apertium-pretransfer"/>
       <program name="apertium-transfer -n">
         <file name="apertium-eo-en.en-eo.genitive.t1x"/>
@@ -79,16 +35,11 @@
       <program name="lt-proc $1">
         <file name="en-eo.autogen.bin"/>
       </program>
-      <!--
-      <program name="lt-proc -p">
-        <file name="en-eo.autopgen.bin"/>
-      </program> 
-      -->
     </pipeline>
   </mode>
 
 
-  <mode name="en-eo-pn" install="no">
+  <mode name="en-eo-np" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
@@ -124,14 +75,46 @@
       <program name="lt-proc $1">
         <file name="en-eo.autogen.bin"/>
       </program>
+      <!-- Removes special mark: -->
+      <program name="apertium-pn-recogniser-final"/>
+    </pipeline>
+  </mode>
+
+
+  <mode name="en-eo-old3stage" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="en-eo.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="en-eo.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer -n">
+        <file name="apertium-eo-en.en-eo.genitive.t1x"/>
+        <file name="en-eo.genitive.t1x.bin"/>
+      </program>
+      <program name="apertium-transfer">
+        <file name="apertium-eo-en.en-eo.t1x"/>
+        <file name="en-eo.t1x.bin"/>
+        <file name="en-eo.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eo-en.en-eo.t2x"/>
+        <file name="en-eo.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eo-en.en-eo.t3x"/>
+        <file name="en-eo.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="en-eo.autogen.bin"/>
+      </program>
       <!--
       <program name="lt-proc -p">
         <file name="en-eo.autopgen.bin"/>
       </program> 
       -->
-
-      <!-- Removes special mark: -->
-      <program name="apertium-pn-recogniser-final"/>
     </pipeline>
   </mode>
 
@@ -262,7 +245,7 @@
 
 
 
-  <mode name="en-eo-trigram" install="yes">
+  <mode name="en-eo-trigram" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
@@ -271,10 +254,18 @@
         <file name="en-eo.3prob"/>
       </program>
       <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer -n">
+        <file name="apertium-eo-en.en-eo.genitive.t1x"/>
+        <file name="en-eo.genitive.t1x.bin"/>
+      </program>
       <program name="apertium-transfer">
         <file name="apertium-eo-en.en-eo.t1x"/>
         <file name="en-eo.t1x.bin"/>
         <file name="en-eo.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eo-en.en-eo.antaux_t2x"/>
+        <file name="en-eo.antaux_t2x.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-eo-en.en-eo.t2x"/>
@@ -287,13 +278,7 @@
       <program name="lt-proc $1">
         <file name="en-eo.autogen.bin"/>
       </program>
-      <!--
-      <program name="lt-proc -p">
-        <file name="en-eo.autopgen.bin"/>
-      </program> 
-      -->
     </pipeline>
   </mode>
-
 
 </modes>
