@@ -26294,7 +26294,13 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="web">             <i>web</i><par n="house__n"/></e>
 <e lm="Webb">            <i>Webb</i><par n="Ifans__np"/></e>
 <e lm="webmaster">       <i>webmaster</i><par n="house__n"/></e>
+<e lm="home page">        <i>home<b/>page</i><par n="house__n"/></e>
+<e lm="web page">        <i>web<b/>page</i><par n="house__n"/></e>
+<e lm="homepage">        <i>homepage</i><par n="house__n"/></e>
 <e lm="website">         <i>website</i><par n="house__n"/></e>
+<e lm="web site">        <i>web<b/>site</i><par n="house__n"/></e>
+<e lm="webserver">         <i>webserver</i><par n="house__n"/></e>
+<e lm="web server">        <i>web<b/>server</i><par n="house__n"/></e>
 <e lm="wed">             <i>wed</i><par n="wed__vblex"/></e>
 <e lm="wedding">         <i>wedding</i><par n="house__n"/></e>
 <e lm="wedge">           <i>wedg</i><par n="di/e__vblex"/></e>
@@ -27617,8 +27623,8 @@ TODO: aldonu kaj retrejnu la tagger
 		<!-- ******************************
 			    group acronimos_par
 			****************************** -->
-
 <!--
+
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
 <e lm="AAA">             <i>AAA</i><par n="acronimos_par"/></e>
 <e lm="AAAI">            <i>AAAI</i><par n="acronimos_par"/></e>
