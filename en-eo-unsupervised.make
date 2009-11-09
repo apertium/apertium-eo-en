@@ -9,7 +9,8 @@ all: $(PREFIX).prob
 
 $(PREFIX).prob: $(BASENAME).$(LANG1).tsx $(TAGGER)/$(LANG1).dic $(TAGGER)/$(LANG1).crp
 	apertium-validate-tagger $(BASENAME).$(LANG1).tsx
-	apertium-tagger -t $(TAGGER_UNSUPERVISED_ITERATIONS) \
+#	apertium-tagger -t $(TAGGER_UNSUPERVISED_ITERATIONS) \
+	/home/j/esperanto/apertium/gsoc2009/disismt/apertium/apertium/apertium-tagger -t $(TAGGER_UNSUPERVISED_ITERATIONS) -y \
                            $(TAGGER)/$(LANG1).dic \
                            $(TAGGER)/$(LANG1).crp \
                            $(BASENAME).$(LANG1).tsx \
