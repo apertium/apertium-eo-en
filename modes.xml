@@ -119,7 +119,7 @@
   </mode>
 
 
-  <mode name="eo-en" install="no">
+  <mode name="eo-en" install="yes">
     <pipeline>
       <program name="lt-proc">
         <file name="eo-en.automorf.bin"/>
