@@ -2,7 +2,7 @@
 <modes>
 
  
-  <mode name="en-eo" install="no">
+  <mode name="en-eo" install="yes">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
