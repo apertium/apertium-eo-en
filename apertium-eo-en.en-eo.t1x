@@ -14,6 +14,7 @@
     <!-- UNUOPAJ VORTOJ -->
     <def-cat n="more"><cat-item lemma="more" tags="det.qnt.*"/></def-cat>
     <def-cat n="to"><cat-item lemma="to" tags="pr"/></def-cat>
+    <def-cat n="on"><cat-item lemma="on" tags="pr"/></def-cat>
     <def-cat n="of"><cat-item lemma="of" tags="pr"/></def-cat>
     <def-cat n="out"><cat-item lemma="out" tags="pr"/><cat-item lemma="out" tags="adv"/></def-cat>
     <def-cat n="all"><cat-item lemma="all" tags="predet.sp"/><cat-item lemma="all" tags="prn.tn.sp"/></def-cat>
@@ -232,6 +233,73 @@
       <cat-item tags="num.pl"/>
 <!--      <cat-item tags="num.ord"/>   Jacob 6feb2009 forprenis, por igi  3rd<num><ord> of May-> 3a de majo, kaj ne  3a el majo -->
     </def-cat>
+
+    <def-cat n="num_ord">
+      <cat-item tags="num.ord"/>
+    </def-cat>
+
+    <def-cat n="num_dato">
+      <cat-item lemma="1" tags="num"/>
+      <cat-item lemma="2" tags="num"/>
+      <cat-item lemma="3" tags="num"/>
+      <cat-item lemma="4" tags="num"/>
+      <cat-item lemma="5" tags="num"/>
+      <cat-item lemma="6" tags="num"/>
+      <cat-item lemma="7" tags="num"/>
+      <cat-item lemma="8" tags="num"/>
+      <cat-item lemma="9" tags="num"/>
+      <cat-item lemma="10" tags="num"/>
+      <cat-item lemma="11" tags="num"/>
+      <cat-item lemma="12" tags="num"/>
+      <cat-item lemma="13" tags="num"/>
+      <cat-item lemma="14" tags="num"/>
+      <cat-item lemma="15" tags="num"/>
+      <cat-item lemma="16" tags="num"/>
+      <cat-item lemma="17" tags="num"/>
+      <cat-item lemma="18" tags="num"/>
+      <cat-item lemma="19" tags="num"/>
+      <cat-item lemma="20" tags="num"/>
+      <cat-item lemma="21" tags="num"/>
+      <cat-item lemma="22" tags="num"/>
+      <cat-item lemma="23" tags="num"/>
+      <cat-item lemma="24" tags="num"/>
+      <cat-item lemma="25" tags="num"/>
+      <cat-item lemma="26" tags="num"/>
+      <cat-item lemma="27" tags="num"/>
+      <cat-item lemma="28" tags="num"/>
+      <cat-item lemma="29" tags="num"/>
+      <cat-item lemma="30" tags="num"/>
+      <cat-item lemma="31" tags="num"/>
+    </def-cat>
+
+    <def-cat n="monato">
+      <cat-item lemma="january" tags="n.sg"/>
+      <cat-item lemma="february" tags="n.sg"/>
+      <cat-item lemma="march" tags="n.sg"/>
+      <cat-item lemma="april" tags="n.sg"/>
+      <cat-item lemma="may" tags="n.sg"/>
+      <cat-item lemma="june" tags="n.sg"/>
+      <cat-item lemma="july" tags="n.sg"/>
+      <cat-item lemma="august" tags="n.sg"/>
+      <cat-item lemma="september" tags="n.sg"/>
+      <cat-item lemma="october" tags="n.sg"/>
+      <cat-item lemma="november" tags="n.sg"/>
+      <cat-item lemma="december" tags="n.sg"/>
+    </def-cat>
+<!--
+<e>       <p><l>januaro<s n="n"/></l>                  <r>January<s n="n"/></r></p></e>
+<e>       <p><l>februaro<s n="n"/></l>                 <r>February<s n="n"/></r></p></e>
+<e>       <p><l>marto<s n="n"/></l>                    <r>March<s n="n"/></r></p></e>
+<e>       <p><l>aprilo<s n="n"/></l>                   <r>April<s n="n"/></r></p></e>
+<e>       <p><l>majo<s n="n"/></l>                     <r>May<s n="n"/></r></p></e>
+<e>       <p><l>junio<s n="n"/></l>                    <r>June<s n="n"/></r></p></e>
+<e>       <p><l>julio<s n="n"/></l>                    <r>July<s n="n"/></r></p></e>
+<e>       <p><l>aŭgusto<s n="n"/></l>                  <r>August<s n="n"/></r></p></e>
+<e>       <p><l>septembro<s n="n"/></l>                <r>September<s n="n"/></r></p></e>
+<e>       <p><l>oktobro<s n="n"/></l>                  <r>October<s n="n"/></r></p></e>
+<e>       <p><l>novembro<s n="n"/></l>                 <r>November<s n="n"/></r></p></e>
+<e>       <p><l>decembro<s n="n"/></l>                 <r>December<s n="n"/></r></p></e>
+-->
 
     <def-cat n="pr"><cat-item tags="pr"/></def-cat>
     <def-cat n="cm"><cat-item tags="cm"/></def-cat>
@@ -1042,6 +1110,106 @@ verbfinal = pensi<vblex><pres>
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="July 2 - 2a de julio">
+      <pattern>
+        <pattern-item n="monato"/>
+        <pattern-item n="num_dato"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="dato" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu><clip pos="2" side="tl" part="lem"/><lit v="a"/><lit-tag v="num.ord"/></lu>
+            <b/>
+            <lu><lit v="de"/><lit-tag v="pr"/></lu>
+            <b pos="1"/>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="July 2nd - 2a de julio">
+      <pattern>
+        <pattern-item n="monato"/>
+        <pattern-item n="num_ord"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="dato" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu><clip pos="2" side="tl" part="lem"/><lit-tag v="num.ord"/></lu>
+            <b/>
+            <lu><lit v="de"/><lit-tag v="pr"/></lu>
+            <b pos="1"/>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="nom"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="on July 2 - la 2a de julio">
+      <pattern>
+        <pattern-item n="on"/>
+        <pattern-item n="monato"/>
+        <pattern-item n="num_dato"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="dato" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu><lit v="la"/><lit-tag v="det.def.sp"/></lu>
+            <b pos="1"/>
+            <lu><clip pos="3" side="tl" part="lem"/><lit v="an"/><lit-tag v="num.ord"/></lu>
+            <b/>
+            <lu><lit v="de"/><lit-tag v="pr"/></lu>
+            <b pos="2"/>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="on July 2 - la 2a de julio">
+      <pattern>
+        <pattern-item n="on"/>
+        <pattern-item n="monato"/>
+        <pattern-item n="num_ord"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="dato" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu><lit v="la"/><lit-tag v="det.def.sp"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><lit v="n"/><lit-tag v="num.ord"/></lu>
+            <b pos="1"/>
+            <b/>
+            <lu><lit v="de"/><lit-tag v="pr"/></lu>
+            <b pos="2"/>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
 

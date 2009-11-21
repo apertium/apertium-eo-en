@@ -12,6 +12,9 @@ NUM SN -> SN
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="num">
+      <cat-item lemma="num" tags="SN.*"/>
+    </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
@@ -91,6 +94,29 @@ NUM SN -> SN
 
 
 
+    <rule comment="REGLA: NUM SN   -   SN ">
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><clip pos="2" part="lem"/></get-case-from>
+            <clip pos="2" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
 
 
     <rule comment="REGLA: SN1 and/or SN2   -   SN ">
@@ -102,7 +128,7 @@ NUM SN -> SN
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
+            <clip pos="1" part="lem"/>
             <clip pos="1" part="tags"/>
             <lit v="{"/>            
             <clip pos="1" part="content"/>
@@ -129,7 +155,7 @@ NUM SN -> SN
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lem"/><!--  <lit v="^nom_conj_nom_conj_nom"/> -->
+            <clip pos="1" part="lem"/>
             <clip pos="1" part="tags"/>
             <lit v="{"/>            
             <clip pos="1" part="content"/>

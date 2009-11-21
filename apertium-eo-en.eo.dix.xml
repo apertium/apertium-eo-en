@@ -189,6 +189,7 @@
 
 <pardef n="ordinals">
 <e>                           <re>([0-9]+)?</re><p><l>a</l> <r>a<s n="num"/><s n="ord"/></r></p></e>
+<e>                           <re>([0-9]+)?</re><p><l>an</l><r>an<s n="num"/><s n="ord"/></r></p></e>
 </pardef>
 
 
