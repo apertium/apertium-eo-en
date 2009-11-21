@@ -156,6 +156,10 @@
         doesn't:do<vbdo><pres><p3><sg>+not<adv>
         didn't:do<vbdo><past>+not<adv>
       -->
+    <def-cat n="vbdo">
+      <cat-item tags="vbdo.*"/>
+    </def-cat>
+
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
       <cat-item tags="vbdo.*"/>
@@ -425,6 +429,7 @@
 
     <def-var n="blanko"/>     <!--- de "set_blankon_se_havas_formaton2" -->
 
+    <def-var n="and_or_but"/>
 
 
     <def-var n="DEBUG" v=""/>
@@ -474,6 +479,12 @@
       <list-item v="shall"/>
     </def-list>
 
+
+    <def-list n="listo_and_or_but">
+      <list-item v="and"/>
+      <list-item v="but"/>
+      <list-item v="or"/>
+    </def-list>
 
 
   </section-def-lists>
@@ -919,6 +930,26 @@ verbfinal = pensi<vblex><pres>
       </choose>
     </def-macro>
 
+
+
+
+    <def-macro n="set_and_or_but" npar="1" 
+    c="and or but povas esti komenco de demando, sed la aliaj cnjoo NE povas esti parto de demando:
+    ekzemple:   and/or/but did they acquire any influence?   - demando 
+    ekzemple:   neither/nor did they acquire any influence   - konstato
+    ">
+      <choose>
+        <when>
+		<test>
+		  <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="listo_and_or_but"/></in>
+		</test>
+        <let><var n="and_or_but"/><lit-tag v="and_or_but"/></let>
+      </when>
+      <otherwise>
+        <let><var n="and_or_but"/><lit-tag v="konstato"/></let>
+      </otherwise>
+      </choose>
+    </def-macro>
 
 
   </section-def-macros>
@@ -2259,16 +2290,19 @@ verbfinal = pensi<vblex><pres>
 
 
 
+
     <rule comment="rekunu and, or kaj nor aparte - ĉar povas esti parto de listo de aferoj">
       <pattern>
         <pattern-item n="and_or_nor"/>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_and_or_but"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="and_or" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="and_or"/></tag>
+              <tag><var n="and_or_but"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2287,10 +2321,12 @@ verbfinal = pensi<vblex><pres>
       </pattern>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_and_or_but"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="cnjcoo" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="CC"/></tag>
+              <tag><var n="and_or_but"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2612,7 +2648,7 @@ the ones who:the ones who<rel><nn><mf><pl>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -2636,12 +2672,12 @@ the ones who:the ones who<rel><nn><mf><pl>
             <tags>
               <tag><lit-tag v="SV"/></tag>
       	      <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="inf"/></tag>
             </tags>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
+              <lit-tag v="3"/>
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -2672,7 +2708,7 @@ the ones who:the ones who<rel><nn><mf><pl>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
+              <lit-tag v="3"/>
               <clip pos="3" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -2696,12 +2732,12 @@ the ones who:the ones who<rel><nn><mf><pl>
             <tags>
               <tag><lit-tag v="SV"/></tag>
 	            <tag><var n="tipus_verb"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
@@ -2741,7 +2777,7 @@ the ones who:the ones who<rel><nn><mf><pl>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -2764,7 +2800,7 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="ser_not" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	            <tag><var n="tipus_verb"/></tag>
+	          <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -2774,7 +2810,7 @@ the ones who:the ones who<rel><nn><mf><pl>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -2798,12 +2834,13 @@ the ones who:the ones who<rel><nn><mf><pl>
          <chunk name="pls_verb1" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
-	            <tag><var n="tipus_verb"/></tag>
+	          <tag><var n="tipus_verb"/></tag>
+	          <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
          <b pos="1"/>
@@ -2868,6 +2905,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
 	      <tag><var n="tipus_verb"/></tag>
+	      <tag><clip pos="1" side="tl" part="a_tns"/></tag>
 	    </tags> 
 	    <lu>
 	      <var n="verbkonj"/>
@@ -2899,6 +2937,7 @@ the ones who:the ones who<rel><nn><mf><pl>
 	    <tags>	       
 	      <tag><lit-tag v="SV"/></tag>
 	      <tag><var n="tipus_verb"/></tag>
+	      <tag><clip pos="1" side="tl" part="a_tns"/></tag>
 	    </tags> 
 	    <lu>
 	      <var n="verbkonj"/>
@@ -2942,11 +2981,12 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -2971,6 +3011,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
                   <lit v="povi"/><lit-tag v="vaux.cni"/>
@@ -2979,7 +3020,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
-                  <lit-tag v="inf"/>
+                  <lit-tag v="3"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3021,11 +3062,12 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
 	                <tag><var n="tipus_verb"/></tag>
+	                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
                   <clip pos="1" side="tl" part="a_vrb"/>
-                  <clip pos="1" side="tl" part="a_tns"/>
+                  <lit-tag v="3"/>
                   <clip pos="1" side="tl" part="lemq"/>
                 </lu>
                 <b pos="1"/>
@@ -3065,6 +3107,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3073,7 +3116,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3097,20 +3140,20 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+                  <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.cni"/>
+                  <lit v="povi"/><lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="inf"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3124,6 +3167,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3136,7 +3180,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3148,7 +3192,7 @@ might:might<vaux><inf>
 
 
 
-    <rule comment="REGLA: VAUX ADV ADV VBLEX">
+    <rule comment="REGLA: VAUX ADV ADV VBLEX - have also abruptly changed - ankaŭ abrupte ŝanĝis">
       <pattern>
         <pattern-item n="vaux_vbhaver"/>
         <pattern-item n="adv"/>
@@ -3170,6 +3214,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3182,7 +3227,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="4" side="tl" part="lemh"/>
                   <clip pos="4" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="4" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3205,6 +3250,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+                  <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3215,14 +3261,13 @@ might:might<vaux><inf>
                 </lu>
                 <b pos="2"/>
                 <lu>
-                  <lit v="povi"/>
-                  <lit-tag v="vaux.cni"/>
+                  <lit v="povi"/><lit-tag v="vaux.cni"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
                   <clip pos="4" side="tl" part="lemh"/>
                   <clip pos="4" side="tl" part="a_vrb"/>
-                  <lit-tag v="inf"/>
+                  <lit-tag v="3"/>
                   <clip pos="4" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3236,6 +3281,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3252,7 +3298,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="4" side="tl" part="lemh"/>
                   <clip pos="4" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="4" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3286,6 +3332,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+                  <tag><lit-tag v="pp3"/></tag>
                 </tags>
                 <lu>
                   <lit v="esti"/><lit-tag v="vbser"/><var n="temps"/>
@@ -3294,7 +3341,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
                   <clip pos="3" side="tl" part="a_vrb"/>
-                  <lit-tag v="pp3"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3314,6 +3361,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
@@ -3321,7 +3369,8 @@ might:might<vaux><inf>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3341,6 +3390,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
@@ -3348,7 +3398,8 @@ might:might<vaux><inf>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/><var n="temps"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3371,6 +3422,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+                  <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
                   <lit v="povi"/><lit-tag v="vaux.past"/>
@@ -3378,7 +3430,8 @@ might:might<vaux><inf>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/><lit-tag v="inf"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <lit-tag v="3"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3400,16 +3453,19 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
-                  <clip pos="1" side="tl" part="a_vrb"/><var n="temps"/>
+                  <clip pos="1" side="tl" part="a_vrb"/>
+                  <lit-tag v="3"/>
                   <clip pos="1" side="tl" part="lemq"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lemh"/>
-                  <clip pos="3" side="tl" part="a_vrb"/><lit-tag v="inf"/>
+                  <clip pos="3" side="tl" part="a_vrb"/>
+                  <lit-tag v="inf"/>
                   <clip pos="3" side="tl" part="lemq"/>
                 </lu>
               </chunk>
@@ -3469,11 +3525,12 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
                 <b pos="2"/>
@@ -3493,6 +3550,7 @@ might:might<vaux><inf>
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
       	          <tag><var n="tipus_verb"/></tag>
+      	          <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3501,7 +3559,7 @@ might:might<vaux><inf>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
                   <clip pos="2" side="tl" part="a_vrb"/>
-                  <var n="temps"/>
+                  <lit-tag v="3"/>
                   <clip pos="2" side="tl" part="lemq"/>
                 </lu>
                 <b pos="2"/>
@@ -3516,6 +3574,33 @@ might:might<vaux><inf>
       </action>
     </rule>
 
+
+
+
+    <rule>
+      <pattern>
+        <pattern-item n="vbdo"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="vbdo" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 
@@ -3537,7 +3622,7 @@ might:might<vaux><inf>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="3"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>

@@ -44,9 +44,9 @@
       <cat-item lemma="verb_pp" tags="SV.*"/>-->
     </def-cat>
 
-    <def-cat n="SVYesNoQuestionStart">
+    <def-cat n="vbdoSV">
       <cat-item lemma="xxx_ser" tags="SV.*"/>
-      <cat-item lemma="xxx_vbdo" tags="SV.*"/>
+      <cat-item lemma="vbdo" tags="SV.*"/>
     </def-cat>
     <def-cat n="Adv">
       <cat-item tags="Adv"/>
@@ -56,6 +56,15 @@
     <def-cat n="CC">
       <cat-item tags="CC"/>
     </def-cat>
+
+    <def-cat n="Adv_aux_SN_aux_konstatovorto">
+      <cat-item tags="Adv"/>
+      <cat-item tags="CA"/>
+      <cat-item tags="NEG"/>
+      <cat-item tags="SN.*"/>
+      <cat-item tags="*.konstato"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -82,6 +91,22 @@
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
     </def-attr>
+
+    <def-attr n="a_tns">
+      <attr-item tags="pri"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="cni"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="subs"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="fti"/>
+      <attr-item tags="past"/>
+    </def-attr>
+
+
   </section-def-attrs>
 
   <section-def-vars>
@@ -104,40 +129,7 @@
       </action>
     </rule>
 
-    <!-- For questions "is the cat big?" -->
-    <rule comment="REGLA: SV SN SN">
-      <pattern>
-        <pattern-item n="SVYesNoQuestionStart"/>
-        <pattern-item n="SN"/>
-        <pattern-item n="SN"/>
-      </pattern>
-      <action>
 <!--
-<jacobEo_> http://bugs.apertium.org/cgi-bin/bugzilla/show_bug.cgi?id=81
-<jacobEo_>           Summary: Case change doesn't work in interrogative sentences
-<spectie> jacobEo_, btw, you can use
-<spectie>            <modify-case>
-<spectie>              <clip pos="1" side="tl" part="lem"/>
-<spectie>              <lit v="aa"/>
-<spectie>            </modify-case>
-<spectie>            <out>
--->
-
-        <out>
-	  <chunk>
-            <lit v="ĉu"/>
-	    <lit-tag v="adv.itg"/>
-	    <lit v="{^"/>
-	    <get-case-from pos="1">
-              <lit v="ĉu"/>
-	    </get-case-from>
-	    <lit-tag v="adv.itg"/>
-	    <lit v="$}"/>
-	  </chunk>
-	  <b/>
-          <chunk>
-            <clip pos="2" part="whole"/>
-          </chunk>
 	  <b pos="1"/>
           <chunk>
             <clip pos="1" part="lem"/>
@@ -146,13 +138,50 @@
               <clip pos="1" part="chcontent"/>
 	    </get-case-from>
           </chunk>
-	  <b pos="2"/>
-          <chunk>
-            <clip pos="3" part="whole"/>
-          </chunk>
+-->
+
+    <!-- For questions "is the cat big?" -->
+
+    <rule comment="REGLA: adv do SN SV - how did you work - kiel vi laboris">
+      <pattern>
+        <pattern-item n="Adv_aux_SN_aux_konstatovorto"/>
+        <pattern-item n="vbdoSV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <out>
+		<chunk><clip pos="1" part="whole"/></chunk>
+		<b pos="1"/>
+		<b pos="2"/>
+		<chunk><clip pos="3" part="whole"/></chunk>
+		<b pos="3"/>
+		<chunk><clip pos="4" part="lem"/><lit-tag v="SV"/><lit-tag v="fArU"/><clip pos="2" part="a_tns"/><clip pos="4" part="chcontent"/></chunk>
         </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: do SN SV - do you know the cat?">
+      <pattern>
+        <pattern-item n="vbdoSV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <out>
+		  <chunk>
+			<lit v="ĉu"/><lit-tag v="adv.itg"/>
+			<lit v="{^"/><get-case-from pos="1"><lit v="ĉu"/></get-case-from><lit-tag v="adv.itg"/><lit v="$}"/>
+		  </chunk>
+		<b pos="1"/>
+		<chunk><clip pos="2" part="whole"/></chunk>
+		<b pos="2"/>
+		<chunk><clip pos="3" part="whole"/></chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: Adv SV SN SN">
       <pattern>

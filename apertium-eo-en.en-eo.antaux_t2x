@@ -31,14 +31,14 @@ NUM SN -> SN
       <cat-item tags="NEG"/>
     </def-cat>
     <def-cat n="CC">
-      <cat-item tags="CC"/>
-      <cat-item tags="and_or"/>
+      <cat-item tags="CC.*"/>
+      <cat-item tags="and_or.*"/>
     </def-cat>
     <def-cat n="CM">
       <cat-item tags="CM"/>
     </def-cat>
     <def-cat n="and_or">
-      <cat-item tags="and_or"/>
+      <cat-item tags="and_or.*"/>
     </def-cat>
   </section-def-cats>
 

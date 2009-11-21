@@ -9231,9 +9231,7 @@ TODO??
 <e r="LR"><p><l>hepataĵo<s n="n"/></l>                 <r>liver<s n="n"/></r></p></e>
 <e>       <p><l>lacerto<s n="n"/></l>                  <r>lizard<s n="n"/></r></p></e>
 <e r="RL"><p><l>ŝarĝo<s n="n"/></l>                    <r>load<s n="n"/></r></p></e>
-<e r="LR"><p><l>ŝargi<s n="vblex"/></l>                <r>load<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>elŝuti<s n="vblex"/></l>               <r>load<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>ŝarĝi<s n="vblex"/></l>                <r>load<s n="vblex"/></r></p></e>
+<e><p><l>ŝarĝi<s n="vblex"/></l>                <r>load<s n="vblex"/></r></p></e>
 <e>       <p><l>prunto<s n="n"/></l>                   <r>loan<s n="n"/></r></p></e>
 <e r="LR"><p><l>monprunto<s n="n"/></l>                <r>loan<s n="n"/></r></p></e>
 <e r="LR"><p><l>deprunto<s n="n"/></l>                 <r>loan<s n="n"/></r></p></e>
@@ -19447,7 +19445,8 @@ TODO??
 <e r="LR"><p><l>deŝutaĵo<s n="n"/></l>                 <r>download<s n="n"/></r></p></e>
 <e r="LR"><p><l>elŝuto<s n="n"/></l>                   <r>download<s n="n"/></r></p></e>
 <e r="LR"><p><l>elŝutaĵo<s n="n"/></l>                 <r>download<s n="n"/></r></p></e>
-<e>       <p><l>deŝuti<s n="vblex"/></l>               <r>download<s n="vblex"/></r></p></e>
+<e><p><l>elŝuti<s n="vblex"/></l>               <r>download<s n="vblex"/></r></p></e>
+<e r="LR">       <p><l>deŝuti<s n="vblex"/></l>               <r>download<s n="vblex"/></r></p></e>
 <e>       <p><l>pluvtubo<s n="n"/></l>                 <r>downpipe<s n="n"/></r></p></e>
 <e>       <p><l>laŭflue<s n="adv"/></l>                <r>downstream<s n="adv"/></r></p></e>
 <e>       <p><l>drakmo<s n="n"/></l>                   <r>drachma<s n="n"/></r></p></e>
