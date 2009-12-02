@@ -327,18 +327,6 @@
 
 
 
-<!--
-Necesas difini paradigmon por adj-nomo terminoj
-<pardef n="anglikana_eklezio__n">
-<e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                           <p><l>j</l>                   <r><s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                           <p><l>n</l>                   <r><s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                           <p><l>jn</l>                  <r><s n="n"/><s n="pl"/><s n="acc"/></r></p></e>
-</pardef>
--->
-
-
-
 <pardef n="nomACR__n">
 <e>                           <p><l></l>                    <r><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>-oj</l>                 <r><s n="n"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -1249,7 +1237,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Ateno">                <i>Aten</i><par n="Barcelon/o__np"/></e>
 <e lm="Aŭstralio">            <i>A</i><par n="ŭ"/><i>strali</i><par n="Barcelon/o__np"/></e>
 <e lm="Aŭstrio">              <i>A</i><par n="ŭ"/><i>stri</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉefurba Teritorio">    <i>Ĉefurba<b/>Teritori</i><par n="Barcelon/o__np"/></e>
 <e lm="Azio">                 <i>Azi</i><par n="Barcelon/o__np"/></e>
 <e lm="Eŭrazio">              <i>Eŭrazi</i><par n="Barcelon/o__np"/></e>
 <e lm="Barato">               <i>Barat</i><par n="Barcelon/o__np"/></e>
@@ -1583,6 +1570,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kapitano">             <i>kapitan</i><par n="ino__n"/></e>
 <e lm="kato">                 <i>kat</i><par n="ino__n"/></e>
 <e lm="kataluno">             <i>katalun</i><par n="ino__n"/></e>
+<e lm="anglikanismo">         <i>anglikanism</i><par n="o__n"/></e>
 <e lm="katolikismo">          <i>katolikism</i><par n="o__n"/></e>
 <e lm="katoliko">             <i>katolik</i><par n="ino__n"/></e>
 <e lm="kelnero">              <i>kelner</i><par n="ino__n"/></e>
@@ -1878,7 +1866,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="afiŝo">                <i>afi</i><par n="ŝ"/><par n="o__n"/></e>
 <e lm="aflikti">              <i>aflikt</i><par n="i__vblex"/></e>
 <e lm="afrika">               <i>afrik</i><par n="a__adj"/></e>
-<e lm="la afrikansa lingvo">  <i>la<b/>afrikansa<b/>lingv</i><par n="o__n"/></e>
 <e lm="afrikano">             <i>afrikan</i><par n="ino__n"/></e>
 <e lm="sud-afrika">           <i>sud-afrik</i><par n="a__adj"/></e>
 <e lm="sud-afrikano">         <i>sud-afrikan</i><par n="ino__n"/></e>
@@ -3276,7 +3263,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kartaga">              <i>kartag</i><par n="a__adj"/></e>
 <e lm="kartagano">            <i>kartagan</i><par n="ino__n"/></e>
 <e lm="punika">               <i>punik</i><par n="a__adj"/></e>
-<e lm="punika milito">        <i>punika<b/>milit</i><par n="o__n"/></e>
 <e lm="flanka">               <i>flank</i><par n="a__adj"/></e>
 <e lm="flanklasi">            <i>flanklas</i><par n="i__vblex"/></e>
 <e lm="flankenlasi">          <i>flankenlas</i><par n="i__vblex"/></e>
@@ -3831,7 +3817,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="investo">              <i>invest</i><par n="o__n"/></e>
 <e lm="inviti">               <i>invit</i><par n="i__vblex"/></e>
 <e lm="invito">               <i>invit</i><par n="o__n"/></e>
-<e lm="ioma misfarto">        <i>ioma misfart</i><par n="o__n"/></e>
 <e lm="iometa">               <i>iomet</i><par n="a__adj"/></e>
 <e lm="iomete">               <i>iomet</i><par n="e__adv"/></e>
 <e lm="iom">                  <i>iom</i><par n="jam__adv"/></e>
@@ -3911,7 +3896,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kalmaro">              <i>kalmar</i><par n="o__n"/></e>
 <e lm="kalorio">              <i>kalori</i><par n="o__n"/></e>
 <e lm="kalsono">              <i>kalson</i><par n="o__n"/></e>
-<e lm="kalvaria vojo">        <i>kalvaria voj</i><par n="o__n"/></e>
 <e lm="kamero">               <i>kamer</i><par n="o__n"/></e>
 <e lm="kamioneto">            <i>kamionet</i><par n="o__n"/></e>
 <e lm="kamiono">              <i>kamion</i><par n="o__n"/></e>
@@ -4031,7 +4015,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="klasifiki">            <i>klasifik</i><par n="i__vblex"/></e>
 <e lm="klasika">              <i>klasik</i><par n="a__adj"/></e>
 <e lm="klaso">                <i>klas</i><par n="o__n"/></e>
-<e lm="laborista klaso">      <i>laborista klaso</i><par n="o__n"/></e>
 <e lm="klaŭzo">               <i>kla</i><par n="ŭ"/><i>z</i><par n="o__n"/></e>
 <e lm="klavaro">              <i>klavar</i><par n="o__n"/></e>
 <e lm="klavo">                <i>klav</i><par n="o__n"/></e>
@@ -4516,9 +4499,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="listo">                <i>list</i><par n="o__n"/></e>
 <e lm="literaturo">           <i>literatur</i><par n="o__n"/></e>
 <e lm="litero">               <i>liter</i><par n="o__n"/></e>
-<e lm="kursiva litero">       <i>kursiva<b/>liter</i><par n="o__n"/></e>
-<e lm="grasa litero">         <i>grasa<b/>liter</i><par n="o__n"/></e>
-<e lm="majuskla litero">      <i>majuskla<b/>liter</i><par n="o__n"/></e>
 <e lm="literumi">             <i>literum</i><par n="i__vblex"/></e>
 <e lm="lito">                 <i>lit</i><par n="o__n"/></e>
 <e lm="litro">                <i>litr</i><par n="o__n"/></e>
@@ -4543,7 +4523,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="loko">                 <i>lok</i><par n="o__n"/></e>
 <e lm="lokomotivo">           <i>lokomotiv</i><par n="o__n"/></e>
 <e lm="lombardo">             <i>lombard</i><par n="o__n"/></e>
-<e lm="longa hararo">         <i>longa harar</i><par n="o__n"/></e>
 <e lm="longa">                <i>long</i><par n="a__adj"/></e>
 <e lm="longe">                <i>long</i><par n="e__adv"/></e>
 <e lm="longitudo">            <i>longitud</i><par n="o__n"/></e>
@@ -5130,7 +5109,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="nobla">                <i>nobl</i><par n="a__adj"/></e>
 <e lm="noci">                 <i>noc</i><par n="i__vblex"/></e>
 <e lm="nodo">                 <i>nod</i><par n="o__n"/></e>
-<e lm="nokta trinkejo">       <i>nokta trinkej</i><par n="o__n"/></e>
 <e lm="nokto">                <i>nokt</i><par n="o__n"/></e>
 <e lm="noktomezo">            <i>noktomez</i><par n="o__n"/></e>
 <e lm="nombra">               <i>nombr</i><par n="a__adj"/></e>
@@ -5567,7 +5545,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="porkino">              <i>porkin</i><par n="o__n"/></e>
 <e lm="porko">                <i>pork</i><par n="o__n"/></e>
 <e lm="pornografio">          <i>pornografi</i><par n="o__n"/></e>
-<e lm="portebla afiŝo">       <i>portebla afi</i><par n="ŝ"/><par n="o__n"/></e>
 <e lm="porti">                <i>port</i><par n="i__vblex"/></e>
 <e lm="portilo">              <i>portil</i><par n="o__n"/></e>
 <e lm="portreto">             <i>portret</i><par n="o__n"/></e>
@@ -5578,7 +5555,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="poŝlampo">             <i>po</i><par n="ŝ"/><i>lamp</i><par n="o__n"/></e>
 <e lm="poŝo">                 <i>po</i><par n="ŝ"/><par n="o__n"/></e>
 <e lm="posta">                <i>post</i><par n="a__adj"/></e>
-<e lm="posta steveno">        <i>posta steven</i><par n="o__n"/></e>
 <e lm="postebrio">            <i>postebri</i><par n="o__n"/></e>
 <e lm="poste">                <i>post</i><par n="e__adv"/></e>
 <e lm="posteno">              <i>posten</i><par n="o__n"/></e>
@@ -6184,7 +6160,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="seninterrompe">        <i>seninterromp</i><par n="e__adv"/></e>
 <e lm="seninterrompa">        <i>seninterromp</i><par n="a__adj"/></e>
 <e lm="senkapabligi">         <i>senkapablig</i><par n="i__vblex"/></e>
-<e lm="senkapa brasiko">      <i>senkapa brasik</i><par n="o__n"/></e>
 <e lm="senkaŝe">              <i>senka</i><par n="ŝ"/><par n="e__adv"/></e>
 <e lm="senkonsidera">         <i>senkonsider</i><par n="a__adj"/></e>
 <e lm="senkulpa">             <i>senkulp</i><par n="a__adj"/></e>
@@ -11147,11 +11122,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="eklezio">              <i>eklezi</i><par n="o__n"/></e>
 <e lm="anglikano">            <i>anglikan</i><par n="ino__n"/></e>
 <e lm="anglikana">            <i>anglikan</i><par n="a__adj"/></e>
-<e lm="anglikana eklezio">    <i>anglikana<b/>eklezi</i><par n="o__n"/></e>
-<e lm="episkopa eklezio">     <i>episkopa<b/>eklezi</i><par n="o__n"/></e>
-<e lm="katolika eklezio">     <i>katolika<b/>eklezi</i><par n="o__n"/></e>
-<e lm="rom-katolika eklezio"> <i>rom-katolika<b/>eklezi</i><par n="o__n"/></e>
-<e lm="ortodoksa eklezio">    <i>ortodoksa<b/>eklezi</i><par n="o__n"/></e>
 <e lm="ĉifro">                <par n="ĉ"/><i>ifr</i><par n="o__n"/></e>
 <e lm="cirkli">               <i>cirkl</i><par n="i__vblex"/></e>
 <e lm="konataro">             <i>konatar</i><par n="o__n"/></e>
@@ -23705,7 +23675,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="adepto">               <i>adept</i><par n="o__n"/></e>
 <e lm="armeno">               <i>armen</i><par n="o__n"/></e>
 <e lm="beloruso">             <i>belorus</i><par n="o__n"/></e>
-<e lm="biologia milito">      <i>biologia<b/>milit</i><par n="o__n"/></e>
 <e lm="bosniano">             <i>bosnian</i><par n="o__n"/></e>
 <e lm="bulgaro">              <i>bulgar</i><par n="o__n"/></e>
 <e lm="dano">                 <i>dan</i><par n="o__n"/></e>
@@ -23783,7 +23752,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Nov-Ĵerzejo">          <i>Nov-Ĵerzej</i><par n="Barcelon/o__np"/></e>
 <e lm="Nov-Meksiko">          <i>Nov-Meksik</i><par n="Barcelon/o__np"/></e>
 <e lm="Ohio">                 <i>Ohi</i><par n="Barcelon/o__np"/></e>
-<e lm="Okcidenta Virginio">   <i>Okcidenta<b/>Virgini</i><par n="Barcelon/o__np"/></e>
 <e lm="Oklahomo">             <i>Oklahom</i><par n="Barcelon/o__np"/></e>
 <e lm="Oregono">              <i>Oregon</i><par n="Barcelon/o__np"/></e>
 <e lm="Pensilvanio">          <i>Pensilvani</i><par n="Barcelon/o__np"/></e>
@@ -33947,4 +33915,109 @@ oni sia sian ĉi sin Eternulo
 <e>                           <p><l>'</l>                   <r>'<s n="apos"/></r></p></e>
 
 	</section>
+
+	<section id="pluropaj_vortoj_mane" type="standard">
+    <!-- la afrikansa lingvo -->
+    <e>
+      <p>
+        <l>la<b/>afrikansa<b/>lingvo</l>
+        <r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>la<b/>afrikansan<b/>lingvon</l>
+        <r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>la<b/>afrikansaj<b/>lingvoj</l>
+        <r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>la<b/>afrikansajn<b/>lingvojn</l>
+        <r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <!-- Ĉefurba Teritorio -->
+    <e>
+      <p>
+        <l>Ĉefurba<b/>Teritorio</l>
+        <r>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Ĉefurban<b/>Teritorion</l>
+        <r>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Ĉefurb-teritoria</l>
+        <r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Ĉefurb-teritoriaj</l>
+        <r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Ĉefurb-teritorian</l>
+        <r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Ĉefurb-teritoriajn</l>
+        <r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <!-- Okcidenta Virginio -->
+    <e>
+      <p>
+        <l>Okcidenta<b/>Virginio</l>
+        <r>Okcidenta<b/>Virginio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Okcidentan<b/>Virginion</l>
+        <r>Okcidenta<b/>Virginio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Okcident-virginia</l>
+        <r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Okcident-virginiaj</l>
+        <r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Okcident-virginian</l>
+        <r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Okcident-virginiajn</l>
+        <r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+	</section>
+
 </dictionary>
