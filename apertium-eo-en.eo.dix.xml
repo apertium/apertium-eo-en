@@ -203,6 +203,11 @@
 </pardef>
 
     <!-- handle cx, etc. -->
+<pardef n="Ĉ">
+<e r="LR">                    <p><l>Cx</l>                  <r>Ĉ</r></p></e>
+<e>                           <p><l>Ĉ</l>                   <r>Ĉ</r></p></e>
+</pardef>
+
 <pardef n="ĉ">
 <e r="LR">                    <p><l>cx</l>                  <r>ĉ</r></p></e>
 <e>                           <p><l>ĉ</l>                   <r>ĉ</r></p></e>
@@ -1226,8 +1231,11 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Afganio">              <i>Afgani</i><par n="Barcelon/o__np"/></e>
 <e lm="Albanio">              <i>Albani</i><par n="Barcelon/o__np"/></e>
 <e lm="Alakanto">             <i>Alakant</i><par n="Barcelon/o__np"/></e>
+<e lm="Alĝero">               <i>Al</i><par n="ĝ"/><i>er</i><par n="Barcelon/o__np"/></e>
 <e lm="Alĝerio">              <i>Al</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
 <e lm="Alpoj">                <i>Alpoj</i><par n="Andoj__np"/></e>
+<e lm="Amazono">              <i>Amazon</i><par n="Barcelon/o__np"/></e>
+<e lm="Amazonio">             <i>Amazoni</i><par n="Barcelon/o__np"/></e>
 <e lm="Ameriko">              <i>Amerik</i><par n="Barcelon/o__np"/></e>
 <e lm="Amsterdamo">           <i>Amsterdam</i><par n="Barcelon/o__np"/></e>
 <e lm="Andaluzio">            <i>Andaluzi</i><par n="Barcelon/o__np"/></e>
@@ -1241,27 +1249,29 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Ateno">                <i>Aten</i><par n="Barcelon/o__np"/></e>
 <e lm="Aŭstralio">            <i>A</i><par n="ŭ"/><i>strali</i><par n="Barcelon/o__np"/></e>
 <e lm="Aŭstrio">              <i>A</i><par n="ŭ"/><i>stri</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉefurba Teritorio">    <i>Ĉefurba<b/>Teritori</i><par n="Barcelon/o__np"/></e>
 <e lm="Azio">                 <i>Azi</i><par n="Barcelon/o__np"/></e>
+<e lm="Eŭrazio">              <i>Eŭrazi</i><par n="Barcelon/o__np"/></e>
 <e lm="Barato">               <i>Barat</i><par n="Barcelon/o__np"/></e>
 <e lm="Barcelono">            <i>Barcelon</i><par n="Barcelon/o__np"/></e>
-
-
 <e lm="Belgio">               <i>Belgi</i><par n="Barcelon/o__np"/></e>
 <e lm="Beogrado">             <i>Beograd</i><par n="Barcelon/o__np"/></e>
 <e lm="Berlino">              <i>Berlin</i><par n="Barcelon/o__np"/></e>
 <e lm="Berno">                <i>Bern</i><par n="Barcelon/o__np"/></e>
 <e lm="Bogoto">               <i>Bogot</i><par n="Barcelon/o__np"/></e>
 <e lm="Bolivio">              <i>Bolivi</i><par n="Barcelon/o__np"/></e>
+<e lm="Bonaero">              <i>Bonaer</i><par n="Barcelon/o__np"/></e>
 <e lm="Bosnio">               <i>Bosni</i><par n="Barcelon/o__np"/></e>
+<e lm="Brazilio">             <i>Brazili</i><par n="Barcelon/o__np"/></e>
 <e lm="Brazilo">              <i>Brazil</i><par n="Barcelon/o__np"/></e>
 <e lm="Britio">               <i>Briti</i><par n="Barcelon/o__np"/></e>
 <e lm="Bruselo">              <i>Brusel</i><par n="Barcelon/o__np"/></e>
 <e lm="Budapeŝto">            <i>Budape</i><par n="ŝ"/><i>t</i><par n="Barcelon/o__np"/></e>
 <e lm="Bukareŝto">            <i>Bukare</i><par n="ŝ"/><i>t</i><par n="Barcelon/o__np"/></e>
 <e lm="Bulgario">             <i>Bulgari</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉadio">                <i>Ĉadi</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉilio">                <i>Ĉili</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉinio">                <i>Ĉini</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉadio">                <par n="Ĉ"/><i>adi</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉilio">                <par n="Ĉ"/><i>ili</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉinio">                <par n="Ĉ"/><i>ini</i><par n="Barcelon/o__np"/></e>
 <e lm="Danio">                <i>Dani</i><par n="Barcelon/o__np"/></e>
 <e lm="Dublino">              <i>Dublin</i><par n="Barcelon/o__np"/></e>
 <e lm="Edinburgo">            <i>Edinburg</i><par n="Barcelon/o__np"/></e>
@@ -1304,6 +1314,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Kantabrio">            <i>Kantabri</i><par n="Barcelon/o__np"/></e>
 <e lm="Karakaso">             <i>Karakas</i><par n="Barcelon/o__np"/></e>
 <e lm="Karibio">              <i>Karibi</i><par n="Barcelon/o__np"/></e>
+<e lm="Kartago">              <i>Kartag</i><par n="Barcelon/o__np"/></e>
 <e lm="Kartvelio">            <i>Kartveli</i><par n="Barcelon/o__np"/></e>
 <e lm="Kastilio-Leono">       <i>Kastilio-Leon</i><par n="Barcelon/o__np"/></e>
 <e lm="Katalunio">            <i>Kataluni</i><par n="Barcelon/o__np"/></e>
@@ -1316,6 +1327,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Kroatio">              <i>Kroati</i><par n="Barcelon/o__np"/></e>
 <e lm="Kubo">                 <i>Kub</i><par n="Barcelon/o__np"/></e>
 <e lm="Latin-Ameriko">        <i>Latin-Amerik</i><par n="Barcelon/o__np"/></e>
+<e lm="Nord-Ameriko">         <i>Nord-Amerik</i><par n="Barcelon/o__np"/></e>
+<e lm="Sud-Ameriko">          <i>Sud-Amerik</i><par n="Barcelon/o__np"/></e>
+<e lm="Centr-Ameriko">        <i>Centr-Amerik</i><par n="Barcelon/o__np"/></e>
 <e lm="Latvio">               <i>Latvi</i><par n="Barcelon/o__np"/></e>
 
 
@@ -1368,10 +1382,17 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Singapuro">            <i>Singapur</i><par n="Barcelon/o__np"/></e>
 <e lm="Sirio">                <i>Siri</i><par n="Barcelon/o__np"/></e>
 <e lm="Skotlando">            <i>Skotland</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉeĥio">                <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>i</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉeĥoslavakio">         <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>oslavaki</i><par n="Barcelon/o__np"/></e>
+<e lm="Slovakio">             <i>Slovaki</i><par n="Barcelon/o__np"/></e>
 <e lm="Slovakio">             <i>Slovaki</i><par n="Barcelon/o__np"/></e>
 <e lm="Slovenio">             <i>Sloveni</i><par n="Barcelon/o__np"/></e>
 <e lm="Stokholmo">            <i>Stokholm</i><par n="Barcelon/o__np"/></e>
 <e lm="Sud-Afriko">           <i>Sud-Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Nord-Afriko">          <i>Nord-Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Orient-Afriko">        <i>Orient-Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Okcident-Afriko">      <i>Okcident-Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Afriko">               <i>Afrik</i><par n="Barcelon/o__np"/></e>
 <e lm="Sudano">               <i>Sudan</i><par n="Barcelon/o__np"/></e>
 <e lm="Svedio">               <i>Svedi</i><par n="Barcelon/o__np"/></e>
 <e lm="Svisio">               <i>Svisi</i><par n="Barcelon/o__np"/></e>
@@ -1415,11 +1436,12 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="skandinavo">           <i>skandinav</i><par n="ino__n"/></e>
 <e lm="albano">               <i>alban</i><par n="ino__n"/></e>
 <e lm="amerikano">            <i>amerikan</i><par n="ino__n"/></e>
+<e lm="nord-amerikano">       <i>nord-amerikan</i><par n="ino__n"/></e>
+<e lm="sud-amerikano">        <i>sud-amerikan</i><par n="ino__n"/></e>
+<e lm="centr-amerikano">      <i>centr-amerikan</i><par n="ino__n"/></e>
 <e lm="amiko">                <i>amik</i><par n="ino__n"/></e>
-
 <e r="LR" lm="anarkisto">     <i>anar</i><par n="k_ĥ"/><p><l>ist</l><r>iist</r></p><par n="ino__n"/></e>
 <e lm="anarkiisto">           <i>anar</i><par n="k_ĥ"/><i>iist</i><par n="ino__n"/></e>
-
 <e lm="asistanto">            <i>asistant</i><par n="ino__n"/></e>
 <e lm="kontrevizoro">         <i>kontrevizor</i><par n="ino__n"/></e>
 <e lm="anoncisto">            <i>anoncist</i><par n="ino__n"/></e>
@@ -1427,6 +1449,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="antaŭulo">             <i>anta</i><par n="ŭ"/><i>ul</i><par n="ino__n"/></e>
 <e lm="apotekisto">           <i>apotekist</i><par n="ino__n"/></e>
 <e lm="arabo">                <i>arab</i><par n="ino__n"/></e>
+<e lm="berbero">              <i>berber</i><par n="ino__n"/></e>
 <e lm="arestito">             <i>arestit</i><par n="ino__n"/></e>
 <e lm="argentinano">          <i>argentinan</i><par n="ino__n"/></e>
 <e lm="arkitekto">            <i>ar</i><par n="k_ĥ"/><i>itekt</i><par n="ino__n"/></e>
@@ -1445,6 +1468,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="avo">                  <i>av</i><par n="ino__n"/></e>
 <e lm="azeno">                <i>azen</i><par n="ino__n"/></e>
 <e lm="aziano">               <i>azian</i><par n="ino__n"/></e>
+<e lm="sud-aziano">           <i>sud-azian</i><par n="ino__n"/></e>
+<e lm="orient-aziano">        <i>orient-azian</i><par n="ino__n"/></e>
 <e lm="bandito">              <i>bandit</i><par n="ino__n"/></e>
 <e lm="brito">                <i>brit</i><par n="ino__n"/></e>
 <e lm="bankiero">             <i>bankier</i><par n="ino__n"/></e>
@@ -1475,8 +1500,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="doto">                 <i>dot</i><par n="o__n"/></e>
 <e lm="duko">                 <i>duk</i><par n="ino__n"/></e>
 <e lm="edzo">                 <i>edz</i><par n="ino__n"/></e>
-
-
 <e lm="ekonomikisto">         <i>ekonomikist</i><par n="ino__n"/></e>
 <e lm="ekstremisto">          <i>ekstremist</i><par n="ino__n"/></e>
 <e lm="eldonisto">            <i>eldonist</i><par n="ino__n"/></e>
@@ -1560,6 +1583,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="kapitano">             <i>kapitan</i><par n="ino__n"/></e>
 <e lm="kato">                 <i>kat</i><par n="ino__n"/></e>
 <e lm="kataluno">             <i>katalun</i><par n="ino__n"/></e>
+<e lm="katolikismo">          <i>katolikism</i><par n="o__n"/></e>
 <e lm="katoliko">             <i>katolik</i><par n="ino__n"/></e>
 <e lm="kelnero">              <i>kelner</i><par n="ino__n"/></e>
 <e lm="kirurgo">              <i>kirurg</i><par n="ino__n"/></e>
@@ -1854,6 +1878,16 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="afiŝo">                <i>afi</i><par n="ŝ"/><par n="o__n"/></e>
 <e lm="aflikti">              <i>aflikt</i><par n="i__vblex"/></e>
 <e lm="afrika">               <i>afrik</i><par n="a__adj"/></e>
+<e lm="la afrikansa lingvo">  <i>la<b/>afrikansa<b/>lingv</i><par n="o__n"/></e>
+<e lm="afrikano">             <i>afrikan</i><par n="ino__n"/></e>
+<e lm="sud-afrika">           <i>sud-afrik</i><par n="a__adj"/></e>
+<e lm="sud-afrikano">         <i>sud-afrikan</i><par n="ino__n"/></e>
+<e lm="nord-afrika">          <i>nord-afrik</i><par n="a__adj"/></e>
+<e lm="nord-afrikano">        <i>nord-afrikan</i><par n="ino__n"/></e>
+<e lm="orient-afrika">        <i>orient-afrik</i><par n="a__adj"/></e>
+<e lm="orient-afrikano">      <i>orient-afrikan</i><par n="ino__n"/></e>
+<e lm="okcident-afrika">      <i>okcident-afrik</i><par n="a__adj"/></e>
+<e lm="okcident-afrikano">    <i>okcident-afrikan</i><par n="ino__n"/></e>
 <e lm="agado">                <i>agad</i><par n="o__n"/></e>
 <e lm="agendo">               <i>agend</i><par n="o__n"/></e>
 <e lm="agenteco">             <i>agentec</i><par n="o__n"/></e>
@@ -2095,6 +2129,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="apuda">                <i>apud</i><par n="a__adj"/></e>
 <e lm="apude">                <i>apud</i><par n="e__adv"/></e>
 <e lm="araba">                <i>arab</i><par n="a__adj"/></e>
+<e lm="berbera">              <i>berber</i><par n="a__adj"/></e>
 <e lm="arakido">              <i>arakid</i><par n="o__n"/></e>
 <e lm="araneaĵo">             <i>aranea</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="araneo">               <i>arane</i><par n="o__n"/></e>
@@ -2170,6 +2205,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="atingi">               <i>ating</i><par n="i__vblex"/></e>
 <e lm="atingo">               <i>ating</i><par n="o__n"/></e>
 <e lm="atlantika">            <i>atlantik</i><par n="a__adj"/></e>
+<e lm="arkta">                <i>arkt</i><par n="a__adj"/></e>
+<e lm="antarkta">             <i>antarkt</i><par n="a__adj"/></e>
 <e lm="atlaso">               <i>atlas</i><par n="o__n"/></e>
 <e lm="atleta">               <i>atlet</i><par n="a__adj"/></e>
 <e lm="atletiko">             <i>atletik</i><par n="o__n"/></e>
@@ -2224,6 +2261,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="avio">                 <i>avi</i><par n="o__n"/></e>
 <e lm="avizo">                <i>aviz</i><par n="o__n"/></e>
 <e lm="azia">                 <i>azi</i><par n="a__adj"/></e>
+<e lm="sud-azia">             <i>sud-azi</i><par n="a__adj"/></e>
+<e lm="orient-azia">          <i>orient-azi</i><par n="a__adj"/></e>
 <e lm="azilo">                <i>azil</i><par n="o__n"/></e>
 <e lm="babilejo">             <i>babilej</i><par n="o__n"/></e>
 <e lm="babili">               <i>babil</i><par n="i__vblex"/></e>
@@ -2402,6 +2441,13 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="buĉado">               <i>bu</i><par n="ĉ"/><i>ad</i><par n="o__n"/></e>
 <e lm="buĉejo">               <i>bu</i><par n="ĉ"/><i>ej</i><par n="o__n"/></e>
 <e lm="budhismo">             <i>budhism</i><par n="o__n"/></e>
+<e lm="budhisto">             <i>budhist</i><par n="ino__n"/></e>
+<e lm="budhisma">             <i>budhism</i><par n="a__adj"/></e>
+<e lm="budhista">             <i>budhist</i><par n="a__adj"/></e>
+<e lm="hinduismo">            <i>hinduism</i><par n="o__n"/></e>
+<e lm="hinduo">               <i>hindu</i><par n="ino__n"/></e>
+<e lm="hindua">               <i>hindu</i><par n="a__adj"/></e>
+<e lm="hindua">               <i>hindu</i><par n="a__adj"/></e>
 <e lm="bufo">                 <i>buf</i><par n="o__n"/></e>
 <e lm="buĝeto">               <i>bu</i><par n="ĝ"/><i>et</i><par n="o__n"/></e>
 <e lm="bukedo">               <i>buked</i><par n="o__n"/></e>
@@ -2504,6 +2550,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="cindrigo">             <i>cindrig</i><par n="o__n"/></e>
 <e lm="cindrujo">             <i>cindruj</i><par n="o__n"/></e>
 <e lm="cipreso">              <i>cipres</i><par n="o__n"/></e>
+<e lm="ĉirkaŭ">               <par n="ĉ"/><i>irka</i><par n="ŭ"/><par n="jam__adv"/></e>
 <e lm="ĉirkaŭi">              <par n="ĉ"/><i>irka</i><par n="ŭ"/><par n="i__vblex"/></e>
 <e lm="ĉirkaŭlimigi">         <par n="ĉ"/><i>irka</i><par n="ŭ"/><i>limig</i><par n="i__vblex"/></e>
 <e lm="ĉirkaŭpreni">          <par n="ĉ"/><i>irka</i><par n="ŭ"/><i>pren</i><par n="i__vblex"/></e>
@@ -2544,6 +2591,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="datenbanko">           <i>datenbank</i><par n="o__n"/></e>
 <e lm="datiĝi">               <i>dati</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="dati">                 <i>dat</i><par n="i__vblex"/></e>
+<e lm="datumi">               <i>datum</i><par n="i__vblex"/></e>
 <e lm="dato">                 <i>dat</i><par n="o__n"/></e>
 <e lm="datreveno">            <i>datreven</i><par n="o__n"/></e>
 <e lm="datumo">               <i>datum</i><par n="o__n"/></e>
@@ -2610,6 +2658,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="demono">               <i>demon</i><par n="o__n"/></e>
 <e lm="demonstracio">         <i>demonstraci</i><par n="o__n"/></e>
 <e lm="denove">               <i>denov</i><par n="e__adv"/></e>
+<e lm="refoje">               <i>refoj</i><par n="e__adv"/></e>
+<e lm="ankoraŭ foje">         <i>ankoraŭ<b/>foj</i><par n="e__adv"/></e>
 <e lm="densa">                <i>dens</i><par n="a__adj"/></e>
 <e lm="denseco">              <i>densec</i><par n="o__n"/></e>
 <e lm="dentaĵo">              <i>denta</i><par n="ĵ"/><par n="o__n"/></e>
@@ -3218,6 +3268,15 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="flagri">               <i>flagr</i><par n="i__vblex"/></e>
 <e lm="flamo">                <i>flam</i><par n="o__n"/></e>
 <e lm="flandra">              <i>flandr</i><par n="a__adj"/></e>
+<e lm="afrikansa">            <i>afrikans</i><par n="a__adj"/></e>
+<e lm="aramea">               <i>arame</i><par n="a__adj"/></e>
+<e lm="arameo">               <i>arame</i><par n="ino__n"/></e>
+<e lm="fenica">               <i>fenic</i><par n="a__adj"/></e>
+<e lm="fenico">               <i>fenic</i><par n="ino__n"/></e>
+<e lm="kartaga">              <i>kartag</i><par n="a__adj"/></e>
+<e lm="kartagano">            <i>kartagan</i><par n="ino__n"/></e>
+<e lm="punika">               <i>punik</i><par n="a__adj"/></e>
+<e lm="punika milito">        <i>punika<b/>milit</i><par n="o__n"/></e>
 <e lm="flanka">               <i>flank</i><par n="a__adj"/></e>
 <e lm="flanklasi">            <i>flanklas</i><par n="i__vblex"/></e>
 <e lm="flankenlasi">          <i>flankenlas</i><par n="i__vblex"/></e>
@@ -3301,6 +3360,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="frakcio">              <i>frakci</i><par n="o__n"/></e>
 <e lm="frakturo">             <i>fraktur</i><par n="o__n"/></e>
 <e lm="franca">               <i>franc</i><par n="a__adj"/></e>
+<e lm="francia">              <i>franci</i><par n="a__adj"/></e>
 <e lm="franĝo">               <i>fran</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="fraŭda">               <i>fra</i><par n="ŭ"/><i>d</i><par n="a__adj"/></e>
 <e lm="fraŭdi">               <i>fra</i><par n="ŭ"/><i>d</i><par n="i__vblex"/></e>
@@ -3547,6 +3607,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="hipoteko">             <i>hipotek</i><par n="o__n"/></e>
 <e lm="hipotezo">             <i>hipotez</i><par n="o__n"/></e>
 <e lm="hispana">              <i>hispan</i><par n="a__adj"/></e>
+<e lm="hispania">             <i>hispani</i><par n="a__adj"/></e>
 <e lm="histerio">             <i>histeri</i><par n="o__n"/></e>
 <e lm="historia">             <i>histori</i><par n="a__adj"/></e>
 <e lm="historie">             <i>histori</i><par n="e__adv"/></e>
@@ -3970,6 +4031,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="klasifiki">            <i>klasifik</i><par n="i__vblex"/></e>
 <e lm="klasika">              <i>klasik</i><par n="a__adj"/></e>
 <e lm="klaso">                <i>klas</i><par n="o__n"/></e>
+<e lm="laborista klaso">      <i>laborista klaso</i><par n="o__n"/></e>
 <e lm="klaŭzo">               <i>kla</i><par n="ŭ"/><i>z</i><par n="o__n"/></e>
 <e lm="klavaro">              <i>klavar</i><par n="o__n"/></e>
 <e lm="klavo">                <i>klav</i><par n="o__n"/></e>
@@ -4454,6 +4516,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="listo">                <i>list</i><par n="o__n"/></e>
 <e lm="literaturo">           <i>literatur</i><par n="o__n"/></e>
 <e lm="litero">               <i>liter</i><par n="o__n"/></e>
+<e lm="kursiva litero">       <i>kursiva<b/>liter</i><par n="o__n"/></e>
+<e lm="grasa litero">         <i>grasa<b/>liter</i><par n="o__n"/></e>
+<e lm="majuskla litero">      <i>majuskla<b/>liter</i><par n="o__n"/></e>
 <e lm="literumi">             <i>literum</i><par n="i__vblex"/></e>
 <e lm="lito">                 <i>lit</i><par n="o__n"/></e>
 <e lm="litro">                <i>litr</i><par n="o__n"/></e>
@@ -4879,6 +4944,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="monotona">             <i>monoton</i><par n="a__adj"/></e>
 <e lm="monpuni">              <i>monpun</i><par n="i__vblex"/></e>
 <e lm="monpuno">              <i>monpun</i><par n="o__n"/></e>
+<e lm="mortopuno">            <i>mortopun</i><par n="o__n"/></e>
 <e lm="monstro">              <i>monstr</i><par n="o__n"/></e>
 <e lm="monteto">              <i>montet</i><par n="o__n"/></e>
 <e lm="montgrimpado">         <i>montgrimpad</i><par n="o__n"/></e>
@@ -7013,6 +7079,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="zorgo">                <i>zorg</i><par n="o__n"/></e>
 <e lm="albana">               <i>alban</i><par n="a__adj"/></e>
 <e lm="amerika">              <i>amerik</i><par n="a__adj"/></e>
+<e lm="nord-amerika">         <i>nord-amerik</i><par n="a__adj"/></e>
+<e lm="sud-amerika">          <i>sud-amerik</i><par n="a__adj"/></e>
+<e lm="centr-amerika">        <i>centr-amerik</i><par n="a__adj"/></e>
 <e lm="kataluna">             <i>katalun</i><par n="a__adj"/></e>
 <e lm="indiana">              <i>indian</i><par n="a__adj"/></e>
 <e lm="israela">              <i>israel</i><par n="a__adj"/></e>
@@ -7174,6 +7243,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Platono">              <i>Platon</i><par n="Mark/o__np"/></e>
 <e lm="Aristotelo">           <i>Aristotel</i><par n="Mark/o__np"/></e>
 <e lm="Aleksandro">           <i>Aleksandr</i><par n="Mark/o__np"/></e>
+<e lm="Budho">                <i>Budh</i><par n="Mark/o__np"/></e>
 <e lm="Robert">               <i>Robert</i><par n="Mark__np"/></e>
 <e lm="Louis">                <i>Louis</i><par n="Mark__np"/></e>
 <e lm="Henry">                <i>Henry</i><par n="Mark__np"/></e>
@@ -7214,7 +7284,6 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Izabela">              <i>Izabela</i><par n="Maria__np"/></e>
 <e lm="Israel">               <i>Israel</i><par n="Mark__np"/></e>
 <e lm="Jakobo">               <i>Jakob</i><par n="Mark/o__np"/></e>
-<e lm="Jaime">                <i>Jaime</i><par n="Mary__np"/></e>
 <e lm="Jaime">                <i>Jaime</i><par n="Mark__np"/></e>
 <e lm="Jesuo">                <i>Jesu</i><par n="Mark/o__np"/></e>
 <e lm="Johano">               <i>Johan</i><par n="Mark/o__np"/></e>
@@ -7224,6 +7293,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Juliano">              <i>Julian</i><par n="Mark/o__np"/></e>
 <e lm="Ĵeromo">               <i>Ĵerom</i><par n="Mark/o__np"/></e>
 <e lm="Klaŭdo">               <i>Kla</i><par n="ŭ"/><i>d</i><par n="Mark/o__np"/></e>
+<e lm="Kristo">               <i>Krist</i><par n="Mark/o__np"/></e>
 <e lm="Kristoforo">           <i>Kristofor</i><par n="Mark/o__np"/></e>
 <e lm="Ksavero">              <i>Ksaver</i><par n="Mark/o__np"/></e>
 <e lm="Laŭrenco">             <i>La</i><par n="ŭ"/><i>renc</i><par n="Mark/o__np"/></e>
@@ -9736,6 +9806,8 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="atletismo">            <i>atletism</i><par n="o__n"/></e>
 <e lm="atletado">             <i>atletad</i><par n="o__n"/></e>
 <e lm="Atlantiko">            <i>Atlantik</i><par n="Barcelon/o__np"/></e>
+<e lm="Arkto">                <i>Arkt</i><par n="Barcelon/o__np"/></e>
+<e lm="Antarkto">             <i>Antarkt</i><par n="Barcelon/o__np"/></e>
 <e lm="atlaso">               <i>atlas</i><par n="o__n"/></e>
 <e lm="atolo">                <i>atol</i><par n="o__n"/></e>
 <e lm="atomigi">              <i>atomig</i><par n="i__vblex"/></e>
@@ -15701,6 +15773,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="nedeterminita">        <i>nedeterminit</i><par n="a__adj"/></e>
 <e lm="indeksi">              <i>indeks</i><par n="i__vblex"/></e>
 <e lm="Barato">               <i>Barat</i><par n="Barcelon/o__np"/></e>
+<e lm="Hindukuŝo">            <i>Hindukuŝ</i><par n="Barcelon/o__np"/></e>
 <e lm="Hindio">               <i>Hindi</i><par n="Barcelon/o__np"/></e>
 <e lm="hinda">                <i>hind</i><par n="a__adj"/></e>
 <e lm="barata">               <i>barat</i><par n="a__adj"/></e>
@@ -16212,8 +16285,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="jetaviadilo">          <i>jetaviadil</i><par n="o__n"/></e>
 <e lm="ŝprucaĵo">             <par n="ŝ"/><i>pruca</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="gagato">               <i>gagat</i><par n="o__n"/></e>
-<e lm="judo">                 <i>jud</i><par n="o__n"/></e>
-<e lm="hebreo">               <i>hebre</i><par n="o__n"/></e>
+<e lm="judismo">              <i>judism</i><par n="o__n"/></e>
+<e lm="judo">                 <i>jud</i><par n="ino__n"/></e>
+<e lm="hebreo">               <i>hebre</i><par n="ino__n"/></e>
 <e lm="juvelaro">             <i>juvelar</i><par n="o__n"/></e>
 <e lm="puzlo">                <i>puzl</i><par n="o__n"/></e>
 <e lm="dungiĝo">              <i>dungi</i><par n="ĝ"/><par n="o__n"/></e>
@@ -23248,6 +23322,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="senemocia">            <i>senemoci</i><par n="a__adj"/></e>
 <e lm="senpasia">             <i>senpasi</i><par n="a__adj"/></e>
 <e lm="arbaro">               <i>arbar</i><par n="o__n"/></e>
+<e lm="praarbaro">            <i>praarbar</i><par n="o__n"/></e>
 <e lm="boska">                <i>bosk</i><par n="a__adj"/></e>
 <e lm="ligneca">              <i>lignec</i><par n="a__adj"/></e>
 <e lm="parolo">               <i>parol</i><par n="o__n"/></e>
@@ -23595,7 +23670,7 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="Kastilio">             <i>Kastili</i><par n="Barcelon/o__np"/></e>
 <e lm="Sovet-Unio">           <i>Sovet-Uni</i><par n="Barcelon/o__np"/></e>
 <e lm="Sovetio">              <i>Soveti</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉuvaŝio">              <i>Ĉuvaŝi</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉuvaŝio">              <par n="Ĉ"/><i>uva</i><par n="ŝ"/><i>i</i><par n="Barcelon/o__np"/></e>
 <e lm="armena">               <i>armen</i><par n="a__adj"/></e>
 <e lm="belorusa">             <i>belorus</i><par n="a__adj"/></e>
 <e lm="bolŝevika">            <i>bol</i><par n="ŝ"/><i>evik</i><par n="a__adj"/></e>
@@ -23733,6 +23808,195 @@ Necesas difini paradigmon por adj-nomo terminoj
 
 <!-- Fino aldonoj 2009/02/23 -->
 
+<!-- lingvoj 2009/12/01 -->
+
+<e lm="en la portugala lingvo">	<i>en<b/>la<b/>portugala<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la portugala">	<i>en<b/>la<b/>portugala</i><par n="jam__adv"/></e>
+<e lm="portugale">		<i>portugal</i><par n="e__adv"/></e>
+<e lm="en la hispana lingvo">	<i>en<b/>la<b/>hispana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la hispana">		<i>en<b/>la<b/>hispana</i><par n="jam__adv"/></e>
+<e lm="hispane">		<i>hispan</i><par n="e__adv"/></e>
+<e lm="en la kataluna lingvo">	<i>en<b/>la<b/>kataluna<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la kataluna">		<i>en<b/>la<b/>kataluna</i><par n="jam__adv"/></e>
+<e lm="katalune">		<i>katalun</i><par n="e__adv"/></e>
+<e lm="en la astura lingvo">	<i>en<b/>la<b/>astura<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la astura">		<i>en<b/>la<b/>astura</i><par n="jam__adv"/></e>
+<e lm="asture">			<i>astur</i><par n="e__adv"/></e>
+<e lm="en la aragona lingvo">	<i>en<b/>la<b/>aragona<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la aragona">		<i>en<b/>la<b/>aragona</i><par n="jam__adv"/></e>
+<e lm="aragone">		<i>aragon</i><par n="e__adv"/></e>
+<e lm="en la eŭska lingvo">	<i>en<b/>la<b/>eŭska<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la eŭska">		<i>en<b/>la<b/>eŭska</i><par n="jam__adv"/></e>
+<e lm="eŭske">			<i>eŭsk</i><par n="e__adv"/></e>
+<e lm="en la okcitana lingvo">	<i>en<b/>la<b/>okcitana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la okcitana">		<i>en<b/>la<b/>okcitana</i><par n="jam__adv"/></e>
+<e lm="okcitane">		<i>okcitan</i><par n="e__adv"/></e>
+<e lm="en la gaskona lingvo">	<i>en<b/>la<b/>gaskona<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la gaskona">		<i>en<b/>la<b/>gaskona</i><par n="jam__adv"/></e>
+<e lm="gaskone">		<i>gaskon</i><par n="e__adv"/></e>
+<e lm="en la provenca lingvo">	<i>en<b/>la<b/>provenca<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la provenca">		<i>en<b/>la<b/>provenca</i><par n="jam__adv"/></e>
+<e lm="provence">		<i>provenc</i><par n="e__adv"/></e>
+<e lm="en la franca lingvo">	<i>en<b/>la<b/>franca<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la franca">		<i>en<b/>la<b/>franca</i><par n="jam__adv"/></e>
+<e lm="france">			<i>franc</i><par n="e__adv"/></e>
+<e lm="en la itala lingvo">	<i>en<b/>la<b/>itala<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la itala">		<i>en<b/>la<b/>itala</i><par n="jam__adv"/></e>
+<e lm="itale">			<i>ital</i><par n="e__adv"/></e>
+<e lm="en la sarda lingvo">	<i>en<b/>la<b/>sarda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la sarda">		<i>en<b/>la<b/>sarda</i><par n="jam__adv"/></e>
+<e lm="sarde">			<i>sard</i><par n="e__adv"/></e>
+<e lm="en la friula lingvo">	<i>en<b/>la<b/>friula<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la friula">		<i>en<b/>la<b/>friula</i><par n="jam__adv"/></e>
+<e lm="friule">			<i>friul</i><par n="e__adv"/></e>
+<e lm="en la romanĉa lingvo">	<i>en<b/>la<b/>romanĉa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la romanĉa">		<i>en<b/>la<b/>romanĉa</i><par n="jam__adv"/></e>
+<e lm="romanĉe">		<i>romanĉ</i><par n="e__adv"/></e>
+<e lm="en la rumana lingvo">	<i>en<b/>la<b/>rumana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la rumana">		<i>en<b/>la<b/>rumana</i><par n="jam__adv"/></e>
+<e lm="rumane">			<i>ruman</i><par n="e__adv"/></e>
+<e lm="en la germana lingvo">	<i>en<b/>la<b/>germana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la germana">		<i>en<b/>la<b/>germana</i><par n="jam__adv"/></e>
+<e lm="germane">		<i>german</i><par n="e__adv"/></e>
+<e lm="en la angla lingvo">	<i>en<b/>la<b/>angla<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la angla">		<i>en<b/>la<b/>angla</i><par n="jam__adv"/></e>
+<e lm="angle">			<i>angl</i><par n="e__adv"/></e>
+<e lm="en la nederlanda">	<i>en<b/>la<b/>nederlanda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la nederlanda lingvo">	<i>en<b/>la<b/>nederlanda</i><par n="jam__adv"/></e>
+<e lm="nederlande">		<i>nederland</i><par n="e__adv"/></e>
+<e lm="en la flandra lingvo">	<i>en<b/>la<b/>flandra<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la flandra">		<i>en<b/>la<b/>flandra</i><par n="jam__adv"/></e>
+<e lm="flandre">		<i>flandr</i><par n="e__adv"/></e>
+<e lm="en la afrikansa lingvo">	<i>en<b/>la<b/>afrikansa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la afrikansa">	<i>en<b/>la<b/>afrikansa</i><par n="jam__adv"/></e>
+<e lm="afrikanse">		<i>afrikans</i><par n="e__adv"/></e>
+<e lm="en la norvega lingvo">	<i>en<b/>la<b/>norvega<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la norvega">		<i>en<b/>la<b/>norvega</i><par n="jam__adv"/></e>
+<e lm="norvege">		<i>norveg</i><par n="e__adv"/></e>
+<e lm="en la dana lingvo">	<i>en<b/>la<b/>dana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la dana">		<i>en<b/>la<b/>dana</i><par n="jam__adv"/></e>
+<e lm="dane">			<i>dan</i><par n="e__adv"/></e>
+<e lm="en la sveda lingvo">	<i>en<b/>la<b/>sveda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la sveda">		<i>en<b/>la<b/>sveda</i><par n="jam__adv"/></e>
+<e lm="svede">			<i>sved</i><par n="e__adv"/></e>
+<e lm="en la islanda lingvo">	<i>en<b/>la<b/>islanda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la islanda">		<i>en<b/>la<b/>islanda</i><par n="jam__adv"/></e>
+<e lm="islande">		<i>island</i><par n="e__adv"/></e>
+<e lm="en la irlanda lingvo">	<i>en<b/>la<b/>irlanda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la irlanda">		<i>en<b/>la<b/>irlanda</i><par n="jam__adv"/></e>
+<e lm="irlande">		<i>irland</i><par n="e__adv"/></e>
+<e lm="en la skota lingvo">	<i>en<b/>la<b/>skota<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la skota">		<i>en<b/>la<b/>skota</i><par n="jam__adv"/></e>
+<e lm="skote">			<i>skot</i><par n="e__adv"/></e>
+<e lm="en la kimra lingvo">	<i>en<b/>la<b/>kimra<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la kimra">		<i>en<b/>la<b/>kimra</i><par n="jam__adv"/></e>
+<e lm="kimre">			<i>kimr</i><par n="e__adv"/></e>
+<e lm="en la gaela lingvo">	<i>en<b/>la<b/>gaela<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la gaela">		<i>en<b/>la<b/>gaela</i><par n="jam__adv"/></e>
+<e lm="gaele">			<i>gael</i><par n="e__adv"/></e>
+<e lm="en la bretona lingvo">	<i>en<b/>la<b/>bretona<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la bretona">		<i>en<b/>la<b/>bretona</i><par n="jam__adv"/></e>
+<e lm="bretone">		<i>breton</i><par n="e__adv"/></e>
+<e lm="en la rusa lingvo">	<i>en<b/>la<b/>rusa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la rusa">		<i>en<b/>la<b/>rusa</i><par n="jam__adv"/></e>
+<e lm="ruse">			<i>rus</i><par n="e__adv"/></e>
+<e lm="en la ukraina lingvo">	<i>en<b/>la<b/>ukraina<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la ukraina">		<i>en<b/>la<b/>ukraina</i><par n="jam__adv"/></e>
+<e lm="ukraine">		<i>ukrain</i><par n="e__adv"/></e>
+<e lm="en la belorusa lingvo">	<i>en<b/>la<b/>belorusa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la belorusa">		<i>en<b/>la<b/>belorusa</i><par n="jam__adv"/></e>
+<e lm="beloruse">		<i>belorus</i><par n="e__adv"/></e>
+<e lm="en la pola lingvo">	<i>en<b/>la<b/>pola<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la pola">		<i>en<b/>la<b/>pola</i><par n="jam__adv"/></e>
+<e lm="pole">			<i>pol</i><par n="e__adv"/></e>
+<e lm="en la ĉeĥa lingvo">	<i>en<b/>la<b/>ĉeĥa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la ĉeĥa">		<i>en<b/>la<b/>ĉeĥa</i><par n="jam__adv"/></e>
+<e lm="ĉeĥe">			<i>ĉeĥ</i><par n="e__adv"/></e>
+<e lm="en la slovaka lingvo">	<i>en<b/>la<b/>slovaka<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la slovaka">		<i>en<b/>la<b/>slovaka</i><par n="jam__adv"/></e>
+<e lm="slovake">		<i>slovak</i><par n="e__adv"/></e>
+<e lm="en la slovena lingvo">	<i>en<b/>la<b/>slovena<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la slovena">		<i>en<b/>la<b/>slovena</i><par n="jam__adv"/></e>
+<e lm="slovene">		<i>sloven</i><par n="e__adv"/></e>
+<e lm="en la kroata lingvo">	<i>en<b/>la<b/>kroata<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la kroata">		<i>en<b/>la<b/>kroata</i><par n="jam__adv"/></e>
+<e lm="kroate">			<i>kroat</i><par n="e__adv"/></e>
+<e lm="en la serba lingvo">	<i>en<b/>la<b/>serba<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la serba">		<i>en<b/>la<b/>serba</i><par n="jam__adv"/></e>
+<e lm="serbe">			<i>serb</i><par n="e__adv"/></e>
+<e lm="en la serbokroata lingvo">	<i>en<b/>la<b/>serbokroata<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la serbokroata">	<i>en<b/>la<b/>serbokroata</i><par n="jam__adv"/></e>
+<e lm="serbokroate">		<i>serbokroat</i><par n="e__adv"/></e>
+<e lm="en la makedona lingvo">	<i>en<b/>la<b/>makedona<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la makedona">		<i>en<b/>la<b/>makedona</i><par n="jam__adv"/></e>
+<e lm="makedone">		<i>makedon</i><par n="e__adv"/></e>
+<e lm="en la bulgara lingvo">	<i>en<b/>la<b/>bulgara<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la bulgara">		<i>en<b/>la<b/>bulgara</i><par n="jam__adv"/></e>
+<e lm="bulgare">		<i>bulgar</i><par n="e__adv"/></e>
+<e lm="en la greka lingvo">	<i>en<b/>la<b/>greka<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la greka">		<i>en<b/>la<b/>greka</i><par n="jam__adv"/></e>
+<e lm="greke">			<i>grek</i><par n="e__adv"/></e>
+<e lm="en la albana lingvo">	<i>en<b/>la<b/>albana<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la albana">		<i>en<b/>la<b/>albana</i><par n="jam__adv"/></e>
+<e lm="albane">			<i>alban</i><par n="e__adv"/></e>
+<e lm="en la latina lingvo">	<i>en<b/>la<b/>latina<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la latina">		<i>en<b/>la<b/>latina</i><par n="jam__adv"/></e>
+<e lm="en latino">		<i>en<b/>latino</i><par n="jam__adv"/></e>
+<e lm="latine">			<i>latin</i><par n="e__adv"/></e>
+<e lm="en la litova lingvo">	<i>en<b/>la<b/>litova<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la litova">		<i>en<b/>la<b/>litova</i><par n="jam__adv"/></e>
+<e lm="litove">			<i>litov</i><par n="e__adv"/></e>
+<e lm="en la latva lingvo">	<i>en<b/>la<b/>latva<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la latva">		<i>en<b/>la<b/>latva</i><par n="jam__adv"/></e>
+<e lm="latve">			<i>latv</i><par n="e__adv"/></e>
+<e lm="en la estona lingvo">	<i>en<b/>la<b/>estona<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la estona">		<i>en<b/>la<b/>estona</i><par n="jam__adv"/></e>
+<e lm="estone">			<i>eston</i><par n="e__adv"/></e>
+<e lm="en la finna lingvo">	<i>en<b/>la<b/>finna<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la finna">		<i>en<b/>la<b/>finna</i><par n="jam__adv"/></e>
+<e lm="finne">			<i>finn</i><par n="e__adv"/></e>
+<e lm="en la hungara lingvo">	<i>en<b/>la<b/>hungara<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la hungara">		<i>en<b/>la<b/>hungara</i><par n="jam__adv"/></e>
+<e lm="hungare">		<i>hungar</i><par n="e__adv"/></e>
+<e lm="en la ĉina lingvo">	<i>en<b/>la<b/>ĉina<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la ĉina">		<i>en<b/>la<b/>ĉina</i><par n="jam__adv"/></e>
+<e lm="ĉine">			<i>ĉin</i><par n="e__adv"/></e>
+<e lm="en la hindia lingvo">	<i>en<b/>la<b/>hindia<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la hindia">		<i>en<b/>la<b/>hindia</i><par n="jam__adv"/></e>
+<e lm="hindie">			<i>hindi</i><par n="e__adv"/></e>
+<e lm="en la bengala lingvo">	<i>en<b/>la<b/>bengala<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la bengala">		<i>en<b/>la<b/>bengala</i><par n="jam__adv"/></e>
+<e lm="bengale">		<i>bengal</i><par n="e__adv"/></e>
+<e lm="en la turka lingvo">	<i>en<b/>la<b/>turka<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la turka">		<i>en<b/>la<b/>turka</i><par n="jam__adv"/></e>
+<e lm="turke">			<i>turk</i><par n="e__adv"/></e>
+<e lm="en la kurda lingvo">	<i>en<b/>la<b/>kurda<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la kurda">		<i>en<b/>la<b/>kurda</i><par n="jam__adv"/></e>
+<e lm="kurde">			<i>turk</i><par n="e__adv"/></e>
+<e lm="en la malta lingvo">	<i>en<b/>la<b/>malta<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la malta">		<i>en<b/>la<b/>malta</i><par n="jam__adv"/></e>
+<e lm="malte">			<i>malt</i><par n="e__adv"/></e>
+<e lm="en la araba lingvo">	<i>en<b/>la<b/>araba<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la araba">		<i>en<b/>la<b/>araba</i><par n="jam__adv"/></e>
+<e lm="arabe">			<i>arab</i><par n="e__adv"/></e>
+<e lm="en la mozaraba lingvo">	<i>en<b/>la<b/>mozaraba<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la mozaraba">		<i>en<b/>la<b/>mozaraba</i><par n="jam__adv"/></e>
+<e lm="mozarabe">		<i>mozarab</i><par n="e__adv"/></e>
+<e lm="en la hebrea lingvo">	<i>en<b/>la<b/>hebrea<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la hebrea">		<i>en<b/>la<b/>hebrea</i><par n="jam__adv"/></e>
+<e lm="hebree">			<i>hebre</i><par n="e__adv"/></e>
+<e lm="en la aramea lingvo">	<i>en<b/>la<b/>aramea<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la aramea">		<i>en<b/>la<b/>aramea</i><par n="jam__adv"/></e>
+<e lm="aramee">			<i>arame</i><par n="e__adv"/></e>
+<e lm="en la persa lingvo">	<i>en<b/>la<b/>persa<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la persa">		<i>en<b/>la<b/>persa</i><par n="jam__adv"/></e>
+<e lm="perse">			<i>pers</i><par n="e__adv"/></e>
+
+<e lm="en Latin-Ameriko">	<i>en<b/>Latin-Ameriko</i><par n="jam__adv"/></e>
+
+<!-- lingvoj 2009/12/01 -->
+
+<e lm="Amerikoj">             <i>Amerikoj</i><par n="Andoj__np"/></e>
 <e lm="Pireneoj">             <i>Pireneoj</i><par n="Andoj__np"/></e>
 <e lm="Balkanoj">             <i>Balkanoj</i><par n="Andoj__np"/></e>
 <e lm="balkana">              <i>balkan</i><par n="a__adj"/></e>
@@ -30258,7 +30522,9 @@ Necesas difini paradigmon por adj-nomo terminoj
 <e lm="cikla">                <i>cikl</i><par n="a__adj"/></e>
 <e lm="konjunktura">          <i>konjunktur</i><par n="a__adj"/></e>
 <e lm="cinika">               <i>cinik</i><par n="a__adj"/></e>
+<e lm="ĉeĥoslovaka">          <par n="ĉ"/><i>e</i><par n="ĥ"/><i>oslovak</i><par n="a__adj"/></e>
 <e lm="ĉeĥoslovakia">         <par n="ĉ"/><i>e</i><par n="ĥ"/><i>oslovaki</i><par n="a__adj"/></e>
+<e lm="ĉeĥoslovako">          <par n="ĉ"/><i>e</i><par n="ĥ"/><i>oslovak</i><par n="ino__n"/></e>
 <e lm="ĉiovendejeto">         <par n="ĉ"/><i>iovendejet</i><par n="o__n"/></e>
 <e lm="akvobaraĵo">           <i>akvobara</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="baraĵlago">            <i>bara</i><par n="ĵ"/><i>lag</i><par n="o__n"/></e>

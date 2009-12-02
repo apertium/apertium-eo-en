@@ -2910,7 +2910,17 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="afloat">          <i>afloat</i><par n="maybe__adv"/></e>
 <e lm="Afra">            <i>Afra</i><par n="Mary__np"/></e>
 <e lm="afraid">          <i>afraid</i><par n="expensive__adj"/></e>
+<e lm="Africa">          <i>Africa</i><par n="Barcelona__np"/></e>
+<e lm="African">         <i>African</i><par n="house__n"/></e>
 <e lm="African">         <i>African</i><par n="expensive__adj"/></e>
+<e lm="South African">   <i>South<b/>African</i><par n="house__n"/></e>
+<e lm="South African">   <i>South<b/>African</i><par n="expensive__adj"/></e>
+<e lm="North African">   <i>North<b/>African</i><par n="house__n"/></e>
+<e lm="North African">   <i>North<b/>African</i><par n="expensive__adj"/></e>
+<e lm="East African">    <i>East<b/>African</i><par n="house__n"/></e>
+<e lm="East African">    <i>East<b/>African</i><par n="expensive__adj"/></e>
+<e lm="West African">    <i>West<b/>African</i><par n="house__n"/></e>
+<e lm="West African">    <i>West<b/>African</i><par n="expensive__adj"/></e>
 <e lm="Afrodita">        <i>Afrodita</i><par n="Mary__np"/></e>
 <e lm="aft">             <i>aft</i><par n="maybe__adv"/></e>
 <e lm="after">           <i>after</i><par n="maybe__adv"/></e>
@@ -2922,6 +2932,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="afterwards">      <i>afterwards</i><par n="maybe__adv"/></e>
 <e lm="age">             <i>ag</i><par n="ag/e__vblex"/></e>
 <e lm="again">           <i>again</i><par n="maybe__adv"/></e>
+<e lm="once again">      <i>once<b/>again</i><par n="maybe__adv"/></e>
 <e lm="Agamenón">        <i>Agamenón</i><par n="Mark__np"/></e>
 <e lm="Agapio">          <i>Agapio</i><par n="Mark__np"/></e>
 <e lm="Agapita">         <i>Agapita</i><par n="Mary__np"/></e>
@@ -3157,6 +3168,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="algebra">         <i>algebra</i><par n="house__n"/></e>
 <e lm="algebraic">       <i>algebraic</i><par n="expensive__adj"/></e>
 <e lm="Algeria">         <i>Algeria</i><par n="Barcelona__np"/></e>
+<e lm="Algiers">         <i>Algiers</i><par n="Barcelona__np"/></e>
 <e lm="algorithm">       <i>algorithm</i><par n="house__n"/></e>
 <e lm="algorithmic">     <i>algorithmic</i><par n="expensive__adj"/></e>
 <e lm="Ali">             <i>Ali</i><par n="Mark__np"/></e>
@@ -3370,6 +3382,8 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="amaze">           <i>amaz</i><par n="di/e__vblex"/></e>
 <e lm="amazement">       <i>amazement</i><par n="up__n"/></e>
 <e lm="amazing">         <i>amazing</i><par n="ii__adv"/></e>
+<e lm="Amazon">          <i>Amazon</i><par n="Barcelona__np"/></e>
+<e lm="Amazonia">        <i>Amazonia</i><par n="Barcelona__np"/></e>
 <e lm="ambassador">      <i>ambassador</i><par n="house__n"/></e>
 <e lm="amber">           <i>amber</i><par n="house__n"/></e>
 <e lm="Amber">           <i>Amber</i><par n="Mary__np"/></e>
@@ -3391,9 +3405,16 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="amend">           <i>amend</i><par n="accept__vblex"/></e>
 <e lm="amendment">       <i>amendment</i><par n="house__n"/></e>
 <e lm="amenity">         <i>amenit</i><par n="fr/y__n"/></e>
-<e lm="America">         <i>America</i><par n="Barcelona__np"/></e>
+<e lm="America">         <i>America</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
+<e lm="Americas">        <i>Americas</i><par n="United_States__np"/><par n="gen__apos"/></e>
 <e lm="American">        <i>American</i><par n="house__n"/></e>
 <e lm="American">        <i>American</i><par n="expensive__adj"/></e>
+<e lm="North American">  <i>North American</i><par n="house__n"/></e>
+<e lm="North American">  <i>North American</i><par n="expensive__adj"/></e>
+<e lm="South American">  <i>South American</i><par n="house__n"/></e>
+<e lm="South American">  <i>South American</i><par n="expensive__adj"/></e>
+<e lm="Central American"><i>Central American</i><par n="house__n"/></e>
+<e lm="Central American"><i>Central American</i><par n="expensive__adj"/></e>
 <e lm="amiable">         <i>amiable</i><par n="expensive__adj"/></e>
 <e lm="amicable">        <i>amicable</i><par n="expensive__adj"/></e>
 <e lm="amicably">        <i>amicably</i><par n="maybe__adv"/></e>
@@ -3808,8 +3829,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <e lm="Arab">            <i>Arab</i><par n="house__n"/></e>
 <e lm="Arab">            <i>Arab</i><par n="expensive__adj"/></e>
+<e lm="Arabian">         <i>Arabian</i><par n="expensive__adj"/></e>
 <e lm="Arabia">          <i>Arabia</i><par n="Barcelona__np"/></e>
 <e lm="Arabic">          <i>Arabic</i><par n="expensive__adj"/></e>
+<e lm="Berber">          <i>Berber</i><par n="house__n"/></e>
+<e lm="Berber">          <i>Berber</i><par n="expensive__adj"/></e>
 <e lm="arable">          <i>arable</i><par n="expensive__adj"/></e>
 <e lm="Araceli">         <i>Araceli</i><par n="Mary__np"/></e>
 <e lm="Aracely">         <i>Aracely</i><par n="Mary__np"/></e>
@@ -4064,6 +4088,11 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Asia">            <i>Asia</i><par n="Mary__np"/></e>
 <e lm="Asian">           <i>Asian</i><par n="house__n"/></e>
 <e lm="Asian">           <i>Asian</i><par n="expensive__adj"/></e>
+<e lm="South Asian">     <i>South<b/>Asian</i><par n="house__n"/></e>
+<e lm="South Asian">     <i>South<b/>Asian</i><par n="expensive__adj"/></e>
+<e lm="East Asian">      <i>East<b/>Asian</i><par n="house__n"/></e>
+<e lm="East Asian">      <i>East<b/>Asian</i><par n="expensive__adj"/></e>
+<e lm="Eurasia">         <i>Eurasia</i><par n="Barcelona__np"/></e>
 <e lm="aside">           <i>aside</i><par n="maybe__adv"/></e>
 <e lm="ask">             <i>ask</i><par n="accept__vblex"/></e>
 <e lm="ask for">         <i>ask</i><par n="accept__vblex"/><p><l><b/>for</l><r><g><b/>for</g></r></p></e>
@@ -4184,6 +4213,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Atilio">          <i>Atilio</i><par n="Mark__np"/></e>
 <e lm="atlantic">        <i>atlantic</i><par n="expensive__adj"/></e>
 <e lm="Atlantic">        <i>Atlantic</i><par n="Barcelona__np"/></e>
+<e lm="artic">           <i>artic</i><par n="expensive__adj"/></e>
+<e lm="Artic">           <i>Artic</i><par n="Barcelona__np"/></e>
+<e lm="antartic">        <i>antartic</i><par n="expensive__adj"/></e>
+<e lm="Antartic">        <i>Antartic</i><par n="Barcelona__np"/></e>
 <e lm="atlas">           <i>atlas</i><par n="access__n"/><par n="gen__apos"/></e>
 <e lm="atmosphere">      <i>atmosphere</i><par n="house__n"/></e>
 <e lm="atmospheric">     <i>atmospheric</i><par n="expensive__adj"/></e>
@@ -4288,6 +4321,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Australia">       <i>Australia</i><par n="Barcelona__np"/></e>
 <e lm="Australian">      <i>Australian</i><par n="house__n"/></e>
 <e lm="Australian">      <i>Australian</i><par n="expensive__adj"/></e>
+<e lm="Capital Territory"> <i>Capital<b/>Territory</i><par n="Barcelona__np"/></e>
 <e lm="Austria">         <i>Austria</i><par n="Barcelona__np"/></e>
 <e lm="Austrian">        <i>Austrian</i><par n="house__n"/></e>
 <e lm="Austrian">        <i>Austrian</i><par n="expensive__adj"/></e>
@@ -4626,6 +4660,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="basilica">        <i>basilica</i><par n="house__n"/></e>
 <e lm="Basilio">         <i>Basilio</i><par n="Mark__np"/></e>
 <e lm="Basilisa">        <i>Basilisa</i><par n="Mary__np"/></e>
+<e lm="basin">           <i>basin</i><par n="house__n"/></e>
 <e lm="basket">          <i>basket</i><par n="house__n"/></e>
 <e lm="basketball">      <i>basketball</i><par n="east__n"/></e>
 <e lm="bass">            <i>bass</i><par n="bass__n"/><par n="gen__apos"/></e>
@@ -5317,6 +5352,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Brayan">          <i>Brayan</i><par n="Mark__np"/></e>
 <e lm="Brayden">         <i>Brayden</i><par n="Mark__np"/></e>
 <e lm="Braydon">         <i>Braydon</i><par n="Mark__np"/></e>
+<e lm="Brasilia">        <i>Brasilia</i><par n="Barcelona__np"/></e>
 <e lm="Brazil">          <i>Brazil</i><par n="Barcelona__np"/></e>
 <e lm="Brazilian">       <i>Brazilian</i><par n="expensive__adj"/></e>
 <e lm="breed">           <i>bre</i><par n="ble/ed__vblex"/></e>
@@ -5506,11 +5542,18 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="bud">             <i>bud</i><par n="kid__vblex"/></e>
 <e lm="Budapest">        <i>Budapest</i><par n="Barcelona__np"/></e>
 <e lm="buddy">           <i>budd</i><par n="fr/y__n"/></e>
+<e lm="Buddha">          <i>Buddha</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Buddhism">        <i>Buddhism</i><par n="house__n"/></e>
+<e lm="Buddhist">        <i>Buddhist</i><par n="house__n"/></e>
+<e lm="Buddhist">        <i>Buddhist</i><par n="expensive__adj"/></e>
+<e lm="Hinduism">        <i>Hinduism</i><par n="house__n"/></e>
+<e lm="Hinduist">        <i>Hindu</i><par n="house__n"/></e>
+<e lm="Hinduist">        <i>Hindu</i><par n="expensive__adj"/></e>
 <e lm="budge">           <i>budg</i><par n="liv/e__vblex"/></e>
 <e lm="budget">          <i>budget</i><par n="house__n"/></e>
 <e lm="budgetary">       <i>budgetary</i><par n="expensive__adj"/></e>
 <e lm="Buenaventura">    <i>Buenaventura</i><par n="Mark__np"/></e>
+<e lm="Buenos Aires">    <i>Buenos<b/>Aires</i><par n="Barcelona__np"/></e>
 <e lm="buff">            <i>buff</i><par n="accept__vblex"/></e>
 <e lm="buffer">          <i>buffer</i><par n="vow__vblex"/></e>
 <e lm="buffer">          <i>buffer</i><par n="house__n"/></e>
@@ -6051,6 +6094,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="cathedral">       <i>cathedral</i><par n="house__n"/></e>
 <e lm="Catherin">        <i>Catherin</i><par n="Mary__np"/></e>
 <e lm="Catherine">       <i>Catherine</i><par n="Mary__np"/></e>
+<e lm="Catholicism">     <i>Catholicism</i><par n="house__n"/></e>
 <e lm="Catholic">        <i>Catholic</i><par n="house__n"/></e>
 <e lm="Catholic">        <i>Catholic</i><par n="expensive__adj"/></e>
 <e lm="Catholic Church"> <i>Catholic<b/>Church</i><par n="access__n"/></e>
@@ -6473,6 +6517,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Cipriana">        <i>Cipriana</i><par n="Mary__np"/></e>
 <e lm="Cipriano">        <i>Cipriano</i><par n="Mark__np"/></e>
 <e lm="Cirano">          <i>Cirano</i><par n="Mark__np"/></e>
+<e lm="circa">           <i>circa</i><par n="maybe__adv"/></e>
 <e lm="circle">          <i>circl</i><par n="liv/e__vblex"/></e>
 <e lm="circle">          <i>circle</i><par n="house__n"/></e>
 <e lm="circuit">         <i>circuit</i><par n="house__n"/></e>
@@ -6499,6 +6544,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Ciro">            <i>Ciro</i><par n="Mark__np"/></e>
 <e lm="Ciselio">         <i>Ciselio</i><par n="Mark__np"/></e>
 <e lm="city">            <i>cit</i><par n="bab/y__n"/></e>
+<e lm="capital city">    <i>capital<b/>cit</i><par n="bab/y__n"/></e>
 <e lm="cite">            <i>cit</i><par n="liv/e__vblex"/></e>
 <e lm="citadel">         <i>citadel</i><par n="house__n"/></e>
 <e lm="citation">        <i>citation</i><par n="up__n"/></e>
@@ -6556,6 +6602,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="clash">           <i>clash</i><par n="mix__vblex"/></e>
 <e lm="class">           <i>class</i><par n="mix__vblex"/></e>
 <e lm="class">           <i>class</i><par n="access__n"/><par n="gen__apos"/></e>
+<e lm="working class">   <i>working<b/>class</i><par n="access__n"/></e>
 <e lm="classic">         <i>classic</i><par n="expensive__adj"/></e>
 <e lm="classic">         <i>classic</i><par n="house__n"/></e>
 <e r="LR" lm="classic">  <p><l>classic</l>   <r>classical</r></p><par n="expensive__adj"/></e>
@@ -7834,7 +7881,10 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Cyuauhtémoc">     <i>Cyuauhtémoc</i><par n="Mark__np"/></e>
 <e lm="Czech">           <i>Czech</i><par n="expensive__adj"/></e>
 <e lm="Czech">           <i>Czech</i><par n="house__n"/></e>
+<e lm="Czech Republic">  <i>Czech<b/>Republic</i><par n="Barcelona__np"/></e>
+<e lm="Czechoslovakia">  <i>Czechoslovakia</i><par n="Barcelona__np"/></e>
 <e lm="czechoslovak">    <i>czechoslovak</i><par n="expensive__adj"/></e>
+<e lm="czechoslovak">    <i>czechoslovak</i><par n="house__n"/></e>
 <e lm="Cándida">         <i>Cándida</i><par n="Mary__np"/></e>
 <e lm="Cándido">         <i>Cándido</i><par n="Mark__np"/></e>
 <e lm="Cármine">         <i>Cármine</i><par n="Mary__np"/></e>
@@ -9241,6 +9291,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Dugal">           <i>Dugal</i><par n="Mark__np"/></e>
 <e lm="Duilio">          <i>Duilio</i><par n="Mark__np"/></e>
 <e lm="duke">            <i>duke</i><par n="house__n"/></e>
+<e lm="duchess">         <i>duchess</i><par n="access__n"/></e>
 <e lm="Dulce">           <i>Dulce</i><par n="Mary__np"/></e>
 <e lm="Dulio">           <i>Dulio</i><par n="Mark__np"/></e>
 <e lm="dull">            <i>dull</i><par n="expensive__adj"/></e>
@@ -10966,6 +11017,20 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="fleet">           <i>fleet</i><par n="house__n"/></e>
 <e lm="fleeting">        <i>fleeting</i><par n="expensive__adj"/></e>
 <e lm="Flemish">         <i>Flemish</i><par n="expensive__adj"/></e>
+<e lm="Afrikaans">       <i>Afrikaans</i><par n="house__n"/></e>
+<e lm="Afrikaans">       <i>Afrikaans</i><par n="expensive__adj"/></e>
+<e lm="Syriac">          <i>Syriac</i><par n="expensive__adj"/></e>
+<e lm="Aramaic">         <i>Aramaic</i><par n="expensive__adj"/></e>
+<e lm="Aramean">         <i>Aramean</i><par n="expensive__adj"/></e>
+<e lm="Aramean">         <i>Aramean</i><par n="house__n"/></e>
+<e lm="Phoenician">      <i>Phoenician</i><par n="expensive__adj"/></e>
+<e lm="Phoenician">      <i>Phoenician</i><par n="house__n"/></e>
+<e lm="Carthage">        <i>Carthage</i><par n="Barcelona__np"/></e>
+<e lm="Carthaginian">    <i>Carthaginian</i><par n="expensive__adj"/></e>
+<e lm="Carthaginian">    <i>Carthaginian</i><par n="house__n"/></e>
+<e lm="Punic">           <i>Punic</i><par n="expensive__adj"/></e>
+<e lm="Punic">           <i>Punic</i><par n="house__n"/></e>
+<e lm="Punic war">       <i>Punic<b/>war</i><par n="house__n"/></e>
 <e lm="flesh">           <i>flesh</i><par n="east__n"/></e>
 <e lm="fleshy">          <i>flesh</i><par n="happ/y__adj"/></e>
 <e lm="flex">            <i>flex</i><par n="approach__vblex"/></e>
@@ -11145,6 +11210,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="foreshadow">      <i>foreshadow</i><par n="accept__vblex"/></e>
 <e lm="foresight">       <i>foresight</i><par n="up__n"/></e>
 <e lm="forest">          <i>forest</i><par n="house__n"/></e>
+<e lm="rain forest">     <i>rain<b/>forest</i><par n="house__n"/></e>
 <e lm="forester">        <i>forester</i><par n="house__n"/></e>
 <e lm="forestry">        <i>forestr</i><par n="bab/y__n"/></e>
 <e lm="foretell">        <i>foretel</i><par n="spel/l__vblex"/></e>
@@ -12721,6 +12787,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="hilly">           <i>hilly</i><par n="expensive__adj"/></e>
 <e lm="hinder">          <i>hinder</i><par n="accept__vblex"/></e>
 <e lm="hinduism">        <i>hinduism</i><par n="house__n"/></e>
+<e lm="Hindu Kush">      <i>Hindu<b/>Kush</i><par n="Barcelona__np"/></e>
 <e lm="hinge">           <i>hinge</i><par n="house__n"/></e>
 <e lm="hint">            <i>hint</i><par n="vow__vblex"/></e>
 <e lm="hint">            <i>hint</i><par n="house__n"/></e>
@@ -14377,9 +14444,8 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Jesuana">         <i>Jesuana</i><par n="Mary__np"/></e>
 <e lm="Jesumina">        <i>Jesumina</i><par n="Mary__np"/></e>
 <e lm="Jesus">           <i>Jesus</i><par n="Mark__np"/><par n="gen__apos"/></e>
-<e lm="Jesus">           <i>Jesus</i><par n="Mark__np"/><par n="gen__apos"/></e>
+<e lm="Christ">          <i>Christ</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Jesusa">          <i>Jesusa</i><par n="Mary__np"/></e>
-<e lm="Jesús">           <i>Jesús</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Jesús">           <i>Jesús</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="jet">             <i>jet</i><par n="house__n"/></e>
 <e lm="jetty">           <i>jett</i><par n="fr/y__n"/></e>
@@ -14550,6 +14616,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Jubal">           <i>Jubal</i><par n="Mark__np"/></e>
 <e lm="jubilant">        <i>jubilant</i><par n="expensive__adj"/></e>
 <e lm="Judah">           <i>Judah</i><par n="Mark__np"/></e>
+<e lm="Judaism">         <i>Judaism</i><par n="house__n"/></e>
 <e lm="Judas">           <i>Judas</i><par n="Mark__np"/><par n="gen__apos"/></e>
 <e lm="Jude">            <i>Jude</i><par n="Mark__np"/></e>
 <e lm="judge">           <i>judg</i><par n="liv/e__vblex"/></e>
@@ -14916,6 +14983,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e r="LR" lm="km">       <p><l>km</l>        <r>km.</r></p><par n="east__n"/></e>
 <e lm="km.">             <i>km.</i><par n="east__n"/></e>
 <e lm="know">            <i>kn</i><par n="bl/ow__vblex"/></e>
+<e lm="known">           <i>known</i><par n="expensive__adj"/></e>
 <e lm="knack">           <i>knack</i><par n="up__n"/></e>
 <e lm="knee">            <i>knee</i><par n="house__n"/></e>
 <e lm="kneel">           <i>kneel</i><par n="control__vblex"/></e>
@@ -15102,7 +15170,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Latife">          <i>Latife</i><par n="Mary__np"/></e>
 <e lm="Latin">           <i>Latin</i><par n="house__n"/></e>
 <e lm="Latin">           <i>Latin</i><par n="expensive__adj"/></e>
-<e lm="Latin America">   <i>Latin<b/>America</i><par n="Barcelona__np"/></e>
+<e lm="Latin America">   <i>Latin<b/>America</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
+<e lm="North America">   <i>North<b/>America</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
+<e lm="South America">   <i>South<b/>America</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
+<e lm="Central America"> <i>Central<b/>America</i><par n="Barcelona__np"/><par n="gen__apos"/></e>
 <e lm="latitude">        <i>latitude</i><par n="house__n"/></e>
 <e lm="Latrell">         <i>Latrell</i><par n="Mark__np"/></e>
 <e lm="latrine">         <i>latrine</i><par n="house__n"/></e>
@@ -15352,6 +15423,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Leticia">         <i>Leticia</i><par n="Mary__np"/></e>
 <e lm="Letitia">         <i>Letitia</i><par n="Mary__np"/></e>
 <e lm="letter">          <i>letter</i><par n="house__n"/></e>
+<e lm="cursive letter">  <i>cursive<b/>letter</i><par n="house__n"/></e>
+<e lm="bold letter">     <i>bold<b/>letter</i><par n="house__n"/></e>
+<e lm="capital letter">  <i>capital<b/>letter</i><par n="house__n"/></e>
 <e lm="lettuce">         <i>lettuce</i><par n="house__n"/></e>
 <e lm="leukaemia">       <i>leukaemia</i><par n="house__n"/></e>
 <e lm="levy">            <i>lev</i><par n="fr/y__n"/></e>
@@ -19292,6 +19366,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="pizzeria">        <i>pizzeria</i><par n="up__n"/></e>
 <e lm="ply">             <i>pl</i><par n="pl/y__vblex"/></e>
 <e lm="place">           <i>plac</i><par n="liv/e__vblex"/></e>
+<e lm="place an emphasis on">   <i>plac</i><par n="liv/e__vblex"/><p><l><b/>an<b/>emphasis</l><r><g><b/>an<b/>emphasis<b/>on</g></r></p></e>
 <e lm="placard">         <i>placard</i><par n="house__n"/></e>
 <e lm="placate">         <i>placat</i><par n="di/e__vblex"/></e>
 <e lm="place">           <i>place</i><par n="house__n"/></e>
@@ -19836,7 +19911,6 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Primo">           <i>Primo</i><par n="Mark__np"/></e>
 <e lm="primordial">      <i>primordial</i><par n="expensive__adj"/></e>
 <e lm="prince">          <i>prince</i><par n="house__n"/></e>
-
 <e r="RL" lm="Prince">   <i>Prince</i><par n="Mark__np"/></e>
 <e lm="princess">        <i>princess</i><par n="access__n"/><par n="gen__apos"/></e>
 <e r="RL" lm="Princess"> <i>Princess</i><par n="Mary__np"/><par n="gen__apos"/></e>
@@ -20166,6 +20240,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="punish">          <i>punish</i><par n="approach__vblex"/></e>
 <e lm="punishable">      <i>punishable</i><par n="expensive__adj"/></e>
 <e lm="punishment">      <i>punishment</i><par n="house__n"/></e>
+<e lm="capital punishment"> <i>capital<b/>punishment</i><par n="house__n"/></e>
 <e lm="punk">            <i>punk</i><par n="up__n"/></e>
 <e lm="punt">            <i>punt</i><par n="up__n"/></e>
 <e lm="puny">            <i>puny</i><par n="expensive__adj"/></e>
@@ -21364,8 +21439,80 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Robbie">          <i>Robbie</i><par n="Mark__np"/></e>
 <e lm="robe">            <i>robe</i><par n="up__n"/></e>
 
+<!-- lingvoj: tiuj grupoj okazigas misanalizojn en esprimoj, kiaj "in Spanish literature", "in French history", "in Greek mithology" ktp., sed la praktika rezulto estas aldono de artikolo, kiu tre bone sidas en esperanto (tamen ekestas problemo ĉe la pluralo: in English disciplines -> *en la angla disciplinoj. Ĉar tio tre malofte okazas, kaj kutime la traduko estas pli bona, ni konservas la ŝanĝon. -->
+<e lm="in Catalan"><i>in<b/>Catalan</i><par n="maybe__adv"/></e>
+<e lm="in Spanish"><i>in<b/>Spanish</i><par n="maybe__adv"/></e>
+<e lm="in Castilian"><i>in<b/>Castilian</i><par n="maybe__adv"/></e>
+<e lm="in Castilian Spanish"><i>in<b/>Castilian<b/>Spanish</i><par n="maybe__adv"/></e>
+<e lm="in Portuguese"><i>in<b/>Portuguese</i><par n="maybe__adv"/></e>
+<e lm="in Aragonese"><i>in<b/>Aragonese</i><par n="maybe__adv"/></e>
+<e lm="in Asturian"><i>in<b/>Asturian</i><par n="maybe__adv"/></e>
+<e lm="in Occitan"><i>in<b/>Occitan</i><par n="maybe__adv"/></e>
+<e lm="in Gascon"><i>in<b/>Gascon</i><par n="maybe__adv"/></e>
+<e lm="in Provençal"><i>in<b/>Provençal</i><par n="maybe__adv"/></e>
+<e lm="in Aranese"><i>in<b/>Aranese</i><par n="maybe__adv"/></e>
+<e lm="in French"><i>in<b/>French</i><par n="maybe__adv"/></e>
+<e lm="in Italian"><i>in<b/>Italian</i><par n="maybe__adv"/></e>
+<e lm="in Friulian"><i>in<b/>Friulian</i><par n="maybe__adv"/></e>
+<e lm="in Sardinian"><i>in<b/>Sardinian</i><par n="maybe__adv"/></e>
+<e lm="in Romansh"><i>in<b/>Romansh</i><par n="maybe__adv"/></e>
+<e lm="in Romanian"><i>in<b/>Romanian</i><par n="maybe__adv"/></e>
+<e lm="in Rumanian"><i>in<b/>Rumanian</i><par n="maybe__adv"/></e>
+<e lm="in English"><i>in<b/>English</i><par n="maybe__adv"/></e>
+<e lm="in Scots"><i>in<b/>Scots</i><par n="maybe__adv"/></e>
+<e lm="in German"><i>in<b/>German</i><par n="maybe__adv"/></e>
+<e lm="in Dutch"><i>in<b/>Dutch</i><par n="maybe__adv"/></e>
+<e lm="in Flemish"><i>in<b/>Flemish</i><par n="maybe__adv"/></e>
+<e lm="in Afrikaans"><i>in<b/>Afrikaans</i><par n="maybe__adv"/></e>
+<e lm="in Irish"><i>in<b/>Irish</i><par n="maybe__adv"/></e>
+<e lm="in Breton"><i>in<b/>Breton</i><par n="maybe__adv"/></e>
+<e lm="in Scottish Gaelic"><i>in<b/>Scottish<b/>Gaelic</i><par n="maybe__adv"/></e>
+<e lm="in Gaelic"><i>in<b/>Gaelic</i><par n="maybe__adv"/></e>
+<e lm="in Welsh"><i>in<b/>Welsh</i><par n="maybe__adv"/></e>
+<e lm="in Irish"><i>in<b/>Irish</i><par n="maybe__adv"/></e>
+<e lm="in Basque"><i>in<b/>Basque</i><par n="maybe__adv"/></e>
+<e lm="in Danish"><i>in<b/>Danish</i><par n="maybe__adv"/></e>
+<e lm="in Swedish"><i>in<b/>Swedish</i><par n="maybe__adv"/></e>
+<e lm="in Norvegian"><i>in<b/>Norvegian</i><par n="maybe__adv"/></e>
+<e lm="in Icelandic"><i>in<b/>Icelandic</i><par n="maybe__adv"/></e>
+<e lm="in Lithuanian"><i>in<b/>Lithuanian</i><par n="maybe__adv"/></e>
+<e lm="in Latvian"><i>in<b/>Latvian</i><par n="maybe__adv"/></e>
+<e lm="in Estonian"><i>in<b/>Estonian</i><par n="maybe__adv"/></e>
+<e lm="in Finnish"><i>in<b/>Finnish</i><par n="maybe__adv"/></e>
+<e lm="in Hungarian"><i>in<b/>Hungarian</i><par n="maybe__adv"/></e>
+<e lm="in Polish"><i>in<b/>Polish</i><par n="maybe__adv"/></e>
+<e lm="in Russian"><i>in<b/>Russian</i><par n="maybe__adv"/></e>
+<e r="LR" lm="in Byelorussian"><i>in<b/>Byelorussian</i><par n="maybe__adv"/></e>
+<e lm="in Belarussian"><i>in<b/>Belarussian</i><par n="maybe__adv"/></e>
+<e r="LR" lm="in Ukranian"><i>in<b/>Ukranian</i><par n="maybe__adv"/></e>
+<e lm="in Ukrainian"><i>in<b/>Ukranian</i><par n="maybe__adv"/></e>
+<e lm="in Czech"><i>in<b/>Czech</i><par n="maybe__adv"/></e>
+<e lm="in Slovak"><i>in<b/>Slovak</i><par n="maybe__adv"/></e>
+<e lm="in Slovene"><i>in<b/>Slovene</i><par n="maybe__adv"/></e>
+<e lm="in Croatian"><i>in<b/>Croatian</i><par n="maybe__adv"/></e>
+<e lm="in Serbian"><i>in<b/>Serbian</i><par n="maybe__adv"/></e>
+<e lm="in Serbocroatian"><i>in<b/>Serbocroatian</i><par n="maybe__adv"/></e>
+<e lm="in Macedonian"><i>in<b/>Macedonian</i><par n="maybe__adv"/></e>
+<e lm="in Bulgarian"><i>in<b/>Bulgarian</i><par n="maybe__adv"/></e>
+<e lm="in Greek"><i>in<b/>Greek</i><par n="maybe__adv"/></e>
+<e lm="in Albanian"><i>in<b/>Albanian</i><par n="maybe__adv"/></e>
+<e lm="in Latin"><i>in<b/>Latin</i><par n="maybe__adv"/></e>
+<e lm="in Chinese"><i>in<b/>Chinese</i><par n="maybe__adv"/></e>
+<e lm="in Hindi"><i>in<b/>Hindi</i><par n="maybe__adv"/></e>
+<e lm="in Bengali"><i>in<b/>Bengali</i><par n="maybe__adv"/></e>
+<e lm="in Maltese"><i>in<b/>Maltese</i><par n="maybe__adv"/></e>
+<e lm="in Arabic"><i>in<b/>Arabic</i><par n="maybe__adv"/></e>
+<e lm="in Mozarabic"><i>in<b/>Mozarabic</i><par n="maybe__adv"/></e>
+<e lm="in Hebrew"><i>in<b/>Hebrew</i><par n="maybe__adv"/></e>
+<e lm="in Aramaic"><i>in<b/>Aramaic</i><par n="maybe__adv"/></e>
+<e lm="in Persian"><i>in<b/>Persian</i><par n="maybe__adv"/></e>
+<e lm="in Turkish"><i>in<b/>Turkish</i><par n="maybe__adv"/></e>
+<e lm="in Kurdish"><i>in<b/>Kurdish</i><par n="maybe__adv"/></e>
 
-    <!-- Antonyms -->
+<!-- por eviti erarigajn misanalizojn -->
+<e lm="in Latin America"><i>in<b/>Latin<b/>America</i><par n="maybe__adv"/></e>
+
+    <!-- Anthroponyms -->
 <e lm="Robert">          <i>Robert</i><par n="Mark__np"/></e>
 <e lm="Roberta">         <i>Roberta</i><par n="Mary__np"/></e>
 <e lm="Roberto">         <i>Roberto</i><par n="Mark__np"/></e>
@@ -21931,6 +22078,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="scholastic">      <i>scholastic</i><par n="expensive__adj"/></e>
 <e lm="scholasticism">   <i>scholasticism</i><par n="house__n"/></e>
 <e lm="school">          <i>school</i><par n="house__n"/></e>
+<e lm="school of thought">   <i>school</i><par n="house__n"/><p><l><b/>of<b/>thought</l><r><g><b/>of<b/>thought</g></r></p></e>
 <e lm="school">          <i>school</i><par n="expensive__adj"/></e>
 <e lm="schoolboy">       <i>schoolboy</i><par n="up__n"/></e>
 <e lm="schoolchild">     <i>schoolchild</i><par n="child__n"/></e>
@@ -23050,6 +23198,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="south-east">      <i>south-east</i><par n="east__n"/></e>
 <e lm="south-west">      <i>south-west</i><par n="east__n"/></e>
 <e lm="South Africa">    <i>South<b/>Africa</i><par n="Barcelona__np"/></e>
+<e lm="North Africa">    <i>North<b/>Africa</i><par n="Barcelona__np"/></e>
+<e lm="East Africa">     <i>East<b/>Africa</i><par n="Barcelona__np"/></e>
+<e lm="West Africa">     <i>West<b/>Africa</i><par n="Barcelona__np"/></e>
 <e lm="South Carolina">  <i>South<b/>Carolina</i><par n="Barcelona__np"/></e>
 <e lm="South Dakota">    <i>South<b/>Dakota</i><par n="Barcelona__np"/></e>
 <e lm="southeast">       <i>southeast</i><par n="east__n"/></e>
@@ -26544,6 +26695,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="workforce">       <i>workforce</i><par n="house__n"/></e>
 <e lm="working">         <i>working</i><par n="up_pl__n"/></e>
 <e lm="working-class">   <i>working-class</i><par n="expensive__adj"/></e>
+<e lm="working class">   <i>working<b/>class</i><par n="expensive__adj"/></e>
 <e lm="workman">         <i>workm</i><par n="m/an__n"/></e>
 <e lm="workplace">       <i>workplace</i><par n="up__n"/></e>
 <e lm="workplan">        <i>workplan</i><par n="house__n"/></e>
@@ -27572,6 +27724,7 @@ TODO: aldonu kaj retrejnu la tagger
 			    group vbser
 			****************************** -->
 <e lm="be">              <par n="/be__vbser"/></e>
+<e lm="be descended">    <i></i><par n="/be__vbser"/><p><l><b/>descended</l><r><g><b/>descended</g></r></p></e>
 <e lm="be over">         <i></i><par n="/be__vbser"/><p><l><b/>over</l><r><g><b/>over</g></r></p></e>
 <e lm="be possible">     <i></i><par n="/be__vbser"/><p><l><b/>possible</l><r><g><b/>possible</g></r></p></e>
 <e lm="ain't">           <p><l>ain't</l>     <r>be<s n="vbser"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
