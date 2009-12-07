@@ -2630,6 +2630,8 @@ TODO??
 <e r="RL"><p><l>hejmpaĝo<s n="n"/></l>                   <r>home<b/>page<s n="n"/></r></p></e>
 <e><p><l>parametro<s n="n"/></l>                <r>parameter<s n="n"/></r></p></e>
 
+<e><p><l>konata<s n="adj"/></l>                 <r>known<s n="adj"/></r></p></e>
+<e><p><l>nekonata<s n="adj"/></l>                 <r>unknown<s n="adj"/></r></p></e>
 
 
 	<!-- ====================================================================== -->
@@ -7121,7 +7123,6 @@ TODO??
 <e r="LR"><p><l>renomo<s n="n"/></l>                   <r>fame<s n="n"/></r></p></e>
 <e r="LR"><p><l>diskonateco<s n="n"/></l>              <r>fame<s n="n"/></r></p></e>
 <e>       <p><l>konata<s n="adj"/></l>                 <r>familiar<s n="adj"/></r></p></e>
-<e r="RL"><p><l>konata<s n="adj"/></l>                 <r>known<s n="adj"/></r></p></e>
 <e r="RL"><p><l>familio<s n="n"/></l>                  <r>family<s n="n"/></r></p></e>
 <e>       <p><l>fama<s n="adj"/></l>                   <r>famous<s n="adj"/></r></p></e>
 <e>       <p><l>fervorulo<s n="n"/></l>                <r>fan<s n="n"/></r></p></e>
@@ -21824,7 +21825,7 @@ TODO??
 <e r="RL"><p><l>intence<s n="adv"/></l>                <r>knowingly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>saĝe<s n="adv"/></l>                   <r>knowingly<s n="adv"/></r></p></e>
 <e r="RL"><p><l>sperta<s n="adj"/></l>                 <r>knowledgeable<s n="adj"/></r></p></e>
-<e>       <p><l>sciata<s n="adj"/></l>                 <r>known<s n="adj"/></r></p></e>
+<e r="RL">       <p><l>sciata<s n="adj"/></l>                 <r>known<s n="adj"/></r></p></e>
 <e r="LR"><p><l>eksciinta<s n="adj"/></l>              <r>known<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ekkoninta<s n="adj"/></l>              <r>known<s n="adj"/></r></p></e>
 <e r="LR"><p><l>koniĝinta<s n="adj"/></l>              <r>known<s n="adj"/></r></p></e>
@@ -25909,7 +25910,7 @@ TODO??
 <e>       <p><l>universale<s n="adv"/></l>             <r>universally<s n="adv"/></r></p></e>
 <e>       <p><l>nebonkora<s n="adj"/></l>              <r>unkind<s n="adj"/></r></p></e>
 <e r="LR"><p><l>nebonvola<s n="adj"/></l>              <r>unkind<s n="adj"/></r></p></e>
-<e>       <p><l>nesciata<s n="adj"/></l>               <r>unknown<s n="adj"/></r></p></e>
+<e r="LR"><p><l>nesciata<s n="adj"/></l>               <r>unknown<s n="adj"/></r></p></e>
 <e r="RL"><p><l>senlima<s n="adj"/></l>                <r>unlimited<s n="adj"/></r></p></e>
 <e>       <p><l>malŝarĝi<s n="vblex"/></l>             <r>unload<s n="vblex"/></r></p></e>
 		<!-- Already is <e><l>forvendi<vblex></l><r>sell<g><b/>up</g><vblex><sep></r></e> -->
