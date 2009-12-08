@@ -14,8 +14,13 @@ F=/tmp/corpus-stat-res-eo.txt
 
 # Calculate the number of tokenised words in the corpus:
 # for some reason putting the newline in directly doesn't work, so two seds
+
+# Sen kunmetitaj vortoj
 $CMD | apertium-destxt | lt-proc ../eo-en.automorf.bin |apertium-retxt | sed 's/\$[^^]*\^/$^/g' | sed 's/\$\^/$\
 ^/g' > $F
+# Kun kunmetitaj vortoj:
+# $CMD | apertium-destxt | lt-proc-j -e ../eo-en.automorf.bin |apertium-retxt | sed 's/\$[^^]*\^/$^/g' | sed 's/\$\^/$\
+#^/g' > $F
 
 NUMWORDS=`cat $F | wc -l`
 echo "Number of tokenised words in the corpus: $NUMWORDS"

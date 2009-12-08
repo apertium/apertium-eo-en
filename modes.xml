@@ -154,9 +154,9 @@
 
 
 
-  <mode name="eo-en-java" install="yes">
+  <mode name="eo-en-compounds" install="yes">
     <pipeline>
-      <program name="lt-proc-j">
+      <program name="lt-proc-j -e">
         <file name="eo-en.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
@@ -176,7 +176,7 @@
         <file name="apertium-eo-en.eo-en.t3x"/>
         <file name="eo-en.t3x.bin"/>
       </program>
-      <program name="lt-proc-j $1">
+      <program name="lt-proc $1">
         <file name="eo-en.autogen.bin"/>
       </program>
     </pipeline>
