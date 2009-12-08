@@ -98,6 +98,12 @@
      <attr-item tags="vbser"/>
   </def-attr>
 
+  <def-attr n="a_vrb2">
+     <attr-item tags="vbreg"/>	<!-- normala verbo: specifa formo nur por p3/sg/pres -->
+     <attr-item tags="can"/>	<!-- can-verbo: ĉiuj formoj egalaj por ĉiuj personoj -->
+     <attr-item tags="be"/>	<!-- be-verbo: specifaj formoj por p1 kaj p3 / sg / pres kaj past -->
+  </def-attr>
+
   <def-attr n="a_det">
      <attr-item tags="det.def"/>
      <attr-item tags="det.ind"/>
@@ -110,6 +116,9 @@
   <def-attr n="a_prn">
      <attr-item tags="prn"/>
      <attr-item tags="prn.itg"/>
+     <attr-item tags="prn.subj"/>
+     <attr-item tags="prn.obj"/>
+     <attr-item tags="prn.tn"/>
   </def-attr>
 
   <def-attr n="a_tns">
@@ -143,6 +152,7 @@
      <attr-item tags="sg"/>
      <attr-item tags="sp"/>
      <attr-item tags="pl"/>
+     <attr-item tags="ND"/>
   </def-attr>
 
   <def-attr n="a_cas">
@@ -157,6 +167,7 @@
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="genere"/>
+  <def-var n="vrb2"/>
   <def-var n="adv_adjectiu"/>
   <def-var n="superlatiu1"/>
 </section-def-vars>
@@ -493,6 +504,28 @@
 </def-macro>
 
 
+<!-- difinas la tipon vrb2 de la verbo  -->
+<def-macro n="set_vrb2" npar="1">
+	<choose>
+	  <when>
+	    <test>
+      		<equal><clip pos="1" side="tl" part="lemh"/><lit v="be"/></equal>
+	    </test>
+	    <let><var n="vrb2"/><lit-tag v="be"/></let>
+	  </when>
+	  <when>
+	    <test>
+      		<equal><clip pos="1" side="tl" part="lemh"/><lit v="can"/></equal>
+	    </test>
+	    <let><var n="vrb2"/><lit-tag v="can"/></let>
+	  </when>
+	  <otherwise>
+	    <let><var n="vrb2"/><lit-tag v="vbreg"/></let>
+	  </otherwise>
+	</choose>
+</def-macro>
+
+
   </section-def-macros> 
 
 
@@ -563,8 +596,36 @@
      </action>
   </rule>
 -->
+  <rule comment="REGULO: PRN">
+     <pattern>
+       <pattern-item n="c_prn"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="pron" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+             <tag><clip pos="1" side="tl" part="a_gen"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_prn"/>
+             <clip pos="1" side="tl" part="a_prs" link-to="2"/>
+             <clip pos="1" side="tl" part="a_gen" link-to="3"/>
+             <clip pos="1" side="tl" part="a_nbr" link-to="4"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
-  <rule>
+
+
+  <rule comment="REGULO: ADJ">
      <pattern>
        <pattern-item n="c_adj"/>
      </pattern>
@@ -611,7 +672,7 @@
 
 
 
-  <rule>
+  <rule comment="REGULO: NOM">
      <pattern>
        <pattern-item n="c_nom"/>
      </pattern>
@@ -620,9 +681,8 @@
          <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <!-- <tag><clip pos="1" side="tl" part="a_gen"/></tag> -->
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-             <!-- <tag><clip pos="1" side="tl" part="a_cas"/></tag> -->
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -635,7 +695,7 @@
      </action>
   </rule>
 
-  <rule>
+  <rule comment="REGULO: DET NOM">
      <pattern>
        <pattern-item n="c_det"/>
        <pattern-item n="c_nom"/>
@@ -646,6 +706,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -665,7 +726,7 @@
      </action>
   </rule>
 
-  <rule>
+  <rule comment="REGULO: DET ADJ NOM">
      <pattern>
        <pattern-item n="c_det"/>
        <pattern-item n="c_adj"/>
@@ -677,6 +738,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="sl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -712,10 +774,12 @@
        <pattern-item n="c_vb_fti"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vb_fti" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -740,10 +804,12 @@
        <pattern-item n="c_vb_cni"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vb_cni" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -770,10 +836,12 @@
        <pattern-item n="c_vb_pp2"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vb_pp2" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -800,10 +868,12 @@
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vb_pp3" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -827,10 +897,12 @@
        <pattern-item n="c_vb_fti"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vb_fti" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><clip pos="1" side="tl" part="a_prs"/></tag>
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
@@ -856,10 +928,12 @@
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbfti_vbpp3" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -888,10 +962,12 @@
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbcni_vbpp3" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -920,18 +996,22 @@
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
-        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbser_vbpp3" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag>
+              <tag><lit-tag v="ND"/></tag>
             </tags>
             <lu>
               <lit v="have"/><lit-tag v="vbhaver"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
+              <clip pos="1" side="tl" part="a_prs" link-to="4"/>
+              <clip pos="1" side="tl" part="a_nbr" link-to="5"/>
             </lu>
 			<b/>
             <lu>
@@ -951,21 +1031,23 @@
        <pattern-item n="c_vbser"/>
      </pattern>
      <action>
-        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vbser" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="p3"/></tag>
-              <tag><lit-tag v="sp"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs" link-to="2"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="3"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
           </chunk>
         </out>
@@ -975,33 +1057,34 @@
 
 
 
-  <rule>
+  <rule comment="REGULO: VERB">
      <pattern>
        <pattern-item n="c_vblex"/>
      </pattern>
      <action>
-        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs"/>
-<!--              <clip pos="1" side="tl" part="a_nbr"/> -->
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
      </action>
   </rule>
-
 
 
 </section-rules>

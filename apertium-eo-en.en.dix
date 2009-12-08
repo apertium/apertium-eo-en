@@ -900,8 +900,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <pardef n="/be__vbser">
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="inf"/></r></p></e>
-  <e r="LR"><p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
-  <e r="RL"><p><l>is</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+  <e       ><p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
   <e>       <p><l>am</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
   <e>       <p><l>is</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>was</l>       <r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -27064,8 +27063,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 
 <e r="RL" lm="one">      <p><l>one</l>       <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+<!--
 <e r="RL" lm="one">      <p><l>ones</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-<!-- -->
+-->
 
 <e  r="RL" lm="one's">      <p><l>one's</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/><j/>'s<s n="gen"/></r></p></e>
 

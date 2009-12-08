@@ -3,37 +3,88 @@
 
   <section-def-cats>
     <def-cat n="SN">
-      <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
+    </def-cat>
+    <def-cat n="SNnom" c="Eblaj subjektoj de subjekt-verbo-objekto frazo">
+      <cat-item tags="SN.*.nom"/> <!-- SN kun nominativo en esperanto -->
+      <cat-item tags="REL" c="that, which"/>
+    </def-cat>
+    <def-cat n="SNacc" c="Eblaj subjektoj de subjekt-verbo-objekto frazo">
+      <cat-item tags="SN.*.acc"/> <!-- SN kun akuzativo en esperanto -->
+    </def-cat>
+    <def-cat n="SVall">
+      <cat-item tags="SV.*"/>
     </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
+      <!--
+      <cat-item tags="SV.reporting.*"/>
+      <cat-item tags="SV.aliaj.*"/>
+      <cat-item tags="SV.like.*"/>
+      <cat-item tags="SV.sorry.*"/>
+      <cat-item tags="SV.reporting"/>
+      <cat-item tags="SV.aliaj"/>
+      <cat-item tags="SV.like"/>
+      <cat-item tags="SV.sorry"/>
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
+    </def-cat>
+    <def-cat n="SVitrans">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.netransitiva.*"/>
+      <cat-item tags="SV.netransitiva2.*"/>
+      <!--
+      <cat-item lemma="verb" tags="SV.*"/>
+      <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="verb_vbger" tags="SV.*"/>
+      <cat-item lemma="vaux_verb" tags="SV.*"/>
+      <cat-item lemma="verb_pp" tags="SV.*"/>-->
     </def-cat>
 
- <def-cat n="ĉu">
- 	<cat-item lemma="ĉu" tags="adv.itg"/>
- </def-cat>
+    <def-cat n="vbdoSV">
+      <cat-item lemma="xxx_ser" tags="SV.*"/>
+      <cat-item lemma="vbdo" tags="SV.*"/>
+    </def-cat>
+    <def-cat n="Adv">
+      <cat-item tags="Adv"/>
+      <cat-item tags="CA"/>
+      <cat-item tags="NEG"/>
+    </def-cat>
+    <def-cat n="CC">
+      <cat-item tags="CC"/>
+    </def-cat>
 
-    <def-cat n="PR">
-      <cat-item tags="PR"/>
+    <def-cat n="Adv_aux_SN_aux_konstatovorto">
+      <cat-item tags="Adv"/>
+      <cat-item tags="CA"/>
+      <cat-item tags="NEG"/>
+      <cat-item tags="SN.*"/>
+      <cat-item tags="*.konstato"/>
     </def-cat>
-    <def-cat n="NP">
-      <cat-item tags="NP"/>
-      <cat-item tags="NP.*"/>
+
+    <def-cat n="unknown">
+       <cat-item lemma="unknown" tags=""/>
     </def-cat>
-    <def-cat n="V">
-      <cat-item tags="V"/>
-      <cat-item tags="V.*"/>
-    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
+    <def-attr c="saluton" n="a_chunk">
+      <attr-item tags="SN"/>
+      <attr-item tags="SV"/>
+    </def-attr>
+
     <def-attr n="gen">
       <attr-item tags="f"/>
       <attr-item tags="m"/>
       <attr-item tags="mf"/>
+      <attr-item tags="nt"/>
       <attr-item tags="GD"/>
+      <attr-item tags="GN"/>
     </def-attr>
     <def-attr n="nbr">
       <attr-item tags="sg"/>
@@ -41,26 +92,724 @@
       <attr-item tags="sp"/>
       <attr-item tags="ND"/>
     </def-attr>
+    <def-attr n="prs">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+    <def-attr n="cas">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+    </def-attr>
+
+  <def-attr n="a_vrb2">
+     <attr-item tags="vbreg"/>	<!-- normala verbo: specifa formo nur por p3/sg/pres -->
+     <attr-item tags="can"/>	<!-- can-verbo: ĉiuj formoj egalaj por ĉiuj personoj -->
+     <attr-item tags="be"/>	<!-- be-verbo: specifaj formoj por p1 kaj p3 / sg / pres kaj past -->
+  </def-attr>
+
+    <def-attr n="a_tns">
+      <attr-item tags="pri"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="cni"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="subs"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="fti"/>
+      <attr-item tags="past"/>
+    </def-attr>
+
   </section-def-attrs>
 
+
   <section-def-vars>
+    <def-var n="pers"/>
     <def-var n="nombre"/>
     <def-var n="genere"/>
+    <def-var n="DEBUG"/>
   </section-def-vars>
+
+<section-def-macros>
+
+    <def-macro n="determina_nbr_gen_SN" npar="1">
+      <choose><!--To determine value of variables of gender and
+		  number and propagate to other rules.  Variables are
+		  not used again in this rule -->
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" part="nbr"/>
+	      <lit-tag v="sg"/>
+	    </equal>
+	  </test>
+	  <let><var n="nombre"/><lit-tag v="sg"/></let>
+	</when>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" part="nbr"/>
+	      <lit-tag v="pl"/>
+	    </equal>
+	  </test>
+	  <let><var n="nombre"/><lit-tag v="pl"/></let>
+	</when>
+	<otherwise>
+	  <let><var n="nombre"/><lit-tag v="sg"/></let>
+	</otherwise>
+      </choose>
+       <choose>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" part="gen"/>
+	      <lit-tag v="m"/>
+	    </equal>
+	  </test>
+	  <let><var n="genere"/><lit-tag v="m"/></let>
+	</when>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" part="gen"/>
+	      <lit-tag v="f"/>
+	    </equal>
+	  </test>
+	  <let><var n="genere"/><lit-tag v="f"/></let>
+	</when>
+	<otherwise>
+	  <let><var n="genere"/><lit-tag v="m"/></let>
+	</otherwise>
+      </choose>
+    </def-macro>
+
+
+ <def-macro n="concord_SN_SV" npar="2"> <!-- aldonas prs kaj nbr al SV  -->
+	<!-- Tiu ĉi makroo estas principe uzebla por tradukoj el esperanto al aliaj lingvoj, kie la verbo akordas kun la subjekto -->
+
+	<choose>
+	  <when>
+	    <test>
+	      <equal caseless="yes">
+	        <clip pos="1" part="lem"/>
+	        <lit v="pron"/>
+	      </equal>
+	    </test>
+	    <choose> <!-- la subjekto estas persona pronomo: ĝi havas eksplicitan prs kaj nbr -->
+	      <when>
+		<test>
+		    <equal>
+		      <clip pos="2" part="prs"/>
+		      <lit-tag v="PD"/>
+		    </equal>
+		</test>
+		<let>
+		  <clip pos="2" part="prs"/>
+		  <clip pos="1" part="prs"/>
+		</let>
+	      </when>
+	    </choose>
+	    <choose>
+	      <when>
+		<test>
+		    <equal>
+		      <clip pos="2" part="nbr"/>
+		      <lit-tag v="ND"/>
+		    </equal>
+		</test>
+		<let>
+		  <clip pos="2" part="nbr"/>
+		  <clip pos="1" part="nbr"/>
+		</let>
+	      </when>
+	    </choose>
+	  </when>
+
+	  <otherwise> <!--La subjekto ne estas pronomo: mankas al ĝi prs -->
+	    <choose>
+	      <when>
+		<test>
+		  <equal>
+		    <clip pos="1" part="nbr"/>
+		    <lit-tag v="ND"/>
+		  </equal>
+		</test>
+		<choose>
+		  <when>
+		    <test>
+		      <and>
+			<equal>
+			  <clip pos="2" part="a_tns"/>
+			  <lit-tag v="pres"/>
+			</equal>
+			<equal>
+			  <clip pos="2" part="nbr"/>
+			  <lit-tag v="ND"/>
+			</equal>
+		      </and>
+		    </test>
+		    <let>
+		      <clip pos="1" part="nbr"/>
+		      <lit-tag v="pl"/>
+		    </let>
+		  </when>
+		  <when>
+		    <test>
+		      <equal>
+			<clip pos="2" part="a_tns"/>
+			<lit-tag v="pres"/>
+		      </equal>
+		    </test>
+		    <let>
+		      <clip pos="1" part="nbr"/>
+		      <lit-tag v="sg"/>
+		    </let>
+		  </when>
+		  <otherwise>
+		    <let>
+		      <clip pos="1" part="nbr"/>
+		      <lit-tag v="sg"/>
+		    </let>
+		  </otherwise>
+		</choose>
+	      </when>
+	    </choose>
+
+	    <choose>
+	      <when>
+		<test>
+		    <equal>
+		      <clip pos="2" part="prs"/>
+		      <lit-tag v="PD"/>
+		    </equal>
+		</test>
+		<let>
+		  <clip pos="2" part="prs"/>
+		  <lit-tag v="p3"/>
+		</let>
+	      </when>
+	    </choose>
+	    <choose>
+	      <when>
+		<test>
+		    <equal>
+		      <clip pos="2" part="nbr"/>
+		      <lit-tag v="ND"/>
+		    </equal>
+		</test>
+		<choose>
+		  <when>
+		    <test>
+		      <not>
+			<equal>
+			  <clip pos="1" part="nbr"/>
+			  <lit-tag v="sp"/>
+			</equal>
+		      </not>
+		    </test>
+		    <let>
+		      <clip pos="2" part="nbr"/>
+		      <clip pos="1" part="nbr"/>
+		    </let>
+		  </when>
+		  <otherwise>
+		    <let>
+		      <clip pos="2" part="nbr"/>
+		      <lit-tag v="sg"/>
+		    </let>
+		  </otherwise>
+		</choose>
+	      </when>
+	    </choose>
+	  </otherwise>
+	</choose>
+ </def-macro>
+
+
+ <def-macro n="simpligo_prs_nbr" npar="1"> <!--forigas prs kaj nbr de SV, se ne necesaj -->
+
+	<choose>
+	  <when>
+	    <test> <!--Por la verbo "to be", estas aparta konjugacio por p1 kaj p3 de sg en pres kaj past -->
+	      <and>
+		<equal caseless="yes">
+		  <clip pos="1" part="a_vrb2"/>
+		  <lit-tag v="be"/>
+		</equal>
+		<or>
+		  <equal>
+		    <clip pos="1" part="a_tns"/>
+		    <lit-tag v="past"/>
+		  </equal>
+		  <equal>
+		    <clip pos="1" part="a_tns"/>
+		    <lit-tag v="pres"/>
+		  </equal>
+		</or>
+		<or>
+		  <equal>
+		    <clip pos="1" part="prs"/>
+		    <lit-tag v="p2"/>
+		  </equal>
+		  <equal>
+		    <clip pos="1" part="nbr"/>
+		    <lit-tag v="pl"/>
+		  </equal>
+		</or>
+	      </and>
+	    </test>
+	    <let>
+		<clip pos="1" part="nbr"/><lit v=""/> <!-- drop number -->
+	    </let>
+	    <let>
+		<clip pos="1" part="prs"/><lit v=""/> <!-- drop person -->
+	    </let>
+<let><var n="DEBUG"/><lit-tag v="1"/></let>
+	  </when>
+
+	  <when>
+	    <test> <!--Por la cetero de verboj, estas aparta konjugacio por p3 sg en prez, krom la helpaj (can) -->
+	      <and>
+	        <not>
+		  <equal caseless="yes">
+		    <clip pos="1" part="a_vrb2"/>
+		    <lit-tag v="be"/>
+		  </equal>
+	        </not>
+	        <or>
+		  <not>
+		    <and>
+		      <equal>
+		        <clip pos="1" part="a_tns"/>
+		        <lit-tag v="pres"/>
+		      </equal>
+		      <equal>
+		        <clip pos="1" part="prs"/>
+		        <lit-tag v="p3"/>
+		      </equal>
+		      <equal>
+		        <clip pos="1" part="nbr"/>
+		        <lit-tag v="sg"/>
+		      </equal>
+		    </and>
+		  </not>
+		  <equal>
+		    <clip pos="1" part="a_vrb2"/>
+		    <lit-tag v="can"/>
+		  </equal>
+	        </or>
+	      </and>
+	    </test>
+	    <let>
+		<clip pos="1" part="nbr"/><lit v=""/> <!-- drop number -->
+	    </let>
+	    <let>
+		<clip pos="1" part="prs"/><lit v=""/> <!-- drop person -->
+	    </let>
+<let><var n="DEBUG"/><lit-tag v="2"/></let>
+	  </when>
+<!--
+<otherwise>
+<let><var n="DEBUG"/><lit-tag v="3"/></let>
+<choose>
+  <when>
+    <test>
+	<equal caseless="yes">
+	  <clip pos="1" part="a_vrb2"/>
+	  <lit-tag v="be"/>
+	</equal>
+    </test>
+<let><var n="DEBUG"/><lit-tag v="4"/></let>
+  </when>
+<otherwise>
+<let><var n="DEBUG"/><clip pos="1" part="a_vrb2"/></let>
+</otherwise>
+</choose>
+</otherwise>
+-->
+	</choose>
+
+	<!-- fina revizio: se ial restas PD kaj ND, ni forigas ilin -->
+	<choose>
+	  <when>
+	    <test>
+	        <equal>
+	          <clip pos="1" part="nbr"/>
+	          <lit-tag v="ND"/>
+	        </equal>
+	    </test>
+	    <let>
+		<clip pos="1" part="nbr"/><lit v=""/> <!-- drop number -->
+	    </let>
+	  </when>
+	</choose>
+	<choose>
+	  <when>
+	    <test>
+	        <equal>
+	          <clip pos="1" part="prs"/>
+	          <lit-tag v="PD"/>
+	        </equal>
+	    </test>
+	    <let>
+		<clip pos="1" part="prs"/><lit v=""/> <!-- drop person -->
+	    </let>
+	  </when>
+	</choose>
+
+</def-macro>
+
+</section-def-macros>
+
 
   <section-rules>
 
-    <rule>
+    <rule comment="REGLA: SN">
       <pattern>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action c="saluton">
+        <out c="saluton">
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+<!--
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+	    <get-case-from pos="2">
+              <clip pos="1" part="chcontent"/>
+	    </get-case-from>
+          </chunk>
+-->
+
+    <!-- For questions "is the cat big?" -->
+
+    <rule comment="REGLA: adv do SN SV - how did you work - kiel vi laboris">
+      <pattern>
+        <pattern-item n="Adv_aux_SN_aux_konstatovorto"/>
+        <pattern-item n="vbdoSV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <out>
+		<chunk><clip pos="1" part="whole"/></chunk>
+		<b pos="1"/>
+		<b pos="2"/>
+		<chunk><clip pos="3" part="whole"/></chunk>
+		<b pos="3"/>
+		<chunk><clip pos="4" part="lem"/><lit-tag v="SV"/><lit-tag v="fArU"/><clip pos="2" part="a_tns"/><clip pos="4" part="chcontent"/></chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: do SN SV - do you know the cat?">
+      <pattern>
+        <pattern-item n="vbdoSV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <out>
+		  <chunk>
+			<lit v="ĉu"/><lit-tag v="adv.itg"/>
+			<lit v="{^"/><get-case-from pos="1"><lit v="ĉu"/></get-case-from><lit-tag v="adv.itg"/><lit v="$}"/>
+		  </chunk>
+		<b pos="1"/>
+		<chunk><clip pos="2" part="whole"/></chunk>
+		<b pos="2"/>
+		<chunk><clip pos="3" part="whole"/></chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: Adv SV SN SN">
+      <pattern>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SVall"/>
+        <pattern-item n="SN"/>
         <pattern-item n="SN"/>
       </pattern>
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: SN SV">
+      <pattern>
+	<pattern-item n="SNnom"/>
+	<pattern-item n="SVall"/>
+      </pattern>
+      <action>
+	<call-macro n="concord_SN_SV"><with-param pos="1"/><with-param pos="2"/></call-macro>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="2"/></call-macro>
+<!--
+	<call-macro n="posadet_SN">
+	  <with-param pos="1"/>
+	</call-macro>
+-->
+	<choose>
+	  <when>
+	    <test>
+	      <equal>		
+		<clip pos="2" part="a_tns"/>
+		<lit-tag v="inf"/>
+	      </equal>
+	    </test>
+	    <let>
+	      <clip pos="2" part="a_tns"/>
+	      <lit-tag v="pres"/>
+	    </let>
+	  </when>
+	</choose>
+
+	    <out>
+	      <chunk>
+		<clip pos="1" part="whole"/>
+	      </chunk>
+	      <b pos="1"/>
+	      <chunk>
+		<clip pos="2" part="whole"/>
+	      </chunk>
+<!--
+<chunk>
+<lit-tag v="REGULO: SN SV"/>
+<var n="DEBUG"/>
+</chunk>
+-->
+	    </out>
+	<call-macro n="determina_nbr_gen_SN">
+	  <with-param pos="1"/>
+	</call-macro>
+      </action>
+    </rule>
+
+
+
+
+    <rule comment="REGLA: SN SV SN - akuzativo">
+      <pattern>
+        <pattern-item n="SNnom"/>
+        <pattern-item n="SVall"/>
+        <pattern-item n="SNacc"/>
+      </pattern>
+      <action>
+	<call-macro n="concord_SN_SV"><with-param pos="1"/><with-param pos="2"/></call-macro>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+             <clip pos="3" part="a_chunk"/>
+      	     <lit-tag v="acc"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SV SN - akuzativo">
+      <pattern>
+        <pattern-item n="SVall"/>
+        <pattern-item n="SNacc"/>
+      </pattern>
+      <action>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="a_chunk"/>
+      	     <lit-tag v="acc"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+<!-- Ni kolektas tion ĉi en UNU SN en dosiero: antaux_t2x
+    <rule comment="REGLA: SN SV SN SNcoo SN">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SNcoo"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+             <clip pos="3" part="a_chunk"/>
+             <clip pos="3" part="gen"/>
+             <clip pos="3" part="nbr"/>
+	         <lit-tag v="acc"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="whole"/>
+          </chunk>
+	  <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+             <clip pos="5" part="a_chunk"/>
+             <clip pos="5" part="gen"/>
+             <clip pos="5" part="nbr"/>
+	         <lit-tag v="acc"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+<!--
+    <rule comment="REGLA: SN SV SN CC SN SV">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="CC"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+             <clip pos="3" part="a_chunk"/>
+             <clip pos="3" part="gen"/>
+             <clip pos="3" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="whole"/>
+          </chunk>
+	  <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+             <clip pos="5" part="a_chunk"/>
+             <clip pos="5" part="gen"/>
+             <clip pos="5" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
+	  <b pos="5"/>
+          <chunk>
+            <clip pos="6" part="lem"/>
+            <clip pos="6" part="tags"/>
+            <clip pos="6" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+
+
+    <rule comment="REGLA: SN SV SN CC SN Adv - akuzativo">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="CC"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="Adv"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+             <clip pos="3" part="a_chunk"/>
+             <clip pos="3" part="gen"/>
+             <clip pos="3" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="whole"/>
+          </chunk>
+	  <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+             <clip pos="5" part="a_chunk"/>
+             <clip pos="5" part="gen"/>
+             <clip pos="5" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
+	  <b pos="5"/>
+          <chunk>
+            <clip pos="6" part="lem"/>
+            <clip pos="6" part="tags"/>
+            <clip pos="6" part="chcontent"/>
           </chunk>
         </out>
       </action>
@@ -68,37 +817,144 @@
 
 
 
-
-    <rule comment="REGLA: ĉu SN SV SN">
+    <rule comment="REGLA: SN Adv SV SN">
       <pattern>
-        <pattern-item n="ĉu"/>
-        <pattern-item n="SN"/>
-        <pattern-item n="SV"/>
-        <pattern-item n="SN"/> 
+        <pattern-item n="SNnom"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SVall"/>
+        <pattern-item n="SNacc"/>
       </pattern>
       <action>
         <out>
           <chunk>
-            <clip pos="3" part="lem"/>
-            <clip pos="3" part="tags"/>
-            <clip pos="3" part="chcontent"/>
+            <clip pos="1" part="whole"/>
           </chunk>
 	  <b pos="1"/>
           <chunk>
-            <clip pos="2" part="lem"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="whole"/>
           </chunk>
 	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+             <clip pos="4" part="a_chunk"/>
+             <clip pos="4" part="gen"/>
+             <clip pos="4" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SN Adv SV Adv SN">
+      <pattern>
+        <pattern-item n="SNnom"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SVall"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SNacc"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+	  <b pos="3"/>
           <chunk>
             <clip pos="4" part="lem"/>
             <clip pos="4" part="tags"/>
             <clip pos="4" part="chcontent"/>
           </chunk>
-
+	  <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+             <clip pos="5" part="a_chunk"/>
+             <clip pos="5" part="gen"/>
+             <clip pos="5" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
         </out>
       </action>
     </rule>
+
+
+<!--
+Tiu ĉi regulo (por kiu mankas la generado de 'al' ankoraŭ ne maturas, ĉar SN estas ankoraŭ tro malbone analizitaj
+    <rule comment="REGLA: SN SV SN SN: He told his mother something -> Li diris ioN AL lia patrino">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+	  <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+	  <b pos="2"/>
+          <chunk>
+             <clip pos="4" part="lem"/>
+             <clip pos="4" part="a_chunk"/>
+             <clip pos="4" part="gen"/>
+             <clip pos="4" part="nbr"/>
+	     <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+^prnpers<SN><nom>{^Prpers<prn><p3><m><sg><2>$}$ ^verb<SV><aliaj><past>{^diri<vblex><past>$}$ ^prn<SN><acc>{^io<prn><tn><sg><2>$}$ ^det_nom<SN><nom>{^lia<det><pos><sg><2>$ ^patro<n><f><sg><2>$}$^sent<SENT>{^.<sent>$}
+->
+^prnpers<SN><nom>{^Prpers<prn><p3><m><sg><2>$}$ ^verb<SV><aliaj><past>{^diri<vblex><past>$}$ ^prn<SN><acc>{^io<prn><tn><sg><2>$}$ ^pr<PREP>{^al<pr>$}$ ^det_nom<SN><nom>{^lia<det><pos><sg><2>$ ^patro<n><f><sg><2>$}$^sent<SENT>{^.<sent>$}$
+t.e. necesas generi
+^pr<PREP>{^al<pr>$}$
+Tio ne funkcias: <lit v="^pr<PREP>{^al<pr>$}$ "/>
+          </chunk>
+	  <b pos="3"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+
+    <rule comment="REGLA: SV">
+      <pattern>
+        <pattern-item n="SVall"/>
+      </pattern>
+      <action>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+<chunk>
+<lit-tag v="REGULO: SV"/>
+<var n="DEBUG"/>
+</chunk>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </interchunk>
