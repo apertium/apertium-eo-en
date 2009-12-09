@@ -6,6 +6,11 @@
      <cat-item tags="n.*"/>
      <cat-item tags="np.*"/>
   </def-cat>
+    <def-cat n="num">
+      <cat-item tags="num"/>
+      <cat-item tags="num.*"/>
+    </def-cat>
+
   <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
   </def-cat>
@@ -1085,6 +1090,25 @@
         </out>
      </action>
   </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="num"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="num" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
 </section-rules>
