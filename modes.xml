@@ -134,6 +134,40 @@
         <file name="eo-en.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
+        <file name="apertium-eo-en.eo-en.antaux_t2x"/>
+        <file name="eo-en.antaux_t2x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eo-en.eo-en.t2x"/>
+        <file name="eo-en.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eo-en.eo-en.t3x"/>
+        <file name="eo-en.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="eo-en.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="eo-en-malnova-kun-3-etapoj" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="eo-en.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="eo-en.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-eo-en.eo-en.t1x"/>
+        <file name="eo-en.t1x.bin"/>
+        <file name="eo-en.autobil.bin"/>
+      </program>
+      <program name="apertium-interchunk">
         <file name="apertium-eo-en.eo-en.t2x"/>
         <file name="eo-en.t2x.bin"/>
       </program>
