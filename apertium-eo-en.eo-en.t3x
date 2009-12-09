@@ -3,6 +3,11 @@
 <postchunk>
 
   <section-def-cats>
+
+    <def-cat c="saluton" n="nomxxxxxxx">
+      <cat-item name="nomxxxxxxxxxxxxxxx"/>
+    </def-cat>
+
     <def-cat n="nom">
       <cat-item name="default"/>
       <cat-item name="nom"/>
@@ -82,6 +87,23 @@
   <section-rules>
 
 
+
+
+    <rule comment="CHUNK: Ne-uzata regulo (nur cxar DEVAS esti unu cxi tie)">
+      <pattern>
+        <pattern-item n="nomxxxxxxx"/>
+      </pattern>
+      <action>
+        <!--<call-macro n="drop_gender1"><with-param pos="1"/></call-macro>-->
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+<!--
     <rule comment="CHUNK: nom">
       <pattern>
         <pattern-item n="nom"/>
@@ -247,6 +269,6 @@
         </out>
       </action>
     </rule>
-
+-->
   </section-rules>
 </postchunk>
