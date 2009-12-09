@@ -38,6 +38,9 @@
     <def-cat n="and_or">
       <cat-item tags="and_or.*"/>
     </def-cat>
+    <def-cat n="PREP">
+      <cat-item tags="PREP"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -46,7 +49,14 @@
       <attr-item tags="SV"/>
     </def-attr>
 
-    <def-attr n="cas">
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+
+    <def-attr n="a_cas">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
     </def-attr>
@@ -83,6 +93,29 @@
       </action>
     </rule>
 
+
+
+
+
+    <rule comment="REGLA: PREP SN   -   SN ">
+      <pattern>
+        <pattern-item n="PREP"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><lit v="prepocici-ĉeneto"/></get-case-from>
+            <lit-tag v="prepocici-ĉeneto-marko"/><clip pos="2" part="a_nbr"/><clip pos="2" part="a_cas"/>
+            <lit v="{"/>            
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 
