@@ -1103,6 +1103,7 @@
 
 <e lm="kiel">                 <i>kiel</i><par n="after__cnjadv"/></e>
 <e lm="kiel">                 <i>kiel</i><par n="al__pr"/></e>
+<e lm="malkiel">              <i>malkiel</i><par n="al__pr"/></e>
 <e lm="kiom">                 <i>kiom</i><par n="tro__preadv"/></e>
 <e lm="post kiam">            <i>post<b/>kiam</i><par n="post_kiam__rel"/></e>
 
@@ -2681,6 +2682,8 @@
 <e lm="dekstra">              <i>dekstr</i><par n="a__adj"/></e>
 <e lm="dekstre">              <i>dekstr</i><par n="e__adv"/></e>
 <e lm="maldekstre">           <i>maldekstr</i><par n="e__adv"/></e>
+<e lm="de dekstre maldekstren">  <i>de<b/>dekstre<b/>maldekstren</i><par n="jam__adv"/></e>
+<e lm="de maldekstre dekstren">  <i>de<b/>maldekstre<b/>dekstren</i><par n="jam__adv"/></e>
 <e lm="delegacio">            <i>delegaci</i><par n="o__n"/></e>
 <e lm="delegi">               <i>deleg</i><par n="i__vblex"/></e>
 <e lm="delegito">             <i>delegit</i><par n="o__n"/></e>
@@ -3575,6 +3578,7 @@
 <e lm="griza">                <i>griz</i><par n="a__adj"/></e>
 <e lm="gruo">                 <i>gru</i><par n="o__n"/></e>
 <e lm="grupo">                <i>grup</i><par n="o__n"/></e>
+<e lm="subgrupo">             <i>subgrup</i><par n="o__n"/></e>
 <e lm="ĝui">                  <par n="ĝ"/><i>u</i><par n="i__vblex"/></e>
 <e lm="ĝusta">                <par n="ĝ"/><i>ust</i><par n="a__adj"/></e>
 <e lm="ĝuste">                <par n="ĝ"/><i>ust</i><par n="e__adv"/></e>
@@ -4582,6 +4586,10 @@
 <e lm="lombardo">             <i>lombard</i><par n="o__n"/></e>
 <e lm="longa">                <i>long</i><par n="a__adj"/></e>
 <e lm="longe">                <i>long</i><par n="e__adv"/></e>
+<e lm="longatempa">           <i>longatemp</i><par n="a__adj"/></e>
+<e lm="longatempe">           <i>longatemp</i><par n="e__adv"/></e>
+<e lm="mallongatempa">        <i>mallongatemp</i><par n="a__adj"/></e>
+<e lm="mallongatempe">        <i>mallongatemp</i><par n="e__adv"/></e>
 <e lm="longitudo">            <i>longitud</i><par n="o__n"/></e>
 <e lm="longtempe">            <i>longtemp</i><par n="e__adv"/></e>
 <e lm="loŝantaro">            <i>lo</i><par n="ŝ"/><i>antar</i><par n="o__n"/></e>
@@ -5025,7 +5033,9 @@
 <e lm="multe pli">            <i>multe<b/>pli</i><par n="jam__adv"/></e>
 <e lm="pli malpli">           <i>pli<b/>malpli</i><par n="jam__adv"/></e>
 <e lm="multipliki">           <i>multiplik</i><par n="i__vblex"/></e>
+<e lm="multipliko">           <i>multiplik</i><par n="o__n"/></e>
 <e lm="multobla">             <i>multobl</i><par n="a__adj"/></e>
+<e lm="multobligo">           <i>multoblig</i><par n="o__n"/></e>
 <e lm="mumio">                <i>mumi</i><par n="o__n"/></e>
 <e lm="munti">                <i>munt</i><par n="i__vblex"/></e>
 <e lm="murdi">                <i>murd</i><par n="i__vblex"/></e>
@@ -8655,6 +8665,7 @@
 <e lm="deplojiĝi">            <i>deploji</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="desinfekti">           <i>desinfekt</i><par n="i__vblex"/></e>
 <e lm="deveni">               <i>deven</i><par n="i__vblex"/></e>
+<e r="RL" lm="ne deveni">     <i>ne<b/>deven</i><par n="i__vblex"/></e>
 <e lm="deŝiri">               <i>de</i><par n="ŝ"/><i>ir</i><par n="i__vblex"/></e>
 <e lm="deŝtatigi">            <i>de</i><par n="ŝ"/><i>tatig</i><par n="i__vblex"/></e>
 <e lm="difekti">              <i>difekt</i><par n="i__vblex"/></e>
@@ -12605,6 +12616,7 @@
 <e lm="transkurinto">         <i>transkurint</i><par n="o__n"/></e>
 <e lm="dezertiĝo">            <i>dezerti</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="rajti">                <i>rajt</i><par n="i__vblex"/></e>
+<e r="RL" lm="ne rajti">      <i>ne<b/>rajt</i><par n="i__vblex"/></e>
 <e lm="desegnado">            <i>desegnad</i><par n="o__n"/></e>
 <e lm="desegnistiko">         <i>desegnistik</i><par n="o__n"/></e>
 <e lm="nomi">                 <i>nom</i><par n="i__vblex"/></e>
@@ -15092,6 +15104,9 @@
 <e lm="grupigi">              <i>grupig</i><par n="i__vblex"/></e>
 <e lm="grupiĝi">              <i>grupi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="grupiĝo">              <i>grupi</i><par n="ĝ"/><par n="o__n"/></e>
+<e lm="subgrupigi">           <i>subgrupig</i><par n="i__vblex"/></e>
+<e lm="subgrupiĝi">           <i>subgrupi</i><par n="ĝ"/><par n="i__vblex"/></e>
+<e lm="subgrupiĝo">           <i>subgrupi</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="rampaĉi">              <i>rampa</i><par n="ĉ"/><par n="i__vblex"/></e>
 <e lm="kreskadi">             <i>kreskad</i><par n="i__vblex"/></e>
 <e lm="kreskigi">             <i>kreskig</i><par n="i__vblex"/></e>
@@ -33959,7 +33974,8 @@ oni sia sian ĉi sin Eternulo
 -->
 
 <e lm="Eternulo">              <i>Eternul</i><par n="o__n"/></e>
-<e lm="ebli">              <i>ebl</i><par n="i__vblex"/></e>
+<e lm="ebli">                  <i>ebl</i><par n="i__vblex"/></e>
+<e r="RL" lm="ne ebli">        <i>ne<b/>ebl</i><par n="i__vblex"/></e>
 
 
 	</section>
