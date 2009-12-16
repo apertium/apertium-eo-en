@@ -767,9 +767,6 @@ BUT:
 <e>       <p><l>plejparto<b/>de<b/>la<s n="det"/><s n="qnt"/></l><r>most<s n="det"/><s n="qnt"/></r></p></e>
 -->
 
-<!--
--->
-
 <e r="RL"><p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/></l><r>most<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/><s n="sg"/></l><r>most<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 <e>       <p><l>plejparto<g><b/>de</g><s n="det"/><s n="qnt"/></l><r>most<g><b/>of</g><s n="det"/><s n="qnt"/></r></p></e>
@@ -1111,6 +1108,7 @@ BUT:
 <e>       <p><l>Bosnio-Hercegovino<s n="np"/><s n="top"/></l><r>Bosnia-Herzegovina<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Brazilio<s n="np"/><s n="top"/></l>    <r>Brasilia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Brazilo<s n="np"/><s n="top"/></l>     <r>Brazil<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Unuiĝinta<b/>Reĝlando<s n="np"/><s n="top"/></l> <r>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Britio<s n="np"/><s n="top"/></l>      <r>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>the<b/>United<b/>Kingdom<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Britio<s n="np"/><s n="top"/></l>      <r>Britain<s n="np"/><s n="top"/></r></p></e>
@@ -1863,7 +1861,6 @@ BUT:
 <e>       <p><l>genepo<s n="n"/></l>                   <r>grandchild<s n="n"/></r></p></e>
 <e>       <p><l>geavo<s n="n"/></l>                    <r>grandparent<s n="n"/></r></p></e>
 <e>       <p><l>gepatro<s n="n"/></l>                  <r>parent<s n="n"/></r></p></e>
-<e>       <p><l>infano<s n="n"/></l>                   <r>infant<s n="n"/></r></p></e>
 <e>       <p><l>handikapulo<s n="n"/></l>              <r>handicapped<b/>person<s n="n"/></r></p></e>
 <e>       <p><l>eksterterano<s n="n"/></l>             <r>alien<s n="n"/></r></p></e>
 
@@ -1963,6 +1960,22 @@ TODO??
 <e r="RL"><re>([0-9]*)?([1-4])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 <e>       <re>([0-9]*)?([0,5-9])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1-a<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2-a<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3-a<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4-a<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>-a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1an<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2an<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3an<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4an<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>an<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1-an<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2-an<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3-an<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4-an<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>-an<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+
 
 <!-- was:
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l>aj<b/>jaroj<s n="num"/></l><r>s<s n="num"/></r></p></e>
@@ -2013,7 +2026,7 @@ TODO??
 <e>       <p><l>doto<s n="n"/></l>                     <r>dowry<s n="n"/></r></p></e>
 <e>       <p><l>hejmo<s n="n"/></l>                    <r>home<s n="n"/></r></p></e>
 <e>       <p><l>domo<s n="n"/></l>                     <r>house<s n="n"/></r></p></e>
-<e r="RL"><p><l>infano<s n="n"/></l>                   <r>child<s n="n"/></r></p></e>
+<e       ><p><l>infano<s n="n"/></l>                   <r>child<s n="n"/></r></p></e>
 <e>       <p><l>malfermo<s n="n"/></l>                 <r>opening<s n="n"/></r></p></e>
 <e>       <p><l>malfermi<s n="vblex"/></l>             <r>open<s n="vblex"/></r></p></e>
 <e>       <p><l>malferma<s n="adj"/></l>               <r>open<s n="adj"/></r></p></e>
@@ -2195,7 +2208,7 @@ TODO??
 <e>       <p><l>malsati<s n="vblex"/></l>              <r>be<g><b/>hungry</g><s n="vblex"/></r></p></e>
 <e>       <p><l>fuŝi<s n="vblex"/></l>                 <r>mess<g><b/>up</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>manki<s n="vblex"/></l>                <r>be<g><b/>missing</g><s n="vblex"/></r></p></e>
-<e r="RL"><p><l>naskiĝi<s n="vblex"/></l>              <r>be<g><b/>born</g><s n="vblex"/></r></p></e>
+<e       ><p><l>naskiĝi<s n="vblex"/></l>              <r>be<g><b/>born</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>noti<s n="vblex"/></l>                 <r>note<g><b/>down</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>okazi<s n="vblex"/></l>                <r>take<g><b/>place</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>partopreni<s n="vblex"/></l>           <r>take<g><b/>part</g><s n="vblex"/></r></p></e>
@@ -3224,7 +3237,6 @@ TODO??
 <e r="LR"><p><l>malfekunda<s n="adj"/></l>             <r>arid<s n="adj"/></r></p></e>
 <e>       <p><l>ekestiĝi<s n="vblex"/></l>             <r>arise<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>estiĝi<s n="vblex"/></l>               <r>arise<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>naskiĝi<s n="vblex"/></l>              <r>arise<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>supreniĝi<s n="vblex"/></l>            <r>arise<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>eksupriĝi<s n="vblex"/></l>            <r>arise<s n="vblex"/></r></p></e>
 <e>       <p><l>kesto<s n="n"/></l>                    <r>ark<s n="n"/></r></p></e>
@@ -6526,7 +6538,6 @@ TODO??
 <e>       <p><l>emfazo<s n="n"/></l>                   <r>emphasis<s n="n"/></r></p></e>
 <e r="LR"><p><l>reliefigo<s n="n"/></l>                <r>emphasis<s n="n"/></r></p></e>
 <e>       <p><l>imperio<s n="n"/></l>                  <r>empire<s n="n"/></r></p></e>
-<e r="LR"><p><l>regno<s n="n"/></l>                    <r>empire<s n="n"/></r></p></e>
 <e>       <p><l>utiligi<s n="vblex"/></l>              <r>employ<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>laborigi<s n="vblex"/></l>             <r>employ<s n="vblex"/></r></p></e>
 <e>       <p><l>dungito<s n="n"/></l>                  <r>employee<s n="n"/></r></p></e>
@@ -7132,7 +7143,7 @@ TODO??
 <e r="LR"><p><l>renomo<s n="n"/></l>                   <r>fame<s n="n"/></r></p></e>
 <e r="LR"><p><l>diskonateco<s n="n"/></l>              <r>fame<s n="n"/></r></p></e>
 <e>       <p><l>konata<s n="adj"/></l>                 <r>familiar<s n="adj"/></r></p></e>
-<e r="RL"><p><l>familio<s n="n"/></l>                  <r>family<s n="n"/></r></p></e>
+<e       ><p><l>familio<s n="n"/></l>                  <r>family<s n="n"/></r></p></e>
 <e>       <p><l>fama<s n="adj"/></l>                   <r>famous<s n="adj"/></r></p></e>
 <e>       <p><l>fervorulo<s n="n"/></l>                <r>fan<s n="n"/></r></p></e>
 <e r="LR"><p><l>sportamanto<s n="n"/></l>              <r>fan<s n="n"/></r></p></e>
@@ -8262,7 +8273,6 @@ TODO??
 <e r="LR"><p><l>ekbato<s n="n"/></l>                   <r>hit<s n="n"/></r></p></e>
 <e r="LR"><p><l>albatiĝi<s n="vblex"/></l>             <r>hit<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>paĝvido<s n="n"/></l>                  <r>hit<s n="n"/></r></p></e>
-<e r="LR"><p><l>mortigo<s n="n"/></l>                  <r>hit<s n="n"/></r></p></e>
 <e r="RL"><p><l>tenado<s n="n"/></l>                   <r>hold<s n="n"/></r></p></e>
 <e r="LR"><p><l>teno<s n="n"/></l>                     <r>hold<s n="n"/></r></p></e>
 <e r="LR"><p><l>kargujo<s n="n"/></l>                  <r>hold<s n="n"/></r></p></e>
@@ -8332,7 +8342,7 @@ TODO??
 <e>       <p><l>hotelo<s n="n"/></l>                   <r>hotel<s n="n"/></r></p></e>
 <e r="LR"><p><l>bierejo<s n="n"/></l>                  <r>hotel<s n="n"/></r></p></e>
 <e>       <p><l>horo<s n="n"/></l>                     <r>hour<s n="n"/></r></p></e>
-<e>       <p><l>familio<s n="n"/></l>                  <r>household<s n="n"/></r></p></e>
+<e r="RL"><p><l>familio<s n="n"/></l>                  <r>household<s n="n"/></r></p></e>
 <e r="LR"><p><l>domanaro<s n="n"/></l>                 <r>household<s n="n"/></r></p></e>
 <e r="LR"><p><l>mastrumaĵo<s n="n"/></l>               <r>household<s n="n"/></r></p></e>
 <e r="RL"><p><l>domaro<s n="n"/></l>                   <r>housing<s n="n"/></r></p></e>
@@ -8691,6 +8701,7 @@ TODO??
 <e>       <p><l>ingredienco<s n="n"/></l>              <r>ingredient<s n="n"/></r></p></e>
 <e r="LR"><p><l>konsistaĵo<s n="n"/></l>               <r>ingredient<s n="n"/></r></p></e>
 <e>       <p><l>loĝanto<s n="n"/></l>                  <r>inhabitant<s n="n"/></r></p></e>
+<e r="LR"><p><l>enloĝanto<s n="n"/></l>                <r>inhabitant<s n="n"/></r></p></e>
 <e>       <p><l>enspiri<s n="vblex"/></l>              <r>inhale<s n="vblex"/></r></p></e>
 <e>       <p><l>esenca<s n="adj"/></l>                 <r>inherent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>denaska<s n="adj"/></l>                <r>inherent<s n="adj"/></r></p></e>
@@ -8709,6 +8720,8 @@ TODO??
 <e r="LR"><p><l>unuapaŝa<s n="adj"/></l>               <r>initial<s n="adj"/></r></p></e>
 <e>       <p><l>komenclitero<s n="n"/></l>             <r>initial<s n="n"/></r></p></e>
 <e>       <p><l>komence<s n="adv"/></l>                <r>initially<s n="adv"/></r></p></e>
+<e>       <p><l>komence<b/>de<s n="pr"/></l>           <r>at<b/>the<b/>beginning<b/>of<s n="pr"/></r></p></e>
+<e>       <p><l>fine<b/>de<s n="pr"/></l>              <r>at<b/>the<b/>end<b/>of<s n="pr"/></r></p></e>
 <e r="LR"><p><l>unuavide<s n="adv"/></l>               <r>initially<s n="adv"/></r></p></e>
 <e r="LR"><p><l>unuapaŝe<s n="adv"/></l>               <r>initially<s n="adv"/></r></p></e>
 <e>       <p><l>iniciati<s n="vblex"/></l>             <r>initiate<s n="vblex"/></r></p></e>
@@ -10064,7 +10077,6 @@ TODO??
 <e r="LR"><p><l>tempero<s n="n"/></l>                  <r>moment<s n="n"/></r></p></e>
 <e r="RL"><p><l>momenta<s n="adj"/></l>                <r>momentary<s n="adj"/></r></p></e>
 <e>       <p><l>monarkio<s n="n"/></l>                 <r>monarchy<s n="n"/></r></p></e>
-<e r="LR"><p><l>reĝlando<s n="n"/></l>                 <r>monarchy<s n="n"/></r></p></e>
 <e>       <p><l>mono<s n="n"/></l>                     <r>money<s n="n"/></r></p></e>
 <e r="LR"><p><l>bonhavo<s n="n"/></l>                  <r>money<s n="n"/></r></p></e>
 <e>       <p><l>monitoro<s n="n"/></l>                 <r>monitor<s n="n"/></r></p></e>
@@ -13791,9 +13803,9 @@ TODO??
 <e>       <p><l>komenci<s n="vblex"/></l>              <r>start<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>komenciĝi<s n="vblex"/></l>            <r>start<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>starti<s n="vblex"/></l>               <r>start<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>ekbruliĝi<s n="vblex"/></l>            <r>start<s n="vblex"/></r></p></e>
 <e>       <p><l>stato<s n="n"/></l>                    <r>state<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝtato<s n="n"/></l>                    <r>state<s n="n"/></r></p></e>
+<e r="LR"><p><l>regno<s n="n"/></l>                    <r>state<s n="n"/></r></p></e>
 <e>       <p><l>ŝtata<s n="adj"/></l>                  <r>state<s n="adj"/></r></p></e>
 <e>       <p><l>plejlasta<s n="adj"/></l>              <r>state-of-the-art<s n="adj"/></r></p></e>
 <e r="RL"><p><l>deklari<s n="vblex"/></l>              <r>state<s n="vblex"/></r></p></e>
@@ -15892,7 +15904,6 @@ TODO??
 <e r="LR"><p><l>impostkolektado<s n="n"/></l>          <r>collection<s n="n"/></r></p></e>
 <e r="LR"><p><l>impresario<s n="n"/></l>               <r>employer<s n="n"/></r></p></e>
 <e r="LR"><p><l>infanejo<s n="n"/></l>                 <r>kindergarten<s n="n"/></r></p></e>
-<e r="LR"><p><l>infano<s n="n"/><s n="f"/></l>         <r>baby<s n="n"/></r></p></e>
 <e>       <p><l>infarkto<s n="n"/></l>                 <r>infarct<s n="n"/></r></p></e>
 <e r="LR"><p><l>inĝenieco<s n="n"/></l>                <r>wit<s n="n"/></r></p></e>
 <e r="LR"><p><l>inĝenierio<s n="n"/></l>               <r>engineering<s n="n"/></r></p></e>
@@ -21837,13 +21848,13 @@ TODO??
 <e r="LR"><p><l>kalcitro<s n="n"/></l>                 <r>kick<s n="n"/></r></p></e>
 <e>       <p><l>forkaptinto<s n="n"/></l>              <r>kidnapper<s n="n"/></r></p></e>
 <e r="LR"><p><l>infanŝtelinto<s n="n"/></l>            <r>kidnapper<s n="n"/></r></p></e>
-<e r="RL"><p><l>mortigo<s n="n"/></l>                  <r>killing<s n="n"/></r></p></e>
+<e       ><p><l>mortigo<s n="n"/></l>                  <r>killing<s n="n"/></r></p></e>
 <e>       <p><l>kilovatto<s n="n"/></l>                <r>kilowatt<s n="n"/></r></p></e>
 <e r="RL"><p><l>ekbruligi<s n="vblex"/></l>            <r>kindle<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekardigi<s n="vblex"/></l>             <r>kindle<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>parencaro<s n="n"/></l>                <r>kindred<s n="n"/></r></p></e>
 <e>       <p><l>kinetiko<s n="n"/></l>                 <r>kinetics<s n="n"/></r></p></e>
-<e r="RL"><p><l>reĝlando<s n="n"/></l>                 <r>kingdom<s n="n"/></r></p></e>
+<e       ><p><l>reĝlando<s n="n"/></l>                 <r>kingdom<s n="n"/></r></p></e>
 <e>       <p><l>kuirejo<s n="n"/></l>                  <r>kitchen<s n="n"/></r></p></e>
 <e>       <p><l>katido<s n="n"/></l>                   <r>kitten<s n="n"/></r></p></e>
 <e>       <p><l>genui<s n="vblex"/></l>                <r>kneel<s n="vblex"/></r></p></e>

@@ -11,7 +11,20 @@
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
     </def-cat>
-    <def-cat n="pr"><cat-item tags="pr"/></def-cat>
+
+    <def-cat n="pr">
+      <cat-item tags="pr"/>
+    </def-cat>
+
+    <def-cat n="de">
+      <cat-item lemma="de" tags="pr"/>
+    </def-cat>
+
+    <def-cat n="de_ekde">
+      <cat-item lemma="de" tags="pr"/>
+      <cat-item lemma="ekde" tags="pr"/>
+    </def-cat>
+
 
   <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
@@ -62,13 +75,96 @@
      <cat-item tags="det"/>
      <cat-item tags="det.*"/>
   </def-cat>
+  <def-cat n="la">
+     <cat-item lemma="la" tags="det.*"/>
+  </def-cat>
+
 
  <def-cat n="c_ĉu">
  	<cat-item lemma="ĉu" tags="adv.itg"/>
  </def-cat>
+
+    <def-cat n="num_ord">
+      <cat-item tags="num.ord"/>
+    </def-cat>
+
+    <def-cat n="num_dato">
+      <cat-item lemma="1" tags="num"/>
+      <cat-item lemma="2" tags="num"/>
+      <cat-item lemma="3" tags="num"/>
+      <cat-item lemma="4" tags="num"/>
+      <cat-item lemma="5" tags="num"/>
+      <cat-item lemma="6" tags="num"/>
+      <cat-item lemma="7" tags="num"/>
+      <cat-item lemma="8" tags="num"/>
+      <cat-item lemma="9" tags="num"/>
+      <cat-item lemma="10" tags="num"/>
+      <cat-item lemma="11" tags="num"/>
+      <cat-item lemma="12" tags="num"/>
+      <cat-item lemma="13" tags="num"/>
+      <cat-item lemma="14" tags="num"/>
+      <cat-item lemma="15" tags="num"/>
+      <cat-item lemma="16" tags="num"/>
+      <cat-item lemma="17" tags="num"/>
+      <cat-item lemma="18" tags="num"/>
+      <cat-item lemma="19" tags="num"/>
+      <cat-item lemma="20" tags="num"/>
+      <cat-item lemma="21" tags="num"/>
+      <cat-item lemma="22" tags="num"/>
+      <cat-item lemma="23" tags="num"/>
+      <cat-item lemma="24" tags="num"/>
+      <cat-item lemma="25" tags="num"/>
+      <cat-item lemma="26" tags="num"/>
+      <cat-item lemma="27" tags="num"/>
+      <cat-item lemma="28" tags="num"/>
+      <cat-item lemma="29" tags="num"/>
+      <cat-item lemma="30" tags="num"/>
+      <cat-item lemma="31" tags="num"/>
+    </def-cat>
+
+    <def-cat n="monato">
+      <cat-item lemma="januaro" tags="n.*"/>
+      <cat-item lemma="februaro" tags="n.*"/>
+      <cat-item lemma="marto" tags="n.*"/>
+      <cat-item lemma="aprilo" tags="n.*"/>
+      <cat-item lemma="majo" tags="n.*"/>
+      <cat-item lemma="junio" tags="n.*"/>
+      <cat-item lemma="julio" tags="n.*"/>
+      <cat-item lemma="aŭgusto" tags="n.*"/>
+      <cat-item lemma="septembro" tags="n.*"/>
+      <cat-item lemma="oktobro" tags="n.*"/>
+      <cat-item lemma="novembro" tags="n.*"/>
+      <cat-item lemma="decembro" tags="n.*"/>
+    </def-cat>
+
+    <def-cat n="tempo" c="
+		Tempaj aferoj antaŭ kiuj '(ek)de' devas fariĝi ne 'of', sed 'from'">
+      <cat-item lemma="lundo" tags="n.*"/>
+      <cat-item lemma="mardo" tags="n.*"/>
+      <cat-item lemma="merkredo" tags="n.*"/>
+      <cat-item lemma="ĵaŭdo" tags="n.*"/>
+      <cat-item lemma="vendredo" tags="n.*"/>
+      <cat-item lemma="sabato" tags="n.*"/>
+      <cat-item lemma="dimanĉo" tags="n.*"/>
+      <cat-item lemma="januaro" tags="n.*"/>
+      <cat-item lemma="februaro" tags="n.*"/>
+      <cat-item lemma="marto" tags="n.*"/>
+      <cat-item lemma="aprilo" tags="n.*"/>
+      <cat-item lemma="majo" tags="n.*"/>
+      <cat-item lemma="junio" tags="n.*"/>
+      <cat-item lemma="julio" tags="n.*"/>
+      <cat-item lemma="aŭgusto" tags="n.*"/>
+      <cat-item lemma="septembro" tags="n.*"/>
+      <cat-item lemma="oktobro" tags="n.*"/>
+      <cat-item lemma="novembro" tags="n.*"/>
+      <cat-item lemma="decembro" tags="n.*"/>
+    </def-cat>
+
 </section-def-cats>
 
+
 <section-def-attrs>
+
   <def-attr n="a_nom">
      <attr-item tags="n"/>
      <attr-item tags="n.acr"/>
@@ -118,6 +214,10 @@
      <attr-item tags="det.dem"/>
      <attr-item tags="det.pos"/>
      <attr-item tags="det.qnt"/>
+  </def-attr>
+
+  <def-attr n="a_ord">
+     <attr-item tags="num.ord"/>
   </def-attr>
 
   <def-attr n="a_prn">
@@ -417,13 +517,7 @@
 
 
 
-
-
-
-
 <section-def-macros> 
-
-
 
 <!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
      Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
@@ -558,6 +652,78 @@
   </rule>
 
 
+<!-- DATOJ k.s. -->
+
+<rule comment="REGULO: la 2a de julio - July 2nd">
+      <pattern>
+        <pattern-item n="la"/>
+        <pattern-item n="num_ord"/>
+        <pattern-item n="de"/>
+        <pattern-item n="monato"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="dato" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_ord"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+<rule comment="REGULO: DE TEMPO (de/ekde januaro -> from January -- ŝanĝo de prepozicio">
+      <pattern>
+	<pattern-item n="de_ekde"/>
+	<pattern-item n="tempo"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="from"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+ 	    <b/>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+
+<!-- SN -->
+
   <rule>
      <pattern>
        <pattern-item n="c_det"/>
@@ -568,6 +734,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -591,6 +758,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -642,6 +810,7 @@
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -771,10 +940,7 @@
      </action>
   </rule>
 
-
-
-
-
+<!-- SV -->
 
   <rule>
      <pattern>

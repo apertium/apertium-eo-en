@@ -1158,7 +1158,7 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
-    <rule comment="on July 2 - la 2a de julio">
+    <rule comment="on July 2 - la 2an de julio">
       <pattern>
         <pattern-item n="on"/>
         <pattern-item n="monato"/>
@@ -1185,7 +1185,7 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <rule comment="on July 2 - la 2a de julio">
+    <rule comment="on July 2nd - la 2a de julio">
       <pattern>
         <pattern-item n="on"/>
         <pattern-item n="monato"/>
@@ -1345,8 +1345,6 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
-<!--
--->
     <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>
         <pattern-item n="a"/>

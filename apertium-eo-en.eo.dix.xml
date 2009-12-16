@@ -280,6 +280,8 @@
 <pardef n="ordinals">
 <e>                           <re>([0-9]+)?</re><p><l>a</l> <r>a<s n="num"/><s n="ord"/></r></p></e>
 <e>                           <re>([0-9]+)?</re><p><l>an</l><r>an<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>-a</l> <r>-a<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>-an</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
 </pardef>
 
 
@@ -1667,6 +1669,7 @@
 <e lm="leterportisto">        <i>leterportist</i><par n="ino__n"/></e>
 <e lm="librotenisto">         <i>librotenist</i><par n="ino__n"/></e>
 <e lm="loĝanto">              <i>lo</i><par n="ĝ"/><i>ant</i><par n="ino__n"/></e>
+<e r="LR" lm="enloĝanto">     <i>enlo</i><par n="ĝ"/><i>ant</i><par n="ino__n"/></e>
 <e lm="ludanto">              <i>ludant</i><par n="ino__n"/></e>
 <e lm="luprenanto">           <i>luprenant</i><par n="ino__n"/></e>
 <e lm="magiisto">             <i>magiist</i><par n="ino__n"/></e>
@@ -3297,6 +3300,7 @@
 <e lm="financo">              <i>financ</i><par n="o__n"/></e>
 <e lm="finaranĝi">            <i>finaran</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="fine">                 <i>fin</i><par n="e__adv"/></e>
+<e lm="fine de">              <i>fine<b/>de</i><par n="al__pr"/></e>
 <e lm="finfine">              <i>finfin</i><par n="e__adv"/></e>
 <e lm="fingro">               <i>fingr</i><par n="o__n"/></e>
 <e lm="fini">                 <i>fin</i><par n="i__vblex"/></e>
@@ -4124,6 +4128,7 @@
 <e lm="komedio">              <i>komedi</i><par n="o__n"/></e>
 <e lm="komenca">              <i>komenc</i><par n="a__adj"/></e>
 <e lm="komence">              <i>komenc</i><par n="e__adv"/></e>
+<e lm="komence de">           <i>komence<b/>de</i><par n="al__pr"/></e>
 <e lm="komenci">              <i>komenc</i><par n="i__vblex"/></e>
 <e lm="komenclitero">         <i>komencliter</i><par n="o__n"/></e>
 <e lm="komenco">              <i>komenc</i><par n="o__n"/></e>
@@ -7914,7 +7919,6 @@
 <e lm="enkarceriĝo">          <i>enkarceri</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="enketilo">             <i>enketil</i><par n="o__n"/></e>
 <e lm="enketisto">            <i>enketist</i><par n="o__n"/></e>
-<e lm="loĝanto">              <i>lo</i><par n="ĝ"/><i>ant</i><par n="o__n"/></e>
 <e lm="novaĵo">               <i>nova</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="enrigardo">            <i>enrigard</i><par n="o__n"/></e>
 <e lm="enspermigo">           <i>enspermig</i><par n="o__n"/></e>
@@ -17882,7 +17886,6 @@
 <e lm="tempaltempe">          <i>tempaltemp</i><par n="e__adv"/></e>
 <e lm="okazigi">              <i>okazig</i><par n="i__vblex"/></e>
 <e lm="rezultigi">            <i>rezultig</i><par n="i__vblex"/></e>
-<e lm="loĝanto">              <i>lo</i><par n="ĝ"/><i>ant</i><par n="ino__n"/></e>
 <e lm="okupado">              <i>okupad</i><par n="o__n"/></e>
 <e lm="ekposedi">             <i>ekposed</i><par n="i__vblex"/></e>
 <e lm="fariĝo">               <i>fari</i><par n="ĝ"/><par n="o__n"/></e>
@@ -34053,6 +34056,20 @@ oni sia sian ĉi sin Eternulo
       <p>
         <l>Ĉefurb-teritoriajn</l>
         <r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r>
+      </p>
+    </e>
+
+    <!-- Unuiĝinta Reĝlando -->
+    <e>
+      <p>
+        <l>Unuiĝinta<b/>Reĝlando</l>
+        <r>Unuiĝinta<b/>Reĝlando<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r>
+      </p>
+    </e>
+    <e>
+      <p>
+        <l>Unuiĝintan<b/>Reĝlandon</l>
+        <r>Unuiĝinta<b/>Reĝlando<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r>
       </p>
     </e>
 
