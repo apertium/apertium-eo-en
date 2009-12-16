@@ -60,6 +60,21 @@
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
     </def-attr>
+
+    <def-attr n="a_prs">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+
+    <def-attr n="a_gender">
+      <attr-item tags="nt"/>
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+
+
   </section-def-attrs>
 
   <section-def-vars>
@@ -106,7 +121,8 @@
         <out>
           <chunk>
             <get-case-from pos="1"><lit v="prepocici-ĉeneto"/></get-case-from>
-            <lit-tag v="prepocici-ĉeneto-marko"/><clip pos="2" part="a_nbr"/><clip pos="2" part="a_cas"/>
+            <lit-tag v="prepocici-ĉeneto-marko"/><clip pos="2" part="a_prs"/><clip pos="2" part="a_gender"/>
+					<clip pos="2" part="a_nbr"/><clip pos="2" part="a_cas"/>
             <lit v="{"/>            
             <clip pos="1" part="content"/>
                 <b pos="1"/>
