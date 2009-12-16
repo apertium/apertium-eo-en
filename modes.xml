@@ -203,6 +203,10 @@
         <file name="eo-en.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
+        <file name="apertium-eo-en.eo-en.antaux_t2x"/>
+        <file name="eo-en.antaux_t2x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
         <file name="apertium-eo-en.eo-en.t2x"/>
         <file name="eo-en.t2x.bin"/>
       </program>

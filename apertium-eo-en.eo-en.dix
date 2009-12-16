@@ -176,7 +176,11 @@
 <e r="RL"><p><l>havi<s n="vblex"/></l>                 <r>have<s n="vbhaver"/></r></p></e>
 
 
-
+<!-- <e>       <p><l>pleno<s n="n"/></l>                    <r>full<s n="n"/></r></p></e>-->
+<e>       <p><l>pleno<s n="n"/></l>                    <r>fullness<s n="n"/></r></p></e>
+<e>       <p><l>temo<s n="n"/></l>                     <r>theme<s n="n"/></r></p></e>
+<e r="RL"><p><l>temo<s n="n"/></l>                     <r>subject<s n="n"/></r></p></e>
+<e r="RL"><p><l>temo<s n="n"/></l>                     <r>topic<s n="n"/></r></p></e>
 
 
 <!-- TODO: Diskutu kun Francis. adj formo al n? 
@@ -1341,6 +1345,8 @@ BUT:
     <!-- Adjective nations and other uppercase things -->
 
 <e>       <p><l>marŝo<s n="n"/></l>                    <r>march<s n="n"/></r></p></e>
+
+<e>       <p><l>rajto<s n="n"/></l>                    <r>right<s n="n"/></r></p></e>
 
 <e>       <p><l>januaro<s n="n"/></l>                  <r>January<s n="n"/></r></p></e>
 <e>       <p><l>februaro<s n="n"/></l>                 <r>February<s n="n"/></r></p></e>
@@ -2691,6 +2697,14 @@ TODO??
 <e><p><l>nekonata<s n="adj"/></l>                 <r>unknown<s n="adj"/></r></p></e>
 
 <e><p><l>vikio<s n="n"/></l>                <r>wiki<s n="n"/></r></p></e>
+<e>       <p><l>neo<s n="n"/></l>                      <r>no<s n="n"/></r></p></e>
+
+<e r="RL"><p><l>bona<s n="adj"/></l>                   <r>ok<s n="adj"/></r></p></e>
+<e r="RL"><p><l>bone<s n="adv"/></l>                   <r>ok<s n="adv"/></r></p></e>
+<e r="RL"><p><l>bone<s n="adv"/></l>                   <r>okay<s n="adv"/></r></p></e>
+<e r="RL"><p><l>bona<s n="adj"/></l>                   <r>okay<s n="adj"/></r></p></e>
+
+<e><p><l>memo<s n="n"/></l>                     <r>self<s n="n"/></r></p></e>
 
 	<!-- ====================================================================== -->
 	<!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
@@ -2878,7 +2892,6 @@ TODO??
 <e r="LR"><p><l>alparoli<s n="vblex"/></l>             <r>address<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>adresi<s n="vblex"/></l>               <r>address<s n="vblex"/></r></p></e>
 <e>       <p><l>adekvate<s n="adv"/></l>               <r>adequately<s n="adv"/></r></p></e>
-<e r="LR"><p><l>ano<s n="n"/></l>                      <r>adherent<s n="n"/></r></p></e>
 <e r="LR"><p><l>disĉiplo<s n="n"/></l>                 <r>adherent<s n="n"/></r></p></e>
 <e r="LR"><p><l>sekvanto<s n="n"/></l>                 <r>adherent<s n="n"/></r></p></e>
 <e>       <p><l>apuda<s n="adj"/></l>                  <r>adjacent<s n="adj"/></r></p></e>
@@ -3182,8 +3195,9 @@ TODO??
 <e r="RL"><p><l>antikva<s n="adj"/></l>                <r>antique<s n="adj"/></r></p></e>
 <e>       <p><l>antikveco<s n="n"/></l>                <r>antiquity<s n="n"/></r></p></e>
 <e r="LR"><p><l>antikvaĵo<s n="n"/></l>                <r>antiquity<s n="n"/></r></p></e>
-<e>       <p><l>malo<s n="n"/></l>                     <r>antithesis<s n="n"/></r></p></e>
-<e r="LR"><p><l>antipodo<s n="n"/></l>                 <r>antithesis<s n="n"/></r></p></e>
+<e>       <p><l>mal-<s n="n"/></l>                     <r>anti-<s n="n"/></r></p></e>
+<e r="LR"><p><l>malo<s n="n"/></l>                     <r>antithesis<s n="n"/></r></p></e>
+<e>       <p><l>antipodo<s n="n"/></l>                 <r>antithesis<s n="n"/></r></p></e>
 		<!-- Already is <e><l>malo<n></l><r>antithesis<n></r></e> -->
 <e r="LR"><p><l>antitezo<s n="n"/></l>                 <r>antithesis<s n="n"/></r></p></e>
 <e>       <p><l>anuso<s n="n"/></l>                    <r>anus<s n="n"/></r></p></e>
@@ -8468,7 +8482,6 @@ TODO??
 <e r="LR"><p><l>kunsenti<s n="vblex"/></l>             <r>identify<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>distingi<s n="vblex"/></l>             <r>identify<s n="vblex"/></r></p></e>
 <e>       <p><l>identeco<s n="n"/></l>                 <r>identity<s n="n"/></r></p></e>
-<e r="LR"><p><l>memo<s n="n"/></l>                     <r>identity<s n="n"/></r></p></e>
 <e>       <p><l>ideologio<s n="n"/></l>                <r>ideology<s n="n"/></r></p></e>
 <e>       <p><l>idioto<s n="n"/></l>                   <r>idiot<s n="n"/></r></p></e>
 <e r="LR"><p><l>idiotulo<s n="n"/></l>                 <r>idiot<s n="n"/></r></p></e>
@@ -9923,6 +9936,7 @@ TODO??
 <e r="LR"><p><l>forfandi<s n="vblex"/></l>             <r>melt<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>forfandiĝi<s n="vblex"/></l>           <r>melt<s n="vblex"/></r></p></e>
 <e>       <p><l>membro<s n="n"/></l>                   <r>member<s n="n"/></r></p></e>
+<e r="LR"><p><l>ano<s n="n"/></l>                      <r>member<s n="n"/></r></p></e>
 <e r="LR"><p><l>aliĝinto<s n="n"/></l>                 <r>member<s n="n"/></r></p></e>
 <e r="LR"><p><l>membraro<s n="n"/></l>                 <r>member<s n="n"/></r></p></e>
 <e>       <p><l>tavoleto<s n="n"/></l>                 <r>membrane<s n="n"/></r></p></e>
@@ -11528,8 +11542,7 @@ TODO??
 <e>       <p><l>prepari<s n="vblex"/></l>              <r>prepare<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>prepariĝi<s n="vblex"/></l>            <r>prepare<s n="vblex"/></r></p></e>
 <e>       <p><l>prepozicio<s n="n"/></l>               <r>preposition<s n="n"/></r></p></e>
-<e>       <p><l>rajto<s n="n"/></l>                    <r>prerogative<s n="n"/></r></p></e>
-<e r="LR"><p><l>prerogativo<s n="n"/></l>              <r>prerogative<s n="n"/></r></p></e>
+<e><p><l>prerogativo<s n="n"/></l>              <r>prerogative<s n="n"/></r></p></e>
 <e>       <p><l>preskribi<s n="vblex"/></l>            <r>prescribe<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉeesto<s n="n"/></l>                   <r>presence<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉeestinteco<s n="n"/></l>              <r>presence<s n="n"/></r></p></e>
@@ -12646,7 +12659,6 @@ TODO??
 <e r="LR"><p><l>taŭge<s n="adv"/></l>                  <r>right<s n="adv"/></r></p></e>
 <e r="RL"><p><l>prave<s n="adv"/></l>                  <r>rightly<s n="adv"/></r></p></e>
 <e r="LR"><p><l>merite<s n="adv"/></l>                 <r>rightly<s n="adv"/></r></p></e>
-<e r="RL"><p><l>rajto<s n="n"/></l>                    <r>right<s n="n"/></r></p></e>
 <e>       <p><l>rigida<s n="adj"/></l>                 <r>rigid<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malindulgema<s n="adj"/></l>           <r>rigid<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malindulga<s n="adj"/></l>             <r>rigid<s n="adj"/></r></p></e>
@@ -14049,7 +14061,6 @@ TODO??
 <e r="LR"><p><l>fasono<s n="n"/></l>                   <r>style<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝiko<s n="n"/></l>                     <r>style<s n="n"/></r></p></e>
 <e r="LR"><p><l>elegantexco<s n="n"/></l>              <r>style<s n="n"/></r></p></e>
-<e>       <p><l>temo<s n="n"/></l>                     <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>studobjekto<s n="n"/></l>              <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>studtemo<s n="n"/></l>                 <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>subjekto<s n="n"/></l>                 <r>subject<s n="n"/></r></p></e>
@@ -14524,7 +14535,6 @@ TODO??
 <e r="LR"><p><l>ŝtelado<s n="n"/></l>                  <r>theft<s n="n"/></r></p></e>
 <e r="LR"><p><l>forrabado<s n="n"/></l>                <r>theft<s n="n"/></r></p></e>
 <e r="LR"><p><l>forrabo<s n="n"/></l>                  <r>theft<s n="n"/></r></p></e>
-<e r="RL"><p><l>temo<s n="n"/></l>                     <r>theme<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉeftemo<s n="n"/></l>                  <r>theme<s n="n"/></r></p></e>
 <e r="LR"><p><l>konstanto<s n="n"/></l>                <r>theme<s n="n"/></r></p></e>
 <e>       <p><l>teologio<s n="n"/></l>                 <r>theology<s n="n"/></r></p></e>
@@ -14682,7 +14692,6 @@ TODO??
 <e r="LR"><p><l>firsto<s n="n"/></l>                   <r>top<s n="n"/></r></p></e>
 <e r="LR"><p><l>turbo<s n="n"/></l>                    <r>top<s n="n"/></r></p></e>
 <e r="LR"><p><l>topo<s n="n"/></l>                     <r>top<s n="n"/></r></p></e>
-<e r="RL"><p><l>temo<s n="n"/></l>                     <r>topic<s n="n"/></r></p></e>
 <e>       <p><l>topmasto<s n="n"/></l>                 <r>topmast<s n="n"/></r></p></e>
 <e r="LR"><p><l>kroni<s n="vblex"/></l>                <r>top<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉapeli<s n="vblex"/></l>               <r>top<s n="vblex"/></r></p></e>
@@ -19354,7 +19363,7 @@ TODO??
 <e>       <p><l>demografio<s n="n"/></l>               <r>demography<s n="n"/></r></p></e>
 <e>       <p><l>manifestacianto<s n="n"/></l>          <r>demonstrator<s n="n"/></r></p></e>
 <e r="LR"><p><l>elmontristo<s n="n"/></l>              <r>demonstrator<s n="n"/></r></p></e>
-<e>       <p><l>neo<s n="n"/></l>                      <r>denial<s n="n"/></r></p></e>
+<e r="RL"><p><l>neo<s n="n"/></l>                      <r>denial<s n="n"/></r></p></e>
 <e r="LR"><p><l>malhavigo<s n="n"/></l>                <r>denial<s n="n"/></r></p></e>
 <e r="LR"><p><l>neebligo<s n="n"/></l>                 <r>denial<s n="n"/></r></p></e>
 <e r="LR"><p><l>malkonfirmo<s n="n"/></l>              <r>denial<s n="n"/></r></p></e>
@@ -20715,7 +20724,6 @@ TODO??
 <e r="RL"><p><l>plenumo<s n="n"/></l>                  <r>fulfillment<s n="n"/></r></p></e>
 <e r="LR"><p><l>plenumiĝo<s n="n"/></l>                <r>fulfillment<s n="n"/></r></p></e>
 <e>       <p><l>plentempa<s n="adj"/></l>              <r>full-time<s n="adj"/></r></p></e>
-<e>       <p><l>pleno<s n="n"/></l>                    <r>fullness<s n="n"/></r></p></e>
 <e r="RL"><p><l>praktika<s n="adj"/></l>               <r>functional<s n="adj"/></r></p></e>
 <e r="LR"><p><l>funkcia<s n="adj"/></l>                <r>functional<s n="adj"/></r></p></e>
 <e r="LR"><p><l>funkciaro<s n="n"/></l>                <r>functionality<s n="n"/></r></p></e>
@@ -29926,10 +29934,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>petrolindustriulo<s n="n"/></l>        <r>oilman<s n="n"/></r></p></e>
 <e>       <p><l>olea<s n="adj"/></l>                   <r>oily<s n="adj"/></r></p></e>
 <e r="LR"><p><l>olemakulita<s n="adj"/></l>            <r>oily<s n="adj"/></r></p></e>
-<e r="RL"><p><l>bona<s n="adj"/></l>                   <r>ok<s n="adj"/></r></p></e>
-<e r="RL"><p><l>bone<s n="adv"/></l>                   <r>okay<s n="adv"/></r></p></e>
-<e r="LR"><p><l>enorde<s n="adv"/></l>                 <r>okay<s n="adv"/></r></p></e>
-<e r="RL"><p><l>bona<s n="adj"/></l>                   <r>okay<s n="adj"/></r></p></e>
+ <e r="LR"><p><l>enorde<s n="adv"/></l>                 <r>okay<s n="adv"/></r></p></e>
 <e>       <p><l>omeno<s n="n"/></l>                    <r>omen<s n="n"/></r></p></e>
 <e r="RL"><p><l>ĉiea<s n="adj"/></l>                   <r>omnipresent<s n="adj"/></r></p></e>
 <e r="RL"><p><l>triono<s n="n"/></l>                   <r>one-third<s n="n"/></r></p></e>
@@ -30965,7 +30970,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>ekkapto<s n="n"/></l>                  <r>seizure<s n="n"/></r></p></e>
 <e r="LR"><p><l>ekpreno<s n="n"/></l>                  <r>seizure<s n="n"/></r></p></e>
 <e r="LR"><p><l>evikcio<s n="n"/></l>                  <r>seizure<s n="n"/></r></p></e>
-<e r="RL"><p><l>memo<s n="n"/></l>                     <r>self<s n="n"/></r></p></e>
 <e>       <p><l>malsindona<s n="adj"/></l>             <r>selfish<s n="adj"/></r></p></e>
 <e>       <p><l>semantiko<s n="n"/></l>                <r>semantics<s n="n"/></r></p></e>
 <e r="RL"><p><l>ŝajno<s n="n"/></l>                    <r>semblance<s n="n"/></r></p></e>

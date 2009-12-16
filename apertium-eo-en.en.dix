@@ -104,6 +104,10 @@
 	</sdefs>
 	<pardefs>
 
+<pardef n="TAGGER_TODO" c="Marko por igi eron LR ĝis eblas plibonigi la tagger">
+  <e r="RL"><p><l></l>        <r></r></p></e>
+</pardef>
+
 <pardef n="ö">
   <e>       <p><l>ö</l>         <r>ö</r></p></e>
   <e r="LR"><p><l>oe</l>        <r>ö</r></p></e>
@@ -2391,9 +2395,6 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="n"/><s n="sg"/></r></p></e>
   <e>       <p><l>es</l>        <r><s n="n"/><s n="pl"/></r></p></e>
   <e r="LR"><p><l>s</l>         <r><s n="n"/><s n="pl"/></r></p></e>
-</pardef>
-<pardef n="ok/ay__adv">
-  <e>       <p><l></l>          <r>ay<s n="adv"/></r></p></e>
 </pardef>
 
 
@@ -11457,6 +11458,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Fulgencia">       <i>Fulgencia</i><par n="Mary__np"/></e>
 <e lm="Fulgencio">       <i>Fulgencio</i><par n="Mark__np"/></e>
 <e lm="Fulivio">         <i>Fulivio</i><par n="Mark__np"/></e>
+<e lm="full">            <par n="TAGGER_TODO"/><i>full</i><par n="east__n"/></e>
 <e lm="full">            <i>full</i><par n="maybe__adv"/></e>
 <e lm="full">            <i>full</i><par n="long/__adj"/></e>
 <e lm="full-time">       <i>full-time</i><par n="expensive__adj"/></e>
@@ -17804,6 +17806,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Nive">            <i>Nive</i><par n="Mary__np"/></e>
 <e lm="Niza">            <i>Niza</i><par n="Mary__np"/></e>
 <e lm="no">              <i>no</i><par n="maybe__adv"/></e>
+<e lm="no" c="he got a 'no'"><par n="TAGGER_TODO"/><i>no</i><par n="east__n"/></e>
 <e lm="no sooner">       <i>no<b/>sooner</i><par n="maybe__adv"/></e>
 <e lm="Noa">             <i>Noa</i><par n="Mary__np"/></e>
 <e lm="Noah">            <i>Noah</i><par n="Mark__np"/></e>
@@ -18136,6 +18139,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="offer">           <i>offer</i><par n="house__n"/></e>
 <e lm="offer">           <i>offer</i><par n="accept__vblex"/></e>
 <e lm="offering">        <i>offering</i><par n="up__n"/></e>
+<e lm="anti-">        <i>anti-</i><par n="east__n"/></e>
 <e lm="office">          <i>office</i><par n="house__n"/></e>
 <e lm="officer">         <i>officer</i><par n="house__n"/></e>
 <e lm="official">        <i>official</i><par n="house__n"/></e>
@@ -18158,9 +18162,10 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="oilman">          <i>oilm</i><par n="m/an__n"/></e>
 <e lm="oily">            <i>oily</i><par n="expensive__adj"/></e>
 <e lm="ointment">        <i>ointment</i><par n="house__n"/></e>
-<e lm="ok">              <i>ok</i><par n="expensive__adj"/></e>
-<e lm="okay">            <i>ok</i><par n="ok/ay__adv"/></e>
-<e lm="okay">            <i>okay</i><par n="expensive__adj"/></e>
+<e lm="ok">            <i>ok</i><par n="maybe__adv"/></e>
+<e lm="ok"><par n="TAGGER_TODO"/><i>okay</i><par n="expensive__adj"/></e>
+<e lm="okay">            <i>okay</i><par n="maybe__adv"/></e>
+<e lm="okay"><par n="TAGGER_TODO"/><i>okay</i><par n="expensive__adj"/></e>
 <e lm="Oklahoma">        <i>Oklahoma</i><par n="Barcelona__np"/></e>
 <e lm="Olaf">            <i>Olaf</i><par n="Mark__np"/></e>
 <e lm="Olalia">          <i>Olalia</i><par n="Mary__np"/></e>
