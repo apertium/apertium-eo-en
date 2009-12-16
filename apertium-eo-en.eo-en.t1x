@@ -40,6 +40,11 @@
      <cat-item tags="vblex.cni"/>
      <cat-item tags="vbser.cni"/>
   </def-cat>
+  <def-cat n="c_vb_pp">
+     <cat-item tags="vblex.pp.*"/>
+     <cat-item tags="vbser.pp.*"/>
+     <cat-item tags="vaux.pp.*"/>
+  </def-cat>
   <def-cat n="c_vb_pp2">
      <cat-item tags="vblex.pp2.*"/>
      <cat-item tags="vbser.pp2.*"/>
@@ -1279,6 +1284,47 @@
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: PP de">
+     <pattern>
+       <pattern-item n="c_vb_pp"/>
+       <pattern-item n="de"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+ 	  <b pos="1"/>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="by"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
         </out>
      </action>
   </rule>

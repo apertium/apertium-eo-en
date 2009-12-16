@@ -280,8 +280,12 @@
 <pardef n="ordinals">
 <e>                           <re>([0-9]+)?</re><p><l>a</l> <r>a<s n="num"/><s n="ord"/></r></p></e>
 <e>                           <re>([0-9]+)?</re><p><l>an</l><r>an<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>aj</l> <r>-a<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
 <e r="LR">                    <re>([0-9]+)?</re><p><l>-a</l> <r>-a<s n="num"/><s n="ord"/></r></p></e>
 <e r="LR">                    <re>([0-9]+)?</re><p><l>-an</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>-aj</l> <r>-a<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR">                    <re>([0-9]+)?</re><p><l>-ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
 </pardef>
 
 
@@ -534,6 +538,10 @@
 <e r="LR">                    <p><l>itaj</l>                <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="LR">                    <p><l>itan</l>                <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="LR">                    <p><l>itajn</l>               <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="LR">                    <p><l>ata</l>                 <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="LR">                    <p><l>ataj</l>                <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
+<e r="LR">                    <p><l>atan</l>                <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="LR">                    <p><l>atajn</l>               <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
 <!--
 <e>                           <p><l>onta</l>                <r>i<s n="vblex"/><s n="pp2"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ontaj</l>               <r>i<s n="vblex"/><s n="pp2"/><s n="pl"/></r></p></e>
@@ -952,6 +960,10 @@
 <e lm="nenie">                <i>nenie</i><p><l></l>        <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ĉie">                  <par n="ĉ"/><i>ie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="ajna">                 <i>ajna</i><par n="ind__det"/></e>
+<e lm="kiu ajn">              <p><l>kiu<b/>ajn</l>          <r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiun<b/>ajn</l>         <r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiuj<b/>ajn</l>         <r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiujn<b/>ajn</l>        <r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
 <e lm="akorde kun">           <i>akorde<b/>kun</i><par n="al__pr"/></e>
 <e lm="al">                   <i>al</i><par n="al__pr"/></e>
 <e lm="alia">                 <i>alia</i><par n="ind__det"/></e>
@@ -1069,15 +1081,16 @@
 <e lm="io">                   <i>io</i><par n="tio__prn"/></e>
 
 
-<!--
-<e lm="iu ajn">                   <i>iu</i><par n="tiu__prn"/><i><b/>ajn</i></e>
-<e lm="io ajn">                   <i>io</i><par n="tio__prn"/><i><b/>ajn</i></e>
-<e lm="kiu ajn">                   <i>kiu</i><par n="tiu__prn"/><i><b/>ajn</i></e>
-<e lm="kio ajn">                   <i>kio</i><par n="tio__prn"/><i><b/>ajn</i></e>
--->
-
 <e lm="iu ajn">               <p><l>iu<b/>ajn</l>           <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="iu ajn">               <p><l>iun<b/>ajn</l>          <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="iu ajn">               <p><l>iuj<b/>ajn</l>          <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="iu ajn">               <p><l>iujn<b/>ajn</l>         <r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+<!-- en la tekstaro 'kiu ajn' neniam aperas pronome, kaj lexer konfuziĝas
+<e lm="kiu ajn">              <p><l>kiu<b/>ajn</l>          <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiun<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiuj<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiujn<b/>ajn</l>        <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 <e lm="io ajn">               <p><l>io<b/>ajn</l>           <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="io ajn">               <p><l>ion<b/>ajn</l>          <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kio ajn">              <p><l>kio<b/>ajn</l>          <r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>

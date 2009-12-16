@@ -542,6 +542,7 @@
 <!-- anyone can be sad  → iu ajn povas esti malĝoja -->   
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>kio<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whatever<s n="prn"/><s n="tn"/></r></p></e>
+<e>       <p><l>kiu<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whoever<s n="prn"/><s n="tn"/></r></p></e>
 
 
 <!-- var før:
@@ -799,6 +800,7 @@ BUT:
 
 <!--  any house  -> ajna domo -->
 <e>       <p><l>ajna<s n="det"/><s n="ind"/></l>       <r>any<s n="det"/><s n="ind"/></r></p></e>
+<e r="LR"><p><l>kiu<b/>ajn<s n="det"/><s n="ind"/></l> <r>any<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>either<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>ajna<s n="det"/><s n="ind"/></l>       <r>whatever<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>alia<s n="det"/><s n="ind"/></l>       <r>another<s n="det"/><s n="ind"/></r></p></e>
@@ -1990,6 +1992,26 @@ TODO??
 <e r="LR"><re>([0-9]*)?</re><p><l>3-an<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
 <e r="LR"><re>([0-9]*)?</re><p><l>4-an<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
 <e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>-an<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1aj<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2aj<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3aj<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4aj<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>aj<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1-aj<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2-aj<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3-aj<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4-aj<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>-aj<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1ajn<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2ajn<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3ajn<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4ajn<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>ajn<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1-ajn<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>2-ajn<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>3-ajn<s n="num"/><s n="ord"/></l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?</re><p><l>4-ajn<s n="num"/><s n="ord"/></l><r>4th<s n="num"/><s n="ord"/></r></p></e>
+<e r="LR"><re>([0-9]*)?([0,5-9])</re><p><l>-ajn<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 
 
 <!-- was:
@@ -10480,7 +10502,7 @@ TODO??
 <e r="LR"><p><l>oponi<s n="vblex"/></l>                <r>object<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>sedi<s n="vblex"/></l>                 <r>object<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>obĵeti<s n="vblex"/></l>               <r>object<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>objekto<s n="n"/></l>                  <r>object<s n="n"/></r></p></e>
+<e       ><p><l>objekto<s n="n"/></l>                  <r>object<s n="n"/></r></p></e>
 <e r="RL"><p><l>kontraŭstaro<s n="n"/></l>             <r>objection<s n="n"/></r></p></e>
 <e r="LR"><p><l>kontraŭargumento<s n="n"/></l>         <r>objection<s n="n"/></r></p></e>
 <e r="LR"><p><l>kontraŭdiro<s n="n"/></l>              <r>objection<s n="n"/></r></p></e>
@@ -14028,7 +14050,6 @@ TODO??
 <e r="LR"><p><l>ŝiko<s n="n"/></l>                     <r>style<s n="n"/></r></p></e>
 <e r="LR"><p><l>elegantexco<s n="n"/></l>              <r>style<s n="n"/></r></p></e>
 <e>       <p><l>temo<s n="n"/></l>                     <r>subject<s n="n"/></r></p></e>
-<e r="LR"><p><l>objekto<s n="n"/></l>                  <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>studobjekto<s n="n"/></l>              <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>studtemo<s n="n"/></l>                 <r>subject<s n="n"/></r></p></e>
 <e r="LR"><p><l>subjekto<s n="n"/></l>                 <r>subject<s n="n"/></r></p></e>

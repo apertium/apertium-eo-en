@@ -198,7 +198,7 @@
 	        <lit v="pron"/>
 	      </equal>
 	    </test>
-	    <choose> <!-- la subjekto estas persona pronomo: ĝi havas eksplicitan prs kaj nbr -->
+	    <choose> <!-- la subjekto estas pronomo: ĝi eble eksplicitan prs -->
 	      <when>
 		<test>
 		    <equal>
@@ -206,10 +206,26 @@
 		      <lit-tag v="PD"/>
 		    </equal>
 		</test>
-		<let>
-		  <clip pos="2" part="prs"/>
-		  <clip pos="1" part="prs"/>
-		</let>
+	        <choose>
+	          <when>
+		    <test>	<!-- ĉu (ne) estas persona pronomo ? -->
+		        <equal>
+		          <clip pos="1" part="prs"/>
+		          <lit v=""/>
+		        </equal>
+		    </test>
+		    <let>
+		      <clip pos="2" part="prs"/>
+		      <lit-tag v="p3"/>
+		    </let>
+	          </when>
+	          <otherwise>
+		    <let>
+		      <clip pos="2" part="prs"/>
+		      <clip pos="1" part="prs"/>
+		    </let>
+	          </otherwise>
+	        </choose>
 	      </when>
 	    </choose>
 	    <choose>
