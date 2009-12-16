@@ -598,17 +598,32 @@
 
 <!-- tio(j) - that     tiu(j) - those -->
 <e>       <p><l>tio<s n="prn"/><s n="tn"/><s n="sg"/></l><r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<!-- tioj ??
 <e r="LR"><p><l>tio<s n="prn"/><s n="tn"/><s n="pl"/></l><r>that<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+-->
+<!-- tiu -> those ??
 <e r="LR"><p><l>tiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 <e>       <p><l>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>that<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+-->
+<e>       <p><l>tiu<s n="prn"/><s n="tn"/></l><r>that<s n="prn"/><s n="tn"/></r></p></e>
 
 <e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
 
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/></l><r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<!-- tioj ĉi ??
 <e r="LR"><p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/></l><r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+-->
+<!-- 
 <e r="LR"><p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
+-->
+<e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
+
+
 <e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/></l>   <r>this<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>ĉi<b/>tio<s n="prn"/><s n="tn"/><s n="sg"/></l><r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>tiu<b/>ĉi<s n="prn"/><s n="tn"/></l><r>this<s n="prn"/><s n="tn"/></r></p></e>
 
 
 
@@ -2027,6 +2042,7 @@ TODO??
 <e>       <p><l>hejmo<s n="n"/></l>                    <r>home<s n="n"/></r></p></e>
 <e>       <p><l>domo<s n="n"/></l>                     <r>house<s n="n"/></r></p></e>
 <e       ><p><l>infano<s n="n"/></l>                   <r>child<s n="n"/></r></p></e>
+<e r="RL"><p><l>infano<s n="n"/></l>                   <r>infant<s n="n"/></r></p></e>
 <e>       <p><l>malfermo<s n="n"/></l>                 <r>opening<s n="n"/></r></p></e>
 <e>       <p><l>malfermi<s n="vblex"/></l>             <r>open<s n="vblex"/></r></p></e>
 <e>       <p><l>malferma<s n="adj"/></l>               <r>open<s n="adj"/></r></p></e>
@@ -3102,7 +3118,6 @@ TODO??
 <e>       <p><l>kolero<s n="n"/></l>                   <r>anger<s n="n"/></r></p></e>
 <e>       <p><l>angino<s n="n"/></l>                   <r>angina<s n="n"/></r></p></e>
 <e r="RL"><p><l>angulo<s n="n"/></l>                   <r>angle<s n="n"/></r></p></e>
-<e r="LR"><p><l>vidpunkto<s n="n"/></l>                <r>angle<s n="n"/></r></p></e>
 <e>       <p><l>anglikana<s n="adj"/></l>              <r>anglican<s n="adj"/></r></p></e>
 <e>       <p><l>anglikana<b/>eklezio<s n="n"/></l>     <r>Anglican<b/>Church<s n="n"/></r></p></e>
 <e>       <p><l>episkopa<b/>eklezio<s n="n"/></l>      <r>Episcopal<b/>Church<s n="n"/></r></p></e>
@@ -8800,7 +8815,6 @@ TODO??
 <e>       <p><l>institucio<s n="n"/></l>               <r>institution<s n="n"/></r></p></e>
 <e>       <p><l>instrui<s n="vblex"/></l>              <r>instruct<s n="vblex"/></r></p></e>
 <e>       <p><l>instruo<s n="n"/></l>                  <r>instruction<s n="n"/></r></p></e>
-<e r="LR"><p><l>ordono<s n="n"/></l>                   <r>instruction<s n="n"/></r></p></e>
 <e r="LR"><p><l>instrukcio<s n="n"/></l>               <r>instruction<s n="n"/></r></p></e>
 <e r="LR"><p><l>instrukciado<s n="n"/></l>             <r>instruction<s n="n"/></r></p></e>
 <e>       <p><l>instrumento<s n="n"/></l>              <r>instrument<s n="n"/></r></p></e>
@@ -10640,6 +10654,7 @@ TODO??
 <e>       <p><l>orkideo<s n="n"/></l>                  <r>orchid<s n="n"/></r></p></e>
 <e>       <p><l>elprovado<s n="n"/></l>                <r>ordeal<s n="n"/></r></p></e>
 <e>       <p><l>ordo<s n="n"/></l>                     <r>order<s n="n"/></r></p></e>
+<e r="LR"><p><l>ordono<s n="n"/></l>                   <r>order<s n="n"/></r></p></e>
 <e r="LR"><p><l>ordometi<s n="vblex"/></l>             <r>order<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>bonordo<s n="n"/></l>                  <r>order<s n="n"/></r></p></e>
 <e r="LR"><p><l>juĝordoni<s n="vblex"/></l>            <r>order<s n="vblex"/></r></p></e>
@@ -16671,7 +16686,6 @@ TODO??
 <e r="LR"><p><l>temerara<s n="adj"/></l>               <r>reckless<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tenera<s n="adj"/></l>                 <r>fond<s n="adj"/></r></p></e>
 <e r="RL"><p><l>tergloba<s n="adj"/></l>               <r>earthly<s n="adj"/></r></p></e>
-<e r="LR"><p><l>tia<s n="adj"/></l>                    <r>local<s n="adj"/></r></p></e>
 <e r="RL"><p><l>timema<s n="adj"/></l>                 <r>shy<s n="adj"/></r></p></e>
 <e>       <p><l>trankvila<s n="adj"/></l>              <r>calm<s n="adj"/></r></p></e>
 <e r="RL"><p><l>trankvila<s n="adj"/></l>              <r>quiet<s n="adj"/></r></p></e>
@@ -31403,7 +31417,8 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>dekalkulo<s n="n"/></l>                <r>subtraction<s n="n"/></r></p></e>
 <e r="RL"><p><l>renversi<s n="vblex"/></l>             <r>subvert<s n="vblex"/></r></p></e>
 <e>       <p><l>venkiĝi<s n="vblex"/></l>              <r>succumb<s n="vblex"/></r></p></e>
-<e>       <p><l>tiela<s n="adj"/></l>                  <r>such<s n="adj"/></r></p></e>
+<e r="LR"><p><l>tiela<s n="adj"/></l>                  <r>such<s n="adj"/></r></p></e>
+<e       ><p><l>tia<s n="adj"/></l>                    <r>such<s n="adj"/></r></p></e>
 <e>       <p><l>sufiisma<s n="adj"/></l>               <r>sufi<s n="adj"/></r></p></e>
 <e>       <p><l>svatiĝanto<s n="n"/></l>               <r>suitor<s n="n"/></r></p></e>
 <e r="RL"><p><l>sulfuro<s n="n"/></l>                  <r>sulfur<s n="n"/></r></p></e>
@@ -32019,7 +32034,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>elvido<s n="n"/></l>                   <r>view<s n="n"/></r></p></e>
 <e r="LR"><p><l>belvido<s n="n"/></l>                  <r>view<s n="n"/></r></p></e>
 <e r="LR"><p><l>spekto<s n="n"/></l>                   <r>view<s n="n"/></r></p></e>
-<e r="RL"><p><l>vidpunkto<s n="n"/></l>                <r>viewpoint<s n="n"/></r></p></e>
+<e       ><p><l>vidpunkto<s n="n"/></l>                <r>viewpoint<s n="n"/></r></p></e>
 <e>       <p><l>maldormado<s n="n"/></l>               <r>vigil<s n="n"/></r></p></e>
 <e r="LR"><p><l>vigilo<s n="n"/></l>                   <r>vigil<s n="n"/></r></p></e>
 <e r="RL"><p><l>pravigo<s n="n"/></l>                  <r>vindication<s n="n"/></r></p></e>

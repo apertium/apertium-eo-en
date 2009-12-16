@@ -776,7 +776,12 @@
        <pattern-item n="c_prn"/>
      </pattern>
      <action>
-       <out>
+      <choose>
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
+          </test>
+       <out> <!-- persona pronomo: estas persono kaj genro -->
          <chunk name="pron" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
@@ -795,6 +800,25 @@
            </lu>
          </chunk>
        </out>
+        </when>
+        <otherwise>
+       <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
+         <chunk name="pron" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_prn"/>
+             <clip pos="1" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+        </otherwise>
+      </choose>
      </action>
   </rule>
 

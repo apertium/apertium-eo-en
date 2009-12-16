@@ -5,11 +5,11 @@
     <def-cat n="SN">
       <cat-item tags="SN.*"/>
     </def-cat>
-    <def-cat n="SNnom" c="Eblaj subjektoj de subjekt-verbo-objekto frazo">
+    <def-cat n="SNnom" c="Eblaj subjektoj de subjekto-verbo-objekto frazo">
       <cat-item tags="SN.*.nom"/> <!-- SN kun nominativo en esperanto -->
       <cat-item tags="REL" c="that, which"/>
     </def-cat>
-    <def-cat n="SNacc" c="Eblaj subjektoj de subjekt-verbo-objekto frazo">
+    <def-cat n="SNacc" c="Eblaj objektoj de subjekto-verbo-objekto frazo">
       <cat-item tags="SN.*.acc"/> <!-- SN kun akuzativo en esperanto -->
     </def-cat>
     <def-cat n="SVall">
@@ -632,6 +632,34 @@
             <clip pos="2" part="whole"/>
           </chunk>
 	  <b pos="2"/>
+        </out>
+<!-- ^det<SN><sp>{^a<det><ind><sg>$}$ -->
+<!-- Hector 09/12/16: Aldono de artikolo a. Mi kredas, ke en la plimulto de la okazoj ĝi estas trafa, tamen por la momento lasas flanken
+      <choose>
+	<when>
+	  <test>
+	    <and>
+	      <equal>
+	        <clip pos="3" part="nbr"/>
+	        <lit-tag v="sg"/>
+	      </equal>
+	      <equal>
+	        <clip pos="3" part="lem"/>
+	        <lit v="nom"/>
+	      </equal>
+	    </and>
+	  </test>
+        <out>
+	  <chunk>
+		<lit v="a"/><lit-tag v="SN.sp"/>
+		<lit v="{^"/><lit v="a"/><lit-tag v="det.ind.sg"/><lit v="$}"/>
+	  </chunk>
+          <b/>
+        </out>
+	</when>
+      </choose>
+-->
+        <out>
           <chunk>
             <clip pos="3" part="lem"/>
             <clip pos="3" part="a_chunk"/>
@@ -640,6 +668,11 @@
       	    <lit-tag v="acc"/>
             <clip pos="3" part="chcontent"/>
           </chunk>
+<chunk>
+<lit-tag v="REGULO: SN SV SN"/>
+<clip pos="3" part="lem"/>
+<clip pos="3" part="nbr"/>
+</chunk>
         </out>
       </action>
     </rule>
