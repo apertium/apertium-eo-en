@@ -9,7 +9,7 @@
     <tags-item tags="det.ind.*"/>
     <tags-item tags="det.def.*"/>
     <tags-item tags="det.pos.*"/>
-    <tags-item tags="det.itg.*"/>
+    <tags-item tags="det.itg.*"/> 
   </def-label>
   <def-label name="NUM" closed="true">
     <tags-item tags="num.*"/>
@@ -43,6 +43,39 @@
     <tags-item tags="pr"/>
   </def-label>
 
+
+  <def-label name="NOM">
+    <tags-item tags="n.*"/>
+  </def-label>
+  <def-label name="ADJ">
+    <tags-item tags="adj.*"/>
+  </def-label>
+  <def-label name="VAUX">
+    <tags-item tags="vaux.*"/>
+  </def-label>
+  <def-label name="VBLEX">
+    <tags-item tags="vblex.*"/>
+  </def-label>
+  <def-label name="CNJSUBS" closed="true"><tags-item tags="cnjsub"/></def-label>
+  <def-label name="CNJCOORD" closed="true"><tags-item tags="cnjcoo"/></def-label>
+  <def-label name="CNJADV"><tags-item tags="cnjadv"/></def-label>
+  <def-label name="RELAN" closed="true"><tags-item tags="rel.an.*"/></def-label>
+  <def-label name="RELAA" closed="true"><tags-item tags="rel.aa.*"/></def-label>
+  <def-label name="RELNN" closed="true"><tags-item tags="rel.nn.*"/></def-label>
+  <def-label name="RELADV" closed="true"><tags-item tags="rel.adv"/></def-label>
+  <def-label name="GEN" closed="true"><tags-item tags="gen"/></def-label>
+  <def-label name="GUIO" closed="true"><tags-item tags="guio"/></def-label> 
+  <def-label name="APOS" closed="true"><tags-item tags="apos"/></def-label> 
+
+  <def-label name="LA_RESTO_FAROTA"><tags-item tags="*"/></def-label>
+
+  <def-mult c="por kunmetaĵoj" name="N+N">
+    <sequence>
+      <tags-item tags="n.*"/>
+      <tags-item tags="n.*"/>
+    </sequence>
+  </def-mult>
+
  </tagset>
 
  <forbid>
@@ -58,6 +91,15 @@
       <label-item label="PRNSUBJ"/>
       <label-item label="DET"/>
     </label-sequence>
+    <label-sequence>
+      <label-item label="CNJADV" c="Dum cnjadv /Dum pr  DET- preferu pr"/>
+      <label-item label="DET"/>
+    </label-sequence>
  </forbid>
+
+ <discard-on-ambiguity>
+<discard tags="n.acr.re.sg.nom"/>
+<discard tags="gen"/>
+</discard-on-ambiguity>
 
 </tagger>

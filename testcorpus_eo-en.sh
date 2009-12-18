@@ -12,7 +12,7 @@ then
 	bunzip2 -c corpa/eowiki.crp.txt.bz2 > $CRP
 fi
 
-# make -s -j 3 && cat $CRP | apertium -d . eo-en-compounds > $NOVA || (cat $NOVA; exit)
+#make -s -j 3 && cat $CRP | apertium -d . eo-en-compounds > $NOVA || exit
 make -s -j 3 && cat $CRP | apertium -d . eo-en > $NOVA || exit
 echo
 grep '#' $NOVA && echo -e "^ Estis mankoj eo la cellingva dix, montrata supre ^\n"
