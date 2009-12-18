@@ -7,6 +7,9 @@
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SA">
+      <cat-item tags="SA.*"/>
+    </def-cat>
     <def-cat n="num">
       <cat-item lemma="num" tags="SN.*"/>
     </def-cat>
@@ -110,9 +113,33 @@
 
 
 
+<!-- tiu regulo ne veras: se SN komenciĝas per DET la antaŭa SA ne apartenas al la koncerna SN
+
+    <rule comment="REGLA: SA SN   -   SN ">
+      <pattern>
+        <pattern-item n="SA"/>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><clip pos="2" part="lem"/></get-case-from>
+            <clip pos="2" part="tags"/>
+            <lit v="{"/>            
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+-->
 
 
-    <rule comment="REGLA: PREP SN   -   SN ">
+
+    <rule comment="REGLA: PREP SN   -   SP ">
       <pattern>
         <pattern-item n="PREP"/>
         <pattern-item n="SN"/>
@@ -120,8 +147,8 @@
       <action>
         <out>
           <chunk>
-            <get-case-from pos="1"><lit v="prepocici-ĉeneto"/></get-case-from>
-            <lit-tag v="prepocici-ĉeneto-marko"/><clip pos="2" part="a_prs"/><clip pos="2" part="a_gender"/>
+            <get-case-from pos="1"><lit v="sp"/></get-case-from>
+            <lit-tag v="SP"/><clip pos="2" part="a_prs"/><clip pos="2" part="a_gender"/>
 					<clip pos="2" part="a_nbr"/><clip pos="2" part="a_cas"/>
             <lit v="{"/>            
             <clip pos="1" part="content"/>

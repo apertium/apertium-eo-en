@@ -191,6 +191,11 @@
      <attr-item tags="pr"/>
   </def-attr>
 
+  <def-attr n="a_adv">
+     <attr-item tags="adv"/>
+     <attr-item tags="preadv"/>
+  </def-attr>
+
   <def-attr n="a_adj">
      <attr-item tags="adj"/>
      <attr-item tags="adj.comp"/>
@@ -828,6 +833,30 @@
   </rule>
 
 
+  <rule comment="REGULO: ADV">
+     <pattern>
+       <pattern-item n="c_adv"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adv" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SADV"/></tag>
+             <tag><clip pos="1" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adv"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+
+
 
   <rule comment="REGULO: ADJ">
      <pattern>
@@ -837,7 +866,7 @@
        <out>
          <chunk name="adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SA"/></tag>
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
@@ -853,7 +882,8 @@
 
 
 
-  <rule>
+
+  <rule comment="REGULO: PLI/PLEJ ADJ">
      <pattern>
        <pattern-item n="c_pli_plej"/>
        <pattern-item n="c_adj"/>
@@ -863,7 +893,7 @@
        <out>
          <chunk name="sint?_adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SA"/></tag>
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
@@ -873,8 +903,6 @@
        </out>
      </action>
   </rule>
-
-
 
 
   <rule comment="REGULO: NOM">
@@ -900,6 +928,7 @@
      </action>
   </rule>
 
+
   <rule comment="REGULO: DET NOM">
      <pattern>
        <pattern-item n="c_det"/>
@@ -917,6 +946,68 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET ADJ">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="c_adj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_adj" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: ADJ NOM">
+     <pattern>
+       <pattern-item n="c_adj"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adj_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adj"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/>
@@ -968,6 +1059,7 @@
        </out>
      </action>
   </rule>
+
 
 <!-- SV -->
 
@@ -1228,7 +1320,7 @@
   </rule>
 
 
-  <rule>
+  <rule comment="REGULO: VBSER">
      <pattern>
        <pattern-item n="c_vbser"/>
      </pattern>
@@ -1259,7 +1351,7 @@
 
 
 
-  <rule comment="REGULO: VERB">
+  <rule comment="REGULO: VBLEX">
      <pattern>
        <pattern-item n="c_vblex"/>
      </pattern>
@@ -1329,7 +1421,7 @@
      </action>
   </rule>
 
-    <rule>
+    <rule comment="REGULO: NUM">
       <pattern>
         <pattern-item n="num"/>
       </pattern>
@@ -1347,7 +1439,7 @@
       </action>
     </rule>
 
-    <rule>
+    <rule comment="REGULO: PREP">
       <pattern>
         <pattern-item n="pr"/>
       </pattern>
