@@ -7,7 +7,7 @@
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
-    <def-cat n="SA">
+    <def-cat n="SA" c="sintagmo adjektiva">
       <cat-item tags="SA.*"/>
     </def-cat>
     <def-cat n="num">
@@ -139,7 +139,7 @@
 
 
 
-    <rule comment="REGLA: PREP SN   -   SP ">
+    <rule comment="REGLA: PREP SN   -   SP (sintagmo prepozicia)">
       <pattern>
         <pattern-item n="PREP"/>
         <pattern-item n="SN"/>
