@@ -669,7 +669,7 @@
 <e>       <p><l>mem<s n="prn"/><s n="ref"/></l><r>self<s n="prn"/><s n="ref"/></r></p></e>
 <e r="LR">       <p><l>oni<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>oneself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
-<e><p><l>si<s n="prn"/><s n="ref"/></l><r>oneself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+<e r="RL"><p><l>si<s n="prn"/><s n="ref"/></l><r>oneself<s n="prn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
 
 
@@ -693,7 +693,17 @@
 <e r="RL"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/><s n="acc"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
+<e r="LR"><p><l>si<s n="prn"/><s n="ref"/></l><r>himself<s n="prn"/><s n="ref"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e> <!-- necesos pritrakti herself, itself, themselves en la reguloj -->
 
 <e c="one"><p><l>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
 
@@ -7695,7 +7705,7 @@ TODO??
 <e>       <p><l>freŝeco<s n="n"/></l>                  <r>freshness<s n="n"/></r></p></e>
 <e r="RL"><p><l>frato<s n="n"/></l>                    <r>friar<s n="n"/></r></p></e>
 <e r="RL"><p><l>fridujo<s n="n"/></l>                  <r>fridge<s n="n"/></r></p></e>
-<e r="RL"><p><l>amiko<s n="n"/></l>                    <r>friend<s n="n"/></r></p></e>
+<e       ><p><l>amiko<s n="n"/></l>                    <r>friend<s n="n"/></r></p></e>
 <e r="LR"><p><l>amikino<s n="n"/></l>                  <r>friend<s n="n"/></r></p></e>
 <e r="RL"><p><l>amikeco<s n="n"/></l>                  <r>friendship<s n="n"/></r></p></e>
 <e r="LR"><p><l>amikiĝo<s n="n"/></l>                  <r>friendship<s n="n"/></r></p></e>
@@ -9860,7 +9870,7 @@ TODO??
 <e r="LR"><p><l>parigi<s n="vblex"/></l>               <r>match<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>harmonii<s n="vblex"/></l>             <r>match<s n="vblex"/></r></p></e>
 <e>       <p><l>egali<s n="vblex"/></l>                <r>match<s n="vblex"/></r></p></e>
-<e>       <p><l>amiko<s n="n"/></l>                    <r>mate<s n="n"/></r></p></e>
+<e r="RL"><p><l>amiko<s n="n"/></l>                    <r>mate<s n="n"/></r></p></e>
 <e>       <p><l>materialo<s n="n"/></l>                <r>material<s n="n"/></r></p></e>
 <e>       <p><l>materiala<s n="adj"/></l>              <r>material<s n="adj"/></r></p></e>
 <e>       <p><l>patrina<s n="adj"/></l>                <r>maternal<s n="adj"/></r></p></e>

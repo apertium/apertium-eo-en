@@ -917,6 +917,7 @@
           <chunk>
             <clip pos="3" part="lem"/>
             <clip pos="3" part="a_chunk"/>
+            <clip pos="3" part="prs"/>
             <clip pos="3" part="gen"/>
             <clip pos="3" part="nbr"/>
       	    <lit-tag v="acc"/>
@@ -986,6 +987,7 @@
           <chunk>
             <clip pos="4" part="lem"/>
             <clip pos="4" part="a_chunk"/>
+            <clip pos="4" part="prs"/>
             <clip pos="4" part="gen"/>
             <clip pos="4" part="nbr"/>
       	    <lit-tag v="acc"/>
@@ -1016,6 +1018,7 @@
           <chunk>
             <clip pos="2" part="lem"/>
             <clip pos="2" part="a_chunk"/>
+            <clip pos="2" part="prs"/>
             <clip pos="2" part="gen"/>
             <clip pos="2" part="nbr"/>
       	    <lit-tag v="acc"/>

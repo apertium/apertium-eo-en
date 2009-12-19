@@ -70,16 +70,23 @@
      <cat-item tags="adv"/>
      <cat-item tags="preadv"/>
   </def-cat>
+  <def-cat n="c_ne">
+     <cat-item lemma="ne" tags="adv"/>
+  </def-cat>
+
   <def-cat n="c_prn">
      <cat-item tags="prn.*"/>
   </def-cat>
+
   <def-cat n="c_pr">
      <cat-item tags="pr"/>
   </def-cat>
+
   <def-cat n="c_det">
      <cat-item tags="det"/>
      <cat-item tags="det.*"/>
   </def-cat>
+
   <def-cat n="la">
      <cat-item lemma="la" tags="det.*"/>
   </def-cat>
@@ -235,6 +242,7 @@
      <attr-item tags="prn.itg"/>
      <attr-item tags="prn.subj"/>
      <attr-item tags="prn.obj"/>
+     <attr-item tags="prn.ref"/>
      <attr-item tags="prn.tn"/>
   </def-attr>
 
@@ -1350,6 +1358,42 @@
 
 
 
+  <rule comment="REGULO: NE VBSER">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vbser"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vbser" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </lu>
+	    <b pos="1"/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+
 
   <rule comment="REGULO: VBLEX">
      <pattern>
@@ -1374,6 +1418,48 @@
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: NE VBLEX">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vblex"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+	      <lit v="do"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
