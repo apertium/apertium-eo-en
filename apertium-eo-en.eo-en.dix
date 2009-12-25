@@ -132,7 +132,8 @@
 
 
 <e r="LR" c="devus - should"><p><l>devi<s n="vaux"/><s n="cni"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
-<e r="LR" c="devis - should"><p><l>devi<s n="vaux"/><s n="past"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
+<e r="LR" c="devis - had"><p><l>devi<s n="vaux"/><s n="past"/></l><r>have<s n="vbhaver"/><s n="past"/></r></p></e>
+<e r="LR" c="devos - have"><p><l>devi<s n="vaux"/><s n="fti"/></l><r>have<s n="vbhaver"/><s n="fti"/></r></p></e>
 
 
 <e r="RL"><p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
@@ -151,6 +152,8 @@
 
 <e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
 <e r="LR" c="povus - could"><p><l>povi<s n="vaux"/><s n="cni"/></l><r>can<s n="vaux"/><s n="past"/></r></p></e>
+<e r="LR" c="povos - be able"><p><l>povi<s n="vaux"/><s n="fti"/></l><r>be<g><b/>able</g><s n="vblex"/><s n="fti"/></r></p></e>
+<!--<e r="LR" c="povus - be able"><p><l>povi<s n="vaux"/><s n="cni"/></l><r>be<g><b/>able</g><s n="vblex"/><s n="cni"/></r></p></e> -->
 
 <e r="LR" c="povante - can"><p><l>povi<s n="vaux"/><s n="ger"/></l><r>can<s n="vaux"/><s n="pres"/></r></p></e>
 <e r="LR" c="devante - needing"><p><l>devi<s n="vaux"/><s n="ger"/></l><r>need<s n="vblex"/><s n="ger"/></r></p></e>
@@ -1193,7 +1196,7 @@ BUT:
 <e>       <p><l>Jugoslavio<s n="np"/><s n="top"/></l>  <r>Yugoslavia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Jupitero<s n="np"/><s n="top"/></l>    <r>Jupiter<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kabulo<s n="np"/><s n="top"/></l>      <r>Kabul<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Kamerunio<s n="np"/><s n="top"/></l>   <r>Cameroon<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kameruno<s n="np"/><s n="top"/></l>    <r>Cameroon<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kanado<s n="np"/><s n="top"/></l>      <r>Canada<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kanarioj<s n="np"/><s n="top"/></l>    <r>Canary<b/>Islands<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Kantabrio<s n="np"/><s n="top"/></l>   <r>Cantabria<s n="np"/><s n="top"/></r></p></e>
@@ -3099,7 +3102,7 @@ TODO??
 <e r="LR"><p><l>solule<s n="adv"/></l>                 <r>alone<s n="adv"/></r></p></e>
 <e r="LR"><p><l>senhelpe<s n="adv"/></l>               <r>alone<s n="adv"/></r></p></e>
 <e>       <p><l>alfabeto<s n="n"/></l>                 <r>alphabet<s n="n"/></r></p></e>
-<e>       <p><l>bone<s n="adv"/></l>                   <r>alright<s n="adv"/></r></p></e>
+<e r="RL"><p><l>bone<s n="adv"/></l>                   <r>alright<s n="adv"/></r></p></e>
 <e r="LR"><p><l>bonorde<s n="adv"/></l>                <r>alright<s n="adv"/></r></p></e>
 <e r="LR"><p><l>senprobleme<s n="adv"/></l>            <r>alright<s n="adv"/></r></p></e>
 <e r="LR"><p><l>interalie<s n="adv"/></l>              <r>also<s n="adv"/></r></p></e>
@@ -8085,7 +8088,6 @@ TODO??
 <e r="LR"><p><l>provoso<s n="n"/></l>                  <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>biletisto<s n="n"/></l>                <r>guard<s n="n"/></r></p></e>
 <e r="LR"><p><l>manŝirmilo<s n="n"/></l>               <r>guard<s n="n"/></r></p></e>
-<e r="LR"><p><l>Gvatemalio<s n="np"/><s n="top"/></l>  <r>Guatemala<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>konjekti<s n="vblex"/></l>             <r>guess<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>konjekto<s n="n"/></l>                 <r>guess<s n="n"/></r></p></e>
 <e r="LR"><p><l>diveni<s n="vblex"/></l>               <r>guess<s n="vblex"/></r></p></e>
@@ -15469,7 +15471,7 @@ TODO??
 <e>       <p><l>bonfaro<s n="n"/></l>                  <r>welfare<s n="n"/></r></p></e>
 <e r="LR"><p><l>bonfarto<s n="n"/></l>                 <r>welfare<s n="n"/></r></p></e>
 <e r="LR"><p><l>asistismo<s n="n"/></l>                <r>welfare<s n="n"/></r></p></e>
-<e r="RL"><p><l>bone<s n="adv"/></l>                   <r>well<s n="adv"/></r></p></e>
+<e       ><p><l>bone<s n="adv"/></l>                   <r>well<s n="adv"/></r></p></e>
 <e r="LR"><p><l>bonfarte<s n="adv"/></l>               <r>well<s n="adv"/></r></p></e>
 <e r="LR"><p><l>favore<s n="adv"/></l>                 <r>well<s n="adv"/></r></p></e>
 <e r="LR"><p><l>lerte<s n="adv"/></l>                  <r>well<s n="adv"/></r></p></e>
@@ -21942,7 +21944,7 @@ TODO??
 <e>       <p><l>bienhavanto<s n="n"/></l>              <r>landowner<s n="n"/></r></p></e>
 <e r="RL"><p><l>velki<s n="vblex"/></l>                <r>languish<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>rondiro<s n="n"/></l>                  <r>lap<s n="n"/></r></p></e>
-<e>       <p><l>Samio<s n="np"/><s n="top"/></l>       <r>Lapland<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Sameio<s n="np"/><s n="top"/></l>      <r>Lapland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Laponio<s n="np"/><s n="top"/></l>     <r>Lapland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>lektrinki<s n="vblex"/></l>            <r>lap<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>plaŭdeti<s n="vblex"/></l>             <r>lap<s n="vblex"/></r></p></e>

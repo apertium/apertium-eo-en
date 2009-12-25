@@ -904,7 +904,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 <pardef n="/be__vbser">
   <e>       <p><l>be</l>        <r>be<s n="vbser"/><s n="inf"/></r></p></e>
-  <e       ><p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
+  <e>       <p><l>are</l>       <r>be<s n="vbser"/><s n="pres"/></r></p></e>
   <e>       <p><l>am</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
   <e>       <p><l>is</l>        <r>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>was</l>       <r>be<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -2422,6 +2422,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 			****************************** -->
 <e lm="go across">       <i></i><par n="/go__vblex"/><p><l><b/>across</l><r><g><b/>across</g></r></p></e>
 <e lm="go out">          <i></i><par n="/go__vblex"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
+<e r="RL" lm="be able">  <i></i><par n="/be__vblex"/><p><l><b/>able</l><r><g><b/>able</g></r></p></e>
 <e lm="be born">         <i></i><par n="/be__vblex"/><p><l><b/>born</l><r><g><b/>born</g></r></p></e>
 <e lm="be worth">        <i></i><par n="/be__vblex"/><p><l><b/>worth</l><r><g><b/>worth</g></r></p></e>
 <e lm="be usefull">      <i></i><par n="/be__vblex"/><p><l><b/>usefull</l><r><g><b/>usefull</g></r></p></e>
@@ -2431,7 +2432,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="go in">           <i></i><par n="/go__vblex"/><p><l><b/>in</l><r><g><b/>in</g></r></p></e>
 <e lm="go on">           <i></i><par n="/go__vblex"/><p><l><b/>on</l><r><g><b/>on</g></r></p></e>
 <e lm="go back">         <i></i><par n="/go__vblex"/><p><l><b/>back</l><r><g><b/>back</g></r></p></e>
-<e lm="be hungry">       <par n="/be__vblex"/><p><l><b/>hungry</l><r><g><b/>hungry</g></r></p></e>
+<e lm="be hungry">       <i></i><par n="/be__vblex"/><p><l><b/>hungry</l><r><g><b/>hungry</g></r></p></e>
 
 <e lm="a bit">           <i>a<b/>bit</i><par n="maybe__adv"/></e>
 <e lm="a little bit">    <i>a<b/>little<b/>bit</i><par n="maybe__adv"/></e>

@@ -28,6 +28,7 @@
 
   <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
+     <cat-item tags="vbhaver.*"/>
      <cat-item tags="vaux.*"/>
   </def-cat>
   <def-cat n="c_vaux">
@@ -40,16 +41,41 @@
      <cat-item tags="vbser.*"/>
      <cat-item tags="vaux.*"/>
   </def-cat>
+  <def-cat n="c_vblex_simpla"> <!-- simpla angla konjugacio: t.e. ĉiuj tensoj krom fti kaj cni -->
+     <cat-item tags="vblex.inf"/>
+     <cat-item tags="vblex.ger"/>
+     <cat-item tags="vblex.pres"/>
+     <cat-item tags="vblex.past"/>
+     <cat-item tags="vbhaver.inf"/>
+     <cat-item tags="vbhaver.ger"/>
+     <cat-item tags="vbhaver.pres"/>
+     <cat-item tags="vbhaver.past"/>
+     <cat-item tags="vaux.inf"/>
+     <cat-item tags="vaux.ger"/>
+     <cat-item tags="vaux.pres"/>
+     <cat-item tags="vaux.past"/>
+     <cat-item tags="vaux.cni"/>	<!-- simpla: could -->
+  </def-cat>
+  <def-cat n="c_vbser_simpla"> <!-- simpla angla konjugacio: t.e. ĉiuj tensoj krom fti kaj cni -->
+     <cat-item tags="vbser.inf"/>
+     <cat-item tags="vbser.ger"/>
+     <cat-item tags="vbser.pres"/>
+     <cat-item tags="vbser.past"/>
+  </def-cat>
   <def-cat n="c_vb_fti">
      <cat-item tags="vblex.fti"/>
+     <cat-item tags="vbhaver.fti"/>
      <cat-item tags="vbser.fti"/>
+     <cat-item tags="vaux.fti"/>
   </def-cat>
   <def-cat n="c_vbser_fti">
      <cat-item tags="vbser.fti"/>
   </def-cat>
   <def-cat n="c_vb_cni">
      <cat-item tags="vblex.cni"/>
+     <cat-item tags="vbhaver.cni"/>
      <cat-item tags="vbser.cni"/>
+     <cat-item tags="vaux.cni"/>
   </def-cat>
   <def-cat n="c_vbser_cni">
      <cat-item tags="vbser.cni"/>
@@ -249,6 +275,7 @@
      <attr-item tags="vblex.sep"/>
      <attr-item tags="vbser"/>
      <attr-item tags="vaux"/>
+     <attr-item tags="vbhaver"/>
   </def-attr>
 
   <def-attr n="a_vrb2">
@@ -1274,7 +1301,7 @@
 
 <!-- SV -->
 
-  <rule comment="REGULO: VERBO EN OS-TENSO">
+  <rule comment="REGULO: VERBO-os">
      <pattern>
        <pattern-item n="c_vb_fti"/>
      </pattern>
@@ -1304,12 +1331,36 @@
      </action>
   </rule>
 
-  <rule comment="REGULO: VERBO EN US-TENSO">
+  <rule comment="REGULO: VERBO-us">
      <pattern>
        <pattern-item n="c_vb_cni"/>
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	      <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
+          </test>
+       <out>
+         <chunk name="vb_cni" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
        <out>
          <chunk name="vb_cni" case="caseFirstWord">
            <tags>
@@ -1331,6 +1382,111 @@
             </lu>
           </chunk>
         </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: NE VERBO-os">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_fti"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vb_fti" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+			<b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: NE VERBO-us">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_cni"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	      <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
+          </test>
+       <out>
+         <chunk name="vb_cni" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+          </chunk>
+       </out>
+        </when>
+        <otherwise>
+       <out>
+         <chunk name="vb_cni" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_prs"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+			<b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+      </choose>
      </action>
   </rule>
 
@@ -1394,40 +1550,6 @@
      </action>
   </rule>
 
-
-
-
-<!-- ripetita regulo
-  <rule>
-     <pattern>
-       <pattern-item n="c_vb_fti"/>
-     </pattern>
-     <action>
-       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
-       <out>
-         <chunk name="vb_fti" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
-            </lu>
-			<b/>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-     </action>
-  </rule>
--->
 
   <rule comment="REGULO: ESTOS -INTA">
      <pattern>
@@ -1497,10 +1619,9 @@
   </rule>
 
 
-<!-- Tiu ĉi regulo malĝustas, ĉar nenio certigas, ke ĝi ekrulos nur se la du antaŭaj ne estas trafitaj -->
-  <rule comment="REGULO: ESTI -INTA">
+  <rule comment="REGULO: ESTIsimpla-INTA">
      <pattern>
-       <pattern-item n="c_vbser"/>
+       <pattern-item n="c_vbser_simpla"/>
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
@@ -1735,9 +1856,9 @@
   </rule>
 
 
-  <rule comment="REGULO: VBLEX INF">
+  <rule comment="REGULO: VBLEXsimpla INF">
      <pattern>
-       <pattern-item n="c_vblex"/>
+       <pattern-item n="c_vblex_simpla"/>
        <pattern-item n="c_vb_inf"/>
      </pattern>
      <action>
@@ -1812,10 +1933,10 @@
      </action>
   </rule>
 
-  <rule comment="REGULO: NE VBLEX INF">
+  <rule comment="REGULO: NE VBLEXsimpla INF">
      <pattern>
        <pattern-item n="c_ne"/>
-       <pattern-item n="c_vblex"/>
+       <pattern-item n="c_vblex_simpla"/>
        <pattern-item n="c_vb_inf"/>
      </pattern>
      <action>
@@ -1939,6 +2060,185 @@
         </out>
         </otherwise>
       </choose>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: VBLEX-os INF">
+     <pattern>
+       <pattern-item n="c_vb_fti"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: VBLEX-us INF">
+     <pattern>
+       <pattern-item n="c_vb_cni"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: NE VBLEX-os INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_fti"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: NE VBLEX-us INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_cni"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
      </action>
   </rule>
 
