@@ -135,15 +135,18 @@
 <e r="LR" c="devis - should"><p><l>devi<s n="vaux"/><s n="past"/></l><r>should<s n="vaux"/><s n="inf"/></r></p></e>
 
 
-<e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
+<e r="RL"><p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>
+<e r="LR"><p><l>voli<s n="vaux"/></l>                  <r>want<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>voli<s n="vaux"/></l>                  <r>would<s n="vaux"/></r></p></e>
 <!-- ne enmetu will - will estas nur futuro kaj oni zorgu pri tio dum transfero
  <e>       <p><l>voli<s n="vaux"/></l>                  <r>will<s n="vaux"/></r></p></e>-->
 <!-- LR: Esperanto al angla - riparoj de vaux-verboj -->
+<!--
 <e r="LR" c="volus - would"><p><l>voli<s n="vaux"/><s n="cni"/></l><r>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e r="LR" c="volas - want"><p><l>voli<s n="vaux"/><s n="pres"/></l><r>want<s n="vblex"/><s n="pres"/></r></p></e>
 <e r="LR" c="volis - wanted"><p><l>voli<s n="vaux"/><s n="past"/></l><r>want<s n="vblex"/><s n="past"/></r></p></e>
 <e r="LR" c="volante - wanting"><p><l>voli<s n="vaux"/><s n="ger"/></l><r>want<s n="vblex"/><s n="ger"/></r></p></e>
+-->
 
 
 <e r="RL"><p><l>povi<s n="vaux"/></l>                  <r>may<s n="vaux"/></r></p></e>
@@ -1039,6 +1042,7 @@ BUT:
 <e r="LR"><p><l>el<s n="pr"/></l>                      <r>from<s n="pr"/></r></p></e>
 <e c="since 1910"><p><l>ekde<s n="pr"/></l>            <r>since<s n="pr"/></r></p></e>
 <e r="RL" c="MG: He fell off his chair"><p><l>de<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
+<e r="LR"><p><l>fare<b/>de<s n="pr"/></l>              <r>by<s n="pr"/></r></p></e>
 <e>       <p><l>dum<s n="pr"/></l>                     <r>during<s n="pr"/></r></p></e>
 <e r="RL"><p><l>dum<s n="pr"/></l>                     <r>throughout<s n="pr"/></r></p></e>
 <e>       <p><l>sed<s n="adv"/></l>                    <r>but<s n="adv"/></r></p></e>
@@ -1894,6 +1898,7 @@ BUT:
 <e>       <p><l>genepo<s n="n"/></l>                   <r>grandchild<s n="n"/></r></p></e>
 <e>       <p><l>geavo<s n="n"/></l>                    <r>grandparent<s n="n"/></r></p></e>
 <e>       <p><l>gepatro<s n="n"/></l>                  <r>parent<s n="n"/></r></p></e>
+<e r="LR"><p><l>gefianĉo<s n="n"/></l>                 <r>fiancé<s n="n"/></r></p></e>
 <e>       <p><l>handikapulo<s n="n"/></l>              <r>handicapped<b/>person<s n="n"/></r></p></e>
 <e>       <p><l>eksterterano<s n="n"/></l>             <r>alien<s n="n"/></r></p></e>
 
@@ -2461,7 +2466,7 @@ TODO??
 <e>       <p><l>grafo<s n="n"/></l>                    <r>earl<s n="n"/></r></p></e>
 <e>       <p><l>konstruisto<s n="n"/></l>              <r>builder<s n="n"/></r></p></e>
 <e r="LR"><p><l>pafanto<s n="n"/></l>                  <r>fencer<s n="n"/></r></p></e>
-<e r="RL"><p><l>fianĉo<s n="n"/></l>                   <r>fiancé<s n="n"/></r></p></e>
+<e       ><p><l>fianĉo<s n="n"/></l>                   <r>fiancé<s n="n"/></r></p></e>
 <e>       <p><l>funelo<s n="n"/></l>                   <r>funnel<s n="n"/></r></p></e>
 <e>       <p><l>geriatro<s n="n"/></l>                 <r>geriatrist<s n="n"/></r></p></e>
 <e>       <p><l>incitanto<s n="n"/></l>                <r>instigator<s n="n"/></r></p></e>
@@ -2971,7 +2976,7 @@ TODO??
 <e>       <p><l>influi<s n="vblex"/></l>               <r>affect<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>sentigi<s n="vblex"/></l>              <r>affect<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kortuŝi<s n="vblex"/></l>              <r>affect<s n="vblex"/></r></p></e>
-<e>       <p><l>amikeco<s n="n"/></l>                  <r>affection<s n="n"/></r></p></e>
+<e r="RL"><p><l>amikeco<s n="n"/></l>                  <r>affection<s n="n"/></r></p></e>
 <e r="LR"><p><l>korinklino<s n="n"/></l>               <r>affection<s n="n"/></r></p></e>
 <e>       <p><l>filiiĝi<s n="vblex"/></l>              <r>affiliate<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>asociiĝi<s n="vblex"/></l>             <r>affiliate<s n="vblex"/></r></p></e>
@@ -3227,7 +3232,7 @@ TODO??
 <e r="LR"><p><l>monkolekto<s n="n"/></l>               <r>appeal<s n="n"/></r></p></e>
 <e r="LR"><p><l>petadi<s n="vblex"/></l>               <r>appeal<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>apelacii<s n="vblex"/></l>             <r>appeal<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>aperi<s n="vblex"/></l>                <r>appear<s n="vblex"/></r></p></e>
+<e       ><p><l>aperi<s n="vblex"/></l>                <r>appear<s n="vblex"/></r></p></e>
 <e>       <p><l>apero<s n="n"/></l>                    <r>appearance<s n="n"/></r></p></e>
 <e r="LR"><p><l>vidiĝo<s n="n"/></l>                   <r>appearance<s n="n"/></r></p></e>
 <e r="LR"><p><l>prezentiĝo<s n="n"/></l>               <r>appearance<s n="n"/></r></p></e>
@@ -4047,7 +4052,6 @@ TODO??
 <e>       <p><l>briko<s n="n"/></l>                    <r>brick<s n="n"/></r></p></e>
 <e>       <p><l>morteristo<s n="n"/></l>               <r>bricklayer<s n="n"/></r></p></e>
 <e>       <p><l>edziĝonto<s n="n"/></l>                <r>bridegroom<s n="n"/></r></p></e>
-<e r="LR"><p><l>fianĉo<s n="n"/></l>                   <r>bridegroom<s n="n"/></r></p></e>
 <e r="LR"><p><l>novedzo<s n="n"/></l>                  <r>bridegroom<s n="n"/></r></p></e>
 <e>       <p><l>ponto<s n="n"/></l>                    <r>bridge<s n="n"/></r></p></e>
 <e r="LR"><p><l>ponteto<s n="n"/></l>                  <r>bridge<s n="n"/></r></p></e>
@@ -5384,7 +5388,7 @@ TODO??
 <e>       <p><l>kremo<s n="n"/></l>                    <r>cream<s n="n"/></r></p></e>
 <e r="LR"><p><l>pomado<s n="n"/></l>                   <r>cream<s n="n"/></r></p></e>
 <e>       <p><l>ĉifi<s n="vblex"/></l>                 <r>crease<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>naski<s n="vblex"/></l>                <r>create<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>naski<s n="vblex"/></l>                <r>bear<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>modeli<s n="vblex"/></l>               <r>create<s n="vblex"/></r></p></e>
 <e>       <p><l>krei<s n="vblex"/></l>                 <r>create<s n="vblex"/></r></p></e>
 <e>       <p><l>kreo<s n="n"/></l>                     <r>creation<s n="n"/></r></p></e>
@@ -6573,7 +6577,7 @@ TODO??
 <e r="LR"><p><l>ĉirkaŭbrakumo<s n="n"/></l>            <r>embrace<s n="n"/></r></p></e>
 <e r="LR"><p><l>enbrakigi<s n="vblex"/></l>            <r>embrace<s n="vblex"/></r></p></e>
 <e>       <p><l>embrio<s n="n"/></l>                   <r>embryo<s n="n"/></r></p></e>
-<e>       <p><l>aperi<s n="vblex"/></l>                <r>emerge<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>aperi<s n="vblex"/></l>                <r>emerge<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekaperi<s n="vblex"/></l>              <r>emerge<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>elveni<s n="vblex"/></l>               <r>emerge<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>elpaŝi<s n="vblex"/></l>               <r>emerge<s n="vblex"/></r></p></e>
@@ -7707,7 +7711,7 @@ TODO??
 <e r="RL"><p><l>fridujo<s n="n"/></l>                  <r>fridge<s n="n"/></r></p></e>
 <e       ><p><l>amiko<s n="n"/></l>                    <r>friend<s n="n"/></r></p></e>
 <e r="LR"><p><l>amikino<s n="n"/></l>                  <r>friend<s n="n"/></r></p></e>
-<e r="RL"><p><l>amikeco<s n="n"/></l>                  <r>friendship<s n="n"/></r></p></e>
+<e       ><p><l>amikeco<s n="n"/></l>                  <r>friendship<s n="n"/></r></p></e>
 <e r="LR"><p><l>amikiĝo<s n="n"/></l>                  <r>friendship<s n="n"/></r></p></e>
 <e r="RL"><p><l>timo<s n="n"/></l>                     <r>fright<s n="n"/></r></p></e>
 <e>       <p><l>timigi<s n="vblex"/></l>               <r>frighten<s n="vblex"/></r></p></e>
@@ -8568,7 +8572,7 @@ TODO??
 <e>       <p><l>importi<s n="vblex"/></l>              <r>import<s n="vblex"/></r></p></e>
 <e>       <p><l>importaĵo<s n="n"/></l>                <r>import<s n="n"/></r></p></e>
 <e r="RL"><p><l>graveco<s n="n"/></l>                  <r>importance<s n="n"/></r></p></e>
-<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>important<s n="adj"/></r></p></e>
+<e       ><p><l>grava<s n="adj"/></l>                  <r>important<s n="adj"/></r></p></e>
 <e>       <p><l>neeblaĵo<s n="n"/></l>                 <r>impossibility<s n="n"/></r></p></e>
 <e r="LR"><p><l>neebleco<s n="n"/></l>                 <r>impossibility<s n="n"/></r></p></e>
 <e>       <p><l>neebla<s n="adj"/></l>                 <r>impossible<s n="adj"/></r></p></e>
@@ -9727,7 +9731,7 @@ TODO??
 <e r="LR"><p><l>subtenado<s n="n"/></l>                <r>maintenance<s n="n"/></r></p></e>
 <e r="LR"><p><l>bontenado<s n="n"/></l>                <r>maintenance<s n="n"/></r></p></e>
 <e r="LR"><p><l>vivsubteno<s n="n"/></l>               <r>maintenance<s n="n"/></r></p></e>
-<e>       <p><l>grava<s n="adj"/></l>                  <r>major<s n="adj"/></r></p></e>
+<e r="RL"><p><l>grava<s n="adj"/></l>                  <r>major<s n="adj"/></r></p></e>
 <e>       <p><l>plimulto<s n="n"/></l>                 <r>majority<s n="n"/></r></p></e>
 <e r="LR"><p><l>plejparto<s n="n"/></l>                <r>majority<s n="n"/></r></p></e>
 <e r="LR"><p><l>majoritato<s n="n"/></l>               <r>majority<s n="n"/></r></p></e>
@@ -24021,6 +24025,7 @@ TODO??
 <e r="RL"><p><l>fridigi<s n="vblex"/></l>              <r>refrigerate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>rifuĝo<s n="n"/></l>                   <r>refuge<s n="n"/></r></p></e>
 <e>       <p><l>rifuĝinto<s n="n"/></l>                <r>refugee<s n="n"/></r></p></e>
+<e r="LR"><p><l>forpelito<s n="n"/></l>                <r>refugee<s n="n"/></r></p></e>
 <e>       <p><l>refuto<s n="n"/></l>                   <r>refutation<s n="n"/></r></p></e>
 <e r="LR"><p><l>reatingi<s n="vblex"/></l>             <r>regain<s n="vblex"/></r></p></e>
 <e>       <p><l>reakiri<s n="vblex"/></l>              <r>regain<s n="vblex"/></r></p></e>
@@ -30091,7 +30096,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>infanedukado<s n="n"/></l>             <r>parenting<s n="n"/></r></p></e>
 <e>       <p><l>pario<s n="n"/></l>                    <r>pariah<s n="n"/></r></p></e>
 <e r="LR"><p><l>elpelito<s n="n"/></l>                 <r>pariah<s n="n"/></r></p></e>
-<e r="LR"><p><l>forpelito<s n="n"/></l>                <r>pariah<s n="n"/></r></p></e>
 <e r="LR"><p><l>hariĝano<s n="n"/></l>                 <r>pariah<s n="n"/></r></p></e>
 <e>       <p><l>pariza<s n="adj"/></l>                 <r>parisian<s n="adj"/></r></p></e>
 <e r="RL"><p><l>ĵargono<s n="n"/></l>                  <r>parlance<s n="n"/></r></p></e>

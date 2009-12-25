@@ -554,18 +554,18 @@
   <e>       <p><l>is</l>        <r>i<s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>os</l>        <r>i<s n="vblex"/><s n="fti"/></r></p></e>
   <e>       <p><l>us</l>        <r>i<s n="vblex"/><s n="cni"/></r></p></e>
-<!--
-<e r="RL">                    <p><l>us</l>                  <r>i<s n="vblex"/><s n="fts"/></r></p></e>
--->
   <e r="RL"><p><l>ita</l>       <r>i<s n="vblex"/><s n="pp"/></r></p></e>
   <e r="LR"><p><l>ita</l>       <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>itaj</l>      <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>itan</l>      <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
   <e r="LR"><p><l>itajn</l>     <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>itaj</l>      <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>ata</l>       <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>ataj</l>      <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>atan</l>      <r>i<s n="vblex"/><s n="pp"/><s n="sg"/><s n="acc"/></r></p></e>
   <e r="LR"><p><l>atajn</l>     <r>i<s n="vblex"/><s n="pp"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>ite</l>       <r>i<s n="vblex"/><s n="pp"/><s n="sp"/><s n="nom"/></r></p></e>
+  <e r="LR"><p><l>ate</l>       <r>i<s n="vblex"/><s n="pp"/><s n="sp"/><s n="nom"/></r></p></e>
 <!--
 <e>                           <p><l>onta</l>                <r>i<s n="vblex"/><s n="pp2"/><s n="sg"/></r></p></e>
 <e>                           <p><l>ontaj</l>               <r>i<s n="vblex"/><s n="pp2"/><s n="pl"/></r></p></e>
@@ -579,8 +579,17 @@
 <e>                           <p><l>inta</l>                <r>i<s n="vblex"/><s n="pp3"/><s n="sg"/></r></p></e>
 <e>                           <p><l>intaj</l>               <r>i<s n="vblex"/><s n="pp3"/><s n="pl"/></r></p></e>
 -->
-  <e r="LR"><p><l>ante</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="LR"><p><l>antaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e r="LR"><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>antajn</l>    <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>ante</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
+  <e r="LR"><p><l>inta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="LR"><p><l>intaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e r="LR"><p><l>intan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>intajn</l>    <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e r="LR"><p><l>inte</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
   <e>       <p><l>u</l>         <r>i<s n="vblex"/><s n="imp"/></r></p></e>
 </pardef>
 
@@ -1072,6 +1081,7 @@
 <e lm="ĉu">              <par n="ĉ"/><i>u</i><par n="kial__adv"/></e>
 
 <e lm="danke al">        <i>danke<b/>al</i><par n="al__pr"/></e>
+<e lm="fare de">         <i>fare<b/>de</i><par n="al__pr"/></e>
 <e lm="de">              <i>de</i><par n="al__pr"/></e>
 <e lm="el">              <i>el</i><par n="al__pr"/></e>
 
@@ -1462,7 +1472,7 @@
 <e lm="Sirio">           <i>Siri</i><par n="Barcelon/o__np"/></e>
 <e lm="Skotlando">       <i>Skotland</i><par n="Barcelon/o__np"/></e>
 <e lm="Ĉeĥio">           <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>i</i><par n="Barcelon/o__np"/></e>
-<e lm="Ĉeĥoslavakio">    <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>oslavaki</i><par n="Barcelon/o__np"/></e>
+<e lm="Ĉeĥoslovakio">    <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>oslovaki</i><par n="Barcelon/o__np"/></e>
 <e lm="Slovakio">        <i>Slovaki</i><par n="Barcelon/o__np"/></e>
 <e lm="Slovenio">        <i>Sloveni</i><par n="Barcelon/o__np"/></e>
 <e lm="Stokholmo">       <i>Stokholm</i><par n="Barcelon/o__np"/></e>
@@ -3527,6 +3537,7 @@
 <e lm="geometrio">       <i>geometri</i><par n="o__n"/></e>
 <e lm="geometro">        <i>geometr</i><par n="o__n"/></e>
 <e lm="gepatro">         <i>gepatr</i><par n="o__n"/></e>
+<e lm="gefianĉo">        <i>gefianĉ</i><par n="o__n"/></e>
 <e lm="genepo">          <i>genep</i><par n="o__n"/></e>
 <e lm="geavo">           <i>geav</i><par n="o__n"/></e>
 <e lm="germana">         <i>german</i><par n="a__adj"/></e>

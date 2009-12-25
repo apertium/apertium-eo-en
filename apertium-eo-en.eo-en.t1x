@@ -28,16 +28,30 @@
 
   <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
+     <cat-item tags="vaux.*"/>
+  </def-cat>
+  <def-cat n="c_vaux">
+     <cat-item tags="vaux.*"/>
   </def-cat>
   <def-cat n="c_vbser">
      <cat-item tags="vbser.*"/>
+  </def-cat>
+  <def-cat n="c_vbseraux">
+     <cat-item tags="vbser.*"/>
+     <cat-item tags="vaux.*"/>
   </def-cat>
   <def-cat n="c_vb_fti">
      <cat-item tags="vblex.fti"/>
      <cat-item tags="vbser.fti"/>
   </def-cat>
+  <def-cat n="c_vbser_fti">
+     <cat-item tags="vbser.fti"/>
+  </def-cat>
   <def-cat n="c_vb_cni">
      <cat-item tags="vblex.cni"/>
+     <cat-item tags="vbser.cni"/>
+  </def-cat>
+  <def-cat n="c_vbser_cni">
      <cat-item tags="vbser.cni"/>
   </def-cat>
   <def-cat n="c_vb_pp">
@@ -55,10 +69,22 @@
      <cat-item tags="vbser.pp3.*"/>
 <!--     <cat-item tags="vaux.pp3.*"/> -->
   </def-cat>
+  <def-cat n="c_vb_inf">
+     <cat-item tags="vblex.inf"/>
+     <cat-item tags="vbser.inf"/>
+  </def-cat>
+
+
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
   
+  <def-cat n="c_adj_pp">
+     <cat-item tags="adj.*"/>
+     <cat-item tags="vblex.pp.*"/>
+     <cat-item tags="vblex.ger.*"/>
+  </def-cat>
+
   <def-cat n="c_pli_plej">
      <cat-item lemma="pli" tags="preadv"/>
      <cat-item lemma="plej" tags="preadv"/>
@@ -214,12 +240,15 @@
      <attr-item tags="adj.sint"/>
      <attr-item tags="adj.sint.comp"/>
      <attr-item tags="adj.sint.sup"/>
+     <attr-item tags="vblex.pp"/>
+     <attr-item tags="vblex.ger"/>
   </def-attr>
 
   <def-attr n="a_vrb">
      <attr-item tags="vblex"/>
      <attr-item tags="vblex.sep"/>
      <attr-item tags="vbser"/>
+     <attr-item tags="vaux"/>
   </def-attr>
 
   <def-attr n="a_vrb2">
@@ -535,6 +564,68 @@
       <list-item v="young"/>
     </def-list>
 
+    <def-list n="lingvoj" c="
+		Lingvoj, por ne aldoni la artikolon antaŭ ili
+		en la angla">
+      <list-item v="angla"/>
+      <list-item v="germana"/>
+      <list-item v="dana"/>
+      <list-item v="norvega"/>
+      <list-item v="sveda"/>
+      <list-item v="islanda"/>
+      <list-item v="feroa"/>
+      <list-item v="nederlanda"/>
+      <list-item v="portugala"/>
+      <list-item v="hispana"/>
+      <list-item v="kataluna"/>
+      <list-item v="okcitana"/>
+      <list-item v="franca"/>
+      <list-item v="arpitana"/>
+      <list-item v="itala"/>
+      <list-item v="rumana"/>
+      <list-item v="rusa"/>
+      <list-item v="belorusa"/>
+      <list-item v="ukraina"/>
+      <list-item v="pola"/>
+      <list-item v="ĉeĥa"/>
+      <list-item v="slovaka"/>
+      <list-item v="slovena"/>
+      <list-item v="serbokroata"/>
+      <list-item v="serba"/>
+      <list-item v="kroata"/>
+      <list-item v="bosna"/>
+      <list-item v="makedona"/>
+      <list-item v="bulgara"/>
+      <list-item v="albana"/>
+      <list-item v="greka"/>
+      <list-item v="litova"/>
+      <list-item v="latva"/>
+      <list-item v="bretona"/>
+      <list-item v="kimra"/>
+      <list-item v="irlanda"/>
+      <list-item v="gaela"/>
+      <list-item v="hindia"/>
+      <list-item v="bengala"/>
+      <list-item v="urdua"/>
+      <list-item v="eŭska"/>
+      <list-item v="finna"/>
+      <list-item v="hungara"/>
+      <list-item v="estona"/>
+      <list-item v="araba"/>
+      <list-item v="malta"/>
+      <list-item v="ĉina"/>
+      <list-item v="tajvana"/>
+      <list-item v="japana"/>
+      <list-item v="vjetnama"/>
+      <list-item v="telugua"/>
+      <list-item v="tamila"/>
+      <list-item v="indonezia"/>
+      <list-item v="malaja"/>
+      <list-item v="tagala"/>
+      <list-item v="filipina"/>
+      <list-item v="svahila"/>
+    </def-list>
+
   </section-def-lists>
 
 
@@ -801,7 +892,10 @@
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
+	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="si"/></equal>
+            </or>
           </test>
        <out> <!-- persona pronomo: estas persono kaj genro -->
          <chunk name="pron" case="caseFirstWord">
@@ -854,7 +948,10 @@
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
+            </or>
           </test>
           <choose>
             <when>
@@ -1055,9 +1152,30 @@
   <rule comment="REGULO: DET ADJ">
      <pattern>
        <pattern-item n="c_det"/>
-       <pattern-item n="c_adj"/>
+       <pattern-item n="c_adj_pp"/>
      </pattern>
      <action>
+       <choose>
+         <when>
+         <test>
+           <in caseless="yes"><clip pos="2" side="sl" part="lemh"/><list n="lingvoj"/></in>
+         </test>
+       <out>
+         <chunk name="adj" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+         </when>
+       <otherwise>
        <out>
          <chunk name="det_adj" case="caseFirstWord">
            <tags>
@@ -1079,6 +1197,8 @@
            </lu>
          </chunk>
        </out>
+       </otherwise>
+       </choose>
      </action>
   </rule>
 
@@ -1116,7 +1236,7 @@
   <rule comment="REGULO: DET ADJ NOM">
      <pattern>
        <pattern-item n="c_det"/>
-       <pattern-item n="c_adj"/>
+       <pattern-item n="c_adj_pp"/>
        <pattern-item n="c_nom"/>
      </pattern>
      <action>
@@ -1154,7 +1274,7 @@
 
 <!-- SV -->
 
-  <rule>
+  <rule comment="REGULO: VERBO EN OS-TENSO">
      <pattern>
        <pattern-item n="c_vb_fti"/>
      </pattern>
@@ -1184,7 +1304,7 @@
      </action>
   </rule>
 
-  <rule>
+  <rule comment="REGULO: VERBO EN US-TENSO">
      <pattern>
        <pattern-item n="c_vb_cni"/>
      </pattern>
@@ -1216,7 +1336,7 @@
 
 
 
-  <rule>
+  <rule comment="REGULO: VERBO EN ONT-FORMO">
      <pattern>
        <pattern-item n="c_vb_pp2"/>
      </pattern>
@@ -1248,7 +1368,7 @@
 
 
 
-  <rule>
+  <rule comment="REGULO: VERBO EN INT-FORMO">
      <pattern>
        <pattern-item n="c_vb_pp3"/>
      </pattern>
@@ -1277,6 +1397,7 @@
 
 
 
+<!-- ripetita regulo
   <rule>
      <pattern>
        <pattern-item n="c_vb_fti"/>
@@ -1306,14 +1427,15 @@
         </out>
      </action>
   </rule>
+-->
 
-  <rule>
+  <rule comment="REGULO: ESTOS -INTA">
      <pattern>
-       <pattern-item n="c_vb_fti"/>
+       <pattern-item n="c_vbser_fti"/>
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
-       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
        <out>
          <chunk name="vbfti_vbpp3" case="caseFirstWord">
            <tags>
@@ -1341,13 +1463,13 @@
   </rule>
 
 
-  <rule>
+  <rule comment="REGULO: ESTUS -INTA">
      <pattern>
-       <pattern-item n="c_vb_cni"/>
+       <pattern-item n="c_vbser_cni"/>
        <pattern-item n="c_vb_pp3"/>
      </pattern>
      <action>
-       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
        <out>
          <chunk name="vbcni_vbpp3" case="caseFirstWord">
            <tags>
@@ -1375,7 +1497,8 @@
   </rule>
 
 
-  <rule>
+<!-- Tiu ĉi regulo malĝustas, ĉar nenio certigas, ke ĝi ekrulos nur se la du antaŭaj ne estas trafitaj -->
+  <rule comment="REGULO: ESTI -INTA">
      <pattern>
        <pattern-item n="c_vbser"/>
        <pattern-item n="c_vb_pp3"/>
@@ -1488,7 +1611,7 @@
        <out>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
               <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
@@ -1516,6 +1639,66 @@
      <action>
        <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+	    <lu>
+	      <lit v="without"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+	    <b pos="1"/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <otherwise>
        <out>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
@@ -1546,9 +1729,221 @@
             </lu>
           </chunk>
         </out>
+        </otherwise>
+      </choose>
      </action>
   </rule>
 
+
+  <rule comment="REGULO: VBLEX INF">
+     <pattern>
+       <pattern-item n="c_vblex"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: NE VBLEX INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vblex"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+	    <lu>
+	      <lit v="without"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+	    <b pos="1"/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <otherwise>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+	      <lit v="do"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
+
+<!-- ALIAJ REGULOJ -->
 
   <rule comment="REGULO: PP de">
      <pattern>
@@ -1632,7 +2027,10 @@
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
+	      <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
+            </or>
           </test>
           <choose>
             <when>
@@ -1726,7 +2124,10 @@
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
+            </or>
           </test>
           <choose>
             <when>
