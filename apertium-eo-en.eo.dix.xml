@@ -744,7 +744,7 @@
 
 <e lm="povi">            <i>pov</i><par n="pov/i__vaux"/></e>
 <e lm="devi">            <i>dev</i><par n="pov/i__vaux"/></e>
-<e r="LR" lm="voli">     <i>vol</i><par n="pov/i__vaux"/></e>
+<e lm="voli">     <i>vol</i><par n="pov/i__vaux"/></e>
 <e r="RL" lm="ebli">     <i>ebl</i><par n="pov/i__vaux"/></e>
 
 <!-- ne enmetu helpverbon voli por will - will estas nur futuro kaj oni zorgu pri tio dum transfero
@@ -2966,6 +2966,7 @@
 <e lm="eksciti">         <i>ekscit</i><par n="i__vblex"/></e>
 <e lm="ekscito">         <i>ekscit</i><par n="o__n"/></e>
 <e lm="eksedziĝi">       <i>eksedzi</i><par n="ĝ"/><par n="i__vblex"/></e>
+<e lm="eksedziĝo">       <i>eksedzi</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="ekskludi">        <i>eksklud</i><par n="i__vblex"/></e>
 <e lm="ekskluziva">      <i>ekskluziv</i><par n="a__adj"/></e>
 <e lm="ekskluziveco">    <i>ekskluzivec</i><par n="o__n"/></e>
@@ -4746,6 +4747,7 @@
 <e lm="malkonfirmi">     <i>malkonfirm</i><par n="i__vblex"/></e>
 <e lm="malkonkordo">     <i>malkonkord</i><par n="o__n"/></e>
 <e lm="malkontenta">     <i>malkontent</i><par n="a__adj"/></e>
+<e lm="nekontenta">      <i>nekontent</i><par n="a__adj"/></e>
 <e lm="malkontinua">     <i>malkontinu</i><par n="a__adj"/></e>
 <e lm="malkovro">        <i>malkovr</i><par n="o__n"/></e>
 <e lm="malkreski">       <i>malkresk</i><par n="i__vblex"/></e>
@@ -13460,6 +13462,9 @@
 <e lm="arkana">          <i>ar</i><par n="k_ĥ"/><i>an</i><par n="a__adj"/></e>
 <e lm="unualoke">        <i>unualok</i><par n="e__adv"/></e>
 <e lm="esperantisto">    <i>esperantist</i><par n="ino__n"/></e>
+<e lm="e-isto">          <i>e-ist</i><par n="ino__n"/></e>
+<e lm="esperantista">    <i>esperantist</i><par n="a__adj"/></e>
+<e lm="e-ista">          <i>e-ist</i><par n="a__adj"/></e>
 <e lm="samideano">       <i>samidean</i><par n="ino__n"/></e>
 <e lm="establiĝi">       <i>establi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="establado">       <i>establad</i><par n="o__n"/></e>
@@ -22628,6 +22633,7 @@
 <e lm="abortigo">        <i>abortig</i><par n="o__n"/></e>
 <e lm="palestinano">     <i>palestinan</i><par n="ino__n"/></e>
 <e lm="Esperanto">       <i>Esperant</i><par n="o__n"/></e>
+<e lm="E-o">             <i>E-</i><par n="o__n"/></e>
 <e r="LR" lm="Esperanto"><p><l>esperant</l>  <r>Esperant</r></p><i></i><par n="o__n"/></e>
 
 <!-- Aldonoj Hèctor 2009/02/10 -->

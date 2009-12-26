@@ -624,7 +624,12 @@
       <list-item v="makedona"/>
       <list-item v="bulgara"/>
       <list-item v="albana"/>
+      <list-item v="armena"/>
       <list-item v="greka"/>
+      <list-item v="persa"/>
+      <list-item v="taĝika"/>
+      <list-item v="kurda"/>
+      <list-item v="paŝtua"/>
       <list-item v="litova"/>
       <list-item v="latva"/>
       <list-item v="bretona"/>
@@ -634,15 +639,23 @@
       <list-item v="hindia"/>
       <list-item v="bengala"/>
       <list-item v="urdua"/>
+      <list-item v="nepala"/>
       <list-item v="eŭska"/>
       <list-item v="finna"/>
       <list-item v="hungara"/>
       <list-item v="estona"/>
+      <list-item v="turka"/>
+      <list-item v="azerbajĝana"/>
+      <list-item v="uzbeka"/>
+      <list-item v="kazaĥa"/>
+      <list-item v="kirgiza"/>
+      <list-item v="ujgura"/>
       <list-item v="araba"/>
       <list-item v="malta"/>
       <list-item v="ĉina"/>
       <list-item v="tajvana"/>
       <list-item v="japana"/>
+      <list-item v="korea"/>
       <list-item v="vjetnama"/>
       <list-item v="telugua"/>
       <list-item v="tamila"/>
@@ -651,6 +664,15 @@
       <list-item v="tagala"/>
       <list-item v="filipina"/>
       <list-item v="svahila"/>
+      <list-item v="volofa"/>
+      <list-item v="fula"/>
+      <list-item v="joruba"/>
+      <list-item v="igba"/>
+      <list-item v="mandinka"/>
+      <list-item v="lingala"/>
+      <list-item v="konga"/>
+      <list-item v="ksosa"/>
+      <list-item v="zulua"/>
     </def-list>
 
   </section-def-lists>
@@ -2063,6 +2085,235 @@
      </action>
   </rule>
 
+  <rule comment="REGULO: VBLEXsimpla ADV INF">
+     <pattern>
+       <pattern-item n="c_vblex_simpla"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: NE VBLEXsimpla ADV INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vblex_simpla"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+      <choose>
+        <when>
+          <test>
+	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+	    <lu>
+	      <lit v="without"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+	    <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lemh"/>
+              <clip pos="4" side="tl" part="a_vrb"/>
+              <clip pos="4" side="tl" part="a_tns"/>
+              <clip pos="4" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <when>
+          <test>
+	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+          </test>
+       <out>
+         <chunk name="vblex" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+	    <b pos="1"/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	    <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+	    <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lemh"/>
+              <clip pos="4" side="tl" part="a_vrb"/>
+              <clip pos="4" side="tl" part="a_tns"/>
+              <clip pos="4" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+
+        <otherwise>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </tags>
+            <lu>
+	      <lit v="do"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	    <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+	    <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lemh"/>
+              <clip pos="4" side="tl" part="a_vrb"/>
+              <clip pos="4" side="tl" part="a_tns"/>
+              <clip pos="4" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
   <rule comment="REGULO: VBLEX-os INF">
      <pattern>
        <pattern-item n="c_vb_fti"/>
@@ -2236,6 +2487,206 @@
               <clip pos="3" side="tl" part="a_vrb"/>
               <clip pos="3" side="tl" part="a_tns"/>
               <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: VBLEX-os ADV INF">
+     <pattern>
+       <pattern-item n="c_vb_fti"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: VBLEX-us ADV INF">
+     <pattern>
+       <pattern-item n="c_vb_cni"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <clip pos="3" side="tl" part="a_tns"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: NE VBLEX-os ADV INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_fti"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lemh"/>
+              <clip pos="4" side="tl" part="a_vrb"/>
+              <clip pos="4" side="tl" part="a_tns"/>
+              <clip pos="4" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: NE VBLEX-us ADV INF">
+     <pattern>
+       <pattern-item n="c_ne"/>
+       <pattern-item n="c_vb_cni"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_vb_inf"/>
+     </pattern>
+     <action>
+       <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <out>
+         <chunk name="vblex_inf" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+            </lu>
+	    <b/>
+	    <lu>
+	      <lit v="not"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+	    <lu>
+	      <lit v="to"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lemh"/>
+              <clip pos="4" side="tl" part="a_vrb"/>
+              <clip pos="4" side="tl" part="a_tns"/>
+              <clip pos="4" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
