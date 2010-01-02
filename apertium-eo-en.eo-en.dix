@@ -290,6 +290,18 @@
 <e r="RL"><p><l>sabate<s n="adv"/></l>                 <r>on<b/>Saturdays<s n="adv"/></r></p></e>
 <e r="RL"><p><l>dimanĉe<s n="adv"/></l>                <r>on<b/>Sundays<s n="adv"/></r></p></e>
 
+<e r="LR"><p><l>januare<s n="adv"/></l>                <r>in<b/>January<s n="adv"/></r></p></e>
+<e r="LR"><p><l>februare<s n="adv"/></l>               <r>in<b/>February<s n="adv"/></r></p></e>
+<e r="LR"><p><l>marte<s n="adv"/></l>                  <r>in<b/>March<s n="adv"/></r></p></e>
+<e r="LR"><p><l>aprile<s n="adv"/></l>                 <r>in<b/>April<s n="adv"/></r></p></e>
+<e r="LR"><p><l>maje<s n="adv"/></l>                   <r>in<b/>May<s n="adv"/></r></p></e>
+<e r="LR"><p><l>junie<s n="adv"/></l>                  <r>in<b/>June<s n="adv"/></r></p></e>
+<e r="LR"><p><l>julie<s n="adv"/></l>                  <r>in<b/>July<s n="adv"/></r></p></e>
+<e r="LR"><p><l>aŭguste<s n="adv"/></l>                <r>in<b/>August<s n="adv"/></r></p></e>
+<e r="LR"><p><l>septembre<s n="adv"/></l>              <r>in<b/>September<s n="adv"/></r></p></e>
+<e r="LR"><p><l>oktobre<s n="adv"/></l>                <r>in<b/>October<s n="adv"/></r></p></e>
+<e r="LR"><p><l>novembre<s n="adv"/></l>               <r>in<b/>November<s n="adv"/></r></p></e>
+<e r="LR"><p><l>decembre<s n="adv"/></l>               <r>in<b/>December<s n="adv"/></r></p></e>
 
 <e>       <p><l>ekzemple<s n="cnjadv"/></l>            <r>for<b/>instance<s n="cnjadv"/></r></p></e>
 
@@ -1241,10 +1253,11 @@ BUT:
 <e>       <p><l>Moskvo<s n="np"/><s n="top"/></l>      <r>Moscow<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Navaro<s n="np"/><s n="top"/></l>      <r>Navarra<s n="np"/><s n="top"/></r></p></e>
 <e r="RL"><p><l>Nederlando<s n="np"/><s n="top"/></l>  <r>Holland<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Nederlando<s n="np"/><s n="top"/></l>  <r>the<b/>Nederlands<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Nederlando<s n="np"/><s n="top"/></l>  <r>the<b/>Netherlands<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nepalo<s n="np"/><s n="top"/></l>      <r>Nepal<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Niĝerio<s n="np"/><s n="top"/></l>     <r>Nigeria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nikaragvo<s n="np"/><s n="top"/></l>   <r>Nicaragua<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Normandio<s n="np"/><s n="top"/></l>   <r>Normandy<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Norvegio<s n="np"/><s n="top"/></l>    <r>Norway<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nov-Jorko<s n="np"/><s n="top"/></l>   <r>New<b/>York<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nov-Zelando<s n="np"/><s n="top"/></l> <r>New<b/>Zealand<s n="np"/><s n="top"/></r></p></e>
@@ -1426,14 +1439,20 @@ BUT:
 <e>       <p><l>ĉina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ĥina<s n="adj"/></l>                   <r>Chinese<s n="adj"/></r></p></e>
 <e>       <p><l>nederlanda<s n="adj"/></l>             <r>Dutch<s n="adj"/></r></p></e>
-<e>       <p><l>nederlandano<s n="n"/></l>             <r>Dutch<s n="n"/></r></p></e>
+<e>       <p><l>nederlandano<s n="n"/><s n="m"/></l>   <r>Dutch<s n="n"/></r></p></e>
+<e>       <p><l>nederlandano<s n="n"/><s n="f"/></l>   <r>Dutchwoman<s n="n"/></r></p></e>
 <e>       <p><l>dana<s n="adj"/></l>                   <r>Danish<s n="adj"/></r></p></e>
-<e>       <p><l>dano<s n="n"/></l>                     <r>Danish<s n="n"/></r></p></e>
+<e>       <p><l>dano<s n="n"/></l>                     <r>Dane<s n="n"/></r></p></e>
 <e>       <p><l>egipta<s n="adj"/></l>                 <r>Egyptian<s n="adj"/></r></p></e>
+<e>       <p><l>egipto<s n="n"/></l>                   <r>Egyptian<s n="n"/></r></p></e>
+<e r="LR"><p><l>egiptano<s n="n"/></l>                 <r>Egyptian<s n="n"/></r></p></e>
 <e>       <p><l>eŭropa<s n="adj"/></l>                 <r>European<s n="adj"/></r></p></e>
 <e>       <p><l>finna<s n="adj"/></l>                  <r>Finnish<s n="adj"/></r></p></e>
 <e>       <p><l>finno<s n="n"/></l>                    <r>Finnish<s n="n"/></r></p></e>
 <e>       <p><l>flandra<s n="adj"/></l>                <r>Flemish<s n="adj"/></r></p></e>
+<e r="RL"><p><l>flandro<s n="n"/></l>                  <r>Flemish<s n="n"/></r></p></e>
+<e>       <p><l>flandro<s n="n"/></l>                  <r>Fleming<s n="n"/></r></p></e>
+<e>       <p><l>Flandrio<s n="np"/><s n="top"/></l>    <r>Flanders<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>la<b/>afrikansa<b/>lingvo<s n="n"/></l><r>Afrikaans<s n="n"/></r></p></e>
 <e>       <p><l>afrikansa<s n="adj"/></l>              <r>Afrikaans<s n="adj"/></r></p></e>
 <e r="RL"><p><l>siria<s n="adj"/></l>                  <r>Syriac<s n="adj"/></r></p></e>
@@ -1453,7 +1472,8 @@ BUT:
 <e>       <p><l>gotika<s n="adj"/></l>                 <r>Gothic<s n="adj"/></r></p></e>
 <e r="LR"><p><l>hispania<s n="adj"/></l>               <r>Spanish<s n="adj"/></r></p></e>
 <e>       <p><l>hispana<s n="adj"/></l>                <r>Spanish<s n="adj"/></r></p></e>
-<e>       <p><l>hispano<s n="n"/></l>                  <r>Spanish<s n="n"/></r></p></e>
+<e r="RL"><p><l>hispano<s n="n"/></l>                  <r>Spanish<s n="n"/></r></p></e>
+<e>       <p><l>hispano<s n="n"/></l>                  <r>Spaniard<s n="n"/></r></p></e>
 <e>       <p><l>hungara<s n="adj"/></l>                <r>Hungarian<s n="adj"/></r></p></e>
 <e>       <p><l>hungaro<s n="n"/></l>                  <r>Hungarian<s n="n"/></r></p></e>
 <e>       <p><l>ibera<s n="adj"/></l>                  <r>Iberian<s n="adj"/></r></p></e>
@@ -1471,8 +1491,11 @@ BUT:
 <e>       <p><l>latina<s n="adj"/></l>                 <r>Latin<s n="adj"/></r></p></e>
 <e>       <p><l>maroka<s n="adj"/></l>                 <r>Moroccan<s n="adj"/></r></p></e>
 <e>       <p><l>norvega<s n="adj"/></l>                <r>Norwegian<s n="adj"/></r></p></e>
+<e>       <p><l>normanda<s n="adj"/></l>               <r>Normand<s n="adj"/></r></p></e>
+<e r="LR"><p><l>normana<s n="adj"/></l>                <r>Normand<s n="adj"/></r></p></e>
 <e>       <p><l>niĝeria<s n="adj"/></l>                <r>Nigerian<s n="adj"/></r></p></e>
 <e>       <p><l>portugala<s n="adj"/></l>              <r>Portuguese<s n="adj"/></r></p></e>
+<e>       <p><l>portugalo<s n="n"/></l>                <r>Portuguese<s n="n"/></r></p></e>
 <e>       <p><l>protestanta<s n="adj"/></l>            <r>Protestant<s n="adj"/></r></p></e>
 <e r="RL"><p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>skota<s n="adj"/></l>                  <r>Scottish<s n="adj"/></r></p></e>
@@ -1639,12 +1662,16 @@ BUT:
 <e>       <p><l>aŭstro<s n="n"/></l>                   <r>Austrian<s n="n"/></r></p></e>
 <e>       <p><l>ĉino<s n="n"/></l>                     <r>Chinese<s n="n"/></r></p></e>
 <e>       <p><l>anglo<s n="n"/></l>                    <r>English<s n="n"/></r></p></e>
-<e>       <p><l>franco<s n="n"/></l>                   <r>French<s n="n"/></r></p></e>
+<e>       <p><l>anglo<s n="n"/><s n="f"/></l>          <r>Englishwoman<s n="n"/></r></p></e>
+<e>       <p><l>franco<s n="n"/><s n="m"/></l>         <r>French<s n="n"/></r></p></e>
+<e>       <p><l>franco<s n="n"/><s n="f"/></l>         <r>Frenchwoman<s n="n"/></r></p></e>
 <e>       <p><l>germano<s n="n"/></l>                  <r>German<s n="n"/></r></p></e>
 <e>       <p><l>greko<s n="n"/></l>                    <r>Greek<s n="n"/></r></p></e>
 <e>       <p><l>italo<s n="n"/></l>                    <r>Italian<s n="n"/></r></p></e>
 <e>       <p><l>japano<s n="n"/></l>                   <r>Japanese<s n="n"/></r></p></e>
 <e>       <p><l>norvego<s n="n"/></l>                  <r>Norwegian<s n="n"/></r></p></e>
+<e>       <p><l>normando<s n="n"/></l>                 <r>Normand<s n="n"/></r></p></e>
+<e r="LR"><p><l>normano<s n="n"/></l>                  <r>Normand<s n="n"/></r></p></e>
 <e>       <p><l>ruso<s n="n"/></l>                     <r>Russian<s n="n"/></r></p></e>
 <e>       <p><l>sviso<s n="n"/></l>                    <r>Swiss<s n="n"/></r></p></e>
 
@@ -2128,6 +2155,7 @@ TODO??
 <e>       <p><l>kien<s n="adv"/></l>                   <r>to<b/>where<s n="adv"/></r></p></e>
 <!-- c="MG: crec que aquesta hauria de ser la traducció ca-en, i les altres dues opciones (non/not) s'haurien de generar al trànsfer segons si és abans d'un nom (non) o després abans d'un verb (not)" -->
 <e>       <p><l>ne<s n="adv"/></l>                     <r>no<s n="adv"/></r></p></e>
+<e>       <p><l>ne-<s n="adv"/></l>                    <r>non-<s n="adv"/></r></p></e>
 <e r="RL" c="MG: davant d'un nom (la no col·laboració : non-collaboration)"><p><l>ne<s n="adv"/></l><r>non<s n="adv"/></r></p></e>
 <e r="RL" c="MG: Després d'un verb (lèxic, modal, do, have)"><p><l>ne<s n="adv"/></l><r>not<s n="adv"/></r></p></e>
 <e>       <p><l>neniam<s n="adv"/></l>                 <r>never<s n="adv"/></r></p></e>

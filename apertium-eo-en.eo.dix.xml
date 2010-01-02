@@ -1450,6 +1450,7 @@
 <e lm="Nepalo">          <i>Nepal</i><par n="Barcelon/o__np"/></e>
 <e lm="Niĝerio">         <i>Ni</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
 <e lm="Nikaragvo">       <i>Nikaragv</i><par n="Barcelon/o__np"/></e>
+<e lm="Normandio">       <i>Normandi</i><par n="Afgan/io__np"/></e>
 <e lm="Norvegio">        <i>Norveg</i><par n="Afgan/io__np"/></e>
 <e lm="Nov-Jorko">       <i>Nov-Jork</i><par n="Barcelon/o__np"/></e>
 <e lm="Nov-Zelando">     <i>Nov-Zeland</i><par n="Barcelon/o__np"/></e>
@@ -2944,6 +2945,8 @@
 <e lm="egaleco">         <i>egalec</i><par n="o__n"/></e>
 <e lm="ege">             <i>eg</i><par n="e__adv"/></e>
 <e lm="egipta">          <i>egipt</i><par n="a__adj"/></e>
+<e lm="egipto">          <i>egipt</i><par n="ino__n"/></e>
+<e r="LR" lm="egiptano"> <i>egiptan</i><par n="ino__n"/></e>
 <e lm="eglefino">        <i>eglefin</i><par n="o__n"/></e>
 <e lm="eĝo">             <i>e</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="egoismo">         <i>egoism</i><par n="o__n"/></e>
@@ -3355,6 +3358,8 @@
 <e lm="flagri">          <i>flagr</i><par n="i__vblex"/></e>
 <e lm="flamo">           <i>flam</i><par n="o__n"/></e>
 <e lm="flandra">         <i>flandr</i><par n="a__adj"/></e>
+<e lm="flandro">         <i>flandr</i><par n="ino__n"/></e>
+<e lm="Flandrio">        <i>Flandr</i><par n="Afgan/io__np"/></e>
 <e lm="afrikansa">       <i>afrikans</i><par n="a__adj"/></e>
 <e lm="aramea">          <i>arame</i><par n="a__adj"/></e>
 <e lm="arameo">          <i>arame</i><par n="ino__n"/></e>
@@ -5150,6 +5155,7 @@
 <e lm="neĝo">            <i>ne</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="nei">             <i>ne</i><par n="i__vblex"/></e>
 <e lm="ne">              <i>n</i><par n="e__adv"/></e>
+<e lm="ne-">             <i>ne-</i><par n="jam__adv"/></e>
 <e lm="neinversigebla">  <i>neinversigebl</i><par n="a__adj"/></e>
 <e lm="nekalkulebla">    <i>nekalkulebl</i><par n="a__adj"/></e>
 <e lm="nekapabla">       <i>nekapabl</i><par n="a__adj"/></e>
@@ -5229,7 +5235,12 @@
 <e lm="normaleco">       <i>normalec</i><par n="o__n"/></e>
 <e lm="normaligi">       <i>normalig</i><par n="i__vblex"/></e>
 <e lm="normo">           <i>norm</i><par n="o__n"/></e>
+<e lm="normanda">        <i>normand</i><par n="a__adj"/></e>
+<e lm="normando">        <i>normand</i><par n="o__n"/></e>
+<e lm="normana">         <i>norman</i><par n="a__adj"/></e>
+<e lm="normano">         <i>norman</i><par n="o__n"/></e>
 <e lm="norvega">         <i>norveg</i><par n="a__adj"/></e>
+<e lm="norvego">         <i>norveg</i><par n="o__n"/></e>
 <e lm="niĝeria">         <i>ni</i><par n="ĝ"/><i>eri</i><par n="a__adj"/></e>
 <e lm="nostalgio">       <i>nostalgi</i><par n="o__n"/></e>
 <e lm="notaria">         <i>notari</i><par n="a__adj"/></e>
@@ -5655,6 +5666,7 @@
 <e lm="portilo">         <i>portil</i><par n="o__n"/></e>
 <e lm="portreto">        <i>portret</i><par n="o__n"/></e>
 <e lm="portugala">       <i>portugal</i><par n="a__adj"/></e>
+<e lm="portugalo">       <i>portugal</i><par n="ino__n"/></e>
 <e lm="posedaĵo">        <i>poseda</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="posedi">          <i>posed</i><par n="i__vblex"/></e>
 <e lm="posedo">          <i>posed</i><par n="o__n"/></e>
@@ -22650,6 +22662,18 @@
 <e lm="vendrede">        <i>vendred</i><par n="e__adv"/></e>
 <e lm="sabate">          <i>sabat</i><par n="e__adv"/></e>
 <e lm="dimanĉe">         <i>dimanĉ</i><par n="e__adv"/></e>
+<e lm="januare">         <i>januar</i><par n="e__adv"/></e>
+<e lm="februare">        <i>februar</i><par n="e__adv"/></e>
+<e lm="marte">           <i>mart</i><par n="e__adv"/></e>
+<e lm="aprile">          <i>april</i><par n="e__adv"/></e>
+<e lm="maje">            <i>maj</i><par n="e__adv"/></e>
+<e lm="junie">           <i>juni</i><par n="e__adv"/></e>
+<e lm="julie">           <i>juli</i><par n="e__adv"/></e>
+<e lm="aŭguste">         <i>aŭgust</i><par n="e__adv"/></e>
+<e lm="septembre">       <i>septembr</i><par n="e__adv"/></e>
+<e lm="oktobre">         <i>oktobr</i><par n="e__adv"/></e>
+<e lm="novembre">        <i>novembr</i><par n="e__adv"/></e>
+<e lm="decembre">        <i>decembr</i><par n="e__adv"/></e>
 
 <!-- Aldonoj Jacob 2009/02/12 -->
 
@@ -22775,44 +22799,44 @@
 <e lm="uzbeka">          <i>uzbek</i><par n="a__adj"/></e>
 <e lm="ĉeĥa">            <par n="ĉ"/><i>e</i><par n="ĥ"/><par n="a__adj"/></e>
 <e lm="ĉuvaŝa">          <par n="ĉ"/><i>uva</i><par n="ŝ"/><par n="a__adj"/></e>
-<e lm="adepto">          <i>adept</i><par n="o__n"/></e>
-<e lm="armeno">          <i>armen</i><par n="o__n"/></e>
-<e lm="beloruso">        <i>belorus</i><par n="o__n"/></e>
-<e lm="bosniano">        <i>bosnian</i><par n="o__n"/></e>
-<e lm="bulgaro">         <i>bulgar</i><par n="o__n"/></e>
-<e lm="dano">            <i>dan</i><par n="o__n"/></e>
+<e lm="adepto">          <i>adept</i><par n="ino__n"/></e>
+<e lm="armeno">          <i>armen</i><par n="ino__n"/></e>
+<e lm="beloruso">        <i>belorus</i><par n="ino__n"/></e>
+<e lm="bosniano">        <i>bosnian</i><par n="ino__n"/></e>
+<e lm="bulgaro">         <i>bulgar</i><par n="ino__n"/></e>
+<e lm="dano">            <i>dan</i><par n="ino__n"/></e>
 <e lm="faktribunalo">    <i>faktribunal</i><par n="o__n"/></e>
 <e lm="franko">          <i>frank</i><par n="o__n"/></e>
 <e lm="gerilanaro">      <i>gerilanar</i><par n="o__n"/></e>
 <e lm="gerilo">          <i>geril</i><par n="o__n"/></e>
-<e lm="hercegovinano">   <i>hercegovinan</i><par n="o__n"/></e>
+<e lm="hercegovinano">   <i>hercegovinan</i><par n="ino__n"/></e>
 <e lm="heredo">          <i>hered</i><par n="o__n"/></e>
-<e lm="hispano">         <i>hispan</i><par n="o__n"/></e>
-<e lm="hungaro">         <i>hungar</i><par n="o__n"/></e>
-<e lm="iranano">         <i>iranan</i><par n="o__n"/></e>
-<e lm="karakalpako">     <i>karakalpak</i><par n="o__n"/></e>
-<e lm="kartvelo">        <i>kartvel</i><par n="o__n"/></e>
-<e lm="kazaĥo">          <i>kaza</i><par n="ĥ"/><par n="o__n"/></e>
-<e lm="kirgizo">         <i>kirgiz</i><par n="o__n"/></e>
-<e lm="kosovano">        <i>kosovan</i><par n="o__n"/></e>
+<e lm="hispano">         <i>hispan</i><par n="ino__n"/></e>
+<e lm="hungaro">         <i>hungar</i><par n="ino__n"/></e>
+<e lm="iranano">         <i>iranan</i><par n="ino__n"/></e>
+<e lm="karakalpako">     <i>karakalpak</i><par n="ino__n"/></e>
+<e lm="kartvelo">        <i>kartvel</i><par n="ino__n"/></e>
+<e lm="kazaĥo">          <i>kaza</i><par n="ĥ"/><par n="ino__n"/></e>
+<e lm="kirgizo">         <i>kirgiz</i><par n="ino__n"/></e>
+<e lm="kosovano">        <i>kosovan</i><par n="ino__n"/></e>
 <e lm="lojalulo">        <i>lojalul</i><par n="o__n"/></e>
-<e lm="makedono">        <i>makedon</i><par n="o__n"/></e>
-<e lm="metropolano">     <i>metropolan</i><par n="o__n"/></e>
+<e lm="makedono">        <i>makedon</i><par n="ino__n"/></e>
+<e lm="metropolano">     <i>metropolan</i><par n="ino__n"/></e>
 <e lm="mortobato">       <i>mortobat</i><par n="o__n"/></e>
-<e lm="nederlandano">    <i>nederlandan</i><par n="o__n"/></e>
-<e lm="nepalano">        <i>nepalan</i><par n="o__n"/></e>
+<e lm="nederlandano">    <i>nederlandan</i><par n="ino__n"/></e>
+<e lm="nepalano">        <i>nepalan</i><par n="ino__n"/></e>
 <e lm="reĝado">          <i>re</i><par n="ĝ"/><i>ad</i><par n="o__n"/></e>
-<e lm="rumano">          <i>ruman</i><par n="o__n"/></e>
-<e lm="serbo">           <i>serb</i><par n="o__n"/></e>
-<e lm="slovako">         <i>slovak</i><par n="o__n"/></e>
-<e lm="sloveno">         <i>sloven</i><par n="o__n"/></e>
-<e lm="svedo">           <i>sved</i><par n="o__n"/></e>
-<e lm="turkmeno">        <i>turkmen</i><par n="o__n"/></e>
-<e lm="ujguro">          <i>ujgur</i><par n="o__n"/></e>
-<e lm="ukraino">         <i>ukrain</i><par n="o__n"/></e>
-<e lm="uzbeko">          <i>uzbek</i><par n="o__n"/></e>
-<e lm="ĉeĥo">            <par n="ĉ"/><i>e</i><par n="ĥ"/><par n="o__n"/></e>
-<e lm="ĉuvaŝo">          <par n="ĉ"/><i>uva</i><par n="ŝ"/><par n="o__n"/></e>
+<e lm="rumano">          <i>ruman</i><par n="ino__n"/></e>
+<e lm="serbo">           <i>serb</i><par n="ino__n"/></e>
+<e lm="slovako">         <i>slovak</i><par n="ino__n"/></e>
+<e lm="sloveno">         <i>sloven</i><par n="ino__n"/></e>
+<e lm="svedo">           <i>sved</i><par n="ino__n"/></e>
+<e lm="turkmeno">        <i>turkmen</i><par n="ino__n"/></e>
+<e lm="ujguro">          <i>ujgur</i><par n="ino__n"/></e>
+<e lm="ukraino">         <i>ukrain</i><par n="ino__n"/></e>
+<e lm="uzbeko">          <i>uzbek</i><par n="ino__n"/></e>
+<e lm="ĉeĥo">            <par n="ĉ"/><i>e</i><par n="ĥ"/><par n="ino__n"/></e>
+<e lm="ĉuvaŝo">          <par n="ĉ"/><i>uva</i><par n="ŝ"/><par n="ino__n"/></e>
 <e lm="bolŝeviko">       <i>bol</i><par n="ŝ"/><i>evik</i><par n="ino__n"/></e>
 <e lm="kanadano">        <i>kanadan</i><par n="ino__n"/></e>
 <e lm="menŝeviko">       <i>men</i><par n="ŝ"/><i>evik</i><par n="ino__n"/></e>
