@@ -40,6 +40,10 @@
       <cat-item lemma="ekde" tags="cnjadv"/>	<!-- tagger error -->
     </def-cat>
 
+    <def-cat n="rel">
+      <cat-item tags="rel.*"/>
+    </def-cat>
+
 
   <def-cat n="c_vblex">
      <cat-item tags="vblex.*"/>
@@ -280,6 +284,12 @@
       <cat-item lemma="tempo" tags="n.*"/>
     </def-cat>
 
+
+
+    <def-cat n="komo">
+      <cat-item lemma="," tags="cm"/>
+    </def-cat>
+
 </section-def-cats>
 
 
@@ -411,6 +421,11 @@
 
 
   <section-def-lists>
+
+    <def-list n="l_pli_plej">
+       <list-item v="pli"/>
+       <list-item v="plej"/>
+    </def-list>
 
     <def-list n="adj_kun_sint" c="
 		Adjektivoj kiuj en la angla estas sintezaj, 
@@ -770,7 +785,14 @@
 
 -->
 
-<def-macro n="pli_plej_adj" npar="2">
+<!-- Ĉi tiu makroo akceptas adv kaj adj kiel respektive unuan kaj duan parametrojn kaj analizas, ĉu temas
+pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
+<def-macro n="adv_adj" npar="2">
+<choose c="Ĉu estas pli aŭ plej? Ekz: 'tre bona'">
+<when>
+  <test>
+	<in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="l_pli_plej"/></in>
+  </test>
    <choose c="Ĉu estas sinteza adjektivo? Ekz pli bona → better(sint)(comp)">
      <when>
 	  <test>
@@ -803,6 +825,17 @@
 			</concat></let>
 		</otherwise>	   
 	</choose>
+</when>
+	<otherwise c="ne estis pli aŭ plej - la variablo devas enhavi ambaŭ vortojn">
+			<let><var n="adv_adjectiu"/><concat>
+				<clip pos="1" side="tl" part="whole"/>
+				<lit v="$"/><b pos="1"/><lit v="^"/>
+				<clip pos="2" side="tl" part="lemh"/>
+				<clip pos="2" side="tl" part="a_adj"/>
+				<clip pos="2" side="tl" part="lemq"/>
+			</concat></let>
+		</otherwise>	   
+</choose>
 </def-macro>
 
 
@@ -956,7 +989,7 @@
           <b pos="1"/>
 	  <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1001,7 +1034,7 @@
           <b pos="1"/>
 	  <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="4" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1083,7 +1116,7 @@
 	<out>
 	  <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1156,7 +1189,7 @@
        <out>
          <chunk name="det" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1389,7 +1422,7 @@
        <pattern-item n="c_adj"/>
      </pattern>
      <action>
-    	<call-macro n="pli_plej_adj"><with-param pos="1"/><with-param pos="2"/></call-macro>
+    	<call-macro n="adv_adj"><with-param pos="1"/><with-param pos="2"/></call-macro>
        <out>
          <chunk name="sint?_adj" case="caseFirstWord">
            <tags>
@@ -1438,7 +1471,7 @@
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1461,6 +1494,250 @@
   </rule>
 
 
+  <rule comment="REGULO: NUM NOM">
+     <pattern>
+       <pattern-item n="num"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+           </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET NUM NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="num"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET NUM ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="num"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET NUM ADJ ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="num"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="5" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_adj"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b pos="4"/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET ADV ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+    	<call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+           <lu>
+	     <var n="adv_adjectiu"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET NUM ADV ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="num"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+    	<call-macro n="adv_adj"><with-param pos="3"/><with-param pos="4"/></call-macro>
+       <out>
+         <chunk name="det_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="5" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+           <b pos="2"/>
+           <lu>
+	     <var n="adv_adjectiu"/>
+           </lu>
+           <b pos="4"/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
   <rule comment="REGULO: DET ADJ">
      <pattern>
        <pattern-item n="c_det"/>
@@ -1475,7 +1752,7 @@
        <out>
          <chunk name="adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1491,7 +1768,7 @@
        <out>
          <chunk name="det_adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1511,6 +1788,37 @@
        </out>
        </otherwise>
        </choose>
+     </action>
+  </rule>
+
+
+  <rule comment="REGULO: DET ADV ADJ">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="c_adv"/>
+       <pattern-item n="c_adj_pp"/>
+     </pattern>
+     <action>
+    	<call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
+       <out>
+         <chunk name="det_adj" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/>
+           <lu>
+	     <var n="adv_adjectiu"/>
+           </lu>
+         </chunk>
+       </out>
      </action>
   </rule>
 
@@ -1555,7 +1863,7 @@
        <out>
          <chunk name="det_adj_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SN"/></tag>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1577,6 +1885,103 @@
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="sl" part="a_nbr" link-to="2"/>
              <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: DET ADJ ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_adj_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>             
+           </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: DET ADJ ADJ ADJ NOM">
+     <pattern>
+       <pattern-item n="c_det"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_adj_pp"/>
+       <pattern-item n="c_nom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="det_adj_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="5" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="1" side="tl" part="lemq"/>             
+           </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_adj"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b pos="4"/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="5" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -3201,7 +3606,7 @@
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SD.nom"/></tag>	<!-- Sintagmo determinita -->
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3238,6 +3643,46 @@
           <chunk name="pr" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGULO: REL">
+      <pattern>
+        <pattern-item n="rel"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="rel" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="REL"/></tag>
+             <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="1" side="sl" part="a_cas"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGULO: KOMO">
+      <pattern>
+        <pattern-item n="komo"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="komo" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="KOMO"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

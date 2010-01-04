@@ -7,6 +7,16 @@
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SD" c="sintagmo determinita">
+      <cat-item tags="SD.*"/>
+      <cat-item tags="REL.*"/>		<!-- rilativo kun kaza indiko: kiu(j)(n), kio(n) -->
+    </def-cat>
+    <def-cat n="SN_SD">
+      <cat-item tags="unknown"/>
+      <cat-item tags="SN.*"/>
+      <cat-item tags="SD.*"/>
+      <cat-item tags="REL.*"/>		<!-- rilativo kun kaza indiko: kiu(j)(n), kio(n) -->
+    </def-cat>
     <def-cat n="SA" c="sintagmo adjektiva">
       <cat-item tags="SA.*"/>
     </def-cat>
@@ -95,7 +105,7 @@
 
 
 
-
+<!--
     <rule comment="REGLA: NUM SN   -   SN ">
       <pattern>
         <pattern-item n="num"/>
@@ -115,6 +125,7 @@
         </out>
       </action>
     </rule>
+-->
 
 
 
@@ -170,10 +181,10 @@ Ne funkcias kiam la dua SN ne havas la saman nombron ol la dua SN (ekz. ĉar SN1
 -->
 
 
-    <rule comment="REGLA: PREP SN   -   SP (sintagmo prepozicia)">
+    <rule comment="REGLA: PREP SN_SD   -   SP (sintagmo prepozicia)">
       <pattern>
         <pattern-item n="PREP"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="SN_SD"/>
       </pattern>
       <action>
         <out>

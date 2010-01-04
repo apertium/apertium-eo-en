@@ -631,7 +631,14 @@
 -->
 <e>       <p><l>tiu<s n="prn"/><s n="tn"/></l><r>that<s n="prn"/><s n="tn"/></r></p></e>
 
-<e>       <p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
+<e r="RL"><p><l>kiu<s n="rel"/><s n="an"/></l>         <r>that<s n="rel"/><s n="an"/></r></p></e>
+<e r="LR"><p><l>kiu<s n="rel"/><s n="an"/><s n="sg"/><s n="nom"/></l><r>that<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>kiu<s n="rel"/><s n="an"/><s n="pl"/><s n="nom"/></l><r>that<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>kiu<s n="rel"/><s n="an"/><s n="sg"/><s n="acc"/></l><r>that<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>kiu<s n="rel"/><s n="an"/><s n="pl"/><s n="acc"/></l><r>that<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e r="LR"><p><l>kio<s n="rel"/><s n="an"/><s n="sg"/><s n="nom"/></l><r>what<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>kio<s n="rel"/><s n="an"/><s n="sg"/><s n="acc"/></l><r>what<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="sg"/></l><r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <!-- tioj ĉi ??
@@ -663,7 +670,7 @@
      if all else fails
      Sartre doubts that Abraham can know that the voice he hears is really the voice of his God and not of someone else
      -->
-<e>       <p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l><r>else<s n="adv"/></r></p></e>
+<e r="RL"><p><l>alia<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></l><r>else<s n="adv"/></r></p></e>
 
 
 <e>       <p><l>pluraj<s n="prn"/><s n="tn"/></l>      <r>several<s n="prn"/><s n="tn"/></r></p></e>
@@ -1063,6 +1070,7 @@ BUT:
 <e r="RL"><p><l>dum<s n="pr"/></l>                     <r>throughout<s n="pr"/></r></p></e>
 <e>       <p><l>sed<s n="adv"/></l>                    <r>but<s n="adv"/></r></p></e>
 <e>       <p><l>krom<s n="pr"/></l>                    <r>except<s n="pr"/></r></p></e>
+<e r="LR"><p><l>escepte<b/>de<s n="pr"/></l>           <r>except<s n="pr"/></r></p></e>
 <e r="RL"><p><l>krom<s n="pr"/></l>                    <r>but<s n="pr"/></r></p></e>
 <e>       <p><l>inter<s n="pr"/></l>                   <r>between<s n="pr"/></r></p></e>
 <e r="RL"><p><l>inter<s n="pr"/></l>                   <r>amid<s n="pr"/></r></p></e>
@@ -2478,6 +2486,7 @@ TODO??
 <e>       <p><l>tiel<s n="adv"/></l>                   <r>like<b/>this<s n="adv"/></r></p></e>
 <e r="RL"><p><l>tiel<s n="adv"/></l>                   <r>so<b/>much<s n="adv"/></r></p></e>
 <e>       <p><l>inverse<s n="adv"/></l>                <r>vice<b/>versa<s n="adv"/></r></p></e>
+<e r="LR"><p><l>multe<s n="adv"/></l>                  <r>a<b/>lot<s n="adv"/></r></p></e>
 <e r="RL"><p><l>tre<s n="adv"/></l>                    <r>a<b/>lot<s n="adv"/></r></p></e>
 <e r="RL"><p><l>tre<s n="adv"/></l>                    <r>very<b/>much<s n="adv"/></r></p></e>
 <e c="MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en"><p><l>tro<b/>da<s n="adv"/></l><r>too<b/>much<s n="adv"/></r></p></e>
@@ -8302,7 +8311,7 @@ TODO??
 <e>       <p><l>eklevi<s n="vblex"/></l>               <r>heave<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>boli<s n="vblex"/></l>                 <r>heave<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>ĉielo<s n="n"/></l>                    <r>heaven<s n="n"/></r></p></e>
-<e>       <p><l>multe<s n="adv"/></l>                  <r>heavily<s n="adv"/></r></p></e>
+<e r="RL"><p><l>multe<s n="adv"/></l>                  <r>heavily<s n="adv"/></r></p></e>
 <e r="LR"><p><l>grande<s n="adv"/></l>                 <r>heavily<s n="adv"/></r></p></e>
 <e r="LR"><p><l>amase<s n="adv"/></l>                  <r>heavily<s n="adv"/></r></p></e>
 <e r="LR"><p><l>vaste<s n="adv"/></l>                  <r>heavily<s n="adv"/></r></p></e>
@@ -20147,7 +20156,6 @@ TODO??
 <e>       <p><l>emajlo<s n="n"/></l>                   <r>enamel<s n="n"/></r></p></e>
 <e>       <p><l>emajli<s n="vblex"/></l>               <r>enamel<s n="vblex"/></r></p></e>
 <e>       <p><l>enkapsuligo<s n="n"/></l>              <r>encapsulation<s n="n"/></r></p></e>
-<e r="LR"><p><l>personigo<s n="n"/></l>                <r>encapsulation<s n="n"/></r></p></e>
 <e>       <p><l>encefalopatio<s n="n"/></l>            <r>encephalopathy<s n="n"/></r></p></e>
 <e r="RL"><p><l>ravi<s n="vblex"/></l>                 <r>enchant<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉirkaŭfermita<s n="adj"/></l>          <r>enclosed<s n="adj"/></r></p></e>
@@ -23335,7 +23343,8 @@ TODO??
 <e>       <p><l>persimono<s n="n"/></l>                <r>persimmon<s n="n"/></r></p></e>
 <e r="RL"><p><l>persisto<s n="n"/></l>                 <r>persistence<s n="n"/></r></p></e>
 <e r="LR"><p><l>senĉeseco<s n="n"/></l>                <r>persistence<s n="n"/></r></p></e>
-<e>       <p><l>personigito<s n="n"/></l>              <r>personification<s n="n"/></r></p></e>
+<e r="LR"><p><l>personigito<s n="n"/></l>              <r>personification<s n="n"/></r></p></e>
+<e       ><p><l>personigo<s n="n"/></l>                <r>personification<s n="n"/></r></p></e>
 <e>       <p><l>personigi<s n="vblex"/></l>            <r>personify<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>ŝviti<s n="vblex"/></l>                <r>perspire<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>persvadi<s n="vblex"/></l>             <r>persuade<s n="vblex"/></r></p></e>
@@ -27862,7 +27871,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>cikla<s n="adj"/></l>                  <r>cyclical<s n="adj"/></r></p></e>
 <e r="LR"><p><l>konjunktura<s n="adj"/></l>            <r>cyclical<s n="adj"/></r></p></e>
 <e>       <p><l>cinika<s n="adj"/></l>                 <r>cynical<s n="adj"/></r></p></e>
-<e>       <p><l>ĉeĥoslovakia<s n="adj"/></l>           <r>czechoslovak<s n="adj"/></r></p></e>
+<e>       <p><l>ĉeĥoslovaka<s n="adj"/></l>            <r>czechoslovak<s n="adj"/></r></p></e>
 <e r="LR"><p><l>ĉeĥoslovakia<s n="adj"/></l>           <r>czechoslovak<s n="adj"/></r></p></e>
 <e>       <p><l>ĉeĥoslovako<s n="n"/></l>              <r>czechoslovak<s n="n"/></r></p></e>
 <e r="RL"><p><l>tagĵurnalo<s n="n"/></l>               <r>daily<s n="n"/></r></p></e>
