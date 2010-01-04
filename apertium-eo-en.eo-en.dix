@@ -761,7 +761,7 @@ BUT:
 <e r="RL"><p><l>se<s n="cnjadv"/></l>                  <r>provided<s n="cnjadv"/></r></p></e>
 <e>       <p><l>ĉu<s n="cnjadv"/></l>                  <r>whether<s n="cnjadv"/></r></p></e>
 <e>       <p><l>sekve<s n="cnjadv"/></l>               <r>therefore<s n="cnjadv"/></r></p></e>
-<e>       <p><l>tamen<s n="cnjadv"/></l>               <r>even<b/>so<s n="cnjadv"/></r></p></e>
+<e       ><p><l>tamen<s n="cnjadv"/></l>               <r>even<b/>so<s n="cnjadv"/></r></p></e>
 <e r="RL"><p><l>tamen<s n="cnjadv"/></l>               <r>however<s n="cnjadv"/></r></p></e>
 <e>       <p><l>tiam<s n="cnjadv"/></l>                <r>then<s n="cnjadv"/></r></p></e>
 <e>       <p><l>tiel<b/>kiel<s n="cnjadv"/></l>        <r>as<b/>well<b/>as<s n="cnjadv"/></r></p></e>
@@ -809,7 +809,7 @@ BUT:
 <e>       <p><l>det__a<s n="det"/><s n="ind"/></l>     <r>a<s n="det"/><s n="ind"/></r></p></e>
 <!--
 <e>       <p><l>unu<s n="det"/><s n="ind"/></l>        <r>a<s n="det"/><s n="ind"/></r></p></e> -->
-<e>       <p><l>plura<s n="det"/><s n="qnt"/></l>      <r>multiple<s n="det"/><s n="qnt"/></r></p></e>
+<e r="RL"><p><l>plura<s n="det"/><s n="qnt"/></l>      <r>multiple<s n="det"/><s n="qnt"/></r></p></e>
 
 <!--
 <e>       <p><l>plejparto<s n="n"/><s n="sp"/><g/>de<s n="pr"/><j/>la<s n="det"/><s n="def"/></l>      <r>most<s n="det"/><s n="qnt"/></r></p></e>
@@ -1283,6 +1283,7 @@ BUT:
 <e>       <p><l>Singapuro<s n="np"/><s n="top"/></l>   <r>Singapore<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Sirio<s n="np"/><s n="top"/></l>       <r>Syria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Skotlando<s n="np"/><s n="top"/></l>   <r>Scotland<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Kimrio<s n="np"/><s n="top"/></l>      <r>Wales<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ĉeĥio<s n="np"/><s n="top"/></l>       <r>Czech<b/>Republic<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ĉeĥoslovakio<s n="np"/><s n="top"/></l><r>Czechoslovakia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Slovakio<s n="np"/><s n="top"/></l>    <r>Slovakia<s n="np"/><s n="top"/></r></p></e>
@@ -1367,6 +1368,8 @@ BUT:
 <e>       <p><l>Utaho<s n="np"/><s n="top"/></l>       <r>Utah<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vermonto<s n="np"/><s n="top"/></l>    <r>Vermont<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Okcidenta<b/>Virginio<s n="np"/><s n="top"/></l><r>West<b/>Virginia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Malsupra<b/>Saksio<s n="np"/><s n="top"/></l><r>Lower<b/>Saxony<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Malsupra<b/>Saksujo<s n="np"/><s n="top"/></l><r>Lower<b/>Saxony<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Vaŝingtonio<s n="np"/><s n="top"/></l> <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Viskonsino<s n="np"/><s n="top"/></l>  <r>Wisconsin<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vajomingo<s n="np"/><s n="top"/></l>   <r>Wyoming<s n="np"/><s n="top"/></r></p></e>
@@ -1421,6 +1424,14 @@ BUT:
 <e>       <p><l>orient-afrika<s n="adj"/></l>          <r>East<b/>African<s n="adj"/></r></p></e>
 <e>       <p><l>okcident-afrika<s n="adj"/></l>        <r>West<b/>African<s n="adj"/></r></p></e>
 <e>       <p><l>angla<s n="adj"/></l>                  <r>English<s n="adj"/></r></p></e>
+<e>       <p><l>anglo-<s n="adj"/></l>                 <r>Anglo-<s n="adj"/></r></p></e>
+<e>       <p><l>franc-<s n="adj"/></l>                 <r>Franco-<s n="adj"/></r></p></e>
+<e>       <p><l>ital-<s n="adj"/></l>                  <r>Italo-<s n="adj"/></r></p></e>
+<e>       <p><l>anglosaksa<s n="adj"/></l>             <r>Anglo-Saxon<s n="adj"/></r></p></e>
+<e>       <p><l>anglosakso<s n="n"/></l>               <r>Anglo-Saxon<s n="n"/></r></p></e>
+<e>       <p><l>saksa<s n="adj"/></l>                  <r>Saxon<s n="adj"/></r></p></e>
+<e>       <p><l>sakso<s n="n"/></l>                    <r>Saxon<s n="n"/></r></p></e>
+<e>       <p><l>Saksio<s n="np"/><s n="top"/></l>      <r>Saxony<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>berbera<s n="adj"/></l>                <r>Berber<s n="adj"/></r></p></e>
 <e>       <p><l>araba<s n="adj"/></l>                  <r>Arab<s n="adj"/></r></p></e>
 <e r="RL"><p><l>araba<s n="adj"/></l>                  <r>Arabian<s n="adj"/></r></p></e>
@@ -1499,6 +1510,7 @@ BUT:
 <e>       <p><l>protestanta<s n="adj"/></l>            <r>Protestant<s n="adj"/></r></p></e>
 <e r="RL"><p><l>palestina<s n="adj"/></l>              <r>Palestinian<s n="adj"/></r></p></e>
 <e>       <p><l>skota<s n="adj"/></l>                  <r>Scottish<s n="adj"/></r></p></e>
+<e>       <p><l>kimra<s n="adj"/></l>                  <r>Welsh<s n="adj"/></r></p></e>
 <e>       <p><l>sovetia<s n="adj"/></l>                <r>Soviet<s n="adj"/></r></p></e>
 <e>       <p><l>sovetiano<s n="n"/></l>                <r>Soviet<s n="n"/></r></p></e>
 <e>       <p><l>Sovetio<s n="np"/><s n="top"/></l>     <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
@@ -1647,6 +1659,7 @@ BUT:
 <e>       <p><l>israelano<s n="n"/></l>                <r>Israeli<s n="n"/></r></p></e>
 <e r="LR"><p><l>izraeliano<s n="n"/></l>               <r>Israeli<s n="n"/></r></p></e>
 <e>       <p><l>irlandano<s n="n"/></l>                <r>Irish<s n="n"/></r></p></e>
+<e>       <p><l>irlandano<s n="n"/><s n="f"/></l>      <r>Irishwoman<s n="n"/></r></p></e>
 <e>       <p><l>jamajkano<s n="n"/></l>                <r>Jamaican<s n="n"/></r></p></e>
 <e>       <p><l>koreo<s n="n"/></l>                    <r>Korean<s n="n"/></r></p></e>
 <e>       <p><l>meksikano<s n="n"/></l>                <r>Mexican<s n="n"/></r></p></e>
@@ -1655,7 +1668,9 @@ BUT:
 <e>       <p><l>niĝeriano<s n="n"/></l>                <r>Nigerian<s n="n"/></r></p></e>
 <e>       <p><l>perso<s n="n"/></l>                    <r>Persian<s n="n"/></r></p></e>
 <e>       <p><l>peruano<s n="n"/></l>                  <r>Peruvian<s n="n"/></r></p></e>
-<e>       <p><l>skoto<s n="n"/></l>                    <r>Scottish<s n="n"/></r></p></e>
+<e>       <p><l>skoto<s n="n"/></l>                    <r>Scot<s n="n"/></r></p></e>
+<e r="RL"><p><l>skoto<s n="n"/></l>                    <r>Scots<s n="n"/></r></p></e>
+<e r="RL"><p><l>skoto<s n="n"/><s n="f"/></l>          <r>Scotswoman<s n="n"/></r></p></e>
 <e>       <p><l>turko<s n="n"/></l>                    <r>Turkish<s n="n"/></r></p></e>
 <e>       <p><l>valenciano<s n="n"/></l>               <r>Valencian<s n="n"/></r></p></e>
 <e>       <p><l>skandinavo<s n="n"/></l>               <r>Scandinavian<s n="n"/></r></p></e>
@@ -1663,6 +1678,8 @@ BUT:
 <e>       <p><l>ĉino<s n="n"/></l>                     <r>Chinese<s n="n"/></r></p></e>
 <e>       <p><l>anglo<s n="n"/></l>                    <r>English<s n="n"/></r></p></e>
 <e>       <p><l>anglo<s n="n"/><s n="f"/></l>          <r>Englishwoman<s n="n"/></r></p></e>
+<e>       <p><l>kimro<s n="n"/></l>                    <r>Welsh<s n="n"/></r></p></e>
+<e>       <p><l>kimro<s n="n"/><s n="f"/></l>          <r>Welshwoman<s n="n"/></r></p></e>
 <e>       <p><l>franco<s n="n"/><s n="m"/></l>         <r>French<s n="n"/></r></p></e>
 <e>       <p><l>franco<s n="n"/><s n="f"/></l>         <r>Frenchwoman<s n="n"/></r></p></e>
 <e>       <p><l>germano<s n="n"/></l>                  <r>German<s n="n"/></r></p></e>
@@ -2554,6 +2571,7 @@ TODO??
 <!-- Hèctor beg 2009.02.17 -->
 <e r="RL"><p><l>kontraŭ<s n="pr"/></l>                 <r>vs.<s n="pr"/></r></p></e>
 <e r="RL"><p><l>kontraŭ<s n="pr"/></l>                 <r>versus<s n="pr"/></r></p></e>
+<e>       <p><l>plura<s n="det"/><s n="qnt"/></l>      <r>several<s n="det"/><s n="qnt"/></r></p></e>
 <e>       <p><l>plura<s n="det"/><s n="ind"/></l>      <r>several<s n="det"/><s n="ind"/></r></p></e>
 <e>       <p><l>plura<s n="adj"/></l>                  <r>several<s n="adj"/></r></p></e>
 <e>       <p><l>diversa<s n="det"/><s n="ind"/></l>    <r>various<s n="det"/><s n="ind"/></r></p></e>
@@ -2712,6 +2730,7 @@ TODO??
 <e>       <p><l>islamo<s n="n"/></l>                   <r>Islam<s n="n"/></r></p></e>
 <e>       <p><l>tradiciisma<s n="adj"/></l>            <r>traditionalist<s n="adj"/></r></p></e>
 <e>       <p><l>hodiaŭa<s n="adj"/></l>                <r>today's<s n="adj"/></r></p></e>
+<e>       <p><l>hodiaŭa<s n="adj"/></l>                <r>present-day<s n="adj"/></r></p></e>
 <e>       <p><l>malorganizi<s n="vblex"/></l>          <r>unorganise<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malorganizi<s n="vblex"/></l>          <r>unorganize<s n="vblex"/></r></p></e>
 <!-- Hèctor end 2009.03.10 -->
@@ -22219,7 +22238,7 @@ TODO??
 <e r="RL"><p><l>nerevenigebla<s n="adj"/></l>          <r>lost<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pereinta<s n="adj"/></l>               <r>lost<s n="adj"/></r></p></e>
 <e>       <p><l>lotuso<s n="n"/></l>                   <r>lotus<s n="n"/></r></p></e>
-<e r="RL"><p><l>laŭta<s n="adj"/></l>                  <r>loud<s n="adj"/></r></p></e>
+<e       ><p><l>laŭta<s n="adj"/></l>                  <r>loud<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laŭtega<s n="adj"/></l>                <r>loud<s n="adj"/></r></p></e>
 <e r="LR"><p><l>okulfrapanta<s n="adj"/></l>           <r>loud<s n="adj"/></r></p></e>
 <e>       <p><l>laŭte<s n="adv"/></l>                  <r>loudly<s n="adv"/></r></p></e>
@@ -26297,7 +26316,7 @@ TODO??
 <e>       <p><l>bunta<s n="adj"/></l>                  <r>vivid<s n="adj"/></r></p></e>
 <e r="LR"><p><l>viveca<s n="adj"/></l>                 <r>vivid<s n="adj"/></r></p></e>
 <e>       <p><l>vivisekcio<s n="n"/></l>               <r>vivisection<s n="n"/></r></p></e>
-<e>       <p><l>laŭta<s n="adj"/></l>                  <r>vocal<s n="adj"/></r></p></e>
+<e>       <p><l>voĉa<s n="adj"/></l>                   <r>vocal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>laŭtvoĉa<s n="adj"/></l>               <r>vocal<s n="adj"/></r></p></e>
 <e r="LR"><p><l>plenvoĉa<s n="adj"/></l>               <r>vocal<s n="adj"/></r></p></e>
 <e r="RL"><p><l>voĉigo<s n="n"/></l>                   <r>vocalisation<s n="n"/></r></p></e>
@@ -29420,8 +29439,8 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>sentimentalaĉa<s n="adj"/></l>         <r>kitschy<s n="adj"/></r></p></e>
 <e>       <p><l>kivio<s n="n"/></l>                    <r>kiwi<s n="n"/></r></p></e>
 <e r="LR"><p><l>apterigo<s n="n"/></l>                 <r>kiwi<s n="n"/></r></p></e>
-<e r="LR"><p><l>novzelandano<s n="n"/></l>             <r>kiwi<s n="n"/></r></p></e>
 <e r="LR"><p><l>kivifrukto<s n="n"/></l>               <r>kiwi<s n="n"/></r></p></e>
+<e       ><p><l>novzelandano<s n="n"/></l>             <r>New<b/>Zealander<s n="n"/></r></p></e>
 <e r="RL"><p><l>povoscio<s n="n"/></l>                 <r>knack<s n="n"/></r></p></e>
 <e r="RL"><p><l>imitaĵo<s n="n"/></l>                  <r>knockoff<s n="n"/></r></p></e>
 <e>       <p><l>knokaŭto<s n="n"/></l>                 <r>knockout<s n="n"/></r></p></e>

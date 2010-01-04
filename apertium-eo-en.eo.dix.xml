@@ -238,6 +238,12 @@
   <e>       <p><l>a</l>         <r>a<s n="adj"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
 
+<pardef n="anglo-__adj">
+  <e>       <p><l></l>         <r>e<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l></l>         <r>e<s n="adj"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e>       <p><l></l>         <r>e<s n="adj"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e>       <p><l></l>         <r>e<s n="adj"/><s n="pl"/><s n="acc"/></r></p></e>
+</pardef>
 
 
 <pardef n="sgpl0">
@@ -476,6 +482,12 @@
     
 <pardef n="quant__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc"/></e>
+<!--
+  <e r="RL"><p><l>j</l>         <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l>j</l>         <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>jn</l>        <r><s n="det"/><s n="qnt"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e>       <p><l>jn</l>        <r><s n="det"/><s n="qnt"/><s n="pl"/><s n="acc"/></r></p></e>
+-->
 </pardef>
 
  
@@ -1142,6 +1154,7 @@
 
 <e lm="ke">              <i>ke</i><par n="ke__cnjsub"/></e>
 <e lm="kelka">           <i>kelka</i><par n="quant__det"/></e>
+<e lm="plura">           <i>plura</i><par n="quant__det"/></e>
 <e lm="kial">            <i>kial</i><par n="kial__adv"/></e>
 <e lm="kiam">            <i>kiam</i><par n="after__cnjadv"/></e>
 <e lm="kiam">            <i>kiam</i><par n="kial__adv"/></e>
@@ -1245,7 +1258,7 @@
 <e lm="per multe da">    <i>per<b/>multe<b/>da</i><par n="al__pr"/></e>
 <e lm="pere de">         <i>pere<b/>de</i><par n="al__pr"/></e>
 
-<e lm="plura">           <i>plura</i><par n="ind__det_pl"/></e>
+<e r="RL" lm="plura">           <i>plura</i><par n="ind__det_pl"/></e>
 
 <e lm="por">             <i>por</i><par n="al__pr"/></e>
 <e lm="por ke">          <i>por<b/>ke</i><par n="after__cnjadv"/></e>
@@ -1475,6 +1488,7 @@
 <e lm="Singapuro">       <i>Singapur</i><par n="Barcelon/o__np"/></e>
 <e lm="Sirio">           <i>Siri</i><par n="Barcelon/o__np"/></e>
 <e lm="Skotlando">       <i>Skotland</i><par n="Barcelon/o__np"/></e>
+<e lm="Kimrio">          <i>Kimr</i><par n="Afgan/io__np"/></e>
 <e lm="Ĉeĥio">           <par n="Ĉ"/><i>e</i><par n="ĥ"/><i></i><par n="Afgan/io__np"/></e>
 <e lm="Ĉeĥoslovakio">    <par n="Ĉ"/><i>e</i><par n="ĥ"/><i>oslovak</i><par n="Afgan/io__np"/></e>
 <e lm="Slovakio">        <i>Slovak</i><par n="Afgan/io__np"/></e>
@@ -1823,6 +1837,7 @@
 <e lm="sinjoro">         <i>sinjor</i><par n="ino__n"/></e>
 <e lm="sklavo">          <i>sklav</i><par n="ino__n"/></e>
 <e lm="skoto">           <i>skot</i><par n="ino__n"/></e>
+<e lm="kimro">           <i>kimr</i><par n="ino__n"/></e>
 <e lm="skulptisto">      <i>skulptist</i><par n="ino__n"/></e>
 <e lm="socialisto">      <i>socialist</i><par n="ino__n"/></e>
 <e lm="soldato">         <i>soldat</i><par n="ino__n"/></e>
@@ -6409,6 +6424,7 @@
 <e lm="sklerozo">        <i>skleroz</i><par n="o__n"/></e>
 <e lm="skombro">         <i>skombr</i><par n="o__n"/></e>
 <e lm="skota">           <i>skot</i><par n="a__adj"/></e>
+<e lm="kimra">           <i>kimr</i><par n="a__adj"/></e>
 <e lm="skribi">          <i>skrib</i><par n="i__vblex"/></e>
 <e lm="skribo">          <i>skrib</i><par n="o__n"/></e>
 <e lm="skribo-tablo">    <i>skribo-tabl</i><par n="o__n"/></e>
@@ -13340,6 +13356,14 @@
 <e lm="inĝenierado">     <i>in</i><par n="ĝ"/><i>enierad</i><par n="o__n"/></e>
 <e lm="anglalingva">     <i>anglalingv</i><par n="a__adj"/></e>
 <e lm="angleca">         <i>anglec</i><par n="a__adj"/></e>
+<e lm="anglo-">          <i>anglo-</i><par n="anglo-__adj"/></e>
+<e lm="franc-">          <i>franc-</i><par n="anglo-__adj"/></e>
+<e lm="ital-">           <i>ital-</i><par n="anglo-__adj"/></e>
+<e lm="anglosaksa">      <i>anglosaks</i><par n="a__adj"/></e>
+<e lm="anglosakso">      <i>anglosaks</i><par n="ino__n"/></e>
+<e lm="saksa">           <i>saks</i><par n="a__adj"/></e>
+<e lm="sakso">           <i>saks</i><par n="ino__n"/></e>
+<e lm="Saksio">          <i>Saks</i><par n="Afgan/io__np"/></e>
 <e lm="akvafortado">     <i>akvafortad</i><par n="o__n"/></e>
 <e lm="enigmo">          <i>enigm</i><par n="o__n"/></e>
 <e lm="frandi">          <i>frand</i><par n="i__vblex"/></e>
@@ -30219,7 +30243,7 @@
 <e lm="sentimentalaĉa">  <i>sentimentala</i><par n="ĉ"/><par n="a__adj"/></e>
 <e lm="kivio">           <i>kivi</i><par n="o__n"/></e>
 <e lm="apterigo">        <i>apterig</i><par n="o__n"/></e>
-<e lm="novzelandano">    <i>novzelandan</i><par n="o__n"/></e>
+<e lm="novzelandano">    <i>novzelandan</i><par n="ino__n"/></e>
 <e lm="kivifrukto">      <i>kivifrukt</i><par n="o__n"/></e>
 <e lm="knokaŭto">        <i>knoka</i><par n="ŭ"/><i>t</i><par n="o__n"/></e>
 <e lm="nodeca">          <i>nodec</i><par n="a__adj"/></e>
@@ -32408,5 +32432,20 @@ oni sia sian ĉi sin Eternulo
 <e>                      <p><l>Okcident-virginiaj</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>                      <p><l>Okcident-virginian</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
 <e>                      <p><l>Okcident-virginiajn</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+
+    <!-- Malsupra Saksio -->
+<e>                      <p><l>Malsupra<b/>Saksio</l><r>Malsupra<b/>Saksio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>                      <p><l>Malsupran<b/>Saksion</l><r>Malsupra<b/>Saksio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                      <p><l>Malsupr-saksia</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>                      <p><l>Malsupr-saksiaj</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>                      <p><l>Malsupr-saksian</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
+<e>                      <p><l>Malsupr-saksiajn</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="LR">               <p><l>Malsupra<b/>Saksujo</l><r>Malsupra<b/>Saksujo<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="LR">               <p><l>Malsupran<b/>Saksujon</l><r>Malsupra<b/>Saksujo<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="LR">               <p><l>Malsupr-saksuja</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="LR">               <p><l>Malsupr-saksujaj</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
+<e r="LR">               <p><l>Malsupr-saksujan</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
+<e r="LR">               <p><l>Malsupr-saksujajn</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+
 	</section>
 </dictionary>

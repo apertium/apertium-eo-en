@@ -12,6 +12,15 @@
       <cat-item tags="num.*"/>
     </def-cat>
 
+    <def-cat n="num_sp">
+      <cat-item tags="num"/>
+      <cat-item tags="num.sp"/>			<!-- ne num.ord -->
+    </def-cat>
+
+    <def-cat n="qnt">
+      <cat-item tags="det.qnt.*"/>
+    </def-cat>
+
     <def-cat n="pr">
       <cat-item tags="pr"/>
     </def-cat>
@@ -20,9 +29,15 @@
       <cat-item lemma="de" tags="pr"/>
     </def-cat>
 
+    <def-cat n="antaŭ">
+      <cat-item lemma="antaŭ" tags="pr"/>
+      <cat-item lemma="antaŭ" tags="adv"/>	<!-- tagger error -->
+    </def-cat>
+
     <def-cat n="de_ekde">
       <cat-item lemma="de" tags="pr"/>
       <cat-item lemma="ekde" tags="pr"/>
+      <cat-item lemma="ekde" tags="cnjadv"/>	<!-- tagger error -->
     </def-cat>
 
 
@@ -226,6 +241,43 @@
       <cat-item lemma="oktobro" tags="n.*"/>
       <cat-item lemma="novembro" tags="n.*"/>
       <cat-item lemma="decembro" tags="n.*"/>
+    </def-cat>
+
+    <def-cat n="tempo2" c="
+		Tempaj aferoj antaŭ kiuj oni devas ŝanĝi prepozicion kaj eventuale aldoni 'ago'">
+      <cat-item lemma="lundo" tags="n.*"/>
+      <cat-item lemma="mardo" tags="n.*"/>
+      <cat-item lemma="merkredo" tags="n.*"/>
+      <cat-item lemma="ĵaŭdo" tags="n.*"/>
+      <cat-item lemma="vendredo" tags="n.*"/>
+      <cat-item lemma="sabato" tags="n.*"/>
+      <cat-item lemma="dimanĉo" tags="n.*"/>
+      <cat-item lemma="januaro" tags="n.*"/>
+      <cat-item lemma="februaro" tags="n.*"/>
+      <cat-item lemma="marto" tags="n.*"/>
+      <cat-item lemma="aprilo" tags="n.*"/>
+      <cat-item lemma="majo" tags="n.*"/>
+      <cat-item lemma="junio" tags="n.*"/>
+      <cat-item lemma="julio" tags="n.*"/>
+      <cat-item lemma="aŭgusto" tags="n.*"/>
+      <cat-item lemma="septembro" tags="n.*"/>
+      <cat-item lemma="oktobro" tags="n.*"/>
+      <cat-item lemma="novembro" tags="n.*"/>
+      <cat-item lemma="decembro" tags="n.*"/>
+      <cat-item lemma="sekundo" tags="n.*"/>
+      <cat-item lemma="minuto" tags="n.*"/>
+      <cat-item lemma="horo" tags="n.*"/>
+      <cat-item lemma="tago" tags="n.*"/>
+      <cat-item lemma="semajno" tags="n.*"/>
+      <cat-item lemma="monato" tags="n.*"/>
+      <cat-item lemma="trimestro" tags="n.*"/>
+      <cat-item lemma="semestro" tags="n.*"/>
+      <cat-item lemma="duonjaro" tags="n.*"/>
+      <cat-item lemma="jaro" tags="n.*"/>
+      <cat-item lemma="jardeko" tags="n.*"/>
+      <cat-item lemma="jarcento" tags="n.*"/>
+      <cat-item lemma="jarmilo" tags="n.*"/>
+      <cat-item lemma="tempo" tags="n.*"/>
     </def-cat>
 
 </section-def-cats>
@@ -865,7 +917,7 @@
 	      <lit-tag v="pr"/>
 	    </lu>
 	  </chunk>
- 	    <b/>
+          <b pos="1"/>
 	  <chunk name="tempo">
            <tags>
              <tag><lit-tag v="SN"/></tag>
@@ -884,9 +936,219 @@
     </rule>
 
 
+<rule comment="REGULO: DE DET TEMPO (de/ekde tiu januaro -> from this January -- ŝanĝo de prepozicio">
+      <pattern>
+	<pattern-item n="de_ekde"/>
+	<pattern-item n="c_det"/>
+	<pattern-item n="tempo"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="from"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+          <b pos="1"/>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_det"/>
+             <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+
+<rule comment="REGULO: DE ANTAŬ NUM TEMPO (de/ekde antaŭ tri tagoj -> since three days ago - ŝanĝo de prepozicio + ago">
+<!-- ne eblas "antaŭ": estas amaso da "en la aĝo de tri jaroj"; bedaŭrinde, ĉar "de tri jaroj li studas medicinon" -->
+      <pattern>
+	<pattern-item n="de_ekde"/>
+	<pattern-item n="antaŭ"/>
+	<pattern-item n="num_sp"/>
+	<pattern-item n="tempo2"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="since"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+          <b pos="1"/>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="3" side="tl" part="whole"/>
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+	    <lu>
+	      <lit v="ago"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+<rule comment="REGULO: DE ANTAŬ QNT TEMPO (de/ekde antaŭ kelkaj tagoj -> since some days ago - ŝanĝo de prepozicio + ago">
+      <pattern>
+	<pattern-item n="de_ekde"/>
+	<pattern-item n="antaŭ"/>
+	<pattern-item n="qnt"/>
+	<pattern-item n="tempo2"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="since"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+          <b pos="1"/>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_det"/>
+             <clip pos="3" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>             
+           </lu>
+           <b pos="3"/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+	    <lu>
+	      <lit v="ago"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+<rule comment="REGULO: ANTAŬ NUM TEMPO (antaŭ tri tagoj -> three days ago - sen prepozicio + ago">
+      <pattern>
+	<pattern-item n="antaŭ"/>
+	<pattern-item n="num_sp"/>
+	<pattern-item n="tempo2"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+	    <lu>
+	      <lit v="ago"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+
+<rule comment="REGULO: ANTAŬ QNT TEMPO (antaŭ kelkaj tagoj -> some days ago - sen prepozicio + ago">
+      <pattern>
+	<pattern-item n="antaŭ"/>
+	<pattern-item n="qnt"/>
+	<pattern-item n="tempo2"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="tempo">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="3" side="tl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_det"/>
+             <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
+             <clip pos="2" side="tl" part="lemq"/>             
+           </lu>
+           <b pos="2"/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+	    <lu>
+	      <lit v="ago"/>
+	      <lit-tag v="adv"/>
+	    </lu>
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+
 <!-- SN -->
 
-  <rule>
+  <rule comment="REGULO: DET">
      <pattern>
        <pattern-item n="c_det"/>
      </pattern>
@@ -910,7 +1172,7 @@
   </rule>
 
 <!--
-  <rule>
+  <rule comment="REGULO: PRN">
      <pattern>
        <pattern-item n="c_prn"/>
      </pattern>
@@ -933,6 +1195,7 @@
      </action>
   </rule>
 -->
+
   <rule comment="REGULO: PRN">
      <pattern>
        <pattern-item n="c_prn"/>
@@ -2939,6 +3202,24 @@
           <chunk name="num" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGULO: DE">
+      <pattern>
+        <pattern-item n="de"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="DE"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
