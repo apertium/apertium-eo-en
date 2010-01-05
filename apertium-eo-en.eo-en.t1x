@@ -417,6 +417,7 @@
   <def-var n="vrb2"/>
   <def-var n="adv_adjectiu"/>
   <def-var n="superlatiu1"/>
+  <def-var n="it"/>
 </section-def-vars>
 
 
@@ -742,6 +743,14 @@
       <list-item v="zulua"/>
     </def-list>
 
+    <def-list n="nepersonaj_verboj">
+       <list-item v="pluvi"/>
+       <list-item v="neĝi"/>
+       <list-item v="ebli"/>
+       <list-item v="indi"/>
+       <list-item v="endi"/>
+    </def-list>
+
   </section-def-lists>
 
 
@@ -835,6 +844,23 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 				<clip pos="2" side="tl" part="lemq"/>
 			</concat></let>
 		</otherwise>	   
+</choose>
+</def-macro>
+
+<!-- rigardas, ĉu temas pri nepersona verbo kaj preparas "it" por aldono -->
+<def-macro n="nepersona" npar="1">
+<choose>
+  <when>
+    <test>
+        <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="nepersonaj_verboj"/></in>
+    </test>
+	<let><var n="it"/><concat>
+	  <lit v="^pron"/><lit-tag v="SN.p3.nt.sg.nom"/><lit v="{^prpers"/><lit-tag v="prn.subj.2.3.4"/><lit v="$}$ "/>
+	</concat></let>
+  </when>
+  <otherwise>
+	<let><var n="it"/><lit v=""/></let>
+  </otherwise>
 </choose>
 </def-macro>
 
@@ -2318,7 +2344,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
-         <chunk name="vbser_vbpp3" case="caseFirstWord">
+         <chunk name="vbser" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2327,10 +2353,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><lit-tag v="ND"/></tag>
             </tags>
             <lu>
-              <lit v="have"/><lit-tag v="vbhaver"/>
+              <lit v="have"/>
+              <lit-tag v="vbhaver"/>
               <clip pos="1" side="tl" part="a_tns"/>
-              <clip pos="1" side="tl" part="a_prs" link-to="4"/>
-              <clip pos="1" side="tl" part="a_nbr" link-to="5"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
 			<b/>
             <lu>
@@ -2343,6 +2370,197 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </out>
      </action>
   </rule>
+
+
+  <rule comment="REGULO: ESTIsimpla PP">
+     <pattern>
+       <pattern-item n="c_vbser_simpla"/>
+       <pattern-item n="c_vb_pp"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vbser" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag>
+              <tag><lit-tag v="ND"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: ESTIsimpla PP de (estas dirita de -> is told by)">
+     <pattern>
+       <pattern-item n="c_vbser_simpla"/>
+       <pattern-item n="c_vb_pp"/>
+       <pattern-item n="de"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <out>
+         <chunk name="vbser" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag>
+              <tag><lit-tag v="ND"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+ 	  <b pos="2"/>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="by"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+        </out>
+     </action>
+  </rule>
+
+  <rule comment="REGULO: ESTIsimpla PP DE PRN (estas dirita de li -> is told by him)">
+     <pattern>
+       <pattern-item n="c_vbser_simpla"/>
+       <pattern-item n="c_vb_pp"/>
+       <pattern-item n="de"/>
+       <pattern-item n="c_prn"/>
+     </pattern>
+     <action>
+       <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
+       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+        <out>
+         <chunk name="vbser" case="caseFirstWord">
+           <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="vrb2"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><lit-tag v="PD"/></tag>
+              <tag><lit-tag v="ND"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_vrb"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_vrb"/>
+              <clip pos="2" side="tl" part="a_tns"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+ 	  <b pos="2"/>
+	  <chunk name="pr" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="PREP"/></tag>
+	    </tags>
+	    <lu>
+	      <lit v="by"/>
+	      <lit-tag v="pr"/>
+	    </lu>
+	  </chunk>
+ 	  <b pos="3"/>
+        </out>
+      <choose>
+        <when>
+          <test>
+            <or>
+	      <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
+	      <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
+            </or>
+          </test>
+          <choose>
+            <when>
+              <test>
+	        <equal caseless="yes"><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+              </test>
+	    <let><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+            </when>
+          </choose>
+       <out> <!-- persona pronomo: estas persono kaj genro -->
+         <chunk name="pron">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="4" side="tl" part="a_prs"/></tag>
+             <tag><clip pos="4" side="tl" part="a_gen"/></tag>
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_prn"/>
+             <clip pos="4" side="tl" part="a_prs" link-to="2"/>
+             <clip pos="4" side="tl" part="a_gen" link-to="3"/>
+             <clip pos="4" side="tl" part="a_nbr" link-to="4"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+        </when>
+        <otherwise>
+       <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
+         <chunk name="pron">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+           </tags>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_prn"/>
+             <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+        </otherwise>
+      </choose>
+     </action>
+  </rule>
+
 
 
   <rule comment="REGULO: VBSER">
@@ -2419,7 +2637,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
@@ -2450,12 +2670,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
       <choose>
         <when>
           <test>
 	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2479,11 +2701,18 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </out>
         </when>
 
+<!-- tl povas esti "vbser" eĉ se sl povas esti "vblex": ekz. "eblas -> is possible;
+ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
+-->
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+            </or>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2511,6 +2740,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2554,12 +2784,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
       <choose>
         <when>
           <test>
 	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2588,6 +2820,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </when>
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2632,12 +2865,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
       <choose>
         <when>
           <test>
 	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2668,11 +2903,18 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </out>
         </when>
 
+<!-- tl povas esti "vbser" eĉ se sl povas esti "vblex": ekz. "eblas -> is possible;
+ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
+-->
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+            </or>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2707,6 +2949,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2762,12 +3005,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
       <choose>
         <when>
           <test>
 	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2800,6 +3045,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </when>
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2849,12 +3095,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      <action>
        <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
       <choose>
         <when>
           <test>
 	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2889,11 +3137,18 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </out>
         </when>
 
+<!-- tl povas esti "vbser" eĉ se sl povas esti "vblex": ekz. "eblas -> is possible;
+ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
+-->
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+            <or>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+            </or>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vblex" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2932,6 +3187,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2989,7 +3245,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3031,7 +3289,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3074,7 +3334,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3122,7 +3384,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3170,7 +3434,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3217,7 +3483,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3265,7 +3533,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3318,7 +3588,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vblex_inf" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -3364,7 +3636,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
 <!-- ALIAJ REGULOJ -->
 
-  <rule comment="REGULO: PP de">
+  <rule comment="REGULO: PP de (dirita de -> told by)">
      <pattern>
        <pattern-item n="c_vb_pp"/>
        <pattern-item n="de"/>

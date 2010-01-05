@@ -68,9 +68,11 @@
       <cat-item tags="CA"/>
       <cat-item tags="NEG"/>
     </def-cat>
+<!-- ne difinita
     <def-cat n="CC">
       <cat-item tags="CC"/>
     </def-cat>
+-->
 
     <def-cat n="Adv_aux_SN_aux_konstatovorto">
       <cat-item tags="Adv"/>
@@ -372,6 +374,7 @@
 
  <def-macro n="simpligo_prs_nbr" npar="1"> <!--forigas prs kaj nbr de SV, se ne necesaj -->
 
+<let><var n="DEBUG"/><lit-tag v="0"/></let>
 	<choose>
 	  <when>
 	    <test> <!--Por la verbo "to be", estas aparta konjugacio por p1 kaj p3 de sg en pres kaj past -->
@@ -655,12 +658,10 @@
 	      <chunk>
 		<clip pos="2" part="whole"/>
 	      </chunk>
-<!--
 <chunk>
 <lit-tag v="REGULO: SN SV"/>
 <var n="DEBUG"/>
 </chunk>
--->
 	    </out>
 	<call-macro n="determina_nbr_gen_SN">
 	  <with-param pos="1"/>
@@ -1231,166 +1232,6 @@
     </rule>
 
 
-    <rule comment="REGLA: SV SN">
-      <pattern>
-	<pattern-item n="SVall"/>
-	<pattern-item n="SNnom"/>
-      </pattern>
-      <action>
-	<call-macro n="concord_SN_SV"><with-param pos="2"/><with-param pos="1"/></call-macro>
-	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
-<!--
-	<call-macro n="posadet_SN">
-	  <with-param pos="2"/>
-	</call-macro>
--->
-	<choose>
-	  <when>
-	    <test>
-	      <equal>		
-		<clip pos="1" part="a_tns"/>
-		<lit-tag v="inf"/>
-	      </equal>
-	    </test>
-	    <let>
-	      <clip pos="1" part="a_tns"/>
-	      <lit-tag v="pres"/>
-	    </let>
-	  </when>
-	</choose>
-
-	    <out>
-	      <chunk>
-		<clip pos="1" part="whole"/>
-	      </chunk>
-	      <b pos="1"/>
-	      <chunk>
-		<clip pos="2" part="whole"/>
-	      </chunk>
-<!--
-<chunk>
-<lit-tag v="REGULO: SV SN"/>
-<var n="DEBUG"/>
-</chunk>
--->
-	    </out>
-	<call-macro n="determina_nbr_gen_SN">
-	  <with-param pos="2"/>
-	</call-macro>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: SV SADV SN ">
-      <pattern>
-	<pattern-item n="SVall"/>
-	<pattern-item n="SADV"/>
-	<pattern-item n="SNnom"/>
-      </pattern>
-      <action>
-	<call-macro n="concord_SN_SV"><with-param pos="3"/><with-param pos="1"/></call-macro>
-	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
-<!--
-	<call-macro n="posadet_SN">
-	  <with-param pos="3"/>
-	</call-macro>
--->
-	<choose>
-	  <when>
-	    <test>
-	      <equal>		
-		<clip pos="1" part="a_tns"/>
-		<lit-tag v="inf"/>
-	      </equal>
-	    </test>
-	    <let>
-	      <clip pos="1" part="a_tns"/>
-	      <lit-tag v="pres"/>
-	    </let>
-	  </when>
-	</choose>
-
-	    <out>
-	      <chunk>
-		<clip pos="1" part="whole"/>
-	      </chunk>
-	      <b pos="1"/>
-	      <chunk>
-		<clip pos="2" part="whole"/>
-	      </chunk>
-	      <b pos="2"/>
-	      <chunk>
-		<clip pos="3" part="whole"/>
-	      </chunk>
-<!--
-<chunk>
-<lit-tag v="REGULO: SV SADV SN"/>
-<var n="DEBUG"/>
-</chunk>
--->
-	    </out>
-	<call-macro n="determina_nbr_gen_SN">
-	  <with-param pos="3"/>
-	</call-macro>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: SV SP SN ">
-      <pattern>
-	<pattern-item n="SVall"/>
-	<pattern-item n="SP"/>
-	<pattern-item n="SNnom"/>
-      </pattern>
-      <action>
-	<call-macro n="concord_SN_SV"><with-param pos="3"/><with-param pos="1"/></call-macro>
-	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
-<!--
-	<call-macro n="posadet_SN">
-	  <with-param pos="3"/>
-	</call-macro>
--->
-	<choose>
-	  <when>
-	    <test>
-	      <equal>		
-		<clip pos="1" part="a_tns"/>
-		<lit-tag v="inf"/>
-	      </equal>
-	    </test>
-	    <let>
-	      <clip pos="1" part="a_tns"/>
-	      <lit-tag v="pres"/>
-	    </let>
-	  </when>
-	</choose>
-
-	    <out>
-	      <chunk>
-		<clip pos="1" part="whole"/>
-	      </chunk>
-	      <b pos="1"/>
-	      <chunk>
-		<clip pos="2" part="whole"/>
-	      </chunk>
-	      <b pos="2"/>
-	      <chunk>
-		<clip pos="3" part="whole"/>
-	      </chunk>
-<!--
-<chunk>
-<lit-tag v="REGULO: SV SP SN"/>
-<var n="DEBUG"/>
-</chunk>
--->
-	    </out>
-	<call-macro n="determina_nbr_gen_SN">
-	  <with-param pos="3"/>
-	</call-macro>
-      </action>
-    </rule>
-
-
     <rule comment="REGLA: SN SV SN - akuzativo">
       <pattern>
         <pattern-item n="SNnom"/>
@@ -1525,6 +1366,169 @@
       </action>
     </rule>
 
+
+<!-- komenco de postverbaj subjektoj -->
+
+    <rule comment="REGLA: SV SN">
+      <pattern>
+	<pattern-item n="SVall"/>
+	<pattern-item n="SNnom"/>
+      </pattern>
+      <action>
+	<call-macro n="concord_SN_SV"><with-param pos="2"/><with-param pos="1"/></call-macro>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
+<!--
+	<call-macro n="posadet_SN">
+	  <with-param pos="2"/>
+	</call-macro>
+-->
+	<choose>
+	  <when>
+	    <test>
+	      <equal>		
+		<clip pos="1" part="a_tns"/>
+		<lit-tag v="inf"/>
+	      </equal>
+	    </test>
+	    <let>
+	      <clip pos="1" part="a_tns"/>
+	      <lit-tag v="pres"/>
+	    </let>
+	  </when>
+	</choose>
+
+	    <out>
+	      <chunk>
+		<clip pos="1" part="whole"/>
+	      </chunk>
+	      <b pos="1"/>
+	      <chunk>
+		<clip pos="2" part="whole"/>
+	      </chunk>
+<chunk>
+<lit-tag v="REGULO: SV SN"/>
+<var n="DEBUG"/>
+</chunk>
+	    </out>
+	<call-macro n="determina_nbr_gen_SN">
+	  <with-param pos="2"/>
+	</call-macro>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SV SADV SN ">
+      <pattern>
+	<pattern-item n="SVall"/>
+	<pattern-item n="SADV"/>
+	<pattern-item n="SNnom"/>
+      </pattern>
+      <action>
+	<call-macro n="concord_SN_SV"><with-param pos="3"/><with-param pos="1"/></call-macro>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
+<!--
+	<call-macro n="posadet_SN">
+	  <with-param pos="3"/>
+	</call-macro>
+-->
+	<choose>
+	  <when>
+	    <test>
+	      <equal>		
+		<clip pos="1" part="a_tns"/>
+		<lit-tag v="inf"/>
+	      </equal>
+	    </test>
+	    <let>
+	      <clip pos="1" part="a_tns"/>
+	      <lit-tag v="pres"/>
+	    </let>
+	  </when>
+	</choose>
+
+	    <out>
+	      <chunk>
+		<clip pos="1" part="whole"/>
+	      </chunk>
+	      <b pos="1"/>
+	      <chunk>
+		<clip pos="2" part="whole"/>
+	      </chunk>
+	      <b pos="2"/>
+	      <chunk>
+		<clip pos="3" part="whole"/>
+	      </chunk>
+<!--
+<chunk>
+<lit-tag v="REGULO: SV SADV SN"/>
+<var n="DEBUG"/>
+</chunk>
+-->
+	    </out>
+	<call-macro n="determina_nbr_gen_SN">
+	  <with-param pos="3"/>
+	</call-macro>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SV SP SN ">
+      <pattern>
+	<pattern-item n="SVall"/>
+	<pattern-item n="SP"/>
+	<pattern-item n="SNnom"/>
+      </pattern>
+      <action>
+	<call-macro n="concord_SN_SV"><with-param pos="3"/><with-param pos="1"/></call-macro>
+	<call-macro n="simpligo_prs_nbr"><with-param pos="1"/></call-macro>
+<!--
+	<call-macro n="posadet_SN">
+	  <with-param pos="3"/>
+	</call-macro>
+-->
+	<choose>
+	  <when>
+	    <test>
+	      <equal>		
+		<clip pos="1" part="a_tns"/>
+		<lit-tag v="inf"/>
+	      </equal>
+	    </test>
+	    <let>
+	      <clip pos="1" part="a_tns"/>
+	      <lit-tag v="pres"/>
+	    </let>
+	  </when>
+	</choose>
+
+	    <out>
+	      <chunk>
+		<clip pos="1" part="whole"/>
+	      </chunk>
+	      <b pos="1"/>
+	      <chunk>
+		<clip pos="2" part="whole"/>
+	      </chunk>
+	      <b pos="2"/>
+	      <chunk>
+		<clip pos="3" part="whole"/>
+	      </chunk>
+<!--
+<chunk>
+<lit-tag v="REGULO: SV SP SN"/>
+<var n="DEBUG"/>
+</chunk>
+-->
+	    </out>
+	<call-macro n="determina_nbr_gen_SN">
+	  <with-param pos="3"/>
+	</call-macro>
+      </action>
+    </rule>
+
+
+<!-- fino de postverbaj subjektoj -->
+
 <!-- fino de reguloj serĉantaj ĉefe la subjekton -->
 
 
@@ -1653,6 +1657,7 @@
 -->
 
 
+<!-- kiucele?
     <rule comment="REGLA: SN SV SN CC SN Adv - akuzativo">
       <pattern>
         <pattern-item n="SN"/>
@@ -1702,7 +1707,7 @@
         </out>
       </action>
     </rule>
-
+-->
 
 
     <rule comment="REGLA: SN Adv SV SN">

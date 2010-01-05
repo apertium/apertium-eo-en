@@ -41,6 +41,7 @@
       <cat-item tags="CA"/>
       <cat-item tags="NEG"/>
     </def-cat>
+<!-- ne difinitaj
     <def-cat n="CC">
       <cat-item tags="CC.*"/>
       <cat-item tags="and_or.*"/>
@@ -51,6 +52,7 @@
     <def-cat n="and_or">
       <cat-item tags="and_or.*"/>
     </def-cat>
+-->
     <def-cat n="PREP">
       <cat-item tags="PREP"/>
       <cat-item tags="DE"/>
