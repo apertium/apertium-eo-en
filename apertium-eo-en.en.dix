@@ -9897,6 +9897,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="England">         <i>England</i><par n="Barcelona__np"/></e>
 <e lm="English">         <i>English</i><par n="Dutch/man__n"/></e>
 <e lm="English">         <i>English</i><par n="expensive__adj"/></e>
+<e lm="American English">         <i>American<b/>English</i><par n="expensive__adj"/></e>
+<e lm="British English">         <i>British<b/>English</i><par n="expensive__adj"/></e>
+<e lm="Australian English">         <i>Australian<b/>English</i><par n="expensive__adj"/></e>
 <e lm="English-language"><i>English-language</i><par n="expensive__adj"/></e>
 <e lm="English-speaking"><i>English-speaking</i><par n="expensive__adj"/></e>
 <e lm="English speaking"><i>English<b/>speaking</i><par n="expensive__adj"/></e>
@@ -11054,6 +11057,9 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="Flemish">         <i>Flemish</i><par n="expensive__adj"/></e>
 <e r="LR" lm="Flemish">  <i>Flemish</i><par n="house__n"/></e>
 <e lm="Fleming">         <i>Fleming</i><par n="house__n"/></e>
+<e lm="Fleming">           <i>Fleming</i><par n="Smith__np"/></e>
+<e lm="Scot">           <i>Scot</i><par n="Smith__np"/></e>
+
 <e lm="Flanders">        <i>Flanders</i><par n="Barcelona__np"/></e>
 <e lm="Afrikaans">       <i>Afrikaans</i><par n="house__n"/></e>
 <e lm="Afrikaans">       <i>Afrikaans</i><par n="expensive__adj"/></e>
@@ -21543,6 +21549,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="in Romanian"><i>in<b/>Romanian</i><par n="maybe__adv"/></e>
 <e lm="in Rumanian"><i>in<b/>Rumanian</i><par n="maybe__adv"/></e>
 <e lm="in English"><i>in<b/>English</i><par n="maybe__adv"/></e>
+<e lm="in American English"><i>in<b/>American<b/>English</i><par n="maybe__adv"/></e>
+<e lm="in British English"><i>in<b/>British<b/>English</i><par n="maybe__adv"/></e>
+<e lm="in Australian English"><i>in<b/>Australian<b/>English</i><par n="maybe__adv"/></e>
 <e lm="in Scots"><i>in<b/>Scots</i><par n="maybe__adv"/></e>
 <e lm="in German"><i>in<b/>German</i><par n="maybe__adv"/></e>
 <e lm="in Dutch"><i>in<b/>Dutch</i><par n="maybe__adv"/></e>

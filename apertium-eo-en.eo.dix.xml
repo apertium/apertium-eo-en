@@ -136,6 +136,9 @@
 </pardef>
 
 
+<!--
+
+-->
 
 <pardef n="sgplnomacc_kunmetebla">
   <e>       <par n="sgplnomacc"/></e>
@@ -146,6 +149,7 @@
 <pardef n="vortfino">
   <e>       <p><l></l>          <r></r></p></e>
 </pardef>
+
 
 <!-- specialaj difinoj por kunmetitaj vortoj  -->
 <!--
@@ -164,8 +168,8 @@
 </pardef>
 
 <pardef n="radiko_vortfino">
-  <e r="LR"><p><l></l>          <r><s n="compound-only-L"/><s n="compound-R"/></r></p></e>
-  <e r="RL"><p><l></l>          <r></r></p></e>
+  <e><par n="nur_radiko"/></e>
+  <e><par n="vortfino"/></e>
 </pardef>
 
 <pardef n="sgplnomacc_kunmetebla">
@@ -181,24 +185,24 @@
 
 <pardef n="o__n">
   <e>       <p><l>o</l>         <r>o<s n="n"/></r></p><par n="sgplnomacc_kunmetebla"/></e>
-  <e r="LR"><p><l></l>          <r>o<s n="n"/><s n="sg"/><s n="nom"/></r></p><par n="nur_radiko"/></e>
+  <e><p><l></l>          <r>o<s n="n"/><s n="sg"/><s n="nom"/></r></p><par n="nur_radiko"/></e>
   <e r="RL" c="permesu iĝi a-vortojn fare de transfero"><p><l>a</l><r>o<s n="adj"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
 
 
 <pardef n="-__n">
-  <e r="LR"><p><l></l>          <r>-<s n="n"/><s n="sg"/><s n="nom"/></r></p><par n="nur_radiko"/></e>
+  <e><p><l></l>          <r>-<s n="n"/><s n="sg"/><s n="nom"/></r></p><par n="nur_radiko"/></e>
 </pardef>
 
 
 
-<pardef n="aĵ/o__n">
+<pardef n="aĵ/o__n" c="malpermesas esti parto de kunmetaĵo">
   <e>       <p><l>o</l>         <r>o<s n="n"/></r></p><par n="sgplnomacc"/></e>
   <e r="RL" c="permesu iĝi a-vortojn fare de transfero"><p><l>a</l><r>o<s n="adj"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
 
 
-<pardef n="il/o__n">
+<pardef n="il/o__n" c="nur perpesas esti fine de kunmetaĵo">
   <e>       <p><l>o</l>         <r>o<s n="n"/></r></p><par n="sgplnomacc_kunmetebla"/></e>
   <e r="RL" c="permesu iĝi a-vortojn fare de transfero"><p><l>a</l><r>o<s n="adj"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
@@ -231,11 +235,13 @@
 
 
 <pardef n="e__adv">
-  <e>       <p><l>e</l>         <r>e<s n="adv"/></r></p></e>
+  <e>       <p><l>e</l>         <r>e<s n="adv"/></r></p><par n="vortfino"/></e>
+  <e><p><l></l>          <r>e<s n="adv"/></r></p><par n="nur_radiko"/></e>
 </pardef>
 
 <pardef n="a__adj">
-  <e>       <p><l>a</l>         <r>a<s n="adj"/></r></p><par n="sgplnomacc"/></e>
+  <e>       <p><l>a</l>         <r>a<s n="adj"/></r></p><par n="sgplnomacc_kunmetebla"/></e>
+  <e><p><l></l>          <r>a<s n="adj"/><s n="sg"/><s n="nom"/></r></p><par n="nur_radiko"/></e>
 </pardef>
 
 <pardef n="anglo-__adj">
@@ -1128,9 +1134,7 @@
 <e lm="iu ajn">          <p><l>iun<b/>ajn</l><r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="iu ajn">          <p><l>iuj<b/>ajn</l><r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="iu ajn">          <p><l>iujn<b/>ajn</l><r>iu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-<!-- en la tekstaro 'kiu ajn' neniam aperas pronome, kaj lexer konfuziĝas
-<e lm="kiu ajn">              <p><l>kiu<b/>ajn</l>          <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="kiu ajn">              <p><l>kiun<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<!-- en la tekstaro 'kiu ajn' neniam aperas pronome kiel pluralo (sg estas whoever)
 <e lm="kiu ajn">              <p><l>kiuj<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kiu ajn">              <p><l>kiujn<b/>ajn</l>        <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
@@ -1138,6 +1142,8 @@
 <e lm="io ajn">          <p><l>ion<b/>ajn</l><r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kio ajn">         <p><l>kio<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kio ajn">         <p><l>kion<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiu<b/>ajn</l>          <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">              <p><l>kiun<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 
 
 
@@ -1470,7 +1476,7 @@
 <e lm="Nepalo">          <i>Nepal</i><par n="Barcelon/o__np"/></e>
 <e lm="Niĝerio">         <i>Ni</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
 <e lm="Nikaragvo">       <i>Nikaragv</i><par n="Barcelon/o__np"/></e>
-<e lm="Normandio">       <i>Normandi</i><par n="Afgan/io__np"/></e>
+<e lm="Normandio">       <i>Normand</i><par n="Afgan/io__np"/></e>
 <e lm="Norvegio">        <i>Norveg</i><par n="Afgan/io__np"/></e>
 <e lm="Nov-Jorko">       <i>Nov-Jork</i><par n="Barcelon/o__np"/></e>
 <e lm="Nov-Zelando">     <i>Nov-Zeland</i><par n="Barcelon/o__np"/></e>
@@ -2159,6 +2165,9 @@
 <e lm="angilo">          <i>angil</i><par n="o__n"/></e>
 <e lm="angino">          <i>angin</i><par n="o__n"/></e>
 <e lm="angla">           <i>angl</i><par n="a__adj"/></e>
+<e lm="usonangla">       <i>usonangl</i><par n="a__adj"/></e>
+<e lm="britangla">       <i>britangl</i><par n="a__adj"/></e>
+<e lm="aŭstralangla">    <i>a</i><par n="ŭ"/><i>stralangl</i><par n="a__adj"/></e>
 <e lm="angoro">          <i>angor</i><par n="o__n"/></e>
 <e lm="angulo">          <i>angul</i><par n="o__n"/></e>
 <e lm="anigi">           <i>anig</i><par n="i__vblex"/></e>
@@ -22577,18 +22586,8 @@
 <e lm="Victor">          <i>Victor</i><par n="Mark__np"/></e>
 <e lm="Victoria">        <i>Victoria</i><par n="Mary__np"/></e>
 <e lm="Wood">            <i>Wood</i><par n="Ifans__np"/></e>
-
-
-
-
-<!--- 
-========================================================================================================
-========================================================================================================
-==============================NOVA ALDONO 2A DE FEBRUARO 2009===========================================
-========================================================================================================
-========================================================================================================
--->
-
+<e lm="Fleming">           <i>Fleming</i><par n="Smith__np"/></e>
+<e lm="Scot">           <i>Scot</i><par n="Smith__np"/></e>
 
 <e lm="BBC">             <i>BBC</i><par n="BBC__n"/></e>
 <e lm="DNA">             <i>DNA</i><par n="BBC__n"/></e>
@@ -22983,6 +22982,17 @@
 <e lm="en la angla lingvo"><i>en<b/>la<b/>angla<b/>lingvo</i><par n="jam__adv"/></e>
 <e lm="en la angla">     <i>en<b/>la<b/>angla</i><par n="jam__adv"/></e>
 <e lm="angle">           <i>angl</i><par n="e__adv"/></e>
+<e lm="en la usonangla lingvo"><i>en<b/>la<b/>usonangla<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la usonangla">     <i>en<b/>la<b/>usonangla</i><par n="jam__adv"/></e>
+<e lm="usonangle">           <i>usonangl</i><par n="e__adv"/></e>
+
+<e lm="en la britangla lingvo"><i>en<b/>la<b/>britangla<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la britangla">     <i>en<b/>la<b/>britangla</i><par n="jam__adv"/></e>
+<e lm="britangle">           <i>britangl</i><par n="e__adv"/></e>
+<e lm="en la aŭstralangla lingvo"><i>en<b/>la<b/>aŭstralangla<b/>lingvo</i><par n="jam__adv"/></e>
+<e lm="en la angla">     <i>en<b/>la<b/>aŭstralangla</i><par n="jam__adv"/></e>
+<e lm="angle">           <i>aŭstralangl</i><par n="e__adv"/></e>
+
 <e lm="en la nederlanda"><i>en<b/>la<b/>nederlanda<b/>lingvo</i><par n="jam__adv"/></e>
 <e lm="en la nederlanda lingvo"><i>en<b/>la<b/>nederlanda</i><par n="jam__adv"/></e>
 <e lm="nederlande">      <i>nederland</i><par n="e__adv"/></e>

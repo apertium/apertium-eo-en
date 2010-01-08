@@ -1432,6 +1432,9 @@ BUT:
 <e>       <p><l>orient-afrika<s n="adj"/></l>          <r>East<b/>African<s n="adj"/></r></p></e>
 <e>       <p><l>okcident-afrika<s n="adj"/></l>        <r>West<b/>African<s n="adj"/></r></p></e>
 <e>       <p><l>angla<s n="adj"/></l>                  <r>English<s n="adj"/></r></p></e>
+<e>       <p><l>usonangla<s n="adj"/></l>                  <r>American<b/>English<s n="adj"/></r></p></e>
+<e>       <p><l>britangla<s n="adj"/></l>                  <r>British<b/>English<s n="adj"/></r></p></e>
+<e>       <p><l>aŭstralangla<s n="adj"/></l>                  <r>Australian<b/>English<s n="adj"/></r></p></e>
 <e>       <p><l>anglo-<s n="adj"/></l>                 <r>Anglo-<s n="adj"/></r></p></e>
 <e>       <p><l>franc-<s n="adj"/></l>                 <r>Franco-<s n="adj"/></r></p></e>
 <e>       <p><l>ital-<s n="adj"/></l>                  <r>Italo-<s n="adj"/></r></p></e>
@@ -1710,15 +1713,16 @@ BUT:
 <e       ><p><l>en<b/>la<b/>hispana<s n="adv"/></l><r>in<b/>Spanish<s n="adv"/></r></p></e>
 <e r="LR"><p><l>hispane<s n="adv"/></l><r>in<b/>Spanish<s n="adv"/></r></p></e>
 <e r="RL"><p><l>en<b/>la<b/>hispana<s n="adv"/></l><r>in<b/>Castilian<b/>Spanish<s n="adv"/></r></p></e>
+<e r="RL"><p><l>en<b/>la<b/>hispana<s n="adv"/></l><r>in<b/>Castilian<s n="adv"/></r></p></e>
 <e r="LR"><p><l>en<b/>la<b/>portugala<b/>lingvo<s n="adv"/></l><r>in<b/>Portuguese<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>portugala<s n="adv"/></l><r>in<b/>Portuguese<s n="adv"/></r></p></e>
 <e r="LR"><p><l>portugale<s n="adv"/></l><r>in<b/>Portuguese<s n="adv"/></r></p></e>
 <e r="LR"><p><l>en<b/>la<b/>aragona<b/>lingvo<s n="adv"/></l><r>in<b/>Aragonese<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>aragona<s n="adv"/></l><r>in<b/>Aragonese<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aragone<s n="adv"/></l><r>in<b/>Aragonese<s n="adv"/></r></p></e>
-<e r="LR"><p><l>en<b/>la<b/>astura<b/>lingvo<s n="adv"/></l><r>in<b/>Asturians n="adv"/></r></p></e>
-<e       ><p><l>en<b/>la<b/>astura<s n="adv"/></l><r>in<b/>Asturians n="adv"/></r></p></e>
-<e r="LR"><p><l>asture<s n="adv"/></l><r>in<b/>Asturians n="adv"/></r></p></e>
+<e r="LR"><p><l>en<b/>la<b/>astura<b/>lingvo<s n="adv"/></l><r>in<b/>Asturian<s n="adv"/></r></p></e>
+<e       ><p><l>en<b/>la<b/>astura<s n="adv"/></l><r>in<b/>Asturian<s n="adv"/></r></p></e>
+<e r="LR"><p><l>asture<s n="adv"/></l><r>in<b/>Asturian<s n="adv"/></r></p></e>
 <e r="LR"><p><l>en<b/>la<b/>okcitana<b/>lingvo<s n="adv"/></l><r>in<b/>Occitan<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>okcitana<s n="adv"/></l><r>in<b/>Occitan<s n="adv"/></r></p></e>
 <e r="LR"><p><l>okcitane<s n="adv"/></l><r>in<b/>Occitan<s n="adv"/></r></p></e>
@@ -1745,10 +1749,21 @@ BUT:
 <e r="LR"><p><l>en<b/>la<b/>rumana<b/>lingvo<s n="adv"/></l><r>in<b/>Romanian<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>rumana<s n="adv"/></l><r>in<b/>Romanian<s n="adv"/></r></p></e>
 <e r="LR"><p><l>rumane<s n="adv"/></l><r>in<b/>Romanian<s n="adv"/></r></p></e>
-<e r="LR"><p><l>rumane<s n="adv"/></l><r>in<b/>Rumanian<s n="adv"/></r></p></e>
+
+<e c="malofta" r="RL"><p><l>en<b/>la<b/>rumana<s n="adv"/></l><r>in<b/>Rumanian<s n="adv"/></r></p></e>
+
 <e r="LR"><p><l>en<b/>la<b/>angla<b/>lingvo<s n="adv"/></l><r>in<b/>English<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>angla<s n="adv"/></l><r>in<b/>English<s n="adv"/></r></p></e>
 <e r="LR"><p><l>angle<s n="adv"/></l><r>in<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>en<b/>la<b/>usonangla<b/>lingvo<s n="adv"/></l><r>in<b/>American<b/>English<s n="adv"/></r></p></e>
+<e       ><p><l>en<b/>la<b/>usonangla<s n="adv"/></l><r>in<b/>American<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>usonangle<s n="adv"/></l><r>in<b/>American<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>en<b/>la<b/>britangla<b/>lingvo<s n="adv"/></l><r>in<b/>British<b/>English<s n="adv"/></r></p></e>
+<e       ><p><l>en<b/>la<b/>britangla<s n="adv"/></l><r>in<b/>British<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>britangle<s n="adv"/></l><r>in<b/>British<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>en<b/>la<b/>aŭstralangla<b/>lingvo<s n="adv"/></l><r>in<b/>Australian<b/>English<s n="adv"/></r></p></e>
+<e       ><p><l>en<b/>la<b/>aŭstralangla<s n="adv"/></l><r>in<b/>Australian<b/>English<s n="adv"/></r></p></e>
+<e r="LR"><p><l>aŭstralangle<s n="adv"/></l><r>in<b/>Australian<b/>English<s n="adv"/></r></p></e>
 <e r="LR"><p><l>en<b/>la<b/>skota<b/>lingvo<s n="adv"/></l><r>in<b/>Scots<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>skota<s n="adv"/></l><r>in<b/>Scots<s n="adv"/></r></p></e>
 <e r="LR"><p><l>skote<s n="adv"/></l><r>in<b/>Scots<s n="adv"/></r></p></e>
@@ -1872,9 +1887,9 @@ BUT:
 <e r="LR"><p><l>en<b/>la<b/>kurda<b/>lingvo<s n="adv"/></l><r>in<b/>Kurdish<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>kurda<s n="adv"/></l><r>in<b/>Kurdish<s n="adv"/></r></p></e>
 <e r="LR"><p><l>kurde<s n="adv"/></l><r>in<b/>Kurdish<s n="adv"/></r></p></e>
-<e r="LR"><p><l>en<b/>la<b/>malta<b/>lingvo<s n="adv"/></l><r>in<b/>Malteses<s n="adv"/></r></p></e>
-<e       ><p><l>en<b/>la<b/>malta<s n="adv"/></l><r>in<b/>Malteses<s n="adv"/></r></p></e>
-<e r="LR"><p><l>malte<s n="adv"/></l><r>in<b/>Malteses<s n="adv"/></r></p></e>
+<e r="LR"><p><l>en<b/>la<b/>malta<b/>lingvo<s n="adv"/></l><r>in<b/>Maltese<s n="adv"/></r></p></e>
+<e       ><p><l>en<b/>la<b/>malta<s n="adv"/></l><r>in<b/>Maltese<s n="adv"/></r></p></e>
+<e r="LR"><p><l>malte<s n="adv"/></l><r>in<b/>Maltese<s n="adv"/></r></p></e>
 <e r="LR"><p><l>en<b/>la<b/>araba<b/>lingvo<s n="adv"/></l><r>in<b/>Arabic<s n="adv"/></r></p></e>
 <e       ><p><l>en<b/>la<b/>araba<s n="adv"/></l><r>in<b/>Arabic<s n="adv"/></r></p></e>
 <e r="LR"><p><l>arabe<s n="adv"/></l><r>in<b/>Arabic<s n="adv"/></r></p></e>
@@ -16627,6 +16642,7 @@ TODO??
 <e r="LR"><p><l>laŭteksta<s n="adj"/></l>              <r>textual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>right-handed<s n="adj"/></r></p></e>
 <e r="RL"><p><l>lerta<s n="adj"/></l>                  <r>smart<s n="adj"/></r></p></e>
+<e r="RL"><p><l>lerte<s n="adv"/></l>                  <r>smart<s n="adv"/></r></p></e>
 <e r="RL"><p><l>libera<s n="adj"/></l>                 <r>free<s n="adj"/></r></p></e>
 <e r="RL"><p><l>longa<s n="adj"/></l>                  <r>long<s n="adj"/></r></p></e>
 <e r="RL"><p><l>longa<s n="adj"/></l>                  <r>lengthy<s n="adj"/></r></p></e>
