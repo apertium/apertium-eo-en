@@ -20,6 +20,7 @@ inboks = 0
 inboks2 = 0
 intable = 0
 intable2 = 0
+enkomento = 0
 y = 0
 z = 0
 w = 0
@@ -27,6 +28,9 @@ v = 0
 
 for line in f:
 	z = z+1
+#	print '"'+line+'"'
+	if '&lt;!--' in line:
+		enkomento = 1
 	if '<title' in line:
 		inprint = 0
 	if '<text' in line:
@@ -43,7 +47,7 @@ for line in f:
 	if 'table-html' in line:
 		intable2 = 1
 	oldline = line
-	if inprint == 1 and inboks == 0 and inboks2 == 0 and intable == 0 and intable2== 0:
+	if inprint == 1 and inboks == 0 and inboks2 == 0 and intable == 0 and intable2== 0 and enkomento==0:
 		m = re.findall('\[\[[^]]*\]\]',line)
 		for wlink in m:
 			wlink1 = wlink[2:]
@@ -93,11 +97,13 @@ for line in f:
 		if not newline == '\n' and not newline[0] == '*' and not newline[0] == '=' and not newline[0]==':' and not newline[0]=='#' and newline[-2:] == '.\n':
 			m = re.findall('...[a-zŝĝĥĵĉŭæøå0-9\'\)»;]\. [A-ZŬŜĜĤĴĈÆØÅ0-9\'«]',newline)
 			for splitw in m:
-				if not ' ca.' in splitw and not '(ca.' in splitw and not '.eks. ' in splitw and not '.a.' in splitw and not '(s. ' in splitw and not ' s. ' in splitw and not ' p. ' in splitw and not '(p. ' in splitw and not ' pp. ' in splitw and not '(pp. ' in splitw and not '.Kr. ' in splitw:
+				if not 'ĉ.' in splitw and not 'ekz.' in splitw and not 'ktp.' in splitw and not 'a.K.' in splitw and not 'p.K.' and not 'p.' in splitw:
 					newsplit = splitw.replace('. ','.\n')
 					newline = newline.replace(splitw,newsplit)
 			y = y+1
 			g.write(newline)
+	if '--&gt;' in line:
+		enkomento = 0
 	if '</text>' in line:
 		inprint = 0
 	if '}}' in line and inboks > 0:
