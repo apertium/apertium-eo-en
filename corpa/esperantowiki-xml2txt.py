@@ -4,6 +4,7 @@
 # Fonto: https://www.hf.ntnu.no/hf/isk/Ansatte/petter.haugereid/cl/wiki-corpus.html
 import sys
 import re
+import commands;
 
 #inputfile = sys.argv[1]
 #
@@ -14,6 +15,8 @@ import re
 
 f = sys.stdin
 g = sys.stdout
+
+text_cat='./text_cat/text_cat -d text_cat/LM '
 
 inprint = 0
 inboks = 0
@@ -97,11 +100,18 @@ for line in f:
 		if not newline == '\n' and not newline[0] == '*' and not newline[0] == '=' and not newline[0]==':' and not newline[0]=='#' and newline[-2:] == '.\n':
 			m = re.findall('...[a-zŝĝĥĵĉŭæøå0-9\'\)»;]\. [A-ZŬŜĜĤĴĈÆØÅ0-9\'«]',newline)
 			for splitw in m:
-				if not 'ĉ.' in splitw and not 'ekz.' in splitw and not 'ktp.' in splitw and not 'a.K.' in splitw and not 'p.K.' and not 'p.' in splitw:
+				if not 'ĉ.' in splitw and not 'ekz.' in splitw and not 'ktp.' in splitw in splitw and not 'i.a.' and not 'k.s.' in splitw and not 'a.K.' in splitw and not 'p.K.' and not 'p.' in splitw:
 					newsplit = splitw.replace('. ','.\n')
 					newline = newline.replace(splitw,newsplit)
 			y = y+1
+
 			g.write(newline)
+#			lingvo = commands.getoutput(text_cat+'-l \''+newline+'\'')
+#			g.write(lingvo+"\n\n")
+#			if 'esperanto' in lingvo:
+#				g.write(newline)
+
+
 	if '--&gt;' in line:
 		enkomento = 0
 	if '</text>' in line:
