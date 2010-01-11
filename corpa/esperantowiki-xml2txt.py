@@ -8,7 +8,7 @@ import commands;
 
 
 def printline(line):
-	y = 0
+	line = line.strip()+'\n';
 	m = re.findall('\[\[[^]]*\]\]',line)
 	for wlink in m:
 		wlink1 = wlink[2:]
@@ -53,17 +53,21 @@ def printline(line):
 		oldword = m.group(0)
 		line = line.replace(oldword,'')
 
-	newline = line
-	if not newline == '\n' and not newline[0] == '*' and not newline[0] == '=' and not newline[0]==':' and not newline[0]=='#' and newline[-2:] == '.\n':
-		m = re.findall('...[a-zŝĝĥĵĉŭæøå0-9\'\)»;]\. [A-ZŬŜĜĤĴĈÆØÅ0-9\'«]',newline)
+	while line[0] == '*':
+		line = line[1:];
+	while line[0] == ':':
+		line = line[1:];
+	while line[0] == ';':
+		line = line[1:];
+	line = line.strip()+'\n';
+	if not line == '\n' and not line[0] == '*' and not line[0] == '=' and not line[0]==':' and not line[0]=='#' and line[-2:] == '.\n':
+		m = re.findall('...[a-zŝĝĥĵĉŭæøå0-9\'\)»;]\. [A-ZŬŜĜĤĴĈÆØÅ0-9\'«]',line)
 		for splitw in m:
-			if not 'ĉ. ' in splitw and not 'ekz. ' in splitw and not 'ktp. ' in splitw and not 'i.a. ' in splitw and not 'k.s. ' in splitw and not 'a.K. ' in splitw and not 'p.K. ' in splitw and not 'p. ' in splitw:
+			if not 'ĉ. ' in splitw and not 'ekz. ' in splitw and not 'ktp. ' in splitw and not 'i.a. ' in splitw and not 't.n. ' in splitw and not 'k.s. ' in splitw and not 'a.K. ' in splitw and not 'p.K. ' in splitw and not 'p. ' in splitw:
 				newsplit = splitw.replace('. ','.\n')
-				newline = newline.replace(splitw,newsplit)
-		y = y+1
+				line = line.replace(splitw,newsplit)
 
-		g.write(newline)
-		newline = '';
+		g.write(line)
 #			lingvo = commands.getoutput(text_cat+'-l \''+newline+'\'')
 #			g.write(lingvo+"\n\n")
 #			if 'esperanto' in lingvo:
@@ -83,20 +87,30 @@ g = sys.stdout
 
 text_cat='./text_cat/text_cat -d text_cat/LM '
 
-inprint = 0
-inboks = 0
-inboks2 = 0
-intable = 0
-intable2 = 0
-enkomento = 0
+printu = 0
+inprint = 0;
+inboks = intable = enkomento = 0
 z = 0
 w = 0
 v = 0
-newline = '';
+oldline = '';
+lines = '';
+printutuj = 0
 
 for line in f:
 	z = z+1
 #	print '"'+line+'"'
+
+	line = line.replace('\n','')
+
+	if oldline == '' or printutuj == 1:
+		printline(lines+'\n');
+		lines = '';
+
+	if printu == 1:
+		lines = lines + ' '+ oldline;
+
+
 	if '&lt;!--' in line:
 		enkomento = 1
 	if '<title' in line:
@@ -106,27 +120,40 @@ for line in f:
 	if '<text' in line:
 		inprint = 1
 	if '{{el}}' in line:
-		line = '\n';
-	if '{{Informkesto' in line or '{{Landtabelo' in line:
+		line = '';
+	elif '{{Informkesto' in line or '{{Landtabelo' in line:
 		inboks = 1
-	elif inboks > 0:
-		if '{{' in line:
-			inboks = inboks +1
-	if '{|' in line or 'table-html' in line:
+#	elif '{{' in line:
+#		inboks = inboks +1
+	if '{|' in line or 'table' in line:
 		intable = 1
-	if 'table-html' in line:
-		intable2 = 1
-	oldline = line
-	if inprint == 1 and ellasu == 0 and inboks == 0 and inboks2 == 0 and intable == 0 and intable2== 0 and enkomento==0:
-		printline(line);
 
-	if '--&gt;' in oldline:
+	printutuj = 0
+	if line=='' or '[[Dosiero:' in line or '----' in line or '==' in line:
+		printutuj = 1;
+		printu = 0;
+	elif inprint == 1 and ellasu == 0 and inboks == 0 and intable == 0 and enkomento==0:
+		if line[0]=='*' or line[0]=='#' or line[0]==':' or lines.endswith('.'):
+			printutuj = 1;
+			printu = 1;
+		else:
+			printu = 1;
+	else:
+		printutuj = 1;
+		printu = 0;
+
+	if '--&gt;' in line:
 		enkomento = 0
-	if '</text>' in oldline:
+		printu = 0;
+	if '</text>' in line:
 		inprint = 0
-	if '}}' in oldline and inboks > 0:
-		inboks = inboks - 1
-	if '--' in oldline or '\}' in oldline or '|}' in oldline:
+		inboks = 0; intable = 0; enkomento = 0;
+		printu = 0;
+	if '}}' in line:# and inboks > 0:
+#		inboks = inboks - 1
+		printu = 0;
+		inboks = 0;
+	if '\}' in line or '|}' in line or '/table&' in line:
 		intable = 0
-	if '/table&' in oldline:
-		intable2 = 0
+		printu = 0;
+	oldline = line;
