@@ -6,6 +6,12 @@ import sys
 import re
 import commands;
 
+# Se vi instalis text_cat (de http://www.let.rug.nl/~vannoord/TextCat/)
+# vi povas uzi ĝin. 
+# NB: Ĉar la esperanta rekonilo de TextCat estas en latin-3 vi faru unue
+# iconv -f ISO-8859-3 < ShortTexts/esperanto.txt > x; mv x ShortTexts/esperanto.txt
+uzu_text_cat=0
+text_cat='./text_cat/text_cat -d text_cat/LM '
 
 def printline(line):
 	line = line.strip()+'\n';
@@ -22,6 +28,7 @@ def printline(line):
 			nword = nwords[-1:][0]
 			line = line.replace(wlink2,nword)
 
+
 	line = line.replace('[[','')
 	line = line.replace(']]','')
 	m = re.findall('\{\{[^}]*\}\}',line)
@@ -37,7 +44,12 @@ def printline(line):
 			nword = nwords[-1:][0]
 			line = line.replace(wlink2,nword)
 #	g.write("RE:"+line)
+
 	m = re.findall('&lt;ref.+?&lt;/ref&gt;',line)
+	for wlink in m:
+		line = line.replace(wlink,'')
+
+	m = re.findall('&lt;math.+?&lt;/math&gt;',line)
 	for wlink in m:
 		line = line.replace(wlink,'')
 
@@ -73,11 +85,13 @@ def printline(line):
 				newsplit = splitw.replace('. ','.\n')
 				line = line.replace(splitw,newsplit)
 
-		g.write(line)
-#			lingvo = commands.getoutput(text_cat+'-l \''+newline+'\'')
+		if uzu_text_cat == 0:
+			g.write(line)
+		else:
+			lingvo = commands.getoutput(text_cat+'-l \''+line.replace('\'','\\\'')+'\'')
 #			g.write(lingvo+"\n\n")
-#			if 'esperanto' in lingvo:
-#				g.write(newline)
+			if 'esperanto' in lingvo or lingvo=='':
+				g.write(line)
 
 
 
@@ -91,7 +105,6 @@ def printline(line):
 f = sys.stdin
 g = sys.stdout
 
-text_cat='./text_cat/text_cat -d text_cat/LM '
 
 printu = 0
 inprint = 0;
@@ -121,6 +134,10 @@ for line in f:
 		ellasu = 0
 		if ':' in line:
 			ellasu = 1
+
+	if '{{polurinda}}' in line:
+		ellasu = 1
+
 	if '<text' in line:
 		inprint = 1
 		inboks = 0; intable = 0; enkomento = 0;
@@ -128,20 +145,22 @@ for line in f:
 		enkomento = 1
 	if '{{el}}' in line:
 		line = '';
-	elif '{{Informkesto' in line or '{{Landtabelo' in line or '{{urbokadro' in line or '{{Filmakadro' in line or '{{US' in line or '{{Birda' in line or '{{Popol' in line or '{{Riveroj' in line or '{{Taksonomio' in line or '{{Valuto' in line or '{{Biologia' in line:
-		inboks = 1
+	elif '{{Informkesto' in line or '{{Landtabelo' in line or '{{urbokadro' in line or '{{Filmakadro' in line or '{{US' in line or '{{Birda' in line or '{{Popol' in line or '{{Riveroj' in line or '{{Taksonomio' in line or '{{Valuto' in line or '{{Biologia' in line or '{{1' in line or '{{Albumo' in line or '{{Adm' in line or '{{Antaŭuloj' in line or '{{Arkivo' in line or '{{Babel' in line or '{{cit' in line or '{{Cit' in line or '{{coor' in line or '{{EDE' in line or '{{Fontindiko' in line or '{{mesaĝokadro' in line or '{{Situ' in line or '{{Stelamaso' in line or '{{sukced' in line or '{{Urbo' in line or '{{Japana' in line:
+		if inboks == 0:
+			inboks = inboks + line.count('{{');
 	elif inboks > 0:
 		inboks = inboks + line.count('{{');
 #		if '{{' in line:
 #			inboks = inboks +1
-	if '{|' in line or 'table' in line:
-		intable = 1
+
+
+	intable = intable + line.count('&lt;table')  + line.count('{|');
 
 	printutuj = 0
-	if line=='' or '[[Dosiero:' in line or '----' in line or '==' in line:
+	if line=='' or '[[Dosiero:' in line or '[[Image:' in line or '----' in line or '==' in line:
 		printutuj = 1;
 		printu = 0;
-	elif inprint == 1 and ellasu == 0 and inboks <= 0 and intable == 0 and enkomento==0:
+	elif inprint == 1 and ellasu == 0 and inboks <= 0 and intable <= 0 and enkomento==0:
 		if line[0]=='*' or line[0]=='#' or line[0]==':' or lines.endswith('.'): # or lines.endswith(';'):
 			printutuj = 1;
 			printu = 1;
@@ -162,7 +181,10 @@ for line in f:
 	if '}}' in line:# and inboks > 0:
 		inboks = inboks - line.count('}}');
 		printu = 0;
-	if '\}' in line or '|}' in line or '/table&' in line:
-		intable = 0
+
+	if '\}' in line or '|}' in line or '/table&gt;' in line:
 		printu = 0;
+
+	intable = intable - line.count('/table&gt;')  - line.count('|}');
+
 	oldline = line;
