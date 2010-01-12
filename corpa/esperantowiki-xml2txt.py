@@ -21,6 +21,7 @@ def printline(line):
 			nwords = wlink2.split(':')
 			nword = nwords[-1:][0]
 			line = line.replace(wlink2,nword)
+
 	line = line.replace('[[','')
 	line = line.replace(']]','')
 	m = re.findall('\{\{[^}]*\}\}',line)
@@ -127,7 +128,7 @@ for line in f:
 		enkomento = 1
 	if '{{el}}' in line:
 		line = '';
-	elif '{{Informkesto' in line or '{{Landtabelo' in line or '{{urbokadro' in line or '{{Filmakadro' in line:
+	elif '{{Informkesto' in line or '{{Landtabelo' in line or '{{urbokadro' in line or '{{Filmakadro' in line or '{{US' in line or '{{Birda' in line or '{{Popol' in line or '{{Riveroj' in line or '{{Taksonomio' in line or '{{Valuto' in line or '{{Biologia' in line:
 		inboks = 1
 	elif inboks > 0:
 		inboks = inboks + line.count('{{');
