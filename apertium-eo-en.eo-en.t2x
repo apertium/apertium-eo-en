@@ -379,30 +379,15 @@
 	  <when>
 	    <test> <!--Por la verbo "to be", estas aparta konjugacio por p1 kaj p3 de sg en pres kaj past -->
 	      <and>
-		<equal caseless="yes">
-		  <clip pos="1" part="a_vrb2"/>
-		  <lit-tag v="be"/>
-		</equal>
-		<or>
-		  <equal>
-		    <clip pos="1" part="a_tns"/>
-		    <lit-tag v="past"/>
-		  </equal>
-		  <equal>
-		    <clip pos="1" part="a_tns"/>
-		    <lit-tag v="pres"/>
-		  </equal>
-		</or>
-		<or>
-		  <equal>
-		    <clip pos="1" part="prs"/>
-		    <lit-tag v="p2"/>
-		  </equal>
-		  <equal>
-		    <clip pos="1" part="nbr"/>
-		    <lit-tag v="pl"/>
-		  </equal>
-		</or>
+			<equal caseless="yes"><clip pos="1" part="a_vrb2"/><lit-tag v="be"/></equal>
+			<or>
+			  <equal><clip pos="1" part="a_tns"/><lit-tag v="past"/></equal>
+			  <equal><clip pos="1" part="a_tns"/><lit-tag v="pres"/></equal>
+			</or>
+			<or>
+			  <equal><clip pos="1" part="prs"/><lit-tag v="p2"/></equal>
+			  <equal><clip pos="1" part="nbr"/><lit-tag v="pl"/></equal>
+			</or>
 	      </and>
 	    </test>
 	    <let>
@@ -411,7 +396,7 @@
 	    <let>
 		<clip pos="1" part="prs"/><lit v=""/> <!-- drop person -->
 	    </let>
-<let><var n="DEBUG"/><lit-tag v="1"/></let>
+		<let><var n="DEBUG"/><lit-tag v="1"/></let>
 	  </when>
 
 	  <when>

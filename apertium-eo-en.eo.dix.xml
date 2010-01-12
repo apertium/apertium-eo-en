@@ -15978,7 +15978,6 @@
 <e lm="knuto">           <i>knut</i><par n="o__n"/></e>
 <e lm="scipovi">         <i>scipov</i><par n="i__vblex"/></e>
 <e lm="saĝe">            <i>sa</i><par n="ĝ"/><par n="e__adv"/></e>
-<e lm="sciata">          <i>sciat</i><par n="a__adj"/></e>
 <e lm="eksciinta">       <i>eksciint</i><par n="a__adj"/></e>
 <e lm="ekkoninta">       <i>ekkonint</i><par n="a__adj"/></e>
 <e lm="koniĝinta">       <i>koni</i><par n="ĝ"/><i>int</i><par n="a__adj"/></e>
@@ -20664,7 +20663,7 @@
 <e lm="starto">          <i>start</i><par n="o__n"/></e>
 <e lm="komenciĝi">       <i>komenci</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="starti">          <i>start</i><par n="i__vblex"/></e>
-<e lm="ekbruliĝi">       <i>ekbruli</i><par n="ĝ"/><par n="i__vblex"/></e>
+<e i="yes" lm="ekbruliĝi">       <i>ekbruli</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="malsato">         <i>malsat</i><par n="o__n"/></e>
 <e lm="malnutri">        <i>malnutr</i><par n="i__vblex"/></e>
 <e lm="malsatigi">       <i>malsatig</i><par n="i__vblex"/></e>
@@ -22955,9 +22954,11 @@
 <e lm="en la gaskona lingvo"><i>en<b/>la<b/>gaskona<b/>lingvo</i><par n="jam__adv"/></e>
 <e lm="en la gaskona">   <i>en<b/>la<b/>gaskona</i><par n="jam__adv"/></e>
 <e lm="gaskone">         <i>gaskon</i><par n="e__adv"/></e>
+<!--
 <e lm="en la provenca lingvo"><i>en<b/>la<b/>provenca<b/>lingvo</i><par n="jam__adv"/></e>
 <e lm="en la provenca">  <i>en<b/>la<b/>provenca</i><par n="jam__adv"/></e>
 <e lm="provence">        <i>provenc</i><par n="e__adv"/></e>
+-->
 <e lm="en la franca lingvo"><i>en<b/>la<b/>franca<b/>lingvo</i><par n="jam__adv"/></e>
 <e lm="en la franca">    <i>en<b/>la<b/>franca</i><par n="jam__adv"/></e>
 <e lm="france">          <i>franc</i><par n="e__adv"/></e>
@@ -32433,10 +32434,9 @@ oni sia sian ĉi sin Eternulo
     <!-- Ĉefurba Teritorio -->
 <e>                      <p><l>Ĉefurba<b/>Teritorio</l><r>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                      <p><l>Ĉefurban<b/>Teritorion</l><r>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Ĉefurb-teritoria</l><r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Ĉefurb-teritoriaj</l><r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Ĉefurb-teritorian</l><r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Ĉefurb-teritoriajn</l><r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL" c="permesu iĝi a-vortojn fare de transfero"><p><l>Ĉefurb-teritoria</l><r>Ĉefurba<b/>Teritorio<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
+
+
 
     <!-- Unuiĝinta Reĝlando -->
 <e>                      <p><l>Unuiĝinta<b/>Reĝlando</l><r>Unuiĝinta<b/>Reĝlando<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -32445,24 +32445,15 @@ oni sia sian ĉi sin Eternulo
     <!-- Okcidenta Virginio -->
 <e>                      <p><l>Okcidenta<b/>Virginio</l><r>Okcidenta<b/>Virginio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                      <p><l>Okcidentan<b/>Virginion</l><r>Okcidenta<b/>Virginio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Okcident-virginia</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Okcident-virginiaj</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Okcident-virginian</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Okcident-virginiajn</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL" c="a-vorto"><p><l>Okcident-virginia</l><r>Okcidenta<b/>Virginio<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
 
     <!-- Malsupra Saksio -->
 <e>                      <p><l>Malsupra<b/>Saksio</l><r>Malsupra<b/>Saksio<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                      <p><l>Malsupran<b/>Saksion</l><r>Malsupra<b/>Saksio<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Malsupr-saksia</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Malsupr-saksiaj</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>                      <p><l>Malsupr-saksian</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e>                      <p><l>Malsupr-saksiajn</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
 <e r="LR">               <p><l>Malsupra<b/>Saksujo</l><r>Malsupra<b/>Saksujo<s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="LR">               <p><l>Malsupran<b/>Saksujon</l><r>Malsupra<b/>Saksujo<s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="LR">               <p><l>Malsupr-saksuja</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="LR">               <p><l>Malsupr-saksujaj</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="LR">               <p><l>Malsupr-saksujan</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="sg"/><s n="acc"/></r></p></e>
-<e r="LR">               <p><l>Malsupr-saksujajn</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/><s n="pl"/><s n="acc"/></r></p></e>
+<e r="RL" c="a-vorto"><p><l><l>Malsupr-saksuja</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
+<e r="RL" c="a-vorto"><p><l><l>Malsupr-saksia</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
 
 	</section>
 </dictionary>
