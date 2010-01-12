@@ -88,8 +88,13 @@ def printline(line):
 		if uzu_text_cat == 0:
 			g.write(line)
 		else:
-			lingvo = commands.getoutput(text_cat+'-l \''+line.replace('\'','\\\'')+'\'')
-#			g.write(lingvo+"\n\n")
+
+#./text_cat/text_cat -d text_cat/LM -l '- En la muzeo estas konservita bildo de grafo Pachter - busto en efektivaj dimensioj. En la dekstra mano la grafo tenas ministan hakilon. '
+
+			cmd = text_cat+'-l \''+line.replace('\'','\'\'').replace('\n',' ').replace('-',' ') +'\''
+			#g.write(cmd+'\n')
+			lingvo = commands.getoutput(cmd);
+			#g.write(lingvo+"\n\n")
 			if 'esperanto' in lingvo or lingvo=='':
 				g.write(line)
 
@@ -104,7 +109,6 @@ def printline(line):
 
 f = sys.stdin
 g = sys.stdout
-
 
 printu = 0
 inprint = 0;
@@ -135,7 +139,7 @@ for line in f:
 		if ':' in line:
 			ellasu = 1
 
-	if '{{polurinda}}' in line:
+	if '{{polurinda' in line:
 		ellasu = 1
 
 	if '<text' in line:
