@@ -35,7 +35,12 @@ def printline(line):
 			nwords = wlink2.split(':')
 			nword = nwords[-1:][0]
 			line = line.replace(wlink2,nword)
-	m = re.findall('&lt[^&]*&gt',line)
+#	g.write("RE:"+line)
+	m = re.findall('&lt;ref.+?&lt;/ref&gt;',line)
+	for wlink in m:
+		line = line.replace(wlink,'')
+
+	m = re.findall('&lt;.+?&gt;',line)
 	for wlink in m:
 		line = line.replace(wlink,'')
 	line = line.replace('&amp;nbsp;',' ')
@@ -111,20 +116,23 @@ for line in f:
 		lines = lines + ' '+ oldline;
 
 
-	if '&lt;!--' in line:
-		enkomento = 1
 	if '<title' in line:
 		ellasu = 0
 		if ':' in line:
 			ellasu = 1
 	if '<text' in line:
 		inprint = 1
+		inboks = 0; intable = 0; enkomento = 0;
+	if '&lt;!--' in line:
+		enkomento = 1
 	if '{{el}}' in line:
 		line = '';
-	elif '{{Informkesto' in line or '{{Landtabelo' in line:
+	elif '{{Informkesto' in line or '{{Landtabelo' in line or '{{urbokadro' in line or '{{Filmakadro' in line:
 		inboks = 1
-#	elif '{{' in line:
-#		inboks = inboks +1
+	elif inboks > 0:
+		inboks = inboks + line.count('{{');
+#		if '{{' in line:
+#			inboks = inboks +1
 	if '{|' in line or 'table' in line:
 		intable = 1
 
@@ -132,8 +140,8 @@ for line in f:
 	if line=='' or '[[Dosiero:' in line or '----' in line or '==' in line:
 		printutuj = 1;
 		printu = 0;
-	elif inprint == 1 and ellasu == 0 and inboks == 0 and intable == 0 and enkomento==0:
-		if line[0]=='*' or line[0]=='#' or line[0]==':' or lines.endswith('.'):
+	elif inprint == 1 and ellasu == 0 and inboks <= 0 and intable == 0 and enkomento==0:
+		if line[0]=='*' or line[0]=='#' or line[0]==':' or lines.endswith('.'): # or lines.endswith(';'):
 			printutuj = 1;
 			printu = 1;
 		else:
@@ -147,12 +155,12 @@ for line in f:
 		printu = 0;
 	if '</text>' in line:
 		inprint = 0
-		inboks = 0; intable = 0; enkomento = 0;
 		printu = 0;
+
+
 	if '}}' in line:# and inboks > 0:
-#		inboks = inboks - 1
+		inboks = inboks - line.count('}}');
 		printu = 0;
-		inboks = 0;
 	if '\}' in line or '|}' in line or '/table&' in line:
 		intable = 0
 		printu = 0;
