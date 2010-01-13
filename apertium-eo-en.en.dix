@@ -1,108 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Dictionary:
-	Sections: 3
-	Entries: 25033
-	Sdefs: 89
-	Paradigms: 315
-	Last processed by: apertium-dixtools sort -alignMono -mon -group adj,vblex,n,adv,n_symbol,vblex_symbol,np -ignorecase apertium-eo-en.en.dix x6.dix
+  Dictionary:
+  Sections: 3
+  Entries: 25033
+  Sdefs: 89
+  Paradigms: 315
+  Last processed by: apertium-dixtools sort -alignMono -mon -group adj,vblex,n,adv,n_symbol,vblex_symbol,np -ignorecase apertium-eo-en.en.dix x6.dix
 
 -->
 <dictionary>
-	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚāàáâäçèéêëìíîïīñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</alphabet>
-	<sdefs>
-		<sdef n="alpha" /> 
-		<sdef n="acr" /> 
-		<sdef n="predet" /> 
-		<sdef n="detnt" /> 
-		<sdef n="top" /> 
-		<sdef n="ant" /> 
-		<sdef n="al" /> 
-		<sdef n="cog" /> 
-		<sdef n="atn" /> 
-		<sdef n="enc" /> 
-		<sdef n="pro" /> 
-		<sdef n="tn" /> 
-		<sdef n="n" /> 
-		<sdef n="re" /> 
-		<sdef n="np" /> 
-		<sdef n="adj" /> 
-		<sdef n="f" /> 
-		<sdef n="m" /> 
-		<sdef n="mf" /> 
-		<sdef n="sg" /> 
-		<sdef n="pl" /> 
-		<sdef n="adv" /> 
-		<sdef n="preadv" /> 
-		<sdef n="pr" /> 
-		<sdef n="prn" /> 
-		<sdef n="rel" /> 
-		<sdef n="nn" /> 
-		<sdef n="an" /> 
-		<sdef n="aa" /> 
-		<sdef n="ind" /> 
-		<sdef n="itg" /> 
-		<sdef n="det" /> 
-		<sdef n="dem" /> 
-		<sdef n="def" /> 
-		<sdef n="cnjcoo" /> 
-		<sdef n="cnjsub" /> 
-		<sdef n="cnjadv" /> 
-		<sdef n="nt" /> 
-		<sdef n="vbser" /> 
-		<sdef n="vbhaver" /> 
-		<sdef n="vblex" /> 
-		<sdef n="vbmod" /> 
-		<sdef n="inf" /> 
-		<sdef n="ger" /> 
-		<sdef n="pp" /> 
-		<sdef n="p1" /> 
-		<sdef n="p2" /> 
-		<sdef n="p3" /> 
-		<sdef n="pii" /> 
-		<sdef n="ifi" /> 
-		<sdef n="fti" /> 
-		<sdef n="cni" /> 
-		<sdef n="prs" /> 
-		<sdef n="pis" /> 
-		<sdef n="fts" /> 
-		<sdef n="imp" /> 
-		<sdef n="pos" /> 
-		<sdef n="sp" /> 
-		<sdef n="ref" /> 
-		<sdef n="sup" /> 
-		<sdef n="ord" /> 
-		<sdef n="qnt" /> 
-		<sdef n="num" /> 
-		<sdef n="pron" /> 
-		<sdef n="ij" /> 
-		<sdef n="sent" /> 
-		<sdef n="cm" /> 
-		<sdef n="lpar" /> 
-		<sdef n="rpar" /> 
-		<sdef n="web" /> 
-		<sdef n="apos" /> 
-		<sdef n="percent" /> 
-		<sdef n="guio" /> 
-		<sdef n="past" /> 
-		<sdef n="sep" /> 
-		<sdef n="sint" /> 
-		<sdef n="email" /> 
-		<sdef n="obj" /> 
-		<sdef n="subj" /> 
-		<sdef n="subs" /> 
-		<sdef n="pprs" /> 
-		<sdef n="url" /> 
-		<sdef n="gen" /> 
-		<sdef n="vbdo" /> 
-		<sdef n="comp" /> 
-		<sdef n="pres" /> 
-		<sdef n="vaux" /> 
-		<sdef n="sym" /> 
-		<sdef n="ND" /> 
-		<sdef n="GD" /> 
-	</sdefs>
-	<pardefs>
+  <alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚāàáâäçèéêëìíîïīñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</alphabet>
+  <sdefs>
+    <sdef n="alpha" />
+    <sdef n="acr" />
+    <sdef n="predet" />
+    <sdef n="detnt" />
+    <sdef n="top" />
+    <sdef n="ant" />
+    <sdef n="al" />
+    <sdef n="cog" />
+    <sdef n="atn" />
+    <sdef n="enc" />
+    <sdef n="pro" />
+    <sdef n="tn" />
+    <sdef n="n" />
+    <sdef n="re" />
+    <sdef n="np" />
+    <sdef n="adj" />
+    <sdef n="f" />
+    <sdef n="m" />
+    <sdef n="mf" />
+    <sdef n="sg" />
+    <sdef n="pl" />
+    <sdef n="adv" />
+    <sdef n="preadv" />
+    <sdef n="pr" />
+    <sdef n="prn" />
+    <sdef n="rel" />
+    <sdef n="nn" />
+    <sdef n="an" />
+    <sdef n="aa" />
+    <sdef n="ind" />
+    <sdef n="itg" />
+    <sdef n="det" />
+    <sdef n="dem" />
+    <sdef n="def" />
+    <sdef n="cnjcoo" />
+    <sdef n="cnjsub" />
+    <sdef n="cnjadv" />
+    <sdef n="nt" />
+    <sdef n="vbser" />
+    <sdef n="vbhaver" />
+    <sdef n="vblex" />
+    <sdef n="vbmod" />
+    <sdef n="inf" />
+    <sdef n="ger" />
+    <sdef n="pp" />
+    <sdef n="p1" />
+    <sdef n="p2" />
+    <sdef n="p3" />
+    <sdef n="pii" />
+    <sdef n="ifi" />
+    <sdef n="fti" />
+    <sdef n="cni" />
+    <sdef n="prs" />
+    <sdef n="pis" />
+    <sdef n="fts" />
+    <sdef n="imp" />
+    <sdef n="pos" />
+    <sdef n="sp" />
+    <sdef n="ref" />
+    <sdef n="sup" />
+    <sdef n="ord" />
+    <sdef n="qnt" />
+    <sdef n="num" />
+    <sdef n="pron" />
+    <sdef n="ij" />
+    <sdef n="sent" />
+    <sdef n="cm" />
+    <sdef n="lpar" />
+    <sdef n="rpar" />
+    <sdef n="web" />
+    <sdef n="apos" />
+    <sdef n="percent" />
+    <sdef n="guio" />
+    <sdef n="past" />
+    <sdef n="sep" />
+    <sdef n="sint" />
+    <sdef n="email" />
+    <sdef n="obj" />
+    <sdef n="subj" />
+    <sdef n="subs" />
+    <sdef n="pprs" />
+    <sdef n="url" />
+    <sdef n="gen" />
+    <sdef n="vbdo" />
+    <sdef n="comp" />
+    <sdef n="pres" />
+    <sdef n="vaux" />
+    <sdef n="sym" />
+    <sdef n="ND" />
+    <sdef n="GD" />
+  </sdefs>
+  <pardefs>
 
 <pardef n="TAGGER_TODO" c="Marko por igi eron LR ĝis eblas plibonigi la tagger">
   <e r="RL"><p><l></l>        <r></r></p></e>
@@ -140,7 +140,7 @@
 </pardef>
 
 
-  
+
 <pardef n="guionet">
   <e>       <p><l>-</l>         <r>-<s n="guio"/></r></p></e>
 </pardef>
@@ -159,8 +159,8 @@
 
 
 <!-- Tiu cxu pardef zorgas pri la genitivo cxe vortoj finigxantaj kun s. Ekzemple
-     Paris' 
--->     
+     Paris'
+-->
 <pardef n="gen__apos">
   <e>       <p><l></l>          <r></r></p></e>
   <e>       <p><l>'</l>         <r><j/>'<s n="gen"/></r></p></e>
@@ -215,43 +215,43 @@
 <pardef n="separa">
   <e>       <re>[.\?;:!]</re><p><l></l><r><s n="sent"/></r></p></e>
 </pardef>
-    
+
 <pardef n="emails">
   <e>       <re>[a-z.]+@[a-z.]+</re><p><l></l><r><s n="num"/></r></p></e>
 </pardef>
-    
+
 <pardef n="urls">
   <e>       <re>((www.)[a-z\-]+[.][a-z]+)</re><p><l></l><r><s n="num"/></r></p></e>
 </pardef>
-    
+
 <pardef n="expensive__adj">
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
 </pardef>
 
 <pardef n="ca__adj"><e><par n="expensive__adj"/></e></pardef>
 
-<!-- Permesu provizore ke la "sint" mankas. Tio ĝenerale ne estas bona ideo, ĉar ĝi necesas por ekz "pli granda" -> "bigger" 
+<!-- Permesu provizore ke la "sint" mankas. Tio ĝenerale ne estas bona ideo, ĉar ĝi necesas por ekz "pli granda" -> "bigger"
 <pardef n="sint">
   <e>       <p><l></l>          <r><s n="sint"/></r></p></e>
   <e r="RL"><p><l></l>          <r></r></p></e>
 </pardef>
 -->
 
-    
+
 <pardef n="long/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>er</l>        <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>est</l>       <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="happ/y__adj">
   <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="sh/y__adj">
   <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
@@ -260,77 +260,77 @@
   <e r="LR"><p><l>yer</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>yest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="nice/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>r</l>         <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>st</l>        <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="big/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ger</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>gest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="hot/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ter</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>test</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="thin/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>ner</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>nest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="dim/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>mer</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>mest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="common/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e r="LR"><p><l>er</l>        <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>est</l>       <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="lovel/y__adj">
   <e r="RL"><p><l>y</l>         <r>y<s n="adj"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="adj"/><s n="sint"/></r></p></e>
   <e r="LR"><p><l>ier</l>       <r>y<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>iest</l>      <r>y<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="handsome/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e r="LR"><p><l>r</l>         <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>st</l>        <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="/good__adj">
   <e r="RL">       <p><l>good</l>      <r>good<s n="adj"/></r></p></e>
   <e>       <p><l>good</l>      <r>good<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>better</l>    <r>good<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>best</l>      <r>good<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="/bad__adj">
   <e r="RL"><p><l>bad</l><r>bad<s n="adj"/></r></p></e>
   <e>       <p><l>bad</l>       <r>bad<s n="adj"/><s n="sint"/></r></p></e>
   <e>       <p><l>worse</l>     <r>bad<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e>       <p><l>worst</l>     <r>bad<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="f/ar__adj">
   <e r="RL">       <p><l>ar</l>        <r>ar<s n="adj"/></r></p></e>
   <e>       <p><l>ar</l>        <r>ar<s n="adj"/><s n="sint"/></r></p></e>
@@ -339,14 +339,14 @@
   <e>       <p><l>urthest</l>   <r>ar<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
   <e r="LR"><p><l>arthest</l>   <r>ar<s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="glad/__adj">
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
   <e r="LR"><p><l>der</l>       <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>dest</l>      <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="fun/__adj">
   <e r="RL">       <p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adj"/><s n="sint"/></r></p></e>
@@ -355,12 +355,12 @@
   <e r="LR"><p><l>er</l>        <r><s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
   <e r="LR"><p><l>est</l>       <r><s n="adj"/><s n="sint"/><s n="sup"/></r></p></e>
 </pardef>
-    
+
 <pardef n="mine__adj">
   <e>       <p><l></l>          <r><s n="adj"/><s n="pos"/></r></p></e>
   <e r="RL"><p><l></l>          <r><s n="adj"/></r></p></e>
 </pardef>
-    
+
 <pardef n="maybe__adv">
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
 </pardef>
@@ -372,15 +372,15 @@
 <pardef n="where__adv">
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 </pardef>
-    
+
 <pardef n="and__cnjcoo">
   <e>       <p><l></l>          <r><s n="cnjcoo"/></r></p></e>
 </pardef>
-    
+
 <pardef n="after__cnjadv">
   <e>       <p><l></l>          <r><s n="cnjadv"/></r></p></e>
 </pardef>
-    
+
 <pardef n="that__cnjsub">
   <e>       <p><l></l>          <r><s n="cnjsub"/></r></p></e>
 </pardef>
@@ -394,7 +394,7 @@
 </pardef>
 
 
-    
+
 <pardef n="the__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="def"/></r></p><par n="sp0"/></e>
 </pardef>
@@ -412,32 +412,32 @@
 <pardef n="other__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/></r></p><par n="sp0"/></e>
 </pardef>
-    
+
 <pardef n="several__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="her__det">
   <e><p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sp0"/></e>
 </pardef>
-    
+
 <pardef n="th/is__det">
   <e>       <p><l>is</l>        <r>is<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
   <e>       <p><l>ese</l>       <r>is<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="th/at__det">
   <e>       <p><l>at</l>        <r>at<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
   <e>       <p><l>ose</l>       <r>at<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="second__det">
-<!-- in Esperanto they can be treated as adj. 
- 
+<!-- in Esperanto they can be treated as adj.
+
 <jacobEo> but I should keep the name "second__det", right? To be able to steal from other dicts ?
 <spectie> yes
 <spectie> i'd make three entries
-<spectie> and not put the different tags in the same paradigm  
+<spectie> and not put the different tags in the same paradigm
     <e r="LR">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="sp"/></r>       </p>    </e>
     <e r="RL">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="sg"/></r>       </p>    </e>
     <e r="RL">      <p>        <l/>         <r><s n="det"/><s n="ord"/><s n="pl"/></r>       </p>   </e>
@@ -445,15 +445,15 @@
   <e>       <p><l></l>          <r><s n="adj"/></r></p></e>
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
 </pardef>
-    
+
 <pardef n="many__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="much__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 </pardef>
-    
+
 <pardef n="enough__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/></r></p><par n="sp0"/></e>
 </pardef>
@@ -481,25 +481,25 @@
 <pardef n="everyone__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 </pardef>
-    
+
 <pardef n="th/is__prn">
   <e>       <p><l>is</l>        <r>is<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
   <e>       <p><l>ese</l>       <r>is<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="th/at__prn">
   <e>       <p><l>at</l>        <r>at<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
   <e>       <p><l>ose</l>       <r>at<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="both__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
-    
+
 <pardef n="all__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/></r></p><par n="sp0"/></e>
 </pardef>
-    
+
 
 <pardef n="what__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="itg"/></r></p><par n="sp0"/></e>
@@ -821,13 +821,13 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
 
 <pardef n="litero">
 <!--
-  <e>       <p><l></l>          <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e> 
+  <e>       <p><l></l>          <r><s n="np"/><s n="alpha"/><s n="sg"/></r></p></e>
   -->
   <e>       <p><l></l>          <r><s n="num"/><s n="sg"/></r></p></e>
 </pardef>
 
 
-	<!--        Numbers    par defs -->
+  <!--        Numbers    par defs -->
 
 <pardef n="one__num">
   <e>       <p><l></l>          <r><s n="num"/><s n="sg"/></r></p></e>
@@ -868,8 +868,8 @@ TODO:  A months' imprisonment" -> monato da malliberigo.
     <e><p><l>ving</l><r>ve<s n="vbmod"/><s n="subs"/></r></p></e>
     which I have deleted per 12feb 2009
 
-TODO:<jacobEo> Regarding the <s n="subs"/>, perhaps I shouuld change 
-<s n="vblex"/><s n="ger"/> to  <s n="vblex"/><par n="ger_subs"/> and then 
+TODO:<jacobEo> Regarding the <s n="subs"/>, perhaps I shouuld change
+<s n="vblex"/><s n="ger"/> to  <s n="vblex"/><par n="ger_subs"/> and then
 I can switch <subs> on and off in a ger_subs paradigm?
 
 <jimregan> yes
@@ -936,7 +936,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>been</l>      <r>be<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>being</l>     <r>be<s n="vblex"/><s n="ger"/></r></p></e>
 
-		<!-- Below is content of 2nd definition of /be__vblex -->
+    <!-- Below is content of 2nd definition of /be__vblex -->
   <e r="LR"><p><l>'m</l>        <r>be<s n="vblex"/><s n="pres"/></r></p></e>
   <e r="LR"><p><l>'re</l>       <r>be<s n="vblex"/><s n="pres"/></r></p></e>
   <e r="LR"><p><l>'s</l>        <r>be<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
@@ -1044,7 +1044,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ying</l>      <r>ie<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
-    
+
 <pardef n="appl/y__vblex">
   <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="pres"/></r></p></e>
@@ -1053,7 +1053,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ied</l>       <r>y<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>ying</l>      <r>y<s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
-    
+
 <pardef n="pa/y__vblex">
   <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="inf"/></r></p></e>
   <e>       <p><l>y</l>         <r>y<s n="vblex"/><s n="pres"/></r></p></e>
@@ -1164,7 +1164,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ore</l>       <r>ear<s n="vblex"/><s n="past"/></r></p></e>
   <e r="LR"><p><l>orne</l>      <r>ear<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>earing</l>    <r>ear<s n="vblex"/><s n="ger"/></r></p></e>
-		<!-- Below is content of 2nd definition of b/ear__vblex -->
+    <!-- Below is content of 2nd definition of b/ear__vblex -->
   <e>       <p><l>orn</l>       <r>ear<s n="vblex"/><s n="pp"/></r></p></e>
 </pardef>
 
@@ -1590,7 +1590,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l>ove</l>       <r>eave<s n="vblex"/><s n="past"/></r></p></e>
   <e>       <p><l>oven</l>      <r>eave<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>eaving</l>    <r>eave<s n="vblex"/><s n="ger"/></r></p></e>
-		<!-- Below is content of 2nd definition of w/eave__vblex -->
+    <!-- Below is content of 2nd definition of w/eave__vblex -->
 
   <e r="LR">       <p><l>eaved</l>     <r>eave<s n="vblex"/><s n="past"/></r></p></e>
   <e r="LR">       <p><l>eaved</l>     <r>eave<s n="vblex"/><s n="pp"/></r></p></e>
@@ -1778,7 +1778,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e r="LR"><p><l>inked</l>     <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
   <e r="LR"><p><l>unk</l>       <r>ink<s n="vblex"/><s n="pp"/></r></p></e>
   <e>       <p><l>inking</l>    <r>ink<s n="vblex"/><s n="ger"/></r></p></e>
-		<!-- Below is content of 2nd definition of st/ink__vblex -->
+    <!-- Below is content of 2nd definition of st/ink__vblex -->
 
 </pardef>
 
@@ -2055,7 +2055,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 
 
 <!-- ****************** NOVAJ PARDEF'oj ************   - Aldonoj Jacob 2009/03/06
-     XXXXX TODO: Uzi la ekzistantaj pardef'oj.     
+     XXXXX TODO: Uzi la ekzistantaj pardef'oj.
      -->
 
 
@@ -2424,13 +2424,13 @@ I can switch <subs> on and off in a ger_subs paradigm?
   <e>       <p><l></l>          <r><s n="vblex"/><s n="pres"/></r></p></e>
   <e>       <p><l>s</l>         <r><s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 </pardef>
-	</pardefs>
+  </pardefs>
 
-	<section id="main" type="standard">
+  <section id="main" type="standard">
 
-		<!-- ******************************
-			    group adj,vblex,n,adv,n_symbol,vblex_symbol,np
-			****************************** -->
+    <!-- ******************************
+          group adj,vblex,n,adv,n_symbol,vblex_symbol,np
+      ****************************** -->
 <e lm="go across">       <i></i><par n="/go__vblex"/><p><l><b/>across</l><r><g><b/>across</g></r></p></e>
 <e lm="go out">          <i></i><par n="/go__vblex"/><p><l><b/>out</l><r><g><b/>out</g></r></p></e>
 <e r="RL" lm="be able">  <i></i><par n="/be__vblex"/><p><l><b/>able</l><r><g><b/>able</g></r></p></e>
@@ -2698,7 +2698,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="acupuncture">     <i>acupuncture</i><par n="house__n"/></e>
 <e lm="acute">           <i>acute</i><par n="expensive__adj"/></e>
 <e lm="acutely">         <i>acutely</i><par n="maybe__adv"/></e>
-<!-- 
+<!--
     <e lm="ad"><i>ad</i><par n="expensive__adj"/></e>
   <e lm="ad"><i>ad</i><par n="house__n"/></e>
   -->
@@ -3868,7 +3868,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="arbitrage">       <i>arbitrage</i><par n="up__n"/></e>
 <e lm="arbitrager">      <i>arbitrager</i><par n="up__n"/></e>
 <e lm="arbitrariness">   <i>arbitrariness</i><par n="access__n"/><par n="gen__apos"/></e>
-<!-- <e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>--> 
+<!-- <e lm="arbitrariness">   <i>arbitrariness</i><par n="east__n"/><par n="gen__apos"/></e>-->
 <e lm="arbitrary">       <i>arbitrary</i><par n="expensive__adj"/></e>
 <e lm="arbitration">     <i>arbitration</i><par n="up__n"/></e>
 <e lm="arbitrator">      <i>arbitrator</i><par n="up__n"/></e>
@@ -10643,7 +10643,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="familiarity">     <i>familiarit</i><par n="bab/y__n"/></e>
 <!-- NE enmetu, gxi certe malbonigas la aferojn. La o-vorto suficxas.
 <e lm="family">          <i>family</i><par n="expensive__adj"/></e>
---> 
+-->
 <e lm="famine">          <i>famine</i><par n="up__n"/></e>
 <e lm="famous">          <i>famous</i><par n="expensive__adj"/></e>
 <e lm="fan">             <i>fan</i><par n="house__n"/></e>
@@ -11820,7 +11820,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="geriatrist">      <i>geriatrist</i><par n="house__n"/></e>
 <e lm="Gerino">          <i>Gerino</i><par n="Mark__np"/></e>
 <e lm="germ">            <i>germ</i><par n="house__n"/></e>
-<!-- Ne adjektivoj 
+<!-- Ne adjektivoj
 <e lm="underground">           <i>underground</i><par n="expensive__adj"/></e>
 <e lm="warfare">               <i>warfare</i><par n="expensive__adj"/></e>
 -->
@@ -16035,7 +16035,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="Macedonio">       <i>Macedonio</i><par n="Mark__np"/></e>
 <e lm="Macey">           <i>Macey</i><par n="Mary__np"/></e>
 <e lm="machete">         <i>machete</i><par n="house__n"/></e>
-<!-- commented out by Jacob as "make a mistake"->"fari eraron" works fine without this line   
+<!-- commented out by Jacob as "make a mistake"->"fari eraron" works fine without this line
 <e lm="make a mistake"><i>ma</i><par n="ma/ke__vblex"/><p><l><b/>a<b/>mistake</l><r><g><b/>a<b/>mistake</g></r></p></e>  -->
 <e lm="machine">         <i>machine</i><par n="house__n"/></e>
 <e lm="machinery">       <i>machiner</i><par n="bab/y__n"/></e>
@@ -24681,7 +24681,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
     <e lm="that"><i>that</i><par n="that__rel"/></e>
     <e r="RL" lm="what"><i>what</i><par n="that__rel"/></e>
 
-<!--    
+<!--
 -->
 <e lm="thaw">            <i>thaw</i><par n="house__n"/></e>
 <e lm="thaw">            <i>thaw</i><par n="accept__vblex"/></e>
@@ -26603,6 +26603,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="wheel">           <i>wheel</i><par n="accept__vblex"/></e>
 <e lm="wheelchair">      <i>wheelchair</i><par n="up__n"/></e>
 <e lm="when">            <i>when</i><par n="where__adv"/></e>
+<e lm="do">           <i>do</i><par n="where__adv"/></e>
 <e lm="where">           <i>where</i><par n="where__adv"/></e>
 <e r="RL" c="eo:kien=al kie" lm="to where"><i>to<b/>where</i><par n="where__adv"/></e>
 <e lm="whet">            <i>whet</i><par n="admit__vblex"/></e>
@@ -26630,9 +26631,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 
 <!-- Tiuj cxi sekvaj havas r="RL" cxar ili jes estas propraj nomoj, sed prefere
-     ili estu tradukitaj, ol riski ke la senambiguilo misrekonas o-vorton 
+     ili estu tradukitaj, ol riski ke la senambiguilo misrekonas o-vorton
      kiel propra nomo kaj tiel ne tradukas gxin. Jacob 17feb2009. -->
-     
+
 <e r="RL" lm="White">    <i>White</i><par n="Ifans__np"/></e>
 <e lm="whiten">          <i>whiten</i><par n="accept__vblex"/></e>
 <e lm="whitewash">       <i>whitewash</i><par n="access__n"/></e>
@@ -27154,9 +27155,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 
 
-		<!-- ******************************
-			    group prn
-			****************************** -->
+    <!-- ******************************
+          group prn
+      ****************************** -->
 <e lm="">                <i></i><par n="prsubj__prn"/></e>
 <e lm="">                <i></i><par n="probj__prn"/></e>
 
@@ -27197,7 +27198,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="anything">        <i>anything</i><par n="everyone__prn"/></e>
 <e lm="whoever">         <i>whoever</i><par n="everyone__prn"/></e>
 <e lm="whatever">        <i>whatever</i><par n="everyone__prn"/></e>
-<!--    
+<!--
     <e lm="both"><i>both</i><par n="and__cnjcoo"/></e>
 -->
 <e lm="both">            <i>both</i><par n="both__prn"/></e>
@@ -27238,13 +27239,13 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="who">             <i>who</i><par n="what__prn"/></e>
 <e lm="whose">           <i>whose</i><par n="what__prn"/></e>
 
-		<!-- ******************************
-			    group prn_symbol
-			****************************** -->
+    <!-- ******************************
+          group prn_symbol
+      ****************************** -->
 
     <!-- Possesive pronouns -->
 
-<!--    
+<!--
 <e lm="mine"><i>mine</i><par n="mine__prn"/></e>
     <e lm="ours"><i>ours</i><par n="mine__prn"/></e>
     <e lm="yours"><i>yours</i><par n="mine__prn"/></e>
@@ -27314,9 +27315,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 
 
 
-		<!-- ******************************
-			    group num
-			****************************** -->
+    <!-- ******************************
+          group num
+      ****************************** -->
 <e lm="billion">         <i>billion</i><par n="hundred__num"/></e>
 
 <e lm="eight">           <i>eight</i><par n="two__num"/></e>
@@ -27366,9 +27367,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="twenty">          <i>twenty</i><par n="twenty__num"/></e>
 <e lm="two">             <i>two</i><par n="two__num"/></e>
 <e lm="zero">            <i>zero</i><par n="two__num"/></e>
-		<!-- ******************************
-			    group det
-			****************************** -->
+    <!-- ******************************
+          group det
+      ****************************** -->
 <e lm="a">               <i></i><par n="/a__det"/></e>
 <e r="RL" lm="a">               <i>a</i><par n="litero"/></e>
 <e lm="a few">           <i>a<b/>few</i><par n="many__det"/></e>
@@ -27382,7 +27383,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="eighth">          <i>eighth</i><par n="second__det"/></e>
 <e lm="eightieth">       <i>eightieth</i><par n="second__det"/></e>
 <e lm="either">          <i>either</i><par n="another__det"/></e>
-    
+
 <e lm="eleventh">        <i>eleventh</i><par n="second__det"/></e>
 <e lm="enough">          <i>enough</i><par n="enough__det"/></e>
 <e lm="every">           <i>every</i><par n="another__det"/></e>
@@ -27394,7 +27395,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="first">           <i>first</i><par n="second__det"/></e>
 <e lm="forteenth">       <i>forteenth</i><par n="second__det"/></e>
 <e lm="fortieth">        <i>fortieth</i><par n="second__det"/></e>
-    
+
 <e lm="fourth">          <i>fourth</i><par n="second__det"/></e>
 <e lm="her">             <i>her</i><par n="her__det"/></e>
 <e lm="his">             <i>his</i><par n="her__det"/></e>
@@ -27450,11 +27451,11 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <spectie> but in the en dix i have it is only in as det.qnt = determiner/quantifier = "There is not much beer"
 <jacobEo> yes
 <jacobEo> and therefore translations are wrong. especially in "much of" cases.
-<jacobEo> could "much of" be a word added to en en.dix ? 
+<jacobEo> could "much of" be a word added to en en.dix ?
 <spectie> it would be better to add 'much' as a pronoun
 <jacobEo> yes, OK
 <spectie> it would be much better ;)
-<jacobEo> use 
+<jacobEo> use
 <jacobEo> <pardef n="everyone__prn">
 <jacobEo>   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <jacobEo> </pardef>
@@ -27551,9 +27552,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="your">            <i>your</i><par n="her__det"/></e>
 
 
-		<!-- ******************************
-			    group pr
-			****************************** -->
+    <!-- ******************************
+          group pr
+      ****************************** -->
 <e lm="aboard">          <i>aboard</i><par n="at__pr"/></e>
 <e lm="about">           <i>about</i><par n="at__pr"/></e>
 <e lm="above">           <i>above</i><par n="at__pr"/></e>
@@ -27668,9 +27669,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="without">         <i>without</i><par n="at__pr"/></e>
 
 
-		<!-- ******************************
-			    group cnjadv
-			****************************** -->
+    <!-- ******************************
+          group cnjadv
+      ****************************** -->
 <e lm="after">           <i>after</i><par n="after__cnjadv"/></e>
 <e lm="although">        <i>although</i><par n="after__cnjadv"/></e>
 <e lm="as">              <i>as</i><par n="after__cnjadv"/></e>
@@ -27678,7 +27679,7 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="as far as">       <i>as<b/>far<b/>as</i><par n="after__cnjadv"/></e>
 <e lm="as for">          <i>as<b/>for</i><par n="after__cnjadv"/></e>
 <e lm="as if">           <i>as<b/>if</i><par n="after__cnjadv"/></e>
-<!-- forigita ĉar estas estas dikutita la plibonigo de la asociita traduko --> 
+<!-- forigita ĉar estas estas dikutita la plibonigo de la asociita traduko -->
 <e r="RL" lm="as much as">           <i>as<b/>much<b/>as</i><par n="after__cnjadv"/></e>
 
 <e lm="as soon as">      <i>as<b/>soon<b/>as</i><par n="after__cnjadv"/></e>
@@ -27722,9 +27723,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="e.g.">              <i>e.g.</i><par n="after__cnjadv"/></e>
 
 
-		<!-- ******************************
-			    group cnjcoo
-			****************************** -->
+    <!-- ******************************
+          group cnjcoo
+      ****************************** -->
 <e lm="and">             <i>and</i><par n="and__cnjcoo"/></e>
 <e lm="and also">        <i>and<b/>also</i><par n="and__cnjcoo"/></e>
 <e lm="but">             <i>but</i><par n="and__cnjcoo"/></e>
@@ -27740,9 +27741,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="nor">             <i>nor</i><par n="and__cnjcoo"/></e>
 <e lm="or">              <i>or</i><par n="and__cnjcoo"/></e>
 <e lm="than">            <i>than</i><par n="and__cnjcoo"/></e>
-		<!-- ******************************
-			    group preadv
-			****************************** -->
+    <!-- ******************************
+          group preadv
+      ****************************** -->
 <e lm="any">             <i>any</i><par n="very__preadv"/></e>
 <e lm="as">              <i>as</i><par n="very__preadv"/></e>
 <e lm="fairly">          <i>fairly</i><par n="very__preadv"/></e>
@@ -27756,9 +27757,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="too">             <i>too</i><par n="very__preadv"/></e>
 <e lm="very">            <i>very</i><par n="very__preadv"/></e>
 
-		<!-- ******************************
-			    group ij
-			****************************** -->
+    <!-- ******************************
+          group ij
+      ****************************** -->
 <e lm="">                <i>a<b/>bird<b/>in<b/>the<b/>hand<b/>is<b/>worth<b/>two<b/>in<b/>the<b/>bush</i><par n="hello__ij"/></e>
 <e lm="">                <i>absence<b/>makes<b/>the<b/>heart<b/>grow<b/>fonder</i><par n="hello__ij"/></e>
 <e lm="">                <i>all<b/>that<b/>glitters<b/>is<b/>not<b/>gold</i><par n="hello__ij"/></e>
@@ -27770,9 +27771,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="see you">         <i>see<b/>you</i><par n="hello__ij"/></e>
 <e lm="see you later">   <i>see<b/>you<b/>later</i><par n="hello__ij"/></e>
 
-		<!-- ******************************
-			    group rel
-			****************************** -->
+    <!-- ******************************
+          group rel
+      ****************************** -->
 <e lm="after which">     <i>after<b/>which</i><par n="that__rel"/></e>
 
 
@@ -27784,9 +27785,9 @@ TODO: aldonu kaj retrejnu la tagger
 
 
 
-		<!-- ******************************
-			    group vbmod
-			****************************** -->
+    <!-- ******************************
+          group vbmod
+      ****************************** -->
 <e lm="can">             <i>c</i><par n="c/an__vbmod"/></e>
 <e lm="have to">         <i>ha</i><par n="ha/ve__vbmod"/><p><l><b/>to</l><r><g><b/>to</g></r></p></e>
 
@@ -27807,9 +27808,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e r="RL" lm="will">            <i>will</i><p><l></l><r><s n="vaux"/><s n="inf"/></r></p></e>
 
 
-		<!-- ******************************
-			    group vaux_symbol
-			****************************** -->
+    <!-- ******************************
+          group vaux_symbol
+      ****************************** -->
 <e lm="can't">           <p><l>can't</l>     <r>can<s n="vaux"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="cannot">          <p><l>cannot</l>    <r>can<s n="vaux"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="could've">        <p><l>could've</l>  <r>can<s n="vaux"/><s n="past"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
@@ -27821,16 +27822,16 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="would've">        <p><l>would've</l>  <r>would<s n="vaux"/><s n="inf"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="wouldn't">        <p><l>wouldn't</l>  <r>would<s n="vaux"/><s n="inf"/><j/>not<s n="adv"/></r></p></e>
 
-		<!-- ******************************
-			    group vbdo_symbol
-			****************************** -->
+    <!-- ******************************
+          group vbdo_symbol
+      ****************************** -->
 <e lm="didn't">          <p><l>didn't</l>    <r>do<s n="vbdo"/><s n="past"/><j/>not<s n="adv"/></r></p></e>
 <e lm="doesn't">         <p><l>doesn't</l>   <r>do<s n="vbdo"/><s n="pres"/><s n="p3"/><s n="sg"/><j/>not<s n="adv"/></r></p></e>
 <e lm="don't">           <p><l>don't</l>     <r>do<s n="vbdo"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 
-		<!-- ******************************
-			    group vbser
-			****************************** -->
+    <!-- ******************************
+          group vbser
+      ****************************** -->
 <e lm="be">              <par n="/be__vbser"/></e>
 <e lm="be descended">    <i></i><par n="/be__vbser"/><p><l><b/>descended</l><r><g><b/>descended</g></r></p></e>
 <e r="LR" lm="not be descended">    <i></i><par n="/be__vbser"/><p><l><b/>not<b/>descended</l><r><g><b/>not<b/>descended</g></r></p></e>
@@ -27848,18 +27849,18 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="there're">        <p><l>there're</l>  <r>there<s n="adv"/><j/>be<s n="vbser"/><s n="pres"/></r></p></e>
 <e lm="there's">         <p><l>there's</l>   <r>there<s n="adv"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 
-		<!-- ******************************
-			    group vbhaver_symbol
-			****************************** -->
+    <!-- ******************************
+          group vbhaver_symbol
+      ****************************** -->
 <e lm="have">            <i>ha</i><par n="ha/ve__vbhaver"/></e>
 <e lm="hadn't">          <p><l>hadn't</l>    <r>have<s n="vbhaver"/><s n="past"/><j/>not<s n="adv"/></r></p></e>
 <e lm="hasn't">          <p><l>hasn't</l>    <r>have<s n="vbhaver"/><s n="pres"/><s n="p3"/><s n="sg"/><j/>not<s n="adv"/></r></p></e>
 <e lm="haven't">         <p><l>haven't</l>   <r>have<s n="vbhaver"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="there'd">         <p><l>there'd</l>   <r>there<s n="adv"/><j/>have<s n="vbhaver"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 
-		<!-- ******************************
-			    group adv_symbol
-			****************************** -->
+    <!-- ******************************
+          group adv_symbol
+      ****************************** -->
 
 
 <e lm="all">             <i>all</i><par n="all__predet"/></e>
@@ -27868,14 +27869,14 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="that">            <i>that</i><par n="that__cnjsub"/></e>
 
 <e>                      <par n="ordinals"/></e>
-  
+
 <e>                      <par n="proper_names"/></e>
 
 <e>                      <par n="years"/></e>
 <e>                      <par n="time"/></e>
 
 
-<!-- TODO: tagger training with 
+<!-- TODO: tagger training with
 <e lm="a"><i>a</i><par n="litero"/></e>
  -->
 <e lm="i"><i>i</i><par n="litero"/></e>
@@ -27885,9 +27886,9 @@ TODO: aldonu kaj retrejnu la tagger
 
 
 
-		<!-- ******************************
-			    group acronimos_par
-			****************************** -->
+    <!-- ******************************
+          group acronimos_par
+      ****************************** -->
 <!--
 
 <e lm="AA">              <i>AA</i><par n="acronimos_par"/></e>
@@ -28414,9 +28415,9 @@ TODO: aldonu kaj retrejnu la tagger
 
 <e lm="Ethernal One">          <i>Ethernal<b/>One</i><par n="house__n"/></e>
 
-	</section>
+  </section>
 
-	<section id="final" type="inconditional">
+  <section id="final" type="inconditional">
 <e>                      <par n="separa"/></e>
 <e>                      <par n="numeros"/></e>
 <e>                      <par n="coma"/></e>
@@ -28428,12 +28429,12 @@ TODO: aldonu kaj retrejnu la tagger
 <e>                      <par n="guionet"/></e>
 <e>                      <par n="emails"/></e>
 <e>                      <par n="urls"/></e>
-	</section> 
- 
+  </section>
 
 
-<!-- XXX TODO plibonigu la tagger: 
-	<section id="apostrophe" type="preblank">
+
+<!-- XXX TODO plibonigu la tagger:
+  <section id="apostrophe" type="preblank">
 
 
  He fell off his chair .
@@ -28450,7 +28451,7 @@ Malpermesu ^But<adv>$ ^in<pr>$, aux preferu But<cnjcoo> komence de frazo:
 <e lm="gulf">                 <i>gulf</i><par n="vu__n"/></e>
 <e lm="might">                <i>might</i><par n="vu__n"/></e>
 
-<e lm="first"><i>first</i><par n="maybe__adv"/></e> 
+<e lm="first"><i>first</i><par n="maybe__adv"/></e>
 <e lm="growing">              <i>growing</i><par n="up__n"/></e>
 
 
@@ -28468,7 +28469,7 @@ Mutual Broadcasting System
 
 The gods hold court.
 
-	</section>
+  </section>
 -->
 
 </dictionary>
