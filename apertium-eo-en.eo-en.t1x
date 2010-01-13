@@ -751,6 +751,21 @@
        <list-item v="endi"/>
     </def-list>
 
+    <def-list n="nepersonaj_tempoj">
+      <list-item v="inf"/>
+      <list-item v="imp"/>
+      <list-item v="pres"/>
+      <list-item v="past"/>
+      <list-item v="fti"/>
+      <list-item v="cni"/>
+      <list-item v="fts"/>
+      <list-item v="pp"/>
+      <list-item v="pp2"/>
+      <list-item v="pp3"/>
+      <list-item v="ger"/>
+    </def-list>
+
+
   </section-def-lists>
 
 
@@ -852,7 +867,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 <choose>
   <when>
     <test>
-      <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="nepersonaj_verboj"/></in>
+        <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="nepersonaj_verboj"/></in>
+<!--
+      <and>
+        <in><clip pos="1" side="sl" part="tns"/><list n="nepersonaj_tempoj"/></in>
+      </and>-->
     </test>
   <let><var n="it"/><concat>
     <lit v="^pron"/><lit-tag v="SN.p3.nt.sg.nom"/><lit v="{^prpers"/><lit-tag v="prn.subj.2.3.4"/><lit v="$}$ "/>
@@ -2033,9 +2052,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -2048,56 +2067,56 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
   </rule>
 
   <rule comment="REGULO: VERBO-us">
-     <pattern>
-       <pattern-item n="c_vb_cni"/>
-     </pattern>
-     <action>
-       <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+    <pattern>
+      <pattern-item n="c_vb_cni"/>
+    </pattern>
+    <action>
+      <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
       <choose>
         <when>
           <test>
-        <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
+            <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
           </test>
-       <out>
-         <chunk name="vb_cni" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <chunk name="vb_cni" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+                <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              </tags>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_vrb"/>
+                <lit-tag v="inf"/>
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </when>
         <otherwise>
-       <out>
-         <chunk name="vb_cni" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_prs"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-            <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
-            </lu>
-      <b/>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <chunk name="vb_cni" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                <tag><clip pos="1" side="tl" part="a_prs"/></tag>
+                <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              </tags>
+              <lu>
+                <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_vrb"/>
+                <lit-tag v="inf"/>
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </otherwise>
       </choose>
      </action>
@@ -2167,10 +2186,10 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <lu>
+              <lit v="not"/>
+              <lit-tag v="adv"/>
+            </lu>
           </chunk>
        </out>
         </when>
@@ -2224,9 +2243,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -2282,13 +2301,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <lit v="have"/><lit-tag v="vbhaver"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2316,13 +2335,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <lit v="have"/><lit-tag v="vbhaver"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2359,7 +2378,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2443,16 +2462,16 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
-    <b pos="2"/>
-    <chunk name="pr" case="caseFirstWord">
-      <tags>
-        <tag><lit-tag v="PREP"/></tag>
-      </tags>
-      <lu>
-        <lit v="by"/>
-        <lit-tag v="pr"/>
-      </lu>
-    </chunk>
+          <b pos="2"/>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <lit v="by"/>
+              <lit-tag v="pr"/>
+            </lu>
+          </chunk>
         </out>
      </action>
   </rule>
@@ -2492,70 +2511,71 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
-    <b pos="2"/>
-    <chunk name="pr" case="caseFirstWord">
-      <tags>
-        <tag><lit-tag v="PREP"/></tag>
-      </tags>
-      <lu>
-        <lit v="by"/>
-        <lit-tag v="pr"/>
-      </lu>
-    </chunk>
-    <b pos="3"/>
+          <b pos="2"/>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <lit v="by"/>
+              <lit-tag v="pr"/>
+            </lu>
+          </chunk>
+          <b pos="3"/>
         </out>
-      <choose>
-        <when>
-          <test>
-            <or>
-        <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
-        <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
-            </or>
-          </test>
-          <choose>
-            <when>
-              <test>
-          <equal caseless="yes"><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
-              </test>
-      <let><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
-            </when>
-          </choose>
-       <out> <!-- persona pronomo: estas persono kaj genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="4" side="tl" part="a_prs"/></tag>
-             <tag><clip pos="4" side="tl" part="a_gen"/></tag>
-             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="4" side="tl" part="lemh"/>
-             <clip pos="4" side="tl" part="a_prn"/>
-             <clip pos="4" side="tl" part="a_prs" link-to="2"/>
-             <clip pos="4" side="tl" part="a_gen" link-to="3"/>
-             <clip pos="4" side="tl" part="a_nbr" link-to="4"/>
-             <clip pos="4" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
-        </when>
-        <otherwise>
-       <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="4" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="4" side="tl" part="lemh"/>
-             <clip pos="4" side="tl" part="a_prn"/>
-             <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
-             <clip pos="4" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
+
+        <choose>
+          <when>
+            <test>
+              <or>
+                <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
+                <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
+              </or>
+            </test>
+            <choose>
+              <when>
+                <test>
+                  <equal caseless="yes"><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+                </test>
+                <let><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+              </when>
+            </choose>
+             <out> <!-- persona pronomo: estas persono kaj genro -->
+               <chunk name="pron">
+                 <tags>
+                   <tag><lit-tag v="SN"/></tag>
+                   <tag><clip pos="4" side="tl" part="a_prs"/></tag>
+                   <tag><clip pos="4" side="tl" part="a_gen"/></tag>
+                   <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                   <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+                 </tags>
+                 <lu>
+                   <clip pos="4" side="tl" part="lemh"/>
+                   <clip pos="4" side="tl" part="a_prn"/>
+                   <clip pos="4" side="tl" part="a_prs" link-to="2"/>
+                   <clip pos="4" side="tl" part="a_gen" link-to="3"/>
+                   <clip pos="4" side="tl" part="a_nbr" link-to="4"/>
+                   <clip pos="4" side="tl" part="lemq"/>
+                 </lu>
+               </chunk>
+             </out>
+          </when>
+          <otherwise>
+           <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
+             <chunk name="pron">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                 <tag><clip pos="4" side="sl" part="a_cas"/></tag>
+               </tags>
+               <lu>
+                 <clip pos="4" side="tl" part="lemh"/>
+                 <clip pos="4" side="tl" part="a_prn"/>
+                 <clip pos="4" side="tl" part="a_nbr" link-to="2"/>
+                 <clip pos="4" side="tl" part="lemq"/>
+               </lu>
+             </chunk>
+           </out>
         </otherwise>
       </choose>
      </action>
@@ -2617,11 +2637,10 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-      <b pos="1"/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b pos="1"/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
           </chunk>
         </out>
      </action>
@@ -2686,11 +2705,10 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
-      <lu>
-        <lit v="without"/>
-        <lit-tag v="pr"/>
-      </lu>
-      <b pos="1"/>
+            <lu>
+              <lit v="without"/><lit-tag v="pr"/>
+            </lu>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2707,8 +2725,8 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
        <out>
@@ -2729,11 +2747,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-      <b pos="1"/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b pos="1"/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
           </chunk>
         </out>
         </when>
@@ -2750,18 +2767,17 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
-        <lit v="do"/>
+              <lit v="do"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
-      <b pos="1"/>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2788,69 +2804,68 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-      <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+            <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
           </test>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex_inf" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex_inf" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_vrb"/>
+                <clip pos="1" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </when>
         <otherwise>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex_inf" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-            <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
-            <b/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex_inf" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_vrb"/>
+                <clip pos="1" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <lit v="to"/><lit-tag v="pr"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </otherwise>
       </choose>
      </action>
@@ -2869,38 +2884,37 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-      <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+            <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-      <lu>
-        <lit v="without"/>
-        <lit-tag v="pr"/>
-      </lu>
-      <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-      <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="lemh"/>
-              <clip pos="3" side="tl" part="a_vrb"/>
-              <clip pos="3" side="tl" part="a_tns"/>
-              <clip pos="3" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <lit v="without"/><lit-tag v="pr"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="lemh"/>
+                <clip pos="3" side="tl" part="a_vrb"/>
+                <clip pos="3" side="tl" part="a_tns"/>
+                <clip pos="3" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </when>
 
 <!-- tl povas esti "vbser" eĉ se sl povas esti "vblex": ekz. "eblas -> is possible;
@@ -2909,8 +2923,8 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
        <out>
@@ -2931,12 +2945,11 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-      <b pos="1"/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
-      <b pos="2"/>
+            <b pos="1"/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -2948,49 +2961,47 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         </when>
 
         <otherwise>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex_inf" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-        <lit v="do"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
-      <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-            <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
-            <b/>
-            <lu>
-              <clip pos="3" side="tl" part="lemh"/>
-              <clip pos="3" side="tl" part="a_vrb"/>
-              <clip pos="3" side="tl" part="a_tns"/>
-              <clip pos="3" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex_inf" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <lit v="do"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </lu>
+              <b/>
+              <lu>
+                <lit v="not"/><lit-tag v="adv"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <lit-tag v="inf"/>
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <lit v="to"/><lit-tag v="pr"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="3" side="tl" part="lemh"/>
+                <clip pos="3" side="tl" part="a_vrb"/>
+                <clip pos="3" side="tl" part="a_tns"/>
+                <clip pos="3" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </otherwise>
       </choose>
      </action>
@@ -3008,40 +3019,40 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
        <call-macro n="nepersona"><with-param pos="1"/></call-macro>
       <choose>
         <when>
-          <test>
-      <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-          </test>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex_inf" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_vrb"/>
-              <clip pos="1" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-            <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-      <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="lemh"/>
-              <clip pos="3" side="tl" part="a_vrb"/>
-              <clip pos="3" side="tl" part="a_tns"/>
-              <clip pos="3" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+         </test>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex_inf" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_vrb"/>
+                <clip pos="1" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="lemh"/>
+                <clip pos="3" side="tl" part="a_vrb"/>
+                <clip pos="3" side="tl" part="a_tns"/>
+                <clip pos="3" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </when>
         <otherwise>
        <out>
@@ -3063,15 +3074,14 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-      <b pos="2"/>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -3099,42 +3109,41 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-      <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+            <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-      <lu>
-        <lit v="without"/>
-        <lit-tag v="pr"/>
-      </lu>
-      <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-      <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
-      <b pos="3"/>
-            <lu>
-              <clip pos="4" side="tl" part="lemh"/>
-              <clip pos="4" side="tl" part="a_vrb"/>
-              <clip pos="4" side="tl" part="a_tns"/>
-              <clip pos="4" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+           <out>
+             <var n="it"/>
+             <chunk name="vblex" case="caseFirstWord">
+               <tags>
+                 <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="vrb2"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+                  <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                  <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+                </tags>
+                <lu>
+                  <lit v="without"/><lit-tag v="pr"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/>
+                  <clip pos="2" side="tl" part="a_vrb"/>
+                  <clip pos="2" side="tl" part="a_tns"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="2"/>
+                <lu>
+                  <clip pos="3" side="tl" part="whole"/>
+                </lu>
+                <b pos="3"/>
+                <lu>
+                  <clip pos="4" side="tl" part="lemh"/>
+                  <clip pos="4" side="tl" part="a_vrb"/>
+                  <clip pos="4" side="tl" part="a_tns"/>
+                  <clip pos="4" side="tl" part="lemq"/>
+                </lu>
+              </chunk>
+            </out>
         </when>
 
 <!-- tl povas esti "vbser" eĉ se sl povas esti "vblex": ekz. "eblas -> is possible;
@@ -3143,96 +3152,93 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+              <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-      <b pos="1"/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
-      <b pos="2"/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
-      <b pos="3"/>
-            <lu>
-              <clip pos="4" side="tl" part="lemh"/>
-              <clip pos="4" side="tl" part="a_vrb"/>
-              <clip pos="4" side="tl" part="a_tns"/>
-              <clip pos="4" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <lit v="not"/>         <lit-tag v="adv"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <clip pos="4" side="tl" part="lemh"/>
+                <clip pos="4" side="tl" part="a_vrb"/>
+                <clip pos="4" side="tl" part="a_tns"/>
+                <clip pos="4" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </when>
 
         <otherwise>
-       <out>
-         <var n="it"/>
-         <chunk name="vblex_inf" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-              <tag><var n="vrb2"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </tags>
-            <lu>
-        <lit v="do"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <clip pos="2" side="tl" part="a_tns"/>
-              <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
-              <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
-            </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
-      <b pos="1"/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_vrb"/>
-              <lit-tag v="inf"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-            <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
-            <b/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
-      <b pos="3"/>
-            <lu>
-              <clip pos="4" side="tl" part="lemh"/>
-              <clip pos="4" side="tl" part="a_vrb"/>
-              <clip pos="4" side="tl" part="a_tns"/>
-              <clip pos="4" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
+         <out>
+           <var n="it"/>
+           <chunk name="vblex_inf" case="caseFirstWord">
+             <tags>
+               <tag><lit-tag v="SV"/></tag>
+                <tag><var n="vrb2"/></tag>
+                <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+                <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </tags>
+              <lu>
+                <lit v="do"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <clip pos="2" side="tl" part="a_tns"/>
+                <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
+                <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
+              </lu>
+              <b/>
+              <lu>
+                <lit v="not"/><lit-tag v="adv"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="lemh"/>
+                <clip pos="2" side="tl" part="a_vrb"/>
+                <lit-tag v="inf"/>
+                <clip pos="2" side="tl" part="lemq"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <lit v="to"/><lit-tag v="pr"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <clip pos="4" side="tl" part="lemh"/>
+                <clip pos="4" side="tl" part="a_vrb"/>
+                <clip pos="4" side="tl" part="a_tns"/>
+                <clip pos="4" side="tl" part="lemq"/>
+              </lu>
+            </chunk>
+          </out>
         </otherwise>
       </choose>
      </action>
@@ -3255,9 +3261,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3265,10 +3271,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3299,9 +3304,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3309,10 +3314,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3344,13 +3348,12 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3359,10 +3362,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
@@ -3394,13 +3396,12 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3409,10 +3410,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
@@ -3444,9 +3444,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3454,10 +3454,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -3493,9 +3492,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3503,10 +3502,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -3543,13 +3541,12 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3558,10 +3555,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
@@ -3598,13 +3594,13 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/>
+              <lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3613,10 +3609,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-      <lu>
-        <lit v="to"/>
-        <lit-tag v="pr"/>
-      </lu>
+            <lu>
+              <lit v="to"/><lit-tag v="pr"/>
+            </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
@@ -3662,16 +3657,15 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
-    <b pos="1"/>
-    <chunk name="pr" case="caseFirstWord">
-      <tags>
-        <tag><lit-tag v="PREP"/></tag>
-      </tags>
-      <lu>
-        <lit v="by"/>
-        <lit-tag v="pr"/>
-      </lu>
-    </chunk>
+          <b pos="1"/>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <lit v="by"/><lit-tag v="pr"/>
+            </lu>
+          </chunk>
         </out>
      </action>
   </rule>
@@ -3703,70 +3697,69 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
-    <b pos="2"/>
-    <chunk name="pr" case="caseFirstWord">
-      <tags>
-        <tag><lit-tag v="PREP"/></tag>
-      </tags>
-      <lu>
-        <lit v="by"/>
-        <lit-tag v="pr"/>
-      </lu>
-    </chunk>
-    <b pos="1"/>
+          <b pos="2"/>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <lit v="by"/><lit-tag v="pr"/>
+            </lu>
+          </chunk>
+          <b pos="1"/>
         </out>
       <choose>
         <when>
           <test>
             <or>
-        <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
-        <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
+              <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
+              <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-          <equal caseless="yes"><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+                <equal caseless="yes"><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-      <let><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+              <let><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
-       <out> <!-- persona pronomo: estas persono kaj genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="3" side="tl" part="a_prs"/></tag>
-             <tag><clip pos="3" side="tl" part="a_gen"/></tag>
-             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="3" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="3" side="tl" part="lemh"/>
-             <clip pos="3" side="tl" part="a_prn"/>
-             <clip pos="3" side="tl" part="a_prs" link-to="2"/>
-             <clip pos="3" side="tl" part="a_gen" link-to="3"/>
-             <clip pos="3" side="tl" part="a_nbr" link-to="4"/>
-             <clip pos="3" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
+           <out> <!-- persona pronomo: estas persono kaj genro -->
+             <chunk name="pron">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><clip pos="3" side="tl" part="a_prs"/></tag>
+                 <tag><clip pos="3" side="tl" part="a_gen"/></tag>
+                 <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                 <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+               </tags>
+               <lu>
+                 <clip pos="3" side="tl" part="lemh"/>
+                 <clip pos="3" side="tl" part="a_prn"/>
+                 <clip pos="3" side="tl" part="a_prs" link-to="2"/>
+                 <clip pos="3" side="tl" part="a_gen" link-to="3"/>
+                 <clip pos="3" side="tl" part="a_nbr" link-to="4"/>
+                 <clip pos="3" side="tl" part="lemq"/>
+               </lu>
+             </chunk>
+           </out>
         </when>
         <otherwise>
-       <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="3" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="3" side="tl" part="lemh"/>
-             <clip pos="3" side="tl" part="a_prn"/>
-             <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
-             <clip pos="3" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
+         <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
+           <chunk name="pron">
+             <tags>
+               <tag><lit-tag v="SN"/></tag>
+               <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+               <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+             </tags>
+             <lu>
+               <clip pos="3" side="tl" part="lemh"/>
+               <clip pos="3" side="tl" part="a_prn"/>
+               <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
+               <clip pos="3" side="tl" part="lemq"/>
+             </lu>
+           </chunk>
+         </out>
         </otherwise>
       </choose>
      </action>
@@ -3800,70 +3793,70 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="3" side="tl" part="lemq"/>
             </lu>
           </chunk>
-    <b pos="2"/>
-    <chunk name="pr" case="caseFirstWord">
-      <tags>
-        <tag><lit-tag v="PREP"/></tag>
-      </tags>
-      <lu>
-        <lit v="by"/>
-        <lit-tag v="pr"/>
-      </lu>
-    </chunk>
-    <b pos="1"/>
+          <b pos="2"/>
+          <chunk name="pr" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PREP"/></tag>
+            </tags>
+            <lu>
+              <lit v="by"/><lit-tag v="pr"/>
+            </lu>
+          </chunk>
+          <b pos="1"/>
         </out>
+
       <choose>
         <when>
           <test>
             <or>
-        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
-        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
+              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-          <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+                <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-      <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+              <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
-       <out> <!-- persona pronomo: estas persono kaj genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="2" side="tl" part="a_prs"/></tag>
-             <tag><clip pos="2" side="tl" part="a_gen"/></tag>
-             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_prn"/>
-             <clip pos="2" side="tl" part="a_prs" link-to="2"/>
-             <clip pos="2" side="tl" part="a_gen" link-to="3"/>
-             <clip pos="2" side="tl" part="a_nbr" link-to="4"/>
-             <clip pos="2" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
+           <out> <!-- persona pronomo: estas persono kaj genro -->
+             <chunk name="pron">
+               <tags>
+                 <tag><lit-tag v="SN"/></tag>
+                 <tag><clip pos="2" side="tl" part="a_prs"/></tag>
+                 <tag><clip pos="2" side="tl" part="a_gen"/></tag>
+                 <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                 <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+               </tags>
+               <lu>
+                 <clip pos="2" side="tl" part="lemh"/>
+                 <clip pos="2" side="tl" part="a_prn"/>
+                 <clip pos="2" side="tl" part="a_prs" link-to="2"/>
+                 <clip pos="2" side="tl" part="a_gen" link-to="3"/>
+                 <clip pos="2" side="tl" part="a_nbr" link-to="4"/>
+                 <clip pos="2" side="tl" part="lemq"/>
+               </lu>
+             </chunk>
+           </out>
         </when>
         <otherwise>
-       <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
-         <chunk name="pron">
-           <tags>
-             <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-             <tag><clip pos="2" side="sl" part="a_cas"/></tag>
-           </tags>
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_prn"/>
-             <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
-             <clip pos="2" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
+         <out> <!-- montra, rilativa k.a. pronomoj: estas nek persono nek genro -->
+           <chunk name="pron">
+             <tags>
+               <tag><lit-tag v="SN"/></tag>
+               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+               <tag><clip pos="2" side="sl" part="a_cas"/></tag>
+             </tags>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </chunk>
+         </out>
         </otherwise>
       </choose>
      </action>
