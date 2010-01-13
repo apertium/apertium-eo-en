@@ -6,7 +6,7 @@
      <cat-item tags="n.*"/>
      <cat-item tags="np.*"/>
   </def-cat>
-  
+
     <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
@@ -14,7 +14,7 @@
 
     <def-cat n="num_sp">
       <cat-item tags="num"/>
-      <cat-item tags="num.sp"/>			<!-- ne num.ord -->
+      <cat-item tags="num.sp"/>     <!-- ne num.ord -->
     </def-cat>
 
     <def-cat n="qnt">
@@ -31,13 +31,13 @@
 
     <def-cat n="antaŭ">
       <cat-item lemma="antaŭ" tags="pr"/>
-      <cat-item lemma="antaŭ" tags="adv"/>	<!-- tagger error -->
+      <cat-item lemma="antaŭ" tags="adv"/>  <!-- tagger error -->
     </def-cat>
 
     <def-cat n="de_ekde">
       <cat-item lemma="de" tags="pr"/>
       <cat-item lemma="ekde" tags="pr"/>
-      <cat-item lemma="ekde" tags="cnjadv"/>	<!-- tagger error -->
+      <cat-item lemma="ekde" tags="cnjadv"/>  <!-- tagger error -->
     </def-cat>
 
     <def-cat n="rel">
@@ -73,7 +73,7 @@
      <cat-item tags="vaux.ger"/>
      <cat-item tags="vaux.pres"/>
      <cat-item tags="vaux.past"/>
-     <cat-item tags="vaux.cni"/>	<!-- simpla: could -->
+     <cat-item tags="vaux.cni"/>  <!-- simpla: could -->
   </def-cat>
   <def-cat n="c_vbser_simpla"> <!-- simpla angla konjugacio: t.e. ĉiuj tensoj krom fti kaj cni -->
      <cat-item tags="vbser.inf"/>
@@ -123,7 +123,7 @@
   <def-cat n="c_adj">
      <cat-item tags="adj.*"/>
   </def-cat>
-  
+
   <def-cat n="c_adj_pp">
      <cat-item tags="adj.*"/>
      <cat-item tags="vblex.pp.*"/>
@@ -168,7 +168,7 @@
 
 
  <def-cat n="c_ĉu">
- 	<cat-item lemma="ĉu" tags="adv.itg"/>
+  <cat-item lemma="ĉu" tags="adv.itg"/>
  </def-cat>
 
     <def-cat n="num_ord">
@@ -225,7 +225,7 @@
     </def-cat>
 
     <def-cat n="tempo" c="
-		Tempaj aferoj antaŭ kiuj '(ek)de' devas fariĝi ne 'of', sed 'from'">
+    Tempaj aferoj antaŭ kiuj '(ek)de' devas fariĝi ne 'of', sed 'from'">
       <cat-item lemma="lundo" tags="n.*"/>
       <cat-item lemma="mardo" tags="n.*"/>
       <cat-item lemma="merkredo" tags="n.*"/>
@@ -248,7 +248,7 @@
     </def-cat>
 
     <def-cat n="tempo2" c="
-		Tempaj aferoj antaŭ kiuj oni devas ŝanĝi prepozicion kaj eventuale aldoni 'ago'">
+    Tempaj aferoj antaŭ kiuj oni devas ŝanĝi prepozicion kaj eventuale aldoni 'ago'">
       <cat-item lemma="lundo" tags="n.*"/>
       <cat-item lemma="mardo" tags="n.*"/>
       <cat-item lemma="merkredo" tags="n.*"/>
@@ -341,9 +341,9 @@
   </def-attr>
 
   <def-attr n="a_vrb2">
-     <attr-item tags="vbreg"/>	<!-- normala verbo: specifa formo nur por p3/sg/pres -->
-     <attr-item tags="can"/>	<!-- can-verbo: ĉiuj formoj egalaj por ĉiuj personoj -->
-     <attr-item tags="be"/>	<!-- be-verbo: specifaj formoj por p1 kaj p3 / sg / pres kaj past -->
+     <attr-item tags="vbreg"/>  <!-- normala verbo: specifa formo nur por p3/sg/pres -->
+     <attr-item tags="can"/>  <!-- can-verbo: ĉiuj formoj egalaj por ĉiuj personoj -->
+     <attr-item tags="be"/> <!-- be-verbo: specifaj formoj por p1 kaj p3 / sg / pres kaj past -->
   </def-attr>
 
   <def-attr n="a_det">
@@ -429,10 +429,10 @@
     </def-list>
 
     <def-list n="adj_kun_sint" c="
-		Adjektivoj kiuj en la angla estas sintezaj, 
-		ekz. big, bigger, biggest.  
-		kaj ne big, more big, most big.
-		Tiuj estas markitaj en en.dix per la marko (sint)">
+    Adjektivoj kiuj en la angla estas sintezaj,
+    ekz. big, bigger, biggest.
+    kaj ne big, more big, most big.
+    Tiuj estas markitaj en en.dix per la marko (sint)">
       <list-item v="able"/>
       <list-item v="angry"/>
       <list-item v="apt"/>
@@ -660,8 +660,8 @@
     </def-list>
 
     <def-list n="lingvoj" c="
-		Lingvoj, por ne aldoni la artikolon antaŭ ili
-		en la angla">
+    Lingvoj, por ne aldoni la artikolon antaŭ ili
+    en la angla">
       <list-item v="angla"/>
       <list-item v="germana"/>
       <list-item v="dana"/>
@@ -755,14 +755,14 @@
 
 
 
-<section-def-macros> 
+<section-def-macros>
 
-<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
-     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
-     ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
-     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
-     por ke ne aperu du sinsekvaj blankoj. 
-     
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton.
+     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi,
+     ĉu la blanko de la vorto devas esti forigita aŭ konservita.
+     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi,
+     por ke ne aperu du sinsekvaj blankoj.
+
      Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
     <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
       <choose>
@@ -800,50 +800,50 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 <choose c="Ĉu estas pli aŭ plej? Ekz: 'tre bona'">
 <when>
   <test>
-	<in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="l_pli_plej"/></in>
+  <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="l_pli_plej"/></in>
   </test>
    <choose c="Ĉu estas sinteza adjektivo? Ekz pli bona → better(sint)(comp)">
      <when>
-	  <test>
-		<in caseless="yes"><clip pos="2" side="tl" part="lemh"/><list n="adj_kun_sint"/></in>
-	  </test>
-    	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
-		<choose c="Ĉu pli aŭ plej? Metu (comp) aŭ (sup) en variablo">
-		<when>
-		  <test>
-			<equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
-		  </test>
-			<let><var n="adv_adjectiu"/><concat>
-				<clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.comp"/>
-			</concat></let>
-		</when>
-		<otherwise c="ne estis 'pli' do devas esti 'plej'">
-			<let><var n="adv_adjectiu"/><concat>
-				<clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.sup"/>
-			</concat></let>
-		</otherwise>
-	   </choose>
-	  </when>
-		<otherwise c="ne estis sint - la variablo devas enhavi ambaŭ vortojn">
-			<let><var n="adv_adjectiu"/><concat>
-				<clip pos="1" side="tl" part="whole"/>
-				<lit v="$"/><b pos="1"/><lit v="^"/>
-				<clip pos="2" side="tl" part="lemh"/>
-				<clip pos="2" side="tl" part="a_adj"/>
-				<clip pos="2" side="tl" part="lemq"/>
-			</concat></let>
-		</otherwise>	   
-	</choose>
+    <test>
+    <in caseless="yes"><clip pos="2" side="tl" part="lemh"/><list n="adj_kun_sint"/></in>
+    </test>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+    <choose c="Ĉu pli aŭ plej? Metu (comp) aŭ (sup) en variablo">
+    <when>
+      <test>
+      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
+      </test>
+      <let><var n="adv_adjectiu"/><concat>
+        <clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.comp"/>
+      </concat></let>
+    </when>
+    <otherwise c="ne estis 'pli' do devas esti 'plej'">
+      <let><var n="adv_adjectiu"/><concat>
+        <clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.sup"/>
+      </concat></let>
+    </otherwise>
+     </choose>
+    </when>
+    <otherwise c="ne estis sint - la variablo devas enhavi ambaŭ vortojn">
+      <let><var n="adv_adjectiu"/><concat>
+        <clip pos="1" side="tl" part="whole"/>
+        <lit v="$"/><b pos="1"/><lit v="^"/>
+        <clip pos="2" side="tl" part="lemh"/>
+        <clip pos="2" side="tl" part="a_adj"/>
+        <clip pos="2" side="tl" part="lemq"/>
+      </concat></let>
+    </otherwise>
+  </choose>
 </when>
-	<otherwise c="ne estis pli aŭ plej - la variablo devas enhavi ambaŭ vortojn">
-			<let><var n="adv_adjectiu"/><concat>
-				<clip pos="1" side="tl" part="whole"/>
-				<lit v="$"/><b pos="1"/><lit v="^"/>
-				<clip pos="2" side="tl" part="lemh"/>
-				<clip pos="2" side="tl" part="a_adj"/>
-				<clip pos="2" side="tl" part="lemq"/>
-			</concat></let>
-		</otherwise>	   
+  <otherwise c="ne estis pli aŭ plej - la variablo devas enhavi ambaŭ vortojn">
+      <let><var n="adv_adjectiu"/><concat>
+        <clip pos="1" side="tl" part="whole"/>
+        <lit v="$"/><b pos="1"/><lit v="^"/>
+        <clip pos="2" side="tl" part="lemh"/>
+        <clip pos="2" side="tl" part="a_adj"/>
+        <clip pos="2" side="tl" part="lemq"/>
+      </concat></let>
+    </otherwise>
 </choose>
 </def-macro>
 
@@ -852,14 +852,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 <choose>
   <when>
     <test>
-        <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="nepersonaj_verboj"/></in>
+      <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="nepersonaj_verboj"/></in>
     </test>
-	<let><var n="it"/><concat>
-	  <lit v="^pron"/><lit-tag v="SN.p3.nt.sg.nom"/><lit v="{^prpers"/><lit-tag v="prn.subj.2.3.4"/><lit v="$}$ "/>
-	</concat></let>
+  <let><var n="it"/><concat>
+    <lit v="^pron"/><lit-tag v="SN.p3.nt.sg.nom"/><lit v="{^prpers"/><lit-tag v="prn.subj.2.3.4"/><lit v="$}$ "/>
+  </concat></let>
   </when>
   <otherwise>
-	<let><var n="it"/><lit v=""/></let>
+  <let><var n="it"/><lit v=""/></let>
   </otherwise>
 </choose>
 </def-macro>
@@ -867,40 +867,40 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
 <!-- konvertas imperativon al infinitivo -->
 <def-macro n="imp_inf" npar="1">
-	<choose>
-	  <when>
-	    <test>
-      		<equal><clip pos="1" side="tl" part="a_tns"/><lit-tag v="imp"/></equal>
-	    </test>
-	    <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="inf"/></let>
-	  </when>
-	  </choose>
+  <choose>
+    <when>
+      <test>
+          <equal><clip pos="1" side="tl" part="a_tns"/><lit-tag v="imp"/></equal>
+      </test>
+      <let><clip pos="1" side="tl" part="a_tns"/><lit-tag v="inf"/></let>
+    </when>
+    </choose>
 </def-macro>
 
 
 <!-- difinas la tipon vrb2 de la verbo  -->
 <def-macro n="set_vrb2" npar="1">
-	<choose>
-	  <when>
-	    <test>
-      		<equal><clip pos="1" side="tl" part="lemh"/><lit v="be"/></equal>
-	    </test>
-	    <let><var n="vrb2"/><lit-tag v="be"/></let>
-	  </when>
-	  <when>
-	    <test>
-      		<equal><clip pos="1" side="tl" part="lemh"/><lit v="can"/></equal>
-	    </test>
-	    <let><var n="vrb2"/><lit-tag v="can"/></let>
-	  </when>
-	  <otherwise>
-	    <let><var n="vrb2"/><lit-tag v="vbreg"/></let>
-	  </otherwise>
-	</choose>
+  <choose>
+    <when>
+      <test>
+          <equal><clip pos="1" side="tl" part="lemh"/><lit v="be"/></equal>
+      </test>
+      <let><var n="vrb2"/><lit-tag v="be"/></let>
+    </when>
+    <when>
+      <test>
+          <equal><clip pos="1" side="tl" part="lemh"/><lit v="can"/></equal>
+      </test>
+      <let><var n="vrb2"/><lit-tag v="can"/></let>
+    </when>
+    <otherwise>
+      <let><var n="vrb2"/><lit-tag v="vbreg"/></let>
+    </otherwise>
+  </choose>
 </def-macro>
 
 
-  </section-def-macros> 
+  </section-def-macros>
 
 
 
@@ -908,7 +908,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
   <rule>
      <pattern>
        <pattern-item n="c_ĉu"/>
-     </pattern> 
+     </pattern>
      <action>
        <out>
          <chunk name="ĉu" case="caseFirstWord">
@@ -962,22 +962,22 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 
 <rule comment="REGULO: DE TEMPO (de/ekde januaro -> from January -- ŝanĝo de prepozicio">
       <pattern>
-	<pattern-item n="de_ekde"/>
-	<pattern-item n="tempo"/>
+  <pattern-item n="de_ekde"/>
+  <pattern-item n="tempo"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="from"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+  <out>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="from"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
           <b pos="1"/>
-	  <chunk name="tempo">
+    <chunk name="tempo">
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
@@ -989,33 +989,33 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="2" side="tl" part="a_nbr" link-to="2"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	  </chunk>
-	</out>
+    </chunk>
+  </out>
       </action>
     </rule>
 
 
 <rule comment="REGULO: DE DET TEMPO (de/ekde tiu januaro -> from this January -- ŝanĝo de prepozicio">
       <pattern>
-	<pattern-item n="de_ekde"/>
-	<pattern-item n="c_det"/>
-	<pattern-item n="tempo"/>
+  <pattern-item n="de_ekde"/>
+  <pattern-item n="c_det"/>
+  <pattern-item n="tempo"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="from"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+  <out>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="from"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
           <b pos="1"/>
-	  <chunk name="tempo">
+    <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1032,8 +1032,8 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="3" side="tl" part="a_nbr" link-to="2"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-	  </chunk>
-	</out>
+    </chunk>
+  </out>
       </action>
     </rule>
 
@@ -1041,26 +1041,26 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 <rule comment="REGULO: DE ANTAŬ NUM TEMPO (de/ekde antaŭ tri tagoj -> since three days ago - ŝanĝo de prepozicio + ago">
 <!-- ne eblas "antaŭ": estas amaso da "en la aĝo de tri jaroj"; bedaŭrinde, ĉar "de tri jaroj li studas medicinon" -->
       <pattern>
-	<pattern-item n="de_ekde"/>
-	<pattern-item n="antaŭ"/>
-	<pattern-item n="num_sp"/>
-	<pattern-item n="tempo2"/>
+  <pattern-item n="de_ekde"/>
+  <pattern-item n="antaŭ"/>
+  <pattern-item n="num_sp"/>
+  <pattern-item n="tempo2"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="since"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+  <out>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="since"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
           <b pos="1"/>
-	  <chunk name="tempo">
+    <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="4" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1075,35 +1075,35 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
            <b/>
-	    <lu>
-	      <lit v="ago"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	  </chunk>
-	</out>
+      <lu>
+        <lit v="ago"/>
+        <lit-tag v="adv"/>
+      </lu>
+    </chunk>
+  </out>
       </action>
     </rule>
 
 <rule comment="REGULO: DE ANTAŬ QNT TEMPO (de/ekde antaŭ kelkaj tagoj -> since some days ago - ŝanĝo de prepozicio + ago">
       <pattern>
-	<pattern-item n="de_ekde"/>
-	<pattern-item n="antaŭ"/>
-	<pattern-item n="qnt"/>
-	<pattern-item n="tempo2"/>
+  <pattern-item n="de_ekde"/>
+  <pattern-item n="antaŭ"/>
+  <pattern-item n="qnt"/>
+  <pattern-item n="tempo2"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="since"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+  <out>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="since"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
           <b pos="1"/>
-	  <chunk name="tempo">
+    <chunk name="tempo">
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
@@ -1113,7 +1113,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_det"/>
              <clip pos="3" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="3" side="tl" part="lemq"/>             
+             <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/>
            <lu>
@@ -1123,26 +1123,26 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
            <b/>
-	    <lu>
-	      <lit v="ago"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	  </chunk>
-	</out>
+      <lu>
+        <lit v="ago"/>
+        <lit-tag v="adv"/>
+      </lu>
+    </chunk>
+  </out>
       </action>
     </rule>
 
 <rule comment="REGULO: ANTAŬ NUM TEMPO (antaŭ tri tagoj -> three days ago - sen prepozicio + ago">
       <pattern>
-	<pattern-item n="antaŭ"/>
-	<pattern-item n="num_sp"/>
-	<pattern-item n="tempo2"/>
+  <pattern-item n="antaŭ"/>
+  <pattern-item n="num_sp"/>
+  <pattern-item n="tempo2"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="tempo">
+  <out>
+    <chunk name="tempo">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1157,25 +1157,25 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b/>
-	    <lu>
-	      <lit v="ago"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	  </chunk>
-	</out>
+      <lu>
+        <lit v="ago"/>
+        <lit-tag v="adv"/>
+      </lu>
+    </chunk>
+  </out>
       </action>
     </rule>
 
 
 <rule comment="REGULO: ANTAŬ QNT TEMPO (antaŭ kelkaj tagoj -> some days ago - sen prepozicio + ago">
       <pattern>
-	<pattern-item n="antaŭ"/>
-	<pattern-item n="qnt"/>
-	<pattern-item n="tempo2"/>
+  <pattern-item n="antaŭ"/>
+  <pattern-item n="qnt"/>
+  <pattern-item n="tempo2"/>
       </pattern>
       <action>
-	<out>
-	  <chunk name="tempo">
+  <out>
+    <chunk name="tempo">
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
@@ -1185,7 +1185,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_det"/>
              <clip pos="2" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="2" side="tl" part="lemq"/>             
+             <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/>
            <lu>
@@ -1195,12 +1195,12 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b/>
-	    <lu>
-	      <lit v="ago"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	  </chunk>
-	</out>
+      <lu>
+        <lit v="ago"/>
+        <lit-tag v="adv"/>
+      </lu>
+    </chunk>
+  </out>
       </action>
     </rule>
 
@@ -1215,7 +1215,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="1" side="tl" part="a_cas"/></tag>
            </tags>
@@ -1223,7 +1223,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="1" side="tl" part="lemq"/>             
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -1247,7 +1247,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="1" side="tl" part="lemq"/>             
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
        </out>
@@ -1264,8 +1264,8 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
-	      <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="si"/></equal>
+        <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
+        <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
        <out> <!-- persona pronomo: estas persono kaj genro -->
@@ -1320,16 +1320,16 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
-	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
+        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-	        <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+          <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-	    <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+      <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
        <out> <!-- persona pronomo: estas persono kaj genro -->
@@ -1448,7 +1448,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <pattern-item n="c_adj"/>
      </pattern>
      <action>
-    	<call-macro n="adv_adj"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="adv_adj"><with-param pos="1"/><with-param pos="2"/></call-macro>
        <out>
          <chunk name="sint?_adj" case="caseFirstWord">
            <tags>
@@ -1456,7 +1456,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
            </tags>
            <lu>
-		     <var n="adv_adjectiu"/>
+         <var n="adv_adjectiu"/>
            </lu>
          </chunk>
        </out>
@@ -1497,7 +1497,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1529,7 +1529,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1559,7 +1559,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1597,7 +1597,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="4" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1642,7 +1642,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="5" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1689,11 +1689,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <pattern-item n="c_nom"/>
      </pattern>
      <action>
-    	<call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="4" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1705,7 +1705,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
            </lu>
            <b pos="1"/>
            <lu>
-	     <var n="adv_adjectiu"/>
+       <var n="adv_adjectiu"/>
            </lu>
            <b pos="3"/>
            <lu>
@@ -1729,11 +1729,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <pattern-item n="c_nom"/>
      </pattern>
      <action>
-    	<call-macro n="adv_adj"><with-param pos="3"/><with-param pos="4"/></call-macro>
+      <call-macro n="adv_adj"><with-param pos="3"/><with-param pos="4"/></call-macro>
        <out>
          <chunk name="det_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="5" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1749,7 +1749,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
             </lu>
            <b pos="2"/>
            <lu>
-	     <var n="adv_adjectiu"/>
+       <var n="adv_adjectiu"/>
            </lu>
            <b pos="4"/>
            <lu>
@@ -1778,7 +1778,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1794,7 +1794,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="2" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1825,11 +1825,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <pattern-item n="c_adj_pp"/>
      </pattern>
      <action>
-    	<call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="adv_adj"><with-param pos="2"/><with-param pos="3"/></call-macro>
        <out>
          <chunk name="det_adj" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1841,7 +1841,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
            </lu>
            <b pos="1"/>
            <lu>
-	     <var n="adv_adjectiu"/>
+       <var n="adv_adjectiu"/>
            </lu>
          </chunk>
        </out>
@@ -1889,7 +1889,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_adj_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1897,7 +1897,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="1" side="tl" part="lemq"/>             
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/>
            <lu>
@@ -1928,7 +1928,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_adj_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="4" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1936,7 +1936,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="1" side="tl" part="lemq"/>             
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/>
            <lu>
@@ -1974,7 +1974,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <out>
          <chunk name="det_adj_nom" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="SD"/></tag>	<!-- Sintagmo determinita -->
+             <tag><lit-tag v="SD"/></tag> <!-- Sintagmo determinita -->
              <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
              <tag><clip pos="5" side="sl" part="a_cas"/></tag>
            </tags>
@@ -1982,7 +1982,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
              <clip pos="1" side="sl" part="a_nbr" link-to="2"/>
-             <clip pos="1" side="tl" part="lemq"/>             
+             <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/>
            <lu>
@@ -2033,9 +2033,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -2056,7 +2056,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
       <choose>
         <when>
           <test>
-	      <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
+        <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
           </test>
        <out>
          <chunk name="vb_cni" case="caseFirstWord">
@@ -2087,9 +2087,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -2120,13 +2120,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -2149,7 +2149,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
       <choose>
         <when>
           <test>
-	      <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
+        <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
           </test>
        <out>
          <chunk name="vb_cni" case="caseFirstWord">
@@ -2167,10 +2167,10 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
           </chunk>
        </out>
         </when>
@@ -2185,13 +2185,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -2224,9 +2224,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -2282,13 +2282,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-			  <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <lit v="have"/><lit-tag v="vbhaver"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2316,13 +2316,13 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-			  <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <lit v="have"/><lit-tag v="vbhaver"/><lit-tag v="inf"/>
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2359,7 +2359,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-			<b/>
+      <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2443,16 +2443,16 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
- 	  <b pos="2"/>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="by"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+    <b pos="2"/>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="by"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
         </out>
      </action>
   </rule>
@@ -2492,32 +2492,32 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
- 	  <b pos="2"/>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="by"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
- 	  <b pos="3"/>
+    <b pos="2"/>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="by"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
+    <b pos="3"/>
         </out>
       <choose>
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
-	      <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
+        <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
+        <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-	        <equal caseless="yes"><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+          <equal caseless="yes"><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-	    <let><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+      <let><clip pos="4" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
        <out> <!-- persona pronomo: estas persono kaj genro -->
@@ -2617,11 +2617,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-	    <b pos="1"/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b pos="1"/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
           </chunk>
         </out>
      </action>
@@ -2674,7 +2674,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
       <choose>
         <when>
           <test>
-	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+      <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
          <var n="it"/>
@@ -2686,11 +2686,11 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
-	    <lu>
-	      <lit v="without"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	    <b pos="1"/>
+      <lu>
+        <lit v="without"/>
+        <lit-tag v="pr"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2707,8 +2707,8 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
        <out>
@@ -2729,11 +2729,11 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-	    <b pos="1"/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b pos="1"/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
           </chunk>
         </out>
         </when>
@@ -2750,18 +2750,18 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
-	      <lit v="do"/>
+        <lit v="do"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	    <b pos="1"/>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2788,7 +2788,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+      <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
           </test>
        <out>
          <var n="it"/>
@@ -2838,10 +2838,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -2869,7 +2869,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+      <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
          <var n="it"/>
@@ -2881,18 +2881,18 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
-	    <lu>
-	      <lit v="without"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	    <b pos="1"/>
+      <lu>
+        <lit v="without"/>
+        <lit-tag v="pr"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-	    <b pos="2"/>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -2909,8 +2909,8 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
        <out>
@@ -2931,12 +2931,12 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-	    <b pos="1"/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	    <b pos="2"/>
+      <b pos="1"/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -2959,18 +2959,18 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
-	      <lit v="do"/>
+        <lit v="do"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	    <b pos="1"/>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -2978,10 +2978,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
@@ -3009,7 +3009,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-	    <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+      <equal caseless="yes"><clip pos="1" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
           </test>
        <out>
          <var n="it"/>
@@ -3033,7 +3033,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-	    <b pos="2"/>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -3063,15 +3063,15 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-	    <b pos="2"/>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_vrb"/>
@@ -3099,7 +3099,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-	    <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
+      <equal><clip pos="2" side="tl" part="a_tns"/><lit-tag v="ger"/></equal>
           </test>
        <out>
          <var n="it"/>
@@ -3111,22 +3111,22 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="PD"/></tag> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
-	    <lu>
-	      <lit v="without"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	    <b pos="1"/>
+      <lu>
+        <lit v="without"/>
+        <lit-tag v="pr"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-	    <b pos="2"/>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
-	    <b pos="3"/>
+      <b pos="3"/>
             <lu>
               <clip pos="4" side="tl" part="lemh"/>
               <clip pos="4" side="tl" part="a_vrb"/>
@@ -3143,8 +3143,8 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
-	      <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vaux"/></equal>
+        <equal caseless="yes"><clip pos="2" side="tl" part="a_vrb"/><lit-tag v="vbser"/></equal>
             </or>
           </test>
        <out>
@@ -3165,16 +3165,16 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
-	    <b pos="1"/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	    <b pos="2"/>
+      <b pos="1"/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
+      <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
-	    <b pos="3"/>
+      <b pos="3"/>
             <lu>
               <clip pos="4" side="tl" part="lemh"/>
               <clip pos="4" side="tl" part="a_vrb"/>
@@ -3197,18 +3197,18 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><lit-tag v="ND"/></tag> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </tags>
             <lu>
-	      <lit v="do"/>
+        <lit v="do"/>
               <clip pos="2" side="tl" part="a_vrb"/>
               <clip pos="2" side="tl" part="a_tns"/>
               <lit-tag v="4"/> <!-- ni aldonas la spacon por eventuala aldono de pers en t2x -->
               <lit-tag v="5"/> <!-- ni aldonas la spacon por eventuala aldono de nbr en t2x -->
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
-	    <b pos="1"/>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
+      <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_vrb"/>
@@ -3216,15 +3216,15 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
-	    <b pos="3"/>
+      <b pos="3"/>
             <lu>
               <clip pos="4" side="tl" part="lemh"/>
               <clip pos="4" side="tl" part="a_vrb"/>
@@ -3255,9 +3255,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3265,10 +3265,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3299,9 +3299,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3309,10 +3309,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3344,13 +3344,13 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3359,10 +3359,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
@@ -3394,13 +3394,13 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3409,10 +3409,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
@@ -3444,9 +3444,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3454,10 +3454,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -3493,9 +3493,9 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
+      <b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_vrb"/>
@@ -3503,10 +3503,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -3543,13 +3543,13 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3558,10 +3558,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
@@ -3598,13 +3598,13 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
-	      <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-	    <b/>
-	    <lu>
-	      <lit v="not"/>
-	      <lit-tag v="adv"/>
-	    </lu>
+      <b/>
+      <lu>
+        <lit v="not"/>
+        <lit-tag v="adv"/>
+      </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -3613,10 +3613,10 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
-	    <lu>
-	      <lit v="to"/>
-	      <lit-tag v="pr"/>
-	    </lu>
+      <lu>
+        <lit v="to"/>
+        <lit-tag v="pr"/>
+      </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
@@ -3662,16 +3662,16 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
- 	  <b pos="1"/>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="by"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
+    <b pos="1"/>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="by"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
         </out>
      </action>
   </rule>
@@ -3703,32 +3703,32 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
- 	  <b pos="2"/>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="by"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
- 	  <b pos="1"/>
+    <b pos="2"/>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="by"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
+    <b pos="1"/>
         </out>
       <choose>
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
-	      <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
+        <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
+        <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-	        <equal caseless="yes"><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+          <equal caseless="yes"><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-	    <let><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+      <let><clip pos="3" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
        <out> <!-- persona pronomo: estas persono kaj genro -->
@@ -3800,32 +3800,32 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
               <clip pos="3" side="tl" part="lemq"/>
             </lu>
           </chunk>
- 	  <b pos="2"/>
-	  <chunk name="pr" case="caseFirstWord">
-	    <tags>
-	      <tag><lit-tag v="PREP"/></tag>
-	    </tags>
-	    <lu>
-	      <lit v="by"/>
-	      <lit-tag v="pr"/>
-	    </lu>
-	  </chunk>
- 	  <b pos="1"/>
+    <b pos="2"/>
+    <chunk name="pr" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREP"/></tag>
+      </tags>
+      <lu>
+        <lit v="by"/>
+        <lit-tag v="pr"/>
+      </lu>
+    </chunk>
+    <b pos="1"/>
         </out>
       <choose>
         <when>
           <test>
             <or>
-	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
-	      <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
+        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
+        <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
             </or>
           </test>
           <choose>
             <when>
               <test>
-	        <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
+          <equal caseless="yes"><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.subj"/></equal>
               </test>
-	    <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
+      <let><clip pos="2" side="tl" part="a_prn"/><lit-tag v="prn.obj"/></let>
             </when>
           </choose>
        <out> <!-- persona pronomo: estas persono kaj genro -->
@@ -3878,7 +3878,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SD.nom"/></tag>	<!-- Sintagmo determinita -->
+              <tag><lit-tag v="SD.nom"/></tag>  <!-- Sintagmo determinita -->
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

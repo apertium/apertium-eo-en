@@ -688,11 +688,11 @@
 
     <rule comment="REGLA: SN SP SP SADV SV">
       <pattern>
-  <pattern-item n="SNnom"/>
-  <pattern-item n="SP"/>
-  <pattern-item n="SP"/>
-  <pattern-item n="SADV"/>
-  <pattern-item n="SVall"/>
+        <pattern-item n="SNnom"/>
+        <pattern-item n="SP"/>
+        <pattern-item n="SP"/>
+        <pattern-item n="SADV"/>
+        <pattern-item n="SVall"/>
       </pattern>
       <action>
   <call-macro n="concord_SN_SV"><with-param pos="1"/><with-param pos="5"/></call-macro>
