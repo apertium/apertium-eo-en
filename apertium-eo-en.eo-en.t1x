@@ -2037,7 +2037,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="1"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vb_fti" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2127,7 +2129,9 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
        <out>
+         <var n="it"/>
          <chunk name="vb_fti" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2137,13 +2141,12 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-        <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="will"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
@@ -2163,12 +2166,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
      </pattern>
      <action>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
+       <call-macro n="nepersona"><with-param pos="2"/></call-macro>
       <choose>
         <when>
           <test>
         <equal><clip pos="1" side="sl" part="lemh"/><lit v="devi"/></equal>
           </test>
        <out>
+         <var n="it"/>
          <chunk name="vb_cni" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2193,6 +2198,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         </when>
         <otherwise>
        <out>
+         <var n="it"/>
          <chunk name="vb_cni" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
@@ -2202,13 +2208,12 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-        <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
+              <lit v="would"/><lit-tag v="vaux"/><lit-tag v="inf"/>
             </lu>
-      <b/>
-      <lu>
-        <lit v="not"/>
-        <lit-tag v="adv"/>
-      </lu>
+            <b/>
+            <lu>
+              <lit v="not"/><lit-tag v="adv"/>
+            </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
