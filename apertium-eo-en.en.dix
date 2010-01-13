@@ -407,6 +407,7 @@
 
 <pardef n="another__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="other__det">
@@ -6683,6 +6684,7 @@ I can switch <subs> on and off in a ger_subs paradigm?
 <e lm="clerk">           <i>clerk</i><par n="house__n"/></e>
 <e lm="Cleto">           <i>Cleto</i><par n="Mark__np"/></e>
 <e lm="clever">          <i>clever</i><par n="long/__adj"/></e>
+<e lm="cleverly">        <i>cleverly</i><par n="maybe__adv"/></e>
 <e lm="Clever">          <i>Clever</i><par n="Mark__np"/></e>
 <e lm="cliche">          <i>cliche</i><par n="up__n"/></e>
 <e lm="click">           <i>click</i><par n="accept__vblex"/></e>
@@ -21578,7 +21580,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e r="LR" lm="in Byelorussian"><i>in<b/>Byelorussian</i><par n="maybe__adv"/></e>
 <e lm="in Belarussian"><i>in<b/>Belarussian</i><par n="maybe__adv"/></e>
 <e r="LR" lm="in Ukranian"><i>in<b/>Ukranian</i><par n="maybe__adv"/></e>
-<e lm="in Ukrainian"><i>in<b/>Ukranian</i><par n="maybe__adv"/></e>
+<e lm="in Ukrainian"><i>in<b/>Ukrainian</i><par n="maybe__adv"/></e>
 <e lm="in Czech"><i>in<b/>Czech</i><par n="maybe__adv"/></e>
 <e lm="in Slovak"><i>in<b/>Slovak</i><par n="maybe__adv"/></e>
 <e lm="in Slovene"><i>in<b/>Slovene</i><par n="maybe__adv"/></e>

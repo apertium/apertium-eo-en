@@ -1203,7 +1203,10 @@
 <e lm="kiu el ili">      <p><l>kiun<b/>el<b/>ili</l><r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kies">            <p><l>kies</l>      <r>kies<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
 
-<e lm="tiuj kiuj">       <p><l>tiuj<b/>kiuj</l><r>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
+
+<!-- Jacob 13a jan 2009. The ones who. Estis <s n="prn"/><s n="itg"/>  .... mi ŝanĝas al pli verŝajna <s n="rel"/><s n="an"/> -->
+<e r="RL" lm="tiuj kiuj">       <p><l>tiuj<b/>kiuj</l><r>tiuj<b/>kiuj<s n="rel"/><s n="an"/><s n="pl"/></r></p></e>
+
 
   <!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
        comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
@@ -32379,7 +32382,7 @@
 <e lm="gajnado">         <i>gajnad</i><par n="o__n"/></e>
 <e lm="bufoni">          <i>bufon</i><par n="i__vblex"/></e>
 <e lm="oficoni">         <i>oficon</i><par n="i__vblex"/></e>
-<e lm="tiuj kiuj">       <i>tiuj<b/>kiuj</i><p><l></l><r><s n="prn"/><s n="itg"/><s n="pl"/></r></p></e>
+
 <e lm="laŭ la ekzemplo"> <i>la</i><par n="ŭ"/><i><b/>la<b/>ekzemplo</i><par n="al__pr"/></e>
 <e lm="laŭ la ekzemploj"><i>la</i><par n="ŭ"/><i><b/>la<b/>ekzemploj</i><par n="al__pr"/></e>
 <e lm="en la venonta aŭtuno"><i>en<b/>la<b/>venonta<b/>a</i><par n="ŭ"/><i>tuno</i><par n="jam__adv"/></e>
