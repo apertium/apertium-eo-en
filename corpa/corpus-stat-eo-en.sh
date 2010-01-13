@@ -17,7 +17,7 @@ F2=/tmp/corpus-stat-res-eo2.txt
 # for some reason putting the newline in directly doesn't work, so two seds
 
 # Sen kunmetitaj vortoj
-$CMD | apertium-destxt | lt-proc ../eo-en.automorf.bin |apertium-retxt | sed 's/\$[^^]*\^/$^/g' | sed 's/\$\^/$\
+$CMD | apertium-destxt | lt-proc-j ../eo-en.automorf.bin |apertium-retxt | sed 's/\$[^^]*\^/$^/g' | sed 's/\$\^/$\
 ^/g' > $F
 
 # Kun kunmetitaj vortoj:
@@ -54,6 +54,9 @@ diff --side-by-side ${F}nekon ${F2}nekon | head -50
 
 
 echo "Vortoj konata pro kunmetaĵa modulo"
-cat $F | lt-proc-j -e eo-en.automorf.bin | grep -v '*' > ${F}rekon
+cat $F | grep '\*' | cut -d ^ -f 2 | cut -d / -f 1   | apertium-destxt| lt-proc-j -e ../eo-en.automorf.bin | grep -v '*' | apertium-retxt > ${F}rekon
+cat ${F}rekon | cut -d ^ -f 2 | cut -d / -f 1  | sed -e 's/$/./g'  | apertium -d .. eo-en-compounds > ${F}rekon2
+paste ${F}rekon2 ${F}rekon | sort -f | uniq -c | sort -gr > ${F}_rekonitaj_kunmetaĵoj.txt
+echo "Rigardu: ${F}_rekonitaj_kunmetaĵoj.txt"
 
-echo rm -f $F $F2 ${F}nekon $[F2}nekon
+echo rm -f $F $F2 ${F}nekon ${F2}rekon ${F}rekon2
