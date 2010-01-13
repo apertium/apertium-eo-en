@@ -17,6 +17,7 @@ $(PREFIX2): $(PREFIX2).automorf.bin $(PREFIX2).autobil.bin $(PREFIX2).autogen.bi
      modes
 
 $(BASENAME).$(LANG1).dixtmp1: $(BASENAME).$(LANG1).dix.xml
+	apertium-validate-dictionary $(BASENAME).$(LANG1).dix.xml
 	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt > $(BASENAME).$(LANG1)-multiwords.xml
 	cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1
 	cat $(BASENAME).$(LANG1)-multiwords.xml >> tmp1
