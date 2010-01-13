@@ -2365,7 +2365,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser1" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2402,7 +2402,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser2" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2440,7 +2440,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser3" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2489,7 +2489,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
         <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser4" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2593,7 +2593,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="1"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="1"/></call-macro>
        <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser5" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>
@@ -2624,7 +2624,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
        <call-macro n="imp_inf"><with-param pos="2"/></call-macro>
        <call-macro n="set_vrb2"><with-param pos="2"/></call-macro>
        <out>
-         <chunk name="vbser" case="caseFirstWord">
+         <chunk name="vbser6" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="vrb2"/></tag>

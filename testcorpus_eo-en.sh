@@ -12,6 +12,8 @@ then
 	bunzip2 -c corpa/eowiki.crp.txt.bz2 > $CRP
 fi
 
+echo "diff -w $ORIGINA $NOVA | grep -r '[<>]' > $TMP-crpdiff.txt && for i in \`cut -c3-8 $TMP-crpdiff.txt | sort -un\`; do echo  --- \$i ---; grep -r \"^ *\$i\\.\" $CRP; grep -r \"^. *\$i\\.\" $TMP-crpdiff.txt; done | less"
+
 make -s -j 3 && cat $CRP | apertium -d . eo-en-compounds > $NOVA || exit
 #make -s -j 3 && cat $CRP | apertium -d . eo-en-j > $NOVA || exit
 #make -s -j 3 && cat $CRP | apertium -d . eo-en > $NOVA || exit
