@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Dictionary:
-	Sections: 2
-	Entries: 31847
-	Sdefs: 96
-	Paradigms: 5
+  Dictionary:
+  Sections: 2
+  Entries: 31847
+  Sdefs: 96
+  Paradigms: 5
 
 -->
 <dictionary>
-	<alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚàáâäçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú</alphabet>
-	<sdefs>
-		<sdef n="re" /> 
-		<sdef n="alpha" /> 
-		<sdef n="tn" /> 
-		<sdef n="nt" /> 
-		<sdef n="percent" /> 
-		<sdef n="p3" /> 
-		<sdef n="predet" /> 
-		<sdef n="p2" /> 
-		<sdef n="np" /> 
-		<sdef n="p1" /> 
-		<sdef n="imp" /> 
-		<sdef n="nn" /> 
-		<sdef n="fti" /> 
-		<sdef n="vbmod" /> 
-		<sdef n="pos" /> 
-		<sdef n="vblex" /> 
-		<sdef n="sent" /> 
-		<sdef n="apos" /> 
-		<sdef n="ind" /> 
-		<sdef n="preadv" /> 
-		<sdef n="vaux" /> 
-		<sdef n="ant" /> 
-		<sdef n="gen" /> 
-		<sdef n="sp" /> 
-		<sdef n="ger" /> 
-		<sdef n="inf" /> 
-		<sdef n="top" /> 
-		<sdef n="rpar" /> 
-		<sdef n="pres" /> 
-		<sdef n="sg" /> 
-		<sdef n="url" /> 
-		<sdef n="cnjsub" /> 
-		<sdef n="vbser" /> 
-		<sdef n="fts" /> 
-		<sdef n="unc" /> 
-		<sdef n="vbdo" /> 
-		<sdef n="lpar" /> 
-		<sdef n="cm" /> 
-		<sdef n="email" /> 
-		<sdef n="ifi" /> 
-		<sdef n="pl" /> 
-		<sdef n="itg" /> 
-		<sdef n="ND" /> 
-		<sdef n="nomi" /> 
-		<sdef n="GD" /> 
-		<sdef n="det" /> 
-		<sdef n="pprs" /> 
-		<sdef n="ord" /> 
-		<sdef n="adj" /> 
-		<sdef n="vbhaver" /> 
-		<sdef n="sym" /> 
-		<sdef n="sup" /> 
-		<sdef n="subj" /> 
-		<sdef n="cni" /> 
-		<sdef n="atn" /> 
-		<sdef n="def" /> 
-		<sdef n="subs" /> 
-		<sdef n="MULT" /> 
-		<sdef n="qnt" /> 
-		<sdef n="mf" /> 
-		<sdef n="dem" /> 
-		<sdef n="cnjcoo" /> 
-		<sdef n="adv" /> 
-		<sdef n="enc" /> 
-		<sdef n="f" /> 
-		<sdef n="comp" /> 
-		<sdef n="prs" /> 
-		<sdef n="n" /> 
-		<sdef n="ij" /> 
-		<sdef n="pron" /> 
-		<sdef n="web" /> 
-		<sdef n="m" /> 
-		<sdef n="guio" /> 
-		<sdef n="past" /> 
-		<sdef n="cnjadv" /> 
-		<sdef n="acc" /> 
-		<sdef n="detnt" /> 
-		<sdef n="pii" /> 
-		<sdef n="ref" /> 
-		<sdef n="al" /> 
-		<sdef n="num" /> 
-		<sdef n="pri" /> 
-		<sdef n="cog" /> 
-		<sdef n="an" /> 
-		<sdef n="pro" /> 
-		<sdef n="sep" /> 
-		<sdef n="prn" /> 
-		<sdef n="obj" /> 
-		<sdef n="pis" /> 
-		<sdef n="aa" /> 
-		<sdef n="rel" /> 
-		<sdef n="pp" /> 
-		<sdef n="acr" /> 
-		<sdef n="pr" /> 
-		<sdef n="nom" /> 
-	</sdefs>
-	<pardefs>
+  <alphabet>·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚàáâäçèéêëìíîïñòóôöõùúûüABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñú</alphabet>
+  <sdefs>
+    <sdef n="re" />
+    <sdef n="alpha" />
+    <sdef n="tn" />
+    <sdef n="nt" />
+    <sdef n="percent" />
+    <sdef n="p3" />
+    <sdef n="predet" />
+    <sdef n="p2" />
+    <sdef n="np" />
+    <sdef n="p1" />
+    <sdef n="imp" />
+    <sdef n="nn" />
+    <sdef n="fti" />
+    <sdef n="vbmod" />
+    <sdef n="pos" />
+    <sdef n="vblex" />
+    <sdef n="sent" />
+    <sdef n="apos" />
+    <sdef n="ind" />
+    <sdef n="preadv" />
+    <sdef n="vaux" />
+    <sdef n="ant" />
+    <sdef n="gen" />
+    <sdef n="sp" />
+    <sdef n="ger" />
+    <sdef n="inf" />
+    <sdef n="top" />
+    <sdef n="rpar" />
+    <sdef n="pres" />
+    <sdef n="sg" />
+    <sdef n="url" />
+    <sdef n="cnjsub" />
+    <sdef n="vbser" />
+    <sdef n="fts" />
+    <sdef n="unc" />
+    <sdef n="vbdo" />
+    <sdef n="lpar" />
+    <sdef n="cm" />
+    <sdef n="email" />
+    <sdef n="ifi" />
+    <sdef n="pl" />
+    <sdef n="itg" />
+    <sdef n="ND" />
+    <sdef n="nomi" />
+    <sdef n="GD" />
+    <sdef n="det" />
+    <sdef n="pprs" />
+    <sdef n="ord" />
+    <sdef n="adj" />
+    <sdef n="vbhaver" />
+    <sdef n="sym" />
+    <sdef n="sup" />
+    <sdef n="subj" />
+    <sdef n="cni" />
+    <sdef n="atn" />
+    <sdef n="def" />
+    <sdef n="subs" />
+    <sdef n="MULT" />
+    <sdef n="qnt" />
+    <sdef n="mf" />
+    <sdef n="dem" />
+    <sdef n="cnjcoo" />
+    <sdef n="adv" />
+    <sdef n="enc" />
+    <sdef n="f" />
+    <sdef n="comp" />
+    <sdef n="prs" />
+    <sdef n="n" />
+    <sdef n="ij" />
+    <sdef n="pron" />
+    <sdef n="web" />
+    <sdef n="m" />
+    <sdef n="guio" />
+    <sdef n="past" />
+    <sdef n="cnjadv" />
+    <sdef n="acc" />
+    <sdef n="detnt" />
+    <sdef n="pii" />
+    <sdef n="ref" />
+    <sdef n="al" />
+    <sdef n="num" />
+    <sdef n="pri" />
+    <sdef n="cog" />
+    <sdef n="an" />
+    <sdef n="pro" />
+    <sdef n="sep" />
+    <sdef n="prn" />
+    <sdef n="obj" />
+    <sdef n="pis" />
+    <sdef n="aa" />
+    <sdef n="rel" />
+    <sdef n="pp" />
+    <sdef n="acr" />
+    <sdef n="pr" />
+    <sdef n="nom" />
+  </sdefs>
+  <pardefs>
 
 <pardef n="Abc">
   <e>       <re>[ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÚÛÜÚABCDEFGHIJKLMNOPQRSTUVWXYZĈĜĤĴŜŬÆØÅæøåàáâäçèéêëìíîïñòóôöõùúûüabcdefghijklmnopqrstuvwxyzĉĝĥĵŝŭÚéõóöäíáòñúŵã -.]*</re></e>
@@ -116,10 +116,10 @@
   <e>       <i><s n="num"/><s n="sg"/></i></e>
 <!--  <e>       <i><s n="np"/><s n="alpha"/></i></e> -->
 </pardef>
-	</pardefs>
-	
-	
-	<section id="main" type="standard">
+  </pardefs>
+
+
+  <section id="main" type="standard">
 
 <e><p><l>ebli<s n="vblex"/></l>                 <r>be<g><b/>possible</g><s n="vbser"/></r></p></e>
 <e r="RL"><p><l>ne<b/>ebli<s n="vblex"/></l>    <r>be<g><b/>not<b/>possible</g><s n="vbser"/></r></p></e>
@@ -189,12 +189,12 @@
 <e r="RL"><p><l>temo<s n="n"/></l>                     <r>topic<s n="n"/></r></p></e>
 
 
-<!-- TODO: Diskutu kun Francis. adj formo al n? 
+<!-- TODO: Diskutu kun Francis. adj formo al n?
 <e>       <p><l>abona<s n="adj"/></l>                  <r>subscription<s n="n"/></r></p></e>
 -->
 <e>       <p><l>abono<s n="n"/></l>                    <r>subscription<s n="n"/></r></p></e>
 
-<!-- por eviti ke ili estas re-generitaj, mi metas la jenon cxi-tie 
+<!-- por eviti ke ili estas re-generitaj, mi metas la jenon cxi-tie
 <e i="yes"><p><l>kvar-jara<s n="adj"/></l>              <r>four<s n="adj"/></r></p></e>
 <e i="yes"><p><l>ses-jara<s n="adj"/></l>               <r>six<s n="adj"/></r></p></e>
 <e i="yes"><p><l>du-jara<s n="adj"/></l>                <r>two<s n="adj"/></r></p></e>
@@ -343,7 +343,7 @@
 
 
 
-	<!--Números i signes puntuació -->
+  <!--Números i signes puntuació -->
 <e>       <p><l>-<s n="guio"/></l>                     <r>-<s n="guio"/></r></p></e>
 <e>       <p><l>,<s n="cm"/></l>                       <r>,<s n="cm"/></r></p></e>
 <e>       <re>[.\?;:!]</re><p><l><s n="sent"/></l>     <r><s n="sent"/></r></p></e>
@@ -522,7 +522,7 @@
 
 <!-- ^each<det><ind><sg>  each dog has its own house   -> ĉiu hundo havas ĝian propran domon  -->
 
-<!-- most of Aristotle's life was devoted to study 
+<!-- most of Aristotle's life was devoted to study
      Aristotle conducted most of the scientific thinking
      most of the time -->
 <e>       <p><l>plejparto<s n="prn"/><s n="tn"/><s n="sg"/></l><r>most<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
@@ -538,7 +538,7 @@
 <!-- all are Christians -->
 <e>       <p><l>ĉiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>all<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 
-<!-- All but the children saw it 
+<!-- All but the children saw it
 <e>       <p><l>ĉiuj<b/>krom<s n="prn"/><s n="tn"/><s n="sp"/></l><r>all XXXXX KIE ESTAS but???<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
 -->
 
@@ -556,13 +556,13 @@
 
 
 
-<!-- anybody can be sad  → iu ajn povas esti malĝoja -->   
+<!-- anybody can be sad  → iu ajn povas esti malĝoja -->
 <e>       <p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anybody<s n="prn"/><s n="tn"/></r></p></e>
 
-<!-- does anyone understand? → ĉu iu ajn komprenas? -->   
+<!-- does anyone understand? → ĉu iu ajn komprenas? -->
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>any<b/>one<s n="prn"/><s n="tn"/></r></p></e>
 
-<!-- anyone can be sad  → iu ajn povas esti malĝoja -->   
+<!-- anyone can be sad  → iu ajn povas esti malĝoja -->
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>kio<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whatever<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>kiu<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whoever<s n="prn"/><s n="tn"/></r></p></e>
@@ -644,7 +644,7 @@
 <!-- tioj ĉi ??
 <e r="LR"><p><l>tio<b/>ĉi<s n="prn"/><s n="tn"/><s n="pl"/></l><r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 -->
-<!-- 
+<!--
 <e r="LR"><p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="sg"/></l><r>this<s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
 <e>       <p><l>ĉi<b/>tiu<s n="prn"/><s n="tn"/><s n="pl"/></l><r>this<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 -->
@@ -659,12 +659,12 @@
 
 
 <e>       <p><l>multa<s n="prn"/><s n="tn"/></l>       <r>many<s n="prn"/><s n="tn"/></r></p></e>
-<!-- their greater ones.        
+<!-- their greater ones.
 <e>       <p><l>xxx<s n="prn"/><s n="tn"/><s n="pl"/></l><r>one<s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
  -->
 
-<!-- if it is not prevented by something else.   
-     Aristotle reasoned that man must have a function uncommon to anything else 
+<!-- if it is not prevented by something else.
+     Aristotle reasoned that man must have a function uncommon to anything else
      It is unclear whether or not the strikers or anyone else will return to save him.
      dynamic dialogue above all else.
      if all else fails
@@ -785,14 +785,14 @@ BUT:
 
 
     <!-- Sub-ordinating conjunction -->
-	
+
 <e>       <p><l>ke<s n="cnjsub"/></l>                  <r>that<s n="cnjsub"/></r></p></e>
 
 
 
     <!-- Co-ordinating conjunction -->
-	<!-- According to http://en.wikipedia.org/wiki/Co-ordinating_conjunction : 
-	     after, although, if, unless, so that, and because  -->
+  <!-- According to http://en.wikipedia.org/wiki/Co-ordinating_conjunction :
+       after, although, if, unless, so that, and because  -->
 
 <e>       <p><l>kaj<s n="cnjcoo"/></l>                 <r>and<s n="cnjcoo"/></r></p></e>
 
@@ -809,7 +809,7 @@ BUT:
 
 
 
-    
+
     <!-- Determiners -->
 
 <e>       <p><l>la<s n="det"/><s n="def"/></l>         <r>the<s n="det"/><s n="def"/></r></p></e>
@@ -967,11 +967,11 @@ BUT:
 <e r="LR"><p><l>ĉi<s n="det"/><s n="dem"/></l>  <r>this<s n="det"/><s n="dem"/></r></p></e>
 
 
-	<!-- multi-word "determiners" -->
-    
+  <!-- multi-word "determiners" -->
+
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/></l>  <r>too<b/>much<s n="det"/><s n="qnt"/></r></p></e>
 <e r="RL"><p><l>tro<b/>da<s n="det"/><s n="qnt"/></l>  <r>too<b/>many<s n="det"/><s n="qnt"/></r></p></e>
-    <!-- MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en --> 
+    <!-- MG: Crec que 'too much' i 'too many' s'haurien de posar en un sol paradigma per tal de posar ND en la direcció cat-en -->
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="pl"/></l><r>too<b/>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 <e>       <p><l>tro<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>too<b/>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 <e>       <p><l>tiom<b/>da<s n="det"/><s n="qnt"/></l> <r>so<b/>much<s n="det"/><s n="qnt"/></r></p></e>
@@ -1083,7 +1083,7 @@ BUT:
 <e r="RL"><p><l>pro<s n="pr"/></l>                     <r>due<b/>to<s n="pr"/></r></p></e>
 
 
-	<!-- multi-word "prepositions" -->
+  <!-- multi-word "prepositions" -->
 <e r="RL"><p><l>antaŭ<s n="pr"/></l>                   <r>in<b/>front<b/>of<s n="pr"/></r></p></e>
 <e>       <p><l>en<b/>konsento<b/>kun<s n="pr"/></l>   <r>in<b/>accordance<b/>with<s n="pr"/></r></p></e>
 <e r="LR"><p><l>akorde<b/>kun<s n="pr"/></l>           <r>in<b/>accordance<b/>with<s n="pr"/></r></p></e>
@@ -1150,7 +1150,7 @@ BUT:
 <e>       <p><l>Asturio<s n="np"/><s n="top"/></l>     <r>Asturias<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ateno<s n="np"/><s n="top"/></l>       <r>Athens<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Aŭstralio<s n="np"/><s n="top"/></l>   <r>Australia<s n="np"/><s n="top"/></r></p></e>
-<e>       <p><l>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/></l>   <r>Capital<b/>Territory<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Ĉefurba<b/>Teritorio<s n="np"/><s n="top"/></l><r>Capital<b/>Territory<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Aŭstrio<s n="np"/><s n="top"/></l>     <r>Austria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Azio<s n="np"/><s n="top"/></l>        <r>Asia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Eŭrazio<s n="np"/><s n="top"/></l>     <r>Eurasia<s n="np"/><s n="top"/></r></p></e>
@@ -1908,7 +1908,7 @@ BUT:
 
 <e       ><p><l>en<b/>Latin-Ameriko<s n="adv"/></l><r>in<b/>Latin<b/>America<s n="adv"/></r></p></e>
 
-	<!--  gender-full nouns which also has gender in English -->
+  <!--  gender-full nouns which also has gender in English -->
 <e>       <p><l>dio<s n="n"/><s n="f"/></l>            <r>goddess<s n="n"/></r></p></e>
 <e>       <p><l>dio<s n="n"/><s n="m"/></l>            <r>god<s n="n"/></r></p></e>
 <e>       <p><l>kelnero<s n="n"/><s n="m"/></l>        <r>waiter<s n="n"/></r></p></e>
@@ -2140,10 +2140,10 @@ TODO??
 
 
 
-	<!-- ====================================================================== -->
-	<!--      Below here is only one-word nouns, adj, adv and vblex             -->
-	<!--      which should NOT be generated from traduku.net data               -->
-	<!-- ====================================================================== -->
+  <!-- ====================================================================== -->
+  <!--      Below here is only one-word nouns, adj, adv and vblex             -->
+  <!--      which should NOT be generated from traduku.net data               -->
+  <!-- ====================================================================== -->
 <e>       <p><l>nenomita<s n="adj"/></l>               <r>unnamed<s n="adj"/></r></p></e>
 <e>       <p><l>kordoloro<s n="n"/></l>                <r>anguish<s n="n"/></r></p></e>
 <e>       <p><l>afliktiĝo<s n="n"/></l>                <r>grief<s n="n"/></r></p></e>
@@ -2275,9 +2275,9 @@ TODO??
 
 
 
-	<!-- ====================================================================== -->
-	<!--      Multi-words                                                       -->
-	<!-- ====================================================================== -->
+  <!-- ====================================================================== -->
+  <!--      Multi-words                                                       -->
+  <!-- ====================================================================== -->
 
 <e>       <p><l>eltiriĝi<s n="vblex"/></l>             <r>back<g><b/>out</g><s n="vblex"/></r></p></e>
 <e>       <p><l>provizaro<s n="n"/></l>                <r>stockpile<s n="n"/></r></p></e>
@@ -2796,19 +2796,19 @@ TODO??
 
 <e><p><l>memo<s n="n"/></l>                     <r>self<s n="n"/></r></p></e>
 
-	<!-- ====================================================================== -->
-	<!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
-	<!--      during generation. Please move all things you correct manually   -->
-	<!--      up ABOVE this line!                                               -->
-	<!-- ====================================================================== -->
+  <!-- ====================================================================== -->
+  <!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
+  <!--      during generation. Please move all things you correct manually   -->
+  <!--      up ABOVE this line!                                               -->
+  <!-- ====================================================================== -->
 
 
 <!--
-	</section>
+  </section>
 
 
 
-	<section id="auxtomate-farita-de-traduku.net" type="standard">
+  <section id="auxtomate-farita-de-traduku.net" type="standard">
 -->
 
 <e>       <p><l>forlasi<s n="vblex"/></l>              <r>abandon<s n="vblex"/></r></p></e>
@@ -3286,7 +3286,7 @@ TODO??
 <e>       <p><l>mal-<s n="n"/></l>                     <r>anti-<s n="n"/></r></p></e>
 <e r="LR"><p><l>malo<s n="n"/></l>                     <r>antithesis<s n="n"/></r></p></e>
 <e>       <p><l>antipodo<s n="n"/></l>                 <r>antithesis<s n="n"/></r></p></e>
-		<!-- Already is <e><l>malo<n></l><r>antithesis<n></r></e> -->
+    <!-- Already is <e><l>malo<n></l><r>antithesis<n></r></e> -->
 <e r="LR"><p><l>antitezo<s n="n"/></l>                 <r>antithesis<s n="n"/></r></p></e>
 <e>       <p><l>anuso<s n="n"/></l>                    <r>anus<s n="n"/></r></p></e>
 <e>       <p><l>maltrankvilo<s n="n"/></l>             <r>anxiety<s n="n"/></r></p></e>
@@ -4339,7 +4339,7 @@ TODO??
 <e r="LR"><p><l>promontoro<s n="n"/></l>               <r>cape<s n="n"/></r></p></e>
 <e r="RL"><p><l>ĉefurbo<s n="n"/></l>                  <r>capital<b/>city<s n="n"/></r></p></e>
 <e>       <p><l>ĉefurbo<s n="n"/></l>                  <r>capital<s n="n"/></r></p></e>
-		<!-- Already is <e><l>metropolo<n></l><r>mainland<n></r></e> -->
+    <!-- Already is <e><l>metropolo<n></l><r>mainland<n></r></e> -->
 <e i="yes"><p><l>metropolo<s n="n"/></l>               <r>capital<s n="n"/></r></p></e>
 <e r="LR"><p><l>kapitalo<s n="n"/></l>                 <r>capital<s n="n"/></r></p></e>
 <e r="LR"><p><l>majusklo<s n="n"/></l>                 <r>capital<s n="n"/></r></p></e>
@@ -6052,7 +6052,7 @@ TODO??
 <e r="LR"><p><l>malkreski<s n="vblex"/></l>            <r>diminish<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉefmanĝo<s n="n"/></l>                 <r>dinner<s n="n"/></r></p></e>
 <e r="LR"><p><l>festeno<s n="n"/></l>                  <r>dinner<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>diocezo<n></l><r>bishopric<n></r></e> -->
+    <!-- Already is <e r="LR"><l>diocezo<n></l><r>bishopric<n></r></e> -->
 <e r="RL"><p><l>diocezo<s n="n"/></l>                  <r>diocese<s n="n"/></r></p></e>
 <e>       <p><l>diplomatio<s n="n"/></l>               <r>diplomacy<s n="n"/></r></p></e>
 <e r="LR"><p><l>diplomateco<s n="n"/></l>              <r>diplomacy<s n="n"/></r></p></e>
@@ -6431,7 +6431,7 @@ TODO??
 <e r="LR"><p><l>koĉero<s n="n"/></l>                   <r>driver<s n="n"/></r></p></e>
 <e>       <p><l>alirvojo<s n="n"/></l>                 <r>driveway<s n="n"/></r></p></e>
 <e r="RL"><p><l>veturado<s n="n"/></l>                 <r>driving<s n="n"/></r></p></e>
-		<!-- Already is <e><l>stirado<n></l><r>drive<n></r></e> -->
+    <!-- Already is <e><l>stirado<n></l><r>drive<n></r></e> -->
 <e i="yes"><p><l>stirado<s n="n"/></l>                 <r>driving<s n="n"/></r></p></e>
 <e r="LR"><p><l>veturigo<s n="n"/></l>                 <r>driving<s n="n"/></r></p></e>
 <e r="LR"><p><l>aŭtostirado<s n="n"/></l>              <r>driving<s n="n"/></r></p></e>
@@ -8270,7 +8270,7 @@ TODO??
 <e>       <p><l>ĝenadi<s n="vblex"/></l>               <r>harass<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>haveno<s n="n"/></l>                   <r>harbour<s n="n"/></r></p></e>
 <e>       <p><l>aflikto<s n="n"/></l>                  <r>hardship<s n="n"/></r></p></e>
-		<!-- Already is <e><l>afliktiĝo<n></l><r>grief<n></r></e> -->
+    <!-- Already is <e><l>afliktiĝo<n></l><r>grief<n></r></e> -->
 <e i="yes"><p><l>afliktiĝo<s n="n"/></l>               <r>hardship<s n="n"/></r></p></e>
 <e r="LR"><p><l>malprosperado<s n="n"/></l>            <r>hardship<s n="n"/></r></p></e>
 <e r="LR"><p><l>malprospero<s n="n"/></l>              <r>hardship<s n="n"/></r></p></e>
@@ -9153,7 +9153,7 @@ TODO??
 <e>       <p><l>izoli<s n="vblex"/></l>                <r>isolate<s n="vblex"/></r></p></e>
 <e>       <p><l>izotopo<s n="n"/></l>                  <r>isotope<s n="n"/></r></p></e>
 <e r="LR"><p><l>israelana<s n="adj"/></l>              <r>Israeli<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>afero<n></l><r>cause<n></r></e> -->
+    <!-- Already is <e><l>afero<n></l><r>cause<n></r></e> -->
 <e r="RL"><p><l>afero<s n="n"/></l>                    <r>issue<s n="n"/></r></p></e>
 <e r="LR"><p><l>zorgo<s n="n"/></l>                    <r>issue<s n="n"/></r></p></e>
 <e r="LR"><p><l>emisio<s n="n"/></l>                   <r>issue<s n="n"/></r></p></e>
@@ -9505,7 +9505,7 @@ TODO??
 <e r="LR"><p><l>rajta<s n="adj"/></l>                  <r>legitimate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>rajtohava<s n="adj"/></l>              <r>legitimate<s n="adj"/></r></p></e>
 <e>       <p><l>prave<s n="adv"/></l>                  <r>legitimately<s n="adv"/></r></p></e>
-		<!-- Already is <e><l>juste<adv></l><r>fairly<adv></r></e> -->
+    <!-- Already is <e><l>juste<adv></l><r>fairly<adv></r></e> -->
 <e i="yes"><p><l>juste<s n="adv"/></l>                 <r>legitimately<s n="adv"/></r></p></e>
 <e r="LR"><p><l>rajte<s n="adv"/></l>                  <r>legitimately<s n="adv"/></r></p></e>
 <e>       <p><l>lemo<s n="n"/></l>                     <r>lemma<s n="n"/></r></p></e>
@@ -9651,7 +9651,7 @@ TODO??
 <e r="LR"><p><l>legkapabla<s n="adj"/></l>             <r>literate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>legoscia<s n="adj"/></l>               <r>literate<s n="adj"/></r></p></e>
 <e r="LR"><p><l>alfabetigita<s n="adj"/></l>           <r>literate<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>klera<adj></l><r>learned<adj></r></e> -->
+    <!-- Already is <e><l>klera<adj></l><r>learned<adj></r></e> -->
 <e i="yes"><p><l>klera<s n="adj"/></l>                 <r>literate<s n="adj"/></r></p></e>
 <e>       <p><l>literaturo<s n="n"/></l>               <r>literature<s n="n"/></r></p></e>
 <e r="RL"><p><l>litro<s n="n"/></l>                    <r>litre<s n="n"/></r></p></e>
@@ -9838,7 +9838,7 @@ TODO??
 <e>       <p><l>maligna<s n="adj"/></l>                <r>malignant<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malbonvola<s n="adj"/></l>             <r>malignant<s n="adj"/></r></p></e>
 <e>       <p><l>viro<s n="n"/></l>                     <r>man<s n="n"/></r></p></e>
-		<!-- Already is <e><l>homo<n></l><r>folk<n></r></e> -->
+    <!-- Already is <e><l>homo<n></l><r>folk<n></r></e> -->
 <e i="yes"><p><l>homo<s n="n"/></l>                    <r>man<s n="n"/></r></p></e>
 <e r="LR"><p><l>trupano<s n="n"/></l>                  <r>man<s n="n"/></r></p></e>
 <e r="LR"><p><l>taŭgulo<s n="n"/></l>                  <r>man<s n="n"/></r></p></e>
@@ -11263,7 +11263,7 @@ TODO??
 <e r="LR"><p><l>pikfosilo<s n="n"/></l>                <r>pickaxe<s n="n"/></r></p></e>
 <e r="LR"><p><l>selekti<s n="vblex"/></l>              <r>pick<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>bildo<s n="n"/></l>                    <r>picture<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>desegnaĵo<n></l><r>draft<n></r></e> -->
+    <!-- Already is <e r="LR"><l>desegnaĵo<n></l><r>draft<n></r></e> -->
 <e i="yes"><p><l>desegnaĵo<s n="n"/></l>               <r>picture<s n="n"/></r></p></e>
 <e>       <p><l>pitoreska<s n="adj"/></l>              <r>picturesque<s n="adj"/></r></p></e>
 <e r="RL"><p><l>peco<s n="n"/></l>                     <r>piece<s n="n"/></r></p></e>
@@ -11430,7 +11430,7 @@ TODO??
 <e>       <p><l>poluso<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
 <e r="LR"><p><l>stango<s n="n"/></l>                   <r>pole<s n="n"/></r></p></e>
 <e r="LR"><p><l>fosto<s n="n"/></l>                    <r>pole<s n="n"/></r></p></e>
-		<!-- Already is <e><l>polo<n></l><r>Polish<n></r></e> -->
+    <!-- Already is <e><l>polo<n></l><r>Polish<n></r></e> -->
 <e i="yes"><p><l>polo<s n="n"/></l>                    <r>pole<s n="n"/></r></p></e>
 <e r="RL"><p><l>politiko<s n="n"/></l>                 <r>policy<s n="n"/></r></p></e>
 <e r="LR"><p><l>poliso<s n="n"/></l>                   <r>policy<s n="n"/></r></p></e>
@@ -11720,7 +11720,7 @@ TODO??
 <e>       <p><l>unuavice<s n="adv"/></l>               <r>primarily<s n="adv"/></r></p></e>
 <e>       <p><l>primaso<s n="n"/></l>                  <r>primate<s n="n"/></r></p></e>
 <e r="LR"><p><l>primato<s n="n"/></l>                  <r>primate<s n="n"/></r></p></e>
-		<!-- Already is <e><l>ĉefa<adj></l><r>mainstream<adj></r></e> -->
+    <!-- Already is <e><l>ĉefa<adj></l><r>mainstream<adj></r></e> -->
 <e r="RL"><p><l>ĉefa<s n="adj"/></l>                   <r>prime<s n="adj"/></r></p></e>
 <e r="LR"><p><l>altkvalita<s n="adj"/></l>             <r>prime<s n="adj"/></r></p></e>
 <e r="LR"><p><l>unuaklasa<s n="adj"/></l>              <r>prime<s n="adj"/></r></p></e>
@@ -14205,7 +14205,7 @@ TODO??
 <e>       <p><l>antaŭurbo<s n="n"/></l>                <r>suburb<s n="n"/></r></p></e>
 <e r="LR"><p><l>suburbo<s n="n"/></l>                  <r>suburb<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉirkaŭaĵo<s n="n"/></l>                <r>suburb<s n="n"/></r></p></e>
-		<!-- Already is <e><l>metroo<n></l><r>underground<n></r></e> -->
+    <!-- Already is <e><l>metroo<n></l><r>underground<n></r></e> -->
 <e r="RL"><p><l>metroo<s n="n"/></l>                   <r>subway<s n="n"/></r></p></e>
 <e r="LR"><p><l>subtrajno<s n="n"/></l>                <r>subway<s n="n"/></r></p></e>
 <e r="LR"><p><l>subvojo<s n="n"/></l>                  <r>subway<s n="n"/></r></p></e>
@@ -15472,7 +15472,7 @@ TODO??
 <e r="LR"><p><l>malĉasta<s n="adj"/></l>               <r>wanton<s n="adj"/></r></p></e>
 <e r="LR"><p><l>voli<s n="vblex"/></l>                 <r>want<s n="vblex"/></r></p></e>
 <e>       <p><l>milito<s n="n"/></l>                   <r>war<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>militado<n></l><r>warfare<n></r></e> -->
+    <!-- Already is <e r="LR"><l>militado<n></l><r>warfare<n></r></e> -->
 <e i="yes"><p><l>militado<s n="n"/></l>                <r>war<s n="n"/></r></p></e>
 <e>       <p><l>vestaro<s n="n"/></l>                  <r>wardrobe<s n="n"/></r></p></e>
 <e>       <p><l>staplo<s n="n"/></l>                   <r>warehouse<s n="n"/></r></p></e>
@@ -16166,7 +16166,6 @@ TODO??
 <e r="RL"><p><l>loĝio<s n="n"/></l>                    <r>loge<s n="n"/></r></p></e>
 <e>       <p><l>loknomo<s n="n"/></l>                  <r>toponym<s n="n"/></r></p></e>
 <e r="LR"><p><l>lombardo<s n="n"/></l>                 <r>obstinacy<s n="n"/></r></p></e>
-<e r="LR"><p><l>longa hararo<s n="n"/></l>             <r>mane<s n="n"/></r></p></e>
 <e r="LR"><p><l>longitudo<s n="n"/></l>                <r>length<s n="n"/></r></p></e>
 <e r="LR"><p><l>loŝantaro<s n="n"/></l>                <r>population<s n="n"/></r></p></e>
 <e r="LR"><p><l>lotado<s n="n"/></l>                   <r>draw<s n="n"/></r></p></e>
@@ -16230,7 +16229,7 @@ TODO??
 <e r="LR"><p><l>nafto-dukto<s n="n"/></l>              <r>pipeline<s n="n"/></r></p></e>
 <e>       <p><l>najtingalo<s n="n"/></l>               <r>nightingale<s n="n"/></r></p></e>
 <e r="LR"><p><l>naskiĝejo<s n="n"/></l>                <r>cradle<s n="n"/></r></p></e>
-		<!-- Already is <e><l>naskiĝtago<n></l><r>birthday<n></r></e> -->
+    <!-- Already is <e><l>naskiĝtago<n></l><r>birthday<n></r></e> -->
 <e r="RL"><p><l>naskiĝtago<s n="n"/></l>               <r>birthday<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>naskokvanto<s n="n"/></l>              <r>natality<s n="n"/></r></p></e>
 <e r="LR"><p><l>neegaleco<s n="n"/></l>                <r>inequality<s n="n"/></r></p></e>
@@ -16270,7 +16269,7 @@ TODO??
 <e r="RL"><p><l>paralizo<s n="n"/></l>                 <r>paralysis<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>parenceco<s n="n"/></l>                <r>kinship<s n="n"/></r></p></e>
 <e r="LR"><p><l>parkadejo<s n="n"/></l>                <r>parking<s n="n"/></r></p></e>
-		<!-- Already is <e><l>parokestro<n></l><r>vicar<n></r></e> -->
+    <!-- Already is <e><l>parokestro<n></l><r>vicar<n></r></e> -->
 <e i="yes"><p><l>parokestro<s n="n"/></l>              <r>rector<s n="n"/></r></p></e>
 <e r="LR"><p><l>paspago<s n="n"/></l>                  <r>toll<s n="n"/></r></p></e>
 <e>       <p><l>pasteĉo<s n="n"/></l>                  <r>pâté<s n="n"/></r></p></e>
@@ -16562,7 +16561,7 @@ TODO??
 <e>       <p><l>dika<s n="adj"/></l>                   <r>thick<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dika<s n="adj"/></l>                   <r>fat<s n="adj"/></r></p></e>
 <e r="LR"><p><l>distrita<s n="adj"/></l>               <r>careless<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>diversa<adj></l><r>various<adj></r></e> -->
+    <!-- Already is <e><l>diversa<adj></l><r>various<adj></r></e> -->
 <e r="RL"><p><l>diversa<s n="adj"/></l>                <r>diverse<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dolĉa<s n="adj"/></l>                  <r>sweet<s n="adj"/></r></p></e>
 <e>       <p><l>duonmonata<s n="adj"/></l>             <r>twice-weekly<s n="adj"/></r></p></e>
@@ -16661,7 +16660,7 @@ TODO??
 <e r="LR"><p><l>maldesktramana<s n="adj"/></l>         <r>left-handed<s n="adj"/></r></p></e>
 <e r="RL"><p><l>maldika<s n="adj"/></l>                <r>thin<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malestima<s n="adj"/></l>              <r>pejorative<s n="adj"/></r></p></e>
-		<!-- Already is <e r="LR"><l>malfeliĉa<adj></l><r>sad<adj></r></e> -->
+    <!-- Already is <e r="LR"><l>malfeliĉa<adj></l><r>sad<adj></r></e> -->
 <e r="RL"><p><l>malfeliĉa<s n="adj"/></l>              <r>unhappy<s n="adj"/></r></p></e>
 <e r="RL"><p><l>malforta<s n="adj"/></l>               <r>feeble<s n="adj"/></r></p></e>
 <e r="RL"><p><l>malforta<s n="adj"/></l>               <r>weak<s n="adj"/></r></p></e>
@@ -16734,7 +16733,7 @@ TODO??
 <e r="LR"><p><l>opaka<s n="adj"/></l>                  <r>opaque<s n="adj"/></r></p></e>
 <e>       <p><l>osta<s n="adj"/></l>                   <r>osseous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pedagogia<s n="adj"/></l>              <r>didactic<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>multekosta<adj></l><r>costly<adj></r></e> -->
+    <!-- Already is <e><l>multekosta<adj></l><r>costly<adj></r></e> -->
 <e i="yes"><p><l>peniga<s n="adj"/></l>                <r>costly<s n="adj"/></r></p></e>
 <e r="LR"><p><l>pentrinda<s n="adj"/></l>              <r>picturesque<s n="adj"/></r></p></e>
 <e r="RL"><p><l>perceptebla<s n="adj"/></l>            <r>perceivable<s n="adj"/></r></p></e>
@@ -17020,7 +17019,7 @@ TODO??
 
 
     <!-- Adverbs -->
-     
+
 <e>       <p><l>nekutime<s n="adv"/></l>               <r>unusually<s n="adv"/></r></p></e>
 <e r="LR"><p><l>aldone<s n="adv"/></l>                 <r>incidentally<s n="adv"/></r></p></e>
 
@@ -17137,7 +17136,7 @@ TODO??
 <e>       <p><l>fermo<s n="n"/></l>                    <r>closing<s n="n"/></r></p></e>
 <e>       <p><l>ferma<s n="adj"/></l>                  <r>closed<s n="adj"/></r></p></e>
 <e r="RL"><p><l>kvalifiki<s n="vblex"/></l>            <r>zone<s n="vblex"/></r></p></e>
- 
+
 
 <!-- multiwords probaley wrong -->
 <e r="LR"><p><l>registara<b/>sidejo<s n="n"/></l>      <r>residence<s n="n"/></r></p></e>
@@ -18814,7 +18813,7 @@ TODO??
 <e r="LR"><p><l>komunikadisto<s n="n"/></l>            <r>communicator<s n="n"/></r></p></e>
 <e>       <p><l>komuneco<s n="n"/></l>                 <r>communion<s n="n"/></r></p></e>
 <e r="LR"><p><l>komunio<s n="n"/></l>                  <r>communion<s n="n"/></r></p></e>
-		<!-- Already is <e><l>komunuma<adj></l><r>communitarian<adj></r></e> -->
+    <!-- Already is <e><l>komunuma<adj></l><r>communitarian<adj></r></e> -->
 <e r="RL"><p><l>komunuma<s n="adj"/></l>               <r>community<s n="adj"/></r></p></e>
 <e>       <p><l>navedi<s n="vblex"/></l>               <r>commute<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>pendolveturi<s n="vblex"/></l>         <r>commute<s n="vblex"/></r></p></e>
@@ -19349,7 +19348,7 @@ TODO??
 <e r="LR"><p><l>deklaracio<s n="n"/></l>               <r>declaration<s n="n"/></r></p></e>
 <e r="LR"><p><l>sindeklaro<s n="n"/></l>               <r>declaration<s n="n"/></r></p></e>
 <e r="LR"><p><l>proklamo<s n="n"/></l>                 <r>declaration<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>eldiraĵo<n></l><r>saying<n></r></e> -->
+    <!-- Already is <e r="LR"><l>eldiraĵo<n></l><r>saying<n></r></e> -->
 <e i="yes"><p><l>eldiraĵo<s n="n"/></l>                <r>declaration<s n="n"/></r></p></e>
 <e>       <p><l>deklinacio<s n="n"/></l>               <r>declination<s n="n"/></r></p></e>
 <e>       <p><l>dekotaĵo<s n="n"/></l>                 <r>decoction<s n="n"/></r></p></e>
@@ -20060,7 +20059,7 @@ TODO??
 <e r="LR"><p><l>egalrajtismo<s n="n"/></l>             <r>egalitarianism<s n="n"/></r></p></e>
 <e r="RL"><p><l>egoismo<s n="n"/></l>                  <r>egotism<s n="n"/></r></p></e>
 <e>       <p><l>egoisma<s n="adj"/></l>                <r>egotistic<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>dekoka<adj></l><r>eighteenth<adj></r></e> -->
+    <!-- Already is <e><l>dekoka<adj></l><r>eighteenth<adj></r></e> -->
 <e r="LR"><p><l>dek-oka<s n="adj"/></l>                <r>eighteenth<s n="adj"/></r></p></e>
 <e>       <p><l>ejakulado<s n="n"/></l>                <r>ejaculation<s n="n"/></r></p></e>
 <e r="LR"><p><l>ejakulo<s n="n"/></l>                  <r>ejaculation<s n="n"/></r></p></e>
@@ -20276,7 +20275,7 @@ TODO??
 <e>       <p><l>Epifanio<s n="np"/><s n="top"/></l>    <r>Epiphany<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>episkopa<s n="adj"/></l>               <r>episcopal<s n="adj"/></r></p></e>
 <e>       <p><l>episkaro<s n="n"/></l>                 <r>episcopate<s n="n"/></r></p></e>
-		<!-- Already is <e><l>episkaro<n></l><r>episcopate<n></r></e> -->
+    <!-- Already is <e><l>episkaro<n></l><r>episcopate<n></r></e> -->
 <e r="LR"><p><l>episkeco<s n="n"/></l>                 <r>episcopate<s n="n"/></r></p></e>
 <e>       <p><l>epistemologia<s n="adj"/></l>          <r>epistemological<s n="adj"/></r></p></e>
 <e>       <p><l>epistolo<s n="n"/></l>                 <r>epistle<s n="n"/></r></p></e>
@@ -21103,7 +21102,7 @@ TODO??
 <e r="RL"><p><l>aspekto<s n="n"/></l>                  <r>guise<s n="n"/></r></p></e>
 <e>       <p><l>gitaristo<s n="n"/></l>                <r>guitarist<s n="n"/></r></p></e>
 <e>       <p><l>Golfo<s n="np"/><s n="top"/></l>       <r>Gulf<s n="np"/><s n="top"/></r></p></e>
-		<!-- Already is <e r="LR"><l>fendego<n></l><r>ravine<n></r></e> -->
+    <!-- Already is <e r="LR"><l>fendego<n></l><r>ravine<n></r></e> -->
 <e r="RL"><p><l>fendego<s n="n"/></l>                  <r>gulf<s n="n"/></r></p></e>
 <e r="RL"><p><l>engluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ekgluti<s n="vblex"/></l>              <r>gulp<s n="vblex"/></r></p></e>
@@ -21356,7 +21355,7 @@ TODO??
 <e r="RL"><p><l>elstaraĵo<s n="n"/></l>                <r>hump<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝibaĵo<s n="n"/></l>                   <r>hump<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝibo<s n="n"/></l>                     <r>hump<s n="n"/></r></p></e>
-		<!-- Already is <e><l>centa<adj></l><r>hundreth<adj></r></e> -->
+    <!-- Already is <e><l>centa<adj></l><r>hundreth<adj></r></e> -->
 <e r="RL"><p><l>centa<s n="adj"/></l>                  <r>hundredth<s n="adj"/></r></p></e>
 <e>       <p><l>malsata<s n="adj"/></l>                <r>hungry<s n="adj"/></r></p></e>
 <e r="LR"><p><l>manĝemega<s n="adj"/></l>              <r>hungry<s n="adj"/></r></p></e>
@@ -21942,7 +21941,7 @@ TODO??
 <e r="LR"><p><l>gagato<s n="n"/></l>                   <r>jet<s n="n"/></r></p></e>
 <e>       <p><l>judismo<s n="n"/></l>                  <r>Judaism<s n="n"/></r></p></e>
 <e>       <p><l>judo<s n="n"/></l>                     <r>jew<s n="n"/></r></p></e>
-		<!-- Already is <e><l>hebreo<n></l><r>Hebrew<n></r></e> -->
+    <!-- Already is <e><l>hebreo<n></l><r>Hebrew<n></r></e> -->
 <e i="yes"><p><l>hebreo<s n="n"/></l>                  <r>jew<s n="n"/></r></p></e>
 <e>       <p><l>puzlo<s n="n"/></l>                    <r>jigsaw<s n="n"/></r></p></e>
 <e>       <p><l>Ijobo<s n="np"/></l>                   <r>Job<s n="np"/></r></p></e>
@@ -22218,7 +22217,7 @@ TODO??
 <e>       <p><l>loke<s n="adv"/></l>                   <r>locally<s n="adv"/></r></p></e>
 <e r="LR"><p><l>surloke<s n="adv"/></l>                <r>locally<s n="adv"/></r></p></e>
 <e r="RL"><p><l>loko<s n="n"/></l>                     <r>location<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>situo<n></l><r>position<n></r></e> -->
+    <!-- Already is <e r="LR"><l>situo<n></l><r>position<n></r></e> -->
 <e i="yes"><p><l>situo<s n="n"/></l>                   <r>location<s n="n"/></r></p></e>
 <e r="LR"><p><l>lokiĝo<s n="n"/></l>                   <r>location<s n="n"/></r></p></e>
 <e r="LR"><p><l>kieesto<s n="n"/></l>                  <r>location<s n="n"/></r></p></e>
@@ -22541,7 +22540,7 @@ TODO??
 <e r="LR"><p><l>randstreki<s n="vblex"/></l>           <r>mill<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉapelisto<s n="n"/></l>                <r>milliner<s n="n"/></r></p></e>
 <e>       <p><l>muelado<s n="n"/></l>                  <r>milling<s n="n"/></r></p></e>
-		<!-- Already is <e><l>miliona<adj></l><r>milionth<adj></r></e> -->
+    <!-- Already is <e><l>miliona<adj></l><r>milionth<adj></r></e> -->
 <e r="RL"><p><l>miliona<s n="adj"/></l>                <r>millionth<s n="adj"/></r></p></e>
 <e r="RL"><p><l>mueli<s n="vblex"/></l>                <r>mill<s n="vblex"/></r></p></e>
 <e>       <p><l>mimi<s n="vblex"/></l>                 <r>mime<s n="vblex"/></r></p></e>
@@ -22854,12 +22853,12 @@ TODO??
 <e>       <p><l>nudelo<s n="n"/></l>                   <r>noodle<s n="n"/></r></p></e>
 <e>       <p><l>normaligo<s n="n"/></l>                <r>normalisation<s n="n"/></r></p></e>
 <e r="RL"><p><l>norma<s n="adj"/></l>                  <r>normative<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>nordorienta<adj></l><r>northeast<adj></r></e> -->
+    <!-- Already is <e><l>nordorienta<adj></l><r>northeast<adj></r></e> -->
 <e r="RL"><p><l>nordorienta<s n="adj"/></l>            <r>northeastern<s n="adj"/></r></p></e>
 <e r="RL"><p><l>norda<s n="adj"/></l>                  <r>northern<s n="adj"/></r></p></e>
 <e>       <p><l>nordulo<s n="n"/></l>                  <r>northerner<s n="n"/></r></p></e>
 <e r="LR"><p><l>nordano<s n="n"/></l>                  <r>northerner<s n="n"/></r></p></e>
-		<!-- Already is <e><l>nordokcidenta<adj></l><r>northwest<adj></r></e> -->
+    <!-- Already is <e><l>nordokcidenta<adj></l><r>northwest<adj></r></e> -->
 <e r="RL"><p><l>nordokcidenta<s n="adj"/></l>          <r>northwestern<s n="adj"/></r></p></e>
 <e>       <p><l>nazotruo<s n="n"/></l>                 <r>nostril<s n="n"/></r></p></e>
 <e>       <p><l>neprofitocela<s n="adj"/></l>          <r>not-for-profit<s n="adj"/></r></p></e>
@@ -23096,7 +23095,7 @@ TODO??
 <e>       <p><l>trovarmiĝi<s n="vblex"/></l>           <r>overheat<s n="vblex"/></r></p></e>
 <e>       <p><l>troŝarĝi<s n="vblex"/></l>             <r>overload<s n="vblex"/></r></p></e>
 <e>       <p><l>preteratenti<s n="vblex"/></l>         <r>overlook<s n="vblex"/></r></p></e>
-		<!-- Already is <e r="LR"><l>flanklasi<vblex></l><r>omit<vblex></r></e> -->
+    <!-- Already is <e r="LR"><l>flanklasi<vblex></l><r>omit<vblex></r></e> -->
 <e i="yes"><p><l>flanklasi<s n="vblex"/></l>           <r>overlook<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>subite<s n="adv"/></l>                 <r>overnight<s n="adv"/></r></p></e>
 <e r="LR"><p><l>nokte<s n="adv"/></l>                  <r>overnight<s n="adv"/></r></p></e>
@@ -23982,7 +23981,7 @@ TODO??
 <e>       <p><l>renomumi<s n="vblex"/></l>             <r>reappoint<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>reenoficigi<s n="vblex"/></l>          <r>reappoint<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>malantaŭa<s n="adj"/></l>              <r>rear<s n="adj"/></r></p></e>
-		<!-- Already is <e r="LR"><l>malantaŭaĵo<n></l><r>back<n></r></e> -->
+    <!-- Already is <e r="LR"><l>malantaŭaĵo<n></l><r>back<n></r></e> -->
 <e r="RL"><p><l>malantaŭaĵo<s n="n"/></l>              <r>rear<s n="n"/></r></p></e>
 <e>       <p><l>rearmi<s n="vblex"/></l>               <r>rearm<s n="vblex"/></r></p></e>
 <e>       <p><l>rearanĝi<s n="vblex"/></l>             <r>rearrange<s n="vblex"/></r></p></e>
@@ -25977,7 +25976,7 @@ TODO??
 <e r="LR"><p><l>preparanto<s n="n"/></l>               <r>tutor<s n="n"/></r></p></e>
 <e r="LR"><p><l>preparisto<s n="n"/></l>               <r>tutor<s n="n"/></r></p></e>
 <e r="RL"><p><l>seminario<s n="n"/></l>                <r>tutorial<s n="n"/></r></p></e>
-		<!-- Already is <e><l>dekdua<adj></l><r>twelfth<adj></r></e> -->
+    <!-- Already is <e><l>dekdua<adj></l><r>twelfth<adj></r></e> -->
 <e r="LR"><p><l>dek-dua<s n="adj"/></l>                <r>twelfth<s n="adj"/></r></p></e>
 <e>       <p><l>dufoje<s n="adv"/></l>                 <r>twice<s n="adv"/></r></p></e>
 <e r="RL"><p><l>brileti<s n="vblex"/></l>              <r>twinkle<s n="vblex"/></r></p></e>
@@ -26096,7 +26095,7 @@ TODO??
 <e r="LR"><p><l>nesciata<s n="adj"/></l>               <r>unknown<s n="adj"/></r></p></e>
 <e r="RL"><p><l>senlima<s n="adj"/></l>                <r>unlimited<s n="adj"/></r></p></e>
 <e>       <p><l>malŝarĝi<s n="vblex"/></l>             <r>unload<s n="vblex"/></r></p></e>
-		<!-- Already is <e><l>forvendi<vblex></l><r>sell<g><b/>up</g><vblex><sep></r></e> -->
+    <!-- Already is <e><l>forvendi<vblex></l><r>sell<g><b/>up</g><vblex><sep></r></e> -->
 <e i="yes"><p><l>forvendi<s n="vblex"/></l>            <r>unload<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>liberigi<s n="vblex"/></l>             <r>unlock<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>malenfermiĝi<s n="vblex"/></l>         <r>unlock<s n="vblex"/></r></p></e>
@@ -26622,10 +26621,10 @@ TODO??
 <e>       <p><l>zoologio<s n="n"/></l>                 <r>zoology<s n="n"/></r></p></e>
 
 
-	<!-- ====================================================================== -->
-	<!--      Data here is traduku.net data which might be OVERWRITTEN          -->
-	<!--      Please move all things you correct manually ABOVE line no 1800!   -->
-	<!-- ====================================================================== -->
+  <!-- ====================================================================== -->
+  <!--      Data here is traduku.net data which might be OVERWRITTEN          -->
+  <!--      Please move all things you correct manually ABOVE line no 1800!   -->
+  <!-- ====================================================================== -->
 
 <!--
 Tiujn cxi restriktoj estis forigiraj ('lifted'), sed indus kontroli cxu en ordo aux ne:
@@ -26668,10 +26667,10 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 -->
 
 
-	<!-- ====================================================================== -->
-	<!--      Data here is traduku.net data which might be OVERWRITTEN          -->
-	<!--      Please move all things you correct manually ABOVE line no 1800!   -->
-	<!-- ====================================================================== -->
+  <!-- ====================================================================== -->
+  <!--      Data here is traduku.net data which might be OVERWRITTEN          -->
+  <!--      Please move all things you correct manually ABOVE line no 1800!   -->
+  <!-- ====================================================================== -->
 
 <!--
 <e>       <par n="Abc"/><i><s n="np"/><s n="ant"/></i></e>
@@ -26685,7 +26684,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>Sokrato</l>                            <r>Socrates</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
 
 <!-- ne funkscias.
-<e>       <p><l>Platono<s n="np"/><s n="ant"/></l>     <r>Plato<s n="np"/><s n="ant"/></r></p></e> 
+<e>       <p><l>Platono<s n="np"/><s n="ant"/></l>     <r>Plato<s n="np"/><s n="ant"/></r></p></e>
      do, trafu la plenan formon: -->
 <e>       <p><l>Platono</l>                            <r>Plato</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
 <e r="RL"><p><l>Platono</l>                            <r>Platon</r></p><i><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></i></e>
@@ -26973,7 +26972,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>anemia<s n="adj"/></l>                 <r>anemic<s n="adj"/></r></p></e>
 <e>       <p><l>angola<s n="adj"/></l>                 <r>angolan<s n="adj"/></r></p></e>
 <e r="RL"><p><l>angoro<s n="n"/></l>                   <r>angst<s n="n"/></r></p></e>
-		<!-- Already is <e><l>kordoloro<n></l><r>anguish<n></r></e> -->
+    <!-- Already is <e><l>kordoloro<n></l><r>anguish<n></r></e> -->
 <e i="yes"><p><l>angoro<s n="n"/></l>                  <r>anguish<s n="n"/></r></p></e>
 <e r="RL"><p><l>angora<s n="adj"/></l>                 <r>anguished<s n="adj"/></r></p></e>
 <e r="LR"><p><l>timega<s n="adj"/></l>                 <r>anguished<s n="adj"/></r></p></e>
@@ -27345,7 +27344,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>frunto<s n="n"/></l>                   <r>brow<s n="n"/></r></p></e>
 <e>       <p><l>brunĉo<s n="n"/></l>                   <r>brunch<s n="n"/></r></p></e>
 <e>       <p><l>bruta<s n="adj"/></l>                  <r>brute<s n="adj"/></r></p></e>
-		<!-- Already is <e r="LR"><l>bruto<n></l><r>animal<n></r></e> -->
+    <!-- Already is <e r="LR"><l>bruto<n></l><r>animal<n></r></e> -->
 <e r="RL"><p><l>bruto<s n="n"/></l>                    <r>brute<s n="n"/></r></p></e>
 <e>       <p><l>brutuleca<s n="adj"/></l>              <r>brutish<s n="adj"/></r></p></e>
 <e r="RL"><p><l>dolaro<s n="n"/></l>                   <r>buck<s n="n"/></r></p></e>
@@ -28857,7 +28856,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>forcejo<s n="n"/></l>                  <r>greenhouse<s n="n"/></r></p></e>
 <e>       <p><l>grenado<s n="n"/></l>                  <r>grenade<s n="n"/></r></p></e>
 
-		<!-- Already is <e><l>afliktiĝo<n></l><r>grief<n></r></e> -->
+    <!-- Already is <e><l>afliktiĝo<n></l><r>grief<n></r></e> -->
 <e i="yes"><p><l>funebro<s n="n"/></l>                 <r>grief<s n="n"/></r></p></e>
 <e r="RL"><p><l>plendo<s n="n"/></l>                   <r>grievance<s n="n"/></r></p></e>
 <e r="RL"><p><l>grava<s n="adj"/></l>                  <r>grievous<s n="adj"/></r></p></e>
@@ -28902,7 +28901,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>pafo<s n="n"/></l>                     <r>gunshot<s n="n"/></r></p></e>
 
 
-		<!-- Already is <e><l>guruo<n></l><r>guru<n></r></e> -->
+    <!-- Already is <e><l>guruo<n></l><r>guru<n></r></e> -->
 <e i="yes"><p><l>erudiciulo<s n="n"/></l>              <r>guru<s n="n"/></r></p></e>
 <e r="RL"><p><l>ĝuo<s n="n"/></l>                      <r>gusto<s n="n"/></r></p></e>
 <e r="RL"><p><l>ventro<s n="n"/></l>                   <r>gut<s n="n"/></r></p></e>
@@ -29245,7 +29244,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>infanaĝo<s n="n"/></l>                 <r>infancy<s n="n"/></r></p></e>
 <e r="LR"><p><l>infaneco<s n="n"/></l>                 <r>infancy<s n="n"/></r></p></e>
 <e r="RL"><p><l>fajrego<s n="n"/></l>                  <r>inferno<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>malfekunda<adj></l><r>arid<adj></r></e> -->
+    <!-- Already is <e r="LR"><l>malfekunda<adj></l><r>arid<adj></r></e> -->
 <e r="RL"><p><l>malfekunda<s n="adj"/></l>             <r>infertile<s n="adj"/></r></p></e>
 <e>       <p><l>malfekundeco<s n="n"/></l>             <r>infertility<s n="n"/></r></p></e>
 <e>       <p><l>infestiĝo<s n="n"/></l>                <r>infestation<s n="n"/></r></p></e>
@@ -29984,7 +29983,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>puŝeto<s n="n"/></l>                   <r>nudge<s n="n"/></r></p></e>
 <e r="LR"><p><l>kubutpuŝo<s n="n"/></l>                <r>nudge<s n="n"/></r></p></e>
 <e r="RL"><p><l>sensenta<s n="adj"/></l>               <r>numb<s n="adj"/></r></p></e>
-		<!-- Already is <e><l>monaĥo<n><f></l><r>nun<n></r></e> -->
+    <!-- Already is <e><l>monaĥo<n><f></l><r>nun<n></r></e> -->
 <e r="LR"><p><l>religiulino<s n="n"/></l>              <r>nun<s n="n"/></r></p></e>
 <e>       <p><l>vartejo<s n="n"/></l>                  <r>nursery<s n="n"/></r></p></e>
 <e r="LR"><p><l>infanvartejo<s n="n"/></l>             <r>nursery<s n="n"/></r></p></e>
@@ -30506,7 +30505,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>pritondi<s n="vblex"/></l>             <r>prune<s n="vblex"/></r></p></e>
 <e>       <p><l>psikanaliza<s n="adj"/></l>            <r>psychoanalytic<s n="adj"/></r></p></e>
 <e>       <p><l>diskonigisto<s n="n"/></l>             <r>publicist<s n="n"/></r></p></e>
-		<!-- Already is <e r="LR"><l>proparolanto<n></l><r>spokesman<n></r></e> -->
+    <!-- Already is <e r="LR"><l>proparolanto<n></l><r>spokesman<n></r></e> -->
 <e i="yes"><p><l>proparolanto<s n="n"/></l>            <r>publicist<s n="n"/></r></p></e>
 <e r="RL"><p><l>diskonigi<s n="vblex"/></l>            <r>publicize<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>pufo<s n="n"/></l>                     <r>puff<s n="n"/></r></p></e>
@@ -33160,15 +33159,15 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>medalulo<s n="n"/></l>                 <r>medallist<s n="n"/></r></p></e>
 <e r="LR"><p><l>medalgajninto<s n="n"/></l>            <r>medallist<s n="n"/></r></p></e>
 <e r="RL"><p><l>parolado<s n="n"/></l>                 <r>speaking<s n="n"/></r></p></e>
-<e r="LR"><p><l>gajnado<s n="n"/></l>                  <r>winning<s n="n"/></r></p></e>              
+<e r="LR"><p><l>gajnado<s n="n"/></l>                  <r>winning<s n="n"/></r></p></e>
 
 
-<e><p><l>Eternulo<s n="n"/></l>                  <r>Ethernal<b/>One<s n="n"/></r></p></e>              
+<e><p><l>Eternulo<s n="n"/></l>                  <r>Ethernal<b/>One<s n="n"/></r></p></e>
 
 
-	</section>
-	<section id="propraj_nomoj" type="standard">
-<!-- 
+  </section>
+  <section id="propraj_nomoj" type="standard">
+<!--
 <e>       <i>Smith<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Hyde<s n="np"/><s n="cog"/></i></e>
 <e>       <i>Jekyll<s n="np"/><s n="cog"/></i></e>
@@ -33178,7 +33177,7 @@ The trick below seems only to work when we don't translate ANY cognomens, to DON
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 <e>       <re>[A-ZÚ][a-zéõóöäíáòñú]* [A-ZÚ][a-zõéóöäíáòñú]*</re><i><s n="np"/><s n="cog"/></i></e>
 -->
-<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e> 
+<!-- <e>       <par n="Abc"/><i><b/></i><par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
 <e>       <par n="Abc"/><i><s n="np"/><s n="cog"/></i></e>
 -->
 
@@ -33203,7 +33202,7 @@ A regex takes all 'bare' np words and translates them to the same:
 <jacobEo> and then I have only the EXCEPTIONS in the bidix.
 <jacobEo> EXCEPTIONS = lemma changes.
 <jacobEo> EXCEPTIONS = lemma changes. f.eks. np.top. Paris -> Parizo.
-<jacobEo> but np.ant, np.al, np.cog almost never changes. 
+<jacobEo> but np.ant, np.al, np.cog almost never changes.
 <jimregan> but np.cog is mf
 <jacobEo> yes
 <jimregan> np.al can be useful for other things
@@ -33217,5 +33216,5 @@ A regex takes all 'bare' np words and translates them to the same:
 
 <e>       <par n="Abc"/><i><s n="np"/></i></e>
 
-	</section>
+  </section>
 </dictionary>

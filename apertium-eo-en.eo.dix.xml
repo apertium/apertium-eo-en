@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Dictionary:
-	Sections: 3
-	Entries: 31222
-	Sdefs: 95
-	Paradigms: 79
-	Last processed by: apertium-dixtools fix -alignMono apertium-eo-en.eo.dix.xml apertium-eo-en.eo.dix.xml
+  Dictionary:
+  Sections: 3
+  Entries: 31222
+  Sdefs: 95
+  Paradigms: 79
+  Last processed by: apertium-dixtools fix -alignMono apertium-eo-en.eo.dix.xml apertium-eo-en.eo.dix.xml
 
 -->
 <dictionary>
-	<alphabet>ĈĜĤĴŜŬĉĝĥĵŝŭ·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÛÜÚàáâäãçèéêëìíîïñòóôöõùúûüABCČDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrřsštuvwxyz</alphabet>
-	<sdefs>
-		<sdef n="re" /> 
-		<sdef n="alpha" /> 
-		<sdef n="acc" /> 
-		<sdef n="nomiacc" /> 
-		<sdef n="nom" /> 
-		<sdef n="comp" /> 
-		<sdef n="detnt" /> 
-		<sdef n="predet" /> 
-		<sdef n="past" /> 
-		<sdef n="atn" /> 
-		<sdef n="qnt" /> 
-		<sdef n="ord" /> 
-		<sdef n="obj" /> 
-		<sdef n="subj" /> 
-		<sdef n="pro" /> 
-		<sdef n="tn" /> 
-		<sdef n="acr" /> 
-		<sdef n="top" /> 
-		<sdef n="ant" /> 
-		<sdef n="cog" /> 
-		<sdef n="al" /> 
-		<sdef n="n" /> 
-		<sdef n="np" /> 
-		<sdef n="adj" /> 
-		<sdef n="f" /> 
-		<sdef n="m" /> 
-		<sdef n="mf" /> 
-		<sdef n="sg" /> 
-		<sdef n="pl" /> 
-		<sdef n="adv" /> 
-		<sdef n="preadv" /> 
-		<sdef n="pr" /> 
-		<sdef n="prn" /> 
-		<sdef n="rel" /> 
-		<sdef n="nn" /> 
-		<sdef n="an" /> 
-		<sdef n="aa" /> 
-		<sdef n="ind" /> 
-		<sdef n="itg" /> 
-		<sdef n="det" /> 
-		<sdef n="dem" /> 
-		<sdef n="def" /> 
-		<sdef n="cnjcoo" /> 
-		<sdef n="cnjsub" /> 
-		<sdef n="cnjadv" /> 
-		<sdef n="nt" /> 
-		<sdef n="vaux" /> 
-		<sdef n="vbser" /> 
-		<sdef n="vbhaver" /> 
-		<sdef n="vblex" /> 
-		<sdef n="vbmod" /> 
-		<sdef n="inf" /> 
-		<sdef n="ger" /> 
-		<sdef n="gerpast" /> 
-		<sdef n="pp" /> 
-		<sdef n="pp2" /> 
-		<sdef n="pp3" /> 
-		<sdef n="pri" /> 
-		<sdef n="ifi" /> 
-		<sdef n="p1" /> 
-		<sdef n="p2" /> 
-		<sdef n="p3" /> 
-		<sdef n="pii" /> 
-		<sdef n="fti" /> 
-		<sdef n="fts" /> 
-		<sdef n="cni" /> 
-		<sdef n="prs" /> 
-		<sdef n="pis" /> 
-		<sdef n="imp" /> 
-		<sdef n="pos" /> 
-		<sdef n="gen" /> 
-		<sdef n="sp" /> 
-		<sdef n="ref" /> 
-		<sdef n="sup" /> 
-		<sdef n="num" /> 
-		<sdef n="percent" /> 
-		<sdef n="ij" /> 
-		<sdef n="sent" /> 
-		<sdef n="cm" /> 
-		<sdef n="lpar" /> 
-		<sdef n="rpar" /> 
-		<sdef n="web" /> 
-		<sdef n="subs" /> 
-		<sdef n="pres" /> 
-		<sdef n="pprs" /> 
-		<sdef n="guio" /> 
-		<sdef n="enc" /> 
-		<sdef n="vbdo" /> 
-		<sdef n="sint" /> 
-		<sdef n="unc" /> 
-		<sdef n="sep" /> 
-		<sdef n="pron" /> 
-		<sdef n="apos" /> 
-		<sdef n="compound-only-L" /> 
-		<sdef n="compound-R" /> 
-	</sdefs>
-	<pardefs>
+  <alphabet>ĈĜĤĴŜŬĉĝĥĵŝŭ·ÀÁÂÄÇÈÉÊËÌÍÎÏÑÒÓÔÖÙÛÜÚàáâäãçèéêëìíîïñòóôöõùúûüABCČDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrřsštuvwxyz</alphabet>
+  <sdefs>
+    <sdef n="re" />
+    <sdef n="alpha" />
+    <sdef n="acc" />
+    <sdef n="nomiacc" />
+    <sdef n="nom" />
+    <sdef n="comp" />
+    <sdef n="detnt" />
+    <sdef n="predet" />
+    <sdef n="past" />
+    <sdef n="atn" />
+    <sdef n="qnt" />
+    <sdef n="ord" />
+    <sdef n="obj" />
+    <sdef n="subj" />
+    <sdef n="pro" />
+    <sdef n="tn" />
+    <sdef n="acr" />
+    <sdef n="top" />
+    <sdef n="ant" />
+    <sdef n="cog" />
+    <sdef n="al" />
+    <sdef n="n" />
+    <sdef n="np" />
+    <sdef n="adj" />
+    <sdef n="f" />
+    <sdef n="m" />
+    <sdef n="mf" />
+    <sdef n="sg" />
+    <sdef n="pl" />
+    <sdef n="adv" />
+    <sdef n="preadv" />
+    <sdef n="pr" />
+    <sdef n="prn" />
+    <sdef n="rel" />
+    <sdef n="nn" />
+    <sdef n="an" />
+    <sdef n="aa" />
+    <sdef n="ind" />
+    <sdef n="itg" />
+    <sdef n="det" />
+    <sdef n="dem" />
+    <sdef n="def" />
+    <sdef n="cnjcoo" />
+    <sdef n="cnjsub" />
+    <sdef n="cnjadv" />
+    <sdef n="nt" />
+    <sdef n="vaux" />
+    <sdef n="vbser" />
+    <sdef n="vbhaver" />
+    <sdef n="vblex" />
+    <sdef n="vbmod" />
+    <sdef n="inf" />
+    <sdef n="ger" />
+    <sdef n="gerpast" />
+    <sdef n="pp" />
+    <sdef n="pp2" />
+    <sdef n="pp3" />
+    <sdef n="pri" />
+    <sdef n="ifi" />
+    <sdef n="p1" />
+    <sdef n="p2" />
+    <sdef n="p3" />
+    <sdef n="pii" />
+    <sdef n="fti" />
+    <sdef n="fts" />
+    <sdef n="cni" />
+    <sdef n="prs" />
+    <sdef n="pis" />
+    <sdef n="imp" />
+    <sdef n="pos" />
+    <sdef n="gen" />
+    <sdef n="sp" />
+    <sdef n="ref" />
+    <sdef n="sup" />
+    <sdef n="num" />
+    <sdef n="percent" />
+    <sdef n="ij" />
+    <sdef n="sent" />
+    <sdef n="cm" />
+    <sdef n="lpar" />
+    <sdef n="rpar" />
+    <sdef n="web" />
+    <sdef n="subs" />
+    <sdef n="pres" />
+    <sdef n="pprs" />
+    <sdef n="guio" />
+    <sdef n="enc" />
+    <sdef n="vbdo" />
+    <sdef n="sint" />
+    <sdef n="unc" />
+    <sdef n="sep" />
+    <sdef n="pron" />
+    <sdef n="apos" />
+    <sdef n="compound-only-L" />
+    <sdef n="compound-R" />
+  </sdefs>
+  <pardefs>
 
 <!-- Formatting of this dix:
      apertium-dixtools cat -stripEmptyLines -align -alignpardef 30 60 apertium-eo-en.eo.dix.xml nova.xml
@@ -453,12 +453,12 @@
 <pardef n="mia__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
-    
-    
+
+
 <pardef n="dem__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
 </pardef>
-    
+
 
 <pardef n="ind__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
@@ -479,13 +479,13 @@
   <e>       <p><l>j</l>         <r><s n="det"/><s n="ind"/><s n="pl"/></r></p><par n="nomacc"/></e>
 </pardef>
 
-    
+
 <pardef n="ambaŭ__det">
   <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="sg"/></r></p><par n="nomacc0"/></e>
   <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="sp"/></r></p><par n="nomacc0"/></e>
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/><s n="pl"/></r></p><par n="nomacc0"/></e>
 </pardef>
-    
+
 <pardef n="quant__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc"/></e>
 <!--
@@ -496,18 +496,18 @@
 -->
 </pardef>
 
- 
+
 <pardef n="quant0__det_sg">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/></r></p><par n="sgplnomacc0"/></e>
 </pardef>
 
- 
+
 <pardef n="quant0__det_pl">
   <e r="RL"><p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sg"/></r></p><par n="nomacc0"/></e>
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="pl"/></r></p><par n="nomacc0"/></e>
 </pardef>
 
- 
+
 <pardef n="ser__vblex">
   <e>       <p><l>i</l>         <r>i<s n="vbser"/><s n="inf"/></r></p></e>
   <e>       <p><l>as</l>        <r>i<s n="vbser"/><s n="pres"/></r></p></e>
@@ -518,7 +518,7 @@
 <e r="RL">                    <p><l>us</l>                  <r>i<s n="vbser"/><s n="fts"/></r></p></e>
 -->
   <e r="RL"><p><l>ita</l>       <r>i<s n="vbser"/><s n="pp"/></r></p></e>
-<!-- 
+<!--
 <e r="RL" c="TODO:remetu">    <p><l>ita</l>                 <r>i<s n="vbser"/><s n="pp"/></r></p><par n="sgplnomacc"/></e>
 -->
 
@@ -537,7 +537,7 @@
   <e>       <p><l>u</l>         <r>i<s n="vbser"/><s n="imp"/></r></p></e>
 
 </pardef>
-   
+
 <pardef n="pov/i__vaux">
   <e>       <p><l>i</l>         <r>i<s n="vaux"/><s n="inf"/></r></p></e>
   <e>       <p><l>as</l>        <r>i<s n="vaux"/><s n="pres"/></r></p></e>
@@ -546,7 +546,7 @@
   <e r="RL" c="TODO"><p><l>anta</l><r>i<s n="vaux"/><s n="ger"/></r></p></e>
   <e>       <p><l>os</l>        <r>i<s n="vaux"/><s n="fti"/></r></p></e>
   <e r="LR"><p><l>ante</l>      <r>i<s n="vaux"/><s n="ger"/></r></p></e>
-<!-- Ne uzataj en->eo c="TODO" 
+<!-- Ne uzataj en->eo c="TODO"
 <e r="LR">                    <p><l>ante</l>                <r>i<s n="vaux"/><s n="gerpast"/></r></p></e>
 <e>                           <p><l>ita</l>                 <r>i<s n="vaux"/><s n="pp"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                           <p><l>itaj</l>                <r>i<s n="vaux"/><s n="pp"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -561,7 +561,7 @@
 <e>                           <p><l>intaj</l>               <r>i<s n="vaux"/><s n="pp3"/><s n="pl"/></r></p></e>
 -->
 </pardef>
- 
+
 
 <pardef n="i__vblex">
   <e>       <p><l>i</l>         <r>i<s n="vblex"/><s n="inf"/></r></p></e>
@@ -730,7 +730,7 @@
   <e>       <p><l></l>          <r><s n="num"/><s n="sg"/></r></p></e>
 </pardef>
 
-    
+
 <pardef n="du__num">
   <e>       <p><l></l>          <r><s n="num"/><s n="sp"/></r></p></e>
 <!--
@@ -742,8 +742,8 @@
 <e>                           <p><l><b/>mil</l>             <r><b/>mil<s n="num"/><s n="sp"/><s n="nom"/></r></p></e>
 -->
 </pardef>
-    
-        
+
+
 <pardef n="dudek__num">
   <e>       <p><l></l>          <r></r></p><par n="du__num"/></e>
   <e>       <p><l><b/>unu</l>   <r><b/>unu</r></p><par n="du__num"/></e>
@@ -756,9 +756,9 @@
   <e>       <p><l><b/>ok</l>    <r><b/>ok</r></p><par n="du__num"/></e>
   <e>       <p><l><b/>naŭ</l>   <r><b/>naŭ</r></p><par n="du__num"/></e>
 </pardef>
-	</pardefs>
+  </pardefs>
 
-	<section id="main" type="standard">
+  <section id="main" type="standard">
 
 <e lm="povi">            <i>pov</i><par n="pov/i__vaux"/></e>
 <e lm="devi">            <i>dev</i><par n="pov/i__vaux"/></e>
@@ -875,7 +875,7 @@
 
 
 
-<!-- Neuzataj 
+<!-- Neuzataj
 
 <e lm="Romanio">              <i>Roman</i><par n="Afgan/io__np"/></e>
 <e lm="Virginia">             <i>Virginia</i><par n="Barcelono__np"/></e>
@@ -905,7 +905,7 @@
 <e lm="kondamnita">      <i>kondamnit</i><par n="a__adj"/></e>
 
 <e lm="esti">            <i>est</i><par n="ser__vblex"/></e>
-	
+
 <e>                      <p><l>mi</l>        <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="nomacc"/></e>
 <e>                      <p><l>vi</l>        <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
 <e r="LR">               <p><l>ci</l>        <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p><par n="nomacc"/></e>
@@ -957,7 +957,7 @@
 <e lm="lia">             <i>lia</i><par n="mia__det"/></e>
 <e lm="nia">             <i>nia</i><par n="mia__det"/></e>
 <e lm="ilia">            <i>ilia</i><par n="mia__det"/></e>
- 
+
 <e lm="mia">             <i>mi</i><par n="a__adj"/></e>
 <e lm="via">             <i>vi</i><par n="a__adj"/></e>
 <e lm="ŝia">             <par n="ŝ"/><i>i</i><par n="a__adj"/></e>
@@ -1030,7 +1030,7 @@
 
 <e lm="kelka">           <p><l>kelkaj</l>    <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kelka">           <p><l>kelkajn</l>   <r>kelka<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
-    
+
 
 <e lm="ambaŭ">           <i>amba</i><par n="ŭ"/><par n="ambaŭ__det"/></e>
 <e lm="anstataŭ">        <i>anstata</i><par n="ŭ"/><par n="al__pr"/></e>
@@ -1118,8 +1118,8 @@
 <e lm="ene de">          <i>ene<b/>de</i><par n="al__pr"/></e>
 <e lm="en konsento kun"> <i>en<b/>konsento<b/>kun</i><par n="al__pr"/></e>
 
-    
-    
+
+
 <e lm="fronte al">       <i>fronte<b/>al</i><par n="al__pr"/></e>
 <e lm="ĝis">             <par n="ĝ"/><i>is</i><par n="after__cnjadv"/></e>
 <e lm="ĝis">             <par n="ĝ"/><i>is</i><par n="al__pr"/></e>
@@ -1205,9 +1205,9 @@
 
 <e lm="tiuj kiuj">       <p><l>tiuj<b/>kiuj</l><r>tiuj<b/>kiuj<s n="prn"/><s n="itg"/><s n="pl"/><s n="nom"/></r></p></e>
 
-	<!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
-	     comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
-		 		 
+  <!-- Hmm XXX, probably an error but "Jackson commanded the American forces, _which_ included Tennessee militia"
+       comes as ^default{^kiu<rel><an><mf><sp>$}$  -->
+
 <!--
 <e lm="kiu">             <p><l>kiu</l>       <r>kiu<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
 -->
@@ -1309,7 +1309,7 @@
 
 
 
-	<!-- Numeroj -->
+  <!-- Numeroj -->
 <e lm="nulo">            <i>nulo</i><par n="du__num"/></e>
 <e lm="unu">             <i>unu</i><par n="unu__num"/></e>
 <e lm="du">              <i>du</i><par n="du__num"/></e>
@@ -1347,7 +1347,7 @@
 <e lm="Mediteraneo">     <i>Mediterane</i><par n="Barcelon/o__np"/></e>
 <e lm="deko">            <i>dek</i><par n="o__n"/></e>
 
-	<!--  landoj kaj urboj -->
+  <!--  landoj kaj urboj -->
 <e lm="Afganio">         <i>Afgan</i><par n="Afgan/io__np"/></e>
 <e lm="Albanio">         <i>Alban</i><par n="Afgan/io__np"/></e>
 <e lm="Alakanto">        <i>Alakant</i><par n="Barcelon/o__np"/></e>
@@ -1534,11 +1534,11 @@
 <e lm="Vaŝingtono">      <i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Mark__np"/></e>
 
 
-	<!-- Nouns with tag nommf__n 
-	     Tio signifas ke la formo -in- povas esti kreita,
-	     ekzemple administranto -> administrantino  
-	-->  
-	 
+  <!-- Nouns with tag nommf__n
+       Tio signifas ke la formo -in- povas esti kreita,
+       ekzemple administranto -> administrantino
+  -->
+
 <e lm="plenkreskulo">    <i>plenkreskul</i><par n="ino__n"/></e>
 <e lm="administranto">   <i>administrant</i><par n="ino__n"/></e>
 <e lm="adoleskanto">     <i>adoleskant</i><par n="ino__n"/></e>
@@ -1912,10 +1912,10 @@
 <e>                      <p><l>komercajn<b/>konsilistinojn</l><r>komerca<b/>konsilisto<s n="n"/><s n="f"/><s n="pl"/><s n="acc"/></r></p></e>
 
 
-	<!-- "Normalaj vortoj", 
-	      kiuj povas esti substantivo, adjektivo, adverbo kaj verbo.
-	      Gxenerale eblas libere fleksii inter ili
-	 -->
+  <!-- "Normalaj vortoj",
+        kiuj povas esti substantivo, adjektivo, adverbo kaj verbo.
+        Gxenerale eblas libere fleksii inter ili
+   -->
 
 <e lm="vicministro">     <i>vicministr</i><par n="o__n"/></e>
 <e lm="eksponento">      <i>eksponent</i><par n="o__n"/></e>
@@ -7422,7 +7422,7 @@
 <e lm="Valencia">        <i>Valencia</i><par n="Mary__np"/></e>
 
 
-<!-- TODO: tagger training with <e lm="a"><i>a</i><par n="nom__n"/></e> in en.dix!! 
+<!-- TODO: tagger training with <e lm="a"><i>a</i><par n="nom__n"/></e> in en.dix!!
 
 <e lm="a"><i>a</i><par n="nom__n"/></e>
 <e lm="b"><i>b</i><par n="nom__n"/></e>
@@ -7506,7 +7506,7 @@
 <e lm="Boeing">          <i>Boeing</i><par n="Apertium__np"/></e>
 
 
-    
+
 
     <!-- Multiwords -->
     <!-- konto kuranta -->
@@ -32404,7 +32404,7 @@
    2845 ^siaj/*siaj$
 
 One oneself's oneself's here oneself an eternal-person
-oni sia sian ĉi sin Eternulo 
+oni sia sian ĉi sin Eternulo
 -->
 
 <e lm="Eternulo">        <i>Eternul</i><par n="o__n"/></e>
@@ -32412,8 +32412,8 @@ oni sia sian ĉi sin Eternulo
 <e r="RL" lm="ne ebli">  <i>ne<b/>ebl</i><par n="i__vblex"/></e>
 
 
-	</section>
-	<section id="final" type="inconditional">
+  </section>
+  <section id="final" type="inconditional">
 <e>                      <par n="proper_names"/></e>
 <e>                      <par n="time"/></e>
 <e>                      <p><l>-</l>         <r>-<s n="guio"/></r></p></e>
@@ -32423,8 +32423,8 @@ oni sia sian ĉi sin Eternulo
 <e>                      <re>[\)\]]</re><p><l></l><r><s n="rpar"/></r></p></e>
 <e>                      <p><l>'</l>         <r>'<s n="apos"/></r></p></e>
 
-	</section>
-	<section id="pluropaj_vortoj_mane" type="standard">
+  </section>
+  <section id="pluropaj_vortoj_mane" type="standard">
     <!-- la afrikansa lingvo -->
 <e>                      <p><l>la<b/>afrikansa<b/>lingvo</l><r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>                      <p><l>la<b/>afrikansan<b/>lingvon</l><r>la<b/>afrikansa<b/>lingvo<s n="n"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -32455,5 +32455,5 @@ oni sia sian ĉi sin Eternulo
 <e r="RL" c="a-vorto">   <p><l>Malsupr-saksuja</l><r>Malsupra<b/>Saksujo<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
 <e r="RL" c="a-vorto">   <p><l>Malsupr-saksia</l><r>Malsupra<b/>Saksio<s n="adj"/><s n="np"/><s n="top"/></r></p><par n="sgplnomacc"/></e>
 
-	</section>
+  </section>
 </dictionary>
