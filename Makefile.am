@@ -16,17 +16,22 @@ $(PREFIX2): $(PREFIX2).automorf.bin $(PREFIX2).autobil.bin $(PREFIX2).autogen.bi
      $(PREFIX2).autopgen.bin $(PREFIX2).t1x.bin $(PREFIX2).genitive.t1x.bin $(PREFIX2).antaux_t2x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
      modes
 
-$(BASENAME).$(LANG1).dixtmp1: $(BASENAME).$(LANG1).dix.xml
+tmp1_$(BASENAME).$(LANG1).dix: $(BASENAME).$(LANG1).dix.xml
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dix.xml
-	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt > $(BASENAME).$(LANG1)-multiwords.xml
-	cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1
-	cat $(BASENAME).$(LANG1)-multiwords.xml >> tmp1
+	@if test -n "$(EKSPERIMENTO)"; then \
+		echo EKSPERIMENTA DOSIERO apertium-eo-en.eo.eksperimenta_parto.dix ENMETATA; \
+		cat $(BASENAME).$(LANG1).dix.xml | sed -e ':a;N;$!ba;s/EBLO KOMENCO.*EBLO FINO/A ENMETO/' | sed -e '/A ENMETO/ r apertium-eo-en.eo.eksperimenta_parto.dix' | sed 's/<\/dictionary>//g' > tmp1; \
+	else \
+		echo Voku por eksperimenti: 'EKSPERIMENTO=jes make'; \
+		cat $(BASENAME).$(LANG1).dix.xml | sed 's/<\/dictionary>//g' > tmp1; \
+	fi;
+	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt >> tmp1
 	echo '</dictionary>' >> tmp1
 	mv tmp1 $@
      
-$(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dixtmp1
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
-	lt-comp lr $(BASENAME).$(LANG1).dixtmp1 $@ 
+$(PREFIX1).automorf.bin: tmp1_$(BASENAME).$(LANG1).dix
+	apertium-validate-dictionary tmp1_$(BASENAME).$(LANG1).dix
+	lt-comp lr tmp1_$(BASENAME).$(LANG1).dix $@ 
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
@@ -48,9 +53,9 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
 	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
 
-$(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dixtmp1
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dixtmp1
-	lt-comp rl $(BASENAME).$(LANG1).dixtmp1 $@
+$(PREFIX2).autogen.bin: tmp1_$(BASENAME).$(LANG1).dix
+	apertium-validate-dictionary tmp1_$(BASENAME).$(LANG1).dix
+	lt-comp rl tmp1_$(BASENAME).$(LANG1).dix $@
 
 $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
@@ -151,4 +156,4 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).genitive.t1x  $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
-CLEANFILES = -rf $(TARGETS_COMMON) $(BASENAME).$(LANG2).dixtmp1  $(TARGETS) modes *.mode *.bin apertium-eo-en.eo-multiwords.xml
+CLEANFILES = -rf $(TARGETS_COMMON) tmp1_$(BASENAME).$(LANG2).dix  $(TARGETS) modes *.mode *.bin apertium-eo-en.eo-multiwords.xml
