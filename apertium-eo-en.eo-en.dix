@@ -2066,8 +2066,10 @@ TODO??
 <!--
 <e>       <re>([0-9]*)?</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 -->
-<e r="RL"><re>([0-9]*)?([1-4])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
-<e>       <re>([0-9]*)?([0,5-9])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+
+
+<e r="RL"><re>([0-9]*)?([.,][0-9]+)?([1-4])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
+<e>       <re>([0-9]*)?([.,][0-9]+)?([0,5-9])</re><p><l>a<s n="num"/><s n="ord"/></l><r>th<s n="num"/><s n="ord"/></r></p></e>
 
 <e r="LR"><re>([0-9]*)?([1-9]*)?</re><p><l>1-a<s n="num"/><s n="ord"/></l><r>1st<s n="num"/><s n="ord"/></r></p></e>
 <e r="LR"><re>([0-9]*)?</re><p><l>2-a<s n="num"/><s n="ord"/></l><r>2nd<s n="num"/><s n="ord"/></r></p></e>

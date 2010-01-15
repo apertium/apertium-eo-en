@@ -199,7 +199,7 @@
   <e>       <re>([0-9]*)?</re><p><l>2nd</l><r>2nd<s n="num"/><s n="ord"/></r></p></e>
   <e>       <re>([0-9]*)?</re><p><l>3rd</l><r>3rd<s n="num"/><s n="ord"/></r></p></e>
   <e>       <re>([0-9]*)?</re><p><l>4th</l><r>4th<s n="num"/><s n="ord"/></r></p></e>
-  <e>       <re>([0-9]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
 <!--
   <e>       <re>([0]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
   <e r="LR"><re>([1-4]*)?</re><p><l>th</l><r>th<s n="num"/><s n="ord"/></r></p></e>
@@ -27287,34 +27287,41 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="he'd">            <p><l>he'd</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="he'll">           <p><l>he'll</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="he's">            <p><l>he's</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e lm="I've">             <p><l>I've</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="I'd">             <p><l>I'd</l>       <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="I'd">             <p><l>I'd</l>       <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="I'll">            <p><l>I'll</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="I'm">             <p><l>I'm</l>       <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/></r></p></e>
+<e lm="it've">            <p><l>it've</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="it'd">            <p><l>it'd</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="it'd">            <p><l>it'd</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="it'll">           <p><l>it'll</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="it's">            <p><l>it's</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e lm="she've">           <p><l>she've</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="she'd">           <p><l>she'd</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="she'd">           <p><l>she'd</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="she'll">          <p><l>she'll</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="she's">           <p><l>she's</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="f"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 <e lm="that's">          <p><l>that's</l>    <r>that<s n="prn"/><s n="tn"/><s n="sg"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e lm="they've">          <p><l>they've</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="they'd">          <p><l>they'd</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="they'd">          <p><l>they'd</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="they'll">         <p><l>they'll</l>   <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="they're">         <p><l>they're</l>   <r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><j/>be<s n="vbser"/><s n="pres"/></r></p></e>
+<e lm="we've">            <p><l>we've</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="we'd">            <p><l>we'd</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="we'd">            <p><l>we'd</l>      <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="we'll">           <p><l>we'll</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="we're">           <p><l>we're</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><j/>be<s n="vbser"/><s n="pres"/></r></p></e>
 <e lm="who's">           <p><l>who's</l>     <r>who<s n="prn"/><s n="itg"/><s n="sp"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 <e lm="who's">           <p><l>who's</l>     <r>who<s n="prn"/><s n="itg"/><s n="sp"/><j/>have<s n="vbhaver"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
+<e lm="you've">           <p><l>you've</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="you'd">           <p><l>you'd</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/><j/>have<s n="vbhaver"/><s n="past"/></r></p></e>
 <e lm="you'd">           <p><l>you'd</l>     <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/><j/>would<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="you'll">          <p><l>you'll</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/><j/>will<s n="vaux"/><s n="inf"/></r></p></e>
 <e lm="you're">          <p><l>you're</l>    <r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/><j/>be<s n="vbser"/><s n="pres"/></r></p></e>
 
+<e lm="what's">          <p><l>what's</l>    <r>what<s n="prn"/><s n="itg"/><s n="sp"/><j/>be<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
 
 
     <!-- ******************************

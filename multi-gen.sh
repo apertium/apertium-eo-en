@@ -43,5 +43,43 @@ for word in `cat $1 | sed 's/ /<b\/>/g'`; do
 	echo '        <r>'$word'<s n="n"/><s n="pl"/><s n="acc"/></r>';
 	echo '      </p>';
 	echo '    </e>';
+
+
+
+
+
+	echo '    <!-- adjektiva formo de '`echo $word | sed 's/<b\/>/ /g'`' -->';
+	# Singular, nominative
+	echo '    <e r="RL">';
+	echo '      <p>';
+	echo '        <l>'$word'</l>';
+	echo '        <r>'$word'<s n="adj"/><s n="sg"/><s n="nom"/></r>';
+	echo '      </p>';
+	echo '    </e>';
+
+	# Singular, accusative
+	echo '    <e r="RL">';
+	echo '      <p>';
+	echo '        <l>'`echo $word | sed 's/<b\/>/n<b\/>/g' | sed 's/$/n/g'`'</l>';
+	echo '        <r>'$word'<s n="adj"/><s n="sg"/><s n="acc"/></r>';
+	echo '      </p>';
+	echo '    </e>';
+
+	# Plural, nominative
+	echo '    <e r="RL">';
+	echo '      <p>';
+	echo '        <l>'`echo $word | sed 's/<b\/>/j<b\/>/g' | sed 's/$/j/g'`'</l>';
+	echo '        <r>'$word'<s n="adj"/><s n="pl"/><s n="nom"/></r>';
+	echo '      </p>';
+	echo '    </e>';
+
+	# Plural, accusative
+	echo '    <e r="RL">';
+	echo '      <p>';
+	echo '        <l>'`echo $word | sed 's/<b\/>/jn<b\/>/g' | sed 's/$/jn/g'`'</l>';
+	echo '        <r>'$word'<s n="adj"/><s n="pl"/><s n="acc"/></r>';
+	echo '      </p>';
+	echo '    </e>';
+
 done
 echo '  </section>';

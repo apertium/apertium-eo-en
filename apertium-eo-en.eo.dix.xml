@@ -280,14 +280,14 @@
 
 
 <pardef n="ordinals">
-  <e>       <re>([0-9]+)</re><p><l>a</l><r>a<s n="num"/><s n="ord"/></r></p></e>
-  <e>       <re>([0-9]+)</re><p><l>an</l><r>an<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>aj</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>-a</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>-an</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>-aj</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
-  <e r="LR"><re>([0-9]+)</re><p><l>-ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?</re><p><l>a</l><r>a<s n="num"/><s n="ord"/></r></p></e>
+  <e>       <re>[0-9]+([.,][0-9]+)?</re><p><l>an</l><r>an<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>aj</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>-a</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>-an</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>-aj</l><r>-a<s n="num"/><s n="ord"/></r></p></e>
+  <e r="LR"><re>[0-9]+([.,][0-9]+)?</re><p><l>-ajn</l><r>-an<s n="num"/><s n="ord"/></r></p></e>
 </pardef>
 
 
@@ -973,7 +973,7 @@
 
 <e lm="ie">              <i>ie</i><p><l></l> <r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="nenie">           <i>nenie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="ĉie">             <par n="ĉ"/><i>ie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="ĉie">             <par n="ĉ"/><i>ie</i><p><l></l><r><s n="prn"/><s n="tn"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 <e lm="ajna">            <i>ajna</i><par n="ind__det"/></e>
 <e lm="kiu ajn">         <p><l>kiu<b/>ajn</l><r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kiu ajn">         <p><l>kiun<b/>ajn</l><r>kiu<b/>ajn<s n="det"/><s n="ind"/><s n="sg"/><s n="acc"/></r></p></e>
@@ -1167,7 +1167,7 @@
 <e lm="kio">             <p><l>kion</l>      <r>kio<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
 <e lm="kiu el ili">      <p><l>kiu<b/>el<b/>ili</l><r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kiu el ili">      <p><l>kiun<b/>el<b/>ili</l><r>kiu<b/>el<b/>ili<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kies">            <p><l>kies</l>      <r>kies<s n="prn"/><s n="itg"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="kies">            <p><l>kies</l>      <r>kies<s n="prn"/><s n="itg"/><s n="sg"/></r></p><par n="nomacc0"/></e>
 
 
 <!-- Jacob 13a jan 2009. The ones who. Estis <s n="prn"/><s n="itg"/>  .... mi ŝanĝas al pli verŝajna <s n="rel"/><s n="an"/> -->
