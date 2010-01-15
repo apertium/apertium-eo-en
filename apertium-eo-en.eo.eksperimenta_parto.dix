@@ -10,11 +10,6 @@
   <e>       <p><l></l>          <r></r></p></e>
 </pardef>
 
-<pardef n="vortfino">
-  <e r="LR"><p><l></l>          <r><s n="compound-R"/></r></p></e>
-  <e r="RL"><p><l></l>          <r></r></p></e>
-</pardef>
-
 <pardef n="radiko_vortfino">
   <e><par n="nur_radiko"/></e>
   <e><par n="vortfino"/></e>
@@ -27,4 +22,14 @@
   <e>       <p><l>jn</l>        <r><s n="pl"/><s n="acc"/></r></p><par n="vortfino"/></e>
   <e r="RL"><p><l></l>          <r><s n="sp"/><s n="nom"/></r></p></e>
   <e r="RL"><p><l>n</l>         <r><s n="sp"/><s n="acc"/></r></p></e>
+</pardef>
+
+<pardef n="vortfino">
+  <e r="LR"><p><l></l>          <r><s n="compound-R"/></r></p></e>
+  <e r="RL"><p><l></l>          <r></r></p></e>
+</pardef>
+
+<pardef n="e__adv">
+  <e>       <p><l>e</l>         <r>e<s n="adv"/></r></p><par n="vortfino"/></e>
+  <e><p><l></l>          <r>e<s n="adv"/></r></p><par n="nur_radiko"/></e>
 </pardef>

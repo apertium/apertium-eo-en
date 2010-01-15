@@ -136,9 +136,7 @@
 </pardef>
 
 
-<!--
-
--->
+<!-- EKSPERIMENTA ANSTATAUXEBLO KOMENCO -->
 
 <pardef n="sgplnomacc_kunmetebla">
   <e>       <par n="sgplnomacc"/></e>
@@ -146,41 +144,13 @@
 <pardef n="nur_radiko">
   <e i="yes"><i></i></e>
 </pardef>
-<pardef n="vortfino">
-  <e>       <p><l></l>          <r></r></p></e>
+
+<pardef n="e__adv">
+  <e>       <p><l>e</l>         <r>e<s n="adv"/></r></p></e>
+  <e><p><l></l>          <r>e<s n="adv"/></r></p><par n="nur_radiko"/></e>
 </pardef>
 
-
-<!-- specialaj difinoj por kunmetitaj vortoj  -->
-<!--
-<pardef n="nur_radiko">
-  <e r="LR"><p><l></l>          <r><s n="compound-only-L"/></r></p></e>
-</pardef>
-
-<pardef n="radiko">
-  <e r="LR"><p><l></l>          <r><s n="compound-only-L"/></r></p></e>
-  <e>       <p><l></l>          <r></r></p></e>
-</pardef>
-
-<pardef n="vortfino">
-  <e r="LR"><p><l></l>          <r><s n="compound-R"/></r></p></e>
-  <e r="RL"><p><l></l>          <r></r></p></e>
-</pardef>
-
-<pardef n="radiko_vortfino">
-  <e><par n="nur_radiko"/></e>
-  <e><par n="vortfino"/></e>
-</pardef>
-
-<pardef n="sgplnomacc_kunmetebla">
-  <e>       <p><l></l>          <r><s n="sg"/><s n="nom"/></r></p><par n="radiko_vortfino"/></e>
-  <e>       <p><l>j</l>         <r><s n="pl"/><s n="nom"/></r></p><par n="vortfino"/></e>
-  <e>       <p><l>n</l>         <r><s n="sg"/><s n="acc"/></r></p><par n="vortfino"/></e>
-  <e>       <p><l>jn</l>        <r><s n="pl"/><s n="acc"/></r></p><par n="vortfino"/></e>
-  <e r="RL"><p><l></l>          <r><s n="sp"/><s n="nom"/></r></p></e>
-  <e r="RL"><p><l>n</l>         <r><s n="sp"/><s n="acc"/></r></p></e>
-</pardef>
--->
+<!-- EKSPERIMENTA ANSTATAUXEBLO FINO -->
 
 
 <pardef n="o__n">
@@ -234,10 +204,6 @@
 
 
 
-<pardef n="e__adv">
-  <e>       <p><l>e</l>         <r>e<s n="adv"/></r></p><par n="vortfino"/></e>
-  <e><p><l></l>          <r>e<s n="adv"/></r></p><par n="nur_radiko"/></e>
-</pardef>
 
 <pardef n="a__adj">
   <e>       <p><l>a</l>         <r>a<s n="adj"/></r></p><par n="sgplnomacc_kunmetebla"/></e>
@@ -7490,6 +7456,20 @@
 <e lm="Utterson">        <i>Utterson</i><par n="Smith__np"/></e>
 <e lm="Poole">           <i>Poole</i><par n="Smith__np"/></e>
 
+
+<e lm="po">              <i>po</i><par n="al__pr"/></e>
+<e lm="ĉ.">          <par n="ĉ"/><i>.</i><par n="jam__adv"/></e>
+<e lm="ties">            <i>ties</i><par n="jam__adv"/></e>
+<e lm="norde">           <i>nord</i><par n="e__adv"/></e>
+<e lm="nordokcidente">   <i>nordokcident</i><par n="e__adv"/></e>
+<e lm="nordoriente">     <i>nordorient</i><par n="e__adv"/></e>
+<e lm="sude">           <i>sud</i><par n="e__adv"/></e>
+<e lm="sudokcidente">   <i>sudokcident</i><par n="e__adv"/></e>
+<e lm="sudoriente">     <i>sudorient</i><par n="e__adv"/></e>
+<e lm="okcidente">   <i>okcident</i><par n="e__adv"/></e>
+<e lm="oriente">     <i>orient</i><par n="e__adv"/></e>
+<e lm="mondmilito">         <i>mondmilit</i><par n="o__n"/></e>
+<e lm="subregiono">         <i>subregion</i><par n="o__n"/></e>
 
 
 <e>                      <par n="acronimos"/></e>
