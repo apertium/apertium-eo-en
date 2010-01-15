@@ -2828,6 +2828,37 @@ TODO??
 <e r="RL"><p><l>bona<s n="adj"/></l>                   <r>okay<s n="adj"/></r></p></e>
 
 <e><p><l>memo<s n="n"/></l>                     <r>self<s n="n"/></r></p></e>
+<e>       <p><l>dozo<s n="n"/></l>                     <r>dose<s n="n"/></r></p></e>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<e ><p><l>fundo<s n="n"/></l>                    <r>bottom<s n="n"/></r></p></e>
+
+
+
+<e r="LR">       <p><l>globuso<s n="n"/></l>                 <r>globe<s n="n"/></r></p></e>
+<e r="LR"><p><l>terglobo<s n="n"/></l>                 <r>globe<s n="n"/></r></p></e>
+<e><p><l>globo<s n="n"/></l>                    <r>globe<s n="n"/></r></p></e>
+
+
 
   <!-- ====================================================================== -->
   <!--      Here and below is traduku.net data which might be OVERWRITTEN     -->
@@ -3963,7 +3994,7 @@ TODO??
 <e r="LR"><p><l>krakeno<s n="n"/></l>                  <r>biscuit<s n="n"/></r></p></e>
 <e>       <p><l>episkopo<s n="n"/></l>                 <r>bishop<s n="n"/></r></p></e>
 <e>       <p><l>episkopejo<s n="n"/></l>               <r>bishopric<s n="n"/></r></p></e>
-<e r="LR"><p><l>diocezo<s n="n"/></l>                  <r>bishopric<s n="n"/></r></p></e>
+<e><p><l>diocezo<s n="n"/></l>                  <r>diocese<s n="n"/></r></p></e>
 <e>       <p><l>ĉefepiskopejo<s n="n"/></l>            <r>archbishopric<s n="n"/></r></p></e>
 <e>       <p><l>peco<s n="n"/></l>                     <r>bit<s n="n"/></r></p></e>
 <e r="LR"><p><l>rompaĵo<s n="n"/></l>                  <r>bit<s n="n"/></r></p></e>
@@ -4109,7 +4140,6 @@ TODO??
 <e r="LR"><p><l>intesto<s n="n"/></l>                  <r>bowel<s n="n"/></r></p></e>
 <e>       <p><l>internaĵo<s n="n"/></l>                <r>bowel<s n="n"/></r></p></e>
 <e>       <p><l>bovlo<s n="n"/></l>                    <r>bowl<s n="n"/></r></p></e>
-<e r="LR"><p><l>globo<s n="n"/></l>                    <r>bowl<s n="n"/></r></p></e>
 <e r="LR"><p><l>bokalo<s n="n"/></l>                   <r>bowl<s n="n"/></r></p></e>
 <e r="LR"><p><l>pelvo<s n="n"/></l>                    <r>bowl<s n="n"/></r></p></e>
 <e r="LR"><p><l>forneto<s n="n"/></l>                  <r>bowl<s n="n"/></r></p></e>
@@ -5932,7 +5962,6 @@ TODO??
 <e>       <p><l>senhavigi<s n="vblex"/></l>            <r>deprive<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>elposedigi<s n="vblex"/></l>           <r>deprive<s n="vblex"/></r></p></e>
 <e>       <p><l>profundo<s n="n"/></l>                 <r>depth<s n="n"/></r></p></e>
-<e r="LR"><p><l>fundo<s n="n"/></l>                    <r>depth<s n="n"/></r></p></e>
 <e>       <p><l>viculo<s n="n"/></l>                   <r>deputy<s n="n"/></r></p></e>
 <e r="LR"><p><l>deputito<s n="n"/></l>                 <r>deputy<s n="n"/></r></p></e>
 <e r="LR"><p><l>elreliĝi<s n="vblex"/></l>             <r>derail<s n="vblex"/></r></p></e>
@@ -6085,8 +6114,6 @@ TODO??
 <e r="LR"><p><l>malkreski<s n="vblex"/></l>            <r>diminish<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉefmanĝo<s n="n"/></l>                 <r>dinner<s n="n"/></r></p></e>
 <e r="LR"><p><l>festeno<s n="n"/></l>                  <r>dinner<s n="n"/></r></p></e>
-    <!-- Already is <e r="LR"><l>diocezo<n></l><r>bishopric<n></r></e> -->
-<e r="RL"><p><l>diocezo<s n="n"/></l>                  <r>diocese<s n="n"/></r></p></e>
 <e>       <p><l>diplomatio<s n="n"/></l>               <r>diplomacy<s n="n"/></r></p></e>
 <e r="LR"><p><l>diplomateco<s n="n"/></l>              <r>diplomacy<s n="n"/></r></p></e>
 <e>       <p><l>rekta<s n="adj"/></l>                  <r>direct<s n="adj"/></r></p></e>
@@ -6344,9 +6371,7 @@ TODO??
 <e r="LR"><p><l>superokupi<s n="vblex"/></l>           <r>dominate<s n="vblex"/></r></p></e>
 <e>       <p><l>donaci<s n="vblex"/></l>               <r>donate<s n="vblex"/></r></p></e>
 <e>       <p><l>pordo<s n="n"/></l>                    <r>door<s n="n"/></r></p></e>
-<e r="RL"><p><l>mezuro<s n="n"/></l>                   <r>dose<s n="n"/></r></p></e>
 <e r="LR"><p><l>guto<s n="n"/></l>                     <r>dose<s n="n"/></r></p></e>
-<e r="LR"><p><l>dozo<s n="n"/></l>                     <r>dose<s n="n"/></r></p></e>
 <e r="RL"><p><l>dosiero<s n="n"/></l>                  <r>dossier<s n="n"/></r></p></e>
 <e r="RL"><p><l>punkto<s n="n"/></l>                   <r>dot<s n="n"/></r></p></e>
 <e>       <p><l>duobla<s n="adj"/></l>                 <r>double<s n="adj"/></r></p></e>
@@ -8040,7 +8065,6 @@ TODO??
 <e>       <p><l>ekvidi<s n="vblex"/></l>               <r>glimpse<s n="vblex"/></r></p></e>
 <e>       <p><l>tutmonda<s n="adj"/></l>               <r>global<s n="adj"/></r></p></e>
 <e r="LR"><p><l>tergloba<s n="adj"/></l>               <r>global<s n="adj"/></r></p></e>
-<e>       <p><l>terglobo<s n="n"/></l>                 <r>globe<s n="n"/></r></p></e>
 <e>       <p><l>buleto<s n="n"/></l>                   <r>globule<s n="n"/></r></p></e>
 <e r="LR"><p><l>globeto<s n="n"/></l>                  <r>globule<s n="n"/></r></p></e>
 <e>       <p><l>glora<s n="adj"/></l>                  <r>glorious<s n="adj"/></r></p></e>
@@ -15908,9 +15932,7 @@ TODO??
 <e r="LR"><p><l>cirkumcidado<s n="n"/></l>             <r>circumcision<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉano<s n="n"/></l>                     <r>trigger<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉasfusilo<s n="n"/></l>                <r>shotgun<s n="n"/></r></p></e>
-<e r="RL"><p><l>ĉasio<s n="n"/></l>                    <r>chassis<s n="n"/></r></p></e>
-<e>       <p><l>ĉasio<s n="n"/></l>                    <r>chassis<s n="n"/><s n="ND"/></r></p></e>
-<e r="RL"><p><l>ĉielskrapanto<s n="n"/></l>            <r>skyscraper<s n="n"/><s n="ND"/></r></p></e>
+<e>       <p><l>ĉasio<s n="n"/></l>                    <r>chassis<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉirkaŭurbo<s n="n"/></l>               <r>suburb<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĉirkaŭvojo<s n="n"/></l>               <r>round<s n="n"/></r></p></e>
 <e r="LR"><p><l>dankmono<s n="n"/></l>                 <r>tip<s n="n"/></r></p></e>
@@ -15928,7 +15950,6 @@ TODO??
 <e r="LR"><p><l>devoteco<s n="n"/></l>                 <r>devotion<s n="n"/></r></p></e>
 <e>       <p><l>difterio<s n="n"/></l>                 <r>diphtheria<s n="n"/></r></p></e>
 <e>       <p><l>dinamito<s n="n"/></l>                 <r>dynamite<s n="n"/></r></p></e>
-<e r="RL"><p><l>diocezo<s n="n"/></l>                  <r>diocese<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>direktivo<s n="n"/></l>                <r>norm<s n="n"/></r></p></e>
 <e r="LR"><p><l>direktrico<s n="n"/></l>               <r>guideline<s n="n"/></r></p></e>
 <e r="LR"><p><l>disdegno<s n="n"/></l>                 <r>disdain<s n="n"/></r></p></e>
@@ -15944,7 +15965,6 @@ TODO??
 <e r="LR"><p><l>dolĉaĵo<s n="n"/></l>                  <r>sweet<s n="n"/></r></p></e>
 <e>       <p><l>domaĝo<s n="n"/></l>                   <r>pity<s n="n"/></r></p></e>
 <e r="LR"><p><l>dormĉambrego<s n="n"/></l>             <r>bedroom<s n="n"/></r></p></e>
-<e r="RL"><p><l>dozo<s n="n"/></l>                     <r>dose<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>dromedaro<s n="n"/></l>                <r>dromedary<s n="n"/></r></p></e>
 <e>       <p><l>duno<s n="n"/></l>                     <r>dune<s n="n"/></r></p></e>
 <e r="LR"><p><l>duonlumo<s n="n"/></l>                 <r>evening<s n="n"/></r></p></e>
@@ -15956,14 +15976,12 @@ TODO??
 <e r="LR"><p><l>ekkuro<s n="n"/></l>                   <r>start<s n="n"/></r></p></e>
 <e>       <p><l>ekosistemo<s n="n"/></l>               <r>ecosystem<s n="n"/></r></p></e>
 <e r="LR"><p><l>ekpenso<s n="n"/></l>                  <r>idea<s n="n"/></r></p></e>
-<e r="RL"><p><l>ekrano<s n="n"/></l>                   <r>windscreen<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>ekscelenco<s n="n"/></l>               <r>excellence<s n="n"/></r></p></e>
 <e r="RL"><p><l>ekscito<s n="n"/></l>                  <r>excitation<s n="n"/></r></p></e>
 <e>       <p><l>ekskluziveco<s n="n"/></l>             <r>scoop<s n="n"/></r></p></e>
 <e r="LR"><p><l>ekskuzo<s n="n"/></l>                  <r>excuse<s n="n"/></r></p></e>
 <e r="LR"><p><l>ekspliko<s n="n"/></l>                 <r>explanation<s n="n"/></r></p></e>
 <e>       <p><l>ekspresionismo<s n="n"/></l>           <r>expressionism<s n="n"/></r></p></e>
-<e r="RL"><p><l>ekstazo<s n="n"/></l>                  <r>ecstasy<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>ekzekutisto<s n="n"/><s n="m"/></l>    <r>hangman<s n="n"/></r></p></e>
 <e r="LR"><p><l>elektantaro<s n="n"/></l>              <r>electorate<s n="n"/></r></p></e>
 <e>       <p><l>eldona<s n="adj"/></l>                 <r>publishing<s n="adj"/></r></p></e>
@@ -15975,7 +15993,6 @@ TODO??
 <e r="LR"><p><l>elpreno<s n="n"/></l>                  <r>extraction<s n="n"/></r></p></e>
 <e>       <p><l>eluziĝo<s n="n"/></l>                  <r>wear<s n="n"/></r></p></e>
 <e r="LR"><p><l>emeritigo<s n="n"/></l>                <r>retirement<s n="n"/></r></p></e>
-<e r="RL"><p><l>emfazo<s n="n"/></l>                   <r>emphasis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>emigrintaro<s n="n"/></l>              <r>emigration<s n="n"/></r></p></e>
 <e r="LR"><p><l>enirbileto<s n="n"/></l>               <r>seat<s n="n"/></r></p></e>
 <e>       <p><l>enmigrinta<s n="adj"/></l>             <r>immigrant<s n="adj"/></r></p></e>
@@ -16012,7 +16029,6 @@ TODO??
 <e>       <p><l>femurosto<s n="n"/></l>                <r>femur<s n="n"/></r></p></e>
 <e r="LR"><p><l>ferdeko<s n="n"/></l>                  <r>cover<s n="n"/></r></p></e>
 <e r="LR"><p><l>ferdrato<s n="n"/></l>                 <r>wire<s n="n"/></r></p></e>
-<e r="RL"><p><l>feto<s n="n"/></l>                     <r>fetus<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>fianĉineco<s n="n"/></l>               <r>engagement<s n="n"/></r></p></e>
 <e r="LR"><p><l>fiasko<s n="n"/></l>                   <r>failure<s n="n"/></r></p></e>
 <e r="LR"><p><l>fiŝhoko<s n="n"/></l>                  <r>hook<s n="n"/></r></p></e>
@@ -16021,17 +16037,15 @@ TODO??
 <e r="LR"><p><l>flaŭro<s n="n"/></l>                   <r>flora<s n="n"/></r></p></e>
 <e>       <p><l>florpoto<s n="n"/></l>                 <r>flowerpot<s n="n"/></r></p></e>
 <e>       <p><l>flustro<s n="n"/></l>                  <r>whisper<s n="n"/></r></p></e>
-<e r="RL"><p><l>fokuso<s n="n"/></l>                   <r>focus<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>fondaĵo<s n="n"/></l>                  <r>foundation<s n="n"/></r></p></e>
 <e r="LR"><p><l>fosforo<s n="n"/></l>                  <r>phosphorus<s n="n"/></r></p></e>
 <e r="LR"><p><l>fotelo<s n="n"/></l>                   <r>armchair<s n="n"/></r></p></e>
 <e r="LR"><p><l>frato<s n="n"/></l>                    <r>brother<s n="n"/></r></p></e>
 <e>       <p><l>fregato<s n="n"/></l>                  <r>frigate<s n="n"/></r></p></e>
 <e r="LR"><p><l>frostigujo<s n="n"/></l>               <r>freezer<s n="n"/></r></p></e>
-<e>       <p><l>ftizo<s n="n"/></l>                    <r>tuberculosis<s n="n"/><s n="ND"/></r></p></e>
+<e r="LR"><p><l>ftizo<s n="n"/></l>                    <r>tuberculosis<s n="n"/></r></p></e>
 <e r="LR"><p><l>fuelo<s n="n"/></l>                    <r>fuel<s n="n"/></r></p></e>
 <e r="LR"><p><l>fundamentismo<s n="n"/></l>            <r>fundamentalism<s n="n"/></r></p></e>
-<e r="RL"><p><l>fundo<s n="n"/></l>                    <r>bottom<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>funebro<s n="n"/></l>                  <r>deceit<s n="n"/></r></p></e>
 <e r="RL"><p><l>funkciado<s n="n"/></l>                <r>functioning<s n="n"/></r></p></e>
 <e r="LR"><p><l>gajeco<s n="n"/></l>                   <r>joy<s n="n"/></r></p></e>
@@ -16046,7 +16060,6 @@ TODO??
 <e r="LR"><p><l>gipso<s n="n"/></l>                    <r>plaster<s n="n"/></r></p></e>
 <e r="LR"><p><l>glaciinsulo<s n="n"/></l>              <r>iceberg<s n="n"/></r></p></e>
 <e r="LR"><p><l>globkrajono<s n="n"/></l>              <r>pen<s n="n"/></r></p></e>
-<e r="RL"><p><l>globo<s n="n"/></l>                    <r>globe<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>globulo<s n="n"/></l>                  <r>globule<s n="n"/></r></p></e>
 <e r="LR"><p><l>gluetikedo<s n="n"/></l>               <r>sticker<s n="n"/></r></p></e>
 <e r="LR"><p><l>gluto<s n="n"/></l>                    <r>draught<s n="n"/></r></p></e>
@@ -16056,8 +16069,7 @@ TODO??
 <e>       <p><l>granito<s n="n"/></l>                  <r>granite<s n="n"/></r></p></e>
 <e r="LR"><p><l>greno<s n="n"/></l>                    <r>cereal<s n="n"/></r></p></e>
 <e r="LR"><p><l>grifelo<s n="n"/></l>                  <r>plaster<s n="n"/></r></p></e>
-<e r="RL"><p><l>gutigilo<s n="n"/></l>                 <r>dropper<s n="n"/></r></p></e>
-<e>       <p><l>gutigilo<s n="n"/></l>                 <r>dropper<s n="n"/><s n="ND"/></r></p></e>
+<e><p><l>gutigilo<s n="n"/></l>                 <r>dropper<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝardenistiko<s n="n"/></l>             <r>gardening<s n="n"/></r></p></e>
 <e r="RL"><p><l>hararo<s n="n"/></l>                   <r>mane<s n="n"/></r></p></e>
 <e r="LR"><p><l>heĝo<s n="n"/></l>                     <r>fence<s n="n"/></r></p></e>
@@ -16065,8 +16077,6 @@ TODO??
 <e>       <p><l>hematomo<s n="n"/></l>                 <r>hematoma<s n="n"/></r></p></e>
 <e r="LR"><p><l>hemikranio<s n="n"/></l>               <r>migraine<s n="n"/></r></p></e>
 <e r="LR"><p><l>heroo<s n="n"/></l>                    <r>hero<s n="n"/></r></p></e>
-<e r="RL"><p><l>herpeto<s n="n"/></l>                  <r>herpes<s n="n"/><s n="ND"/></r></p></e>
-<e r="RL"><p><l>hipotezo<s n="n"/></l>                 <r>hypothesis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>holdingo<s n="n"/></l>                 <r>holding<s n="n"/></r></p></e>
 <e>       <p><l>homaro<s n="n"/></l>                   <r>mankind<s n="n"/></r></p></e>
 <e>       <p><l>horizontalo<s n="n"/></l>              <r>horizontal<s n="n"/></r></p></e>
@@ -16074,8 +16084,7 @@ TODO??
 <e r="LR"><p><l>humileco<s n="n"/></l>                 <r>humility<s n="n"/></r></p></e>
 <e>       <p><l>kimero<s n="n"/></l>                   <r>chimaera<s n="n"/></r></p></e>
 <e>       <p><l>idilio<s n="n"/></l>                   <r>idyll<s n="n"/></r></p></e>
-<e>       <p><l>iktero<s n="n"/></l>                   <r>hepatitis<s n="n"/><s n="ND"/></r></p></e>
-<e r="RL"><p><l>iktero<s n="n"/></l>                   <r>jaundice<s n="n"/></r></p></e>
+<e><p><l>iktero<s n="n"/></l>                   <r>jaundice<s n="n"/></r></p></e>
 <e r="LR"><p><l>importado<s n="n"/></l>                <r>import<s n="n"/></r></p></e>
 <e r="LR"><p><l>impostkolektado<s n="n"/></l>          <r>collection<s n="n"/></r></p></e>
 <e r="LR"><p><l>impresario<s n="n"/></l>               <r>employer<s n="n"/></r></p></e>
@@ -16162,9 +16171,7 @@ TODO??
 <e r="LR"><p><l>korupteco<s n="n"/></l>                <r>corruption<s n="n"/></r></p></e>
 <e r="LR"><p><l>koruso<s n="n"/></l>                   <r>chorus<s n="n"/></r></p></e>
 <e r="LR"><p><l>kosmonaŭto<s n="n"/></l>               <r>astronaut<s n="n"/></r></p></e>
-<e r="RL"><p><l>krajono<s n="n"/></l>                  <r>pencil<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>kriz-okazo<s n="n"/></l>               <r>emergency<s n="n"/></r></p></e>
-<e r="RL"><p><l>krizo<s n="n"/></l>                    <r>crisis<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>kromosomo<s n="n"/></l>                <r>chromosome<s n="n"/></r></p></e>
 <e r="LR"><p><l>kruciĝo<s n="n"/></l>                  <r>crossing<s n="n"/></r></p></e>
 <e r="LR"><p><l>kudro<s n="n"/></l>                    <r>sewing<s n="n"/></r></p></e>
@@ -16262,8 +16269,6 @@ TODO??
 <e r="LR"><p><l>nafto-dukto<s n="n"/></l>              <r>pipeline<s n="n"/></r></p></e>
 <e>       <p><l>najtingalo<s n="n"/></l>               <r>nightingale<s n="n"/></r></p></e>
 <e r="LR"><p><l>naskiĝejo<s n="n"/></l>                <r>cradle<s n="n"/></r></p></e>
-    <!-- Already is <e><l>naskiĝtago<n></l><r>birthday<n></r></e> -->
-<e r="RL"><p><l>naskiĝtago<s n="n"/></l>               <r>birthday<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>naskokvanto<s n="n"/></l>              <r>natality<s n="n"/></r></p></e>
 <e r="LR"><p><l>neegaleco<s n="n"/></l>                <r>inequality<s n="n"/></r></p></e>
 <e r="LR"><p><l>nefropto<s n="n"/></l>                 <r>cicada<s n="n"/></r></p></e>
@@ -16278,7 +16283,6 @@ TODO??
 <e r="LR"><p><l>nuklefendado<s n="n"/></l>             <r>atomisation<s n="n"/></r></p></e>
 <e r="RL"><p><l>nuligo<s n="n"/></l>                   <r>rescission<s n="n"/></r></p></e>
 <e>       <p><l>nulo<s n="n"/></l>                     <r>nullity<s n="n"/></r></p></e>
-<e r="RL"><p><l>oazo<s n="n"/></l>                     <r>oasis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>obeado<s n="n"/></l>                   <r>obedience<s n="n"/></r></p></e>
 <e r="RL"><p><l>obstaklo<s n="n"/></l>                 <r>fetter<s n="n"/></r></p></e>
 <e r="LR"><p><l>olivoleo<s n="n"/></l>                 <r>oil<s n="n"/></r></p></e>
@@ -16296,10 +16300,8 @@ TODO??
 <e r="LR"><p><l>pamfleto<s n="n"/></l>                 <r>pamphlet<s n="n"/></r></p></e>
 <e r="LR"><p><l>pandalo<s n="n"/></l>                  <r>shrimp<s n="n"/></r></p></e>
 <e r="LR"><p><l>paneo<s n="n"/></l>                    <r>failure<s n="n"/></r></p></e>
-<e r="RL"><p><l>pankreato<s n="n"/></l>                <r>pancreas<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>pantero<s n="n"/></l>                  <r>panther<s n="n"/></r></p></e>
 <e r="LR"><p><l>papriko<s n="n"/></l>                  <r>pepper<s n="n"/></r></p></e>
-<e r="RL"><p><l>paralizo<s n="n"/></l>                 <r>paralysis<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>parenceco<s n="n"/></l>                <r>kinship<s n="n"/></r></p></e>
 <e r="LR"><p><l>parkadejo<s n="n"/></l>                <r>parking<s n="n"/></r></p></e>
     <!-- Already is <e><l>parokestro<n></l><r>vicar<n></r></e> -->
@@ -16312,7 +16314,6 @@ TODO??
 <e r="LR"><p><l>pendado<s n="n"/></l>                  <r>suspension<s n="n"/></r></p></e>
 <e r="LR"><p><l>peneo<s n="n"/></l>                    <r>prawn<s n="n"/></r></p></e>
 <e r="LR"><p><l>penetrado<s n="n"/></l>                <r>penetration<s n="n"/></r></p></e>
-<e r="RL"><p><l>peniso<s n="n"/></l>                   <r>penis<s n="n"/><s n="ND"/></r></p></e>
 <e r="RL"><p><l>pensio<s n="n"/></l>                   <r>guesthouse<s n="n"/></r></p></e>
 <e r="LR"><p><l>pentofaro<s n="n"/></l>                <r>penance<s n="n"/></r></p></e>
 <e r="LR"><p><l>pentrarto<s n="n"/></l>                <r>painting<s n="n"/></r></p></e>
@@ -16332,7 +16333,7 @@ TODO??
 <e r="LR"><p><l>plenmano<s n="n"/></l>                 <r>bunch<s n="n"/></r></p></e>
 <e r="LR"><p><l>plotono<s n="n"/></l>                  <r>pilot<s n="n"/></r></p></e>
 <e>       <p><l>plurangulo<s n="n"/></l>               <r>polygon<s n="n"/></r></p></e>
-<e>       <p><l>pluvombrelo<s n="n"/></l>              <r>umbrella<s n="n"/><s n="ND"/></r></p></e>
+<e r="LR"><p><l>pluvombrelo<s n="n"/></l>              <r>umbrella<s n="n"/></r></p></e>
 <e r="LR"><p><l>polekso<s n="n"/></l>                  <r>thumb<s n="n"/></r></p></e>
 <e>       <p><l>policejo<s n="n"/></l>                 <r>commissariat<s n="n"/></r></p></e>
 <e>       <p><l>polica<s n="adj"/></l>                 <r>police<s n="adj"/></r></p></e>
@@ -16358,7 +16359,6 @@ TODO??
 <e r="LR"><p><l>proparolanto<s n="n"/></l>             <r>spokesman<s n="n"/></r></p></e>
 <e r="LR"><p><l>propulsado<s n="n"/></l>               <r>propulsion<s n="n"/></r></p></e>
 <e r="LR"><p><l>protektado<s n="n"/></l>               <r>protection<s n="n"/></r></p></e>
-<e r="RL"><p><l>protezo<s n="n"/></l>                  <r>prosthesis<s n="n"/><s n="ND"/></r></p></e>
 <e r="RL"><p><l>provianto<s n="n"/></l>                <r>groceries<s n="n"/></r></p></e>
 <e r="LR"><p><l>publikeco<s n="n"/></l>                <r>advertising<s n="n"/></r></p></e>
 <e r="LR"><p><l>pudoro<s n="n"/></l>                   <r>stink<s n="n"/></r></p></e>
@@ -16428,12 +16428,10 @@ TODO??
 <e>       <p><l>sinkigo<s n="n"/></l>                  <r>sinking<s n="n"/></r></p></e>
 <e r="RL"><p><l>sino<s n="n"/></l>                     <r>sinus<s n="n"/></r></p></e>
 <e r="LR"><p><l>sino<s n="n"/></l>                     <r>breast<s n="n"/></r></p></e>
-<e r="RL"><p><l>sintezo<s n="n"/></l>                  <r>synthesis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>sireno<s n="n"/></l>                   <r>whistle<s n="n"/></r></p></e>
 <e>       <p><l>siropo<s n="n"/></l>                   <r>syrup<s n="n"/></r></p></e>
 <e>       <p><l>skabio<s n="n"/></l>                   <r>scabies<s n="n"/></r></p></e>
 <e r="LR"><p><l>sketado<s n="n"/></l>                  <r>skating<s n="n"/></r></p></e>
-<e r="RL"><p><l>sklerozo<s n="n"/></l>                 <r>sclerosis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>skombro<s n="n"/></l>                  <r>demolition<s n="n"/></r></p></e>
 <e r="LR"><p><l>skribo-tablo<s n="n"/></l>             <r>desk<s n="n"/></r></p></e>
 <e r="LR"><p><l>skribotablo<s n="n"/></l>              <r>buffet<s n="n"/></r></p></e>
@@ -16457,8 +16455,7 @@ TODO??
 <e r="RL"><p><l>substantivo<s n="n"/></l>              <r>substantive<s n="n"/></r></p></e>
 <e>       <p><l>subtitolo<s n="n"/></l>                <r>subhead<s n="n"/></r></p></e>
 <e r="RL"><p><l>superbazaro<s n="n"/></l>              <r>hypermarket<s n="n"/></r></p></e>
-<e>       <p><l>superdozo<s n="n"/></l>                <r>overdose<s n="n"/><s n="ND"/></r></p></e>
-<e r="RL"><p><l>superdozo<s n="n"/></l>                <r>overdose<s n="n"/></r></p></e>
+<e>       <p><l>superdozo<s n="n"/></l>                <r>overdose<s n="n"/></r></p></e>
 <e r="LR"><p><l>supermagazeno<s n="n"/></l>            <r>supermarket<s n="n"/></r></p></e>
 <e r="RL"><p><l>supozo<s n="n"/></l>                   <r>supposition<s n="n"/></r></p></e>
 <e r="LR"><p><l>supreniro<s n="n"/></l>                <r>rise<s n="n"/></r></p></e>
@@ -16484,18 +16481,13 @@ TODO??
 <e r="LR"><p><l>tedaĵo<s n="n"/></l>                   <r>can<s n="n"/></r></p></e>
 <e>       <p><l>telegrafo<s n="n"/></l>                <r>telegraph<s n="n"/></r></p></e>
 <e r="RL"><p><l>temperamento<s n="n"/></l>             <r>temperament<s n="n"/></r></p></e>
-<e r="RL"><p><l>tempo<s n="n"/></l>                    <r>time<s n="n"/><s n="ND"/></r></p></e>
-<e r="RL"><p><l>tempo<s n="n"/></l>                    <r>weather<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>tenereco<s n="n"/></l>                 <r>tenderness<s n="n"/></r></p></e>
 <e r="LR"><p><l>tenilo<s n="n"/></l>                   <r>handle<s n="n"/></r></p></e>
-<e r="RL"><p><l>teniso<s n="n"/></l>                   <r>tennis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>terminologio<s n="n"/></l>             <r>terminology<s n="n"/></r></p></e>
 <e r="LR"><p><l>testudo<s n="n"/></l>                  <r>turtle<s n="n"/></r></p></e>
-<e r="RL"><p><l>tezo<s n="n"/></l>                     <r>thesis<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>timbalo<s n="n"/></l>                  <r>eardrum<s n="n"/></r></p></e>
 <e r="LR"><p><l>timideco<s n="n"/></l>                 <r>timidity<s n="n"/></r></p></e>
 <e r="LR"><p><l>timiĝo<s n="n"/></l>                   <r>fright<s n="n"/></r></p></e>
-<e r="RL"><p><l>tipo<s n="n"/></l>                     <r>type<s n="n"/><s n="ND"/></r></p></e>
 <e r="LR"><p><l>toksiĝo<s n="n"/></l>                  <r>intoxication<s n="n"/></r></p></e>
 <e r="LR"><p><l>toksomaniulo<s n="n"/></l>             <r>addict<s n="n"/></r></p></e>
 <e r="LR"><p><l>tolkovro<s n="n"/></l>                 <r>awning<s n="n"/></r></p></e>
@@ -16517,7 +16509,6 @@ TODO??
 <e r="LR"><p><l>trinkejo<s n="n"/></l>                 <r>bar<s n="n"/></r></p></e>
 <e r="LR"><p><l>trio<s n="n"/></l>                     <r>trio<s n="n"/></r></p></e>
 <e r="RL"><p><l>triopo<s n="n"/></l>                   <r>triple<s n="n"/></r></p></e>
-<e r="RL"><p><l>trombozo<s n="n"/></l>                 <r>thrombosis<s n="n"/><s n="ND"/></r></p></e>
 <e>       <p><l>tropiko<s n="n"/></l>                  <r>tropic<s n="n"/></r></p></e>
 <e r="LR"><p><l>trup-unuo<s n="n"/></l>                <r>unit<s n="n"/></r></p></e>
 <e r="LR"><p><l>tualetakvo<s n="n"/></l>               <r>lotion<s n="n"/></r></p></e>
@@ -16539,7 +16530,7 @@ TODO??
 <e r="LR"><p><l>veksignalo<s n="n"/></l>               <r>target<s n="n"/></r></p></e>
 <e r="LR"><p><l>velŝipo<s n="n"/></l>                  <r>sailboat<s n="n"/></r></p></e>
 <e r="LR"><p><l>ventokirlo<s n="n"/></l>               <r>eddy<s n="n"/></r></p></e>
-<e r="LR"><p><l>ventŝirmilo<s n="n"/></l>              <r>windscreen<s n="n"/><s n="ND"/></r></p></e>
+<e r="LR"><p><l>ventŝirmilo<s n="n"/></l>              <r>windscreen<s n="n"/></r></p></e>
 <e r="LR"><p><l>veprejo<s n="n"/></l>                  <r>thicket<s n="n"/></r></p></e>
 <e r="LR"><p><l>verdo<s n="n"/></l>                    <r>green<s n="n"/></r></p></e>
 <e r="RL"><p><l>vereco<s n="n"/></l>                   <r>furthfullness<s n="n"/></r></p></e>
