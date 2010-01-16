@@ -435,6 +435,16 @@
        <list-item v="plej"/>
     </def-list>
 
+    <def-list n="prn_kun_persono_kaj_genro">
+       <list-item v="prpers"/>
+       <list-item v="si"/>
+       <list-item v="vi"/>
+       <list-item v="mi"/>
+       <list-item v="ni"/>
+       <list-item v="oni"/>
+    </def-list>
+
+
     <def-list n="adj_kun_sint" c="
     Adjektivoj kiuj en la angla estas sintezaj,
     ekz. big, bigger, biggest.
@@ -1276,11 +1286,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
       <choose>
         <when>
           <test>
-            <or>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="prpers"/></equal>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="si"/></equal>
-              <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="oni"/></equal>
-            </or>
+            <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="prn_kun_persono_kaj_genro"/></in>
           </test>
        <out> <!-- persona pronomo: estas persono kaj genro -->
          <chunk name="pron" case="caseFirstWord">
@@ -1333,11 +1339,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
       <choose>
         <when>
           <test>
-            <or>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="oni"/></equal>
-            </or>
+            <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="prn_kun_persono_kaj_genro"/></in>
           </test>
           <choose>
             <when>
@@ -2531,11 +2533,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         <choose>
           <when>
             <test>
-              <or>
-                <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="prpers"/></equal>
-                <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="si"/></equal>
-                <equal caseless="yes"><clip pos="4" side="sl" part="lem"/><lit v="oni"/></equal>
-              </or>
+              <in caseless="yes"><clip pos="4" side="sl" part="lem"/><list n="prn_kun_persono_kaj_genro"/></in>
             </test>
             <choose>
               <when>
@@ -3716,11 +3714,7 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
       <choose>
         <when>
           <test>
-            <or>
-              <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="prpers"/></equal>
-              <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="si"/></equal>
-              <equal caseless="yes"><clip pos="3" side="sl" part="lem"/><lit v="oni"/></equal>
-            </or>
+            <in caseless="yes"><clip pos="3" side="sl" part="lem"/><list n="prn_kun_persono_kaj_genro"/></in>
           </test>
           <choose>
             <when>
@@ -3811,14 +3805,11 @@ ERARO: en tiu kazo "not" devus aperi inter lemh kaj lemq
           <b pos="1"/>
         </out>
 
+
       <choose>
         <when>
           <test>
-            <or>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="prpers"/></equal>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="si"/></equal>
-              <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="oni"/></equal>
-            </or>
+            <in caseless="yes"><clip pos="2" side="sl" part="lem"/><list n="prn_kun_persono_kaj_genro"/></in>
           </test>
           <choose>
             <when>

@@ -449,10 +449,12 @@
 
 <pardef n="many__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+  <e c="riparo" r="RL"><p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 </pardef>
 
 <pardef n="much__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+  <e c="riparo" r="RL"><p><l></l><r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="enough__det">
@@ -481,6 +483,7 @@
 
 <pardef n="everyone__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="sg"/></r></p></e>
+  <e c="riparo" r="RL"><p><l></l>          <r><s n="prn"/><s n="tn"/><s n="pl"/></r></p></e>
 </pardef>
 
 <pardef n="th/is__prn">
