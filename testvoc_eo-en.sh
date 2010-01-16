@@ -2,9 +2,9 @@
 
 PREF=/tmp/testvoc_eo-en
 
- lt-expand apertium-eo-en.eo.dixtmp1 |grep -v REGEXP | grep -e ':>:' -e '\w:\w' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f1 -d'%' > ${PREF}0.txt &
+ lt-expand tmp1_apertium-eo-en.eo.dix |grep -v REGEXP | grep -e ':>:' -e '\w:\w' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f1 -d'%' > ${PREF}0.txt &
 
- lt-expand apertium-eo-en.eo.dixtmp1 |grep -v REGEXP | grep -e ':>:' -e '\w:\w' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^;<sent>$/g' | tee ${PREF}1.txt |
+ lt-expand tmp1_apertium-eo-en.eo.dix |grep -v REGEXP | grep -e ':>:' -e '\w:\w' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^;<sent>$/g' | tee ${PREF}1.txt |
         apertium-pretransfer|
         apertium-transfer apertium-eo-en.eo-en.t1x  eo-en.t1x.bin  eo-en.autobil.bin |
         apertium-interchunk apertium-eo-en.eo-en.t2x  eo-en.t2x.bin |
