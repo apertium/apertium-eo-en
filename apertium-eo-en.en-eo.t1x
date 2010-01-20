@@ -8,7 +8,7 @@
 -->
 
   <section-def-cats>
-    <def-cat c="saluton" n="NEAKTIVA"><cat-item lemma="moaaasasasNEAKTIVAre" tags="det.qnt.*"/></def-cat>
+    <def-cat n="NEAKTIVA"><cat-item lemma="moaaasasasNEAKTIVAre" tags="det.qnt.*"/></def-cat>
 
 
     <!-- UNUOPAJ VORTOJ -->
@@ -38,7 +38,7 @@
       <cat-item tags="prn.itg.*"/>
       <cat-item tags="prn.tn.*"/>
     </def-cat>
-    
+
     <def-cat n="prnref"><cat-item tags="prn.ref.*"/></def-cat><!-- ^si<prn><ref><p3><m><sg> -->
 
     <def-cat n="prnpers"><cat-item lemma="prpers" tags="prn.*"/></def-cat>
@@ -137,14 +137,14 @@
 
 <!-- ne estas diferenco inter
     <def-cat n="vbhaver"><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
-	kaj
+  kaj
     <def-cat n="vbhaver"><cat-item lemma="have" tags="*"/></def-cat>
-	-->
+  -->
     <def-cat n="vbhaver"><cat-item lemma="have" tags="vbhaver.*"/></def-cat>
 
 
 <!--tagger ne rekonas vbhaver en frazoj kiel  "has recently been made". Do ne fidu la vbhaver.
-    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="vbhaver.*"/></def-cat> 	-->
+    <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="vbhaver.*"/></def-cat>  -->
     <def-cat n="vaux_vbhaver"><cat-item tags="vaux.*"/><cat-item lemma="have" tags="*"/></def-cat>
 
 
@@ -433,7 +433,7 @@
       <attr-item tags="past"/>
     </def-attr>
 
-    
+
     <def-attr n="a_gen">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
@@ -563,12 +563,12 @@
 
 
   <section-def-macros>
-  
+
   <!-- ekzamenas la vorton kaj metas majuskligajn informojn en variablo "firstWord" -->
-  <def-macro c="saluton" n="firstWord" npar="1">
+  <def-macro n="firstWord" npar="1">
     <choose>
-      <when c="saluton">
-        <test c="saluton">
+      <when>
+        <test>
         <or>
           <and>
             <equal><var n="EOS"/><lit v="true"/></equal>
@@ -580,7 +580,7 @@
         <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
         <let><var n="caseFirstWord"/><lit v="Aa"/></let>
       </when>
-      <otherwise c="saluton">
+      <otherwise>
         <let><var n="caseFirstWord"/><lit v="aa"/></let>
       </otherwise>
     </choose>
@@ -591,10 +591,10 @@
 
 
 
-    <!-- kontrolas cxu la parametro estas konata vorto. 
+    <!-- kontrolas cxu la parametro estas konata vorto.
          Se jes "nomvar" := <nom>. Se ne nomvar="".
          Tio cxu estas por eviti ke nekonataj vortoj ricevos tag'on kiu poste estas montrata. -->
-    <def-macro n="set_nomvar_if_known1" c="saluton" npar="1">
+    <def-macro n="set_nomvar_if_known1" npar="1">
       <choose>
         <when>
         <test>
@@ -610,27 +610,27 @@
 
 
     <!-- Sxangxas la genron de vorto: Se la genro estas nekonata "GD" gxi estas sxangxata al vira genro -->
-    <def-macro n="ordigu_genron" npar="1" c="saluton" >
+    <def-macro n="ordigu_genron" npar="1" >
       <choose>
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_gen"/><lit-tag v="GD"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let> 
+          <let><clip pos="1" side="tl" part="a_gen"/><lit-tag v="m"/></let>
         </when>
       </choose>
     </def-macro>
 
 
 
-    <!-- Sxangxas la numeron de vorto: Se la numero estas nekonata "sp" gxi estas sxangxata al singularo 
+    <!-- Sxangxas la numeron de vorto: Se la numero estas nekonata "sp" gxi estas sxangxata al singularo
     <def-macro n="ordigu_numeron1" npar="1">
       <choose>
         <when>
           <test>
             <equal caseless="yes"><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sp"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
         </when>
       </choose>
     </def-macro>
@@ -700,7 +700,7 @@
 
     <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
-        <when c="saluton">
+        <when>
           <test>
             <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="netransitivaj"/></in>
           </test>
@@ -797,7 +797,7 @@ verbfinal = pensi<vblex><pres>
 
 <def-macro n="set_verbkonj2_willShallWould" npar="2">
 
-    <choose>		
+    <choose>
       <when>
         <test>
           <or>
@@ -874,12 +874,12 @@ verbfinal = pensi<vblex><pres>
 
 
 
-<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
-     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi, 
-     ĉu la blanko de la vorto devas esti forigita aŭ konservita. 
-     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi, 
-     por ke ne aperu du sinsekvaj blankoj. 
-     
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton.
+     Tiu makroo estas necesa en la reguloj, en kiuj malaperas vorto por decidi,
+     ĉu la blanko de la vorto devas esti forigita aŭ konservita.
+     Se ĝi havas formaton, necesas konservi ĝin; se ne, indas viŝi,
+     por ke ne aperu du sinsekvaj blankoj.
+
      Prenita de "f_bcond" apertium-en-es/apertium-en-es.es-en.t1x -->
     <def-macro n="sendu_blankon_se_havas_formaton2" npar="2">
       <choose>
@@ -902,7 +902,7 @@ verbfinal = pensi<vblex><pres>
 
 
 
-<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton. 
+<!-- Por rigardi, ĉu la blanko havas aŭ ne havas formaton.
      "blanko" havos valoron "" se estas nur blanko " ", kaj
      la enhavon de la blanko gxi enhavis ion alian.
  -->
@@ -954,7 +954,7 @@ verbfinal = pensi<vblex><pres>
             </otherwise>
           </choose>
         </when>
-        
+
         <otherwise>
           <let><var n="determiner"/><concat>
             <lit v="^"/>
@@ -984,7 +984,7 @@ verbfinal = pensi<vblex><pres>
         </when>
 
         <otherwise>
-              <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
+              <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
           <let><var n="determiner"/><concat>
             <lit v="^"/>
               <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
@@ -1000,17 +1000,17 @@ verbfinal = pensi<vblex><pres>
 
 
 
-
-    <def-macro n="set_and_or_but" npar="1" 
+<!--
     c="and or but povas esti komenco de demando, sed la aliaj cnjoo NE povas esti parto de demando:
-    ekzemple:   and/or/but did they acquire any influence?   - demando 
+    ekzemple:   and/or/but did they acquire any influence?   - demando
     ekzemple:   neither/nor did they acquire any influence   - konstato
-    ">
+    " -->
+    <def-macro n="set_and_or_but" npar="1">
       <choose>
         <when>
-		<test>
-		  <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="listo_and_or_but"/></in>
-		</test>
+    <test>
+      <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="listo_and_or_but"/></in>
+    </test>
         <let><var n="and_or_but"/><lit-tag v="and_or_but"/></let>
       </when>
       <otherwise>
@@ -1031,11 +1031,11 @@ verbfinal = pensi<vblex><pres>
       <pattern>
         <pattern-item n="prnref"/>
       </pattern>
-      <action  c="saluton">
+      <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
-        <out  c="saluton">
-          <chunk name="prnref"  c="saluton" case="caseFirstWord">
+        <out>
+          <chunk name="prnref" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
             </tags>
@@ -1658,7 +1658,7 @@ verbfinal = pensi<vblex><pres>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro> 
+        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
         <let><var n="chunk_name"/><concat><lit v="adj"/><var n="preadv_added"/></concat></let>
 
         <out>
@@ -1822,7 +1822,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
- 
+
           <out>
           <chunk name="det_unkn_unkn_nom" case="caseFirstWord">
               <tags>
@@ -1860,7 +1860,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="4"/></call-macro>
-        <let><var n="tmp1"/><var n="adjectiu"/></let>        
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
         <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/></call-macro>
           <out>
@@ -1899,9 +1899,9 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
         <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="5"/></call-macro>
-        <let><var n="tmp1"/><var n="adjectiu"/></let>        
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
         <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="5"/></call-macro>
-        <let><var n="tmp2"/><var n="adjectiu"/></let>        
+        <let><var n="tmp2"/><var n="adjectiu"/></let>
         <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="5"/></call-macro>
         <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="5"/></call-macro>
           <out>
@@ -2207,7 +2207,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
@@ -2245,7 +2245,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
@@ -2286,7 +2286,7 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="n_n_de_n" case="caseFirstWord">
                 <tags>
@@ -2335,10 +2335,10 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
         <call-macro n="set_determiner_de_genitivo2"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>                  
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><var n="tmp2"/><var n="blanko"/></let>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>
             <out>
               <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
                 <tags>
@@ -2388,9 +2388,9 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
         <call-macro n="set_determiner_de_genitivo2"><with-param pos="1"/><with-param pos="3"/></call-macro>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><var n="tmp2"/><var n="blanko"/></let>
-      	<call-macro n="set_blankon_se_havas_formaton2"><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="3"/><with-param pos="4"/></call-macro>
             <out>
               <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
                 <tags>
@@ -2636,7 +2636,7 @@ the ones who:the ones who<rel><nn><mf><pl>
       </action>
     </rule>
 
-<!-- regulo en antax_t2x ne funkscias, bedauxrinde..... 
+<!-- regulo en antax_t2x ne funkscias, bedauxrinde.....
     <rule>
       <pattern>
         <pattern-item n="out"/>
@@ -2803,12 +2803,12 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="verbInf" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-      	      <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="2" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -2832,12 +2832,12 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="verbInf" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-      	      <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><lit-tag v="inf"/></tag>
             </tags>
             <lu>
@@ -2862,13 +2862,13 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
-      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>  
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <out>
           <chunk name="verbInf2" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-      	      <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><lit-tag v="inf"/></tag>
             </tags>
             <lu>
@@ -2897,7 +2897,7 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="be_vbger" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	            <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -2928,15 +2928,15 @@ the ones who:the ones who<rel><nn><mf><pl>
       <action>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="set_tipus_verbs1"><with-param pos="1"/></call-macro>
-      	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="el_verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-      	      <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
-            
+
             <lu>
               <lit v="el"/><lit-tag v="adv"/>
             </lu>
@@ -2966,7 +2966,7 @@ the ones who:the ones who<rel><nn><mf><pl>
           <chunk name="ser_not" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
+            <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
@@ -3000,8 +3000,8 @@ the ones who:the ones who<rel><nn><mf><pl>
          <chunk name="pls_verb1" case="caseFirstWord">
            <tags>
               <tag><lit-tag v="SV"/></tag>
-	          <tag><var n="tipus_verb"/></tag>
-	          <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+            <tag><var n="tipus_verb"/></tag>
+            <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
@@ -3027,16 +3027,16 @@ the ones who:the ones who<rel><nn><mf><pl>
 
 
 
-<rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ja ĉiam pensas)">    
+<rule comment="REGLA: do ADV VERB (I do not think -> mi ne pensas. I do always think -> mi ja ĉiam pensas)">
   <pattern>
-	<pattern-item n="do"/> 
-	<pattern-item n="adv"/>
-	<pattern-item n="infpres"/>
+  <pattern-item n="do"/>
+  <pattern-item n="adv"/>
+  <pattern-item n="infpres"/>
 </pattern>
 <action>
-	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
-	<call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="3"/></call-macro>	
+  <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+  <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+  <call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="3"/></call-macro>
 
    <choose>
      <when>
@@ -3044,72 +3044,72 @@ the ones who:the ones who<rel><nn><mf><pl>
          <equal caseless="yes"><clip pos="2" side="sl" part="lem"/><lit v="not"/></equal>
        </not></test>
      <out>
-	  <chunk name="ja2" case="caseFirstWord">
-	    <tags><tag><lit-tag v="Adv"/></tag></tags>
-	    <lu><lit v="ja"/><lit-tag v="adv"/></lu>
-	  </chunk>
-	   <b pos="1"/>
-	   </out>
-	   <let><var n="caseFirstWord"/><lit v="aa"/></let>
+    <chunk name="ja2" case="caseFirstWord">
+      <tags><tag><lit-tag v="Adv"/></tag></tags>
+      <lu><lit v="ja"/><lit-tag v="adv"/></lu>
+    </chunk>
+     <b pos="1"/>
+     </out>
+     <let><var n="caseFirstWord"/><lit v="aa"/></let>
      </when>
      <otherwise>
-    	<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
      </otherwise>
    </choose>
 
-	<out>
-	  <chunk name="adv2" case="caseFirstWord">
-	    <tags>
+  <out>
+    <chunk name="adv2" case="caseFirstWord">
+      <tags>
           <tag><lit-tag v="Adv"/></tag>
-	    </tags>
-	    <lu>
-	      <clip pos="2" side="tl" part="whole"/>
-	    </lu>
-	  </chunk>
-	  <b pos="2"/>
-	  <chunk name="verbcj">
-	    <tags>	       
-	      <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-	      <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-	    </tags> 
-	    <lu>
-	      <var n="verbkonj"/>
-	    </lu>
-	  </chunk>
-	</out>
+      </tags>
+      <lu>
+        <clip pos="2" side="tl" part="whole"/>
+      </lu>
+    </chunk>
+    <b pos="2"/>
+    <chunk name="verbcj">
+      <tags>
+        <tag><lit-tag v="SV"/></tag>
+        <tag><var n="tipus_verb"/></tag>
+        <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+      </tags>
+      <lu>
+        <var n="verbkonj"/>
+      </lu>
+    </chunk>
+  </out>
   </action>
 </rule>
 
 
 
 
-<rule comment="REGLA: do VERB (I do think -> mi ja pensas) ">    
+<rule comment="REGLA: do VERB (I do think -> mi ja pensas) ">
 <pattern>
-	<pattern-item n="do"/> 
-	<pattern-item n="infpres"/>
+  <pattern-item n="do"/>
+  <pattern-item n="infpres"/>
 </pattern>
 <action>
-	<call-macro n="firstWord"><with-param pos="1"/></call-macro>	
-	<call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
-	<call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="2"/></call-macro>	
-	<out>
-	  <chunk name="ja" case="caseFirstWord">
-	    <tags><tag><lit-tag v="Adv"/></tag></tags>
-	    <lu><lit v="ja"/><lit-tag v="adv"/></lu>
-	  </chunk>
-	  <b pos="1"/>
-	  <chunk name="verbcj2">
-	    <tags>	       
-	      <tag><lit-tag v="SV"/></tag>
-	      <tag><var n="tipus_verb"/></tag>
-	      <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-	    </tags> 
-	    <lu>
-	      <var n="verbkonj"/>
-	    </lu>
-	  </chunk>
-	</out>
+  <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+  <call-macro n="set_tipus_verbs1"><with-param pos="2"/></call-macro>
+  <call-macro n="set_verbkonj2_do"><with-param pos="1"/><with-param pos="2"/></call-macro>
+  <out>
+    <chunk name="ja" case="caseFirstWord">
+      <tags><tag><lit-tag v="Adv"/></tag></tags>
+      <lu><lit v="ja"/><lit-tag v="adv"/></lu>
+    </chunk>
+    <b pos="1"/>
+    <chunk name="verbcj2">
+      <tags>
+        <tag><lit-tag v="SV"/></tag>
+        <tag><var n="tipus_verb"/></tag>
+        <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+      </tags>
+      <lu>
+        <var n="verbkonj"/>
+      </lu>
+    </chunk>
+  </out>
   </action>
 </rule>
 
@@ -3141,7 +3141,7 @@ might:might<vaux><inf>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb2" case="caseFirstWord">
                 <tags>
@@ -3176,8 +3176,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><lit-tag v="inf"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
                   <lit v="povi"/><lit-tag v="vaux.cni"/>
@@ -3193,7 +3193,7 @@ might:might<vaux><inf>
             </out>
           </when>
 
-<!-- I may wash. 
+<!-- I may wash.
           <when>
             <test>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
@@ -3203,7 +3203,7 @@ might:might<vaux><inf>
               <chunk name="vaux_verb" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
@@ -3227,8 +3227,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb2" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-	                <tag><var n="tipus_verb"/></tag>
-	                <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><clip pos="1" side="tl" part="a_tns"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
@@ -3266,14 +3266,14 @@ might:might<vaux><inf>
             <test>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
             <out>
               <chunk name="verb3" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3305,7 +3305,7 @@ might:might<vaux><inf>
               <chunk name="vaux_verb3" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                   <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
@@ -3332,8 +3332,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb4" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3374,13 +3374,13 @@ might:might<vaux><inf>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb4" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
@@ -3415,7 +3415,7 @@ might:might<vaux><inf>
               <chunk name="vaux_verb5" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                   <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
@@ -3446,8 +3446,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb6" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3492,12 +3492,12 @@ might:might<vaux><inf>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                   <tag><lit-tag v="pp3"/></tag>
                 </tags>
                 <lu>
@@ -3521,13 +3521,13 @@ might:might<vaux><inf>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="may"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="past"/></let>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb3a" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
@@ -3550,13 +3550,13 @@ might:might<vaux><inf>
               <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="might"/></equal>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb3b" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <lit v="eble"/><lit-tag v="adv"/>
@@ -3582,12 +3582,12 @@ might:might<vaux><inf>
             </or>
             </test>
             <let><var n="temps"/><lit-tag v="cni"/></let>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="vaux_pp" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                   <tag><lit-tag v="inf"/></tag>
                 </tags>
                 <lu>
@@ -3605,21 +3605,21 @@ might:might<vaux><inf>
           </when>
 
 
-          <otherwise><!--  must have been, should have led,  must have observed,  must have felt 
-		  devis esti, devus gvidi, devis observi,  devis senti.
-		  -->
+          <otherwise><!--  must have been, should have led,  must have observed,  must have felt
+      devis esti, devus gvidi, devis observi,  devis senti.
+      -->
             <let><var n="temps"/><lit-tag v="past"/></let>
-			<choose><when>
-				<test><equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="should"/></equal></test>
-				<let><var n="temps"/><lit-tag v="cni"/></let>
-			</when></choose>
-			<call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+      <choose><when>
+        <test><equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="should"/></equal></test>
+        <let><var n="temps"/><lit-tag v="cni"/></let>
+      </when></choose>
+      <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="vaux_verb7" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
@@ -3637,14 +3637,14 @@ might:might<vaux><inf>
               </chunk>
             </out>
 <!--
-          <otherwise>must have been, should have led,  must have observed,  must have felt 
-		  devas havi estita, devus havi gvidita,  devas havi observita,  devas havi sentita.
+          <otherwise>must have been, should have led,  must have observed,  must have felt
+      devas havi estita, devus havi gvidita,  devas havi observita,  devas havi sentita.
             <let><var n="temps"/><clip pos="2" side="sl" part="a_tns"/></let>
             <out>
               <chunk name="vaux_verb7" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3685,13 +3685,13 @@ might:might<vaux><inf>
               <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="willwouldshallhave"/></in>
             </test>
             <call-macro n="set_temps1"><with-param pos="1"/></call-macro>
-            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>  
+            <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
               <chunk name="verb_vbger" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="2" side="tl" part="lemh"/>
@@ -3715,8 +3715,8 @@ might:might<vaux><inf>
               <chunk name="vaux_verb8" case="caseFirstWord">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-      	          <tag><var n="tipus_verb"/></tag>
-      	          <tag><var n="temps"/></tag>
+                  <tag><var n="tipus_verb"/></tag>
+                  <tag><var n="temps"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -3782,7 +3782,7 @@ might:might<vaux><inf>
           <chunk name="verb_all" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-	            <tag><var n="tipus_verb"/></tag>
+              <tag><var n="tipus_verb"/></tag>
               <tag><clip pos="1" side="tl" part="a_tns"/></tag>
             </tags>
             <lu>

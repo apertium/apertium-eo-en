@@ -6,12 +6,12 @@
       <cat-item tags="SN.*"/>
       <cat-item tags="SD.*"/>
     </def-cat>
-    <def-cat n="SNnom" c="Eblaj subjektoj de subjekto-verbo-objekto frazo">
+    <def-cat n="SNnom"><!--  c="Eblaj subjektoj de subjekto-verbo-objekto frazo" -->
       <cat-item tags="SN.*.nom"/> <!-- SN kun nominativo en esperanto -->
       <cat-item tags="SD.*.nom"/> <!-- SD kun nominativo en esperanto -->
       <cat-item tags="REL.*.nom"/>  <!-- REL kun nominativo en esperanto -->
     </def-cat>
-    <def-cat n="SNacc" c="Eblaj objektoj de subjekto-verbo-objekto frazo">
+    <def-cat n="SNacc"><!--  c="Eblaj objektoj de subjekto-verbo-objekto frazo" -->
       <cat-item tags="SN.*.acc"/> <!-- SN kun akuzativo en esperanto -->
       <cat-item tags="SD.*.acc"/> <!-- SD kun akuzativo en esperanto -->
     </def-cat>
@@ -23,7 +23,7 @@
       <cat-item tags="SADV"/>
       <cat-item tags="SADV.*"/>
     </def-cat>
-    <def-cat n="SP" c="Prep + SN/SD">
+    <def-cat n="SP"><!--  c="Prep + SN/SD" -->
       <cat-item tags="SP.*"/>
     </def-cat>
     <def-cat n="SVall">
@@ -303,8 +303,8 @@
           </or> -->
         </and>
       </test>
-      <let><clip c="drop number" pos="1" part="nbr"/><lit v=""/></let>
-      <let><clip c="drop person" pos="1" part="prs"/><lit v=""/></let>
+      <let><clip pos="1" part="nbr"/><lit v=""/></let><!-- c="drop number" -->
+      <let><clip pos="1" part="prs"/><lit v=""/></let><!-- c="drop person"  -->
       <let><var n="DEBUG"/><lit-tag v="1"/></let>
     </when>
 
@@ -324,8 +324,8 @@
           </or>
         </and>
       </test>
-      <let><clip c="drop number" pos="1" part="nbr"/><lit v=""/></let>
-      <let><clip c="drop person" pos="1" part="prs"/><lit v=""/></let>
+      <let><clip pos="1" part="nbr"/><lit v=""/></let><!-- c="drop number"  -->
+      <let><clip pos="1" part="prs"/><lit v=""/></let><!-- c="drop person"  -->
       <let><var n="DEBUG"/><lit-tag v="2"/></let>
     </when>
 <!--
@@ -355,7 +355,7 @@
       <test>
         <equal><clip pos="1" part="nbr"/><lit-tag v="ND"/></equal>
       </test>
-      <let><clip c="drop number" pos="1" part="nbr"/><lit v=""/></let>
+      <let><clip pos="1" part="nbr"/><lit v=""/></let><!-- c="drop number"  -->
     </when>
   </choose>
   <choose>
@@ -363,7 +363,7 @@
       <test>
         <equal><clip pos="1" part="prs"/><lit-tag v="PD"/></equal>
       </test>
-      <let><clip c="drop person" pos="1" part="prs"/><lit v=""/></let>
+      <let><clip pos="1" part="prs"/><lit v=""/></let><!-- c="drop person"  -->
     </when>
   </choose>
 

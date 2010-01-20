@@ -4,7 +4,7 @@
 
   <section-def-cats>
 
-    <def-cat c="saluton" n="nomxxxxxxx">
+    <def-cat n="nomxxxxxxx">
       <cat-item name="nomxxxxxxxxxxxxxxx"/>
     </def-cat>
 
@@ -40,7 +40,7 @@
   </section-def-cats>
 
   <section-def-attrs>
-    <def-attr c="saluton" n="a_nom">
+    <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
@@ -63,11 +63,11 @@
   </section-def-vars>
 
   <section-def-macros>
-    <def-macro c="saluton" n="drop_gender1" npar="1">   
+    <def-macro n="drop_gender1" npar="1">
         <choose>
-          <when c="saluton">
-            <test c="saluton">
-              <equal><clip c="saluton" pos="1" part="a_gen"/><lit-tag v="GN"/></equal>
+          <when>
+            <test>
+              <equal><clip pos="1" part="a_gen"/><lit-tag v="GN"/></equal>
             </test>
             <let><clip pos="1" part="a_gen"/><lit v=""/></let>
            </when>

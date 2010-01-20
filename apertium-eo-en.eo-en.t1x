@@ -224,8 +224,7 @@
       <cat-item lemma="decembro" tags="n.*"/>
     </def-cat>
 
-    <def-cat n="tempo" c="
-    Tempaj aferoj antaŭ kiuj '(ek)de' devas fariĝi ne 'of', sed 'from'">
+    <def-cat n="tempo"> <!--  c="Tempaj aferoj antaŭ kiuj '(ek)de' devas fariĝi ne 'of', sed 'from'" -->
       <cat-item lemma="lundo" tags="n.*"/>
       <cat-item lemma="mardo" tags="n.*"/>
       <cat-item lemma="merkredo" tags="n.*"/>
@@ -247,8 +246,7 @@
       <cat-item lemma="decembro" tags="n.*"/>
     </def-cat>
 
-    <def-cat n="tempo2" c="
-    Tempaj aferoj antaŭ kiuj oni devas ŝanĝi prepozicion kaj eventuale aldoni 'ago'">
+    <def-cat n="tempo2"> <!--  c="Tempaj aferoj antaŭ kiuj oni devas ŝanĝi prepozicion kaj eventuale aldoni 'ago'" -->
       <cat-item lemma="lundo" tags="n.*"/>
       <cat-item lemma="mardo" tags="n.*"/>
       <cat-item lemma="merkredo" tags="n.*"/>
@@ -444,12 +442,12 @@
        <list-item v="oni"/>
     </def-list>
 
-
-    <def-list n="adj_kun_sint" c="
+<!-- c="
     Adjektivoj kiuj en la angla estas sintezaj,
     ekz. big, bigger, biggest.
     kaj ne big, more big, most big.
-    Tiuj estas markitaj en en.dix per la marko (sint)">
+    Tiuj estas markitaj en en.dix per la marko (sint)"-->
+    <def-list n="adj_kun_sint">
       <list-item v="able"/>
       <list-item v="angry"/>
       <list-item v="apt"/>
@@ -676,9 +674,10 @@
       <list-item v="young"/>
     </def-list>
 
-    <def-list n="lingvoj" c="
+<!--  c="
     Lingvoj, por ne aldoni la artikolon antaŭ ili
-    en la angla">
+    en la angla" -->
+    <def-list n="lingvoj">
       <list-item v="angla"/>
       <list-item v="germana"/>
       <list-item v="dana"/>
@@ -816,18 +815,18 @@
 <!-- Ĉi tiu makroo akceptas adv kaj adj kiel respektive unuan kaj duan parametrojn kaj analizas, ĉu temas
 pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
 <def-macro n="adv_adj" npar="2">
-<choose c="Ĉu estas pli aŭ plej? Ekz: 'tre bona'">
+<choose><!--  c="Ĉu estas pli aŭ plej? Ekz: 'tre bona'" -->
 <when>
   <test>
   <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="l_pli_plej"/></in>
   </test>
-   <choose c="Ĉu estas sinteza adjektivo? Ekz pli bona → better(sint)(comp)">
+   <choose><!--  c="Ĉu estas sinteza adjektivo? Ekz pli bona → better(sint)(comp)" -->
      <when>
     <test>
     <in caseless="yes"><clip pos="2" side="tl" part="lemh"/><list n="adj_kun_sint"/></in>
     </test>
       <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
-    <choose c="Ĉu pli aŭ plej? Metu (comp) aŭ (sup) en variablo">
+    <choose><!--  c="Ĉu pli aŭ plej? Metu (comp) aŭ (sup) en variablo" -->
     <when>
       <test>
       <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="pli"/></equal>
@@ -836,14 +835,14 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
         <clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.comp"/>
       </concat></let>
     </when>
-    <otherwise c="ne estis 'pli' do devas esti 'plej'">
+    <otherwise><!--  c="ne estis 'pli' do devas esti 'plej'" -->
       <let><var n="adv_adjectiu"/><concat>
         <clip pos="2" side="tl" part="lem"/><lit-tag v="adj.sint.sup"/>
       </concat></let>
     </otherwise>
      </choose>
     </when>
-    <otherwise c="ne estis sint - la variablo devas enhavi ambaŭ vortojn">
+    <otherwise><!--  c="ne estis sint - la variablo devas enhavi ambaŭ vortojn" -->
       <let><var n="adv_adjectiu"/><concat>
         <clip pos="1" side="tl" part="whole"/>
         <lit v="$"/><b pos="1"/><lit v="^"/>
@@ -854,7 +853,7 @@ pri konstruo el la tipo 'pli granda', kiu estas sinteza en la angla -->
     </otherwise>
   </choose>
 </when>
-  <otherwise c="ne estis pli aŭ plej - la variablo devas enhavi ambaŭ vortojn">
+  <otherwise><!--  c="ne estis pli aŭ plej - la variablo devas enhavi ambaŭ vortojn" -->
       <let><var n="adv_adjectiu"/><concat>
         <clip pos="1" side="tl" part="whole"/>
         <lit v="$"/><b pos="1"/><lit v="^"/>

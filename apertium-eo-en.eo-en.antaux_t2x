@@ -10,7 +10,7 @@
       <cat-item tags="unknown"/>
       <cat-item tags="SN.*"/>
     </def-cat>
-    <def-cat n="SD" c="sintagmo determinita">
+    <def-cat n="SD"><!--  c="sintagmo determinita" -->
       <cat-item tags="SD.*"/>
       <cat-item tags="REL.*"/>    <!-- rilativo kun kaza indiko: kiu(j)(n), kio(n) -->
     </def-cat>
@@ -20,7 +20,7 @@
       <cat-item tags="SD.*"/>
       <cat-item tags="REL.*"/>    <!-- rilativo kun kaza indiko: kiu(j)(n), kio(n) -->
     </def-cat>
-    <def-cat n="SA" c="sintagmo adjektiva">
+    <def-cat n="SA"><!--  c="sintagmo adjektiva" -->
       <cat-item tags="SA.*"/>
     </def-cat>
     <def-cat n="num">

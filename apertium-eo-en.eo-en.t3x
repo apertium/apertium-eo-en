@@ -4,7 +4,7 @@
 
   <section-def-cats>
 
-    <def-cat c="saluton" n="nomxxxxxxx">
+    <def-cat n="nomxxxxxxx">
       <cat-item name="nomxxxxxxxxxxxxxxx"/>
     </def-cat>
 
@@ -62,14 +62,14 @@
       <attr-item tags="acc"/>
     </def-attr>
   </section-def-attrs>
-  
+
   <section-def-vars>
     <def-var n="paraula"/>
   </section-def-vars>
 
 
   <section-def-macros>
-    <def-macro n="drop_nomacc1" npar="1">   
+    <def-macro n="drop_nomacc1" npar="1">
     <!--
         <choose>
           <when>
