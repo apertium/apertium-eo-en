@@ -27440,7 +27440,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <jacobEo> transfer makes "much" plural.
 <jacobEo> but its sg in en.dix
 -->
-<e lm="much" r="RL">     <p><l>many</l><r>much</r></p><par n="many__det"/></e>
+<e i="yes" lm="much" r="RL">     <p><l>many</l><r>much</r></p><par n="many__det"/></e>
 
 <!--
 <jacobEo> spectie: whats the word class of "much" in: A) mixed at much lower temperatures.  B)  Although much of the Westndash   ?
@@ -27540,7 +27540,7 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="so much">         <i>so<b/>much</i><par n="much__det"/></e>
 <!-- It appears that much of the original -->
 <e r="RL" lm="that much">       <i>that<b/>much</i><par n="much__det"/></e>
-<e r="RL">     <p><l>that<b/>many</l><r>that<b/>much</r></p><par n="many__det"/></e>
+<e i="yes" r="RL">     <p><l>that<b/>many</l><r>that<b/>much</r></p><par n="many__det"/></e>
 
 
 <e lm="some">            <i>some</i><par n="enough__det"/></e>

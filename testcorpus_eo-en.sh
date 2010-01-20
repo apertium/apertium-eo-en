@@ -14,9 +14,10 @@ fi
 
 echo "diff -w $ORIGINA $NOVA | grep -r '[<>]' > $TMP-crpdiff.txt && for i in \`cut -c3-8 $TMP-crpdiff.txt | sort -un\`; do echo  --- \$i ---; grep -r \"^ *\$i\\.\" $CRP; grep -r \"^. *\$i\\.\" $TMP-crpdiff.txt; done | less"
 
-make -s -j 3 && cat $CRP | apertium -d . eo-en-compounds > $NOVA || exit
+echo "cat $CRP | apertium -d . eo-en"
+#make -s -j 3 && cat $CRP | apertium -d . eo-en-compounds > $NOVA || exit
 #make -s -j 3 && cat $CRP | apertium -d . eo-en-j > $NOVA || exit
-#make -s -j 3 && cat $CRP | apertium -d . eo-en > $NOVA || exit
+make -s -j 3 && cat $CRP | apertium -d . eo-en > $NOVA || exit
 echo
 grep '#' $NOVA && echo -e "^ Estis mankoj eo la cellingva dix, montrata supre ^\n"
 grep '@' $NOVA && echo -e "^ Estis mankoj eo la dulingva dix, montrata supre ^\n"
