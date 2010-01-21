@@ -3,8 +3,9 @@ Esperanto--English
 You need apertium-3.1 and lttoolbox-3.1 to use this translator.
 To compile the linguistical data simply do:
 
-sh autoconf.sh
+./configure       (or sh autogen.sh if you have downloaded from SVN)
 make
+make install
 
 inside of this directory.
 
