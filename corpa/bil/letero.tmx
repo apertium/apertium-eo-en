@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <tmx version="version 1.1">
-<header creationtool="Apertium TMX Builder">
-</header><body><tu>
+<header creationtool="Apertium TMX Builder"
+        creationtoolversion="3.2.0"
+        segtype="sentence"
+        srclang="eo"
+        adminlang="en"
+        datatype="plaintext">
+</header>
+<body>
+<tu>
   <tuv xml:lang="eo"><seg>ELTIRO EL PRIVATA LETERO DE D-RO ZAMENHOF AL S-RO B.,</seg></tuv>
   <tuv xml:lang="en"><seg>THE BIRTH OF ESPERANTO</seg></tuv>
 </tu>

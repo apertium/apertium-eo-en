@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <tmx version="version 1.1">
-<header creationtool="Apertium TMX Builder">
-</header><body><tu>
+<header creationtool="Apertium TMX Builder"
+        creationtoolversion="3.2.0"
+        segtype="sentence"
+        srclang="eo"
+        adminlang="en"
+        datatype="plaintext">
+</header>
+<body>
+<tu>
   <tuv xml:lang="eo"><seg>Multaj birdoj flugas dum la aŭtuno en plivarmajn landojn</seg></tuv>
   <tuv xml:lang="en"><seg>Many birds fly in the autumn into warmer countries</seg></tuv>
 </tu>
