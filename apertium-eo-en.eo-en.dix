@@ -943,7 +943,8 @@ BUT:
 <e>       <p><l>malmulta<s n="det"/><s n="qnt"/><s n="pl"/></l><r>few<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 
 
-<e>       <p><l>multe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+<e r="RL"><p><l>multe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
+<e>       <p><l>multe<b/>da<s n="det"/><s n="qnt"/><s n="sg"/></l><r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 <e r="LR"><p><l>multa<s n="det"/><s n="qnt"/><s n="sg"/></l><r>much<s n="det"/><s n="qnt"/><s n="sg"/></r></p></e>
 <e>       <p><l>multa<s n="det"/><s n="qnt"/><s n="pl"/></l><r>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>multa<s n="det"/><s n="qnt"/></l>      <r>a<b/>lot<b/>of<s n="det"/><s n="qnt"/></r></p></e>
@@ -1180,6 +1181,8 @@ BUT:
 <e>       <p><l>Ĉilio<s n="np"/><s n="top"/></l>       <r>Chile<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ĉinio<s n="np"/><s n="top"/></l>       <r>China<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Danio<s n="np"/><s n="top"/></l>       <r>Denmark<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Danubo<s n="np"/><s n="top"/></l>      <r>Danube<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Volgo<s n="np"/><s n="top"/></l>       <r>Volga<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Dublino<s n="np"/><s n="top"/></l>     <r>Dublin<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Edinburgo<s n="np"/><s n="top"/></l>   <r>Edinburgh<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Egiptio<s n="np"/><s n="top"/></l>     <r>Egypt<s n="np"/><s n="top"/></r></p></e>
@@ -1528,9 +1531,11 @@ BUT:
 <e r="LR"><p><l>Sovet-Unio<s n="np"/><s n="top"/></l>  <r>Soviet<b/>Union<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>sveda<s n="adj"/></l>                  <r>Swedish<s n="adj"/></r></p></e>
 <e r="RL"><p><l>svedo<s n="n"/></l>                    <r>Swedish<s n="n"/></r></p></e>
-<e>       <p><l>svedo<s n="n"/></l>                    <r>swede<s n="n"/></r></p></e>
+<e>       <p><l>svedo<s n="n"/></l>                    <r>Swede<s n="n"/></r></p></e>
 <e>       <p><l>svisa<s n="adj"/></l>                  <r>Swiss<s n="adj"/></r></p></e>
 <e>       <p><l>turka<s n="adj"/></l>                  <r>Turkish<s n="adj"/></r></p></e>
+<e>       <p><l>tjurka<s n="adj"/></l>                 <r>Turkic<s n="adj"/></r></p></e>
+<e>       <p><l>kurda<s n="adj"/></l>                  <r>Kurdish<s n="adj"/></r></p></e>
 <e>       <p><l>albana<s n="adj"/></l>                 <r>Albanian<s n="adj"/></r></p></e>
 <e>       <p><l>amerika<s n="adj"/></l>                <r>American<s n="adj"/></r></p></e>
 <e>       <p><l>nord-amerika<s n="adj"/></l>           <r>North<b/>American<s n="adj"/></r></p></e>
@@ -1580,14 +1585,12 @@ BUT:
 <e>       <p><l>slovako<s n="n"/></l>                  <r>Slovak<s n="n"/></r></p></e>
 <e>       <p><l>ĉeĥa<s n="adj"/></l>                   <r>Czech<s n="adj"/></r></p></e>
 <e>       <p><l>ĉeĥo<s n="n"/></l>                     <r>Czech<s n="n"/></r></p></e>
-<e>       <p><l>ukraina<s n="adj"/></l>                <r>Ukranian<s n="adj"/></r></p></e>
-<e>       <p><l>ukraino<s n="n"/></l>                  <r>Ukranian<s n="n"/></r></p></e>
-<e r="LR"><p><l>ukrajnana<s n="adj"/></l>              <r>Ukranian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>ukrajnano<s n="n"/></l>                <r>Ukranian<s n="n"/></r></p></e>
-<e>       <p><l>belorusa<s n="adj"/></l>               <r>Belarussian<s n="adj"/></r></p></e>
-<e>       <p><l>beloruso<s n="n"/></l>                 <r>Belarussian<s n="n"/></r></p></e>
-<e r="LR"><p><l>bjelorusa<s n="adj"/></l>              <r>Belarussian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>bjeloruso<s n="n"/></l>                <r>Belarussian<s n="n"/></r></p></e>
+<e>       <p><l>belorusa<s n="adj"/></l>               <r>Belarusian<s n="adj"/></r></p></e>
+<e>       <p><l>beloruso<s n="n"/></l>                 <r>Belarusian<s n="n"/></r></p></e>
+<e r="RL"><p><l>belorusa<s n="adj"/></l>               <r>Byelorussian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>beloruso<s n="n"/></l>                 <r>Byelorussian<s n="n"/></r></p></e>
+<e r="LR"><p><l>bjelorusa<s n="adj"/></l>              <r>Belarusian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>bjeloruso<s n="n"/></l>                <r>Belarusian<s n="n"/></r></p></e>
 <e>       <p><l>armena<s n="adj"/></l>                 <r>Armenian<s n="adj"/></r></p></e>
 <e>       <p><l>armeno<s n="n"/></l>                   <r>Armenian<s n="n"/></r></p></e>
 <e>       <p><l>kartvela<s n="adj"/></l>               <r>Georgian<s n="adj"/></r></p></e>
@@ -1625,13 +1628,11 @@ BUT:
 <e r="RL"><p><l>mongola<s n="adj"/></l>                <r>Mongol<s n="adj"/></r></p></e>
 <e r="RL"><p><l>mongolo<s n="n"/></l>                  <r>Mongol<s n="n"/></r></p></e>
 <e>       <p><l>mongola<s n="adj"/></l>                <r>Mongolian<s n="adj"/></r></p></e>
-<e>       <p><l>mongolo<s n="n"/></l>                  <r>Mongolian<s n="n"/></r></p></e>
-<!-- jam estas <e>       <p><l>perso<s n="n"/></l>                    <r>Persian<s n="n"/></r></p></e>
-
-<e>       <p><l>perso<s n="n"/></l>                 <r>Persian<s n="n"/></r></p></e>
--->
+<e>       <p><l>mongolo<s n="n"/></l>                  <r>Mongol<s n="n"/></r></p></e>
 <e>       <p><l>irana<s n="adj"/></l>                  <r>Iranian<s n="adj"/></r></p></e>
 <e>       <p><l>iranano<s n="n"/></l>                  <r>Iranian<s n="n"/></r></p></e>
+<e>       <p><l>iraka<s n="adj"/></l>                  <r>Iraqi<s n="adj"/></r></p></e>
+<e>       <p><l>irakano<s n="n"/></l>                  <r>Iraqi<s n="n"/></r></p></e>
 <e>       <p><l>ĉuvaŝa<s n="adj"/></l>                 <r>Chuvash<s n="adj"/></r></p></e>
 <e>       <p><l>ĉuvaŝo<s n="n"/></l>                   <r>Chuvash<s n="n"/></r></p></e>
 <e>       <p><l>nepala<s n="adj"/></l>                 <r>Nepali<s n="adj"/></r></p></e>
@@ -1682,7 +1683,8 @@ BUT:
 <e>       <p><l>skoto<s n="n"/></l>                    <r>Scot<s n="n"/></r></p></e>
 <e r="RL"><p><l>skoto<s n="n"/></l>                    <r>Scots<s n="n"/></r></p></e>
 <e r="RL"><p><l>skoto<s n="n"/><s n="f"/></l>          <r>Scotswoman<s n="n"/></r></p></e>
-<e>       <p><l>turko<s n="n"/></l>                    <r>Turkish<s n="n"/></r></p></e>
+<e>       <p><l>turko<s n="n"/></l>                    <r>Turk<s n="n"/></r></p></e>
+<e>       <p><l>kurdo<s n="n"/></l>                    <r>Kurd<s n="n"/></r></p></e>
 <e>       <p><l>valenciano<s n="n"/></l>               <r>Valencian<s n="n"/></r></p></e>
 <e>       <p><l>skandinavo<s n="n"/></l>               <r>Scandinavian<s n="n"/></r></p></e>
 <e>       <p><l>aŭstro<s n="n"/></l>                   <r>Austrian<s n="n"/></r></p></e>
@@ -2375,6 +2377,7 @@ TODO??
 <e>       <p><l>naskiĝi<s n="vblex"/></l>              <r>be<g><b/>born</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>noti<s n="vblex"/></l>                 <r>note<g><b/>down</g><s n="vblex"/><s n="sep"/></r></p></e>
 <e r="RL"><p><l>okazi<s n="vblex"/></l>                <r>take<g><b/>place</g><s n="vblex"/></r></p></e>
+<e r="RL"><p><l>ekregi<s n="vblex"/></l>               <r>take<g><b/>control<b/>of</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>partopreni<s n="vblex"/></l>           <r>take<g><b/>part</g><s n="vblex"/></r></p></e>
 <e>       <p><l>prizorgi<s n="vblex"/></l>             <r>take<g><b/>care</g><s n="vblex"/></r></p></e>
 <e r="RL"><p><l>peti<s n="vblex"/></l>                 <r>ask<g><b/>for</g><s n="vblex"/></r></p></e>
@@ -3679,7 +3682,7 @@ TODO??
 <e>       <p><l>aŭtomobilo<s n="n"/></l>               <r>auto<s n="n"/></r></p></e>
 <e>       <p><l>aŭtomata<s n="adj"/></l>               <r>automatic<s n="adj"/></r></p></e>
 <e>       <p><l>aŭtomate<s n="adv"/></l>               <r>automatically<s n="adv"/></r></p></e>
-<e>       <p><l>memstara<s n="adj"/></l>               <r>autonomous<s n="adj"/></r></p></e>
+<e>       <p><l>aŭtonoma<s n="adj"/></l>               <r>autonomous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aŭtonomeca<s n="adj"/></l>             <r>autonomous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aŭtonomia<s n="adj"/></l>              <r>autonomous<s n="adj"/></r></p></e>
 <e>       <p><l>memstareco<s n="n"/></l>               <r>autonomy<s n="n"/></r></p></e>
@@ -4671,7 +4674,7 @@ TODO??
 <e r="LR"><p><l>fripono<s n="n"/></l>                  <r>cheat<s n="n"/></r></p></e>
 <e r="LR"><p><l>trompludi<s n="vblex"/></l>            <r>cheat<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>friponadi<s n="vblex"/></l>            <r>cheat<s n="vblex"/></r></p></e>
-<e>       <p><l>kontrolo<s n="n"/></l>                 <r>check<s n="n"/></r></p></e>
+<e r="RL"><p><l>kontrolo<s n="n"/></l>                 <r>check<s n="n"/></r></p></e>
 <e r="LR"><p><l>inspektado<s n="n"/></l>               <r>check<s n="n"/></r></p></e>
 <e r="LR"><p><l>inspekto<s n="n"/></l>                 <r>check<s n="n"/></r></p></e>
 <e r="LR"><p><l>hoketo<s n="n"/></l>                   <r>check<s n="n"/></r></p></e>
@@ -4753,6 +4756,7 @@ TODO??
 <e>       <p><l>cigaro<s n="n"/></l>                   <r>cigar<s n="n"/></r></p></e>
 <e>       <p><l>cigaredo<s n="n"/></l>                 <r>cigarette<s n="n"/></r></p></e>
 <e>       <p><l>kinejo<s n="n"/></l>                   <r>cinema<s n="n"/></r></p></e>
+<e r="LR"><p><l>kino<s n="n"/></l>                     <r>cinema<s n="n"/></r></p></e>
 <e>       <p><l>cinamo<s n="n"/></l>                   <r>cinnamon<s n="n"/></r></p></e>
 <e>       <p><l>cirklo<s n="n"/></l>                   <r>circle<s n="n"/></r></p></e>
 <e r="LR"><p><l>konataro<s n="n"/></l>                 <r>circle<s n="n"/></r></p></e>
@@ -5187,6 +5191,7 @@ TODO??
 <e>       <p><l>interkonsentiĝo<s n="n"/></l>          <r>consensus<s n="n"/></r></p></e>
 <e>       <p><l>sekvo<s n="n"/></l>                    <r>consequence<s n="n"/></r></p></e>
 <e r="LR"><p><l>sekvaĵo<s n="n"/></l>                  <r>consequence<s n="n"/></r></p></e>
+<e r="LR"><p><l>konsekvenco<s n="n"/></l>              <r>consequence<s n="n"/></r></p></e>
 <e>       <p><l>konservado<s n="n"/></l>               <r>conservation<s n="n"/></r></p></e>
 <e>       <p><l>konservativa<s n="adj"/></l>           <r>conservative<s n="adj"/></r></p></e>
 <e r="LR"><p><l>modera<s n="adj"/></l>                 <r>conservative<s n="adj"/></r></p></e>
@@ -5195,7 +5200,6 @@ TODO??
 <e r="RL"><p><l>konsidero<s n="n"/></l>                <r>consideration<s n="n"/></r></p></e>
 <e r="LR"><p><l>pripensado<s n="n"/></l>               <r>consideration<s n="n"/></r></p></e>
 <e r="LR"><p><l>komplezemo<s n="n"/></l>               <r>consideration<s n="n"/></r></p></e>
-<e r="LR"><p><l>ŝatateco<s n="n"/></l>                 <r>consideration<s n="n"/></r></p></e>
 <e>       <p><l>konsideri<s n="vblex"/></l>            <r>consider<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>ekspedi<s n="vblex"/></l>              <r>consign<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>destini<s n="vblex"/></l>              <r>consign<s n="vblex"/></r></p></e>
@@ -5304,7 +5308,8 @@ TODO??
 <e r="LR"><p><l>monkontribuo<s n="n"/></l>             <r>contribution<s n="n"/></r></p></e>
 <e>       <p><l>artifiki<s n="vblex"/></l>             <r>contrive<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>komploti<s n="vblex"/></l>             <r>contrive<s n="vblex"/></r></p></e>
-<e>       <p><l>rego<s n="n"/></l>                     <r>control<s n="n"/></r></p></e>
+<e>       <p><l>kontrolo<s n="n"/></l>                 <r>control<s n="n"/></r></p></e>
+<e r="LR"><p><l>rego<s n="n"/></l>                     <r>control<s n="n"/></r></p></e>
 <e r="LR"><p><l>regado<s n="n"/></l>                   <r>control<s n="n"/></r></p></e>
 <e r="LR"><p><l>regilo<s n="n"/></l>                   <r>control<s n="n"/></r></p></e>
 <e r="LR"><p><l>regulilo<s n="n"/></l>                 <r>control<s n="n"/></r></p></e>
@@ -8035,6 +8040,10 @@ TODO??
 <e r="LR"><p><l>Turkmenistano<s n="np"/><s n="top"/></l><r>Turkmenistan<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ĉuvaŝio<s n="np"/><s n="top"/></l>     <r>Chuvashia<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Gruzio<s n="np"/><s n="top"/></l>      <r>Georgia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Irano<s n="np"/><s n="top"/></l>       <r>Iran<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Irako<s n="np"/><s n="top"/></l>       <r>Iraq<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Anatolio<s n="np"/><s n="top"/></l>    <r>Anatolia<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Bosforo<s n="np"/><s n="top"/></l>     <r>Bosporus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>mikrobo<s n="n"/></l>                  <r>germ<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝermo<s n="n"/></l>                    <r>germ<s n="n"/></r></p></e>
 <e r="LR"><p><l>germaneca<s n="adj"/></l>              <r>German<s n="adj"/></r></p></e>
@@ -8809,8 +8818,8 @@ TODO??
 <e r="LR"><p><l>sendependiĝo<s n="n"/></l>             <r>independence<s n="n"/></r></p></e>
 <e r="LR"><p><l>nepartieco<s n="n"/></l>               <r>independence<s n="n"/></r></p></e>
 <e>       <p><l>sendependa<s n="adj"/></l>             <r>independent<s n="adj"/></r></p></e>
+<e r="LR"><p><l>memstara<s n="adj"/></l>               <r>independent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>senpera<s n="adj"/></l>                <r>independent<s n="adj"/></r></p></e>
-<e r="LR"><p><l>aŭtonoma<s n="adj"/></l>               <r>independent<s n="adj"/></r></p></e>
 <e>       <p><l>sendepende<s n="adv"/></l>             <r>independently<s n="adv"/></r></p></e>
 <e r="LR"><p><l>senpere<s n="adv"/></l>                <r>independently<s n="adv"/></r></p></e>
 <e r="LR"><p><l>unuopule<s n="adv"/></l>               <r>independently<s n="adv"/></r></p></e>
@@ -9797,7 +9806,6 @@ TODO??
 <e r="LR"><p><l>amatino<s n="n"/></l>                  <r>love<s n="n"/></r></p></e>
 <e r="LR"><p><l>erotiko<s n="n"/></l>                  <r>love<s n="n"/></r></p></e>
 <e r="LR"><p><l>homamo<s n="n"/></l>                   <r>love<s n="n"/></r></p></e>
-<e r="LR"><p><l>estimo<s n="n"/></l>                   <r>love<s n="n"/></r></p></e>
 <e r="LR"><p><l>ĝuegi<s n="vblex"/></l>                <r>love<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>bela<s n="adj"/></l>                   <r>lovely<s n="adj"/></r></p></e>
 <e>       <p><l>amanto<s n="n"/></l>                   <r>lover<s n="n"/></r></p></e>
@@ -10426,6 +10434,7 @@ TODO??
 <e r="LR"><p><l>buŝumo<s n="n"/></l>                   <r>muzzle<s n="n"/></r></p></e>
 <e r="LR"><p><l>muzelo<s n="n"/></l>                   <r>muzzle<s n="n"/></r></p></e>
 <e>       <p><l>mistera<s n="adj"/></l>                <r>mysterious<s n="adj"/></r></p></e>
+<e>       <p><l>mistere<s n="adv"/></l>                <r>mysteriously<s n="adv"/></r></p></e>
 <e>       <p><l>mistero<s n="n"/></l>                  <r>mystery<s n="n"/></r></p></e>
 <e r="LR"><p><l>kaŝitaĵo<s n="n"/></l>                 <r>mystery<s n="n"/></r></p></e>
 <e>       <p><l>mito<s n="n"/></l>                     <r>myth<s n="n"/></r></p></e>
@@ -11946,8 +11955,8 @@ TODO??
 <e>       <p><l>pronomo<s n="n"/></l>                  <r>pronoun<s n="n"/></r></p></e>
 <e>       <p><l>prononci<s n="vblex"/></l>             <r>pronounce<s n="vblex"/></r></p></e>
 <e>       <p><l>prononco<s n="n"/></l>                 <r>pronunciation<s n="n"/></r></p></e>
-<e>       <p><l>fipropagando<s n="n"/></l>             <r>propaganda<s n="n"/></r></p></e>
-<e r="LR"><p><l>propagando<s n="n"/></l>               <r>propaganda<s n="n"/></r></p></e>
+<e>       <p><l>propagando<s n="n"/></l>               <r>propaganda<s n="n"/></r></p></e>
+<e r="LR"><p><l>fipropagando<s n="n"/></l>             <r>propaganda<s n="n"/></r></p></e>
 <e r="LR"><p><l>dissemi<s n="vblex"/></l>              <r>propagate<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>dissemiĝi<s n="vblex"/></l>            <r>propagate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>disvastigi<s n="vblex"/></l>           <r>propagate<s n="vblex"/></r></p></e>
@@ -14117,6 +14126,7 @@ TODO??
 <e r="LR"><p><l>raso<s n="n"/></l>                     <r>strain<s n="n"/></r></p></e>
 <e r="RL"><p><l>stranga<s n="adj"/></l>                <r>strange<s n="adj"/></r></p></e>
 <e>       <p><l>strategio<s n="n"/></l>                <r>strategy<s n="n"/></r></p></e>
+<e>       <p><l>geostrategio<s n="n"/></l>             <r>geostrategy<s n="n"/></r></p></e>
 <e>       <p><l>strato<s n="n"/></l>                   <r>street<s n="n"/></r></p></e>
 <e>       <p><l>tramo<s n="n"/></l>                    <r>streetcar<s n="n"/></r></p></e>
 <e r="RL"><p><l>forto<s n="n"/></l>                    <r>strength<s n="n"/></r></p></e>
@@ -14275,6 +14285,7 @@ TODO??
 <e r="LR"><p><l>prosperado<s n="n"/></l>               <r>success<s n="n"/></r></p></e>
 <e>       <p><l>sukcesa<s n="adj"/></l>                <r>successful<s n="adj"/></r></p></e>
 <e r="RL"><p><l>sinsekva<s n="adj"/></l>               <r>successive<s n="adj"/></r></p></e>
+<e r="RL"><p><l>sinsekve<s n="adv"/></l>               <r>successively<s n="adv"/></r></p></e>
 <e>       <p><l>posteulo<s n="n"/></l>                 <r>successor<s n="n"/></r></p></e>
 <e r="LR"><p><l>postiranto<s n="n"/></l>               <r>successor<s n="n"/></r></p></e>
 <e r="LR"><p><l>sekvinto<s n="n"/></l>                 <r>successor<s n="n"/></r></p></e>
@@ -14733,7 +14744,6 @@ TODO??
 <e>       <p><l>milo<s n="n"/></l>                     <r>thousand<s n="n"/></r></p></e>
 <e>       <p><l>fadeno<s n="n"/></l>                   <r>thread<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝnurero<s n="n"/></l>                  <r>thread<s n="n"/></r></p></e>
-<e r="LR"><p><l>konsekvenco<s n="n"/></l>              <r>thread<s n="n"/></r></p></e>
 <e r="LR"><p><l>mesaĝaro<s n="n"/></l>                 <r>thread<s n="n"/></r></p></e>
 <e>       <p><l>minaco<s n="n"/></l>                   <r>threat<s n="n"/></r></p></e>
 <e r="LR"><p><l>atenco<s n="n"/></l>                   <r>threat<s n="n"/></r></p></e>
@@ -17931,6 +17941,7 @@ TODO??
 <e>       <p><l>senkapigi<s n="vblex"/></l>            <r>behead<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>estado<s n="n"/></l>                   <r>being<s n="n"/></r></p></e>
 <e>       <p><l>Belorusio<s n="np"/><s n="top"/></l>   <r>Belarus<s n="np"/><s n="top"/></r></p></e>
+<e r="RL"><p><l>Belorusio<s n="np"/><s n="top"/></l>   <r>Byelorussia<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Bjelorusio<s n="np"/><s n="top"/></l>  <r>Belarus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>rukti<s n="vblex"/></l>                <r>belch<s n="vblex"/></r></p></e>
 <e>       <p><l>kredanto<s n="n"/></l>                 <r>believer<s n="n"/></r></p></e>
@@ -19003,11 +19014,9 @@ TODO??
 <e r="RL"><p><l>sekve<s n="adv"/></l>                  <r>consequently<s n="adv"/></r></p></e>
 <e r="LR"><p><l>rezulte<s n="adv"/></l>                <r>consequently<s n="adv"/></r></p></e>
 <e>       <p><l>konservativismo<s n="n"/></l>          <r>conservatism<s n="n"/></r></p></e>
-<e r="RL"><p><l>konsekvenco<s n="n"/></l>              <r>consistency<s n="n"/></r></p></e>
 <e r="LR"><p><l>konsekvenceco<s n="n"/></l>            <r>consistency<s n="n"/></r></p></e>
-<e r="LR"><p><l>konsisteco<s n="n"/></l>               <r>consistency<s n="n"/></r></p></e>
-<e r="RL"><p><l>konstante<s n="adv"/></l>              <r>consistently<s n="adv"/></r></p></e>
-<e r="LR"><p><l>konsekvence<s n="adv"/></l>            <r>consistently<s n="adv"/></r></p></e>
+<e>       <p><l>konsistenco<s n="n"/></l>              <r>consistency<s n="n"/></r></p></e>
+<e       ><p><l>konsekvence<s n="adv"/></l>            <r>consistently<s n="adv"/></r></p></e>
 <e>       <p><l>konsistorio<s n="n"/></l>              <r>consistory<s n="n"/></r></p></e>
 <e>       <p><l>konsonanco<s n="n"/></l>               <r>consonance<s n="n"/></r></p></e>
 <e>       <p><l>konsonanto<s n="n"/></l>               <r>consonant<s n="n"/></r></p></e>
@@ -25343,6 +25352,8 @@ TODO??
 <e>       <p><l>strategia<s n="adj"/></l>              <r>strategic<s n="adj"/></r></p></e>
 <e>       <p><l>strategie<s n="adv"/></l>              <r>strategically<s n="adv"/></r></p></e>
 <e>       <p><l>strategiisto<s n="n"/></l>             <r>strategist<s n="n"/></r></p></e>
+<e>       <p><l>geostrategia<s n="adj"/></l>           <r>geostrategic<s n="adj"/></r></p></e>
+<e>       <p><l>geostrategie<s n="adv"/></l>           <r>geostrategically<s n="adv"/></r></p></e>
 <e>       <p><l>tavoliĝo<s n="n"/></l>                 <r>stratification<s n="n"/></r></p></e>
 <e r="LR"><p><l>tavoleco<s n="n"/></l>                 <r>stratification<s n="n"/></r></p></e>
 <e>       <p><l>tavoli<s n="vblex"/></l>               <r>stratify<s n="vblex"/></r></p></e>
@@ -28413,8 +28424,9 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>eskaladigo<s n="n"/></l>               <r>escalation<s n="n"/></r></p></e>
 <e r="RL"><p><l>subteno<s n="n"/></l>                  <r>espousal<s n="n"/></r></p></e>
 <e r="RL"><p><l>adopti<s n="vblex"/></l>               <r>espouse<s n="vblex"/></r></p></e>
-<e r="RL"><p><l>ŝatateco<s n="n"/></l>                 <r>estimation<s n="n"/></r></p></e>
-<e>       <p><l>estonia<s n="adj"/></l>                <r>estonian<s n="adj"/></r></p></e>
+<e       ><p><l>estimo<s n="n"/></l>                   <r>estimation<s n="n"/></r></p></e>
+<e>       <p><l>estona<s n="adj"/></l>                 <r>Estonian<s n="adj"/></r></p></e>
+<e>       <p><l>estono<s n="n"/></l>                   <r>Estonian<s n="n"/></r></p></e>
 <e>       <p><l>etikaro<s n="n"/></l>                  <r>ethic<s n="n"/></r></p></e>
 <e>       <p><l>etiopia<s n="adj"/></l>                <r>ethiopian<s n="adj"/></r></p></e>
 <e>       <p><l>etileno<s n="n"/></l>                  <r>ethylene<s n="n"/></r></p></e>
@@ -28744,7 +28756,8 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>falsi<s n="vblex"/></l>                <r>fudge<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>stimuli<s n="vblex"/></l>              <r>fuel<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>plenumi<s n="vblex"/></l>              <r>fulfill<s n="vblex"/></r></p></e>
-<e>       <p><l>sate<s n="adv"/></l>                   <r>full<s n="adv"/></r></p></e>
+<e r="RL"><p><l>plene<s n="adv"/></l>                  <r>full<s n="adv"/></r></p></e>
+<e r="LR"><p><l>sate<s n="adv"/></l>                   <r>full<s n="adv"/></r></p></e>
 <e>       <p><l>plenskala<s n="adj"/></l>              <r>fullscale<s n="adj"/></r></p></e>
 <e r="RL"><p><l>haladzo<s n="n"/></l>                  <r>fumes<s n="n"/></r></p></e>
 <e>       <p><l>kvesta<s n="adj"/></l>                 <r>fund-raising<s n="adj"/></r></p></e>
@@ -29386,7 +29399,6 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>necesa<s n="adj"/></l>                 <r>involved<s n="adj"/></r></p></e>
 <e r="LR"><p><l>bezonata<s n="adj"/></l>               <r>involved<s n="adj"/></r></p></e>
 <e>       <p><l>joto<s n="n"/></l>                     <r>iota<s n="n"/></r></p></e>
-<e>       <p><l>iraka<s n="adj"/></l>                  <r>iraqi<s n="adj"/></r></p></e>
 <e r="RL"><p><l>kolero<s n="n"/></l>                   <r>ire<s n="n"/></r></p></e>
 <e r="RL"><p><l>ĉagrena<s n="adj"/></l>                <r>irksome<s n="adj"/></r></p></e>
 <e r="RL"><p><l>nerevokebla<s n="adj"/></l>            <r>ironclad<s n="adj"/></r></p></e>
@@ -29513,7 +29525,10 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e>       <p><l>orientilo<s n="n"/></l>                <r>landmark<s n="n"/></r></p></e>
 <e r="RL"><p><l>terfalaĵo<s n="n"/></l>                <r>landslide<s n="n"/></r></p></e>
 <e r="RL"><p><l>pasi<s n="vblex"/></l>                 <r>lapse<s n="vblex"/></r></p></e>
-<e>       <p><l>latva<s n="adj"/></l>                  <r>latvian<s n="adj"/></r></p></e>
+<e>       <p><l>latva<s n="adj"/></l>                  <r>Latvian<s n="adj"/></r></p></e>
+<e>       <p><l>latvo<s n="n"/></l>                    <r>Latvian<s n="n"/></r></p></e>
+<e>       <p><l>litova<s n="adj"/></l>                 <r>Lithuanian<s n="adj"/></r></p></e>
+<e>       <p><l>litovo<s n="n"/></l>                   <r>Lithuanian<s n="n"/></r></p></e>
 <e r="RL"><p><l>laŭdinda<s n="adj"/></l>               <r>laudable<s n="adj"/></r></p></e>
 <e r="RL"><p><l>laŭdi<s n="vblex"/></l>                <r>laud<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>purigi<s n="vblex"/></l>               <r>launder<s n="vblex"/></r></p></e>
@@ -31883,8 +31898,10 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>etulo<s n="n"/></l>                    <r>tyke<s n="n"/></r></p></e>
 <e r="RL"><p><l>ĉiea<s n="adj"/></l>                   <r>ubiquitous<s n="adj"/></r></p></e>
 <e>       <p><l>nifo<s n="n"/></l>                     <r>ufo<s n="n"/></r></p></e>
-<e r="RL"><p><l>ukraina<s n="adj"/></l>                <r>ukrainian<s n="adj"/></r></p></e>
-<e r="LR"><p><l>ukrajna<s n="adj"/></l>                <r>ukrainian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>ukraina<s n="adj"/></l>                <r>Ukrainian<s n="adj"/></r></p></e>
+<e r="LR"><p><l>ukrajna<s n="adj"/></l>                <r>Ukrainian<s n="adj"/></r></p></e>
+<e r="RL"><p><l>ukraino<s n="n"/></l>                  <r>Ukrainian<s n="n"/></r></p></e>
+<e r="LR"><p><l>ukrajno<s n="n"/></l>                  <r>Ukrainian<s n="n"/></r></p></e>
 <e>       <p><l>netuŝita<s n="adj"/></l>               <r>unaffected<s n="adj"/></r></p></e>
 <e r="RL"><p><l>nepagebla<s n="adj"/></l>              <r>unaffordable<s n="adj"/></r></p></e>
 <e r="RL"><p><l>senŝanĝa<s n="adj"/></l>               <r>unaltered<s n="adj"/></r></p></e>

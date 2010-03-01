@@ -555,6 +555,13 @@
     </def-list>
 
 
+    <def-list n="thousands_millions">
+      <list-item v="hundred"/>
+      <list-item v="thousand"/>
+      <list-item v="million"/>
+    </def-list>
+
+
   </section-def-lists>
 
 
@@ -1985,6 +1992,32 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="firstWord"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
         <call-macro n="ordigu_genron"><with-param pos="2"/></call-macro>
+
+   <choose>
+     <when>
+       <test>
+         <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="thousands_millions"/></in>
+       </test>
+            <out>
+              <chunk name="nom_da_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN.nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
+                </lu>
+            <b/>
+            <lu><lit v="da"/><lit-tag v="pr"/></lu>
+            <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
+                </lu>
+              </chunk>
+            </out>
+     </when>
+     <otherwise>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
@@ -2004,6 +2037,8 @@ verbfinal = pensi<vblex><pres>
                 </lu>
               </chunk>
             </out>
+     </otherwise>
+   </choose>
       </action>
     </rule>
 
@@ -2816,6 +2851,40 @@ the ones who:the ones who<rel><nn><mf><pl>
               <clip pos="2" side="tl" part="a_vrb"/>
               <lit-tag v="3"/>
               <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA: to ADV VBLEXinf">
+      <pattern><!-- to run, to swim -->
+        <pattern-item n="to"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="vblexinf"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_tipus_verbs1"><with-param pos="3"/></call-macro>
+        <call-macro n="sendu_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="verbInf" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="tipus_verb"/></tag>
+              <tag><clip pos="3" side="tl" part="a_tns"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_vrb"/>
+              <lit-tag v="3"/>
+              <clip pos="3" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>

@@ -1361,6 +1361,8 @@
 <e lm="Ĉilio">           <par n="Ĉ"/><i>ili</i><par n="Barcelon/o__np"/></e>
 <e lm="Ĉinio">           <par n="Ĉ"/><i>in</i><par n="Afgan/io__np"/></e>
 <e lm="Danio">           <i>Dan</i><par n="Afgan/io__np"/></e>
+<e lm="Danubo">          <i>Danub</i><par n="Barcelon/o__np"/></e>
+<e lm="Volgo">           <i>Volg</i><par n="Barcelon/o__np"/></e>
 <e lm="Dublino">         <i>Dublin</i><par n="Barcelon/o__np"/></e>
 <e lm="Edinburgo">       <i>Edinburg</i><par n="Barcelon/o__np"/></e>
 <e lm="Egiptio">         <i>Egipt</i><par n="Afgan/io__np"/></e>
@@ -1385,6 +1387,8 @@
 <e lm="Hispanio">        <i>Hispan</i><par n="Afgan/io__np"/></e>
 <e lm="Hungario">        <i>Hungar</i><par n="Afgan/io__np"/></e>
 <e lm="Indonezio">       <i>Indonezi</i><par n="Barcelon/o__np"/></e>
+<e lm="Irako">           <i>Irak</i><par n="Barcelon/o__np"/></e>
+<e lm="Irano">           <i>Iran</i><par n="Barcelon/o__np"/></e>
 <e lm="Irlando">         <i>Irland</i><par n="Barcelon/o__np"/></e>
 <e lm="Islando">         <i>Island</i><par n="Barcelon/o__np"/></e>
 <e lm="Israelo">         <i>Israel</i><par n="Barcelon/o__np"/></e>
@@ -1407,7 +1411,6 @@
 <e lm="Kastilio-Leono">  <i>Kastilio-Leon</i><par n="Barcelon/o__np"/></e>
 <e lm="Katalunio">       <i>Katalun</i><par n="Afgan/io__np"/></e>
 <e lm="Kataro">          <i>Katar</i><par n="Barcelon/o__np"/></e>
-
 <e lm="Kipro">           <i>Kipr</i><par n="Barcelon/o__np"/></e>
 <e lm="Kolombio">        <i>Kolombi</i><par n="Barcelon/o__np"/></e>
 <e lm="Kongo">           <i>Kong</i><par n="Barcelon/o__np"/></e>
@@ -1419,8 +1422,6 @@
 <e lm="Sud-Ameriko">     <i>Sud-Amerik</i><par n="Barcelon/o__np"/></e>
 <e lm="Centr-Ameriko">   <i>Centr-Amerik</i><par n="Barcelon/o__np"/></e>
 <e lm="Latvio">          <i>Latv</i><par n="Afgan/io__np"/></e>
-
-
 <e lm="Libano">          <i>Liban</i><par n="Barcelon/o__np"/></e>
 <e lm="Liberio">         <i>Liberi</i><par n="Barcelon/o__np"/></e>
 <e lm="Libio">           <i>Libi</i><par n="Barcelon/o__np"/></e>
@@ -1456,6 +1457,7 @@
 <e lm="Paragvajo">       <i>Paragvaj</i><par n="Barcelon/o__np"/></e>
 <e lm="Parizo">          <i>Pariz</i><par n="Barcelon/o__np"/></e>
 <e lm="Pekino">          <i>Pekin</i><par n="Barcelon/o__np"/></e>
+<e lm="Persio">          <i>Pers</i><par n="Afgan/io__np"/></e>
 <e lm="Peruo">           <i>Peru</i><par n="Barcelon/o__np"/></e>
 <e lm="Pollando">        <i>Polland</i><par n="Barcelon/o__np"/></e>
 <e lm="Portugalio">      <i>Portugal</i><par n="Afgan/io__np"/></e>
@@ -1494,7 +1496,6 @@
 <e lm="Ukrainio">        <i>Ukrain</i><par n="Afgan/io__np"/></e>
 <e lm="Urugvajo">        <i>Urugvaj</i><par n="Barcelon/o__np"/></e>
 <e lm="Usono">           <i>Uson</i><par n="Barcelon/o__np"/></e>
-
 <e lm="Varsovio">        <i>Varsovi</i><par n="Barcelon/o__np"/></e>
 <e lm="Vaŝingtono">      <i>Va</i><par n="ŝ"/><i>ington</i><par n="Barcelon/o__np"/></e>
 <e lm="Venezuelo">       <i>Venezuel</i><par n="Barcelon/o__np"/></e>
@@ -1502,6 +1503,8 @@
 <e lm="Vjetnamio">       <i>Vjetnam</i><par n="Afgan/io__np"/></e>
 <e lm="Vaŝingtono">      <i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Mark__np"/></e>
 
+<e lm="Anatolio">        <i>Anatoli</i><par n="Barcelon/o__np"/></e>
+<e lm="Bosforo">         <i>Bosfor</i><par n="Barcelon/o__np"/></e>
 
   <!-- Nouns with tag nommf__n
        Tio signifas ke la formo -in- povas esti kreita,
@@ -1848,6 +1851,7 @@
 <e lm="trejnisto">       <i>trejnist</i><par n="ino__n"/></e>
 <e lm="turisto">         <i>turist</i><par n="ino__n"/></e>
 <e lm="turko">           <i>turk</i><par n="ino__n"/></e>
+<e lm="kurdo">           <i>kurd</i><par n="ino__n"/></e>
 <e lm="urbestro">        <i>urbestr</i><par n="ino__n"/></e>
 <e lm="uzanto">          <i>uzant</i><par n="ino__n"/></e>
 <e lm="valenciano">      <i>valencian</i><par n="ino__n"/></e>
@@ -4998,6 +5002,7 @@
 <e lm="misio">           <i>misi</i><par n="o__n"/></e>
 <e lm="miskompreno">     <i>miskompren</i><par n="o__n"/></e>
 <e lm="mistera">         <i>mister</i><par n="a__adj"/></e>
+<e lm="mistere">         <i>mister</i><par n="e__adv"/></e>
 <e lm="mistero">         <i>mister</i><par n="o__n"/></e>
 <e lm="mistrakti">       <i>mistrakt</i><par n="i__vblex"/></e>
 <e lm="misuzo">          <i>misuz</i><par n="o__n"/></e>
@@ -5945,6 +5950,7 @@
 <e lm="regenerado">      <i>regenerad</i><par n="o__n"/></e>
 <e lm="regeneri">        <i>regener</i><par n="i__vblex"/></e>
 <e lm="regi">            <i>reg</i><par n="i__vblex"/></e>
+<e r="RL" lm="ekregi">   <i>ekreg</i><par n="i__vblex"/></e>
 <e lm="regimento">       <i>regiment</i><par n="o__n"/></e>
 <e lm="reĝimo">          <i>re</i><par n="ĝ"/><i>im</i><par n="o__n"/></e>
 <e lm="regiono">         <i>region</i><par n="o__n"/></e>
@@ -6549,6 +6555,7 @@
 <e lm="strando">         <i>strand</i><par n="o__n"/></e>
 <e lm="stranga">         <i>strang</i><par n="a__adj"/></e>
 <e lm="strategio">       <i>strategi</i><par n="o__n"/></e>
+<e lm="geostrategio">    <i>geostrategi</i><par n="o__n"/></e>
 <e lm="strateto">        <i>stratet</i><par n="o__n"/></e>
 <e lm="strato">          <i>strat</i><par n="o__n"/></e>
 <e lm="streĉiĝo">        <i>stre</i><par n="ĉ"/><i>i</i><par n="ĝ"/><par n="o__n"/></e>
@@ -6918,6 +6925,8 @@
 <e lm="turbulado">       <i>turbulad</i><par n="o__n"/></e>
 <e lm="turismo">         <i>turism</i><par n="o__n"/></e>
 <e lm="turka">           <i>turk</i><par n="a__adj"/></e>
+<e lm="tjurka">          <i>tjurk</i><par n="a__adj"/></e>
+<e lm="kurda">           <i>kurd</i><par n="a__adj"/></e>
 <e lm="turkiso">         <i>turkis</i><par n="o__n"/></e>
 <e lm="turkisa">         <i>turkis</i><par n="a__adj"/></e>
 <e lm="turmenti">        <i>turment</i><par n="i__vblex"/></e>
@@ -11586,7 +11595,7 @@
 <e lm="pripensado">      <i>pripensad</i><par n="o__n"/></e>
 <e lm="ŝatateco">        <par n="ŝ"/><i>atatec</i><par n="o__n"/></e>
 <e lm="konsekvenceco">   <i>konsekvencec</i><par n="o__n"/></e>
-<e lm="konsisteco">      <i>konsistec</i><par n="o__n"/></e>
+<e lm="konsistenco">     <i>konsistenc</i><par n="o__n"/></e>
 <e lm="konsekvence">     <i>konsekvenc</i><par n="e__adv"/></e>
 <e lm="konsistorio">     <i>konsistori</i><par n="o__n"/></e>
 <e lm="konsolado">       <i>konsolad</i><par n="o__n"/></e>
@@ -20770,6 +20779,8 @@
 <e lm="strategia">       <i>strategi</i><par n="a__adj"/></e>
 <e lm="strategie">       <i>strategi</i><par n="e__adv"/></e>
 <e lm="strategiisto">    <i>strategiist</i><par n="ino__n"/></e>
+<e lm="geostrategia">    <i>geostrategi</i><par n="a__adj"/></e>
+<e lm="geostrategie">    <i>geostrategi</i><par n="e__adv"/></e>
 <e lm="tavoliĝo">        <i>tavoli</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="tavoleco">        <i>tavolec</i><par n="o__n"/></e>
 <e lm="tavoliĝi">        <i>tavoli</i><par n="ĝ"/><par n="i__vblex"/></e>
@@ -22827,6 +22838,7 @@
 <e lm="hispano">         <i>hispan</i><par n="ino__n"/></e>
 <e lm="hungaro">         <i>hungar</i><par n="ino__n"/></e>
 <e lm="iranano">         <i>iranan</i><par n="ino__n"/></e>
+<e lm="irakano">         <i>irakan</i><par n="ino__n"/></e>
 <e lm="karakalpako">     <i>karakalpak</i><par n="ino__n"/></e>
 <e lm="kartvelo">        <i>kartvel</i><par n="ino__n"/></e>
 <e lm="kazaĥo">          <i>kaza</i><par n="ĥ"/><par n="ino__n"/></e>
@@ -29661,7 +29673,8 @@
 <e lm="neregule">        <i>neregul</i><par n="e__adv"/></e>
 <e lm="eskaladigi">      <i>eskaladig</i><par n="i__vblex"/></e>
 <e lm="eskaladigo">      <i>eskaladig</i><par n="o__n"/></e>
-<e lm="estonia">         <i>estoni</i><par n="a__adj"/></e>
+<e lm="estona">          <i>eston</i><par n="a__adj"/></e>
+<e lm="estono">          <i>eston</i><par n="ino__n"/></e>
 <e lm="etikaro">         <i>etikar</i><par n="o__n"/></e>
 <e lm="etiopia">         <i>etiopi</i><par n="a__adj"/></e>
 <e lm="etileno">         <i>etilen</i><par n="o__n"/></e>
@@ -30259,6 +30272,9 @@
 <e lm="laguno">          <i>lagun</i><par n="o__n"/></e>
 <e lm="orientilo">       <i>orientil</i><par n="o__n"/></e>
 <e lm="latva">           <i>latv</i><par n="a__adj"/></e>
+<e lm="latvo">           <i>latv</i><par n="ino__n"/></e>
+<e lm="litova">          <i>litov</i><par n="a__adj"/></e>
+<e lm="litovo">          <i>litov</i><par n="ino__n"/></e>
 <e lm="lesivi">          <i>lesiv</i><par n="i__vblex"/></e>
 <e lm="lavadejo">        <i>lavadej</i><par n="o__n"/></e>
 <e lm="malsparema">      <i>malsparem</i><par n="a__adj"/></e>
