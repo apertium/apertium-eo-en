@@ -66,6 +66,9 @@
       <cat-item tags="np.top.*"/>
     </def-cat>
 
+     <def-cat n="loc">
+      <cat-item tags="np.loc.*"/>
+    </def-cat>
 
     <def-cat n="nom_prnaltres">
       <cat-item tags="n.*"/>
@@ -363,6 +366,9 @@
       <attr-item tags="np.cog"/>
       <attr-item tags="np.top"/>
     </def-attr>
+    <def-attr n="a_n">
+      <attr-item tags="n"/>
+    </def-attr>
     <def-attr n="a_acr">
       <attr-item tags="acr"/>
       <attr-item tags="acr.re"/>
@@ -458,6 +464,10 @@
     </def-attr>
 
 
+    <def-attr n="a_np">
+      <attr-item tags="np"/>
+    </def-attr>
+
     <def-attr n="a_np_acr"><!-- taken from en-es.t1x, for use in macro firstWord -->
       <attr-item tags="np"/>
       <attr-item tags="acr"/>
@@ -506,6 +516,11 @@
 
   <section-def-lists>
 
+    <def-list n="nomoj">
+      <list-item v="n"/>
+      <list-item v="np"/>
+    </def-list>
+
     <def-list n="adv_neg">
       <list-item v="not"/>
     <!--  <list-item v="never"/> -->
@@ -540,7 +555,7 @@
     </def-list>
 
 
-    <def-list n="willwouldshallhave"> <!-- help verboj kiuj malaperos en Esperantp-->
+    <def-list n="willwouldshallhave"> <!-- helpverboj kiuj malaperos en Esperanto-->
       <list-item v="have"/>
       <list-item v="will"/>
       <list-item v="would"/>
@@ -963,16 +978,39 @@ verbfinal = pensi<vblex><pres>
         </when>
 
         <otherwise>
-          <let><var n="determiner"/><concat>
-            <lit v="^"/>
-              <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
-              <clip pos="1" side="tl" part="a_det"/>
-              <clip pos="3" side="tl" part="a_nbr"/>
-              <lit-tag v="2"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            <lit v="$"/>
-            <b pos="1"/>
-          </concat></let>
+          <choose>
+            <!-- Ni rigardas ĉu ni havas propran nomon (the Danube) sed ne en kunmeta uzo (the Danube river). En la una okazo, ni forigas. -->
+            <when>
+              <test>
+              <and>
+                <equal caseless="yes"><clip pos="2" side="tl" part="a_np"/><lit-tag v="np"/></equal>
+                <not><equal caseless="yes"><clip pos="3" side="tl" part="a_n"/><lit-tag v="n"/></equal></not>
+              </and>
+              </test>
+
+              <choose>
+                <when><test><equal><b pos="1"/><lit v=" "/></equal></test>
+                  <let><var n="determiner"/><lit v=""/></let>
+                </when>
+               <otherwise>
+                 <let><var n="determiner"/><concat><b pos="1"/></concat></let>
+               </otherwise>
+             </choose>
+           </when>
+
+           <otherwise>
+             <let><var n="determiner"/><concat>
+               <lit v="^"/>
+                 <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
+                 <clip pos="1" side="tl" part="a_det"/>
+                 <clip pos="3" side="tl" part="a_nbr"/>
+                 <lit-tag v="2"/>
+                 <clip pos="1" side="tl" part="lemq"/>
+               <lit v="$"/>
+               <b pos="1"/>
+             </concat></let>
+           </otherwise>
+          </choose>
         </otherwise>
       </choose>
     </def-macro>
@@ -1471,7 +1509,6 @@ verbfinal = pensi<vblex><pres>
             </out>
       </action>
     </rule>
-
 
 
 
