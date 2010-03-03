@@ -691,7 +691,7 @@
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="pli"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><lit-tag v="2"/><lit-tag v="3"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
@@ -700,7 +700,7 @@
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="plej"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><lit-tag v="2"/><lit-tag v="3"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
@@ -708,13 +708,13 @@
         <when>
          <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><lit-tag v="2"/><lit-tag v="3"/>
                 </concat></let>
         </when>
 
         <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2>$ -->
           <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><lit-tag v="2"/><lit-tag v="3"/>
                 </concat></let>
         </otherwise>
       </choose>
@@ -1761,7 +1761,7 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-                <tag><lit-tag v="SN"/></tag>
+                <tag><lit-tag v="SAdj"/></tag>
                 <tag><var n="numero"/></tag>
                 <tag><lit-tag v="nom"/></tag>
             </tags>

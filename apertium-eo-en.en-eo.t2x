@@ -9,11 +9,22 @@
       <cat-item tags="SN.*"/>
       <cat-item tags="REL"/><!--  c="that, which" -->
     </def-cat>
+    <def-cat n="SN_SAdj">
+      <cat-item tags="SN.*"/>
+      <cat-item tags="SAdj.*"/>
+    </def-cat>
+    <def-cat n="SAdj"> <!-- adjektiva sintagmo -->
+<!--  <cat-item lemma="adj" tags="SN.*"/> -->
+      <cat-item tags="SAdj.*"/>
+    </def-cat>
     <def-cat n="unknown">
        <cat-item lemma="unknown" tags=""/>
     </def-cat>
     <def-cat n="SVall">
       <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="SVcop">
+      <cat-item tags="SV.kopula.*"/>
     </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
@@ -70,10 +81,7 @@
   <section-def-attrs>
     <def-attr n="a_chunk">
       <attr-item tags="SN"/>
-<!--
-      <attr-item tags="SN.sg"/>
-      <attr-item tags="SN.pl"/>
--->
+      <attr-item tags="SAdj"/>
       <attr-item tags="SV"/>
     </def-attr>
 
@@ -215,11 +223,11 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: SN SV SN - akuzativo">
+    <rule comment="REGLA: SN SVcop SAdj - they are tall -> ili estas altaJ">
       <pattern>
-        <pattern-item n="SNsubj"/>
-        <pattern-item n="SV"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="SN"/> <!-- ONTE: SNSubj, sed pli komplike -->
+        <pattern-item n="SVcop"/>
+        <pattern-item n="SAdj"/>
       </pattern>
       <action>
         <out>
@@ -233,10 +241,39 @@
     <b pos="2"/>
           <chunk>
             <clip pos="3" part="lem"/>
-             <clip pos="3" part="a_chunk"/>
-             <clip pos="3" part="gen"/>
-             <clip pos="3" part="nbr"/>
-             <lit-tag v="acc"/>
+            <clip pos="3" part="a_chunk"/>
+            <clip pos="3" part="gen"/>
+            <clip pos="1" part="nbr"/>
+            <clip pos="3" part="cas"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SN SV SN - akuzativo">
+      <pattern>
+        <pattern-item n="SNsubj"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN_SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="a_chunk"/>
+            <clip pos="3" part="gen"/>
+            <clip pos="3" part="nbr"/>
+            <lit-tag v="acc"/>
             <clip pos="3" part="chcontent"/>
           </chunk>
         </out>
@@ -247,7 +284,7 @@
     <rule comment="REGLA: SV SN - akuzativo">
       <pattern>
         <pattern-item n="SV"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="SN_SAdj"/>
       </pattern>
       <action>
         <out>

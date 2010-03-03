@@ -15,6 +15,14 @@ NUM SN -> SN
     <def-cat n="num">
       <cat-item lemma="num" tags="SN.*"/>
     </def-cat>
+    <def-cat n="SAdj"> <!-- adjektiva sintagmo -->
+<!--  <cat-item lemma="adj" tags="SN.*"/> -->
+      <cat-item tags="SAdj.*"/>
+    </def-cat>
+    <def-cat n="adv">
+      <cat-item tags="PREADV"/>
+      <cat-item tags="Adv"/>
+    </def-cat>
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
@@ -72,6 +80,30 @@ NUM SN -> SN
   <section-rules>
 
 
+<!--
+    <rule comment="REGLA: ADV SAdj   -   SAdj ">
+      <pattern>
+        <pattern-item n="adv"/>
+        <pattern-item n="SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><clip pos="2" part="lem"/></get-case-from>
+            <clip pos="2" part="tags"/>
+            <lit v="{"/>
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+-->
+
+
+
 
 
     <rule comment="REGLA: SN1's SN2   -   SN2 de SN1
@@ -85,7 +117,7 @@ NUM SN -> SN
         <out>
           <chunk>
             <clip pos="1" part="lem"/> <!--  c="^nom_conj_nom_conj_nom" -->
-            <clip pos="1" part="tags"/>
+            <clip pos="3" part="tags"/>
             <lit-tag v="ERARA_RIPARO"/>
             <lit v="{"/>
             <clip pos="3" part="content"/>
