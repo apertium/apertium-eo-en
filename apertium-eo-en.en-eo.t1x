@@ -546,10 +546,14 @@
     </def-list>
 
 
-    <def-list n="netransitivaj"> <!-- ne-transitivaj verboj.  -->
+    <def-list n="kopulaj"> <!-- kopulaj verboj.  -->
       <list-item v="be"/>
       <list-item v="seem"/>
       <list-item v="become"/>
+    </def-list>
+
+
+    <def-list n="netransitivaj"> <!-- ne-transitivaj verboj.  -->
       <list-item v="appear"/>
       <list-item v="there be"/>
     </def-list>
@@ -687,7 +691,7 @@
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.comp"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^pli<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="pli"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
@@ -696,7 +700,7 @@
           <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj.sint.sup"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^plej<preadv>$ ^bona<adj><2>$ -->
                 <get-case-from pos="1"><lit v="plej"/></get-case-from><lit-tag v="preadv"/><lit v="$ ^"/>
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
                 </concat></let>
           <let><var n="preadv_added"/><lit v="preadv_"/></let>
         </when>
@@ -704,13 +708,13 @@
         <when>
          <test><equal><clip pos="1" side="tl" part="a_adj"/><lit-tag v="adj"/></equal></test>
           <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
                 </concat></let>
         </when>
 
         <otherwise><!-- ^good<adj><sint>$  aux ^blue<adj>$   - ^bona<adj><2>$ -->
           <let><var n="adjectiu"/><concat><!-- ^bona<adj><2>$ -->
-                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="2"/>
+                <clip pos="1" side="tl" part="lem"/><lit-tag v="adj"/><var n="numero"/><lit-tag v="3"/>
                 </concat></let>
         </otherwise>
       </choose>
@@ -722,6 +726,12 @@
 
     <def-macro n="set_tipus_verbs1" npar="1">
       <choose>
+        <when>
+          <test>
+            <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="kopulaj"/></in>
+          </test>
+          <let><var n="tipus_verb"/><lit-tag v="kopula"/></let>
+        </when>
         <when>
           <test>
             <in caseless="yes"><clip pos="1" side="sl" part="lemh"/><list n="netransitivaj"/></in>
@@ -1004,7 +1014,7 @@ verbfinal = pensi<vblex><pres>
                  <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
                  <clip pos="1" side="tl" part="a_det"/>
                  <clip pos="3" side="tl" part="a_nbr"/>
-                 <lit-tag v="2"/>
+                 <lit-tag v="3"/>
                  <clip pos="1" side="tl" part="lemq"/>
                <lit v="$"/>
                <b pos="1"/>
@@ -1104,11 +1114,15 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="prn" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><var n="numero"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_prn"/><var n="numero"/><lit-tag v="2"/>
+              <clip pos="1" side="tl" part="a_prn"/>
+              <var n="numero"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1125,10 +1139,12 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="prnpers" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/><lit-tag v="2"/>
+              <clip pos="1" side="tl" part="whole"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1146,7 +1162,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1168,7 +1186,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="dato" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu><clip pos="2" side="tl" part="lem"/><lit v="a"/><lit-tag v="num.ord"/></lu>
             <b/>
@@ -1190,7 +1210,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="dato" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu><clip pos="2" side="tl" part="lem"/><lit-tag v="num.ord"/></lu>
             <b/>
@@ -1214,7 +1236,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="dato" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu><lit v="la"/><lit-tag v="det.def.sp"/></lu>
             <b pos="1"/>
@@ -1241,7 +1265,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="dato" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu><lit v="la"/><lit-tag v="det.def.sp"/></lu>
             <lu><clip pos="3" side="tl" part="lem"/><lit v="n"/><lit-tag v="num.ord"/></lu>
@@ -1270,6 +1296,8 @@ verbfinal = pensi<vblex><pres>
           <chunk name="num" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1302,6 +1330,8 @@ verbfinal = pensi<vblex><pres>
           <chunk name="num" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1333,6 +1363,8 @@ verbfinal = pensi<vblex><pres>
           <chunk name="num" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1376,6 +1408,8 @@ verbfinal = pensi<vblex><pres>
           <chunk name="num" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN.nom"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1440,11 +1474,13 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
+              <clip pos="1" side="tl" part="tags"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1465,7 +1501,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="more_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -1498,12 +1536,14 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <var n="determiner"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -1526,13 +1566,15 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_nom_guio_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_det"/>
-                  <clip pos="3" side="tl" part="a_nbr"/>
                   <lit-tag v="2"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="1"/>
                 <lu>
@@ -1548,7 +1590,7 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
                   <clip pos="3" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -1570,7 +1612,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_2nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <var n="determiner"/>
                 <lu>
@@ -1578,12 +1622,13 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="3" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -1607,7 +1652,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_3nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <var n="determiner"/>
                 <lu>
@@ -1615,7 +1662,8 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1623,12 +1671,13 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="a_nbr"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -1654,7 +1703,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_4nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <var n="determiner"/>
                 <lu>
@@ -1662,7 +1713,7 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="2" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="2" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="3"/>
                 </lu>
                 <b pos="2"/>
                 <lu>
@@ -1670,7 +1721,8 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="3"/>
                 <lu>
@@ -1678,12 +1730,13 @@ verbfinal = pensi<vblex><pres>
                   <lit-tag v="adj"/>
                   <clip pos="4" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="4" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="5" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="a_nbr"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <b pos="4"/>
                 <lu>
                   <clip pos="5" side="tl" part="lem"/>
-                  <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -1708,7 +1761,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstWord">
             <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
                 <var n="adjectiu"/>
@@ -1737,7 +1792,9 @@ verbfinal = pensi<vblex><pres>
         <out>
         <chunk name="det_preadv?_adj_nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><var n="numero"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <var n="determiner"/>
             <lu>
@@ -1746,7 +1803,7 @@ verbfinal = pensi<vblex><pres>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+              <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1768,7 +1825,9 @@ verbfinal = pensi<vblex><pres>
         <out>
         <chunk name="det_unknown_nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+              <tag><lit-tag v="nom"/></tag>
             </tags>
             <var n="determiner"/>
             <lu>
@@ -1778,7 +1837,7 @@ verbfinal = pensi<vblex><pres>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
               <clip pos="3" side="tl" part="tags"/>
-              <lit-tag v="2"/>
+              <lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1799,7 +1858,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="preadv?_adj_nom" case="caseFirstWord">
             <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
                 <var n="adjectiu"/>
@@ -1807,7 +1868,7 @@ verbfinal = pensi<vblex><pres>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
+              <clip pos="2" side="tl" part="tags"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1834,7 +1895,9 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="preadv?_adj_adj_nom" case="caseFirstWord">
             <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu>
                 <var n="tmp2"/>
@@ -1846,7 +1909,52 @@ verbfinal = pensi<vblex><pres>
             <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="lem"/>
-              <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+              <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA: ADJ CONJ ADJ NOM">
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="and_or_nor"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="1"/><with-param pos="4"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="4"/></call-macro>
+        <let><var n="tmp1"/><var n="preadv_added"/></let>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="3"/><with-param pos="4"/></call-macro>
+
+        <out>
+          <chunk name="preadv?_adj_adj_nom" case="caseFirstWord">
+            <tags>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+                <var n="tmp2"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+                <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+                <var n="adjectiu"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="tags"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -1870,7 +1978,9 @@ verbfinal = pensi<vblex><pres>
           <out>
           <chunk name="det_unkn_unkn_nom" case="caseFirstWord">
               <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                <tag><lit-tag v="nom"/></tag>
               </tags>
               <var n="determiner"/>
               <lu>
@@ -1884,7 +1994,7 @@ verbfinal = pensi<vblex><pres>
               <lu>
                 <clip pos="4" side="tl" part="lem"/>
                 <clip pos="4" side="tl" part="tags"/>
-                <lit-tag v="2"/>
+                <lit-tag v="3"/>
               </lu>
             </chunk>
           </out>
@@ -1910,7 +2020,9 @@ verbfinal = pensi<vblex><pres>
           <out>
           <chunk name="det_preadv?_adj_adj_nom" case="caseFirstWord">
               <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
               </tags>
               <var n="determiner"/>
               <lu>
@@ -1923,7 +2035,97 @@ verbfinal = pensi<vblex><pres>
               <b pos="3"/>
               <lu>
                 <clip pos="4" side="tl" part="lem"/>
-                <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
+                <clip pos="4" side="tl" part="tags"/><lit-tag v="3"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET ADJ, ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="cm"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="5"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="5"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="5"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="4"/>
+              <lu>
+                <clip pos="5" side="tl" part="lem"/>
+                <clip pos="5" side="tl" part="tags"/><lit-tag v="3"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET ADJ CONJ ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="and_or_nor"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="5"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="5"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="5"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="5"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="4"/>
+              <lu>
+                <clip pos="5" side="tl" part="lem"/>
+                <clip pos="5" side="tl" part="tags"/><lit-tag v="3"/>
               </lu>
             </chunk>
           </out>
@@ -1951,7 +2153,9 @@ verbfinal = pensi<vblex><pres>
           <out>
           <chunk name="det_preadv?_adj_adj_adj_nom" case="caseFirstWord">
               <tags>
-                <tag><lit-tag v="SN.nom"/></tag>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
               </tags>
               <var n="determiner"/>
               <lu>
@@ -1968,7 +2172,121 @@ verbfinal = pensi<vblex><pres>
               <b pos="4"/>
               <lu>
                 <clip pos="5" side="tl" part="lem"/>
-                <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
+                <clip pos="5" side="tl" part="tags"/><lit-tag v="3"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET ADJ, ADJ, ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="cm"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="cm"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="7"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="7"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="7"/></call-macro>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="6"/><with-param pos="7"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="7"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                  <var n="tmp2"/>
+              </lu>
+              <b pos="4"/>
+              <lu>
+                <clip pos="5" side="tl" part="whole"/>
+              </lu>
+              <b pos="5"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="6"/>
+              <lu>
+                <clip pos="7" side="tl" part="lem"/>
+                <clip pos="7" side="tl" part="tags"/><lit-tag v="3"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET ADJ, ADJ CONJ ADJ NOM">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="cm"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="and_or_nor"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="ordigu_genron"><with-param pos="7"/></call-macro>
+        <call-macro n="set_adjectiu2"><with-param pos="2"/><with-param pos="7"/></call-macro>
+        <let><var n="tmp1"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="4"/><with-param pos="7"/></call-macro>
+        <let><var n="tmp2"/><var n="adjectiu"/></let>
+        <call-macro n="set_adjectiu2"><with-param pos="6"/><with-param pos="7"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="7"/></call-macro>
+          <out>
+          <chunk name="det_preadv?_adj_adj_adj_nom" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SN"/></tag>
+                <tag><var n="numero"/></tag>
+                <tag><lit-tag v="nom"/></tag>
+              </tags>
+              <var n="determiner"/>
+              <lu>
+                  <var n="tmp1"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                  <var n="tmp2"/>
+              </lu>
+              <b pos="4"/>
+              <lu>
+                <clip pos="5" side="tl" part="whole"/>
+              </lu>
+              <b pos="5"/>
+              <lu>
+                <var n="adjectiu"/>
+              </lu>
+              <b pos="6"/>
+              <lu>
+                <clip pos="7" side="tl" part="lem"/>
+                <clip pos="7" side="tl" part="tags"/><lit-tag v="3"/>
               </lu>
             </chunk>
           </out>
@@ -1996,7 +2314,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="nom_guio_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
@@ -2011,7 +2331,7 @@ verbfinal = pensi<vblex><pres>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="tags"/>
-                  <lit-tag v="2"/>
+                  <lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -2038,18 +2358,20 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="nom_da_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="1" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
             <b/>
             <lu><lit v="da"/><lit-tag v="pr"/></lu>
             <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -2058,19 +2380,21 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="nom_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <lit-tag v="adj"/>
                   <clip pos="1" side="tl" part="a_acr"/>
                   <clip pos="1" side="tl" part="a_gen"/>
-                  <clip pos="2" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="a_nbr"/><lit-tag v="3"/>
                 </lu>
             <b pos="1"/>
                 <lu>
                   <clip pos="2" side="tl" part="lem"/>
-                  <clip pos="2" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="2" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
               </chunk>
             </out>
@@ -2094,11 +2418,11 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="tags"/><lit-tag v="2"/>
+              <clip pos="1" side="tl" part="tags"/><lit-tag v="3"/>
             </lu>
           </chunk>
         </out>
@@ -2116,11 +2440,11 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
-            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2138,13 +2462,13 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
-            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="2"/>
-            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2163,15 +2487,15 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant_ant_cog_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
-            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="2"/>
-            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="3"/>
-            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2190,15 +2514,15 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant-ant_cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
             <lu><clip pos="2" side="tl" part="whole"/></lu>
             <b pos="2"/>
-            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="3"/>
-            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2217,15 +2541,15 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant_cog-cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
-            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="2"/>
             <lu><clip pos="3" side="tl" part="whole"/></lu>
             <b pos="3"/>
-            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2246,19 +2570,19 @@ verbfinal = pensi<vblex><pres>
         <out>
           <chunk name="ant-ant_cog-cog" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
             </tags>
-            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
             <lu><clip pos="2" side="tl" part="whole"/></lu>
             <b pos="2"/>
-            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="3" side="tl" part="lem"/><clip pos="3" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="3"/>
-            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="4" side="tl" part="lem"/><clip pos="4" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="4"/>
             <lu><clip pos="5" side="tl" part="whole"/></lu>
             <b pos="5"/>
-            <lu><clip pos="6" side="tl" part="lem"/><clip pos="6" side="tl" part="tags"/><lit-tag v="2"/></lu>
+            <lu><clip pos="6" side="tl" part="lem"/><clip pos="6" side="tl" part="tags"/><lit-tag v="3"/></lu>
           </chunk>
         </out>
       </action>
@@ -2283,11 +2607,13 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundo -->
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
@@ -2321,11 +2647,13 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="nom_gen_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundo -->
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
@@ -2362,20 +2690,23 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="n_n_de_n" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundA -->
                   <lit-tag v="adj"/>
                   <clip pos="3" side="tl" part="a_acr"/><!-- se estas akronimo -->
                   <clip pos="3" side="tl" part="a_gen"/><!-- se havas genron -->
-                  <clip pos="4" side="tl" part="a_nbr"/><lit-tag v="2"/>
+                  <lit-tag v="2"/>
+                  <lit-tag v="3"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>              <!-- domo -->
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
                 <b pos="2"/>
                   <lu>
@@ -2414,7 +2745,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_nom_gen_det_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <lu>
                   <get-case-from pos="1"><lit v="la"/></get-case-from><lit-tag v="det.def.sp"/> <!-- la -->
@@ -2423,7 +2756,7 @@ verbfinal = pensi<vblex><pres>
                 <b/>
                 <lu>
                   <clip pos="4" side="tl" part="lem"/>              <!-- hundo -->
-                  <clip pos="4" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="4" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
@@ -2466,7 +2799,9 @@ verbfinal = pensi<vblex><pres>
             <out>
               <chunk name="det_nom_gen_det_nom_nom" case="caseFirstWord">
                 <tags>
-                  <tag><lit-tag v="SN.nom"/></tag>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><clip pos="5" side="tl" part="a_nbr"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
                 </tags>
                 <var n="tmp2"/>
                 <lu>
@@ -2475,7 +2810,7 @@ verbfinal = pensi<vblex><pres>
                 <b pos="2"/>
                 <lu>
                   <clip pos="5" side="tl" part="lem"/>            <!-- hundo -->
-                  <clip pos="5" side="tl" part="tags"/><lit-tag v="2"/>
+                  <clip pos="5" side="tl" part="tags"/><lit-tag v="3"/>
                 </lu>
                 <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
                 <b/>
@@ -2844,7 +3179,7 @@ the ones who:the ones who<rel><nn><mf><pl>
         <out>
           <chunk name="unknown" case="caseFirstWord">
             <tags><!-- Traktu nekonatajn vortojn kiel nomoj en la venontaj stagxo -->
-              <tag><lit-tag v="SN.nom"/></tag>
+              <tag><lit-tag v="SN.sg.nom"/></tag> <!-- ND estus pli bone, sed ĝi kaŭzas problemojn: ni uzas sg -->
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
