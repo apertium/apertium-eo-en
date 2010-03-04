@@ -122,9 +122,42 @@
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="nombre"/>
+    <def-var n="numero"/>
     <def-var n="genere"/>
   </section-def-vars>
+
+  <section-def-macros>
+
+    <!-- En SN SV SAdj atribuas al SAdj la nombron: Tiun de SV, se ĝi estas difinita, aŭ tiun de SN, aliokaze -->
+    <def-macro n="set_nbr3" npar="3">
+      <choose>
+        <when>
+          <test>
+            <or>
+              <equal><clip pos="2" part="nbr"/><lit-tag v="sg"/></equal>
+              <equal><clip pos="2" part="nbr"/><lit-tag v="pl"/></equal>
+            </or>
+          </test>
+          <let><clip pos="3" part="nbr"/><clip pos="2" part="nbr"/></let>
+        </when>
+        <when>
+          <test>
+            <or>
+              <equal><clip pos="1" part="nbr"/><lit-tag v="sg"/></equal>
+              <equal><clip pos="1" part="nbr"/><lit-tag v="pl"/></equal>
+            </or>
+          </test>
+          <let><clip pos="3" part="nbr"/><clip pos="1" part="nbr"/></let>
+        </when>
+<!--
+        <otherwise>
+          <let><clip pos="3" part="nbr"/><lit-tag v="ND"/></let>
+        </otherwise>
+-->
+      </choose>
+    </def-macro>
+
+  </section-def-macros>
 
   <section-rules>
 
@@ -230,6 +263,7 @@
         <pattern-item n="SAdj"/>
       </pattern>
       <action>
+        <call-macro n="set_nbr3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <out>
           <chunk>
             <clip pos="1" part="whole"/>
@@ -240,6 +274,10 @@
           </chunk>
     <b pos="2"/>
           <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+<!--
+          <chunk>
             <clip pos="3" part="lem"/>
             <clip pos="3" part="a_chunk"/>
             <clip pos="3" part="gen"/>
@@ -247,6 +285,7 @@
             <clip pos="3" part="cas"/>
             <clip pos="3" part="chcontent"/>
           </chunk>
+-->
         </out>
       </action>
     </rule>

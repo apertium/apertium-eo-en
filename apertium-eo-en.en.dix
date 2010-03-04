@@ -11839,6 +11839,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="German">          <i>German</i><par n="Mark__np"/></e>
 <e lm="German">          <i>German</i><par n="house__n"/></e>
 <e lm="German">          <i>German</i><par n="expensive__adj"/></e>
+<e lm="Germanic">        <i>Germanic</i><par n="expensive__adj"/></e>
 <e lm="German-language"> <i>German-language</i><par n="expensive__adj"/></e>
 <e lm="German-speaking"> <i>German-speaking</i><par n="expensive__adj"/></e>
 <e lm="German speaking"> <i>German<b/>speaking</i><par n="expensive__adj"/></e>
@@ -18515,6 +18516,9 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="orthodoxy">       <i>orthodox</i><par n="fr/y__n"/></e>
 <e lm="orthodox">        <i>orthodox</i><par n="expensive__adj"/></e>
 <e lm="Orthodox Church"> <i>Orthodox<b/>Church</i><par n="access__n"/></e>
+<e lm="Russian Church">  <i>Russian<b/>Church</i><par n="access__n"/></e>
+<e lm="Greek Church">    <i>Greek<b/>Church</i><par n="access__n"/></e>
+<e lm="Armenian Church"> <i>Armenian<b/>Church</i><par n="access__n"/></e>
 <e lm="orthopaedics">    <i>orthopaedics</i><par n="politics__n"/><par n="gen__apos"/></e>
 <e lm="orthopedist">     <i>orthopedist</i><par n="house__n"/></e>
 <e lm="Osanna">          <i>Osanna</i><par n="Mary__np"/></e>
@@ -28480,7 +28484,9 @@ TODO: aldonu kaj retrejnu la tagger
 <e lm="westerly"><i>westerly</i><par n="expensive__adj"/></e>
 <e lm="easterly"><i>easterly</i><par n="expensive__adj"/></e>
 
-<e r="RL" c="defaulta traduko tauxgas" lm="world war">          <i>world<b/>war</i><par n="house__n"/></e>
+<e lm="world war">          <i>world<b/>war</i><par n="house__n"/></e>
+<e lm="World War I">        <i>World<b/>War<b/>I</i><par n="east__n"/></e>
+<e lm="World War II">       <i>World<b/>War<b/>II</i><par n="east__n"/></e>
 <e lm="subregion">          <i>subregion</i><par n="house__n"/></e>
 
 
