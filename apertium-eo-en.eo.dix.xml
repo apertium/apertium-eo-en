@@ -40,6 +40,7 @@
     <sdef n="mf" />
     <sdef n="sg" />
     <sdef n="pl" />
+    <sdef n="ND" />
     <sdef n="adv" />
     <sdef n="preadv" />
     <sdef n="pr" />
@@ -499,6 +500,12 @@
 <e r="RL" c="TODO:remetu">    <p><l>anta</l>                <r>i<s n="vbser"/><s n="ger"/></r></p><par n="sgplnomacc"/></e>
 -->
   <e r="RL"><p><l>anta</l>      <r>i<s n="vbser"/><s n="ger"/></r></p></e>
+  <e       ><p><l>anta</l>      <r>i<s n="vbser"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>anta</l>      <r>i<s n="vbser"/><s n="ger"/><s n="ND"/><s n="nom"/></r></p></e>
+  <e       ><p><l>antaj</l>     <r>i<s n="vbser"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e       ><p><l>antan</l>     <r>i<s n="vbser"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e r="RL"><p><l>antan</l>     <r>i<s n="vbser"/><s n="ger"/><s n="ND"/><s n="acc"/></r></p></e>
+  <e       ><p><l>antajn</l>    <r>i<s n="vbser"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
   <e r="LR"><p><l>ante</l>      <r>i<s n="vbser"/><s n="ger"/></r></p></e>
   <e>       <p><l>u</l>         <r>i<s n="vbser"/><s n="imp"/></r></p></e>
 
@@ -561,10 +568,12 @@
 <e>                           <p><l>intaj</l>               <r>i<s n="vblex"/><s n="pp3"/><s n="pl"/></r></p></e>
 -->
   <e>       <p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
-  <e r="LR"><p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
-  <e r="LR"><p><l>antaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
-  <e r="LR"><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
-  <e r="LR"><p><l>antajn</l>    <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e       ><p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>anta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="ND"/><s n="nom"/></r></p></e>
+  <e       ><p><l>antaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e       ><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e r="RL"><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="ND"/><s n="acc"/></r></p></e>
+  <e       ><p><l>antajn</l>    <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
   <e r="LR"><p><l>ante</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
   <e r="LR"><p><l>inta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>intaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -3899,6 +3908,7 @@
 <e lm="intermeti">       <i>intermet</i><par n="i__vblex"/></e>
 <e lm="intermita">       <i>intermit</i><par n="a__adj"/></e>
 <e lm="internacia">      <i>internaci</i><par n="a__adj"/></e>
+<e lm="internacio">      <i>internaci</i><par n="o__n"/></e>
 <e lm="interna">         <i>intern</i><par n="a__adj"/></e>
 <e lm="interne">         <i>intern</i><par n="e__adv"/></e>
 <e lm="internigi">       <i>internig</i><par n="i__vblex"/></e>
@@ -9526,6 +9536,8 @@
 <e lm="anafilaksio">     <i>anafilaksi</i><par n="o__n"/></e>
 <e lm="anarkiisma">      <i>anar</i><par n="k_ĥ"/><i>iism</i><par n="a__adj"/></e>
 <e r="LR" lm="anarkisma"><p><l>anarkism</l>  <r>anarkiism</r></p><par n="a__adj"/></e>
+<e lm="anarkiista">      <i>anar</i><par n="k_ĥ"/><i>iist</i><par n="a__adj"/></e>
+<e r="LR" lm="anarkista"><p><l>anarkist</l>  <r>anarkiist</r></p><par n="a__adj"/></e>
 <e lm="anarkiismo">      <i>anar</i><par n="k_ĥ"/><i>iism</i><par n="o__n"/></e>
 <e r="LR" lm="anarkiismo"><p><l>anarkism</l> <r>anarkiism</r></p><par n="o__n"/></e>
 <e lm="anatomia">        <i>anatomi</i><par n="a__adj"/></e>

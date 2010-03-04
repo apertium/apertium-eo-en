@@ -14,8 +14,11 @@
       <cat-item tags="SAdj.*"/>
     </def-cat>
     <def-cat n="SAdj"> <!-- adjektiva sintagmo -->
-<!--  <cat-item lemma="adj" tags="SN.*"/> -->
       <cat-item tags="SAdj.*"/>
+    </def-cat>
+    <def-cat n="SAdjGer"> <!-- adjektiva sintagmo -->
+      <cat-item tags="SAdj.*"/>
+      <cat-item tags="SV.*.ger.*"/>
     </def-cat>
     <def-cat n="unknown">
        <cat-item lemma="unknown" tags=""/>
@@ -42,6 +45,19 @@
       <cat-item lemma="verb_vbger" tags="SV.*"/>
       <cat-item lemma="vaux_verb" tags="SV.*"/>
       <cat-item lemma="verb_pp" tags="SV.*"/>-->
+    </def-cat>
+    <def-cat n="SVcopger">
+      <cat-item tags="SV.kopula.ger.*"/>
+    </def-cat>
+    <def-cat n="SVger">
+      <cat-item tags="SV.reporting.ger.*"/>
+      <cat-item tags="SV.aliaj.ger.*"/>
+      <cat-item tags="SV.like.ger.*"/>
+      <cat-item tags="SV.sorry.ger.*"/>
+      <cat-item tags="SV.reporting.ger.*"/>
+      <cat-item tags="SV.aliaj.ger.*"/>
+      <cat-item tags="SV.like.ger.*"/>
+      <cat-item tags="SV.sorry.ger.*"/>
     </def-cat>
     <def-cat n="SVitrans">
       <cat-item tags="SV"/>
@@ -128,8 +144,10 @@
 
   <section-def-macros>
 
-    <!-- En SN SV SAdj atribuas al SAdj la nombron: Tiun de SV, se ĝi estas difinita, aŭ tiun de SN, aliokaze -->
+    <!-- En SN SV SAdj atribuas al SAdj la nombron: Tiun de SV, se difinita, aŭ tiun de SN, se difinita -->
+    <!-- kaj al SV, se ne difinita, la nombron de SN, se difinita, aŭ tiun de SAdj, se difinita -->
     <def-macro n="set_nbr3" npar="3">
+      <!-- Atribuo de SAdj -->
       <choose>
         <when>
           <test>
@@ -149,12 +167,37 @@
           </test>
           <let><clip pos="3" part="nbr"/><clip pos="1" part="nbr"/></let>
         </when>
-<!--
-        <otherwise>
-          <let><clip pos="3" part="nbr"/><lit-tag v="ND"/></let>
-        </otherwise>
--->
       </choose>
+
+      <!-- Atribuo de SV -->
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="2" part="nbr"/><lit-tag v="ND"/></equal>
+          </test>
+          <choose>
+            <when>
+              <test>
+                <or>
+                  <equal><clip pos="1" part="nbr"/><lit-tag v="sg"/></equal>
+                  <equal><clip pos="1" part="nbr"/><lit-tag v="pl"/></equal>
+                </or>
+              </test>
+              <let><clip pos="2" part="nbr"/><clip pos="1" part="nbr"/></let>
+            </when>
+            <when>
+              <test>
+                <or>
+                  <equal><clip pos="3" part="nbr"/><lit-tag v="sg"/></equal>
+                  <equal><clip pos="3" part="nbr"/><lit-tag v="pl"/></equal>
+                </or>
+              </test>
+              <let><clip pos="2" part="nbr"/><clip pos="3" part="nbr"/></let>
+            </when>
+          </choose>
+        </when>
+      </choose>
+
     </def-macro>
 
   </section-def-macros>
@@ -256,11 +299,11 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: SN SVcop SAdj - they are tall -> ili estas altaJ">
+    <rule comment="REGLA: SN SVcop SAdjGer - they are tall -> ili estas altaJ; they are living -> ili estas vivantaJ">
       <pattern>
         <pattern-item n="SN"/> <!-- ONTE: SNSubj, sed pli komplike -->
         <pattern-item n="SVcop"/>
-        <pattern-item n="SAdj"/>
+        <pattern-item n="SAdjGer"/>
       </pattern>
       <action>
         <call-macro n="set_nbr3"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
@@ -276,16 +319,9 @@
           <chunk>
             <clip pos="3" part="whole"/>
           </chunk>
-<!--
-          <chunk>
-            <clip pos="3" part="lem"/>
-            <clip pos="3" part="a_chunk"/>
-            <clip pos="3" part="gen"/>
-            <clip pos="1" part="nbr"/>
-            <clip pos="3" part="cas"/>
-            <clip pos="3" part="chcontent"/>
-          </chunk>
--->
+<chunk>
+<lit-tag v="SN SVcop SAdjGer"/>
+</chunk>
         </out>
       </action>
     </rule>
@@ -315,6 +351,79 @@
             <lit-tag v="acc"/>
             <clip pos="3" part="chcontent"/>
           </chunk>
+<chunk>
+<lit-tag v="SN SV SN"/>
+</chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SN SVcop SVger SN - akuzativo">
+      <pattern>
+        <pattern-item n="SNsubj"/>
+        <pattern-item n="SVcop"/>
+        <pattern-item n="SVger"/>
+        <pattern-item n="SN_SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+    <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="a_chunk"/>
+            <clip pos="4" part="gen"/>
+            <clip pos="4" part="nbr"/>
+            <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+<chunk>
+<lit-tag v="SN SVcop SVger SN"/>
+</chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SN SVcop SVcopger SAdj - nombro">
+      <pattern>
+        <pattern-item n="SNsubj"/>
+        <pattern-item n="SVcop"/>
+        <pattern-item n="SVcopger"/>
+        <pattern-item n="SAdj"/>
+      </pattern>
+      <action>
+        <call-macro n="set_nbr3"><with-param pos="1"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+    <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="whole"/>
+          </chunk>
+<chunk>
+<lit-tag v="SN SVcop SVcopger SAdj"/>
+</chunk>
         </out>
       </action>
     </rule>

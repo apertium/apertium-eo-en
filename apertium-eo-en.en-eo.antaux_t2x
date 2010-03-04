@@ -15,6 +15,9 @@ NUM SN -> SN
     <def-cat n="num">
       <cat-item lemma="num" tags="SN.*"/>
     </def-cat>
+    <def-cat n="det">
+      <cat-item tags="DET.*"/>
+    </def-cat>
     <def-cat n="SAdj"> <!-- adjektiva sintagmo -->
       <cat-item tags="SAdj.*"/>
     </def-cat>
@@ -290,6 +293,51 @@ NUM SN -> SN
             <clip pos="5" part="content"/>
                 <b pos="5"/>
             <clip pos="6" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET SAdj   -   SAdj ">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><clip pos="2" part="lem"/></get-case-from>
+            <clip pos="2" part="tags"/>
+            <lit v="{"/>
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+             <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET ADV SAdj   -   SAdj ">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <get-case-from pos="1"><clip pos="3" part="lem"/></get-case-from>
+            <clip pos="3" part="tags"/>
+            <lit v="{"/>
+            <clip pos="1" part="content"/>
+                <b pos="1"/>
+            <clip pos="2" part="content"/>
+                <b pos="2"/>
+            <clip pos="3" part="content"/>
              <lit v="}"/>
           </chunk>
         </out>
