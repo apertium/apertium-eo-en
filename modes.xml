@@ -25,6 +25,10 @@
         <file name="en-eo.antaux_t2x.bin"/>
       </program>
       <program name="apertium-interchunk">
+        <file name="apertium-eo-en.en-eo.antaux2_t2x"/>
+        <file name="en-eo.antaux2_t2x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
         <file name="apertium-eo-en.en-eo.t2x"/>
         <file name="en-eo.t2x.bin"/>
       </program>
