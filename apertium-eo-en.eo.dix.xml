@@ -412,6 +412,7 @@
 
 <pardef n="la__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="det"/><s n="def"/><s n="ND"/></r></p><par n="nomacc0"/></e>
   <e r="RL"><p><l></l>          <r><s n="det"/><s n="def"/></r></p><par n="sgplnomacc0"/></e>
 </pardef>
 
@@ -419,16 +420,19 @@
 
 <pardef n="mia__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="pos"/></r></p><par n="sgplnomacc"/></e>
+  <e r="RL"><p><l></l>          <r><s n="det"/><s n="pos"/><s n="ND"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
 <pardef n="dem__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="dem"/></r></p><par n="sgplnomacc"/></e>
+  <e r="RL"><p><l></l>          <r><s n="det"/><s n="dem"/><s n="ND"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
 <pardef n="ind__det">
   <e>       <p><l></l>          <r><s n="det"/><s n="ind"/></r></p><par n="sgplnomacc"/></e>
+  <e r="RL"><p><l></l>          <r><s n="det"/><s n="ind"/><s n="ND"/></r></p><par n="nomacc"/></e>
 </pardef>
 
 
@@ -6793,8 +6797,12 @@
 <e lm="tezo">            <i>tez</i><par n="o__n"/></e>
 <e lm="tia">             <i>ti</i><par n="a__adj"/></e>
 <e lm="tial">            <i>tial</i><par n="jam__adv"/></e>
+<e lm="tiam">            <i>tiam</i><par n="jam__adv"/></e>
+<e lm="tiamaniere">      <i>tiamanier</i><par n="e__adv"/></e>
+<e lm="tiame">           <i>tiam</i><par n="e__adv"/></e>
 <e lm="tie">             <i>ti</i><par n="e__adv"/></e>
 <e lm="tiel">            <i>tiel</i><par n="jam__adv"/></e>
+<e lm="tiele">           <i>tiel</i><par n="e__adv"/></e>
 <e lm="timbalo">         <i>timbal</i><par n="o__n"/></e>
 <e lm="timema">          <i>timem</i><par n="a__adj"/></e>
 <e lm="timideco">        <i>timidec</i><par n="o__n"/></e>
@@ -20387,7 +20395,6 @@
 <e lm="enflari">         <i>enflar</i><par n="i__vblex"/></e>
 <e lm="neĝi">            <i>ne</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="neĝado">          <i>ne</i><par n="ĝ"/><i>ad</i><par n="o__n"/></e>
-<e lm="tiamaniere">      <i>tiamanier</i><par n="e__adv"/></e>
 <e lm="tramalsekigi">    <i>tramalsekig</i><par n="i__vblex"/></e>
 <e lm="trempiĝi">        <i>trempi</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="tramalsekiĝi">    <i>tramalseki</i><par n="ĝ"/><par n="i__vblex"/></e>
@@ -21331,7 +21338,6 @@
 <e lm="laŭtema">         <i>la</i><par n="ŭ"/><i>tem</i><par n="a__adj"/></e>
 <e lm="tema">            <i>tem</i><par n="a__adj"/></e>
 <e lm="ĉeftemo">         <par n="ĉ"/><i>eftem</i><par n="o__n"/></e>
-<e lm="tiame">           <i>tiam</i><par n="e__adv"/></e>
 <e lm="tiuokaze">        <i>tiuokaz</i><par n="e__adv"/></e>
 <e lm="tiaokaze">        <i>tiaokaz</i><par n="e__adv"/></e>
 <e lm="teokratio">       <i>teokrati</i><par n="o__n"/></e>
@@ -21404,7 +21410,6 @@
 <e lm="ĝojiga">          <par n="ĝ"/><i>ojig</i><par n="a__adj"/></e>
 <e lm="prempinglo">      <i>prempingl</i><par n="o__n"/></e>
 <e lm="puŝpinglo">       <i>pu</i><par n="ŝ"/><i>pingl</i><par n="o__n"/></e>
-<e lm="tiele">           <i>tiel</i><par n="e__adv"/></e>
 <e lm="jene">            <i>jen</i><par n="e__adv"/></e>
 <e lm="tiko">            <i>tik</i><par n="o__n"/></e>
 <e lm="tiktako">         <i>tiktak</i><par n="o__n"/></e>

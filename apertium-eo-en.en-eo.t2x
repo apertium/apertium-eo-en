@@ -77,6 +77,9 @@
     </def-cat>
     <def-cat n="Adv">
       <cat-item tags="Adv"/>
+    </def-cat>
+    <def-cat n="Adv_CA">
+      <cat-item tags="Adv"/>
       <cat-item tags="CA"/>
       <cat-item tags="NEG"/>
     </def-cat>
@@ -200,7 +203,26 @@
 
     </def-macro>
 
+    <def-macro n="set_tns" npar="1">
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" part="a_tns"/><lit-tag v="inf"/></equal>
+          </test>
+          <let><clip pos="1" part="a_tns"/><lit-tag v="pres"/></let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" part="a_tns"/><lit-tag v="pp"/></equal>
+          </test>
+          <let><clip pos="1" part="a_tns"/><lit-tag v="past"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
   </section-def-macros>
+
+
 
   <section-rules>
 
@@ -230,7 +252,7 @@
 
     <!-- For questions "is the cat big?" -->
 
-    <rule comment="REGLA: adv do SN SV - how did you work - kiel vi laboris">
+    <rule comment="REGLA: Adv do SN SV - how did you work - kiel vi laboris">
       <pattern>
         <pattern-item n="Adv_aux_SN_aux_konstatovorto"/>
         <pattern-item n="vbdoSV"/>
@@ -273,7 +295,7 @@
 
     <rule comment="REGLA: Adv SV SN SN">
       <pattern>
-        <pattern-item n="Adv"/>
+        <pattern-item n="Adv_CA"/>
         <pattern-item n="SVall"/>
         <pattern-item n="SN"/>
         <pattern-item n="SN"/>
@@ -430,6 +452,44 @@
     </rule>
 
 
+    <rule comment="REGLA: SN Adv SV SN - akuzativo + eventuala ŝanĝo de tenso en SV">
+      <pattern>
+        <pattern-item n="SNsubj"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SV"/>
+        <pattern-item n="SN_SAdj"/>
+      </pattern>
+      <action>
+        <call-macro n="set_tns"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+    <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="a_chunk"/>
+            <clip pos="4" part="gen"/>
+            <clip pos="4" part="nbr"/>
+            <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+<chunk>
+<lit-tag v="SN Adv SV SN"/>
+</chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: SV SN - akuzativo">
       <pattern>
         <pattern-item n="SV"/>
@@ -448,6 +508,35 @@
             <clip pos="2" part="nbr"/>
             <lit-tag v="acc"/>
             <clip pos="2" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SV Adv SN - akuzativo">
+      <pattern>
+        <pattern-item n="SV"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SN_SAdj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="a_chunk"/>
+            <clip pos="3" part="gen"/>
+            <clip pos="3" part="nbr"/>
+            <lit-tag v="acc"/>
+            <clip pos="3" part="chcontent"/>
           </chunk>
         </out>
       </action>
@@ -560,7 +649,7 @@
         <pattern-item n="SN"/>
         <pattern-item n="CC"/>
         <pattern-item n="SN"/>
-        <pattern-item n="Adv"/>
+        <pattern-item n="Adv_CA"/>
       </pattern>
       <action>
         <out>
@@ -603,81 +692,6 @@
       </action>
     </rule>
 
-
-
-    <rule comment="REGLA: SN Adv SV SN">
-      <pattern>
-        <pattern-item n="SN"/>
-        <pattern-item n="Adv"/>
-        <pattern-item n="SV"/>
-        <pattern-item n="SN"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <clip pos="1" part="whole"/>
-          </chunk>
-    <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="whole"/>
-          </chunk>
-    <b pos="2"/>
-          <chunk>
-            <clip pos="3" part="whole"/>
-          </chunk>
-    <b pos="3"/>
-          <chunk>
-            <clip pos="4" part="lem"/>
-             <clip pos="4" part="a_chunk"/>
-             <clip pos="4" part="gen"/>
-             <clip pos="4" part="nbr"/>
-             <lit-tag v="acc"/>
-             <clip pos="4" part="chcontent"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: SN Adv SV Adv SN">
-      <pattern>
-        <pattern-item n="SN"/>
-        <pattern-item n="Adv"/>
-        <pattern-item n="SV"/>
-        <pattern-item n="Adv"/>
-        <pattern-item n="SN"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <clip pos="1" part="whole"/>
-          </chunk>
-    <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="whole"/>
-          </chunk>
-    <b pos="2"/>
-          <chunk>
-            <clip pos="3" part="whole"/>
-          </chunk>
-    <b pos="3"/>
-          <chunk>
-            <clip pos="4" part="lem"/>
-            <clip pos="4" part="tags"/>
-            <clip pos="4" part="chcontent"/>
-          </chunk>
-    <b pos="4"/>
-          <chunk>
-            <clip pos="5" part="lem"/>
-             <clip pos="5" part="a_chunk"/>
-             <clip pos="5" part="gen"/>
-             <clip pos="5" part="nbr"/>
-             <lit-tag v="acc"/>
-             <clip pos="5" part="chcontent"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
 
 <!--

@@ -105,57 +105,6 @@ NUM SN -> SN
     </rule>
 
 
-    <rule comment="REGLA: ADV ADV SAdj   -   SAdj ">
-      <pattern>
-        <pattern-item n="adv"/>
-        <pattern-item n="adv"/>
-        <pattern-item n="SAdj"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <get-case-from pos="1"><clip pos="3" part="lem"/></get-case-from>
-            <clip pos="3" part="tags"/>
-            <lit v="{"/>
-            <clip pos="1" part="content"/>
-                <b pos="1"/>
-            <clip pos="2" part="content"/>
-                <b pos="2"/>
-            <clip pos="3" part="content"/>
-             <lit v="}"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-    <rule comment="REGLA: ADV and/or ADV SAdj   -   SAdj ">
-      <pattern>
-        <pattern-item n="adv"/>
-        <pattern-item n="and_or"/>
-        <pattern-item n="adv"/>
-        <pattern-item n="SAdj"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <get-case-from pos="1"><clip pos="4" part="lem"/></get-case-from>
-            <clip pos="4" part="tags"/>
-            <lit v="{"/>
-            <clip pos="1" part="content"/>
-                <b pos="1"/>
-            <clip pos="2" part="content"/>
-                <b pos="2"/>
-            <clip pos="3" part="content"/>
-                <b pos="3"/>
-            <clip pos="4" part="content"/>
-             <lit v="}"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
     <rule comment="REGLA: SAdj and/or SAdj   -   SAdj ">
       <pattern>
         <pattern-item n="SAdj"/>
