@@ -48,8 +48,6 @@
       <cat-item lemma="prpers" tags="prn.*.*.*.pl"/>
     </def-cat>
 
-
-
     <def-cat n="adv">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/><!-- ^Kiam<adv><itg>$ -->
@@ -81,10 +79,8 @@
     </def-cat>
 
 
-<!--
     <def-cat n="ant"><cat-item tags="np.ant.*"/></def-cat>
     <def-cat n="cog"><cat-item tags="np.cog.*"/></def-cat>
--->
     <def-cat n="ant_cog">
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.cog.*"/>
@@ -2446,6 +2442,86 @@ verbfinal = pensi<vblex><pres>
             <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
             <b pos="1"/>
             <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: UNKNOWN COG">
+      <pattern>
+        <pattern-item n="unknown"/>
+        <pattern-item n="cog"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="unk_cog" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="3"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: ANT UNKNOWN">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="unknown"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_unk" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
+            </tags>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: ANT UNKNOWN UNKNOWN">
+      <pattern>
+        <pattern-item n="ant"/>
+        <pattern-item n="unknown"/>
+        <pattern-item n="unknown"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="ant_unk_unk" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN.sg.nom"/></tag>
+            </tags>
+            <lu><clip pos="1" side="tl" part="lem"/><clip pos="1" side="tl" part="tags"/><lit-tag v="3"/></lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
           </chunk>
         </out>
       </action>

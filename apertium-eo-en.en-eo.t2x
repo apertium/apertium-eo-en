@@ -367,6 +367,7 @@
         <pattern-item n="SN_SAdj"/>
       </pattern>
       <action>
+        <call-macro n="set_nbr3"><with-param pos="1"/><with-param pos="3"/><with-param pos="1"/></call-macro>
         <out>
           <chunk>
             <clip pos="1" part="whole"/>

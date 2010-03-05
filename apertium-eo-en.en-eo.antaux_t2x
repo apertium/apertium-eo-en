@@ -357,14 +357,25 @@ NUM SN -> SN
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lem"/> <!--  c="^nom_conj_nom_conj_nom" -->
+            <get-case-from pos="1"><clip pos="3" part="lem"/></get-case-from>
             <clip pos="3" part="tags"/>
-            <lit-tag v="ERARA_RIPARO"/>
             <lit v="{"/>
             <clip pos="3" part="content"/>
+             <lit v="}"/>
+          </chunk>
                 <b/>
-            <lit v="^de"/><lit-tag v="gen"/><lit v="$"/>
-                <b pos="2"/>
+          <chunk>
+            <lit v="pr"/>
+            <lit-tag v="PREP"/>
+            <lit v="{"/>
+            <lit v="^de"/><lit-tag v="pr"/><lit v="$"/>
+             <lit v="}"/>
+          </chunk>
+                <b/>
+          <chunk>
+            <get-case-from pos="3"><clip pos="1" part="lem"/></get-case-from>
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>
             <clip pos="1" part="content"/>
              <lit v="}"/>
           </chunk>
