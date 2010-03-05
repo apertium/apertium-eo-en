@@ -64,6 +64,7 @@ $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t1x $@
+	apertium-preprocess-transfer-bytecode-j $(BASENAME).$(PREFIX1).t1x $(PREFIX1).t1x.class
 
 $(PREFIX1).t2x.bin: $(BASENAME).$(PREFIX1).t2x
 	apertium-validate-interchunk $(BASENAME).$(PREFIX1).t2x
@@ -76,6 +77,7 @@ $(PREFIX1).t3x.bin: $(BASENAME).$(PREFIX1).t3x
 $(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX2).t1x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t1x $@
+	apertium-preprocess-transfer-bytecode-j $(BASENAME).$(PREFIX2).t1x $(PREFIX2).t1x.class
 
 $(PREFIX2).genitive.t1x.bin: $(BASENAME).$(PREFIX2).genitive.t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX2).genitive.t1x

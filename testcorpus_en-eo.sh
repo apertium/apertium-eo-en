@@ -13,6 +13,7 @@ then
 fi
 
 make -s -j 3 && cat $CRP | apertium -d . en-eo > $NOVA || exit
+#make -s -j 3 && cat $CRP | apertium -d . en-eo-bytecode > $NOVA || exit
 echo
 grep '#' $NOVA && echo -e "^ Estis mankoj en la cellingva dix, montrata supre ^\n"
 grep '@' $NOVA && echo -e "^ Estis mankoj en la dulingva dix, montrata supre ^\n"
