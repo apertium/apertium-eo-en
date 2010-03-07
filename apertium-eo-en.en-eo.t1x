@@ -59,6 +59,16 @@
       <cat-item tags="adj.*"/>
     </def-cat>
 
+    <def-cat n="adj_ger">
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+      <cat-item tags="vblex.ger"/>
+<!--
+      <cat-item tags="num"/>
+      <cat-item tags="num.*"/>
+-->
+    </def-cat>
+
     <def-cat n="adj_unk">
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
@@ -105,6 +115,10 @@
     <def-cat n="ant_cog">
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.cog.*"/>
+    </def-cat>
+
+    <def-cat n="ger">
+      <cat-item tags="vblex.ger"/>
     </def-cat>
 
     <def-cat n="vblexinf">
@@ -510,6 +524,7 @@
     <def-var n="nomvar"/>
     <def-var n="tmp1"/>
     <def-var n="tmp2"/>
+    <def-var n="tmp3"/>
 
     <def-var n="caseFirstWord"/><!-- macro firstWord -->
     <def-var n="EOS" v="false"/><!-- macro firstWord -->
@@ -1012,6 +1027,7 @@ verbfinal = pensi<vblex><pres>
             <when>
               <test>
               <and>
+                <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit v="the"/></equal>
                 <equal caseless="yes"><clip pos="2" side="tl" part="a_np"/><lit-tag v="np"/></equal>
                 <not><equal caseless="yes"><clip pos="3" side="tl" part="a_n"/><lit-tag v="n"/></equal></not>
               </and>
@@ -1028,35 +1044,32 @@ verbfinal = pensi<vblex><pres>
            </when>
 
            <otherwise>
-<!-- ĉi tiu tuta choose por la pritrakto de 'unknown'-vortoj ial ne funkcias
               <choose>
                 <when><test><equal><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></equal></test>
-                  - unknown -
+                  <!-- unknown -->
                   <choose>
                     <when><test><equal><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></equal></test>
-                      - unknown -
-                      <let><var n="tmp1"/><lit-tag v="2"/></let>
+                      <!-- unknown -->
+                      <let><var n="tmp3"/><lit-tag v="2"/></let>
                       <let><var n="numero_unk"/><lit-tag v="ND"/></let>
                     </when>
                     <otherwise>
-                      <let><var n="tmp1"/><clip pos="1" side="tl" part="a_nbr"/></let>
+                      <let><var n="tmp3"/><clip pos="1" side="tl" part="a_nbr"/></let>
                       <let><var n="numero_unk"/><clip pos="1" side="tl" part="a_nbr"/></let>
                     </otherwise>
                   </choose>
                 </when>
                 <otherwise>
-                  <let><var n="tmp1"/><clip pos="3" side="tl" part="a_nbr"/></let>
+                  <let><var n="tmp3"/><clip pos="3" side="tl" part="a_nbr"/></let>
                   <let><var n="numero_unk"/><clip pos="3" side="tl" part="a_nbr"/></let>
                 </otherwise>
               </choose>
--->
 
              <let><var n="determiner"/><concat>
                <lit v="^"/>
                  <clip pos="1" side="tl" part="lemh"/>  <!-- lemh por subteni "most of<det>" -->
                  <clip pos="1" side="tl" part="a_det"/>
-                 <!-- anstataŭ la sekva linio se la supra choose estas funkciigita <var n="tmp1"/> -->
-                 <clip pos="3" side="tl" part="a_nbr"/>
+                 <var n="tmp3"/>
                  <lit-tag v="3"/>
                  <clip pos="1" side="tl" part="lemq"/>
                <lit v="$"/>
@@ -1596,6 +1609,7 @@ verbfinal = pensi<vblex><pres>
 
 
 <!-- ne funkcias: mi ne sukcesis solvi la problemojn de la ŝanĝoj en set_determiner3
+	do mi kreas la sekvan regulon, pli specifan THE UNKNOWN
     <rule comment="REGLA: DET UNKNOWN">
       <pattern>
         <pattern-item n="det"/>
@@ -1621,6 +1635,35 @@ verbfinal = pensi<vblex><pres>
     </rule>
 -->
 
+
+<!-- legu ĉi-supre la problemojn pri la pli ĝenerala regulo DET UNKNOWN -->
+<!--
+    <rule comment="REGLA: THE UNKNOWN">
+      <pattern>
+        <pattern-item n="the"/>
+        <pattern-item n="unknown"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+            <out>
+              <chunk name="det_nom" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SN"/></tag>
+                  <tag><lit-tag v="sg"/></tag>
+                  <tag><lit-tag v="nom"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+-->
 
 
 <!--
@@ -1848,10 +1891,44 @@ verbfinal = pensi<vblex><pres>
 
 
 
+    <rule comment="REGLA: DET ADJ">
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="ger"/>
+      </pattern>
+      <action>
+        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+        <call-macro n="set_determiner3"><with-param pos="1"/><with-param pos="2"/><with-param pos="2"/></call-macro>
+
+        <out>
+          <chunk name="det" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+              <tag><lit-tag v="sg"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <var n="determiner"/>
+          </chunk>
+          <chunk name="adj">
+            <tags>
+              <tag><lit-tag v="SAdj"/></tag>
+              <tag><lit-tag v="sg"/></tag>
+              <tag><lit-tag v="nom"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <lit-tag v="adj"/><lit-tag v="2"/><lit-tag v="3"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: DET ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2077,8 +2154,8 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2117,9 +2194,9 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ, ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="cm"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2162,9 +2239,9 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ CONJ ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="and_or_nor"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2207,9 +2284,9 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ ADJ ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="adj"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
+        <pattern-item n="adj_ger"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2254,11 +2331,11 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ, ADJ, ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="cm"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="cm"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -2311,11 +2388,11 @@ verbfinal = pensi<vblex><pres>
     <rule comment="REGLA: DET ADJ, ADJ CONJ ADJ NOM">
       <pattern>
         <pattern-item n="det"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="cm"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="and_or_nor"/>
-        <pattern-item n="adj"/>
+        <pattern-item n="adj_ger"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>

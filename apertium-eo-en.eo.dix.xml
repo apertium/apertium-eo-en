@@ -578,6 +578,12 @@
   <e       ><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="acc"/></r></p></e>
   <e r="RL"><p><l>antan</l>     <r>i<s n="vblex"/><s n="ger"/><s n="ND"/><s n="acc"/></r></p></e>
   <e       ><p><l>antajn</l>    <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="acc"/></r></p></e>
+  <e r="RL"><p><l>anta</l>      <r>i<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>anta</l>      <r>i<s n="adj"/><s n="ND"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>antaj</l>     <r>i<s n="adj"/><s n="pl"/><s n="nom"/></r></p></e>
+  <e r="RL"><p><l>antan</l>     <r>i<s n="adj"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e r="RL"><p><l>antan</l>     <r>i<s n="adj"/><s n="ND"/><s n="acc"/></r></p></e>
+  <e r="RL"><p><l>antajn</l>    <r>i<s n="adj"/><s n="pl"/><s n="acc"/></r></p></e>
   <e r="LR"><p><l>ante</l>      <r>i<s n="vblex"/><s n="ger"/></r></p></e>
   <e r="LR"><p><l>inta</l>      <r>i<s n="vblex"/><s n="ger"/><s n="sg"/><s n="nom"/></r></p></e>
   <e r="LR"><p><l>intaj</l>     <r>i<s n="vblex"/><s n="ger"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -1249,6 +1255,7 @@
 <e lm="malmulta">        <i>malmulta</i><par n="quant__det"/></e>
 <e lm="multa">           <i>multa</i><par n="quant__det"/></e>
 <e lm="multe da">        <i>multe<b/>da</i><par n="quant0__det_sg"/></e>
+<e lm="multe de">        <i>multe<b/>de</i><par n="quant0__det_sg"/></e>
 
 <e lm="plejparto de">    <i>plejparto</i><par n="quant__det"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
 

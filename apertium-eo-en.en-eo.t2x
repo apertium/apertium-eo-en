@@ -5,6 +5,9 @@
     <def-cat n="SN">
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SNpers">	<!-- persona pronomo -->
+      <cat-item lemma="prnpers" tags="SN.*"/>
+    </def-cat>
     <def-cat n="SNsubj"><!--  c="Eblaj subjektoj de subjekt-verbo-objekto frazo" -->
       <cat-item tags="SN.*"/>
       <cat-item tags="REL"/><!--  c="that, which" -->
@@ -484,6 +487,34 @@
           </chunk>
 <chunk>
 <lit-tag v="SN Adv SV SN"/>
+</chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: SNpers Adv SV - eventuala ŝanĝo de tenso en SV">
+      <pattern>
+        <pattern-item n="SNpers"/>
+        <pattern-item n="Adv"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <call-macro n="set_tns"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="whole"/>
+          </chunk>
+    <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+    <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="whole"/>
+          </chunk>
+<chunk>
+<lit-tag v="SN Adv SV"/>
 </chunk>
         </out>
       </action>
