@@ -27858,7 +27858,7 @@ TODO: aldonu kaj retrejnu la tagger
           group vaux_symbol
       ****************************** -->
 <e lm="can't">           <p><l>can't</l>     <r>can<s n="vaux"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
-<e lm="cannot">          <p><l>cannot</l>    <r>can<s n="vaux"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
+<e r="LR" lm="cannot">   <p><l>cannot</l>    <r>can<s n="vaux"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
 <e lm="could've">        <p><l>could've</l>  <r>can<s n="vaux"/><s n="past"/><j/>have<s n="vbhaver"/><s n="pres"/></r></p></e>
 <e lm="couldn't">        <p><l>couldn't</l>  <r>can<s n="vaux"/><s n="past"/><j/>not<s n="adv"/></r></p></e>
 <e lm="shan't">          <p><l>shan't</l>    <r>shall<s n="vaux"/><s n="inf"/><j/>not<s n="adv"/></r></p></e>

@@ -242,8 +242,8 @@
         <file name="eo-en.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
-        <file name="apertium-eo-en.eo-en.t1x"/>
+     <program name="apertium-transfer-j">
+        <file name="eo-en.t1x.class"/>
         <file name="eo-en.t1x.bin"/>
         <file name="eo-en.autobil.bin"/>
       </program>
