@@ -8,17 +8,35 @@ LIST person = (p1) (p2) (p3) ;
 LIST p3sg = (p3 sg) ;
 SET non-p3sg = person - p3sg ; # p1, p2 or non-singula p3
 LIST fv = (vblex pres) (vblex pret) ;
+LIST setn-gr = (<<<) (>>>) ;
 
 CONSTRAINTS
 
-REMOVE num IF
-	(0 prn)
-	(NEGATE *-1 n)
+REMOVE prn IF
+	(0 ("<I>"))
+	(-1 ("<[A-Z].*>"r))
+#	(NOT -2 (>>>))   # la ĉi-suba estas pli klara
+	(NOT -2 setn-gr)
 	;
+
+#SELECT num IF
+#	(0 ("<I>"))
+#	(-1 ("<[A-Z].*>"r))
+#	; 
+
+#REMOVE num IF
+#	(0 ("<I>"))
+#	(NOT -1 ("<[A-Z].*>"r))
+#	;
+
+#REMOVE num IF
+#	(0 prn)
+#	(NEGATE *-1 n)
+#	;
 # I walk
 
-SELECT fv IF
-	(NOT 0 p3sg)
-	(*-1 non-p3sg)
-	; 
+#SELECT fv IF
+#	(NOT 0 p3sg)
+#	(*-1 non-p3sg)
+#	; 
 # I walk
