@@ -143,6 +143,10 @@ $(PREFIX1).mode: modes
 
 $(PREFIX2).mode: modes
 
+$(PREFIX1)-bytecode.mode: modes
+
+$(PREFIX2)-bytecode.mode: modes
+
 
 apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 	$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
@@ -153,6 +157,7 @@ apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 	$(PREFIX2).t1x.bin  $(PREFIX2).genitive.t1x.bin $(PREFIX2).antaux_t2x.bin $(PREFIX2).antaux2_t2x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
 	$(PREFIX1).t1x.class \
 	$(PREFIX2).t1x.class \
+	$(PREFIX1)-bytecode.mode $(PREFIX2)-bytecode.mode \
 	$(PREFIX1).mode $(PREFIX2).mode
 
 #	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
@@ -161,6 +166,8 @@ install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
 	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(PREFIX2).mode $(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(PREFIX1)-bytecode.mode $(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(PREFIX2)-bytecode.mode $(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).antaux_t2x $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX1).t3x $(apertium_eo_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(BASENAME).$(PREFIX2).genitive.t1x $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).antaux2_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
 
