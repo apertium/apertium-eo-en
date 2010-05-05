@@ -41,7 +41,25 @@
       </program>
     </pipeline>
   </mode>
-
+ 
+  <mode name="en-eo-anmor" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="en-eo.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="en-eo-cg" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="en-eo.automorf.bin"/>
+      </program>      
+      <program name="cg-proc">
+        <file name="en-eo.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
 
  
   <mode name="en-eo-bytecode" install="yes">

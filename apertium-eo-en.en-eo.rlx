@@ -1,0 +1,24 @@
+SOFT-DELIMITERS = "<,>" ;
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" "<$.>" "<$:>" "<$!>" "<$?>" "<$|>";
+
+LIST n = (n) ;
+LIST num = (num)  ;
+LIST prn = (prn)  ;
+LIST person = (p1) (p2) (p3) ;
+LIST p3sg = (p3 sg) ;
+SET non-p3sg = person - p3sg ; # p1, p2 or non-singula p3
+LIST fv = (vblex pres) (vblex pret) ;
+
+CONSTRAINTS
+
+REMOVE num IF
+	(0 prn)
+	(NEGATE *-1 n)
+	;
+# I walk
+
+SELECT fv IF
+	(NOT 0 p3sg)
+	(*-1 non-p3sg)
+	; 
+# I walk
