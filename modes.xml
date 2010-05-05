@@ -199,7 +199,7 @@
   </mode>
 
 
-  <mode name="eo-en-bytecode" install="no">
+  <mode name="eo-en-bytecode" install="yes">
     <pipeline>
       <program name="lt-proc">
         <file name="eo-en.automorf.bin"/>
