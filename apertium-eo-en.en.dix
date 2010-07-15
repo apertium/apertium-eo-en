@@ -221,7 +221,7 @@
 </pardef>
 
 <pardef n="urls">
-  <e>       <re>((www.)[a-z\-]+[.][a-z]+)</re><p><l></l><r><s n="num"/></r></p></e>
+  <e>       <re>(((www.)|(http://))[áéíóúàèìòùäëïöüñça-z0-9\-]+([.][áéíóúàèìòùäëïöüñça-z]+)+(/[áéíóúàèìòùäëïöüñça-z0-9_]+)*([.][áéíóúàèìòùäëïöüñça-z]+)*)</re><p><l></l><r><s n="num"/></r></p></e>
 </pardef>
 
 <pardef n="expensive__adj">
@@ -13824,6 +13824,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <e lm="inorganic">       <i>inorganic</i><par n="expensive__adj"/></e>
 <e lm="in part">         <i>in<b/>part</i><par n="maybe__adv"/></e>
 <e lm="input">           <i>input</i><par n="house__n"/></e>
+<e lm="input method">           <i>input<b/>method</i><par n="house__n"/></e>
 <e lm="input">           <i>input</i><par n="accept__vblex"/></e>
 <e lm="inquiry">         <i>inquir</i><par n="bab/y__n"/></e>
 <e lm="inquire">         <i>inquir</i><par n="liv/e__vblex"/></e>
@@ -26077,6 +26078,7 @@ La problemo estas ekz:  get up  -> vekigxi<itr>   ;   get him up -> veki lin
 <!--    <e lm="variable"><i>variable</i><par n="house__n"/></e> -->
 <e lm="variable">        <i>variable</i><par n="expensive__adj"/></e>
 <e lm="variance">        <i>variance</i><par n="house__n"/></e>
+<e lm="variant">        <i>variant</i><par n="house__n"/></e>
 <e lm="variation">       <i>variation</i><par n="house__n"/></e>
 <e lm="varied">          <i>varied</i><par n="expensive__adj"/></e>
 <e lm="variegated">      <i>variegated</i><par n="expensive__adj"/></e>
