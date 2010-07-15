@@ -7074,6 +7074,7 @@
 <e lm="varia">           <i>vari</i><par n="a__adj"/></e>
 <e lm="varii">           <i>vari</i><par n="i__vblex"/></e>
 <e lm="vario">           <i>vari</i><par n="o__n"/></e>
+<e lm="variant">           <i>variant</i><par n="o__n"/></e>
 <e lm="varmego">         <i>varmeg</i><par n="o__n"/></e>
 <e lm="varmeta">         <i>varmet</i><par n="a__adj"/></e>
 <e lm="varo">            <i>var</i><par n="o__n"/></e>
@@ -21635,6 +21636,7 @@
 <e lm="tradukinto">      <i>tradukint</i><par n="o__n"/></e>
 <e lm="tradukilo">       <i>tradukil</i><par n="o__n"/></e>
 <e lm="transliteri">     <i>transliter</i><par n="i__vblex"/></e>
+<e lm="transliterumi">     <i>transliterum</i><par n="i__vblex"/></e>
 <e lm="diafana">         <i>diafan</i><par n="a__adj"/></e>
 <e lm="dissendaĵo">      <i>dissenda</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="transmisio">      <i>transmisi</i><par n="o__n"/></e>
@@ -32457,6 +32459,8 @@ oni sia sian ĉi sin Eternulo
 <e>                      <re>[\(\[]</re><p><l></l><r><s n="lpar"/></r></p></e>
 <e>                      <re>[\)\]]</re><p><l></l><r><s n="rpar"/></r></p></e>
 <e>                      <p><l>'</l>         <r>'<s n="apos"/></r></p></e>
+<e>       <re>[a-z.]+@[a-z.]+</re><p><l></l><r><s n="num"/></r></p></e>
+<e>       <re>(((www.)|(http://))[áéíóúàèìòùäëïöüñça-z0-9\-]+([.][áéíóúàèìòùäëïöüñça-z]+)+(/[áéíóúàèìòùäëïöüñça-z0-9_]+)*([.][áéíóúàèìòùäëïöüñça-z]+)*)</re><p><l></l><r><s n="num"/></r></p></e>
 
   </section>
   <section id="pluropaj_vortoj_mane" type="standard">
