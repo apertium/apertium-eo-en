@@ -272,7 +272,7 @@
 <e>       <re>[A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
 <e>       <re>[A-Z][A-Z][A-Z][A-Z][A-Z]</re><i><s n="n"/><s n="acr"/><s n="re"/></i></e>
 
-
+<e>       <re>(((www.)|(http://))[áéíóúàèìòùäëïöüñça-z0-9\-]+([.][áéíóúàèìòùäëïöüñça-z]+)+(/[áéíóúàèìòùäëïöüñça-z0-9_]+)*([.][áéíóúàèìòùäëïöüñça-z]+)*)</re><i><s n="num"/></i></e>
 
 <!-- Aldonoj Hèctor 2009/02/10 -->
 <e>       <p><l>lunde<s n="adv"/></l>                  <r>on<b/>Monday<s n="adv"/></r></p></e>
@@ -6855,7 +6855,8 @@ TODO??
 <e>       <p><l>ento<s n="n"/></l>                     <r>entity<s n="n"/></r></p></e>
 <e>       <p><l>konfidi<s n="vblex"/></l>              <r>entrust<s n="vblex"/></r></p></e>
 <e>       <p><l>eniro<s n="n"/></l>                    <r>entry<s n="n"/></r></p></e>
-<e r="LR"><p><l>enigo<s n="n"/></l>                    <r>entry<s n="n"/></r></p></e>
+<e><p><l>enigo<s n="n"/></l>                    <r>input<s n="n"/></r></p></e>
+<e><p><l>enigmetodo<s n="n"/></l>                    <r>input<b/>method<s n="n"/></r></p></e>
 <e r="LR"><p><l>enigaĵo<s n="n"/></l>                  <r>entry<s n="n"/></r></p></e>
 <e r="LR"><p><l>enskribo<s n="n"/></l>                 <r>entry<s n="n"/></r></p></e>
 <e r="LR"><p><l>aliĝilo<s n="n"/></l>                  <r>entry<s n="n"/></r></p></e>
@@ -9323,9 +9324,9 @@ TODO??
 <e>       <p><l>teni<s n="vblex"/></l>                 <r>keep<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>teniĝi<s n="vblex"/></l>               <r>keep<s n="vblex"/></r></p></e>
 <e>       <p><l>kerna<s n="adj"/></l>                  <r>key<s n="adj"/></r></p></e>
-<e>       <p><l>fundamentaĵo<s n="n"/></l>             <r>key<s n="n"/></r></p></e>
+<e r="LR">       <p><l>fundamentaĵo<s n="n"/></l>             <r>key<s n="n"/></r></p></e>
 <e r="LR"><p><l>klavo<s n="n"/></l>                    <r>key<s n="n"/></r></p></e>
-<e r="LR"><p><l>ŝlosilo<s n="n"/></l>                  <r>key<s n="n"/></r></p></e>
+<e ><p><l>ŝlosilo<s n="n"/></l>                  <r>key<s n="n"/></r></p></e>
 <e r="LR"><p><l>ŝlosila<s n="adj"/></l>                <r>key<s n="adj"/></r></p></e>
 <e>       <p><l>klavaro<s n="n"/></l>                  <r>keyboard<s n="n"/></r></p></e>
 <e r="RL"><p><l>infano<s n="n"/></l>                   <r>kid<s n="n"/></r></p></e>
@@ -21741,8 +21742,6 @@ TODO??
 <e r="RL"><p><l>inokulo<s n="n"/></l>                  <r>inoculation<s n="n"/></r></p></e>
 <e r="LR"><p><l>inokulado<s n="n"/></l>                <r>inoculation<s n="n"/></r></p></e>
 <e>       <p><l>neorganika<s n="adj"/></l>             <r>inorganic<s n="adj"/></r></p></e>
-<e r="RL"><p><l>kontribuaĵo<s n="n"/></l>              <r>input<s n="n"/></r></p></e>
-<e r="RL"><p><l>kontribui<s n="vblex"/></l>            <r>input<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>demandi<s n="vblex"/></l>              <r>inquire<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>freneza<s n="adj"/></l>                <r>insane<s n="adj"/></r></p></e>
 <e>       <p><l>frenezeco<s n="n"/></l>                <r>insanity<s n="n"/></r></p></e>
@@ -25905,7 +25904,8 @@ TODO??
 <e r="RL"><p><l>nedaŭra<s n="adj"/></l>                <r>transient<s n="adj"/></r></p></e>
 <e>       <p><l>transira<s n="adj"/></l>               <r>transitional<s n="adj"/></r></p></e>
 <e r="RL"><p><l>nedaŭra<s n="adj"/></l>                <r>transitory<s n="adj"/></r></p></e>
-<e>       <p><l>transliteri<s n="vblex"/></l>          <r>transliterate<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>transliteri<s n="vblex"/></l>          <r>transliterate<s n="vblex"/></r></p></e>
+<e>       <p><l>transliterumi<s n="vblex"/></l>          <r>transliterate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>diafana<s n="adj"/></l>                <r>translucent<s n="adj"/></r></p></e>
 <e r="RL"><p><l>elsendi<s n="vblex"/></l>              <r>transmit<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>dissendi<s n="vblex"/></l>             <r>transmit<s n="vblex"/></r></p></e>
@@ -26274,6 +26274,7 @@ TODO??
 <e r="LR"><p><l>vaporiĝo<s n="n"/></l>                 <r>vaporization<s n="n"/></r></p></e>
 <e>       <p><l>vaporigilo<s n="n"/></l>               <r>vaporizer<s n="n"/></r></p></e>
 <e r="RL"><p><l>vario<s n="n"/></l>                    <r>variance<s n="n"/></r></p></e>
+<e><p><l>varianto<s n="n"/></l>                    <r>variant<s n="n"/></r></p></e>
 <e r="RL"><p><l>bunta<s n="adj"/></l>                  <r>variegated<s n="adj"/></r></p></e>
 <e>       <p><l>diversmaniere<s n="adv"/></l>          <r>variously<s n="adv"/></r></p></e>
 <e>       <p><l>vernisi<s n="vblex"/></l>              <r>varnish<s n="vblex"/></r></p></e>
