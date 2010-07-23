@@ -8,7 +8,7 @@
 
 #CMD="cut -c9- en.crp.txt"
 #CMD="cat"
-bunzip2 -c eowiki.crp.txt.bz2 > /tmp/xxeo; CMD="cut -c9- /tmp/xxeo"
+bunzip2 -c eowiki.crp.txt.bz2_granda > /tmp/xxeo; CMD="cut -c9- /tmp/xxeo"
 
 F=/tmp/corpus-stat-res-eo.txt
 F2=/tmp/corpus-stat-res-eo2.txt

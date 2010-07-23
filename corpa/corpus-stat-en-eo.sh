@@ -41,4 +41,4 @@ echo "Coverage: $COVERAGE %"
 echo "Top unknown words in the corpus:"
 cat $F | grep '\*' | sort -f | uniq -c | sort -gr | head -20
 
-rm -f $F
+#rm -f $F
