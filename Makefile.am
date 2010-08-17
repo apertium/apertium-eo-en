@@ -159,11 +159,13 @@ apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 	$(PREFIX1).prob $(PREFIX2).prob \
 	$(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).antaux_t2x.bin $(PREFIX1).t3x.bin \
 	$(PREFIX2).t1x.bin  $(PREFIX2).genitive.t1x.bin $(PREFIX2).antaux_t2x.bin $(PREFIX2).antaux2_t2x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
-	$(PREFIX1).t1x.class \
 	$(PREFIX2).rlx.bin \
-	$(PREFIX2).t1x.class \
 	$(PREFIX1)-bytecode.mode $(PREFIX2)-bytecode.mode \
 	$(PREFIX1).mode $(PREFIX2).mode
+
+#	don't add these, or make will fail if bytecode compilation is not supported
+#	$(PREFIX1).t1x.class 
+#	$(PREFIX2).t1x.class 
 
 #	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
 
