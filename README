@@ -1,7 +1,10 @@
 Esperanto--English
 ==================================================================
 
-You need apertium-3.1 and lttoolbox-3.1 to use this translator.
+You need apertium-3.1 and lttoolbox-3.1 to use this translator,
+as well as the cg-proc utility (see http://beta.visl.sdu.dk/cg3/chunked/index.html
+and especially chapter 3 "Installation & Updating").
+
 To compile the linguistic data simply do:
 
 ./configure       (or sh autogen.sh if you have downloaded from SVN)
