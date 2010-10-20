@@ -1326,9 +1326,9 @@ verbfinal = pensi<vblex><pres>
               <tag><lit-tag v="nom"/></tag>
             </tags>
             <lu><lit v="la"/><lit-tag v="det.def.sp"/></lu>
+            <b/>
             <lu><clip pos="3" side="tl" part="lem"/><lit v="n"/><lit-tag v="num.ord"/></lu>
             <b pos="1"/>
-            <b/>
             <lu><lit v="de"/><lit-tag v="pr"/></lu>
             <b pos="2"/>
             <lu><clip pos="2" side="tl" part="lem"/><clip pos="2" side="tl" part="tags"/><lit-tag v="nom"/></lu>
