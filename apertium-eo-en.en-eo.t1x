@@ -1480,7 +1480,7 @@ verbfinal = pensi<vblex><pres>
     </rule>
 
 
-    <rule comment="REGLA: DET:a  - the derminier 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
+    <rule comment="REGLA: DET:a  - the determiner 'a' should just be deleted. Having this rule makes it possible to avoid handling 'a' in all the other rules">
       <pattern>
         <pattern-item n="a"/>
       </pattern>
@@ -2905,12 +2905,17 @@ verbfinal = pensi<vblex><pres>
         <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
         <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
             <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
+              <chunk name="det_nom_gen_nom">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                   <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
+                <lu>
+                  <lit v="la"/>
+                  <lit-tag v="det.def.sp.3"/>
+                </lu>
+                <b/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundo -->
                   <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
@@ -2932,48 +2937,7 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <rule comment="REGLA: NOM/ANT 's NOM:  gardener's dog => hundo de gxardenisto">
-      <pattern>
-        <pattern-item n="genitive_possessors"/>
-        <pattern-item n="gen"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-        <call-macro n="set_nomvar_if_known1"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="1"/></call-macro>
-        <call-macro n="ordigu_genron"><with-param pos="3"/></call-macro>
-        <call-macro n="set_blankon_se_havas_formaton2"><with-param pos="1"/><with-param pos="2"/></call-macro>
-            <out>
-              <chunk name="nom_gen_nom" case="caseFirstWord">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                  <tag><clip pos="3" side="tl" part="a_nbr"/></tag>
-                  <tag><lit-tag v="nom"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="3" side="tl" part="lem"/>              <!-- hundo -->
-                  <clip pos="3" side="tl" part="tags"/><lit-tag v="3"/>
-                </lu>
-                <var n="blanko"/><!-- senspaca, sed eble estas aliaj aferoj en gxi -->
-                <b/>
-                  <lu>
-                    <clip pos="2" side="tl" part="whole"/>          <!-- de -->
-                  </lu>
-                <b pos="2"/>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>              <!-- gxardenisto -->
-                  <clip pos="1 " side="tl" part="tags"/><var n="nomvar"/>
-                </lu>
-              </chunk>
-            </out>
-      </action>
-    </rule>
-
-
-
-
-    <rule comment="REGLA: NOM/ANT 's NOM NOM:  gardener's dog house => hunda domo de gxardenisto">
+    <rule comment="REGLA: NOM/ANT 's NOM NOM:  gardener's dog house => la hunda domo de gxardenisto">
       <pattern>
         <pattern-item n="genitive_possessors"/>
         <pattern-item n="gen"/>
@@ -2994,6 +2958,11 @@ verbfinal = pensi<vblex><pres>
                   <tag><clip pos="4" side="tl" part="a_nbr"/></tag>
                   <tag><lit-tag v="nom"/></tag>
                 </tags>
+                <lu>
+                  <lit v="la"/>
+                  <lit-tag v="det.def.sp.3"/>
+                </lu>
+                <b/>
                 <lu>
                   <clip pos="3" side="tl" part="lem"/>              <!-- hundA -->
                   <lit-tag v="adj"/>
@@ -3164,7 +3133,7 @@ verbfinal = pensi<vblex><pres>
 
 
 
-    <rule comment="rekunu and, or kaj nor aparte - ĉar povas esti parto de listo de aferoj">
+    <rule comment="rekonu and, or kaj nor aparte - ĉar povas esti parto de listo de aferoj">
       <pattern>
         <pattern-item n="and_or_nor"/>
       </pattern>
