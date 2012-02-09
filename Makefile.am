@@ -171,15 +171,15 @@ apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 #	$(PREFIX1).t1x.class 
 #	$(PREFIX2).t1x.class 
 
-#	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
+#	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_eo_modesdir)
 
 install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
-	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX2).mode $(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX1)-bytecode.mode $(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX2)-bytecode.mode $(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).antaux_t2x $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX1).t3x $(apertium_eo_endir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(BASENAME).$(PREFIX2).genitive.t1x $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).antaux2_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_eo_endir)
+	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(PREFIX1)-bytecode.mode $(DESTDIR)$(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(PREFIX2)-bytecode.mode $(DESTDIR)$(apertium_eo_modesdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).antaux_t2x $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX1).t3x $(DESTDIR)$(apertium_eo_endir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(BASENAME).$(PREFIX2).genitive.t1x $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).antaux2_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(DESTDIR)$(apertium_eo_endir)
 
 CLEANFILES = -rf $(TARGETS_COMMON) tmp1_$(BASENAME).$(LANG2).dix  $(TARGETS) modes *.mode *.bin apertium-eo-en.eo-multiwords.xml apertium_eo_en_en_eo_t1x.java apertium_eo_en_eo_en_t1x.java
