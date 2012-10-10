@@ -175,6 +175,7 @@ apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 
 install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
+	test -d $(DESTDIR)$(apertium_eo_modesdir) || mkdir $(DESTDIR)$(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_eo_modesdir)
 	$(INSTALL_DATA) $(PREFIX1)-bytecode.mode $(DESTDIR)$(apertium_eo_modesdir)
