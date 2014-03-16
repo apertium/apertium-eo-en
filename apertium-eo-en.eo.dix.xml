@@ -979,11 +979,22 @@
 <e lm="pliaĝa">          <i>pliaĝ</i><par n="a__adj"/></e>
 <e lm="pli da">          <i>pli<b/>da</i><par n="quant0__det_sg"/></e>
 <e lm="sufiĉe da">       <i>sufiĉe<b/>da</i><par n="quant0__det_sg"/></e>
+
+
 <e lm="adiaŭ">           <i>adia</i><par n="ŭ"/><par n="adiós__ij"/></e>
 <e lm="saluton">         <i>saluton</i><par n="adiós__ij"/></e>
+<e lm="gratulon">        <i>gratulon</i><par n="adiós__ij"/></e>
+<e lm="dankon">          <i>dankon</i><par n="adiós__ij"/></e>
+<e lm="multan dankon">   <i>multan<b/>dankon</i><par n="adiós__ij"/></e>
+<e lm="nedankinde">      <i>nedankinde</i><par n="adiós__ij"/></e>
 <e lm="ĝis poste">       <par n="ĝ"/><i>is<b/>poste</i><par n="adiós__ij"/></e>
 <e lm="ĝis revido">      <par n="ĝ"/><i>is<b/>revido</i><par n="adiós__ij"/></e>
+<e lm="bonan tagon">     <i>bonan<b/>tagon</i><par n="adiós__ij"/></e>
 <e lm="bonan matenon">   <i>bonan<b/>matenon</i><par n="adiós__ij"/></e>
+<e lm="bonan posttagmezon">   <i>bonan<b/>posttagmezon</i><par n="adiós__ij"/></e>
+<e lm="bonan vesperon">  <i>bonan<b/>vesperon</i><par n="adiós__ij"/></e>
+<e lm="bonan nokton">    <i>bonan<b/>nokton</i><par n="adiós__ij"/></e>
+
 
 <e lm="kelka">           <i>kelka</i><p><l>j</l><r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc"/></e>
 <e lm="multa">           <i>multa</i><p><l>j</l><r><s n="prn"/><s n="tn"/><s n="pl"/></r></p><par n="nomacc"/></e>
@@ -1128,12 +1139,12 @@
 <e lm="kiu ajn">              <p><l>kiuj<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e lm="kiu ajn">              <p><l>kiujn<b/>ajn</l>        <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="pl"/><s n="acc"/></r></p></e>
 -->
-<e lm="io ajn">          <p><l>io<b/>ajn</l> <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="io ajn">          <p><l>ion<b/>ajn</l><r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kio ajn">         <p><l>kio<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="io ajn">          <p><l>io<b/>ajn</l>  <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="io ajn">          <p><l>ion<b/>ajn</l> <r>io<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="kio ajn">         <p><l>kio<b/>ajn</l> <r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e lm="kio ajn">         <p><l>kion<b/>ajn</l><r>kio<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="kiu ajn">              <p><l>kiu<b/>ajn</l>          <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e lm="kiu ajn">              <p><l>kiun<b/>ajn</l>         <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="kiu ajn">         <p><l>kiu<b/>ajn</l> <r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e lm="kiu ajn">         <p><l>kiun<b/>ajn</l><r>kiu<b/>ajn<s n="prn"/><s n="tn"/><s n="sg"/><s n="acc"/></r></p></e>
 
 
 
@@ -1467,7 +1478,9 @@
 <e lm="Malto">           <i>Malt</i><par n="Barcelon/o__np"/></e>
 <e lm="Maroko">          <i>Marok</i><par n="Barcelon/o__np"/></e>
 <e lm="Maŭritanio">      <i>Ma</i><par n="ŭ"/><i>ritani</i><par n="Barcelon/o__np"/></e>
+<e lm="Marso">           <i>Mars</i><par n="Barcelon/o__np"/></e>
 <e lm="Meksiko">         <i>Meksik</i><par n="Barcelon/o__np"/></e>
+<e lm="Merkuro">         <i>Merkur</i><par n="Barcelon/o__np"/></e>
 <e lm="Monako">          <i>Monak</i><par n="Barcelon/o__np"/></e>
 <e lm="Montevideo">      <i>Montevide</i><par n="Barcelon/o__np"/></e>
 <e lm="Montserato">      <i>Montserat</i><par n="Barcelon/o__np"/></e>
@@ -1475,6 +1488,7 @@
 <e lm="Navaro">          <i>Navar</i><par n="Barcelon/o__np"/></e>
 <e lm="Nederlando">      <i>Nederland</i><par n="Barcelon/o__np"/></e>
 <e lm="Nepalo">          <i>Nepal</i><par n="Barcelon/o__np"/></e>
+<e lm="Neptuno">         <i>Neptun</i><par n="Barcelon/o__np"/></e>
 <e lm="Niĝerio">         <i>Ni</i><par n="ĝ"/><i>eri</i><par n="Barcelon/o__np"/></e>
 <e lm="Nikaragvo">       <i>Nikaragv</i><par n="Barcelon/o__np"/></e>
 <e lm="Normandio">       <i>Normand</i><par n="Afgan/io__np"/></e>
@@ -1490,6 +1504,7 @@
 <e lm="Pekino">          <i>Pekin</i><par n="Barcelon/o__np"/></e>
 <e lm="Persio">          <i>Pers</i><par n="Afgan/io__np"/></e>
 <e lm="Peruo">           <i>Peru</i><par n="Barcelon/o__np"/></e>
+<e lm="Plutono">         <i>Pluton</i><par n="Barcelon/o__np"/></e>
 <e lm="Pollando">        <i>Polland</i><par n="Barcelon/o__np"/></e>
 <e lm="Portugalio">      <i>Portugal</i><par n="Afgan/io__np"/></e>
 <e lm="Prago">           <i>Prag</i><par n="Barcelon/o__np"/></e>
@@ -1509,11 +1524,13 @@
 <e lm="Slovakio">        <i>Slovak</i><par n="Afgan/io__np"/></e>
 <e lm="Slovenio">        <i>Sloven</i><par n="Afgan/io__np"/></e>
 <e lm="Stokholmo">       <i>Stokholm</i><par n="Barcelon/o__np"/></e>
+<e lm="Sunsistemo">      <i>Sunsistem</i><par n="Barcelon/o__np"/></e>
 <e lm="Sud-Afriko">      <i>Sud-Afrik</i><par n="Barcelon/o__np"/></e>
 <e lm="Nord-Afriko">     <i>Nord-Afrik</i><par n="Barcelon/o__np"/></e>
 <e lm="Orient-Afriko">   <i>Orient-Afrik</i><par n="Barcelon/o__np"/></e>
 <e lm="Okcident-Afriko"> <i>Okcident-Afrik</i><par n="Barcelon/o__np"/></e>
 <e lm="Afriko">          <i>Afrik</i><par n="Barcelon/o__np"/></e>
+<e lm="Saturno">         <i>Saturn</i><par n="Barcelon/o__np"/></e>
 <e lm="Sudano">          <i>Sudan</i><par n="Barcelon/o__np"/></e>
 <e lm="Svedio">          <i>Sved</i><par n="Afgan/io__np"/></e>
 <e lm="Svisio">          <i>Svis</i><par n="Afgan/io__np"/></e>
@@ -1526,10 +1543,12 @@
 <e lm="Turkio">          <i>Turk</i><par n="Afgan/io__np"/></e>
 <e lm="Ukrainio">        <i>Ukrain</i><par n="Afgan/io__np"/></e>
 <e lm="Urugvajo">        <i>Urugvaj</i><par n="Barcelon/o__np"/></e>
+<e lm="Urano">           <i>Uran</i><par n="Barcelon/o__np"/></e>
 <e lm="Usono">           <i>Uson</i><par n="Barcelon/o__np"/></e>
 <e lm="Varsovio">        <i>Varsovi</i><par n="Barcelon/o__np"/></e>
 <e lm="Vaŝingtono">      <i>Va</i><par n="ŝ"/><i>ington</i><par n="Barcelon/o__np"/></e>
 <e lm="Venezuelo">       <i>Venezuel</i><par n="Barcelon/o__np"/></e>
+<e lm="Venuso">          <i>Venus</i><par n="Barcelon/o__np"/></e>
 <e lm="Vieno">           <i>Vien</i><par n="Barcelon/o__np"/></e>
 <e lm="Vjetnamio">       <i>Vjetnam</i><par n="Afgan/io__np"/></e>
 <e lm="Vaŝingtono">      <i>Va</i><par n="ŝ"/><i>ingtono</i><par n="Mark__np"/></e>
@@ -2663,6 +2682,7 @@
 <e lm="cikatro">         <i>cikatr</i><par n="o__n"/></e>
 <e lm="ciklodromo">      <i>ciklodrom</i><par n="o__n"/></e>
 <e lm="ciklo">           <i>cikl</i><par n="o__n"/></e>
+<e lm="ciklono">         <i>ciklon</i><par n="o__n"/></e>
 <e lm="cikonio">         <i>cikoni</i><par n="o__n"/></e>
 <e lm="ĉilia">           <par n="ĉ"/><i>ili</i><par n="a__adj"/></e>
 <e lm="cinamo">          <i>cinam</i><par n="o__n"/></e>
@@ -2708,6 +2728,7 @@
 <e lm="danĝero">         <i>dan</i><par n="ĝ"/><i>er</i><par n="o__n"/></e>
 <e lm="deadmoni">        <i>deadmon</i><par n="i__vblex"/></e>
 <e lm="danki">           <i>dank</i><par n="i__vblex"/></e>
+<e lm="danko">           <i>dank</i><par n="o__n"/></e>
 <e lm="datenbanko">      <i>datenbank</i><par n="o__n"/></e>
 <e lm="datiĝi">          <i>dati</i><par n="ĝ"/><par n="i__vblex"/></e>
 <e lm="dati">            <i>dat</i><par n="i__vblex"/></e>
@@ -4426,6 +4447,8 @@
 <e lm="kreski">          <i>kresk</i><par n="i__vblex"/></e>
 <e lm="kresko">          <i>kresk</i><par n="o__n"/></e>
 <e lm="krevi">           <i>krev</i><par n="i__vblex"/></e>
+<e lm="kriĉi">           <i>kri</i><par n="ĉ"/><par n="i__vblex"/></e>
+<e lm="kriĉo">           <i>kri</i><par n="ĉ"/><par n="o__n"/></e>
 <e lm="krii">            <i>kri</i><par n="i__vblex"/></e>
 <e lm="krimo">           <i>krim</i><par n="o__n"/></e>
 <e lm="krio">            <i>kri</i><par n="o__n"/></e>
@@ -4461,6 +4484,7 @@
 <e lm="kuiri">           <i>kuir</i><par n="i__vblex"/></e>
 <e lm="kuirilaro">       <i>kuirilar</i><par n="o__n"/></e>
 <e lm="kuirpoto">        <i>kuirpot</i><par n="o__n"/></e>
+<e lm="kuirforno">       <i>kuirforn</i><par n="o__n"/></e>
 <e lm="kukaĵo">          <i>kuka</i><par n="ĵ"/><par n="o__n"/></e>
 <e lm="kukbakejo">       <i>kukbakej</i><par n="o__n"/></e>
 <e lm="kukumo">          <i>kukum</i><par n="o__n"/></e>
@@ -4890,6 +4914,7 @@
 <e lm="manuskripto">     <i>manuskript</i><par n="o__n"/></e>
 <e lm="mapo">            <i>map</i><par n="o__n"/></e>
 <e lm="maratono">        <i>maraton</i><par n="o__n"/></e>
+<e lm="marasma">         <i>marasm</i><par n="a__adj"/></e>
 <e lm="marbordo">        <i>marbord</i><par n="o__n"/></e>
 <e lm="mardo">           <i>mard</i><par n="o__n"/></e>
 <e lm="marioneto">       <i>marionet</i><par n="o__n"/></e>
@@ -6383,6 +6408,7 @@
 <e lm="ŝildo">           <par n="ŝ"/><i>ild</i><par n="o__n"/></e>
 <e lm="silento">         <i>silent</i><par n="o__n"/></e>
 <e lm="silko">           <i>silk</i><par n="o__n"/></e>
+<e lm="silkeca">         <i>silkec</i><par n="a__adj"/></e>
 <e lm="silueto">         <i>siluet</i><par n="o__n"/></e>
 <e lm="simbola">         <i>simbol</i><par n="a__adj"/></e>
 <e lm="simboli">         <i>simbol</i><par n="i__vblex"/></e>
@@ -9413,6 +9439,7 @@
 <e lm="flugkompanio">    <i>flugkompani</i><par n="o__n"/></e>
 <e lm="fluglinio">       <i>fluglini</i><par n="o__n"/></e>
 <e lm="aerŝipo">         <i>aer</i><par n="ŝ"/><i>ip</i><par n="o__n"/></e>
+<e lm="alarmi">          <i>alarm</i><par n="i__vblex"/></e>
 <e lm="alarmilo">        <i>alarmil</i><par n="o__n"/></e>
 <e lm="alarmosignalo">   <i>alarmosignal</i><par n="o__n"/></e>
 <e lm="avertilo">        <i>avertil</i><par n="o__n"/></e>
@@ -11047,6 +11074,7 @@
 <e lm="gajema">          <i>gajem</i><par n="a__adj"/></e>
 <e lm="gaje">            <i>gaj</i><par n="e__adv"/></e>
 <e lm="gajeme">          <i>gajem</i><par n="e__adv"/></e>
+<e lm="gajoplene">       <i>gajoplen</i><par n="e__adv"/></e>
 <e lm="bondezirojni">    <i>bondezirojn</i><par n="i__vblex"/></e>
 <e lm="kelatiĝo">        <par n="k_ĥ"/><i>elati</i><par n="ĝ"/><par n="o__n"/></e>
 <e lm="kemiaĵa">         <i>kemia</i><par n="ĵ"/><par n="a__adj"/></e>
@@ -16519,6 +16547,8 @@
 <e lm="malbonintenco">   <i>malbonintenc</i><par n="o__n"/></e>
 <e lm="maligneco">       <i>malignec</i><par n="o__n"/></e>
 <e lm="malbonvola">      <i>malbonvol</i><par n="a__adj"/></e>
+<e lm="maltrankvila">    <i>maltrankvil</i><par n="a__adj"/></e>
+<e lm="maltrankvile">    <i>maltrankvil</i><par n="e__adv"/></e>
 <e lm="modlebleco">      <i>modleblec</i><par n="o__n"/></e>
 <e lm="forĝebleco">      <i>for</i><par n="ĝ"/><i>eblec</i><par n="o__n"/></e>
 <e lm="modlebla">        <i>modlebl</i><par n="a__adj"/></e>

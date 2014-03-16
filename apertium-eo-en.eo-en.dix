@@ -565,7 +565,10 @@
 <e r="RL"><p><l>iu<b/>ajn<s n="prn"/><s n="tn"/></l>   <r>anyone<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>kio<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whatever<s n="prn"/><s n="tn"/></r></p></e>
 <e>       <p><l>kiu<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>whoever<s n="prn"/><s n="tn"/></r></p></e>
-
+<!--
+<e>       <p><l>kiam<b/>ajn<s n="prn"/><s n="tn"/></l> <r>whenever<s n="adv"/><s n="itg"/></r></p></e>
+<e>       <p><l>kie<b/>ajn<s n="prn"/><s n="tn"/></l>  <r>wherever<s n="adv"/><s n="itg"/></r></p></e>
+-->
 
 <!-- var før:
 <e r="RL"><p><l>ĉiu<s n="prn"/><s n="tn"/><s n="ND"/></l><r>any<s n="prn"/><s n="tn"/><s n="sp"/></r></p></e>
@@ -777,11 +780,23 @@ BUT:
     <!-- Interjections -->
 
 <e>       <p><l>adiaŭ<s n="ij"/></l>                   <r>goodbye<s n="ij"/></r></p></e>
+<e>       <p><l>bonan<b/>tagon<s n="ij"/></l>          <r>good<b/>day<s n="ij"/></r></p></e>
 <e>       <p><l>bonan<b/>matenon<s n="ij"/></l>        <r>good<b/>morning<s n="ij"/></r></p></e>
+<e>       <p><l>bonan<b/>posttagmezon<s n="ij"/></l>   <r>good<b/>afternoon<s n="ij"/></r></p></e>
+<e>       <p><l>bonan<b/>vesperon<s n="ij"/></l>       <r>good<b/>evening<s n="ij"/></r></p></e>
+<e>       <p><l>bonan<b/>nokton<s n="ij"/></l>         <r>good<b/>night<s n="ij"/></r></p></e>
 <e>       <p><l>ĝis<b/>poste<s n="ij"/></l>            <r>see<b/>you<b/>later<s n="ij"/></r></p></e>
 <e>       <p><l>ĝis<b/>revido<s n="ij"/></l>           <r>see<b/>you<s n="ij"/></r></p></e>
 <e>       <p><l>saluton<s n="ij"/></l>                 <r>hello<s n="ij"/></r></p></e>
-
+<e>       <p><l>gratulon<s n="ij"/></l>                <r>congratulations<s n="ij"/></r></p></e>
+<e r="RL"><p><l>gratulon<s n="ij"/></l>                <r>congrats<s n="ij"/></r></p></e>
+<e>       <p><l>dankon<s n="ij"/></l>                  <r>thank<b/>you<s n="ij"/></r></p></e>
+<e r="RL"><p><l>dankon<s n="ij"/></l>                  <r>thanks<s n="ij"/></r></p></e>
+<e>       <p><l>multan<b/>dankon<s n="ij"/></l>        <r>thank<b/>you<b/>very<b/>much<s n="ij"/></r></p></e>
+<e r="RL"><p><l>multan<b/>dankon<s n="ij"/></l>        <r>thanks<b/>a<b/>lot<s n="ij"/></r></p></e>
+<e r="RL"><p><l>multan<b/>dankon<s n="ij"/></l>        <r>thanks<b/>a<b/>ton<s n="ij"/></r></p></e>
+<e>       <p><l>nedankinde<s n="ij"/></l>              <r>you<b/>are<b/>welcome<s n="ij"/></r></p></e>
+<!-- TODO: 'nedankinde' may also be used as an adverb: 'not worthy of thanks' -->
 
     <!-- Sub-ordinating conjunction -->
 
@@ -1257,8 +1272,10 @@ BUT:
 <e>       <p><l>Makedonio<s n="np"/><s n="top"/></l>   <r>Macedonia<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Malto<s n="np"/><s n="top"/></l>       <r>Malta<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Maroko<s n="np"/><s n="top"/></l>      <r>Morocco<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Marso<s n="np"/><s n="top"/></l>       <r>Mars<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Maŭritanio<s n="np"/><s n="top"/></l>  <r>Mauritania<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Meksiko<s n="np"/><s n="top"/></l>     <r>Mexico<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Merkuro<s n="np"/><s n="top"/></l>     <r>Mercury<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Monako<s n="np"/><s n="top"/></l>      <r>Monaco<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Montserato<s n="np"/><s n="top"/></l>  <r>Montserrat<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Moskvo<s n="np"/><s n="top"/></l>      <r>Moscow<s n="np"/><s n="top"/></r></p></e>
@@ -1266,6 +1283,7 @@ BUT:
 <e r="RL"><p><l>Nederlando<s n="np"/><s n="top"/></l>  <r>Holland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nederlando<s n="np"/><s n="top"/></l>  <r>the<b/>Netherlands<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nepalo<s n="np"/><s n="top"/></l>      <r>Nepal<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Neptuno<s n="np"/><s n="top"/></l>     <r>Neptune<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Niĝerio<s n="np"/><s n="top"/></l>     <r>Nigeria<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Nikaragvo<s n="np"/><s n="top"/></l>   <r>Nicaragua<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Normandio<s n="np"/><s n="top"/></l>   <r>Normandy<s n="np"/><s n="top"/></r></p></e>
@@ -1279,6 +1297,7 @@ BUT:
 <e>       <p><l>Pariso<s n="np"/><s n="ant"/></l>      <r>Paris<s n="np"/><s n="ant"/></r></p></e>
 <e>       <p><l>Pekino<s n="np"/><s n="top"/></l>      <r>Peking<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Peruo<s n="np"/><s n="top"/></l>       <r>Peru<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Plutono <s n="np"/><s n="top"/></l>    <r>Pluto<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Pollando<s n="np"/><s n="top"/></l>    <r>Poland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Polio<s n="np"/><s n="top"/></l>       <r>Poland<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Portugalio<s n="np"/><s n="top"/></l>  <r>Portugal<s n="np"/><s n="top"/></r></p></e>
@@ -1304,7 +1323,9 @@ BUT:
 <e>       <p><l>Nord-Afriko<s n="np"/><s n="top"/></l> <r>North<b/>Africa<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Orient-Afriko<s n="np"/><s n="top"/></l><r>East<b/>Africa<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Okcident-Afriko<s n="np"/><s n="top"/></l><r>West<b/>Africa<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Saturno<s n="np"/><s n="top"/></l>     <r>Saturn<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Sudano<s n="np"/><s n="top"/></l>      <r>Sudan<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Sunsistemo<s n="np"/><s n="top"/></l>  <r>Solar<b/>System<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Svedio<s n="np"/><s n="top"/></l>      <r>Sweden<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Svislando<s n="np"/><s n="top"/></l>   <r>Switzerland<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Svisio<s n="np"/><s n="top"/></l>      <r>Switzerland<s n="np"/><s n="top"/></r></p></e>
@@ -1316,6 +1337,7 @@ BUT:
 <e>       <p><l>Turkio<s n="np"/><s n="top"/></l>      <r>Turkey<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Ukrainio<s n="np"/><s n="top"/></l>    <r>Ukraine<s n="np"/><s n="top"/></r></p></e>
 <e r="LR"><p><l>Ukrajno<s n="np"/><s n="top"/></l>     <r>Ukraine<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Urano<s n="np"/><s n="top"/></l>       <r>Uranus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Urugvajo<s n="np"/><s n="top"/></l>    <r>Uruguay<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Usono<s n="np"/><s n="top"/><s n="sg"/></l><r>United<b/>States<s n="np"/><s n="top"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>Usono<s n="np"/><s n="top"/><s n="sg"/></l><r>the<b/>United<b/>States<s n="np"/><s n="top"/><s n="pl"/></r></p></e>
@@ -1324,6 +1346,7 @@ BUT:
 <e>       <p><l>Varsovio<s n="np"/><s n="top"/></l>    <r>Warsaw<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vaŝingtono<s n="np"/><s n="top"/></l>  <r>Washington<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Venezuelo<s n="np"/><s n="top"/></l>   <r>Venezuela<s n="np"/><s n="top"/></r></p></e>
+<e>       <p><l>Venuso<s n="np"/><s n="top"/></l>      <r>Venus<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vieno<s n="np"/><s n="top"/></l>       <r>Vienna<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Vjetnamio<s n="np"/><s n="top"/></l>   <r>Vietnam<s n="np"/><s n="top"/></r></p></e>
 <e>       <p><l>Viktorio<s n="np"/><s n="top"/></l>    <r>Victoria<s n="np"/><s n="top"/></r></p></e>
@@ -8539,6 +8562,7 @@ TODO??
 <e>       <p><l>horoskopo<s n="n"/></l>                <r>horoscope<s n="n"/></r></p></e>
 <e>       <p><l>horora<s n="adj"/></l>                 <r>horrible<s n="adj"/></r></p></e>
 <e r="LR"><p><l>aĉgusta<s n="adj"/></l>                <r>horrible<s n="adj"/></r></p></e>
+<e>       <p><l>horore<s n="adv"/></l>                 <r>horribly<s n="adv"/></r></p></e>
 <e>       <p><l>hororo<s n="n"/></l>                   <r>horror<s n="n"/></r></p></e>
 <e r="LR"><p><l>teruro<s n="n"/></l>                   <r>horror<s n="n"/></r></p></e>
 <e r="LR"><p><l>teruriĝo<s n="n"/></l>                 <r>horror<s n="n"/></r></p></e>
@@ -10131,6 +10155,7 @@ TODO??
 <e r="RL"><p><l>meriti<s n="vblex"/></l>               <r>merit<s n="vblex"/></r></p></e>
 <e>       <p><l>merito<s n="n"/></l>                   <r>merit<s n="n"/></r></p></e>
 <e>       <p><l>gaja<s n="adj"/></l>                   <r>merry<s n="adj"/></r></p></e>
+<e>       <p><l>gajoplene<s n="adv"/></l>              <r>merrily<s n="adv"/></r></p></e>
 <e>       <p><l>malordo<s n="n"/></l>                  <r>mess<s n="n"/></r></p></e>
 <e r="LR"><p><l>senordeco<s n="n"/></l>                <r>mess<s n="n"/></r></p></e>
 <e r="LR"><p><l>malaranĝo<s n="n"/></l>                <r>mess<s n="n"/></r></p></e>
@@ -13601,6 +13626,7 @@ TODO??
 <e r="LR"><p><l>silentema<s n="adj"/></l>              <r>silent<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malparolema<s n="adj"/></l>            <r>silent<s n="adj"/></r></p></e>
 <e>       <p><l>silko<s n="n"/></l>                    <r>silk<s n="n"/></r></p></e>
+<e>       <p><l>silkeca<s n="adj"/></l>                <r>silkec<s n="adj"/></r></p></e>
 <e r="LR"><p><l>fajo<s n="n"/></l>                     <r>silk<s n="n"/></r></p></e>
 <e>       <p><l>silueto<s n="n"/></l>                  <r>silhouette<s n="n"/></r></p></e>
 <e>       <p><l>ridinda<s n="adj"/></l>                <r>silly<s n="adj"/></r></p></e>
@@ -14702,7 +14728,9 @@ TODO??
 <e>       <p><l>teksta<s n="adj"/></l>                 <r>textual<s n="adj"/></r></p></e>
 <e r="RL"><p><l>feliĉe<s n="adv"/></l>                 <r>thankfully<s n="adv"/></r></p></e>
 <e r="LR"><p><l>dankinde<s n="adv"/></l>               <r>thankfully<s n="adv"/></r></p></e>
-<e>       <p><l>dankoni<s n="vblex"/></l>              <r>thank<s n="vblex"/></r></p></e>
+<e>       <p><l>danko<s n="n"/></l>                    <r>thanks<s n="n"/></r></p></e>
+<e>       <p><l>danki<s n="vblex"/></l>                <r>thank<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>dankoni<s n="vblex"/></l>              <r>thank<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>dankojni<s n="vblex"/></l>             <r>thank<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>degeli<s n="vblex"/></l>               <r>thaw<s n="vblex"/></r></p></e>
 <e>       <p><l>degelo<s n="n"/></l>                   <r>thaw<s n="n"/></r></p></e>
@@ -16900,7 +16928,6 @@ TODO??
 <e r="LR"><p><l>ĉirkaŭi<s n="vblex"/></l>              <r>surround<s n="vblex"/></r></p></e>
 <e>       <p><l>ĉirkaŭlimigi<s n="vblex"/></l>         <r>circumscribe<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>damni<s n="vblex"/></l>                <r>curse<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>danki<s n="vblex"/></l>                <r>thank<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>deadmoni<s n="vblex"/></l>             <r>deter<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>deĉenigi<s n="vblex"/></l>             <r>unchain<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>degradi<s n="vblex"/></l>              <r>degrade<s n="vblex"/></r></p></e>
@@ -17635,6 +17662,7 @@ TODO??
 <e>       <p><l>antisemitismo<s n="n"/></l>            <r>antisemitism<s n="n"/></r></p></e>
 <e>       <p><l>malsocietema<s n="adj"/></l>           <r>antisocial<s n="adj"/></r></p></e>
 <e r="RL"><p><l>maltrankvila<s n="adj"/></l>           <r>anxious<s n="adj"/></r></p></e>
+<e>       <p><l>maltrankvile<s n="adv"/></l>           <r>anxiously<s n="adv"/></r></p></e>
 <e>       <p><l>ĉiuokaze<s n="adv"/></l>               <r>anyhow<s n="adv"/></r></p></e>
 <e r="RL"><p><l>ĉiuokaze<s n="adv"/></l>               <r>anyway<s n="adv"/></r></p></e>
 <e>       <p><l>rasapartismo<s n="n"/></l>             <r>apartheid<s n="n"/></r></p></e>
@@ -19106,6 +19134,7 @@ TODO??
 <e>       <p><l>konvulsio<s n="n"/></l>                <r>convulsion<s n="n"/></r></p></e>
 <e r="RL"><p><l>kuirado<s n="n"/></l>                  <r>cooking<s n="n"/></r></p></e>
 <e r="LR"><p><l>kuiraĵo<s n="n"/></l>                  <r>cooking<s n="n"/></r></p></e>
+<e>       <p><l>kiurforno<s n="n"/></l>                <r>cookstove<s n="n"/></r></p></e>
 <e>       <p><l>barelisto<s n="n"/></l>                <r>cooper<s n="n"/></r></p></e>
 <e r="RL"><p><l>kunlabori<s n="vblex"/></l>            <r>cooperate<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kunlaboro<s n="n"/></l>                <r>cooperation<s n="n"/></r></p></e>
@@ -19319,6 +19348,7 @@ TODO??
 <e>       <p><l>bicikliri<s n="vblex"/></l>            <r>cycle<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>bicikladi<s n="vblex"/></l>            <r>cycle<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>bicikli<s n="vblex"/></l>              <r>cycle<s n="vblex"/></r></p></e>
+<e>       <p><l>ciklono<s n="n"/></l>                  <r>cyclone<s n="n"/></r></p></e>
 <e>       <p><l>ciklona<s n="adj"/></l>                <r>cyclonic<s n="adj"/></r></p></e>
 <e r="RL"><p><l>cilindro<s n="n"/></l>                 <r>cylinder<s n="n"/></r></p></e>
 <e>       <p><l>cimbalo<s n="n"/></l>                  <r>cymbal<s n="n"/></r></p></e>
@@ -22409,6 +22439,7 @@ TODO??
 <e r="LR"><p><l>flankenŝoviĝo<s n="n"/></l>            <r>marginalisation<s n="n"/></r></p></e>
 <e>       <p><l>marĝene<s n="adv"/></l>                <r>marginally<s n="adv"/></r></p></e>
 <e r="RL"><p><l>mara<s n="adj"/></l>                   <r>marine<s n="adj"/></r></p></e>
+<e>       <p><l>marasma<s n="adj"/></l>                <r>gaunt<s n="adj"/></r></p></e>
 <e>       <p><l>marsoldato<s n="n"/></l>               <r>marine<s n="n"/></r></p></e>
 <e r="RL"><p><l>maristo<s n="n"/></l>                  <r>mariner<s n="n"/></r></p></e>
 <e>       <p><l>edzeca<s n="adj"/></l>                 <r>marital<s n="adj"/></r></p></e>
@@ -24858,6 +24889,8 @@ TODO??
 <e>       <p><l>pecetigi<s n="vblex"/></l>             <r>shred<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>sagaca<s n="adj"/></l>                 <r>shrewd<s n="adj"/></r></p></e>
 <e r="RL"><p><l>sagaco<s n="n"/></l>                   <r>shrewdness<s n="n"/></r></p></e>
+<e>       <p><l>kriĉo<s n="n"/></l>                    <r>shriek<s n="n"/></r></p></e>
+<e>       <p><l>kriĉi<s n="vblex"/></l>                <r>shriek<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>kuntiriĝi<s n="vblex"/></l>            <r>shrink<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>ŝrumpigi<s n="vblex"/></l>             <r>shrink<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>maldikiĝi<s n="vblex"/></l>            <r>shrink<s n="vblex"/></r></p></e>
@@ -27462,7 +27495,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="LR"><p><l>fiakro<s n="n"/></l>                   <r>cab<s n="n"/></r></p></e>
 <e>       <p><l>intrigantaro<s n="n"/></l>             <r>cabal<s n="n"/></r></p></e>
 <e r="RL"><p><l>prestiĝo<s n="n"/></l>                 <r>cachet<s n="n"/></r></p></e>
-<e r="RL"><p><l>kafeterio<s n="n"/></l>                <r>cafeteria<s n="n"/></r></p></e>
+<e r="RL"><p><l>kafejo<s n="n"/></l>                   <r>cafeteria<s n="n"/></r></p></e>
 <e>       <p><l>krustiĝi<s n="vblex"/></l>             <r>cake<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>katastrofa<s n="adj"/></l>             <r>calamitous<s n="adj"/></r></p></e>
 <e r="LR"><p><l>malfeliĉega<s n="adj"/></l>            <r>calamitous<s n="adj"/></r></p></e>
@@ -31478,6 +31511,7 @@ RL restic can be lifted <e r="LR"><l>senemocia<adj></l><r>calm<adj></r></e>
 <e r="RL"><p><l>akra<s n="adj"/></l>                   <r>stark<s n="adj"/></r></p></e>
 <e r="RL"><p><l>ĉefroli<s n="vblex"/></l>              <r>star<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>surpriza<s n="adj"/></l>               <r>startling<s n="adj"/></r></p></e>
+<e>       <p><l>alarmi<s n="vblex"/></l>               <r>startle<s n="vblex"/></r></p></e>
 <e>       <p><l>noventrepreno<s n="n"/></l>            <r>startup<s n="n"/></r></p></e>
 <e r="RL"><p><l>kaŝi<s n="vblex"/></l>                 <r>stash<s n="vblex"/></r></p></e>
 <e>       <p><l>ŝtatiĝo<s n="n"/></l>                  <r>statehood<s n="n"/></r></p></e>
