@@ -67,7 +67,13 @@ dev/superblank-numberer.py -text
 /en-eo_oldtag.prob -text svneol=unset#unset
 /en-np.dat -text
 /eo-en.prob -text svneol=unset#unset
+eval140320-2/originalo.txt -text
+eval140320-2/traduko_apertium.txt -text
+eval140320-2/traduko_apertium_rev.txt -text
+eval140320-2/traduko_guglo.txt -text
+eval140320-2/traduko_guglo_rev.txt -text
 eval140320/original.txt -text
+eval140320/rezultoj.txt -text
 eval140320/traduko_apertium.txt -text
 eval140320/traduko_apertium_rev.txt -text
 eval140320/traduko_guglo.txt -text

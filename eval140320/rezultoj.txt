@@ -1,0 +1,30 @@
+Apertium-traduko
+Statistics about input files
+-------------------------------------------------------
+Number of words in reference: 335
+Number of words in test: 324
+Number of unknown words (marked with a star) in test: 23
+Percentage of unknown words: 7,10 %
+
+Results when removing unknown-word marks (stars)
+-------------------------------------------------------
+Edit distance: 134
+Word error rate (WER): 40,00 %
+Number of position-independent correct words: 217
+Position-independent word error rate (PER): 35,22 %
+
+
+Guglo-traduko
+Statistics about input files
+-------------------------------------------------------
+Number of words in reference: 337
+Number of words in test: 365
+Number of unknown words (marked with a star) in test: 0
+Percentage of unknown words: 0,00 %
+
+Results when removing unknown-word marks (stars)
+-------------------------------------------------------
+Edit distance: 184
+Word error rate (WER): 54,60 %
+Number of position-independent correct words: 206
+Position-independent word error rate (PER): 47,18 %
