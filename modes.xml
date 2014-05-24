@@ -49,6 +49,17 @@
       </program>
     </pipeline>
   </mode>
+
+  <mode name="en-eo-tagger" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="en-eo.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="en-eo.prob"/>
+      </program>
+    </pipeline>
+  </mode>
   
   <mode name="en-eo-cg" install="yes">
     <pipeline>
