@@ -62,6 +62,7 @@ dev/gen-test.py -text
 dev/paradigm-chopper.py -text
 dev/superblank-denumberer.py -text
 dev/superblank-numberer.py -text
+/en-eo-supervised.make -text
 /en-eo-unsupervised.make -text
 /en-eo.prob -text svneol=unset#unset
 /en-eo_oldtag.prob -text svneol=unset#unset
