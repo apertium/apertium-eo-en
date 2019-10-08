@@ -7,11 +7,16 @@ and especially chapter 3 "Installation & Updating").
 
 To compile the linguistic data simply do:
 
-./configure       (or sh autogen.sh if you have downloaded from SVN)
+./autogen.sh
 make
 make install
 
 inside of this directory.
+
+There is a Java bytecode transfer mode that will fail. 
+If you need it please install lttoolbox-java and make sure you use Java 8 
+(on Ubuntu: export JAVA_HOME=/usr/lib/jvm/java-8-oracle/)
+
 
 Further documentation is available in the README and at: 
 
