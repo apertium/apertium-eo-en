@@ -143,7 +143,7 @@ apertium_eo_endir=$(prefix)/share/apertium/apertium-$(PREFIX1)/
 apertium_eo_modesdir=$(prefix)/share/apertium/modes/
 
 modes: modes.xml
-	apertium-gen-modes modes.xml modes/
+	apertium-gen-modes modes.xml
 
 $(PREFIX1).mode: modes
 
