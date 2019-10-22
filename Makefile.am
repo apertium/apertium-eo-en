@@ -1,3 +1,7 @@
+###############################################################################
+## Makefile for Esperanto--English
+###############################################################################
+
 VERSION=1.0.0
 LANG1=eo
 LANG2=en
@@ -6,16 +10,42 @@ PREFIX2=$(LANG2)-$(LANG1)
 
 BASENAME=apertium-$(PREFIX1)
 
-TARGETS_COMMON = $(PREFIX1) $(PREFIX2)
+TARGETS_COMMON = $(TARGETS_PREFIX1) $(TARGETS_PREFIX2)
 
-$(PREFIX1): $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
-     $(PREFIX1).autopgen.bin $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).antaux_t2x.bin $(PREFIX1).t3x.bin \
-     modes
+TARGETS_PREFIX1 =                 \
+        $(PREFIX1).automorf.bin   \
+        $(PREFIX1).autobil.bin    \
+        $(PREFIX1).autogen.bin    \
+        $(PREFIX1).autopgen.bin   \
+        $(PREFIX1).t1x.bin        \
+        $(PREFIX1).t2x.bin        \
+        $(PREFIX1).antaux_t2x.bin \
+        $(PREFIX1).t3x.bin
 
 # 8a de feb 2011 Jacob forprenis: $(PREFIX2).rlx.bin
-$(PREFIX2): $(PREFIX2).automorf.bin $(PREFIX2).autobil.bin $(PREFIX2).autogen.bin \
-     $(PREFIX2).autopgen.bin $(PREFIX2).t1x.bin $(PREFIX2).genitive.t1x.bin $(PREFIX2).antaux_t2x.bin $(PREFIX2).antaux2_t2x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
-     modes
+TARGETS_PREFIX2 =                   \
+        $(PREFIX2).automorf.bin     \
+        $(PREFIX2).autobil.bin      \
+        $(PREFIX2).autogen.bin      \
+        $(PREFIX2).autopgen.bin     \
+        $(PREFIX2).t1x.bin          \
+        $(PREFIX2).genitive.t1x.bin \
+        $(PREFIX2).antaux_t2x.bin   \
+        $(PREFIX2).antaux2_t2x.bin  \
+        $(PREFIX2).t2x.bin          \
+        $(PREFIX2).t3x.bin
+
+$(PREFIX1): $(TARGETS_PREFIX1)
+$(PREFIX2): $(TARGETS_PREFIX2)
+
+# This include defines goals for install-modes, .deps/.d and .mode files:
+@ap_include@
+
+
+###############################################################################
+## Monolingual transducers
+###############################################################################
+
 
 tmp1_$(BASENAME).$(LANG1).dix: $(BASENAME).$(LANG1).dix.xml
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dix.xml
@@ -29,14 +59,10 @@ tmp1_$(BASENAME).$(LANG1).dix: $(BASENAME).$(LANG1).dix.xml
 	$(BASH) ./multi-gen.sh $(BASENAME).$(LANG1)-multiwords.txt >> tmp1
 	echo '</dictionary>' >> tmp1
 	mv tmp1 $@
-     
+
 $(PREFIX1).automorf.bin: tmp1_$(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary tmp1_$(BASENAME).$(LANG1).dix
-	lt-comp lr tmp1_$(BASENAME).$(LANG1).dix $@ 
-
-$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
-	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
+	lt-comp lr tmp1_$(BASENAME).$(LANG1).dix $@
 
 $(PREFIX1).autogen.bin: $(BASENAME).$(LANG2).dix
 	apertium-validate-dictionary $(BASENAME).$(LANG2).dix
@@ -50,13 +76,6 @@ $(PREFIX2).automorf.bin: $(BASENAME).$(LANG2).dix
 	apertium-validate-dictionary $(BASENAME).$(LANG2).dix
 	lt-comp lr $(BASENAME).$(LANG2).dix $@ $(BASENAME).$(LANG2).acx
 
-$(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
-	cg-comp $(BASENAME).$(PREFIX2).rlx $@
-
-$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
-	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
-
 $(PREFIX2).autogen.bin: tmp1_$(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary tmp1_$(BASENAME).$(LANG1).dix
 	lt-comp rl tmp1_$(BASENAME).$(LANG1).dix $@
@@ -64,6 +83,30 @@ $(PREFIX2).autogen.bin: tmp1_$(BASENAME).$(LANG1).dix
 $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
 	lt-comp lr $(BASENAME).post-$(LANG1).dix $@
+
+###############################################################################
+## Bilingual dictionaries
+###############################################################################
+
+$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
+	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
+
+$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
+	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
+
+###############################################################################
+## Disambiguation rules
+###############################################################################
+
+$(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
+	cg-comp $< $@
+
+
+###############################################################################
+## Structural transfer rules
+###############################################################################
 
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
@@ -109,6 +152,87 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 	apertium-validate-postchunk $(BASENAME).$(PREFIX2).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
 
+###############################################################################
+## Distribution
+###############################################################################
+
+EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml        \
+           $(BASENAME).post-$(LANG1).dix       \
+           $(BASENAME).post-$(LANG2).dix       \
+           $(BASENAME).$(LANG2).dix            \
+           $(BASENAME).$(LANG1).tsx            \
+           $(BASENAME).$(PREFIX1).dix          \
+           $(BASENAME).$(LANG2).tsx            \
+           $(PREFIX1).prob                     \
+           $(PREFIX2).prob                     \
+           $(BASENAME).$(LANG2).acx            \
+           $(BASENAME).$(PREFIX1).t1x          \
+           $(BASENAME).$(PREFIX1).antaux_t2x   \
+           $(BASENAME).$(PREFIX1).t2x          \
+           $(BASENAME).$(PREFIX1).t3x          \
+           $(BASENAME).$(PREFIX2).t1x          \
+           $(BASENAME).$(PREFIX2).genitive.t1x \
+           $(BASENAME).$(PREFIX2).antaux_t2x   \
+           $(BASENAME).$(PREFIX2).antaux2_t2x  \
+           $(BASENAME).$(PREFIX2).t2x          \
+           $(BASENAME).$(PREFIX2).t3x          \
+           $(BASENAME).$(PREFIX2).rlx          \
+           multi-gen.sh                        \
+           modes.xml
+
+
+###############################################################################
+## Installation
+###############################################################################
+
+apertium_eo_endir=$(prefix)/share/apertium/$(BASENAME)/
+
+# Files which should be installed to $(prefix)/share/apertium/$(BASENAME)/:
+apertium_eo_en_DATA=$(TARGETS_COMMON)       \
+	$(BASENAME).$(PREFIX1).t1x          \
+	$(BASENAME).$(PREFIX1).antaux_t2x   \
+	$(BASENAME).$(PREFIX1).t2x          \
+	$(BASENAME).$(PREFIX1).t3x          \
+	$(BASENAME).$(PREFIX2).t1x          \
+	$(BASENAME).$(PREFIX2).genitive.t1x \
+	$(BASENAME).$(PREFIX2).antaux_t2x   \
+	$(BASENAME).$(PREFIX2).antaux2_t2x  \
+	$(BASENAME).$(PREFIX2).t2x          \
+	$(BASENAME).$(PREFIX2).t3x          \
+	$(PREFIX1).prob                     \
+	$(PREFIX2).prob
+
+# don't add these, or make will fail if bytecode compilation is not supported
+#	$(PREFIX1).t1x.class
+#	$(PREFIX2).t1x.class
+
+# All modes are created by the same goal, listing several will just give problems with make -j2
+noinst_DATA=modes/$(PREFIX1).mode
+
+install-data-local: install-modes
+
+
+###############################################################################
+## Cleanup
+###############################################################################
+
+CLEANFILES = $(TARGETS_COMMON) tmp1_$(BASENAME).$(LANG2).dix apertium_eo_en_en_eo_t1x.java apertium_eo_en_eo_en_t1x.java
+clean-local:
+	-rm -rf .deps modes
+
+###############################################################################
+## Test
+###############################################################################
+
+# test: all
+# 	echo "hundo" | apertium -d . eo-en | tee .test-mt
+# 	@echo "dog" > .test-ref
+# 	@diff .test-ref .test-mt
+# 	echo "dog" | apertium -d . en-eo | tee .test-mt
+# 	@echo "hundo" > .test-ref
+# 	@diff .test-ref .test-mt
+# 	@rm .test-ref .test-mt
+
 test: $(TARGETS_COMMON)
 	bash regression-tests.sh
 
@@ -123,63 +247,3 @@ crptest: $(TARGETS_COMMON)
 #	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt;for i in `cut -c3-9 /tmp/crpdiff.txt | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^ *$i\W" ; grep -r "$i" /tmp/crpdiff.txt; done | less
 
 
-EXTRA_DIST=$(BASENAME).$(LANG1).dix.xml \
-           $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
-           $(BASENAME).$(LANG2).dix $(BASENAME).$(LANG1).tsx \
-	   $(BASENAME).$(PREFIX1).dix \
-           $(BASENAME).$(LANG2).tsx  \
-           $(PREFIX1).prob $(PREFIX2).prob \
-	   $(BASENAME).$(LANG2).acx \
-           $(BASENAME).$(PREFIX1).t1x \
-           $(BASENAME).$(PREFIX1).antaux_t2x $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX1).t3x \
-           $(BASENAME).$(PREFIX2).t1x $(BASENAME).$(PREFIX2).genitive.t1x \
-           $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).antaux2_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x \
-           modes.xml multi-gen.sh
-
-#	   $(BASENAME).$(PREFIX2).rlx 
-
-
-apertium_eo_endir=$(prefix)/share/apertium/apertium-$(PREFIX1)/
-apertium_eo_modesdir=$(prefix)/share/apertium/modes/
-
-modes: modes.xml
-	apertium-gen-modes modes.xml
-
-$(PREFIX1).mode: modes
-
-$(PREFIX2).mode: modes
-
-$(PREFIX1)-bytecode.mode: modes
-
-$(PREFIX2)-bytecode.mode: modes
-
-
-apertium_eo_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
-	$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
-	$(PREFIX1).autogen.bin $(PREFIX2).autogen.bin \
-	$(PREFIX1).autopgen.bin $(PREFIX2).autopgen.bin \
-	$(PREFIX1).prob $(PREFIX2).prob \
-	$(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).antaux_t2x.bin $(PREFIX1).t3x.bin \
-	$(PREFIX2).t1x.bin  $(PREFIX2).genitive.t1x.bin $(PREFIX2).antaux_t2x.bin $(PREFIX2).antaux2_t2x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin \
-	$(PREFIX1)-bytecode.mode $(PREFIX2)-bytecode.mode \
-	$(PREFIX1).mode $(PREFIX2).mode
-
-#	$(PREFIX2).rlx.bin 
-
-#	don't add these, or make will fail if bytecode compilation is not supported
-#	$(PREFIX1).t1x.class 
-#	$(PREFIX2).t1x.class 
-
-#	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_eo_modesdir)
-
-install-data-local:
-	apertium-gen-modes modes.xml apertium-$(PREFIX1)
-	test -d $(DESTDIR)$(apertium_eo_modesdir) || mkdir $(DESTDIR)$(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX1)-bytecode.mode $(DESTDIR)$(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(PREFIX2)-bytecode.mode $(DESTDIR)$(apertium_eo_modesdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).antaux_t2x $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX1).t3x $(DESTDIR)$(apertium_eo_endir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(BASENAME).$(PREFIX2).genitive.t1x $(BASENAME).$(PREFIX2).antaux_t2x $(BASENAME).$(PREFIX2).antaux2_t2x $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(DESTDIR)$(apertium_eo_endir)
-
-CLEANFILES = -rf $(TARGETS_COMMON) tmp1_$(BASENAME).$(LANG2).dix  $(TARGETS) modes *.mode *.bin apertium-eo-en.eo-multiwords.xml apertium_eo_en_en_eo_t1x.java apertium_eo_en_eo_en_t1x.java
