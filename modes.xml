@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
- 
+
   <mode name="en-eo" install="yes">
     <pipeline>
       <program name="lt-proc">
@@ -41,8 +41,8 @@
       </program>
     </pipeline>
   </mode>
- 
-  <mode name="en-eo-anmor" install="yes">
+
+  <mode name="en-eo-anmor" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
@@ -60,12 +60,12 @@
       </program>
     </pipeline>
   </mode>
-  
-  <mode name="en-eo-cg" install="yes">
+
+  <mode name="en-eo-cg" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="en-eo.automorf.bin"/>
-      </program>      
+      </program>
       <program name="cg-proc">
         <file name="en-eo.rlx.bin"/>
       </program>
@@ -73,7 +73,7 @@
   </mode>
 
 
- 
+
   <mode name="en-eo-bytecode-cg" install="yes">
     <pipeline>
       <program name="lt-proc">
@@ -119,7 +119,7 @@
 
 
 
- 
+
   <mode name="en-eo-bytecode" install="yes">
     <pipeline>
       <program name="lt-proc">
@@ -236,7 +236,7 @@
       <!--
       <program name="lt-proc -p">
         <file name="en-eo.autopgen.bin"/>
-      </program> 
+      </program>
       -->
     </pipeline>
   </mode>
