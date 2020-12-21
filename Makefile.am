@@ -2,7 +2,6 @@
 ## Makefile for Esperanto--English
 ###############################################################################
 
-VERSION=1.0.0
 LANG1=eo
 LANG2=en
 PREFIX1=$(LANG1)-$(LANG2)
@@ -245,5 +244,3 @@ crptest: $(TARGETS_COMMON)
 #	for i in `cut -f2 -d' ' /tmp/crpdiff.txt | cut -f1 | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^$i\W" ; grep -r "^. $i\W" /tmp/crpdiff.txt; done | less
 #	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt;for i in `cut -f2 -d' ' /tmp/crpdiff.txt | cut -f1 | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^$i\W" ; grep -r "^. $i\W" /tmp/crpdiff.txt; done | less
 #	diff foer.txt efter.txt | grep -r '[<>]' > /tmp/crpdiff.txt;for i in `cut -c3-9 /tmp/crpdiff.txt | uniq`; do echo  --- $i ---; zcat corpa/en.crp.txt.gz | grep -r "^ *$i\W" ; grep -r "$i" /tmp/crpdiff.txt; done | less
-
-
