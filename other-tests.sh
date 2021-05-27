@@ -3,20 +3,20 @@
 if [ "$1" == "" ]; then
 echo "Checking outstanding tests..."
 LIST=`
-wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
 `;
 else
 echo "Checking ALL tests..."
 LIST=`
-wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
-wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Proposed_future_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
-wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Rejected_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
-wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Regression_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Proposed_future_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Rejected_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
+wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Regression_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed -r 's/[ \t]+/_/g'
 `;
 fi
 
 
-#LIST=`wget -O - -q http://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+#LIST=`wget -O - -q https://wiki.apertium.org/wiki/English_and_Esperanto/Outstanding_tests | grep -E '((<li>.*→)|<h2>)' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
 
 cp *.mode modes/
 

@@ -20,7 +20,7 @@ REGEN=0
 
 if [ "$NODOWNLOAD" == "" ]; then
 	REGEN=1
-	LANG=en wget -N http://wiki.apertium.org/wiki/English_and_Esperanto/$TESTNAME 2>&1 | cat > wgetlog.txt
+	LANG=en wget -N https://wiki.apertium.org/wiki/English_and_Esperanto/$TESTNAME 2>&1 | cat > wgetlog.txt
         grep "Saving to:" wgetlog.txt || REGEN=0 && echo $TESTNAME not changed on webserver
 else
 	echo "NOT Downloading test set $TESTNAME"
