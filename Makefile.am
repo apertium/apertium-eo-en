@@ -223,20 +223,8 @@ clean-local:
 ## Test
 ###############################################################################
 
-# test: all
-# 	echo "hundo" | apertium -d . eo-en | tee .test-mt
-# 	@echo "dog" > .test-ref
-# 	@diff .test-ref .test-mt
-# 	echo "dog" | apertium -d . en-eo | tee .test-mt
-# 	@echo "hundo" > .test-ref
-# 	@diff .test-ref .test-mt
-# 	@rm .test-ref .test-mt
-
-test: $(TARGETS_COMMON)
-	bash regression-tests.sh
-
-test-nodl: $(TARGETS_COMMON)
-	bash regression-tests.sh NODOWNLOAD
+test: all
+	apertium-regtest test
 
 crptest: $(TARGETS_COMMON)
 #	zcat corpa/en.crp.txt.gz |  apertium -d . en-eo > efter.txt
