@@ -14,6 +14,9 @@ dnl Not yet monolingualised, uncomment these to start using files from AP_SRC1, 
 dnl AP_CHECK_LING([1], [apertium-eng])
 dnl AP_CHECK_LING([2], [apertium-epo])
 
+PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
+                  [AC_MSG_WARN([Running tests requires apertium-regtest])])
+
 AP_MKINCLUDE
 
 AC_OUTPUT([Makefile])
