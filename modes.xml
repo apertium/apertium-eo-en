@@ -15,10 +15,12 @@
         <file name="apertium-eo-en.en-eo.genitive.t1x"/>
         <file name="en-eo.genitive.t1x.bin"/>
       </program>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-eo.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-eo-en.en-eo.t1x"/>
         <file name="en-eo.t1x.bin"/>
-        <file name="en-eo.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-eo-en.en-eo.antaux_t2x"/>
