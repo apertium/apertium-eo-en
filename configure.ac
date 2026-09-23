@@ -1,12 +1,12 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Esperanto-English], [1.0.2], [apertium-stuff@lists.sourceforge.net], [apertium-eo-en], [https://wiki.apertium.org/wiki/Apertium-eo-en])
+AC_INIT([Apertium Esperanto-English], [1.0.3], [apertium-stuff@lists.sourceforge.net], [apertium-eo-en], [https://wiki.apertium.org/wiki/Apertium-eo-en])
 AM_INIT_AUTOMAKE
 AC_PROG_AWK
 
-PKG_CHECK_MODULES(APERTIUM, apertium >= 3.8.1)
-PKG_CHECK_MODULES(APERTIUM_LEX_TOOLS, apertium-lex-tools >= 0.3.1)
-PKG_CHECK_MODULES(CG3, cg3 >= 1.3.6)
+PKG_CHECK_MODULES(APERTIUM, apertium >= 3.9.12)
+PKG_CHECK_MODULES(APERTIUM_LEX_TOOLS, apertium-lex-tools >= 0.5.0)
+PKG_CHECK_MODULES(CG3, cg3 >= 1.5.1)
 
 m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertium.m4 in ACLOCAL_PATH? See: https://wiki.apertium.org/wiki/Installation_troubleshooting])])
 
